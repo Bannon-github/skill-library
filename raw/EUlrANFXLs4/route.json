@@ -1,0 +1,40 @@
+{
+ "video_id": "EUlrANFXLs4",
+ "started_at": "2026-10-03T16:36:41.341511+00:00",
+ "outcome": "STOP_video_unavailable",
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": false,
+   "evidence": "video_unavailable"
+  },
+  {
+   "q": "Q2a video unavailable/private/removed/age-gated?",
+   "a": true,
+   "evidence": "video_unavailable",
+   "then": "STOP, drop from queue"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": false,
+   "evidence": "video_unavailable"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": false,
+   "evidence": "video_unavailable"
+  }
+ ],
+ "finished_at": "2026-10-03T16:36:42.423350+00:00"
+}

@@ -152,6 +152,17 @@ def install_langs(codes: list[str], tgt: str = "en") -> list[str]:
     return done
 
 
+LOOP = re.compile(r"\b(\w+)(?:[\s,]+\1\b){2,}", re.I)
+# argos quality varies by pair; ja/zh/ko auto tracks have no punctuation and translate poorly.
+LOW_CONFIDENCE_SRC = {"ja", "zh", "ko", "th", "vi", "ar", "hi"}
+
+
+def collapse_loops(text: str) -> tuple[str, int]:
+    """MT repetition loops ('unallowed unallowed unallowed') -> '<word> [mt-repeat]'."""
+    n = len(LOOP.findall(text))
+    return LOOP.sub(lambda m: m.group(1) + " [mt-repeat]", text), n
+
+
 def looks_garbled(lines: list[str], tgt: str) -> float:
     """Share of output segments with foreign-script junk (MT model failure)."""
     if tgt != "en" or not lines:
@@ -195,6 +206,10 @@ def translate_file(path: Path, src: str, tgt: str = "en", backend: str = "argos"
         out[i], terms = post_edit(srctxt, o, gloss, hits)
         if terms:
             seg_terms.append({"t": ts, "terms": terms})
+    loops = 0
+    for i, o in enumerate(out):
+        out[i], n = collapse_loops(o)
+        loops += n
     garbled = looks_garbled(out, tgt)
     if garbled > 0.2:
         return {"ok": False, "error": "mt_output_garbled", "garbled_share": round(garbled, 2),
@@ -214,6 +229,8 @@ def translate_file(path: Path, src: str, tgt: str = "en", backend: str = "argos"
         "segments": len(rows),
         "glossary_hits": hits,
         "garbled_share": round(garbled, 3),
+        "repeat_loops_collapsed": loops,
+        "confidence": ("low" if (src in LOW_CONFIDENCE_SRC or garbled > 0.05) else "medium") if backend != "none" else "n/a",
         "segment_terms": seg_terms,
         "seconds": round(time.time() - t0, 1),
         "original_path": str(path),

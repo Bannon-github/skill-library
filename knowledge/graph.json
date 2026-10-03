@@ -1,0 +1,3210 @@
+{
+ "schema": "yt-knowledge-graph/kg-v1",
+ "updated_at": "2026-10-03T16:42:24.650048+00:00",
+ "videos": {
+  "A7q9L5wd7Mk": {
+   "domain": "synth",
+   "title": "The Secret to Making MASSIVE Synth Pads 🎹 | Vital Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-03T16:36:40.479571+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "MH7YiOWQIhI": {
+   "domain": "synth",
+   "title": "Síntesis de Pads ORQUESTALES en VITAL (Sintetizador gratuito)[+Preset]",
+   "route": "original-plus-machine-translation",
+   "translated": true,
+   "merged_at": "2026-10-03T16:36:40.749349+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "BqE9S27CZfY": {
+   "domain": "synth",
+   "title": "Synthesizer programmieren E03 - ADSR-Hüllkurve",
+   "route": "original-plus-machine-translation",
+   "translated": true,
+   "merged_at": "2026-10-03T16:36:41.050849+00:00",
+   "gap_nodes": 3,
+   "gap_edges": 0
+  },
+  "kHWOIE4YTZ4": {
+   "domain": "synth",
+   "title": "【DTM 音作り】週刊少年VITAL 2 #05 : シネマティックシンセパッド！",
+   "route": "original-plus-machine-translation",
+   "translated": true,
+   "merged_at": "2026-10-03T16:42:24.649794+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 2
+  }
+ },
+ "nodes": {
+  "concept:pad": {
+   "type": "concept",
+   "label": "pad",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:00"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:18"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:17"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "1:42"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:18"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "tool:Vital": {
+   "type": "tool",
+   "label": "Vital",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:00"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:59"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:level": {
+   "type": "param",
+   "label": "level",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "2:00"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:16"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:33"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "8:52"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "crypto-tax-form-8949-disposal-rows",
+    "evolving-pad-unison-filter-swell-fifth",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "knowledge-graph-gap-check-skill-outline",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "trance-gate-sidechain-chop-texture",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:mixer": {
+   "type": "module",
+   "label": "mixer",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "2:00"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "5:28"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:16"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:33"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "8:52"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-multi-envelope-osc-level-morph",
+    "crypto-safe-multisig-threshold-setup-execute",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "sidehustle-stripe-invoice-create-send",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "module:envelope": {
+   "type": "module",
+   "label": "envelope",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:57"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "7:54"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "8:59"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:08"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:41"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "transcript-domain-term-graph-extract",
+    "transcript-offline-machine-translate-glossary",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "wavetable-crossfade-morph-modulate-pad",
+    "youtube-knowledge-pipeline-router"
+   ]
+  },
+  "param:attack": {
+   "type": "param",
+   "label": "attack",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:57"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "8:59"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:40"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "sidechain-compressor-duck-synth-pads",
+    "transcript-offline-machine-translate-glossary",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:sustain": {
+   "type": "param",
+   "label": "sustain",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "3:29"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "velocity-filter-cutoff-envelope-amount"
+   ]
+  },
+  "param:release": {
+   "type": "param",
+   "label": "release",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:58"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:40"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:41"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "sidechain-compressor-duck-synth-pads",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "concept:chord": {
+   "type": "concept",
+   "label": "chord",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:42"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "0:00"
+    }
+   ],
+   "covered_by": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "trance-gate-sidechain-chop-texture",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "concept:evolving": {
+   "type": "concept",
+   "label": "evolving",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:59"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "3:09"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "1:13"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "blender-lowpoly-character-scene-prep",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "param:lfo_depth": {
+   "type": "param",
+   "label": "lfo depth",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:59"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:lfo": {
+   "type": "module",
+   "label": "lfo",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:59"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "3:09"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:17"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "midside-eq-bass-focus-width-depth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "concept:layering": {
+   "type": "concept",
+   "label": "layering",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:22"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "blender-lowpoly-pine-tree-from-primitives",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "midside-eq-bass-focus-width-depth",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "soft-tape-saturation-pads-before-space",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:reverb": {
+   "type": "module",
+   "label": "reverb",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:22"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:36"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:18"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "8:52"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "concept:texture": {
+   "type": "concept",
+   "label": "texture",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:22"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "4:26"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "7:07"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "reverb-pads-type-choice-and-send-setup",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "module:noise": {
+   "type": "module",
+   "label": "noise",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:22"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "7:42"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "6:29"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "7:54"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "param:waveform": {
+   "type": "param",
+   "label": "waveform",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:36"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:48"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "2:24"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:17"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "blender-chocolate-chip-cookie-model-and-render",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "sidechain-compressor-duck-synth-pads",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:oscillator": {
+   "type": "module",
+   "label": "oscillator",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:36"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:48"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:08"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:17"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "7:31"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:unison": {
+   "type": "module",
+   "label": "unison",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:36"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:42"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "4:08"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:detune": {
+   "type": "param",
+   "label": "detune",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:36"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:42"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "4:08"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "value:unison=5 voices": {
+   "type": "value",
+   "label": "5 voices",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:detune=4 %": {
+   "type": "value",
+   "label": "4 %",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:57"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:pluck": {
+   "type": "concept",
+   "label": "pluck",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "4:26"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "modulation-lfo-envelope-mod-matrix-routing"
+   ]
+  },
+  "module:delay": {
+   "type": "module",
+   "label": "delay",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "4:37"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "5:18"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "12:18"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:filter": {
+   "type": "module",
+   "label": "filter",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "5:33"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "3:37"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "3:55"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "0:49"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad",
+    "youtube-topic-search-transcript-precheck"
+   ]
+  },
+  "param:resonance": {
+   "type": "param",
+   "label": "resonance",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:57"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "3:37"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:filter_slope": {
+   "type": "param",
+   "label": "filter slope",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:43"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "filter-ladder-diode-comb-formant-flavors",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "value:filter_slope=24 db": {
+   "type": "value",
+   "label": "24 db",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:cutoff": {
+   "type": "param",
+   "label": "cutoff",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:19"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:22"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "10:13"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "parallel-filter-rhythmic-pad-chains",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:keytrack": {
+   "type": "param",
+   "label": "keytrack",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:22"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "7:42"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "filter-ladder-diode-comb-formant-flavors",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:granular": {
+   "type": "module",
+   "label": "granular",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "7:42"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "9:43"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "osc-as-granular-pitch-step-delay",
+    "stereo-delay-pingpong-dual-parallel-two-tap"
+   ]
+  },
+  "param:pitch": {
+   "type": "param",
+   "label": "pitch",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:08"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:31"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidehustle-upwork-proposal-short-proof-cta",
+    "trance-gate-sidechain-chop-texture",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "value:filter=24 db": {
+   "type": "value",
+   "label": "24 db",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:08"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=2 octaves": {
+   "type": "value",
+   "label": "2 octaves",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:feedback": {
+   "type": "param",
+   "label": "feedback",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:43"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidehustle-upwork-proposal-short-proof-cta",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:chorus": {
+   "type": "module",
+   "label": "chorus",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:43"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "14:53"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "0:49"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "param:mix": {
+   "type": "param",
+   "label": "mix",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "9:04"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:43"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "5:28"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "10:52"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "11:43"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "param:phase": {
+   "type": "param",
+   "label": "phase",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "9:43"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:sampler": {
+   "type": "module",
+   "label": "sampler",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:05"
+    }
+   ],
+   "covered_by": [
+    "organic-looped-sample-unison-voicing-pad"
+   ]
+  },
+  "module:stereo": {
+   "type": "module",
+   "label": "stereo",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:19"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "11:36"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "12:18"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "blender-beginner-setup-nav-and-geometry-practice",
+    "blender-first-scene-add-delete-focus-shade-smooth",
+    "blender-install-prefs-viewport-nav-transform-tools",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:macro": {
+   "type": "module",
+   "label": "macro",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "12:30"
+    },
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "12:52"
+    }
+   ],
+   "covered_by": [
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract"
+   ]
+  },
+  "module:compressor": {
+   "type": "module",
+   "label": "compressor",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "14:13"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "6:51"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "7:28"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "evolving-pad-unison-filter-swell-fifth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "trance-gate-sidechain-chop-texture",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "param:decay_time": {
+   "type": "param",
+   "label": "decay time",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "14:53"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:18"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "11:43"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "blender-boolean-bracket-with-cylinder-holes",
+    "cinematic-multi-envelope-osc-level-morph",
+    "distill-transcript",
+    "evolving-pad-unison-filter-swell-fifth",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb"
+   ]
+  },
+  "module:eq": {
+   "type": "module",
+   "label": "eq",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "14:53"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "12:18"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "12:47"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "soft-tape-saturation-pads-before-space",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "concept:low_end": {
+   "type": "concept",
+   "label": "low end",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "15:20"
+    }
+   ],
+   "covered_by": [
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:phaser": {
+   "type": "module",
+   "label": "phaser",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "15:20"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "filter-ladder-diode-comb-formant-flavors",
+    "modulation-lfo-envelope-mod-matrix-routing"
+   ]
+  },
+  "phrase:click_and_drag": {
+   "type": "phrase",
+   "label": "click and drag",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "3:31"
+    }
+   ],
+   "covered_by": [
+    "blender-install-prefs-viewport-nav-transform-tools"
+   ]
+  },
+  "phrase:drag_this_onto": {
+   "type": "phrase",
+   "label": "drag this onto",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:anima_audio": {
+   "type": "phrase",
+   "label": "anima audio",
+   "domain": "synth",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:00"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:strings": {
+   "type": "concept",
+   "label": "strings",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:00"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:09"
+    }
+   ],
+   "covered_by": [
+    "knowledge-graph-gap-check-skill-outline",
+    "reverb-pads-type-choice-and-send-setup",
+    "soft-tape-saturation-pads-before-space"
+   ]
+  },
+  "param:voice_count": {
+   "type": "param",
+   "label": "voice count",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:mod_matrix": {
+   "type": "module",
+   "label": "mod matrix",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "1:29"
+    }
+   ],
+   "covered_by": [
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "traveler-walkthrough-control-track-filter-wt-animation"
+   ]
+  },
+  "module:fm": {
+   "type": "module",
+   "label": "fm",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "1:46"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "2:00"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "fm-carrier-modulator-ratio-basics",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "traveler-walkthrough-super-unison-wide-lead"
+   ]
+  },
+  "param:filter_drive": {
+   "type": "param",
+   "label": "filter drive",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "4:07"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:brightness": {
+   "type": "concept",
+   "label": "brightness",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "8:46"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "blender-chocolate-chip-cookie-model-and-render",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "fm-carrier-modulator-ratio-basics",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "velocity-filter-cutoff-envelope-amount"
+   ]
+  },
+  "phrase:orchestral_sound": {
+   "type": "phrase",
+   "label": "orchestral sound",
+   "domain": "synth",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:26"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:automation": {
+   "type": "concept",
+   "label": "automation",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:33"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:49"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "mix-pads-role-eq-width-clarity",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "param:decay": {
+   "type": "param",
+   "label": "decay",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "3:29"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "cinematic-multi-envelope-osc-level-morph",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "phrase:time_it_takes": {
+   "type": "phrase",
+   "label": "time it takes",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "5:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:press_the_button": {
+   "type": "phrase",
+   "label": "press the button",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:00"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:volume_automation": {
+   "type": "phrase",
+   "label": "volume automation",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:33"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:attack_and_release": {
+   "type": "phrase",
+   "label": "attack and release",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:40"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo"
+   ]
+  },
+  "phrase:release_time": {
+   "type": "phrase",
+   "label": "release time",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "2:15"
+    }
+   ],
+   "covered_by": [
+    "trance-gate-sidechain-chop-texture"
+   ]
+  },
+  "phrase:attack_time": {
+   "type": "phrase",
+   "label": "attack time",
+   "domain": "synth",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:51"
+    }
+   ],
+   "covered_by": [
+    "cinematic-multi-envelope-osc-level-morph"
+   ]
+  },
+  "concept:cinematic": {
+   "type": "concept",
+   "label": "cinematic",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "0:00"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "blender-lowpoly-character-scene-prep",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "param:wt_position": {
+   "type": "param",
+   "label": "wt position",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "4:55"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "blender-boolean-bracket-with-cylinder-holes",
+    "blender-chocolate-chip-cookie-model-and-render",
+    "blender-mug-solidify-subsurf-loopcut",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:wavetable": {
+   "type": "module",
+   "label": "wavetable",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "4:55"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "parallel-filter-rhythmic-pad-chains",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "value:unison=16 voices": {
+   "type": "value",
+   "label": "16 voices",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:42"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "4:55"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:unison=8 voices": {
+   "type": "value",
+   "label": "8 voices",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "8:30"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:table_position": {
+   "type": "phrase",
+   "label": "table position",
+   "domain": "synth",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    }
+   ],
+   "covered_by": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-wavetable-morph-filter-motion"
+   ]
+  }
+ },
+ "edges": {
+  "param:level|part-of|module:mixer": {
+   "src": "param:level",
+   "dst": "module:mixer",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "2:00"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "0:16"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:attack|part-of|module:envelope": {
+   "src": "param:attack",
+   "dst": "module:envelope",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "8:59"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:sustain|part-of|module:envelope": {
+   "src": "param:sustain",
+   "dst": "module:envelope",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:release|part-of|module:envelope": {
+   "src": "param:release",
+   "dst": "module:envelope",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:29"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:41"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:lfo_depth|part-of|module:lfo": {
+   "src": "param:lfo_depth",
+   "dst": "module:lfo",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "0:59"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:waveform|part-of|module:oscillator": {
+   "src": "param:waveform",
+   "dst": "module:oscillator",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "BqE9S27CZfY",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "1:44"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:48"
+    },
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "2:24"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:detune|part-of|module:unison": {
+   "src": "param:detune",
+   "dst": "module:unison",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|sets|value:unison=5 voices": {
+   "src": "module:unison",
+   "dst": "value:unison=5 voices",
+   "type": "sets",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    }
+   ],
+   "covered_by": [
+    "transcript-domain-term-graph-extract"
+   ]
+  },
+  "param:detune|sets|value:detune=4 %": {
+   "src": "param:detune",
+   "dst": "value:detune=4 %",
+   "type": "sets",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "2:15"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad"
+   ]
+  },
+  "module:lfo|affects|module:envelope": {
+   "src": "module:lfo",
+   "dst": "module:envelope",
+   "type": "affects",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "3:09"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "param:resonance|part-of|module:filter": {
+   "src": "param:resonance",
+   "dst": "module:filter",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "3:37"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:filter_slope|part-of|module:filter": {
+   "src": "param:filter_slope",
+   "dst": "module:filter",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:filter_slope|sets|value:filter_slope=24 db": {
+   "src": "param:filter_slope",
+   "dst": "value:filter_slope=24 db",
+   "type": "sets",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:09"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "filter-ladder-diode-comb-formant-flavors",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:cutoff|part-of|module:filter": {
+   "src": "param:cutoff",
+   "dst": "module:filter",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:19"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:keytrack|part-of|module:filter": {
+   "src": "param:keytrack",
+   "dst": "module:filter",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:22"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:keytrack|affects|param:cutoff": {
+   "src": "param:keytrack",
+   "dst": "param:cutoff",
+   "type": "affects",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:22"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "module:envelope|affects|param:cutoff": {
+   "src": "module:envelope",
+   "dst": "param:cutoff",
+   "type": "affects",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "6:22"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "granular-dual-saw-ambient-epic-pad",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount"
+   ]
+  },
+  "param:pitch|part-of|module:oscillator": {
+   "src": "param:pitch",
+   "dst": "module:oscillator",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:08"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|sets|value:filter=24 db": {
+   "src": "module:filter",
+   "dst": "value:filter=24 db",
+   "type": "sets",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:08"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "filter-ladder-diode-comb-formant-flavors",
+    "osc-as-granular-pitch-step-delay",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:pitch|sets|value:pitch=2 octaves": {
+   "src": "param:pitch",
+   "dst": "value:pitch=2 octaves",
+   "type": "sets",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:31"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "osc-as-granular-pitch-step-delay"
+   ]
+  },
+  "param:feedback|part-of|module:delay": {
+   "src": "param:feedback",
+   "dst": "module:delay",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "8:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:mix|part-of|module:mixer": {
+   "src": "param:mix",
+   "dst": "module:mixer",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "MH7YiOWQIhI",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "9:04"
+    },
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "5:28"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "10:52"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:phase|part-of|module:oscillator": {
+   "src": "param:phase",
+   "dst": "module:oscillator",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "9:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:lfo|affects|module:stereo": {
+   "src": "module:lfo",
+   "dst": "module:stereo",
+   "type": "affects",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "10:19"
+    }
+   ],
+   "covered_by": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "evolving-pad-unison-filter-swell-fifth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-wavetable-morph-filter-motion"
+   ]
+  },
+  "module:macro|affects|param:mix": {
+   "src": "module:macro",
+   "dst": "param:mix",
+   "type": "affects",
+   "videos": [
+    "A7q9L5wd7Mk"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "12:52"
+    }
+   ],
+   "covered_by": [
+    "granular-dual-saw-ambient-epic-pad",
+    "transcript-domain-term-graph-extract"
+   ]
+  },
+  "param:decay_time|part-of|module:reverb": {
+   "src": "param:decay_time",
+   "dst": "module:reverb",
+   "type": "part-of",
+   "videos": [
+    "A7q9L5wd7Mk",
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "A7q9L5wd7Mk",
+     "t": "14:53"
+    },
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "2:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:voice_count|part-of|module:unison": {
+   "src": "param:voice_count",
+   "dst": "module:unison",
+   "type": "part-of",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "0:58"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:filter_drive|part-of|module:filter": {
+   "src": "param:filter_drive",
+   "dst": "module:filter",
+   "type": "part-of",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "4:07"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:envelope|affects|module:filter": {
+   "src": "module:envelope",
+   "dst": "module:filter",
+   "type": "affects",
+   "videos": [
+    "MH7YiOWQIhI"
+   ],
+   "refs": [
+    {
+     "video_id": "MH7YiOWQIhI",
+     "t": "7:54"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "audio-rate-am-wave-shape-texture",
+    "granular-dual-saw-ambient-epic-pad",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "param:decay|part-of|module:envelope": {
+   "src": "param:decay",
+   "dst": "module:envelope",
+   "type": "part-of",
+   "videos": [
+    "BqE9S27CZfY"
+   ],
+   "refs": [
+    {
+     "video_id": "BqE9S27CZfY",
+     "t": "1:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:wt_position|part-of|module:wavetable": {
+   "src": "param:wt_position",
+   "dst": "module:wavetable",
+   "type": "part-of",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|sets|value:unison=16 voices": {
+   "src": "module:unison",
+   "dst": "value:unison=16 voices",
+   "type": "sets",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "3:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|sets|value:unison=8 voices": {
+   "src": "module:unison",
+   "dst": "value:unison=8 voices",
+   "type": "sets",
+   "videos": [
+    "kHWOIE4YTZ4"
+   ],
+   "refs": [
+    {
+     "video_id": "kHWOIE4YTZ4",
+     "t": "8:30"
+    }
+   ],
+   "covered_by": []
+  }
+ },
+ "stats": {
+  "videos": 4,
+  "nodes": 70,
+  "edges": 33,
+  "uncovered_nodes": 1,
+  "uncovered_edges": 2
+ }
+}

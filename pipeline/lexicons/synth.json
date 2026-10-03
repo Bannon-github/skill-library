@@ -362,9 +362,8 @@
     "reverb size",
     "size",
     "room size",
-    "pre delay",
-    "predelay",
-    "pre-delay"
+    "reverb time",
+    "tail"
    ],
    "module": "reverb"
   },
@@ -414,6 +413,14 @@
     "24 db"
    ],
    "module": "filter"
+  },
+  "pre_delay": {
+   "aliases": [
+    "pre delay",
+    "predelay",
+    "pre-delay"
+   ],
+   "module": "reverb"
   }
  },
  "mod_sources": {
@@ -670,7 +677,8 @@
    "delay",
    "reverb",
    "glide",
-   "lfo_rate"
+   "lfo_rate",
+   "pre_delay"
   ],
   "s": [
    "attack",
@@ -680,7 +688,8 @@
    "envelope",
    "reverb",
    "delay_time",
-   "glide"
+   "glide",
+   "pre_delay"
   ],
   "bars": [
    "lfo",

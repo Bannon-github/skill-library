@@ -326,7 +326,11 @@ def fetch_planned(listing, option: dict, log: list | None = None) -> list[tuple[
     obj = next(t for t in listing if t.language_code == want["language_code"]
                and bool(t.is_generated) == want["is_generated"])
     if option.get("tlang"):
+        # The tlang endpoint is throttled much harder than plain tracks from cloud IPs
+        # (2026-10-03: 429 on tlang while the same original track fetched fine). Two tries,
+        # then fall through to original + machine translation instead of extending the block.
         obj = obj.translate(option["tlang"])
+        return _snips_to_cues(_with_backoff(obj.fetch, tries=2, base=8.0, log=log))
     return _snips_to_cues(_with_backoff(obj.fetch, log=log))
 
 
@@ -484,7 +488,17 @@ def save_transcript(video_id: str, title: str | None = None, target: str = "en",
         if err in ("transcripts_disabled", "no_transcript_found", "no_track_fetchable"):
             meta["last_resort"] = ("ASR/Whisper on the audio is possible but NOT allowed unless Matt "
                                    "explicitly asks; flagged for review, nothing invented.")
-        (dest / "meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
+        prev = dest / "meta.json"
+        try:
+            prev_ok = prev.exists() and json.loads(prev.read_text()).get("ok")
+        except Exception:  # noqa: BLE001
+            prev_ok = False
+        if prev_ok:
+            # a failed refetch must not clobber a good earlier transcript
+            meta["kept_previous"] = True
+            (dest / "meta.refetch_failed.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
+        else:
+            prev.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
         return meta
 
     chosen = None

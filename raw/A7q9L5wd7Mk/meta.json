@@ -1,9 +1,53 @@
 {
   "video_id": "A7q9L5wd7Mk",
-  "title": null,
+  "title": "The Secret to Making MASSIVE Synth Pads 🎹 | Vital Tutorial",
   "url": "https://www.youtube.com/watch?v=A7q9L5wd7Mk",
-  "ok": false,
-  "error": "transcript_unavailable",
-  "fetched_at": "2026-10-02T16:23:10.653116+00:00",
-  "source_ui": "youtube-show-transcript"
+  "fetched_at": "2026-10-03T16:07:33.195761+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Anima Audio",
+  "duration": 962,
+  "ok": true,
+  "cue_count": 331,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/A7q9L5wd7Mk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/A7q9L5wd7Mk/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
 }

@@ -24,6 +24,8 @@ Decision tree (per video):
   Q3  Transcript usable (>=150 words, not music/marker-only)?   no -> REJECT thin
   Q4  Translated (youtube-tlang or machine)?                    yes -> mark candidates translated_source;
                                                                    distill must cross-check original words
+  Q4b Machine translation low-confidence?                     yes -> numbers/steps must be checked in original
+  Q4c tlang rung skipped only due to 429?                       yes -> queue upgrade_to_tlang for a later --refetch
   Q5  Domain lexicon matched (>= 8 term hits)?                  no -> flag off-lexicon (extend lexicon /
                                                                    plain distill-transcript)
   Q6  Build term graph (extract_terms_graph.py)
@@ -141,6 +143,8 @@ def route_video(vid: str, a) -> dict:
                       then="DEFER to pipeline/queue/deferred.json; retry later or Matt sets YT_TRANSCRIPT_PROXY")
                 defer(vid, err)
                 COOLING["on"] = True
+                if meta.get("kept_previous"):
+                    L.ask("Q2b' earlier good transcript kept?", True, then="previous transcript/meta untouched")
                 out["outcome"] = "DEFER_rate_limited"
             elif err == "translation_failed":
                 L.ask("Q2d machine translation failed?", True, evidence=meta.get("translate"),
@@ -172,6 +176,25 @@ def route_video(vid: str, a) -> dict:
           then="mark translated_source; distill cross-checks transcript.orig.*" if translated else None)
     out["translated"] = translated
     out["translation_method"] = meta.get("translation_method")
+    if str(meta.get("translation_method", "")).startswith("machine"):
+        tp = dest / "translation.json"
+        tr = json.loads(tp.read_text()) if tp.exists() else (meta.get("translation") or {})
+        low = tr.get("confidence") == "low"
+        L.ask("Q4b machine translation low-confidence (ja/zh/ko source or >5% garbled)?", low,
+              evidence={"confidence": tr.get("confidence"), "garbled_share": tr.get("garbled_share"),
+                        "repeat_loops": tr.get("repeat_loops_collapsed")},
+              then="graph terms OK as hints; numbers/steps must be verified in transcript.orig.*" if low else None)
+        out["translation_confidence"] = tr.get("confidence")
+        tl_blocked = any("youtube-translated" in str(d.get("q")) and d.get("evidence") == "rate_limited_or_ip_blocked"
+                         for d in meta.get("decisions", []))
+        if L.ask("Q4c was the YouTube-translated (tlang) rung skipped only because of a 429?", tl_blocked,
+                 then="queue an upgrade: refetch later with --refetch to get YouTube's own English" if tl_blocked else None):
+            QUEUE.parent.mkdir(parents=True, exist_ok=True)
+            q = json.loads(QUEUE.read_text()) if QUEUE.exists() else {"deferred": []}
+            ups = [u for u in q.get("upgrade_to_tlang", []) if u["video_id"] != vid]
+            ups.append({"video_id": vid, "reason": "tlang 429; used machine translation", "at": now()})
+            q["upgrade_to_tlang"] = ups
+            QUEUE.write_text(json.dumps(q, indent=1) + "\n")
     # Q5 + Q6
     g = run_json([sys.executable, str(HERE / "extract_terms_graph.py"), vid] + (["--domain", a.domain] if a.domain else []))
     gj = json.loads((dest / "graph.json").read_text()) if (dest / "graph.json").exists() else {}

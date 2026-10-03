@@ -1,0 +1,164 @@
+{
+ "video_id": "MH7YiOWQIhI",
+ "started_at": "2026-10-03T16:36:40.486389+00:00",
+ "outcome": "COVERED",
+ "route": "original-plus-machine-translation",
+ "language_code": "es",
+ "original_language": "es",
+ "is_generated": true,
+ "translated": true,
+ "translation_method": "machine:argos",
+ "translation_confidence": "medium",
+ "domain": "synth",
+ "graph": {
+  "video_id": "MH7YiOWQIhI",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/MH7YiOWQIhI/graph.json",
+  "segments": 35,
+  "windows": 28,
+  "nodes": 26,
+  "edges": 27,
+  "nodes_by_type": {
+   "concept": 3,
+   "param": 7,
+   "module": 8,
+   "step": 7,
+   "phrase": 1
+  },
+  "edges_by_type": {
+   "part-of": 7,
+   "mentions": 13,
+   "precedes": 6,
+   "affects": 1
+  },
+  "words": 895
+ },
+ "gaps": {
+  "video_id": "MH7YiOWQIhI",
+  "graph_nodes": 26,
+  "graph_edges": 27,
+  "terms_checked": 19,
+  "terms_covered": 17,
+  "gap_nodes": 2,
+  "gap_nodes_excl_phrases": 1,
+  "relations_checked": 1,
+  "gap_edges": 0,
+  "candidates": 0,
+  "kg": {
+   "videos": 2,
+   "nodes": 56,
+   "edges": 29,
+   "uncovered_nodes": 1,
+   "uncovered_edges": 0
+  },
+  "candidate_ids": []
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "original-plus-machine-translation",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 905,
+    "music_markers": 10
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": true,
+   "evidence": "machine:argos",
+   "then": "mark translated_source; distill cross-checks transcript.orig.*"
+  },
+  {
+   "q": "Q4b machine translation low-confidence (ja/zh/ko source or >5% garbled)?",
+   "a": false,
+   "evidence": {
+    "confidence": "medium",
+    "garbled_share": 0.0,
+    "repeat_loops": 0
+   }
+  },
+  {
+   "q": "Q4c was the YouTube-translated (tlang) rung skipped only because of a 429?",
+   "a": true,
+   "then": "queue an upgrade: refetch later with --refetch to get YouTube's own English"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 1,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 0,
+     "synth": 32
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 26,
+    "edges": 27
+   }
+  },
+  {
+   "q": "Q7 gap candidates found?",
+   "a": false,
+   "evidence": {
+    "gap_nodes_excl_phrases": 1,
+    "gap_edges": 0,
+    "candidates": 0
+   },
+   "then": "covered by library; KG updated; no new skill"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "es"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "es(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "3:youtube-translated:es",
+    "5:original-plus-machine-translation:es"
+   ]
+  },
+  {
+   "q": "fetch youtube-translated (es)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch original-plus-machine-translation (es)",
+   "a": true
+  },
+  {
+   "q": "machine-translate es->en (argos)",
+   "a": true,
+   "evidence": null
+  }
+ ],
+ "finished_at": "2026-10-03T16:36:40.755314+00:00"
+}

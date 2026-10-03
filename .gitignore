@@ -55,8 +55,8 @@ prior-art/index.json
 
 # --- knowledge pipeline (2026-10-03): local-only artifacts that embed transcript text ---
 .venv-translate/
-raw/*/graph.json
-raw/*/gaps.json
+raw/*/graph*.json
+raw/*/gaps*.json
 raw/*/translation.json
 distilled/*/candidates/
 pipeline/logs/

@@ -1,0 +1,249 @@
+{
+  "video_id": "kHWOIE4YTZ4",
+  "title": "【DTM 音作り】週刊少年VITAL 2 #05 : シネマティックシンセパッド！",
+  "url": "https://www.youtube.com/watch?v=kHWOIE4YTZ4",
+  "fetched_at": "2026-10-03T16:34:48.184069+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "ja",
+  "channel": "LOBOTIX CHANNEL",
+  "duration": 917,
+  "ok": true,
+  "cue_count": 330,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "ja",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/kHWOIE4YTZ4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/kHWOIE4YTZ4/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/kHWOIE4YTZ4/transcript.orig.ja.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "ja",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "ja",
+    "tgt": "en",
+    "segments": 30,
+    "glossary_hits": {
+      "フィルター": 6,
+      "コーラス": 1,
+      "パッド": 4,
+      "ウェーブテーブル": 4,
+      "ディケイ": 1,
+      "リリース": 1,
+      "スペクトラル": 3,
+      "デチューン": 1,
+      "ユニゾン": 4,
+      "ボイス": 5,
+      "カットオフ": 2,
+      "レゾナンス": 1,
+      "ローパス": 2,
+      "オシレーター": 3,
+      "ノイズ": 1,
+      "リバーブ": 1,
+      "ディレイ": 2,
+      "ハイパス": 1,
+      "ステレオ": 1,
+      "ボリューム": 1,
+      "コード": 1
+    },
+    "garbled_share": 0.1,
+    "segment_terms": [
+      {
+        "t": "0:49",
+        "terms": [
+          "filter",
+          "chorus"
+        ]
+      },
+      {
+        "t": "1:42",
+        "terms": [
+          "pad"
+        ]
+      },
+      {
+        "t": "2:18",
+        "terms": [
+          "wavetable",
+          "pad"
+        ]
+      },
+      {
+        "t": "2:41",
+        "terms": [
+          "decay",
+          "release"
+        ]
+      },
+      {
+        "t": "3:16",
+        "terms": [
+          "wavetable"
+        ]
+      },
+      {
+        "t": "3:42",
+        "terms": [
+          "spectral",
+          "detune",
+          "unison",
+          "voices"
+        ]
+      },
+      {
+        "t": "4:08",
+        "terms": [
+          "voices"
+        ]
+      },
+      {
+        "t": "4:55",
+        "terms": [
+          "wavetable",
+          "unison",
+          "voices"
+        ]
+      },
+      {
+        "t": "5:47",
+        "terms": [
+          "spectral"
+        ]
+      },
+      {
+        "t": "6:39",
+        "terms": [
+          "filter",
+          "cutoff",
+          "resonance",
+          "low-pass",
+          "pad"
+        ]
+      },
+      {
+        "t": "7:31",
+        "terms": [
+          "wavetable",
+          "oscillator",
+          "spectral"
+        ]
+      },
+      {
+        "t": "7:54",
+        "terms": [
+          "noise"
+        ]
+      },
+      {
+        "t": "8:30",
+        "terms": [
+          "unison",
+          "voices"
+        ]
+      },
+      {
+        "t": "8:52",
+        "terms": [
+          "reverb",
+          "delay"
+        ]
+      },
+      {
+        "t": "9:17",
+        "terms": [
+          "oscillator",
+          "unison",
+          "voices"
+        ]
+      },
+      {
+        "t": "9:42",
+        "terms": [
+          "filter"
+        ]
+      },
+      {
+        "t": "10:13",
+        "terms": [
+          "oscillator",
+          "filter",
+          "cutoff",
+          "high-pass"
+        ]
+      },
+      {
+        "t": "11:19",
+        "terms": [
+          "filter",
+          "low-pass"
+        ]
+      },
+      {
+        "t": "11:43",
+        "terms": [
+          "pad"
+        ]
+      },
+      {
+        "t": "12:18",
+        "terms": [
+          "filter",
+          "delay",
+          "stereo"
+        ]
+      },
+      {
+        "t": "12:47",
+        "terms": [
+          "volume",
+          "chord"
+        ]
+      }
+    ],
+    "seconds": 50.5,
+    "original_path": "/workspace/skill-library/raw/kHWOIE4YTZ4/transcript.orig.ja.txt",
+    "output_path": "/workspace/skill-library/raw/kHWOIE4YTZ4/transcript.txt",
+    "translated": true,
+    "at": "2026-10-03T16:35:41.960890+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "ja"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ja(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:ja",
+        "5:original-plus-machine-translation:ja"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (ja)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (ja)",
+      "a": true
+    },
+    {
+      "q": "machine-translate ja->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": []
+}

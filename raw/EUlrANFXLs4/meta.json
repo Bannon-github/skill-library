@@ -2,8 +2,23 @@
   "video_id": "EUlrANFXLs4",
   "title": null,
   "url": "https://www.youtube.com/watch?v=EUlrANFXLs4",
+  "fetched_at": "2026-10-03T16:36:41.342617+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
   "ok": false,
-  "error": "transcript_unavailable",
-  "fetched_at": "2026-09-24T16:19:14.896865+00:00",
-  "source_ui": "youtube-show-transcript"
+  "error": "video_unavailable",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "video_unavailable"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "video_unavailable"
+    }
+  ],
+  "retries": [],
+  "detail": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EUlrANFXLs4! This is most likely caused by:"
 }

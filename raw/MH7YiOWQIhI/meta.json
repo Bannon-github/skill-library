@@ -1,0 +1,186 @@
+{
+  "video_id": "MH7YiOWQIhI",
+  "title": "Síntesis de Pads ORQUESTALES en VITAL (Sintetizador gratuito)[+Preset]",
+  "url": "https://www.youtube.com/watch?v=MH7YiOWQIhI",
+  "fetched_at": "2026-10-03T16:09:22.623078+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "es",
+  "channel": "Abletips",
+  "duration": 563,
+  "ok": true,
+  "cue_count": 171,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "es",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/MH7YiOWQIhI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/MH7YiOWQIhI/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/MH7YiOWQIhI/transcript.orig.es.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "es",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "es",
+    "tgt": "en",
+    "segments": 35,
+    "glossary_hits": {
+      "diente de sierra": 1,
+      "voces": 1,
+      "oscilador": 3,
+      "osciladores": 1,
+      "resonancia": 1,
+      "filtro": 6,
+      "agudos": 2,
+      "graves": 1,
+      "envolvente": 1,
+      "ataque": 1
+    },
+    "garbled_share": 0.0,
+    "segment_terms": [
+      {
+        "t": "0:48",
+        "terms": [
+          "sawtooth"
+        ]
+      },
+      {
+        "t": "0:58",
+        "terms": [
+          "voices"
+        ]
+      },
+      {
+        "t": "1:46",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "2:00",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "2:10",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "3:37",
+        "terms": [
+          "oscillators",
+          "resonance",
+          "filter"
+        ]
+      },
+      {
+        "t": "3:55",
+        "terms": [
+          "filter",
+          "highs"
+        ]
+      },
+      {
+        "t": "4:07",
+        "terms": [
+          "filter"
+        ]
+      },
+      {
+        "t": "4:45",
+        "terms": [
+          "filter"
+        ]
+      },
+      {
+        "t": "5:08",
+        "terms": [
+          "filter"
+        ]
+      },
+      {
+        "t": "6:31",
+        "terms": [
+          "low end",
+          "highs"
+        ]
+      },
+      {
+        "t": "7:54",
+        "terms": [
+          "envelope",
+          "filter"
+        ]
+      },
+      {
+        "t": "8:59",
+        "terms": [
+          "attack"
+        ]
+      }
+    ],
+    "seconds": 196.0,
+    "original_path": "/workspace/skill-library/raw/MH7YiOWQIhI/transcript.orig.es.txt",
+    "output_path": "/workspace/skill-library/raw/MH7YiOWQIhI/transcript.txt",
+    "translated": true,
+    "at": "2026-10-03T16:13:14.381747+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "es"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "es(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:es",
+        "5:original-plus-machine-translation:es"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (es)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (es)",
+      "a": true
+    },
+    {
+      "q": "machine-translate es->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ]
+}

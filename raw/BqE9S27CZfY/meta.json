@@ -1,0 +1,182 @@
+{
+  "video_id": "BqE9S27CZfY",
+  "title": "Synthesizer programmieren E03 - ADSR-Hüllkurve",
+  "url": "https://www.youtube.com/watch?v=BqE9S27CZfY",
+  "fetched_at": "2026-10-03T16:33:11.321520+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de",
+  "channel": "Götz Müller-Dürholt",
+  "duration": 431,
+  "ok": true,
+  "cue_count": 166,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "de",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/BqE9S27CZfY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/BqE9S27CZfY/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/BqE9S27CZfY/transcript.orig.de.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "de",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "de",
+    "tgt": "en",
+    "segments": 39,
+    "glossary_hits": {
+      "Oszillator": 2,
+      "Hüllkurve": 4,
+      "Lautstärke": 8,
+      "Rauschen": 1
+    },
+    "garbled_share": 0.0,
+    "segment_terms": [
+      {
+        "t": "0:08",
+        "terms": [
+          "oscillator",
+          "envelope"
+        ]
+      },
+      {
+        "t": "0:16",
+        "terms": [
+          "envelope"
+        ]
+      },
+      {
+        "t": "0:24",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "0:33",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "0:40",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "0:49",
+        "terms": [
+          "envelope"
+        ]
+      },
+      {
+        "t": "1:08",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "1:25",
+        "terms": [
+          "envelope"
+        ]
+      },
+      {
+        "t": "2:06",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "4:55",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "5:11",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "6:02",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "6:12",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "6:29",
+        "terms": [
+          "noise"
+        ]
+      }
+    ],
+    "seconds": 55.1,
+    "original_path": "/workspace/skill-library/raw/BqE9S27CZfY/transcript.orig.de.txt",
+    "output_path": "/workspace/skill-library/raw/BqE9S27CZfY/transcript.txt",
+    "translated": true,
+    "at": "2026-10-03T16:34:41.014015+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "de"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "de(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:de",
+        "5:original-plus-machine-translation:de"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (de)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (de)",
+      "a": true
+    },
+    {
+      "q": "machine-translate de->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ]
+}
