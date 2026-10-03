@@ -1,0 +1,2 @@
+# youtube-skills MCP server (server.py uses mcp.server.mcpserver -> MCP SDK 2.x)
+mcp==2.3.0

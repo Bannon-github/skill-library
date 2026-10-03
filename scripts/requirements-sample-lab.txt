@@ -1,0 +1,6 @@
+# sample-lab render/scoring venv (sample-lab/.venv)
+numpy
+scipy
+soundfile
+pyloudnorm
+matplotlib
