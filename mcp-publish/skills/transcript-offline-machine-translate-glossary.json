@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "id": "transcript-offline-machine-translate-glossary",
+  "name": "Offline machine translation of a non-English transcript with a synth/DAW glossary",
+  "goal": "Turn an original-language Show-transcript (es, de, ja, fr, pt, it) into an English transcript with a free offline translator (argos-translate), segment by segment with the original timestamps. Fix known domain mistranslations after translating ('envolvente' rendered as 'cover' -> 'envelope'), reject garbled model output, and keep the original words. Delta vs generic translation skills (azure-ai-translation-*, translate-book): offline and free, timestamp-preserving for transcripts, with a post-edit glossary for sound-design vocabulary and a garble detector.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Transcript machine translation (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/translate_transcript.py"
+  },
+  "prerequisites": [
+    "/workspace/skill-library/.venv-translate with argostranslate and CPU torch (scripts/ensure_env.sh)",
+    "Language packs installed: translate_transcript.py --install-langs de,es,ja,fr,pt,it (es is pinned to package 1.0)"
+  ],
+  "inputs": [
+    {
+      "name": "original_panel",
+      "type": "path",
+      "description": "raw/<id>/transcript.orig.<lang>.txt",
+      "required": true
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "description": "Source language code (taken from the filename if omitted)",
+      "required": false
+    },
+    {
+      "name": "backend",
+      "type": "enum",
+      "description": "argos (default, offline) | libretranslate (LIBRETRANSLATE_URL) | none (passthrough test)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "english_transcript",
+      "type": "path",
+      "description": "raw/<id>/transcript.txt with a '# MACHINE-TRANSLATED ...' header and the original timestamps"
+    },
+    {
+      "name": "translation_report",
+      "type": "json",
+      "description": "raw/<id>/translation.json: backend, segment count, glossary hits, per-segment domain terms, garbled_share, seconds"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Always mark machine-translated text as such (header line + meta.translated=true + translation_method 'machine:<backend>'); skills distilled from it must say so in source and cross-check numbers against the original words.",
+    "Do not inject English terms into the source before translating. Tested 2026-10-03: argos produced garbage when English words were mixed into Spanish input. Correct terms only after translation, and only when the source segment contains the term.",
+    "argos es->en package 1.9 outputs garbage with argostranslate 1.11 / ctranslate2 4.8; use the pinned 1.0 package. The garble detector (more than 20% of segments with foreign-script junk) stops the run and writes nothing.",
+    "Paid cloud translators are not used unless Matt sets one up; the backend registry makes adding one a single function."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Parse the original panel into (timestamp, text) rows, skipping '#' lines. Group consecutive auto-track fragments under the first timestamp until about 160 characters or end punctuation (ja/zh joined without spaces), so the model sees whole clauses.",
+      "tool": "parser",
+      "expect": "Fewer, longer segments, each keeping its first timestamp"
+    },
+    {
+      "n": 2,
+      "action": "Translate each segment with the chosen backend (argos: installed language -> get_translation('en').translate). Exactly one output per input segment; a count mismatch fails the run.",
+      "tool": "argos-translate",
+      "expect": "English segment list the same length as the input"
+    },
+    {
+      "n": 3,
+      "action": "Post-edit: for each glossary term present in the source segment (lexicons/translation_glossary.json: lang -> term -> [english, known bad renderings]), replace known bad renderings in the output with the English term, unless that rendering is the correct English for another term in the same segment.",
+      "tool": "glossary",
+      "expect": "'cover attack' -> 'envelope attack'; per-segment term list recorded"
+    },
+    {
+      "n": 4,
+      "action": "Run the garble check. If more than 20% of output segments contain CJK/Hangul/Greek-range junk, return mt_output_garbled and write nothing; the router then stops with STOP_translation_failed.",
+      "tool": "qa",
+      "expect": "Garbled output never reaches the graph"
+    },
+    {
+      "n": 5,
+      "action": "Write transcript.txt (header + timestamps + English), raw.txt and raw (English prose), and translation.json. Leave transcript.orig.<lang>.txt untouched.",
+      "tool": "writer",
+      "expect": "Original and English side by side"
+    },
+    {
+      "n": 6,
+      "action": "To add a backend, write _backend_x(segments, src, tgt) -> list[str] and register it in BACKENDS. To fix a recurring mistranslation, add the bad rendering to the glossary rather than editing outputs by hand.",
+      "tool": "extend",
+      "expect": "Pluggable backends; glossary grows from evidence"
+    }
+  ],
+  "verification": [
+    "transcript.txt starts with '# MACHINE-TRANSLATED' and keeps the original timestamps",
+    "translation.json garbled_share <= 0.2 and segments == number of timestamp lines",
+    "transcript.orig.<lang>.txt is unchanged"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "translation",
+    "argos-translate",
+    "offline",
+    "transcript",
+    "glossary",
+    "multilingual"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://transcript-offline-machine-translate-glossary"
+}

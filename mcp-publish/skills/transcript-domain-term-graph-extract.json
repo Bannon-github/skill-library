@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "id": "transcript-domain-term-graph-extract",
+  "name": "Extract a term/relation graph from a how-to transcript with domain lexicons",
+  "goal": "Parse an English how-to transcript into a JSON graph of useful data. Nodes are concepts, modules, params, values, tools, procedure steps, and repeated phrases. Edges are sets (param -> value), affects (mod source -> target), precedes (step order), part-of (param -> module, module -> tool), and mentions (step -> term), each with timestamped evidence quotes. Matching uses domain lexicons for synth/sound design, Blender, crypto tooling, side hustle, and drone/splat capture, plus bigram/trigram collocation mining for terms the lexicon doesn't know. Delta vs generic keyword or knowledge-graph skills (understand-anything): deterministic and stdlib-only, unit-aware value attachment (dB -> slope/level, semitones -> pitch, voices -> unison), and evidence-grounded edges built for gap checking against a skill catalog.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Transcript term graph (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/extract_terms_graph.py"
+  },
+  "prerequisites": [
+    "raw/<id>/transcript.txt in English (direct or translated)",
+    "pipeline/lexicons/<domain>.json"
+  ],
+  "inputs": [
+    {
+      "name": "video_id",
+      "type": "string",
+      "description": "Video whose raw/<id>/transcript.txt to parse",
+      "required": true
+    },
+    {
+      "name": "domain",
+      "type": "enum",
+      "description": "synth|blender|crypto|sidehustle|drone (auto-detected by lexicon hit count if omitted)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "graph",
+      "type": "json",
+      "description": "raw/<id>/graph.json (schema yt-knowledge-graph/v1): nodes[], edges[], stats, domain_scores, source provenance (route, translated)"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Evidence quotes are verbatim transcript slices (max 160 chars) and stay local (raw/ is gitignored for transcript text; graph.json is too). Only {video_id, t} references go to the public knowledge graph.",
+    "Prefer precision: short ambiguous aliases (am, live, q, time, note) are excluded from lexicons; values attach only to params/modules allowed for that unit (lexicon unit_targets).",
+    "Collocation 'phrase' nodes are suggestions for lexicon growth, not facts; they never create skill steps on their own."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load panel segments (skip '#' header lines, strip [Music]-style markers) and merge them into about 240-character windows so a sentence-like unit holds a full instruction.",
+      "tool": "parser",
+      "expect": "Windows with start timestamps"
+    },
+    {
+      "n": 2,
+      "action": "Detect the domain by counting lexicon matches for every lexicon over the full text; use the best one unless --domain is given. Record domain_scores.",
+      "tool": "lexicons",
+      "expect": "domain + scores in graph.json"
+    },
+    {
+      "n": 3,
+      "action": "In each window, match aliases longest-first with word boundaries and make module/param/tool/concept nodes. Add param -> module part-of from the lexicon, and module -> tool part-of when both are mentioned in the same window.",
+      "tool": "matcher",
+      "expect": "Term nodes with counts and evidence"
+    },
+    {
+      "n": 4,
+      "action": "Find values (number or number word + unit: Hz, kHz, ms, s, %, dB, semitones, cents, voices, octaves, bars). Attach each to the noun right after it when within 3 chars ('24 dB slope'), else to the nearest preceding allowed param/module within 70 chars. Emit a value node and a sets edge.",
+      "tool": "values",
+      "expect": "e.g. unison sets '5 voices', filter_slope sets '24 db'"
+    },
+    {
+      "n": 5,
+      "action": "For mod sources (LFO, envelope, velocity, macro, mod wheel, keytrack, random), emit affects -> target when a connector (to/onto/controls/modulates/assign/route) sits between them within 60 chars, skipping envelope -> attack-style part-of pairs.",
+      "tool": "relations",
+      "expect": "e.g. envelope affects cutoff, macro affects mix"
+    },
+    {
+      "n": 6,
+      "action": "Mark a window as a step when it has an action verb plus a step cue or 2+ terms. Link steps with precedes and steps to terms with mentions. Mine bigram/trigram collocations (frequency >= 3, PMI-ranked, stopword-trimmed) as phrase nodes. Write graph.json with stats.",
+      "tool": "graph",
+      "expect": "Ordered procedure skeleton + new-term suggestions"
+    }
+  ],
+  "verification": [
+    "graph.json stats.nodes > 0 and stats.edges > 0 for a usable how-to",
+    "Every node and edge has at least one evidence {t, quote}",
+    "Re-running on the same transcript gives an identical graph (deterministic)"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "knowledge-graph",
+    "term-extraction",
+    "collocations",
+    "transcript",
+    "lexicon"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://transcript-domain-term-graph-extract"
+}

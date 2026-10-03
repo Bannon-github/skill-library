@@ -1,0 +1,5 @@
+{"domain":"drone","label":"Drone capture / Gaussian splats",
+ "modules":{"capture":["capture","flight","orbit","hyperlapse","waypoint","waypoints","mission"],"camera":["camera","gimbal","shutter","iso","exposure","white balance"],"processing":["gaussian splat","splat","splatting","photogrammetry","point cloud","colmap","training"],"viewer":["viewer","web viewer","mip map","mip-map","lod"]},
+ "params":{"altitude":{"aliases":["altitude","height"],"module":"capture"},"overlap":{"aliases":["overlap"],"module":"capture"},"gimbal_angle":{"aliases":["gimbal angle","pitch angle","tilt"],"module":"camera"},"shutter_speed":{"aliases":["shutter speed","shutter"],"module":"camera"},"frame_rate":{"aliases":["fps","frame rate","frames per second"],"module":"camera"},"iterations":{"aliases":["iterations","steps"],"module":"processing"}},
+ "mod_sources":{},"tools":{"DJI":["dji","mavic","mini 4","air 3"],"Splatware":["splatware"],"Postshot":["postshot"],"Luma":["luma"],"Polycam":["polycam"]},
+ "concepts":{"motion_blur":["motion blur","blur"],"coverage":["coverage","angles","multi angle"],"lighting":["lighting","golden hour","overcast"]}}

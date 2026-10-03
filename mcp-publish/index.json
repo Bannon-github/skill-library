@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 73,
+  "count": 79,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -256,6 +256,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "knowledge-graph-gap-check-skill-outline",
+      "path": "/workspace/skill-library/mcp-publish/skills/knowledge-graph-gap-check-skill-outline.json",
+      "mcp_uri": "skill://knowledge-graph-gap-check-skill-outline",
+      "domain": "agent-pipeline"
+    },
+    {
       "id": "lightroom-select-and-develop-photo",
       "path": "/workspace/skill-library/mcp-publish/skills/lightroom-select-and-develop-photo.json",
       "mcp_uri": "skill://lightroom-select-and-develop-photo",
@@ -382,6 +388,18 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "transcript-domain-term-graph-extract",
+      "path": "/workspace/skill-library/mcp-publish/skills/transcript-domain-term-graph-extract.json",
+      "mcp_uri": "skill://transcript-domain-term-graph-extract",
+      "domain": "agent-pipeline"
+    },
+    {
+      "id": "transcript-offline-machine-translate-glossary",
+      "path": "/workspace/skill-library/mcp-publish/skills/transcript-offline-machine-translate-glossary.json",
+      "mcp_uri": "skill://transcript-offline-machine-translate-glossary",
+      "domain": "agent-pipeline"
+    },
+    {
       "id": "traveler-walkthrough-control-track-filter-wt-animation",
       "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-control-track-filter-wt-animation.json",
       "mcp_uri": "skill://traveler-walkthrough-control-track-filter-wt-animation",
@@ -446,8 +464,26 @@
       "path": "/workspace/skill-library/mcp-publish/skills/wavetable-crossfade-morph-modulate-pad.json",
       "mcp_uri": "skill://wavetable-crossfade-morph-modulate-pad",
       "domain": "cinematic-synth"
+    },
+    {
+      "id": "youtube-knowledge-pipeline-router",
+      "path": "/workspace/skill-library/mcp-publish/skills/youtube-knowledge-pipeline-router.json",
+      "mcp_uri": "skill://youtube-knowledge-pipeline-router",
+      "domain": "agent-pipeline"
+    },
+    {
+      "id": "youtube-show-transcript-track-ladder-fetch",
+      "path": "/workspace/skill-library/mcp-publish/skills/youtube-show-transcript-track-ladder-fetch.json",
+      "mcp_uri": "skill://youtube-show-transcript-track-ladder-fetch",
+      "domain": "agent-pipeline"
+    },
+    {
+      "id": "youtube-topic-search-transcript-precheck",
+      "path": "/workspace/skill-library/mcp-publish/skills/youtube-topic-search-transcript-precheck.json",
+      "mcp_uri": "skill://youtube-topic-search-transcript-precheck",
+      "domain": "agent-pipeline"
     }
   ],
-  "updated_at": "2026-10-03T15:50:00+00:00",
+  "updated_at": "2026-10-03T16:16:37+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

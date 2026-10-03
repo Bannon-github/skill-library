@@ -1,0 +1,544 @@
+{
+ "_note": "Post-edit glossary for machine-translated synth/DAW transcripts. Format: lang -> source_term -> [english_term, [known bad MT renderings]]. If the source segment contains the term and the MT output contains a bad rendering, that rendering is replaced by the English term. Never injects words that the source doesn't contain. Injecting English terms BEFORE translation broke argos output (tested 2026-10-03), so don't.",
+ "es": {
+  "envolvente": [
+   "envelope",
+   [
+    "cover",
+    "wrapping",
+    "enveloping",
+    "wrap"
+   ]
+  ],
+  "envolventes": [
+   "envelopes",
+   []
+  ],
+  "ataque": [
+   "attack",
+   [
+    "attack"
+   ]
+  ],
+  "decaimiento": [
+   "decay",
+   []
+  ],
+  "sostenimiento": [
+   "sustain",
+   []
+  ],
+  "relajación": [
+   "release",
+   []
+  ],
+  "liberación": [
+   "release",
+   []
+  ],
+  "oscilador": [
+   "oscillator",
+   []
+  ],
+  "osciladores": [
+   "oscillators",
+   []
+  ],
+  "filtro paso bajo": [
+   "low-pass filter",
+   []
+  ],
+  "filtro pasa bajos": [
+   "low-pass filter",
+   []
+  ],
+  "filtro": [
+   "filter",
+   []
+  ],
+  "corte": [
+   "cutoff",
+   [
+    "cut",
+    "court",
+    "cutting"
+   ]
+  ],
+  "frecuencia de corte": [
+   "cutoff frequency",
+   []
+  ],
+  "resonancia": [
+   "resonance",
+   [
+    "resonance"
+   ]
+  ],
+  "onda de sierra": [
+   "saw wave",
+   []
+  ],
+  "diente de sierra": [
+   "sawtooth",
+   [
+    "saw tooth",
+    "saw teeth"
+   ]
+  ],
+  "onda cuadrada": [
+   "square wave",
+   []
+  ],
+  "ruido": [
+   "noise",
+   []
+  ],
+  "tabla de ondas": [
+   "wavetable",
+   [
+    "wave table",
+    "table of waves"
+   ]
+  ],
+  "voces": [
+   "voices",
+   [
+    "voices"
+   ]
+  ],
+  "desafinación": [
+   "detune",
+   [
+    "out of tune",
+    "tuning"
+   ]
+  ],
+  "desafinar": [
+   "detune",
+   [
+    "out of tune"
+   ]
+  ],
+  "reverberación": [
+   "reverb",
+   [
+    "reverberation"
+   ]
+  ],
+  "retardo": [
+   "delay",
+   [
+    "retardation",
+    "delay"
+   ]
+  ],
+  "modulación": [
+   "modulation",
+   []
+  ],
+  "macro": [
+   "macro",
+   []
+  ],
+  "graves": [
+   "low end",
+   []
+  ],
+  "agudos": [
+   "highs",
+   []
+  ],
+  "acordes": [
+   "chords",
+   []
+  ],
+  "cuerdas": [
+   "strings",
+   [
+    "ropes",
+    "strings"
+   ]
+  ]
+ },
+ "de": {
+  "Hüllkurve": [
+   "envelope",
+   [
+    "envelope curve",
+    "hull curve",
+    "envelope"
+   ]
+  ],
+  "Hüllkurven": [
+   "envelopes",
+   []
+  ],
+  "Anstiegszeit": [
+   "attack time",
+   []
+  ],
+  "Abklingzeit": [
+   "decay time",
+   []
+  ],
+  "Haltepegel": [
+   "sustain level",
+   []
+  ],
+  "Ausklingzeit": [
+   "release time",
+   []
+  ],
+  "Freigabezeit": [
+   "release time",
+   []
+  ],
+  "Oszillator": [
+   "oscillator",
+   []
+  ],
+  "Oszillatoren": [
+   "oscillators",
+   []
+  ],
+  "Tiefpassfilter": [
+   "low-pass filter",
+   []
+  ],
+  "Hochpassfilter": [
+   "high-pass filter",
+   []
+  ],
+  "Filterfrequenz": [
+   "cutoff frequency",
+   []
+  ],
+  "Grenzfrequenz": [
+   "cutoff frequency",
+   []
+  ],
+  "Resonanz": [
+   "resonance",
+   []
+  ],
+  "Sägezahn": [
+   "sawtooth",
+   [
+    "saw tooth",
+    "saw teeth"
+   ]
+  ],
+  "Rechteck": [
+   "square wave",
+   [
+    "rectangle"
+   ]
+  ],
+  "Rauschen": [
+   "noise",
+   [
+    "noise",
+    "rustle"
+   ]
+  ],
+  "Wellenform": [
+   "waveform",
+   []
+  ],
+  "Stimmen": [
+   "voices",
+   [
+    "votes",
+    "voices"
+   ]
+  ],
+  "Verstimmung": [
+   "detune",
+   [
+    "upset",
+    "annoyance",
+    "detuning"
+   ]
+  ],
+  "Hall": [
+   "reverb",
+   [
+    "hall",
+    "resonance",
+    "reverberation",
+    "echo"
+   ]
+  ],
+  "Verzögerung": [
+   "delay",
+   []
+  ],
+  "Lautstärke": [
+   "volume",
+   []
+  ],
+  "Tonhöhe": [
+   "pitch",
+   []
+  ],
+  "Anschlagstärke": [
+   "velocity",
+   [
+    "stop strength",
+    "attack strength"
+   ]
+  ]
+ },
+ "fr": {
+  "enveloppe": [
+   "envelope",
+   []
+  ],
+  "oscillateur": [
+   "oscillator",
+   []
+  ],
+  "filtre passe-bas": [
+   "low-pass filter",
+   []
+  ],
+  "fréquence de coupure": [
+   "cutoff frequency",
+   []
+  ],
+  "résonance": [
+   "resonance",
+   []
+  ],
+  "dent de scie": [
+   "sawtooth",
+   []
+  ],
+  "bruit": [
+   "noise",
+   []
+  ],
+  "désaccord": [
+   "detune",
+   []
+  ],
+  "réverbération": [
+   "reverb",
+   []
+  ]
+ },
+ "ja": {
+  "エンベロープ": [
+   "envelope",
+   [
+    "envelope"
+   ]
+  ],
+  "アタック": [
+   "attack",
+   []
+  ],
+  "ディケイ": [
+   "decay",
+   []
+  ],
+  "サステイン": [
+   "sustain",
+   []
+  ],
+  "サスティン": [
+   "sustain",
+   []
+  ],
+  "リリース": [
+   "release",
+   []
+  ],
+  "オシレーター": [
+   "oscillator",
+   []
+  ],
+  "フィルター": [
+   "filter",
+   []
+  ],
+  "カットオフ": [
+   "cutoff",
+   [
+    "cut off",
+    "cut-off"
+   ]
+  ],
+  "レゾナンス": [
+   "resonance",
+   []
+  ],
+  "ローパス": [
+   "low-pass",
+   []
+  ],
+  "ハイパス": [
+   "high-pass",
+   []
+  ],
+  "ノコギリ波": [
+   "saw wave",
+   [
+    "saw waves",
+    "sawtooth wave"
+   ]
+  ],
+  "ウェーブテーブル": [
+   "wavetable",
+   []
+  ],
+  "ユニゾン": [
+   "unison",
+   [
+    "unison"
+   ]
+  ],
+  "デチューン": [
+   "detune",
+   [
+    "dechune",
+    "detune"
+   ]
+  ],
+  "ボイス": [
+   "voices",
+   []
+  ],
+  "リバーブ": [
+   "reverb",
+   [
+    "riverb",
+    "reverb",
+    "river"
+   ]
+  ],
+  "ディレイ": [
+   "delay",
+   []
+  ],
+  "コーラス": [
+   "chorus",
+   []
+  ],
+  "モジュレーション": [
+   "modulation",
+   []
+  ],
+  "マクロ": [
+   "macro",
+   []
+  ],
+  "ノイズ": [
+   "noise",
+   []
+  ],
+  "ステレオ": [
+   "stereo",
+   []
+  ],
+  "パッド": [
+   "pad",
+   [
+    "pad",
+    "pads"
+   ]
+  ],
+  "シンセ": [
+   "synth",
+   [
+    "synth",
+    "synthe",
+    "sinse"
+   ]
+  ],
+  "音作り": [
+   "sound design",
+   [
+    "sound making",
+    "making sounds",
+    "sound production"
+   ]
+  ],
+  "コード": [
+   "chord",
+   []
+  ],
+  "ベロシティ": [
+   "velocity",
+   []
+  ],
+  "ピッチ": [
+   "pitch",
+   []
+  ],
+  "ボリューム": [
+   "volume",
+   []
+  ],
+  "スペクトラル": [
+   "spectral",
+   []
+  ],
+  "ワープ": [
+   "warp",
+   []
+  ]
+ },
+ "pt": {
+  "envelope": [
+   "envelope",
+   []
+  ],
+  "oscilador": [
+   "oscillator",
+   []
+  ],
+  "filtro": [
+   "filter",
+   []
+  ],
+  "ressonância": [
+   "resonance",
+   []
+  ],
+  "dente de serra": [
+   "sawtooth",
+   []
+  ],
+  "reverberação": [
+   "reverb",
+   []
+  ]
+ },
+ "it": {
+  "inviluppo": [
+   "envelope",
+   []
+  ],
+  "oscillatore": [
+   "oscillator",
+   []
+  ],
+  "filtro": [
+   "filter",
+   []
+  ],
+  "risonanza": [
+   "resonance",
+   []
+  ],
+  "dente di sega": [
+   "sawtooth",
+   []
+  ],
+  "riverbero": [
+   "reverb",
+   []
+  ]
+ }
+}

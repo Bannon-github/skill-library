@@ -1,9 +1,15 @@
 {
   "stages": [
     {
+      "id": "router",
+      "name": "knowledge-pipeline-router",
+      "status": "implemented",
+      "desc": "pipeline/route.py: self-questioning decision tree over search -> track-ladder fetch (manual EN > auto EN original audio > YouTube tlang=en > dub EN > original + argos MT) -> term graph -> gap check/KG merge -> outlines for distill. Logs raw/<id>/route.json + pipeline/logs/route.jsonl."
+    },
+    {
       "id": 1,
       "name": "topic-search",
-      "desc": "User types topic; search YouTube for how-to videos; return titles, links, Show-transcript availability. STOP for confirm (unless ongoing distillery authorized).",
+      "desc": "User types topic; search YouTube for how-to videos; return titles, links, Show-transcript availability. STOP for confirm (unless ongoing distillery authorized). Implemented: pipeline/search_youtube_topics.py (filters, multilingual, transcript precheck).",
       "status": "ready-waiting-for-topic"
     },
     {

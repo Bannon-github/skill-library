@@ -1,0 +1,5 @@
+# Offline machine translation for pipeline/translate_transcript.py (venv: /workspace/skill-library/.venv-translate)
+# CPU-only torch keeps the venv ~1.5 GB instead of ~6 GB with CUDA wheels.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+argostranslate

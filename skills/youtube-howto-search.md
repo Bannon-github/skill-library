@@ -11,3 +11,6 @@
 
 ## Note
 Say **transcript**, not captions. Fetch later via `pipeline/fetch_youtube_transcript.py`.
+
+## Implementation (2026-10-03)
+`pipeline/search_youtube_topics.py` does this with filters (duration, recency, views, how-to signals, languages) and `--precheck` for transcript tracks. MCP skill: `youtube-topic-search-transcript-precheck`. The full chain runs through `pipeline/route.py` (`youtube-knowledge-pipeline-router`).

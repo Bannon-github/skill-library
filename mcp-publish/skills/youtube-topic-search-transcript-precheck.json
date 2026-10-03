@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "id": "youtube-topic-search-transcript-precheck",
+  "name": "YouTube how-to topic search with filters and transcript precheck",
+  "goal": "Find distillable how-to YouTube videos for a topic across several languages, filter by duration, upload recency, views and how-to title signals, and precheck which ones have a Show transcript (manual, auto, AI-dub, or YouTube-translatable to English) before anything is fetched. Delta vs generic youtube search skills (e.g. VoltAgent youtube-skills, last30days-skill): multilingual how-to keyword expansion, negative-signal filtering, and a per-video transcript-track precheck that feeds the knowledge-pipeline router.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "YouTube topic search (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/search_youtube_topics.py"
+  },
+  "prerequisites": [
+    "Pipeline venv /workspace/skill-library/.venv with yt-dlp and youtube-transcript-api (scripts/ensure_env.sh rebuilds it)"
+  ],
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Topic words, e.g. 'cinematic pad sound design'",
+      "required": true
+    },
+    {
+      "name": "langs",
+      "type": "string",
+      "description": "Comma list of query languages (en,de,es,ja,fr,pt); each adds its own how-to keywords",
+      "required": false
+    },
+    {
+      "name": "within",
+      "type": "enum",
+      "description": "hour|today|week|month|year upload-date filter",
+      "required": false
+    },
+    {
+      "name": "duration_bounds",
+      "type": "object",
+      "description": "--min-dur/--max-dur seconds (default 180..3600)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "search_results",
+      "type": "json",
+      "description": "pipeline/searches/<date>-<slug>.json: ranked results with howto_score, transcript precheck, and a dropped list with reasons"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Search only; do not fetch transcript bodies at this stage (stage 1 of the distillery). Stop for confirmation unless Matt authorized an ongoing distillery run.",
+    "Titles can be YouTube auto-translated; do not infer the spoken language from the title. The precheck's track list and the fetcher's yt-dlp probe decide the language.",
+    "Space out prechecks (0.5 s+) and keep batches small; YouTube rate-limits bursts from cloud IPs."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "For each language in --langs, build a query of topic + that language's how-to keywords (en 'tutorial how to', de 'tutorial anleitung deutsch', es 'tutorial cómo español', ja '使い方 作り方 解説') and run yt-dlp flat search (ytsearchN, or the results URL with an sp= upload-date filter when --within is set).",
+      "tool": "yt-dlp",
+      "expect": "Deduplicated candidate list with id, title, channel, duration, view_count"
+    },
+    {
+      "n": 2,
+      "action": "Drop results outside duration bounds (Shorts under 3 min, multi-hour streams), under --min-views, with negative title signals (#shorts, reaction, unboxing, preset/sample pack, live stream, review, trailer), or already known (raw/ dir or LIBRARY.json) when --skip-known.",
+      "tool": "filter",
+      "expect": "Every drop recorded with its reason"
+    },
+    {
+      "n": 3,
+      "action": "Score the rest: +2 per how-to signal in the title (how to, tutorial, step by step, explained, from scratch, anleitung, cómo, 作り方, 音作り), +1 per topic word, +1.5 for a 5-30 min runtime, +log10(views)/2 capped at 3, -4 per negative signal. Sort descending.",
+      "tool": "score",
+      "expect": "Ranked list"
+    },
+    {
+      "n": 4,
+      "action": "With --precheck, list transcript tracks for the top results (youtube-transcript-api list only, no fetch). Record has_transcript, manual languages, auto languages, auto_dub_suspected (more than 3 auto tracks = YouTube AI dubbing), english_direct, and yt_translate_to_en.",
+      "tool": "youtube-transcript-api",
+      "expect": "Each kept result shows [T: manual/auto langs; yt->en] or [no transcript]"
+    },
+    {
+      "n": 5,
+      "action": "With --require-transcript, drop results with no track and log why (transcripts_disabled, video_unavailable, rate_limited). Save JSON to pipeline/searches/ and hand the ids to youtube-knowledge-pipeline-router.",
+      "tool": "router",
+      "expect": "Saved file path printed; ids ready for routing"
+    }
+  ],
+  "verification": [
+    "Saved JSON has results[] with howto_score and transcript fields, plus dropped[] with reasons",
+    "No kept result is a Short (<180 s) or has a negative title signal",
+    "With --require-transcript every kept result has transcript.has_transcript == true"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "youtube",
+    "search",
+    "transcript",
+    "multilingual",
+    "yt-dlp"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://youtube-topic-search-transcript-precheck"
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "id": "youtube-show-transcript-track-ladder-fetch",
+  "name": "Fetch YouTube Show-transcript text via a language-aware track ladder",
+  "goal": "Fetch the best English Show-transcript text for a YouTube video by listing every transcript track and walking a fixed ladder: manual English > auto English spoken in the original audio > YouTube-translated track (tlang=en) > English auto track of an AI-dub audio track > original-language track plus offline machine translation. Handle 429/IP blocks, removed videos, and disabled transcripts honestly. Delta vs generic transcript fetchers (youtube-skills, youtube-fetcher): it tells original audio apart from YouTube AI-dub tracks, keeps the original words beside any translation, and logs every decision.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Track-ladder transcript fetch (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/fetch_youtube_transcript.py"
+  },
+  "prerequisites": [
+    "/workspace/skill-library/.venv (yt-dlp, youtube-transcript-api)",
+    "/workspace/skill-library/.venv-translate (argostranslate) only for the machine-translation rung"
+  ],
+  "inputs": [
+    {
+      "name": "video_id",
+      "type": "string",
+      "description": "11-char YouTube id",
+      "required": true
+    },
+    {
+      "name": "target",
+      "type": "string",
+      "description": "Target language (default en)",
+      "required": false
+    },
+    {
+      "name": "flags",
+      "type": "string",
+      "description": "--list-tracks | --no-yt-translate | --no-machine-translate | --backend argos|libretranslate|none | --force-route <route>",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "transcript",
+      "type": "path",
+      "description": "raw/<id>/transcript.txt (panel style m:ss + text; '#' header line when translated)"
+    },
+    {
+      "name": "prose",
+      "type": "path",
+      "description": "raw/<id>/raw.txt (English prose for distill)"
+    },
+    {
+      "name": "original",
+      "type": "path",
+      "description": "raw/<id>/transcript.orig.<lang>.txt for translated routes"
+    },
+    {
+      "name": "meta",
+      "type": "json",
+      "description": "raw/<id>/meta.json: route, language_code, is_generated, translated, translation_method, decisions[], retries[]"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Detect the original spoken language from yt-dlp metadata ('language' and '<lang>-orig' auto tracks). Many videos list 10-17 auto tracks because of YouTube AI dubbing; an English auto track on a German-original video is dub-derived, not the creator's speech.",
+    "Retry with exponential backoff only on 429 / RequestBlocked / IpBlocked. Terminal errors (VideoUnavailable, TranscriptsDisabled, AgeRestricted) stop at once.",
+    "A proxy (YT_TRANSCRIPT_PROXY) or cookies file (YTDLP_COOKIES) may be used only if Matt configured it; never harvest browser cookies or credentials to get around a block.",
+    "The YouTube tlang translation endpoint is rate-limited more aggressively than plain tracks. When it 429s, fall through to the original track + machine translation instead of hammering it."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Probe the video with yt-dlp -J --skip-download: confirm it is available and read the original language (info.language or the '<lang>-orig' auto-caption key). Map yt-dlp errors: 'unavailable/private/removed' -> video_unavailable; '429' or 'Sign in to confirm' -> rate_limited_or_ip_blocked.",
+      "tool": "yt-dlp",
+      "expect": "original_language known, or a classified error"
+    },
+    {
+      "n": 2,
+      "action": "List transcript tracks with youtube-transcript-api (list only): language_code, is_generated, is_translatable, translation_languages. Wrap the call in a 429-only backoff (4 s, 8 s, 16 s plus jitter).",
+      "tool": "youtube-transcript-api",
+      "expect": "Track list, or a terminal/blocked error"
+    },
+    {
+      "n": 3,
+      "action": "Build the ladder: rank 1 manual target-language; rank 2 auto target-language when the original language is the target (or unknown with a single auto track); rank 3 tlang=target from the original-language track (manual before auto), never when that track is already the target; rank 4 target auto track when the original is another language (dub-derived); rank 5 original-language track + machine translation.",
+      "tool": "planner",
+      "expect": "Ordered plan logged in meta.decisions"
+    },
+    {
+      "n": 4,
+      "action": "Try rungs in order and stop at the first that fetches. For rank 3 keep the original-language words too (transcript.orig.<lang>.txt). For rank 5 save the original panel and run translate_transcript.py in .venv-translate; if it fails or comes back garbled, stop with error translation_failed and keep the original.",
+      "tool": "fetch",
+      "expect": "transcript.txt in English plus provenance in meta.json"
+    },
+    {
+      "n": 5,
+      "action": "If no rung works through the API, fall back to yt-dlp timed text (--sub-langs 'en.*,en,<orig>-orig,<orig>', or '.*-orig' when the original language is unknown), convert it to panel text, and delete .srt/.vtt files.",
+      "tool": "yt-dlp",
+      "expect": "Panel transcript, or an honest failure"
+    },
+    {
+      "n": 6,
+      "action": "On failure write meta.json with ok=false, the error class, decisions and retries. For transcripts_disabled / no_transcript_found set last_resort = 'ASR possible only if Matt asks'. Never write placeholder transcript text.",
+      "tool": "meta",
+      "expect": "Failure is visible and routable"
+    }
+  ],
+  "verification": [
+    "meta.json has route in {manual-target, auto-target-original-audio, youtube-translated, auto-target-from-dub-track, original-plus-machine-translation, ytdlp-target} when ok",
+    "Translated routes have translated=true, translation_method set, and a transcript.orig.<lang>.txt next to transcript.txt",
+    "No .srt/.vtt files remain in raw/<id>/",
+    "--list-tracks shows the planned ladder without fetching"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "youtube",
+    "transcript",
+    "show-transcript",
+    "language",
+    "translation",
+    "rate-limit"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://youtube-show-transcript-track-ladder-fetch"
+}

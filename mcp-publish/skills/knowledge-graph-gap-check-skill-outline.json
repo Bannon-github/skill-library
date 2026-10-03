@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "knowledge-graph-gap-check-skill-outline",
+  "name": "Check a transcript graph against the skill library, merge it into the knowledge graph, outline skills only for gaps",
+  "goal": "Compare a video's term graph with the published skill catalog and public prior-art, mark which terms and relations are new, merge everything into a persistent knowledge graph (knowledge/graph.json, references only), and draft skill outlines only where a contiguous run of grounded procedure steps covers 2+ gap items. Each outline gets nearest-skill and novelty verdicts, then goes through distill-transcript -> quality_check -> novelty_check. Delta vs generic dedupe or novelty checks: coverage is judged at the level of params, values, and modulation relations (not just title similarity), and outlines carry timestamped evidence spans instead of free-written steps.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Graph gap merge (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/graph_gap_merge.py"
+  },
+  "prerequisites": [
+    "raw/<id>/graph.json from transcript-domain-term-graph-extract",
+    "mcp-publish/skills/*.json catalog",
+    "prior-art/index.json (optional; rebuild with pipeline/build_prior_art_index.py)"
+  ],
+  "inputs": [
+    {
+      "name": "video_id",
+      "type": "string",
+      "description": "Video whose graph to check",
+      "required": true
+    },
+    {
+      "name": "no_kg_update",
+      "type": "boolean",
+      "description": "Dry run: do not write knowledge/graph.json",
+      "required": false
+    },
+    {
+      "name": "min_steps",
+      "type": "integer",
+      "description": "Minimum contiguous steps per outline (default 3)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "gap_report",
+      "type": "json",
+      "description": "raw/<id>/gaps.json: gap_nodes (with known_in_kg, prior_art counts), gap_edges, coverage maps, candidates, stats"
+    },
+    {
+      "name": "outlines",
+      "type": "json",
+      "description": "distilled/<id>/candidates/<cid>.outline.json (status: outline, not a skill)"
+    },
+    {
+      "name": "knowledge_graph",
+      "type": "json",
+      "description": "knowledge/graph.json: nodes/edges with videos[], refs[{video_id,t}], covered_by[] skill ids"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Outlines are not skills. Never copy an outline into mcp-publish; it has to pass distill-transcript, quality_check_skill.py and novelty_check_skill.py first.",
+    "A node is covered when the same lexicon matches it in a published skill's text; a sets edge only when that skill also has the same value string; an affects edge only when one skill step mentions both endpoints. Structural part-of edges are never gaps.",
+    "Outlines from translated transcripts are flagged translated_source=true; the distiller must check numbers and terms against transcript.orig.<lang>.txt.",
+    "The knowledge graph stores no quote text (public repo); quotes stay in raw/<id>/graph.json."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build library coverage: run the domain matcher over every published skill's name, goal, steps, constraints, tags and verification. Collect node -> skill ids, value strings -> skill ids, and step-level term pairs -> skill ids.",
+      "tool": "coverage",
+      "expect": "Coverage maps for nodes, values and pairs"
+    },
+    {
+      "n": 2,
+      "action": "For each graph term node (param/module/concept/tool/phrase), mark covered or gap. Tag gaps with known_in_kg (already seen in another video) and prior_art (how many public pack descriptions mention it).",
+      "tool": "gap-check",
+      "expect": "gap_nodes with repeat and generic signals"
+    },
+    {
+      "n": 3,
+      "action": "For each sets/affects edge, apply the edge coverage rules. Uncovered edges become gap_edges with their timestamp and evidence quote.",
+      "tool": "gap-check",
+      "expect": "gap_edges list"
+    },
+    {
+      "n": 4,
+      "action": "Score each transcript step by gap terms + 2 x gap edges at its timestamp. Group contiguous scored steps (one zero step allowed inside a run, trailing zeros trimmed). Keep runs with >= min_steps steps and >= 2 gap items.",
+      "tool": "clustering",
+      "expect": "Candidate spans"
+    },
+    {
+      "n": 5,
+      "action": "For each span write an outline: candidate_id, name/goal drafts that state the delta, grounded_steps [{t, quote}], gap nodes/edges, nearest_existing (top 3 by token Jaccard blend), and a novelty verdict (NOVEL/REVIEW/WARN_NEAR_DUPLICATE/REJECT_OR_DELTA).",
+      "tool": "outline",
+      "expect": "distilled/<id>/candidates/*.outline.json"
+    },
+    {
+      "n": 6,
+      "action": "Merge the graph into knowledge/graph.json (add the video, nodes, non-step edges, refs and covered_by), update KG stats, and write gaps.json. Hand outlines to distill-transcript; if there are none, report the video as covered.",
+      "tool": "kg-merge",
+      "expect": "KG grows with every video; gaps drive new skills"
+    }
+  ],
+  "verification": [
+    "gaps.json stats show terms_checked, terms_covered, gap_edges and candidates",
+    "Every outline has >= 3 grounded_steps with timestamps and a novelty verdict",
+    "knowledge/graph.json lists the video under videos{} and has no quote fields"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "knowledge-graph",
+    "gap-analysis",
+    "novelty",
+    "skill-generation",
+    "dedupe"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://knowledge-graph-gap-check-skill-outline"
+}

@@ -11,6 +11,19 @@ description: >-
 ## When
 After a how-to video’s **YouTube Show transcript** text is saved (never invent transcripts).
 
+**Start with the router.** For new videos or topics, run the YouTube knowledge pipeline first
+(`/home/box/agent-data/workflows/youtube-knowledge-pipeline/SKILL.md`, MCP skill
+`youtube-knowledge-pipeline-router`):
+```bash
+/workspace/skill-library/.venv/bin/python /workspace/skill-library/pipeline/route.py <video_id ...>   # or --topic "..."
+```
+It fetches via the language ladder (translating if needed), builds the term graph, checks gaps
+against the library, and writes outlines to `distilled/<id>/candidates/*.outline.json`.
+Distill **only those outline spans** (outcome `CANDIDATES_READY`); if the outcome is `COVERED`, don't
+write a new skill. If an outline has `translated_source: true`, check numbers and terms against
+`raw/<id>/transcript.orig.<lang>.txt` and say "machine-translated" (or "YouTube-translated") in
+`source.transcript_note` and `constraints`.
+
 That is the **Transcript** panel opened from the video info / description area (⋯ → Show transcript / Transcript), **not** a caption-file download as the deliverable.
 
 Fetch with:

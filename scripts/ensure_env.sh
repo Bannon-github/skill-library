@@ -27,6 +27,13 @@ if [ -d "$ROOT/sample-lab" ]; then
   mkvenv "$ROOT/sample-lab/.venv" "$ROOT/scripts/requirements-sample-lab.txt" "import numpy, scipy, soundfile, pyloudnorm"
 fi
 
+# 3b) translation venv for pipeline/translate_transcript.py (argos-translate, CPU torch) + language packs
+#     Skip with SKILL_LIBRARY_TRANSLATE=0. Packs live in ~/.local/share/argos-translate (es pinned to 1.0).
+if [ "${SKILL_LIBRARY_TRANSLATE:-1}" = "1" ]; then
+  mkvenv "$ROOT/.venv-translate" "$ROOT/pipeline/requirements-translate.txt" "import argostranslate.translate"
+  "$ROOT/.venv-translate/bin/python" "$ROOT/pipeline/translate_transcript.py" --install-langs "${ARGOS_LANGS:-de,es,ja,fr,pt,it}" 2>/dev/null | tail -1 || echo "warn: argos language packs not installed"
+fi
+
 # 4) /tmp/ytvenv -> mcp-server/.venv (MCP config spawns /tmp/ytvenv/bin/python)
 TARGET="$ROOT/mcp-server/.venv"
 if [ "$(readlink /tmp/ytvenv 2>/dev/null || true)" != "$TARGET" ]; then

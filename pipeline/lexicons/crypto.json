@@ -1,0 +1,5 @@
+{"domain":"crypto","label":"Crypto tooling (not financial advice)",
+ "modules":{"wallet":["wallet","hardware wallet","ledger","trezor","metamask","multisig","safe"],"exchange":["exchange","coinbase","kraken","binance"],"explorer":["etherscan","block explorer","explorer"],"tax":["tax","form 8949","cost basis","capital gains"],"defi":["defi","swap","liquidity","staking","bridge"]},
+ "params":{"seed_phrase":{"aliases":["seed phrase","recovery phrase","seed","mnemonic"],"module":"wallet"},"threshold":{"aliases":["threshold","signers","owners"],"module":"wallet"},"gas":{"aliases":["gas","gas fee","fees"],"module":"defi"},"slippage":{"aliases":["slippage"],"module":"defi"},"address":{"aliases":["address","public key"],"module":"wallet"},"holders":{"aliases":["holders","token holders"],"module":"explorer"}},
+ "mod_sources":{},"tools":{"Ledger":["ledger"],"Trezor":["trezor"],"Safe":["safe","gnosis safe"],"Etherscan":["etherscan"],"Koinly":["koinly"]},
+ "concepts":{"security":["scam","phishing","never share","backup"],"dca":["dca","dollar cost averaging"],"transaction":["transaction","transactions","transfer"]}}

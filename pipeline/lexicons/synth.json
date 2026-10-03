@@ -1,0 +1,708 @@
+{
+ "domain": "synth",
+ "label": "Synth / sound design",
+ "modules": {
+  "oscillator": [
+   "oscillator",
+   "oscillators",
+   "osc",
+   "osc 1",
+   "osc 2",
+   "osc one",
+   "osc two",
+   "vco"
+  ],
+  "wavetable": [
+   "wavetable",
+   "wave table",
+   "wavetables",
+   "wt position",
+   "wavetable position"
+  ],
+  "filter": [
+   "filter",
+   "filters",
+   "vcf",
+   "low pass",
+   "low-pass",
+   "lowpass",
+   "high pass",
+   "high-pass",
+   "highpass",
+   "band pass",
+   "bandpass",
+   "ladder filter",
+   "comb filter",
+   "formant filter",
+   "notch"
+  ],
+  "envelope": [
+   "envelope",
+   "envelopes",
+   "env",
+   "env 1",
+   "env 2",
+   "adsr",
+   "amp envelope",
+   "filter envelope"
+  ],
+  "lfo": [
+   "lfo",
+   "lfos",
+   "lfo 1",
+   "lfo 2",
+   "low frequency oscillator"
+  ],
+  "unison": [
+   "unison",
+   "voices",
+   "supersaw",
+   "super saw"
+  ],
+  "noise": [
+   "noise",
+   "white noise",
+   "pink noise",
+   "noise oscillator"
+  ],
+  "sub": [
+   "sub oscillator",
+   "sub osc"
+  ],
+  "sampler": [
+   "sampler",
+   "sample oscillator"
+  ],
+  "granular": [
+   "granular",
+   "grain",
+   "grains"
+  ],
+  "fm": [
+   "fm",
+   "frequency modulation",
+   "phase modulation"
+  ],
+  "am": [
+   "amplitude modulation",
+   "ring mod",
+   "ring modulation"
+  ],
+  "reverb": [
+   "reverb",
+   "reverberation",
+   "hall reverb",
+   "plate reverb",
+   "room reverb",
+   "shimmer"
+  ],
+  "delay": [
+   "delay",
+   "echo",
+   "ping pong",
+   "ping-pong"
+  ],
+  "chorus": [
+   "chorus",
+   "ensemble"
+  ],
+  "phaser": [
+   "phaser"
+  ],
+  "flanger": [
+   "flanger"
+  ],
+  "eq": [
+   "eq",
+   "equalizer",
+   "equaliser",
+   "low shelf",
+   "high shelf",
+   "low cut",
+   "high cut"
+  ],
+  "compressor": [
+   "compressor",
+   "compression",
+   "sidechain",
+   "side chain",
+   "multiband"
+  ],
+  "distortion": [
+   "distortion",
+   "saturation",
+   "drive",
+   "overdrive",
+   "tape saturation",
+   "bitcrush",
+   "bit crusher",
+   "waveshaper",
+   "warp"
+  ],
+  "macro": [
+   "macro",
+   "macros",
+   "macro knob",
+   "macro 1",
+   "macro 2"
+  ],
+  "mod_matrix": [
+   "mod matrix",
+   "modulation matrix",
+   "matrix"
+  ],
+  "arpeggiator": [
+   "arpeggiator",
+   "arp"
+  ],
+  "sequencer": [
+   "sequencer",
+   "step sequencer"
+  ],
+  "mixer": [
+   "mixer",
+   "send",
+   "bus",
+   "return track",
+   "aux"
+  ],
+  "stereo": [
+   "stereo",
+   "stereo width",
+   "width",
+   "mid side",
+   "mid/side",
+   "mono",
+   "pan",
+   "panning",
+   "haas"
+  ]
+ },
+ "params": {
+  "cutoff": {
+   "aliases": [
+    "cutoff",
+    "cut off",
+    "cut-off",
+    "cutoff frequency",
+    "filter frequency"
+   ],
+   "module": "filter"
+  },
+  "resonance": {
+   "aliases": [
+    "resonance",
+    "res"
+   ],
+   "module": "filter"
+  },
+  "filter_drive": {
+   "aliases": [
+    "filter drive"
+   ],
+   "module": "filter"
+  },
+  "keytrack": {
+   "aliases": [
+    "key track",
+    "keytrack",
+    "key tracking",
+    "keytracking"
+   ],
+   "module": "filter"
+  },
+  "attack": {
+   "aliases": [
+    "attack"
+   ],
+   "module": "envelope"
+  },
+  "decay": {
+   "aliases": [
+    "decay"
+   ],
+   "module": "envelope"
+  },
+  "sustain": {
+   "aliases": [
+    "sustain"
+   ],
+   "module": "envelope"
+  },
+  "release": {
+   "aliases": [
+    "release"
+   ],
+   "module": "envelope"
+  },
+  "env_amount": {
+   "aliases": [
+    "envelope amount",
+    "env amount",
+    "envelope depth"
+   ],
+   "module": "envelope"
+  },
+  "lfo_rate": {
+   "aliases": [
+    "lfo rate",
+    "rate",
+    "lfo speed"
+   ],
+   "module": "lfo"
+  },
+  "lfo_depth": {
+   "aliases": [
+    "lfo depth",
+    "lfo amount",
+    "depth"
+   ],
+   "module": "lfo"
+  },
+  "lfo_shape": {
+   "aliases": [
+    "lfo shape",
+    "sine lfo",
+    "triangle lfo"
+   ],
+   "module": "lfo"
+  },
+  "detune": {
+   "aliases": [
+    "detune",
+    "detuning",
+    "detuned",
+    "spread"
+   ],
+   "module": "unison"
+  },
+  "voice_count": {
+   "aliases": [
+    "voice count",
+    "number of voices",
+    "unison voices"
+   ],
+   "module": "unison"
+  },
+  "blend": {
+   "aliases": [
+    "blend"
+   ],
+   "module": "unison"
+  },
+  "wt_position": {
+   "aliases": [
+    "wavetable position",
+    "wt position",
+    "position",
+    "frame position"
+   ],
+   "module": "wavetable"
+  },
+  "pitch": {
+   "aliases": [
+    "pitch",
+    "transpose",
+    "semitones",
+    "semitone",
+    "octave",
+    "octaves",
+    "fine tune",
+    "coarse"
+   ],
+   "module": "oscillator"
+  },
+  "waveform": {
+   "aliases": [
+    "saw",
+    "sawtooth",
+    "saw wave",
+    "square",
+    "square wave",
+    "sine",
+    "sine wave",
+    "triangle",
+    "pulse",
+    "pulse width",
+    "saw tooth",
+    "saw waves",
+    "sawtooth wave"
+   ],
+   "module": "oscillator"
+  },
+  "level": {
+   "aliases": [
+    "level",
+    "volume",
+    "gain",
+    "amplitude"
+   ],
+   "module": "mixer"
+  },
+  "phase": {
+   "aliases": [
+    "phase",
+    "random phase",
+    "phase randomization"
+   ],
+   "module": "oscillator"
+  },
+  "mix": {
+   "aliases": [
+    "dry wet",
+    "dry/wet",
+    "wet",
+    "mix"
+   ],
+   "module": "mixer"
+  },
+  "decay_time": {
+   "aliases": [
+    "decay time",
+    "reverb size",
+    "size",
+    "room size",
+    "pre delay",
+    "predelay",
+    "pre-delay"
+   ],
+   "module": "reverb"
+  },
+  "feedback": {
+   "aliases": [
+    "feedback"
+   ],
+   "module": "delay"
+  },
+  "delay_time": {
+   "aliases": [
+    "delay time",
+    "dotted eighth",
+    "dotted 8th"
+   ],
+   "module": "delay"
+  },
+  "threshold": {
+   "aliases": [
+    "threshold",
+    "ratio"
+   ],
+   "module": "compressor"
+  },
+  "glide": {
+   "aliases": [
+    "glide",
+    "portamento",
+    "legato"
+   ],
+   "module": "oscillator"
+  },
+  "velocity_amount": {
+   "aliases": [
+    "velocity amount"
+   ],
+   "module": "mod_matrix"
+  },
+  "filter_slope": {
+   "aliases": [
+    "slope",
+    "db slope",
+    "decibel slope",
+    "pole",
+    "poles",
+    "12 db",
+    "24 db"
+   ],
+   "module": "filter"
+  }
+ },
+ "mod_sources": {
+  "lfo": [
+   "lfo",
+   "lfo 1",
+   "lfo 2"
+  ],
+  "envelope": [
+   "envelope",
+   "env 2",
+   "env 3",
+   "filter envelope",
+   "mod envelope"
+  ],
+  "velocity": [
+   "velocity"
+  ],
+  "macro": [
+   "macro",
+   "macro 1",
+   "macro 2"
+  ],
+  "mod_wheel": [
+   "mod wheel",
+   "modwheel",
+   "modulation wheel"
+  ],
+  "aftertouch": [
+   "aftertouch",
+   "pressure"
+  ],
+  "random": [
+   "random",
+   "random lfo",
+   "sample and hold",
+   "s&h"
+  ],
+  "keytrack": [
+   "key track",
+   "keytrack",
+   "key tracking"
+  ]
+ },
+ "tools": {
+  "Vital": [
+   "vital"
+  ],
+  "Serum": [
+   "serum",
+   "serum 2"
+  ],
+  "Pigments": [
+   "pigments"
+  ],
+  "Diva": [
+   "diva"
+  ],
+  "Massive": [
+   "massive"
+  ],
+  "Phase Plant": [
+   "phase plant"
+  ],
+  "Omnisphere": [
+   "omnisphere"
+  ],
+  "Helm": [
+   "helm"
+  ],
+  "Ableton Live": [
+   "ableton",
+   "operator"
+  ],
+  "FL Studio": [
+   "fl studio",
+   "sytrus"
+  ],
+  "Logic Pro": [
+   "logic",
+   "alchemy",
+   "retro synth"
+  ],
+  "Bitwig": [
+   "bitwig",
+   "polygrid"
+  ],
+  "Valhalla": [
+   "valhalla"
+  ],
+  "Traveler": [
+   "traveler"
+  ],
+  "Keysol": [
+   "keysol"
+  ]
+ },
+ "concepts": {
+  "pad": [
+   "pad",
+   "pads",
+   "synth pad"
+  ],
+  "chord": [
+   "chord",
+   "chords",
+   "triad",
+   "seventh",
+   "fifth",
+   "fifths"
+  ],
+  "drone": [
+   "drone",
+   "drones"
+  ],
+  "lead": [
+   "lead"
+  ],
+  "bass": [
+   "bass",
+   "sub bass"
+  ],
+  "pluck": [
+   "pluck"
+  ],
+  "strings": [
+   "strings",
+   "string section",
+   "orchestral"
+  ],
+  "braam": [
+   "braam",
+   "brass"
+  ],
+  "evolving": [
+   "evolving",
+   "movement",
+   "motion",
+   "evolve"
+  ],
+  "width": [
+   "wide",
+   "wider",
+   "width"
+  ],
+  "warmth": [
+   "warm",
+   "warmth",
+   "analog",
+   "analogue"
+  ],
+  "brightness": [
+   "bright",
+   "brighter",
+   "dark",
+   "darker"
+  ],
+  "texture": [
+   "texture",
+   "textures"
+  ],
+  "cinematic": [
+   "cinematic",
+   "ambient",
+   "atmospheric"
+  ],
+  "layering": [
+   "layer",
+   "layers",
+   "layering"
+  ],
+  "automation": [
+   "automation",
+   "automate"
+  ],
+  "low_end": [
+   "low end",
+   "lows",
+   "low frequencies"
+  ],
+  "highs": [
+   "high end",
+   "highs",
+   "high frequencies",
+   "air"
+  ],
+  "mud": [
+   "muddy",
+   "mud"
+  ],
+  "phase_issues": [
+   "phase issues",
+   "phasing",
+   "mono compatibility",
+   "mono compatible"
+  ]
+ },
+ "unit_targets": {
+  "semitones": [
+   "pitch",
+   "oscillator",
+   "detune",
+   "unison",
+   "fm"
+  ],
+  "octaves": [
+   "pitch",
+   "oscillator",
+   "sub"
+  ],
+  "cents": [
+   "pitch",
+   "detune",
+   "unison",
+   "oscillator"
+  ],
+  "voices": [
+   "unison",
+   "voice_count"
+  ],
+  "db": [
+   "level",
+   "filter",
+   "filter_slope",
+   "eq",
+   "compressor",
+   "threshold",
+   "mix",
+   "distortion",
+   "mixer",
+   "resonance"
+  ],
+  "hz": [
+   "cutoff",
+   "filter",
+   "eq",
+   "lfo_rate",
+   "lfo",
+   "pitch",
+   "oscillator"
+  ],
+  "khz": [
+   "cutoff",
+   "filter",
+   "eq"
+  ],
+  "ms": [
+   "attack",
+   "decay",
+   "release",
+   "delay_time",
+   "decay_time",
+   "envelope",
+   "delay",
+   "reverb",
+   "glide",
+   "lfo_rate"
+  ],
+  "s": [
+   "attack",
+   "decay",
+   "release",
+   "decay_time",
+   "envelope",
+   "reverb",
+   "delay_time",
+   "glide"
+  ],
+  "bars": [
+   "lfo",
+   "lfo_rate",
+   "delay",
+   "delay_time",
+   "sequencer",
+   "arpeggiator",
+   "envelope"
+  ],
+  "beats": [
+   "lfo",
+   "lfo_rate",
+   "delay",
+   "delay_time",
+   "sequencer",
+   "arpeggiator"
+  ],
+  "steps": [
+   "lfo",
+   "sequencer",
+   "arpeggiator"
+  ]
+ }
+}

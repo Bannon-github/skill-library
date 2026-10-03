@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "id": "youtube-knowledge-pipeline-router",
+  "name": "YouTube knowledge pipeline router (self-questioning conditional chain)",
+  "goal": "Orchestrate the YouTube distillery as an explicit decision tree: the agent asks itself yes/no questions (env OK? transcript saved? video available? rate-limited? any track? which track rung? translation needed or failed? transcript usable? domain matched? gaps found?) and picks the matching skill next: topic search -> track-ladder fetch -> machine translation -> term graph -> gap check / KG merge -> distill + quality + novelty gates. Every question, answer, evidence and branch is logged. Delta vs generic agent routers or skill-chaining packs: the conditions are concrete YouTube transcript barriers (429/IP blocks, AI-dub tracks, tlang throttling, removed videos, disabled transcripts) with a logged branch for each, and ASR is never run automatically.",
+  "domain": "agent-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Knowledge pipeline router (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null,
+    "implementation": "/workspace/skill-library/pipeline/route.py"
+  },
+  "prerequisites": [
+    "scripts/ensure_env.sh run at least once (.venv, .venv-translate, mcp-server/.venv)",
+    "Grok Bot workflow: /home/box/agent-data/workflows/youtube-knowledge-pipeline/SKILL.md"
+  ],
+  "inputs": [
+    {
+      "name": "video_ids_or_topic",
+      "type": "string",
+      "description": "One or more video ids, or --topic '<words>' [--langs en,de --max 3 --within year]",
+      "required": true
+    },
+    {
+      "name": "overrides",
+      "type": "string",
+      "description": "--refetch | --force-route <rung> | --no-yt-translate | --no-machine-translate | --backend | --domain | --no-kg-update",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "route_log",
+      "type": "json",
+      "description": "raw/<id>/route.json (decisions[], fetch_decisions[], outcome) + pipeline/logs/route.jsonl"
+    },
+    {
+      "name": "outcome",
+      "type": "enum",
+      "description": "CANDIDATES_READY | COVERED | OFF_LEXICON | REJECT_thin_transcript | DEFER_rate_limited | STOP_video_unavailable | STOP_no_transcript_asr_flagged | STOP_translation_failed | STOP_env_broken"
+    },
+    {
+      "name": "deferred_queue",
+      "type": "json",
+      "description": "pipeline/queue/deferred.json for rate-limited ids"
+    }
+  ],
+  "constraints": [
+    "Transcript source is YouTube's Show transcript panel text (info section -> Transcript); say 'transcript', not 'captions'. Caption-file transports (.srt/.vtt) are only used internally and deleted.",
+    "Never invent transcript text, steps, or settings; every downstream fact must trace to a transcript timestamp.",
+    "No Whisper/ASR on the audio unless Matt explicitly asks; the router may only FLAG it as a last resort.",
+    "Each branch is a logged question with evidence; do not skip a question because the answer seems obvious.",
+    "DEFER rate-limited videos rather than hammering YouTube: let the backoff run, queue the id, and retry later (or Matt sets a proxy).",
+    "Outcome CANDIDATES_READY means outlines exist. Publishing still needs distill-transcript + quality_check_skill.py + novelty_check_skill.py, and the finance-risk rules for crypto/side-hustle.",
+    "Run with the pipeline venv: /workspace/skill-library/.venv/bin/python pipeline/route.py ..."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Q-search: was a topic given instead of ids? If yes, run youtube-topic-search-transcript-precheck (search_youtube_topics.py --precheck --require-transcript --skip-known) and take the top --max ids.",
+      "tool": "youtube-topic-search-transcript-precheck",
+      "expect": "Id list"
+    },
+    {
+      "n": 2,
+      "action": "Q0: do youtube_transcript_api and yt_dlp import? If not, run scripts/ensure_env.sh and re-ask; if still broken, STOP_env_broken. Q1: is raw/<id>/meta.json ok with transcript.txt present (and no --refetch)? If yes, reuse it and jump to Q3.",
+      "tool": "ensure_env.sh",
+      "expect": "Env healthy; fetch skipped when cached"
+    },
+    {
+      "n": 3,
+      "action": "Q2: run youtube-show-transcript-track-ladder-fetch. On failure ask in order: Q2a unavailable/private/removed/age-gated -> STOP and drop; Q2b 429/IP-blocked after backoff -> DEFER to queue; Q2c no track at all -> STOP and flag ASR as a last resort for Matt to decide; Q2d translation failed/garbled -> STOP, original kept, suggest another backend.",
+      "tool": "youtube-show-transcript-track-ladder-fetch",
+      "expect": "English transcript, or a routed stop/defer with the reason"
+    },
+    {
+      "n": 4,
+      "action": "Q3: does raw.txt have >= 150 words with [Music] markers under 5%? If not, REJECT_thin_transcript. Q4: is the English a translation (youtube-tlang or machine) or dub-derived? If yes, mark it so outlines carry translated_source and the distiller cross-checks transcript.orig.<lang>.txt.",
+      "tool": "transcript-offline-machine-translate-glossary",
+      "expect": "Thin/music-only transcripts never reach distill; translations are labeled"
+    },
+    {
+      "n": 5,
+      "action": "Q5/Q6: run transcript-domain-term-graph-extract. Is the best domain lexicon score >= 8? If not, flag OFF_LEXICON (extend pipeline/lexicons or use plain distill-transcript). Confirm graph.json has nodes and edges.",
+      "tool": "transcript-domain-term-graph-extract",
+      "expect": "graph.json + domain decision"
+    },
+    {
+      "n": 6,
+      "action": "Q7: run knowledge-graph-gap-check-skill-outline. Are there candidate outlines? If yes, NEXT is distill-transcript on each outline's span, then quality_check_skill.py and novelty_check_skill.py; publish only what passes. If no, outcome COVERED (KG still updated). Write route.json and append route.jsonl.",
+      "tool": "knowledge-graph-gap-check-skill-outline",
+      "expect": "Logged outcome per video; only gap-filling skills get distilled"
+    }
+  ],
+  "verification": [
+    "raw/<id>/route.json has decisions[] covering Q0..Q7 (or up to the stopping question) and an outcome",
+    "pipeline/logs/route.jsonl gains one line per routed video",
+    "Rate-limited ids show up in pipeline/queue/deferred.json, not as failures with invented text"
+  ],
+  "tags": [
+    "agent-pipeline",
+    "router",
+    "orchestrator",
+    "decision-tree",
+    "youtube",
+    "transcript",
+    "translation",
+    "knowledge-graph"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube",
+    "curriculum-youtube-knowledge-pipeline"
+  ],
+  "published_at": "2026-10-03T16:15:34+00:00",
+  "mcp_resource": "skill://youtube-knowledge-pipeline-router"
+}

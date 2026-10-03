@@ -1,0 +1,5 @@
+{"domain":"sidehustle","label":"Side hustle / freelancing",
+ "modules":{"offer":["offer","package","productized","service"],"platform":["upwork","fiverr","gumroad","stripe","etsy","shopify"],"outreach":["proposal","cold email","outreach","pitch"],"pricing":["pricing","price","rate","retainer"],"delivery":["delivery","turnaround","revisions","scope"]},
+ "params":{"price_point":{"aliases":["price point","per hour","hourly","flat fee"],"module":"pricing"},"cta":{"aliases":["call to action","cta"],"module":"outreach"},"invoice":{"aliases":["invoice","invoicing"],"module":"platform"},"listing":{"aliases":["listing","product page","thumbnail"],"module":"platform"}},
+ "mod_sources":{},"tools":{"Upwork":["upwork"],"Fiverr":["fiverr"],"Gumroad":["gumroad"],"Stripe":["stripe"],"Notion":["notion"]},
+ "concepts":{"client":["client","clients","customer"],"niche":["niche"],"portfolio":["portfolio","case study","proof"],"systems":["template","sop","system","automation"]}}
