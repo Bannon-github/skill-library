@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-helpling-keytrack-bass-split-delay",
+  "name": "keytracked low-osc bass split with wet delay",
+  "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator\u2019s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "yJWS77wyVe0",
+    "url": "https://www.youtube.com/watch?v=yJWS77wyVe0",
+    "title": "TRAVELER | Behind the Scenes with David Helpling",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/yJWS77wyVe0/agent-skill-keysol-helpling-keytrack-bass-split-delay.json"
+  },
+  "prerequisites": [
+    "Synth with key-tracking to oscillator level, and a wettable delay"
+  ],
+  "inputs": [
+    {
+      "name": "low_osc",
+      "type": "oscillator",
+      "description": "Dedicated low/bass oscillator",
+      "required": true
+    },
+    {
+      "name": "delay_wet",
+      "type": "number",
+      "description": "High wet so delay nearly louder than dry",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "keytracked_split_patch",
+      "type": "synth-patch",
+      "description": "Register-split patch with showcase delay"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a simple two-layer patch: mid/high tonal oscillator(s) plus a dedicated low oscillator.",
+      "tool": "oscillators",
+      "expect": "Both layers audible in low register"
+    },
+    {
+      "n": 2,
+      "action": "Modulate the low oscillator\u2019s volume with keyboard tracking so it is strong only in the lower register (left hand / low keys) and fades as you play higher.",
+      "tool": "keytrack",
+      "expect": "Bass only on low notes"
+    },
+    {
+      "n": 3,
+      "action": "Set delay wet very high (delay almost louder than the dry sound) to showcase modulation/space; filter delay feedback to taste.",
+      "tool": "delay",
+      "expect": "Delay-forward cinematic simple patch"
+    }
+  ],
+  "verification": [
+    "Low keys include bass layer",
+    "High keys thin out the low osc",
+    "Delay is prominently wet"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "keytrack",
+    "delay",
+    "from-youtube",
+    "helpling"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-helpling-keytrack-bass-split-delay"
+}

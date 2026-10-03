@@ -1,0 +1,54 @@
+{
+  "id": "curriculum-cinematic-hybrid-synth",
+  "title": "Cinematic hybrid synth (Traveler-inspired portable techniques)",
+  "purpose": "Progress from core hybrid motion (unison, WT morph, envelopes, filters) through organic/granular pads and FM literacy to FX/mix finishing \u2014 portable procedures for a browser/Web Audio cinematic synth.",
+  "status": "active",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Core pad & unison motion",
+      "skills": [
+        "cinematic-warm-analog-pad-drift-stereo",
+        "evolving-pad-unison-filter-swell-fifth",
+        "organic-looped-sample-unison-voicing-pad",
+        "unison-odd-even-detune-width-clean-supersaw",
+        "traveler-walkthrough-curved-envelope-evolving-pad",
+        "traveler-walkthrough-stereo-ladder-lf-width",
+        "traveler-walkthrough-super-unison-wide-lead",
+        "warm-heavenly-supersaw-pad-keytrack-fx"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Wavetable, multi-envelope, organic texture",
+      "skills": [
+        "ambient-organic-pluck-pad-ladder-chorus-space",
+        "ambient-wavetable-scratch-spectral-morph-pad",
+        "cinematic-multi-envelope-osc-level-morph",
+        "digital-wt-morph-bandpass-chorus-echo-space",
+        "keysol-venus-fifths-pulsar-wt-impact",
+        "keysol-venus-high-wt-artifact-pulse-layer",
+        "lush-stereo-saw-pad-random-pitch-texture",
+        "traveler-walkthrough-control-track-filter-wt-animation",
+        "traveler-walkthrough-wavetable-morph-filter-motion"
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Granular, FM, cinematic FX & mix",
+      "skills": [
+        "cinematic-formant-comb-pad-phaser-fx",
+        "fm-carrier-modulator-ratio-basics",
+        "granular-dual-saw-ambient-epic-pad",
+        "keysol-helpling-keytrack-bass-split-delay",
+        "keysol-venus-fm-lfo-evolving-chase-sequence",
+        "keysol-venus-noise-audiorate-filter-texture",
+        "keysol-venus-polyrhythmic-control-track-pitch",
+        "keysol-venus-velocity-hybrid-bass-impact",
+        "mix-pads-role-eq-width-clarity",
+        "traveler-walkthrough-fx-eq-chorus-delay-reverb"
+      ]
+    }
+  ],
+  "updated_at": "2026-10-03T15:50:00+00:00"
+}

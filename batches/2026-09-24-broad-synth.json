@@ -1,0 +1,67 @@
+{
+  "batch_id": "2026-09-24-broad-synth",
+  "created_at": "2026-09-24T12:28:07+00:00",
+  "video_ids_processed": [
+    "6NXqV9jWJ1s",
+    "AYVmdcgKt_s",
+    "CMkXW17LYyA",
+    "CcXGRCXv8lQ",
+    "FZ9oXRJIR6o",
+    "ImWJixBPZj0",
+    "KnbAOrM62Ks",
+    "TmoP3i6-jl0",
+    "cF5ku3Og0Nk",
+    "e1ZQssAW7R0",
+    "ehKoz6ILmxQ",
+    "pQFr594QwI4",
+    "rv0X7eZNnEo",
+    "vvBl3YUBUyY"
+  ],
+  "skill_ids": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "supersaw-clean-unison-detune-width",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+  ],
+  "missing_captions": [
+    "XvPgfdf9MSk",
+    "oW4C7txJEgM",
+    "am6KBGUVtXE",
+    "UxGswh6XLto",
+    "EUlrANFXLs4",
+    "CMkXW17LYyA"
+  ],
+  "note_on_missing": "CMkXW17LYyA later recovered; Xv/oW/am/Ux/EU still missing (429/unavailable). Z-yf Falcon deferred as thin/brand-heavy.",
+  "thin_or_promo_skipped": [
+    {
+      "video_id": "Z-yfQSWU0TA",
+      "reason": "Falcon pluck/noise texture; brand-heavy vs cap"
+    },
+    {
+      "video_id": "NKOM3Bxk3EQ",
+      "reason": "Very short (~62s)"
+    },
+    {
+      "video_id": "w_gmZ8_epPQ",
+      "reason": "Short dark atmosphere"
+    },
+    {
+      "video_id": "bAovHufTsc8",
+      "reason": "Near-dup ambient Vital"
+    }
+  ],
+  "mcp_count_before": 37,
+  "mcp_count_after": 51,
+  "curriculum_id": "curriculum-cinematic-hybrid-synth",
+  "novelty_policy": "Rejected overlap with existing keysol-*/traveler-* ; portable abstractions only"
+}

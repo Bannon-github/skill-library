@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-polyrhythmic-control-track-pitch",
+  "name": "irregular dual control-track pitch sequence",
+  "goal": "Build a never-quite-repeating cinematic sequence by driving Osc1/Osc2 pitch from two Control Tracks with irregular lengths (e.g. 15 and 14) and independent rates (e.g. dotted quarter vs quarter), over a stable low Osc3 pulse bed.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-polyrhythmic-control-track-pitch.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "track_a_steps",
+      "type": "integer",
+      "description": "Irregular length e.g. 15",
+      "required": true
+    },
+    {
+      "name": "track_b_steps",
+      "type": "integer",
+      "description": "Different irregular length e.g. 14",
+      "required": true
+    },
+    {
+      "name": "rate_a",
+      "type": "string",
+      "description": "Synced rate e.g. dotted quarter",
+      "required": true
+    },
+    {
+      "name": "rate_b",
+      "type": "string",
+      "description": "Synced rate e.g. quarter",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "poly_seq_patch",
+      "type": "synth-patch",
+      "description": "Evolving pitch-modulated hybrid sequence"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules.",
+    "Do not recreate named artist factory presets by dumping banks; invent an original sequence using the same structural idea."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a stable bed on Osc3 (e.g. pulse) an octave or two below; add delay/space lightly so the bed feels cinematic but steady.",
+      "tool": "oscillator-3",
+      "expect": "Stable tonal center"
+    },
+    {
+      "n": 2,
+      "action": "Raise Osc1 and Osc2 to much higher pitch registers; they need not sound pretty alone \u2014 they supply character over the bed.",
+      "tool": "oscillator-1-2",
+      "expect": "High layers audible when mixed in"
+    },
+    {
+      "n": 3,
+      "action": "Control Track A \u2192 Osc1 pitch, length 15, rate dotted-quarter (or similar). Control Track B \u2192 Osc2 pitch, length 14, rate quarter. Keep modulation depth small so pitch breaks subtly rather than jumping wildly.",
+      "tool": "control-tracks",
+      "expect": "Patterns rarely align; sequence feels alive"
+    },
+    {
+      "n": 4,
+      "action": "Map mod wheel (or expression) to increase the depth of those pitch mods for performance tension.",
+      "tool": "mod-wheel",
+      "expect": "Wheel opens strangeness"
+    },
+    {
+      "n": 5,
+      "action": "Mix: keep Osc3 dominant; blend high oscs underneath. Solo high pair to verify the irregular interlocking, then restore full mix.",
+      "tool": "mixer",
+      "expect": "Character sequence with stable foundation"
+    }
+  ],
+  "verification": [
+    "Step lengths differ",
+    "Rates differ",
+    "Pattern does not trivially loop every bar"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "control-track",
+    "sequence",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-polyrhythmic-control-track-pitch"
+}

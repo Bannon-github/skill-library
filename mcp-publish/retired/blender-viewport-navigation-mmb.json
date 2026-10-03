@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-viewport-navigation-mmb",
+  "name": "blender viewport navigation with middle mouse",
+  "goal": "Orbit, pan, zoom, and snap orthographic views in Blender's 3D viewport.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "peSv5IT5Ve4",
+    "url": "https://www.youtube.com/watch?v=peSv5IT5Ve4",
+    "title": "ABSOLUTE Beginner Basics.. Blender For Noobs 2025",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/peSv5IT5Ve4/agent-skill-blender-viewport-navigation-mmb.json"
+  },
+  "prerequisites": [
+    "Blender installed",
+    "Mouse with middle button / scroll wheel preferred"
+  ],
+  "inputs": [
+    {
+      "name": "scene",
+      "type": "blender-scene",
+      "description": "Open Blender scene with at least one object",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "viewport_view",
+      "type": "viewport-state",
+      "description": "Operator can orbit/pan/zoom and snap to ortho views"
+    }
+  ],
+  "constraints": [
+    "Middle mouse button (MMB) scroll zooms; MMB drag orbits",
+    "Shift+MMB pans",
+    "Numpad 1/3/7/9 for front/right/top/bottom ortho; without numpad use Alt+MMB drag to snap views"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Scroll the middle mouse wheel to zoom in and out.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Click and drag the middle mouse button to orbit around the object.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Hold Shift and middle-mouse-drag to pan the scene.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "If you have a numpad: 1 front orthographic, 3 right, 7 top, 9 bottom.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Without a numpad: hold Alt, middle-mouse-drag toward the desired axis to snap orthographic views.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Can orbit, pan, and zoom without using toolbar gizmo icons",
+    "Can reach front/top orthographic view"
+  ],
+  "tags": [
+    "blender",
+    "viewport",
+    "navigation",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-viewport-navigation-mmb"
+}

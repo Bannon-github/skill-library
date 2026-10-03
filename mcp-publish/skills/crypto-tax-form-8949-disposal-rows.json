@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "id": "crypto-tax-form-8949-disposal-rows",
+  "name": "Report crypto disposals on IRS Form 8949 (short vs long term)",
+  "goal": "Classify crypto disposals (sell for USD, crypto-to-crypto, spending crypto), split short-term vs long-term holding periods, select the correct 1099-B checkbox when no broker form exists, and fill description/dates/proceeds/basis/gain rows (optionally via tax-software CSV).",
+  "domain": "personal-finance-howto",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "cNu_7VLNFKA",
+    "url": "https://www.youtube.com/watch?v=cNu_7VLNFKA",
+    "title": "How To Report Crypto On Form 8949 For Taxes | CoinLedger",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/cNu_7VLNFKA/agent-skill-crypto-tax-form-8949-disposal-rows.json"
+  },
+  "prerequisites": [
+    "US filing context",
+    "Exchange/wallet history with cost basis"
+  ],
+  "inputs": [
+    {
+      "name": "disposals",
+      "type": "file",
+      "description": "Disposal events with dates/proceeds/basis",
+      "required": true
+    },
+    {
+      "name": "had_1099b",
+      "type": "boolean",
+      "description": "Broker 1099-B present?",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "form_8949_rows",
+      "type": "tax-form-data",
+      "description": "Short- and long-term rows"
+    }
+  ],
+  "constraints": [
+    "Educational self-custody/tax procedure only \u2014 not financial advice; no coin tips or return promises.",
+    "Ground every step in YouTube-provided captions; portable UI names OK when vendor chrome drifts.",
+    "Never digitize a seed phrase or enter it into a website/phone camera.",
+    "Not tax advice \u2014 form mechanics only.",
+    "USD buys are not disposal rows; sells/trades/spending are."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "List disposals only: sell\u2192USD, trade crypto\u2192crypto, or spend crypto. USD purchases are not 8949 disposal rows.",
+      "tool": "tx-ledger",
+      "expect": "Disposal list"
+    },
+    {
+      "n": 2,
+      "action": "Bucket by holding period: <12 months short-term section; >12 months long-term section.",
+      "tool": "form-8949",
+      "expect": "Two sections"
+    },
+    {
+      "n": 3,
+      "action": "If no crypto 1099-B (historically common), select the checkbox for transactions not reported on 1099-B (often C or F per instructions). If a broker 1099-B applies, choose the matching box instead.",
+      "tool": "form-8949",
+      "expect": "Correct checkbox"
+    },
+    {
+      "n": 4,
+      "action": "Fill each row: description, date acquired, date sold, proceeds, cost basis, gain/loss. Example: buy BTC $300 \u2192 trade for ETH worth $400 (BTC disposal) \u2192 sell ETH $600 (ETH disposal).",
+      "tool": "form-8949",
+      "expect": "Complete rows"
+    },
+    {
+      "n": 5,
+      "action": "Optional: reconcile via crypto tax software and export Form 8949 / tax-software import instead of hand-typing.",
+      "tool": "crypto-tax-software",
+      "expect": "Importable report"
+    }
+  ],
+  "verification": [
+    "Crypto\u2192crypto trades produce a disposal of the given asset",
+    "Holding period split correct",
+    "Spot-check proceeds\u2212basis"
+  ],
+  "tags": [
+    "personal-finance-howto",
+    "crypto-tax",
+    "form-8949",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://crypto-tax-form-8949-disposal-rows"
+}

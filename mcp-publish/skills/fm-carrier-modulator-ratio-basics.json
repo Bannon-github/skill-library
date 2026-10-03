@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "fm-carrier-modulator-ratio-basics",
+  "name": "FM synthesis carrier/modulator/ratio basics",
+  "goal": "Explain and patch basic FM: carrier vs modulator operators, amplitude\u2192modulation depth, frequency\u2192rate, stacking modulators (including slow modulators for evolving vibrato), audio-rate FM for bright spectra, self-mod, and preferring simple frequency ratios (1:1, 2:1) for musical results vs inharmonic mess.",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "vvBl3YUBUyY",
+    "url": "https://www.youtube.com/watch?v=vvBl3YUBUyY",
+    "title": "FM SYNTHS in under 4 minutes",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/vvBl3YUBUyY/agent-skill-fm-carrier-modulator-ratio-basics.json"
+  },
+  "prerequisites": [
+    "FM-capable synth or Web Audio FM (at least 2 operators)"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_wave",
+      "type": "enum",
+      "description": "Usually sine for classic FM",
+      "required": true
+    },
+    {
+      "name": "ratio",
+      "type": "string",
+      "description": "Modulator:carrier frequency ratio (prefer simple)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fm_basic_patch",
+      "type": "synth-patch",
+      "description": "Simple musical FM starting point"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Educational FM procedure only \u2014 map to whatever operator UI the host provides."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start with a sine carrier; confirm frequency\u2192pitch and amplitude\u2192loudness.",
+      "tool": "operator",
+      "expect": "Clean sine tone"
+    },
+    {
+      "n": 2,
+      "action": "Add a very slow sine modulator into carrier frequency at low depth \u2014 hear vibrato-like pitch wobble; raise modulator amplitude to deepen FM.",
+      "tool": "operator",
+      "expect": "Depth tracks modulator amplitude"
+    },
+    {
+      "n": 3,
+      "action": "Raise modulator frequency into audio range (and/or change modulator shape, e.g. saw) to create bright/complex spectra (laser-like extremes possible).",
+      "tool": "operator",
+      "expect": "Timbre richens without needing filters"
+    },
+    {
+      "n": 4,
+      "action": "Optionally modulate the modulator with a slower operator for evolving vibrato/depth; try self-mod carefully.",
+      "tool": "operator",
+      "expect": "Time-varying FM"
+    },
+    {
+      "n": 5,
+      "action": "Name parts: operators; algorithm = routing graph; modulator vs carrier roles; set ratios near simple integers (1\u00d7, 2\u00d7) for musicality; avoid unrelated ratios when you need tonal results.",
+      "tool": "fm-algorithm",
+      "expect": "Predictable musical FM vs noise"
+    }
+  ],
+  "verification": [
+    "Carrier and modulator roles identified",
+    "Changing modulator amplitude changes brightness/depth",
+    "Simple ratio sounds more tonal than arbitrary ratio at same depth"
+  ],
+  "tags": [
+    "music-synthesis",
+    "fm",
+    "operators",
+    "fundamentals",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://fm-carrier-modulator-ratio-basics"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-donut-tutorial-nav-add-shade-smooth",
+  "name": "blender donut tutorial navigation add mesh shade smooth",
+  "goal": "Start the Blender Guru beginner path: install/open Blender, navigate, delete cube, add torus/cylinder, shade smooth, learn G/R/S.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "z-Xl9tGqH14",
+    "url": "https://www.youtube.com/watch?v=z-Xl9tGqH14",
+    "title": "Beginner Blender Tutorial (2026)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/z-Xl9tGqH14/agent-skill-blender-donut-tutorial-nav-add-shade-smooth.json"
+  },
+  "prerequisites": [
+    "Ability to install apps or run portable Blender zip"
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "starter_meshes",
+      "type": "mesh",
+      "description": "Added primitives (e.g. torus/cylinder) shaded smooth"
+    }
+  ],
+  "constraints": [
+    "Prefer real MMB; else viewport gizmo or Edit\u2192Preferences\u2192Input\u2192Emulate 3 Button Mouse (Alt+LMB)",
+    "Increase Preferences\u2192Interface Resolution Scale on HiDPI (e.g. 1.5\u20131.8)",
+    "G grab, R rotate, S scale; Tab Object/Edit mode"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Download Blender 5.x (or current) from blender.org; install or use portable zip; open and click off splash.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Orbit MMB-drag; Shift+MMB pan; scroll zoom; use axis gizmo clicks if upside-down.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Optional: Preferences \u2192 Interface Resolution Scale for readable UI; Input Emulate 3 Button Mouse if no MMB.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Delete default cube (X \u2192 Delete).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Shift+A \u2192 Mesh add (torus for donut path / cylinder for mug path); adjust Add last-operation settings before clicking away.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Right-click object \u2192 Shade Smooth when appropriate.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Practice G/R/S; Tab Edit mode to edit geometry; return to Object mode to select other objects.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Can navigate without toolbar exclusively",
+    "Default cube removed and a new mesh added",
+    "Shade Smooth applied when desired"
+  ],
+  "tags": [
+    "blender",
+    "beginner",
+    "donut-tutorial",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-donut-tutorial-nav-add-shade-smooth"
+}

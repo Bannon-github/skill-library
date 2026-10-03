@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "id": "parallel-filter-rhythmic-pad-chains",
+  "name": "Parallel filter chains for rhythmic pad motion",
+  "goal": "Thicken cinematic pads with parallel processing: run dual filters in parallel (e.g. low-pass + band-pass) with independent rhythmic/LFO cutoff motion synced to tempo, stack overlapping bands that a gentle bus compressor tames, and EQ lows after the parallel stack\u2014portable alternative to only insert-filtering a single path.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "i4ZZwzxTpf0",
+    "url": "https://www.youtube.com/watch?v=i4ZZwzxTpf0",
+    "title": "Make basic sounds interesting with parallel processing!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/i4ZZwzxTpf0/agent-skill-parallel-filter-rhythmic-pad-chains.json"
+  },
+  "prerequisites": [
+    "DAW or synth FX rack supporting parallel chains/buses; dual filters; tempo-syncable LFO or step/rhythm modulator; optional bus compressor"
+  ],
+  "inputs": [
+    {
+      "name": "filter_a",
+      "type": "enum",
+      "description": "lowpass | bandpass | highpass",
+      "required": true
+    },
+    {
+      "name": "filter_b",
+      "type": "enum",
+      "description": "lowpass | bandpass | highpass",
+      "required": true
+    },
+    {
+      "name": "rhythm_bars",
+      "type": "number",
+      "description": "Length of synced rhythm shape in bars",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "parallel_filter_rack",
+      "type": "fx-chain",
+      "description": "Tempo-moving parallel filter stack on pads"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Transcript builds on layered pads then parallel FilterFreak-style dual filters; recreate with stock dual-filter parallel racks\u2014do not require that plugin."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from layered pad material (body + harmonic spice + optional melodic layer). Route the group into a parallel FX rack rather than only serial inserts.",
+      "tool": "routing",
+      "expect": "Dry-ish layers feeding parallel processing"
+    },
+    {
+      "n": 2,
+      "action": "Create a chain with two filters in parallel mode (example: low-pass on filter 1, band-pass on filter 2) so each path emphasizes different bands simultaneously.",
+      "tool": "filter",
+      "expect": "Two differently filtered images of the same pad"
+    },
+    {
+      "n": 3,
+      "action": "Drive both cutoffs from a tempo-synced rhythm/LFO shape (example: 1-bar custom shape, BPM-synced). Let the two filters move separately so motion is stereo/spectral, not a single sweep.",
+      "tool": "lfo",
+      "expect": "Rhythmic spectral motion over each bar"
+    },
+    {
+      "n": 4,
+      "action": "Expect overlapping bands to stack in level; follow with a compressor on the parallel bus to squash volume spikes from constructive overlap. Prefer fixing sources when possible; bus compress is a lazy safety.",
+      "tool": "compressor",
+      "expect": "Controlled peaks when filters align"
+    },
+    {
+      "n": 5,
+      "action": "EQ after the parallel filters to remove excess low end created by the stack. Optionally add further parallel chains (saturation, etc.) that may overlap bands\u2014keep compressor/EQ as glue.",
+      "tool": "eq",
+      "expect": "Clear low end; animated parallel pad"
+    },
+    {
+      "n": 6,
+      "action": "Optional stereo trick from transcript: when a rhythm modulator supports stereo shapes, set phase/offset between L/R so upward ramps become opposing L/R motions for width.",
+      "tool": "lfo",
+      "expect": "L/R staggered filter motion"
+    }
+  ],
+  "verification": [
+    "Bypass parallel rack \u2192 static pad; engage \u2192 rhythmic spectral motion",
+    "LP and BP (or chosen pair) are both audible in parallel",
+    "Bus compressor/EQ prevents boom/spikes when bands overlap"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "parallel",
+    "filter",
+    "pads",
+    "lfo",
+    "rhythm",
+    "fx",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://parallel-filter-rhythmic-pad-chains"
+}

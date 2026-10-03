@@ -1,0 +1,24 @@
+{
+  "id": "curriculum-drone-to-splat",
+  "title": "From drone flight to Gaussian splat",
+  "purpose": "Progressively acquire human workflow: plan capture \u2192 fly \u2192 process \u2192 view/share a 3D splat.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "End-to-end capture to splat with free web tools",
+      "skills": [
+        "drone-hyperlapse-to-splatware-splat",
+        "volyraph-browser-splat-pipeline"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Geo-referenced capture + dedicated splat software",
+      "skills": [
+        "dji-video-to-gaussian-splat-mipmap"
+      ]
+    }
+  ],
+  "status": "draft",
+  "updated_at": "2026-10-03T15:50:00+00:00"
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-warm-analog-pad-drift-stereo",
+  "name": "Warm analog cinematic pad with pitch drift and opposing pan",
+  "goal": "Build a warm Juno-style cinematic pad: chaos/random \u2192 master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "CcXGRCXv8lQ",
+    "url": "https://www.youtube.com/watch?v=CcXGRCXv8lQ",
+    "title": "Serum Tutorial - Warm 'Analog' Cinematic Pad Synth",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/CcXGRCXv8lQ/agent-skill-cinematic-warm-analog-pad-drift-stereo.json"
+  },
+  "prerequisites": [
+    "Polyphonic synth with \u22652 osc, unison, mod matrix/LFO, LP filter, reverb"
+  ],
+  "inputs": [
+    {
+      "name": "waveform_family",
+      "type": "enum",
+      "description": "Analog/Juno-like saw + softer triangle/square family",
+      "required": true
+    },
+    {
+      "name": "unison_voices",
+      "type": "number",
+      "description": "Per-osc unison count (tutorial uses ~5)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "warm_cinematic_pad",
+      "type": "synth-patch",
+      "description": "Drifting wide warm pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Keep unison stereo width moderate (~50%) if you will add manual pan modulation.",
+    "Post-reverb filter: fully open cutoff can still dull highs \u2014 automate filter mix/bypass when opening fully."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Before oscillators, route a slow chaos/random/noise mod source to master tune (or global pitch) for gentle analog-style pitch drift.",
+      "tool": "mod-matrix",
+      "expect": "Subtle continuous pitch instability"
+    },
+    {
+      "n": 2,
+      "action": "Osc A: choose an analog/Juno-like saw; set ~5 unison voices; soften amp attack and release for a pad contour.",
+      "tool": "oscillator",
+      "expect": "Soft-edged saw bed"
+    },
+    {
+      "n": 3,
+      "action": "Osc B: choose a softer/scuffed triangle-like analog wave; ~5 unison; pitch +1 octave; mix level slightly under Osc A.",
+      "tool": "oscillator",
+      "expect": "Floaty upper harmonics filling the spectrum"
+    },
+    {
+      "n": 4,
+      "action": "In global/unison settings, reduce per-oscillator unison stereo width to ~50% so later pan mods have room.",
+      "tool": "unison",
+      "expect": "Width not maxed before pan motion"
+    },
+    {
+      "n": 5,
+      "action": "Free-running very-slow LFO \u2192 Osc A pan and Osc B pan with inverted depth so they sweep opposite sides.",
+      "tool": "lfo",
+      "expect": "Independent left/right motion"
+    },
+    {
+      "n": 6,
+      "action": "Optional: layer a quiet granular/noise texture under the oscs for enharmonic air (original sample, not a ripped pack).",
+      "tool": "noise-or-sample",
+      "expect": "Subtle non-harmonic air"
+    },
+    {
+      "n": 7,
+      "action": "12 dB low-pass: tame Osc A + noise highs so Osc B harmonics read; also LFO-modulate filter pan/offset for extra stereo motion.",
+      "tool": "filter",
+      "expect": "Balanced highs with moving stereo filter image"
+    },
+    {
+      "n": 8,
+      "action": "Add spacious reverb; place another filter after reverb and slowly open it (or raise filter mix) over time for a blooming spacey finish.",
+      "tool": "reverb",
+      "expect": "Pad blooms into space without static dullness"
+    }
+  ],
+  "verification": [
+    "Pitch drift audible but not seasick",
+    "Oscillators pan in opposite directions",
+    "Unison width not stuck at 100% before pan mods",
+    "Reverb then opening filter increases air over time"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "unison",
+    "stereo",
+    "analog-drift",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://cinematic-warm-analog-pad-drift-stereo"
+}

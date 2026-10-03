@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-productize-sustainable-ops-constraints",
+  "name": "Sustainable productized service: buyer fit and operating constraints",
+  "goal": "Harden a productized service by clarifying why fixed packages convert (skip scoping foreplay for known outcomes), when giant custom shops avoid them, and which operating constraints (capacity, revisions, stack, rush fees) keep the offer sane and profitable.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "w9gOdSLVu14",
+    "url": "https://www.youtube.com/watch?v=w9gOdSLVu14",
+    "title": "how to actually build a sustainable productized service ($20k+)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/w9gOdSLVu14/agent-skill-sidehustle-productize-sustainable-ops-constraints.json"
+  },
+  "prerequisites": [
+    "Draft productized offer"
+  ],
+  "inputs": [
+    {
+      "name": "draft_offer",
+      "type": "offer-sheet",
+      "description": "Package to harden",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "constrained_offer",
+      "type": "offer-sheet",
+      "description": "Offer with explicit ops constraints"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only \u2014 no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Name the sales benefit: productizing skips mutual scoping foreplay when the client wants a known outcome fast (startup-like buyers).",
+      "tool": "positioning",
+      "expect": "Buyer situation named"
+    },
+    {
+      "n": 2,
+      "action": "Acknowledge why large heterogeneous agencies often avoid pure SKUs; choose the repeatable-SKU lane deliberately.",
+      "tool": "strategy",
+      "expect": "Lane explicit"
+    },
+    {
+      "n": 3,
+      "action": "Add constraints: capacity caps, revision limits, allowed tech stack, rush fees \u2014 small tweaks that preserve happiness on both sides.",
+      "tool": "ops",
+      "expect": "Constraints in writing"
+    },
+    {
+      "n": 4,
+      "action": "Align internal fulfillment with client expectation so the package is sustainable, not only marketable.",
+      "tool": "ops",
+      "expect": "Delivery feels repeatable"
+    }
+  ],
+  "verification": [
+    "Capacity/revision caps present",
+    "Target buyer situation named"
+  ],
+  "tags": [
+    "side-hustle",
+    "productized-service",
+    "operations",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://sidehustle-productize-sustainable-ops-constraints"
+}

@@ -1,0 +1,164 @@
+{
+  "batch_id": "2026-09-25-morning-hunt",
+  "ran_at": "2026-09-25T16:28:01+00:00",
+  "ran_at_local": "2026-09-25 09:28 PT",
+  "timezone_note": "box local America/Vancouver (PT)",
+  "topic": "cinematic-synth / music-synthesis gap hunt",
+  "mcp_count_before": 68,
+  "mcp_count_after": 76,
+  "new_skill_count": 8,
+  "pivoted_to_crypto": false,
+  "synth_returns_thin": false,
+  "skills": [
+    {
+      "id": "chorus-ensemble-classic-vibrato-pad-modes",
+      "name": "Chorus-Ensemble modes: Classic, Ensemble, Vibrato",
+      "goal": "Thicken cinematic pads with a multi-mode chorus: Classic (2 delayed copies + LFO on delay time), Ensemble (third evenly-split copy for fuller body), or Vibrato (pitch-only wobble); tune rate/amount/feedback/width/dry-wet, high-pass the wet to avoid mud, optional warmth/saturation, and LFO offset for stereo vibrato.",
+      "video_id": "25Uiav5UA9c"
+    },
+    {
+      "id": "shimmer-reverb-pitchshift-plus12-feedback",
+      "name": "Shimmer reverb: +12st pitch-shift into lush space",
+      "goal": "Build a portable shimmer (Eno-style) send: pitch-shift the wet path by +12 semitones into a long lush reverb/convolution, optionally feedback the shifted delay for endless bloom, high-/low-cut the delay echoes before the reverb, and EQ the wet shimmer before dry blend.",
+      "video_id": "lzRl8gfa-M8"
+    },
+    {
+      "id": "soft-tape-saturation-pads-before-space",
+      "name": "Soft tape/analog saturation on pads before space FX",
+      "goal": "Make digital/synth pads and string layers feel denser and less sterile by adding gentle tape or analog-style saturation early (before big reverb/space): zero-time tape-delay as low-CPU tape sat, or gentle console/tape emulations kept near 0 VU\u2014fullness in low-mids without obvious distortion.",
+      "video_id": "o71KYxEqPdU"
+    },
+    {
+      "id": "highband-pan-lfo-pad-width-keep-lows",
+      "name": "High-band pan-LFO pad width without low-end phase smear",
+      "goal": "Widen a narrow analog-style pad without chorus/imager phase damage in lows/mids: multiband-pan only the high band with a slow or 16th-note L/R swirl (sine or subdued profile), keep lows mono-stable, and pull mix/amount down if motion is too pronounced.",
+      "video_id": "zHqFoN3FTTI"
+    },
+    {
+      "id": "reverb-send-wet100-eq-room-plate-spring",
+      "name": "Reverb sends: 100% wet, EQ the return, room/plate/spring trio",
+      "goal": "Set up cinematic-friendly reverb the send way: ask if reverb is needed; keep 2\u20133 go-to returns (short room ~1s, long plate ~6s, brighter spring ~4s); put FX 100% wet on sends; always EQ returns (high-pass ~200 Hz+ to kill mud); add too much then pull send level back\u2014longer decays get less send.",
+      "video_id": "VnCpRTsg_G8"
+    },
+    {
+      "id": "reverb-types-hall-chamber-room-plate-spring",
+      "name": "Reverb types for pads: hall, chamber, room, plate, spring",
+      "goal": "Pick cinematic pad/space reverb by texture not just length: hall (lush 2\u20133s+, pushes back, mud risk), chamber (lush thickening with less space than hall), room/ambience (intimate early-reflection space), plate (dense bright attack\u2192darker decay, versatile), spring (metallic/boingy). Use pre-delay for clarity; layer short ambience under longer hall/plate; prefer shorter types in busy mixes.",
+      "video_id": "_fHK9g9nwMM"
+    },
+    {
+      "id": "mod-matrix-source-destination-routing-basics",
+      "name": "Modulation matrix: source\u2192destination routing basics",
+      "goal": "Use a synth modulation matrix for multi-destination motion beyond front-panel defaults: pick a source (LFO, envelope, mod wheel, key, ribbon, pedal), assign a destination (osc pitch, filter cutoff, amp, vibrato rate, pan, delay time/feedback/amount, etc.), set bipolar/amount, and verify by first routing to pitch so the shape is audible\u2014then retarget to filter/FX.",
+      "video_id": "Xuu03lhSK7c"
+    },
+    {
+      "id": "velocity-filter-cutoff-envelope-amount",
+      "name": "Velocity into filter cutoff / filter-envelope amount",
+      "goal": "Make pads/synths expressive with velocity\u2192filter: set lowest desired cutoff with filter EG amount at 0, raise EG amount (with sustain) for max brightness on hard hits, then map velocity so soft hits stay darker\u2014know your synth\u2019s polarity (many brighten on hard hits; some Moog-style reduce brightness as velocity sens rises).",
+      "video_id": "cWPfqPwXBos"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "kEiILPm1VSc",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "hnQeYasFXNM",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "5sc1jPgZGSU",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "3155ZG2sojs",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "YA4rZgq0RaI",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "Or3_zhxo2iA",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "4vRleMQdZZU",
+      "reason": "Deferred (batch \u22648); adjacent to new chorus-ensemble skill + existing formant/phaser pad; candidate JSON retained"
+    },
+    {
+      "video_id": "sq2V6K85ygo",
+      "reason": "Novelty REVIEW vs mono-compatible-chord-split; preferred highband-pan skill this batch"
+    },
+    {
+      "video_id": "tg98-N_r65Q",
+      "reason": "Deferred (batch \u22648); soft overlap mix-pads-role-eq-width-clarity; candidate retained"
+    },
+    {
+      "video_id": "DK3b7D3Vbxk",
+      "reason": "Near-dup of Chorus-Ensemble coverage (25Uiav5UA9c published)"
+    },
+    {
+      "video_id": "0sEyZymchTE",
+      "reason": "LCR mix philosophy \u2014 not a portable synth artifact recipe"
+    },
+    {
+      "video_id": "yu1jo3E_L7U",
+      "reason": "Superseded by portable shimmer recipe lzRl8gfa-M8"
+    },
+    {
+      "video_id": "IUz_ftFuFoM",
+      "reason": "Saturn-heavy; soft sat covered by o71KYxEqPdU skill"
+    },
+    {
+      "video_id": "xtiefG8qKJM",
+      "reason": "Overlaps reverb-send skill (EQ wet / use sends)"
+    },
+    {
+      "video_id": "mwaZ85VeUoU",
+      "reason": "Imager-plugin demo; less portable than highband-pan"
+    },
+    {
+      "video_id": "G9KAzy6InkI",
+      "reason": "Collapse-stereo + top poke overlaps existing mix-pads catalog"
+    }
+  ],
+  "searched_queries": [
+    "ytsearch8:cinematic pad chorus ensemble dimension sound design tutorial",
+    "ytsearch8:hall plate shimmer reverb send pad sound design tutorial",
+    "ytsearch8:EQ surgical tone shaping pads synths before FX tutorial",
+    "ytsearch8:hybrid synth sample noise wavetable analog filter stack tutorial",
+    "ytsearch8:wavetable position automation formant morph pad tutorial",
+    "ytsearch8:mid-side stereo width Haas pad synth no phase tutorial",
+    "ytsearch8:modulation matrix multi destination routing synth tutorial",
+    "ytsearch8:dual delay tempo synced motion delay synth pads tutorial",
+    "ytsearch8:soft saturation tape drive before reverb cinematic pads tutorial",
+    "ytsearch8:keytracking velocity curve filter wavetable expressive pads tutorial",
+    "ytsearch10:shimmer reverb sound design tutorial pads",
+    "ytsearch10:how to use chorus ensemble pads synth tutorial",
+    "ytsearch10:saturation before reverb synth pads tutorial",
+    "ytsearch8:Haas effect stereo width carefully pads tutorial",
+    "ytsearch8:multi band EQ pads synths mixing tutorial",
+    "ytsearch8:dimension chorus D-chorus synth pads how to",
+    "ytsearch8:plate vs hall reverb when to use mixing tutorial",
+    "ytsearch8:velocity to filter cutoff synth pads tutorial"
+  ],
+  "gap_themes_covered": [
+    "multi-mode / ensemble chorus",
+    "shimmer reverb (+12 pitch into space + feedback)",
+    "hall / chamber / room / plate / spring type selection",
+    "reverb send design (100% wet + EQ return)",
+    "soft tape/analog saturation before space",
+    "high-band pan-LFO width without low-end phase smear",
+    "modulation matrix source\u2192destination routing",
+    "velocity \u2192 filter cutoff / filter EG amount"
+  ],
+  "notes": [
+    "Stayed on cinematic/synth; did not pivot to crypto/side-hustle (8 publishable skills).",
+    "Fetched Show-transcript style via pipeline/fetch_youtube_transcript.py only; never invented transcripts.",
+    "Drafted but deferred 3 passing candidates (flanger/chorus/phaser theory, Haas-alternative microshift width, layered-synth EQ carve) to keep batch ~8.",
+    "Hybrid sample+WT stack, dual-delay delta, and WT formant morph delta still under-covered for a future hunt."
+  ]
+}

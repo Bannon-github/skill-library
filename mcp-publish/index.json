@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0",
+  "library": "YouTube Practical Skills Library",
+  "mcp_server": "youtube-skills",
+  "mcp_command": "/workspace/skill-library/mcp-server/.venv/bin/python",
+  "mcp_args": [
+    "/workspace/skill-library/mcp-server/server.py"
+  ],
+  "skills_root": "/workspace/skill-library/mcp-publish/skills",
+  "count": 73,
+  "skills": [
+    {
+      "id": "ambient-organic-pluck-pad-ladder-chorus-space",
+      "path": "/workspace/skill-library/mcp-publish/skills/ambient-organic-pluck-pad-ladder-chorus-space.json",
+      "mcp_uri": "skill://ambient-organic-pluck-pad-ladder-chorus-space",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "ambient-wavetable-scratch-spectral-morph-pad",
+      "path": "/workspace/skill-library/mcp-publish/skills/ambient-wavetable-scratch-spectral-morph-pad.json",
+      "mcp_uri": "skill://ambient-wavetable-scratch-spectral-morph-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "audio-rate-am-wave-shape-texture",
+      "path": "/workspace/skill-library/mcp-publish/skills/audio-rate-am-wave-shape-texture.json",
+      "mcp_uri": "skill://audio-rate-am-wave-shape-texture",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "blender-beginner-setup-nav-and-geometry-practice",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-beginner-setup-nav-and-geometry-practice.json",
+      "mcp_uri": "skill://blender-beginner-setup-nav-and-geometry-practice",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-boolean-bracket-with-cylinder-holes",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-boolean-bracket-with-cylinder-holes.json",
+      "mcp_uri": "skill://blender-boolean-bracket-with-cylinder-holes",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-chatgpt-python-script-gold-ball",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-chatgpt-python-script-gold-ball.json",
+      "mcp_uri": "skill://blender-chatgpt-python-script-gold-ball",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-chocolate-chip-cookie-model-and-render",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-chocolate-chip-cookie-model-and-render.json",
+      "mcp_uri": "skill://blender-chocolate-chip-cookie-model-and-render",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-easy-car-box-model-core-tools",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-easy-car-box-model-core-tools.json",
+      "mcp_uri": "skill://blender-easy-car-box-model-core-tools",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-edit-mode-transform-extrude-loopcut-bevel",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-edit-mode-transform-extrude-loopcut-bevel.json",
+      "mcp_uri": "skill://blender-edit-mode-transform-extrude-loopcut-bevel",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-first-scene-add-delete-focus-shade-smooth",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-first-scene-add-delete-focus-shade-smooth.json",
+      "mcp_uri": "skill://blender-first-scene-add-delete-focus-shade-smooth",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-gamedev-learning-path-advice",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-gamedev-learning-path-advice.json",
+      "mcp_uri": "skill://blender-gamedev-learning-path-advice",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-install-prefs-viewport-nav-transform-tools",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-install-prefs-viewport-nav-transform-tools.json",
+      "mcp_uri": "skill://blender-install-prefs-viewport-nav-transform-tools",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-lowpoly-character-scene-prep",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-lowpoly-character-scene-prep.json",
+      "mcp_uri": "skill://blender-lowpoly-character-scene-prep",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-lowpoly-pine-tree-from-primitives",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-lowpoly-pine-tree-from-primitives.json",
+      "mcp_uri": "skill://blender-lowpoly-pine-tree-from-primitives",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-metric-mm-setup-for-3d-print",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-metric-mm-setup-for-3d-print.json",
+      "mcp_uri": "skill://blender-metric-mm-setup-for-3d-print",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "blender-mug-solidify-subsurf-loopcut",
+      "path": "/workspace/skill-library/mcp-publish/skills/blender-mug-solidify-subsurf-loopcut.json",
+      "mcp_uri": "skill://blender-mug-solidify-subsurf-loopcut",
+      "domain": "3d-blender"
+    },
+    {
+      "id": "chorus-ensemble-classic-vibrato-pad-modes",
+      "path": "/workspace/skill-library/mcp-publish/skills/chorus-ensemble-classic-vibrato-pad-modes.json",
+      "mcp_uri": "skill://chorus-ensemble-classic-vibrato-pad-modes",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "cinematic-formant-comb-pad-phaser-fx",
+      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-formant-comb-pad-phaser-fx.json",
+      "mcp_uri": "skill://cinematic-formant-comb-pad-phaser-fx",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "cinematic-multi-envelope-osc-level-morph",
+      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-multi-envelope-osc-level-morph.json",
+      "mcp_uri": "skill://cinematic-multi-envelope-osc-level-morph",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "cinematic-warm-analog-pad-drift-stereo",
+      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-warm-analog-pad-drift-stereo.json",
+      "mcp_uri": "skill://cinematic-warm-analog-pad-drift-stereo",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "crypto-etherscan-token-holder-wallet-research",
+      "path": "/workspace/skill-library/mcp-publish/skills/crypto-etherscan-token-holder-wallet-research.json",
+      "mcp_uri": "skill://crypto-etherscan-token-holder-wallet-research",
+      "domain": "crypto-investing"
+    },
+    {
+      "id": "crypto-hw-wallet-seed-backup-shamir-metal",
+      "path": "/workspace/skill-library/mcp-publish/skills/crypto-hw-wallet-seed-backup-shamir-metal.json",
+      "mcp_uri": "skill://crypto-hw-wallet-seed-backup-shamir-metal",
+      "domain": "crypto-investing"
+    },
+    {
+      "id": "crypto-hw-wallet-unbox-seal-verify-init",
+      "path": "/workspace/skill-library/mcp-publish/skills/crypto-hw-wallet-unbox-seal-verify-init.json",
+      "mcp_uri": "skill://crypto-hw-wallet-unbox-seal-verify-init",
+      "domain": "crypto-investing"
+    },
+    {
+      "id": "crypto-safe-multisig-threshold-setup-execute",
+      "path": "/workspace/skill-library/mcp-publish/skills/crypto-safe-multisig-threshold-setup-execute.json",
+      "mcp_uri": "skill://crypto-safe-multisig-threshold-setup-execute",
+      "domain": "crypto-investing"
+    },
+    {
+      "id": "crypto-tax-form-8949-disposal-rows",
+      "path": "/workspace/skill-library/mcp-publish/skills/crypto-tax-form-8949-disposal-rows.json",
+      "mcp_uri": "skill://crypto-tax-form-8949-disposal-rows",
+      "domain": "personal-finance-howto"
+    },
+    {
+      "id": "digital-wt-morph-bandpass-chorus-echo-space",
+      "path": "/workspace/skill-library/mcp-publish/skills/digital-wt-morph-bandpass-chorus-echo-space.json",
+      "mcp_uri": "skill://digital-wt-morph-bandpass-chorus-echo-space",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "distill-transcript",
+      "path": "/workspace/skill-library/mcp-publish/skills/distill-transcript.json",
+      "mcp_uri": "skill://distill-transcript",
+      "domain": "meta-pipeline"
+    },
+    {
+      "id": "dji-video-to-gaussian-splat-mipmap",
+      "path": "/workspace/skill-library/mcp-publish/skills/dji-video-to-gaussian-splat-mipmap.json",
+      "mcp_uri": "skill://dji-video-to-gaussian-splat-mipmap",
+      "domain": "spatial-3d-capture"
+    },
+    {
+      "id": "drone-hyperlapse-to-splatware-splat",
+      "path": "/workspace/skill-library/mcp-publish/skills/drone-hyperlapse-to-splatware-splat.json",
+      "mcp_uri": "skill://drone-hyperlapse-to-splatware-splat",
+      "domain": "spatial-3d-capture"
+    },
+    {
+      "id": "evolving-pad-unison-filter-swell-fifth",
+      "path": "/workspace/skill-library/mcp-publish/skills/evolving-pad-unison-filter-swell-fifth.json",
+      "mcp_uri": "skill://evolving-pad-unison-filter-swell-fifth",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "filter-ladder-diode-comb-formant-flavors",
+      "path": "/workspace/skill-library/mcp-publish/skills/filter-ladder-diode-comb-formant-flavors.json",
+      "mcp_uri": "skill://filter-ladder-diode-comb-formant-flavors",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "fm-carrier-modulator-ratio-basics",
+      "path": "/workspace/skill-library/mcp-publish/skills/fm-carrier-modulator-ratio-basics.json",
+      "mcp_uri": "skill://fm-carrier-modulator-ratio-basics",
+      "domain": "music-synthesis"
+    },
+    {
+      "id": "granular-dual-saw-ambient-epic-pad",
+      "path": "/workspace/skill-library/mcp-publish/skills/granular-dual-saw-ambient-epic-pad.json",
+      "mcp_uri": "skill://granular-dual-saw-ambient-epic-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "hybrid-noise-distortion-separate-sub-layer",
+      "path": "/workspace/skill-library/mcp-publish/skills/hybrid-noise-distortion-separate-sub-layer.json",
+      "mcp_uri": "skill://hybrid-noise-distortion-separate-sub-layer",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-helpling-keytrack-bass-split-delay",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-helpling-keytrack-bass-split-delay.json",
+      "mcp_uri": "skill://keysol-helpling-keytrack-bass-split-delay",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-fifths-pulsar-wt-impact",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-fifths-pulsar-wt-impact.json",
+      "mcp_uri": "skill://keysol-venus-fifths-pulsar-wt-impact",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-fm-lfo-evolving-chase-sequence",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-fm-lfo-evolving-chase-sequence.json",
+      "mcp_uri": "skill://keysol-venus-fm-lfo-evolving-chase-sequence",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-high-wt-artifact-pulse-layer",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-high-wt-artifact-pulse-layer.json",
+      "mcp_uri": "skill://keysol-venus-high-wt-artifact-pulse-layer",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-noise-audiorate-filter-texture",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-noise-audiorate-filter-texture.json",
+      "mcp_uri": "skill://keysol-venus-noise-audiorate-filter-texture",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-polyrhythmic-control-track-pitch",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-polyrhythmic-control-track-pitch.json",
+      "mcp_uri": "skill://keysol-venus-polyrhythmic-control-track-pitch",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "keysol-venus-velocity-hybrid-bass-impact",
+      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-velocity-hybrid-bass-impact.json",
+      "mcp_uri": "skill://keysol-venus-velocity-hybrid-bass-impact",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "lightroom-select-and-develop-photo",
+      "path": "/workspace/skill-library/mcp-publish/skills/lightroom-select-and-develop-photo.json",
+      "mcp_uri": "skill://lightroom-select-and-develop-photo",
+      "domain": "photo-editing"
+    },
+    {
+      "id": "lush-stereo-saw-pad-random-pitch-texture",
+      "path": "/workspace/skill-library/mcp-publish/skills/lush-stereo-saw-pad-random-pitch-texture.json",
+      "mcp_uri": "skill://lush-stereo-saw-pad-random-pitch-texture",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "midside-eq-bass-focus-width-depth",
+      "path": "/workspace/skill-library/mcp-publish/skills/midside-eq-bass-focus-width-depth.json",
+      "mcp_uri": "skill://midside-eq-bass-focus-width-depth",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "mix-pads-role-eq-width-clarity",
+      "path": "/workspace/skill-library/mcp-publish/skills/mix-pads-role-eq-width-clarity.json",
+      "mcp_uri": "skill://mix-pads-role-eq-width-clarity",
+      "domain": "music-synthesis"
+    },
+    {
+      "id": "modulation-lfo-envelope-mod-matrix-routing",
+      "path": "/workspace/skill-library/mcp-publish/skills/modulation-lfo-envelope-mod-matrix-routing.json",
+      "mcp_uri": "skill://modulation-lfo-envelope-mod-matrix-routing",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "organic-looped-sample-unison-voicing-pad",
+      "path": "/workspace/skill-library/mcp-publish/skills/organic-looped-sample-unison-voicing-pad.json",
+      "mcp_uri": "skill://organic-looped-sample-unison-voicing-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "osc-as-granular-pitch-step-delay",
+      "path": "/workspace/skill-library/mcp-publish/skills/osc-as-granular-pitch-step-delay.json",
+      "mcp_uri": "skill://osc-as-granular-pitch-step-delay",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "pad-width-no-phase-smear-highband-pan-or-chord-split",
+      "path": "/workspace/skill-library/mcp-publish/skills/pad-width-no-phase-smear-highband-pan-or-chord-split.json",
+      "mcp_uri": "skill://pad-width-no-phase-smear-highband-pan-or-chord-split",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "parallel-filter-rhythmic-pad-chains",
+      "path": "/workspace/skill-library/mcp-publish/skills/parallel-filter-rhythmic-pad-chains.json",
+      "mcp_uri": "skill://parallel-filter-rhythmic-pad-chains",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "python-pathlib-basic-file-workflow",
+      "path": "/workspace/skill-library/mcp-publish/skills/python-pathlib-basic-file-workflow.json",
+      "mcp_uri": "skill://python-pathlib-basic-file-workflow",
+      "domain": "coding-filesystem"
+    },
+    {
+      "id": "reverb-pads-type-choice-and-send-setup",
+      "path": "/workspace/skill-library/mcp-publish/skills/reverb-pads-type-choice-and-send-setup.json",
+      "mcp_uri": "skill://reverb-pads-type-choice-and-send-setup",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "shimmer-reverb-pitchshift-plus12-feedback",
+      "path": "/workspace/skill-library/mcp-publish/skills/shimmer-reverb-pitchshift-plus12-feedback.json",
+      "mcp_uri": "skill://shimmer-reverb-pitchshift-plus12-feedback",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "sidechain-compressor-duck-synth-pads",
+      "path": "/workspace/skill-library/mcp-publish/skills/sidechain-compressor-duck-synth-pads.json",
+      "mcp_uri": "skill://sidechain-compressor-duck-synth-pads",
+      "domain": "music-synthesis"
+    },
+    {
+      "id": "sidehustle-gumroad-digital-product-listing",
+      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-gumroad-digital-product-listing.json",
+      "mcp_uri": "skill://sidehustle-gumroad-digital-product-listing",
+      "domain": "side-hustle"
+    },
+    {
+      "id": "sidehustle-productized-service-offer-and-ops",
+      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-productized-service-offer-and-ops.json",
+      "mcp_uri": "skill://sidehustle-productized-service-offer-and-ops",
+      "domain": "side-hustle"
+    },
+    {
+      "id": "sidehustle-stripe-invoice-create-send",
+      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-stripe-invoice-create-send.json",
+      "mcp_uri": "skill://sidehustle-stripe-invoice-create-send",
+      "domain": "side-hustle"
+    },
+    {
+      "id": "sidehustle-upwork-proposal-short-proof-cta",
+      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-upwork-proposal-short-proof-cta.json",
+      "mcp_uri": "skill://sidehustle-upwork-proposal-short-proof-cta",
+      "domain": "side-hustle"
+    },
+    {
+      "id": "soft-tape-saturation-pads-before-space",
+      "path": "/workspace/skill-library/mcp-publish/skills/soft-tape-saturation-pads-before-space.json",
+      "mcp_uri": "skill://soft-tape-saturation-pads-before-space",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "spectral-warp-vocode-formant-stretch-smear",
+      "path": "/workspace/skill-library/mcp-publish/skills/spectral-warp-vocode-formant-stretch-smear.json",
+      "mcp_uri": "skill://spectral-warp-vocode-formant-stretch-smear",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "stereo-delay-pingpong-dual-parallel-two-tap",
+      "path": "/workspace/skill-library/mcp-publish/skills/stereo-delay-pingpong-dual-parallel-two-tap.json",
+      "mcp_uri": "skill://stereo-delay-pingpong-dual-parallel-two-tap",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "trance-gate-sidechain-chop-texture",
+      "path": "/workspace/skill-library/mcp-publish/skills/trance-gate-sidechain-chop-texture.json",
+      "mcp_uri": "skill://trance-gate-sidechain-chop-texture",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "traveler-walkthrough-control-track-filter-wt-animation",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-control-track-filter-wt-animation.json",
+      "mcp_uri": "skill://traveler-walkthrough-control-track-filter-wt-animation",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "traveler-walkthrough-curved-envelope-evolving-pad",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-curved-envelope-evolving-pad.json",
+      "mcp_uri": "skill://traveler-walkthrough-curved-envelope-evolving-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-fx-eq-chorus-delay-reverb.json",
+      "mcp_uri": "skill://traveler-walkthrough-fx-eq-chorus-delay-reverb",
+      "domain": "music-synthesis"
+    },
+    {
+      "id": "traveler-walkthrough-stereo-ladder-lf-width",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-stereo-ladder-lf-width.json",
+      "mcp_uri": "skill://traveler-walkthrough-stereo-ladder-lf-width",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "traveler-walkthrough-super-unison-wide-lead",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-super-unison-wide-lead.json",
+      "mcp_uri": "skill://traveler-walkthrough-super-unison-wide-lead",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "traveler-walkthrough-wavetable-morph-filter-motion",
+      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-wavetable-morph-filter-motion.json",
+      "mcp_uri": "skill://traveler-walkthrough-wavetable-morph-filter-motion",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "unison-odd-even-detune-width-clean-supersaw",
+      "path": "/workspace/skill-library/mcp-publish/skills/unison-odd-even-detune-width-clean-supersaw.json",
+      "mcp_uri": "skill://unison-odd-even-detune-width-clean-supersaw",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "velocity-filter-cutoff-envelope-amount",
+      "path": "/workspace/skill-library/mcp-publish/skills/velocity-filter-cutoff-envelope-amount.json",
+      "mcp_uri": "skill://velocity-filter-cutoff-envelope-amount",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "volyraph-browser-splat-pipeline",
+      "path": "/workspace/skill-library/mcp-publish/skills/volyraph-browser-splat-pipeline.json",
+      "mcp_uri": "skill://volyraph-browser-splat-pipeline",
+      "domain": "spatial-3d-capture"
+    },
+    {
+      "id": "warm-heavenly-supersaw-pad-keytrack-fx",
+      "path": "/workspace/skill-library/mcp-publish/skills/warm-heavenly-supersaw-pad-keytrack-fx.json",
+      "mcp_uri": "skill://warm-heavenly-supersaw-pad-keytrack-fx",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "wavetable-crossfade-morph-modulate-pad",
+      "path": "/workspace/skill-library/mcp-publish/skills/wavetable-crossfade-morph-modulate-pad.json",
+      "mcp_uri": "skill://wavetable-crossfade-morph-modulate-pad",
+      "domain": "cinematic-synth"
+    }
+  ],
+  "updated_at": "2026-10-03T15:50:00+00:00",
+  "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
+}

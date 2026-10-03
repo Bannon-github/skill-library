@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "id": "drone-hyperlapse-multi-angle-capture",
+  "name": "drone hyperlapse multi angle capture",
+  "goal": "Capture overlapping views with DJI hyperlapse.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "FpN2VTSZ_7U",
+    "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+    "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/FpN2VTSZ_7U/distilled.json"
+  },
+  "prerequisites": [
+    "DJI drone with hyperlapse modes (e.g. Mavic Air 3)"
+  ],
+  "inputs": [
+    {
+      "name": "building_or_subject",
+      "type": "string",
+      "description": "Target to cover from all facades",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hyperlapse_media",
+      "type": "file",
+      "description": "Hyperlapse video or image set"
+    }
+  ],
+  "constraints": [
+    "Photogrammetry-style multi-angle coverage",
+    "Slow flight to avoid blur",
+    "No paid flight planner required"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Plan multi-angle coverage of every facade (photogrammetry-style).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Use DJI built-in hyperlapse modes.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Fly slowly; avoid blur; export media.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "All major facades appear in capture"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "published_at": "2026-09-24T01:02:02.270006+00:00",
+  "mcp_resource": "skill://drone-hyperlapse-multi-angle-capture"
+}

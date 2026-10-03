@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-install-preferences-and-viewport-basics",
+  "name": "blender install preferences and viewport basics",
+  "goal": "Install Blender, set useful preferences, and learn viewport nav plus G/R/S and Object/Edit mode.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Ci3Has4L5W4",
+    "url": "https://www.youtube.com/watch?v=Ci3Has4L5W4",
+    "title": "Blender Tutorial for Beginners",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Ci3Has4L5W4/agent-skill-blender-install-preferences-and-viewport-basics.json"
+  },
+  "prerequisites": [
+    "Computer that can run Blender"
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "configured_blender",
+      "type": "app-state",
+      "description": "Blender with saved prefs and basic nav competence"
+    }
+  ],
+  "constraints": [
+    "Save Preferences after changes",
+    "Tab toggles Object/Edit; T toggles toolbar; N toggles sidebar"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Download Blender from blender.org and install for your OS; open and click outside splash to dismiss.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Edit \u2192 Preferences \u2192 Interface: adjust Resolution Scale if UI is tiny/huge.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Preferences \u2192 System: enable CUDA/GPU Cycles device if available; raise Undo Steps (e.g. 100); Save Preferences.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Viewport: MMB orbit, Shift+MMB pan, scroll zoom; optional gizmo orbit/zoom/pan; numpad/gizmo axis views.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Learn Move/Rotate/Scale tools and hotkeys G, R, S; axis-constrain with X/Y/Z; Tab for Edit mode.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Preferences persist after restart",
+    "Can orbit/pan/zoom and G/R/S the default cube"
+  ],
+  "tags": [
+    "blender",
+    "install",
+    "preferences",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-install-preferences-and-viewport-basics"
+}

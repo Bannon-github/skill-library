@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-10-03T15:50:00+00:00",
+  "note": "Retired skill ids merged on 2026-10-03; get_skill/skill:// resolve old ids to the merged id. Retired docs kept in mcp-publish/retired/.",
+  "aliases": {
+    "blender-donut-tutorial-nav-add-shade-smooth": "blender-first-scene-add-delete-focus-shade-smooth",
+    "blender-complete-beginner-add-delete-focus": "blender-first-scene-add-delete-focus-shade-smooth",
+    "blender-install-preferences-and-viewport-basics": "blender-install-prefs-viewport-nav-transform-tools",
+    "blender-beginner-three-tools-and-viewport-nav": "blender-install-prefs-viewport-nav-transform-tools",
+    "blender-viewport-navigation-mmb": "blender-install-prefs-viewport-nav-transform-tools",
+    "dji-video-capture-for-gaussian-splat": "dji-video-to-gaussian-splat-mipmap",
+    "process-drone-video-to-gaussian-splat-mipmap": "dji-video-to-gaussian-splat-mipmap",
+    "drone-hyperlapse-multi-angle-capture": "drone-hyperlapse-to-splatware-splat",
+    "upload-capture-to-free-splatware": "drone-hyperlapse-to-splatware-splat",
+    "lfo-envelope-motion-routing-basics": "modulation-lfo-envelope-mod-matrix-routing",
+    "mod-matrix-source-destination-routing-basics": "modulation-lfo-envelope-mod-matrix-routing",
+    "highband-pan-lfo-pad-width-keep-lows": "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "mono-compatible-chord-split-stereo-pad": "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "reverb-types-hall-chamber-room-plate-spring": "reverb-pads-type-choice-and-send-setup",
+    "reverb-send-wet100-eq-room-plate-spring": "reverb-pads-type-choice-and-send-setup",
+    "sidehustle-productize-service-fixed-scope-price": "sidehustle-productized-service-offer-and-ops",
+    "sidehustle-productize-sustainable-ops-constraints": "sidehustle-productized-service-offer-and-ops",
+    "ping-pong-delay-filtered-motion-recipe": "stereo-delay-pingpong-dual-parallel-two-tap",
+    "dual-delay-parallel-two-tap-crossfeedback": "stereo-delay-pingpong-dual-parallel-two-tap",
+    "odd-even-unison-center-vs-width": "unison-odd-even-detune-width-clean-supersaw",
+    "supersaw-clean-unison-detune-width": "unison-odd-even-detune-width-clean-supersaw"
+  }
+}

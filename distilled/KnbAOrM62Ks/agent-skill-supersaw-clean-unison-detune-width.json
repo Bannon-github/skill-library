@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "supersaw-clean-unison-detune-width",
+  "name": "Clean supersaw: unison count, detune, blend, width",
+  "goal": "Build mix-ready supersaws: simple saw frames (not complex WT sweeps), 6\u201312 unison voices, balanced detune/blend, optional mono sub + noise, EQ\u2192compress\u2192delay\u2192reverb, light hyper/dimension, subtle warp, and global unison width/stack modes for chord phase correlation.",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "KnbAOrM62Ks",
+    "url": "https://www.youtube.com/watch?v=KnbAOrM62Ks",
+    "title": "5 Power Tips for Better Supersaws in Serum",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/KnbAOrM62Ks/agent-skill-supersaw-clean-unison-detune-width.json"
+  },
+  "prerequisites": [
+    "Wavetable synth with unison detune/blend, sub/noise, FX rack, global unison width/stack"
+  ],
+  "inputs": [
+    {
+      "name": "voice_context",
+      "type": "enum",
+      "description": "mono lead/drop vs polyphonic chords",
+      "required": true
+    },
+    {
+      "name": "unison_voices",
+      "type": "number",
+      "description": "Typically 6\u201312 (classic supersaw ~7, hypersaw ~8)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "supersaw_patch",
+      "type": "synth-patch",
+      "description": "Clean wide supersaw usable in a mix"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Avoid sweeping complex wavetable frames while heavily detuned \u2014 timbre becomes incoherent.",
+    "For chords, keep detune/blend more conservative than for mono drops; consider reducing unison width toward ~50% for phase correlation."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a simple saw (or rounded/noisy saw variant), not a multi-frame complex WT you plan to sweep aggressively.",
+      "tool": "oscillator",
+      "expect": "Cohesive saw character"
+    },
+    {
+      "n": 2,
+      "action": "Set unison ~6\u201312 (example ~10); set detune and blend near mid \u2014 extreme detune+blend is for FX, not clean chords.",
+      "tool": "unison",
+      "expect": "Wide but center still present"
+    },
+    {
+      "n": 3,
+      "action": "Optional Osc B: fewer unison voices, pitch \u00b1octaves, lower level to thicken without doubling chaos.",
+      "tool": "oscillator",
+      "expect": "Extra thickness especially for leads"
+    },
+    {
+      "n": 4,
+      "action": "Optional centered saw sub one octave down (no unison) for mono mid-weight; quiet unique noise sample for texture.",
+      "tool": "sub-noise",
+      "expect": "Center weight + air; still sounds like a supersaw dry"
+    },
+    {
+      "n": 5,
+      "action": "FX order example: EQ (cut lows, lift highs) \u2192 compression \u2192 ping-pong delay \u2192 reverb last; optional light hyper/dimension detune on the bus (can widen even the sub).",
+      "tool": "fx-bus",
+      "expect": "Glue without mud"
+    },
+    {
+      "n": 6,
+      "action": "Subtle warp (e.g. bend+/\u2212) via envelope/LFO for 3D motion \u2014 keep amounts small on supersaws.",
+      "tool": "warp",
+      "expect": "Motion without destroying saw identity"
+    },
+    {
+      "n": 7,
+      "action": "Global unison: reduce width (~50%) for better chord phase correlation; try stack modes (super, fifths, center\u22122, octave) sparingly; warp-offset per voice only if warp is intentional.",
+      "tool": "unison-global",
+      "expect": "Huge but mix-fitting supersaw"
+    }
+  ],
+  "verification": [
+    "Dry (pre-FX) still sounds like a clean supersaw",
+    "Chord mode not maximally detuned/widened",
+    "Sub (if used) remains more centered than unison voices"
+  ],
+  "tags": [
+    "music-synthesis",
+    "supersaw",
+    "unison",
+    "width",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://supersaw-clean-unison-detune-width"
+}

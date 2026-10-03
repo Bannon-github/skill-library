@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-mug-solidify-subsurf-loopcut",
+  "name": "blender mug with solidify subsurf and loop cuts",
+  "goal": "Block a coffee mug from a cylinder using Edit mode, Solidify, Subdivision Surface, and Ctrl+R loop cuts (from Blender Guru beginner series).",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "z-Xl9tGqH14",
+    "url": "https://www.youtube.com/watch?v=z-Xl9tGqH14",
+    "title": "Beginner Blender Tutorial (2026)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/z-Xl9tGqH14/agent-skill-blender-mug-solidify-subsurf-loopcut.json"
+  },
+  "prerequisites": [
+    "Object/Edit mode and G/S basics",
+    "Modifiers panel familiarity"
+  ],
+  "inputs": [
+    {
+      "name": "cylinder",
+      "type": "mesh",
+      "description": "Cylinder to turn into mug body",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mug_body",
+      "type": "mesh",
+      "description": "Thickened, smoothed mug shell with supporting loop cuts"
+    }
+  ],
+  "constraints": [
+    "Start relatively low-res before heavy Subdivision Surface",
+    "Apply Solidify before extruding a handle so thickness does not double on the handle",
+    "Ctrl+R loop cuts control where Subsurf stays sharp"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Add/position cylinder as mug; Tab Edit mode; shape walls (scale loops) toward a mug silhouette.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Add Solidify modifier for wall thickness; adjust thickness non-destructively.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Add Subdivision Surface; raise Viewport levels carefully; note how unchecked edges become overly round.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Ctrl+R add loop cuts near rim/base to hold shape under Subsurf; slide and confirm.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Use reference image (Add Image Reference); clear bad rotation, set 90\u00b0 with Ctrl-snap; scale to match mug.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Before handle extrudes: Apply Solidify so inner/outer walls are real mesh; then extrude handle geometry from an appropriate face.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Mug has thickness",
+    "Subsurf smooths without destroying rim/base",
+    "Loop cuts visible in Edit mode"
+  ],
+  "tags": [
+    "blender",
+    "modifiers",
+    "solidify",
+    "subsurf",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-mug-solidify-subsurf-loopcut"
+}

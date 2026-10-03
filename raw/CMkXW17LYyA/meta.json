@@ -1,0 +1,15 @@
+{
+  "video_id": "CMkXW17LYyA",
+  "title": "Phase Plant lush organic pads",
+  "url": "https://www.youtube.com/watch?v=CMkXW17LYyA",
+  "ok": true,
+  "fetched_at": "2026-09-24T12:40:00.053385+00:00",
+  "cue_count": 470,
+  "transcript_path": "/workspace/skill-library/raw/CMkXW17LYyA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CMkXW17LYyA/raw.txt",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "source_ui": "youtube-show-transcript",
+  "srt_file": "CMkXW17LYyA.en-orig.srt",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable)."
+}

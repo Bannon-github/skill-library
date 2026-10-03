@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "ping-pong-delay-filtered-motion-recipe",
+  "name": "Ping-pong delay filtered motion recipe",
+  "goal": "Build a musical ping-pong (L\u2194R bouncing) delay for synths/pads: tempo-synced time, moderate feedback, low wet mix, band-limit the repeats, optional saturation, even or offset L/R times, prefer send vs insert, and automate/modulate for evolving motion.",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "GcZILAUGEyU",
+    "url": "https://www.youtube.com/watch?v=GcZILAUGEyU",
+    "title": "What Are The Best Ping-Pong Delay Techniques? - Music Producer Mastery",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/GcZILAUGEyU/agent-skill-ping-pong-delay-filtered-motion-recipe.json"
+  },
+  "prerequisites": [
+    "Stereo delay with ping-pong or independent L/R times; optional EQ/filter and saturation on delay path (FX bus order: EQ\u2192chorus\u2192delay\u2192reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "tempo_subdivision",
+      "type": "string",
+      "description": "e.g. 1/4 or 1/8 note delay time",
+      "required": true
+    },
+    {
+      "name": "routing",
+      "type": "enum",
+      "description": "send (preferred for processing wet) vs insert",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ping_pong_fx_rack",
+      "type": "fx-chain",
+      "description": "Configured bounce delay with filtered wet path"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Place delay in Traveler-style FX order after EQ/chorus and before reverb when building a cinematic bus."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Enable ping-pong / stereo bounce delay. Set delay time to a musical subdivision (quarter or eighth) so repeats lock to groove.",
+      "tool": "delay",
+      "expect": "Rhythmic L\u2194R echoes"
+    },
+    {
+      "n": 2,
+      "action": "Set feedback ~40\u201350% so repeats fade without clutter; wet/dry ~15\u201325% as a starting mix.",
+      "tool": "delay",
+      "expect": "Present but not overpowering tails"
+    },
+    {
+      "n": 3,
+      "action": "Filter the delayed signal: cut lows below ~100 Hz and highs above ~3 kHz to avoid mud/harshness. Optionally add tiny saturation/distortion on wet for warmth.",
+      "tool": "eq-saturate",
+      "expect": "Cleaner, warmer repeats"
+    },
+    {
+      "n": 4,
+      "action": "Maximize stereo width of the bounce when desired; link L/R times for even bounce, or slightly offset L vs R times for a more complex image.",
+      "tool": "delay",
+      "expect": "Even bounce or interesting asymmetry"
+    },
+    {
+      "n": 5,
+      "action": "Prefer send routing so you can EQ/compress the wet alone before blend; if insert, mind wet/dry carefully.",
+      "tool": "routing",
+      "expect": "Independent wet processing"
+    },
+    {
+      "n": 6,
+      "action": "Automate or modulate feedback, delay time, or filter cutoff across sections; optional subtle chorus/flanger on delayed signal only. Use on synths (also vocals/guitars/perc) especially in sparse/breakdown sections.",
+      "tool": "automation",
+      "expect": "Non-static spatial motion"
+    }
+  ],
+  "verification": [
+    "Repeats bounce L\u2194R in time with tempo",
+    "Wet path is band-limited (~100 Hz\u20133 kHz) and ~15\u201325% mix",
+    "Feedback does not build into clutter"
+  ],
+  "tags": [
+    "music-synthesis",
+    "delay",
+    "ping-pong",
+    "stereo",
+    "fx",
+    "pads",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://ping-pong-delay-filtered-motion-recipe"
+}

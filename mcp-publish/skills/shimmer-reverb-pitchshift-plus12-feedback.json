@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "shimmer-reverb-pitchshift-plus12-feedback",
+  "name": "Shimmer reverb: +12st pitch-shift into lush space",
+  "goal": "Build a portable shimmer (Eno-style) send: pitch-shift the wet path by +12 semitones into a long lush reverb/convolution, optionally feedback the shifted delay for endless bloom, high-/low-cut the delay echoes before the reverb, and EQ the wet shimmer before dry blend.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "lzRl8gfa-M8",
+    "url": "https://www.youtube.com/watch?v=lzRl8gfa-M8",
+    "title": "Creating a Shimmer Reverb \u2502 VAST Tips & Tutorials \u2502 Heavyocity",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/lzRl8gfa-M8/agent-skill-shimmer-reverb-pitchshift-plus12-feedback.json"
+  },
+  "prerequisites": [
+    "Delay or pitch-shifter with feedback; long lush reverb/convolution; EQ on wet path"
+  ],
+  "inputs": [
+    {
+      "name": "pitch_semitones",
+      "type": "number",
+      "description": "Pitch shift into reverb (transcript baseline +12)",
+      "required": true
+    },
+    {
+      "name": "feedback_on",
+      "type": "boolean",
+      "description": "Enable feedback path for endless bloom",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "shimmer_send",
+      "type": "fx-chain",
+      "description": "Pitch-shifted shimmer reverb send chain"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Route a send: place a delay/pitch stage before the long reverb. Set pitch shift to +12 semitones so the shifted copy washes into the lush space.",
+      "tool": "pitch-reverb",
+      "expect": "Octave-up cloud feeding the reverb"
+    },
+    {
+      "n": 2,
+      "action": "Use a long lush reverb (or convolution with high lush/length) so the shifted signal sustains as a cloud.",
+      "tool": "reverb",
+      "expect": "Sustained shimmer tail, not a short slap"
+    },
+    {
+      "n": 3,
+      "action": "For endless blossom: enable feedback on the delay/pitch path so each loop shifts again. Short delay times \u2192 rapid expansions; longer times \u2192 slower bloom intervals.",
+      "tool": "delay-feedback",
+      "expect": "Rising/blooming shimmer when feedback engaged"
+    },
+    {
+      "n": 4,
+      "action": "Tone-shape the delay echoes before reverb: cut lows so low end does not stack; shave brittle highs so the convolution/reverb is not harsh.",
+      "tool": "eq",
+      "expect": "Cleaner shimmer without mud or brittle sparkle"
+    },
+    {
+      "n": 5,
+      "action": "EQ the overall shimmer wet (e.g. high-pass low band; gentle brightness if needed) before blending with dry via mix/send level. Optionally explore delay after reverb or ducking wet from dry later.",
+      "tool": "eq-mix",
+      "expect": "Shimmer sits under/around dry pad without masking"
+    }
+  ],
+  "verification": [
+    "Wet path is pitched (~+12) into a long reverb",
+    "Delay/echo path is filtered (HP + gentle LP) before reverb",
+    "Feedback (if on) blooms without runaway low-end build"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "shimmer",
+    "reverb",
+    "pitch-shift",
+    "pads",
+    "space",
+    "fx",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://shimmer-reverb-pitchshift-plus12-feedback",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Map proprietary convolution/delay modules to portable: pitch-shifter \u2192 long reverb (+ optional feedback loop); do not redistribute vendor IR packs."
+  ]
+}

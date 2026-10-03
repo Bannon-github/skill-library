@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "lfo-envelope-motion-routing-basics",
+  "name": "LFO vs envelope: cyclic vs note-triggered motion",
+  "goal": "Use LFOs for repeating/cyclic motion (tremolo, vibrato, wobble, WT/PWM drift; audio-rate into AM/FM) and envelopes (ADSR) for note-triggered shapes\u2014amp envelope for dynamics, filter envelope with \u00b1amount for pluck/wah\u2014then route either modulator to WT position or pulse width for evolving pads.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "UxGswh6XLto",
+    "url": "https://www.youtube.com/watch?v=UxGswh6XLto",
+    "title": "Sound Design Theory: LFO & Envelope explained!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/UxGswh6XLto/agent-skill-lfo-envelope-motion-routing-basics.json"
+  },
+  "prerequisites": [
+    "Synth or Web Audio graph with at least one LFO, one ADSR, amp, and filter cutoff destination"
+  ],
+  "inputs": [
+    {
+      "name": "motion_type",
+      "type": "enum",
+      "description": "cyclic (LFO) vs note-shaped (envelope)",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "type": "string",
+      "description": "amp, pitch, cutoff, PWM, wavetable position, FX param",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "motion_routing_patch",
+      "type": "synth-patch",
+      "description": "Documented LFO and/or envelope routings"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "LFOs and envelopes are control modules\u2014they make no sound alone; movement is the design goal."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Treat LFO as a very slow oscillator (usually below hearing): set shape (sine/tri/square/saw/custom) and rate, then assign to a destination so the parameter follows the oscillation.",
+      "tool": "lfo",
+      "expect": "Cyclic motion without key trigger"
+    },
+    {
+      "n": 2,
+      "action": "Classic LFO recipes: \u2192 amp = tremolo; \u2192 pitch = vibrato; \u2192 low-pass cutoff = wobble; \u2192 waveform/PWM/WT position = evolving source timbre. Tempo-sync for rhythmic motion or keep slow free-rate for subtle drift.",
+      "tool": "mod-matrix",
+      "expect": "Audible cyclic change on chosen param"
+    },
+    {
+      "n": 3,
+      "action": "Raise LFO rate into audio range: amp mod \u2192 AM sidebands; pitch mod \u2192 FM-like spectra; very fast FX-param mod (e.g. phaser) can become a distortion/timbre effect.",
+      "tool": "lfo",
+      "expect": "New harmonics / spectral change"
+    },
+    {
+      "n": 4,
+      "action": "If available, try LFO one-shot mode\u2014shape plays once, behaving like an envelope.",
+      "tool": "lfo",
+      "expect": "Single-shot contour"
+    },
+    {
+      "n": 5,
+      "action": "Amp envelope ADSR: Attack = fade-in time; Decay = time to sustain; Sustain = held level (if sustain = max, decay has no effect); Release = fade-out after key-up. Percussive: attack+sustain low, length from decay (+ some release). Pad/violin-like: longer attack+release, sustain full.",
+      "tool": "envelope",
+      "expect": "Note dynamics match role"
+    },
+    {
+      "n": 6,
+      "action": "Filter envelope: assign to cutoff with \u00b1amount/depth. Positive amount opens from a low cutoff (plucky bass with short A, some D, no S, short R). Negative amount with high cutoff can wah downward; longer attack + positive amount opens wah; raise sustain to keep open while held.",
+      "tool": "filter-envelope",
+      "expect": "Cutoff contour independent of amp"
+    },
+    {
+      "n": 7,
+      "action": "Ensure amp envelope lets enough signal through to hear filter motion. Also try envelopes on PWM or wavetable position so the source evolves per note.",
+      "tool": "mod-matrix",
+      "expect": "Filter/WT motion audible under amp"
+    }
+  ],
+  "verification": [
+    "LFO motion repeats without new notes; envelope retriggers per note",
+    "Tremolo/vibrato/wobble recipes demonstrated",
+    "Amp + filter envelopes cooperate (filter decay audible under amp)"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "lfo",
+    "envelope",
+    "adsr",
+    "modulation",
+    "filter",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://lfo-envelope-motion-routing-basics"
+}

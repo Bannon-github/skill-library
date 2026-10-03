@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "id": "process-drone-video-to-gaussian-splat-mipmap",
+  "name": "process drone video to gaussian splat mipmap",
+  "goal": "Build a splat from that video in Mip-Map.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mQ4EHUpXj9Q",
+    "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+    "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mQ4EHUpXj9Q/distilled.json"
+  },
+  "prerequisites": [
+    "Captured drone video with optional GPS subtitles",
+    "Access to Mip-Map (or tutorial-equivalent)"
+  ],
+  "inputs": [
+    {
+      "name": "video_file",
+      "type": "file",
+      "description": "Drone capture video",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "gaussian_splat",
+      "type": "3d_asset",
+      "description": "Processed Gaussian splat model"
+    }
+  ],
+  "constraints": [
+    "Use YouTube-taught Mip-Map flow only; do not invent alternate SLAM params"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Import the video into Mip-Map.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Extract frames using subtitle GPS when present.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Run Gaussian splat reconstruction.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Inspect and export the 3D splat.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Splat opens in viewer",
+    "Export file written"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "published_at": "2026-09-24T01:02:02.269831+00:00",
+  "mcp_resource": "skill://process-drone-video-to-gaussian-splat-mipmap"
+}

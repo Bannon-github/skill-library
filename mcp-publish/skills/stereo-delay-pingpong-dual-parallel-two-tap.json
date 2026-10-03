@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "stereo-delay-pingpong-dual-parallel-two-tap",
+  "name": "Stereo delay motion: ping-pong, dual-parallel, two-tap, cross-feedback",
+  "goal": "Build musical stereo delay motion for synths/pads: tempo-synced ping-pong (feedback ~40–50%, wet ~15–25%, repeats band-limited ~100 Hz–3 kHz, optional saturation, even or offset L/R), dual-parallel (independent L/R subdivisions such as dotted-eighth vs quarter, self-feedback then cross-feedback, optional modulation/diffusion for reverb-like density), two-tap tape-head (long tap feeds short; short has no self/cross feedback), ping-pong recognized as a 2:1 two-tap, LFO panning delay and feedback-phase invert; prefer send routing and automate for evolving motion.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 2 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-stereo-delay-pingpong-dual-parallel-two-tap.json"
+  },
+  "sources": [
+    {
+      "from_skill": "ping-pong-delay-filtered-motion-recipe",
+      "video_id": "GcZILAUGEyU",
+      "url": "https://www.youtube.com/watch?v=GcZILAUGEyU",
+      "title": "What Are The Best Ping-Pong Delay Techniques? - Music Producer Mastery",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/GcZILAUGEyU/agent-skill-ping-pong-delay-filtered-motion-recipe.json"
+    },
+    {
+      "from_skill": "dual-delay-parallel-two-tap-crossfeedback",
+      "video_id": "eSXZWFjCeiY",
+      "url": "https://www.youtube.com/watch?v=eSXZWFjCeiY",
+      "title": "Dual Delay Masterclass | Parallel, 2-Tap, Ping-Pong & Panning Delay Explained",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/eSXZWFjCeiY/agent-skill-dual-delay-parallel-two-tap-crossfeedback.json"
+    }
+  ],
+  "merged_from": [
+    "ping-pong-delay-filtered-motion-recipe",
+    "dual-delay-parallel-two-tap-crossfeedback"
+  ],
+  "aliases": [
+    "ping-pong-delay-filtered-motion-recipe",
+    "dual-delay-parallel-two-tap-crossfeedback"
+  ],
+  "prerequisites": [
+    "Stereo delay with ping-pong or independent L/R times / dual-delay mode; optional cross-feedback, modulation, diffusion, feedback-phase invert; optional EQ/filter and saturation on delay path (FX bus order: EQ→chorus→delay→reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "ping_pong | dual_parallel | two_tap | ping_pong_2to1 | panning_lfo",
+      "required": true
+    },
+    {
+      "name": "tempo_subdivision",
+      "type": "string",
+      "description": "Ping-pong time e.g. 1/4 or 1/8 note",
+      "required": false
+    },
+    {
+      "name": "l_subdivision",
+      "type": "string",
+      "description": "Dual/two-tap left time e.g. dotted-eighth",
+      "required": false
+    },
+    {
+      "name": "r_subdivision",
+      "type": "string",
+      "description": "Dual/two-tap right time e.g. quarter",
+      "required": false
+    },
+    {
+      "name": "routing",
+      "type": "enum",
+      "description": "send (preferred for processing wet) vs insert",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "stereo_delay_fx",
+      "type": "fx-chain",
+      "description": "Configured ping-pong / dual-parallel / two-tap delay with filtered wet path, placed before reverb on a cinematic FX bus"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only — map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source videos; recreate with comparable modules.",
+    "Place delay in Traveler-style FX order after EQ/chorus and before reverb when building a cinematic bus.",
+    "In-synth granular pitch-step echoes (no delay FX) are a separate skill: osc-as-granular-pitch-step-delay."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick the delay topology for the job: ping-pong bounce (discreet L↔R, steps 2–5), dual-parallel with optional cross-feedback (dense poly-rhythmic space, steps 6–9), two-tap tape-head style (cleaner bounce, steps 10–11), or LFO panning delay (step 12). Then route and animate it (steps 13–14).",
+      "tool": "delay",
+      "expect": "Mode chosen: dense ambient vs discreet bounce"
+    },
+    {
+      "n": 2,
+      "action": "Ping-pong: Enable ping-pong / stereo bounce delay. Set delay time to a musical subdivision (quarter or eighth) so repeats lock to groove.",
+      "tool": "delay",
+      "expect": "Rhythmic L↔R echoes"
+    },
+    {
+      "n": 3,
+      "action": "Ping-pong: Set feedback ~40–50% so repeats fade without clutter; wet/dry ~15–25% as a starting mix.",
+      "tool": "delay",
+      "expect": "Present but not overpowering tails"
+    },
+    {
+      "n": 4,
+      "action": "Ping-pong: Filter the delayed signal: cut lows below ~100 Hz and highs above ~3 kHz to avoid mud/harshness. Optionally add tiny saturation/distortion on wet for warmth.",
+      "tool": "eq-saturate",
+      "expect": "Cleaner, warmer repeats"
+    },
+    {
+      "n": 5,
+      "action": "Ping-pong: Maximize stereo width of the bounce when desired; link L/R times for even bounce, or slightly offset L vs R times for a more complex image.",
+      "tool": "delay",
+      "expect": "Even bounce or interesting asymmetry"
+    },
+    {
+      "n": 6,
+      "action": "Start dual-parallel: set different tempo subdivisions per channel (e.g. dotted-eighth left, quarter right) so the shorter and longer echoes interact as a delay poly-rhythm (classic 3-against-4 feel with those two).",
+      "tool": "delay",
+      "expect": "Two independent rhythmic echo streams"
+    },
+    {
+      "n": 7,
+      "action": "Set self-feedback per channel (example starting points from transcript: ~45% left into left, ~30% right into right) with no cross-feedback yet; hear space/energy without stacked interaction.",
+      "tool": "delay",
+      "expect": "Clean dual echoes without stacked cross-products"
+    },
+    {
+      "n": 8,
+      "action": "Add cross-feedback (right→left, then optionally left→right with complementary amounts) to stack interacting delays and fill the stereo field toward a faux-reverb density.",
+      "tool": "delay",
+      "expect": "Denser, interacting stereo tails"
+    },
+    {
+      "n": 9,
+      "action": "Optional lush pad/ambient path: raise delay modulation depth (~20% in source demo) and diffusion (~50%) so dual-delay + cross-feedback reads more like reverb-space.",
+      "tool": "delay-mod",
+      "expect": "Smeared, reverb-like dual delay"
+    },
+    {
+      "n": 10,
+      "action": "Build two-tap (multi-head tape style): keep long + short times, but only the longer delay self-feeds and also feeds the shorter delay; give the shorter delay zero self-feedback and zero cross-feedback so taps never line up like dual-parallel — cleaner stereo around a center dry signal.",
+      "tool": "delay",
+      "expect": "Ping/pong-like alternate taps without dual-parallel lineup"
+    },
+    {
+      "n": 11,
+      "action": "Recognize ping-pong as a two-tap with ~2:1 time ratio (e.g. 400 ms / 800 ms) and the same long→short + long self-feedback topology; prefer dedicated ping-pong mode when available. Contrast with dual-parallel at 2:1 (short and long land together, soft-panned long tap).",
+      "tool": "delay",
+      "expect": "Audible difference: true bounce vs soft-panned dual-parallel"
+    },
+    {
+      "n": 12,
+      "action": "Optional: panning delay uses an LFO to move repeats (syncable for ping-pong-like motion or offset rates). Feedback-phase invert (negative feedback phase) flips polarity each regeneration to enhance spatial width on cross-feedback designs. Keep mix lower in practice; use ducking/EQ on wet for dense sources.",
+      "tool": "delay-lfo",
+      "expect": "Chosen stereo population: dense ambient vs discreet lead bounce"
+    },
+    {
+      "n": 13,
+      "action": "Prefer send routing so you can EQ/compress the wet alone before blend; if insert, mind wet/dry carefully.",
+      "tool": "routing",
+      "expect": "Independent wet processing"
+    },
+    {
+      "n": 14,
+      "action": "Automate or modulate feedback, delay time, or filter cutoff across sections; optional subtle chorus/flanger on delayed signal only. Use on synths (also vocals/guitars/perc) especially in sparse/breakdown sections.",
+      "tool": "automation",
+      "expect": "Non-static spatial motion"
+    }
+  ],
+  "verification": [
+    "Repeats bounce L↔R in time with tempo",
+    "Wet path is band-limited (~100 Hz–3 kHz) and ~15–25% mix",
+    "Feedback does not build into clutter",
+    "Can A/B dual-parallel (both taps self-feedback) vs two-tap (short has no feedback)",
+    "Cross-feedback increases stereo density; optional mod/diffusion pushes toward reverb-like pad space",
+    "Ping-pong identified as 2:1 two-tap topology"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "delay",
+    "ping-pong",
+    "dual-delay",
+    "two-tap",
+    "cross-feedback",
+    "stereo",
+    "fx",
+    "pads",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://stereo-delay-pingpong-dual-parallel-two-tap",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

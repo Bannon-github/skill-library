@@ -1,0 +1,88 @@
+{
+  "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
+  "categories": [
+    {
+      "id": "spatial-3d-capture",
+      "name": "Spatial 3D capture and Gaussian splatting",
+      "skill_ids": [
+        "dji-video-to-gaussian-splat-mipmap",
+        "drone-hyperlapse-to-splatware-splat",
+        "volyraph-browser-splat-pipeline"
+      ]
+    },
+    {
+      "id": "photo-editing",
+      "name": "Photo editing",
+      "skill_ids": [
+        "lightroom-select-and-develop-photo"
+      ]
+    },
+    {
+      "id": "coding-filesystem",
+      "name": "Coding and filesystem automation",
+      "skill_ids": [
+        "python-pathlib-basic-file-workflow"
+      ]
+    },
+    {
+      "id": "meta-pipeline",
+      "name": "Library pipeline (learn from transcripts)",
+      "skill_ids": [
+        "distill-transcript",
+        "youtube-howto-search"
+      ]
+    },
+    {
+      "id": "3d-blender",
+      "name": "3D modeling in Blender",
+      "skill_ids": [
+        "blender-beginner-setup-nav-and-geometry-practice",
+        "blender-install-prefs-viewport-nav-transform-tools",
+        "blender-boolean-bracket-with-cylinder-holes",
+        "blender-chatgpt-python-script-gold-ball",
+        "blender-chocolate-chip-cookie-model-and-render",
+        "blender-first-scene-add-delete-focus-shade-smooth",
+        "blender-easy-car-box-model-core-tools",
+        "blender-edit-mode-transform-extrude-loopcut-bevel",
+        "blender-gamedev-learning-path-advice",
+        "blender-lowpoly-character-scene-prep",
+        "blender-lowpoly-pine-tree-from-primitives",
+        "blender-metric-mm-setup-for-3d-print",
+        "blender-mug-solidify-subsurf-loopcut"
+      ]
+    },
+    {
+      "id": "cinematic-hybrid-synth",
+      "name": "Cinematic hybrid synthesis",
+      "skill_ids": [
+        "cinematic-warm-analog-pad-drift-stereo",
+        "cinematic-multi-envelope-osc-level-morph",
+        "ambient-organic-pluck-pad-ladder-chorus-space",
+        "unison-odd-even-detune-width-clean-supersaw",
+        "ambient-wavetable-scratch-spectral-morph-pad",
+        "lush-stereo-saw-pad-random-pitch-texture",
+        "digital-wt-morph-bandpass-chorus-echo-space",
+        "organic-looped-sample-unison-voicing-pad",
+        "granular-dual-saw-ambient-epic-pad",
+        "fm-carrier-modulator-ratio-basics",
+        "warm-heavenly-supersaw-pad-keytrack-fx",
+        "mix-pads-role-eq-width-clarity",
+        "cinematic-formant-comb-pad-phaser-fx",
+        "evolving-pad-unison-filter-swell-fifth",
+        "keysol-helpling-keytrack-bass-split-delay",
+        "keysol-venus-fifths-pulsar-wt-impact",
+        "keysol-venus-fm-lfo-evolving-chase-sequence",
+        "keysol-venus-high-wt-artifact-pulse-layer",
+        "keysol-venus-noise-audiorate-filter-texture",
+        "keysol-venus-polyrhythmic-control-track-pitch",
+        "keysol-venus-velocity-hybrid-bass-impact",
+        "traveler-walkthrough-control-track-filter-wt-animation",
+        "traveler-walkthrough-curved-envelope-evolving-pad",
+        "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+        "traveler-walkthrough-stereo-ladder-lf-width",
+        "traveler-walkthrough-super-unison-wide-lead",
+        "traveler-walkthrough-wavetable-morph-filter-motion"
+      ]
+    }
+  ]
+}

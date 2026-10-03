@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-fifths-pulsar-wt-impact",
+  "name": "fifths-tuned pulsar hybrid impact",
+  "goal": "Craft a throbbing aggressive impact/pulse by tuning a second oscillator up a fifth (+7 semitones), adding duo/detune/scatter width, and a wavetable layer for dimension beyond plain VA.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-fifths-pulsar-wt-impact.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "interval_semitones",
+      "type": "integer",
+      "description": "Default +7 (fifth)",
+      "required": true
+    },
+    {
+      "name": "wt_mix",
+      "type": "number",
+      "description": "Amount of WT dimension on top of VA core",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pulsar_impact_patch",
+      "type": "synth-patch",
+      "description": "Powerful fifths hybrid pulse/impact"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build throbbing aggressive core on Osc1 (pulse/saw). Set Osc2 +7 semitones for fifths power; balance for deep power vs mid punch vs brighter transient emphasis.",
+      "tool": "osc-fifths",
+      "expect": "Powerful harmonic reinforcement"
+    },
+    {
+      "n": 2,
+      "action": "Enable duo/unison, detune, and stereo scatter/spread for width.",
+      "tool": "duo-detune",
+      "expect": "Wider, more forceful pulse"
+    },
+    {
+      "n": 3,
+      "action": "Add wavetable oscillator not as a full replacement but as dimensional spice; animate WT position for movement.",
+      "tool": "wt-layer",
+      "expect": "More interesting than pure VA"
+    },
+    {
+      "n": 4,
+      "action": "Play velocity-reactive syncopated rhythms into a bouncing delay so the part stays alive across long phrases.",
+      "tool": "delay-performance",
+      "expect": "Dynamic living pulse"
+    }
+  ],
+  "verification": [
+    "Fifths interval clear",
+    "WT adds dimension when muted/unmuted",
+    "Works as impact and as mid pulse"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "impact",
+    "fifths",
+    "wavetable",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-fifths-pulsar-wt-impact"
+}

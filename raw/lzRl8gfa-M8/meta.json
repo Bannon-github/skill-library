@@ -1,0 +1,15 @@
+{
+  "video_id": "lzRl8gfa-M8",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=lzRl8gfa-M8",
+  "ok": true,
+  "fetched_at": "2026-09-25T16:21:33.219791+00:00",
+  "cue_count": 176,
+  "transcript_path": "/workspace/skill-library/raw/lzRl8gfa-M8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/lzRl8gfa-M8/raw.txt",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "source_ui": "youtube-show-transcript",
+  "srt_file": "lzRl8gfa-M8.en-orig.srt",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable)."
+}

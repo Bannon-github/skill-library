@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "mod-matrix-source-destination-routing-basics",
+  "name": "Modulation matrix: source\u2192destination routing basics",
+  "goal": "Use a synth modulation matrix for multi-destination motion beyond front-panel defaults: pick a source (LFO, envelope, mod wheel, key, ribbon, pedal), assign a destination (osc pitch, filter cutoff, amp, vibrato rate, pan, delay time/feedback/amount, etc.), set bipolar/amount, and verify by first routing to pitch so the shape is audible\u2014then retarget to filter/FX.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Xuu03lhSK7c",
+    "url": "https://www.youtube.com/watch?v=Xuu03lhSK7c",
+    "title": "Using Modulation Matrix for Advanced Sounds \u2013 Synth Clips 35 \u2013 Daniel Fisher",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Xuu03lhSK7c/agent-skill-mod-matrix-source-destination-routing-basics.json"
+  },
+  "prerequisites": [
+    "Synth/hybrid with a modulation matrix or equivalent source\u2192destination slots"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "string",
+      "description": "LFO | envelope | mod-wheel | key | pedal | ...",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "type": "string",
+      "description": "pitch | filter-cutoff | amp | pan | delay-* | ...",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mod_routes",
+      "type": "mod-matrix",
+      "description": "One or more source\u2192destination routes with amounts"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Treat the mod matrix as deep synthesis: any controller source (self-running LFO/env or performer control like wheel/key/pedal) can move any available audible destination (pitch, cutoff, amp, vibrato rate, pan, delay params, \u2026).",
+      "tool": "mod-matrix",
+      "expect": "Source and destination lists identified on the instrument"
+    },
+    {
+      "n": 2,
+      "action": "On an init/simple patch, create a route: choose source, choose destination, raise amount. Prefer starting with destination = oscillator pitch so the modulation shape is immediately audible.",
+      "tool": "route",
+      "expect": "Clear audible modulation when source moves"
+    },
+    {
+      "n": 3,
+      "action": "Example performer control: mod wheel \u2192 filter cutoff. Lower cutoff, raise amount, move wheel; set wheel to max while trimming amount for the brightest intended ceiling. Add resonance/delay for musicality.",
+      "tool": "mod-wheel-filter",
+      "expect": "Wheel opens filter to a defined max"
+    },
+    {
+      "n": 4,
+      "action": "Retarget or add destinations: pan, volume, delay amount/regen/time, etc. Stack multiple routes so several parameters move together for evolving pads.",
+      "tool": "multi-dest",
+      "expect": "Multiple destinations respond to sources"
+    },
+    {
+      "n": 5,
+      "action": "If a route is hard to hear on its real destination, temporarily assign that source to pitch to audit the shape, then reconnect to the intended destination with an appropriate amount.",
+      "tool": "audit",
+      "expect": "Modulation shape understood before final routing"
+    }
+  ],
+  "verification": [
+    "At least one explicit source\u2192destination\u2192amount route exists",
+    "Modulation is audible (pitch audit used if needed)",
+    "Mod wheel or LFO/env successfully drives a non-default destination (e.g. filter or delay)"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "modulation-matrix",
+    "lfo",
+    "envelope",
+    "routing",
+    "pads",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://mod-matrix-source-destination-routing-basics",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Delta vs basic LFO-vs-envelope skill: focuses on matrix multi-destination assignment/verification, not defining LFO vs ADSR themselves."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "stereo-width-microshift-split-eq-humanize",
+  "name": "Stereo width without Haas: microshift, split EQ, humanize doubles",
+  "goal": "Widen synth/pad layers without relying on Haas: (1) tonal microshift\u2014duplicate, hard-pan L/R, fine-detune one side a few cents (keep under roughly \u00b15\u201310 cents); (2) complementary/split EQ on hard-panned duplicates; (3) MIDI-humanize a doubled part (timing/velocity) then hard-pan L/R; keep sub/bass mono-safe (~<100\u2013150 Hz).",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "sq2V6K85ygo",
+    "url": "https://www.youtube.com/watch?v=sq2V6K85ygo",
+    "title": "3 Ways To Widen Your Mix - Without The Haas Effect",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/sq2V6K85ygo/agent-skill-stereo-width-microshift-split-eq-humanize.json"
+  },
+  "prerequisites": [
+    "Duplicate tracks or dual oscillators; EQ; MIDI humanize/transform or manual velocity/timing tweaks; correlation meter helpful"
+  ],
+  "inputs": [
+    {
+      "name": "technique",
+      "type": "enum",
+      "description": "tonal-microshift | split-eq | humanize-double",
+      "required": true
+    },
+    {
+      "name": "mono_bass_hz",
+      "type": "number",
+      "description": "Keep below this freq mono-safe (~100\u2013150 Hz)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wide_layer",
+      "type": "audio-bus",
+      "description": "Widened pad/keys layer with healthier mono than heavy Haas"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "First use ordinary panning for width. Only then apply advanced widening. Prefer non-Haas methods to protect mono compatibility.",
+      "tool": "pan",
+      "expect": "Basic L/R placement before tricks"
+    },
+    {
+      "n": 2,
+      "action": "Tonal microshift: duplicate the part, hard-pan L and R, fine-tune one side by a few cents (transcript examples around \u22125 to \u221210; avoid large intervals). Works in synth osc detune or on bounced audio with polyphonic pitch.",
+      "tool": "detune",
+      "expect": "Wide beating without Haas delay"
+    },
+    {
+      "n": 3,
+      "action": "Split/complementary EQ: duplicate, hard-pan L/R, change EQ shapes differently on each side (or mid/side bands) so L and R spectra disagree\u2014creates width. Dial gently in context.",
+      "tool": "eq",
+      "expect": "Spectral L/R difference = width"
+    },
+    {
+      "n": 4,
+      "action": "Humanize double: duplicate MIDI, randomize/humanize timing and velocity slightly on one copy, hard-pan L/R\u2014simulates a second played take.",
+      "tool": "midi-humanize",
+      "expect": "Wide double with natural micro-variation"
+    },
+    {
+      "n": 5,
+      "action": "Protect low end: keep roughly under 100\u2013150 Hz mono/tight (safe-bass / mono-maker on widened groups). Watch correlation so phase does not collapse.",
+      "tool": "mono-bass",
+      "expect": "Wide highs/mids; solid mono bass"
+    }
+  ],
+  "verification": [
+    "At least one non-Haas technique applied (microshift, split EQ, or humanize double)",
+    "Sub/low band remains mono-safe",
+    "Correlation not wrecked vs pre-widen"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo",
+    "width",
+    "microshift",
+    "eq",
+    "pads",
+    "mono-compatible",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:26:14+00:00",
+  "mcp_resource": "skill://stereo-width-microshift-split-eq-humanize",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Delta vs odd/even unison and chord-split skills: uses detune cents, complementary EQ, or performance humanize\u2014not voice-count parity or interleaved chord muting.",
+    "Avoid stacking Haas across many tracks; these methods are the preferred alternatives from the transcript."
+  ]
+}

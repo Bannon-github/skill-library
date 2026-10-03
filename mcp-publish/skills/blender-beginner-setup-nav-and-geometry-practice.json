@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-beginner-setup-nav-and-geometry-practice",
+  "name": "blender beginner setup navigation and geometry practice",
+  "goal": "Start Blender the right way: Layout workspace focus, three-button mouse nav, G/S/R, Edit mode verts/edges/faces, then freeform practice.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "TG_vamse41c",
+    "url": "https://www.youtube.com/watch?v=TG_vamse41c",
+    "title": "Watch This Before you Get Started with Blender (7 Tips)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/TG_vamse41c/agent-skill-blender-beginner-setup-nav-and-geometry-practice.json"
+  },
+  "prerequisites": [
+    "Blender installed",
+    "Three-button scroll-wheel mouse strongly preferred"
+  ],
+  "inputs": [
+    {
+      "name": "learning_goal",
+      "type": "string",
+      "description": "End goal for your Blender learning map",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "practice_meshes",
+      "type": "mesh",
+      "description": "Experimental meshes from G/S/R and Edit mode practice"
+    }
+  ],
+  "constraints": [
+    "Start on Layout workspace; ignore Outliner/Properties/Timeline at first",
+    "Prefer MMB nav over toolbar zoom/pan/orbit icons",
+    "Navigate in small increments to avoid overshooting",
+    "Delete with Shift+X then Enter (as taught in this video)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write a short learning map: end goal plus key concepts/procedures to learn (skip unrelated tutorials).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Open Blender; select Layout workspace; mentally ignore top menus, Outliner, Properties, Timeline\u2014focus on 3D Viewport and default cube.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Use a three-button mouse: scroll zoom; MMB drag orbit; Shift+MMB pan. Practice small incremental orbits from screen center.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Object mode: G grab/move, S scale, R rotate the cube; click to confirm.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Tab into Edit mode. Selection modes: 1 vertex, 2 edge, 3 face. G/R/S components; Shift-click or box-select (wireframe for through-select).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Tab to Object mode; Shift+A \u2192 Mesh to add primitives at the 3D cursor; G to place; edit in Edit mode.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Delete extras in Object mode with Shift+X, Enter. Build rough recognizable shapes without tutorials to cement fundamentals.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Comfortable MMB nav",
+    "Can toggle Edit mode and select vert/edge/face",
+    "Can add mesh with Shift+A"
+  ],
+  "tags": [
+    "blender",
+    "beginner",
+    "navigation",
+    "fundamentals",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-beginner-setup-nav-and-geometry-practice"
+}

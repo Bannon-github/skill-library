@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "reverb-types-hall-chamber-room-plate-spring",
+  "name": "Reverb types for pads: hall, chamber, room, plate, spring",
+  "goal": "Pick cinematic pad/space reverb by texture not just length: hall (lush 2\u20133s+, pushes back, mud risk), chamber (lush thickening with less space than hall), room/ambience (intimate early-reflection space), plate (dense bright attack\u2192darker decay, versatile), spring (metallic/boingy). Use pre-delay for clarity; layer short ambience under longer hall/plate; prefer shorter types in busy mixes.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "_fHK9g9nwMM",
+    "url": "https://www.youtube.com/watch?v=_fHK9g9nwMM",
+    "title": "Unlock Reverb Types-How to Use Room, Hall, Chamber, Plate, Spring",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_fHK9g9nwMM/agent-skill-reverb-types-hall-chamber-room-plate-spring.json"
+  },
+  "prerequisites": [
+    "Reverb with hall/chamber/room/plate/spring (or IR) modes; sends preferred"
+  ],
+  "inputs": [
+    {
+      "name": "type",
+      "type": "enum",
+      "description": "hall | chamber | room-ambience | plate | spring",
+      "required": true
+    },
+    {
+      "name": "mix_density",
+      "type": "enum",
+      "description": "sparse-long-ok | busy-prefer-short",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_space_choice",
+      "type": "fx-settings",
+      "description": "Chosen reverb type + layering notes for pads/strings"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Recall controls: pre-delay separates dry from reverb onset (clarity); early reflections cue size/material; tail/late reflections = sustain; decay = fade. Think texture/tonality more than length alone.",
+      "tool": "reverb-params",
+      "expect": "Pre-delay/ER/tail understood before picking type"
+    },
+    {
+      "n": 2,
+      "action": "Hall: large auditorium character, often ~2\u20133s+ (longer for cinematic/atmosphere); lush/deep, thickens and pushes source back\u2014high mud risk. Natural for piano/strings/orchestra.",
+      "tool": "hall",
+      "expect": "Deep lush space or intentional depth push"
+    },
+    {
+      "n": 3,
+      "action": "Chamber: studio reflective-room character\u2014lush thickening with less mix real-estate than hall; very versatile (pads, strings, vocals). Room/ambience: smaller/intimate; ambiences often ~0.3\u20131s, ER-heavy\u2014liveliness without takeover.",
+      "tool": "chamber-room",
+      "expect": "Thickening or intimate space without hall mud"
+    },
+    {
+      "n": 4,
+      "action": "Plate: mechanical metal-plate density; bright quick attack then darker decay\u2014great sustain/sheen. Spring: metallic/boingy modulation in decay\u2014character FX more than lush pad default.",
+      "tool": "plate-spring",
+      "expect": "Plate sheen or spring character as intended"
+    },
+    {
+      "n": 5,
+      "action": "Practice: pick type in solo for texture, set level in full mix. Layer short ambience under longer hall/plate. Busy mixes \u2192 shorter rooms/plates; sparse/ballad \u2192 longer halls/plates. Optional high-cut on reverb darkens and pushes wet further back.",
+      "tool": "layer-mix",
+      "expect": "Pad sits in space without muddying the bed"
+    }
+  ],
+  "verification": [
+    "Type chosen for texture (hall vs chamber vs plate etc.), not length alone",
+    "Busy mix uses shorter spaces; sparse allows longer lush halls/plates",
+    "Pre-delay and/or wet EQ used when dry clarity suffers"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "reverb",
+    "hall",
+    "plate",
+    "chamber",
+    "room",
+    "spring",
+    "pads",
+    "space",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://reverb-types-hall-chamber-room-plate-spring",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "batch_id": "2026-09-24-morning-hunt",
+  "ran_at": "2026-09-24T16:24:43+00:00",
+  "timezone_note": "box local America/Vancouver (PT)",
+  "topic": "cinematic-synth / music-synthesis gap hunt",
+  "mcp_count_before": 61,
+  "mcp_count_after": 68,
+  "new_skill_count": 7,
+  "skills": [
+    {
+      "id": "odd-even-unison-center-vs-width",
+      "name": "Odd vs even unison: center mono vs ultra-wide",
+      "goal": "Choose odd vs even unison voice counts deliberately: odd counts keep a centered, in-tune voice for mono-compatible leads/basses/pads front-and-center in the mix; even counts leave a center gap for ultra-wide L/R leads\u2014then set detune and blend to taste.",
+      "video_id": "am6KBGUVtXE"
+    },
+    {
+      "id": "lfo-envelope-motion-routing-basics",
+      "name": "LFO vs envelope: cyclic vs note-triggered motion",
+      "goal": "Use LFOs for repeating/cyclic motion (tremolo, vibrato, wobble, WT/PWM drift; audio-rate into AM/FM) and envelopes (ADSR) for note-triggered shapes\u2014amp envelope for dynamics, filter envelope with \u00b1amount for pluck/wah\u2014then route either modulator to WT position or pulse width for evolving pads.",
+      "video_id": "UxGswh6XLto"
+    },
+    {
+      "id": "ping-pong-delay-filtered-motion-recipe",
+      "name": "Ping-pong delay filtered motion recipe",
+      "goal": "Build a musical ping-pong (L\u2194R bouncing) delay for synths/pads: tempo-synced time, moderate feedback, low wet mix, band-limit the repeats, optional saturation, even or offset L/R times, prefer send vs insert, and automate/modulate for evolving motion.",
+      "video_id": "GcZILAUGEyU"
+    },
+    {
+      "id": "trance-gate-sidechain-chop-texture",
+      "name": "Trance-gate: sidechain-gate chop a sustained pad",
+      "goal": "Turn a long sustaining pad/wall-of-sound (or heavily reverbed short source) into rhythmic stuttered chunks by sidechain-gating it from a silent trigger pattern (e.g. clustered 16ths), then tune gate release for snap and optionally re-space with post-gate reverb.",
+      "video_id": "DxyQNgNKUf8"
+    },
+    {
+      "id": "mono-compatible-chord-split-stereo-pad",
+      "name": "Mono-compatible chord-split hard L/R pad width",
+      "goal": "Widen a pad without chorus/spreader phase smear: duplicate the synth+MIDI, mute alternating chord tones on each copy (interleaved split), hard-pan L vs R so channels play different notes of the same harmony\u2014yielding extreme width with healthier correlation than chorus/stereo-spread FX.",
+      "video_id": "EZG7Pdh9gms"
+    },
+    {
+      "id": "filter-ladder-diode-comb-formant-flavors",
+      "name": "Filter design flavors: ladder, diode, comb, formant",
+      "goal": "Pick filter *design* (not just LP/HP/BP): ladder/analog-style for classic resonant subtractive tone; diode for EMS/303-ish acid character (retune resonance when switching); formant XY vowel morphs; comb (tiny delayed copy + mix) for peaks/nulls, keyed harmonic shaping, phasing/flanging, and self-oscillation/string-like plucks\u2014then A/B drive+resonance.",
+      "video_id": "XvA4wRZsLsE"
+    },
+    {
+      "id": "sidechain-compressor-duck-synth-pads",
+      "name": "Sidechain-compressor duck synth/pad group to kick",
+      "goal": "Make space for a four-on-the-floor kick by sidechain-compressing a synth/pad bus from the kick: insert compressor before reverb on the group, enable external sidechain from kick, use strong ratio (~6:1), fast attack, slower release, and tune threshold so pads pump without wrecking the mix.",
+      "video_id": "e6Ek5Kmieq0"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "_3j8qPhkAZU",
+      "reason": "Near-duplicate of odd-even-unison-center-vs-width (am6KBGUVtXE); same odd/even center theory with less production routing."
+    },
+    {
+      "video_id": "9hr15nZKQlI",
+      "reason": "Thin advice-only mod-matrix overview; <3 substantive portable steps."
+    },
+    {
+      "video_id": "kua2bnmevLI",
+      "reason": "Digitakt-locked LFO-trig ducking; not portable enough vs compressor sidechain skill."
+    },
+    {
+      "video_id": "XvPgfdf9MSk",
+      "reason": "Serum 2 granular/sample pad flex overlapping existing ambient/granular pad skills; proprietary sample-forward."
+    },
+    {
+      "video_id": "oW4C7txJEgM",
+      "reason": "Serum 2 spectral oscillator pad demo; overlaps ambient WT/spectral pad catalog; sample-library dependent."
+    },
+    {
+      "video_id": "P4iUcjxt8Ew",
+      "reason": "Covered by ping-pong-delay-filtered-motion-recipe (EQ-before-delay width tip already merged conceptually)."
+    },
+    {
+      "video_id": "A6VpXRS5cms",
+      "reason": "Long Massive preset reverse-engineering; deferred to keep quality bar / avoid preset flex."
+    },
+    {
+      "video_id": "OqNAV1D5UeQ",
+      "reason": "Hydrasynth-specific mod matrix UI walkthrough; deferred vs portable LFO/env skill."
+    },
+    {
+      "video_id": "JiBarM7jOtA",
+      "reason": "Shorter LFO explainer superseded by UxGswh6XLto LFO+envelope skill."
+    },
+    {
+      "video_id": "aitRs893ado",
+      "reason": "ADSR-only short; covered inside lfo-envelope-motion-routing-basics."
+    },
+    {
+      "video_id": "XYn47z-Jh_4",
+      "reason": "Short LFO/env overview; covered by UxGswh6XLto."
+    },
+    {
+      "video_id": "q217G-gl_Ww",
+      "reason": "Intro modulation part; covered by UxGswh6XLto."
+    },
+    {
+      "video_id": "6Vg92LOdnjQ",
+      "reason": "Long intro course; signal covered by published LFO/env skill this batch."
+    },
+    {
+      "video_id": "MFYwstCSGDU",
+      "reason": "General sidechain explainer; procedural duck published from e6Ek5Kmieq0."
+    },
+    {
+      "video_id": "44zckdanP5o",
+      "reason": "Broad 10-ways delay survey; focused ping-pong recipe published from GcZILAUGEyU."
+    },
+    {
+      "video_id": "nzgzng2hb50",
+      "reason": "Long filter survey; portable ladder/diode/comb/formant covered by XvA4wRZsLsE."
+    },
+    {
+      "video_id": "r9nDKWS3cpg",
+      "reason": "LP/BP/HP basics only; design-flavor skill covers more gap."
+    },
+    {
+      "video_id": "p61nhmEYVuc",
+      "reason": "General stereo imaging tips; chord-split mono-compatible skill chosen as more novel delta."
+    },
+    {
+      "video_id": "Z-yfQSWU0TA",
+      "reason": "Previously deferred thin/brand-heavy; left unpublished."
+    }
+  ],
+  "missing_captions": [
+    "EUlrANFXLs4"
+  ],
+  "recovered_captions": [
+    "XvPgfdf9MSk",
+    "oW4C7txJEgM",
+    "am6KBGUVtXE",
+    "UxGswh6XLto"
+  ],
+  "quiet": false
+}

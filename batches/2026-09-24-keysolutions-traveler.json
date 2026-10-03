@@ -1,0 +1,39 @@
+{
+  "batch_id": "2026-09-24-keysolutions-traveler",
+  "created_at": "2026-09-24T11:11:32.903+00:00",
+  "video_ids": [
+    "IU76c2Cygs4",
+    "jLGz5wq2CRE",
+    "Di_MRykZSCk",
+    "lNhGOgyN34A",
+    "yJWS77wyVe0",
+    "4OeQKxskpeo",
+    "fSXbdsuplhw",
+    "V0OZYfQJg3o"
+  ],
+  "skill_ids": [
+    "traveler-walkthrough-control-track-filter-wt-animation",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "keysol-venus-velocity-hybrid-bass-impact"
+  ],
+  "missing_captions": [
+    "lNhGOgyN34A"
+  ],
+  "thin_or_promo_skipped": [
+    "Di_MRykZSCk",
+    "lNhGOgyN34A",
+    "4OeQKxskpeo",
+    "fSXbdsuplhw",
+    "V0OZYfQJg3o"
+  ]
+}

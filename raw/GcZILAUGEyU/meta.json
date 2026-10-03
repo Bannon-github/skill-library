@@ -1,0 +1,15 @@
+{
+  "video_id": "GcZILAUGEyU",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=GcZILAUGEyU",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:21:03.088842+00:00",
+  "cue_count": 77,
+  "transcript_path": "/workspace/skill-library/raw/GcZILAUGEyU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/GcZILAUGEyU/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

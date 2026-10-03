@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "osc-as-granular-pitch-step-delay",
+  "name": "Oscillator-as-delay: LFO repeats + stepped pitch-shift grains",
+  "goal": "Emulate granular pitching delays inside the synth (no delay FX): second oscillator copies the dry WT, an envelope-shaped tempo-synced LFO repeats its level like echoes, global amp release sets feedback/fade length, a fade-in LFO avoids overlapping the dry attack, and a stepped envelope-mode LFO raises pitch by octaves each repeat (e.g. +24 st over quarter-note steps) for sanding granular delay tails\u2014then share formant/WT macros with the dry osc.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "XVHx0eCGf5g",
+    "url": "https://www.youtube.com/watch?v=XVHx0eCGf5g",
+    "title": "How to Turn Any Synth Into a Granular Delay \u2728 | Vital Pad Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/XVHx0eCGf5g/agent-skill-osc-as-granular-pitch-step-delay.json"
+  },
+  "prerequisites": [
+    "Multi-osc wavetable synth with per-osc level modulation, multiple LFOs (tempo sync + envelope mode), filter, macros"
+  ],
+  "inputs": [
+    {
+      "name": "delay_subdivision",
+      "type": "string",
+      "description": "e.g. quarter or eighth note LFO rate for repeats",
+      "required": true
+    },
+    {
+      "name": "pitch_step_semitones",
+      "type": "number",
+      "description": "Total pitch rise across steps (transcript example +24)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "granular_delay_voice",
+      "type": "synth-patch",
+      "description": "Dry osc + pitch-stepping delay osc"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Delta vs ping-pong-delay / granular-dual-saw: delay is synthesized by a second oscillator + LFO envelopes, not an FX delay or granular engine plugin."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Dry voice: osc1 on basic/WT shape; use a non-global envelope (env2) on osc1 level so amp envelope 1\u2019s release can later control delay ring-out. Filter with driven LP (~24 dB), key track, env3\u2192cutoff (decay/release up, sustain ~halfway, some attack).",
+      "tool": "osc-filter",
+      "expect": "Expressive dry tone with independent delay headroom"
+    },
+    {
+      "n": 2,
+      "action": "Optional: sculpt WT (sine\u2194saw spectral blend), macro\u2192WT position + cutoff; velocity\u2192filter attack and env3 depth for soft vs bright hits; light unison (~2%).",
+      "tool": "wavetable",
+      "expect": "Playable dry pad/bass body"
+    },
+    {
+      "n": 3,
+      "action": "Delay osc: enable osc2, copy osc1 waveform. Instead of an ADSR on level, draw an echo-like shape on LFO1 and map it to osc2 level; tempo-sync LFO1 to set delay time.",
+      "tool": "lfo",
+      "expect": "Repeating amplitude taps like a delay"
+    },
+    {
+      "n": 4,
+      "action": "Feedback/fade: use global envelope release to control how long repeats die out. Fade-in: another LFO in envelope mode with a ramp-up modulating the delay-level mod depth so repeats don\u2019t pile on the dry attack.",
+      "tool": "lfo-env",
+      "expect": "Delays appear after the dry transient"
+    },
+    {
+      "n": 5,
+      "action": "Granular pitch sanding: LFO in envelope/step mode \u2192 osc2 pitch; set amount to +24 semitones (two octaves) with steps aligned to the delay subdivision (e.g. each quarter step up) so each repeat rises in pitch like a granular pitch-shift delay.",
+      "tool": "lfo-pitch",
+      "expect": "Ascending pitched echo grains"
+    },
+    {
+      "n": 6,
+      "action": "Link formant-scale / WT position macros so delay osc timbre tracks the dry sound. Optional reverse-delay style LFOs: leave space in the shape to fade down and avoid clicks; try faster eighth-note rates.",
+      "tool": "macro",
+      "expect": "Cohesive dry + granular delay voice"
+    }
+  ],
+  "verification": [
+    "Mute osc2 \u2192 only dry; solo osc2 \u2192 pitched repeating taps",
+    "Longer amp release lengthens delay tail",
+    "Pitch-step LFO raises each repeat (e.g. toward +2 octaves)"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "granular",
+    "delay",
+    "lfo",
+    "wavetable",
+    "pads",
+    "pitch-shift",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://osc-as-granular-pitch-step-delay"
+}

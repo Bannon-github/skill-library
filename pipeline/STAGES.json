@@ -1,0 +1,47 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "name": "topic-search",
+      "desc": "User types topic; search YouTube for how-to videos; return titles, links, Show-transcript availability. STOP for confirm (unless ongoing distillery authorized).",
+      "status": "ready-waiting-for-topic"
+    },
+    {
+      "id": 2,
+      "name": "save-raw",
+      "desc": "After confirm, pull YouTube Show-transcript text only (info \u2192 Transcript); save as raw/<id>/transcript.txt + raw.txt. Use pipeline/fetch_youtube_transcript.py.",
+      "status": "implemented"
+    },
+    {
+      "id": 3,
+      "name": "distill",
+      "desc": "Apply distill-transcript skill on transcript prose; remove filler; keep actionable steps/facts.",
+      "status": "implemented"
+    },
+    {
+      "id": "agent-format",
+      "name": "agent-consumable-format",
+      "status": "implemented",
+      "desc": "Format as AgentConsumableSkill v1"
+    },
+    {
+      "id": 4,
+      "name": "summary-destination",
+      "desc": "User started saying In\u2026 \u2014 wait for exact summary output location/format before finalizing.",
+      "status": "blocked-awaiting-user"
+    },
+    {
+      "id": 5,
+      "name": "skills-curriculums",
+      "desc": "Emit executable skills; place in topics; sequence into curriculums toward human-level generality.",
+      "status": "in-progress"
+    },
+    {
+      "id": "mcp-publish",
+      "name": "publish-to-mcp",
+      "status": "implemented",
+      "desc": "Publish to youtube-skills MCP"
+    }
+  ],
+  "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory."
+}

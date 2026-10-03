@@ -1,0 +1,36 @@
+{
+  "id": "curriculum-crypto-sidehustle",
+  "title": "Crypto self-custody & side-hustle ops",
+  "purpose": "Niche how-tos for hardware-wallet custody, on-chain research, Form 8949 mechanics, plus productized freelance and digital-product/invoicing ops. Educational only.",
+  "status": "active",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Self-custody & on-chain research",
+      "skills": [
+        "crypto-hw-wallet-seed-backup-shamir-metal",
+        "crypto-hw-wallet-unbox-seal-verify-init",
+        "crypto-etherscan-token-holder-wallet-research",
+        "crypto-safe-multisig-threshold-setup-execute"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Crypto tax mechanics",
+      "skills": [
+        "crypto-tax-form-8949-disposal-rows"
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Side-hustle productization & ops",
+      "skills": [
+        "sidehustle-productized-service-offer-and-ops",
+        "sidehustle-gumroad-digital-product-listing",
+        "sidehustle-upwork-proposal-short-proof-cta",
+        "sidehustle-stripe-invoice-create-send"
+      ]
+    }
+  ],
+  "updated_at": "2026-10-03T15:50:00+00:00"
+}

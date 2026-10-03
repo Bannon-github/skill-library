@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-multi-envelope-osc-level-morph",
+  "name": "Multi-envelope oscillator-level morphing pad",
+  "goal": "Create an always-in-motion pad by silencing shared amp control of oscillators and assigning staggered envelope-mode LFOs to each oscillator level (plus optional noise), with differing filter and WT motion.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "AYVmdcgKt_s",
+    "url": "https://www.youtube.com/watch?v=AYVmdcgKt_s",
+    "title": "This One Technique Changes EVERYTHING // Vital Pad Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/AYVmdcgKt_s/agent-skill-cinematic-multi-envelope-osc-level-morph.json"
+  },
+  "prerequisites": [
+    "Synth with \u22653 osc, multiple loopable envelopes or envelope-mode LFOs, filters, noise/sample osc"
+  ],
+  "inputs": [
+    {
+      "name": "osc_count",
+      "type": "number",
+      "description": "Number of oscillators to stagger (3+)",
+      "required": true
+    },
+    {
+      "name": "release_seconds",
+      "type": "number",
+      "description": "Long shared release so notes trail (tutorial ~5s on env1)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "morphing_pad_patch",
+      "type": "synth-patch",
+      "description": "Pad whose layers enter/exit on independent timings"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Methodology is synth-agnostic: any instrument with per-osc level envelopes (or envelope-mode LFOs) works.",
+    "Do not depend on a specific commercial wavetable pack; use stock or original tables."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Lengthen the main amp release (~5s) so held chords trail instead of cutting off.",
+      "tool": "amp-envelope",
+      "expect": "Long pad tail on note-off"
+    },
+    {
+      "n": 2,
+      "action": "Enable all target oscillators but set their levels to zero.",
+      "tool": "oscillator",
+      "expect": "Silent until per-osc envelopes fire"
+    },
+    {
+      "n": 3,
+      "action": "Convert LFO1/2/3 (or dedicated envelopes) to envelope mode; draw distinct ADSR-like shapes with different attack times; route each to one oscillator\u2019s level.",
+      "tool": "envelope-lfo",
+      "expect": "Oscillators enter at staggered times"
+    },
+    {
+      "n": 4,
+      "action": "Optionally octave-shift and pan layers so the staggered entries are obvious while designing.",
+      "tool": "oscillator",
+      "expect": "Clear auditory separation of entries"
+    },
+    {
+      "n": 5,
+      "action": "Assign different filters (e.g. one ladder vs another) to subsets of oscillators; reduce resonance; let early layers swoop while a late layer arrives darker/brighter.",
+      "tool": "filter",
+      "expect": "Layers feel like separate parts of one patch"
+    },
+    {
+      "n": 6,
+      "action": "Add noise/sample with its own short attack\u2013release envelope to level; optionally direct-out before main FX for drama.",
+      "tool": "noise-or-sample",
+      "expect": "Timed noise wash independent of tonal oscs"
+    },
+    {
+      "n": 7,
+      "action": "Animate wavetable position with synced LFOs; add mild unison/spread on select oscs; optional random bipolar pan.",
+      "tool": "wavetable",
+      "expect": "Timbre evolves while levels morph"
+    },
+    {
+      "n": 8,
+      "action": "Finish with long ambient delay/reverb (tutorial example: long room ~tens of seconds decay) on a send or insert.",
+      "tool": "fx-bus",
+      "expect": "Motion remains audible inside a wash"
+    }
+  ],
+  "verification": [
+    "Not all oscillators share one identical amp envelope timing",
+    "At least two distinct entry times audible on a held chord",
+    "Noise or WT motion optional but level-stagger is present"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "envelope",
+    "modulation",
+    "ambient",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://cinematic-multi-envelope-osc-level-morph"
+}

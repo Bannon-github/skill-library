@@ -1,0 +1,15 @@
+{
+  "id": "curriculum-python-files",
+  "title": "Reliable file handling in Python",
+  "purpose": "Cross-platform file ops as a human developer would.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Pathlib basics",
+      "skills": [
+        "python-pathlib-basic-file-workflow"
+      ]
+    }
+  ],
+  "status": "draft-needs-more-videos"
+}

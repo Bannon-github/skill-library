@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "id": "dji-video-capture-for-gaussian-splat",
+  "name": "dji video capture for gaussian splat",
+  "goal": "Record a geo-referenced drone video for splatting.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mQ4EHUpXj9Q",
+    "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+    "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mQ4EHUpXj9Q/distilled.json"
+  },
+  "prerequisites": [
+    "DJI drone with video mode and Video Subtitles option",
+    "Adequate daylight or controlled lighting"
+  ],
+  "inputs": [
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "Structure or object to capture",
+      "required": true
+    },
+    {
+      "name": "drone_model",
+      "type": "string",
+      "description": "DJI model e.g. Mini 5 Pro",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "video_file",
+      "type": "file",
+      "description": "4K/30fps MP4 with subtitle GPS metadata"
+    }
+  ],
+  "constraints": [
+    "Enable Video Subtitles for GPS",
+    "Lock white balance after Auto",
+    "Prefer ISO 100 and ~1/60 shutter",
+    "Continuous orbit with frame overlap"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Power on DJI drone and climb to subject height.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Switch to video mode; enable Video Subtitles (GPS per frame).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Set WB to Auto then lock it; set 4K 30fps Normal color.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Set ISO 100 and shutter ~1/60 (or lighting-appropriate).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Fly a smooth multi-angle orbit with overlap; land and copy the video.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Video file exists on SD/export",
+    "Subtitles/GPS track present if supported"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "published_at": "2026-09-24T01:02:02.269536+00:00",
+  "mcp_resource": "skill://dji-video-capture-for-gaussian-splat"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "id": "upload-capture-to-free-splatware",
+  "name": "upload capture to free splatware",
+  "goal": "Process capture in free Splatware.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "FpN2VTSZ_7U",
+    "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+    "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/FpN2VTSZ_7U/distilled.json"
+  },
+  "prerequisites": [
+    "Completed multi-angle capture",
+    "Browser access to free Splatware"
+  ],
+  "inputs": [
+    {
+      "name": "capture_media",
+      "type": "file",
+      "description": "Hyperlapse/video upload",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "splat",
+      "type": "3d_asset",
+      "description": "Online Gaussian splat"
+    }
+  ],
+  "constraints": [
+    "Use free Splatware web app from the tutorial"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Open free Splatware web app.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Upload hyperlapse/video.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Run processing; review and download the splat.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Interactive splat viewable after processing"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "published_at": "2026-09-24T01:02:02.270166+00:00",
+  "mcp_resource": "skill://upload-capture-to-free-splatware"
+}

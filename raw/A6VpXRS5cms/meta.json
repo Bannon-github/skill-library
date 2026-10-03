@@ -1,0 +1,15 @@
+{
+  "video_id": "A6VpXRS5cms",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=A6VpXRS5cms",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:20:45.727564+00:00",
+  "cue_count": 372,
+  "transcript_path": "/workspace/skill-library/raw/A6VpXRS5cms/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/A6VpXRS5cms/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

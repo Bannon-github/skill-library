@@ -1,0 +1,3 @@
+# Transcript fetcher + stage2 fetchers (pipeline/*.py expect /workspace/skill-library/.venv)
+youtube-transcript-api
+yt-dlp

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "id": "reverb-send-wet100-eq-room-plate-spring",
+  "name": "Reverb sends: 100% wet, EQ the return, room/plate/spring trio",
+  "goal": "Set up cinematic-friendly reverb the send way: ask if reverb is needed; keep 2\u20133 go-to returns (short room ~1s, long plate ~6s, brighter spring ~4s); put FX 100% wet on sends; always EQ returns (high-pass ~200 Hz+ to kill mud); add too much then pull send level back\u2014longer decays get less send.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "VnCpRTsg_G8",
+    "url": "https://www.youtube.com/watch?v=VnCpRTsg_G8",
+    "title": "5 Rules of Reverb",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/VnCpRTsg_G8/agent-skill-reverb-send-wet100-eq-room-plate-spring.json"
+  },
+  "prerequisites": [
+    "DAW sends/returns; at least one algorithmic/IR reverb; EQ after reverb on return"
+  ],
+  "inputs": [
+    {
+      "name": "reverb_slots",
+      "type": "string",
+      "description": "room + plate + spring (or third bright flavor)",
+      "required": true
+    },
+    {
+      "name": "hp_hz",
+      "type": "number",
+      "description": "High-pass on reverb return (~200 Hz baseline from transcript)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "reverb_send_template",
+      "type": "fx-template",
+      "description": "Three EQ'd 100%-wet reverb returns ready for pad/vocal/synth sends"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide intentionally whether the source needs reverb (do not add by default). Match genre references.",
+      "tool": "audit",
+      "expect": "Clear yes/no for reverb on the pad/synth"
+    },
+    {
+      "n": 2,
+      "action": "Build 2\u20133 saved returns: (1) room ~1s+ decay for basic space; (2) long ambient plate (transcript example ~6.2s); (3) spring or other bright flavor (~4s). Save in template.",
+      "tool": "reverb-template",
+      "expect": "Three distinct go-to spaces ready"
+    },
+    {
+      "n": 3,
+      "action": "Use sends: set reverb mix to 100% wet on the return. Control amount only via send level so dry stays constant and wet can be EQ'd independently.",
+      "tool": "send",
+      "expect": "Dry on channel; wet-only on return"
+    },
+    {
+      "n": 4,
+      "action": "EQ the reverb return after the algo: high-pass everything below ~200 Hz (or higher) so reverb does not invent mud. Optional cuts for metallic harshness (e.g. spring).",
+      "tool": "eq",
+      "expect": "Wet space without boom below ~200 Hz"
+    },
+    {
+      "n": 5,
+      "action": "Add too much send, then back off to a musical amount. Longer decays usually need less send; shorter rooms can take more. Share one long plate across lead vs backgrounds with different send depths.",
+      "tool": "level",
+      "expect": "Audible halo without wash; longer = quieter send"
+    }
+  ],
+  "verification": [
+    "Returns are 100% wet; amount via sends",
+    "Each return has post-reverb HPF ~200 Hz+",
+    "Template has room + long plate + bright third option"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "reverb",
+    "send",
+    "eq",
+    "room",
+    "plate",
+    "spring",
+    "pads",
+    "mix",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://reverb-send-wet100-eq-room-plate-spring",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Prefer sends over insert mix knobs so dry pad level stays independent of wet amount."
+  ]
+}

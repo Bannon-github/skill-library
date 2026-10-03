@@ -1,0 +1,169 @@
+{
+  "batch_id": "2026-10-02-morning-hunt",
+  "ran_at": "2026-10-02T16:26:26+00:00",
+  "ran_at_local": "2026-10-02 09:26 PT",
+  "timezone_note": "box local America/Vancouver (PT)",
+  "topic": "cinematic-synth / music-synthesis gap hunt",
+  "mcp_count_before": 76,
+  "mcp_count_after": 84,
+  "new_skill_count": 8,
+  "pivoted_to_crypto": false,
+  "synth_returns_thin": false,
+  "skills": [
+    {
+      "id": "audio-rate-am-wave-shape-texture",
+      "name": "Audio-rate AM for wave-shaping and FM/ring-like texture",
+      "goal": "Create complex cinematic textures with audio-rate amplitude modulation: feed a soft waveform (sine/triangle/saw) into a VCA and modulate that VCA at audio rate from another waveform of the same oscillator (self AM / new wave shapes) or a second oscillator (complex sidebands); put the AM depth under an envelope or LFO VCA so dynamics evolve\u2014often reducing the need for a filter.",
+      "video_id": "5686u1c9kdM"
+    },
+    {
+      "id": "dual-delay-parallel-two-tap-crossfeedback",
+      "name": "Dual delay: parallel, two-tap, cross-feedback vs ping-pong",
+      "goal": "Dial cinematic dual-delay motion beyond a basic ping-pong: dual-parallel (independent L/R subdivisions with optional cross-feedback for dense poly-rhythmic space), two-tap tape-head style (long tap feeds short; short has no self/cross feedback for cleaner bounce), recognize ping-pong as 2:1 two-tap, and choose dense (cross-feedback + modulation/diffusion/phase flip) vs discreet (two-tap/ping-pong) stereo population.",
+      "video_id": "eSXZWFjCeiY"
+    },
+    {
+      "id": "hybrid-noise-distortion-separate-sub-layer",
+      "name": "Hybrid noise+distortion layer separate from sub/harmonic patch",
+      "goal": "Build a portable hybrid stack: one patch/layer for filtered noise through asymmetric distortion (gritty air/texture) with EQ low-cut and slight top trim, and a separate patch/layer for sub/harmonic tones (e.g. square/WT) so you can retune harmonics or hold a fixed noise pitch without the noise timbre tracking every bass note\u2014then blend; maps to sample/noise + WT + filter hybrid thinking for cinematic beds (not only neuro bass).",
+      "video_id": "EWe_Fnjcceo"
+    },
+    {
+      "id": "midside-eq-bass-focus-width-depth",
+      "name": "Mid-side EQ: center the bass, tame mid problems, widen with side mids/highs",
+      "goal": "Use mid/side EQ on synth/sample/pad layers or mixes: split stereo into mid (L+R mono sum) and side (L\u2212R), high-pass wide bass on the sides to focus low end center, cut resonant/harsh problems only on the mid when they live there, optionally boost the same band on the sides to preserve ambience, and try subtle upper-mid side boosts for depth (not only extreme high shelves for width).",
+      "video_id": "kEiILPm1VSc"
+    },
+    {
+      "id": "osc-as-granular-pitch-step-delay",
+      "name": "Oscillator-as-delay: LFO repeats + stepped pitch-shift grains",
+      "goal": "Emulate granular pitching delays inside the synth (no delay FX): second oscillator copies the dry WT, an envelope-shaped tempo-synced LFO repeats its level like echoes, global amp release sets feedback/fade length, a fade-in LFO avoids overlapping the dry attack, and a stepped envelope-mode LFO raises pitch by octaves each repeat (e.g. +24 st over quarter-note steps) for sanding granular delay tails\u2014then share formant/WT macros with the dry osc.",
+      "video_id": "XVHx0eCGf5g"
+    },
+    {
+      "id": "parallel-filter-rhythmic-pad-chains",
+      "name": "Parallel filter chains for rhythmic pad motion",
+      "goal": "Thicken cinematic pads with parallel processing: run dual filters in parallel (e.g. low-pass + band-pass) with independent rhythmic/LFO cutoff motion synced to tempo, stack overlapping bands that a gentle bus compressor tames, and EQ lows after the parallel stack\u2014portable alternative to only insert-filtering a single path.",
+      "video_id": "i4ZZwzxTpf0"
+    },
+    {
+      "id": "spectral-warp-vocode-formant-stretch-smear",
+      "name": "Spectral warp modes: vocode, formant scale, harmonic stretch, smear",
+      "goal": "Add WT spectral/formant morph delta beyond basic wavetable-position pads: use spectral warp modes\u2014vocode (key-tracked formant shift, vocal/vocoder character), formant scale (more exaggerated vowel/formant moves without key-tracking), harmonic stretch (even harmonic expansion; great for LFO\u2192acid/sci-fi), inharmonic stretch (metallic/bell chaos), and smear (spectral high-pass / additive smear from bottom of table)\u2014then modulate the warp amount for evolving cinematic texture.",
+      "video_id": "iqrPF8t72sU"
+    },
+    {
+      "id": "wavetable-crossfade-morph-modulate-pad",
+      "name": "Wavetable crossfade position + morph/PWM-style shaping",
+      "goal": "Build evolving WT pads by smoothly crossfading through table frames (not hard digital switches), modulating table position from LFO/mod sources, and using morph-style wave shapers (pulse-width-like morph on squares, mirror/stretch/narrow toward filter-like thinning, optional vintage bit-step) as a portable delta beyond basic WT-position-only pads.",
+      "video_id": "yuHwGR1R7jY"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "uMpzFbokMFo",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "52lNxvouYJc",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "BFPMfwq-fEY",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "jfQZA59L-E0",
+      "reason": "transcript_unavailable (multiband-on-pads priority miss)"
+    },
+    {
+      "video_id": "AmD3y2a8XsM",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "_w1h4vknfow",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "gSXjxSuU0Y4",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "A7q9L5wd7Mk",
+      "reason": "transcript_unavailable"
+    },
+    {
+      "video_id": "Djn1sQdYLyI",
+      "reason": "Deferred: Massive Spectrum/Bend/Formant short; covered by spectral-warp skill delta this batch; candidate not published"
+    },
+    {
+      "video_id": "Fj3oRwsS5vs",
+      "reason": "Near-overlap with published midside-eq-bass-focus-width-depth (kEiILPm1VSc)"
+    },
+    {
+      "video_id": "gg2xN8_dcW0",
+      "reason": "Deferred batch cap; multiband cello/guitar problem-band duck \u2014 retain for later pad-focused distill"
+    },
+    {
+      "video_id": "oqNCqaQrQBg",
+      "reason": "Deferred: granular Vital soundscape overlaps osc-as-granular-pitch-step-delay + existing granular-dual-saw; promo-heavy preset pack"
+    },
+    {
+      "video_id": "YxpAuNM4zGI",
+      "reason": "Deferred: analog-feel tips overlap cinematic-warm-analog-pad / soft-tape skills"
+    },
+    {
+      "video_id": "p23e7xmL6I4",
+      "reason": "Deferred: Ring/FM/AM overview overlaps fm-carrier + new audio-rate-am skill"
+    },
+    {
+      "video_id": "gXKyN_ifUao",
+      "reason": "Deferred: modular FM deep dive; adjacent to existing FM skill"
+    },
+    {
+      "video_id": "nYCnZHnIVBs",
+      "reason": "Thin / M4L-device-specific spectral morph; not portable artifact recipe"
+    },
+    {
+      "video_id": "yNKODp5wp9E",
+      "reason": "Deferred: mid-side philosophy; core recipe published via kEiILPm1VSc"
+    },
+    {
+      "video_id": "rHYTJjvfBNQ",
+      "reason": "Deferred: general multiband basics; prefer pad-specific later"
+    },
+    {
+      "video_id": "Mtgi-w0A4tU",
+      "reason": "Deferred: Serum filter section walkthrough \u2014 not a gap-theme artifact recipe"
+    },
+    {
+      "video_id": "GFLyW6ozb8o",
+      "reason": "Deferred batch cap; advanced parallel distortion \u2014 candidate retained in raw/"
+    }
+  ],
+  "searched_queries": [
+    "hybrid wavetable sample noise filter synth tutorial",
+    "dual delay tempo sync motion delay sound design",
+    "wavetable position morph formant synth how to",
+    "mid side EQ pads mixing tutorial",
+    "spectral morph wavetable pad tutorial",
+    "multiband compression pads synth tutorial",
+    "parallel saturation synth pad sound design",
+    "granular filter stack synth tutorial cinematic",
+    "audio rate FM cross modulation synth texture tutorial"
+  ],
+  "gap_themes_hit": [
+    "hybrid noise + filter + separate harmonic layer",
+    "dual delay parallel/two-tap/cross-feedback delta vs ping-pong",
+    "wavetable spectral warp formant/stretch/smear + crossfade morph",
+    "mid-side EQ (retry kEiILPm1VSc captions now available)",
+    "parallel filter rhythmic chains",
+    "audio-rate AM texture",
+    "osc-as granular pitch-step delay"
+  ],
+  "still_thin": [
+    "true sample+WT+analog-filter hybrid walkthrough with captions (uMpzFbokMFo miss)",
+    "multiband compression specifically on pads (jfQZA59L-E0 miss; gg2xN8 deferred)",
+    "parallel saturation dedicated recipe (GFLy deferred)"
+  ]
+}

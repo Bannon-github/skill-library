@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "id": "lush-stereo-saw-pad-random-pitch-texture",
+  "name": "Lush stereo saw pad with scale-snapped pitch texture",
+  "goal": "Make a lush ambient pad: dual saws panned L/R with \u00b15 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random \u2192 cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "pQFr594QwI4",
+    "url": "https://www.youtube.com/watch?v=pQFr594QwI4",
+    "title": "How to make LUSH ambient pads in Vital",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/pQFr594QwI4/agent-skill-lush-stereo-saw-pad-random-pitch-texture.json"
+  },
+  "prerequisites": [
+    "Synth with \u22653 osc, unison, random mods, pitch snap/scale lock, distortion, delay, reverb"
+  ],
+  "inputs": [
+    {
+      "name": "scale",
+      "type": "string",
+      "description": "Scale for pitch snapping the texture osc",
+      "required": true
+    },
+    {
+      "name": "unison_voices",
+      "type": "number",
+      "description": "Tutorial uses 4 voices @ ~3% detune",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "lush_ambient_pad",
+      "type": "synth-patch",
+      "description": "Wide lush pad with melodic random texture"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc1+2: basic saws; pan opposite; fine-tune ~\u00b15 cents.",
+      "tool": "oscillator",
+      "expect": "Immediate stereo width"
+    },
+    {
+      "n": 2,
+      "action": "Add ~4 unison voices @ ~3% detune for depth.",
+      "tool": "unison",
+      "expect": "Thicker bed"
+    },
+    {
+      "n": 3,
+      "action": "Filter1 dirty/12 dB on both oscs; set drive and resonance; env1 mid attack/decay/sustain + longer release for level.",
+      "tool": "filter",
+      "expect": "Controlled warm pad level"
+    },
+    {
+      "n": 4,
+      "action": "Env2: short attack, long decay, sustain <50%, release up \u2192 filter cutoff for per-chord harmonic bloom; also stereo random (1 bar) \u2192 cutoff.",
+      "tool": "envelope",
+      "expect": "Movement at chord starts + ongoing variation"
+    },
+    {
+      "n": 5,
+      "action": "Osc3 texture: random (sine-interpolate, ~5.2s) \u2192 transpose with scale snap + global snap; +12 st base; map same random to pan (stereo mode for independent movers).",
+      "tool": "oscillator",
+      "expect": "Melodic shimmer in-key"
+    },
+    {
+      "n": 6,
+      "action": "Squeeze/distort osc3 via macro; optional random \u2192 fine pitch; slow stereo random \u2192 global voice detune (bipolar) for analog warp.",
+      "tool": "mod-matrix",
+      "expect": "Organic instability"
+    },
+    {
+      "n": 7,
+      "action": "Sample noise (e.g. HVAC) keytrack off; filter2 on osc3+sample; reverb ~50% mix; ping-pong delay 1/4; re-enable osc1/2.",
+      "tool": "fx-bus",
+      "expect": "Lush finished pad"
+    }
+  ],
+  "verification": [
+    "Dual pans + cents detune audible",
+    "Texture osc stays in chosen scale when snapping enabled",
+    "Reverb/delay present without killing dry chord definition entirely"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "stereo",
+    "ambient",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://lush-stereo-saw-pad-random-pitch-texture"
+}

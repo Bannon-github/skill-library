@@ -1,0 +1,137 @@
+{
+  "batch_id": "2026-09-23-batch-01",
+  "created_at": "2026-09-24T01:00:01.698212+00:00",
+  "entries": [
+    {
+      "id": "gaussian-splat-drone-video-mipmap",
+      "video_id": "mQ4EHUpXj9Q",
+      "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+      "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+      "topic": "drone-to-3d-gaussian-splat",
+      "transcript_source": "youtube-auto-en",
+      "transcript_file": "transcripts/mQ4EHUpXj9Q.en.txt",
+      "summary": "Capture one DJI drone video with GPS video subtitles, locked white balance, 4K/30fps normal color, ISO 100 and ~1/60 shutter, orbit the subject, then process into a Gaussian splat with Mip-Map.",
+      "skills": [
+        {
+          "name": "dji-video-capture-for-gaussian-splat",
+          "goal": "Record a geo-referenced drone video for splatting.",
+          "steps": [
+            "Power on DJI drone and climb to subject height.",
+            "Switch to video mode; enable Video Subtitles (GPS per frame).",
+            "Set WB to Auto then lock it; set 4K 30fps Normal color.",
+            "Set ISO 100 and shutter ~1/60 (or lighting-appropriate).",
+            "Fly a smooth multi-angle orbit with overlap; land and copy the video."
+          ]
+        },
+        {
+          "name": "process-drone-video-to-gaussian-splat-mipmap",
+          "goal": "Build a splat from that video in Mip-Map.",
+          "steps": [
+            "Import the video into Mip-Map.",
+            "Extract frames using subtitle GPS when present.",
+            "Run Gaussian splat reconstruction.",
+            "Inspect and export the 3D splat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drone-gaussian-splat-hyperlapse-splatware",
+      "video_id": "FpN2VTSZ_7U",
+      "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+      "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+      "topic": "drone-to-3d-gaussian-splat",
+      "transcript_source": "youtube-auto-en",
+      "transcript_file": "transcripts/FpN2VTSZ_7U.en.txt",
+      "summary": "Explains splats vs meshes, captures a building with DJI Mavic Air 3 hyperlapse (no paid planner), uploads to free online Splatware for processing.",
+      "skills": [
+        {
+          "name": "drone-hyperlapse-multi-angle-capture",
+          "goal": "Capture overlapping views with DJI hyperlapse.",
+          "steps": [
+            "Plan multi-angle coverage of every facade (photogrammetry-style).",
+            "Use DJI built-in hyperlapse modes.",
+            "Fly slowly; avoid blur; export media."
+          ]
+        },
+        {
+          "name": "upload-capture-to-free-splatware",
+          "goal": "Process capture in free Splatware.",
+          "steps": [
+            "Open free Splatware web app.",
+            "Upload hyperlapse/video.",
+            "Run processing; review and download the splat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser-volyraph-video-to-splat",
+      "video_id": "MDNBxM4FlgE",
+      "url": "https://www.youtube.com/watch?v=MDNBxM4FlgE",
+      "title": "Drone Video to 3D Gaussian Splat in the Browser Tutorial",
+      "topic": "drone-to-3d-gaussian-splat",
+      "transcript_source": "youtube-auto-en",
+      "transcript_file": "transcripts/MDNBxM4FlgE.en.txt",
+      "summary": "Volyraph browser app: create project, upload video under 5GB, cloud GPU ~1\u20131.5h, then edit/annotate/map the splat in-browser.",
+      "skills": [
+        {
+          "name": "volyraph-browser-splat-pipeline",
+          "goal": "Video to splat entirely in browser.",
+          "steps": [
+            "Sign in to Volyraph; create and open a project.",
+            "Capture \u2192 Standard video; upload MP4/MOV under 5GB.",
+            "Wait for queue and cloud GPU processing.",
+            "Edit, annotate, place on map; share/export."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightroom-start-to-finish-edit",
+      "video_id": "owStZxm9DIA",
+      "url": "https://www.youtube.com/watch?v=owStZxm9DIA",
+      "title": "EDIT PHOTOS Like a Pro // Complete LIGHTROOM Tutorial",
+      "topic": "photo-editing",
+      "transcript_source": "youtube-auto-en",
+      "transcript_file": "transcripts/owStZxm9DIA.en.txt",
+      "summary": "Start-to-finish Lightroom workflow: choose a strong Library image, note light and composition, then Develop with an efficient ordered edit and export.",
+      "skills": [
+        {
+          "name": "lightroom-select-and-develop-photo",
+          "goal": "Edit one photo end-to-end in Lightroom.",
+          "steps": [
+            "In Library, pick a strong base photo.",
+            "Open Develop on the unedited version.",
+            "Set global exposure, contrast, and white balance for the light.",
+            "Add local adjustments to separate subject from background.",
+            "Refine color/crop; export final file."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-pathlib-file-ops",
+      "video_id": "yxa-DJuuTBI",
+      "url": "https://www.youtube.com/watch?v=yxa-DJuuTBI",
+      "title": "Python Tutorial: Pathlib - The Modern Way to Handle File Paths",
+      "topic": "coding-automation",
+      "transcript_source": "youtube-auto-en",
+      "transcript_file": "transcripts/yxa-DJuuTBI.en.txt",
+      "summary": "Use pathlib.Path objects instead of os.path strings for cross-platform filesystem work, as modern Django settings do.",
+      "skills": [
+        {
+          "name": "python-pathlib-basic-file-workflow",
+          "goal": "Common file tasks with pathlib.",
+          "steps": [
+            "from pathlib import Path",
+            "Build paths with Path.cwd()/Path.home() and the / operator.",
+            "Use exists(), mkdir(parents=True, exist_ok=True).",
+            "read_text/write_text; iterdir/glob for listing.",
+            "Prefer Path objects over string concatenation."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "video_id": "EWe_Fnjcceo",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=EWe_Fnjcceo",
+  "ok": true,
+  "fetched_at": "2026-10-02T16:22:45.718375+00:00",
+  "cue_count": 118,
+  "transcript_path": "/workspace/skill-library/raw/EWe_Fnjcceo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/EWe_Fnjcceo/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

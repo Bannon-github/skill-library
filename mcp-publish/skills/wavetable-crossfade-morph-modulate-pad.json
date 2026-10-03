@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "wavetable-crossfade-morph-modulate-pad",
+  "name": "Wavetable crossfade position + morph/PWM-style shaping",
+  "goal": "Build evolving WT pads by smoothly crossfading through table frames (not hard digital switches), modulating table position from LFO/mod sources, and using morph-style wave shapers (pulse-width-like morph on squares, mirror/stretch/narrow toward filter-like thinning, optional vintage bit-step) as a portable delta beyond basic WT-position-only pads.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "yuHwGR1R7jY",
+    "url": "https://www.youtube.com/watch?v=yuHwGR1R7jY",
+    "title": "You Won\u2019t Believe What the Modwave Can Do With Wavetables!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/yuHwGR1R7jY/agent-skill-wavetable-crossfade-morph-modulate-pad.json"
+  },
+  "prerequisites": [
+    "Wavetable oscillator with position/crossfade and optional morph/wave-shaping modes; LFO or mod matrix; filter + FX"
+  ],
+  "inputs": [
+    {
+      "name": "crossfade",
+      "type": "boolean",
+      "description": "Smooth interpolate between frames vs hard switch",
+      "required": true
+    },
+    {
+      "name": "morph_flavor",
+      "type": "enum",
+      "description": "pwm_like | mirror_stretch | narrow | vintage_bit | none",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wt_morph_pad",
+      "type": "synth-patch",
+      "description": "Position-modulated WT pad with optional morph shaping"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Delta vs traveler-walkthrough-wavetable-morph-filter-motion / digital-wt-morph: emphasizes smooth crossfade vs hard switch, morph/PWM/mirror/narrow shaping, and vintage bit-step color\u2014not FX order."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a multi-frame wavetable (e.g. saw\u2192triangle\u2192square\u2192sine family). Enable smooth crossfade/interpolation between frames so in-between waves are audible; contrast with crossfade=0 hard switching for sharp digital hops.",
+      "tool": "wavetable-osc",
+      "expect": "Smooth timbral blend vs stepped jumps"
+    },
+    {
+      "n": 2,
+      "action": "Assign LFO or other mod source to wavetable position/crossfade amount for evolving motion; keep depth musical for pads.",
+      "tool": "mod-matrix",
+      "expect": "Slowly morphing pad body"
+    },
+    {
+      "n": 3,
+      "action": "Engage morph-style shaping: on pulse/square-like frames, morph acts like PWM; explore mirror, mirror-stretch/wavefold-like, narrowing (toward high-pass thinness) and window-narrow (toward low-pass softening).",
+      "tool": "wave-morph",
+      "expect": "PWM/fold/filter-like color from morph controls"
+    },
+    {
+      "n": 4,
+      "action": "Optional vintage digital character: apply bit-resolution / stepped vintage modes (e.g. 8-bit buzzing overtones) and LFO them lightly for early-digital WT flavor through an analog-style filter.",
+      "tool": "wave-morph",
+      "expect": "Buzzing lo-fi digital harmonics"
+    },
+    {
+      "n": 5,
+      "action": "Finish with ladder/LP filter + envelopes, then EQ\u2192chorus\u2192delay\u2192reverb for cinematic space. Prefer original/free tables\u2014do not dump proprietary banks.",
+      "tool": "fx-bus",
+      "expect": "Mix-ready evolving WT pad"
+    }
+  ],
+  "verification": [
+    "Crossfade on yields intermediate waveforms; off yields hard switches",
+    "Position modulation creates continuous motion",
+    "At least one morph mode (PWM/mirror/narrow/vintage) audibly changes harmonics"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "morph",
+    "pwm",
+    "crossfade",
+    "pads",
+    "modulation",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://wavetable-crossfade-morph-modulate-pad"
+}

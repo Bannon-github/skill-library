@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "id": "crypto-etherscan-token-holder-wallet-research",
+  "name": "Etherscan research: token holders, wallets, network health charts",
+  "goal": "Use Etherscan (or *-scan clones) to inspect token holder distribution, trail early/smart wallets and what else they hold, and read Charts & Stats (transactions, unique addresses, verified contracts) for network health.",
+  "domain": "crypto-investing",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "hiVFcojWzzc",
+    "url": "https://www.youtube.com/watch?v=hiVFcojWzzc",
+    "title": "3 Ways to Use Etherscan to Research Cryptocurrencies",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/hiVFcojWzzc/agent-skill-crypto-etherscan-token-holder-wallet-research.json"
+  },
+  "prerequisites": [
+    "Browser",
+    "Token or wallet address"
+  ],
+  "inputs": [
+    {
+      "name": "token_or_wallet",
+      "type": "string",
+      "description": "Address to research",
+      "required": true
+    },
+    {
+      "name": "explorer_base",
+      "type": "url",
+      "description": "https://etherscan.io or equivalent",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "research_notes",
+      "type": "notes",
+      "description": "Holder concentration + wallet trails + chart snapshot"
+    }
+  ],
+  "constraints": [
+    "Educational self-custody/tax procedure only \u2014 not financial advice; no coin tips or return promises.",
+    "Ground every step in YouTube-provided captions; portable UI names OK when vendor chrome drifts.",
+    "Never digitize a seed phrase or enter it into a website/phone camera.",
+    "Research hygiene only \u2014 not a buy/sell signal; beware spoofed whale theatrics."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Open the token page; review holders count/supply. Top holders: note % distribution; distinguish labeled contracts/pools from EOAs; flag microcaps dominated by one unlabeled wallet.",
+      "tool": "block-explorer",
+      "expect": "Concentration notes"
+    },
+    {
+      "n": 2,
+      "action": "Open a top or early-buyer wallet (use oldest tx pages on smaller tokens). Review other tokens/protocols; watch the address or load into a portfolio tracker. Treat unknown rich wallets cautiously.",
+      "tool": "block-explorer",
+      "expect": "Watchlist entries"
+    },
+    {
+      "n": 3,
+      "action": "Resources \u2192 Charts & Stats: daily txs, unique address growth, daily verified contracts (dev activity). Note trend vs prior peaks.",
+      "tool": "block-explorer",
+      "expect": "Network health snapshot"
+    },
+    {
+      "n": 4,
+      "action": "Apply the same holder-distribution, wallet-trail, and Charts & Stats checks on the destination chain\u2019s explorer (e.g. Polygonscan, Snowtrace) when the asset is not on Ethereum.",
+      "tool": "block-explorer",
+      "expect": "Equivalent research notes on the sister explorer"
+    }
+  ],
+  "verification": [
+    "Top holders classified",
+    "Wallet trail documented",
+    "One chart trend noted"
+  ],
+  "tags": [
+    "crypto-investing",
+    "etherscan",
+    "on-chain-research",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://crypto-etherscan-token-holder-wallet-research"
+}

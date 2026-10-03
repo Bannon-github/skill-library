@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-noise-audiorate-filter-texture",
+  "name": "noise and audio-rate filter texture lead",
+  "goal": "Create a radioactive/unstable cinematic texture or lead: dual detuned saws + WT character, aftertouch bringing in a sharp high oscillator, and mod-wheel sending noise (~30% mix) into audio-rate-style filter modulation (plus optional Osc2\u2192cutoff always-on grit).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-noise-audiorate-filter-texture.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "noise_to_cutoff_depth",
+      "type": "number",
+      "description": "Mod-wheel controlled noise\u2192filter amount",
+      "required": true
+    },
+    {
+      "name": "audio_rate_mod",
+      "type": "boolean",
+      "description": "Whether Osc2 continuously modulates LPF frequency",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "unstable_texture_patch",
+      "type": "synth-patch",
+      "description": "Spooky evolving texture/lead with noise-modulated filter"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer two fairly separate saw oscillators plus a wavetable osc for character. Slightly detune one osc; further detune can yield ring-mod-like artifacts.",
+      "tool": "osc-layers",
+      "expect": "Tonal but unsettled bed"
+    },
+    {
+      "n": 2,
+      "action": "Optionally enable continuous Osc2 \u2192 low-pass cutoff (audio-rate-ish FM-of-filter) for granular grit; A/B it to hear the instability.",
+      "tool": "filter-fm",
+      "expect": "Constant subtle filter FM texture"
+    },
+    {
+      "n": 3,
+      "action": "Mix noise around ~30%. Map mod wheel to send noise into LPF cutoff modulation \u2014 annihilating cutoff with noise yields extremely unstable/distorted color.",
+      "tool": "noise-mod",
+      "expect": "Wheel increases radioactive instability"
+    },
+    {
+      "n": 4,
+      "action": "Use aftertouch (or pressure) to bring in a high-frequency oscillator for resonant overtones that feel like distortion byproducts when played low.",
+      "tool": "aftertouch",
+      "expect": "Pressure adds scream/overtone"
+    },
+    {
+      "n": 5,
+      "action": "Play as lead, texture, or pre-scare sting; leave headroom \u2014 this patch is intentionally unstable.",
+      "tool": "performance",
+      "expect": "Musically usable chaos"
+    }
+  ],
+  "verification": [
+    "Mod wheel clearly increases noise\u2192filter effect",
+    "Aftertouch brings high overtones",
+    "Detune extremes create ring-mod-like artifacts"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "texture",
+    "noise",
+    "filter-fm",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-noise-audiorate-filter-texture"
+}

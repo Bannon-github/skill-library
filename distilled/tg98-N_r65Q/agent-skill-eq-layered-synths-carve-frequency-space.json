@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "id": "eq-layered-synths-carve-frequency-space",
+  "name": "EQ layered synths: carve shared frequency space",
+  "goal": "Fit stacked hook synths/pads/strings without mud: high-pass non-bass layers (~below 100 Hz consistently), use bell cuts to carve competing mid buildups, optionally commit drastic low cuts on bright toppers (e.g. below 1 kHz) so they sit as air/presence, and ease harsh upper bands by ear\u2014giving each layer its own spectrum.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "tg98-N_r65Q",
+    "url": "https://www.youtube.com/watch?v=tg98-N_r65Q",
+    "title": "How to EQ Layered Synths in a Mix",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/tg98-N_r65Q/agent-skill-eq-layered-synths-carve-frequency-space.json"
+  },
+  "prerequisites": [
+    "Multiple layered synth/pad/string tracks; parametric EQ"
+  ],
+  "inputs": [
+    {
+      "name": "layer_role",
+      "type": "enum",
+      "description": "bass-body | mid-hook | bright-topper | strings",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "eqd_synth_stack",
+      "type": "mix-group",
+      "description": "Layered synths with complementary EQ carves"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Solo the layered hook synths/strings (without bass) and note masking/mud before EQ.",
+      "tool": "audit",
+      "expect": "Hear overlap problems in the stack"
+    },
+    {
+      "n": 2,
+      "action": "On most non-bass synth layers, high-pass / low-cut around below 100 Hz (consistent across layers) so they do not fight the bass.",
+      "tool": "hp",
+      "expect": "Synth layers cleaned of unnecessary sub"
+    },
+    {
+      "n": 3,
+      "action": "Add bell cuts where layers pile up in the mids; deepen cuts as needed so each hook synth owns different mid space.",
+      "tool": "bell-cut",
+      "expect": "Reduced mid buildup between layers"
+    },
+    {
+      "n": 4,
+      "action": "For a bright topper layer, consider a committed high-pass (transcript example: cut everything below ~1 kHz) so it supplies air/presence while lower layers own body.",
+      "tool": "topper-hp",
+      "expect": "Topper sits above without adding mud"
+    },
+    {
+      "n": 5,
+      "action": "If a layer is harsh/tenny, pull offending upper bands by ear (not only by analyzer). Re-check in full mix with bass/kick.",
+      "tool": "de-harsh",
+      "expect": "Stack clear; no ear-fatiguing spikes"
+    }
+  ],
+  "verification": [
+    "Non-bass layers HP'd ~100 Hz",
+    "Mid bells carve competing layers",
+    "Harsh highs eased; stack clearer in context"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "eq",
+    "pads",
+    "synths",
+    "layering",
+    "mix",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:26:14+00:00",
+  "mcp_resource": "skill://eq-layered-synths-carve-frequency-space",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Delta vs mix-pads-role-eq-width-clarity: focuses on multi-layer frequency carving (HP ~100 Hz, bells, drastic topper HPF) rather than general pad role/width advice."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "video_id": "VnCpRTsg_G8",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=VnCpRTsg_G8",
+  "ok": true,
+  "fetched_at": "2026-09-25T16:21:55.626212+00:00",
+  "cue_count": 904,
+  "transcript_path": "/workspace/skill-library/raw/VnCpRTsg_G8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/VnCpRTsg_G8/raw.txt",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "source_ui": "youtube-show-transcript",
+  "srt_file": "VnCpRTsg_G8.en-orig.srt",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable)."
+}

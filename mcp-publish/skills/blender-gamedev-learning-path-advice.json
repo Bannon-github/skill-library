@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-gamedev-learning-path-advice",
+  "name": "blender game dev learning path advice",
+  "goal": "Follow a game-dev-oriented Blender learning order: basics \u2192 low-poly assets \u2192 early engine export \u2192 optional sculpt/bake.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "smluafHtCeY",
+    "url": "https://www.youtube.com/watch?v=smluafHtCeY",
+    "title": "Learning BLENDER as a GAME DEV",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/smluafHtCeY/agent-skill-blender-gamedev-learning-path-advice.json"
+  },
+  "prerequisites": [
+    "Intent to make game assets"
+  ],
+  "inputs": [
+    {
+      "name": "target_engine",
+      "type": "string",
+      "description": "Game engine you will export to",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "learning_plan",
+      "type": "plan",
+      "description": "Ordered practice plan emphasizing low-poly and early export"
+    }
+  ],
+  "constraints": [
+    "Advice skill\u2014not a modeling procedure",
+    "If following Blender Guru donut, stopping around part 5 is suggested for game-dev focus in this video",
+    "Export to engine early to catch pipeline issues"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Optionally do a short beginner control/UI tutorial (donut parts early only if used).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Prioritize low-poly game-asset fundamentals where polygon count matters over dense non-game scenes.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Export a simple mesh to your game engine as early as possible; fix export issues before detailing.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Practice easy low-poly models on your own; then study rigging; later sculpting and baking high-to-low when needed.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Finish a small personal/game-jam asset project end-to-end for retention.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Written plan lists low-poly \u2192 export \u2192 project milestones"
+  ],
+  "tags": [
+    "blender",
+    "game-dev",
+    "learning-path",
+    "advice",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-gamedev-learning-path-advice"
+}

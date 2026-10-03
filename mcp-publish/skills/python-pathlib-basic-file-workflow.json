@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "id": "python-pathlib-basic-file-workflow",
+  "name": "python pathlib basic file workflow",
+  "goal": "Common file tasks with pathlib.",
+  "domain": "coding-filesystem",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "yxa-DJuuTBI",
+    "url": "https://www.youtube.com/watch?v=yxa-DJuuTBI",
+    "title": "Python Tutorial: Pathlib - The Modern Way to Handle File Paths",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/yxa-DJuuTBI/distilled.json"
+  },
+  "prerequisites": [
+    "Python 3.4+"
+  ],
+  "inputs": [
+    {
+      "name": "base_path",
+      "type": "string",
+      "description": "Starting directory or file path",
+      "required": false
+    },
+    {
+      "name": "pattern",
+      "type": "string",
+      "description": "Optional glob e.g. *.txt",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "path_ops_result",
+      "type": "any",
+      "description": "Created dirs, written files, or listed paths"
+    }
+  ],
+  "constraints": [
+    "Use pathlib.Path not os.path string joins",
+    "Cross-platform / operator for joins"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "from pathlib import Path",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Build paths with Path.cwd()/Path.home() and the / operator.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Use exists(), mkdir(parents=True, exist_ok=True).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "read_text/write_text; iterdir/glob for listing.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Prefer Path objects over string concatenation.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Script runs without path-separator bugs on target OS"
+  ],
+  "tags": [
+    "coding-filesystem",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-python-files"
+  ],
+  "published_at": "2026-09-24T01:02:02.270778+00:00",
+  "mcp_resource": "skill://python-pathlib-basic-file-workflow"
+}

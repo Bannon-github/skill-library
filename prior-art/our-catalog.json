@@ -1,0 +1,847 @@
+{
+  "updated_at": "2026-09-24T12:34:43+00:00",
+  "count": 61,
+  "skills": [
+    {
+      "id": "ambient-organic-pluck-pad-ladder-chorus-space",
+      "name": "Organic ambient pluck-pad with ladder, velocity, chorus-space",
+      "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity\u2192level/cutoff, then chorus pushed toward long decay plus reverb/delay.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "ambient",
+        "pad",
+        "filter",
+        "chorus",
+        "from-youtube"
+      ],
+      "video_id": "ehKoz6ILmxQ"
+    },
+    {
+      "id": "ambient-wavetable-scratch-spectral-morph-pad",
+      "name": "From-scratch spectral-morph wavetable ambient pad",
+      "goal": "Design an ambient pad by building a soft\u2192complex wavetable (sine + harmonics, spectral blend, phase/warp), LFO-morphing WT position, dual filters with stereo-split randomization, long amp/filter envelopes, optional pitched-down sample texture, then compressor \u2192 dotted delay \u2192 long reverb (~10\u201311s) with bipolar random pans.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "ambient",
+        "pad",
+        "from-youtube"
+      ],
+      "video_id": "ImWJixBPZj0"
+    },
+    {
+      "id": "blender-beginner-setup-nav-and-geometry-practice",
+      "name": "blender beginner setup navigation and geometry practice",
+      "goal": "Start Blender the right way: Layout workspace focus, three-button mouse nav, G/S/R, Edit mode verts/edges/faces, then freeform practice.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "navigation",
+        "fundamentals",
+        "from-youtube"
+      ],
+      "video_id": "TG_vamse41c"
+    },
+    {
+      "id": "blender-beginner-three-tools-and-viewport-nav",
+      "name": "blender beginner three tools and viewport nav",
+      "goal": "Learn Move/Rotate/Scale tools and MMB viewport navigation (with trackpad alternatives) as absolute beginner foundations.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "tools",
+        "navigation",
+        "from-youtube"
+      ],
+      "video_id": "98qKfdJRzr0"
+    },
+    {
+      "id": "blender-boolean-bracket-with-cylinder-holes",
+      "name": "blender boolean bracket with cylinder holes",
+      "goal": "Model a simple mm bracket plate and cut bolt holes with cylinder Boolean Difference.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "boolean",
+        "hard-surface",
+        "3d-printing",
+        "from-youtube"
+      ],
+      "video_id": "8_0RptMbhe0"
+    },
+    {
+      "id": "blender-chatgpt-python-script-gold-ball",
+      "name": "blender chatgpt python script create gold ball",
+      "goal": "Use ChatGPT to generate a Blender Python script, paste it in the Scripting workspace, and run it to create a material-previewable object.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "chatgpt",
+        "python",
+        "scripting",
+        "ai-assisted",
+        "from-youtube"
+      ],
+      "video_id": "x60zHw_z4NM"
+    },
+    {
+      "id": "blender-chocolate-chip-cookie-model-and-render",
+      "name": "blender chocolate chip cookie model and render",
+      "goal": "Model a cookie with chips on a tray, assign materials, light with an Area light, frame camera, and render.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modeling",
+        "materials",
+        "lighting",
+        "render",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "Ci3Has4L5W4"
+    },
+    {
+      "id": "blender-complete-beginner-add-delete-focus",
+      "name": "blender complete beginner add delete and focus",
+      "goal": "After basic navigation, delete/add mesh objects, focus selection, use F3 search, and save the .blend.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "interface",
+        "from-youtube"
+      ],
+      "video_id": "uOmYInaX-wE"
+    },
+    {
+      "id": "blender-donut-tutorial-nav-add-shade-smooth",
+      "name": "blender donut tutorial navigation add mesh shade smooth",
+      "goal": "Start the Blender Guru beginner path: install/open Blender, navigate, delete cube, add torus/cylinder, shade smooth, learn G/R/S.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "donut-tutorial",
+        "from-youtube"
+      ],
+      "video_id": "z-Xl9tGqH14"
+    },
+    {
+      "id": "blender-easy-car-box-model-core-tools",
+      "name": "blender easy car box model with core tools",
+      "goal": "Block out a simple car using scale-axis locks, loop cut, extrude, inset, apply transforms, and duplicated wheels.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modeling",
+        "beginner",
+        "vehicle",
+        "from-youtube"
+      ],
+      "video_id": "nESaz92SJ0w"
+    },
+    {
+      "id": "blender-edit-mode-transform-extrude-loopcut-bevel",
+      "name": "blender edit mode transform extrude loop cut bevel",
+      "goal": "Switch Object/Edit mode and use core mesh edit hotkeys (G/S/R/E, Ctrl+R, Ctrl+B).",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "edit-mode",
+        "modeling",
+        "hotkeys",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "peSv5IT5Ve4"
+    },
+    {
+      "id": "blender-gamedev-learning-path-advice",
+      "name": "blender game dev learning path advice",
+      "goal": "Follow a game-dev-oriented Blender learning order: basics \u2192 low-poly assets \u2192 early engine export \u2192 optional sculpt/bake.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "game-dev",
+        "learning-path",
+        "advice",
+        "from-youtube"
+      ],
+      "video_id": "smluafHtCeY"
+    },
+    {
+      "id": "blender-install-preferences-and-viewport-basics",
+      "name": "blender install preferences and viewport basics",
+      "goal": "Install Blender, set useful preferences, and learn viewport nav plus G/R/S and Object/Edit mode.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "install",
+        "preferences",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "Ci3Has4L5W4"
+    },
+    {
+      "id": "blender-lowpoly-character-scene-prep",
+      "name": "blender low poly character scene prep",
+      "goal": "Prepare a Blender 4+ scene for stylized low-poly character work: Eevee, Standard view transform, incremental saves, image references, Rigify metarig scale.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "low-poly",
+        "character",
+        "scene-setup",
+        "from-youtube"
+      ],
+      "video_id": "Use9T2IX1XE"
+    },
+    {
+      "id": "blender-lowpoly-pine-tree-from-primitives",
+      "name": "blender low poly pine tree from primitives",
+      "goal": "Build a simple low-poly pine tree using cylinder and circle meshes with extrude/scale/duplicate.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "low-poly",
+        "game-asset",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "peSv5IT5Ve4"
+    },
+    {
+      "id": "blender-metric-mm-setup-for-3d-print",
+      "name": "blender metric millimeters setup for 3d print",
+      "goal": "Configure Blender scene units and grid to millimeters for dimension-accurate hard-surface / 3D-print modeling.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "units",
+        "3d-printing",
+        "hard-surface",
+        "from-youtube"
+      ],
+      "video_id": "8_0RptMbhe0"
+    },
+    {
+      "id": "blender-mug-solidify-subsurf-loopcut",
+      "name": "blender mug with solidify subsurf and loop cuts",
+      "goal": "Block a coffee mug from a cylinder using Edit mode, Solidify, Subdivision Surface, and Ctrl+R loop cuts (from Blender Guru beginner series).",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modifiers",
+        "solidify",
+        "subsurf",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "z-Xl9tGqH14"
+    },
+    {
+      "id": "blender-viewport-navigation-mmb",
+      "name": "blender viewport navigation with middle mouse",
+      "goal": "Orbit, pan, zoom, and snap orthographic views in Blender's 3D viewport.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "viewport",
+        "navigation",
+        "beginner",
+        "from-youtube"
+      ],
+      "video_id": "peSv5IT5Ve4"
+    },
+    {
+      "id": "cinematic-formant-comb-pad-phaser-fx",
+      "name": "Cinematic multi-osc pad with formant/comb and slow FX motion",
+      "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B \u22121 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO\u2192cutoff, then phaser\u2192flanger\u2192chorus\u2192slow LFO-filtered FX\u2192delay\u2192reverb with restrained mixes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "formant",
+        "comb",
+        "fx",
+        "from-youtube"
+      ],
+      "video_id": "TmoP3i6-jl0"
+    },
+    {
+      "id": "cinematic-multi-envelope-osc-level-morph",
+      "name": "Multi-envelope oscillator-level morphing pad",
+      "goal": "Create an always-in-motion pad by silencing shared amp control of oscillators and assigning staggered envelope-mode LFOs to each oscillator level (plus optional noise), with differing filter and WT motion.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "envelope",
+        "modulation",
+        "ambient",
+        "from-youtube"
+      ],
+      "video_id": "AYVmdcgKt_s"
+    },
+    {
+      "id": "cinematic-warm-analog-pad-drift-stereo",
+      "name": "Warm analog cinematic pad with pitch drift and opposing pan",
+      "goal": "Build a warm Juno-style cinematic pad: chaos/random \u2192 master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "unison",
+        "stereo",
+        "analog-drift",
+        "from-youtube"
+      ],
+      "video_id": "CcXGRCXv8lQ"
+    },
+    {
+      "id": "crypto-etherscan-token-holder-wallet-research",
+      "name": "Etherscan research: token holders, wallets, network health charts",
+      "goal": "Use Etherscan (or *-scan clones) to inspect token holder distribution, trail early/smart wallets and what else they hold, and read Charts & Stats (transactions, unique addresses, verified contracts) for network health.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "etherscan",
+        "on-chain-research",
+        "from-youtube"
+      ],
+      "video_id": "hiVFcojWzzc"
+    },
+    {
+      "id": "crypto-hw-wallet-seed-backup-shamir-metal",
+      "name": "Hardware-wallet seed backup: standard vs Shamir + metal storage",
+      "goal": "Create an offline hardware-wallet recovery backup: choose standard 12/24-word seed vs Shamir multi-share threshold, write shares correctly offline, store separately, optionally migrate to fire/water-resistant metal media.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "hardware-wallet",
+        "seed-backup",
+        "shamir",
+        "from-youtube"
+      ],
+      "video_id": "QaBszgNCWxQ"
+    },
+    {
+      "id": "crypto-hw-wallet-unbox-seal-verify-init",
+      "name": "Unbox hardware wallet: verify seals then initialize via official suite",
+      "goal": "Receive a hardware wallet safely by verifying carton and USB-port holographic seals, installing only the official vendor suite, completing authenticity checks, then initializing and backing up before first receive.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "hardware-wallet",
+        "setup",
+        "supply-chain",
+        "from-youtube"
+      ],
+      "video_id": "xrDpH6Dr3L0"
+    },
+    {
+      "id": "crypto-safe-multisig-threshold-setup-execute",
+      "name": "Safe{Wallet} multisig: signers, threshold, simulate & execute",
+      "goal": "Create a Safe smart-account multisig on a supported chain, add signers, set signature threshold, fund via Receive, then propose a Send with simulation and collect multi-signer confirmations before execute \u2014 with each signer on a separate seed/hardware key.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "multisig",
+        "safe-wallet",
+        "from-youtube"
+      ],
+      "video_id": "hO3D6J-6qQ0"
+    },
+    {
+      "id": "crypto-tax-form-8949-disposal-rows",
+      "name": "Report crypto disposals on IRS Form 8949 (short vs long term)",
+      "goal": "Classify crypto disposals (sell for USD, crypto-to-crypto, spending crypto), split short-term vs long-term holding periods, select the correct 1099-B checkbox when no broker form exists, and fill description/dates/proceeds/basis/gain rows (optionally via tax-software CSV).",
+      "domain": "personal-finance-howto",
+      "tags": [
+        "personal-finance-howto",
+        "crypto-tax",
+        "form-8949",
+        "from-youtube"
+      ],
+      "video_id": "cNu_7VLNFKA"
+    },
+    {
+      "id": "digital-wt-morph-bandpass-chorus-echo-space",
+      "name": "Digital wavetable pad with series filter, chorus, echo, space",
+      "goal": "Craft a digital ambient pad: WT engine with long env\u2192WT position, long amp attack/release, classic unison (~3 voices, wide stereo, ~1\u20132% detune) layered with a pure sine WT, series LP24\u2192HP12 both opened by the morph env (band-pass-like), velocity amp mod, then Juno-style chorus \u2192 tape/ping-pong echo \u2192 long wet reverb (chorus also on the reverb path).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "chorus",
+        "reverb",
+        "pad",
+        "from-youtube"
+      ],
+      "video_id": "e1ZQssAW7R0"
+    },
+    {
+      "id": "distill-transcript",
+      "name": "distill transcript",
+      "goal": "Turn raw caption text into actionable procedure lines.",
+      "domain": "meta-pipeline",
+      "tags": [
+        "meta-pipeline",
+        "meta"
+      ],
+      "video_id": null
+    },
+    {
+      "id": "dji-video-capture-for-gaussian-splat",
+      "name": "dji video capture for gaussian splat",
+      "goal": "Record a geo-referenced drone video for splatting.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "video_id": "mQ4EHUpXj9Q"
+    },
+    {
+      "id": "drone-hyperlapse-multi-angle-capture",
+      "name": "drone hyperlapse multi angle capture",
+      "goal": "Capture overlapping views with DJI hyperlapse.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "video_id": "FpN2VTSZ_7U"
+    },
+    {
+      "id": "evolving-pad-unison-filter-swell-fifth",
+      "name": "Evolving unison pad with filter swell and fifth layer",
+      "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO\u2192cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "unison",
+        "filter",
+        "from-youtube"
+      ],
+      "video_id": "rv0X7eZNnEo"
+    },
+    {
+      "id": "fm-carrier-modulator-ratio-basics",
+      "name": "FM synthesis carrier/modulator/ratio basics",
+      "goal": "Explain and patch basic FM: carrier vs modulator operators, amplitude\u2192modulation depth, frequency\u2192rate, stacking modulators (including slow modulators for evolving vibrato), audio-rate FM for bright spectra, self-mod, and preferring simple frequency ratios (1:1, 2:1) for musical results vs inharmonic mess.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "fm",
+        "operators",
+        "fundamentals",
+        "from-youtube"
+      ],
+      "video_id": "vvBl3YUBUyY"
+    },
+    {
+      "id": "granular-dual-saw-ambient-epic-pad",
+      "name": "Dual-saw ladder pad with granular spice and FX macros",
+      "goal": "Recipe for an ambient/epic pad: two saws (second \u221212 st, low level), long amp attack/release, ladder/diode filter with slow env\u2192cutoff, corrective low EQ, chorus\u2192synced delay\u2192large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "granular",
+        "pad",
+        "macros",
+        "from-youtube"
+      ],
+      "video_id": "FZ9oXRJIR6o"
+    },
+    {
+      "id": "keysol-helpling-keytrack-bass-split-delay",
+      "name": "keytracked low-osc bass split with wet delay",
+      "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator\u2019s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "keytrack",
+        "delay",
+        "from-youtube",
+        "helpling"
+      ],
+      "video_id": "yJWS77wyVe0"
+    },
+    {
+      "id": "keysol-venus-fifths-pulsar-wt-impact",
+      "name": "fifths-tuned pulsar hybrid impact",
+      "goal": "Craft a throbbing aggressive impact/pulse by tuning a second oscillator up a fifth (+7 semitones), adding duo/detune/scatter width, and a wavetable layer for dimension beyond plain VA.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "impact",
+        "fifths",
+        "wavetable",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "keysol-venus-fm-lfo-evolving-chase-sequence",
+      "name": "FM depth and LFO mix evolving chase sequence",
+      "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff \u2014 plus mod-wheel/aftertouch for tension \u2014 instead of static one-bar loops.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "fm",
+        "sequence",
+        "performance",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "keysol-venus-high-wt-artifact-pulse-layer",
+      "name": "high-pitch wavetable artifact over pulse sequence",
+      "goal": "Spice a classic pulsing bass/filter sequence by adding a very high-pitched wavetable oscillator mixed as an artifact-like layer, with WT-position modulation for constant subtle evolution.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "bass-sequence",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "keysol-venus-noise-audiorate-filter-texture",
+      "name": "noise and audio-rate filter texture lead",
+      "goal": "Create a radioactive/unstable cinematic texture or lead: dual detuned saws + WT character, aftertouch bringing in a sharp high oscillator, and mod-wheel sending noise (~30% mix) into audio-rate-style filter modulation (plus optional Osc2\u2192cutoff always-on grit).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "texture",
+        "noise",
+        "filter-fm",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "keysol-venus-polyrhythmic-control-track-pitch",
+      "name": "irregular dual control-track pitch sequence",
+      "goal": "Build a never-quite-repeating cinematic sequence by driving Osc1/Osc2 pitch from two Control Tracks with irregular lengths (e.g. 15 and 14) and independent rates (e.g. dotted quarter vs quarter), over a stable low Osc3 pulse bed.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "control-track",
+        "sequence",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "keysol-venus-velocity-hybrid-bass-impact",
+      "name": "velocity-rewarding hybrid bass and impact",
+      "goal": "Design a thunderous hybrid bass/impact that responds exponentially to velocity (louder hits open filter/amp dramatically), usable as deep hits or high atmospheric stabs with HP + long space reverb.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "bass",
+        "impact",
+        "velocity",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "video_id": "jLGz5wq2CRE"
+    },
+    {
+      "id": "lightroom-select-and-develop-photo",
+      "name": "lightroom select and develop photo",
+      "goal": "Edit one photo end-to-end in Lightroom.",
+      "domain": "photo-editing",
+      "tags": [
+        "photo-editing",
+        "from-youtube"
+      ],
+      "video_id": "owStZxm9DIA"
+    },
+    {
+      "id": "lush-stereo-saw-pad-random-pitch-texture",
+      "name": "Lush stereo saw pad with scale-snapped pitch texture",
+      "goal": "Make a lush ambient pad: dual saws panned L/R with \u00b15 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random \u2192 cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "stereo",
+        "ambient",
+        "from-youtube"
+      ],
+      "video_id": "pQFr594QwI4"
+    },
+    {
+      "id": "mix-pads-role-eq-width-clarity",
+      "name": "Mix pads for role, EQ clarity, energy, and width control",
+      "goal": "Mix pads based on role (lead ambient vs background glue): infinite-average spectrum to see occupied bands, high-pass to protect kick/bass, filter reverb/delay lows (~100 Hz), manage mids/highs vs vocals with dynamic/sidechain EQ sparingly, automate filter/FX for section energy, and narrow stereo (or multiband width) when pads crowd the image.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "mixing",
+        "pads",
+        "eq",
+        "stereo",
+        "from-youtube"
+      ],
+      "video_id": "6NXqV9jWJ1s"
+    },
+    {
+      "id": "organic-looped-sample-unison-voicing-pad",
+      "name": "Organic looped-sample unison-voicing lush pad",
+      "goal": "Build lush organic pads by looping acoustic samples as pseudo-oscillators (crossfaded loops), stacking complementary body+air samples, applying chordal unison voicings (fifths/sus4), light detune/spread, long amp swell, optional WT/analog stabilizers, multiband grit/width, LFO+random filter / pitch-drift / WT motion, then convolution+long reverb space.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "organic",
+        "pad",
+        "sampler",
+        "unison",
+        "from-youtube"
+      ],
+      "video_id": "CMkXW17LYyA"
+    },
+    {
+      "id": "process-drone-video-to-gaussian-splat-mipmap",
+      "name": "process drone video to gaussian splat mipmap",
+      "goal": "Build a splat from that video in Mip-Map.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "video_id": "mQ4EHUpXj9Q"
+    },
+    {
+      "id": "python-pathlib-basic-file-workflow",
+      "name": "python pathlib basic file workflow",
+      "goal": "Common file tasks with pathlib.",
+      "domain": "coding-filesystem",
+      "tags": [
+        "coding-filesystem",
+        "from-youtube"
+      ],
+      "video_id": "yxa-DJuuTBI"
+    },
+    {
+      "id": "sidehustle-gumroad-digital-product-listing",
+      "name": "List a digital product on Gumroad (Discover-ready)",
+      "goal": "Open a Gumroad seller account, account for ~10% platform + payment-processing fees, create a digital product with name/description/files/price, and publish so it can sell and potentially appear on Gumroad Discover.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "gumroad",
+        "digital-products",
+        "from-youtube"
+      ],
+      "video_id": "o9lKN0XL_Do"
+    },
+    {
+      "id": "sidehustle-productize-service-fixed-scope-price",
+      "name": "Productize a freelance service: fixed scope, price, timeline",
+      "goal": "Turn bespoke freelance work into a productized offer with predetermined deliverable, fixed price, and fixed timeline/scope so sales skip custom scoping and delivery becomes repeatable.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "productized-service",
+        "freelance",
+        "from-youtube"
+      ],
+      "video_id": "ZGUdI9Ay0iQ"
+    },
+    {
+      "id": "sidehustle-productize-sustainable-ops-constraints",
+      "name": "Sustainable productized service: buyer fit and operating constraints",
+      "goal": "Harden a productized service by clarifying why fixed packages convert (skip scoping foreplay for known outcomes), when giant custom shops avoid them, and which operating constraints (capacity, revisions, stack, rush fees) keep the offer sane and profitable.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "productized-service",
+        "operations",
+        "from-youtube"
+      ],
+      "video_id": "w9gOdSLVu14"
+    },
+    {
+      "id": "sidehustle-stripe-invoice-create-send",
+      "name": "Create and send a client invoice in Stripe Invoicing",
+      "goal": "From Stripe Dashboard Invoicing, create a native invoice: add/select customer, add line items with quantities and amounts, optionally tax/coupons, then review and send without third-party invoice plugins.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "stripe",
+        "invoicing",
+        "from-youtube"
+      ],
+      "video_id": "MDYA7KieJWU"
+    },
+    {
+      "id": "sidehustle-upwork-proposal-short-proof-cta",
+      "name": "Upwork proposal: short personalized proof + single CTA",
+      "goal": "Write Upwork cover letters that avoid archive-bait mistakes and follow a tight pattern: client first name, brief proof/social proof, one CTA to book a call, skim-friendly P.S., and prior ToS literacy.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "upwork",
+        "proposals",
+        "from-youtube"
+      ],
+      "video_id": "f4INGRluDAU"
+    },
+    {
+      "id": "supersaw-clean-unison-detune-width",
+      "name": "Clean supersaw: unison count, detune, blend, width",
+      "goal": "Build mix-ready supersaws: simple saw frames (not complex WT sweeps), 6\u201312 unison voices, balanced detune/blend, optional mono sub + noise, EQ\u2192compress\u2192delay\u2192reverb, light hyper/dimension, subtle warp, and global unison width/stack modes for chord phase correlation.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "supersaw",
+        "unison",
+        "width",
+        "from-youtube"
+      ],
+      "video_id": "KnbAOrM62Ks"
+    },
+    {
+      "id": "traveler-walkthrough-control-track-filter-wt-animation",
+      "name": "control-track rhythmic filter and WT animation",
+      "goal": "Use dual Control Tracks (sequenced controller lanes) as the heartbeat: up to 16 steps, ping-pong, DAW-synced rates, swing/gate/depth, routing to filter cutoff, wavetable position, or any mod destination.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "control-track",
+        "sequencer",
+        "modulation",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "traveler-walkthrough-curved-envelope-evolving-pad",
+      "name": "ADBSSR curved-envelope evolving pad",
+      "goal": "Design a long-evolving cinematic pad using multi-stage envelopes with adjustable curve handles, up to ~20s stages, optional breakpoint/slope expansion, and a modulation envelope that can start from alt control (e.g. sustain pedal) instead of note-on.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "envelope",
+        "adbssr",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+      "name": "EQ chorus dual-delay multi-algo reverb FX chain",
+      "goal": "Finish a cinematic patch with the Traveler-style FX order: 3-band EQ \u2192 multi-type chorus \u2192 dual/ping-pong modulated delay \u2192 room/hall/space reverb (long space tails).",
+      "domain": "music-synthesis",
+      "tags": [
+        "cinematic-synth",
+        "fx",
+        "delay",
+        "reverb",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "traveler-walkthrough-stereo-ladder-lf-width",
+      "name": "dual stereo filter and LF-width imaging",
+      "goal": "Shape a cinematic tone with stereo ladder/NJM-style filters, left/right cutoff offset or per-key spread, linked high-pass for band-pass effects, and low-frequency width so bass stays centered while highs move.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "stereo",
+        "filter",
+        "imaging",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "traveler-walkthrough-super-unison-wide-lead",
+      "name": "super-unison wide stereo lead (osc2 stack)",
+      "goal": "Build a gigantic wide lead/pad layer using a multi-voice stereo unison oscillator (Traveler Osc2-style stack up to ~7 voices) with waveform morph and stereo spread.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "unison",
+        "lead",
+        "stereo",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "traveler-walkthrough-wavetable-morph-filter-motion",
+      "name": "wavetable morph plus filter motion patch",
+      "goal": "Create an evolving hybrid patch using a wavetable oscillator (Osc3 role), optional duo-stack/detune/stereo spread, and animated WT position + filter cutoff.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "filter-motion",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "video_id": "IU76c2Cygs4"
+    },
+    {
+      "id": "upload-capture-to-free-splatware",
+      "name": "upload capture to free splatware",
+      "goal": "Process capture in free Splatware.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "video_id": "FpN2VTSZ_7U"
+    },
+    {
+      "id": "volyraph-browser-splat-pipeline",
+      "name": "volyraph browser splat pipeline",
+      "goal": "Video to splat entirely in browser.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "video_id": "MDNBxM4FlgE"
+    },
+    {
+      "id": "warm-heavenly-supersaw-pad-keytrack-fx",
+      "name": "Warm heavenly supersaw pad with keytrack and lush FX",
+      "goal": "Dial warm heavenly pads: saw unison 5\u20137 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO\u2192cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "supersaw",
+        "chorus",
+        "from-youtube"
+      ],
+      "video_id": "cF5ku3Og0Nk"
+    }
+  ]
+}

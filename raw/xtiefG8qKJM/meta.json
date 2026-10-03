@@ -1,0 +1,15 @@
+{
+  "video_id": "xtiefG8qKJM",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=xtiefG8qKJM",
+  "ok": true,
+  "fetched_at": "2026-09-25T16:22:23.472812+00:00",
+  "cue_count": 840,
+  "transcript_path": "/workspace/skill-library/raw/xtiefG8qKJM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/xtiefG8qKJM/raw.txt",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "source_ui": "youtube-show-transcript",
+  "srt_file": "xtiefG8qKJM.en-orig.srt",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable)."
+}

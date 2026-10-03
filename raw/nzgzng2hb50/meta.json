@@ -1,0 +1,15 @@
+{
+  "video_id": "nzgzng2hb50",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=nzgzng2hb50",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:21:10.022165+00:00",
+  "cue_count": 481,
+  "transcript_path": "/workspace/skill-library/raw/nzgzng2hb50/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/nzgzng2hb50/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

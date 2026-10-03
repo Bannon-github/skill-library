@@ -1,0 +1,211 @@
+{
+  "stage": 1,
+  "topic": "Wi-Fi motion detection / CSI / WiFi sensing how-tos",
+  "query": "any wifi motion how to videos",
+  "note": "Search only — no transcripts extracted. Awaiting user confirmation before stage 2 (save raw).",
+  "results": [
+    {
+      "video_id": "7XwgxTXPJKM",
+      "title": "Build a Wi-Fi Motion Detector: ESP32 & CSI Practical Guide",
+      "url": "https://www.youtube.com/watch?v=7XwgxTXPJKM",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "5J79EXfFyNA",
+      "title": "Can ESP32's Wi-Fi detect motion?",
+      "url": "https://www.youtube.com/watch?v=5J79EXfFyNA",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "JDopYzPLhmw",
+      "title": "ESPectre – Bewegungserkennung nur mit WLAN und ESP32",
+      "url": "https://www.youtube.com/watch?v=JDopYzPLhmw",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en"
+      ]
+    },
+    {
+      "video_id": "JjdpzM6zVJ8",
+      "title": "ESP-CSI: Transforming Wi-Fi into a Sensing Platform",
+      "url": "https://www.youtube.com/watch?v=JjdpzM6zVJ8",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "tFxKUzEDSdw",
+      "title": "ESP-WIFI-CSI: Espressif's Human-Detection Solution",
+      "url": "https://www.youtube.com/watch?v=tFxKUzEDSdw",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "Zg8SnIONuyE",
+      "title": "RuView GitHub Install Setup Guide: ESP32-S3, Docker, and WiFi CSI Architecture",
+      "url": "https://www.youtube.com/watch?v=Zg8SnIONuyE",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "HVQl2DAplQI",
+      "title": "Wi-Fi Sensing for Home Assistant!",
+      "url": "https://www.youtube.com/watch?v=HVQl2DAplQI",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "AkKxan2LZp0",
+      "title": "I Turned WiFi Into a Sensor That Sees Through Walls",
+      "url": "https://www.youtube.com/watch?v=AkKxan2LZp0",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "Cd03lFwUq0E",
+      "title": "Opensource Project Turns WiFi Into a Radar That Sees Through Walls #WiFi #AI #OpenSource",
+      "url": "https://www.youtube.com/watch?v=Cd03lFwUq0E",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "f7MsqYINK34",
+      "title": "SafeSpace CSI: WiFi occupancy detection using ESP32 CSI—private, camera-free, real-time sensing.",
+      "url": "https://www.youtube.com/watch?v=f7MsqYINK34",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "TECt3AXSTqs",
+      "title": "Radio Presence Scanner BLE and ESPectre",
+      "url": "https://www.youtube.com/watch?v=TECt3AXSTqs",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "en-US"
+      ],
+      "languages_auto": [
+        "en-US"
+      ]
+    },
+    {
+      "video_id": "Zn-7B5inApQ",
+      "title": "Feather ESPectre Human Motion Detector demo",
+      "url": "https://www.youtube.com/watch?v=Zn-7B5inApQ",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "sXwDrcd1t-E",
+      "title": "This ESP32 Antenna Array Can See WiFi",
+      "url": "https://www.youtube.com/watch?v=sXwDrcd1t-E",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "en"
+      ],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "Eb5ZljvgfHw",
+      "title": "How To Turn ESP32 Into Human Presence Sensor With Home Assistant",
+      "url": "https://www.youtube.com/watch?v=Eb5ZljvgfHw",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "en"
+      ],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    }
+  ]
+}

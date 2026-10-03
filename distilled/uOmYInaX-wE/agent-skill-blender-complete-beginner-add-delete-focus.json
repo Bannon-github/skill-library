@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-complete-beginner-add-delete-focus",
+  "name": "blender complete beginner add delete and focus",
+  "goal": "After basic navigation, delete/add mesh objects, focus selection, use F3 search, and save the .blend.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "uOmYInaX-wE",
+    "url": "https://www.youtube.com/watch?v=uOmYInaX-wE",
+    "title": "Getting started - Blender for complete beginners",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/uOmYInaX-wE/agent-skill-blender-complete-beginner-add-delete-focus.json"
+  },
+  "prerequisites": [
+    "Blender open"
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "scene_with_primitives",
+      "type": "blender-scene",
+      "description": "Scene with user-added mesh primitives, file saved"
+    }
+  ],
+  "constraints": [
+    "X then Enter deletes",
+    "Shift+A or Add menu for meshes",
+    "Numpad period focuses selection; Numpad 0 camera view"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Dismiss splash; practice orbit/pan/zoom; use View Selected (numpad period) if lost.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Learn F3 operator search (context-sensitive to Object mode vs elsewhere).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "File \u2192 Save As to create your .blend early.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Select default cube; X \u2192 Delete (Enter) to remove it.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Shift+A \u2192 Mesh \u2192 add primitives (cube, monkey, etc.); practice add/delete.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Numpad 0 (or camera icon) to preview camera framing used for renders.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    ".blend saved",
+    "Can add and delete meshes",
+    "Can focus on selection"
+  ],
+  "tags": [
+    "blender",
+    "beginner",
+    "interface",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-complete-beginner-add-delete-focus"
+}

@@ -1,0 +1,15 @@
+{
+  "video_id": "q217G-gl_Ww",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=q217G-gl_Ww",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:20:41.074907+00:00",
+  "cue_count": 74,
+  "transcript_path": "/workspace/skill-library/raw/q217G-gl_Ww/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/q217G-gl_Ww/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual"
+}

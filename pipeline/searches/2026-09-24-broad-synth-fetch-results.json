@@ -1,0 +1,130 @@
+[
+  {
+    "video_id": "XvPgfdf9MSk",
+    "ok": false,
+    "error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n"
+  },
+  {
+    "video_id": "oW4C7txJEgM",
+    "ok": false,
+    "error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n"
+  },
+  {
+    "video_id": "CcXGRCXv8lQ",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 4876,
+    "lines": 16
+  },
+  {
+    "video_id": "AYVmdcgKt_s",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 10804,
+    "lines": 24
+  },
+  {
+    "video_id": "EUlrANFXLs4",
+    "ok": false,
+    "error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] EUlrANFXLs4: This video is unavailable\n"
+  },
+  {
+    "video_id": "ehKoz6ILmxQ",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 6013,
+    "lines": 21
+  },
+  {
+    "video_id": "KnbAOrM62Ks",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 15398,
+    "lines": 36
+  },
+  {
+    "video_id": "am6KBGUVtXE",
+    "ok": false,
+    "error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n"
+  },
+  {
+    "video_id": "ImWJixBPZj0",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 15035,
+    "lines": 34
+  },
+  {
+    "video_id": "pQFr594QwI4",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 3394,
+    "lines": 12
+  },
+  {
+    "video_id": "e1ZQssAW7R0",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 8689,
+    "lines": 20
+  },
+  {
+    "video_id": "CMkXW17LYyA",
+    "ok": false,
+    "error": " Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] CMkXW17LYyA: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n"
+  },
+  {
+    "video_id": "FZ9oXRJIR6o",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 14919,
+    "lines": 47
+  },
+  {
+    "video_id": "vvBl3YUBUyY",
+    "ok": true,
+    "source": "youtube-manual-en",
+    "chars": 3659,
+    "lines": 101
+  },
+  {
+    "video_id": "UxGswh6XLto",
+    "ok": false,
+    "error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n"
+  },
+  {
+    "video_id": "Z-yfQSWU0TA",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 4294,
+    "lines": 9
+  },
+  {
+    "video_id": "cF5ku3Og0Nk",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 12109,
+    "lines": 52
+  },
+  {
+    "video_id": "6NXqV9jWJ1s",
+    "ok": true,
+    "source": "youtube-manual-en",
+    "chars": 8534,
+    "lines": 93
+  },
+  {
+    "video_id": "TmoP3i6-jl0",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 3744,
+    "lines": 10
+  },
+  {
+    "video_id": "rv0X7eZNnEo",
+    "ok": true,
+    "source": "youtube-auto-en",
+    "chars": 9219,
+    "lines": 47
+  }
+]

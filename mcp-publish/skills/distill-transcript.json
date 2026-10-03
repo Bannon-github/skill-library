@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "distill-transcript",
+  "name": "distill transcript",
+  "goal": "Turn raw caption text into actionable procedure lines.",
+  "domain": "meta-pipeline",
+  "source": {
+    "kind": "library-meta",
+    "video_id": null,
+    "url": null,
+    "title": "Distill transcript (library pipeline skill)",
+    "transcript": "n/a",
+    "distilled_path": null
+  },
+  "prerequisites": [
+    "Raw YouTube-provided transcript at raw/<video_id>/raw"
+  ],
+  "inputs": [
+    {
+      "name": "raw_transcript_path",
+      "type": "path",
+      "description": "Path to raw caption file",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "agent_skill",
+      "type": "AgentConsumableSkill",
+      "description": "schema_version 1.0 skill JSON"
+    },
+    {
+      "name": "distilled_files",
+      "type": "path",
+      "description": "distilled/<video_id>/ artifacts"
+    }
+  ],
+  "constraints": [
+    "Never invent transcript text",
+    "Strip filler/sponsors",
+    "Emit agent-skill.v1 format"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Read the raw transcript file for one video (YouTube-provided captions only).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Remove filler: um/uh, greetings, sponsorship, subscribe CTAs, pure hype.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Keep sentences that state settings, clicks, tool names, order of operations, constraints (file size, ISO, fps, etc.).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Deduplicate near-repeat lines; order chronologically when the transcript order is clear.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Write distilled.json and distilled.md under distilled/<video_id>/ (until user confirms final summary location).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "From the distilled lines, emit or refresh executable skill steps under skills/<name>.md and merge into LIBRARY.json.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Output validates against agent-skill.v1.json",
+    "No um/uh/sponsor lines remain"
+  ],
+  "tags": [
+    "meta-pipeline",
+    "meta"
+  ],
+  "curriculum_ids": [
+    "curriculum-learn-from-youtube"
+  ],
+  "published_at": "2026-09-24T01:02:02.270936+00:00",
+  "mcp_resource": "skill://distill-transcript"
+}

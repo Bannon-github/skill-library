@@ -1,0 +1,145 @@
+{
+  "curriculums": [
+    {
+      "id": "curriculum-drone-to-splat",
+      "title": "From drone flight to Gaussian splat",
+      "purpose": "Progressively acquire human workflow: plan capture \u2192 fly \u2192 process \u2192 view/share a 3D splat.",
+      "levels": [
+        {
+          "level": 1,
+          "name": "End-to-end capture to splat with free web tools",
+          "skills": [
+            "drone-hyperlapse-to-splatware-splat",
+            "volyraph-browser-splat-pipeline"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Geo-referenced capture + dedicated splat software",
+          "skills": [
+            "dji-video-to-gaussian-splat-mipmap"
+          ]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "curriculum-photo-edit-basics",
+      "title": "Edit a photo end to end",
+      "purpose": "Human-level still-image edit path starting from selection through export.",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Select and develop one image",
+          "skills": [
+            "lightroom-select-and-develop-photo"
+          ]
+        }
+      ],
+      "status": "draft-needs-more-videos"
+    },
+    {
+      "id": "curriculum-python-files",
+      "title": "Reliable file handling in Python",
+      "purpose": "Cross-platform file ops as a human developer would.",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Pathlib basics",
+          "skills": [
+            "python-pathlib-basic-file-workflow"
+          ]
+        }
+      ],
+      "status": "draft-needs-more-videos"
+    },
+    {
+      "id": "curriculum-learn-from-youtube",
+      "title": "Learn any how-to from YouTube transcripts",
+      "purpose": "Meta-curriculum: search \u2192 raw transcript \u2192 distill \u2192 executable skill \u2192 append to library.",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Search how-tos for a topic",
+          "skills": [
+            "youtube-howto-search"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Pull and save raw captions",
+          "skills": [
+            "youtube-save-raw-transcript"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Distill to actionable steps",
+          "skills": [
+            "distill-transcript"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Publish skill into topic + curriculum",
+          "skills": [
+            "library-append-skill"
+          ]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "curriculum-blender-beginner",
+      "title": "Blender beginner foundations",
+      "purpose": "Progress from viewport literacy to mesh editing, first models, modifiers, materials/render using YouTube-provided how-to transcripts.",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Install, UI, navigation",
+          "skills": [
+            "blender-install-prefs-viewport-nav-transform-tools",
+            "blender-first-scene-add-delete-focus-shade-smooth",
+            "blender-beginner-setup-nav-and-geometry-practice"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Edit mode and first models",
+          "skills": [
+            "blender-edit-mode-transform-extrude-loopcut-bevel",
+            "blender-lowpoly-pine-tree-from-primitives",
+            "blender-easy-car-box-model-core-tools",
+            "blender-metric-mm-setup-for-3d-print",
+            "blender-boolean-bracket-with-cylinder-holes"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Modifiers, materials, render, character prep",
+          "skills": [
+            "blender-mug-solidify-subsurf-loopcut",
+            "blender-chocolate-chip-cookie-model-and-render",
+            "blender-lowpoly-character-scene-prep",
+            "blender-chatgpt-python-script-gold-ball",
+            "blender-gamedev-learning-path-advice"
+          ]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "curriculum-cinematic-hybrid-synth",
+      "title": "Cinematic hybrid synth (Traveler-inspired portable techniques)",
+      "path": "curriculums/curriculum-cinematic-hybrid-synth.json",
+      "status": "active"
+    },
+    {
+      "id": "curriculum-crypto-sidehustle",
+      "title": "Crypto self-custody & side-hustle ops",
+      "path": "curriculums/curriculum-crypto-sidehustle.json",
+      "status": "active"
+    }
+  ],
+  "updated_at": "2026-10-03T15:50:00+00:00"
+}

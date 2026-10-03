@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "highband-pan-lfo-pad-width-keep-lows",
+  "name": "High-band pan-LFO pad width without low-end phase smear",
+  "goal": "Widen a narrow analog-style pad without chorus/imager phase damage in lows/mids: multiband-pan only the high band with a slow or 16th-note L/R swirl (sine or subdued profile), keep lows mono-stable, and pull mix/amount down if motion is too pronounced.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "zHqFoN3FTTI",
+    "url": "https://www.youtube.com/watch?v=zHqFoN3FTTI",
+    "title": "How to widen pads without causing phase issues",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/zHqFoN3FTTI/agent-skill-highband-pan-lfo-pad-width-keep-lows.json"
+  },
+  "prerequisites": [
+    "Multiband pan or band-split + auto-pan; pad that sounds good but narrow"
+  ],
+  "inputs": [
+    {
+      "name": "band",
+      "type": "string",
+      "description": "Affect high band only (leave lows/mids un-panned)",
+      "required": true
+    },
+    {
+      "name": "lfo_rate",
+      "type": "string",
+      "description": "e.g. bar (4/4 slow swirl) or 16th notes",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wide_pad_highband_motion",
+      "type": "fx-chain",
+      "description": "Pad with high-band pan motion width"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a good but narrow pad. Avoid broadband chorus/imager wideners that commonly cause phase issues in low end and midrange.",
+      "tool": "audit",
+      "expect": "Pad tone kept; need width only"
+    },
+    {
+      "n": 2,
+      "action": "Insert multiband pan / band-limited auto-pan. Solo or target the high band only so lows stay centered.",
+      "tool": "multiband-pan",
+      "expect": "Only highs are eligible to move L/R"
+    },
+    {
+      "n": 3,
+      "action": "Draw a sine (or subdued sine) pan path so highs slowly swirl L\u2194R. Try bar-length (4/4) for gentle immersion or 16th-note rate for more motion.",
+      "tool": "lfo-pan",
+      "expect": "Audible high-band L/R motion"
+    },
+    {
+      "n": 4,
+      "action": "If 16ths feel too pronounced: switch to a less extreme pan profile and/or lower overall mix/amount of the pan effect.",
+      "tool": "amount",
+      "expect": "Width illusion without distracting swirl"
+    },
+    {
+      "n": 5,
+      "action": "A/B before/after in context: pad should envelop more without the washy phase of chorus/imager on full-band signal.",
+      "tool": "ab-check",
+      "expect": "Wider highs; stable lows/mids"
+    }
+  ],
+  "verification": [
+    "Only high band is auto-panned; lows remain centered",
+    "No full-band chorus/imager on the pad for this width",
+    "Mix/amount not so high that motion distracts"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo",
+    "pads",
+    "width",
+    "pan-lfo",
+    "phase",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://highband-pan-lfo-pad-width-keep-lows",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Delta vs odd/even unison and chord-split stereo skills: this widths via high-band pan modulation, not voice count or MIDI note splits.",
+    "Prefer this over broadband chorus/imagers when the complaint is phase smear in low/mid."
+  ]
+}

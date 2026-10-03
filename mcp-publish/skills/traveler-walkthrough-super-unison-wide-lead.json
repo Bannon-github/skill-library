@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-super-unison-wide-lead",
+  "name": "super-unison wide stereo lead (osc2 stack)",
+  "goal": "Build a gigantic wide lead/pad layer using a multi-voice stereo unison oscillator (Traveler Osc2-style stack up to ~7 voices) with waveform morph and stereo spread.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-super-unison-wide-lead.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "base_waveform",
+      "type": "enum",
+      "description": "Continuous morph target: saw \u2192 sine \u2192 thin pulse",
+      "required": true
+    },
+    {
+      "name": "unison_voices",
+      "type": "integer",
+      "description": "Stack size (up to ~7); typical 4\u20137",
+      "required": true
+    },
+    {
+      "name": "detune_spread",
+      "type": "number",
+      "description": "Detune + stereo spread amount",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wide_lead_patch",
+      "type": "synth-patch",
+      "description": "Original super-unison wide lead/layer patch recipe"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Assign Oscillator 2 role as the Super/unison stack: continuous waveform from saw through sine to thin pulse.",
+      "tool": "oscillator-2",
+      "expect": "Base tone present before stacking"
+    },
+    {
+      "n": 2,
+      "action": "Enable stereo voice stack (up to ~7 voices). Increase detune and stereo spread until the stack alone sounds gigantic.",
+      "tool": "unison",
+      "expect": "Wide, chorused mass without needing FX yet"
+    },
+    {
+      "n": 3,
+      "action": "Optionally add Osc1 as FM/sync carrier support (sync Osc2; FM from Osc2/3 linear or exponential, variable depth) for bite.",
+      "tool": "fm-sync",
+      "expect": "Added harmonic aggression if desired"
+    },
+    {
+      "n": 4,
+      "action": "Mixer: set Osc2 level primary; pan can be modulated later. Mild drive into filter if available.",
+      "tool": "mixer",
+      "expect": "Healthy headroom before filter"
+    },
+    {
+      "n": 5,
+      "action": "Route through stereo ladder-style LPF (12\u201324 dB). Keep cutoff high enough to preserve width; use modest resonance.",
+      "tool": "filter",
+      "expect": "Tamed highs without collapsing stereo image"
+    },
+    {
+      "n": 6,
+      "action": "Amp envelope: medium attack for pads or fast attack for leads; sustain mid-high; release 0.5\u20132s. Enable pan-spread / voice stereo distribution if available.",
+      "tool": "envelope-vca",
+      "expect": "Expressive wide lead that still sits in a mix"
+    }
+  ],
+  "verification": [
+    "Stack alone sounds wide before FX",
+    "Detune does not become beat-chaotic unless intended",
+    "No proprietary preset bank referenced"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "unison",
+    "lead",
+    "stereo",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-super-unison-wide-lead"
+}

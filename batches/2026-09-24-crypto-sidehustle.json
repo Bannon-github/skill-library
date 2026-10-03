@@ -1,0 +1,114 @@
+{
+  "batch_id": "2026-09-24-crypto-sidehustle",
+  "created_at": "2026-09-24T12:34:43+00:00",
+  "video_ids_processed": [
+    "MDYA7KieJWU",
+    "QaBszgNCWxQ",
+    "ZGUdI9Ay0iQ",
+    "cNu_7VLNFKA",
+    "f4INGRluDAU",
+    "hO3D6J-6qQ0",
+    "hiVFcojWzzc",
+    "o9lKN0XL_Do",
+    "w9gOdSLVu14",
+    "xrDpH6Dr3L0"
+  ],
+  "skill_ids": [
+    "crypto-hw-wallet-seed-backup-shamir-metal",
+    "crypto-hw-wallet-unbox-seal-verify-init",
+    "crypto-tax-form-8949-disposal-rows",
+    "crypto-etherscan-token-holder-wallet-research",
+    "crypto-safe-multisig-threshold-setup-execute",
+    "sidehustle-productize-service-fixed-scope-price",
+    "sidehustle-productize-sustainable-ops-constraints",
+    "sidehustle-gumroad-digital-product-listing",
+    "sidehustle-upwork-proposal-short-proof-cta",
+    "sidehustle-stripe-invoice-create-send"
+  ],
+  "rejected_novelty": [],
+  "thin_skipped": [
+    {
+      "video_id": "pwO34g9Uig4",
+      "reason": "Near-dup generic Etherscan UI tour; covered by token-holder research skill"
+    },
+    {
+      "video_id": "C9dqkW50jiY",
+      "reason": "Mostly positioning essay from 1462-proposal analysis; actionable delta covered by short-proof-cta skill"
+    }
+  ],
+  "mcp_count_after": 61,
+  "curriculum_id": "curriculum-crypto-sidehustle",
+  "quality_spotcheck": [
+    {
+      "id": "crypto-hw-wallet-seed-backup-shamir-metal",
+      "steps": 6,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "crypto-hw-wallet-unbox-seal-verify-init",
+      "steps": 6,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "crypto-tax-form-8949-disposal-rows",
+      "steps": 5,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "crypto-etherscan-token-holder-wallet-research",
+      "steps": 4,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "crypto-safe-multisig-threshold-setup-execute",
+      "steps": 6,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "sidehustle-productize-service-fixed-scope-price",
+      "steps": 5,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "sidehustle-productize-sustainable-ops-constraints",
+      "steps": 4,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "sidehustle-gumroad-digital-product-listing",
+      "steps": 5,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "sidehustle-upwork-proposal-short-proof-cta",
+      "steps": 6,
+      "defects": [
+        "none"
+      ]
+    },
+    {
+      "id": "sidehustle-stripe-invoice-create-send",
+      "steps": 5,
+      "defects": [
+        "none"
+      ]
+    }
+  ],
+  "novelty_policy": "our-catalog.json + reject-generics.json"
+}

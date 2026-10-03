@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "id": "evolving-pad-unison-filter-swell-fifth",
+  "name": "Evolving unison pad with filter swell and fifth layer",
+  "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO\u2192cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "rv0X7eZNnEo",
+    "url": "https://www.youtube.com/watch?v=rv0X7eZNnEo",
+    "title": "Sound Design with VITAL - Wide BASS - Evolving PAD - Lead PLUCK",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/rv0X7eZNnEo/agent-skill-evolving-pad-unison-filter-swell-fifth.json"
+  },
+  "prerequisites": [
+    "Subtractive/WT synth with unison, dual env, filter, compressor, reverb, chorus"
+  ],
+  "inputs": [
+    {
+      "name": "interval_layer",
+      "type": "number",
+      "description": "Harmonic interval in semitones for second osc (classic +7 fifth)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "evolving_pad",
+      "type": "synth-patch",
+      "description": "Swelling unison pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "This skill uses only the pad portion of the source video (not the bass/pluck recipes)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init tonal osc (saw/rich wave). Amp can be quicker; env2 slow attack \u2192 filter cutoff with low resonance so tone arrives then opens.",
+      "tool": "filter",
+      "expect": "Immediate body + swelling brightness"
+    },
+    {
+      "n": 2,
+      "action": "Add unison with noticeable stereo spread; optional slow LFO\u2192cutoff for ongoing motion.",
+      "tool": "unison",
+      "expect": "Wide living pad"
+    },
+    {
+      "n": 3,
+      "action": "Second osc pitched a fifth (+7) into the same filter with similar/less unison so it coheres as a chordal pad; optional third higher voice with LFO\u2192level for late shimmer.",
+      "tool": "oscillator",
+      "expect": "One-note chordal richness"
+    },
+    {
+      "n": 4,
+      "action": "Multiband or glue compression to control peaks and bring highs; large size/decay reverb with rising mix; optional chorus for extra spread; watch distortion from overload.",
+      "tool": "fx-bus",
+      "expect": "Big but controlled evolving pad"
+    }
+  ],
+  "verification": [
+    "Filter swell audible after note-on",
+    "Fifth layer present through shared filter",
+    "Reverb/chorus don\u2019t clip the output"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "unison",
+    "filter",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://evolving-pad-unison-filter-swell-fifth"
+}

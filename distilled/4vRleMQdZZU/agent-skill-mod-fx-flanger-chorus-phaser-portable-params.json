@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "mod-fx-flanger-chorus-phaser-portable-params",
+  "name": "Flanger vs chorus vs phaser: portable delay+LFO params",
+  "goal": "Choose and dial modulation FX from first principles: flanger (<~15 ms delayed copy \u2192 harmonic comb + LFO on delay + feedback), chorus (~20\u201350 ms delayed copy + LFO pitch-beating, often multi-voice/stereo LFO), phaser (all-pass stages \u2192 fewer non-harmonic notches + LFO on frequency); use static (LFO amount 0), slow motion, or audio-rate as texture\u2014best on harmonically rich sources.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "4vRleMQdZZU",
+    "url": "https://www.youtube.com/watch?v=4vRleMQdZZU",
+    "title": "How FLANGER, CHORUS & PHASER process your sound - Sound Design Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/4vRleMQdZZU/agent-skill-mod-fx-flanger-chorus-phaser-portable-params.json"
+  },
+  "prerequisites": [
+    "Flanger, chorus, and/or phaser modules with delay/rate/depth/feedback (or poles/stages)"
+  ],
+  "inputs": [
+    {
+      "name": "effect",
+      "type": "enum",
+      "description": "flanger | chorus | phaser",
+      "required": true
+    },
+    {
+      "name": "lfo_use",
+      "type": "enum",
+      "description": "static | slow-motion | fast-audio-rate-texture",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mod_fx_settings",
+      "type": "fx-chain",
+      "description": "Configured flanger/chorus/phaser with intentional LFO use"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Flanger: duplicate signal; delay wet copy typically below ~15 ms; mix creates harmonic-series comb peaks/nulls. Set delay + feedback for comb position/strength; rate + depth LFO the delay for the classic sweep. Optional feedback polarity for different comb character.",
+      "tool": "flanger",
+      "expect": "Harmonic comb sweep or static comb texture"
+    },
+    {
+      "n": 2,
+      "action": "Chorus: same duplicate idea but longer delay (~20\u201350 ms). LFO on delay also pitch-modulates the wet (vibrato-like beating with dry). Often no feedback; may use multiple delayed voices. Stereo chorus = different L/R delays and LFO rates.",
+      "tool": "chorus",
+      "expect": "Thickness / multi-source illusion without flanger harshness"
+    },
+    {
+      "n": 3,
+      "action": "Phaser: wet path through one or more all-pass filters (phase shift by frequency, not uniform delay). Mix with dry \u2192 fewer notches, not necessarily harmonic. Frequency + feedback move/strengthen notches; rate/depth LFO frequency; poles/stages = more notches (harsher).",
+      "tool": "phaser",
+      "expect": "Softer sweeping notches vs flanger"
+    },
+    {
+      "n": 4,
+      "action": "LFO strategies: amount 0 for static comb/texture; normal/slow rate for motion; very fast rate past hearing individual cycles \u2192 distortion-like FM texture.",
+      "tool": "lfo",
+      "expect": "Static, musical motion, or audio-rate grit as chosen"
+    },
+    {
+      "n": 5,
+      "action": "Prefer these on rich-harmonic sources (FM, distorted, bright pads)\u2014comb/notch motion is more audible. Use as insert texture or send-colored motion before reverb on cinematic pads.",
+      "tool": "routing",
+      "expect": "Effect clearly audible on harmonic-rich material"
+    }
+  ],
+  "verification": [
+    "Correct delay-time regime: flanger <~15 ms vs chorus ~20\u201350 ms",
+    "Phaser uses all-pass stages/poles, not a uniform short delay comb",
+    "LFO amount matches static vs motion vs audio-rate intent"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "chorus",
+    "flanger",
+    "phaser",
+    "modulation",
+    "sound-design",
+    "fx",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:26:14+00:00",
+  "mcp_resource": "skill://mod-fx-flanger-chorus-phaser-portable-params",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video."
+  ]
+}

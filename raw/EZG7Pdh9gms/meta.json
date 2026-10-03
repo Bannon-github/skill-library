@@ -1,0 +1,15 @@
+{
+  "video_id": "EZG7Pdh9gms",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=EZG7Pdh9gms",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:21:15.420924+00:00",
+  "cue_count": 54,
+  "transcript_path": "/workspace/skill-library/raw/EZG7Pdh9gms/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/EZG7Pdh9gms/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual"
+}

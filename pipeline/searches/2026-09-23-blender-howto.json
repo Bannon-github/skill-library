@@ -1,0 +1,284 @@
+{
+  "stage": "2+",
+  "topic": "How to use Blender",
+  "query": "How to use Blender tutorial",
+  "note": "Stage 2+ complete for available videos. Raw fetched 11/11. Distilled+published 16 skills. Skipped W337AL7n3dc (missing). Thin: smluafHtCeY (advice-only; one light skill). Fetch failures: none.",
+  "results": [
+    {
+      "video_id": "peSv5IT5Ve4",
+      "title": "ABSOLUTE Beginner Basics.. Blender For Noobs 2025",
+      "url": "https://www.youtube.com/watch?v=peSv5IT5Ve4",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "z-Xl9tGqH14",
+      "title": "Beginner Blender Tutorial (2026)",
+      "url": "https://www.youtube.com/watch?v=z-Xl9tGqH14",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "W337AL7n3dc",
+      "title": "The ULTIMATE Blender Modeling Guide for Noobs! (Make Assets For Games!)",
+      "url": "https://www.youtube.com/watch?v=W337AL7n3dc",
+      "transcript_status": "missing",
+      "transcript_kinds": [],
+      "languages_manual": [],
+      "languages_auto": []
+    },
+    {
+      "video_id": "Ci3Has4L5W4",
+      "title": "Blender Tutorial for Beginners",
+      "url": "https://www.youtube.com/watch?v=Ci3Has4L5W4",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "Language",
+        "en"
+      ],
+      "languages_auto": [
+        "en",
+        "en-en",
+        "en-orig"
+      ]
+    },
+    {
+      "video_id": "x60zHw_z4NM",
+      "title": "Blender Tutorial \u2013 How to Use AI to Create 3D Models (ChatGPT and Blender)",
+      "url": "https://www.youtube.com/watch?v=x60zHw_z4NM",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "Language",
+        "en-ehkg1hFWq8A"
+      ],
+      "languages_auto": [
+        "en",
+        "en-orig",
+        "en-en-ehkg1hFWq8A"
+      ]
+    },
+    {
+      "video_id": "smluafHtCeY",
+      "title": "Learning BLENDER as a GAME DEV",
+      "url": "https://www.youtube.com/watch?v=smluafHtCeY",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "Language",
+        "en-CA"
+      ],
+      "languages_auto": [
+        "en-CA",
+        "en",
+        "en-orig",
+        "en-en-CA"
+      ]
+    },
+    {
+      "video_id": "TG_vamse41c",
+      "title": "Watch This Before you Get Started with Blender (7 Tips)",
+      "url": "https://www.youtube.com/watch?v=TG_vamse41c",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "Language",
+        "en-ehkg1hFWq8A"
+      ],
+      "languages_auto": [
+        "en",
+        "en-orig",
+        "en-en-ehkg1hFWq8A"
+      ]
+    },
+    {
+      "video_id": "8_0RptMbhe0",
+      "title": "How to 3D Model Using Blender - Easy Beginner Guide + Tips and Tricks",
+      "url": "https://www.youtube.com/watch?v=8_0RptMbhe0",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "nESaz92SJ0w",
+      "title": "The World's Easiest Blender Tutorial for Beginners",
+      "url": "https://www.youtube.com/watch?v=nESaz92SJ0w",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "Use9T2IX1XE",
+      "title": "Blender Low Poly Character Modeling Tutorial - Part 1",
+      "url": "https://www.youtube.com/watch?v=Use9T2IX1XE",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "98qKfdJRzr0",
+      "title": "Blender Beginner Tutorial - Part 1",
+      "url": "https://www.youtube.com/watch?v=98qKfdJRzr0",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "auto"
+      ],
+      "languages_manual": [],
+      "languages_auto": [
+        "en-orig",
+        "en"
+      ]
+    },
+    {
+      "video_id": "uOmYInaX-wE",
+      "title": "Getting started - Blender for complete beginners",
+      "url": "https://www.youtube.com/watch?v=uOmYInaX-wE",
+      "transcript_status": "available",
+      "transcript_kinds": [
+        "creator",
+        "auto"
+      ],
+      "languages_manual": [
+        "Language",
+        "en"
+      ],
+      "languages_auto": [
+        "en",
+        "en-en",
+        "en-orig"
+      ]
+    }
+  ],
+  "stage2_fetch": {
+    "fetched": [
+      "peSv5IT5Ve4",
+      "z-Xl9tGqH14",
+      "Ci3Has4L5W4",
+      "x60zHw_z4NM",
+      "smluafHtCeY",
+      "TG_vamse41c",
+      "8_0RptMbhe0",
+      "nESaz92SJ0w",
+      "Use9T2IX1XE",
+      "98qKfdJRzr0",
+      "uOmYInaX-wE"
+    ],
+    "failures": [],
+    "skipped_missing": [
+      "W337AL7n3dc"
+    ]
+  },
+  "stage2_distill": {
+    "skills_published": [
+      "blender-viewport-navigation-mmb",
+      "blender-edit-mode-transform-extrude-loopcut-bevel",
+      "blender-lowpoly-pine-tree-from-primitives",
+      "blender-beginner-setup-nav-and-geometry-practice",
+      "blender-chatgpt-python-script-gold-ball",
+      "blender-metric-mm-setup-for-3d-print",
+      "blender-boolean-bracket-with-cylinder-holes",
+      "blender-easy-car-box-model-core-tools",
+      "blender-lowpoly-character-scene-prep",
+      "blender-install-preferences-and-viewport-basics",
+      "blender-chocolate-chip-cookie-model-and-render",
+      "blender-beginner-three-tools-and-viewport-nav",
+      "blender-complete-beginner-add-delete-focus",
+      "blender-donut-tutorial-nav-add-shade-smooth",
+      "blender-mug-solidify-subsurf-loopcut",
+      "blender-gamedev-learning-path-advice"
+    ],
+    "by_video": {
+      "peSv5IT5Ve4": [
+        "blender-viewport-navigation-mmb",
+        "blender-edit-mode-transform-extrude-loopcut-bevel",
+        "blender-lowpoly-pine-tree-from-primitives"
+      ],
+      "TG_vamse41c": [
+        "blender-beginner-setup-nav-and-geometry-practice"
+      ],
+      "x60zHw_z4NM": [
+        "blender-chatgpt-python-script-gold-ball"
+      ],
+      "8_0RptMbhe0": [
+        "blender-metric-mm-setup-for-3d-print",
+        "blender-boolean-bracket-with-cylinder-holes"
+      ],
+      "nESaz92SJ0w": [
+        "blender-easy-car-box-model-core-tools"
+      ],
+      "Use9T2IX1XE": [
+        "blender-lowpoly-character-scene-prep"
+      ],
+      "Ci3Has4L5W4": [
+        "blender-install-preferences-and-viewport-basics",
+        "blender-chocolate-chip-cookie-model-and-render"
+      ],
+      "98qKfdJRzr0": [
+        "blender-beginner-three-tools-and-viewport-nav"
+      ],
+      "uOmYInaX-wE": [
+        "blender-complete-beginner-add-delete-focus"
+      ],
+      "z-Xl9tGqH14": [
+        "blender-donut-tutorial-nav-add-shade-smooth",
+        "blender-mug-solidify-subsurf-loopcut"
+      ],
+      "smluafHtCeY": [
+        "blender-gamedev-learning-path-advice"
+      ]
+    },
+    "thin": [
+      {
+        "video_id": "smluafHtCeY",
+        "status": "thin-transcript-advice",
+        "note": "Narrative learning-path advice for game-dev Blender learners; few executable Blender UI steps. Distilled one light curriculum-advice skill only."
+      }
+    ],
+    "failures": []
+  }
+}

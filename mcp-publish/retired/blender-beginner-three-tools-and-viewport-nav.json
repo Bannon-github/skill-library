@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-beginner-three-tools-and-viewport-nav",
+  "name": "blender beginner three tools and viewport nav",
+  "goal": "Learn Move/Rotate/Scale tools and MMB viewport navigation (with trackpad alternatives) as absolute beginner foundations.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "98qKfdJRzr0",
+    "url": "https://www.youtube.com/watch?v=98qKfdJRzr0",
+    "title": "Blender Beginner Tutorial - Part 1",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/98qKfdJRzr0/agent-skill-blender-beginner-three-tools-and-viewport-nav.json"
+  },
+  "prerequisites": [
+    "Blender installed"
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "transformed_cube",
+      "type": "mesh",
+      "description": "Default cube moved/rotated/scaled via tools"
+    }
+  ],
+  "constraints": [
+    "Edit\u2192Preferences\u2192Resolution Scale e.g. 1.25 if UI too small",
+    "Three-button mouse preferred for nav"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Edit \u2192 Preferences \u2192 set Resolution Scale (e.g. 1.25) so UI is readable.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Activate Move tool; drag RGB handles to move the cube.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Activate Rotate tool; drag handles to rotate.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Activate Scale tool; drag the white uniform handle to scale on all axes.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Navigate: MMB orbit, Shift+MMB pan, scroll zoom (use Emulate 3 Button Mouse / trackpad alternatives if needed).",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Cube transformed with all three tools",
+    "Can orbit and pan viewport"
+  ],
+  "tags": [
+    "blender",
+    "beginner",
+    "tools",
+    "navigation",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-beginner-three-tools-and-viewport-nav"
+}

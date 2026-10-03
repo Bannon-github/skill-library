@@ -1,0 +1,15 @@
+{
+  "video_id": "JiBarM7jOtA",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=JiBarM7jOtA",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:20:36.254976+00:00",
+  "cue_count": 121,
+  "transcript_path": "/workspace/skill-library/raw/JiBarM7jOtA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JiBarM7jOtA/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

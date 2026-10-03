@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "id": "digital-wt-morph-bandpass-chorus-echo-space",
+  "name": "Digital wavetable pad with series filter, chorus, echo, space",
+  "goal": "Craft a digital ambient pad: WT engine with long env\u2192WT position, long amp attack/release, classic unison (~3 voices, wide stereo, ~1\u20132% detune) layered with a pure sine WT, series LP24\u2192HP12 both opened by the morph env (band-pass-like), velocity amp mod, then Juno-style chorus \u2192 tape/ping-pong echo \u2192 long wet reverb (chorus also on the reverb path).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "e1ZQssAW7R0",
+    "url": "https://www.youtube.com/watch?v=e1ZQssAW7R0",
+    "title": "Arturia Pigments: Creating A Digital Pad",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/e1ZQssAW7R0/agent-skill-digital-wt-morph-bandpass-chorus-echo-space.json"
+  },
+  "prerequisites": [
+    "Dual-engine wavetable synth, dual filters routable in series, chorus, delay, reverb, macros/sends"
+  ],
+  "inputs": [
+    {
+      "name": "wt_position_env_attack_s",
+      "type": "number",
+      "description": "Long attack on WT-position envelope (tutorial ~4.6s)",
+      "required": true
+    },
+    {
+      "name": "amp_attack_release_s",
+      "type": "number",
+      "description": "Pad amp attack ~2.8s and release ~5s+",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "digital_ambient_pad",
+      "type": "synth-patch",
+      "description": "Warm-digital evolving pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "If reverb is on a parallel aux, duplicate chorus onto the aux if you want chorused space.",
+    "Use stock/original wavetables; ignore preset-pack names from the video."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Engine1 wavetable (additive/gentle digital): set mid position; env2 \u2192 WT position with long attack, slow decay, high sustain, long release.",
+      "tool": "wavetable",
+      "expect": "Slow digital morph on press"
+    },
+    {
+      "n": 2,
+      "action": "Amp/VCA env: attack ~2.8s, full sustain, release ~5s+.",
+      "tool": "amp-envelope",
+      "expect": "Pad contour"
+    },
+    {
+      "n": 3,
+      "action": "Unison classic ~3 voices, stereo 100%, detune ~1.5\u20132%.",
+      "tool": "unison",
+      "expect": "Wide warm bed"
+    },
+    {
+      "n": 4,
+      "action": "Engine2: basic sine WT, unison ~3 / stereo 100% / ~1% detune; blend under the bright digital engine for weight.",
+      "tool": "oscillator",
+      "expect": "Warmth under digital edge"
+    },
+    {
+      "n": 5,
+      "action": "Series filters: LP24 (cutoff low hundreds Hz, light resonance, key follow ~0.4) then HP12 (~50 Hz); both cutoffs also from env2 so morph opens LP while HP removes some sine weight over time.",
+      "tool": "filter",
+      "expect": "Soft blooming quasi-bandpass"
+    },
+    {
+      "n": 6,
+      "action": "Velocity \u2192 amp slightly for playability.",
+      "tool": "velocity",
+      "expect": "Dynamic range"
+    },
+    {
+      "n": 7,
+      "action": "Insert Juno-like chorus (slow rate ~0.25 Hz, depth a few ms, phase ~180\u00b0); send to aux: chorus copy \u2192 tape/ping-pong echo (e.g. 1/4, ~50% wet, feedback ~0.35) \u2192 100% wet long reverb (long predelay/decay, damping, HP/LP).",
+      "tool": "fx-bus",
+      "expect": "Chorused echo-colored space"
+    }
+  ],
+  "verification": [
+    "WT position moves on a long envelope",
+    "Sine layer adds weight under digital WT",
+    "Filters in series behave like a controllable band",
+    "Chorus present on the reverberated path if using parallel reverb"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "chorus",
+    "reverb",
+    "pad",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://digital-wt-morph-bandpass-chorus-echo-space"
+}

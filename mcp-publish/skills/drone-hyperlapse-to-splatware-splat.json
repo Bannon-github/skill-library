@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "drone-hyperlapse-to-splatware-splat",
+  "name": "Drone hyperlapse capture to Gaussian splat in free Splatware",
+  "goal": "Capture overlapping multi-angle views of a building/subject with DJI built-in hyperlapse modes (photogrammetry-style coverage of every facade, slow flight to avoid blur, no paid flight planner), then upload the hyperlapse/video to the free Splatware web app, process, review, and download the Gaussian splat.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": "FpN2VTSZ_7U",
+    "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+    "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-drone-hyperlapse-to-splatware-splat.json"
+  },
+  "sources": [
+    {
+      "from_skill": "drone-hyperlapse-multi-angle-capture",
+      "video_id": "FpN2VTSZ_7U",
+      "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+      "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/FpN2VTSZ_7U/distilled.json"
+    },
+    {
+      "from_skill": "upload-capture-to-free-splatware",
+      "video_id": "FpN2VTSZ_7U",
+      "url": "https://www.youtube.com/watch?v=FpN2VTSZ_7U",
+      "title": "How to Do Drone Gaussian Splatting: Beginner Tutorial (Splatware)",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/FpN2VTSZ_7U/distilled.json"
+    }
+  ],
+  "merged_from": [
+    "drone-hyperlapse-multi-angle-capture",
+    "upload-capture-to-free-splatware"
+  ],
+  "aliases": [
+    "drone-hyperlapse-multi-angle-capture",
+    "upload-capture-to-free-splatware"
+  ],
+  "prerequisites": [
+    "DJI drone with hyperlapse modes (e.g. Mavic Air 3)",
+    "Browser access to free Splatware"
+  ],
+  "inputs": [
+    {
+      "name": "building_or_subject",
+      "type": "string",
+      "description": "Target to cover from all facades",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hyperlapse_media",
+      "type": "file",
+      "description": "Hyperlapse video or image set"
+    },
+    {
+      "name": "splat",
+      "type": "3d_asset",
+      "description": "Online Gaussian splat"
+    }
+  ],
+  "constraints": [
+    "Photogrammetry-style multi-angle coverage",
+    "Slow flight to avoid blur",
+    "No paid flight planner required",
+    "Use free Splatware web app from the tutorial"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Plan multi-angle coverage of every facade (photogrammetry-style).",
+      "tool": null,
+      "expect": "Coverage plan includes all major facades"
+    },
+    {
+      "n": 2,
+      "action": "Use DJI built-in hyperlapse modes.",
+      "tool": null,
+      "expect": "Hyperlapse capture running"
+    },
+    {
+      "n": 3,
+      "action": "Fly slowly; avoid blur; export media.",
+      "tool": null,
+      "expect": "Sharp hyperlapse media exported"
+    },
+    {
+      "n": 4,
+      "action": "Open free Splatware web app.",
+      "tool": null,
+      "expect": "Splatware web app open"
+    },
+    {
+      "n": 5,
+      "action": "Upload hyperlapse/video.",
+      "tool": null,
+      "expect": "Media uploaded"
+    },
+    {
+      "n": 6,
+      "action": "Run processing; review and download the splat.",
+      "tool": null,
+      "expect": "Interactive splat viewable after processing; splat downloaded"
+    }
+  ],
+  "verification": [
+    "All major facades appear in capture",
+    "Interactive splat viewable after processing"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "drone",
+    "gaussian-splat",
+    "splatware",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "mcp_resource": "skill://drone-hyperlapse-to-splatware-splat",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

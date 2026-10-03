@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-productize-service-fixed-scope-price",
+  "name": "Productize a freelance service: fixed scope, price, timeline",
+  "goal": "Turn bespoke freelance work into a productized offer with predetermined deliverable, fixed price, and fixed timeline/scope so sales skip custom scoping and delivery becomes repeatable.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ZGUdI9Ay0iQ",
+    "url": "https://www.youtube.com/watch?v=ZGUdI9Ay0iQ",
+    "title": "You Should Productize Your Service - Here Is How To Do It!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ZGUdI9Ay0iQ/agent-skill-sidehustle-productize-service-fixed-scope-price.json"
+  },
+  "prerequisites": [
+    "A service you have delivered multiple times"
+  ],
+  "inputs": [
+    {
+      "name": "service_skill",
+      "type": "string",
+      "description": "Capability to package",
+      "required": true
+    },
+    {
+      "name": "target_client",
+      "type": "string",
+      "description": "Ideal buyer",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "productized_offer",
+      "type": "offer-sheet",
+      "description": "Named package with scope/price/timeline/exclusions"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only \u2014 no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus.",
+    "Only package repeatable work; exclude open-ended R&D."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Define the offer as prepackaged: predetermined cost + predetermined scope + stated result in a stated timebox.",
+      "tool": "offer-design",
+      "expect": "One-sentence package"
+    },
+    {
+      "n": 2,
+      "action": "Write inclusions vs exclusions to escape unique-every-time projects that burn you out and cede control to clients.",
+      "tool": "scope-doc",
+      "expect": "In/out list"
+    },
+    {
+      "n": 3,
+      "action": "Publish a fixed price and turnaround so buyers can skip long rate/scope negotiation.",
+      "tool": "pricing",
+      "expect": "Fixed commercial terms"
+    },
+    {
+      "n": 4,
+      "action": "State ideal client and when NOT to buy (heavy custom \u2192 separate bespoke engagement).",
+      "tool": "offer-sheet",
+      "expect": "Qualification criteria"
+    },
+    {
+      "n": 5,
+      "action": "Standardize intake \u2192 produce \u2192 QA \u2192 handoff checklist/templates for every order.",
+      "tool": "sop",
+      "expect": "Repeatable fulfillment"
+    }
+  ],
+  "verification": [
+    "Price/scope fixed pre-sale",
+    "Exclusions listed",
+    "Checklist works for two orders"
+  ],
+  "tags": [
+    "side-hustle",
+    "productized-service",
+    "freelance",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://sidehustle-productize-service-fixed-scope-price"
+}

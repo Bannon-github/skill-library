@@ -1,0 +1,15 @@
+{
+  "video_id": "am6KBGUVtXE",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=am6KBGUVtXE",
+  "ok": true,
+  "fetched_at": "2026-09-24T16:19:11.667857+00:00",
+  "cue_count": 110,
+  "transcript_path": "/workspace/skill-library/raw/am6KBGUVtXE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/am6KBGUVtXE/raw.txt",
+  "method": "youtube-transcript-api",
+  "source_ui": "youtube-show-transcript",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "spectral-warp-vocode-formant-stretch-smear",
+  "name": "Spectral warp modes: vocode, formant scale, harmonic stretch, smear",
+  "goal": "Add WT spectral/formant morph delta beyond basic wavetable-position pads: use spectral warp modes\u2014vocode (key-tracked formant shift, vocal/vocoder character), formant scale (more exaggerated vowel/formant moves without key-tracking), harmonic stretch (even harmonic expansion; great for LFO\u2192acid/sci-fi), inharmonic stretch (metallic/bell chaos), and smear (spectral high-pass / additive smear from bottom of table)\u2014then modulate the warp amount for evolving cinematic texture.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "iqrPF8t72sU",
+    "url": "https://www.youtube.com/watch?v=iqrPF8t72sU",
+    "title": "The ULTIMATE Guide To Master Vital - Spectral Warp Modes",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/iqrPF8t72sU/agent-skill-spectral-warp-vocode-formant-stretch-smear.json"
+  },
+  "prerequisites": [
+    "Wavetable synth with spectral/formant warp or equivalent (vocode/formant/stretch/smear-like) oscillator effects; LFO/mod matrix"
+  ],
+  "inputs": [
+    {
+      "name": "warp_mode",
+      "type": "enum",
+      "description": "vocode | formant_scale | harmonic_stretch | inharmonic_stretch | smear",
+      "required": true
+    },
+    {
+      "name": "modulate",
+      "type": "boolean",
+      "description": "Whether to LFO/envelope the warp amount",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "spectral_morph_osc",
+      "type": "synth-patch",
+      "description": "WT osc with chosen spectral warp + optional motion"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Delta vs ambient-wavetable-scratch-spectral-morph-pad / digital-wt-morph: focuses on named spectral warp mode behaviors (vocode/formant/stretch/smear), not building a WT from scratch or FX bus."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a rich wavetable (complex/harmonic content). Open oscillator spectral warp / formant-style effect slot.",
+      "tool": "wavetable-osc",
+      "expect": "Warp control audible on static table"
+    },
+    {
+      "n": 2,
+      "action": "Try vocode: shifts formants in a key-tracked way so formant character stays steadier across notes \u2014 good for vocal/vocoder-ish WT pads and text-to-speech tables without wild pitch-of-formant jumps.",
+      "tool": "spectral-warp",
+      "expect": "Stable vowel/vocoder color across keyboard"
+    },
+    {
+      "n": 3,
+      "action": "Compare formant scale: moves harmonics/formants more exaggeratedly than vocode while keeping relative harmonic structure, but without the same key-tracking steadiness \u2014 stronger vowel changes, more note-to-note timbre shift.",
+      "tool": "spectral-warp",
+      "expect": "Bigger formant sweeps; less locked across keys"
+    },
+    {
+      "n": 4,
+      "action": "Use harmonic stretch for even, patterned spectral expansion; modulate with LFO for spacey acid / high sci-fi alarm motion. Switch to inharmonic stretch for uneven metallic/bell/crystal textures and aggressive growls.",
+      "tool": "spectral-warp",
+      "expect": "Harmonic vs inharmonic metallic character"
+    },
+    {
+      "n": 5,
+      "action": "Use smear as a spectral high-pass / additive smear: table starts at the bottom of the control and spreads harmonics upward until the sound thins/smears out (Razor/Harmor-like). Good for whippy high-pass spectral gestures.",
+      "tool": "spectral-warp",
+      "expect": "Squelchy spectral HPF-like motion"
+    },
+    {
+      "n": 6,
+      "action": "For cinematic pads: pick one warp mode, set modest amount, LFO or envelope the warp (and optionally WT position); follow with filter \u2192 chorus \u2192 delay \u2192 reverb. Avoid stacking every mode at once.",
+      "tool": "mod-matrix",
+      "expect": "Evolving spectral pad without chaotic overload"
+    }
+  ],
+  "verification": [
+    "Vocode vs formant-scale difference is audible across notes",
+    "Harmonic stretch stays more tonal than inharmonic stretch",
+    "Smear thins/high-passes spectrally when amount rises"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "spectral",
+    "formant",
+    "vocode",
+    "morph",
+    "pads",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://spectral-warp-vocode-formant-stretch-smear"
+}

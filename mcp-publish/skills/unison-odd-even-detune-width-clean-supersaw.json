@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "unison-odd-even-detune-width-clean-supersaw",
+  "name": "Unison voicing: odd vs even voice counts, detune/blend/width, clean supersaw",
+  "goal": "Set unison deliberately and build mix-ready supersaws: odd voice counts keep a centered in-tune voice for mono-compatible front-of-mix bass/leads/pads, even counts leave a center gap for ultra-wide off-center leads; keep detune/blend moderate; for supersaws use simple saw frames (not complex WT sweeps), ~6–12 voices, optional quieter Osc B, centered sub an octave down and quiet noise, EQ→compress→delay→reverb, subtle warp, and global unison width ~50% plus sparing stack modes for chord phase correlation.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 2 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-unison-odd-even-detune-width-clean-supersaw.json"
+  },
+  "sources": [
+    {
+      "from_skill": "odd-even-unison-center-vs-width",
+      "video_id": "am6KBGUVtXE",
+      "url": "https://www.youtube.com/watch?v=am6KBGUVtXE",
+      "title": "Odd vs Even Unison in Serum | The Secret to Wide & Focused Sounds",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/am6KBGUVtXE/agent-skill-odd-even-unison-center-vs-width.json"
+    },
+    {
+      "from_skill": "supersaw-clean-unison-detune-width",
+      "video_id": "KnbAOrM62Ks",
+      "url": "https://www.youtube.com/watch?v=KnbAOrM62Ks",
+      "title": "5 Power Tips for Better Supersaws in Serum",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/KnbAOrM62Ks/agent-skill-supersaw-clean-unison-detune-width.json"
+    }
+  ],
+  "merged_from": [
+    "odd-even-unison-center-vs-width",
+    "supersaw-clean-unison-detune-width"
+  ],
+  "aliases": [
+    "odd-even-unison-center-vs-width",
+    "supersaw-clean-unison-detune-width"
+  ],
+  "prerequisites": [
+    "Synth with multi-voice unison, detune, blend/stereo spread (or Web Audio multi-osc detune pan); for supersaws a sub/noise source, FX rack, and global unison width/stack"
+  ],
+  "inputs": [
+    {
+      "name": "voice_count",
+      "type": "integer",
+      "description": "Unison voices (compare odd vs even; supersaw typically 6–12, classic ~7, hypersaw ~8)",
+      "required": true
+    },
+    {
+      "name": "role",
+      "type": "enum",
+      "description": "front-center (bass/lead/pad) vs ultra-wide side lead",
+      "required": true
+    },
+    {
+      "name": "voice_context",
+      "type": "enum",
+      "description": "mono lead/drop vs polyphonic chords",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "unison_voicing_choice",
+      "type": "synth-patch",
+      "description": "Odd or even unison setup with detune/blend notes"
+    },
+    {
+      "name": "supersaw_patch",
+      "type": "synth-patch",
+      "description": "Clean wide supersaw usable in a mix"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only — map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source videos; recreate with comparable modules.",
+    "Portable idea: odd voice counts place one voice dead-center; even counts spread L/R with a center gap—independent of Serum UI.",
+    "Avoid sweeping complex wavetable frames while heavily detuned — timbre becomes incoherent.",
+    "For chords, keep detune/blend more conservative than for mono drops; consider reducing unison width toward ~50% for phase correlation.",
+    "Traveler-style 7-voice super-unison lead stays separate: traveler-walkthrough-super-unison-wide-lead."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from 1 voice, then set 2 voices: expect one left and one right with a center gap; default detune often sounds harsh—lower detune.",
+      "tool": "unison",
+      "expect": "Hard L/R split, weak mono center"
+    },
+    {
+      "n": 2,
+      "action": "Switch to 3 (odd) voices: confirm a center voice appears; with blend lowered you hear more of that center while keeping similar detune.",
+      "tool": "unison",
+      "expect": "Stable mid + side detune"
+    },
+    {
+      "n": 3,
+      "action": "Compare 4 (even) vs 5 (odd) at similar detune: higher even counts can sound more detuned/wide; very high odd counts (e.g. ~15) pack many voices near center so the patch can sound *less* detuned than a mid even count.",
+      "tool": "unison",
+      "expect": "Odd ≠ automatically more wide"
+    },
+    {
+      "n": 4,
+      "action": "For reese/detuned saw bass or other front-and-present mix parts, prefer odd voice counts for mono compatibility (center represented).",
+      "tool": "mix-role",
+      "expect": "Bass/lead holds center in mono check"
+    },
+    {
+      "n": 5,
+      "action": "For an uber-wide lead you will pan off-center, even counts (2/4/…) with blend favoring outer voices are acceptable.",
+      "tool": "unison",
+      "expect": "Extra width, weaker mono mid"
+    },
+    {
+      "n": 6,
+      "action": "Example starting detune for chord/lead work: modest (~0.16 in the video’s demo); reset blend to default then adjust; always A/B odd vs even in context.",
+      "tool": "detune-blend",
+      "expect": "Usable detune without wash"
+    },
+    {
+      "n": 7,
+      "action": "Supersaw: Load a simple saw (or rounded/noisy saw variant), not a multi-frame complex WT you plan to sweep aggressively.",
+      "tool": "oscillator",
+      "expect": "Cohesive saw character"
+    },
+    {
+      "n": 8,
+      "action": "Supersaw (apply the odd/even rule above when choosing the count): Set unison ~6–12 (example ~10); set detune and blend near mid — extreme detune+blend is for FX, not clean chords.",
+      "tool": "unison",
+      "expect": "Wide but center still present"
+    },
+    {
+      "n": 9,
+      "action": "Optional Osc B: fewer unison voices, pitch ±octaves, lower level to thicken without doubling chaos.",
+      "tool": "oscillator",
+      "expect": "Extra thickness especially for leads"
+    },
+    {
+      "n": 10,
+      "action": "Optional centered saw sub one octave down (no unison) for mono mid-weight; quiet unique noise sample for texture.",
+      "tool": "sub-noise",
+      "expect": "Center weight + air; still sounds like a supersaw dry"
+    },
+    {
+      "n": 11,
+      "action": "FX order example: EQ (cut lows, lift highs) → compression → ping-pong delay → reverb last; optional light hyper/dimension detune on the bus (can widen even the sub).",
+      "tool": "fx-bus",
+      "expect": "Glue without mud"
+    },
+    {
+      "n": 12,
+      "action": "Subtle warp (e.g. bend+/−) via envelope/LFO for 3D motion — keep amounts small on supersaws.",
+      "tool": "warp",
+      "expect": "Motion without destroying saw identity"
+    },
+    {
+      "n": 13,
+      "action": "Global unison: reduce width (~50%) for better chord phase correlation; try stack modes (super, fifths, center−2, octave) sparingly; warp-offset per voice only if warp is intentional.",
+      "tool": "unison-global",
+      "expect": "Huge but mix-fitting supersaw"
+    }
+  ],
+  "verification": [
+    "Odd count shows/audibly centers one voice; even count has center gap",
+    "Front-of-mix bass/pad uses odd; intentionally wide side lead may use even",
+    "Mono fold keeps center energy on odd-count patches",
+    "Dry (pre-FX) still sounds like a clean supersaw",
+    "Chord mode not maximally detuned/widened",
+    "Sub (if used) remains more centered than unison voices"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "unison",
+    "supersaw",
+    "detune",
+    "stereo",
+    "width",
+    "mono-compatibility",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://unison-odd-even-detune-width-clean-supersaw",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

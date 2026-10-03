@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-metric-mm-setup-for-3d-print",
+  "name": "blender metric millimeters setup for 3d print",
+  "goal": "Configure Blender scene units and grid to millimeters for dimension-accurate hard-surface / 3D-print modeling.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "8_0RptMbhe0",
+    "url": "https://www.youtube.com/watch?v=8_0RptMbhe0",
+    "title": "How to 3D Model Using Blender - Easy Beginner Guide + Tips and Tricks",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/8_0RptMbhe0/agent-skill-blender-metric-mm-setup-for-3d-print.json"
+  },
+  "prerequisites": [
+    "Blender open"
+  ],
+  "inputs": [
+    {
+      "name": "scene",
+      "type": "blender-scene",
+      "description": "Scene to configure",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mm_scene",
+      "type": "blender-scene",
+      "description": "Scene with metric mm units and matching grid scale"
+    }
+  ],
+  "constraints": [
+    "Unit Scale 0.001 with Length Millimeters",
+    "Also set Viewport Overlays grid scale to 0.001"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Open Scene Properties; set Unit System to Metric.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Set Unit Scale to 0.001 and Length to Millimeters.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Open Viewport Overlays; set grid Scale to 0.001 so the grid matches mm.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Select object; press N for Sidebar; confirm Location/Rotation/Scale/Dimensions read in mm.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Reset object location to 0,0,0 if recentering at origin.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Dimensions display in millimeters",
+    "Grid looks correct at mm scale"
+  ],
+  "tags": [
+    "blender",
+    "units",
+    "3d-printing",
+    "hard-surface",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-metric-mm-setup-for-3d-print"
+}

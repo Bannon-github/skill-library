@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "id": "mono-compatible-chord-split-stereo-pad",
+  "name": "Mono-compatible chord-split hard L/R pad width",
+  "goal": "Widen a pad without chorus/spreader phase smear: duplicate the synth+MIDI, mute alternating chord tones on each copy (interleaved split), hard-pan L vs R so channels play different notes of the same harmony\u2014yielding extreme width with healthier correlation than chorus/stereo-spread FX.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "EZG7Pdh9gms",
+    "url": "https://www.youtube.com/watch?v=EZG7Pdh9gms",
+    "title": "How to make true mono compatible stereo widening to your synth sounds #kyaalmix",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/EZG7Pdh9gms/agent-skill-mono-compatible-chord-split-stereo-pad.json"
+  },
+  "prerequisites": [
+    "DAW that can duplicate instrument+MIDI; pad synth with multi-note chords"
+  ],
+  "inputs": [
+    {
+      "name": "chord_midi",
+      "type": "midi",
+      "description": "Pad chord progression to split across two layers",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "split_stereo_pad",
+      "type": "synth-patch",
+      "description": "Dual-layer hard-panned complementary chord pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Goal is different L vs R note content\u2014not delayed/frequency-split copies of the same notes."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a basic pad chord patch. Note that chorus widens but can sound phasy/warbly; frequency stereo-spread often fails to feel truly wide and can sound inside-out.",
+      "tool": "pad",
+      "expect": "Baseline mono-ish pad identified"
+    },
+    {
+      "n": 2,
+      "action": "Duplicate the synth instance with identical settings and copy the MIDI to both tracks.",
+      "tool": "daw",
+      "expect": "Two identical layers"
+    },
+    {
+      "n": 3,
+      "action": "On track A piano roll, mute every other note top\u2192bottom; on track B mute the complementary set bottom\u2192top so together they reconstruct the full chords but separately play different notes.",
+      "tool": "midi-edit",
+      "expect": "Complementary note sets"
+    },
+    {
+      "n": 4,
+      "action": "Hard-pan A fully left and B fully right; play together for maximum width.",
+      "tool": "pan",
+      "expect": "Super-wide harmonic split"
+    },
+    {
+      "n": 5,
+      "action": "Check a correlation/phase meter: split technique should sit near ~0 (very wide) without deep negative swings; compare vs chorus (often flangy + negative correlation) and spreader (weaker width).",
+      "tool": "meter",
+      "expect": "Wide image, healthier correlation than chorus"
+    }
+  ],
+  "verification": [
+    "Alone, each layer is incomplete chords; together they form full harmony",
+    "Hard L/R pan yields strong width",
+    "Correlation stays healthier than chorus comparison"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo",
+    "pads",
+    "mono-compatibility",
+    "layering",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://mono-compatible-chord-split-stereo-pad"
+}

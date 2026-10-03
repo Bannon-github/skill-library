@@ -1,0 +1,40 @@
+{
+  "id": "curriculum-blender-beginner",
+  "title": "Blender beginner foundations",
+  "purpose": "Progress from viewport literacy to mesh editing, first models, modifiers, materials/render using YouTube-provided how-to transcripts.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Install, UI, navigation",
+      "skills": [
+        "blender-install-prefs-viewport-nav-transform-tools",
+        "blender-first-scene-add-delete-focus-shade-smooth",
+        "blender-beginner-setup-nav-and-geometry-practice"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Edit mode and first models",
+      "skills": [
+        "blender-edit-mode-transform-extrude-loopcut-bevel",
+        "blender-lowpoly-pine-tree-from-primitives",
+        "blender-easy-car-box-model-core-tools",
+        "blender-metric-mm-setup-for-3d-print",
+        "blender-boolean-bracket-with-cylinder-holes"
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Modifiers, materials, render, character prep",
+      "skills": [
+        "blender-mug-solidify-subsurf-loopcut",
+        "blender-chocolate-chip-cookie-model-and-render",
+        "blender-lowpoly-character-scene-prep",
+        "blender-chatgpt-python-script-gold-ball",
+        "blender-gamedev-learning-path-advice"
+      ]
+    }
+  ],
+  "status": "draft",
+  "updated_at": "2026-10-03T15:50:00+00:00"
+}

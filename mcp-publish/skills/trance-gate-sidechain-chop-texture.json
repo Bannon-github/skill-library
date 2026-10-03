@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "trance-gate-sidechain-chop-texture",
+  "name": "Trance-gate: sidechain-gate chop a sustained pad",
+  "goal": "Turn a long sustaining pad/wall-of-sound (or heavily reverbed short source) into rhythmic stuttered chunks by sidechain-gating it from a silent trigger pattern (e.g. clustered 16ths), then tune gate release for snap and optionally re-space with post-gate reverb.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "DxyQNgNKUf8",
+    "url": "https://www.youtube.com/watch?v=DxyQNgNKUf8",
+    "title": "The trance gate technique (like Ross from Friends, Bicep, Max Cooper and Moderat)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/DxyQNgNKUf8/agent-skill-trance-gate-sidechain-chop-texture.json"
+  },
+  "prerequisites": [
+    "DAW with sidechain-capable gate (or equivalent gain chop); sustained synth/pad source; optional muteable trigger track"
+  ],
+  "inputs": [
+    {
+      "name": "source_patch",
+      "type": "synth-patch",
+      "description": "Long sustain / high sustain level (not a short pluck)",
+      "required": true
+    },
+    {
+      "name": "trigger_pattern",
+      "type": "string",
+      "description": "e.g. clusters of 3 sixteenth notes or every 16th",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "gated_pad_texture",
+      "type": "synth-patch",
+      "description": "Rhythmically chopped cinematic pad/texture"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Trigger track is for rhythm only\u2014do not leave it audible in the final mix.",
+    "Map Ableton Gate sidechain UI to any host gate with external key input."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build a source that sustains loudly while held (long notes or short hits + lots of reverb/compression so the wash stays continuous). Optionally thicken with power-chord voicing (root + octave + perfect fifth / +7 st).",
+      "tool": "osc-pad",
+      "expect": "Wall of continuous level"
+    },
+    {
+      "n": 2,
+      "action": "Create a separate trigger track with short clicks/samples on a 16th grid; classic patterns: repeating clusters of 3 sixteenths, or every 16th. Mute/do not mix the trigger into the output.",
+      "tool": "sequencer",
+      "expect": "Clear rhythmic key signal"
+    },
+    {
+      "n": 3,
+      "action": "Put a gate on the source. Enable sidechain/external key from the trigger track. Raise/lower threshold until the source opens only when triggers fire.",
+      "tool": "gate",
+      "expect": "Source follows trigger rhythm"
+    },
+    {
+      "n": 4,
+      "action": "Adjust gate release for more/less snap (shorter = choppier). Try alternate trigger densities.",
+      "tool": "gate",
+      "expect": "Desired stutter hardness"
+    },
+    {
+      "n": 5,
+      "action": "Optional: same technique on a vocal snippet + huge reverb before the gate; add another reverb after the gate to reintroduce space around chops.",
+      "tool": "reverb",
+      "expect": "Gated wash with air"
+    }
+  ],
+  "verification": [
+    "Sustained source alone is continuous; with gate+trigger it chops in rhythm",
+    "Trigger track is silent in the mix",
+    "Release time audibly changes snap"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "gate",
+    "sidechain",
+    "trance-gate",
+    "pads",
+    "rhythm",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://trance-gate-sidechain-chop-texture"
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "id": "lightroom-select-and-develop-photo",
+  "name": "lightroom select and develop photo",
+  "goal": "Edit one photo end-to-end in Lightroom.",
+  "domain": "photo-editing",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "owStZxm9DIA",
+    "url": "https://www.youtube.com/watch?v=owStZxm9DIA",
+    "title": "EDIT PHOTOS Like a Pro // Complete LIGHTROOM Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/owStZxm9DIA/distilled.json"
+  },
+  "prerequisites": [
+    "Adobe Lightroom (Library + Develop)",
+    "Source photo file"
+  ],
+  "inputs": [
+    {
+      "name": "photo",
+      "type": "file",
+      "description": "Unedited image to develop",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "edited_export",
+      "type": "file",
+      "description": "Exported JPEG/TIFF"
+    }
+  ],
+  "constraints": [
+    "Start from a strong base image",
+    "Global adjustments before local",
+    "Do not invent slider values not present in transcript"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "In Library, pick a strong base photo.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Open Develop on the unedited version.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Set global exposure, contrast, and white balance for the light.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Add local adjustments to separate subject from background.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Refine color/crop; export final file.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Export file exists",
+    "Subject separation improved vs original"
+  ],
+  "tags": [
+    "photo-editing",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-photo-edit-basics"
+  ],
+  "published_at": "2026-09-24T01:02:02.270542+00:00",
+  "mcp_resource": "skill://lightroom-select-and-develop-photo"
+}

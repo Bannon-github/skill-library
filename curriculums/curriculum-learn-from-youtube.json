@@ -1,0 +1,36 @@
+{
+  "id": "curriculum-learn-from-youtube",
+  "title": "Learn any how-to from YouTube transcripts",
+  "purpose": "Meta-curriculum: search \u2192 raw transcript \u2192 distill \u2192 executable skill \u2192 append to library.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Search how-tos for a topic",
+      "skills": [
+        "youtube-howto-search"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Pull and save raw captions",
+      "skills": [
+        "youtube-save-raw-transcript"
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Distill to actionable steps",
+      "skills": [
+        "distill-transcript"
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Publish skill into topic + curriculum",
+      "skills": [
+        "library-append-skill"
+      ]
+    }
+  ],
+  "status": "draft"
+}

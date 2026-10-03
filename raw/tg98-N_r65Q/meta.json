@@ -1,0 +1,15 @@
+{
+  "video_id": "tg98-N_r65Q",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=tg98-N_r65Q",
+  "ok": true,
+  "fetched_at": "2026-09-25T16:21:42.068881+00:00",
+  "cue_count": 608,
+  "transcript_path": "/workspace/skill-library/raw/tg98-N_r65Q/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/tg98-N_r65Q/raw.txt",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "source_ui": "youtube-show-transcript",
+  "srt_file": "tg98-N_r65Q.en-orig.srt",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable)."
+}
