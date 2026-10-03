@@ -1,1 +1,100 @@
-@/workspace/skill-library-push/mcp-publish/skills/sidehustle-upwork-proposal-short-proof-cta.json
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-upwork-proposal-short-proof-cta",
+  "name": "Upwork proposal: short personalized proof + single CTA",
+  "goal": "Write Upwork cover letters that avoid archive-bait mistakes and follow a tight pattern: client first name, brief proof/social proof, one CTA to book a call, skim-friendly P.S., and prior ToS literacy.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "f4INGRluDAU",
+    "url": "https://www.youtube.com/watch?v=f4INGRluDAU",
+    "title": "Upwork Proposals: 8 Golden Rules for Writing Upwork Cover Letters",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/f4INGRluDAU/agent-skill-sidehustle-upwork-proposal-short-proof-cta.json"
+  },
+  "prerequisites": [
+    "Upwork freelancer account",
+    "Portfolio or client quotes"
+  ],
+  "inputs": [
+    {
+      "name": "job_post",
+      "type": "text",
+      "description": "Target job",
+      "required": true
+    },
+    {
+      "name": "client_first_name",
+      "type": "string",
+      "description": "From feedback history if available",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "proposal_draft",
+      "type": "text",
+      "description": "Short cover letter"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only — no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus.",
+    "No question-dump in the first proposal.",
+    "Don't name a direct competitor client; say you've worked with another client in the space."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Avoid archive bait: generic salutation, false 'I fully understand', leading with inexperience, empty promises, ignoring requested example counts, unsolicited full drafts, packing questions into the proposal.",
+      "tool": "proposal-editor",
+      "expect": "Mistakes cleared"
+    },
+    {
+      "n": 2,
+      "action": "Personalize with client first name (often in feedback history); optionally Google the business for industry context.",
+      "tool": "research",
+      "expect": "Named greeting"
+    },
+    {
+      "n": 3,
+      "action": "Keep it short; establish authority with a profile client quote or concrete proof.",
+      "tool": "proposal-editor",
+      "expect": "Brief proof-backed pitch"
+    },
+    {
+      "n": 4,
+      "action": "One CTA only: book a call (questions happen on the call/scheduling form).",
+      "tool": "proposal-editor",
+      "expect": "Single next step"
+    },
+    {
+      "n": 5,
+      "action": "Add a P.S. — skimmers often read it even when they skip links.",
+      "tool": "proposal-editor",
+      "expect": "P.S. present"
+    },
+    {
+      "n": 6,
+      "action": "Before serious bidding, read Upwork Terms of Service fully; treat ToS literacy as required to get paid safely.",
+      "tool": "upwork-tos",
+      "expect": "ToS reviewed"
+    }
+  ],
+  "verification": [
+    "Short + one CTA",
+    "No question dump",
+    "Proof/quote present"
+  ],
+  "tags": [
+    "side-hustle",
+    "upwork",
+    "proposals",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://sidehustle-upwork-proposal-short-proof-cta"
+}
