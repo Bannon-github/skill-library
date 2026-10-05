@@ -1,0 +1,178 @@
+{
+ "name": "pluck-organic-velocity-pluck",
+ "category": "pluck",
+ "steps": [
+  {
+   "skill": "ambient-organic-pluck-pad-ladder-chorus-space",
+   "knobs": {
+    "decay": 0.9,
+    "sustain": 0.4,
+    "release": 0.7,
+    "warp": 0.275,
+    "cutoff": 517.5041,
+    "env_amt": 2.0,
+    "res": 0.1,
+    "env2_decay": 0.425,
+    "dist_drive": 0.4,
+    "dist_mix": 0.225,
+    "noise_level": 0.04,
+    "drift_c": 3.5,
+    "vel_amp": 0.4,
+    "vel_cut": 1.2929,
+    "chorus_fb": 0.6,
+    "chorus_depth": 5.5,
+    "chorus_hp": 300.0,
+    "rev_send": 0.3,
+    "rev_hp": 200.0,
+    "dly_mix": 0.3,
+    "mode": "base",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "keysol-venus-high-wt-artifact-pulse-layer",
+   "knobs": {
+    "oct": 2,
+    "level": 0.08,
+    "wt_lfo_amt": 0.275,
+    "wt_lfo_rate": 0.09
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-stereo-ladder-lf-width",
+   "knobs": {
+    "slope": "lp24",
+    "stereo_off": 0.25,
+    "hp": 80.0,
+    "pan_spread": 0.4,
+    "lf_width_hz": 230.0
+   }
+  },
+  {
+   "skill": "stereo-delay-pingpong-dual-parallel-two-tap",
+   "knobs": {
+    "topology": "pingpong",
+    "sync": "1/4",
+    "feedback": 0.45,
+    "mix": 0.2,
+    "sat": 0.1,
+    "cross": 0.15,
+    "mod_depth": 0.0015
+   }
+  },
+  {
+   "skill": "reverb-pads-type-choice-and-send-setup",
+   "knobs": {
+    "type": "room",
+    "hall_rt60": 3.25,
+    "plate_rt60": 6.0,
+    "room_rt60": 1.0,
+    "predelay": 0.025,
+    "return_hp": 250.0,
+    "send": 0.275,
+    "high_cut": 0
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+   "knobs": {
+    "low_db": -0.5,
+    "mid_db": 1.0,
+    "high_db": 1.0,
+    "chorus_mix": 0.225,
+    "delay": "pingpong",
+    "dly_mix": 0.17,
+    "rev": "hall",
+    "rev_send": 0.275
+   }
+  },
+  {
+   "skill": "unison-odd-even-detune-width-clean-supersaw",
+   "knobs": {
+    "voices": 7,
+    "detune": 0.2,
+    "blend": 0.5,
+    "width": 0.5,
+    "oscb": true,
+    "oscb_oct": 1,
+    "oscb_level": 0.4,
+    "sub_level": 0.3,
+    "noise_level": 0.04,
+    "eq_hp": 115.0,
+    "eq_hi_shelf_db": 2.451,
+    "comp_ratio": 3.0,
+    "attack": 1.4,
+    "release": 2.75,
+    "mode": "layer",
+    "layer_gain": 0.45
+   }
+  }
+ ],
+ "id": "3b74cf35e0",
+ "found_in_round": 11,
+ "target_version": "v1.3",
+ "search_grid": {
+  "robust": 97.66,
+  "mean": 98.17,
+  "pass_count": 6,
+  "n": 6,
+  "reliable": true
+ },
+ "extended_grid": {
+  "robust": 97.66,
+  "mean": 98.16,
+  "pass_count": 12,
+  "n": 12,
+  "determinism": true
+ },
+ "lineage": [
+  {
+   "round": 0,
+   "id": "e423978a6b",
+   "mutation": "seed",
+   "robust": 86.05
+  },
+  {
+   "round": 1,
+   "id": "4f569caf07",
+   "mutation": "+traveler-walkthrough-fx-eq-chorus-delay-reverb (for M6); M7:ambient..cutoff:650.0->486.9311; M7:ambient..vel_cut:1.5->1.1658; M7:traveler..low_db:-1.75->-1.073",
+   "robust": 86.89
+  },
+  {
+   "round": 2,
+   "id": "50002356e8",
+   "mutation": "M6:ambient..cutoff:486.9311->649.8851; M6:ambient..env_amt:1.9->1.9596; M6:ambient..vel_cut:1.1658->1.379; M6:velocity..floor:600.0->763.7233; M6:velocity..eg_amt:2.5->3.0046; M6:traveler..high_db:-0.5->0.1756; M7:ambient..cutoff:649.8851->491.1465; M7:ambient..vel_cut:1.379->1.1186; M7:traveler..low_db:-1.073->-0.5",
+   "robust": 86.89
+  },
+  {
+   "round": 3,
+   "id": "5fcd100047",
+   "mutation": "M6:ambient..cutoff:491.1465->607.7561; M6:ambient..env_amt:1.9596->2.0; M6:ambient..vel_cut:1.1186->1.3485; M6:velocity..floor:763.7233->900.0; M6:velocity..eg_amt:3.0046->3.5; M6:traveler..high_db:0.1756->1.0; M7:ambient..cutoff:607.7561->453.9756; M7:ambient..vel_cut:1.3485->1.1009",
+   "robust": 86.89
+  },
+  {
+   "round": 4,
+   "id": "150a786976",
+   "mutation": "+keysol-venus-high-wt-artifact-pulse-layer (for M6); M7:ambient..cutoff:453.9756->400.0; M7:ambient..vel_cut:1.1009->1.0",
+   "robust": 93.44
+  },
+  {
+   "round": 9,
+   "id": "aeebcfc0b7",
+   "mutation": "+unison-odd-even-detune-width-clean-supersaw (for M6)",
+   "robust": 94.85
+  },
+  {
+   "round": 10,
+   "id": "fe00b325fe",
+   "mutation": "M6:ambient..cutoff:400.0->517.5041; M6:ambient..vel_cut:1.0->1.2929; M6:unison..eq_hi_shelf_db:2.0->2.451; +traveler-walkthrough-stereo-ladder-lf-width (for M5)",
+   "robust": 96.43
+  },
+  {
+   "round": 11,
+   "id": "3b74cf35e0",
+   "mutation": "-velocity-filter-cutoff-envelope-amount",
+   "robust": 97.66
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "PPQ8m8xQAs8",
+  "title": "Write Your Own Bash Scripts for Automation [Tutorial]",
+  "url": "https://www.youtube.com/watch?v=PPQ8m8xQAs8",
+  "fetched_at": "2026-10-05T16:09:35.656177+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Null Byte",
+  "duration": 995,
+  "ok": true,
+  "cue_count": 401,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/PPQ8m8xQAs8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/PPQ8m8xQAs8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

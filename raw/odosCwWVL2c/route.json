@@ -1,0 +1,138 @@
+{
+ "video_id": "odosCwWVL2c",
+ "started_at": "2026-10-05T16:29:13.936845+00:00",
+ "outcome": "COVERED",
+ "route": "manual-target",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": false,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "odosCwWVL2c",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/odosCwWVL2c/graph.json",
+  "segments": 135,
+  "windows": 51,
+  "nodes": 38,
+  "edges": 43,
+  "nodes_by_type": {
+   "module": 8,
+   "step": 18,
+   "param": 5,
+   "concept": 1,
+   "phrase": 6
+  },
+  "edges_by_type": {
+   "mentions": 21,
+   "part-of": 5,
+   "precedes": 17
+  },
+  "words": 2044
+ },
+ "gaps": {
+  "video_id": "odosCwWVL2c",
+  "graph_nodes": 38,
+  "graph_edges": 43,
+  "terms_checked": 20,
+  "terms_covered": 14,
+  "gap_nodes": 6,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 0,
+  "kg": {
+   "videos": 9,
+   "nodes": 119,
+   "edges": 59,
+   "uncovered_nodes": 2,
+   "uncovered_edges": 12
+  },
+  "candidate_ids": []
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "manual-target",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 2044,
+    "music_markers": 0
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 10,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 6,
+     "synth": 47
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 38,
+    "edges": 43
+   }
+  },
+  {
+   "q": "Q7 gap candidates found?",
+   "a": false,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 0,
+    "candidates": 0
+   },
+   "then": "covered by library; KG updated; no new skill"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en",
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "1:manual-target:en",
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch manual-target (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-05T16:29:14.277729+00:00"
+}

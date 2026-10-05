@@ -1,0 +1,86 @@
+[
+ {
+  "name": "fifths-pulsar-velocity-pluck",
+  "category": "pluck",
+  "steps": [
+   {
+    "skill": "keysol-venus-fifths-pulsar-wt-impact",
+    "knobs": {
+     "attack": 0.003,
+     "release": 0.8,
+     "cutoff": 3000
+    }
+   },
+   {
+    "skill": "velocity-filter-cutoff-envelope-amount"
+   },
+   {
+    "skill": "chorus-ensemble-classic-vibrato-pad-modes"
+   },
+   {
+    "skill": "stereo-delay-pingpong-dual-parallel-two-tap"
+   },
+   {
+    "skill": "reverb-pads-type-choice-and-send-setup",
+    "knobs": {
+     "type": "room"
+    }
+   }
+  ]
+ },
+ {
+  "name": "super-unison-pluck",
+  "category": "pluck",
+  "steps": [
+   {
+    "skill": "traveler-walkthrough-super-unison-wide-lead",
+    "knobs": {
+     "attack": 0.3,
+     "release": 0.5,
+     "sustain": 0.7
+    }
+   },
+   {
+    "skill": "velocity-filter-cutoff-envelope-amount"
+   },
+   {
+    "skill": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "knobs": {
+     "rev": "room"
+    }
+   }
+  ]
+ },
+ {
+  "name": "fm-artifact-pluck",
+  "category": "pluck",
+  "steps": [
+   {
+    "skill": "fm-carrier-modulator-ratio-basics",
+    "knobs": {
+     "attack": 0.003,
+     "decay": 0.5,
+     "sustain": 0.3,
+     "release": 0.8,
+     "index": 2.5,
+     "ratio": 2.0
+    }
+   },
+   {
+    "skill": "keysol-venus-high-wt-artifact-pulse-layer"
+   },
+   {
+    "skill": "midside-eq-bass-focus-width-depth"
+   },
+   {
+    "skill": "stereo-delay-pingpong-dual-parallel-two-tap"
+   },
+   {
+    "skill": "reverb-pads-type-choice-and-send-setup",
+    "knobs": {
+     "type": "room"
+    }
+   }
+  ]
+ }
+]

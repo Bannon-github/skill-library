@@ -1,0 +1,118 @@
+{
+ "topic": "parallel saturation synth pad tutorial",
+ "date": "2026-10-05",
+ "params": {
+  "topic": "parallel saturation synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "3MBv816kBiQ",
+   "title": "Use Saturation Instead of EQ Boosts | Drum & Bass Tutorial",
+   "channel": "PRTCL Music",
+   "duration": 456,
+   "view_count": 883,
+   "url": "https://www.youtube.com/watch?v=3MBv816kBiQ",
+   "query": "parallel saturation synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  },
+  {
+   "id": "zPAyhuWpsDQ",
+   "title": "The Secret Sauce for Your Drums | Parallel Aggressor by Baby Audio",
+   "channel": "Studio Pro with Ivan",
+   "duration": 620,
+   "view_count": 4009,
+   "url": "https://www.youtube.com/watch?v=zPAyhuWpsDQ",
+   "query": "parallel saturation synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.3
+  },
+  {
+   "id": "yGeUx5LL2DM",
+   "title": "MIXING DRUMS SIMPLY with EQ, COMPRESSION, & SATURATION *(MPC X Beat Mixing)",
+   "channel": "Da Drank Kang",
+   "duration": 964,
+   "view_count": 2922,
+   "url": "https://www.youtube.com/watch?v=yGeUx5LL2DM",
+   "query": "parallel saturation synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.23
+  },
+  {
+   "id": "zeQmGMGnKVY",
+   "title": "NEOLD U17  Soft clip or Saturation?",
+   "channel": "FLAVMEDIA",
+   "duration": 489,
+   "view_count": 2083,
+   "url": "https://www.youtube.com/watch?v=zeQmGMGnKVY",
+   "query": "parallel saturation synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.16
+  },
+  {
+   "id": "MjjTfQxgp3U",
+   "title": "Parallel Processing with Patcher | Avoid Bus Channels",
+   "channel": "LukiZ Music",
+   "duration": 604,
+   "view_count": 1516,
+   "url": "https://www.youtube.com/watch?v=MjjTfQxgp3U",
+   "query": "parallel saturation synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.09
+  }
+ ],
+ "dropped": [
+  {
+   "id": "6NXqV9jWJ1s",
+   "why": "already known"
+  },
+  {
+   "id": "b0PXapmkKkw",
+   "why": "duration 156s"
+  },
+  {
+   "id": "CW6FZuZ53Io",
+   "why": "duration 168s"
+  },
+  {
+   "id": "vmjfpQ1yAWY",
+   "why": "duration 222s"
+  },
+  {
+   "id": "AmD3y2a8XsM",
+   "why": "already known"
+  },
+  {
+   "id": "VQyce4d29zA",
+   "why": "duration 141s"
+  },
+  {
+   "id": "phRSzMspUtQ",
+   "why": "duration 50s"
+  },
+  {
+   "id": "ck5PGcso54g",
+   "why": "duration 40s"
+  },
+  {
+   "id": "i4ZZwzxTpf0",
+   "why": "already known"
+  },
+  {
+   "id": "QDYEtQTJs7Y",
+   "why": "duration 50s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

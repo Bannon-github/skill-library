@@ -1,0 +1,93 @@
+{
+ "name": "pad-wide-supersaw-chord-pad",
+ "category": "pad",
+ "steps": [
+  {
+   "skill": "warm-heavenly-supersaw-pad-keytrack-fx",
+   "knobs": {
+    "voices": 6,
+    "detune": 0.175,
+    "attack": 2.25,
+    "release": 3.25,
+    "cutoff": 1050.0,
+    "keytrack": 0.75,
+    "filter_model": "ladder",
+    "lfo_rate": 0.19,
+    "lfo_amt": 0.325,
+    "chorus_mix": 0.425,
+    "rev_rt60": 3.0,
+    "rev_hp": 225.0,
+    "rev_send": 0.275,
+    "dly_fb": 0.375,
+    "dly_mix": 0.16,
+    "pwm_layer": false,
+    "serial_hp": true,
+    "sine_reinforce": false,
+    "mode": "base",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "unison-odd-even-detune-width-clean-supersaw",
+   "knobs": {
+    "voices": 7,
+    "detune": 0.2,
+    "blend": 0.5,
+    "width": 0.5,
+    "oscb": true,
+    "oscb_oct": 1,
+    "oscb_level": 0.4,
+    "sub_level": 0.3,
+    "noise_level": 0.04,
+    "eq_hp": 115.0,
+    "eq_hi_shelf_db": 2.0,
+    "comp_ratio": 3.0,
+    "attack": 1.4,
+    "release": 2.75,
+    "mode": "layer",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-stereo-ladder-lf-width",
+   "knobs": {
+    "slope": "lp24",
+    "stereo_off": 0.25,
+    "hp": 80.0,
+    "pan_spread": 0.4,
+    "lf_width_hz": 230.0
+   }
+  }
+ ],
+ "id": "144a34381b",
+ "found_in_round": 8,
+ "target_version": "v1.3",
+ "search_grid": {
+  "robust": 100.0,
+  "mean": 100.0,
+  "pass_count": 6,
+  "n": 6,
+  "reliable": true
+ },
+ "extended_grid": {
+  "robust": 100.0,
+  "mean": 100.0,
+  "pass_count": 12,
+  "n": 12,
+  "determinism": true
+ },
+ "lineage": [
+  {
+   "round": 0,
+   "id": "b70dd901a1",
+   "mutation": "seed",
+   "robust": 100.0
+  },
+  {
+   "round": 1,
+   "id": "144a34381b",
+   "mutation": "-midside-eq-bass-focus-width-depth",
+   "robust": 100.0
+  }
+ ]
+}

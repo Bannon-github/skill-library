@@ -1,0 +1,46 @@
+{
+  "video_id": "T2poUGh6qPg",
+  "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus",
+  "url": "https://www.youtube.com/watch?v=T2poUGh6qPg",
+  "fetched_at": "2026-10-05T16:26:53.061829+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "MixbusTv",
+  "duration": 844,
+  "ok": true,
+  "cue_count": 245,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/T2poUGh6qPg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/T2poUGh6qPg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

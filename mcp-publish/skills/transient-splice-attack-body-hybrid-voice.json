@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "transient-splice-attack-body-hybrid-voice",
+  "name": "Transient splice: attack of one source + body of another (wave-sequence / concatenative hybrid)",
+  "goal": "Build a hybrid voice by concatenating the short attack/transient (~first 30\u2013100 ms) of one sample or wave with the sustained body of another: either in one layer with a step sequence (very short first step, long crossfaded second step, loop start/end on the body step only) or across two layers (layer A gated transient with a short amp envelope, layer B looping body) so each part gets its own filter/FX while still fusing perceptually.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "C_NkGQqTdSo",
+    "url": "https://www.youtube.com/watch?v=C_NkGQqTdSo",
+    "title": "Wave Sequencing Synthesis: What Is It and How To Do It (Korg Wavestate Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/C_NkGQqTdSo/agent-skill-transient-splice-attack-body-hybrid-voice.json"
+  },
+  "prerequisites": [
+    "Synth or sampler with step/wave-sequence lanes (per-step sample, duration, crossfade, loop start/end) OR two layers each with its own amp envelope; library of original/free attack and sustain sources"
+  ],
+  "inputs": [
+    {
+      "name": "attack_source",
+      "type": "audio|wave",
+      "description": "Source whose first 30\u2013100 ms gives the recognisable transient (e.g. a piano-like or pluck strike)",
+      "required": true
+    },
+    {
+      "name": "body_source",
+      "type": "audio|wave",
+      "description": "Sustaining source for the body/decay (e.g. reed/flute-like or synth wave)",
+      "required": true
+    },
+    {
+      "name": "method",
+      "type": "enum",
+      "description": "single_layer_sequence | two_layer_split",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hybrid_voice",
+      "type": "synth-patch",
+      "description": "Voice whose onset reads as source A and whose sustain is source B, fused into one new sound"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Portable alias: 'wave sequencing' = concatenative synthesis = per-step sample lane + timing lane + loop points.",
+    "Use original/free samples; do not copy factory multisample names.",
+    "Delta vs osc-as-granular-pitch-step-delay and wavetable-crossfade-morph-modulate-pad: this splices attack vs body of different sources, not pitch steps or WT position morphs."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Think of each sound as two parts: attack/transient (first ~30\u201350 ms, noisy and carrying most of the identity) and body/decay (sustained, less noisy). The goal is to graft A's attack onto B's body.",
+      "tool": "concept",
+      "expect": "Plan names which source supplies attack vs body"
+    },
+    {
+      "n": 2,
+      "action": "Single-layer method: in the sample/step lane put the attack source on step 1 and the body source on step 2.",
+      "tool": "step-sequencer",
+      "expect": "Hear A crossfade into B"
+    },
+    {
+      "n": 3,
+      "action": "Timing lane: make step 1 very short (~0.1 s, try down to ~50 ms with smaller crossfade) and step 2 long with a generous crossfade so the switch is inaudible.",
+      "tool": "timing-lane",
+      "expect": "Only A's transient is heard before B's sustain"
+    },
+    {
+      "n": 4,
+      "action": "Set loop start AND loop end on step 2 so the sequence plays step 1 once and then loops only the body; if loop start stays on step 1 the transient retriggers and clicks.",
+      "tool": "loop-points",
+      "expect": "No repeating transient or click while the note is held"
+    },
+    {
+      "n": 5,
+      "action": "Probe the limit: shorten step 1 and its crossfade until the attack identity becomes imperceptible, then back off. Swap attack sources (piano-like, pluck, guitar-like) over the same body to audition hybrids.",
+      "tool": "audition",
+      "expect": "Attack still recognisable at the chosen length"
+    },
+    {
+      "n": 6,
+      "action": "Two-layer method: layer A plays only the attack source with timing set to Gate (single step, no continuation) and an amp envelope with near-zero sustain and very short decay; layer B loops only the body source with its own amp envelope.",
+      "tool": "layers",
+      "expect": "A is a short click/strike, B is the sustained tone"
+    },
+    {
+      "n": 7,
+      "action": "Balance levels/envelopes so A is audible over B, then process them separately (filter, LFOs, compression, FX per layer) and add shared reverb/delay to glue them.",
+      "tool": "fx",
+      "expect": "Separate timbral control of attack and body; still fuses as one note"
+    }
+  ],
+  "verification": [
+    "Muting the attack layer/step leaves only the body sound; muting the body leaves only a short transient",
+    "Holding a note produces no repeated transient or loop click",
+    "Listeners identify the onset as source A even though the sustain is source B"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wave-sequencing",
+    "concatenative",
+    "hybrid",
+    "transient",
+    "layering",
+    "sampler",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-05T16:31:33+00:00",
+  "mcp_resource": "skill://transient-splice-attack-body-hybrid-voice"
+}

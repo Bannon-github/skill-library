@@ -38,7 +38,7 @@ def ltas(x, nper=16384):
     f, P = signal.welch(x, SR, nperseg=nper)
     return f, P
 
-def compute(audio, info, category, is_loop, note_off_s, start_body_s=None):
+def compute(audio, info, category, is_loop, note_off_s, start_body_s=None, f_low=None, bar_s=None):
     L, R = audio[:, 0], audio[:, 1]
     M = 0.5 * (L + R); S = 0.5 * (L - R)
     meter = pyln.Meter(SR)
@@ -53,16 +53,24 @@ def compute(audio, info, category, is_loop, note_off_s, start_body_s=None):
     m["dc"] = float(np.max(np.abs(audio.mean(0))))
     gates["G3_dc"] = m["dc"] <= 0.001
     if is_loop:
+        # v1.2: seam step must not exceed the loop's own sample-to-sample behaviour
+        d = np.abs(np.diff(audio, axis=0))
+        ref = float(np.percentile(d, 99.9))
         jump = float(np.max(np.abs(audio[0] - audio[-1])))
         m["loop_jump"] = jump
-        gates["G5_tail_or_loopclick"] = jump <= 0.02
+        m["loop_jump_ref"] = ref
+        gates["G5_tail_or_loopclick"] = jump <= max(0.02, 1.5 * ref)
         gates["G6_start"] = True
     else:
         tail = audio[-int(0.1 * SR):]
         m["tail_rms_db"] = 20 * np.log10(np.sqrt(np.mean(tail ** 2)) + 1e-12)
         gates["G5_tail_or_loopclick"] = m["tail_rms_db"] <= -60
-        m["start_peak_db"] = 20 * np.log10(np.max(np.abs(audio[:int(0.002 * SR)])) + 1e-12)
-        gates["G6_start"] = m["start_peak_db"] <= -30
+        # v1.2: onset click = file does not start from ~0, or a spike in the first 1 ms larger than the 1-10 ms peak
+        a0 = float(np.max(np.abs(audio[:2])))
+        p1 = float(np.max(np.abs(audio[:int(0.001 * SR)])))
+        p10 = float(np.max(np.abs(audio[int(0.001 * SR):int(0.010 * SR)])))
+        m["start_first_samples"] = a0
+        gates["G6_start"] = (a0 <= 0.003) and (p1 <= max(p10, 1e-4))
     v = {}
     v["M1"] = meter.integrated_loudness(audio)
     mono = np.stack([M, M], 1)
@@ -81,23 +89,23 @@ def compute(audio, info, category, is_loop, note_off_s, start_body_s=None):
         sel = (f >= c / np.sqrt(2)) & (f < c * np.sqrt(2))
         ob.append(10 * np.log10(np.sum(Pst[sel]) + 1e-20))
     ob = np.array(ob)
-    # tilt fit 100 Hz - 10 kHz using octave bands 125..8k
-    sel = (centres >= 100) & (centres <= 10000)
-    x = np.log2(centres[sel]); y = ob[sel]
-    # band energy sums grow +3 dB/oct for flat-per-Hz; convert to per-Hz density slope
-    y_d = y - 10 * np.log10(centres[sel])
+    # M6 tilt: per-Hz density slope fitted over octave bands 125..8k (pink = -3 dB/oct)
+    lowc = 60 if group_of(category) == "bass" else max(120, (f_low or 0) * 0.999)
+    sel = (centres * np.sqrt(2) > max(lowc, 100)) & (centres <= 10000)   # v1.3: same band range as M7
+    x = np.log2(centres[sel]); y_d = ob[sel] - 10 * np.log10(centres[sel])
     k, b = np.polyfit(x, y_d, 1)
-    v["M6"] = float(k + 3.0)  # report as slope of octave-band level (pink = 0) minus 3 => pink=-3 dB/oct per-Hz density
+    v["M6"] = float(k)
+    # M7 (v1.1): max octave-band deviation from the tilt fit; pads/plucks 125 Hz-8 kHz, bass 63 Hz-8 kHz
     fit = k * np.log2(centres) + b + 10 * np.log10(centres)
-    v["M7"] = float(np.max(np.abs(ob - fit)))
-    # harshness prominence 1.5-8 kHz: 1/24-oct vs 1/3-oct smoothing on log grid
-    fl = np.geomspace(100, 16000, 24 * 8)
-    Pi = np.interp(fl, f, Pst) + 1e-20
-    Pd = 10 * np.log10(Pi)
-    win = 8  # 1/3 octave = 8 bins of 1/24
-    sm = np.convolve(np.pad(Pd, win, mode="edge"), np.ones(2 * win + 1) / (2 * win + 1), mode="same")[win:-win]
-    hs = (fl >= 1500) & (fl <= 8000)
-    v["M8"] = float(np.max((Pd - sm)[hs]))
+    lowc = 60 if group_of(category) == "bass" else max(120, (f_low or 0) * 0.999)
+    m7sel = centres * np.sqrt(2) > lowc  # v1.2: from the octave holding the lowest fundamental
+    v["M7"] = float(np.max(np.abs(ob - fit)[m7sel]))
+    # M8 (v1.1): harsh resonance = 1/3-octave band level minus mean of its two neighbours, max over 1.5-8 kHz
+    tc = 1000 * 2.0 ** (np.arange(-4, 14) / 3.0)  # 1/3-oct centres 397 Hz .. 20 kHz
+    tb = np.array([10 * np.log10(np.sum(Pst[(f >= c * 2 ** (-1 / 6)) & (f < c * 2 ** (1 / 6))]) + 1e-20) for c in tc])
+    prom = tb[1:-1] - 0.5 * (tb[:-2] + tb[2:])
+    hs = (tc[1:-1] >= 1500) & (tc[1:-1] <= 8000)
+    v["M8"] = float(np.max(prom[hs]))
     tot = np.sum(Pst[f > 20]) + 1e-20
     v["M9"] = 10 * np.log10(np.sum(Pst[(f >= 2000) & (f <= 5000)]) / tot + 1e-20)
     v["M12"] = 10 * np.log10(np.sum(Pst[f >= 12000]) / tot + 1e-20)
@@ -134,8 +142,10 @@ def compute(audio, info, category, is_loop, note_off_s, start_body_s=None):
         v["M13"] = float(np.mean(20 * np.log10(rms + 1e-12) < -60)) if len(rms) else 1.0
     v["M14"] = info.get("limiter_gr_db", 0.0)
     if is_loop:
-        a = np.sqrt(np.mean(M[-int(0.05 * SR):] ** 2)); b_ = np.sqrt(np.mean(M[:int(0.05 * SR)] ** 2))
-        v["M15"] = abs(20 * np.log10((a + 1e-12) / (b_ + 1e-12)))
+        # v1.2: seam windows must match the loop's own periodic behaviour one bar away
+        w = int(0.05 * SR); B = int((bar_s or 2.6667) * SR)
+        lv = lambda x: 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)
+        v["M15"] = max(abs(lv(M[:w]) - lv(M[B:B + w])), abs(lv(M[-w:]) - lv(M[-B - w:-B])))
     grp = group_of(category)
     bands = dict(BANDS[grp])
     if category == "gated":
@@ -145,7 +155,7 @@ def compute(audio, info, category, is_loop, note_off_s, start_body_s=None):
         subs[key] = sub_score(val, bands[key], TOL[key])
     keys = list(subs)
     comp = 100 * sum(WEIGHT[k] * subs[k] for k in keys) / sum(WEIGHT[k] for k in keys)
-    passed = all(gates.values()) and comp >= PASS_SCORE and min(subs.values()) >= 0.5
+    passed = all(bool(g) for g in gates.values()) and comp >= PASS_SCORE and min(subs.values()) >= 0.5
     return {"values": {k: round(float(x), 4) for k, x in v.items()}, "subs": {k: round(s, 3) for k, s in subs.items()},
-            "gates": gates, "extra": {k: (round(float(x), 4) if isinstance(x, float) else x) for k, x in m.items()},
+            "gates": {k: bool(g) for k, g in gates.items()}, "extra": {k: (round(float(x), 4) if isinstance(x, float) else x) for k, x in m.items()},
             "score": round(comp, 2), "pass": bool(passed)}

@@ -1,0 +1,219 @@
+{
+ "batch_id": "2026-10-05-batch-01",
+ "ran_at": "2026-10-05T16:10:59+00:00",
+ "ran_at_local": "2026-10-05 09:10 PT",
+ "routine": "Weekly YouTube skills library intake",
+ "topic": "broad practical how-to (photo editing, woodworking, electronics, 3D printing, bash automation)",
+ "entry_count_before": 67,
+ "entry_count_after": 73,
+ "searches": [
+  "darktable beginner edit tutorial",
+  "git branching tutorial beginners",
+  "3d print first layer calibration guide",
+  "how to sharpen a chisel",
+  "bash scripting tutorial automate tasks",
+  "GIMP remove background tutorial",
+  "sourdough bread beginner step by step",
+  "how to solder for beginners"
+ ],
+ "videos": [
+  {
+   "video_id": "Rngo-yvvNdA",
+   "title": "How to edit any RAW photo using Darktable in 7 minutes",
+   "channel": "Brandon Cy",
+   "url": "https://www.youtube.com/watch?v=Rngo-yvvNdA",
+   "topic": "photo-editing",
+   "transcript_kind": "auto-generated",
+   "summary": "A beginner darktable RAW workflow: confirm the scene-referred sigmoid pipeline, then adjust just four things on most photos: exposure for the subject, white balance in color calibration (not the white balance module), contrast with the tone equalizer by scrolling over image areas, and vibrance/saturation in color balance rgb. Includes slider, reset, undo and module-order tips.",
+   "skills": [
+    {
+     "id": "darktable-raw-quick-edit-exposure-wb-tone-saturation",
+     "name": "darktable quick RAW edit: exposure, white balance, tone, saturation",
+     "goal": "Turn a RAW photo into a usable image in darktable with four modules.",
+     "steps": [
+      "Drag the RAW file into darktable (lighttable).",
+      "Open preferences (gear icon) > processing and confirm the workflow is \"scene-referred (sigmoid)\".",
+      "Double-click the photo to enter the darkroom; click the active-modules icon to see what darktable already enabled.",
+      "Exposure module: move the exposure slider until the main subject or focal point looks right.",
+      "White balance: leave the white balance module alone and use color calibration. Keep its automatic default, or set illuminant to \"as shot in camera\", \"daylight\" (adjust temperature), or \"custom\" (creative tint), or use the eyedropper (gray-world box; a box around the whole frame gives a neutral result).",
+      "Contrast: search for and enable tone equalizer; with it open, hover over an image area and scroll the mouse wheel to brighten or darken that tonal range (e.g. lower shadows, pull highlights slightly to restore sky color). The advanced-tab curve updates to match.",
+      "Saturation: open color balance rgb, master tab. Use vibrance for subtle global colorfulness, and the global/shadows/midtones/highlights saturation sliders to fix specific ranges (e.g. lower midtone and highlight saturation on oversaturated reds).",
+      "Refine: arrow keys or right-click a slider to type a value; double-click a slider to reset it; module reset button resets the module; Ctrl/Cmd+Z undoes; toggle modules for before/after. Modules apply bottom-up, so revisiting exposure later keeps the other modules' settings.",
+      "Export when satisfied."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "lOzSiOIipSM",
+   "title": "5 Ways To Remove A Background with GIMP",
+   "channel": "Logos By Nick",
+   "url": "https://www.youtube.com/watch?v=lOzSiOIipSM",
+   "topic": "photo-editing",
+   "transcript_kind": "auto-generated",
+   "summary": "Five GIMP methods for deleting a background to transparency, chosen by image type: fuzzy select (distinct foreground/background), select by color (flat illustrations), paths (manual but crispest), a contrast-built layer mask (hair and fine detail on high-contrast images), and foreground select (fine detail, rough tracing). Always add an alpha channel first.",
+   "skills": [
+    {
+     "id": "gimp-remove-background-select-tools",
+     "name": "GIMP background removal with selection tools",
+     "goal": "Delete an image background to transparency using fuzzy select, select by color, paths, or foreground select.",
+     "steps": [
+      "Right-click the image layer > Add Alpha Channel (if greyed out, it already has one).",
+      "Pick the method: fuzzy select for photos with a clear subject/background split; select by color for vector or flat illustrations; paths for the most accurate crisp edge; foreground select for subjects with fine detail like hair.",
+      "Fuzzy select: enable antialiasing, feather edges and draw mask; click-hold on the background and drag down to raise the threshold or up to lower it; release and press Delete. Repeat for remaining areas.",
+      "Select by color: enable antialiasing and draw mask (feather edges for photos, off for illustrations); click-hold on the background color, drag to tune the threshold, release, press Delete.",
+      "Paths: click points around the subject edge, drag to curve segments and adjust handles; to continue, click the last point first; close with Ctrl+click on the first point; press Enter to make a selection; Select > Invert; press Delete.",
+      "Foreground select: draw a rough outline around the subject and press Enter; brush over the subject interior (resize brush with [ and ]) without hugging the edges; toggle Preview to check; press Enter to make the selection; Select > Invert; press Delete.",
+      "Check the transparency checkerboard and export as PNG to keep transparency."
+     ]
+    },
+    {
+     "id": "gimp-layer-mask-background-removal-fine-detail",
+     "name": "GIMP layer-mask background removal for hair and fine detail",
+     "goal": "Remove a background behind hair or fine detail when subject and background contrast strongly.",
+     "steps": [
+      "Confirm the image has strong subject/background contrast; this method fails otherwise.",
+      "Duplicate the layer.",
+      "On the duplicate: Colors > Saturation, scale all the way down, OK.",
+      "Colors > Curves: drag the top and bottom nodes until the subject is mostly black and the background mostly white.",
+      "Colors > Invert, then Edit > Copy Visible.",
+      "Hide the duplicate (eye icon).",
+      "Right-click the original layer > Add Layer Mask with default settings > OK.",
+      "Edit > Paste, then click the anchor icon to anchor the paste into the layer mask (black stays visible, white becomes transparent per the video's result).",
+      "Paint on the mask with a white brush to fix areas that were wrongly removed, then export as PNG."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "GN4yr7vp4I4",
+   "title": "How to Sharpen a Chisel | Paul Sellers",
+   "channel": "Paul Sellers",
+   "url": "https://www.youtube.com/watch?v=GN4yr7vp4I4",
+   "topic": "craft-woodworking",
+   "transcript_kind": "manual (creator captions)",
+   "summary": "How to initialize a new chisel: factory edges are only ground to about 150-200 grit. Flatten and polish just the back near the edge through coarse, medium and superfine (1200) stones, polish it on a compound-charged wood strop, then sharpen the bevel at the factory angle through the grits until an even burr forms, remove the burr, and strop on charged leather. Later sharpening repeats only the bevel steps.",
+   "skills": [
+    {
+     "id": "chisel-initialize-flatten-back-sharpen-bevel",
+     "name": "Initialize and sharpen a new chisel",
+     "goal": "Prepare a new chisel for work and keep it sharp afterward.",
+     "steps": [
+      "Inspect the new chisel: visible grinding marks on the bevel mean it is not refined, even if it cuts.",
+      "Use flat sharpening plates/stones (or abrasive paper on plate glass if stones are not flat).",
+      "Flatten the back only near the cutting edge on the coarse stone, keeping it dead flat; a hollow behind the edge is fine and need not be removed.",
+      "Repeat on the medium and superfine (about 1200 grit) stones until the coarser striations are gone.",
+      "Charge a wood block with steel buffing compound and rub the back flat on it until the edge area shines.",
+      "Bevel: feel for the factory grind angle and push/pull at that angle on the coarse stone (a slight camber is acceptable) until you feel a burr across the full width on the back.",
+      "Repeat on medium, then spend longer on superfine to remove earlier scratches.",
+      "Flip and pull the back flat once on the stone to remove the burr.",
+      "Charge the leather strop with compound; place the bevel flat, heel of hand on the chisel, and pull about 30 strokes; strop the back briefly to clear any burr.",
+      "Test on wood for a clean, untorn surface. Routine resharpening: repeat only the bevel steps and just break the burr on the back."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "Qps9woUGkvI",
+   "title": "Soldering Tutorial for Beginners: Five Easy Steps",
+   "channel": "oneTesla",
+   "url": "https://www.youtube.com/watch?v=Qps9woUGkvI",
+   "topic": "electronics",
+   "transcript_kind": "auto-generated",
+   "summary": "Five-step through-hole soldering: set the iron to 315-370 C (600-700 F), fix the component in place, clean the tip, heat the joint with the flat of the tip and feed rosin-core solder from the other side (remove solder first, then iron), and inspect for a smooth, shiny volcano-shaped fillet. Avoid carrying a blob of solder on the iron.",
+   "skills": [
+    {
+     "id": "through-hole-soldering-five-step-joint",
+     "name": "Solder a through-hole joint in five steps",
+     "goal": "Make a reliable through-hole solder joint on a circuit board.",
+     "steps": [
+      "Gather a soldering iron, a wet or brass sponge, rosin-core solder, and optionally helping hands; wear safety goggles and treat all metal near the iron as hot.",
+      "Set the iron to 315-370 C (600-700 F) for through-hole parts; go slightly hotter for large copper areas that sink heat.",
+      "Secure the part: bend the leads outward in a V so it sits flush against the board, or tape parts without long leads.",
+      "Clean the tip on the sponge to remove oxidation and old solder; optionally tin the tip with a tiny bit of fresh solder for heat transfer.",
+      "Press the flat side of the tip against both the pad and the lead, and feed solder from the opposite side onto the joint (not onto the iron). Allow longer for larger joints.",
+      "Remove the solder first, then the iron; keep the joint still for a few seconds while it cools.",
+      "Inspect: the solder should wet both pad and lead, look smooth and shiny, and form a volcano shape, with neither too much nor too little solder. Rework if not.",
+      "Trim excess leads. Avoid: carrying a solder blob on the iron to the joint, touching the joint, and misaligned parts."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "Wywd2-MqBLw",
+   "title": "How to get PERFECT First Layers on Your 3D Printer!!",
+   "channel": "3D Musketeers",
+   "url": "https://www.youtube.com/watch?v=Wywd2-MqBLw",
+   "topic": "3d-printing",
+   "transcript_kind": "auto-generated",
+   "summary": "First-layer adhesion depends on Z offset as much as bed leveling. Square the gantry and level the bed first, then set the offset so lines touch and look glass-smooth (too far: lines don't touch; too close: ridges). Adjust on the printer while printing and keep the slicer global offset at 0; lower a too-high Z limit switch (then retighten springs and relevel); clean the bed with alcohol; prioritize the center on a warped bed or replace it and consider an auto-leveling probe with hard-mounted bed.",
+   "skills": [
+    {
+     "id": "3d-printer-z-offset-first-layer-tuning",
+     "name": "Tune Z offset for a good first layer",
+     "goal": "Get a first layer that sticks and looks smooth across the bed.",
+     "steps": [
+      "Level the bed first. If one side squishes and the other has gaps, square the X and Z axes (e.g. on dual-Z machines, rest the gantry on two identical objects such as same-brand soup cans), then relevel.",
+      "Run a first-layer or Z-offset test print and live-adjust Z offset from the printer while it prints.",
+      "Too far: lines do not touch, surface is rough, poor adhesion. Too close: ridges between lines. Target: smooth, glass-like, touching lines (slightly closer is acceptable on textured plates; avoid over-squish on glass).",
+      "Keep the slicer global Z offset at 0 and set the offset on the printer; only use the slicer offset if the printer cannot adjust it, carefully.",
+      "If the bed wheels are maxed and the nozzle still cannot get close enough on a limit-switch printer, loosen and lower the Z limit switch a very small amount, tighten the bed springs several turns first so the nozzle cannot crash, then relevel (paper method or leveling tool).",
+      "If it looks right but will not stick, clean the build plate with isopropyl alcohol on a paper towel to remove skin oils.",
+      "Check the first layer across the whole plate. On a warped bed without a probe, get the center right; otherwise replace the bed and consider an auto-leveling probe, hard-mounting the bed (silicone spacers or nylon lock nuts) when adding a probe.",
+      "To release a part stuck to glass, let the plate reach room temperature, then chill it (borosilicate glass only; ordinary plate glass can shatter)."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "PPQ8m8xQAs8",
+   "title": "Write Your Own Bash Scripts for Automation [Tutorial]",
+   "channel": "Null Byte",
+   "url": "https://www.youtube.com/watch?v=PPQ8m8xQAs8",
+   "topic": "coding-automation",
+   "transcript_kind": "auto-generated",
+   "summary": "Intro to bash scripting for automation: shebang from `which bash`, variables, positional arguments ($1 $2 $3), command substitution $( ), interactive read, if/else with the closing fi, then a pipeline (ifconfig | grep broadcast | awk) turned into a one-word alias, wrapping it in echo $( ) to avoid quoting problems.",
+   "skills": [
+    {
+     "id": "bash-script-variables-args-input-conditionals",
+     "name": "Write a basic bash automation script",
+     "goal": "Create a bash script that uses variables, arguments, command output, user input and a conditional.",
+     "steps": [
+      "Run `which bash` to get the interpreter path (e.g. /bin/bash).",
+      "Create a file ending in .sh (e.g. `nano myscript.sh`) and make the first line the shebang `#!/bin/bash`.",
+      "Variables: `string=\"value\"` then `echo \"text $string\"`.",
+      "Positional arguments: reference `$1`, `$2`, `$3` in the script and pass words after the script name when running it.",
+      "Command substitution: `echo \"$(whoami)\"` prints a command's output rather than the literal text.",
+      "Interactive input: `echo \"What is your name?\"`, `read name`, then use `$name`.",
+      "Conditional: `if [ \"$name\" ]; then echo \"$name sounds alright\"; else echo \"Doesn't sound like anything\"; fi`. A missing `fi` causes \"unexpected end of file\".",
+      "Save (nano: Ctrl+X, Y, Enter) and run with `bash myscript.sh arg1 arg2 arg3`."
+     ]
+    },
+    {
+     "id": "bash-pipeline-to-one-word-alias",
+     "name": "Turn a filtered command pipeline into a one-word bash alias",
+     "goal": "Get a specific value (e.g. the local IP address) with a single custom command.",
+     "steps": [
+      "Start with a noisy command (e.g. `ifconfig`).",
+      "Pipe it to grep with a unique pattern on the line you want: `ifconfig | grep broadcast`.",
+      "Pick the field with awk: `ifconfig | grep broadcast | awk '{print $2}'`.",
+      "Create the alias, keeping double quotes outside and single quotes inside, and wrap the pipeline in echo with command substitution so it runs before printing: `alias whatismyip=\"echo $(ifconfig | grep broadcast | awk '{print $2}')\"`.",
+      "Run the alias name to check the output.",
+      "To keep it across sessions, add the alias line to ~/.bashrc (standard bash practice; not shown in the video). Note that with double quotes the $( ) expands when the alias is defined; use single quotes around the alias body if the value should be recomputed each run."
+     ]
+    }
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "reason": "deferred to keep batch small; candidates for next intake",
+   "items": [
+    "EN2JnWCPiBA darktable 2026",
+    "e2IbNHi4uCI git branches",
+    "4gEoh3sk2AE sourdough",
+    "rK38rpUy568 iFixit soldering"
+   ]
+  }
+ ]
+}

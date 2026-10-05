@@ -1,6 +1,6 @@
 {
  "schema": "yt-knowledge-graph/kg-v1",
- "updated_at": "2026-10-03T16:42:24.650048+00:00",
+ "updated_at": "2026-10-05T16:29:14.917536+00:00",
  "videos": {
   "A7q9L5wd7Mk": {
    "domain": "synth",
@@ -37,6 +37,69 @@
    "merged_at": "2026-10-03T16:42:24.649794+00:00",
    "gap_nodes": 0,
    "gap_edges": 2
+  },
+  "UShjYsGgWcM": {
+   "domain": "synth",
+   "title": "How To Create AMAZING Pads and Drones 🌌 | A Sound Design Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:12.877518+00:00",
+   "gap_nodes": 5,
+   "gap_edges": 2
+  },
+  "IK7cIBPKM1s": {
+   "domain": "synth",
+   "title": "How To Make A Cinematic String Section - Sound Design Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:13.195584+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 6
+  },
+  "bMjCfB1qzjo": {
+   "domain": "synth",
+   "title": "How To Sound Design Cinematic Pads (using Vital)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:13.518525+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "C_NkGQqTdSo": {
+   "domain": "synth",
+   "title": "Wave Sequencing Synthesis: What Is It and How To Do It (Korg Wavestate Tutorial)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:13.926730+00:00",
+   "gap_nodes": 7,
+   "gap_edges": 2
+  },
+  "odosCwWVL2c": {
+   "domain": "synth",
+   "title": "Using Envelope Followers for Modulation in Your Music! The How, the When, the Why",
+   "route": "manual-target",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:14.268227+00:00",
+   "gap_nodes": 6,
+   "gap_edges": 0
+  },
+  "T2poUGh6qPg": {
+   "domain": "synth",
+   "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:14.614482+00:00",
+   "gap_nodes": 6,
+   "gap_edges": 2
+  },
+  "msDDpbSvdPc": {
+   "domain": "synth",
+   "title": "Principles of Mixing 38 - Stereo Widening with Haas Effect and Phase",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-05T16:29:14.917330+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 0
   }
  },
  "nodes": {
@@ -47,7 +110,10 @@
    "videos": [
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -69,6 +135,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "2:18"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "0:14"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "2:55"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "10:18"
     }
    ],
    "covered_by": [
@@ -115,7 +193,8 @@
    "label": "Vital",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -125,6 +204,14 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "0:59"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "0:11"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:08"
     }
    ],
    "covered_by": [
@@ -163,7 +250,14 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -193,6 +287,10 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "8:52"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:56"
     }
    ],
    "covered_by": [
@@ -232,7 +330,14 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -296,7 +401,13 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -326,6 +437,10 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "2:41"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:25"
     }
    ],
    "covered_by": [
@@ -374,7 +489,11 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -396,6 +515,18 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "1:40"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:26"
     }
    ],
    "covered_by": [
@@ -427,7 +558,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
@@ -441,6 +574,18 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "3:29"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:37"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "5:27"
     }
    ],
    "covered_by": [
@@ -465,7 +610,11 @@
    "videos": [
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -487,6 +636,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "2:41"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:49"
     }
    ],
    "covered_by": [
@@ -513,7 +674,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -523,6 +686,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "0:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "0:25"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "4:30"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "4:40"
     }
    ],
    "covered_by": [
@@ -544,7 +719,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -562,6 +740,22 @@
     {
      "video_id": "MH7YiOWQIhI",
      "t": "1:13"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "6:21"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "7:34"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:14"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:11"
     }
    ],
    "covered_by": [
@@ -609,12 +803,21 @@
    "label": "lfo depth",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "0:59"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "4:19"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "12:07"
     }
    ],
    "covered_by": [
@@ -649,7 +852,12 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
@@ -663,6 +871,26 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:17"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:00"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "4:32"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "5:06"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:43"
     }
    ],
    "covered_by": [
@@ -704,7 +932,10 @@
    "label": "layering",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
@@ -714,6 +945,26 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "1:44"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:16"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:28"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:56"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "2:17"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "2:36"
     }
    ],
    "covered_by": [
@@ -749,7 +1000,12 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -767,6 +1023,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "8:52"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:32"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:55"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:13"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:29"
     }
    ],
    "covered_by": [
@@ -804,7 +1076,8 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM"
    ],
    "refs": [
     {
@@ -818,6 +1091,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "7:07"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:55"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "19:50"
     }
    ],
    "covered_by": [
@@ -842,7 +1123,9 @@
    "videos": [
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -860,6 +1143,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "7:54"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "5:24"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:43"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "6:20"
     }
    ],
    "covered_by": [
@@ -884,7 +1179,13 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -910,6 +1211,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:17"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "3:40"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:04"
     }
    ],
    "covered_by": [
@@ -951,7 +1260,13 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -1038,7 +1353,10 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -1060,6 +1378,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "4:08"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:36"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:49"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:31"
     }
    ],
    "covered_by": [
@@ -1087,7 +1417,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -1105,6 +1438,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "4:08"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:36"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "15:21"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "4:47"
     }
    ],
    "covered_by": [
@@ -1167,12 +1516,22 @@
    "label": "pluck",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "4:26"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "25:31"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "7:04"
     }
    ],
    "covered_by": [
@@ -1188,7 +1547,11 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -1202,6 +1565,26 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "12:18"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:43"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:29"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:48"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "13:01"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:24"
     }
    ],
    "covered_by": [
@@ -1239,7 +1622,14 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -1265,6 +1655,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "0:14"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:04"
     }
    ],
    "covered_by": [
@@ -1321,7 +1719,9 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -1339,6 +1739,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:04"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:25"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:56"
     }
    ],
    "covered_by": [
@@ -1362,7 +1774,8 @@
    "label": "filter slope",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -1372,6 +1785,10 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "10:43"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
     }
    ],
    "covered_by": [
@@ -1411,7 +1828,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -1429,6 +1849,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "10:13"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:49"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:11"
     }
    ],
    "covered_by": [
@@ -1495,7 +1927,8 @@
    "label": "granular",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
@@ -1505,6 +1938,10 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "9:43"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "3:26"
     }
    ],
    "covered_by": [
@@ -1520,7 +1957,11 @@
    "label": "pitch",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
@@ -1530,6 +1971,30 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:31"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:36"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:02"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:44"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:43"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "19:46"
     }
    ],
    "covered_by": [
@@ -1562,12 +2027,17 @@
    "label": "24 db",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:08"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:02"
     }
    ],
    "covered_by": []
@@ -1592,12 +2062,17 @@
    "label": "feedback",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:43"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:48"
     }
    ],
    "covered_by": [
@@ -1622,7 +2097,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -1636,6 +2113,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "0:49"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:22"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "4:51"
     }
    ],
    "covered_by": [
@@ -1664,7 +2153,12 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -1686,6 +2180,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "11:43"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:01"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:13"
     }
    ],
    "covered_by": [
@@ -1725,12 +2231,21 @@
    "label": "phase",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "9:43"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:05"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:24"
     }
    ],
    "covered_by": [
@@ -1748,12 +2263,17 @@
    "label": "sampler",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "10:05"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "6:09"
     }
    ],
    "covered_by": [
@@ -1766,7 +2286,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -1780,6 +2303,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "12:18"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:48"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "3:31"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:05"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:12"
     }
    ],
    "covered_by": [
@@ -1817,7 +2356,9 @@
    "label": "macro",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
@@ -1827,6 +2368,18 @@
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "12:52"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:12"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:37"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "18:36"
     }
    ],
    "covered_by": [
@@ -1843,7 +2396,11 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "UShjYsGgWcM",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -1857,6 +2414,26 @@
     {
      "video_id": "MH7YiOWQIhI",
      "t": "7:28"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "18:45"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "12:40"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "10:23"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "16:36"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "0:07"
     }
    ],
    "covered_by": [
@@ -1878,7 +2455,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -1892,6 +2471,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "11:43"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:13"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:29"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:12"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "3:59"
     }
    ],
    "covered_by": [
@@ -1913,7 +2508,8 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -1927,6 +2523,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "12:47"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "8:17"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "10:05"
     }
    ],
    "covered_by": [
@@ -1955,12 +2559,26 @@
    "label": "low end",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "15:20"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "6:59"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "1:14"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "4:06"
     }
    ],
    "covered_by": [
@@ -1982,12 +2600,30 @@
    "label": "phaser",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "15:20"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:22"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "2:07"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "2:16"
     }
    ],
    "covered_by": [
@@ -2048,7 +2684,8 @@
    "label": "strings",
    "domain": "synth",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -2058,6 +2695,14 @@
     {
      "video_id": "MH7YiOWQIhI",
      "t": "0:09"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "0:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:08"
     }
    ],
    "covered_by": [
@@ -2092,12 +2737,31 @@
    "label": "mod matrix",
    "domain": "synth",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
      "video_id": "MH7YiOWQIhI",
      "t": "1:29"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "5:49"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:24"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "1:13"
     }
    ],
    "covered_by": [
@@ -2110,7 +2774,8 @@
    "label": "fm",
    "domain": "synth",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -2120,6 +2785,14 @@
     {
      "video_id": "MH7YiOWQIhI",
      "t": "2:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "9:15"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "9:42"
     }
    ],
    "covered_by": [
@@ -2136,12 +2809,17 @@
    "label": "filter drive",
    "domain": "synth",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "UShjYsGgWcM"
    ],
    "refs": [
     {
      "video_id": "MH7YiOWQIhI",
      "t": "4:07"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "16:08"
     }
    ],
    "covered_by": []
@@ -2152,7 +2830,12 @@
    "domain": "synth",
    "videos": [
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -2162,6 +2845,30 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "21:32"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:14"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "0:00"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "0:31"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "20:04"
     }
    ],
    "covered_by": [
@@ -2198,7 +2905,8 @@
    "label": "automation",
    "domain": "synth",
    "videos": [
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -2208,6 +2916,10 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "0:49"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "4:02"
     }
    ],
    "covered_by": [
@@ -2224,7 +2936,10 @@
    "label": "decay",
    "domain": "synth",
    "videos": [
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
@@ -2234,6 +2949,30 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "3:29"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "23:48"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:26"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:24"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:59"
     }
    ],
    "covered_by": [
@@ -2354,12 +3093,26 @@
    "label": "cinematic",
    "domain": "synth",
    "videos": [
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "0:00"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "15:38"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "19:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "0:44"
     }
    ],
    "covered_by": [
@@ -2396,7 +3149,9 @@
    "label": "wt position",
    "domain": "synth",
    "videos": [
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -2406,6 +3161,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "4:55"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:00"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:12"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "3:27"
     }
    ],
    "covered_by": [
@@ -2423,7 +3190,9 @@
    "label": "wavetable",
    "domain": "synth",
    "videos": [
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -2433,6 +3202,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "4:55"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:15"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:36"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "3:27"
     }
    ],
    "covered_by": [
@@ -2537,6 +3318,1208 @@
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-wavetable-morph-filter-motion"
    ]
+  },
+  "tool:Serum": {
+   "type": "tool",
+   "label": "Serum",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "1:30"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "28:47"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "concept:lead": {
+   "type": "concept",
+   "label": "lead",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "6:07"
+    }
+   ],
+   "covered_by": [
+    "filter-ladder-diode-comb-formant-flavors",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "reverb-pads-type-choice-and-send-setup",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "param:blend": {
+   "type": "param",
+   "label": "blend",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:49"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "blender-first-scene-add-delete-focus-shade-smooth",
+    "blender-lowpoly-character-scene-prep",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "knowledge-graph-gap-check-skill-outline",
+    "osc-as-granular-pitch-step-delay",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "value:unison=3 voices": {
+   "type": "value",
+   "label": "3 voices",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:lfo_shape": {
+   "type": "param",
+   "label": "lfo shape",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:36"
+    }
+   ],
+   "covered_by": [
+    "parallel-filter-rhythmic-pad-chains"
+   ]
+  },
+  "module:distortion": {
+   "type": "module",
+   "label": "distortion",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:04"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "13:08"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:56"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:48"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "10:03"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "knowledge-graph-gap-check-skill-outline",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "parallel-filter-rhythmic-pad-chains",
+    "soft-tape-saturation-pads-before-space",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "concept:highs": {
+   "type": "concept",
+   "label": "highs",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM",
+    "bMjCfB1qzjo"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:25"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "0:56"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "evolving-pad-unison-filter-swell-fifth",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "organic-looped-sample-unison-voicing-pad",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "value:noise=6 %": {
+   "type": "value",
+   "label": "6 %",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:filter=12 db": {
+   "type": "value",
+   "label": "12 db",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:56"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:flanger": {
+   "type": "module",
+   "label": "flanger",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "organic-looped-sample-unison-voicing-pad",
+    "stereo-delay-pingpong-dual-parallel-two-tap"
+   ]
+  },
+  "value:mix=90 %": {
+   "type": "value",
+   "label": "90 %",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    }
+   ],
+   "covered_by": []
+  },
+  "tool:Valhalla": {
+   "type": "tool",
+   "label": "Valhalla",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "16:47"
+    }
+   ],
+   "covered_by": []
+  },
+  "tool:Ableton Live": {
+   "type": "tool",
+   "label": "Ableton Live",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "22:18"
+    }
+   ],
+   "covered_by": [
+    "blender-first-scene-add-delete-focus-shade-smooth",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "filter-ladder-diode-comb-formant-flavors",
+    "fm-carrier-modulator-ratio-basics",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "python-pathlib-basic-file-workflow",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "sidechain-compressor-duck-synth-pads",
+    "soft-tape-saturation-pads-before-space",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "velocity-filter-cutoff-envelope-amount"
+   ]
+  },
+  "concept:warmth": {
+   "type": "concept",
+   "label": "warmth",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "22:30"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "26:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "filter-ladder-diode-comb-formant-flavors",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "soft-tape-saturation-pads-before-space",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "concept:bass": {
+   "type": "concept",
+   "label": "bass",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "26:00"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "6:59"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "12:02"
+    }
+   ],
+   "covered_by": [
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "phrase:first_layer": {
+   "type": "phrase",
+   "label": "first layer",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "4:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:feel_free": {
+   "type": "phrase",
+   "label": "feel free",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "3:28"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:pad_sounds": {
+   "type": "phrase",
+   "label": "pad sounds",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "3:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:sound_design": {
+   "type": "phrase",
+   "label": "sound design",
+   "domain": "synth",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "7:22"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-multi-envelope-osc-level-morph",
+    "evolving-pad-unison-filter-swell-fifth",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "youtube-topic-search-transcript-precheck"
+   ]
+  },
+  "value:unison=7 voices": {
+   "type": "value",
+   "label": "7 voices",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:31"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "9:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:filter_slope=6 db": {
+   "type": "value",
+   "label": "6 db",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:decay=5 s": {
+   "type": "value",
+   "label": "5 s",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:sustain=70 %": {
+   "type": "value",
+   "label": "70 %",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:release=2 s": {
+   "type": "value",
+   "label": "2 s",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:filter=400 hz": {
+   "type": "value",
+   "label": "400 hz",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "4:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:decay_time=5 s": {
+   "type": "value",
+   "label": "5 s",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:mix=30 %": {
+   "type": "value",
+   "label": "30 %",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:detune=10 %": {
+   "type": "value",
+   "label": "10 %",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "9:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:four_or_five": {
+   "type": "phrase",
+   "label": "four or five",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:37"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:left_click": {
+   "type": "phrase",
+   "label": "left click",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:sample_library": {
+   "type": "phrase",
+   "label": "sample library",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "10:47"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:five_seconds": {
+   "type": "phrase",
+   "label": "five seconds",
+   "domain": "synth",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:21"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=1 octaves": {
+   "type": "value",
+   "label": "1 octaves",
+   "domain": "synth",
+   "videos": [
+    "bMjCfB1qzjo"
+   ],
+   "refs": [
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:attack=50 ms": {
+   "type": "value",
+   "label": "50 ms",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:06"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:attack=2 s": {
+   "type": "value",
+   "label": "2 s",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "4:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:loop_start": {
+   "type": "phrase",
+   "label": "loop start",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "4:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:wave_state": {
+   "type": "phrase",
+   "label": "wave state",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "0:13"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:sequencing_synthesis": {
+   "type": "phrase",
+   "label": "sequencing synthesis",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "0:22"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:concatenative_synthesis": {
+   "type": "phrase",
+   "label": "concatenative synthesis",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "0:32"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:first_step": {
+   "type": "phrase",
+   "label": "first step",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "5:41"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:clarinet_sound": {
+   "type": "phrase",
+   "label": "clarinet sound",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "4:46"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:piano_sound": {
+   "type": "phrase",
+   "label": "piano sound",
+   "domain": "synth",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "5:47"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:lfo_rate": {
+   "type": "param",
+   "label": "lfo rate",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "13:41"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "20:29"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "fm-carrier-modulator-ratio-basics",
+    "granular-dual-saw-ambient-epic-pad",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "sidehustle-productized-service-offer-and-ops",
+    "traveler-walkthrough-control-track-filter-wt-animation"
+   ]
+  },
+  "phrase:envelope_follower": {
+   "type": "phrase",
+   "label": "envelope follower",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "0:07"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:press_learn": {
+   "type": "phrase",
+   "label": "press learn",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "1:55"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:what's_happening": {
+   "type": "phrase",
+   "label": "what's happening",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "14:52"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:every_time": {
+   "type": "phrase",
+   "label": "every time",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "10:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:midi_lfos": {
+   "type": "phrase",
+   "label": "midi lfos",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "1:00"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:fac_involver": {
+   "type": "phrase",
+   "label": "fac involver",
+   "domain": "synth",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "3:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:threshold": {
+   "type": "param",
+   "label": "threshold",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "3:37"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "12:29"
+    }
+   ],
+   "covered_by": [
+    "crypto-hw-wallet-seed-backup-shamir-metal",
+    "crypto-safe-multisig-threshold-setup-execute",
+    "fm-carrier-modulator-ratio-basics",
+    "sidechain-compressor-duck-synth-pads",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "trance-gate-sidechain-chop-texture"
+   ]
+  },
+  "value:level=6 db": {
+   "type": "value",
+   "label": "6 db",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "4:06"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:eq=92 hz": {
+   "type": "value",
+   "label": "92 hz",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "10:05"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:width": {
+   "type": "concept",
+   "label": "width",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "12:46"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "13:02"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "1:56"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "4:13"
+    }
+   ],
+   "covered_by": [
+    "blender-boolean-bracket-with-cylinder-holes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "evolving-pad-unison-filter-swell-fifth",
+    "keysol-venus-fifths-pulsar-wt-impact",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "phrase:multiband_compressor": {
+   "type": "phrase",
+   "label": "multiband compressor",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "0:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:multiband_compression": {
+   "type": "phrase",
+   "label": "multiband compression",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "0:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:kick_drum": {
+   "type": "phrase",
+   "label": "kick drum",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "1:06"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:kick_hits": {
+   "type": "phrase",
+   "label": "kick hits",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "4:06"
+    }
+   ],
+   "covered_by": [
+    "sidechain-compressor-duck-synth-pads"
+   ]
+  },
+  "phrase:drum_bus": {
+   "type": "phrase",
+   "label": "drum bus",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "0:20"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:frequency_range": {
+   "type": "phrase",
+   "label": "frequency range",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "5:40"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:use_multiband": {
+   "type": "phrase",
+   "label": "use multiband",
+   "domain": "synth",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "7:22"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:phase_issues": {
+   "type": "concept",
+   "label": "phase issues",
+   "domain": "synth",
+   "videos": [
+    "msDDpbSvdPc"
+   ],
+   "refs": [
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "2:16"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "3:27"
+    }
+   ],
+   "covered_by": [
+    "filter-ladder-diode-comb-formant-flavors",
+    "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "phrase:haas_effect": {
+   "type": "phrase",
+   "label": "haas effect",
+   "domain": "synth",
+   "videos": [
+    "msDDpbSvdPc"
+   ],
+   "refs": [
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:09"
+    }
+   ],
+   "covered_by": []
   }
  },
  "edges": {
@@ -2548,7 +4531,14 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -2566,6 +4556,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "3:16"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:56"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:08"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:43"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "11:01"
     }
    ],
    "covered_by": []
@@ -2577,7 +4583,11 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -2591,6 +4601,22 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "1:25"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:06"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "1:45"
     }
    ],
    "covered_by": []
@@ -2601,7 +4627,9 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
@@ -2611,6 +4639,14 @@
     {
      "video_id": "BqE9S27CZfY",
      "t": "1:25"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "5:27"
     }
    ],
    "covered_by": []
@@ -2622,7 +4658,11 @@
    "videos": [
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "T2poUGh6qPg"
    ],
    "refs": [
     {
@@ -2636,6 +4676,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "2:41"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "3:59"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "12:29"
     }
    ],
    "covered_by": []
@@ -2645,12 +4701,17 @@
    "dst": "module:lfo",
    "type": "part-of",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "0:59"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "4:19"
     }
    ],
    "covered_by": []
@@ -2663,7 +4724,13 @@
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
     "BqE9S27CZfY",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "C_NkGQqTdSo",
+    "odosCwWVL2c",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -2681,6 +4748,22 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:17"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "3:40"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:31"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:43"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "2:36"
     }
    ],
    "covered_by": []
@@ -2691,7 +4774,10 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -2701,6 +4787,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "3:42"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:36"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "0:42"
     }
    ],
    "covered_by": []
@@ -2770,7 +4868,9 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
@@ -2784,6 +4884,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:04"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:56"
     }
    ],
    "covered_by": []
@@ -2793,12 +4901,17 @@
    "dst": "module:filter",
    "type": "part-of",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "6:09"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
     }
    ],
    "covered_by": []
@@ -2834,7 +4947,10 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -2844,6 +4960,18 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "6:39"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "3:49"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:11"
     }
    ],
    "covered_by": []
@@ -2914,12 +5042,32 @@
    "dst": "module:oscillator",
    "type": "part-of",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "odosCwWVL2c"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:08"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:36"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:44"
+    },
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "19:46"
     }
    ],
    "covered_by": []
@@ -2929,12 +5077,17 @@
    "dst": "value:filter=24 db",
    "type": "sets",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "UShjYsGgWcM"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:08"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:02"
     }
    ],
    "covered_by": [
@@ -2971,12 +5124,17 @@
    "dst": "module:delay",
    "type": "part-of",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:43"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:48"
     }
    ],
    "covered_by": []
@@ -2988,7 +5146,12 @@
    "videos": [
     "A7q9L5wd7Mk",
     "MH7YiOWQIhI",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo",
+    "T2poUGh6qPg",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
@@ -3002,6 +5165,26 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "10:52"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:01"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:13"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:12"
+    },
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "0:20"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "4:31"
     }
    ],
    "covered_by": []
@@ -3011,12 +5194,17 @@
    "dst": "module:oscillator",
    "type": "part-of",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "9:43"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "0:05"
     }
    ],
    "covered_by": []
@@ -3068,7 +5256,9 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "IK7cIBPKM1s",
+    "bMjCfB1qzjo"
    ],
    "refs": [
     {
@@ -3078,6 +5268,14 @@
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "2:18"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:13"
+    },
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:12"
     }
    ],
    "covered_by": []
@@ -3102,12 +5300,17 @@
    "dst": "module:filter",
    "type": "part-of",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "UShjYsGgWcM"
    ],
    "refs": [
     {
      "video_id": "MH7YiOWQIhI",
      "t": "4:07"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "16:08"
     }
    ],
    "covered_by": []
@@ -3117,12 +5320,17 @@
    "dst": "module:filter",
    "type": "affects",
    "videos": [
-    "MH7YiOWQIhI"
+    "MH7YiOWQIhI",
+    "IK7cIBPKM1s"
    ],
    "refs": [
     {
      "video_id": "MH7YiOWQIhI",
      "t": "7:54"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:59"
     }
    ],
    "covered_by": [
@@ -3144,12 +5352,27 @@
    "dst": "module:envelope",
    "type": "part-of",
    "videos": [
-    "BqE9S27CZfY"
+    "BqE9S27CZfY",
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s",
+    "C_NkGQqTdSo"
    ],
    "refs": [
     {
      "video_id": "BqE9S27CZfY",
      "t": "1:25"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "10:35"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    },
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:24"
     }
    ],
    "covered_by": []
@@ -3159,12 +5382,22 @@
    "dst": "module:wavetable",
    "type": "part-of",
    "videos": [
-    "kHWOIE4YTZ4"
+    "kHWOIE4YTZ4",
+    "UShjYsGgWcM",
+    "msDDpbSvdPc"
    ],
    "refs": [
     {
      "video_id": "kHWOIE4YTZ4",
      "t": "3:16"
+    },
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:00"
+    },
+    {
+     "video_id": "msDDpbSvdPc",
+     "t": "3:27"
     }
    ],
    "covered_by": []
@@ -3198,13 +5431,484 @@
     }
    ],
    "covered_by": []
+  },
+  "param:blend|part-of|module:unison": {
+   "src": "param:blend",
+   "dst": "module:unison",
+   "type": "part-of",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "8:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|sets|value:unison=3 voices": {
+   "src": "module:unison",
+   "dst": "value:unison=3 voices",
+   "type": "sets",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:24"
+    }
+   ],
+   "covered_by": [
+    "digital-wt-morph-bandpass-chorus-echo-space"
+   ]
+  },
+  "param:lfo_shape|part-of|module:lfo": {
+   "src": "param:lfo_shape",
+   "dst": "module:lfo",
+   "type": "part-of",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "9:36"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|sets|value:noise=6 %": {
+   "src": "module:noise",
+   "dst": "value:noise=6 %",
+   "type": "sets",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|sets|value:filter=12 db": {
+   "src": "module:filter",
+   "dst": "value:filter=12 db",
+   "type": "sets",
+   "videos": [
+    "UShjYsGgWcM",
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "11:56"
+    },
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": [
+    "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "lush-stereo-saw-pad-random-pitch-texture"
+   ]
+  },
+  "param:mix|sets|value:mix=90 %": {
+   "src": "param:mix",
+   "dst": "value:mix=90 %",
+   "type": "sets",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "14:10"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|part-of|tool:Ableton Live": {
+   "src": "module:filter",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "22:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|part-of|tool:Ableton Live": {
+   "src": "module:noise",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "UShjYsGgWcM"
+   ],
+   "refs": [
+    {
+     "video_id": "UShjYsGgWcM",
+     "t": "22:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|sets|value:unison=7 voices": {
+   "src": "module:unison",
+   "dst": "value:unison=7 voices",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:31"
+    }
+   ],
+   "covered_by": [
+    "traveler-walkthrough-super-unison-wide-lead"
+   ]
+  },
+  "param:filter_slope|sets|value:filter_slope=6 db": {
+   "src": "param:filter_slope",
+   "dst": "value:filter_slope=6 db",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": [
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "module:envelope|affects|param:level": {
+   "src": "module:envelope",
+   "dst": "param:level",
+   "type": "affects",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:08"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-multi-envelope-osc-level-morph",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "traveler-walkthrough-curved-envelope-evolving-pad"
+   ]
+  },
+  "param:decay|sets|value:decay=5 s": {
+   "src": "param:decay",
+   "dst": "value:decay=5 s",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:sustain|sets|value:sustain=70 %": {
+   "src": "param:sustain",
+   "dst": "value:sustain=70 %",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:release|sets|value:release=2 s": {
+   "src": "param:release",
+   "dst": "value:release=2 s",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "2:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|sets|value:filter=400 hz": {
+   "src": "module:filter",
+   "dst": "value:filter=400 hz",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "4:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:decay_time|sets|value:decay_time=5 s": {
+   "src": "param:decay_time",
+   "dst": "value:decay_time=5 s",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "7:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|part-of|tool:Vital": {
+   "src": "module:distortion",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:macro|part-of|tool:Vital": {
+   "src": "module:macro",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:mix|sets|value:mix=30 %": {
+   "src": "param:mix",
+   "dst": "value:mix=30 %",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-noise-audiorate-filter-texture",
+    "stereo-delay-pingpong-dual-parallel-two-tap"
+   ]
+  },
+  "module:macro|affects|module:distortion": {
+   "src": "module:macro",
+   "dst": "module:distortion",
+   "type": "affects",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "8:37"
+    }
+   ],
+   "covered_by": [
+    "lush-stereo-saw-pad-random-pitch-texture"
+   ]
+  },
+  "param:detune|sets|value:detune=10 %": {
+   "src": "param:detune",
+   "dst": "value:detune=10 %",
+   "type": "sets",
+   "videos": [
+    "IK7cIBPKM1s"
+   ],
+   "refs": [
+    {
+     "video_id": "IK7cIBPKM1s",
+     "t": "9:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:pitch|sets|value:pitch=1 octaves": {
+   "src": "param:pitch",
+   "dst": "value:pitch=1 octaves",
+   "type": "sets",
+   "videos": [
+    "bMjCfB1qzjo"
+   ],
+   "refs": [
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "granular-dual-saw-ambient-epic-pad",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "module:lfo|affects|param:level": {
+   "src": "module:lfo",
+   "dst": "param:level",
+   "type": "affects",
+   "videos": [
+    "bMjCfB1qzjo"
+   ],
+   "refs": [
+    {
+     "video_id": "bMjCfB1qzjo",
+     "t": "2:43"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "evolving-pad-unison-filter-swell-fifth",
+    "organic-looped-sample-unison-voicing-pad",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:attack|sets|value:attack=50 ms": {
+   "src": "param:attack",
+   "dst": "value:attack=50 ms",
+   "type": "sets",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "1:06"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:attack|sets|value:attack=2 s": {
+   "src": "param:attack",
+   "dst": "value:attack=2 s",
+   "type": "sets",
+   "videos": [
+    "C_NkGQqTdSo"
+   ],
+   "refs": [
+    {
+     "video_id": "C_NkGQqTdSo",
+     "t": "4:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:lfo_rate|part-of|module:lfo": {
+   "src": "param:lfo_rate",
+   "dst": "module:lfo",
+   "type": "part-of",
+   "videos": [
+    "odosCwWVL2c"
+   ],
+   "refs": [
+    {
+     "video_id": "odosCwWVL2c",
+     "t": "13:41"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:threshold|part-of|module:compressor": {
+   "src": "param:threshold",
+   "dst": "module:compressor",
+   "type": "part-of",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "3:37"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:level|sets|value:level=6 db": {
+   "src": "param:level",
+   "dst": "value:level=6 db",
+   "type": "sets",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "4:06"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:eq|sets|value:eq=92 hz": {
+   "src": "module:eq",
+   "dst": "value:eq=92 hz",
+   "type": "sets",
+   "videos": [
+    "T2poUGh6qPg"
+   ],
+   "refs": [
+    {
+     "video_id": "T2poUGh6qPg",
+     "t": "10:05"
+    }
+   ],
+   "covered_by": []
   }
  },
  "stats": {
-  "videos": 4,
-  "nodes": 70,
-  "edges": 33,
-  "uncovered_nodes": 1,
-  "uncovered_edges": 2
+  "videos": 11,
+  "nodes": 132,
+  "edges": 62,
+  "uncovered_nodes": 2,
+  "uncovered_edges": 14
  }
 }

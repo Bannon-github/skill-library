@@ -1,0 +1,203 @@
+{
+ "category": "pluck",
+ "layers": [
+  {
+   "osc": "wt",
+   "wt_table": "soft_to_complex",
+   "wt_pos": 0.275,
+   "level": 1.0,
+   "unison": 1,
+   "group": "A"
+  },
+  {
+   "osc": "noise",
+   "noise_color": "pink",
+   "level": 0.04,
+   "width": 0.5,
+   "group": "N"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "artifact_high",
+   "oct": 2,
+   "wt_pos": 0.3,
+   "level": 0.08,
+   "group": "HA"
+  },
+  {
+   "osc": "saw",
+   "unison": 7,
+   "detune": 0.2,
+   "blend": 0.5,
+   "width": 0.5,
+   "level": 0.45,
+   "group": "A_v3"
+  },
+  {
+   "osc": "saw",
+   "oct": 1,
+   "unison": 3,
+   "detune": 0.13999999999999999,
+   "width": 0.5,
+   "level": 0.18000000000000002,
+   "group": "A_v3"
+  },
+  {
+   "osc": "saw",
+   "oct": -1,
+   "unison": 1,
+   "level": 0.135,
+   "group": "A_v3"
+  },
+  {
+   "osc": "noise",
+   "noise_color": "white",
+   "width": 0.5,
+   "level": 0.018000000000000002,
+   "group": "A_v3"
+  }
+ ],
+ "filters": [
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 517.5041,
+   "res": 0.1,
+   "drive": 0.0,
+   "keytrack": 1.0,
+   "env": "env2",
+   "env_amt_oct": 2.0,
+   "groups": [
+    "A"
+   ],
+   "stereo_off_oct": 0.25
+  },
+  {
+   "type": "svf_bp",
+   "cutoff": 1200,
+   "res": 0.1,
+   "keytrack": 1.0,
+   "groups": [
+    "N"
+   ]
+  },
+  {
+   "type": "svf_lp",
+   "cutoff": 9000,
+   "res": 0.0,
+   "groups": [
+    "HA"
+   ]
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 80.0,
+   "res": 0.0,
+   "groups": [
+    "A",
+    "HA",
+    "N"
+   ]
+  }
+ ],
+ "amp_env": {
+  "a": 0.004,
+  "d": 0.9,
+  "s": 0.4,
+  "r": 0.7,
+  "curve": 1.0
+ },
+ "envs": {
+  "env2": {
+   "a": 0.002,
+   "d": 0.425,
+   "s": 0.0,
+   "r": 0.3,
+   "curve": 1.0
+  }
+ },
+ "lfos": {
+  "lfo_art": {
+   "shape": "sine",
+   "rate_hz": 0.09
+  }
+ },
+ "ctracks": {},
+ "mods": [
+  {
+   "src": "lfo_art",
+   "dst": "wt_pos:2",
+   "amt": 0.275
+  }
+ ],
+ "fx": [
+  {
+   "type": "dist",
+   "drive": 0.4,
+   "mix": 0.225,
+   "post_lp": 9000
+  },
+  {
+   "type": "eq",
+   "bands": [
+    {
+     "kind": "hp",
+     "f": 115.0
+    },
+    {
+     "kind": "highshelf",
+     "f": 6000,
+     "gain": 2.451
+    }
+   ]
+  },
+  {
+   "type": "chorus",
+   "mode": "classic",
+   "rate": 0.3,
+   "depth_ms": 5.5,
+   "base_ms": 12,
+   "feedback": 0.6,
+   "mix": 0.225,
+   "wet_hp_hz": 200
+  },
+  {
+   "type": "comp",
+   "ratio": 3.0,
+   "thresh_rel_db": 2.0
+  },
+  {
+   "type": "delay",
+   "mode": "pingpong",
+   "sync_l": "1/4",
+   "feedback": 0.45,
+   "mix": 0.2,
+   "hp_hz": 100,
+   "lp_hz": 3000,
+   "sat": 0.1
+  },
+  {
+   "type": "reverb",
+   "rt60": 2.5,
+   "size": 1.2,
+   "send": 0.25,
+   "return_hp": 200,
+   "diffusion": 0.5,
+   "er": 0.9,
+   "damp_hz": 7000,
+   "predelay_s": 0.025,
+   "return_lp": 0,
+   "dry": 1.0
+  }
+ ],
+ "velocity": {
+  "to_amp": 0.4,
+  "to_cutoff_oct": 1.2929
+ },
+ "drift_c": 3.5,
+ "master": {
+  "target_lufs": -15.5
+ },
+ "note_spread": 0.4,
+ "lf_width_hz": 230.0
+}

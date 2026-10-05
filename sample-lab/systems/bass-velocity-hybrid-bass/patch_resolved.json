@@ -1,0 +1,183 @@
+{
+ "category": "bass",
+ "layers": [
+  {
+   "osc": "saw",
+   "pw": 0.4,
+   "unison": 1,
+   "level": 1.0,
+   "group": "A"
+  },
+  {
+   "osc": "sine",
+   "oct": -1,
+   "level": 0.4,
+   "group": "S"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "digital_additive",
+   "wt_pos": 0.5,
+   "level": 0.15,
+   "group": "A"
+  },
+  {
+   "osc": "pulse",
+   "pw": 0.5,
+   "oct": 0,
+   "level": 0.45,
+   "group": "S_v3"
+  },
+  {
+   "osc": "noise",
+   "noise_color": "white",
+   "level": 0.2025,
+   "width": 0.2,
+   "group": "N_v3"
+  }
+ ],
+ "filters": [
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 199.2442,
+   "res": 0.2,
+   "drive": 0.2,
+   "keytrack": 0.5,
+   "env": "cfenv",
+   "env_amt_oct": 1.4,
+   "groups": [
+    "A"
+   ],
+   "stereo_off_oct": 0.25
+  },
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 394.7078,
+   "res": 0.1,
+   "keytrack": 0.5,
+   "groups": [
+    "S_v3"
+   ]
+  },
+  {
+   "type": "diode",
+   "mode": "lp12",
+   "cutoff": 2511.5843,
+   "res": 0.1,
+   "drive": 0.5,
+   "groups": [
+    "N_v3"
+   ]
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 325.0,
+   "res": 0.0,
+   "groups": [
+    "N_v3"
+   ]
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 80.0,
+   "res": 0.0,
+   "groups": [
+    "A",
+    "N_v3",
+    "S",
+    "S_v3"
+   ]
+  }
+ ],
+ "amp_env": {
+  "a": 3.75,
+  "d": 1.5,
+  "s": 1.0,
+  "r": 4.0,
+  "curve": 2.0
+ },
+ "envs": {
+  "fenv": {
+   "a": 0.002,
+   "d": 0.55,
+   "s": 0.2,
+   "r": 0.55,
+   "curve": 1.0
+  },
+  "cfenv": {
+   "a": 4.5,
+   "d": 2.0,
+   "s": 0.85,
+   "r": 4.0,
+   "curve": 2.0
+  },
+  "cmenv": {
+   "a": 3.6,
+   "d": 3.0,
+   "s": 0.6,
+   "r": 4.0,
+   "curve": 1.0
+  }
+ },
+ "lfos": {
+  "vib": {
+   "shape": "sine",
+   "rate_hz": 4.5
+  }
+ },
+ "ctracks": {},
+ "mods": [
+  {
+   "src": "cmenv",
+   "dst": "wt_pos",
+   "amt": 0.3
+  },
+  {
+   "src": "vib",
+   "dst": "pitch",
+   "amt": 5.0
+  }
+ ],
+ "fx": [
+  {
+   "type": "tape",
+   "drive": 0.325,
+   "hf_roll": 18000
+  },
+  {
+   "type": "eq",
+   "bands": [
+    {
+     "kind": "peak",
+     "f": 300,
+     "q": 0.7,
+     "gain": -1.5
+    }
+   ]
+  },
+  {
+   "type": "chorus",
+   "mode": "classic",
+   "mix": 0.2,
+   "wet_hp_hz": 200
+  },
+  {
+   "type": "reverb",
+   "rt60": 5.5,
+   "size": 1.6,
+   "send": 0.275,
+   "return_hp": 200
+  }
+ ],
+ "velocity": {
+  "to_cutoff_oct": 2.2682
+ },
+ "drift_c": 0.0,
+ "master": {
+  "target_lufs": -14.5
+ },
+ "note_spread": 0.4,
+ "lf_width_hz": 230.0
+}

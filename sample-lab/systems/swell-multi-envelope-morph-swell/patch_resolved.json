@@ -1,0 +1,270 @@
+{
+ "category": "swell",
+ "layers": [
+  {
+   "osc": "saw",
+   "unison": 3,
+   "detune": 0.1,
+   "width": 0.5,
+   "pan": -0.35,
+   "level": 0.9,
+   "level_env": {
+    "a": 0.35,
+    "d": 1.0,
+    "s": 0.7,
+    "r": 4.5,
+    "curve": 1.0
+   },
+   "group": "A"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "soft_to_complex",
+   "wt_pos": 0.3,
+   "unison": 2,
+   "detune": 0.06,
+   "width": 0.6,
+   "pan": 0.35,
+   "level": 0.8,
+   "level_env": {
+    "a": 1.85,
+    "d": 1.0,
+    "s": 0.9,
+    "r": 4.5,
+    "curve": 1.5
+   },
+   "group": "B"
+  },
+  {
+   "osc": "triangle",
+   "oct": 1,
+   "level": 0.6,
+   "level_env": {
+    "a": 3.5,
+    "d": 1.0,
+    "s": 1.0,
+    "r": 4.5,
+    "curve": 2.0
+   },
+   "group": "B"
+  },
+  {
+   "osc": "noise",
+   "level": 0.065,
+   "width": 0.8,
+   "level_env": {
+    "a": 0.4,
+    "d": 1.5,
+    "s": 0.0,
+    "r": 1.0,
+    "curve": 1.0
+   },
+   "group": "N"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "artifact_high",
+   "oct": 2,
+   "wt_pos": 0.3,
+   "level": 0.08,
+   "group": "HA"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "saw_tri_square_sine",
+   "wt_pos": 0.125,
+   "unison": 6,
+   "detune": 0.3,
+   "width": 0.9,
+   "level": 0.45,
+   "group": "A_v5"
+  },
+  {
+   "osc": "saw",
+   "unison": 7,
+   "detune": 0.2,
+   "blend": 0.5,
+   "width": 0.5,
+   "level": 0.45,
+   "group": "A_v6"
+  },
+  {
+   "osc": "saw",
+   "oct": 1,
+   "unison": 3,
+   "detune": 0.13999999999999999,
+   "width": 0.5,
+   "level": 0.18000000000000002,
+   "group": "A_v6"
+  },
+  {
+   "osc": "saw",
+   "oct": -1,
+   "unison": 1,
+   "level": 0.135,
+   "group": "A_v6"
+  },
+  {
+   "osc": "noise",
+   "noise_color": "white",
+   "width": 0.5,
+   "level": 0.018000000000000002,
+   "group": "A_v6"
+  }
+ ],
+ "filters": [
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 1200,
+   "res": 0.075,
+   "keytrack": 0.4,
+   "env": "fenv",
+   "env_amt_oct": 1.5,
+   "groups": [
+    "A"
+   ],
+   "stereo_off_oct": 0.25
+  },
+  {
+   "type": "svf_lp",
+   "cutoff": 2500,
+   "res": 0.075,
+   "keytrack": 0.3,
+   "groups": [
+    "B"
+   ]
+  },
+  {
+   "type": "svf_bp",
+   "cutoff": 1500,
+   "res": 0.1,
+   "groups": [
+    "N"
+   ]
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 80.0,
+   "res": 0.0,
+   "groups": [
+    "A",
+    "B",
+    "N"
+   ]
+  },
+  {
+   "type": "svf_lp",
+   "cutoff": 9000,
+   "res": 0.0,
+   "groups": [
+    "HA"
+   ]
+  },
+  {
+   "type": "ladder",
+   "mode": "lp12",
+   "cutoff": 3099.2663,
+   "res": 0.175,
+   "drive": 0.2,
+   "keytrack": 0.3,
+   "groups": [
+    "A_v5"
+   ]
+  }
+ ],
+ "amp_env": {
+  "a": 0.05,
+  "d": 0.5,
+  "s": 1.0,
+  "r": 4.5,
+  "curve": 1.0
+ },
+ "envs": {
+  "fenv": {
+   "a": 0.2,
+   "d": 2.5,
+   "s": 0.2,
+   "r": 2.0,
+   "curve": 1.0
+  }
+ },
+ "lfos": {
+  "lfo_wt": {
+   "shape": "sine",
+   "sync": "1bar"
+  },
+  "lfo_art": {
+   "shape": "sine",
+   "rate_hz": 0.09
+  }
+ },
+ "ctracks": {},
+ "mods": [
+  {
+   "src": "lfo_wt",
+   "dst": "wt_pos:1",
+   "amt": 0.3
+  },
+  {
+   "src": "lfo_art",
+   "dst": "wt_pos:4",
+   "amt": 0.275
+  }
+ ],
+ "fx": [
+  {
+   "type": "eq",
+   "bands": [
+    {
+     "kind": "hp",
+     "f": 115.0
+    },
+    {
+     "kind": "highshelf",
+     "f": 6000,
+     "gain": 2.0
+    }
+   ]
+  },
+  {
+   "type": "chorus",
+   "mode": "ensemble",
+   "rate": 0.5,
+   "depth_ms": 2.0445,
+   "feedback": 0.15,
+   "wet_hp_hz": 275.0,
+   "width": 0.9,
+   "mix": 0.375
+  },
+  {
+   "type": "comp",
+   "ratio": 3.0,
+   "thresh_rel_db": 2.0
+  },
+  {
+   "type": "delay",
+   "mode": "pingpong",
+   "sync_l": "1/4",
+   "feedback": 0.45,
+   "mix": 0.2,
+   "hp_hz": 100,
+   "lp_hz": 3000,
+   "sat": 0.1
+  },
+  {
+   "type": "reverb",
+   "rt60": 2.5,
+   "size": 1.2,
+   "send": 0.25,
+   "return_hp": 200
+  }
+ ],
+ "velocity": {},
+ "drift_c": 0.0,
+ "master": {
+  "target_lufs": -15.5
+ },
+ "note_spread": 0.4,
+ "lf_width_hz": 230.0
+}

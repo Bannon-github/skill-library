@@ -1,0 +1,105 @@
+{
+ "topic": "multiband compression on pads synth",
+ "date": "2026-10-05",
+ "params": {
+  "topic": "multiband compression on pads synth",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "T2poUGh6qPg",
+   "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus",
+   "channel": "MixbusTv",
+   "duration": 844,
+   "view_count": 25600,
+   "url": "https://www.youtube.com/watch?v=T2poUGh6qPg",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.7
+  },
+  {
+   "id": "RM1aL81sg1w",
+   "title": "Learn How to Mix - Part 7 - Synth Pads - LearnReason.com",
+   "channel": "LearnReason",
+   "duration": 802,
+   "view_count": 15369,
+   "url": "https://www.youtube.com/watch?v=RM1aL81sg1w",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.59
+  },
+  {
+   "id": "tWTZpSnZewc",
+   "title": "Multiband Compression | Trance Tutorial",
+   "channel": "Demis Hellen",
+   "duration": 1161,
+   "view_count": 1660,
+   "url": "https://www.youtube.com/watch?v=tWTZpSnZewc",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.11
+  },
+  {
+   "id": "U_nbT03xxFk",
+   "title": "Multiband Compression on Perc Buss | Trance Tutorials",
+   "channel": "Demis Hellen",
+   "duration": 709,
+   "view_count": 665,
+   "url": "https://www.youtube.com/watch?v=U_nbT03xxFk",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.91
+  },
+  {
+   "id": "hrlx9Gre-jo",
+   "title": "How to compress synths and keys (and why), part 4 | iZotope",
+   "channel": "iZotope, Inc.",
+   "duration": 935,
+   "view_count": 7833,
+   "url": "https://www.youtube.com/watch?v=hrlx9Gre-jo",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.45
+  },
+  {
+   "id": "ekkjbPNl86M",
+   "title": "Tutorials | Pigments 3 - Episode 9: Multiband Compressor",
+   "channel": "Arturia",
+   "duration": 310,
+   "view_count": 7353,
+   "url": "https://www.youtube.com/watch?v=ekkjbPNl86M",
+   "query": "multiband compression on pads synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.43
+  }
+ ],
+ "dropped": [
+  {
+   "id": "jfQZA59L-E0",
+   "why": "already known"
+  },
+  {
+   "id": "rBdp7eApc0M",
+   "why": "duration 73s"
+  },
+  {
+   "id": "gg2xN8_dcW0",
+   "why": "already known"
+  },
+  {
+   "id": "rHYTJjvfBNQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

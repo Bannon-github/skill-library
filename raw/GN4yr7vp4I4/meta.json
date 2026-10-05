@@ -1,0 +1,49 @@
+{
+  "video_id": "GN4yr7vp4I4",
+  "title": "How to Sharpen a Chisel | Paul Sellers",
+  "url": "https://www.youtube.com/watch?v=GN4yr7vp4I4",
+  "fetched_at": "2026-10-05T16:09:22.244196+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Paul Sellers",
+  "duration": 433,
+  "ok": true,
+  "cue_count": 128,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/GN4yr7vp4I4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/GN4yr7vp4I4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "fr",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

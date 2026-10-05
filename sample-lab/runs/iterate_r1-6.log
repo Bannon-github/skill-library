@@ -1,0 +1,21 @@
+round 1: evaluated 33 in 98s; new reliable 3; reliable in pop 4 (['pad'])
+   bass   best velocity-hybrid-bass           2356a1e8d4 robust=89.48 mean=95.54 pass=3/6
+   drone  best wavetable-artifact-drone       029e273ce6 robust=87.68 mean=87.69 pass=0/6
+   gated  best fifth-swell-trance-gate        b0f6216234 robust=87.17 mean=89.31 pass=0/6
+   pad    best wide-supersaw-chord-pad        b70dd901a1 robust=100.0 mean=100.0 pass=6/6
+   pluck  best organic-velocity-pluck         4f569caf07 robust=86.89 mean=89.37 pass=0/6
+   swell  best multi-envelope-morph-swell     9a1313b43b robust=86.89 mean=88.13 pass=0/6
+round 2: evaluated 36 in 122s; new reliable 5; reliable in pop 5 (['bass', 'pad'])
+   bass   best velocity-hybrid-bass           8124583241 robust=96.89 mean=99.48 pass=6/6
+   drone  best wavetable-artifact-drone       210baaa419 robust=87.69 mean=87.69 pass=0/6
+   gated  best fifth-swell-trance-gate        fc56a4b95c robust=91.12 mean=93.64 pass=0/6
+   pad    best wide-supersaw-chord-pad        b70dd901a1 robust=100.0 mean=100.0 pass=6/6
+   pluck  best organic-velocity-pluck         4399a1dd64 robust=86.89 mean=89.89 pass=0/6
+   swell  best multi-envelope-morph-swell     118e577bd3 robust=86.9 mean=88.44 pass=0/6
+round 3: evaluated 35 in 135s; new reliable 10; reliable in pop 10 (['bass', 'gated', 'pad'])
+   bass   best velocity-hybrid-bass           8124583241 robust=96.89 mean=99.48 pass=6/6
+   drone  best wavetable-artifact-drone       210baaa419 robust=87.69 mean=87.69 pass=0/6
+   gated  best fifth-swell-trance-gate        992d92a597 robust=97.46 mean=98.85 pass=6/6
+   pad    best wide-supersaw-chord-pad        b70dd901a1 robust=100.0 mean=100.0 pass=6/6
+   pluck  best organic-velocity-pluck         d0998d6d86 robust=86.89 mean=90.07 pass=0/6
+   swell  best multi-envelope-morph-swell     e17160d708 robust=87.25 mean=88.78 pass=0/6

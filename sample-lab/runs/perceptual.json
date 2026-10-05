@@ -1,0 +1,8 @@
+{
+ "pad-wide-supersaw-chord-pad": "clean dense sustain, smooth release decay after note-off; no clicks/aliasing lines; very bright air up to 20 kHz",
+ "bass-velocity-hybrid-bass": "solid centered fundamental + harmonics in Mid; noise layer swells mostly in Side (peak ~4.5 s); no clicks; reads more 'textural sub' than punchy",
+ "swell-multi-envelope-morph-swell": "clean, gentle ~1.6 s periodic motion; but energy is present from t=0 so the 'swell' shape is weak visually",
+ "gated-fifth-swell-trance-gate": "crisp, even 1/8-ish chops, no click lines at gate edges; loop seam invisible",
+ "drone-wavetable-artifact-drone": "continuous evolving loop, no seam; dense/hissy top (shimmer + artifact layer) worth a taste check",
+ "pluck-organic-velocity-pluck": "clear note onsets, decaying echo tail; each note's HF ends sharply at the next onset (mono retrigger), audition for tail truncation"
+}

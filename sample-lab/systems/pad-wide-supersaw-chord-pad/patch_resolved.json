@@ -1,0 +1,150 @@
+{
+ "category": "pad",
+ "layers": [
+  {
+   "osc": "saw",
+   "unison": 6,
+   "detune": 0.175,
+   "width": 0.8,
+   "level": 1.0,
+   "group": "A"
+  },
+  {
+   "osc": "saw",
+   "unison": 7,
+   "detune": 0.2,
+   "blend": 0.5,
+   "width": 0.5,
+   "level": 0.45,
+   "group": "A_v1"
+  },
+  {
+   "osc": "saw",
+   "oct": 1,
+   "unison": 3,
+   "detune": 0.13999999999999999,
+   "width": 0.5,
+   "level": 0.18000000000000002,
+   "group": "A_v1"
+  },
+  {
+   "osc": "saw",
+   "oct": -1,
+   "unison": 1,
+   "level": 0.135,
+   "group": "A_v1"
+  },
+  {
+   "osc": "noise",
+   "noise_color": "white",
+   "width": 0.5,
+   "level": 0.018000000000000002,
+   "group": "A_v1"
+  }
+ ],
+ "filters": [
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 1050.0,
+   "res": 0.0,
+   "keytrack": 0.75,
+   "groups": [
+    "A"
+   ],
+   "stereo_off_oct": 0.25
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 90,
+   "res": 0.0,
+   "keytrack": 0.0,
+   "groups": [
+    "A"
+   ]
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 80.0,
+   "res": 0.0,
+   "groups": [
+    "A",
+    "A_v1"
+   ]
+  }
+ ],
+ "amp_env": {
+  "a": 2.25,
+  "d": 1.0,
+  "s": 1.0,
+  "r": 3.25,
+  "curve": 1.0
+ },
+ "envs": {},
+ "lfos": {
+  "lfo_irr": {
+   "shape": "random",
+   "rate_hz": 0.19
+  }
+ },
+ "ctracks": {},
+ "mods": [
+  {
+   "src": "lfo_irr",
+   "dst": "cutoff:0",
+   "amt": 0.325
+  }
+ ],
+ "fx": [
+  {
+   "type": "chorus",
+   "mode": "ensemble",
+   "rate": 0.35,
+   "depth_ms": 3.5,
+   "mix": 0.425,
+   "wet_hp_hz": 200
+  },
+  {
+   "type": "comp",
+   "ratio": 3.0,
+   "thresh_rel_db": 2.0
+  },
+  {
+   "type": "delay",
+   "mode": "pingpong",
+   "sync_l": "1/4",
+   "feedback": 0.45,
+   "mix": 0.2,
+   "hp_hz": 100,
+   "lp_hz": 3000
+  },
+  {
+   "type": "reverb",
+   "rt60": 2.5,
+   "size": 1.2,
+   "send": 0.25,
+   "return_hp": 200
+  },
+  {
+   "type": "eq",
+   "bands": [
+    {
+     "kind": "hp",
+     "f": 115.0
+    },
+    {
+     "kind": "highshelf",
+     "f": 6000,
+     "gain": 2.0
+    }
+   ]
+  }
+ ],
+ "velocity": {},
+ "drift_c": 0.0,
+ "master": {
+  "target_lufs": -15.5
+ },
+ "note_spread": 0.4,
+ "lf_width_hz": 230.0
+}

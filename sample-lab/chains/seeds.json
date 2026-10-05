@@ -1,0 +1,40 @@
+[
+ {"name": "evolving-analog-drift-pad", "category": "pad", "steps": [
+   {"skill": "cinematic-warm-analog-pad-drift-stereo"}, {"skill": "modulation-lfo-envelope-mod-matrix-routing"},
+   {"skill": "soft-tape-saturation-pads-before-space"}, {"skill": "chorus-ensemble-classic-vibrato-pad-modes"},
+   {"skill": "reverb-pads-type-choice-and-send-setup"}]},
+ {"name": "wide-supersaw-chord-pad", "category": "pad", "steps": [
+   {"skill": "warm-heavenly-supersaw-pad-keytrack-fx"}, {"skill": "unison-odd-even-detune-width-clean-supersaw", "knobs": {"mode": "layer"}},
+   {"skill": "traveler-walkthrough-stereo-ladder-lf-width"}, {"skill": "midside-eq-bass-focus-width-depth"}]},
+ {"name": "formant-comb-cinematic-pad", "category": "pad", "steps": [
+   {"skill": "cinematic-formant-comb-pad-phaser-fx"}, {"skill": "midside-eq-bass-focus-width-depth"}]},
+ {"name": "wavetable-artifact-drone", "category": "drone", "steps": [
+   {"skill": "ambient-wavetable-scratch-spectral-morph-pad"}, {"skill": "keysol-venus-high-wt-artifact-pulse-layer"},
+   {"skill": "traveler-walkthrough-stereo-ladder-lf-width"}, {"skill": "reverb-pads-type-choice-and-send-setup"}]},
+ {"name": "am-polyrhythm-drone", "category": "drone", "steps": [
+   {"skill": "audio-rate-am-wave-shape-texture", "knobs": {"depth_src": "lfo"}}, {"skill": "filter-ladder-diode-comb-formant-flavors", "knobs": {"design": "comb"}},
+   {"skill": "keysol-venus-polyrhythmic-control-track-pitch"}, {"skill": "stereo-delay-pingpong-dual-parallel-two-tap", "knobs": {"topology": "dual"}},
+   {"skill": "reverb-pads-type-choice-and-send-setup"}]},
+ {"name": "organic-velocity-pluck", "category": "pluck", "steps": [
+   {"skill": "ambient-organic-pluck-pad-ladder-chorus-space"}, {"skill": "velocity-filter-cutoff-envelope-amount"},
+   {"skill": "stereo-delay-pingpong-dual-parallel-two-tap"}, {"skill": "reverb-pads-type-choice-and-send-setup", "knobs": {"type": "room"}}]},
+ {"name": "fm-granular-step-pluck", "category": "pluck", "steps": [
+   {"skill": "fm-carrier-modulator-ratio-basics", "knobs": {"attack": 0.003, "decay": 0.5, "sustain": 0.3, "release": 0.8}},
+   {"skill": "osc-as-granular-pitch-step-delay"}, {"skill": "stereo-delay-pingpong-dual-parallel-two-tap"},
+   {"skill": "reverb-pads-type-choice-and-send-setup", "knobs": {"type": "room"}}]},
+ {"name": "digital-wt-shimmer-swell", "category": "swell", "steps": [
+   {"skill": "digital-wt-morph-bandpass-chorus-echo-space"}, {"skill": "traveler-walkthrough-curved-envelope-evolving-pad"},
+   {"skill": "soft-tape-saturation-pads-before-space"}, {"skill": "shimmer-reverb-pitchshift-plus12-feedback"}]},
+ {"name": "multi-envelope-morph-swell", "category": "swell", "steps": [
+   {"skill": "cinematic-multi-envelope-osc-level-morph"}, {"skill": "chorus-ensemble-classic-vibrato-pad-modes"},
+   {"skill": "stereo-delay-pingpong-dual-parallel-two-tap"}, {"skill": "mix-pads-role-eq-width-clarity"}]},
+ {"name": "fifth-swell-trance-gate", "category": "gated", "steps": [
+   {"skill": "evolving-pad-unison-filter-swell-fifth"}, {"skill": "trance-gate-sidechain-chop-texture"},
+   {"skill": "traveler-walkthrough-stereo-ladder-lf-width"}]},
+ {"name": "lush-parallel-rhythm-duck", "category": "gated", "steps": [
+   {"skill": "lush-stereo-saw-pad-random-pitch-texture"}, {"skill": "parallel-filter-rhythmic-pad-chains"},
+   {"skill": "sidechain-compressor-duck-synth-pads"}, {"skill": "reverb-pads-type-choice-and-send-setup"}]},
+ {"name": "velocity-hybrid-bass", "category": "bass", "steps": [
+   {"skill": "keysol-venus-velocity-hybrid-bass-impact"}, {"skill": "hybrid-noise-distortion-separate-sub-layer", "knobs": {"mode": "layer"}},
+   {"skill": "soft-tape-saturation-pads-before-space"}]}
+]

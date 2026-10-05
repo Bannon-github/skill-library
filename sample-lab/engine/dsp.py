@@ -168,12 +168,13 @@ def ladder(x, fc, res, drive, mode, diode, sr):
             f = 0.45 * sr
         g = np.tan(np.pi * f / sr)
         G = g / (1.0 + g)
-        inp = x[i] * dg
+        # gain staging: 0.25 headroom so drive=0 is near-linear for typical multi-voice levels
+        inp = x[i] * dg * 0.25
         if diode == 1:
-            inp = np.tanh(inp + 0.15 * inp * inp) - np.tanh(0.0)
+            inp = np.tanh(inp + 0.15 * inp * inp)
         else:
             inp = np.tanh(inp)
-        inp /= dg if drive < 1e-6 else (1.0 + drive * 1.5)
+        inp = inp / (0.25 * (1.0 + drive * 1.5))
         b1 = s1 / (1.0 + g); b2 = s2 / (1.0 + g); b3 = s3 / (1.0 + g); b4 = s4 / (1.0 + g)
         if mode == 0:
             S = G * G * G * b1 + G * G * b2 + G * b3 + b4

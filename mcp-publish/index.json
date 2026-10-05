@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 79,
+  "count": 84,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -184,6 +184,12 @@
       "domain": "spatial-3d-capture"
     },
     {
+      "id": "envelope-follower-audio-driven-modulation",
+      "path": "/workspace/skill-library/mcp-publish/skills/envelope-follower-audio-driven-modulation.json",
+      "mcp_uri": "skill://envelope-follower-audio-driven-modulation",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "evolving-pad-unison-filter-swell-fifth",
       "path": "/workspace/skill-library/mcp-publish/skills/evolving-pad-unison-filter-swell-fifth.json",
       "mcp_uri": "skill://evolving-pad-unison-filter-swell-fifth",
@@ -205,6 +211,12 @@
       "id": "granular-dual-saw-ambient-epic-pad",
       "path": "/workspace/skill-library/mcp-publish/skills/granular-dual-saw-ambient-epic-pad.json",
       "mcp_uri": "skill://granular-dual-saw-ambient-epic-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "haas-plus-phase-offset-width-automated",
+      "path": "/workspace/skill-library/mcp-publish/skills/haas-plus-phase-offset-width-automated.json",
+      "mcp_uri": "skill://haas-plus-phase-offset-width-automated",
       "domain": "cinematic-synth"
     },
     {
@@ -289,6 +301,12 @@
       "id": "modulation-lfo-envelope-mod-matrix-routing",
       "path": "/workspace/skill-library/mcp-publish/skills/modulation-lfo-envelope-mod-matrix-routing.json",
       "mcp_uri": "skill://modulation-lfo-envelope-mod-matrix-routing",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "multiband-low-band-gentle-control-and-expand",
+      "path": "/workspace/skill-library/mcp-publish/skills/multiband-low-band-gentle-control-and-expand.json",
+      "mcp_uri": "skill://multiband-low-band-gentle-control-and-expand",
       "domain": "cinematic-synth"
     },
     {
@@ -382,6 +400,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "synth-string-section-unison-vibrato-fm-blend",
+      "path": "/workspace/skill-library/mcp-publish/skills/synth-string-section-unison-vibrato-fm-blend.json",
+      "mcp_uri": "skill://synth-string-section-unison-vibrato-fm-blend",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "trance-gate-sidechain-chop-texture",
       "path": "/workspace/skill-library/mcp-publish/skills/trance-gate-sidechain-chop-texture.json",
       "mcp_uri": "skill://trance-gate-sidechain-chop-texture",
@@ -398,6 +422,12 @@
       "path": "/workspace/skill-library/mcp-publish/skills/transcript-offline-machine-translate-glossary.json",
       "mcp_uri": "skill://transcript-offline-machine-translate-glossary",
       "domain": "agent-pipeline"
+    },
+    {
+      "id": "transient-splice-attack-body-hybrid-voice",
+      "path": "/workspace/skill-library/mcp-publish/skills/transient-splice-attack-body-hybrid-voice.json",
+      "mcp_uri": "skill://transient-splice-attack-body-hybrid-voice",
+      "domain": "cinematic-synth"
     },
     {
       "id": "traveler-walkthrough-control-track-filter-wt-animation",
@@ -484,6 +514,6 @@
       "domain": "agent-pipeline"
     }
   ],
-  "updated_at": "2026-10-03T16:16:37+00:00",
+  "updated_at": "2026-10-05T16:31:55+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

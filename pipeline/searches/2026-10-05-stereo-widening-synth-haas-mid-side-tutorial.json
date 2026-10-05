@@ -1,0 +1,113 @@
+{
+ "topic": "stereo widening synth haas mid side tutorial",
+ "date": "2026-10-05",
+ "params": {
+  "topic": "stereo widening synth haas mid side tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "uZ9WQDojQt8",
+   "title": "Headphones Are Not Stereo (mid side phase trickery)",
+   "channel": "Dan Worrall",
+   "duration": 970,
+   "view_count": 400441,
+   "url": "https://www.youtube.com/watch?v=uZ9WQDojQt8",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.3
+  },
+  {
+   "id": "msDDpbSvdPc",
+   "title": "Principles of Mixing 38 - Stereo Widening with Haas Effect and Phase",
+   "channel": "Composing Gloves",
+   "duration": 377,
+   "view_count": 3776,
+   "url": "https://www.youtube.com/watch?v=msDDpbSvdPc",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.29
+  },
+  {
+   "id": "Yw75RRaJGGE",
+   "title": "Reason 8: Mid/Side Processing For Clarity And Width",
+   "channel": "WNTER - Tutorials",
+   "duration": 525,
+   "view_count": 11223,
+   "url": "https://www.youtube.com/watch?v=Yw75RRaJGGE",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.53
+  },
+  {
+   "id": "Mz-Rla6WOJM",
+   "title": "STEREO WIDENING TECHNIQUES",
+   "channel": "STUDIO SLAVE",
+   "duration": 1594,
+   "view_count": 5140,
+   "url": "https://www.youtube.com/watch?v=Mz-Rla6WOJM",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36
+  },
+  {
+   "id": "UWW-ppRjmCQ",
+   "title": "FL STUDIO | Mixing Basics - Stereo Field",
+   "channel": "FL Studio",
+   "duration": 1002,
+   "view_count": 200929,
+   "url": "https://www.youtube.com/watch?v=UWW-ppRjmCQ",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.15
+  },
+  {
+   "id": "PZ_C4uJDd6k",
+   "title": "How I do Stereo Processing, Haas Effect, Making Stereo from Mono Sounds & Autopan!",
+   "channel": "Projektor",
+   "duration": 861,
+   "view_count": 458,
+   "url": "https://www.youtube.com/watch?v=PZ_C4uJDd6k",
+   "query": "stereo widening synth haas mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.83
+  }
+ ],
+ "dropped": [
+  {
+   "id": "je4ks2ybjic",
+   "why": "duration 160s"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "K4Pr9JDjrEg",
+   "why": "duration 140s"
+  },
+  {
+   "id": "ZnN3fTXM2Go",
+   "why": "duration 135s"
+  },
+  {
+   "id": "Tx0qUKRT4mc",
+   "why": "duration 129s"
+  },
+  {
+   "id": "hyYGU0Iny3k",
+   "why": "duration 126s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "Qps9woUGkvI",
+  "title": "Soldering Tutorial for Beginners: Five Easy Steps",
+  "url": "https://www.youtube.com/watch?v=Qps9woUGkvI",
+  "fetched_at": "2026-10-05T16:09:25.150961+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "oneTesla",
+  "duration": 237,
+  "ok": true,
+  "cue_count": 116,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Qps9woUGkvI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Qps9woUGkvI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

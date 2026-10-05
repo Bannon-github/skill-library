@@ -1,0 +1,168 @@
+{
+ "name": "drone-wavetable-artifact-drone",
+ "category": "drone",
+ "steps": [
+  {
+   "skill": "ambient-organic-pluck-pad-ladder-chorus-space",
+   "knobs": {
+    "decay": 0.9,
+    "sustain": 0.4,
+    "release": 0.7,
+    "warp": 0.275,
+    "cutoff": 650.0,
+    "env_amt": 1.9,
+    "res": 0.1,
+    "env2_decay": 0.425,
+    "dist_drive": 0.4,
+    "dist_mix": 0.225,
+    "noise_level": 0.04,
+    "drift_c": 3.5,
+    "vel_amp": 0.4,
+    "vel_cut": 1.5,
+    "chorus_fb": 0.6,
+    "chorus_depth": 5.5,
+    "chorus_hp": 300.0,
+    "rev_send": 0.3,
+    "rev_hp": 200.0,
+    "dly_mix": 0.3,
+    "mode": "base",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-stereo-ladder-lf-width",
+   "knobs": {
+    "slope": "lp24",
+    "stereo_off": 0.25,
+    "hp": 80.0,
+    "pan_spread": 0.4,
+    "lf_width_hz": 207.0521
+   }
+  },
+  {
+   "skill": "reverb-pads-type-choice-and-send-setup",
+   "knobs": {
+    "type": "hall",
+    "hall_rt60": 3.25,
+    "plate_rt60": 6.0,
+    "room_rt60": 1.0,
+    "predelay": 0.025,
+    "return_hp": 250.0,
+    "send": 0.275,
+    "high_cut": 0
+   }
+  },
+  {
+   "skill": "shimmer-reverb-pitchshift-plus12-feedback",
+   "knobs": {
+    "rt60": 5.5,
+    "feedback": 0.4,
+    "delay_s": 0.25,
+    "echo_hp": 300.0,
+    "echo_lp": 5500.0,
+    "wet_hp": 275.0,
+    "send": 0.21
+   }
+  },
+  {
+   "skill": "unison-odd-even-detune-width-clean-supersaw",
+   "knobs": {
+    "voices": 7,
+    "detune": 0.2,
+    "blend": 0.5,
+    "width": 0.4774,
+    "oscb": true,
+    "oscb_oct": 1,
+    "oscb_level": 0.4,
+    "sub_level": 0.3,
+    "noise_level": 0.04,
+    "eq_hp": 115.0,
+    "eq_hi_shelf_db": 2.0,
+    "comp_ratio": 3.0,
+    "attack": 1.1472,
+    "release": 3.2343,
+    "mode": "layer",
+    "layer_gain": 0.45
+   }
+  }
+ ],
+ "id": "1e3dea2737",
+ "found_in_round": 12,
+ "target_version": "v1.3",
+ "search_grid": {
+  "robust": 100.0,
+  "mean": 100.0,
+  "pass_count": 6,
+  "n": 6,
+  "reliable": true
+ },
+ "extended_grid": {
+  "robust": 98.73,
+  "mean": 99.85,
+  "pass_count": 12,
+  "n": 12,
+  "determinism": true
+ },
+ "lineage": [
+  {
+   "round": 0,
+   "id": "d6dc73c3dd",
+   "mutation": "seed",
+   "robust": 86.43
+  },
+  {
+   "round": 1,
+   "id": "bc6a12cbeb",
+   "mutation": "M6:ambient..lp_cut:1650.0->2183.2224; M6:ambient..hp_cut:325.0->441.2021; M7:ambient..lp_cut:2183.2224->1790.1739; M7:ambient..hp_cut:441.2021->319.8765",
+   "robust": 86.45
+  },
+  {
+   "round": 2,
+   "id": "210baaa419",
+   "mutation": "+traveler-walkthrough-fx-eq-chorus-delay-reverb (for M6); M7:ambient..lp_cut:1790.1739->1287.8989; M7:ambient..hp_cut:319.8765->222.1577; M7:traveler..low_db:-1.75->-1.1067",
+   "robust": 87.69
+  },
+  {
+   "round": 4,
+   "id": "93ee311d90",
+   "mutation": "+shimmer-reverb-pitchshift-plus12-feedback (for M6); M7:ambient..lp_cut:1287.8989->811.9333; M7:ambient..hp_cut:222.1577->150.0; M7:traveler..low_db:-1.1067->-0.5",
+   "robust": 90.44
+  },
+  {
+   "round": 5,
+   "id": "7f78e33c2a",
+   "mutation": "+unison-odd-even-detune-width-clean-supersaw (for M6); M7:ambient..lp_cut:811.9333->800.0",
+   "robust": 97.54
+  },
+  {
+   "round": 6,
+   "id": "e03aad5b93",
+   "mutation": "M15:ambient..attack:4.0->3.6904; M15:ambient..release:5.0->5.5632; M15:unison..attack:1.4->1.1472; M15:unison..release:2.75->3.2343",
+   "robust": 97.54
+  },
+  {
+   "round": 7,
+   "id": "cb8e5b6720",
+   "mutation": "-keysol-venus-high-wt-artifact-pulse-layer",
+   "robust": 97.95
+  },
+  {
+   "round": 8,
+   "id": "2aa0dea30d",
+   "mutation": "sub ambient-wavetable-scratch-spectral-morph-pad->ambient-organic-pluck-pad-ladder-chorus-space",
+   "robust": 99.87
+  },
+  {
+   "round": 9,
+   "id": "c0528adf3d",
+   "mutation": "M4:traveler..lf_width_hz:230.0->207.0521; M4:unison..width:0.5->0.4774",
+   "robust": 100.0
+  },
+  {
+   "round": 12,
+   "id": "1e3dea2737",
+   "mutation": "-traveler-walkthrough-fx-eq-chorus-delay-reverb",
+   "robust": 100.0
+  }
+ ]
+}

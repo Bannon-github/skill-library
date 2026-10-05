@@ -1,0 +1,154 @@
+{
+ "name": "gated-fifth-swell-trance-gate",
+ "category": "gated",
+ "steps": [
+  {
+   "skill": "evolving-pad-unison-filter-swell-fifth",
+   "knobs": {
+    "amp_attack": 0.05,
+    "release": 3.5,
+    "env2_attack": 2.0,
+    "cutoff": 700.0,
+    "env_amt": 4.0,
+    "res": 0.1,
+    "voices": 7,
+    "width": 0.85,
+    "detune": 0.21,
+    "lfo_amt": 0.25,
+    "fifth_voices": 4,
+    "fifth_level": 0.65,
+    "third_voice": false,
+    "comp_ratio": 2.5,
+    "rev_rt60": 4.0,
+    "rev_send": 0.325,
+    "chorus": false,
+    "mode": "base",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "trance-gate-sidechain-chop-texture",
+   "knobs": {
+    "pattern": [
+     1,
+     1,
+     1,
+     0
+    ],
+    "release": 0.12,
+    "hold": 0.575,
+    "power_chord": false,
+    "post_reverb": true,
+    "post_send": 0.225
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-stereo-ladder-lf-width",
+   "knobs": {
+    "slope": "lp24",
+    "stereo_off": 0.25,
+    "hp": 80.0,
+    "pan_spread": 0.4,
+    "lf_width_hz": 230.0
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-super-unison-wide-lead",
+   "knobs": {
+    "wave_pos": 0.125,
+    "voices": 6,
+    "detune": 0.3,
+    "width": 0.9,
+    "drive": 0.2,
+    "cutoff": 6396.7421,
+    "slope": "lp12",
+    "res": 0.175,
+    "attack": 0.9706,
+    "sustain": 0.8,
+    "release": 2.0,
+    "mode": "layer",
+    "layer_gain": 0.45
+   }
+  },
+  {
+   "skill": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+   "knobs": {
+    "low_db": -0.7341,
+    "mid_db": 1.0,
+    "high_db": 0.1687,
+    "chorus_mix": 0.225,
+    "delay": "dual",
+    "dly_mix": 0.17,
+    "rev": "hall",
+    "rev_send": 0.275
+   }
+  }
+ ],
+ "id": "8abde1a620",
+ "found_in_round": 9,
+ "target_version": "v1.3",
+ "search_grid": {
+  "robust": 99.44,
+  "mean": 99.82,
+  "pass_count": 6,
+  "n": 6,
+  "reliable": true
+ },
+ "extended_grid": {
+  "robust": 98.83,
+  "mean": 99.73,
+  "pass_count": 12,
+  "n": 12,
+  "determinism": true
+ },
+ "lineage": [
+  {
+   "round": 0,
+   "id": "b0f6216234",
+   "mutation": "seed",
+   "robust": 87.17
+  },
+  {
+   "round": 2,
+   "id": "fc56a4b95c",
+   "mutation": "M6:evolving..cutoff:475.0->587.9597; M6:evolving..env_amt:3.0->3.5976; M7:evolving..cutoff:587.9597->464.909",
+   "robust": 91.12
+  },
+  {
+   "round": 3,
+   "id": "992d92a597",
+   "mutation": "M6:evolving..cutoff:464.909->601.349; M6:evolving..env_amt:3.5976->4.0; M15:evolving..amp_attack:0.225->0.1483; M15:evolving..release:2.75->3.1676; M15:evolving..env2_attack:3.5->2.8531; M15:trance..release:0.07->0.1031",
+   "robust": 97.46
+  },
+  {
+   "round": 4,
+   "id": "0128c22f9b",
+   "mutation": "M15:evolving..amp_attack:0.1483->0.05; M15:evolving..release:3.1676->3.5; M15:evolving..env2_attack:2.8531->2.0; M15:trance..release:0.1031->0.12; +traveler-walkthrough-super-unison-wide-lead (for M6)",
+   "robust": 97.56
+  },
+  {
+   "round": 5,
+   "id": "aed73878f5",
+   "mutation": "+traveler-walkthrough-fx-eq-chorus-delay-reverb (for M6); M15:traveler..attack:0.65->0.471; M15:traveler..release:1.25->1.7092",
+   "robust": 98.18
+  },
+  {
+   "round": 6,
+   "id": "807e11c9e1",
+   "mutation": "M6:evolving..cutoff:601.349->700.0; M6:traveler..cutoff:5000.0->6396.7421; M6:traveler..high_db:-0.5->0.1687; M15:traveler..attack:0.471->0.3037; M15:traveler..release:1.7092->2.0",
+   "robust": 99.14
+  },
+  {
+   "round": 7,
+   "id": "496c0f6f7c",
+   "mutation": "M15:traveler..attack:0.3037->0.3",
+   "robust": 99.14
+  },
+  {
+   "round": 9,
+   "id": "8abde1a620",
+   "mutation": "knob traveler..low_db=-0.7341; knob traveler..delay=dual; knob traveler..attack=0.9706",
+   "robust": 99.44
+  }
+ ]
+}

@@ -188,6 +188,7 @@ def render_note(patch, midi, start_s, dur_s, vel, n_total, rng, globals_):
         vgain = np.where(np.abs(spread) < 1e-9, 1.0, 2 * blend) if nv > 1 else np.array([1.0])
         vgain = vgain / np.sqrt(np.sum(vgain ** 2))
         panmL, _ = mod_sum(f"pan:{li}")
+        lpitch = mod_sum(f"pitch:{li}")[0]
         levm = mod_sum(f"level:{li}")[0]
         wtpos = None
         if ly["osc"] == "wt":
@@ -204,7 +205,7 @@ def render_note(patch, midi, start_s, dur_s, vel, n_total, rng, globals_):
             outL *= lvl; outR *= lvl
         else:
             for v in range(nv):
-                cents = base_semi * 100 + spread[v] * det + pitch_c + detune_mod * spread[v]
+                cents = base_semi * 100 + spread[v] * det + pitch_c + lpitch + detune_mod * spread[v]
                 freq = note_to_hz(m_midi) * 2 ** (cents / 1200.0)
                 ph0 = rng.uniform(0, 1)
                 o = ly["osc"]
@@ -220,7 +221,9 @@ def render_note(patch, midi, start_s, dur_s, vel, n_total, rng, globals_):
                     am = ly["am"]
                     msh = {"saw": 0, "pulse": 1, "triangle": 2, "sine": 3}[am.get("shape", "pulse")]
                     mod = dsp.osc_va(freq * am.get("ratio", 1.0), msh, 0.5, ph0, SR)
-                    d = am.get("depth", 0.5) * (ctl[am["depth_src"]] if am.get("depth_src") else 1.0)
+                    dsrc = ctl[am["depth_src"]] if am.get("depth_src") else 1.0
+                    dsrc = dsrc[0] if isinstance(dsrc, tuple) else dsrc
+                    d = am.get("depth", 0.5) * dsrc
                     d = np.clip(d + mod_sum("am_depth")[0], 0, 1)
                     x = x * ((1 - d) + d * mod)
                 if o == "triangle":
@@ -251,8 +254,9 @@ def render_note(patch, midi, start_s, dur_s, vel, n_total, rng, globals_):
                 oct_ = oct_ + fl.get("env_amt_oct", 0.0) * ctl[fl["env"]]
             mL, mR = mod_sum(f"cutoff:{fi}")
             so = fl.get("stereo_off_oct", 0.0) / 2.0
-            cL = fl["cutoff"] * 2 ** np.clip(oct_ + mL - so, -8, 8)
-            cR = fl["cutoff"] * 2 ** np.clip(oct_ + mR + so, -8, 8)
+            base_c = fl.get("cutoff", 1000.0)
+            cL = base_c * 2 ** np.clip(oct_ + mL - so, -8, 8)
+            cR = base_c * 2 ** np.clip(oct_ + mR + so, -8, 8)
             ty = fl["type"]
             if ty in ("ladder", "diode"):
                 mode = {"lp24": 0, "lp12": 1, "lp6": 2}[fl.get("mode", "lp24")]
@@ -475,6 +479,11 @@ def render(patch, notes, seed, loop=None):
             ang = (p * patch.get("chord_split_amt", 1.0) + 1) * np.pi / 4
             mono = 0.5 * (nl + nr)
             nl, nr = mono * np.cos(ang) * np.sqrt(2), mono * np.sin(ang) * np.sqrt(2)
+        ns = patch.get("note_spread", 0.0)
+        if ns and len(sched) > 1 and not patch.get("chord_split"):
+            p = ns * (2 * k / (len(order) - 1) - 1)
+            ang = (p + 1) * np.pi / 4
+            nl, nr = nl * np.cos(ang) * np.sqrt(2), nr * np.sin(ang) * np.sqrt(2)
         L[t0:] += nl; R[t0:] += nr
     pk = np.max(np.abs(np.concatenate([L, R]))) + 1e-12
     L /= pk * 2; R /= pk * 2   # pre-FX headroom (-6 dBFS peak)
@@ -510,7 +519,7 @@ def limiter(L, R):
 def make_loop(L, R):
     """Seamless bar-aligned loop from the sustained region: equal-power crossfade of the region's
     continuation into its head (tail-wrap)."""
-    S = int(2.0 * SR)
+    S = int(sync_s("1bar") * SR)   # loop starts on a downbeat
     Ln = int(LOOP_LEN * SR)
     X = int(0.5 * SR)
     segL = L[S:S + Ln].copy(); segR = R[S:S + Ln].copy()

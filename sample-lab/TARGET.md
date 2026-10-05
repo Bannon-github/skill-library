@@ -63,3 +63,43 @@ even if metrics pass; findings are noted in the leaderboard.
 
 Metrics measure *technical deliverability and movement*, not taste or musicality. Passing = "safe to ship
 and not static", not "beautiful". The offline numpy/numba renderer approximates Web Audio / Traveler modules.
+
+## Change log
+
+**v1.1 — 2026-10-03, before iteration round 0** (after one single calibration render of an untouched skill
+default, used only to sanity-check the meters). Two metric *definitions* were measuring the wrong thing; no
+threshold, band, weight or pass bar was changed:
+
+1. **M8 harshness** — the 1/24-octave peak-vs-1/3-octave-smooth definition flags every individual harmonic of a
+   sustained tonal chord as a "resonance" (35 dB "prominence" on a dark, visibly non-harsh pad). Redefined as:
+   *max over 1/3-octave bands centred 1.5–8 kHz of (band level − mean of its two neighbouring 1/3-octave bands)*,
+   still ≤ 8 dB. This catches a genuine resonant bump (a band ≥ 8 dB above both neighbours) without punishing
+   harmonic structure.
+2. **M7 spectral balance** — included the 63 Hz octave, which is empty by design whenever a skill high-passes a pad
+   (e.g. mix-pads-role-eq-width-clarity s3, warm-heavenly s6) and so produced >100 dB "deviations". Pads, drones,
+   swells, gated and plucks are now evaluated 125 Hz–8 kHz; bass keeps 63 Hz–8 kHz.
+
+**v1.2 — 2026-10-03, after round 0, before any mutation round** (round 0 was discarded and re-run under v1.2).
+Again only definitions; no thresholds, weights or pass bar changed:
+
+3. **G6 clean start** — "first 2 ms peak ≤ −30 dBFS" rejected every percussive one-shot trimmed to its transient
+   (a 3–4 ms attack is not a click). Now: the file starts from silence (|x| ≤ 0.003 on the first samples) **and** the
+   first 1 ms contains no spike larger than the 1–10 ms peak.
+4. **M7 spectral balance** — also evaluated the octave *below* the lowest played fundamental (empty for plucks in
+   octave 4). Now evaluated from the octave band holding the lowest fundamental (min 125 Hz; bass 63 Hz) to 8 kHz.
+5. **Loop exports (G5/M15)** — the fixed 0.02 seam-step limit is smaller than a bright signal's normal per-sample
+   change, and comparing the last 50 ms with the first 50 ms compares *different rhythmic phases* of gated audio.
+   Now G5 (loop) = seam step ≤ max(0.02, 1.5 × the loop's own 99.9th-percentile sample step); M15 = max dB
+   difference between each seam window and the same window one bar away (≤ 1.5 dB). Loop exports also now start on
+   a downbeat (engine fix, not a metric change).
+
+**Implementation fix (no definition change) — after round 8:** the v1.2 M7 code selected bands whose upper edge
+exceeded f_low/√2 instead of f_low, so it still included the empty octave *below* the lowest fundamental for some
+pluck note sets. Code corrected to match item 4 above; the surviving population was re-scored ("rescore" entries in
+iterations.jsonl) before round 9.
+
+**v1.3 — after round 8 (before round 9).** M6's line fit still started at 125 Hz even when the lowest played
+fundamental is higher (plucks in octave 4), so an empty octave dragged the fit and made dark plucks look *brighter*
+(M6 = −5.5 dB/oct for a pluck whose real 250 Hz–8 kHz slope is ≈ −10.6). M6 now fits the same band range as M7
+(from the octave holding the lowest fundamental, min 125 Hz; bass from 63 Hz). Stricter, not looser; thresholds
+unchanged. Population re-scored before round 9.

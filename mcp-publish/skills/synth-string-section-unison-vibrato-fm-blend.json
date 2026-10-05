@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "synth-string-section-unison-vibrato-fm-blend",
+  "name": "Synth string section: 7-voice unison saw, subtle bow-brightness envelope, LFO-on-detune vibrato with ramped rate, low FM blend",
+  "goal": "Build a light cinematic string section from saws: 7-voice unison saw (~7% detune) into a low-resonance 12/6 dB low-pass ~400\u2013450 Hz with a little drive, slow amp envelope (A ~1.5 s, D ~5 s, S ~70%, R ~2 s, full velocity), a subtle filter envelope (+15% range) for bowing brightness, ensemble vibrato by LFO-modulating unison detune (1 s, small amount) whose rate is swept by a second ramp LFO, a second 7-voice osc FM'd by the first at ~30\u201335%, then low-cut, gentle top cut, big reverb, quiet quarter-note delay, and 20\u201330% soft clip on macros.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IK7cIBPKM1s",
+    "url": "https://www.youtube.com/watch?v=IK7cIBPKM1s",
+    "title": "How To Make A Cinematic String Section - Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IK7cIBPKM1s/agent-skill-synth-string-section-unison-vibrato-fm-blend.json"
+  },
+  "prerequisites": [
+    "Synth with \u22652 oscillators, unison with detune, osc FM from another osc, filter with drive, 2 envelopes, 2 LFOs with LFO\u2192LFO-rate routing, FX (EQ, reverb, delay, distortion), macros"
+  ],
+  "inputs": [
+    {
+      "name": "register",
+      "type": "enum",
+      "description": "sustained_chords | low_gritty",
+      "required": false
+    },
+    {
+      "name": "attack_s",
+      "type": "number",
+      "description": "Amp attack; 1.5 s default, 2\u20134 s for slow swells, short for immediate",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "string_section_patch",
+      "type": "synth-patch",
+      "description": "Lightweight cinematic string-section patch with ensemble vibrato and macro FX control"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Recreate from the parameter relationships; do not load or copy the vendor-bundled preset of the same name.",
+    "Delta vs evolving-pad-unison-filter-swell-fifth and chorus-ensemble-classic-vibrato-pad-modes: vibrato comes from LFO on unison detune with an LFO-swept rate plus osc-to-osc FM blend, aimed at orchestral strings rather than pads or chorus FX."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init patch. Osc1 saw, 7 unison voices, ~7% detune; set the two osc start controls the video zeroes (unnamed in the transcript; typically phase/random-phase) to 0 to avoid clicks and pops. Route through filter 1: analog low-pass 12 dB/oct (6 dB works even better), resonance 0, cutoff ~450 Hz (later ~400 Hz), a little drive.",
+      "tool": "osc-filter",
+      "expect": "Warm, dark saw ensemble"
+    },
+    {
+      "n": 2,
+      "action": "Amp envelope: attack ~1.5 s, decay ~5 s, sustain ~70%, release ~2 s. Velocity sensitivity 100%; polyphony ~24 voices so notes don't cut each other off.",
+      "tool": "amp-env",
+      "expect": "Swelling strings that respond to playing dynamics"
+    },
+    {
+      "n": 3,
+      "action": "Bowing brightness: envelope 2 attack ~0.5\u20130.6 s (rounded curve), decay ~4\u20135 s, sustain ~20\u201330%, release ~0.1 s \u2192 filter cutoff with a small amount (~15). Keep it subtle.",
+      "tool": "filter-env",
+      "expect": "Slight brightening at note start, then settles"
+    },
+    {
+      "n": 4,
+      "action": "Ensemble vibrato: LFO1 at 1 s period \u2192 unison detune amount ~0.06 (detune moves roughly 7% \u2192 10\u201311% and back) rather than modulating global pitch.",
+      "tool": "lfo",
+      "expect": "Many-players vibrato shimmer, pitch centre stable"
+    },
+    {
+      "n": 5,
+      "action": "Variable vibrato speed: LFO2 as a ramp, 4\u20135 s period \u2192 LFO1 rate (amount ~0.2) via the mod matrix so vibrato starts slow and speeds up, then resets.",
+      "tool": "mod-matrix",
+      "expect": "Vibrato speed changes over the held note"
+    },
+    {
+      "n": 6,
+      "action": "Second osc: 7 unison voices ~10% detune through filter 1, FM from osc1 at a low amount (~30\u201335%; high amounts sound bad).",
+      "tool": "fm",
+      "expect": "Saws blend into a more orchestral timbre"
+    },
+    {
+      "n": 7,
+      "action": "FX: low-cut rumble (keep lows only for bass use), take a little off the top to reduce fizz, reverb with high mix and large size (decay up to 4\u20135 s), quarter-note mono delay with low feedback and low mix, soft-clip distortion with drive up and mix ~20\u201330% (end of chain, or before reverb so the reverb carries the grit).",
+      "tool": "fx-chain",
+      "expect": "Glued, spacious strings with optional grit"
+    },
+    {
+      "n": 8,
+      "action": "Macros: one macro \u2192 distortion drive, one \u2192 reverb mix, and one macro to several FX at once (reverb + delay) for quick performance control.",
+      "tool": "macros",
+      "expect": "Single macro moves multiple FX coherently"
+    }
+  ],
+  "verification": [
+    "Holding a chord shows audible slow-to-fast vibrato change over ~4\u20135 s",
+    "Bypassing the FM osc makes the patch sound more like a plain electronic pad",
+    "Amp attack change (short vs 2\u20134 s) clearly changes the onset"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "strings",
+    "unison",
+    "vibrato",
+    "fm",
+    "filter-envelope",
+    "macros",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-05T16:31:33+00:00",
+  "mcp_resource": "skill://synth-string-section-unison-vibrato-fm-blend"
+}

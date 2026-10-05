@@ -1,0 +1,174 @@
+{
+ "category": "gated",
+ "layers": [
+  {
+   "osc": "saw",
+   "unison": 7,
+   "detune": 0.21,
+   "width": 0.85,
+   "level": 1.0,
+   "group": "A"
+  },
+  {
+   "osc": "saw",
+   "semi": 7,
+   "unison": 4,
+   "detune": 0.168,
+   "width": 0.68,
+   "level": 0.65,
+   "group": "A"
+  },
+  {
+   "osc": "wt",
+   "wt_table": "saw_tri_square_sine",
+   "wt_pos": 0.125,
+   "unison": 6,
+   "detune": 0.3,
+   "width": 0.9,
+   "level": 0.45,
+   "group": "A_v2"
+  }
+ ],
+ "filters": [
+  {
+   "type": "ladder",
+   "mode": "lp24",
+   "cutoff": 700.0,
+   "res": 0.1,
+   "keytrack": 0.5,
+   "env": "env2",
+   "env_amt_oct": 4.0,
+   "groups": [
+    "A"
+   ],
+   "stereo_off_oct": 0.25
+  },
+  {
+   "type": "svf_hp",
+   "cutoff": 80.0,
+   "res": 0.0,
+   "groups": [
+    "A"
+   ]
+  },
+  {
+   "type": "ladder",
+   "mode": "lp12",
+   "cutoff": 6396.7421,
+   "res": 0.175,
+   "drive": 0.2,
+   "keytrack": 0.3,
+   "groups": [
+    "A_v2"
+   ]
+  }
+ ],
+ "amp_env": {
+  "a": 0.05,
+  "d": 0.5,
+  "s": 1.0,
+  "r": 3.5,
+  "curve": 1.0
+ },
+ "envs": {
+  "env2": {
+   "a": 2.0,
+   "d": 2.0,
+   "s": 0.8,
+   "r": 3.5,
+   "curve": 1.0
+  }
+ },
+ "lfos": {
+  "lfo_cut": {
+   "shape": "sine",
+   "rate_hz": 0.08
+  }
+ },
+ "ctracks": {},
+ "mods": [
+  {
+   "src": "lfo_cut",
+   "dst": "cutoff:0",
+   "amt": 0.25
+  }
+ ],
+ "fx": [
+  {
+   "type": "comp",
+   "ratio": 2.5,
+   "thresh_rel_db": 2.0
+  },
+  {
+   "type": "eq",
+   "bands": [
+    {
+     "kind": "lowshelf",
+     "f": 200,
+     "gain": -0.7341
+    },
+    {
+     "kind": "peak",
+     "f": 1500,
+     "q": 0.8,
+     "gain": 1.0
+    },
+    {
+     "kind": "highshelf",
+     "f": 6000,
+     "gain": 0.1687
+    }
+   ]
+  },
+  {
+   "type": "chorus",
+   "mode": "classic",
+   "mix": 0.225,
+   "wet_hp_hz": 200
+  },
+  {
+   "type": "delay",
+   "mode": "dual",
+   "sync_l": "1/8d",
+   "sync_r": "1/4",
+   "fb_l": 0.4,
+   "fb_r": 0.3,
+   "mix": 0.17,
+   "mod_depth": 0.002,
+   "hp_hz": 150,
+   "lp_hz": 3500
+  },
+  {
+   "type": "reverb",
+   "rt60": 3.0,
+   "size": 1.4,
+   "send": 0.275,
+   "return_hp": 200
+  },
+  {
+   "type": "gate",
+   "pattern": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "release_s": 0.12,
+   "hold_frac": 0.575
+  },
+  {
+   "type": "reverb",
+   "rt60": 1.6,
+   "size": 0.8,
+   "send": 0.225,
+   "return_hp": 200
+  }
+ ],
+ "velocity": {},
+ "drift_c": 0.0,
+ "master": {
+  "target_lufs": -15.5
+ },
+ "note_spread": 0.4,
+ "lf_width_hz": 230.0
+}

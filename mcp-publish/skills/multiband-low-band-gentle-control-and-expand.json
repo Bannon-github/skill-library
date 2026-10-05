@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "id": "multiband-low-band-gentle-control-and-expand",
+  "name": "Multiband dynamics on a synth/pad bus: gentle low-band control, upward expand for weak lows, slow-attack top band",
+  "goal": "Use a multiband compressor as a dynamic EQ rather than a squasher on a pad/synth or mix bus: enable only the band you need (e.g. low band below ~92 Hz with ~1.5 dB range, opto-style, fairly fast attack) to tame bass build-up, use expansion with a +dB band gain to make a weak low end bigger but cleaner, and use a slow attack on a top band so transients pass while splashy highs are controlled\u2014then check tonal shift from the crossovers.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "T2poUGh6qPg",
+    "url": "https://www.youtube.com/watch?v=T2poUGh6qPg",
+    "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/T2poUGh6qPg/agent-skill-multiband-low-band-gentle-control-and-expand.json"
+  },
+  "prerequisites": [
+    "Multiband compressor/expander with per-band bypass, solo, crossover, range/threshold, attack/release and band gain"
+  ],
+  "inputs": [
+    {
+      "name": "problem",
+      "type": "enum",
+      "description": "boomy_lows | weak_lows | harsh_highs | occasional_midrange_buildup",
+      "required": true
+    },
+    {
+      "name": "crossover_hz",
+      "type": "number",
+      "description": "Band edge (example from transcript: 92 Hz for the low band)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bus_multiband_setup",
+      "type": "fx-chain",
+      "description": "Single-band (or few-band) dynamic control that leaves the rest of the spectrum untouched"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Source examples are drum bus and full mix; applying to pad/synth buses is a portable transfer of the same band logic, not a claim from the video.",
+    "Portable alias: multiband compressor = crossover split + per-band compressor/expander + sum (Web Audio: biquad LR crossovers + DynamicsCompressorNode per band).",
+    "Delta vs midside-eq-bass-focus-width-depth and sidechain-compressor-duck-synth-pads: frequency-split dynamics, not static M/S EQ or kick-keyed ducking."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Bypass all bands except the one covering the problem range; solo that band to hear exactly what it acts on.",
+      "tool": "multiband",
+      "expect": "Only the target range is processed"
+    },
+    {
+      "n": 2,
+      "action": "Boomy lows: on the low band start aggressive to find it (e.g. -24 dB range, very fast attack), then ease off; a slower attack lets the initial transient/punch through and reduces the range after it, while a very fast attack chokes it.",
+      "tool": "low-band",
+      "expect": "Low end controlled without losing punch"
+    },
+    {
+      "n": 3,
+      "action": "Real-world gentle setting: low band only, crossover ~92 Hz (acts like a dynamic low shelf), range ~1.5 dB, opto mode, fairly fast attack\u2014'a couple of dB' makes a big difference.",
+      "tool": "low-band",
+      "expect": "Bass feels more controlled; change is subtle in A/B"
+    },
+    {
+      "n": 4,
+      "action": "Weak lows: raise that band's gain (example +6 dB) and switch to expansion with lower threshold so the band stays down until a hit arrives, then returns to its boosted gain\u2014cleaner low end between hits, bigger on hits.",
+      "tool": "expander",
+      "expect": "Low band blooms on hits and recedes between them"
+    },
+    {
+      "n": 5,
+      "action": "Harsh highs: on a top band use a slow attack so fast bright transients pass while sustained splashy energy is reduced; if it gets dark, add band gain to restore controlled brightness.",
+      "tool": "high-band",
+      "expect": "Highs controlled but still bright"
+    },
+    {
+      "n": 6,
+      "action": "Set attack/release as with a wideband compressor: release roughly in time with the music and listen to the breathing. Use a band only for range problems that come and go (a static EQ handles constant ones).",
+      "tool": "dynamics",
+      "expect": "Compression breathes musically"
+    },
+    {
+      "n": 7,
+      "action": "A/B with the whole unit bypassed: splitting into bands with crossover filters shifts phase and tone even at zero gain reduction, so confirm the change is worth it.",
+      "tool": "ab-check",
+      "expect": "Net improvement verified vs bypass"
+    }
+  ],
+  "verification": [
+    "Gain reduction appears only on the enabled band",
+    "Low band shows ~1\u20133 dB reduction on loud passages, not constant heavy squash",
+    "Bypass A/B confirms improvement exceeds the crossover-induced tone shift"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "multiband",
+    "compression",
+    "expansion",
+    "dynamic-eq",
+    "low-end",
+    "mix-bus",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-05T16:31:33+00:00",
+  "mcp_resource": "skill://multiband-low-band-gentle-control-and-expand"
+}

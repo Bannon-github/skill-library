@@ -1,0 +1,63 @@
+{
+ "batch_id": "2026-10-05-morning-hunt",
+ "ran_at": "2026-10-05T16:31:55+00:00",
+ "ran_at_local": "2026-10-05 09:31 PT",
+ "routine": "Synth YouTube skill hunt",
+ "mcp_count_before": 79,
+ "mcp_count_after": 84,
+ "searches": [
+  "multiband compression on pads synth",
+  "parallel saturation synth pad tutorial",
+  "hybrid synth sample layer wavetable analog filter tutorial",
+  "cinematic pad sound design tutorial",
+  "stereo widening synth haas mid side tutorial",
+  "modulation envelope follower sound design tutorial"
+ ],
+ "published": [
+  {
+   "id": "transient-splice-attack-body-hybrid-voice",
+   "video_id": "C_NkGQqTdSo",
+   "title": "Wave Sequencing Synthesis: What Is It and How To Do It (Korg Wavestate Tutorial)"
+  },
+  {
+   "id": "envelope-follower-audio-driven-modulation",
+   "video_id": "odosCwWVL2c",
+   "title": "Using Envelope Followers for Modulation in Your Music! The How, the When, the Why"
+  },
+  {
+   "id": "multiband-low-band-gentle-control-and-expand",
+   "video_id": "T2poUGh6qPg",
+   "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus"
+  },
+  {
+   "id": "haas-plus-phase-offset-width-automated",
+   "video_id": "msDDpbSvdPc",
+   "title": "Principles of Mixing 38 - Stereo Widening with Haas Effect and Phase"
+  },
+  {
+   "id": "synth-string-section-unison-vibrato-fm-blend",
+   "video_id": "IK7cIBPKM1s",
+   "title": "How To Make A Cinematic String Section - Sound Design Tutorial"
+  }
+ ],
+ "rejected": [
+  {
+   "video_id": "bMjCfB1qzjo",
+   "reason": "Near-duplicate: unison saw + octave osc, LFO->cutoff, big reverb, slow amp attack/release, chorus are already covered by evolving-pad-unison-filter-swell-fifth, lush-stereo-saw-pad-random-pitch-texture and reverb-pads-type-choice-and-send-setup. Only small delta (fast-LFO tremolo sine layer, octave up for low notes) - too thin for a new skill."
+  },
+  {
+   "video_id": "UShjYsGgWcM",
+   "reason": "Deferred: long (4.2k-word) pads/drones transcript fetched; router said COVERED (lexicon-limited); not distilled this run due to batch size. Review next hunt."
+  },
+  {
+   "video_id": "nNsv4KWtazk",
+   "reason": "No YouTube transcript track available (router STOP_no_transcript). ASR not used per policy."
+  },
+  {
+   "video_id": "RM1aL81sg1w",
+   "reason": "Not fetched: mixing synth pads overlaps mix-pads-role-eq-width-clarity"
+  }
+ ],
+ "pipeline_note": "route.py --domain must be \"synth\" (lexicon name), not \"cinematic-synth\". Router reported COVERED for all 7 because synth lexicon lacks terms like envelope follower / wave sequencing; novelty_check (all NOVEL, max overlap 0.126) used as the actual gate. Consider extending pipeline/lexicons/synth.json.",
+ "pivoted_to_crypto": false
+}

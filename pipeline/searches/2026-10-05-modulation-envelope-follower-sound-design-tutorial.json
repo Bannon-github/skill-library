@@ -1,0 +1,109 @@
+{
+ "topic": "modulation envelope follower sound design tutorial",
+ "date": "2026-10-05",
+ "params": {
+  "topic": "modulation envelope follower sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "RDPf0ivboD4",
+   "title": "Modulators in Ableton Live: Envelope Follower - Ableton Tutorial + Project File",
+   "channel": "343 Labs",
+   "duration": 450,
+   "view_count": 15090,
+   "url": "https://www.youtube.com/watch?v=RDPf0ivboD4",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.59
+  },
+  {
+   "id": "Br2-ycVPTW8",
+   "title": "BeepStreet Drambo - Tutorial Part 33: Envelope Follower",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 725,
+   "view_count": 1084,
+   "url": "https://www.youtube.com/watch?v=Br2-ycVPTW8",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.02
+  },
+  {
+   "id": "MasVLTjZvGg",
+   "title": "Sound Design with Ableton Envelope Follower",
+   "channel": "Seed To Stage",
+   "duration": 1603,
+   "view_count": 43604,
+   "url": "https://www.youtube.com/watch?v=MasVLTjZvGg",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.82
+  },
+  {
+   "id": "vpRO0zOLNb4",
+   "title": "MaxForLive Modulation Devices in Live 10 for sound design",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 618,
+   "view_count": 30877,
+   "url": "https://www.youtube.com/watch?v=vpRO0zOLNb4",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.74
+  },
+  {
+   "id": "AcQUs-L6fM0",
+   "title": "Deep modulation in Ableton using envelope follower",
+   "channel": "Full Circle Audio",
+   "duration": 802,
+   "view_count": 2440,
+   "url": "https://www.youtube.com/watch?v=AcQUs-L6fM0",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.19
+  },
+  {
+   "id": "odosCwWVL2c",
+   "title": "Using Envelope Followers for Modulation in Your Music! The How, the When, the Why",
+   "channel": "Gavinski’s Tutorials",
+   "duration": 1261,
+   "view_count": 1722,
+   "url": "https://www.youtube.com/watch?v=odosCwWVL2c",
+   "query": "modulation envelope follower sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.12
+  }
+ ],
+ "dropped": [
+  {
+   "id": "4UIFDEJrYHw",
+   "why": "duration 192s"
+  },
+  {
+   "id": "bl05g2CKvG4",
+   "why": "duration 213s"
+  },
+  {
+   "id": "UxGswh6XLto",
+   "why": "already known"
+  },
+  {
+   "id": "ZIYw-A42VFA",
+   "why": "duration 98s"
+  },
+  {
+   "id": "6afbixi1HNs",
+   "why": "duration 157s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

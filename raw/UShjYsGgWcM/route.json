@@ -1,0 +1,159 @@
+{
+ "video_id": "UShjYsGgWcM",
+ "started_at": "2026-10-05T16:29:12.298047+00:00",
+ "outcome": "COVERED",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "UShjYsGgWcM",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/UShjYsGgWcM/graph.json",
+  "segments": 682,
+  "windows": 97,
+  "nodes": 87,
+  "edges": 149,
+  "nodes_by_type": {
+   "concept": 11,
+   "module": 16,
+   "tool": 3,
+   "param": 14,
+   "step": 34,
+   "value": 5,
+   "phrase": 4
+  },
+  "edges_by_type": {
+   "part-of": 16,
+   "mentions": 95,
+   "precedes": 33,
+   "sets": 5
+  },
+  "words": 4155
+ },
+ "gaps": {
+  "video_id": "UShjYsGgWcM",
+  "graph_nodes": 87,
+  "graph_edges": 149,
+  "terms_checked": 48,
+  "terms_covered": 43,
+  "gap_nodes": 5,
+  "gap_nodes_excl_phrases": 2,
+  "relations_checked": 5,
+  "gap_edges": 2,
+  "candidates": 0,
+  "kg": {
+   "videos": 5,
+   "nodes": 89,
+   "edges": 41,
+   "uncovered_nodes": 2,
+   "uncovered_edges": 4
+  },
+  "candidate_ids": []
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 4176,
+    "music_markers": 19
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 3,
+     "crypto": 0,
+     "drone": 1,
+     "sidehustle": 3,
+     "synth": 195
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 87,
+    "edges": 149
+   }
+  },
+  {
+   "q": "Q7 gap candidates found?",
+   "a": false,
+   "evidence": {
+    "gap_nodes_excl_phrases": 2,
+    "gap_edges": 2,
+    "candidates": 0
+   },
+   "then": "covered by library; KG updated; no new skill"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "ar(auto)",
+    "bn(auto)",
+    "nl-NL(auto)",
+    "en(auto)",
+    "fr-FR(auto)",
+    "de-DE(auto)",
+    "iw(auto)",
+    "hi(auto)",
+    "id(auto)",
+    "it(auto)",
+    "ja(auto)",
+    "ko(auto)",
+    "ml(auto)",
+    "pl(auto)",
+    "pt-BR(auto)",
+    "pa(auto)",
+    "ru(auto)",
+    "es-US(auto)",
+    "ta(auto)",
+    "te(auto)",
+    "uk(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-05T16:29:12.888796+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "IK7cIBPKM1s",
+  "title": "How To Make A Cinematic String Section - Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=IK7cIBPKM1s",
+  "fetched_at": "2026-10-05T16:26:30.622575+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 756,
+  "ok": true,
+  "cue_count": 378,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/IK7cIBPKM1s/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/IK7cIBPKM1s/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
