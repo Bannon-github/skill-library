@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "three-layer-complementary-pad-post-verb-lofi-degrade",
+  "name": "Three-layer complementary pad with post-reverb tape/lo-fi degradation and tail-lifting expander",
+  "goal": "Make a nostalgic, evolving ambient pad that is greater than its parts: split the spectrum into a dark low-pass+drive wavetable layer (LFO-only filter motion), a bright 24 dB band-pass layer with a long filter envelope and its own amp envelope, and a barely-there LFO'd band-pass noise layer; add very slow triangle LFOs on fine tune, subtle phaser/chorus, a ~90% wet big reverb, then degrade AFTER the reverb with stacked tape wow/flutter, drift, top-end bit-crush grit and ~3 kHz band-pass noise erosion, finishing with a subtle upward expander that lifts reverb-tail detail.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "UShjYsGgWcM",
+    "url": "https://www.youtube.com/watch?v=UShjYsGgWcM",
+    "title": "How To Create AMAZING Pads and Drones | A Sound Design Tutorial (Venus Theory)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/UShjYsGgWcM/agent-skill-three-layer-complementary-pad-post-verb-lofi-degrade.json"
+  },
+  "prerequisites": [
+    "Synth with layers (or several synth instances grouped to one bus), wavetable oscillators, LP and BP filters, multi-LFO/MSEG, noise source; FX: phaser, chorus, big algorithmic reverb, tape/VHS-style saturators, bit-crusher, noise-modulation (erosion-like) effect, multiband upward expander"
+  ],
+  "inputs": [
+    {
+      "name": "mood",
+      "type": "string",
+      "description": "Target picture (e.g. cold/distant storm, nostalgic/hazy) used to choose reverb and degradation amount",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "layered_pad_bus",
+      "type": "audio-bus",
+      "description": "Grouped three-layer pad with post-processing chain"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Plan three complementary layers that each own a spectral job: layer 1 low/low-mid body, layer 2 upper-mid/air, layer 3 a hint of modulated noise for space. Use one multitimbral synth or several synth instances grouped to one bus.",
+      "tool": "plan",
+      "expect": "Each layer alone sounds incomplete; together they read as one sound"
+    },
+    {
+      "n": 2,
+      "action": "Layer 1: wavetable oscs with LFO 1 \u2192 wavetable position on osc 1 and 2; low-pass with some resonance and filter drive; NO filter envelope\u2014cutoff moved only by a slow LFO (LFO 3); very long amp attack/decay/release.",
+      "tool": "layer",
+      "expect": "Dark, rumbling, slowly morphing body"
+    },
+    {
+      "n": 3,
+      "action": "Layer 2: wavetable oscs with their own LFO-swept positions; 24 dB/oct band-pass with high resonance; long filter envelope (long attack/decay/release, closing back) plus the shared slow LFO on cutoff; a DIFFERENT long amp envelope from layer 1 so movements don't line up.",
+      "tool": "layer",
+      "expect": "Upper-mid/high band that breathes on its own schedule"
+    },
+    {
+      "n": 4,
+      "action": "Layer 3: oscillators off, noise only at ~6% level; noise into a 12 dB/oct band-pass (high-passed noise, fair resonance), cutoff moved by LFO; LFO 1 \u2192 noise volume ~15%. All these LFOs run at a fraction of a cycle per second.",
+      "tool": "layer",
+      "expect": "Almost inaudible alone, but adds air/dimension when muted vs unmuted"
+    },
+    {
+      "n": 5,
+      "action": "Use slow triangle LFOs/MSEGs on the fine tuning (and/or global pitch) of layers 1 and 2 for constant gentle detune drift; add filter drive and in-synth subtle slow phaser and chorus.",
+      "tool": "mod",
+      "expect": "Held chords never sit static; slight warble/nostalgia"
+    },
+    {
+      "n": 6,
+      "action": "Insert a large modulated reverb ~90% wet on the pad bus (outer-space/lush style; try several reverbs and pick by the character they give).",
+      "tool": "reverb",
+      "expect": "Expansive washy pad"
+    },
+    {
+      "n": 7,
+      "action": "AFTER the reverb, stack degradation: tape sim with wow and flutter (pitch warble + saturation/glue) \u2192 second saturator adding heat and drift (combine saturators for different colours) \u2192 tape/lo-fi stage with a bit-crush style harmonic grit on the top end, hiss, wow/shake, colour biased brighter, slower warble speed \u2192 noise-modulation (erosion-like) with band-pass noise around ~3 kHz, kept low.",
+      "tool": "fx-chain",
+      "expect": "Hazy, crispy, 'old home movie' texture without losing the pad"
+    },
+    {
+      "n": 8,
+      "action": "Last: a very subtle multiband upward expander/compressor (OTT-style at low depth) after the reverb to lift decaying tail detail between notes.",
+      "tool": "dynamics",
+      "expect": "Tails and little details become audible in gaps between chords"
+    },
+    {
+      "n": 9,
+      "action": "Optionally place field recordings (e.g. rain) very low under it, and plan contrasting parts (warm low bass vs cold pad).",
+      "tool": "arrange",
+      "expect": "Pad sits in a scene rather than alone"
+    }
+  ],
+  "verification": [
+    "Muting any one layer audibly changes the whole; no two layers share identical envelopes",
+    "Noise layer is low (single-digit %) yet audible as a difference",
+    "Degradation stages are after the reverb in the chain",
+    "Upward expander is subtle and is the final stage"
+  ],
+  "tags": [
+    "pads",
+    "layering",
+    "ambient",
+    "lofi",
+    "tape-wow-flutter",
+    "bitcrush",
+    "noise-layer",
+    "upward-expansion",
+    "reverb",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "published_at": "2026-10-06T16:32:53+00:00",
+  "mcp_resource": "skill://three-layer-complementary-pad-post-verb-lofi-degrade",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source synth's own units.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Vital/Ableton/Dune/Massive X/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Distinct from soft-tape-saturation-pads-before-space: here tape/lo-fi degradation is deliberately placed AFTER the reverb for nostalgic texture, and the pad is built from three spectrally complementary layers.",
+    "The source is conceptual; it gives few exact values (24 dB BP, 12 dB BP, ~6% noise, LFO\u2192noise ~15%, ~90% wet, ~3 kHz noise). Tune the rest by ear."
+  ]
+}

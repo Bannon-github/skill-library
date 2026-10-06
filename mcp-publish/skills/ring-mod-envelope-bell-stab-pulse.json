@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "id": "ring-mod-envelope-bell-stab-pulse",
+  "name": "Ring modulation: envelope on mix for bells, on tune for stabs, LFO for pulsing pads",
+  "goal": "Use ring modulation (audio-rate amplitude modulation of a carrier by a modulator, heard as tremolo taken to the extreme) to get metallic and bell tones: a pluck-shaped envelope on ring-mod mix for bells, the same envelope on ring-mod detune for synthetic stabs, or a slow LFO on mix/detune for subtle pulsing pads, placed at the 'consider FM/ring mod' point of the patch workflow.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "0t0yrlwrvt4",
+    "url": "https://www.youtube.com/watch?v=0t0yrlwrvt4",
+    "title": "What is Ring Modulation? | Intro to Synths Part 12",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/0t0yrlwrvt4/agent-skill-ring-mod-envelope-bell-stab-pulse.json"
+  },
+  "prerequisites": [
+    "Synth with a ring modulator (insert or dedicated osc) exposing mix and detune/ratio, an envelope and an LFO assignable to them"
+  ],
+  "inputs": [
+    {
+      "name": "patch_type",
+      "type": "enum",
+      "description": "lead | pluck | pad | bass \u2014 decide first",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ringmod_patch",
+      "type": "synth-patch",
+      "description": "Bell, stab or pulsing pad variant"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide the patch type (lead, pluck, pad, bass), pick an initial oscillator and set the amp envelope and mono/poly mode around it.",
+      "tool": "plan",
+      "expect": "Basic playable voice before modulation"
+    },
+    {
+      "n": 2,
+      "action": "Shape the raw sound first (osc configuration, sync, unison), tweak amp envelope, then filters; this is where ring mod or FM is considered.",
+      "tool": "workflow",
+      "expect": "Ring mod added onto a working voice"
+    },
+    {
+      "n": 3,
+      "action": "Add a ring modulator (carrier \u00d7 modulator, carrier mix only). Learn the two controls: mix = effect strength; detune = splits the tone into two distinct pitches. Unlike FM, the lower pitch also shifts slightly as you detune, at a different rate from the upper pitch.",
+      "tool": "ring-mod",
+      "expect": "Metallic, more aggressive than FM, with bell-like partials"
+    },
+    {
+      "n": 4,
+      "action": "Bells: assign a pluck-shaped envelope (fast attack, short decay, low sustain) to ring-mod mix.",
+      "tool": "mod",
+      "expect": "Bright metallic strike that decays into the clean tone"
+    },
+    {
+      "n": 5,
+      "action": "Stabs: assign the same pluck envelope to ring-mod detune/tuning instead.",
+      "tool": "mod",
+      "expect": "Synthetic, stabby pitch-smeared attack"
+    },
+    {
+      "n": 6,
+      "action": "Pads: assign a slow LFO to ring-mod mix or detune at low depth.",
+      "tool": "mod",
+      "expect": "Subtle pulsing shimmer inside a sustained pad"
+    },
+    {
+      "n": 7,
+      "action": "Then add LFOs/envelopes on other params, portamento/legato and trigger/phase-reset choices to finish character; iterate back and forth.",
+      "tool": "mod",
+      "expect": "Finished patch"
+    }
+  ],
+  "verification": [
+    "Mix at 0 gives the clean carrier; raising it adds metallic partials",
+    "Envelope on mix yields a bell attack; on detune yields a stab",
+    "LFO depth on a pad is subtle (pulse, not tremolo chop)"
+  ],
+  "tags": [
+    "ring-mod",
+    "bells",
+    "metallic",
+    "stabs",
+    "pads",
+    "modulation",
+    "synth-workflow",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "published_at": "2026-10-06T16:32:53+00:00",
+  "mcp_resource": "skill://ring-mod-envelope-bell-stab-pulse",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source synth's own units.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Vital/Ableton/Dune/Massive X/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Distinct from audio-rate-am-wave-shape-texture (self-AM wave-shaping via VCA) and fm-carrier-modulator-ratio-basics: this covers ring-mod mix/detune envelope recipes.",
+    "Web Audio: multiply carrier by modulator with a GainNode whose gain AudioParam is driven by an OscillatorNode; crossfade dry/ring via gain for 'mix'."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "iBA0P7MTUEc",
+  "title": "Vital Sound Design: Build Cinematic Braams from Scratch",
+  "url": "https://www.youtube.com/watch?v=iBA0P7MTUEc",
+  "fetched_at": "2026-10-06T16:29:58.269897+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Fletch Does Dubstep",
+  "duration": 519,
+  "ok": true,
+  "cue_count": 174,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/iBA0P7MTUEc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/iBA0P7MTUEc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,53 @@
+{
+  "batch_id": "2026-10-06-morning-hunt",
+  "ran_at": "2026-10-06T16:33:25+00:00",
+  "ran_at_local": "2026-10-06 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "mcp_count_before": 84,
+  "mcp_count_after": 88,
+  "searches": [
+    "cinematic riser whoosh sound design synth tutorial",
+    "braam cinematic hit sound design tutorial",
+    "wavetable warp modes sync bend fm explained",
+    "reverse reverb swell sound design tutorial",
+    "parallel distortion saturation synth bass pad tutorial",
+    "fm bell metallic texture synth tutorial"
+  ],
+  "published": [
+    {
+      "id": "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+      "video_id": "iBA0P7MTUEc",
+      "title": "Vital Sound Design: Build Cinematic Braams from Scratch"
+    },
+    {
+      "id": "ring-mod-envelope-bell-stab-pulse",
+      "video_id": "0t0yrlwrvt4",
+      "title": "What is Ring Modulation? | Intro to Synths Part 12"
+    },
+    {
+      "id": "selective-saturation-and-lofi-grit-toolkit",
+      "video_id": "MWzBoFOOzco",
+      "title": "How to use DISTORTION properly in Ableton Live: Tips & tricks for Saturator, Redux, Erosion & more"
+    },
+    {
+      "id": "three-layer-complementary-pad-post-verb-lofi-degrade",
+      "video_id": "UShjYsGgWcM",
+      "title": "How To Create AMAZING Pads and Drones | A Sound Design Tutorial (Venus Theory)"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "ln1c3HkLTC0",
+      "reason": "Promo/off-domain: stock-library sponsored video-editing SFX layering overview (ambience, whooshes, risers/hits, practical), no synthesis procedure."
+    },
+    {
+      "video_id": "l9n6nApmmts",
+      "reason": "Promo/product-locked: install/activate/control tour of one commercial reverse-reverb plugin; no portable swell recipe."
+    }
+  ],
+  "notes": [
+    "Pipeline .venv was missing at start (box restored without rebuildable envs); rebuilt via python -m venv + pipeline/requirements.txt and ran scripts/ensure_env.sh.",
+    "Wavetable warp-modes search returned 0 results with transcripts; retry with different wording.",
+    "UShjYsGgWcM (deferred 2026-10-05) distilled this run."
+  ]
+}

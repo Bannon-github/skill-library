@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 84,
+  "count": 88,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -109,6 +109,12 @@
       "id": "chorus-ensemble-classic-vibrato-pad-modes",
       "path": "/workspace/skill-library/mcp-publish/skills/chorus-ensemble-classic-vibrato-pad-modes.json",
       "mcp_uri": "skill://chorus-ensemble-classic-vibrato-pad-modes",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-braam-sine-sub-dual-saw-pitch-curve-formant.json",
+      "mcp_uri": "skill://cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
       "domain": "cinematic-synth"
     },
     {
@@ -346,6 +352,18 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "ring-mod-envelope-bell-stab-pulse",
+      "path": "/workspace/skill-library/mcp-publish/skills/ring-mod-envelope-bell-stab-pulse.json",
+      "mcp_uri": "skill://ring-mod-envelope-bell-stab-pulse",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "selective-saturation-and-lofi-grit-toolkit",
+      "path": "/workspace/skill-library/mcp-publish/skills/selective-saturation-and-lofi-grit-toolkit.json",
+      "mcp_uri": "skill://selective-saturation-and-lofi-grit-toolkit",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "shimmer-reverb-pitchshift-plus12-feedback",
       "path": "/workspace/skill-library/mcp-publish/skills/shimmer-reverb-pitchshift-plus12-feedback.json",
       "mcp_uri": "skill://shimmer-reverb-pitchshift-plus12-feedback",
@@ -403,6 +421,12 @@
       "id": "synth-string-section-unison-vibrato-fm-blend",
       "path": "/workspace/skill-library/mcp-publish/skills/synth-string-section-unison-vibrato-fm-blend.json",
       "mcp_uri": "skill://synth-string-section-unison-vibrato-fm-blend",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "three-layer-complementary-pad-post-verb-lofi-degrade",
+      "path": "/workspace/skill-library/mcp-publish/skills/three-layer-complementary-pad-post-verb-lofi-degrade.json",
+      "mcp_uri": "skill://three-layer-complementary-pad-post-verb-lofi-degrade",
       "domain": "cinematic-synth"
     },
     {

@@ -1,0 +1,161 @@
+{
+ "topic": "reverse reverb swell sound design tutorial",
+ "date": "2026-10-06",
+ "params": {
+  "topic": "reverse reverb swell sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "l9n6nApmmts",
+   "title": "How to Make Reverse Reverb Swells in Any DAW — Reverse Reverb Plugin Tutorial",
+   "channel": "bixlab",
+   "duration": 343,
+   "view_count": 174,
+   "url": "https://www.youtube.com/watch?v=l9n6nApmmts",
+   "query": "reverse reverb swell sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.62,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "gNoltmk77DM",
+   "title": "Reverse Reverb Swells on Any Sound | RONE Reverse Reverb Complete Guide",
+   "channel": "RONE PLUGINS",
+   "duration": 342,
+   "view_count": 85,
+   "url": "https://www.youtube.com/watch?v=gNoltmk77DM",
+   "query": "reverse reverb swell sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.47,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "kkdr30yN6VI",
+   "title": "Preverb VST: Instant Reverse Reverb Swells for Any Sound",
+   "channel": "Isotonik Studios",
+   "duration": 573,
+   "view_count": 999,
+   "url": "https://www.youtube.com/watch?v=kkdr30yN6VI",
+   "query": "reverse reverb swell sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "njZkN5xVmSI",
+   "title": "Reverse Reverb Was A 6-Step Secret. Now It's A Plugin.",
+   "channel": "Low End Candy",
+   "duration": 330,
+   "view_count": 2044,
+   "url": "https://www.youtube.com/watch?v=njZkN5xVmSI",
+   "query": "reverse reverb swell sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.16,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ndWhsPtNH9c",
+   "why": "duration 139s"
+  },
+  {
+   "id": "zxGim2OVOtg",
+   "why": "duration 155s"
+  },
+  {
+   "id": "vexSk8gF8t4",
+   "why": "duration 15s"
+  },
+  {
+   "id": "8PCzaO4_g5E",
+   "why": "duration 14s"
+  },
+  {
+   "id": "tVJ59o_nVvo",
+   "why": "duration 68s"
+  },
+  {
+   "id": "9DsctH8lyYY",
+   "why": "duration 56s"
+  },
+  {
+   "id": "2Ny3DHcLlYo",
+   "why": "duration 61s"
+  },
+  {
+   "id": "TDpxscSV3CA",
+   "why": "duration 14s"
+  },
+  {
+   "id": "mibkBnzvSO4",
+   "why": "duration 140s"
+  },
+  {
+   "id": "M30GdihLQv0",
+   "why": "duration 50s"
+  },
+  {
+   "id": "g3Oi7EILT9E",
+   "why": "duration 50s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

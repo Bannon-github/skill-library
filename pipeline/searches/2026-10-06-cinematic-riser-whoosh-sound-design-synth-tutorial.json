@@ -1,0 +1,181 @@
+{
+ "topic": "cinematic riser whoosh sound design synth tutorial",
+ "date": "2026-10-06",
+ "params": {
+  "topic": "cinematic riser whoosh sound design synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Qj2bLCq1PA4",
+   "title": "Soundpaint Shepard Tones Walkthrough",
+   "channel": "Soundpaint",
+   "duration": 1119,
+   "view_count": 1908,
+   "url": "https://www.youtube.com/watch?v=Qj2bLCq1PA4",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.14,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "YIWgFqtb7w8",
+   "title": "Macro Daddy X: How to Build Infinite Sound Generators in Ableton",
+   "channel": "CRACKD RECORDS",
+   "duration": 746,
+   "view_count": 1527,
+   "url": "https://www.youtube.com/watch?v=YIWgFqtb7w8",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.09,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "lad6AfCPRnI",
+   "title": "Improve Your Sound Design in Five Minutes Using Premiere Pro | @filmriot x Adobe Video",
+   "channel": "Adobe Video",
+   "duration": 312,
+   "view_count": 22793,
+   "url": "https://www.youtube.com/watch?v=lad6AfCPRnI",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.68,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "eqqWMBU5y6c",
+   "title": "You DON'T Need More Sound Effects. You need this Instead!",
+   "channel": "Multiply Sound",
+   "duration": 339,
+   "view_count": 165668,
+   "url": "https://www.youtube.com/watch?v=eqqWMBU5y6c",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.11,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "zRfmhwJEZKk",
+   "title": "Audio for Midjourney (2025): Sound Design, Music, Voice & Pro Exports for AI Content",
+   "channel": "Wealth Warrior",
+   "duration": 327,
+   "view_count": 10,
+   "url": "https://www.youtube.com/watch?v=zRfmhwJEZKk",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "sh0I6GyQRWA",
+   "title": "Wavetable: Create Powerful and Textured Whoosh FX in Live 12",
+   "channel": "DopperFX",
+   "duration": 259,
+   "view_count": 19,
+   "url": "https://www.youtube.com/watch?v=sh0I6GyQRWA",
+   "query": "cinematic riser whoosh sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.65,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "fr"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "xbsiTQdep1g",
+   "why": "duration 21s"
+  },
+  {
+   "id": "aol8Y6f-Mh0",
+   "why": "duration 28s"
+  },
+  {
+   "id": "4gjE3W_rDs0",
+   "why": "duration 118s"
+  },
+  {
+   "id": "PhJYXiGhlsI",
+   "why": "duration 5s"
+  },
+  {
+   "id": "lSHTZ-XPg_o",
+   "why": "duration 36s"
+  },
+  {
+   "id": "7EgZpPyfHT4",
+   "why": "negative title signal"
+  },
+  {
+   "id": "trhmnQ9Gv6E",
+   "why": "duration 61s"
+  },
+  {
+   "id": "c01Oqf69CC4",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
