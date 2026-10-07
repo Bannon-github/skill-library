@@ -1,0 +1,62 @@
+{
+  "video_id": "K4osI9yrQQY",
+  "title": "Reverse-Reverb erstellen in Cubase 11 | Artist & Pro Tutorial",
+  "url": "https://www.youtube.com/watch?v=K4osI9yrQQY",
+  "fetched_at": "2026-10-07T16:28:36.327168+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de-DE",
+  "channel": "Paul Marx - MeinHomestudio - Musikproduktion",
+  "duration": 406,
+  "ok": true,
+  "cue_count": 143,
+  "route": "auto-target-from-dub-track",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/K4osI9yrQQY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/K4osI9yrQQY/raw.txt",
+  "translated": false,
+  "dub_derived": true,
+  "note": "English auto track of a YouTube AI-dub audio track (speech already machine-translated).",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "de-DE"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-US(auto)",
+        "de(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:de",
+        "4:auto-target-from-dub-track:en-US",
+        "5:original-plus-machine-translation:de"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (de)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch auto-target-from-dub-track (en-US)",
+      "a": true
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    }
+  ]
+}

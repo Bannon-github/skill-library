@@ -1,0 +1,127 @@
+{
+ "topic": "phase distortion synthesis explained",
+ "date": "2026-10-07",
+ "params": {
+  "topic": "phase distortion synthesis explained",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "wqc8rZnzTVI",
+   "title": "FM Synthesis Explained: A Musician's Guide To FM 🔥 | feat. Kilohearts Phase Plant",
+   "channel": "Venus Theory",
+   "duration": 1421,
+   "view_count": 176535,
+   "url": "https://www.youtube.com/watch?v=wqc8rZnzTVI",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.12
+  },
+  {
+   "id": "A2q2MpeVtXU",
+   "title": "FM and Phase Modulation Explained in Xfer's SERUM",
+   "channel": "Ghosthack",
+   "duration": 919,
+   "view_count": 26218,
+   "url": "https://www.youtube.com/watch?v=A2q2MpeVtXU",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.71
+  },
+  {
+   "id": "EW12RYc7QRA",
+   "title": "GroovyDSP: Introduction to Phase Distortion Synthesis",
+   "channel": "Groovy DSP",
+   "duration": 1229,
+   "view_count": 20623,
+   "url": "https://www.youtube.com/watch?v=EW12RYc7QRA",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.66
+  },
+  {
+   "id": "lE_CG3bagwg",
+   "title": "Phase Distortion Synthesis in Bitwig's Grid",
+   "channel": "The Bitwig Mycelium",
+   "duration": 774,
+   "view_count": 3040,
+   "url": "https://www.youtube.com/watch?v=lE_CG3bagwg",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.24
+  },
+  {
+   "id": "j1pgkxn8lVQ",
+   "title": "Synthesizers 3 ;  wavetable, frequency modulation, phase modulation/distortion synthesis basic's",
+   "channel": "brent cartwright",
+   "duration": 858,
+   "view_count": 1533,
+   "url": "https://www.youtube.com/watch?v=j1pgkxn8lVQ",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.09
+  },
+  {
+   "id": "sCNOfTQUNg8",
+   "title": "CM Tools Masterclass #1: Phase Distortion Synthesis with BazilleCM",
+   "channel": "Computer Music",
+   "duration": 346,
+   "view_count": 914,
+   "url": "https://www.youtube.com/watch?v=sCNOfTQUNg8",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.98
+  },
+  {
+   "id": "qEkqzGPYatc",
+   "title": "FM Synthesis EXPLAINED For Audio Programming",
+   "channel": "WolfSound",
+   "duration": 2182,
+   "view_count": 2484,
+   "url": "https://www.youtube.com/watch?v=qEkqzGPYatc",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.7
+  },
+  {
+   "id": "TrkXgDQbhjk",
+   "title": "What is a  Phase Distortion Oscillator and why is it 😎",
+   "channel": "Rumble channel",
+   "duration": 1004,
+   "view_count": 3680,
+   "url": "https://www.youtube.com/watch?v=TrkXgDQbhjk",
+   "query": "phase distortion synthesis explained tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.28
+  }
+ ],
+ "dropped": [
+  {
+   "id": "QXqcJX3zvEs",
+   "why": "duration 3091s"
+  },
+  {
+   "id": "n0AO7_RBX6g",
+   "why": "duration 14s"
+  },
+  {
+   "id": "HeTk6JDlkqY",
+   "why": "duration 3411s"
+  },
+  {
+   "id": "9JnnG7T7tVI",
+   "why": "duration 129s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

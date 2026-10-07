@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-06T16:33:25+00:00",
-  "entry_count": 82,
+  "updated_at": "2026-10-07T16:37:09+00:00",
+  "entry_count": 89,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -80,14 +80,14 @@
       "topic": "drone-to-3d-gaussian-splat",
       "transcript_source": "youtube-auto-en",
       "transcript_file": "transcripts/MDNBxM4FlgE.en.txt",
-      "summary": "Volyraph browser app: create project, upload video under 5GB, cloud GPU ~1\u20131.5h, then edit/annotate/map the splat in-browser.",
+      "summary": "Volyraph browser app: create project, upload video under 5GB, cloud GPU ~1–1.5h, then edit/annotate/map the splat in-browser.",
       "skills": [
         {
           "name": "volyraph-browser-splat-pipeline",
           "goal": "Video to splat entirely in browser.",
           "steps": [
             "Sign in to Volyraph; create and open a project.",
-            "Capture \u2192 Standard video; upload MP4/MOV under 5GB.",
+            "Capture → Standard video; upload MP4/MOV under 5GB.",
             "Wait for queue and cloud GPU processing.",
             "Edit, annotate, place on map; share/export."
           ]
@@ -203,9 +203,9 @@
           "goal": "Build a simple low-poly pine tree using cylinder and circle meshes with extrude/scale/duplicate.",
           "steps": [
             "Delete unneeded default mesh if present.",
-            "Shift+A \u2192 Mesh \u2192 Cylinder; in Add Cylinder adjust vertices down (e.g. 8) for low poly.",
+            "Shift+A → Mesh → Cylinder; in Add Cylinder adjust vertices down (e.g. 8) for low poly.",
             "Tab Edit mode; scale trunk; select top face, move up, S scale for trunk taper; optional Shade Smooth Auto Smooth.",
-            "Shift+A \u2192 Mesh \u2192 Circle (e.g. 12 sides).",
+            "Shift+A → Mesh → Circle (e.g. 12 sides).",
             "Edit mode, edge select; E then Z to extrude on Z; S scale; Ctrl+R loop cuts and scale for foliage layers.",
             "L select linked pieces as needed; Shift+D duplicate foliage layers; R/S (and R then Z) to vary layers.",
             "Stack scaled/rotated circle extrusions above the trunk for a pine silhouette."
@@ -228,11 +228,11 @@
           "goal": "Start Blender the right way: Layout workspace focus, three-button mouse nav, G/S/R, Edit mode verts/edges/faces, then freeform practice.",
           "steps": [
             "Write a short learning map: end goal plus key concepts/procedures to learn (skip unrelated tutorials).",
-            "Open Blender; select Layout workspace; mentally ignore top menus, Outliner, Properties, Timeline\u2014focus on 3D Viewport and default cube.",
+            "Open Blender; select Layout workspace; mentally ignore top menus, Outliner, Properties, Timeline—focus on 3D Viewport and default cube.",
             "Use a three-button mouse: scroll zoom; MMB drag orbit; Shift+MMB pan. Practice small incremental orbits from screen center.",
             "Object mode: G grab/move, S scale, R rotate the cube; click to confirm.",
             "Tab into Edit mode. Selection modes: 1 vertex, 2 edge, 3 face. G/R/S components; Shift-click or box-select (wireframe for through-select).",
-            "Tab to Object mode; Shift+A \u2192 Mesh to add primitives at the 3D cursor; G to place; edit in Edit mode.",
+            "Tab to Object mode; Shift+A → Mesh to add primitives at the 3D cursor; G to place; edit in Edit mode.",
             "Delete extras in Object mode with Shift+X, Enter. Build rough recognizable shapes without tutorials to cement fundamentals."
           ]
         }
@@ -242,7 +242,7 @@
       "id": "blender-chatgpt-ai-scripting",
       "video_id": "x60zHw_z4NM",
       "url": "https://www.youtube.com/watch?v=x60zHw_z4NM",
-      "title": "Blender Tutorial \u2013 How to Use AI to Create 3D Models (ChatGPT and Blender)",
+      "title": "Blender Tutorial – How to Use AI to Create 3D Models (ChatGPT and Blender)",
       "topic": "3d-blender",
       "transcript_source": "youtube-manual-en",
       "transcript_file": "raw/x60zHw_z4NM/raw.txt",
@@ -256,7 +256,7 @@
             "Open chat.openai.com; prompt e.g. write a Blender script that creates a gold ball (include the word script).",
             "Copy the code block from ChatGPT.",
             "In Blender, select default cube, press X and confirm delete for a blank start.",
-            "Open Scripting workspace tab \u2192 New \u2192 paste (Ctrl/Cmd+V).",
+            "Open Scripting workspace tab → New → paste (Ctrl/Cmd+V).",
             "Click Run; switch back to Layout; enable Material Preview shading to see material color.",
             "If the script errors, copy the error into ChatGPT and retry with the fixed script."
           ]
@@ -275,7 +275,7 @@
       "skills": [
         {
           "name": "blender-gamedev-learning-path-advice",
-          "goal": "Follow a game-dev-oriented Blender learning order: basics \u2192 low-poly assets \u2192 early engine export \u2192 optional sculpt/bake.",
+          "goal": "Follow a game-dev-oriented Blender learning order: basics → low-poly assets → early engine export → optional sculpt/bake.",
           "steps": [
             "Optionally do a short beginner control/UI tutorial (donut parts early only if used).",
             "Prioritize low-poly game-asset fundamentals where polygon count matters over dense non-game scenes.",
@@ -313,12 +313,12 @@
           "steps": [
             "Optional: delete Camera and Light (right-click Delete) to declutter.",
             "Set cube dimensions for the plate (e.g. 100 mm wide, 12 deep, 3 thick); rename to bracket.",
-            "Add \u2192 Mesh \u2192 Cylinder; before confirming, open Add Cylinder panel and raise Vertices (e.g. 256).",
+            "Add → Mesh → Cylinder; before confirming, open Add Cylinder panel and raise Vertices (e.g. 256).",
             "Size cutter diameter with clearance (e.g. 5.6 mm) and height taller than plate (e.g. 10 mm); rename hole cutter.",
-            "Duplicate cutters, position along plate (set Location numerically); Shift-select cutters \u2192 Join into one cutter object.",
-            "Select bracket \u2192 Modifiers \u2192 Add Boolean \u2192 Object = hole cutter, Operation Difference \u2192 Apply.",
+            "Duplicate cutters, position along plate (set Location numerically); Shift-select cutters → Join into one cutter object.",
+            "Select bracket → Modifiers → Add Boolean → Object = hole cutter, Operation Difference → Apply.",
             "Delete cutter object(s); verify holes. Tab Edit mode; Face select; E extrude an edge/face to form an L-bracket flange as needed.",
-            "Optional: enable MeasureIt add-on (Edit\u2192Preferences\u2192Add-ons) to measure hole diameters in mm."
+            "Optional: enable MeasureIt add-on (Edit→Preferences→Add-ons) to measure hole diameters in mm."
           ]
         }
       ]
@@ -341,7 +341,7 @@
             "Tab Edit mode; A select all; Ctrl+R loop cut (scroll for 2 cuts); place cuts; wireframe view to move side verts for body shape.",
             "Face select roof region; E extrude upward; pull windshield verts back on Y for rake.",
             "Object mode Ctrl+A Apply All Transforms; Edit mode again; select window faces; I inset then E extrude inward for glass recesses.",
-            "Object mode; Shift+A Mesh \u2192 Cylinder for a tire; S and S+Z to tire proportions; Edit mode I/E for hub detail.",
+            "Object mode; Shift+A Mesh → Cylinder for a tire; S and S+Z to tire proportions; Edit mode I/E for hub detail.",
             "Front orthographic view; R rotate tire with Ctrl for snapped angle; rename objects; duplicate wheels to four corners."
           ]
         }
@@ -362,10 +362,10 @@
           "goal": "Prepare a Blender 4+ scene for stylized low-poly character work: Eevee, Standard view transform, incremental saves, image references, Rigify metarig scale.",
           "steps": [
             "Render Properties: Engine Eevee; ensure Ambient Occlusion, Bloom, Screen Space Reflections, Motion Blur off.",
-            "Color Management \u2192 View Transform \u2192 Standard.",
-            "Delete default cube if desired; File \u2192 Save As into a project folder; use Ctrl+S often and Ctrl+Alt+S for incremental saves.",
-            "Shift+A \u2192 Image \u2192 Reference; import front and side images.",
-            "Edit \u2192 Preferences \u2192 Add-ons \u2192 enable Rigify; Shift+A \u2192 Armature \u2192 Human Meta-Rig for human scale.",
+            "Color Management → View Transform → Standard.",
+            "Delete default cube if desired; File → Save As into a project folder; use Ctrl+S often and Ctrl+Alt+S for incremental saves.",
+            "Shift+A → Image → Reference; import front and side images.",
+            "Edit → Preferences → Add-ons → enable Rigify; Shift+A → Armature → Human Meta-Rig for human scale.",
             "Select both references; front ortho view; Alt+G/Alt+S/Alt+R reset as needed; R then X 90 to stand images up.",
             "G/S and axis locks (G+Z, G+Y, R+Z 90) to align feet to ground and match metarig height; set reference Opacity ~0.5."
           ]
@@ -387,8 +387,8 @@
           "goal": "Install Blender, set useful preferences, and learn viewport nav plus G/R/S and Object/Edit mode.",
           "steps": [
             "Download Blender from blender.org and install for your OS; open and click outside splash to dismiss.",
-            "Edit \u2192 Preferences \u2192 Interface: adjust Resolution Scale if UI is tiny/huge.",
-            "Preferences \u2192 System: enable CUDA/GPU Cycles device if available; raise Undo Steps (e.g. 100); Save Preferences.",
+            "Edit → Preferences → Interface: adjust Resolution Scale if UI is tiny/huge.",
+            "Preferences → System: enable CUDA/GPU Cycles device if available; raise Undo Steps (e.g. 100); Save Preferences.",
             "Viewport: MMB orbit, Shift+MMB pan, scroll zoom; optional gizmo orbit/zoom/pan; numpad/gizmo axis views.",
             "Learn Move/Rotate/Scale tools and hotkeys G, R, S; axis-constrain with X/Y/Z; Tab for Edit mode."
           ],
@@ -399,13 +399,13 @@
           "goal": "Model a cookie with chips on a tray, assign materials, light with an Area light, frame camera, and render.",
           "steps": [
             "Object mode: add Cylinder as cookie base (Shift while drawing for 1:1 circle); scale Z flatter; right-click Shade Smooth; rename to cookie.",
-            "Shift+A \u2192 Mesh \u2192 UV Sphere for a chip; S scale; G then Z place into cookie; Shade Smooth; Shift+D duplicate many chips.",
+            "Shift+A → Mesh → UV Sphere for a chip; S scale; G then Z place into cookie; Shade Smooth; Shift+D duplicate many chips.",
             "Add thin Cube tray (Shift for square); Tab Edit mode; face select top; I inset; Extrude region downward for tray lip; Tab Object mode; position under cookie.",
-            "Select cookie \u2192 Material Properties \u2192 New \u2192 set Base Color (eyedropper optional); switch Viewport to Material Preview.",
-            "Select one chip \u2192 set dark Base Color; Shift-select all chips ending on the colored one; Ctrl+L \u2192 Link Materials.",
-            "Material on tray (e.g. blue). Delete default light; Shift+A \u2192 Light \u2192 Area; raise Power (~800\u2013850), lower temperature (~4000K); move/rotate to light cookie.",
-            "Numpad 0 camera view; N \u2192 View \u2192 Lock Camera to View; compose shot; uncheck Lock Camera to View.",
-            "Render Properties: choose Eevee or Cycles (GPU if available); Render \u2192 Render Image (F12); Image \u2192 Save As."
+            "Select cookie → Material Properties → New → set Base Color (eyedropper optional); switch Viewport to Material Preview.",
+            "Select one chip → set dark Base Color; Shift-select all chips ending on the colored one; Ctrl+L → Link Materials.",
+            "Material on tray (e.g. blue). Delete default light; Shift+A → Light → Area; raise Power (~800–850), lower temperature (~4000K); move/rotate to light cookie.",
+            "Numpad 0 camera view; N → View → Lock Camera to View; compose shot; uncheck Lock Camera to View.",
+            "Render Properties: choose Eevee or Cycles (GPU if available); Render → Render Image (F12); Image → Save As."
           ]
         }
       ]
@@ -424,7 +424,7 @@
           "name": "blender-beginner-three-tools-and-viewport-nav",
           "goal": "Learn Move/Rotate/Scale tools and MMB viewport navigation (with trackpad alternatives) as absolute beginner foundations.",
           "steps": [
-            "Edit \u2192 Preferences \u2192 set Resolution Scale (e.g. 1.25) so UI is readable.",
+            "Edit → Preferences → set Resolution Scale (e.g. 1.25) so UI is readable.",
             "Activate Move tool; drag RGB handles to move the cube.",
             "Activate Rotate tool; drag handles to rotate.",
             "Activate Scale tool; drag the white uniform handle to scale on all axes.",
@@ -450,9 +450,9 @@
           "steps": [
             "Dismiss splash; practice orbit/pan/zoom; use View Selected (numpad period) if lost.",
             "Learn F3 operator search (context-sensitive to Object mode vs elsewhere).",
-            "File \u2192 Save As to create your .blend early.",
-            "Select default cube; X \u2192 Delete (Enter) to remove it.",
-            "Shift+A \u2192 Mesh \u2192 add primitives (cube, monkey, etc.); practice add/delete.",
+            "File → Save As to create your .blend early.",
+            "Select default cube; X → Delete (Enter) to remove it.",
+            "Shift+A → Mesh → add primitives (cube, monkey, etc.); practice add/delete.",
             "Numpad 0 (or camera icon) to preview camera framing used for renders."
           ],
           "merged_into": "blender-first-scene-add-delete-focus-shade-smooth"
@@ -475,10 +475,10 @@
           "steps": [
             "Download Blender 5.x (or current) from blender.org; install or use portable zip; open and click off splash.",
             "Orbit MMB-drag; Shift+MMB pan; scroll zoom; use axis gizmo clicks if upside-down.",
-            "Optional: Preferences \u2192 Interface Resolution Scale for readable UI; Input Emulate 3 Button Mouse if no MMB.",
-            "Delete default cube (X \u2192 Delete).",
-            "Shift+A \u2192 Mesh add (torus for donut path / cylinder for mug path); adjust Add last-operation settings before clicking away.",
-            "Right-click object \u2192 Shade Smooth when appropriate.",
+            "Optional: Preferences → Interface Resolution Scale for readable UI; Input Emulate 3 Button Mouse if no MMB.",
+            "Delete default cube (X → Delete).",
+            "Shift+A → Mesh add (torus for donut path / cylinder for mug path); adjust Add last-operation settings before clicking away.",
+            "Right-click object → Shade Smooth when appropriate.",
             "Practice G/R/S; Tab Edit mode to edit geometry; return to Object mode to select other objects."
           ],
           "merged_into": "blender-first-scene-add-delete-focus-shade-smooth"
@@ -491,7 +491,7 @@
             "Add Solidify modifier for wall thickness; adjust thickness non-destructively.",
             "Add Subdivision Surface; raise Viewport levels carefully; note how unchecked edges become overly round.",
             "Ctrl+R add loop cuts near rim/base to hold shape under Subsurf; slide and confirm.",
-            "Use reference image (Add Image Reference); clear bad rotation, set 90\u00b0 with Ctrl-snap; scale to match mug.",
+            "Use reference image (Add Image Reference); clear bad rotation, set 90° with Ctrl-snap; scale to match mug.",
             "Before handle extrudes: Apply Solidify so inner/outer walls are real mesh; then extrude handle geometry from an appropriate face."
           ]
         }
@@ -511,10 +511,10 @@
           "name": "traveler-walkthrough-control-track-filter-wt-animation",
           "goal": "Use dual Control Tracks (sequenced controller lanes) as the heartbeat: up to 16 steps, ping-pong, DAW-synced rates, swing/gate/depth, routing to filter cutoff, wavetable position, or any mod destination.",
           "steps": [
-            "Open sequencer/Control Tracks panel. Configure Track A: length \u226416 steps, direction forward or ping-pong, tempo-synced note value.",
+            "Open sequencer/Control Tracks panel. Configure Track A: length ≤16 steps, direction forward or ping-pong, tempo-synced note value.",
             "Set Track A destination from the shared mod destination list (same as mod matrix): e.g. filter cutoff or wavetable position. Set depth, gate time, swing.",
             "Configure Track B with a complementary destination and optionally different length/rate for evolving polyrhythmic motion.",
-            "Use utilities: copy A\u2192B, reverse/flip, reset, or randomize steps when exploring \u2014 then refine by ear.",
+            "Use utilities: copy A→B, reverse/flip, reset, or randomize steps when exploring — then refine by ear.",
             "Optionally pair with arpeggiator: many patterns; can target individual oscillators so one osc arps while another holds a pad; shape arp attacks with mod envelope when per-osc selected."
           ]
         },
@@ -532,7 +532,7 @@
         },
         {
           "name": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
-          "goal": "Finish a cinematic patch with the Traveler-style FX order: 3-band EQ \u2192 multi-type chorus \u2192 dual/ping-pong modulated delay \u2192 room/hall/space reverb (long space tails).",
+          "goal": "Finish a cinematic patch with the Traveler-style FX order: 3-band EQ → multi-type chorus → dual/ping-pong modulated delay → room/hall/space reverb (long space tails).",
           "steps": [
             "Insert 3-band EQ first: sculpt low end, mid presence, and highs so the synth sits in a mix before time FX.",
             "Add chorus: choose type 1, type 2, or combined. Keep wet modest for cinematic width without seasick detune.",
@@ -550,7 +550,7 @@
             "Add dedicated high-pass; optionally link HP to primary cutoff for band-pass style sweeps. Set keyboard tracking and envelope amounts for both LP and HP.",
             "Output section: set pan-spread so successive voices fan across the stereo field; optional random voice position.",
             "Engage low-frequency width / LF-width: narrow pan of content below ~middle C so bass stays mono-centered while upper spectrum keeps stereo motion.",
-            "Optional vintage/voice-offset knob for slight per-voice drift of tune, mixer, filter, envelopes \u2014 keep near 0 for clean cinematic pads."
+            "Optional vintage/voice-offset knob for slight per-voice drift of tune, mixer, filter, envelopes — keep near 0 for clean cinematic pads."
           ]
         },
         {
@@ -561,8 +561,8 @@
             "Enable stereo voice stack (up to ~7 voices). Increase detune and stereo spread until the stack alone sounds gigantic.",
             "Optionally add Osc1 as FM/sync carrier support (sync Osc2; FM from Osc2/3 linear or exponential, variable depth) for bite.",
             "Mixer: set Osc2 level primary; pan can be modulated later. Mild drive into filter if available.",
-            "Route through stereo ladder-style LPF (12\u201324 dB). Keep cutoff high enough to preserve width; use modest resonance.",
-            "Amp envelope: medium attack for pads or fast attack for leads; sustain mid-high; release 0.5\u20132s. Enable pan-spread / voice stereo distribution if available."
+            "Route through stereo ladder-style LPF (12–24 dB). Keep cutoff high enough to preserve width; use modest resonance.",
+            "Amp envelope: medium attack for pads or fast attack for leads; sustain mid-high; release 0.5–2s. Enable pan-spread / voice stereo distribution if available."
           ]
         },
         {
@@ -573,7 +573,7 @@
             "Optional: enable 2-voice stack, detune, and stereo spread on the WT osc for width.",
             "Optional drone mode: disconnect Osc3 from keyboard for a fixed-pitch layer, or use it as an extra LFO-rate modulator.",
             "Modulate wavetable position from LFO or Control Track; keep depth subtle for evolving texture rather than obvious sweeps unless desired.",
-            "Stereo filter: ladder model (6\u201324 dB) or NJM-style; add HP that can link to primary cutoff for band-pass motion. Modulate cutoff from filter envelope and/or LFO.",
+            "Stereo filter: ladder model (6–24 dB) or NJM-style; add HP that can link to primary cutoff for band-pass motion. Modulate cutoff from filter envelope and/or LFO.",
             "Mixer: balance WT vs analog oscs; add noise (white/pink) sparingly; light drive into filter."
           ]
         }
@@ -601,9 +601,9 @@
         },
         {
           "name": "keysol-venus-fm-lfo-evolving-chase-sequence",
-          "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff \u2014 plus mod-wheel/aftertouch for tension \u2014 instead of static one-bar loops.",
+          "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff — plus mod-wheel/aftertouch for tension — instead of static one-bar loops.",
           "steps": [
-            "Establish rhythmic pulse/sequence foundation (arp or control-track \u2192 cutoff). Aim for cinematic intensity rather than clean EDM purity.",
+            "Establish rhythmic pulse/sequence foundation (arp or control-track → cutoff). Aim for cinematic intensity rather than clean EDM purity.",
             "Introduce FM: vary modulator frequency slightly and automate/modulate FM depth so timbre breathes over the phrase.",
             "Use LFOs to change oscillator mix balances over time; also modulate filter cutoff so the sequence refuses to feel static across long cues.",
             "Assign mod wheel / aftertouch to open tension (depth, cutoff, or drive) for scene dynamics.",
@@ -614,7 +614,7 @@
           "name": "keysol-venus-high-wt-artifact-pulse-layer",
           "goal": "Spice a classic pulsing bass/filter sequence by adding a very high-pitched wavetable oscillator mixed as an artifact-like layer, with WT-position modulation for constant subtle evolution.",
           "steps": [
-            "Build a classic pulsating bass sequence: pulse/saw bed, Control Track or LFO \u2192 filter cutoff, use filter feedback/saturation/drive for grit and presence.",
+            "Build a classic pulsating bass sequence: pulse/saw bed, Control Track or LFO → filter cutoff, use filter feedback/saturation/drive for grit and presence.",
             "Add wavetable oscillator tuned very high until it reads almost as an artifact rather than a clear tone.",
             "Modulate wavetable position slowly (LFO or Control Track) for continuous micro-variation so the sequence never feels static.",
             "Mix WT low under the pulse bed; A/B with WT muted to confirm it adds interest without dominating."
@@ -622,13 +622,13 @@
         },
         {
           "name": "keysol-venus-noise-audiorate-filter-texture",
-          "goal": "Create a radioactive/unstable cinematic texture or lead: dual detuned saws + WT character, aftertouch bringing in a sharp high oscillator, and mod-wheel sending noise (~30% mix) into audio-rate-style filter modulation (plus optional Osc2\u2192cutoff always-on grit).",
+          "goal": "Create a radioactive/unstable cinematic texture or lead: dual detuned saws + WT character, aftertouch bringing in a sharp high oscillator, and mod-wheel sending noise (~30% mix) into audio-rate-style filter modulation (plus optional Osc2→cutoff always-on grit).",
           "steps": [
             "Layer two fairly separate saw oscillators plus a wavetable osc for character. Slightly detune one osc; further detune can yield ring-mod-like artifacts.",
-            "Optionally enable continuous Osc2 \u2192 low-pass cutoff (audio-rate-ish FM-of-filter) for granular grit; A/B it to hear the instability.",
-            "Mix noise around ~30%. Map mod wheel to send noise into LPF cutoff modulation \u2014 annihilating cutoff with noise yields extremely unstable/distorted color.",
+            "Optionally enable continuous Osc2 → low-pass cutoff (audio-rate-ish FM-of-filter) for granular grit; A/B it to hear the instability.",
+            "Mix noise around ~30%. Map mod wheel to send noise into LPF cutoff modulation — annihilating cutoff with noise yields extremely unstable/distorted color.",
             "Use aftertouch (or pressure) to bring in a high-frequency oscillator for resonant overtones that feel like distortion byproducts when played low.",
-            "Play as lead, texture, or pre-scare sting; leave headroom \u2014 this patch is intentionally unstable."
+            "Play as lead, texture, or pre-scare sting; leave headroom — this patch is intentionally unstable."
           ]
         },
         {
@@ -636,8 +636,8 @@
           "goal": "Build a never-quite-repeating cinematic sequence by driving Osc1/Osc2 pitch from two Control Tracks with irregular lengths (e.g. 15 and 14) and independent rates (e.g. dotted quarter vs quarter), over a stable low Osc3 pulse bed.",
           "steps": [
             "Create a stable bed on Osc3 (e.g. pulse) an octave or two below; add delay/space lightly so the bed feels cinematic but steady.",
-            "Raise Osc1 and Osc2 to much higher pitch registers; they need not sound pretty alone \u2014 they supply character over the bed.",
-            "Control Track A \u2192 Osc1 pitch, length 15, rate dotted-quarter (or similar). Control Track B \u2192 Osc2 pitch, length 14, rate quarter. Keep modulation depth small so pitch breaks subtly rather than jumping wildly.",
+            "Raise Osc1 and Osc2 to much higher pitch registers; they need not sound pretty alone — they supply character over the bed.",
+            "Control Track A → Osc1 pitch, length 15, rate dotted-quarter (or similar). Control Track B → Osc2 pitch, length 14, rate quarter. Keep modulation depth small so pitch breaks subtly rather than jumping wildly.",
             "Map mod wheel (or expression) to increase the depth of those pitch mods for performance tension.",
             "Mix: keep Osc3 dominant; blend high oscs underneath. Solo high pair to verify the irregular interlocking, then restore full mix."
           ]
@@ -649,7 +649,7 @@
             "Start with dark hybrid oscillators (saw/pulse + optional WT). Fast amp attack, punchy decay, moderate sustain for bass; shorter for impacts.",
             "Map velocity strongly (near-exponential) to filter cutoff and/or drive so louder playing blooms dramatically.",
             "For atmospheric use: apply aggressive high-pass on the mix, play high register with pitch bend, and use a broad smooth space-style reverb so hits become huge pads/stingers.",
-            "For deep bass: keep HP low/off, emphasize transient, optionally underscoring with sub; avoid static sine-only subs \u2014 keep some transient character."
+            "For deep bass: keep HP low/off, emphasize transient, optionally underscoring with sub; avoid static sine-only subs — keep some transient character."
           ]
         }
       ]
@@ -666,10 +666,10 @@
       "skills": [
         {
           "name": "keysol-helpling-keytrack-bass-split-delay",
-          "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator\u2019s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
+          "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator’s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
           "steps": [
             "Create a simple two-layer patch: mid/high tonal oscillator(s) plus a dedicated low oscillator.",
-            "Modulate the low oscillator\u2019s volume with keyboard tracking so it is strong only in the lower register (left hand / low keys) and fades as you play higher.",
+            "Modulate the low oscillator’s volume with keyboard tracking so it is strong only in the lower register (left hand / low keys) and fades as you play higher.",
             "Set delay wet very high (delay almost louder than the dry sound) to showcase modulation/space; filter delay feedback to taste."
           ]
         }
@@ -683,11 +683,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/CcXGRCXv8lQ/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: cinematic-warm-analog-pad-drift-stereo",
+      "summary": "Broad synth distillation → skills: cinematic-warm-analog-pad-drift-stereo",
       "skills": [
         {
           "name": "cinematic-warm-analog-pad-drift-stereo",
-          "goal": "Build a warm Juno-style cinematic pad: chaos/random \u2192 master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open."
+          "goal": "Build a warm Juno-style cinematic pad: chaos/random → master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open."
         }
       ]
     },
@@ -699,7 +699,7 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/AYVmdcgKt_s/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: cinematic-multi-envelope-osc-level-morph",
+      "summary": "Broad synth distillation → skills: cinematic-multi-envelope-osc-level-morph",
       "skills": [
         {
           "name": "cinematic-multi-envelope-osc-level-morph",
@@ -715,11 +715,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/ehKoz6ILmxQ/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: ambient-organic-pluck-pad-ladder-chorus-space",
+      "summary": "Broad synth distillation → skills: ambient-organic-pluck-pad-ladder-chorus-space",
       "skills": [
         {
           "name": "ambient-organic-pluck-pad-ladder-chorus-space",
-          "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity\u2192level/cutoff, then chorus pushed toward long decay plus reverb/delay."
+          "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity→level/cutoff, then chorus pushed toward long decay plus reverb/delay."
         }
       ]
     },
@@ -731,11 +731,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/KnbAOrM62Ks/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: supersaw-clean-unison-detune-width",
+      "summary": "Broad synth distillation → skills: supersaw-clean-unison-detune-width",
       "skills": [
         {
           "name": "supersaw-clean-unison-detune-width",
-          "goal": "Build mix-ready supersaws: simple saw frames (not complex WT sweeps), 6\u201312 unison voices, balanced detune/blend, optional mono sub + noise, EQ\u2192compress\u2192delay\u2192reverb, light hyper/dimension, subtle warp, and global unison width/stack modes for chord phase correlation.",
+          "goal": "Build mix-ready supersaws: simple saw frames (not complex WT sweeps), 6–12 unison voices, balanced detune/blend, optional mono sub + noise, EQ→compress→delay→reverb, light hyper/dimension, subtle warp, and global unison width/stack modes for chord phase correlation.",
           "merged_into": "unison-odd-even-detune-width-clean-supersaw"
         }
       ]
@@ -748,11 +748,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/ImWJixBPZj0/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: ambient-wavetable-scratch-spectral-morph-pad",
+      "summary": "Broad synth distillation → skills: ambient-wavetable-scratch-spectral-morph-pad",
       "skills": [
         {
           "name": "ambient-wavetable-scratch-spectral-morph-pad",
-          "goal": "Design an ambient pad by building a soft\u2192complex wavetable (sine + harmonics, spectral blend, phase/warp), LFO-morphing WT position, dual filters with stereo-split randomization, long amp/filter envelopes, optional pitched-down sample texture, then compressor \u2192 dotted delay \u2192 long reverb (~10\u201311s) with bipolar random pans."
+          "goal": "Design an ambient pad by building a soft→complex wavetable (sine + harmonics, spectral blend, phase/warp), LFO-morphing WT position, dual filters with stereo-split randomization, long amp/filter envelopes, optional pitched-down sample texture, then compressor → dotted delay → long reverb (~10–11s) with bipolar random pans."
         }
       ]
     },
@@ -764,11 +764,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/pQFr594QwI4/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: lush-stereo-saw-pad-random-pitch-texture",
+      "summary": "Broad synth distillation → skills: lush-stereo-saw-pad-random-pitch-texture",
       "skills": [
         {
           "name": "lush-stereo-saw-pad-random-pitch-texture",
-          "goal": "Make a lush ambient pad: dual saws panned L/R with \u00b15 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random \u2192 cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay."
+          "goal": "Make a lush ambient pad: dual saws panned L/R with ±5 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random → cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay."
         }
       ]
     },
@@ -780,11 +780,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/e1ZQssAW7R0/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: digital-wt-morph-bandpass-chorus-echo-space",
+      "summary": "Broad synth distillation → skills: digital-wt-morph-bandpass-chorus-echo-space",
       "skills": [
         {
           "name": "digital-wt-morph-bandpass-chorus-echo-space",
-          "goal": "Craft a digital ambient pad: WT engine with long env\u2192WT position, long amp attack/release, classic unison (~3 voices, wide stereo, ~1\u20132% detune) layered with a pure sine WT, series LP24\u2192HP12 both opened by the morph env (band-pass-like), velocity amp mod, then Juno-style chorus \u2192 tape/ping-pong echo \u2192 long wet reverb (chorus also on the reverb path)."
+          "goal": "Craft a digital ambient pad: WT engine with long env→WT position, long amp attack/release, classic unison (~3 voices, wide stereo, ~1–2% detune) layered with a pure sine WT, series LP24→HP12 both opened by the morph env (band-pass-like), velocity amp mod, then Juno-style chorus → tape/ping-pong echo → long wet reverb (chorus also on the reverb path)."
         }
       ]
     },
@@ -796,7 +796,7 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/CMkXW17LYyA/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: organic-looped-sample-unison-voicing-pad",
+      "summary": "Broad synth distillation → skills: organic-looped-sample-unison-voicing-pad",
       "skills": [
         {
           "name": "organic-looped-sample-unison-voicing-pad",
@@ -812,11 +812,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/FZ9oXRJIR6o/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: granular-dual-saw-ambient-epic-pad",
+      "summary": "Broad synth distillation → skills: granular-dual-saw-ambient-epic-pad",
       "skills": [
         {
           "name": "granular-dual-saw-ambient-epic-pad",
-          "goal": "Recipe for an ambient/epic pad: two saws (second \u221212 st, low level), long amp attack/release, ladder/diode filter with slow env\u2192cutoff, corrective low EQ, chorus\u2192synced delay\u2192large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level."
+          "goal": "Recipe for an ambient/epic pad: two saws (second −12 st, low level), long amp attack/release, ladder/diode filter with slow env→cutoff, corrective low EQ, chorus→synced delay→large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level."
         }
       ]
     },
@@ -828,11 +828,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/vvBl3YUBUyY/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: fm-carrier-modulator-ratio-basics",
+      "summary": "Broad synth distillation → skills: fm-carrier-modulator-ratio-basics",
       "skills": [
         {
           "name": "fm-carrier-modulator-ratio-basics",
-          "goal": "Explain and patch basic FM: carrier vs modulator operators, amplitude\u2192modulation depth, frequency\u2192rate, stacking modulators (including slow modulators for evolving vibrato), audio-rate FM for bright spectra, self-mod, and preferring simple frequency ratios (1:1, 2:1) for musical results vs inharmonic mess."
+          "goal": "Explain and patch basic FM: carrier vs modulator operators, amplitude→modulation depth, frequency→rate, stacking modulators (including slow modulators for evolving vibrato), audio-rate FM for bright spectra, self-mod, and preferring simple frequency ratios (1:1, 2:1) for musical results vs inharmonic mess."
         }
       ]
     },
@@ -844,11 +844,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/cF5ku3Og0Nk/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: warm-heavenly-supersaw-pad-keytrack-fx",
+      "summary": "Broad synth distillation → skills: warm-heavenly-supersaw-pad-keytrack-fx",
       "skills": [
         {
           "name": "warm-heavenly-supersaw-pad-keytrack-fx",
-          "goal": "Dial warm heavenly pads: saw unison 5\u20137 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO\u2192cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer."
+          "goal": "Dial warm heavenly pads: saw unison 5–7 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO→cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer."
         }
       ]
     },
@@ -860,7 +860,7 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/6NXqV9jWJ1s/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: mix-pads-role-eq-width-clarity",
+      "summary": "Broad synth distillation → skills: mix-pads-role-eq-width-clarity",
       "skills": [
         {
           "name": "mix-pads-role-eq-width-clarity",
@@ -876,11 +876,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/TmoP3i6-jl0/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: cinematic-formant-comb-pad-phaser-fx",
+      "summary": "Broad synth distillation → skills: cinematic-formant-comb-pad-phaser-fx",
       "skills": [
         {
           "name": "cinematic-formant-comb-pad-phaser-fx",
-          "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B \u22121 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO\u2192cutoff, then phaser\u2192flanger\u2192chorus\u2192slow LFO-filtered FX\u2192delay\u2192reverb with restrained mixes."
+          "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B −1 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO→cutoff, then phaser→flanger→chorus→slow LFO-filtered FX→delay→reverb with restrained mixes."
         }
       ]
     },
@@ -892,11 +892,11 @@
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/rv0X7eZNnEo/raw.txt",
-      "summary": "Broad synth distillation \u2192 skills: evolving-pad-unison-filter-swell-fifth",
+      "summary": "Broad synth distillation → skills: evolving-pad-unison-filter-swell-fifth",
       "skills": [
         {
           "name": "evolving-pad-unison-filter-swell-fifth",
-          "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO\u2192cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled."
+          "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO→cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled."
         }
       ]
     },
@@ -1138,7 +1138,7 @@
       "id": "cinematic-synth-lzRl8gfa-M8",
       "video_id": "lzRl8gfa-M8",
       "url": "https://www.youtube.com/watch?v=lzRl8gfa-M8",
-      "title": "Creating a Shimmer Reverb \u2502 VAST Tips & Tutorials \u2502 Heavyocity",
+      "title": "Creating a Shimmer Reverb │ VAST Tips & Tutorials │ Heavyocity",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/lzRl8gfa-M8/raw.txt",
@@ -1203,7 +1203,7 @@
       "id": "cinematic-synth-Xuu03lhSK7c",
       "video_id": "Xuu03lhSK7c",
       "url": "https://www.youtube.com/watch?v=Xuu03lhSK7c",
-      "title": "Using Modulation Matrix for Advanced Sounds \u2013 Synth Clips 35 \u2013 Daniel Fisher",
+      "title": "Using Modulation Matrix for Advanced Sounds – Synth Clips 35 – Daniel Fisher",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/Xuu03lhSK7c/raw.txt",
@@ -1216,7 +1216,7 @@
       "id": "cinematic-synth-cWPfqPwXBos",
       "video_id": "cWPfqPwXBos",
       "url": "https://www.youtube.com/watch?v=cWPfqPwXBos",
-      "title": "Adjusting Velocity to Filter Cutoff \u2013 Synth Clips 7 \u2013 Daniel Fisher",
+      "title": "Adjusting Velocity to Filter Cutoff – Synth Clips 7 – Daniel Fisher",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/cWPfqPwXBos/raw.txt",
@@ -1229,7 +1229,7 @@
       "id": "cinematic-synth-5686u1c9kdM",
       "video_id": "5686u1c9kdM",
       "url": "https://www.youtube.com/watch?v=5686u1c9kdM",
-      "title": "Don\u2019t forget about this old trick \u2013 Audio rate amplitude modulation (AM)",
+      "title": "Don’t forget about this old trick – Audio rate amplitude modulation (AM)",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/5686u1c9kdM/raw.txt",
@@ -1281,7 +1281,7 @@
       "id": "cinematic-synth-XVHx0eCGf5g",
       "video_id": "XVHx0eCGf5g",
       "url": "https://www.youtube.com/watch?v=XVHx0eCGf5g",
-      "title": "How to Turn Any Synth Into a Granular Delay \u2728 | Vital Pad Tutorial",
+      "title": "How to Turn Any Synth Into a Granular Delay ✨ | Vital Pad Tutorial",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/XVHx0eCGf5g/raw.txt",
@@ -1320,7 +1320,7 @@
       "id": "cinematic-synth-yuHwGR1R7jY",
       "video_id": "yuHwGR1R7jY",
       "url": "https://www.youtube.com/watch?v=yuHwGR1R7jY",
-      "title": "You Won\u2019t Believe What the Modwave Can Do With Wavetables!",
+      "title": "You Won’t Believe What the Modwave Can Do With Wavetables!",
       "topic": "cinematic-hybrid-synth",
       "transcript_source": "youtube-provided",
       "transcript_file": "raw/yuHwGR1R7jY/raw.txt",
@@ -1543,6 +1543,97 @@
       "skills": [
         "three-layer-complementary-pad-post-verb-lofi-degrade"
       ]
+    },
+    {
+      "id": "cinematic-synth-Z2mgB3LYkgQ",
+      "video_id": "Z2mgB3LYkgQ",
+      "url": "https://www.youtube.com/watch?v=Z2mgB3LYkgQ",
+      "title": "12 Ways To Widen Your Sounds Like A Pro",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Z2mgB3LYkgQ/raw.txt",
+      "summary": "Skills: asymmetric-left-right-processing-width-mono-safe",
+      "skills": [
+        "asymmetric-left-right-processing-width-mono-safe"
+      ]
+    },
+    {
+      "id": "cinematic-synth-DFLshMLKkHE",
+      "video_id": "DFLshMLKkHE",
+      "url": "https://www.youtube.com/watch?v=DFLshMLKkHE",
+      "title": "How to create Massive, Brooding, Cinematic Drones in any Synth",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/DFLshMLKkHE/raw.txt",
+      "summary": "Skills: brooding-pw-drone-detuned-octave-stack-split-bend",
+      "skills": [
+        "brooding-pw-drone-detuned-octave-stack-split-bend"
+      ]
+    },
+    {
+      "id": "cinematic-synth-uFk9xUVg7Q0",
+      "video_id": "uFk9xUVg7Q0",
+      "url": "https://www.youtube.com/watch?v=uFk9xUVg7Q0",
+      "title": "How to design 'Whoosh' sound effects [EASY]",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/uFk9xUVg7Q0/raw.txt",
+      "summary": "Skills: noise-layer-whoosh-doppler-and-rising-variants",
+      "skills": [
+        "noise-layer-whoosh-doppler-and-rising-variants"
+      ]
+    },
+    {
+      "id": "cinematic-synth-9v-p2k8Nnec",
+      "video_id": "9v-p2k8Nnec",
+      "url": "https://www.youtube.com/watch?v=9v-p2k8Nnec",
+      "title": "Serum Tutorial - How To Make Risers",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/9v-p2k8Nnec/raw.txt",
+      "summary": "Skills: pitch-ramp-riser-resonant-smear-filter-reverb",
+      "skills": [
+        "pitch-ramp-riser-resonant-smear-filter-reverb"
+      ]
+    },
+    {
+      "id": "cinematic-synth-DpXw9UPrTDU",
+      "video_id": "DpXw9UPrTDU",
+      "url": "https://www.youtube.com/watch?v=DpXw9UPrTDU",
+      "title": "Reverse Reverb Technique, Tips and Tricks in Cubase Music Production Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/DpXw9UPrTDU/raw.txt",
+      "summary": "Skills: reverse-reverb-swell-print-reverse-print",
+      "skills": [
+        "reverse-reverb-swell-print-reverse-print"
+      ]
+    },
+    {
+      "id": "cinematic-synth-YvUbr8GaqUo",
+      "video_id": "YvUbr8GaqUo",
+      "url": "https://www.youtube.com/watch?v=YvUbr8GaqUo",
+      "title": "Shepard Tone Tutorial - How to Create INFINITE Risers!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/YvUbr8GaqUo/raw.txt",
+      "summary": "Skills: shepard-tone-endless-riser-octave-crossfade-voices",
+      "skills": [
+        "shepard-tone-endless-riser-octave-crossfade-voices"
+      ]
+    },
+    {
+      "id": "cinematic-synth-D4K5g8t3aIc",
+      "video_id": "D4K5g8t3aIc",
+      "url": "https://www.youtube.com/watch?v=D4K5g8t3aIc",
+      "title": "A comprehensive guide to phase and warp modes in Serum, Bitwigs Grid and other synths like it",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/D4K5g8t3aIc/raw.txt",
+      "summary": "Skills: warp-modes-as-phase-signal-transforms",
+      "skills": [
+        "warp-modes-as-phase-signal-transforms"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -1633,6 +1724,20 @@
         "3d-printer-z-offset-first-layer-tuning",
         "bash-script-variables-args-input-conditionals",
         "bash-pipeline-to-one-word-alias"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "batch": "batches/2026-10-07-morning-hunt.json",
+      "added_entries": 7,
+      "added_skills": [
+        "asymmetric-left-right-processing-width-mono-safe",
+        "brooding-pw-drone-detuned-octave-stack-split-bend",
+        "noise-layer-whoosh-doppler-and-rising-variants",
+        "pitch-ramp-riser-resonant-smear-filter-reverb",
+        "reverse-reverb-swell-print-reverse-print",
+        "shepard-tone-endless-riser-octave-crossfade-voices",
+        "warp-modes-as-phase-signal-transforms"
       ]
     }
   ]

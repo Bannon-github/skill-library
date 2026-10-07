@@ -1,7 +1,7 @@
 {
  "video_id": "odosCwWVL2c",
- "started_at": "2026-10-05T16:29:13.936845+00:00",
- "outcome": "COVERED",
+ "started_at": "2026-10-07T16:44:54.247329+00:00",
+ "outcome": "CANDIDATES_READY",
  "route": "manual-target",
  "language_code": "en",
  "original_language": "en",
@@ -15,41 +15,54 @@
   "out": "/workspace/skill-library/raw/odosCwWVL2c/graph.json",
   "segments": 135,
   "windows": 51,
-  "nodes": 38,
-  "edges": 43,
+  "nodes": 39,
+  "edges": 45,
   "nodes_by_type": {
-   "module": 8,
+   "technique": 3,
+   "module": 7,
    "step": 18,
    "param": 5,
    "concept": 1,
-   "phrase": 6
+   "phrase": 5
   },
   "edges_by_type": {
-   "mentions": 21,
+   "mentions": 22,
    "part-of": 5,
-   "precedes": 17
+   "precedes": 17,
+   "affects": 1
   },
   "words": 2044
  },
  "gaps": {
   "video_id": "odosCwWVL2c",
-  "graph_nodes": 38,
-  "graph_edges": 43,
-  "terms_checked": 20,
-  "terms_covered": 14,
-  "gap_nodes": 6,
-  "gap_nodes_excl_phrases": 0,
-  "relations_checked": 0,
-  "gap_edges": 0,
-  "candidates": 0,
-  "kg": {
-   "videos": 9,
-   "nodes": 119,
-   "edges": 59,
-   "uncovered_nodes": 2,
-   "uncovered_edges": 12
-  },
-  "candidate_ids": []
+  "graph_nodes": 39,
+  "graph_edges": 45,
+  "terms_checked": 21,
+  "terms_covered": 16,
+  "gap_nodes": 5,
+  "gap_nodes_excl_phrases": 1,
+  "relations_checked": 1,
+  "gap_edges": 1,
+  "candidates": 1,
+  "candidate_ids": [
+   "synth-envelope-follower-sidechain-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "uncovered techniques: technique:envelope_follower",
+    "best single-skill procedure overlap 0.333 < 0.5"
+   ],
+   "best_skill": "shimmer-reverb-pitchshift-plus12-feedback",
+   "profile_share": 0.75,
+   "best_proc_overlap": 0.333,
+   "specific_items": 3,
+   "uncovered_techniques": [
+    "technique:envelope_follower"
+   ],
+   "video_novelty": 0.091,
+   "video_novelty_verdict": "NOVEL"
+  }
  },
  "decisions": [
   {
@@ -85,7 +98,7 @@
      "crypto": 0,
      "drone": 0,
      "sidehustle": 6,
-     "synth": 47
+     "synth": 48
     }
    }
   },
@@ -93,19 +106,34 @@
    "q": "Q6 term graph built?",
    "a": true,
    "evidence": {
-    "nodes": 38,
-    "edges": 43
+    "nodes": 39,
+    "edges": 45
    }
   },
   {
-   "q": "Q7 gap candidates found?",
-   "a": false,
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
    "evidence": {
-    "gap_nodes_excl_phrases": 0,
-    "gap_edges": 0,
-    "candidates": 0
+    "gap_nodes_excl_phrases": 1,
+    "gap_edges": 1,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "uncovered techniques: technique:envelope_follower",
+      "best single-skill procedure overlap 0.333 < 0.5"
+     ],
+     "best_skill": "shimmer-reverb-pitchshift-plus12-feedback",
+     "profile_share": 0.75,
+     "best_proc_overlap": 0.333,
+     "specific_items": 3,
+     "uncovered_techniques": [
+      "technique:envelope_follower"
+     ],
+     "video_novelty": 0.091,
+     "video_novelty_verdict": "NOVEL"
+    }
    },
-   "then": "covered by library; KG updated; no new skill"
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
   }
  ],
  "fetch_decisions": [
@@ -134,5 +162,5 @@
    "a": true
   }
  ],
- "finished_at": "2026-10-05T16:29:14.277729+00:00"
+ "finished_at": "2026-10-07T16:44:54.891855+00:00"
 }

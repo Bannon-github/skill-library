@@ -1,6 +1,6 @@
 {
  "schema": "yt-knowledge-graph/kg-v1",
- "updated_at": "2026-10-05T16:29:14.917536+00:00",
+ "updated_at": "2026-10-07T16:31:46.766074+00:00",
  "videos": {
   "A7q9L5wd7Mk": {
    "domain": "synth",
@@ -100,6 +100,141 @@
    "merged_at": "2026-10-05T16:29:14.917330+00:00",
    "gap_nodes": 1,
    "gap_edges": 0
+  },
+  "CKXV--9u5A4": {
+   "domain": "synth",
+   "title": "All Serum's Warp Modes in PhasePlant - Bend, Asym, Remap, Ring Mod, Sync, PWM, etc",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:26:04.365346+00:00",
+   "gap_nodes": 5,
+   "gap_edges": 0
+  },
+  "D4K5g8t3aIc": {
+   "domain": "synth",
+   "title": "A comprehensive guide to phase and warp modes in Serum, Bitwigs Grid and other synths like it 📐🤔💡😎‼️",
+   "route": "ytdlp-target",
+   "translated": false,
+   "merged_at": "2026-10-07T16:26:46.720158+00:00",
+   "gap_nodes": 14,
+   "gap_edges": 2
+  },
+  "9v-p2k8Nnec": {
+   "domain": "synth",
+   "title": "Serum Tutorial - How To Make Risers",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:27:34.529142+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "9V56-jd48_k": {
+   "domain": "synth",
+   "title": "How to make wind sound effects from synths",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:27:37.490327+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 0
+  },
+  "Ku3-RjDV3g8": {
+   "domain": "synth",
+   "title": "How To Make Whoosh Sound Effect / Transition Sound Design",
+   "route": "manual-target",
+   "translated": false,
+   "merged_at": "2026-10-07T16:27:47.442889+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "uFk9xUVg7Q0": {
+   "domain": "synth",
+   "title": "How to design 'Whoosh' sound effects [EASY]",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:27:50.599012+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 0
+  },
+  "DpXw9UPrTDU": {
+   "domain": "synth",
+   "title": "Reverse Reverb Technique, Tips and Tricks in Cubase Music Production Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:27:54.026445+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "MKgCvLOLdNk": {
+   "domain": "synth",
+   "title": "Creating Intro FX Reverse Reverb | EDM Track From Scratch",
+   "route": "ytdlp-target",
+   "translated": false,
+   "merged_at": "2026-10-07T16:28:36.315461+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "K4osI9yrQQY": {
+   "domain": "synth",
+   "title": "Reverse-Reverb erstellen in Cubase 11 | Artist & Pro Tutorial",
+   "route": "auto-target-from-dub-track",
+   "translated": false,
+   "merged_at": "2026-10-07T16:28:49.367786+00:00",
+   "gap_nodes": 3,
+   "gap_edges": 1
+  },
+  "ZXhm-j0T3xo": {
+   "domain": "synth",
+   "title": "Serum Tutorial - Remap Warp Mode",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:28:54.091880+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 3
+  },
+  "Z2mgB3LYkgQ": {
+   "domain": "synth",
+   "title": "12 Ways To Widen Your Sounds Like A Pro",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:28:58.591960+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "YvUbr8GaqUo": {
+   "domain": "synth",
+   "title": "Shepard Tone Tutorial - How to Create INFINITE Risers! 🤯",
+   "route": "ytdlp-target",
+   "translated": false,
+   "merged_at": "2026-10-07T16:30:44.605856+00:00",
+   "gap_nodes": 9,
+   "gap_edges": 1
+  },
+  "IvzsnMV0Cog": {
+   "domain": "synth",
+   "title": "Creating Shepard Tones from Any Source - Sound Design Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:30:47.834292+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 1
+  },
+  "DFLshMLKkHE": {
+   "domain": "synth",
+   "title": "How to create Massive, Brooding, Cinematic Drones in any Synth",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-07T16:31:03.800594+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 0
+  },
+  "iFkph3sCmw0": {
+   "domain": "synth",
+   "title": "How To Sound Design Dark Ambiences And Drones (using Vital)",
+   "route": "ytdlp-target",
+   "translated": false,
+   "merged_at": "2026-10-07T16:31:46.765804+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
   }
  },
  "nodes": {
@@ -113,7 +248,9 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -158,25 +295,31 @@
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-venus-velocity-hybrid-bass-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
@@ -194,7 +337,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9v-p2k8Nnec",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -212,12 +357,25 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:08"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:50"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
+    },
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "0:20"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
@@ -232,10 +390,13 @@
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "unison-odd-even-detune-width-clean-supersaw",
     "velocity-filter-cutoff-envelope-amount",
@@ -257,7 +418,12 @@
     "C_NkGQqTdSo",
     "odosCwWVL2c",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "uFk9xUVg7Q0",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -300,6 +466,7 @@
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "crypto-tax-form-8949-disposal-rows",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
@@ -308,12 +475,16 @@
     "knowledge-graph-gap-check-skill-outline",
     "lush-stereo-saw-pad-random-pitch-texture",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "transcript-domain-term-graph-extract",
     "traveler-walkthrough-curved-envelope-evolving-pad",
@@ -337,7 +508,17 @@
     "C_NkGQqTdSo",
     "odosCwWVL2c",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -376,10 +557,12 @@
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
     "crypto-safe-multisig-threshold-setup-execute",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "keysol-venus-noise-audiorate-filter-texture",
+    "multiband-low-band-gentle-control-and-expand",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
     "shimmer-reverb-pitchshift-plus12-feedback",
@@ -387,6 +570,7 @@
     "sidehustle-stripe-invoice-create-send",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "traveler-walkthrough-super-unison-wide-lead",
     "traveler-walkthrough-wavetable-morph-filter-motion",
@@ -407,7 +591,15 @@
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
     "odosCwWVL2c",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "D4K5g8t3aIc",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "K4osI9yrQQY",
+    "ZXhm-j0T3xo",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -448,29 +640,38 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "transcript-domain-term-graph-extract",
     "transcript-offline-machine-translate-glossary",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -493,7 +694,8 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "C_NkGQqTdSo",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "K4osI9yrQQY"
    ],
    "refs": [
     {
@@ -541,11 +743,16 @@
     "keysol-venus-velocity-hybrid-bass-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
     "sidechain-compressor-duck-synth-pads",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "transcript-offline-machine-translate-glossary",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-super-unison-wide-lead",
@@ -560,7 +767,8 @@
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
     "IK7cIBPKM1s",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -586,6 +794,14 @@
     {
      "video_id": "C_NkGQqTdSo",
      "t": "5:27"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:29"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:53"
     }
    ],
    "covered_by": [
@@ -598,6 +814,9 @@
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-super-unison-wide-lead",
     "velocity-filter-cutoff-envelope-amount"
@@ -614,7 +833,9 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "9V56-jd48_k",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -661,8 +882,11 @@
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "lush-stereo-saw-pad-random-pitch-texture",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "osc-as-granular-pitch-step-delay",
     "sidechain-compressor-duck-synth-pads",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "traveler-walkthrough-super-unison-wide-lead",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -676,7 +900,10 @@
     "A7q9L5wd7Mk",
     "kHWOIE4YTZ4",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ",
+    "IvzsnMV0Cog"
    ],
    "refs": [
     {
@@ -698,16 +925,31 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "4:40"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "0:54"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "1:08"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "4:43"
     }
    ],
    "covered_by": [
     "cinematic-multi-envelope-osc-level-morph",
     "evolving-pad-unison-filter-swell-fifth",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "unison-odd-even-detune-width-clean-supersaw",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -722,7 +964,11 @@
     "MH7YiOWQIhI",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9v-p2k8Nnec",
+    "Ku3-RjDV3g8",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -768,6 +1014,7 @@
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
@@ -787,6 +1034,7 @@
     "parallel-filter-rhythmic-pad-chains",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
@@ -804,7 +1052,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "9V56-jd48_k",
+    "IvzsnMV0Cog"
    ],
    "refs": [
     {
@@ -818,6 +1068,18 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "12:07"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "3:01"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:07"
+    },
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "0:00"
     }
    ],
    "covered_by": [
@@ -827,6 +1089,7 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -836,7 +1099,9 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-super-unison-wide-lead",
@@ -857,7 +1122,15 @@
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k",
+    "ZXhm-j0T3xo",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -897,28 +1170,37 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "midside-eq-bass-focus-width-depth",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "transcript-domain-term-graph-extract",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw",
@@ -935,7 +1217,10 @@
     "A7q9L5wd7Mk",
     "UShjYsGgWcM",
     "bMjCfB1qzjo",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -965,11 +1250,16 @@
     {
      "video_id": "C_NkGQqTdSo",
      "t": "2:36"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:33"
     }
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
     "blender-lowpoly-pine-tree-from-primitives",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
@@ -988,6 +1278,8 @@
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
     "soft-tape-saturation-pads-before-space",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-super-unison-wide-lead",
     "traveler-walkthrough-wavetable-morph-filter-motion",
@@ -1005,7 +1297,18 @@
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k",
+    "Ku3-RjDV3g8",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1045,6 +1348,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
@@ -1057,12 +1361,16 @@
     "mix-pads-role-eq-width-clarity",
     "organic-looped-sample-unison-voicing-pad",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "unison-odd-even-detune-width-clean-supersaw",
@@ -1125,7 +1433,13 @@
     "BqE9S27CZfY",
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9V56-jd48_k",
+    "Ku3-RjDV3g8",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "ZXhm-j0T3xo",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -1155,6 +1469,10 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "6:20"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:00"
     }
    ],
    "covered_by": [
@@ -1162,11 +1480,14 @@
     "audio-rate-am-wave-shape-texture",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-venus-noise-audiorate-filter-texture",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw"
    ]
@@ -1185,7 +1506,16 @@
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
     "odosCwWVL2c",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1227,6 +1557,7 @@
     "audio-rate-am-wave-shape-texture",
     "blender-chocolate-chip-cookie-model-and-render",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
@@ -1244,7 +1575,11 @@
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "sidechain-compressor-duck-synth-pads",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-super-unison-wide-lead",
     "unison-odd-even-detune-width-clean-supersaw",
     "velocity-filter-cutoff-envelope-amount",
@@ -1266,7 +1601,19 @@
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
     "odosCwWVL2c",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1307,14 +1654,17 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
@@ -1326,17 +1676,23 @@
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-super-unison-wide-lead",
     "traveler-walkthrough-wavetable-morph-filter-motion",
@@ -1356,7 +1712,13 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9V56-jd48_k",
+    "Ku3-RjDV3g8",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1394,16 +1756,20 @@
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "ring-mod-envelope-bell-stab-pulse",
+    "synth-string-section-unison-vibrato-fm-blend",
     "transcript-domain-term-graph-extract",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "traveler-walkthrough-super-unison-wide-lead",
@@ -1420,7 +1786,11 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "Ku3-RjDV3g8",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1460,15 +1830,20 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-noise-audiorate-filter-texture",
     "lush-stereo-saw-pad-random-pitch-texture",
     "organic-looped-sample-unison-voicing-pad",
+    "ring-mod-envelope-bell-stab-pulse",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "traveler-walkthrough-super-unison-wide-lead",
@@ -1518,7 +1893,9 @@
    "videos": [
     "A7q9L5wd7Mk",
     "UShjYsGgWcM",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "MKgCvLOLdNk",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
@@ -1532,13 +1909,27 @@
     {
      "video_id": "C_NkGQqTdSo",
      "t": "7:04"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "0:55"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "0:01"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "4:07"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
-    "modulation-lfo-envelope-mod-matrix-routing"
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "ring-mod-envelope-bell-stab-pulse",
+    "transient-splice-attack-body-hybrid-voice"
    ]
   },
   "module:delay": {
@@ -1551,7 +1942,12 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "C_NkGQqTdSo",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "9V56-jd48_k",
+    "DpXw9UPrTDU",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -1596,6 +1992,7 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "filter-ladder-diode-comb-formant-flavors",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -1608,6 +2005,8 @@
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "unison-odd-even-detune-width-clean-supersaw",
@@ -1629,7 +2028,15 @@
     "C_NkGQqTdSo",
     "odosCwWVL2c",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -1670,14 +2077,17 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -1688,17 +2098,23 @@
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
@@ -1721,7 +2137,9 @@
     "MH7YiOWQIhI",
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -1751,10 +2169,15 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:56"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "3:51"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -1764,6 +2187,8 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-super-unison-wide-lead",
     "velocity-filter-cutoff-envelope-amount",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -1775,7 +2200,9 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -1789,6 +2216,14 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:44"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:59"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "8:11"
     }
    ],
    "covered_by": [
@@ -1798,6 +2233,8 @@
     "filter-ladder-diode-comb-formant-flavors",
     "lush-stereo-saw-pad-random-pitch-texture",
     "osc-as-granular-pitch-step-delay",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "transcript-domain-term-graph-extract",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -1831,7 +2268,10 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9V56-jd48_k",
+    "MKgCvLOLdNk",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -1861,12 +2301,17 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "1:11"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:11"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -1884,6 +2329,8 @@
     "osc-as-granular-pitch-step-delay",
     "parallel-filter-rhythmic-pad-chains",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "transcript-domain-term-graph-extract",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
@@ -1961,7 +2408,15 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2001,8 +2456,10 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
+    "envelope-follower-audio-driven-modulation",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
@@ -2014,10 +2471,14 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
+    "ring-mod-envelope-bell-stab-pulse",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidehustle-upwork-proposal-short-proof-cta",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "transcript-domain-term-graph-extract",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "unison-odd-even-detune-width-clean-supersaw"
    ]
@@ -2047,12 +2508,31 @@
    "label": "2 octaves",
    "domain": "synth",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "9v-p2k8Nnec",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:31"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:00"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "3:49"
+    },
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "2:02"
     }
    ],
    "covered_by": []
@@ -2063,7 +2543,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "DpXw9UPrTDU",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -2073,6 +2556,22 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "7:48"
+    },
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "4:38"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "5:53"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "7:29"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "9:34"
     }
    ],
    "covered_by": [
@@ -2087,6 +2586,7 @@
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidehustle-upwork-proposal-short-proof-cta",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
@@ -2099,7 +2599,10 @@
     "A7q9L5wd7Mk",
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9v-p2k8Nnec",
+    "Ku3-RjDV3g8",
+    "Z2mgB3LYkgQ"
    ],
    "refs": [
     {
@@ -2125,11 +2628,20 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "4:51"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "0:01"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "0:15"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
@@ -2140,6 +2652,8 @@
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "warm-heavenly-supersaw-pad-keytrack-fx",
@@ -2158,7 +2672,17 @@
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2198,12 +2722,14 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
@@ -2213,12 +2739,17 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "transcript-domain-term-graph-extract",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
@@ -2232,7 +2763,10 @@
    "domain": "synth",
    "videos": [
     "A7q9L5wd7Mk",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec"
    ],
    "refs": [
     {
@@ -2246,14 +2780,38 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "0:24"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:19"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "2:11"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "3:30"
     }
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "haas-plus-phase-offset-width-automated",
+    "multiband-low-band-gentle-control-and-expand",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
     "unison-odd-even-detune-width-clean-supersaw",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
@@ -2289,7 +2847,14 @@
     "kHWOIE4YTZ4",
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "9v-p2k8Nnec",
+    "Ku3-RjDV3g8",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2319,6 +2884,10 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "0:12"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
     }
    ],
    "covered_by": [
@@ -2328,11 +2897,14 @@
     "blender-first-scene-add-delete-focus-shade-smooth",
     "blender-install-prefs-viewport-nav-transform-tools",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
@@ -2341,7 +2913,10 @@
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -2358,7 +2933,9 @@
    "videos": [
     "A7q9L5wd7Mk",
     "IK7cIBPKM1s",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc"
    ],
    "refs": [
     {
@@ -2380,6 +2957,18 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "18:36"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:19"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "1:42"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "2:39"
     }
    ],
    "covered_by": [
@@ -2387,6 +2976,7 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
+    "synth-string-section-unison-vibrato-fm-blend",
     "transcript-domain-term-graph-extract"
    ]
   },
@@ -2400,7 +2990,11 @@
     "UShjYsGgWcM",
     "C_NkGQqTdSo",
     "odosCwWVL2c",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "IvzsnMV0Cog",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2438,14 +3032,19 @@
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
+    "transient-splice-attack-body-hybrid-voice",
     "unison-odd-even-detune-width-clean-supersaw"
    ]
   },
@@ -2457,7 +3056,13 @@
     "A7q9L5wd7Mk",
     "kHWOIE4YTZ4",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2487,18 +3092,25 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "3:59"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "1:18"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "blender-boolean-bracket-with-cylinder-holes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
     "distill-transcript",
     "evolving-pad-unison-filter-swell-fifth",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
     "shimmer-reverb-pitchshift-plus12-feedback",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb"
    ]
   },
@@ -2509,7 +3121,13 @@
    "videos": [
     "A7q9L5wd7Mk",
     "kHWOIE4YTZ4",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ"
    ],
    "refs": [
     {
@@ -2531,19 +3149,34 @@
     {
      "video_id": "T2poUGh6qPg",
      "t": "10:05"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "4:37"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "25:07"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "soft-tape-saturation-pads-before-space",
     "stereo-delay-pingpong-dual-parallel-two-tap",
@@ -2561,7 +3194,10 @@
    "videos": [
     "A7q9L5wd7Mk",
     "IK7cIBPKM1s",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk"
    ],
    "refs": [
     {
@@ -2579,17 +3215,33 @@
     {
      "video_id": "T2poUGh6qPg",
      "t": "4:06"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "5:03"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "12:08"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "5:01"
     }
    ],
    "covered_by": [
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "unison-odd-even-detune-width-clean-supersaw",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -2602,7 +3254,8 @@
    "videos": [
     "A7q9L5wd7Mk",
     "UShjYsGgWcM",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -2624,12 +3277,21 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "2:16"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "8:46"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "9:36"
     }
    ],
    "covered_by": [
     "cinematic-formant-comb-pad-phaser-fx",
     "filter-ladder-diode-comb-formant-flavors",
-    "modulation-lfo-envelope-mod-matrix-routing"
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "three-layer-complementary-pad-post-verb-lofi-degrade"
    ]
   },
   "phrase:click_and_drag": {
@@ -2685,7 +3347,9 @@
    "domain": "synth",
    "videos": [
     "MH7YiOWQIhI",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY"
    ],
    "refs": [
     {
@@ -2703,12 +3367,25 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:08"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "5:46"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "0:54"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "1:20"
     }
    ],
    "covered_by": [
     "knowledge-graph-gap-check-skill-outline",
     "reverb-pads-type-choice-and-send-setup",
-    "soft-tape-saturation-pads-before-space"
+    "soft-tape-saturation-pads-before-space",
+    "synth-string-section-unison-vibrato-fm-blend"
    ]
   },
   "param:voice_count": {
@@ -2775,7 +3452,10 @@
    "domain": "synth",
    "videos": [
     "MH7YiOWQIhI",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
@@ -2793,6 +3473,18 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "9:42"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "10:18"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "14:34"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
     }
    ],
    "covered_by": [
@@ -2801,6 +3493,8 @@
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-noise-audiorate-filter-texture",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "ring-mod-envelope-bell-stab-pulse",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-super-unison-wide-lead"
    ]
   },
@@ -2835,7 +3529,11 @@
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
     "odosCwWVL2c",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "9V56-jd48_k",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -2874,14 +3572,21 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "blender-chocolate-chip-cookie-model-and-render",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "multiband-low-band-gentle-control-and-expand",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "velocity-filter-cutoff-envelope-amount"
    ]
   },
@@ -2906,7 +3611,11 @@
    "domain": "synth",
    "videos": [
     "BqE9S27CZfY",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -2920,10 +3629,28 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "4:02"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "1:43"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "25:38"
+    },
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "3:54"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "10:35"
     }
    ],
    "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-warm-analog-pad-drift-stereo",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "mix-pads-role-eq-width-clarity",
@@ -2939,7 +3666,8 @@
     "BqE9S27CZfY",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -2986,6 +3714,10 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "osc-as-granular-pitch-step-delay",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -3095,7 +3827,8 @@
    "videos": [
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "Ku3-RjDV3g8"
    ],
    "refs": [
     {
@@ -3113,6 +3846,10 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "0:44"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "6:49"
     }
    ],
    "covered_by": [
@@ -3121,6 +3858,7 @@
     "audio-rate-am-wave-shape-texture",
     "blender-lowpoly-character-scene-prep",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
@@ -3138,6 +3876,8 @@
     "reverb-pads-type-choice-and-send-setup",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -3151,7 +3891,11 @@
    "videos": [
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "K4osI9yrQQY",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
@@ -3173,6 +3917,18 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "3:27"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "3:55"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "4:25"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
     }
    ],
    "covered_by": [
@@ -3180,7 +3936,9 @@
     "blender-boolean-bracket-with-cylinder-holes",
     "blender-chocolate-chip-cookie-model-and-render",
     "blender-mug-solidify-subsurf-loopcut",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "haas-plus-phase-offset-width-automated",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "wavetable-crossfade-morph-modulate-pad"
    ]
@@ -3192,7 +3950,11 @@
    "videos": [
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "K4osI9yrQQY",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
@@ -3214,6 +3976,18 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "3:27"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:00"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:19"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
     }
    ],
    "covered_by": [
@@ -3221,14 +3995,17 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
+    "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
@@ -3241,17 +4018,23 @@
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
@@ -3324,7 +4107,13 @@
    "label": "Serum",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -3334,6 +4123,30 @@
     {
      "video_id": "UShjYsGgWcM",
      "t": "28:47"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "1:42"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "2:40"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "6:18"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "1:05"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "7:03"
     }
    ],
    "covered_by": [
@@ -3369,12 +4182,35 @@
    "label": "lead",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "6:07"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "0:30"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "0:55"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "0:09"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "1:47"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "2:01"
     }
    ],
    "covered_by": [
@@ -3383,6 +4219,7 @@
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "traveler-walkthrough-super-unison-wide-lead",
     "unison-odd-even-detune-width-clean-supersaw"
@@ -3393,7 +4230,8 @@
    "label": "blend",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -3403,6 +4241,10 @@
     {
      "video_id": "UShjYsGgWcM",
      "t": "9:24"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:33"
     }
    ],
    "covered_by": [
@@ -3420,6 +4262,7 @@
     "osc-as-granular-pitch-step-delay",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw",
     "wavetable-crossfade-morph-modulate-pad"
@@ -3464,7 +4307,13 @@
    "videos": [
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -3486,12 +4335,25 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "10:03"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:00"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "2:40"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
@@ -3505,9 +4367,12 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "organic-looped-sample-unison-voicing-pad",
     "parallel-filter-rhythmic-pad-chains",
+    "selective-saturation-and-lofi-grit-toolkit",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-super-unison-wide-lead",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw"
@@ -3519,7 +4384,11 @@
    "domain": "synth",
    "videos": [
     "UShjYsGgWcM",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9V56-jd48_k",
+    "Ku3-RjDV3g8",
+    "MKgCvLOLdNk",
+    "IvzsnMV0Cog"
    ],
    "refs": [
     {
@@ -3529,6 +4398,30 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "0:56"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "5:03"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "7:08"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "0:11"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "2:28"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "5:46"
+    },
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "0:29"
     }
    ],
    "covered_by": [
@@ -3539,10 +4432,13 @@
     "hybrid-noise-distortion-separate-sub-layer",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -3572,7 +4468,9 @@
    "domain": "synth",
    "videos": [
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -3582,6 +4480,14 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:44"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:59"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "8:11"
     }
    ],
    "covered_by": []
@@ -3591,12 +4497,21 @@
    "label": "flanger",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "uFk9xUVg7Q0"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "14:10"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "29:22"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "30:21"
     }
    ],
    "covered_by": [
@@ -3625,12 +4540,17 @@
    "label": "Valhalla",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "uFk9xUVg7Q0"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "16:47"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "20:17"
     }
    ],
    "covered_by": []
@@ -3640,27 +4560,54 @@
    "label": "Ableton Live",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "9v-p2k8Nnec",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "22:18"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:20"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "1:03"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "4:54"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "9:24"
     }
    ],
    "covered_by": [
     "blender-first-scene-add-delete-focus-shade-smooth",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "modulation-lfo-envelope-mod-matrix-routing",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "python-pathlib-basic-file-workflow",
     "reverb-pads-type-choice-and-send-setup",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "trance-gate-sidechain-chop-texture",
     "unison-odd-even-detune-width-clean-supersaw",
     "velocity-filter-cutoff-envelope-amount"
@@ -3672,7 +4619,10 @@
    "domain": "synth",
    "videos": [
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "K4osI9yrQQY",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ"
    ],
    "refs": [
     {
@@ -3686,6 +4636,22 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:44"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "0:00"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "0:14"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "5:07"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "0:25"
     }
    ],
    "covered_by": [
@@ -3698,8 +4664,11 @@
     "granular-dual-saw-ambient-epic-pad",
     "lush-stereo-saw-pad-random-pitch-texture",
     "organic-looped-sample-unison-voicing-pad",
+    "selective-saturation-and-lofi-grit-toolkit",
     "soft-tape-saturation-pads-before-space",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "warm-heavenly-supersaw-pad-keytrack-fx"
@@ -3712,7 +4681,9 @@
    "videos": [
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -3726,6 +4697,14 @@
     {
      "video_id": "T2poUGh6qPg",
      "t": "12:02"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "4:43"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:13"
     }
    ],
    "covered_by": [
@@ -3738,7 +4717,12 @@
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "multiband-low-band-gentle-control-and-expand",
     "osc-as-granular-pitch-step-delay",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "unison-odd-even-detune-width-clean-supersaw"
    ]
@@ -4013,12 +4997,35 @@
    "label": "1 octaves",
    "domain": "synth",
    "videos": [
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9v-p2k8Nnec",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
      "video_id": "bMjCfB1qzjo",
      "t": "1:44"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:00"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:50"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:13"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:50"
     }
    ],
    "covered_by": []
@@ -4163,7 +5170,9 @@
    "label": "lfo rate",
    "domain": "synth",
    "videos": [
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -4173,18 +5182,34 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "20:29"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:07"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "7:14"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "10:14"
     }
    ],
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "granular-dual-saw-ambient-epic-pad",
     "keysol-venus-polyrhythmic-control-track-pitch",
     "modulation-lfo-envelope-mod-matrix-routing",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
     "sidehustle-productized-service-offer-and-ops",
+    "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-control-track-filter-wt-animation"
    ]
   },
@@ -4340,7 +5365,11 @@
    "domain": "synth",
    "videos": [
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "Ku3-RjDV3g8",
+    "Z2mgB3LYkgQ",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -4358,13 +5387,31 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "4:13"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "3:22"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "0:36"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "0:53"
+    },
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "0:44"
     }
    ],
    "covered_by": [
     "blender-boolean-bracket-with-cylinder-holes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "evolving-pad-unison-filter-swell-fifth",
+    "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
@@ -4511,12 +5558,1028 @@
    "label": "haas effect",
    "domain": "synth",
    "videos": [
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "Z2mgB3LYkgQ"
    ],
    "refs": [
     {
      "video_id": "msDDpbSvdPc",
      "t": "0:09"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "1:51"
+    }
+   ],
+   "covered_by": [
+    "haas-plus-phase-offset-width-automated"
+   ]
+  },
+  "module:am": {
+   "type": "module",
+   "label": "am",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "12:54"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "13:24"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "envelope-follower-audio-driven-modulation",
+    "ring-mod-envelope-bell-stab-pulse"
+   ]
+  },
+  "phrase:modulate_the_phase": {
+   "type": "phrase",
+   "label": "modulate the phase",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "2:35"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:modulate_the_level": {
+   "type": "phrase",
+   "label": "modulate the level",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "1:37"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:second_wave_table": {
+   "type": "phrase",
+   "label": "second wave table",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:file_new": {
+   "type": "phrase",
+   "label": "file new",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:15"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:plus_minus": {
+   "type": "phrase",
+   "label": "plus minus",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "4:05"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:warp_mode": {
+   "type": "phrase",
+   "label": "warp mode",
+   "domain": "synth",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:02"
+    }
+   ],
+   "covered_by": [
+    "spectral-warp-vocode-formant-stretch-smear"
+   ]
+  },
+  "value:level=50 %": {
+   "type": "value",
+   "label": "50 %",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:wt_position=180 degrees": {
+   "type": "value",
+   "label": "180 degrees",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "20:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:phase=90 degrees": {
+   "type": "value",
+   "label": "90 degrees",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "21:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "tool:Logic Pro": {
+   "type": "tool",
+   "label": "Logic Pro",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc",
+    "Ku3-RjDV3g8",
+    "MKgCvLOLdNk"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "23:13"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "2:11"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "6:33"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "3:52"
+    }
+   ],
+   "covered_by": [
+    "multiband-low-band-gentle-control-and-expand"
+   ]
+  },
+  "tool:Bitwig": {
+   "type": "tool",
+   "label": "Bitwig",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "26:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:exactly_the_same": {
+   "type": "phrase",
+   "label": "exactly the same",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:through_the_entire": {
+   "type": "phrase",
+   "label": "through the entire",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "2:39"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:back_to_zero": {
+   "type": "phrase",
+   "label": "back to zero",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:reach_the_end": {
+   "type": "phrase",
+   "label": "reach the end",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "2:39"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:back_to_serum": {
+   "type": "phrase",
+   "label": "back to serum",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "6:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:real_quick": {
+   "type": "phrase",
+   "label": "real quick",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:start_moving": {
+   "type": "phrase",
+   "label": "start moving",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:phase_signal": {
+   "type": "phrase",
+   "label": "phase signal",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:rather_quickly": {
+   "type": "phrase",
+   "label": "rather quickly",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "8:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:warp_modes": {
+   "type": "phrase",
+   "label": "warp modes",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    }
+   ],
+   "covered_by": [
+    "spectral-warp-vocode-formant-stretch-smear"
+   ]
+  },
+  "phrase:run_through": {
+   "type": "phrase",
+   "label": "run through",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "9:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:entire_cycle": {
+   "type": "phrase",
+   "label": "entire cycle",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:entire_waveform": {
+   "type": "phrase",
+   "label": "entire waveform",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "11:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:same_behavior": {
+   "type": "phrase",
+   "label": "same behavior",
+   "domain": "synth",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "11:24"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:reverb_filter": {
+   "type": "phrase",
+   "label": "reverb filter",
+   "domain": "synth",
+   "videos": [
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "1:22"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo"
+   ]
+  },
+  "tool:Omnisphere": {
+   "type": "tool",
+   "label": "Omnisphere",
+   "domain": "synth",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:12"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "tool:Massive": {
+   "type": "tool",
+   "label": "Massive",
+   "domain": "synth",
+   "videos": [
+    "9V56-jd48_k",
+    "uFk9xUVg7Q0",
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:12"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "5:40"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "26:57"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "28:16"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:16"
+    }
+   ],
+   "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "ring-mod-envelope-bell-stab-pulse",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "three-layer-complementary-pad-post-verb-lofi-degrade"
+   ]
+  },
+  "phrase:wind_and_air": {
+   "type": "phrase",
+   "label": "wind and air",
+   "domain": "synth",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "7:08"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:air_magic": {
+   "type": "phrase",
+   "label": "air magic",
+   "domain": "synth",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "7:08"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:sound_effects": {
+   "type": "phrase",
+   "label": "sound effects",
+   "domain": "synth",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "7:08"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:test_generator": {
+   "type": "phrase",
+   "label": "test generator",
+   "domain": "synth",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "0:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:doppler_effect": {
+   "type": "phrase",
+   "label": "doppler effect",
+   "domain": "synth",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "0:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:what's_interesting": {
+   "type": "phrase",
+   "label": "what's interesting",
+   "domain": "synth",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "5:51"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:mix=100 %": {
+   "type": "value",
+   "label": "100 %",
+   "domain": "synth",
+   "videos": [
+    "DpXw9UPrTDU",
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "1:01"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "2:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:decay_time=10 s": {
+   "type": "value",
+   "label": "10 s",
+   "domain": "synth",
+   "videos": [
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "3:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:audio_file": {
+   "type": "phrase",
+   "label": "audio file",
+   "domain": "synth",
+   "videos": [
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "2:39"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:reverb_tail": {
+   "type": "phrase",
+   "label": "reverb tail",
+   "domain": "synth",
+   "videos": [
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "2:15"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:reverse_reverb": {
+   "type": "phrase",
+   "label": "reverse reverb",
+   "domain": "synth",
+   "videos": [
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "0:05"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:distortion=1 %": {
+   "type": "value",
+   "label": "1 %",
+   "domain": "synth",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:distortion=16 %": {
+   "type": "value",
+   "label": "16 %",
+   "domain": "synth",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:fm=0 %": {
+   "type": "value",
+   "label": "0 %",
+   "domain": "synth",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:mono_signal": {
+   "type": "phrase",
+   "label": "mono signal",
+   "domain": "synth",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "3:21"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:pan_left": {
+   "type": "phrase",
+   "label": "pan left",
+   "domain": "synth",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "0:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=3 octaves": {
+   "type": "value",
+   "label": "3 octaves",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "3:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=100 %": {
+   "type": "value",
+   "label": "100 %",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=0 %": {
+   "type": "value",
+   "label": "0 %",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:shepher_tone": {
+   "type": "phrase",
+   "label": "shepher tone",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:constantly_rising": {
+   "type": "phrase",
+   "label": "constantly rising",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:ears_into_thinking": {
+   "type": "phrase",
+   "label": "ears into thinking",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:leave_the_world": {
+   "type": "phrase",
+   "label": "leave the world",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:loops_around": {
+   "type": "phrase",
+   "label": "loops around",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:world_behind": {
+   "type": "phrase",
+   "label": "world behind",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:semmit_tones": {
+   "type": "phrase",
+   "label": "semmit tones",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:full_volume": {
+   "type": "phrase",
+   "label": "full volume",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:pitch_bend": {
+   "type": "phrase",
+   "label": "pitch bend",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:01"
+    }
+   ],
+   "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "keysol-venus-velocity-hybrid-bass-impact"
+   ]
+  },
+  "phrase:pitch_range": {
+   "type": "phrase",
+   "label": "pitch range",
+   "domain": "synth",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:pitch=12 semitones": {
+   "type": "value",
+   "label": "12 semitones",
+   "domain": "synth",
+   "videos": [
+    "IvzsnMV0Cog"
+   ],
+   "refs": [
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "3:23"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:shepard_tone": {
+   "type": "phrase",
+   "label": "shepard tone",
+   "domain": "synth",
+   "videos": [
+    "IvzsnMV0Cog"
+   ],
+   "refs": [
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "1:26"
+    }
+   ],
+   "covered_by": []
+  },
+  "concept:drone": {
+   "type": "concept",
+   "label": "drone",
+   "domain": "synth",
+   "videos": [
+    "DFLshMLKkHE"
+   ],
+   "refs": [
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "4:12"
+    }
+   ],
+   "covered_by": [
+    "dji-video-to-gaussian-splat-mipmap",
+    "drone-hyperlapse-to-splatware-splat",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-wavetable-morph-filter-motion"
+   ]
+  },
+  "phrase:slightly_different": {
+   "type": "phrase",
+   "label": "slightly different",
+   "domain": "synth",
+   "videos": [
+    "DFLshMLKkHE"
+   ],
+   "refs": [
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:24"
     }
    ],
    "covered_by": []
@@ -4538,7 +6601,12 @@
     "C_NkGQqTdSo",
     "odosCwWVL2c",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "uFk9xUVg7Q0",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -4587,7 +6655,8 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "C_NkGQqTdSo",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "K4osI9yrQQY"
    ],
    "refs": [
     {
@@ -4617,6 +6686,10 @@
     {
      "video_id": "T2poUGh6qPg",
      "t": "1:45"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "3:58"
     }
    ],
    "covered_by": []
@@ -4629,7 +6702,8 @@
     "A7q9L5wd7Mk",
     "BqE9S27CZfY",
     "IK7cIBPKM1s",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -4647,6 +6721,10 @@
     {
      "video_id": "C_NkGQqTdSo",
      "t": "5:27"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:29"
     }
    ],
    "covered_by": []
@@ -4662,7 +6740,9 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
-    "T2poUGh6qPg"
+    "T2poUGh6qPg",
+    "9V56-jd48_k",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -4692,6 +6772,10 @@
     {
      "video_id": "T2poUGh6qPg",
      "t": "12:29"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:29"
     }
    ],
    "covered_by": []
@@ -4702,7 +6786,9 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "9V56-jd48_k",
+    "IvzsnMV0Cog"
    ],
    "refs": [
     {
@@ -4712,6 +6798,14 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "4:19"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "3:01"
+    },
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "0:00"
     }
    ],
    "covered_by": []
@@ -4730,7 +6824,16 @@
     "bMjCfB1qzjo",
     "C_NkGQqTdSo",
     "odosCwWVL2c",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "ZXhm-j0T3xo",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -4777,7 +6880,11 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "Ku3-RjDV3g8",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -4799,6 +6906,18 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "0:42"
+    },
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "2:28"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "8:26"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "2:34"
     }
    ],
    "covered_by": []
@@ -4842,20 +6961,30 @@
    "dst": "module:envelope",
    "type": "affects",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "3:09"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "2:24"
     }
    ],
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "envelope-follower-audio-driven-modulation",
     "modulation-lfo-envelope-mod-matrix-routing",
     "osc-as-granular-pitch-step-delay",
+    "ring-mod-envelope-bell-stab-pulse",
     "spectral-warp-vocode-formant-stretch-smear",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
     "transcript-domain-term-graph-extract",
+    "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw"
@@ -4870,7 +6999,9 @@
     "MH7YiOWQIhI",
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9v-p2k8Nnec",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -4892,6 +7023,14 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:56"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "3:51"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:53"
     }
    ],
    "covered_by": []
@@ -4902,7 +7041,9 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -4912,6 +7053,14 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:44"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:59"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "8:11"
     }
    ],
    "covered_by": []
@@ -4950,7 +7099,10 @@
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9V56-jd48_k",
+    "MKgCvLOLdNk",
+    "YvUbr8GaqUo"
    ],
    "refs": [
     {
@@ -4972,6 +7124,18 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "1:11"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:11"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "2:20"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "9:55"
     }
    ],
    "covered_by": []
@@ -5046,7 +7210,15 @@
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "MKgCvLOLdNk",
+    "YvUbr8GaqUo",
+    "IvzsnMV0Cog",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -5068,6 +7240,18 @@
     {
      "video_id": "odosCwWVL2c",
      "t": "19:46"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "2:39"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "1:43"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "4:29"
     }
    ],
    "covered_by": []
@@ -5106,12 +7290,27 @@
    "dst": "value:pitch=2 octaves",
    "type": "sets",
    "videos": [
-    "A7q9L5wd7Mk"
+    "A7q9L5wd7Mk",
+    "9v-p2k8Nnec",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
      "video_id": "A7q9L5wd7Mk",
      "t": "8:31"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:00"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "2:02"
     }
    ],
    "covered_by": [
@@ -5125,7 +7324,10 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "DpXw9UPrTDU",
+    "Z2mgB3LYkgQ",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -5135,6 +7337,18 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "7:48"
+    },
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "4:38"
+    },
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "5:53"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "9:34"
     }
    ],
    "covered_by": []
@@ -5151,7 +7365,17 @@
     "IK7cIBPKM1s",
     "bMjCfB1qzjo",
     "T2poUGh6qPg",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "Z2mgB3LYkgQ",
+    "YvUbr8GaqUo",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -5195,7 +7419,10 @@
    "type": "part-of",
    "videos": [
     "A7q9L5wd7Mk",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec"
    ],
    "refs": [
     {
@@ -5205,6 +7432,18 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "0:05"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "0:19"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "3:30"
     }
    ],
    "covered_by": []
@@ -5258,7 +7497,13 @@
     "A7q9L5wd7Mk",
     "kHWOIE4YTZ4",
     "IK7cIBPKM1s",
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "uFk9xUVg7Q0",
+    "DpXw9UPrTDU",
+    "MKgCvLOLdNk",
+    "K4osI9yrQQY",
+    "DFLshMLKkHE",
+    "iFkph3sCmw0"
    ],
    "refs": [
     {
@@ -5276,6 +7521,22 @@
     {
      "video_id": "bMjCfB1qzjo",
      "t": "2:12"
+    },
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "1:18"
+    },
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "3:32"
+    },
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "3:12"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "2:15"
     }
    ],
    "covered_by": []
@@ -5355,7 +7616,8 @@
     "BqE9S27CZfY",
     "UShjYsGgWcM",
     "IK7cIBPKM1s",
-    "C_NkGQqTdSo"
+    "C_NkGQqTdSo",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
@@ -5373,6 +7635,10 @@
     {
      "video_id": "C_NkGQqTdSo",
      "t": "1:24"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "1:29"
     }
    ],
    "covered_by": []
@@ -5384,7 +7650,11 @@
    "videos": [
     "kHWOIE4YTZ4",
     "UShjYsGgWcM",
-    "msDDpbSvdPc"
+    "msDDpbSvdPc",
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "K4osI9yrQQY",
+    "ZXhm-j0T3xo"
    ],
    "refs": [
     {
@@ -5398,6 +7668,22 @@
     {
      "video_id": "msDDpbSvdPc",
      "t": "3:27"
+    },
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "3:55"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "1:31"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:28"
     }
    ],
    "covered_by": []
@@ -5437,12 +7723,17 @@
    "dst": "module:unison",
    "type": "part-of",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "9V56-jd48_k"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "8:49"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:33"
     }
    ],
    "covered_by": []
@@ -5500,7 +7791,9 @@
    "type": "sets",
    "videos": [
     "UShjYsGgWcM",
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
@@ -5510,12 +7803,22 @@
     {
      "video_id": "IK7cIBPKM1s",
      "t": "1:44"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:59"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "8:11"
     }
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
     "cinematic-warm-analog-pad-drift-stereo",
-    "lush-stereo-saw-pad-random-pitch-texture"
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "synth-string-section-unison-vibrato-fm-blend",
+    "three-layer-complementary-pad-post-verb-lofi-degrade"
    ]
   },
   "param:mix|sets|value:mix=90 %": {
@@ -5779,15 +8082,31 @@
    "dst": "value:pitch=1 octaves",
    "type": "sets",
    "videos": [
-    "bMjCfB1qzjo"
+    "bMjCfB1qzjo",
+    "9v-p2k8Nnec",
+    "YvUbr8GaqUo",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
      "video_id": "bMjCfB1qzjo",
      "t": "1:44"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:00"
+    },
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "3:13"
     }
    ],
    "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "granular-dual-saw-ambient-epic-pad",
     "unison-odd-even-detune-width-clean-supersaw"
@@ -5848,12 +8167,22 @@
    "dst": "module:lfo",
    "type": "part-of",
    "videos": [
-    "odosCwWVL2c"
+    "odosCwWVL2c",
+    "9V56-jd48_k",
+    "DFLshMLKkHE"
    ],
    "refs": [
     {
      "video_id": "odosCwWVL2c",
      "t": "13:41"
+    },
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:07"
+    },
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "7:14"
     }
    ],
    "covered_by": []
@@ -5902,13 +8231,950 @@
     }
    ],
    "covered_by": []
+  },
+  "module:macro|part-of|tool:Serum": {
+   "src": "module:macro",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|part-of|tool:Serum": {
+   "src": "module:distortion",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "CKXV--9u5A4",
+    "D4K5g8t3aIc",
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "2:40"
+    },
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:wavetable|part-of|tool:Serum": {
+   "src": "module:wavetable",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "CKXV--9u5A4",
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "3:26"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "4:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:am|part-of|tool:Serum": {
+   "src": "module:am",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "CKXV--9u5A4"
+   ],
+   "refs": [
+    {
+     "video_id": "CKXV--9u5A4",
+     "t": "12:54"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:oscillator|part-of|tool:Serum": {
+   "src": "module:oscillator",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "D4K5g8t3aIc",
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "0:02"
+    },
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "1:05"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:level|sets|value:level=50 %": {
+   "src": "param:level",
+   "dst": "value:level=50 %",
+   "type": "sets",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "4:04"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "module:envelope|part-of|tool:Serum": {
+   "src": "module:envelope",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "D4K5g8t3aIc",
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "20:49"
+    },
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "0:01"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:wt_position|sets|value:wt_position=180 degrees": {
+   "src": "param:wt_position",
+   "dst": "value:wt_position=180 degrees",
+   "type": "sets",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "20:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:phase|sets|value:phase=90 degrees": {
+   "src": "param:phase",
+   "dst": "value:phase=90 degrees",
+   "type": "sets",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "21:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:wavetable|part-of|tool:Bitwig": {
+   "src": "module:wavetable",
+   "dst": "tool:Bitwig",
+   "type": "part-of",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "26:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|part-of|tool:Bitwig": {
+   "src": "module:distortion",
+   "dst": "tool:Bitwig",
+   "type": "part-of",
+   "videos": [
+    "D4K5g8t3aIc"
+   ],
+   "refs": [
+    {
+     "video_id": "D4K5g8t3aIc",
+     "t": "26:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:reverb|part-of|tool:Vital": {
+   "src": "module:reverb",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "9v-p2k8Nnec",
+    "iFkph3sCmw0"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:50"
+    },
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "0:20"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|part-of|tool:Vital": {
+   "src": "module:filter",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "2:50"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:compressor|part-of|tool:Vital": {
+   "src": "module:compressor",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:eq|part-of|tool:Vital": {
+   "src": "module:eq",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:stereo|part-of|tool:Vital": {
+   "src": "module:stereo",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "9v-p2k8Nnec"
+   ],
+   "refs": [
+    {
+     "video_id": "9v-p2k8Nnec",
+     "t": "6:32"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|part-of|tool:Omnisphere": {
+   "src": "module:noise",
+   "dst": "tool:Omnisphere",
+   "type": "part-of",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "0:43"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|part-of|tool:Massive": {
+   "src": "module:noise",
+   "dst": "tool:Massive",
+   "type": "part-of",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "5:40"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:oscillator|part-of|tool:Massive": {
+   "src": "module:oscillator",
+   "dst": "tool:Massive",
+   "type": "part-of",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "5:40"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:reverb|part-of|tool:Omnisphere": {
+   "src": "module:reverb",
+   "dst": "tool:Omnisphere",
+   "type": "part-of",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:33"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:delay|part-of|tool:Omnisphere": {
+   "src": "module:delay",
+   "dst": "tool:Omnisphere",
+   "type": "part-of",
+   "videos": [
+    "9V56-jd48_k"
+   ],
+   "refs": [
+    {
+     "video_id": "9V56-jd48_k",
+     "t": "6:33"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|part-of|tool:Logic Pro": {
+   "src": "module:noise",
+   "dst": "tool:Logic Pro",
+   "type": "part-of",
+   "videos": [
+    "Ku3-RjDV3g8"
+   ],
+   "refs": [
+    {
+     "video_id": "Ku3-RjDV3g8",
+     "t": "2:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:stereo|part-of|tool:Valhalla": {
+   "src": "module:stereo",
+   "dst": "tool:Valhalla",
+   "type": "part-of",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "20:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:reverb|part-of|tool:Valhalla": {
+   "src": "module:reverb",
+   "dst": "tool:Valhalla",
+   "type": "part-of",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "20:17"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:reverb|part-of|tool:Massive": {
+   "src": "module:reverb",
+   "dst": "tool:Massive",
+   "type": "part-of",
+   "videos": [
+    "uFk9xUVg7Q0"
+   ],
+   "refs": [
+    {
+     "video_id": "uFk9xUVg7Q0",
+     "t": "26:57"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:mix|sets|value:mix=100 %": {
+   "src": "param:mix",
+   "dst": "value:mix=100 %",
+   "type": "sets",
+   "videos": [
+    "DpXw9UPrTDU",
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "DpXw9UPrTDU",
+     "t": "1:01"
+    },
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "2:29"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "reverb-pads-type-choice-and-send-setup",
+    "synth-string-section-unison-vibrato-fm-blend"
+   ]
+  },
+  "module:reverb|part-of|tool:Logic Pro": {
+   "src": "module:reverb",
+   "dst": "tool:Logic Pro",
+   "type": "part-of",
+   "videos": [
+    "MKgCvLOLdNk"
+   ],
+   "refs": [
+    {
+     "video_id": "MKgCvLOLdNk",
+     "t": "3:52"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:decay_time|sets|value:decay_time=10 s": {
+   "src": "param:decay_time",
+   "dst": "value:decay_time=10 s",
+   "type": "sets",
+   "videos": [
+    "K4osI9yrQQY"
+   ],
+   "refs": [
+    {
+     "video_id": "K4osI9yrQQY",
+     "t": "3:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:delay|part-of|tool:Serum": {
+   "src": "module:delay",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "0:01"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|part-of|tool:Massive": {
+   "src": "module:distortion",
+   "dst": "tool:Massive",
+   "type": "part-of",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:fm|part-of|tool:Serum": {
+   "src": "module:fm",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:noise|part-of|tool:Serum": {
+   "src": "module:noise",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|sets|value:distortion=1 %": {
+   "src": "module:distortion",
+   "dst": "value:distortion=1 %",
+   "type": "sets",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|sets|value:distortion=16 %": {
+   "src": "module:distortion",
+   "dst": "value:distortion=16 %",
+   "type": "sets",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:fm|sets|value:fm=0 %": {
+   "src": "module:fm",
+   "dst": "value:fm=0 %",
+   "type": "sets",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "1:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:envelope|affects|module:lfo": {
+   "src": "module:envelope",
+   "dst": "module:lfo",
+   "type": "affects",
+   "videos": [
+    "ZXhm-j0T3xo"
+   ],
+   "refs": [
+    {
+     "video_id": "ZXhm-j0T3xo",
+     "t": "2:24"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "envelope-follower-audio-driven-modulation",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "ring-mod-envelope-bell-stab-pulse",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "transcript-domain-term-graph-extract",
+    "transient-splice-attack-body-hybrid-voice",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "module:eq|part-of|tool:Ableton Live": {
+   "src": "module:eq",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "1:03"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:stereo|part-of|tool:Ableton Live": {
+   "src": "module:stereo",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "4:54"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:delay|part-of|tool:Ableton Live": {
+   "src": "module:delay",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "7:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:stereo|part-of|tool:Serum": {
+   "src": "module:stereo",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|part-of|tool:Serum": {
+   "src": "module:unison",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "8:12"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|part-of|tool:Serum": {
+   "src": "module:filter",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "Z2mgB3LYkgQ"
+   ],
+   "refs": [
+    {
+     "video_id": "Z2mgB3LYkgQ",
+     "t": "8:38"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:envelope|part-of|tool:Ableton Live": {
+   "src": "module:envelope",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:pitch|sets|value:pitch=3 octaves": {
+   "src": "param:pitch",
+   "dst": "value:pitch=3 octaves",
+   "type": "sets",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "0:16"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:lfo|part-of|tool:Serum": {
+   "src": "module:lfo",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "3:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:pitch|sets|value:pitch=100 %": {
+   "src": "param:pitch",
+   "dst": "value:pitch=100 %",
+   "type": "sets",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": [
+    "cinematic-formant-comb-pad-phaser-fx",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "synth-string-section-unison-vibrato-fm-blend"
+   ]
+  },
+  "param:pitch|sets|value:pitch=0 %": {
+   "src": "param:pitch",
+   "dst": "value:pitch=0 %",
+   "type": "sets",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": [
+    "chorus-ensemble-classic-vibrato-pad-modes"
+   ]
+  },
+  "module:envelope|affects|param:pitch": {
+   "src": "module:envelope",
+   "dst": "param:pitch",
+   "type": "affects",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "6:11"
+    }
+   ],
+   "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "traveler-walkthrough-curved-envelope-evolving-pad"
+   ]
+  },
+  "module:lfo|affects|module:filter": {
+   "src": "module:lfo",
+   "dst": "module:filter",
+   "type": "affects",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "9:55"
+    }
+   ],
+   "covered_by": [
+    "audio-rate-am-wave-shape-texture",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "evolving-pad-unison-filter-swell-fifth",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "transient-splice-attack-body-hybrid-voice",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "wavetable-crossfade-morph-modulate-pad"
+   ]
+  },
+  "module:lfo|affects|param:cutoff": {
+   "src": "module:lfo",
+   "dst": "param:cutoff",
+   "type": "affects",
+   "videos": [
+    "YvUbr8GaqUo"
+   ],
+   "refs": [
+    {
+     "video_id": "YvUbr8GaqUo",
+     "t": "10:35"
+    }
+   ],
+   "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "evolving-pad-unison-filter-swell-fifth",
+    "filter-ladder-diode-comb-formant-flavors",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "transcript-domain-term-graph-extract",
+    "traveler-walkthrough-wavetable-morph-filter-motion",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+   ]
+  },
+  "param:pitch|sets|value:pitch=12 semitones": {
+   "src": "param:pitch",
+   "dst": "value:pitch=12 semitones",
+   "type": "sets",
+   "videos": [
+    "IvzsnMV0Cog"
+   ],
+   "refs": [
+    {
+     "video_id": "IvzsnMV0Cog",
+     "t": "3:23"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:lfo|affects|module:oscillator": {
+   "src": "module:lfo",
+   "dst": "module:oscillator",
+   "type": "affects",
+   "videos": [
+    "DFLshMLKkHE"
+   ],
+   "refs": [
+    {
+     "video_id": "DFLshMLKkHE",
+     "t": "7:14"
+    }
+   ],
+   "covered_by": [
+    "cinematic-warm-analog-pad-drift-stereo",
+    "evolving-pad-unison-filter-swell-fifth",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "osc-as-granular-pitch-step-delay",
+    "three-layer-complementary-pad-post-verb-lofi-degrade"
+   ]
+  },
+  "module:oscillator|part-of|tool:Vital": {
+   "src": "module:oscillator",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "iFkph3sCmw0"
+   ],
+   "refs": [
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "0:20"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|part-of|tool:Vital": {
+   "src": "module:unison",
+   "dst": "tool:Vital",
+   "type": "part-of",
+   "videos": [
+    "iFkph3sCmw0"
+   ],
+   "refs": [
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "0:20"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:lfo|affects|param:pitch": {
+   "src": "module:lfo",
+   "dst": "param:pitch",
+   "type": "affects",
+   "videos": [
+    "iFkph3sCmw0"
+   ],
+   "refs": [
+    {
+     "video_id": "iFkph3sCmw0",
+     "t": "1:37"
+    }
+   ],
+   "covered_by": [
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "organic-looped-sample-unison-voicing-pad",
+    "osc-as-granular-pitch-step-delay",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "traveler-walkthrough-curved-envelope-evolving-pad"
+   ]
   }
  },
  "stats": {
-  "videos": 11,
-  "nodes": 132,
-  "edges": 62,
-  "uncovered_nodes": 2,
-  "uncovered_edges": 14
+  "videos": 26,
+  "nodes": 194,
+  "edges": 117,
+  "uncovered_nodes": 4,
+  "uncovered_edges": 22
  }
 }

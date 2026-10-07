@@ -1,0 +1,46 @@
+{
+  "video_id": "uFk9xUVg7Q0",
+  "title": "How to design 'Whoosh' sound effects [EASY]",
+  "url": "https://www.youtube.com/watch?v=uFk9xUVg7Q0",
+  "fetched_at": "2026-10-07T16:27:47.456109+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Eytan Krief",
+  "duration": 1886,
+  "ok": true,
+  "cue_count": 302,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uFk9xUVg7Q0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uFk9xUVg7Q0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

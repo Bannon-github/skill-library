@@ -206,10 +206,14 @@ def route_video(vid: str, a) -> dict:
     out["graph"] = g
     L.ask("Q6 term graph built?", bool(gj), evidence={k: g.get(k) for k in ("nodes", "edges")})
     # Q7
-    gp = run_json([sys.executable, str(HERE / "graph_gap_merge.py"), vid] + (["--no-kg-update"] if a.no_kg_update else []))
+    gp = run_json([sys.executable, str(HERE / "graph_gap_merge.py"), vid] + (["--no-kg-update"] if a.no_kg_update else [])
+                  + (["--as-of", a.as_of] if a.as_of else []))
     out["gaps"] = gp
-    has_c = bool(gp.get("candidates"))
-    L.ask("Q7 gap candidates found?", has_c, evidence={k: gp.get(k) for k in ("gap_nodes_excl_phrases", "gap_edges", "candidates")},
+    # Q7: covered only on procedure/parameter-level overlap + novelty (graph_gap_merge.covered_verdict),
+    # never on topic-term matches alone
+    has_c = gp.get("decision", "GAP" if gp.get("candidates") else "COVERED") == "GAP"
+    L.ask("Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?", has_c,
+          evidence={k: gp.get(k) for k in ("gap_nodes_excl_phrases", "gap_edges", "candidates", "covered_verdict")},
           then=("NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
                 if has_c else "covered by library; KG updated; no new skill"))
     out["outcome"] = "CANDIDATES_READY" if has_c else ("COVERED" if on_lex else "OFF_LEXICON")
@@ -249,6 +253,7 @@ def main() -> int:
     ap.add_argument("--backend", default="argos")
     ap.add_argument("--domain")
     ap.add_argument("--no-kg-update", action="store_true")
+    ap.add_argument("--as-of", help="replay the gap check against the library as it was before this date")
     a = ap.parse_args()
     ids = list(a.video_ids)
     if a.topic:

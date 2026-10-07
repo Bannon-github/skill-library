@@ -1,0 +1,31 @@
+{
+  "video_id": "W8lublzkDtI",
+  "title": "How to create - Uplifters, Downlifters & Air Effects in Reason (Tutorial)",
+  "url": "https://www.youtube.com/watch?v=W8lublzkDtI",
+  "fetched_at": "2026-10-07T16:30:47.848529+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Kevin Sunray",
+  "duration": 624,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

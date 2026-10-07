@@ -1,0 +1,65 @@
+{
+  "video_id": "ZXhm-j0T3xo",
+  "title": "Serum Tutorial - Remap Warp Mode",
+  "url": "https://www.youtube.com/watch?v=ZXhm-j0T3xo",
+  "fetched_at": "2026-10-07T16:28:49.380773+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "ADSR Music Production Tutorials",
+  "duration": 332,
+  "ok": true,
+  "cue_count": 135,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/ZXhm-j0T3xo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/ZXhm-j0T3xo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

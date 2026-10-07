@@ -1,0 +1,46 @@
+{
+  "video_id": "DpXw9UPrTDU",
+  "title": "Reverse Reverb Technique, Tips and Tricks in Cubase Music Production Tutorial",
+  "url": "https://www.youtube.com/watch?v=DpXw9UPrTDU",
+  "fetched_at": "2026-10-07T16:27:50.614815+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Mike Smith",
+  "duration": 319,
+  "ok": true,
+  "cue_count": 116,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/DpXw9UPrTDU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/DpXw9UPrTDU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

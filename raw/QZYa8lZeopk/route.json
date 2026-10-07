@@ -1,0 +1,60 @@
+{
+ "video_id": "QZYa8lZeopk",
+ "started_at": "2026-10-07T16:26:46.729587+00:00",
+ "outcome": "STOP_translation_failed",
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": false,
+   "evidence": "translation_failed"
+  },
+  {
+   "q": "Q2d machine translation failed?",
+   "a": true,
+   "evidence": {
+    "ok": false,
+    "error": "RuntimeError: argos language pack ko->en not installed (run --install-langs ko)"
+   },
+   "then": "STOP; original words kept; try --backend libretranslate or another package"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "ko"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "ko(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "5:original-plus-machine-translation:ko"
+   ]
+  },
+  {
+   "q": "fetch original-plus-machine-translation (ko)",
+   "a": true
+  },
+  {
+   "q": "machine-translate ko->en (argos)",
+   "a": false,
+   "evidence": "RuntimeError: argos language pack ko->en not installed (run --install-langs ko)"
+  }
+ ],
+ "finished_at": "2026-10-07T16:26:51.861594+00:00"
+}

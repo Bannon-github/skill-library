@@ -1,6 +1,6 @@
 {
  "video_id": "BqE9S27CZfY",
- "started_at": "2026-10-03T16:36:40.755723+00:00",
+ "started_at": "2026-10-07T16:44:54.979963+00:00",
  "outcome": "COVERED",
  "route": "original-plus-machine-translation",
  "language_code": "de",
@@ -37,20 +37,26 @@
   "graph_nodes": 26,
   "graph_edges": 29,
   "terms_checked": 18,
-  "terms_covered": 15,
-  "gap_nodes": 3,
+  "terms_covered": 16,
+  "gap_nodes": 2,
   "gap_nodes_excl_phrases": 0,
   "relations_checked": 0,
   "gap_edges": 0,
   "candidates": 0,
-  "kg": {
-   "videos": 3,
-   "nodes": 64,
-   "edges": 30,
-   "uncovered_nodes": 1,
-   "uncovered_edges": 0
-  },
-  "candidate_ids": []
+  "candidate_ids": [],
+  "decision": "COVERED",
+  "covered_verdict": {
+   "reasons": [
+    "procedure-level overlap"
+   ],
+   "best_skill": null,
+   "profile_share": 0.833,
+   "best_proc_overlap": 0.0,
+   "specific_items": 0,
+   "uncovered_techniques": [],
+   "video_novelty": 0.103,
+   "video_novelty_verdict": "NOVEL"
+  }
  },
  "decisions": [
   {
@@ -114,12 +120,24 @@
    }
   },
   {
-   "q": "Q7 gap candidates found?",
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
    "a": false,
    "evidence": {
     "gap_nodes_excl_phrases": 0,
     "gap_edges": 0,
-    "candidates": 0
+    "candidates": 0,
+    "covered_verdict": {
+     "reasons": [
+      "procedure-level overlap"
+     ],
+     "best_skill": null,
+     "profile_share": 0.833,
+     "best_proc_overlap": 0.0,
+     "specific_items": 0,
+     "uncovered_techniques": [],
+     "video_novelty": 0.103,
+     "video_novelty_verdict": "NOVEL"
+    }
    },
    "then": "covered by library; KG updated; no new skill"
   }
@@ -159,5 +177,5 @@
    "evidence": null
   }
  ],
- "finished_at": "2026-10-03T16:36:41.056877+00:00"
+ "finished_at": "2026-10-07T16:44:55.641827+00:00"
 }

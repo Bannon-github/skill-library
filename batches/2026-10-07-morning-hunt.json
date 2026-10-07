@@ -1,0 +1,137 @@
+{
+  "batch_id": "2026-10-07-morning-hunt",
+  "ran_at_local": "2026-10-07 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "mcp_count_before": 88,
+  "mcp_count_after": 95,
+  "searches": [
+    "vital warp modes explained sync bend pwm",
+    "serum warp mode fm from oscillator b tutorial",
+    "how to make a riser in serum from scratch",
+    "synth whoosh sound effect from white noise tutorial",
+    "reverse reverb swell manually ableton freeze bounce reverse",
+    "stereo width tricks synth pads mid side",
+    "reverse reverb effect tutorial vocals swell",
+    "reverse reverb pad intro tutorial",
+    "shepard tone riser tutorial synth",
+    "cinematic tension drone sound design synth tutorial",
+    "vital cinematic pad from scratch tutorial",
+    "phase distortion synthesis explained",
+    "downlifter impact sub drop synth tutorial",
+    "noise sweep riser filter automation synth tutorial"
+  ],
+  "published": [
+    {
+      "id": "asymmetric-left-right-processing-width-mono-safe",
+      "video_id": "Z2mgB3LYkgQ",
+      "title": "12 Ways To Widen Your Sounds Like A Pro"
+    },
+    {
+      "id": "brooding-pw-drone-detuned-octave-stack-split-bend",
+      "video_id": "DFLshMLKkHE",
+      "title": "How to create Massive, Brooding, Cinematic Drones in any Synth"
+    },
+    {
+      "id": "noise-layer-whoosh-doppler-and-rising-variants",
+      "video_id": "uFk9xUVg7Q0",
+      "title": "How to design 'Whoosh' sound effects [EASY]"
+    },
+    {
+      "id": "pitch-ramp-riser-resonant-smear-filter-reverb",
+      "video_id": "9v-p2k8Nnec",
+      "title": "Serum Tutorial - How To Make Risers"
+    },
+    {
+      "id": "reverse-reverb-swell-print-reverse-print",
+      "video_id": "DpXw9UPrTDU",
+      "title": "Reverse Reverb Technique, Tips and Tricks in Cubase Music Production Tutorial"
+    },
+    {
+      "id": "shepard-tone-endless-riser-octave-crossfade-voices",
+      "video_id": "YvUbr8GaqUo",
+      "title": "Shepard Tone Tutorial - How to Create INFINITE Risers!"
+    },
+    {
+      "id": "warp-modes-as-phase-signal-transforms",
+      "video_id": "D4K5g8t3aIc",
+      "title": "A comprehensive guide to phase and warp modes in Serum, Bitwigs Grid and other synths like it"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "CKXV--9u5A4",
+      "title": "All Serum's Warp Modes in PhasePlant - Bend, Asym, Remap, Ring Mod, Sync, PWM, etc",
+      "reason": "Product-locked click path: recreates one synth's warp modes by hand-drawing helper wavetables in another plugin's editor (keyframe/point positions); the portable concepts are covered by warp-modes-as-phase-signal-transforms (D4K5g8t3aIc)."
+    },
+    {
+      "video_id": "ZXhm-j0T3xo",
+      "title": "Serum Tutorial - Remap Warp Mode",
+      "reason": "Near-duplicate/promo: single-mode tour of a remap warp curve, covered by the new warp-modes skill; ends in store promo."
+    },
+    {
+      "video_id": "IvzsnMV0Cog",
+      "title": "Creating Shepard Tones from Any Source - Sound Design Tutorial",
+      "reason": "Near-duplicate: audio-source Shepard tone via pitch-shifted clip pairs uses the same octave-crossfade principle as shepard-tone-endless-riser-octave-crossfade-voices; remaining delta is DAW-specific fade/loop editing."
+    },
+    {
+      "video_id": "9V56-jd48_k",
+      "title": "How to make wind sound effects from synths",
+      "reason": "Thin/overlap: synth wind = noise -> 12 dB low-pass + slow, very light random cutoff LFO + delay/reverb + low-mid boost; already covered by hybrid-noise-distortion-separate-sub-layer and the new whoosh skill."
+    },
+    {
+      "video_id": "Ku3-RjDV3g8",
+      "title": "How To Make Whoosh Sound Effect / Transition Sound Design",
+      "reason": "Off-domain/thin: whooshes mostly from mic/field recording (mouth, swung objects, car pass-bys); synth part is one sentence."
+    },
+    {
+      "video_id": "MKgCvLOLdNk",
+      "title": "Creating Intro FX Reverse Reverb | EDM Track From Scratch",
+      "reason": "Promo/near-duplicate: reverse-reverb vocal intro inside an EDM masterclass excerpt (mostly music, ends in subscription promo); same procedure as reverse-reverb-swell-print-reverse-print."
+    },
+    {
+      "video_id": "K4osI9yrQQY",
+      "title": "Reverse-Reverb erstellen in Cubase 11 | Artist & Pro Tutorial",
+      "reason": "Near-duplicate: same manual reverse-reverb procedure as DpXw9UPrTDU (English text is from the AI-dub track of a German video)."
+    },
+    {
+      "video_id": "iFkph3sCmw0",
+      "title": "How To Sound Design Dark Ambiences And Drones (using Vital)",
+      "reason": "Low delta: dark ambience (detuned sines -> distortion -> 100% wet reverb -> low-pass, tiny slow LFO on pitch/filter, stacked reverbs, layered pitched-down recordings, reversed bounce) overlaps existing pad/reverb/lo-fi skills."
+    }
+  ],
+  "stopped_no_transcript": [
+    {
+      "video_id": "QZYa8lZeopk",
+      "reason": "STOP_translation_failed: Korean auto transcript only; argos ko->en pack not installed (not in the 6 installed packs)."
+    },
+    {
+      "video_id": "Pyys6SsYn1g",
+      "reason": "STOP_no_transcript_asr_flagged: no transcript track (ASR not run)."
+    },
+    {
+      "video_id": "Q7Pfza8--ZA",
+      "reason": "STOP_no_transcript_asr_flagged: no transcript track (ASR not run)."
+    },
+    {
+      "video_id": "W8lublzkDtI",
+      "reason": "STOP_no_transcript_asr_flagged: no transcript track (ASR not run)."
+    }
+  ],
+  "pivoted": false,
+  "notes": [
+    "Pipeline .venv present at start; ran scripts/ensure_env.sh (all envs ok, argos packs de/es/ja/fr/pt/it).",
+    "route.py --domain synth returned COVERED for every fetched video (15 routed with usable transcripts). All were checked by hand against mcp-publish; 7 had real gaps (warp modes, Shepard, risers, whooshes, reverse reverb, PW drone, L/R width). The synth lexicon is missing these terms, so COVERED stays unreliable.",
+    "Reworded warp-mode search ('vital warp modes explained sync bend pwm') worked this time: D4K5g8t3aIc and CKXV--9u5A4.",
+    "Operator typo: routed 'Q7pfza8--ZA' (wrong case) -> STOP_video_unavailable; removed its raw/ stub and re-routed the correct id Q7Pfza8--ZA (no transcript). A stray entry may remain in pipeline/logs/route.jsonl and knowledge/graph.json.",
+    "QZYa8lZeopk needs argos ko->en (translate_transcript.py --install-langs ko) if wanted later.",
+    "Quality check across all 95 published skills: 0 failed, 28 warnings (pre-existing, non-strict). The 7 new skills pass --strict with no warnings; novelty verdict NOVEL for all 7 (max local overlap 0.13).",
+    "Merged the 7 new skills into LIBRARY.json (+7 entries, merge_log), topics/taxonomy.json (cinematic-hybrid-synth), curriculum-cinematic-hybrid-synth level 3, and skills/<id>.md. Skills published 2026-10-05/06 (and some earlier ones) are still missing from taxonomy/curriculum: backlog not touched.",
+    "Git sync skipped: no credentials on the box (no GH_TOKEN/GITHUB_TOKEN, no credential helper, gh not logged in)."
+  ],
+  "still_thin": [
+    "Phase-distortion (Casio-style) oscillator walkthroughs, e.g. EW12RYc7QRA and lE_CG3bagwg (found, not routed)",
+    "Uplifter/downlifter + sub-drop synth recipes (the best hit W8lublzkDtI has no transcript)",
+    "Windowed-sync emulation details (only approximate in source)",
+    "Synth-built impacts/booms (sub-drop pitch envelope)"
+  ]
+}

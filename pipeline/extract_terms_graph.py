@@ -124,6 +124,9 @@ class Matcher:
     def __init__(self, lex: dict):
         self.lex = lex
         entries: list[tuple[str, str, str]] = []
+        # techniques first: specific procedures win over generic module aliases (e.g. "ring mod")
+        for canon, aliases in lex.get("techniques", {}).items():
+            entries += [(a, "technique", canon) for a in aliases]
         for canon, aliases in lex.get("modules", {}).items():
             entries += [(a, "module", canon) for a in aliases]
         for canon, spec in lex.get("params", {}).items():
@@ -300,7 +303,7 @@ def build_graph(video_id: str, segs: list[tuple[float, str]], domain: str | None
             if not s["mod_source"]:
                 continue
             for tg in hits[i + 1:]:
-                if tg["type"] not in ("param", "module") or tg["start"] - s["end"] > 60:
+                if tg["type"] not in ("param", "module", "technique") or tg["start"] - s["end"] > 60:
                     continue
                 if tg["canon"] == s["canon"] or (tg["type"] == "module" and tg["canon"] == s["mod_source"]):
                     continue
@@ -312,7 +315,7 @@ def build_graph(video_id: str, segs: list[tuple[float, str]], domain: str | None
                            via=s["mod_source"])
                     break
         # steps
-        terms = {f"{h['type']}:{h['canon']}" for h in hits if h["type"] in ("param", "module", "concept")}
+        terms = {f"{h['type']}:{h['canon']}" for h in hits if h["type"] in ("param", "module", "concept", "technique")}
         if terms and ACTION_VERBS.search(w) and (STEP_CUES.search(w) or len(terms) >= 2):
             sid = G.node("step", f"{video_id}@{fmt_t(t)}", w[:140], t, w, at=fmt_t(t))
             for term in sorted(terms):

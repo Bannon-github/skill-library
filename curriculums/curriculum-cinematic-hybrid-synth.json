@@ -1,7 +1,7 @@
 {
   "id": "curriculum-cinematic-hybrid-synth",
   "title": "Cinematic hybrid synth (Traveler-inspired portable techniques)",
-  "purpose": "Progress from core hybrid motion (unison, WT morph, envelopes, filters) through organic/granular pads and FM literacy to FX/mix finishing \u2014 portable procedures for a browser/Web Audio cinematic synth.",
+  "purpose": "Progress from core hybrid motion (unison, WT morph, envelopes, filters) through organic/granular pads and FM literacy to FX/mix finishing — portable procedures for a browser/Web Audio cinematic synth.",
   "status": "active",
   "levels": [
     {
@@ -15,7 +15,10 @@
         "traveler-walkthrough-curved-envelope-evolving-pad",
         "traveler-walkthrough-stereo-ladder-lf-width",
         "traveler-walkthrough-super-unison-wide-lead",
-        "warm-heavenly-supersaw-pad-keytrack-fx"
+        "warm-heavenly-supersaw-pad-keytrack-fx",
+        "modulation-lfo-envelope-mod-matrix-routing",
+        "pad-width-no-phase-smear-highband-pan-or-chord-split",
+        "synth-string-section-unison-vibrato-fm-blend"
       ]
     },
     {
@@ -30,7 +33,18 @@
         "keysol-venus-high-wt-artifact-pulse-layer",
         "lush-stereo-saw-pad-random-pitch-texture",
         "traveler-walkthrough-control-track-filter-wt-animation",
-        "traveler-walkthrough-wavetable-morph-filter-motion"
+        "traveler-walkthrough-wavetable-morph-filter-motion",
+        "envelope-follower-audio-driven-modulation",
+        "ring-mod-envelope-bell-stab-pulse",
+        "three-layer-complementary-pad-post-verb-lofi-degrade",
+        "transient-splice-attack-body-hybrid-voice",
+        "chorus-ensemble-classic-vibrato-pad-modes",
+        "wavetable-crossfade-morph-modulate-pad",
+        "velocity-filter-cutoff-envelope-amount",
+        "filter-ladder-diode-comb-formant-flavors",
+        "parallel-filter-rhythmic-pad-chains",
+        "audio-rate-am-wave-shape-texture",
+        "spectral-warp-vocode-formant-stretch-smear"
       ]
     },
     {
@@ -46,9 +60,29 @@
         "keysol-venus-polyrhythmic-control-track-pitch",
         "keysol-venus-velocity-hybrid-bass-impact",
         "mix-pads-role-eq-width-clarity",
-        "traveler-walkthrough-fx-eq-chorus-delay-reverb"
+        "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+        "asymmetric-left-right-processing-width-mono-safe",
+        "brooding-pw-drone-detuned-octave-stack-split-bend",
+        "noise-layer-whoosh-doppler-and-rising-variants",
+        "pitch-ramp-riser-resonant-smear-filter-reverb",
+        "reverse-reverb-swell-print-reverse-print",
+        "shepard-tone-endless-riser-octave-crossfade-voices",
+        "warp-modes-as-phase-signal-transforms",
+        "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+        "selective-saturation-and-lofi-grit-toolkit",
+        "multiband-low-band-gentle-control-and-expand",
+        "haas-plus-phase-offset-width-automated",
+        "reverb-pads-type-choice-and-send-setup",
+        "stereo-delay-pingpong-dual-parallel-two-tap",
+        "osc-as-granular-pitch-step-delay",
+        "hybrid-noise-distortion-separate-sub-layer",
+        "midside-eq-bass-focus-width-depth",
+        "shimmer-reverb-pitchshift-plus12-feedback",
+        "sidechain-compressor-duck-synth-pads",
+        "soft-tape-saturation-pads-before-space",
+        "trance-gate-sidechain-chop-texture"
       ]
     }
   ],
-  "updated_at": "2026-10-03T15:50:00+00:00"
+  "updated_at": "2026-10-07T16:46:25+00:00"
 }

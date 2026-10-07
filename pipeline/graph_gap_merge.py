@@ -72,13 +72,43 @@ def skill_texts(s: dict) -> tuple[str, list[str]]:
     return blob, steps
 
 
-def coverage(domain_lex: dict) -> dict:
+DOMAIN: str | None = None
+SKILL_DOMAINS = {"synth": {"cinematic-synth", "music-synthesis", "synth"},
+                 "blender": {"3d-blender", "blender"}, "drone": {"spatial-3d-capture", "drone"},
+                 "sidehustle": {"side-hustle", "sidehustle"}, "crypto": {"crypto-investing", "crypto"}}
+AS_OF: str | None = None  # --as-of YYYY-MM-DD: replay against the library as it was before that date
+
+
+def excluded_ids(vid: str) -> set[str]:
+    """Skills that must not count as prior coverage: distilled from this video, or (with --as-of)
+    published on/after the replay date."""
+    out = set()
+    for q in SKILLS.glob("*.json"):
+        t = q.read_text()
+        if vid in t:
+            out.add(q.stem)
+            continue
+        dom = json.loads(t).get("domain")
+        if DOMAIN and dom and dom not in SKILL_DOMAINS.get(DOMAIN, {DOMAIN}):
+            out.add(q.stem)  # pipeline/meta skills quote the lexicons; they are not domain coverage
+        elif AS_OF:
+            pa = (json.loads(t).get("published_at") or "")[:10]
+            if pa and pa >= AS_OF:
+                out.add(q.stem)
+    return out
+
+
+def coverage(domain_lex: dict, exclude_video: str | None = None) -> dict:
+    """exclude_video: skip skills distilled FROM this video, so a re-check is not self-covered."""
     M = etg.Matcher(domain_lex)
+    excl = excluded_ids(exclude_video) if exclude_video else set()
     nodes: dict[str, set[str]] = {}
     step_pairs: dict[tuple[str, str], set[str]] = {}
     values: dict[str, set[str]] = {}
     for p in sorted(SKILLS.glob("*.json")):
         s = json.loads(p.read_text())
+        if p.stem in excl:
+            continue
         blob, steps = skill_texts(s)
         for h in M.find(blob):
             nodes.setdefault(f"{h['type']}:{h['canon']}", set()).add(s["id"])
@@ -152,16 +182,95 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60]
 
 
+GENERIC_PARAMS = {"attack", "decay", "sustain", "release", "cutoff", "resonance", "detune", "lfo_rate",
+                  "lfo_depth", "mix", "volume", "gain", "pan", "pitch", "level", "waveform", "phase", "feedback",
+                  "decay_time", "threshold", "env_amount", "lfo_shape", "voice_count", "blend", "glide"}
+
+
+def covered_verdict(g: dict, node_cover: dict, edge_cover: dict, gap_nodes: list, candidates: list,
+                    corpus: list) -> dict:
+    """Video-level 'already covered?' decision.
+
+    Topic terms (module/concept/tool: filter, envelope, pad, reverb...) are matched by almost
+    every skill, so they are NOT evidence of coverage. Coverage needs procedure/parameter level
+    overlap with ONE skill: its specific items = technique nodes + non-generic param nodes +
+    sets/affects edges. COVERED only if
+      - no uncovered technique node, and
+      - a single existing skill covers >= 50% of the specific items, and
+      - the whole-video novelty score (novelty_check_skill logic) is not NOVEL.
+    Otherwise GAP.
+    """
+    vid = g["video_id"]
+    spec = []
+    for n in g["nodes"]:
+        if (n["type"] == "technique" and n["count"] >= 2) or (n["type"] == "param" and n["id"].split(":", 1)[1] not in GENERIC_PARAMS):
+            spec.append(("n", n["id"], set(node_cover.get(n["id"], []))))
+    for e in g["edges"]:
+        if e["type"] in ("sets", "affects"):
+            spec.append(("e", ekey(e), set(edge_cover.get(ekey(e), []))))
+    techniques = [n["id"] for n in g["nodes"] if n["type"] == "technique" and n["count"] >= 2]
+    unc_tech = [x["id"] for x in gap_nodes if x["type"] == "technique" and x["count"] >= 2]
+    per = Counter()
+    for _, _, ss in spec:
+        per.update(ss)
+    best_skill, best_n = (per.most_common(1)[0] if per else (None, 0))
+    # techniques the video is about must be in that same skill, not spread over several
+    tech_split = [i for k, i, ss in spec if i.startswith("technique:") and best_skill not in ss]
+    proc = round(best_n / len(spec), 3) if spec else 0.0
+    # whole-video novelty: specific terms + title, scored like a candidate skill
+    words = [g["source"].get("title") or ""] + [i.split(":", 1)[1].replace("_", " ") for _, i, _ in spec if _ == "n"]
+    words += [n["label"] for n in g["nodes"] if n["type"] in ("module", "concept")]
+    toks = nov.tokenize(" ".join(words))
+    self_ids = excluded_ids(vid)
+    rows = [r for r in corpus if r["id"] not in self_ids]
+    sc = sorted(((nov.score_candidate(toks, r), r) for r in rows), key=lambda x: -x[0])[:3]
+    vnov = round(sc[0][0], 3) if sc else 0.0
+    vverd = nov.classify(vnov)
+    reasons = []
+    if candidates:
+        reasons.append("dense gap-step candidates")
+    if unc_tech:
+        reasons.append("uncovered techniques: " + ", ".join(unc_tech))
+    thin = len(spec) < 3
+    prof = [n["id"] for n in g["nodes"] if n["type"] in ("module", "concept")]
+    pc = Counter()
+    for i in prof:
+        pc.update(set(node_cover.get(i, [])))
+    prof_skill, prof_n = (pc.most_common(1)[0] if pc else (None, 0))
+    prof_share = round(prof_n / len(prof), 3) if prof else 0.0
+    if thin:
+        # too little procedure evidence to call it covered on parameters: require one skill to
+        # hold nearly the whole topic profile (a beginner ADSR video vs. the ADSR skill)
+        if prof_share < 0.8:
+            reasons.append(f"thin procedure evidence ({len(spec)} items) and best single-skill "
+                           f"topic profile {prof_share} < 0.8")
+    elif proc < 0.5:
+        reasons.append(f"best single-skill procedure overlap {proc} < 0.5")
+    if tech_split and not unc_tech:
+        reasons.append("techniques not in the best-overlap skill: " + ", ".join(tech_split))
+    # whole-video novelty is reported as evidence only: transcript-level token sets score NOVEL
+    # even for genuinely covered videos, so it cannot veto a procedure-level match
+    return {"decision": "GAP" if reasons else "COVERED", "reasons": reasons or ["procedure-level overlap"],
+            "specific_items": len(spec), "technique_split": tech_split,
+            "profile_skill": prof_skill, "profile_share": prof_share, "best_skill": best_skill, "best_proc_overlap": proc,
+            "techniques": techniques, "uncovered_techniques": unc_tech,
+            "video_novelty": vnov, "video_novelty_verdict": vverd,
+            "nearest_existing": [{"id": r["id"], "kind": r.get("kind"), "score": round(s, 3)} for s, r in sc]}
+
+
 def analyze(g: dict, min_steps: int = 3) -> dict:
+    global DOMAIN
+    DOMAIN = g["domain"]
     lex = etg.load_lexicons()[g["domain"]]
-    cov = coverage(lex)
+    vid = g["video_id"]
+    excl = excluded_ids(vid)
+    cov = coverage(lex, exclude_video=vid)
     kg = load_kg()
     pri = prior_terms()
-    vid = g["video_id"]
     node_cover, edge_cover = {}, {}
     gap_nodes, gap_edges = [], []
     for n in g["nodes"]:
-        if n["type"] not in ("param", "module", "concept", "tool", "phrase", "value"):
+        if n["type"] not in ("param", "module", "concept", "tool", "phrase", "value", "technique"):
             continue
         if n["type"] == "value":
             continue  # values are judged through their sets-edge
@@ -227,7 +336,7 @@ def analyze(g: dict, min_steps: int = 3) -> dict:
         while run and run[-1]["score"] == 0:
             run.pop()
     candidates = []
-    corpus = nov.load_corpus()
+    corpus = [r for r in nov.load_corpus() if r["id"] not in excl]
     for run in runs:
         items = sum(len(r["gap_nodes"]) + len(r["gap_edges"]) for r in run)
         if len(run) < min_steps or items < 2:
@@ -264,7 +373,34 @@ def analyze(g: dict, min_steps: int = 3) -> dict:
             "novelty": {"best_overlap": round(best, 3), "verdict": nov.classify(best)},
             "tags": tags,
         })
-    return {"video_id": vid, "domain": g["domain"], "analyzed_at": now(),
+    verdict = covered_verdict(g, node_cover, edge_cover, gap_nodes, candidates, corpus)
+    if verdict["decision"] == "GAP" and not candidates:
+        # no dense run of gap steps, but the procedure as a whole is not in any one skill:
+        # outline the whole video so distill-transcript gets a grounded starting point
+        steps_spec = [r for r in scored if any(t.split(":")[0] in ("technique", "param")
+                                               for t in mentions.get(r["step"]["id"], set()))] or scored
+        if steps_spec:
+            tech = verdict["techniques"]
+            cid = slug(f"{g['domain']} {' '.join(t.split(':')[1] for t in tech[:3]) or 'procedure'} whole-video")
+            candidates.append({
+                "candidate_id": cid,
+                "status": "outline - needs distill-transcript + quality_check + novelty_check before publish",
+                "video_id": vid, "domain": g["domain"],
+                "name_draft": f"{g['source'].get('title') or vid}: whole-video procedure",
+                "goal_draft": ("Delta vs library: procedure-level overlap with best skill "
+                               f"{verdict['best_skill']} = {verdict['best_proc_overlap']}; uncovered techniques: "
+                               + (", ".join(verdict["uncovered_techniques"]) or "none") + "."),
+                "translated_source": bool(g["source"].get("translated")),
+                "span": [steps_spec[0]["step"]["at"], steps_spec[-1]["step"]["at"]],
+                "grounded_steps": [{"t": r["step"]["at"], "quote": r["step"]["evidence"][0]["quote"],
+                                    "gap_terms": r["gap_nodes"], "gap_edges": [x["key"] for x in r["gap_edges"]]}
+                                   for r in steps_spec[:25]],
+                "gap_nodes": verdict["uncovered_techniques"], "gap_edges": [x["key"] for x in gap_edges],
+                "nearest_existing": verdict["nearest_existing"],
+                "novelty": {"best_overlap": verdict["video_novelty"], "verdict": verdict["video_novelty_verdict"]},
+                "tags": [g["domain"], "from-youtube", "candidate", "whole-video"],
+            })
+    return {"video_id": vid, "domain": g["domain"], "analyzed_at": now(), "covered_verdict": verdict,
             "gap_nodes": gap_nodes, "gap_edges": gap_edges, "node_cover": node_cover, "edge_cover": edge_cover,
             "candidates": candidates,
             "stats": {"graph_nodes": g["stats"]["nodes"], "graph_edges": g["stats"]["edges"],
@@ -280,9 +416,12 @@ def main() -> int:
     ap.add_argument("--graph", help="graph.json path (default raw/<id>/graph.json)")
     ap.add_argument("--no-kg-update", action="store_true")
     ap.add_argument("--min-steps", type=int, default=3)
+    ap.add_argument("--as-of", help="replay: ignore skills published on/after this date (YYYY-MM-DD)")
     a = ap.parse_args()
     gp = Path(a.graph) if a.graph else RAW / a.video_id / "graph.json"
     g = json.loads(gp.read_text())
+    global AS_OF
+    AS_OF = a.as_of
     res = analyze(g, a.min_steps)
     (RAW / a.video_id / "gaps.json").write_text(json.dumps(res, indent=1, ensure_ascii=False) + "\n")
     cdir = DISTILLED / a.video_id / "candidates"
@@ -296,7 +435,11 @@ def main() -> int:
         KG.write_text(json.dumps(kg, indent=1, ensure_ascii=False) + "\n")
         res["stats"]["kg"] = kg["stats"]
     print(json.dumps({"video_id": a.video_id, **res["stats"],
-                      "candidate_ids": [c["candidate_id"] for c in res["candidates"]]}))
+                      "candidate_ids": [c["candidate_id"] for c in res["candidates"]],
+                      "decision": res["covered_verdict"]["decision"],
+                      "covered_verdict": {k: res["covered_verdict"][k] for k in
+                                          ("reasons", "best_skill", "profile_share", "best_proc_overlap", "specific_items",
+                                           "uncovered_techniques", "video_novelty", "video_novelty_verdict")}}))
     return 0
 
 

@@ -1,0 +1,46 @@
+{
+  "video_id": "9v-p2k8Nnec",
+  "title": "Serum Tutorial - How To Make Risers",
+  "url": "https://www.youtube.com/watch?v=9v-p2k8Nnec",
+  "fetched_at": "2026-10-07T16:27:31.169699+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Kermode",
+  "duration": 435,
+  "ok": true,
+  "cue_count": 126,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/9v-p2k8Nnec/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/9v-p2k8Nnec/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

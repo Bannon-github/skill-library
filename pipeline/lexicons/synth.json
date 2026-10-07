@@ -85,8 +85,7 @@
   ],
   "am": [
    "amplitude modulation",
-   "ring mod",
-   "ring modulation"
+   "tremolo"
   ],
   "reverb": [
    "reverb",
@@ -123,10 +122,7 @@
   ],
   "compressor": [
    "compressor",
-   "compression",
-   "sidechain",
-   "side chain",
-   "multiband"
+   "compression"
   ],
   "distortion": [
    "distortion",
@@ -134,10 +130,7 @@
    "drive",
    "overdrive",
    "tape saturation",
-   "bitcrush",
-   "bit crusher",
-   "waveshaper",
-   "warp"
+   "waveshaper"
   ],
   "macro": [
    "macro",
@@ -174,8 +167,7 @@
    "mid/side",
    "mono",
    "pan",
-   "panning",
-   "haas"
+   "panning"
   ]
  },
  "params": {
@@ -712,6 +704,219 @@
    "lfo",
    "sequencer",
    "arpeggiator"
+  ]
+ },
+ "techniques": {
+  "envelope_follower": [
+   "envelope follower",
+   "envelope followers",
+   "env follower",
+   "amplitude follower",
+   "envelope following"
+  ],
+  "wave_sequencing": [
+   "wave sequencing",
+   "wave sequence",
+   "wavesequencing",
+   "wave sequencer"
+  ],
+  "transient_splice": [
+   "transient splice",
+   "transient splicing",
+   "transient swap",
+   "attack splice",
+   "splice the transient",
+   "transient of one",
+   "transient layering",
+   "attack of one",
+   "attack from",
+   "transient from",
+   "splice"
+  ],
+  "braam": [
+   "braam",
+   "braams",
+   "brahm",
+   "bwaa",
+   "inception horn"
+  ],
+  "ring_mod": [
+   "ring mod",
+   "ring modulation",
+   "ring modulator",
+   "ringmod"
+  ],
+  "shepard_tone": [
+   "shepard tone",
+   "shepard tones",
+   "shepard",
+   "endless riser",
+   "infinite riser",
+   "shepard risset"
+  ],
+  "doppler": [
+   "doppler",
+   "doppler effect",
+   "fly-by",
+   "flyby",
+   "fly by"
+  ],
+  "reverse_reverb": [
+   "reverse reverb",
+   "reversed reverb",
+   "reverb swell",
+   "reverse print",
+   "print the reverb",
+   "reverse the reverb"
+  ],
+  "wavetable_warp": [
+   "warp mode",
+   "warp modes",
+   "wavetable warp",
+   "bend plus",
+   "bend minus",
+   "sync warp",
+   "mirror warp",
+   "quantize warp",
+   "asym warp",
+   "phase distortion"
+  ],
+  "haas": [
+   "haas",
+   "haas effect",
+   "precedence effect"
+  ],
+  "multiband": [
+   "multiband",
+   "multi-band",
+   "multiband compression",
+   "multiband compressor",
+   "ott",
+   "upward compression",
+   "upward expansion",
+   "multiband expansion"
+  ],
+  "riser": [
+   "riser",
+   "risers",
+   "uplifter",
+   "pitch ramp",
+   "pitch riser"
+  ],
+  "whoosh": [
+   "whoosh",
+   "whooshes",
+   "swoosh",
+   "noise sweep"
+  ],
+  "pulse_width": [
+   "pulse width",
+   "pwm",
+   "pulse width modulation"
+  ],
+  "formant_shift": [
+   "formant shift",
+   "formant shifting",
+   "vowel filter",
+   "formant"
+  ],
+  "vocoder": [
+   "vocoder",
+   "vocoding"
+  ],
+  "spectral": [
+   "spectral",
+   "spectral warp",
+   "smear",
+   "spectral blur"
+  ],
+  "lofi_degrade": [
+   "lo-fi",
+   "lofi",
+   "tape wobble",
+   "wow and flutter",
+   "bit crush",
+   "bitcrushing",
+   "sample rate reduction",
+   "downsample"
+  ],
+  "transient_shaping": [
+   "transient shaper",
+   "transient shaping",
+   "transient designer"
+  ],
+  "pitch_envelope": [
+   "pitch envelope",
+   "pitch drop",
+   "pitch bend",
+   "pitch curve"
+  ],
+  "asymmetric_stereo": [
+   "left channel only",
+   "right channel only",
+   "only the left channel",
+   "only the right channel",
+   "mid side processing",
+   "process the sides",
+   "side channel"
+  ],
+  "octave_crossfade": [
+   "octave crossfade",
+   "crossfade between octaves",
+   "crossfading octaves"
+  ],
+  "parallel_processing": [
+   "parallel processing",
+   "parallel compression",
+   "parallel distortion",
+   "parallel chain"
+  ],
+  "sidechain": [
+   "sidechain",
+   "side chain",
+   "sidechaining",
+   "ducking"
+  ],
+  "granular_stretch": [
+   "time stretch",
+   "timestretch",
+   "paulstretch",
+   "grain size"
+  ],
+  "resampling": [
+   "resample",
+   "resampling",
+   "bounce to audio",
+   "render to audio",
+   "freeze and flatten"
+  ],
+  "saturation_devices": [
+   "saturator",
+   "redux",
+   "erosion",
+   "dynamic tube",
+   "roar",
+   "drum buss",
+   "soft clip",
+   "soft clipping",
+   "hard clip",
+   "hard clipping",
+   "waveshaping",
+   "wave shaping",
+   "tube saturation",
+   "bass shaper"
+  ],
+  "harmonic_exciter": [
+   "exciter",
+   "harmonic exciter",
+   "upper harmonics",
+   "add harmonics"
+  ],
+  "ensemble_strings": [
+   "string section",
+   "string ensemble",
+   "ensemble strings",
+   "synth strings"
   ]
  }
 }

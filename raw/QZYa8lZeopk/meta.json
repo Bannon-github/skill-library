@@ -1,0 +1,48 @@
+{
+  "video_id": "QZYa8lZeopk",
+  "title": "세럼 007 - 워프 : Sync & Formant",
+  "url": "https://www.youtube.com/watch?v=QZYa8lZeopk",
+  "fetched_at": "2026-10-07T16:26:46.729973+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "ko",
+  "channel": "신스브루",
+  "duration": 323,
+  "ok": false,
+  "error": "translation_failed",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "ko"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ko(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "5:original-plus-machine-translation:ko"
+      ]
+    },
+    {
+      "q": "fetch original-plus-machine-translation (ko)",
+      "a": true
+    },
+    {
+      "q": "machine-translate ko->en (argos)",
+      "a": false,
+      "evidence": "RuntimeError: argos language pack ko->en not installed (run --install-langs ko)"
+    }
+  ],
+  "retries": [],
+  "translate": {
+    "ok": false,
+    "error": "RuntimeError: argos language pack ko->en not installed (run --install-langs ko)"
+  },
+  "original_transcript_path": "/workspace/skill-library/raw/QZYa8lZeopk/transcript.orig.ko.txt"
+}

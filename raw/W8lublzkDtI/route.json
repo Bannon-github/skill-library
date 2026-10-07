@@ -1,0 +1,45 @@
+{
+ "video_id": "W8lublzkDtI",
+ "started_at": "2026-10-07T16:30:47.846162+00:00",
+ "outcome": "STOP_no_transcript_asr_flagged",
+ "asr_last_resort_flag": true,
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": false,
+   "evidence": "transcripts_disabled"
+  },
+  {
+   "q": "Q2c no transcript track at all?",
+   "a": true,
+   "evidence": "transcripts_disabled",
+   "then": "STOP; flag ASR/Whisper as last resort - only if Matt explicitly asks"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": null
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": false,
+   "evidence": "transcripts_disabled"
+  },
+  {
+   "q": "yt-dlp fallback (en.*,en,.*-orig)",
+   "a": false
+  }
+ ],
+ "finished_at": "2026-10-07T16:31:00.581916+00:00"
+}

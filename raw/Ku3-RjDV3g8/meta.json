@@ -1,0 +1,49 @@
+{
+  "video_id": "Ku3-RjDV3g8",
+  "title": "How To Make Whoosh Sound Effect / Transition Sound Design",
+  "url": "https://www.youtube.com/watch?v=Ku3-RjDV3g8",
+  "fetched_at": "2026-10-07T16:27:43.624242+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "cactuzz sound",
+  "duration": 434,
+  "ok": true,
+  "cue_count": 78,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Ku3-RjDV3g8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Ku3-RjDV3g8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "pl",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,127 @@
+{
+ "topic": "synth whoosh sound effect from white noise tutorial",
+ "date": "2026-10-07",
+ "params": {
+  "topic": "synth whoosh sound effect from white noise tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "9V56-jd48_k",
+   "title": "How to make wind sound effects from synths",
+   "channel": "David Dumais Audio",
+   "duration": 457,
+   "view_count": 12127,
+   "url": "https://www.youtube.com/watch?v=9V56-jd48_k",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.54
+  },
+  {
+   "id": "Ku3-RjDV3g8",
+   "title": "How To Make Whoosh Sound Effect / Transition Sound Design",
+   "channel": "cactuzz sound",
+   "duration": 434,
+   "view_count": 10308,
+   "url": "https://www.youtube.com/watch?v=Ku3-RjDV3g8",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.51
+  },
+  {
+   "id": "95gjIS4QavQ",
+   "title": "How To Make A Typical White Noise Sweep Sound Effect In FL Studio 21",
+   "channel": "FireWalk",
+   "duration": 218,
+   "view_count": 24174,
+   "url": "https://www.youtube.com/watch?v=95gjIS4QavQ",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.19
+  },
+  {
+   "id": "bSZVBeDKCSk",
+   "title": "Whoosh Sound Effect Using White Noise",
+   "channel": "Mike Russell",
+   "duration": 184,
+   "view_count": 23686,
+   "url": "https://www.youtube.com/watch?v=bSZVBeDKCSk",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.19
+  },
+  {
+   "id": "XVGMOSgPts8",
+   "title": "FL Studio | White Noise Sweep Tutorial",
+   "channel": "Amiccuz",
+   "duration": 182,
+   "view_count": 9680,
+   "url": "https://www.youtube.com/watch?v=XVGMOSgPts8",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.99
+  },
+  {
+   "id": "uFk9xUVg7Q0",
+   "title": "How to design 'Whoosh' sound effects [EASY]",
+   "channel": "Eytan Krief",
+   "duration": 1887,
+   "view_count": 5715,
+   "url": "https://www.youtube.com/watch?v=uFk9xUVg7Q0",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.88
+  },
+  {
+   "id": "ZHFRUCMlgj4",
+   "title": "How To Make White Noise Sweep In FL Studio",
+   "channel": "howtomakeemusic",
+   "duration": 217,
+   "view_count": 329067,
+   "url": "https://www.youtube.com/watch?v=ZHFRUCMlgj4",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.76
+  },
+  {
+   "id": "sxLFoPd76Oo",
+   "title": "How To Turn Any SFX Into A Whoosh",
+   "channel": "David Dumais Audio",
+   "duration": 765,
+   "view_count": 2016,
+   "url": "https://www.youtube.com/watch?v=sxLFoPd76Oo",
+   "query": "synth whoosh sound effect from white noise tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.15
+  }
+ ],
+ "dropped": [
+  {
+   "id": "lsO0sAnDDf8",
+   "why": "duration 91s"
+  },
+  {
+   "id": "Mlik5HS2qfA",
+   "why": "duration 82s"
+  },
+  {
+   "id": "F-GZ6oxdG6s",
+   "why": "duration 118s"
+  },
+  {
+   "id": "b9hBHt317mw",
+   "why": "duration 28s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

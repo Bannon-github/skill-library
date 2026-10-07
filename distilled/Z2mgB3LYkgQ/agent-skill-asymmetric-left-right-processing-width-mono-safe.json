@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "id": "asymmetric-left-right-processing-width-mono-safe",
+  "name": "Width by processing left and right differently (L/R EQ, one-sided saturation, formant shift, slap times) with a mono-safe parallel blend",
+  "goal": "Widen synths, pads and FX by making the left and right channels genuinely different - double-tracked or alternate sources hard-panned, different L/R EQ, saturation on only one side, a formant-shifted duplicate on one side, and a short slap delay at different times per side (about 50 vs 75 ms) - and blend any phase-risky width (Haas/width plus distortion) in parallel beside an untouched dry chain so mono compatibility is preserved; delta beyond the existing Haas, mid/side and unison skills.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Z2mgB3LYkgQ",
+    "url": "https://www.youtube.com/watch?v=Z2mgB3LYkgQ",
+    "title": "12 Ways To Widen Your Sounds Like A Pro",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Z2mgB3LYkgQ/agent-skill-asymmetric-left-right-processing-width-mono-safe.json"
+  },
+  "prerequisites": [
+    "DAW/Web Audio graph with per-channel (L/R) EQ, saturation, delay and a parallel rack/splitter",
+    "Mono-sum check (utility or channel merger)"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio-or-synth",
+      "description": "Mono-ish synth, lead, pad, clap or FX layer to widen",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "widened_layer",
+      "type": "audio",
+      "description": "Wider layer that still survives mono summing"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Most organic: make L and R different sources - record an analog synth part twice, or use two different claps/variants - and hard-pan one left and one right.",
+      "tool": "double-track",
+      "expect": "Wide image with no phase issues"
+    },
+    {
+      "n": 2,
+      "action": "L/R EQ: EQ each side differently (e.g. brighter left; right with highs reduced and mids boosted).",
+      "tool": "eq",
+      "expect": "Width from tonal difference"
+    },
+    {
+      "n": 3,
+      "action": "Mid/side EQ only helps if the sound already has side content (a single mono output has none): boost sides more than mid.",
+      "tool": "midside-eq",
+      "expect": "Works on stereo sources only"
+    },
+    {
+      "n": 4,
+      "action": "Parallel width chain: keep a dry chain untouched and add a second chain with a Haas/width effect followed by distortion; mix the wet chain in slowly until width appears while mono compatibility stays good.",
+      "tool": "parallel-rack",
+      "expect": "Width added without removing the mono centre"
+    },
+    {
+      "n": 5,
+      "action": "Saturate only one side (pan the drive to the right, leaving the left clean).",
+      "tool": "saturation",
+      "expect": "Different harmonic content per side"
+    },
+    {
+      "n": 6,
+      "action": "Chorus as the old-school widener for mono synths - note it can sterilise the tone.",
+      "tool": "chorus",
+      "expect": "Classic width with some softening"
+    },
+    {
+      "n": 7,
+      "action": "Haas via delay (widest but sacrifices phase integrity): one side ~1 ms, the other ~6-20 ms, low feedback, EQ the delay; reserve it for supplemental pads/layers and avoid stacking it on already-reverbed/delayed sounds.",
+      "tool": "delay",
+      "expect": "Very wide but less mono-safe; use sparingly"
+    },
+    {
+      "n": 8,
+      "action": "Formant-shift one duplicate and leave the other unshifted, panned apart.",
+      "tool": "formant",
+      "expect": "Width from vocal-like timbral difference"
+    },
+    {
+      "n": 9,
+      "action": "Slap delay return: about 50 ms on one side and 75 ms on the other (tape-style delay preferred), feedback to taste - cleaner and less unnatural than Haas.",
+      "tool": "delay",
+      "expect": "Natural-sounding width on leads/vocals"
+    },
+    {
+      "n": 10,
+      "action": "Synth-side: two otherwise identical saws with a different waveform variant on one, panned L/R with the random(-phase) control turned down; or unison with per-voice pan and fine detune; or pan different filters per side; reverb also adds width.",
+      "tool": "synth",
+      "expect": "Width generated inside the patch"
+    },
+    {
+      "n": 11,
+      "action": "Check the mono sum after each method and back off the risky ones first.",
+      "tool": "mono-check",
+      "expect": "No large level/tone collapse in mono"
+    }
+  ],
+  "verification": [
+    "Mono sum of the final layer keeps its body (no obvious cancellation)",
+    "Parallel width chain at 0% equals the dry sound",
+    "L/R difference is audible when soloing each channel"
+  ],
+  "tags": [
+    "stereo-width",
+    "mono-compatibility",
+    "parallel-processing",
+    "saturation",
+    "formant",
+    "slap-delay",
+    "mixing",
+    "pads",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "mcp_resource": "skill://asymmetric-left-right-processing-width-mono-safe",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source tool's own units.",
+    "Original synthesis / signal-flow only - map brand UI (Serum/Bitwig/Ableton/Logic/Cubase/Zebra/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid (Polyrhythm Studio); never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth/DAW vendors named in the source video.",
+    "Delta only: Haas basics live in haas-plus-phase-offset-width-automated, mid/side EQ in midside-eq-bass-focus-width-depth, unison width in unison-odd-even-detune-width-clean-supersaw.",
+    "Web Audio mapping: ChannelSplitterNode -> per-channel BiquadFilter/WaveShaper/DelayNode -> ChannelMergerNode, with a dry/wet GainNode pair for the parallel blend."
+  ],
+  "published_at": "2026-10-07T16:37:09+00:00"
+}

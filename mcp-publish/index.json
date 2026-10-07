@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 88,
+  "count": 95,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -19,6 +19,12 @@
       "id": "ambient-wavetable-scratch-spectral-morph-pad",
       "path": "/workspace/skill-library/mcp-publish/skills/ambient-wavetable-scratch-spectral-morph-pad.json",
       "mcp_uri": "skill://ambient-wavetable-scratch-spectral-morph-pad",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "asymmetric-left-right-processing-width-mono-safe",
+      "path": "/workspace/skill-library/mcp-publish/skills/asymmetric-left-right-processing-width-mono-safe.json",
+      "mcp_uri": "skill://asymmetric-left-right-processing-width-mono-safe",
       "domain": "cinematic-synth"
     },
     {
@@ -104,6 +110,12 @@
       "path": "/workspace/skill-library/mcp-publish/skills/blender-mug-solidify-subsurf-loopcut.json",
       "mcp_uri": "skill://blender-mug-solidify-subsurf-loopcut",
       "domain": "3d-blender"
+    },
+    {
+      "id": "brooding-pw-drone-detuned-octave-stack-split-bend",
+      "path": "/workspace/skill-library/mcp-publish/skills/brooding-pw-drone-detuned-octave-stack-split-bend.json",
+      "mcp_uri": "skill://brooding-pw-drone-detuned-octave-stack-split-bend",
+      "domain": "cinematic-synth"
     },
     {
       "id": "chorus-ensemble-classic-vibrato-pad-modes",
@@ -316,6 +328,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "noise-layer-whoosh-doppler-and-rising-variants",
+      "path": "/workspace/skill-library/mcp-publish/skills/noise-layer-whoosh-doppler-and-rising-variants.json",
+      "mcp_uri": "skill://noise-layer-whoosh-doppler-and-rising-variants",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "organic-looped-sample-unison-voicing-pad",
       "path": "/workspace/skill-library/mcp-publish/skills/organic-looped-sample-unison-voicing-pad.json",
       "mcp_uri": "skill://organic-looped-sample-unison-voicing-pad",
@@ -340,6 +358,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "pitch-ramp-riser-resonant-smear-filter-reverb",
+      "path": "/workspace/skill-library/mcp-publish/skills/pitch-ramp-riser-resonant-smear-filter-reverb.json",
+      "mcp_uri": "skill://pitch-ramp-riser-resonant-smear-filter-reverb",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "python-pathlib-basic-file-workflow",
       "path": "/workspace/skill-library/mcp-publish/skills/python-pathlib-basic-file-workflow.json",
       "mcp_uri": "skill://python-pathlib-basic-file-workflow",
@@ -352,6 +376,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "reverse-reverb-swell-print-reverse-print",
+      "path": "/workspace/skill-library/mcp-publish/skills/reverse-reverb-swell-print-reverse-print.json",
+      "mcp_uri": "skill://reverse-reverb-swell-print-reverse-print",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "ring-mod-envelope-bell-stab-pulse",
       "path": "/workspace/skill-library/mcp-publish/skills/ring-mod-envelope-bell-stab-pulse.json",
       "mcp_uri": "skill://ring-mod-envelope-bell-stab-pulse",
@@ -361,6 +391,12 @@
       "id": "selective-saturation-and-lofi-grit-toolkit",
       "path": "/workspace/skill-library/mcp-publish/skills/selective-saturation-and-lofi-grit-toolkit.json",
       "mcp_uri": "skill://selective-saturation-and-lofi-grit-toolkit",
+      "domain": "cinematic-synth"
+    },
+    {
+      "id": "shepard-tone-endless-riser-octave-crossfade-voices",
+      "path": "/workspace/skill-library/mcp-publish/skills/shepard-tone-endless-riser-octave-crossfade-voices.json",
+      "mcp_uri": "skill://shepard-tone-endless-riser-octave-crossfade-voices",
       "domain": "cinematic-synth"
     },
     {
@@ -514,6 +550,12 @@
       "domain": "cinematic-synth"
     },
     {
+      "id": "warp-modes-as-phase-signal-transforms",
+      "path": "/workspace/skill-library/mcp-publish/skills/warp-modes-as-phase-signal-transforms.json",
+      "mcp_uri": "skill://warp-modes-as-phase-signal-transforms",
+      "domain": "cinematic-synth"
+    },
+    {
       "id": "wavetable-crossfade-morph-modulate-pad",
       "path": "/workspace/skill-library/mcp-publish/skills/wavetable-crossfade-morph-modulate-pad.json",
       "mcp_uri": "skill://wavetable-crossfade-morph-modulate-pad",
@@ -538,6 +580,6 @@
       "domain": "agent-pipeline"
     }
   ],
-  "updated_at": "2026-10-05T16:31:55+00:00",
+  "updated_at": "2026-10-07T16:37:09+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

@@ -1,0 +1,26 @@
+{
+ "topic": "reverse reverb swell manually ableton freeze bounce reverse",
+ "date": "2026-10-07",
+ "params": {
+  "topic": "reverse reverb swell manually ableton freeze bounce reverse",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "85uXUHYgnU8",
+   "why": "duration 104s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
