@@ -1,0 +1,180 @@
+{
+ "topic": "physical modelling string pad synth tutorial",
+ "date": "2026-10-16",
+ "params": {
+  "topic": "physical modelling string pad synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "leLAm3OigI0",
+   "title": "How to Design Cinematic Realistic String Pads - Zebra 3 Sound Design Tutorial",
+   "channel": "Sonic Tales",
+   "duration": 1529,
+   "view_count": 3229,
+   "url": "https://www.youtube.com/watch?v=leLAm3OigI0",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "oWiy8oakGlA",
+   "title": "Tonic Synth Analog, Wavetable, FM, Physical Modelling, 8 engines in one Demo / Tutorial - AUv3 (iOS)",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 792,
+   "view_count": 1070,
+   "url": "https://www.youtube.com/watch?v=oWiy8oakGlA",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "it",
+     "es-US"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "B3n9GOT0Q9A",
+   "title": "Syngular: Pianoteq’s New Physically Modeled Synth // Walkthrough & Demo",
+   "channel": "Gavinski’s Tutorials",
+   "duration": 1071,
+   "view_count": 3988,
+   "url": "https://www.youtube.com/watch?v=B3n9GOT0Q9A",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.3,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Pd9AFeTcl2k",
+   "title": "A new Synth for Physical Modeling: reFX 𝑹𝒊𝒑𝒑𝒍𝒆𝒓",
+   "channel": "Xantux Soundfactory",
+   "duration": 857,
+   "view_count": 2311,
+   "url": "https://www.youtube.com/watch?v=Pd9AFeTcl2k",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.18,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "HNZySomZQHA",
+   "title": "Nord Electro 7 Stage Keyboard - Advanced Tutorial with Douglas Moore",
+   "channel": "Kraft Music and DSoundman",
+   "duration": 2047,
+   "view_count": 16080,
+   "url": "https://www.youtube.com/watch?v=HNZySomZQHA",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.1,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "EgoENUY5sso",
+   "title": "Sound Design Episode 1 | Mastering the Basics: Synthesis Methods & Sound Design",
+   "channel": "The Audio Engineer Room",
+   "duration": 443,
+   "view_count": 10,
+   "url": "https://www.youtube.com/watch?v=EgoENUY5sso",
+   "query": "physical modelling string pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "y9eDmBUC8ZU",
+   "why": "already known"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "jc-VpulkP_o",
+   "why": "duration 34s"
+  },
+  {
+   "id": "wB6dCTQC0yg",
+   "why": "duration 6419s"
+  },
+  {
+   "id": "_6mEzWHoxKo",
+   "why": "already known"
+  },
+  {
+   "id": "9O6T5b85gI8",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

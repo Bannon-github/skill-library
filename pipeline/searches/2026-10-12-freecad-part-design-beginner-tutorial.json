@@ -1,0 +1,135 @@
+{
+ "topic": "freecad part design beginner tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "freecad part design beginner tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 4,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "iy9amRGcCCA",
+   "title": "FreeCAD Beginner Tutorial Part Design",
+   "channel": "Jayanam",
+   "duration": 398,
+   "view_count": 316631,
+   "url": "https://www.youtube.com/watch?v=iy9amRGcCCA",
+   "query": "freecad part design beginner tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "1QNVyMBV0fM",
+   "title": "CAD TUTORIAL : FreeCAD Beginner [EASY GUIDE]",
+   "channel": "VogMan",
+   "duration": 1568,
+   "view_count": 291803,
+   "url": "https://www.youtube.com/watch?v=1QNVyMBV0fM",
+   "query": "freecad part design beginner tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.23,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-GB"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "ByFaqBb6UJs",
+   "title": "FreeCAD1.1.3 Part Design Tutorial for Beginners | Sketch, Pad, Hole & Pattern Features-158",
+   "channel": "UseFreeCAD",
+   "duration": 885,
+   "view_count": 3608,
+   "url": "https://www.youtube.com/watch?v=ByFaqBb6UJs",
+   "query": "freecad part design beginner tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.28,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "TyxePqU8Acw",
+   "title": "FreeCAD Constraints Part 1 | Easy Beginner Tutorial",
+   "channel": "Q",
+   "duration": 474,
+   "view_count": 68760,
+   "url": "https://www.youtube.com/watch?v=TyxePqU8Acw",
+   "query": "freecad part design beginner tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.92,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ZPsLhvgU8kc",
+   "why": "duration 3759s"
+  },
+  {
+   "id": "9cqs3oTzpac",
+   "why": "duration 3914s"
+  },
+  {
+   "id": "ffNOA9XmaU8",
+   "why": "negative title signal"
+  },
+  {
+   "id": "c1K-jBWytSQ",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

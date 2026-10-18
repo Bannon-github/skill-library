@@ -1,0 +1,46 @@
+{
+  "video_id": "k9ZURoAww0k",
+  "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+  "url": "https://www.youtube.com/watch?v=k9ZURoAww0k",
+  "fetched_at": "2026-10-13T16:34:40.128574+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Darkest Sunray",
+  "duration": 287,
+  "ok": true,
+  "cue_count": 80,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/k9ZURoAww0k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/k9ZURoAww0k/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

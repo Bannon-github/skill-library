@@ -1,0 +1,155 @@
+{
+ "batch_id": "2026-10-12-batch-01",
+ "ran_at": "2026-10-12T16:30:13+00:00",
+ "ran_at_local": "2026-10-12 09:30 PT",
+ "routine": "Weekly YouTube skills library intake",
+ "topic": "broad practical how-to (vector graphics, home repair, screen recording, video editing)",
+ "entry_count_before": 97,
+ "searches": [
+  "inkscape trace bitmap tutorial",
+  "freecad part design beginner tutorial",
+  "how to patch drywall hole",
+  "obs studio setup recording tutorial",
+  "rsync backup tutorial linux",
+  "kdenlive beginner editing tutorial"
+ ],
+ "videos": [
+  {
+   "video_id": "a8SAAJBo3yU",
+   "title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+   "channel": "IronEcho Design",
+   "topic": "vector-graphics",
+   "transcript_kind": "auto-generated",
+   "summary": "Beginner walkthrough of Inkscape Path > Trace Bitmap on a tiger photo with a neutral background: single-scan brightness cutoff at several thresholds (0.45/0.43/0.35/0.25) with default speckles 2, smooth corners 1, optimize 0.20; edge detection (busy on organic subjects, better for objects); quick color Autotrace; and multiple-scan color tracing (8 scans, smooth and stack, remove background), then isolating color layers. Keep images under about 10 MB and save before high scan counts.",
+   "skills": [
+    {
+     "id": "inkscape-trace-bitmap-raster-to-vector",
+     "name": "Inkscape Trace Bitmap: convert a JPEG/PNG to vector",
+     "goal": "Convert a raster image (JPEG/PNG) into scalable vector paths in Inkscape, choosing single-scan or multi-color tracing.",
+     "steps": [
+      "Pick a source image with a plain, neutral background (royalty-free sources like Pexels work); downscale it to under about 10 MB if your computer is slow.",
+      "Import or open the image in Inkscape and select it.",
+      "Open Path > Trace Bitmap. Start on Single scan > Brightness cutoff with defaults: threshold about 0.45, speckles 2, smooth corners 1.0, optimize 0.20.",
+      "Click Update to preview, then OK. Drag the new vector off the original to compare.",
+      "If dark areas clog (e.g. too much black around a face), reselect the image and lower the threshold (try 0.43, 0.35, 0.25), updating and comparing each result; optionally composite parts of several traces.",
+      "For hard-edged objects (cars, buildings, still life) try Single scan > Edge detection around 0.50; it gets very busy on organic subjects.",
+      "For a fast color result try Autotrace (e.g. error threshold 2.0, filter iterations 5), Update, OK.",
+      "For a detailed color vector use Multiple scans > Colors: start with 8 scans, enable Smooth and Stack, enable Remove background, keep the speckle/corner/optimize defaults, Update, OK. More scans add layers and detail but take longer; save your file before going to 20+ scans because Inkscape may crash.",
+      "Double-click into the traced group to isolate individual color layers (black, gray, orange, etc.) and keep, recolor, or delete them.",
+      "Verify: zoom far in and confirm edges stay crisp (no pixelation), then save as SVG."
+     ]
+    }
+   ],
+   "url": "https://www.youtube.com/watch?v=a8SAAJBo3yU"
+  },
+  {
+   "video_id": "PLGmTzEGSIY",
+   "title": "How to Patch a Drywall Hole | Ask This Old House",
+   "channel": "This Old House",
+   "topic": "home-repair",
+   "transcript_kind": "auto-generated",
+   "summary": "Three drywall repairs by hole size: small nail/picture holes get spackling compound pushed in and smoothed (it shrinks, so recoat); medium holes (doorknob, baseboard) get heavy-duty mesh tape in layers or an adhesive metal mesh patch, then 2-3 smooth coats and sanding; large holes get a cut patch traced onto the wall, with backing (board, or drywall repair clips), or a \"California patch\" whose paper face extends past the gypsum core and acts as its own tape. Spackle for small/medium, joint compound for anything bigger.",
+   "skills": [
+    {
+     "id": "drywall-hole-patch-small-medium-large",
+     "name": "Patch a drywall hole (small, medium, large)",
+     "goal": "Repair a hole in drywall so it is invisible after painting, choosing the method by hole size.",
+     "steps": [
+      "Size the hole. Small = nail or picture-hanger holes; medium = doorknob or baseboard dings; large = something went through the wall.",
+      "Small: press spackling compound into the hole with a putty knife and smooth it flush. Let it dry; it shrinks a little, so apply another coat or two as needed, then sand smooth.",
+      "Medium: cover the hole with heavy-duty mesh patching tape (use about three layers) or an adhesive-backed metal mesh patch that overlaps sound wall on all sides. Press it flat.",
+      "Medium: spread a thin, smooth coat of spackling compound over the patch. Let it dry, add a second smooth coat, and sand; add a third coat and sand again if it is not smooth yet.",
+      "Large: cut a square drywall patch first, trace it onto the wall over the damage, and cut the wall opening out to the traced line, slightly bigger than the patch so it fits.",
+      "Large, option A (backing): slide a wood board behind the opening and screw it to the wall on each side, or fit drywall repair clips on two or four edges; screw the patch to the board or clips, remove any temporary screws, and hammer the clip tabs flat.",
+      "Large, option B (paper-flange patch): cut the drywall patch bigger than the hole, then snap and peel away the gypsum around the perimeter so only the face paper remains as a flange; trim the core so it fits the opening with a little play.",
+      "For option B, butter the wall around the opening with compound (joint compound for anything bigger than a medium hole), press the patch in, press the paper flange around the perimeter, and scrape excess away from the seam with the knife held upright. Let it set.",
+      "Apply second and third thin coats, each as smooth as possible and feathered wider than the last, letting each dry.",
+      "Sand and feather the edges, then verify by eye (and a raking light) that the patch is invisible and has no cracks before priming and painting."
+     ]
+    }
+   ],
+   "url": "https://www.youtube.com/watch?v=PLGmTzEGSIY"
+  },
+  {
+   "video_id": "Muk9LfEWHeU",
+   "title": "OBS Studio - Tutorial for Beginners in 7 MINUTES! [ COMPLETE ]",
+   "channel": "Skills Factory",
+   "topic": "screen-recording-streaming",
+   "transcript_kind": "youtube-provided (yt-dlp timed text)",
+   "summary": "A fast tour of OBS Studio: the auto-configuration wizard, canvas versus scenes and sources, every main source type (audio input/output capture, color, image, slideshow, media, text, browser, window/display/game capture, video capture device), arranging, cropping (Alt), hiding and locking sources, filters, Settings for stream/output/video/hotkeys, starting and stopping recording or streaming, finding recordings, and Studio Mode with transitions.",
+   "skills": [
+    {
+     "id": "obs-studio-scene-sources-record-setup",
+     "name": "OBS Studio: set up a scene and record",
+     "goal": "Build an OBS Studio scene with audio and visual sources, configure output, and record or stream it.",
+     "steps": [
+      "Install OBS Studio and run the auto-configuration wizard (reopen it later from Tools > Auto-Configuration Wizard), choosing recording or streaming.",
+      "In Scenes click + to add a new scene; default system audio and microphone are detected automatically.",
+      "Add extra audio with Sources > + : Audio Input Capture for an external mic, Audio Output Capture for computer or other device audio. Adjust each level in the audio mixer meters.",
+      "Add visuals as needed: Color Source (background), Image, Image Slide Show, Media Source (video file), Text (font, size, color, opacity), Browser (a URL, display only), Window Capture (one app; it must not be minimized), Display Capture (whole screen), Game Capture (full-screen games, low overhead), Video Capture Device (webcam).",
+      "Arrange on the canvas: drag sources to move, drag the corner handles to resize, hold Alt while dragging a handle to crop. Anything in the striped area outside the canvas is cut off.",
+      "In the Sources list use the eye icon to hide or show, the lock to freeze position and size, and drag sources up or down to change stacking order. Use the gear/filters for properties and effects.",
+      "Open File > Settings: Stream (connect Twitch, YouTube, or Facebook if streaming); Output (recording path, format, quality, video and audio bitrate); Video (base canvas and output resolution, FPS); Hotkeys (start/stop recording and streaming).",
+      "Optionally enable Studio Mode to edit the Preview without touching the live Program, and push changes live with Transition (configure Quick Transitions).",
+      "Click Start Recording (or Start Streaming), use Pause if needed, then Stop.",
+      "Verify: open File > Show Recordings and play the file to confirm the video, audio sources, and levels are all present."
+     ]
+    }
+   ],
+   "url": "https://www.youtube.com/watch?v=Muk9LfEWHeU"
+  },
+  {
+   "video_id": "V18BX15KbKs",
+   "title": "LEARN KDENLIVE IN 15 MINUTES ~ Basic Video Editing Tutorial for Beginners",
+   "channel": "Chris' Tutorials",
+   "topic": "video-editing",
+   "transcript_kind": "auto-generated",
+   "summary": "Kdenlive basics: importing clips into the project bin, choosing a clip's audio stream (and duplicating the clip to use two recorded audio tracks), locking tracks, grouping clips (Ctrl+G), the razor tool (X) for cuts, delete versus Extract/Remove Space for ripple deletes, trimming, moving clips between tracks (insert a spare track), the spacer tool, snapping, editing and saving a title clip, applying and tuning effects, a wipe composition transition (duration, copy, reverse, checkerboard), and rendering to MP4.",
+   "skills": [
+    {
+     "id": "kdenlive-basic-edit-cut-title-transition-render",
+     "name": "Kdenlive: basic edit, title, transition and render",
+     "goal": "Edit a video in Kdenlive from imported clips to a rendered MP4 with cuts, a title, an effect, and a transition.",
+     "steps": [
+      "Drag video (MP4/MKV), audio, or image files from your file manager into the Project Bin.",
+      "If the recording has several audio tracks and only one plays: select the clip, open Clip Properties > Properties, and pick the audio stream. To use two streams, right-click the clip > Duplicate, set the duplicate to the other stream.",
+      "Zoom the timeline and drag the first clip to the very start on video track 1/audio track 1. To drop only the second stream's audio, lock the video tracks first, drop the duplicate, then unlock.",
+      "Select the clips that belong together (click, then Shift+click) and right-click > Group Clips (Ctrl+G) so they move as one.",
+      "Cut: press X (razor tool) and click at the playhead to split a clip; press S to return to the selection tool.",
+      "Remove dull sections: select a piece and press Delete (leaves a gap, then right-click the gap > Remove Space), or right-click > Extract Clip to ripple-delete in one step.",
+      "Trim by dragging a clip's start or end edge (you can only extend into unused source footage). Move clips by dragging; to move up a track, right-click a track name > Insert Track first. Use the spacer tool to shift a clip and everything to its right together; snapping closes gaps.",
+      "Title: double-click the title clip in the bin, replace the text, center it horizontally and vertically, set font, outline (0-1 px to remove), and optional drop shadow (blur and x/y offset, e.g. 5/5); optionally save it as a title template, then click OK and drag it to video track 2 above the footage.",
+      "Effects: from the Effects panel drag an effect (e.g. Color > Sepia, or Mirror) onto a clip; select the clip and adjust or delete it in the Effect/Composition Stack. Effects apply per clip piece.",
+      "Transition: right-click a clip > Insert a Composition > Wipe; right-click > Edit Duration (e.g. 1 s). Copy it, paste and snap the copy to the other side of the cut, tick Revert on one so it fades out, and optionally choose another wipe method (e.g. checkerboard) on both.",
+      "Render: click Render, choose MP4, set the output file location, click Render to File and wait for the job queue to finish.",
+      "Verify: open the rendered file and check audio, title, cuts, and transitions play correctly."
+     ]
+    }
+   ],
+   "url": "https://www.youtube.com/watch?v=V18BX15KbKs"
+  }
+ ],
+ "rejected": [
+  {
+   "video_id": "iy9amRGcCCA",
+   "title": "FreeCAD Beginner Tutorial Part Design",
+   "reason": "Skipped: no caption track could be fetched (no_track_fetchable after rate-limit retries). Retry next run."
+  },
+  {
+   "video_id": "1QNVyMBV0fM",
+   "title": "CAD TUTORIAL : FreeCAD Beginner [EASY GUIDE]",
+   "reason": "Skipped: YouTube rate-limited the transcript fetch; nothing fetched. Retry next run."
+  },
+  {
+   "video_id": "2PnAohLS-Q4",
+   "title": "How to Use the rsync Command | Linux Essentials Tutorial",
+   "reason": "Skipped: YouTube rate-limited the transcript fetch; nothing fetched. Retry next run."
+  },
+  {
+   "video_id": "qE77MbDnljA",
+   "title": "Linux/Mac Terminal Tutorial: How To Use The rsync Command - Sync Files",
+   "reason": "Skipped: YouTube rate-limited the transcript fetch; nothing fetched. Retry next run."
+  }
+ ],
+ "entry_count_after": 101
+}

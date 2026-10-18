@@ -1,0 +1,66 @@
+{
+  "video_id": "HzXD4GVqXwM",
+  "title": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)",
+  "url": "https://www.youtube.com/watch?v=HzXD4GVqXwM",
+  "fetched_at": "2026-10-12T21:52:37.512023+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Christian Peverelli",
+  "duration": 1018,
+  "ok": true,
+  "cue_count": 523,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HzXD4GVqXwM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HzXD4GVqXwM/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "bn(auto)",
+        "nl(auto)",
+        "en(auto)",
+        "fr(auto)",
+        "de(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es(auto)",
+        "ta(auto)",
+        "te(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

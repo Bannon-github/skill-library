@@ -1,0 +1,53 @@
+{
+  "video_id": "SMB34GRgQWQ",
+  "title": "Vector Synthesis in Bitwig Grid with the Scrawl Oscillator",
+  "url": "https://www.youtube.com/watch?v=SMB34GRgQWQ",
+  "fetched_at": "2026-10-12T16:48:55.137555+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Polarity Music",
+  "duration": 1371,
+  "ok": true,
+  "cue_count": 458,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/SMB34GRgQWQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/SMB34GRgQWQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

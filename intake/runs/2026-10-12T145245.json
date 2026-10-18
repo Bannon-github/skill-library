@@ -1,0 +1,78 @@
+{
+ "started_at": "2026-10-12T21:51:37+00:00",
+ "search_term": "how to design a workflow for automated song generation",
+ "dry_run": false,
+ "items": [
+  {
+   "video_id": "hC00Qdhfjww",
+   "title": "I Automated My Entire Content System With Claude Code (Full Build)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "CghKYofqzfI",
+   "title": "How to Make AI Music Videos with Perfect Lip Sync (Full Workflow)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "JSA2oezQWOU",
+   "title": "Make.com Automation Tutorial for Beginners",
+   "result": "processed",
+   "outcome": "CANDIDATES_READY",
+   "reason": "transcript sent to processing; gap candidates ready for distill-transcript"
+  },
+  {
+   "video_id": "SxA0WRWgeI8",
+   "title": "Agentic RAG QE  From Workflow Design to Automation Framework",
+   "result": "no_transcript",
+   "outcome": "REJECT_thin_transcript",
+   "reason": "transcript unusable (<150 words or music-only)"
+  },
+  {
+   "video_id": "0vQ7UEe7rLg",
+   "title": "How to Use Google Flow (Step-by-Step Tutorial)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "HzXD4GVqXwM",
+   "title": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)",
+   "result": "processed",
+   "outcome": "CANDIDATES_READY",
+   "reason": "transcript sent to processing; gap candidates ready for distill-transcript"
+  },
+  {
+   "video_id": "C8VXCsWZDL0",
+   "title": "How to Turn Any Song Into AI Music Video in 5 Minutes",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "FChKficdq5o",
+    "against_title": "How to Make a Full AI Music Video for Suno AI Songs (in 12 Min)",
+    "shared": [
+     "ai",
+     "music",
+     "song",
+     "video"
+    ],
+    "ratio": 0.67
+   }
+  },
+  {
+   "video_id": "gp3ba2WJxhw",
+   "title": "AI Music Video Workflow: OpenArt Vibe Directing Tutorial / create here : https://tolt.link/muska",
+   "result": "processed",
+   "outcome": "OFF_LEXICON",
+   "reason": "transcript sent to processing; OFF_LEXICON"
+  }
+ ],
+ "resumed_queue_from": "how to design a workflow for automated song generation",
+ "finished_at": "2026-10-12T21:52:45+00:00",
+ "needs_distill": [
+  "JSA2oezQWOU",
+  "HzXD4GVqXwM"
+ ]
+}

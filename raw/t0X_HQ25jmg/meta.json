@@ -1,0 +1,46 @@
+{
+  "video_id": "t0X_HQ25jmg",
+  "title": "Pedals in Parallel - Discovering new ways to use effects you thought you grew out of",
+  "url": "https://www.youtube.com/watch?v=t0X_HQ25jmg",
+  "fetched_at": "2026-10-14T16:32:56.034516+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Stompbox Breakdown",
+  "duration": 1224,
+  "ok": true,
+  "cue_count": 353,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/t0X_HQ25jmg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/t0X_HQ25jmg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,189 @@
+{
+ "video_id": "HzXD4GVqXwM",
+ "started_at": "2026-10-12T21:52:37.392220+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "sidehustle",
+ "graph": {
+  "video_id": "HzXD4GVqXwM",
+  "domain": "sidehustle",
+  "out": "/workspace/skill-library/raw/HzXD4GVqXwM/graph.json",
+  "segments": 521,
+  "windows": 103,
+  "nodes": 16,
+  "edges": 11,
+  "nodes_by_type": {
+   "concept": 2,
+   "step": 5,
+   "module": 3,
+   "param": 2,
+   "phrase": 4
+  },
+  "edges_by_type": {
+   "mentions": 5,
+   "precedes": 4,
+   "part-of": 2
+  },
+  "words": 3789
+ },
+ "gaps": {
+  "video_id": "HzXD4GVqXwM",
+  "graph_nodes": 16,
+  "graph_edges": 11,
+  "terms_checked": 11,
+  "terms_covered": 6,
+  "gap_nodes": 5,
+  "gap_nodes_excl_phrases": 2,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 70,
+   "nodes": 463,
+   "edges": 167,
+   "uncovered_nodes": 9,
+   "uncovered_edges": 32
+  },
+  "candidate_ids": [
+   "sidehustle-systems-listing-price-point-8-13"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "thin procedure evidence (2 items) and best single-skill topic profile 0.4 < 0.8"
+   ],
+   "best_skill": "sidehustle-gumroad-digital-product-listing",
+   "profile_share": 0.4,
+   "best_proc_overlap": 0.5,
+   "specific_items": 2,
+   "uncovered_techniques": [],
+   "video_novelty": 0.09,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "auto-target-original-audio"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 3793,
+    "music_markers": 4
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "sidehustle",
+    "scores": {
+     "blender": 4,
+     "crypto": 0,
+     "drone": 1,
+     "sidehustle": 12,
+     "synth": 10
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 16,
+    "edges": 11
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 2,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "thin procedure evidence (2 items) and best single-skill topic profile 0.4 < 0.8"
+     ],
+     "best_skill": "sidehustle-gumroad-digital-product-listing",
+     "profile_share": 0.4,
+     "best_proc_overlap": 0.5,
+     "specific_items": 2,
+     "uncovered_techniques": [],
+     "video_novelty": 0.09,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "ar(auto)",
+    "bn(auto)",
+    "nl(auto)",
+    "en(auto)",
+    "fr(auto)",
+    "de(auto)",
+    "iw(auto)",
+    "hi(auto)",
+    "id(auto)",
+    "it(auto)",
+    "ja(auto)",
+    "ko(auto)",
+    "ml(auto)",
+    "pl(auto)",
+    "pt(auto)",
+    "pa(auto)",
+    "ru(auto)",
+    "es(auto)",
+    "ta(auto)",
+    "te(auto)",
+    "uk(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-12T21:52:41.719206+00:00"
+}

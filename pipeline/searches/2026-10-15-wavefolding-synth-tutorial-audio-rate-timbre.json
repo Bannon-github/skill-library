@@ -1,0 +1,196 @@
+{
+ "topic": "wavefolding synth tutorial audio rate timbre",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "wavefolding synth tutorial audio rate timbre",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Uv4yk8_vZQc",
+   "title": "How to Turn Serum into Vintage Classics",
+   "channel": "Starsky Carr",
+   "duration": 1115,
+   "view_count": 12980,
+   "url": "https://www.youtube.com/watch?v=Uv4yk8_vZQc",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.56,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-GB"
+    ],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl",
+     "en",
+     "fr",
+     "de"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "rbcnLgmyjv8",
+   "title": "Sound Design Episode 5 | A Guide to Advanced Synthesis",
+   "channel": "The Audio Engineer Room",
+   "duration": 550,
+   "view_count": 5,
+   "url": "https://www.youtube.com/watch?v=rbcnLgmyjv8",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.89,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "ZIHpN0IfDzQ",
+   "title": "These Leviasynth Hacks Will Instantly Improve Your Sound Design",
+   "channel": "Scott's Synth Stuff",
+   "duration": 1786,
+   "view_count": 4591,
+   "url": "https://www.youtube.com/watch?v=ZIHpN0IfDzQ",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.33,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "G3CIJ3l5Fd8",
+   "title": "EXTREME WAVE FOLDING: a Pure Data experiment.",
+   "channel": "Expert Opinions",
+   "duration": 962,
+   "view_count": 35815,
+   "url": "https://www.youtube.com/watch?v=G3CIJ3l5Fd8",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.78,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-US"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Ecm-QDq9WsA",
+   "title": "Genki KATLA - THE VOLCANO SYNTH!!",
+   "channel": "Starsky Carr",
+   "duration": 2359,
+   "view_count": 23815,
+   "url": "https://www.youtube.com/watch?v=Ecm-QDq9WsA",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.19,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-GB"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "b5QAsgvC9sk",
+   "title": "Adding Movement to FM: Opsix Modulation & Filter Sculpting",
+   "channel": "Ian Dixon",
+   "duration": 1165,
+   "view_count": 348,
+   "url": "https://www.youtube.com/watch?v=b5QAsgvC9sk",
+   "query": "wavefolding synth tutorial audio rate timbre tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.77,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "OaSYpRN5ncY",
+   "why": "duration 66s"
+  },
+  {
+   "id": "fEY3psytidg",
+   "why": "duration 32s"
+  },
+  {
+   "id": "nivlgmMtV98",
+   "why": "duration 52s"
+  },
+  {
+   "id": "NxMj0kqgAFs",
+   "why": "duration 15s"
+  },
+  {
+   "id": "PMCWx6SSPRA",
+   "why": "duration 163s"
+  },
+  {
+   "id": "Spj26MzAsy0",
+   "why": "duration 83s"
+  },
+  {
+   "id": "Ox7ECKfRsOs",
+   "why": "duration 5468s"
+  },
+  {
+   "id": "swEabaz7h0M",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

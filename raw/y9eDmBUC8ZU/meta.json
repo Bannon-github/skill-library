@@ -1,0 +1,46 @@
+{
+  "video_id": "y9eDmBUC8ZU",
+  "title": "Physically Modeled MPE Strings in Surge XT",
+  "url": "https://www.youtube.com/watch?v=y9eDmBUC8ZU",
+  "fetched_at": "2026-10-16T16:19:31.420382+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "thoughtForm Max",
+  "duration": 3290,
+  "ok": true,
+  "cue_count": 754,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/y9eDmBUC8ZU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/y9eDmBUC8ZU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,49 @@
+{
+  "video_id": "CdIMG0DqQa8",
+  "title": "How to Build Cinematic Pads on the Multi/Poly — Deep Sound Design From Scratch",
+  "url": "https://www.youtube.com/watch?v=CdIMG0DqQa8",
+  "fetched_at": "2026-10-14T16:32:52.670911+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 896,
+  "ok": true,
+  "cue_count": 309,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CdIMG0DqQa8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CdIMG0DqQa8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "hi(auto)",
+        "it(auto)",
+        "pt-BR(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

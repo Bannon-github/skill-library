@@ -1,0 +1,114 @@
+{
+ "started_at": "2026-10-12T21:00:25+00:00",
+ "search_term": "inkscape trace bitmap tutorial",
+ "dry_run": false,
+ "items": [
+  {
+   "video_id": "dGzZW8mVEhM",
+   "title": "How To Use Bitmap In Inkscape (2026 Easy Guide)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "a8SAAJBo3yU",
+   "title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+   "result": "skipped_duplicate",
+   "reason": "already considered (migrated)"
+  },
+  {
+   "video_id": "r62rCWi9RM8",
+   "title": "Using TRACE BITMAP In INKSCAPE 1.3",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "a8SAAJBo3yU",
+    "against_title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+    "shared": [
+     "bitmap",
+     "inkscape",
+     "trace"
+    ],
+    "ratio": 1.0
+   }
+  },
+  {
+   "video_id": "YJKVMBhSj3I",
+   "title": "Inkscape: How To Trace Images To Create A Vector Image Using Inkscape",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "a8SAAJBo3yU",
+    "against_title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+    "shared": [
+     "image",
+     "inkscape",
+     "trace",
+     "vector"
+    ],
+    "ratio": 0.8
+   }
+  },
+  {
+   "video_id": "E7HwLTQu2FI",
+   "title": "Inkscape Lesson 11 - Trace Bitmap Tool (Convert Raster to SVG)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "Z39-QaDRHoI",
+   "title": "Become A Master Of Trace Bitmap In Inkscape",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "a8SAAJBo3yU",
+    "against_title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+    "shared": [
+     "bitmap",
+     "inkscape",
+     "trace"
+    ],
+    "ratio": 0.6
+   }
+  },
+  {
+   "video_id": "MjlqH-s-inM",
+   "title": "How To Vectorize In Inkscape (2026 Easy Guide)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "vY7G1XTnpUY",
+   "title": "How to trace bitmap in Inkscape Full Guide 2026",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "a8SAAJBo3yU",
+    "against_title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+    "shared": [
+     "bitmap",
+     "inkscape",
+     "trace"
+    ],
+    "ratio": 1.0
+   }
+  },
+  {
+   "video_id": "YuYvkW2RcRs",
+   "title": "Vectorize an Image in Inkscape with Trace Bitmap | Complete Guide",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "a8SAAJBo3yU",
+    "against_title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+    "shared": [
+     "bitmap",
+     "image",
+     "inkscape",
+     "trace"
+    ],
+    "ratio": 0.8
+   }
+  }
+ ],
+ "resumed_queue_from": "inkscape trace bitmap tutorial",
+ "finished_at": "2026-10-12T21:01:52+00:00",
+ "needs_distill": []
+}

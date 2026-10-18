@@ -1,0 +1,46 @@
+{
+  "video_id": "fxh2ccZKEb0",
+  "title": "Create Evolving Cinematic Drones In Pigments - Full Tutorial",
+  "url": "https://www.youtube.com/watch?v=fxh2ccZKEb0",
+  "fetched_at": "2026-10-14T16:32:39.426822+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Busiless Music",
+  "duration": 1087,
+  "ok": true,
+  "cue_count": 339,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/fxh2ccZKEb0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/fxh2ccZKEb0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

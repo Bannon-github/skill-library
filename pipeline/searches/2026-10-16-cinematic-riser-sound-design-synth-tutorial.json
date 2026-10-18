@@ -1,0 +1,180 @@
+{
+ "topic": "cinematic riser sound design synth tutorial",
+ "date": "2026-10-16",
+ "params": {
+  "topic": "cinematic riser sound design synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Q_0QcuRePZ0",
+   "title": "How to Create Epic Sound FX and Risers That Transform Your Tracks | 100 Sound Design Tips Ep. 13",
+   "channel": "Jon Audio",
+   "duration": 1584,
+   "view_count": 1040,
+   "url": "https://www.youtube.com/watch?v=Q_0QcuRePZ0",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "7cIk5aTxJpQ",
+   "title": "THE SOUND THAT MAKES PEOPLE STAY - IN 10 MINUTES",
+   "channel": "Letsynthesize",
+   "duration": 604,
+   "view_count": 3729,
+   "url": "https://www.youtube.com/watch?v=7cIk5aTxJpQ",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.29,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "FOL9EDiLp4k",
+   "title": "This FREE Plugin Turns ANY Sample Into Cinematic Risers in Seconds",
+   "channel": "CoinxDaProducer",
+   "duration": 487,
+   "view_count": 2800,
+   "url": "https://www.youtube.com/watch?v=FOL9EDiLp4k",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.22,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-US"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "c01Oqf69CC4",
+   "title": "FREE Tonal Sound Effects Every Video Editor Needs",
+   "channel": "Multiply Sound",
+   "duration": 399,
+   "view_count": 110402,
+   "url": "https://www.youtube.com/watch?v=c01Oqf69CC4",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "iKdvCRf4AVg",
+   "title": "Cinematic Sound Design with the Moog Grandmother on a Rainy Afternoon",
+   "channel": "Tom Hawk",
+   "duration": 279,
+   "view_count": 845,
+   "url": "https://www.youtube.com/watch?v=iKdvCRf4AVg",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.46,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "xil_HpL1izg",
+   "title": "Why This Classic Filter Sweep Still Sounds So Good",
+   "channel": "Ian Dixon",
+   "duration": 325,
+   "view_count": 786,
+   "url": "https://www.youtube.com/watch?v=xil_HpL1izg",
+   "query": "cinematic riser sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.95,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "h3ikDwtw5rk",
+   "why": "duration 148s"
+  },
+  {
+   "id": "JB4RoZD-K8o",
+   "why": "duration 47s"
+  },
+  {
+   "id": "AJzKRHB_Uyk",
+   "why": "negative title signal"
+  },
+  {
+   "id": "ZQxSP4MJKb8",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "U-Tn1o83yDk",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "61LdutBLiyM",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

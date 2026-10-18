@@ -1,0 +1,173 @@
+{
+ "topic": "wavefolding synth pad bass sound design tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "wavefolding synth pad bass sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ZqovdbxfSOg",
+   "title": "How to make Psytrance Grid Synth Sounds Part 2/3: Sound Design",
+   "channel": "Projektor",
+   "duration": 1102,
+   "view_count": 2158,
+   "url": "https://www.youtube.com/watch?v=ZqovdbxfSOg",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.17,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "ouWu89G5tGI",
+   "title": "Xfer Records Serum Tutorial 08 - FX Distortion",
+   "channel": "SadowickProduction",
+   "duration": 875,
+   "view_count": 4963,
+   "url": "https://www.youtube.com/watch?v=ouWu89G5tGI",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.35,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "oHljBOsu_u0",
+   "title": "Macro Manipulation of Serum - Spread & Delay Module Tutorial - Modulat (Signal) by Chaos Culture",
+   "channel": "Isotonik Studios",
+   "duration": 512,
+   "view_count": 2341,
+   "url": "https://www.youtube.com/watch?v=oHljBOsu_u0",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.18,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "P9O_3xb2Fpc",
+   "title": "Aparillo Tutorial | Generating Cinematic Atmospheres & Soundscapes",
+   "channel": "Plugin Boutique",
+   "duration": 244,
+   "view_count": 10415,
+   "url": "https://www.youtube.com/watch?v=P9O_3xb2Fpc",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "k9ZURoAww0k",
+   "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+   "channel": "Darkest Sunray",
+   "duration": 288,
+   "view_count": 706,
+   "url": "https://www.youtube.com/watch?v=k9ZURoAww0k",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.42,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "LJTW7xjC8OE",
+   "title": "Kronos MOD7 waveshaper/wavefolder patches:  FM growl bass and other phase distortion FX",
+   "channel": "psionic111",
+   "duration": 397,
+   "view_count": 1865,
+   "url": "https://www.youtube.com/watch?v=LJTW7xjC8OE",
+   "query": "wavefolding synth pad bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.14,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "vvBl3YUBUyY",
+   "why": "already known"
+  },
+  {
+   "id": "FyrEjNua26w",
+   "why": "duration 78s"
+  },
+  {
+   "id": "owoD-yXgge0",
+   "why": "duration 3969s"
+  },
+  {
+   "id": "IGUC9ZjmJrQ",
+   "why": "duration 4344s"
+  },
+  {
+   "id": "QC4K5_tJJqw",
+   "why": "negative title signal"
+  },
+  {
+   "id": "k36cTuqQq3E",
+   "why": "duration 138s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

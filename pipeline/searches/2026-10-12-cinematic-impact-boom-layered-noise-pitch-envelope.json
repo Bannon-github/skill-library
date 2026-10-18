@@ -1,0 +1,153 @@
+{
+ "topic": "cinematic impact boom layered noise pitch envelope tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "cinematic impact boom layered noise pitch envelope tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Ikti4l0E_IY",
+   "title": "How To Make Your VOICE Sound CINEMATIC! (Premiere Pro Tutorial)",
+   "channel": "Premiere Basics",
+   "duration": 417,
+   "view_count": 107529,
+   "url": "https://www.youtube.com/watch?v=Ikti4l0E_IY",
+   "query": "cinematic impact boom layered noise pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "y0mfaQpWYQw",
+   "title": "How To Make A Riser Effect - Build Up Tutorial (FL Studio)",
+   "channel": "Transverse Audio",
+   "duration": 459,
+   "view_count": 271308,
+   "url": "https://www.youtube.com/watch?v=y0mfaQpWYQw",
+   "query": "cinematic impact boom layered noise pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.22,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE",
+     "iw"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "yMWyPdSs_wE",
+   "title": "Bass Drop Tutorial - Omnisphere Downer in 1 Minute!",
+   "channel": "Soundbed Videos",
+   "duration": 832,
+   "view_count": 3131,
+   "url": "https://www.youtube.com/watch?v=yMWyPdSs_wE",
+   "query": "cinematic impact boom layered noise pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "yW7an8VmYcs",
+   "title": "5 Advanced Sound Design Tips for DaVinci Resolve",
+   "channel": "Joel Van Beek",
+   "duration": 1104,
+   "view_count": 42764,
+   "url": "https://www.youtube.com/watch?v=yW7an8VmYcs",
+   "query": "cinematic impact boom layered noise pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.82,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1120362,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "cinematic impact boom layered noise pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-US"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "PUBMG__czwg",
+   "why": "already known"
+  },
+  {
+   "id": "acZPLjnha9o",
+   "why": "already known"
+  },
+  {
+   "id": "ikEUqhOnqeQ",
+   "why": "duration 55s"
+  },
+  {
+   "id": "CygFzo0aRCo",
+   "why": "duration 66s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

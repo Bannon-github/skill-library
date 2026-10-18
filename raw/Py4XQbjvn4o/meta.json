@@ -1,0 +1,46 @@
+{
+  "video_id": "Py4XQbjvn4o",
+  "title": "Philtor 12-Band FilterBank with Sequencer - MaxforLive Tutorial | White Horse Recordings",
+  "url": "https://www.youtube.com/watch?v=Py4XQbjvn4o",
+  "fetched_at": "2026-10-16T16:19:00.414145+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Isotonik Studios",
+  "duration": 417,
+  "ok": true,
+  "cue_count": 140,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Py4XQbjvn4o/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Py4XQbjvn4o/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,15 @@
+# Effects-only melodic instrument: crackle/noise source → smoothed-random filter → ping-pong feedback delay → spectral harmonic resonator (note, decay, harmonic count, pitch mod) → 'smudge' lo-fi/unison macro → reverb → limiter
+
+Goal: Make a playable wind-chime / abstract atmosphere instrument from effects only. Generate vinyl-style crackle (only its density is mapped), or feed any external audio (drums, vocals). Filter it with a resampling-type filter whose cutoff is moved by a sample-and-hold LFO smoothed 100% (random glides), with ~10% drive. Multiply it with a ping-pong delay (6/16, 5/16, down to triplets) at high feedback. Excite a harmonic spectral resonator in note mode, using the granular engine with input quantised, unison 2 and low-damp fixed at 15%. Map fundamental note, decay (blips vs pads), number of harmonics (minimum 6; more = brighter and higher, with high-damp tied to the same macro) and pitch-mod amount (up to 1 semitone) and rate. A 'smudge' macro raises resonator unison spread together with bit/sample-rate reduction (0 = 18 kHz/16-bit, i.e. off). Finish with reverb (size 100, diffusion-network filter on) on time + amount macros, a limiter, macro snapshots and randomisation that excludes note, input level and reverb. Delta vs our click-train comb texture: noise conditioning chain + harmonic resonator macro design.
+
+Source: [Spectral Ambience: Turning Noise into Melodic Synths (Ableton Live 12)](https://www.youtube.com/watch?v=GoMfKhol88k)
+
+1. Create an effects rack (audio-effect track) with 16 macros. First device: crackle/noise generator; map only its density (crackle level) to a macro. Alternatively route external audio (e.g. bongo drums, vocals) into the rack.
+2. Add a filter in a resampling/character mode, LFO wave sample-and-hold with smoothing 100%, drive ~10%. Map cutoff, LFO amount and LFO rate to macros to sculpt which parts of the noise spectrum excite the resonator.
+3. Add a ping-pong delay at 100% wet. Map delay time (e.g. 6/16, 5/16, limited down to triplets for ambient use), a small L/R delay offset for stereo interest, and feedback (high).
+4. Add the spectral resonator: note mode, granular engine, quantise input on, unison 2, low damp fixed ~15% (cuts boomy lows). Map fundamental note, decay, number of harmonics (min 6) plus high damp on the same macro, pitch-mod amount (up to 1 st) and rate, and input level.
+5. Add a bit/sample-rate reducer after the resonator. Make one 'smudge' macro that raises the resonator's unison spread, lowers bit depth and lowers sample rate together (0 = 18 kHz/16-bit, i.e. off).
+6. Add reverb (size 100, diffusion-network filter on) and map decay time and dry/wet, then a final limiter to catch peaks.
+7. Play it: short decay for plucks and blips, long decay for pads. Save macro snapshots of good settings and randomise for new territory, with note, input level and reverb excluded from randomisation.
+
+Batch: `2026-10-15-morning-hunt` · transcript: YouTube-provided (Show transcript) · Ableton rack build; macro range table was on-screen only (not in transcript), so only spoken values are recorded.

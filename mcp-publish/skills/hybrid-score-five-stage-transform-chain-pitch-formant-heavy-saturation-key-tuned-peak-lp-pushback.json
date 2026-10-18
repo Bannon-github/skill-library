@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "id": "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+  "name": "Hybrid-score 'sonic signature' chain for any source (orchestral rips, vocal phrases, synth presets, percussion loops, creature SFX): pitch/formant shift → heavy saturation → low-pass with a key-tuned resonant peak → EQ/compression → delay → reverb pushback, plus panning and LFO movement so the result blends behind an orchestra",
+  "goal": "Transform ordinary material into a unique hybrid-score sound with five tools: pitch shifting (example: +2 semitones with formant −12, or a −12 transpose of a vocal phrase, optionally a robot-type mode mixed in), heavy distortion/saturation (an aggressive mode cranked), filtering (low-pass to clear room for low instruments and cut analog top end, with a resonant peak tuned to the cue's key or around 500 Hz on percussion, before the reverb), then EQ/compression, delay and reverb that push the sound back into the orchestra's space instead of 'in your face'. Add movement (an LFO on filter frequency, an auto-panner with a mix control, subharmonic reinforcement on hits). Works on brass rips, woodwind rips, ethnic vocal phrases, preset 'hunt' results, retro drum loops and animal recordings. More specific than generic FX-chain skills: the orchestral-blend goal, the key-tuned peak and the pre-reverb low-pass.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "E8b_N1RBCxE",
+    "url": "https://www.youtube.com/watch?v=E8b_N1RBCxE",
+    "title": "Sound Design Tips From an Orchestral Composer",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/E8b_N1RBCxE/agent-skill-hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback.json",
+    "transcript_note": "Plugin names spoken in the video are examples only; the portable stage order is the skill. Credits and channel CTAs dropped."
+  },
+  "prerequisites": [
+    "Any pitch/formant shifter, saturator/distortion, resonant filter, EQ, compressor, delay and reverb (plugin names in the source are examples only)",
+    "Optional: LFO/auto-pan with a mix knob, subharmonic enhancer, resonator/filterbank",
+    "A source sound: orchestral sample, vocal phrase, synth preset, percussion loop or field recording"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Sound to transform",
+      "required": true
+    },
+    {
+      "name": "cue_key",
+      "type": "note",
+      "description": "Key of the cue, used to tune the filter's resonant peak",
+      "required": false
+    },
+    {
+      "name": "role",
+      "type": "enum",
+      "description": "pad/atmos, percussion, signature hit, creature/texture",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "signature_sound",
+      "type": "audio",
+      "description": "Transformed hybrid sound that sits behind the orchestra"
+    },
+    {
+      "name": "chain",
+      "type": "list",
+      "description": "Ordered stages and the settings used"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Order is flexible; the presenter changes it per instrument. Spoken values only: pitch +2 / formant −12, transpose −12, peak around 500 Hz on one percussion loop, key-root peak (e.g. C in C minor).",
+    "Low-pass before the reverb to push synths back; avoid bright synth tops 'hitting you in the face' against an orchestra.",
+    "Using presets as a starting point is fine, but the transformation chain is the skill. Do not copy preset names into deliverables.",
+    "Commit to a sound you like and write around it; sometimes the right move is to degrade a 'better' sound for the cue."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a source (brass or woodwind rip, vocal phrase, synth preset found by auditioning many, percussion loop or creature SFX). Audition it dry.",
+      "tool": "source",
+      "expect": "Reference of the raw sound"
+    },
+    {
+      "n": 2,
+      "action": "Pitch stage: shift pitch and/or formant (example +2 st pitch, formant −12; or transpose a vocal −12). Optionally mix in a robot/lo-fi mode with the dry/wet control.",
+      "tool": "pitch/formant",
+      "expect": "Character changes beyond simple transposition"
+    },
+    {
+      "n": 3,
+      "action": "Distortion stage: an aggressive saturation/'punish' mode cranked, or a clipper preset, until the sound is gnarly.",
+      "tool": "saturation",
+      "expect": "Dense, aggressive harmonic character"
+    },
+    {
+      "n": 4,
+      "action": "Filter stage: low-pass to cut the analog top end and leave room for low instruments, with a resonant peak at the cue's key (or ~500 Hz on percussion). Several filters in a row or a resonator bank can carve further; add an LFO to filter frequency for movement.",
+      "tool": "filter",
+      "expect": "Darker, focused tone with a tuned bump, moving over time"
+    },
+    {
+      "n": 5,
+      "action": "Tone/dynamics: EQ (tame low-mid boxiness, lift highs if needed), light compression for loudness; on hits add subharmonic reinforcement.",
+      "tool": "eq/comp",
+      "expect": "Controlled level and body"
+    },
+    {
+      "n": 6,
+      "action": "Space: add delay, then reverb (plate/hall/large) to push the sound back; add an auto-panner with a mix knob for movement rather than a static patch.",
+      "tool": "delay/reverb/pan",
+      "expect": "Sound blends into the orchestral depth with motion"
+    },
+    {
+      "n": 7,
+      "action": "Record parameter tweaks as automation while performing, and keep the version that best fits the character, place or story.",
+      "tool": "commit",
+      "expect": "A reusable signature sound for the cue"
+    }
+  ],
+  "verification": [
+    "A/B against dry: pitch/formant, saturation, filter and space each audibly change the sound.",
+    "An analyser shows a resonant bump at the cue's root (or chosen frequency) and reduced top end.",
+    "In context with an orchestra the transformed sound sits behind, not in front of, the ensemble.",
+    "The patch has audible movement (filter LFO or pan) rather than being static."
+  ],
+  "tags": [
+    "hybrid-score",
+    "orchestral",
+    "fx-chain",
+    "formant-shift",
+    "saturation",
+    "resonant-filter",
+    "reverb-pushback",
+    "sound-design",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback"
+}

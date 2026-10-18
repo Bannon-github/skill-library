@@ -1,0 +1,178 @@
+{
+  "batch_id": "2026-10-13-morning-hunt",
+  "ran_at_local": "2026-10-13 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "mcp_count_before": 109,
+  "mcp_count_after": 117,
+  "mcp_publish_files_before": 111,
+  "mcp_publish_files_after": 119,
+  "library_entries_before": 109,
+  "library_entries_after": 117,
+  "searches": [
+    "wavefolding synth pad bass sound design tutorial",
+    "sample and hold LFO random modulation pad tutorial",
+    "karplus strong resonator physical modeling pad tutorial",
+    "spectral freeze pad sound design tutorial",
+    "vocoder pad sound design tutorial synth",
+    "filter morph between two filters synth tutorial",
+    "comb filter sound design tutorial synth texture",
+    "phaser pad sound design tutorial synth",
+    "ring modulation sound design tutorial pad texture",
+    "pulse width modulation pad tutorial synth",
+    "parallel distortion synth sound design tutorial",
+    "cinematic impact boom synthesis tutorial synth",
+    "formant vocal choir pad synth tutorial",
+    "bandpass filter bank pad sound design tutorial"
+  ],
+  "routed_ids": 23,
+  "published": [
+    {
+      "id": "click-train-resonant-filter-feedback-delay-comb-texture",
+      "video_id": "acM4NM4lH0k",
+      "title": "Organic Alien Comb Filter Modulation Tutorial (Subtractive Synthesis)",
+      "goal": "Organic alien comb texture: sub-audio saw click train → high-resonance filter → very short, high-feedback delay played by hand"
+    },
+    {
+      "id": "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+      "video_id": "54eGln75Y3Y",
+      "title": "Chaos To Order: Frequency Shifter & Vocoder (Sound Design Tutorial)",
+      "goal": "Harmonic-locked frequency shifter layer (shift by multiples of f0) cleaned with EQ, micro-delay and a self-vocoder"
+    },
+    {
+      "id": "karplus-strong-keytracked-delay-pluck-damping-comp",
+      "video_id": "8b5EX9HcPGk",
+      "title": "Karplus-Strong Synthesis in Bitwig Studio 3 - The Grid",
+      "goal": "Karplus-Strong pluck: noise-burst exciter into a key-tracked feedback delay with decay/damping and register compensation"
+    },
+    {
+      "id": "morph-filter-lp-bp-hp-notch-lfo-cycle",
+      "video_id": "Z4mMGSg6ebY",
+      "title": "Why does nobody use this filter ? (Ableton Morph Filter Tutorial)",
+      "goal": "Morph filter: LFO-cycle one filter continuously through LP → BP → HP → notch → LP"
+    },
+    {
+      "id": "resonant-filter-sample-rate-reduction-talking-formant",
+      "video_id": "gzJEQiTC_SQ",
+      "title": "Creating a vocal formant speaking voice in VCV Rack",
+      "goal": "Talking/vocal formant voice from a resonant filter into sample-rate reduction (sweet-spot aliasing formants)"
+    },
+    {
+      "id": "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+      "video_id": "IiWPL_v8Eqk",
+      "title": "Zebra 2 - Using LFO`s Random Features (Sample & Hold) - How To Tutorial",
+      "goal": "Sample-and-hold / random-glide LFO textures: random steps on pitch, wave position and filter, random glide squelch, user-drawn step LFO"
+    },
+    {
+      "id": "synthesized-noise-impact-tail-lfo-shaped",
+      "video_id": "q-N55tqLUr4",
+      "title": "Sound Design Tutorial: Synthesizing Tails for Cinematic Hits & Impacts",
+      "goal": "Synthesize a cinematic hit tail from white noise (LFO-shaped level, low boost, shared-LFO drive, Haas stereo, dark reverb)"
+    },
+    {
+      "id": "triple-bandpass-bank-unsynced-lfo-pad",
+      "video_id": "L0IXE_whmso",
+      "title": "Sound Design 53: Pads 3 Bandpass",
+      "goal": "Three-band parallel bandpass filter-bank pad with offset, unsynced cutoff LFOs"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "btlEZphP8Kw",
+      "title": "Sample and Hold Synth tutorial  VCV Rack",
+      "reason": "Sample-and-hold basics (S&H samples an LFO at trigger rate; attenuate range). Concept folded into sample-hold-random-lfo-pitch-wave-filter-glide-textures; too thin alone."
+    },
+    {
+      "video_id": "kohxe8q614M",
+      "title": "How to create Cinematic Booms tutorial",
+      "reason": "Sample-library boom + sidechain duck + reverb/bus; overlaps sidechain-compressor-duck-synth-pads and prior sample-layer reject (lLAj2rvBouI)."
+    },
+    {
+      "video_id": "jUBV73xZVrQ",
+      "title": "How to Create Cinematic Booms, Hits, and Impacts Pt 1",
+      "reason": "Sample transient chop + distortion + ~8 s reverb, band-layered booms; sample-layering workflow, low delta vs existing impact skills (synth part covered by new noise-tail skill)."
+    },
+    {
+      "video_id": "cUeaNUTJU9o",
+      "title": "How to Create Cinematic Booms, Hits, and Impacts part 2",
+      "reason": "Part 2 of sample-layered booms (EQ/distortion/ping-pong/group glue); sample layering, same rationale as jUBV73xZVrQ."
+    },
+    {
+      "video_id": "70Gvdl3uyWI",
+      "title": "Acousmatic Sounds | Pulsing Phaser Pad Walkthrough [Kontakt 5.8 and above]",
+      "reason": "Kontakt instrument product promo (Pulsing Phaser Pad); no adjustable recipe."
+    },
+    {
+      "video_id": "EN_X_IdPaog",
+      "title": "Diva Phased And Confused Sound Design Tutorial",
+      "reason": "Sync lead + phaser→flange + chorus + EQ cleanup; hard-sync covered, phaser step thin, lead not a cinematic bed."
+    },
+    {
+      "video_id": "t3fD_6JEies",
+      "title": "Sounddesign with Ring Modulation | Thomann",
+      "reason": "Ring-mod sum/difference theory + dry/wet blend; near-dup of ring-mod-envelope-bell-stab-pulse."
+    },
+    {
+      "video_id": "m7yYTAQDhI4",
+      "title": "\"Pulse-Width Modulation\"  +10 Sound Design Tips | Quick & Dirty Digitakt Tutorial #3",
+      "reason": "Sampler-specific sine tips (sample-start LFO fake PWM, bit reduction); not portable / covered elsewhere."
+    }
+  ],
+  "carryover_not_distilled": [
+    {
+      "video_id": "SfqgigefIu0",
+      "title": "KARPLUS-STRONG synthesis in Renoise and the •REZONATOR•",
+      "note": "Renegade KS / tuned multi-tap delay as resonator insert (±99 feedback polarity, filter type in loop, mute dry). Good delta; distill next hunt."
+    },
+    {
+      "video_id": "0n23itgG0LU",
+      "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+      "note": "80s PWM string pad (free-running seconds LFO on PW, slight osc2 detune, slow env). Candidate for PWM-pad gap."
+    },
+    {
+      "video_id": "NFWAC2kLqvo",
+      "title": "How to make your own Buchla Style Morphing Filter in VCV",
+      "note": "Buchla 291-style 6-pole bandpass with stepped v/oct + bandwidth sequencer snapshots via dry/wet crossfader."
+    },
+    {
+      "video_id": "-oFbaWsScJw",
+      "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+      "note": "Trance atmosphere with reverb freeze (OFF_LEXICON, unread)."
+    },
+    {
+      "video_id": "X9nxUb1wRkg",
+      "title": "How to Create Ambient Synth Pads from Vocals - Sound Design Tutorial",
+      "note": "Ambient pads from vocals (route COVERED, unread)."
+    },
+    {
+      "video_id": "4fpZFYG83fw",
+      "title": "Ableton Sound Design Tutorial - Distorted Delays",
+      "note": "Distorted delays (unread)."
+    },
+    {
+      "video_id": "k9ZURoAww0k",
+      "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+      "note": "Wavefolding LFOs VCV (379 words, unread)."
+    }
+  ],
+  "stopped": [],
+  "pivoted_to_crypto": false,
+  "git_sync": "skipped_no_credentials",
+  "pipeline_notes": [
+    "14 searches saved as pipeline/searches/2026-10-13-*.json (precheck + require-transcript + skip-known).",
+    "route.py on 23 ids: all fetched YouTube-provided transcripts (no 429, no ASR). Outcomes: 5 CANDIDATES_READY, 17 COVERED, 1 OFF_LEXICON. COVERED again unreliable (morph filter, noise tail, comb click-train, S&H, bandpass bank were false COVERED); hand-checked vs mcp-publish.",
+    "L0IXE_whmso transcript = YouTube English auto transcript of an AI-dub track (original es-US); labelled in source.transcript_note and constraints.",
+    "Quality --strict: 8/8 clean. Novelty: 8 NOVEL (max local overlap 0.146 triple-bandpass vs parallel-filter-rhythmic-pad-chains).",
+    "Full-catalog strict check: 3 pre-existing FAILs (lightroom-select-and-develop-photo, python-pathlib-basic-file-workflow, volyraph-browser-splat-pipeline) — not from this batch, untouched.",
+    "Merged into LIBRARY.json (+8 → 117), mcp-publish/index.json (count 119), topics/taxonomy.json cinematic-hybrid-synth (75→83), curriculum level 3 (44→52), skills/<id>.md. Backups in backups/2026-10-13-morning-hunt/.",
+    "Web Audio portability notes added where relevant (feedback DelayNode 128-sample minimum → AudioWorklet for KS/comb; Hilbert SSB for freq shifter) and explicitly marked as implementation notes, not transcript content.",
+    "Deferred queue still empty; upgrade_to_tlang unchanged (MH7YiOWQIhI, kHWOIE4YTZ4, BqE9S27CZfY, beZpH9X850s)."
+  ],
+  "still_thin": [
+    "Phase-distortion resonant-wave / wave-alternation standalone (not searched today; still thin)",
+    "Dedicated phaser cinematic bed (phaser searches returned promo/lead only)",
+    "Spectral (FFT) freeze pad distinct from granular/reverb freeze",
+    "Wavefolder cinematic pad/bass (only psytrance/LFO-folding hits)",
+    "Parallel distortion wet/dry cinematic stack (hits were drum/mix-oriented)",
+    "Vocoder pad with external carrier (only self-vocoder clean-up covered today)"
+  ]
+}

@@ -1,0 +1,82 @@
+  [yuQqY0dx2Rw] Q0 pipeline env importable? -> yes
+  [yuQqY0dx2Rw] Q1 transcript already saved? -> no  => fetch via track ladder
+  [yuQqY0dx2Rw] Q2 track ladder produced English text? -> yes
+  [yuQqY0dx2Rw] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [yuQqY0dx2Rw] Q4 English text is a translation? -> no
+  [yuQqY0dx2Rw] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [yuQqY0dx2Rw] Q6 term graph built? -> yes
+  [yuQqY0dx2Rw] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [yuQqY0dx2Rw] OUTCOME CANDIDATES_READY
+  [sGZr4PusB0U] Q0 pipeline env importable? -> yes
+  [sGZr4PusB0U] Q1 transcript already saved? -> no  => fetch via track ladder
+  [sGZr4PusB0U] Q2 track ladder produced English text? -> yes
+  [sGZr4PusB0U] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [sGZr4PusB0U] Q4 English text is a translation? -> no
+  [sGZr4PusB0U] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [sGZr4PusB0U] Q6 term graph built? -> yes
+  [sGZr4PusB0U] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [sGZr4PusB0U] OUTCOME CANDIDATES_READY
+  [E8b_N1RBCxE] Q0 pipeline env importable? -> yes
+  [E8b_N1RBCxE] Q1 transcript already saved? -> no  => fetch via track ladder
+  [E8b_N1RBCxE] Q2 track ladder produced English text? -> yes
+  [E8b_N1RBCxE] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [E8b_N1RBCxE] Q4 English text is a translation? -> no
+  [E8b_N1RBCxE] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [E8b_N1RBCxE] Q6 term graph built? -> yes
+  [E8b_N1RBCxE] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [E8b_N1RBCxE] OUTCOME CANDIDATES_READY
+  [EwxNeZttFEA] Q0 pipeline env importable? -> yes
+  [EwxNeZttFEA] Q1 transcript already saved? -> no  => fetch via track ladder
+  [EwxNeZttFEA] Q2 track ladder produced English text? -> yes
+  [EwxNeZttFEA] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [EwxNeZttFEA] Q4 English text is a translation? -> no
+  [EwxNeZttFEA] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [EwxNeZttFEA] Q6 term graph built? -> yes
+  [EwxNeZttFEA] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [EwxNeZttFEA] OUTCOME CANDIDATES_READY
+  [y9eDmBUC8ZU] Q0 pipeline env importable? -> yes
+  [y9eDmBUC8ZU] Q1 transcript already saved? -> no  => fetch via track ladder
+  [y9eDmBUC8ZU] Q2 track ladder produced English text? -> yes
+  [y9eDmBUC8ZU] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [y9eDmBUC8ZU] Q4 English text is a translation? -> no
+  [y9eDmBUC8ZU] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [y9eDmBUC8ZU] Q6 term graph built? -> yes
+  [y9eDmBUC8ZU] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [y9eDmBUC8ZU] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "yuQqY0dx2Rw",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "sGZr4PusB0U",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "E8b_N1RBCxE",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "EwxNeZttFEA",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "y9eDmBUC8ZU",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "hard-sync-master-slave-mod-envelope-timbre",
+  "name": "Hard oscillator sync: master sets pitch, slave pitch + mod envelope sets timbre",
+  "goal": "Build a classic hard-sync lead voice where oscillator 1 (master) resets oscillator 2 (slave) each cycle so master pitch is the note and slave pitch is timbre; sweep slave pitch with a mod envelope (high amount, slave starting an octave down) for the characteristic sync squeal, then add tempo delay, short reverb, and pitch-bend for performance.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "C_d3SCz2u-c",
+    "url": "https://www.youtube.com/watch?v=C_d3SCz2u-c",
+    "title": "Oscillator Syncing in Thor (Patch Design in Thor)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/C_d3SCz2u-c/agent-skill-hard-sync-master-slave-mod-envelope-timbre.json"
+  },
+  "prerequisites": [
+    "Dual analog-style oscillators with a hard-sync switch",
+    "Mod envelope routable to oscillator pitch",
+    "Amp envelope with sustain"
+  ],
+  "inputs": [
+    {
+      "name": "slave_base_interval",
+      "type": "semitones",
+      "description": "Starting slave transpose relative to master (transcript uses \u221212 st)",
+      "required": true
+    },
+    {
+      "name": "mod_env_to_slave_pitch",
+      "type": "number",
+      "description": "Modulation depth to slave pitch (transcript ~94/100)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sync_lead",
+      "type": "synth-patch",
+      "description": "Hard-synced lead with envelope-swept timbre"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Only the slave needs to be heard for the sync timbre demo; master can be muted from the audio path while still resetting the slave."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init two oscillators. Enable hard sync so each time oscillator 1 completes a cycle it resets oscillator 2's phase. Raise amp-envelope sustain to full.",
+      "tool": "sync-enable",
+      "expect": "Sync engaged; notes sustain while held"
+    },
+    {
+      "n": 2,
+      "action": "Mute/hear only the slave for clarity. Changing master octave changes perceived pitch even when only the slave is routed; changing slave pitch changes timbre, not the fundamental.",
+      "tool": "listen-test",
+      "expect": "Master pitch = note; slave pitch = harmonic/timbre"
+    },
+    {
+      "n": 3,
+      "action": "Set slave about one octave below master. Route mod envelope to slave pitch at nearly full amount (~94%). Give the mod envelope a little attack, fairly long decay, and release near zero. Bypass bright-cutting filters for a raw sync tone.",
+      "tool": "mod-env",
+      "expect": "Each note squeals/sweeps harmonics as the envelope decays"
+    },
+    {
+      "n": 4,
+      "action": "Add tempo-synced delay (transcript example: dotted/3+16th feel) with low dry/wet, set pitch-wheel range to \u00b112 st, and a short digital reverb at very low mix for space.",
+      "tool": "fx",
+      "expect": "Lead sits in the mix with slap delay and slight air"
+    },
+    {
+      "n": 5,
+      "action": "Perform with pitch-bend automation (full-range slides) and optional reverb dry/wet rides for breakdown/build gestures.",
+      "tool": "automation",
+      "expect": "Expressive sync lead without needing filter sweeps"
+    }
+  ],
+  "verification": [
+    "Moving only slave pitch changes tone color while the melody pitch tracks master",
+    "Mod envelope creates an audible sync sweep on each note",
+    "Pitch bend spans \u00b11 octave when range is 12"
+  ],
+  "tags": [
+    "hard-sync",
+    "oscillator-sync",
+    "mod-envelope",
+    "lead",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://hard-sync-master-slave-mod-envelope-timbre"
+}

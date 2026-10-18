@@ -1,0 +1,48 @@
+{
+  "video_id": "JSA2oezQWOU",
+  "title": "Make.com Automation Tutorial for Beginners",
+  "url": "https://www.youtube.com/watch?v=JSA2oezQWOU",
+  "fetched_at": "2026-10-12T21:52:26.649510+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Kevin Stratvert",
+  "duration": 1486,
+  "ok": true,
+  "cue_count": 280,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/JSA2oezQWOU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JSA2oezQWOU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

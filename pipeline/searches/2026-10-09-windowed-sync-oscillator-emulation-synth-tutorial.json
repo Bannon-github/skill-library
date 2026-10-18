@@ -1,0 +1,26 @@
+{
+ "topic": "windowed sync oscillator emulation synth tutorial",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "windowed sync oscillator emulation synth tutorial",
+  "langs": "en",
+  "per_query": 6,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "4Pb9z9QEzks",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

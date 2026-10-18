@@ -1,0 +1,46 @@
+{
+  "video_id": "EwxNeZttFEA",
+  "title": "Crazy Percussions Out of a Pad in Serum 2",
+  "url": "https://www.youtube.com/watch?v=EwxNeZttFEA",
+  "fetched_at": "2026-10-16T16:19:27.546042+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "DNB Academy",
+  "duration": 582,
+  "ok": true,
+  "cue_count": 200,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/EwxNeZttFEA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/EwxNeZttFEA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

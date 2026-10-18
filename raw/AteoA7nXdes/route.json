@@ -1,0 +1,165 @@
+{
+ "video_id": "AteoA7nXdes",
+ "started_at": "2026-10-12T21:48:21.686545+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "sidehustle",
+ "graph": {
+  "video_id": "AteoA7nXdes",
+  "domain": "sidehustle",
+  "out": "/workspace/skill-library/raw/AteoA7nXdes/graph.json",
+  "segments": 264,
+  "windows": 44,
+  "nodes": 17,
+  "edges": 1,
+  "nodes_by_type": {
+   "concept": 1,
+   "module": 2,
+   "tool": 1,
+   "step": 1,
+   "phrase": 12
+  },
+  "edges_by_type": {
+   "mentions": 1
+  },
+  "words": 1685
+ },
+ "gaps": {
+  "video_id": "AteoA7nXdes",
+  "graph_nodes": 17,
+  "graph_edges": 1,
+  "terms_checked": 16,
+  "terms_covered": 2,
+  "gap_nodes": 14,
+  "gap_nodes_excl_phrases": 2,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 61,
+   "nodes": 338,
+   "edges": 162,
+   "uncovered_nodes": 8,
+   "uncovered_edges": 32
+  },
+  "candidate_ids": [
+   "sidehustle-procedure-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "thin procedure evidence (0 items) and best single-skill topic profile 0.667 < 0.8"
+   ],
+   "best_skill": null,
+   "profile_share": 0.667,
+   "best_proc_overlap": 0.0,
+   "specific_items": 0,
+   "uncovered_techniques": [],
+   "video_novelty": 0.087,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "auto-target-original-audio"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 1685,
+    "music_markers": 0
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "sidehustle",
+    "scores": {
+     "blender": 3,
+     "crypto": 1,
+     "drone": 0,
+     "sidehustle": 17,
+     "synth": 16
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 17,
+    "edges": 1
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 2,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "thin procedure evidence (0 items) and best single-skill topic profile 0.667 < 0.8"
+     ],
+     "best_skill": null,
+     "profile_share": 0.667,
+     "best_proc_overlap": 0.0,
+     "specific_items": 0,
+     "uncovered_techniques": [],
+     "video_novelty": 0.087,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-12T21:48:24.774696+00:00"
+}

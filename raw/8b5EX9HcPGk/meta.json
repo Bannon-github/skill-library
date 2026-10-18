@@ -1,0 +1,46 @@
+{
+  "video_id": "8b5EX9HcPGk",
+  "title": "Karplus-Strong Synthesis in Bitwig Studio 3 - The Grid",
+  "url": "https://www.youtube.com/watch?v=8b5EX9HcPGk",
+  "fetched_at": "2026-10-13T16:33:17.244158+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Kip Schwinger",
+  "duration": 1132,
+  "ok": true,
+  "cue_count": 486,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/8b5EX9HcPGk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/8b5EX9HcPGk/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

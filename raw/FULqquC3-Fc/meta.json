@@ -1,0 +1,46 @@
+{
+  "video_id": "FULqquC3-Fc",
+  "title": "How to make custom bass drops / sub drops in Cubase (tutorial)",
+  "url": "https://www.youtube.com/watch?v=FULqquC3-Fc",
+  "fetched_at": "2026-10-09T16:35:07.686091+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "URM Academy",
+  "duration": 382,
+  "ok": true,
+  "cue_count": 141,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/FULqquC3-Fc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/FULqquC3-Fc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,141 @@
+{
+  "batch_id": "2026-10-09-morning-hunt",
+  "ran_at_local": "2026-10-09 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "mcp_count_before": 95,
+  "mcp_count_after": 103,
+  "searches": [
+    "phase distortion casio CZ synthesizer how to",
+    "synth uplifter downlifter sub drop sound design tutorial",
+    "windowed sync oscillator emulation synth tutorial",
+    "synth impact boom sub drop pitch envelope tutorial",
+    "hybrid cinematic pad sound design wavetable morph tutorial",
+    "phase distortion synthesis explained tutorial CZ",
+    "synth whoosh braam impact from oscillators tutorial",
+    "modulation matrix synth routing LFO envelope tutorial cinematic",
+    "hard sync window soft sync oscillator sound design"
+  ],
+  "published": [
+    {
+      "id": "casio-pd-piecewise-phase-warp-cosine-to-saw",
+      "video_id": "EW12RYc7QRA",
+      "title": "GroovyDSP: Introduction to Phase Distortion Synthesis"
+    },
+    {
+      "id": "casio-pd-wave-family-and-windowed-sync-resonance",
+      "video_id": "94vSgZXg1nQ",
+      "title": "GroovyDSP: More Phase Distortion!"
+    },
+    {
+      "id": "phase-distortion-shapes-modular-phase-chain",
+      "video_id": "TrkXgDQbhjk",
+      "title": "What is a Phase Distortion Oscillator and why is it"
+    },
+    {
+      "id": "hard-sync-master-slave-mod-envelope-timbre",
+      "video_id": "C_d3SCz2u-c",
+      "title": "Oscillator Syncing in Thor (Patch Design in Thor)"
+    },
+    {
+      "id": "uplifter-downlifter-pitchbend-filter-lfo",
+      "video_id": "t97TU3p7-kE",
+      "title": "HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!"
+    },
+    {
+      "id": "sub-drop-sine-freq-glide-80hz-to-20hz",
+      "video_id": "FULqquC3-Fc",
+      "title": "How to make custom bass drops / sub drops in Cubase (tutorial)"
+    },
+    {
+      "id": "fm-stack-uplifter-pitch-env-noise-swell",
+      "video_id": "G4Tc59aAeoE",
+      "title": "FM8 - FX Sounds - pt 1 - Uplifter - How To Tutorial"
+    },
+    {
+      "id": "cinematic-bass-distortion-stack-pitch-bend-downer",
+      "video_id": "PUBMG__czwg",
+      "title": "How To Sound Design Cinematic Basses and Subdrops"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "hlgl5lfdv48",
+      "title": "Casio CZ-1 Phase Distortion Synthesizer - Part 1 - Overview",
+      "reason": "Thin hardware overview (2 outline steps); no portable oscillator recipe. Prefer GroovyDSP PD skills."
+    },
+    {
+      "video_id": "vyZBa1eGvBs",
+      "title": "Make Music at Home Step Three! - Risers, Downlifters & Sub Drops",
+      "reason": "Sample-download/arrangement tour, not synth recipe; transcript contains shared site logins (not republished). Covered by new uplifter + sub-drop skills."
+    },
+    {
+      "video_id": "2dtxabrZ8Wg",
+      "title": "Create an Uplifter with ANY sound in SERUM",
+      "reason": "Thin (2 steps: bounce into noise osc). Prefer uplifter-downlifter-pitchbend-filter-lfo."
+    },
+    {
+      "video_id": "WZt_nok-ipk",
+      "title": "How To Sound Design Futuristic Whooshes (using Vital as a Sampler)",
+      "reason": "Near-duplicate of whoosh + braam skills; remaining delta is DAW resample-into-sampler workflow."
+    },
+    {
+      "video_id": "It5a3bhLEb8",
+      "title": "DosComp | How to create Whooshes in Serum",
+      "reason": "Covered by noise-layer-whoosh-doppler-and-rising-variants."
+    },
+    {
+      "video_id": "4rp4ZepdzoA",
+      "title": "Drambo by BeepStreet - Phase Distortion Synthesis",
+      "reason": "Product patch demo pointing to GroovyDSP; covered by new Casio PD skills."
+    },
+    {
+      "video_id": "lE_CG3bagwg",
+      "title": "Phase Distortion Synthesis in Bitwig's Grid",
+      "reason": "Overlaps warp-modes + new modular PD shapes skill; no unique CZ wave-family/windowed-sync delta."
+    },
+    {
+      "video_id": "acZPLjnha9o",
+      "title": "How To Sound Design Cinematic Braams & Bends (using Vital)",
+      "reason": "Covered by existing braam skill / new cinematic-bass distortion bed."
+    },
+    {
+      "video_id": "gRh9BL-W8kQ",
+      "title": "How To Sound Design Complex & Distorted Pulses (using Vital)",
+      "reason": "Low delta vs hybrid-noise-distortion and pulse/impact skills."
+    },
+    {
+      "video_id": "beZpH9X850s",
+      "title": "Musikmachen mit LMMS - Oscillator Sync",
+      "reason": "Machine-translated sync basics; covered by hard-sync-master-slave-mod-envelope-timbre."
+    },
+    {
+      "video_id": "Vp66dS7o3R0",
+      "title": "How To Make An Uplifter/Riser",
+      "reason": "Covered by uplifter-downlifter-pitchbend-filter-lfo."
+    }
+  ],
+  "stopped_no_transcript": [
+    {
+      "video_id": "mUDhWFNKO-Q",
+      "title": "Downlifter Idea",
+      "reason": "STOP_no_transcript_asr_flagged"
+    }
+  ],
+  "pivoted": false,
+  "notes": [
+    "Pipeline .venv present; ran scripts/ensure_env.sh (all envs ok, argos packs de/es/ja/fr/pt/it).",
+    "route.py --domain synth again returned COVERED for many real gaps (PD, uplifters, sub-drops, hard sync). Hand-checked against mcp-publish; distilled 8 gap skills anyway. COVERED remains unreliable for terms missing from the synth lexicon.",
+    "Priority backlog from Oct 7 addressed: Casio PD (EW12RYc7QRA + 94vSgZXg1nQ), windowed-sync resonance (inside wave-family skill), uplifter/downlifter, sub-drop sine glide, hard sync. lE_CG3bagwg routed but rejected as overlap after modular PD skill.",
+    "Windowed-sync dedicated search returned 0 kept videos; windowed-sync content came from GroovyDSP 'More Phase Distortion' resonance-wave section.",
+    "Quality --strict: all 8 new skills clean (0 warnings). Novelty NOVEL for all 8 (max local overlap 0.118).",
+    "Merged 8 skills into LIBRARY.json (+8 video entries \u2192 97), topics/taxonomy.json cinematic-hybrid-synth (61\u219269 skill_ids), curriculum-cinematic-hybrid-synth level 3, and skills/<id>.md. Older backlog (Oct 5/6 taxonomy gaps) still not fully backfilled.",
+    "Git sync skipped: no credentials on the box (no GH_TOKEN/GITHUB_TOKEN, gh not logged in).",
+    "Deferred queue still empty; upgrade_to_tlang still has MH7YiOWQIhI, kHWOIE4YTZ4, BqE9S27CZfY (+ beZpH9X850s noted this run)."
+  ],
+  "still_thin": [
+    "Deeper windowed-sync DSP (window shapes beyond decaying-sine envelope) \u2014 only approximate in 94vSgZXg1nQ",
+    "Phase-distortion resonant-wave variants / wave alternation as a standalone performable skill (mentioned in 94vSgZXg1nQ but thin)",
+    "Impact/boom from layered noise+pitch without overlapping braam/sub-drop skills",
+    "More hybrid pad morphs if lexicon/COVERED improves"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+ "topic": "spectral freeze pad sound design tutorial",
+ "date": "2026-10-16",
+ "params": {
+  "topic": "spectral freeze pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "jC_ckXoCHYE",
+   "title": "Gorgeous Sound Redesign Transfigure AUv3 from Sugar Bytes - Tutorial / Demo (iOS)",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 917,
+   "view_count": 1356,
+   "url": "https://www.youtube.com/watch?v=jC_ckXoCHYE",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.07,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr",
+     "de",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "mllvToyambI",
+   "title": "Magic Blur - Overview and Tutorial",
+   "channel": "GS DSP",
+   "duration": 481,
+   "view_count": 306,
+   "url": "https://www.youtube.com/watch?v=mllvToyambI",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.74,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "FWUxtnGRG_o",
+   "title": "Perfect Room 2 by Denise Audio – The Most Natural Reverb Gets Even Better",
+   "channel": "Plugins Masters",
+   "duration": 634,
+   "view_count": 53932,
+   "url": "https://www.youtube.com/watch?v=FWUxtnGRG_o",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.87,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "cDkqnm_NRjQ",
+   "title": "Ableton XY Plane Filter v.5.5 | Bass",
+   "channel": "Akihiko Matsumoto",
+   "duration": 632,
+   "view_count": 131,
+   "url": "https://www.youtube.com/watch?v=cDkqnm_NRjQ",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.56,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "YGrzmmZKb8w",
+   "title": "This Synth MORPHS Itself While You Play (Dark ambient analog glitch music) 2026",
+   "channel": "Augmented signals",
+   "duration": 848,
+   "view_count": 77,
+   "url": "https://www.youtube.com/watch?v=YGrzmmZKb8w",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.45,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "mBvUObtJTJI",
+   "why": "already known"
+  },
+  {
+   "id": "cxiW49F1CvM",
+   "why": "duration 55s"
+  },
+  {
+   "id": "uCoCXOk81Lw",
+   "why": "duration 5011s"
+  },
+  {
+   "id": "bBdWBuivu3U",
+   "why": "negative title signal"
+  },
+  {
+   "id": "aiHvS739eMc",
+   "why": "duration 4986s"
+  },
+  {
+   "id": "ebT9BytZNcM",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "P6zMzEvho54",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "QCmdTJwSYew",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "9VaMLi2MjLk",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "2sbFFV7Q9OY",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

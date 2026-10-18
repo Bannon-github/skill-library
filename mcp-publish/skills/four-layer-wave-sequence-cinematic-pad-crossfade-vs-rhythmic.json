@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+  "name": "Four-layer wave-sequenced cinematic pad: crossfaded seconds-based wave sequence, released keys layer, LFO-rate-modulated analog layer, tempo-locked rhythmic step layer with shape/ratchet/probability",
+  "goal": "Build an evolving cinematic pad from four complementary layers: (1) a smooth wave sequence that crossfades between several string-like sources at seconds-based step times (~1 s) with slow attack/release, compression, tape delay and reverb; (2) a plain keys/piano layer with long release, gentle velocity-sensitive filter envelope and its own delay; (3) a synthetic layer sequencing between two different saw sources through a filter envelope, with a free-running LFO whose rate is itself modulated by a second slow free-running LFO (plus a touch of pitch deviation and panning from that LFO); (4) a tempo-locked (quarter-note) step layer with crossfade off, using saw-down/triangle step shapes on cutoff, double/triple ratchets at reduced probability and a tempo-synced filter LFO — then balance layers and put the busiest one on a macro.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "28uxHnQbulE",
+    "url": "https://www.youtube.com/watch?v=28uxHnQbulE",
+    "title": "Wavestate Cinematic Pad in Minutes",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/28uxHnQbulE/agent-skill-four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic.json"
+  },
+  "prerequisites": [
+    "Synth with ≥4 layers/voices per patch, a wave-sequence or step-sequence of oscillator sources (Web Audio: per-step source crossfade via GainNodes scheduled on AudioParam timelines, implementation note)",
+    "Filter + envelopes per layer, 2+ LFOs with free-run mode and LFO→LFO-rate routing",
+    "Compression, tape-style delay, reverb, phaser (optional)"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Sustained chords",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Project tempo for the rhythmic layer",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "layered_pad",
+      "type": "audio",
+      "description": "Evolving four-layer cinematic pad"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Use original/free samples or generic waves in place of factory multisamples — no factory sample/preset names copied.",
+    "Presenter improvised from an init patch; values are approximate and by ear.",
+    "All four layers together can get busy — balance levels and use a macro on the rhythmic/analog layer."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer 1 (smooth wave sequence): choose 3–4 string-like sources moving from acoustic chamber/orchestral strings toward a synthetic string; set step time in seconds (~1 s per step) with crossfade on so each source melts into the next.",
+      "tool": "wave-sequence",
+      "expect": "Continuously morphing string bed"
+    },
+    {
+      "n": 2,
+      "action": "Layer 1 envelope + FX: slower attack, some release, lengthen crossfade slightly; add compression, tape delay and master reverb (chorus not needed).",
+      "tool": "amp-env",
+      "expect": "Lush, slowly evolving string layer"
+    },
+    {
+      "n": 3,
+      "action": "Layer 2 (keys): a single piano/keys source with a long, nice release; optionally lower cutoff with a release-shaped filter envelope, make it velocity-sensitive, add a different delay. A phaser was tried but softened the attack — compression worked better to give the keys impact over the strings.",
+      "tool": "keys-layer",
+      "expect": "Articulate keys line cutting through the pad"
+    },
+    {
+      "n": 4,
+      "action": "Layer 3 (analog-style): wave-sequence between two different saw sources for variety; filter with filter envelope and tape delay.",
+      "tool": "analog-layer",
+      "expect": "Synthetic brass/string tone with subtle source changes"
+    },
+    {
+      "n": 5,
+      "action": "Layer 3 motion: route a free-running LFO to the layer (e.g. filter/level), then use a second, very slow free-running LFO (the spare pan LFO) to modulate the first LFO's speed so it speeds up and slows down; use that slow LFO also for a tiny pitch deviation and for panning.",
+      "tool": "lfo-on-lfo-rate",
+      "expect": "Breathing modulation whose speed drifts over time"
+    },
+    {
+      "n": 6,
+      "action": "Layer 4 (rhythmic): new wave sequence in tempo mode (quarter notes, speed up later) through synthetic/spectral and vocal-like sources; turn crossfade off so steps are audible.",
+      "tool": "step-sequence",
+      "expect": "Tempo-locked rhythmic source changes"
+    },
+    {
+      "n": 7,
+      "action": "Shape the steps: give the step lane a saw-down shape (a pulse of 100 that decays to 0 = pseudo-envelope per step), lower cutoff and apply the step shape to cutoff; add double/triple ratchets on some steps and lower their probability so it isn't jarring; add a tempo-synced filter LFO and interesting delays.",
+      "tool": "step-shape",
+      "expect": "Plucky, sometimes-ratcheted pulses inside the pad"
+    },
+    {
+      "n": 8,
+      "action": "Key-sync the rhythmic layer's steps so chords start in sync; optionally jump the last step up one or two octaves.",
+      "tool": "sync",
+      "expect": "Rhythmic layer locks to each chord start"
+    },
+    {
+      "n": 9,
+      "action": "Balance: bring the busy analog layer down, map it (or the rhythmic layer) to a macro knob for real-time control.",
+      "tool": "mix",
+      "expect": "Layers sit together; density controllable live"
+    }
+  ],
+  "verification": [
+    "Layer 1 alone changes timbre smoothly with no audible steps; layer 4 alone changes audibly on the beat.",
+    "Layer 3's modulation rate is audibly not constant over ~10 s.",
+    "Ratchets don't fire on every bar when probability is reduced."
+  ],
+  "tags": [
+    "wave-sequence",
+    "layering",
+    "pad",
+    "lfo",
+    "step-sequencer",
+    "ratchet",
+    "probability",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "id": "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+  "name": "Wavetable frames as an animated spectral EQ: each frame is a gain curve across the spectrum, with depth, floor, skew, smoothing, low-end bypass and per-channel time offset",
+  "goal": "Build a spectral 'auto-filter' that drives the whole frequency response from a wavetable: map each frame's shape onto the spectrum as a gain curve (peak/valley up to about ±12 dB at full depth), deepen only the cuts with a floor control, warp the frequency mapping with skew (negative = into lows, positive = highs), smooth sharp frames to avoid spectral ringing, bypass everything below a safe-bass frequency (up to 400 Hz), cycle frames forward/ping-pong/reverse/random at a free or tempo-synced rate (or step keyframes with a gate), and widen by feeding L and R the curve at different times. This is an effect on existing pads, keys, loops and strings. It differs from our spectral-warp vocoder and WT-scratch pad skills, which are oscillators/vocoders, not frame-driven EQ curves.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "VrCSssDOxFc",
+    "url": "https://www.youtube.com/watch?v=VrCSssDOxFc",
+    "title": "Wavefield Tutorial Video",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/VrCSssDOxFc/agent-skill-wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew.json",
+    "transcript_note": "Developer walkthrough of a commercial spectral plugin; distilled to a portable frame-to-gain-curve recipe. Trial/download CTA dropped."
+  },
+  "prerequisites": [
+    "Spectral processor: STFT with per-bin gain (Web Audio: AudioWorklet FFT), or an approximation with a bank of peaking EQ bands whose gains follow the frame (implementation note)",
+    "A wavetable / set of single-cycle frames (original or drawn; ~128 frames)",
+    "Optional tempo clock and DAW automation"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Pad, keys, strings, loop, bass or vocal to be spectrally shaped",
+      "required": true
+    },
+    {
+      "name": "wavetable",
+      "type": "wavetable",
+      "description": "Frames whose shapes become gain curves (original/drawn, not vendor tables)",
+      "required": true
+    },
+    {
+      "name": "rate",
+      "type": "string",
+      "description": "Free speed or synced division (32nd … 12 bars)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "animated_spectral_texture",
+      "type": "audio",
+      "description": "Source with evolving, wavetable-driven spectral motion"
+    },
+    {
+      "name": "exported_wavetable",
+      "type": "wavetable",
+      "description": "Optional edited table saved as a standard WAV for any synth"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Spectral processing can ring/artifact on steep frame shapes, especially in the low end. Raise smoothing and/or safe-bass before blaming the source.",
+    "Do not modulate speed while transport-locked; position will jump. Use free-running mode for smooth speed modulation.",
+    "Upstream plugin latency makes a tempo-synced spectral cycle drift late. Compensate with a chain-offset equal to the upstream latency in ms.",
+    "Phase-warp (per-bin phase rotation) and spectral-IR (frame as an impulse response) modes are described only qualitatively in the transcript. Treat their settings as by-ear."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert the processor on the source (or in parallel). Use a wavetable whose frames vary a lot. Each frame is read as a gain curve: left = low frequencies, right = highs.",
+      "tool": "map",
+      "expect": "A display shows the current frame shape as an EQ curve that evolves over time"
+    },
+    {
+      "n": 2,
+      "action": "Set depth: 0 = unchanged; at maximum a frame peak/valley applies about ±12 dB to that frequency region. Lower depth for subtler curves.",
+      "tool": "depth",
+      "expect": "Audible spectral motion that scales with depth"
+    },
+    {
+      "n": 3,
+      "action": "Set floor: lowering it stretches the negative (cut) part of the curve towards silence while boosts stay controlled by depth. Use low floor for deep notches or high-pass/low-pass/notch-style frames.",
+      "tool": "floor",
+      "expect": "Cuts become deep, dramatic notches without louder boosts"
+    },
+    {
+      "n": 4,
+      "action": "Set skew to fit the source: negative spreads the shaping down into bass/low-mids (e.g. bass); positive concentrates it in the highs (hats, cymbals, airy pads).",
+      "tool": "skew",
+      "expect": "Same shape, stretched toward lows or highs"
+    },
+    {
+      "n": 5,
+      "action": "Raise smooth if sharp frames cause ringing/harsh artifacts (e.g. on vocals). Engage safe-bass (bypass below a set frequency, up to 400 Hz) on bass, full mixes or anything whose fundamental must stay solid.",
+      "tool": "smooth/safe-bass",
+      "expect": "Cleaner result; sub and bass stay steady while mids/highs move"
+    },
+    {
+      "n": 6,
+      "action": "Choose the motion: trim start/end frames to the range with the character you want (re-adjust speed, since the trim becomes the whole cycle). Set speed (slow = evolving) or tempo-sync (e.g. 8 bars for slow cinematic evolution, quarter notes or faster for flutter). Pick playback forward, ping-pong, reverse, or random (jumps between frames at fixed intervals, beat-aligned when synced).",
+      "tool": "motion",
+      "expect": "Slow cinematic sweeps or rhythmic flutter, depending on rate"
+    },
+    {
+      "n": 7,
+      "action": "For automation-driven motion, pin to a single frame and draw position automation to land spectral moves on specific moments in the arrangement.",
+      "tool": "pin",
+      "expect": "Precisely timed spectral changes"
+    },
+    {
+      "n": 8,
+      "action": "Draw your own table: up to 20 keyframes, interpolated to fill all frames (edited tables need faster speeds/smaller divisions for the same feel). Draw a simple high-pass shape and generate the remaining keyframes with a sweep fill (progressive shift without wrap-around), floor down, synced over 4 bars, for a classic analog-style HP sweep. Use a loop crossfade at the cycle boundary; export the table as WAV for other synths.",
+      "tool": "editor",
+      "expect": "A smooth HP sweep built from frames; seamless loop point"
+    },
+    {
+      "n": 9,
+      "action": "Rhythmic variant: step through keyframes one per beat division instead of interpolating, and add gate (silence a % of each step's tail) for chopped, per-step spectral flavours on leads/arps. Using a keyframe count that doesn't divide the phrase (e.g. 20 vs 4/8 bars) gives polyrhythmic filter shaping.",
+      "tool": "kf-steps",
+      "expect": "Each step gets its own spectral shape; gated punctuation"
+    },
+    {
+      "n": 10,
+      "action": "Width and layering: add stereo so L and R read the curve at different times (mono compatible). On parallel copies or several tracks with the same table, offset the start phase of each so they move out of sync with the same character. Use dry/wet for parallel blend, output gain to level-match, and a 0 dB limiter for aggressive boosts.",
+      "tool": "stereo/phase",
+      "expect": "Wider, non-synchronised movement; level-matched output"
+    }
+  ],
+  "verification": [
+    "Depth 0 = null difference vs bypass; full depth gives clearly audible ±12 dB-scale curves.",
+    "With safe-bass on, content below the set frequency is identical to the dry signal.",
+    "Negative vs positive skew visibly moves the shaping between lows and highs on a spectrum analyser.",
+    "A synced cycle stays on the grid after the chain-offset compensates upstream latency."
+  ],
+  "tags": [
+    "spectral",
+    "fft",
+    "wavetable",
+    "eq",
+    "auto-filter",
+    "stereo-width",
+    "tempo-sync",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
+}

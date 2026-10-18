@@ -1,0 +1,71 @@
+{
+ "topic": "synth whoosh braam impact from oscillators tutorial",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "synth whoosh braam impact from oscillators tutorial",
+  "langs": "en",
+  "per_query": 5,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "It5a3bhLEb8",
+   "title": "DosComp | How to create Whooshes in Serum",
+   "channel": "DosComp Music Audio Services",
+   "duration": 349,
+   "view_count": 8205,
+   "url": "https://www.youtube.com/watch?v=It5a3bhLEb8",
+   "query": "synth whoosh braam impact from oscillators tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.46
+  },
+  {
+   "id": "WZt_nok-ipk",
+   "title": "How To Sound Design Futuristic Whooshes (using Vital as a Sampler)",
+   "channel": "Negativist",
+   "duration": 509,
+   "view_count": 5977,
+   "url": "https://www.youtube.com/watch?v=WZt_nok-ipk",
+   "query": "synth whoosh braam impact from oscillators tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.39
+  },
+  {
+   "id": "gRh9BL-W8kQ",
+   "title": "How To Sound Design Complex & Distorted Pulses (using Vital)",
+   "channel": "Negativist",
+   "duration": 464,
+   "view_count": 16756,
+   "url": "https://www.youtube.com/watch?v=gRh9BL-W8kQ",
+   "query": "synth whoosh braam impact from oscillators tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.61
+  },
+  {
+   "id": "EvTcHTCLRg0",
+   "title": "Sound Design Metallic Friction (using Vital)",
+   "channel": "Negativist",
+   "duration": 274,
+   "view_count": 18333,
+   "url": "https://www.youtube.com/watch?v=EvTcHTCLRg0",
+   "query": "synth whoosh braam impact from oscillators tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.13
+  }
+ ],
+ "dropped": [
+  {
+   "id": "7G8YmaJdUWQ",
+   "why": "duration 129s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

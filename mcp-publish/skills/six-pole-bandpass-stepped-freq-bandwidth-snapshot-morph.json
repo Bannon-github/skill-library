@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+  "name": "Buchla 291-style morphing bandpass: 6-pole bandpass with two clocked step sequencers (frequency and bandwidth) as filter snapshots, wet/dry crossfader",
+  "goal": "Build a free West-Coast-style morphing filter: a steep 6-pole bandpass (bandwidth instead of resonance) fed a harmonically rich complex oscillator, with two clocked, randomized 8-step sequencers — one on frequency (v/oct, ±10 V) and one on bandwidth (0–10 V) — so each clock step jumps to a new 'filter snapshot', blended with the dry signal on a crossfader like an aux, plus optional LFO on the main frequency; copy the voice for a triple morphing filter.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "NFWAC2kLqvo",
+    "url": "https://www.youtube.com/watch?v=NFWAC2kLqvo",
+    "title": "How to make your own Buchla Style Morphing Filter in VCV",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/NFWAC2kLqvo/agent-skill-six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph.json"
+  },
+  "prerequisites": [
+    "Multimode filter with selectable slope (6-pole) and bandpass bandwidth control (Web Audio: cascade 3 bandpass BiquadFilterNodes, implementation note)",
+    "Two step sequencers with settable output ranges, a clock",
+    "Crossfader / wet-dry mixer",
+    "Harmonically rich source (complex oscillator / FM)"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Complex/harmonically rich oscillator (a plain sine disappears in a bandpass)",
+      "required": true
+    },
+    {
+      "name": "clock",
+      "type": "trigger",
+      "description": "Clock that advances the sequencers",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "morphing_filter_voice",
+      "type": "audio",
+      "description": "Stepped, snapshot-morphing bandpass texture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Pure sine sources vanish through a narrow bandpass — make the source complex/brighter first.",
+    "Sequencer ranges matter: frequency bipolar ±10 V, bandwidth unipolar 0–10 V (scale to Hz/Q in other environments).",
+    "FM/AM/ring-mod inputs of the hardware 291e are not reproduced here; only one mode at a time in this build."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose a multimode filter, set it to bandpass and the slope to 6 poles (type the value precisely); set bandwidth to 100%.",
+      "tool": "filter",
+      "expect": "Steep bandpass response"
+    },
+    {
+      "n": 2,
+      "action": "Feed a complex oscillator; brighten/complexify it and raise the pitch until the bandpass has harmonics to work with. Sweep bandwidth to hear the change.",
+      "tool": "source",
+      "expect": "Clearly audible bandpass sweep"
+    },
+    {
+      "n": 3,
+      "action": "Add two step sequencers: one to filter frequency (v/oct), output range ±10 V; one to bandwidth, range 0–10 V.",
+      "tool": "sequencer",
+      "expect": "Two control lanes ready"
+    },
+    {
+      "n": 4,
+      "action": "Put a crossfader after the filter: filtered signal on A, dry signal on B, so the filter acts like an aux/wet-dry morph.",
+      "tool": "mix",
+      "expect": "Blend between filtered and dry"
+    },
+    {
+      "n": 5,
+      "action": "Clock both sequencers, randomize all steps, set 8 steps forward, and run: each step recalls a different frequency+bandwidth 'snapshot'.",
+      "tool": "clock",
+      "expect": "Rhythmic jumps between distinct filter snapshots"
+    },
+    {
+      "n": 6,
+      "action": "Adjust main frequency/bandwidth controls live and optionally modulate main frequency with an LFO via CV.",
+      "tool": "lfo",
+      "expect": "Further variety on top of the stepped snapshots"
+    },
+    {
+      "n": 7,
+      "action": "For a triple morphing filter, duplicate the whole voice (filter + two sequencers) and offset settings.",
+      "tool": "duplicate",
+      "expect": "Three interleaved morphing bandpass voices"
+    }
+  ],
+  "verification": [
+    "Each clock step audibly changes both centre frequency and bandwidth.",
+    "Crossfader at B gives the dry source; at A the full filtered sound.",
+    "With a pure sine source the effect is weak — confirming the need for a rich source."
+  ],
+  "tags": [
+    "bandpass",
+    "buchla",
+    "west-coast",
+    "sequencer",
+    "filter-snapshot",
+    "morph",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph"
+}

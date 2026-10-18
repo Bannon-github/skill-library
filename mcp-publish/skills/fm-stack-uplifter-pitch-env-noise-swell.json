@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "id": "fm-stack-uplifter-pitch-env-noise-swell",
+  "name": "FM/operator-stack uplifter with long pitch envelope and synced noise swell",
+  "goal": "Build a dense FM uplifter: stack multiple operators (low formant carrier, self-feedback raspy modulators, bright triangles/squares into the output, chord-ish ratios distorting a mid operator), mono with light voice pan, bit of digital crush, opposing looped envelopes (slow reverse swell vs stabby), a tempo-synced pitch envelope rising over ~8 bars, and a noise operator whose amp/FM depth shares that same rising envelope, finished with EQ and reverb.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "G4Tc59aAeoE",
+    "url": "https://www.youtube.com/watch?v=G4Tc59aAeoE",
+    "title": "FM8 - FX Sounds - pt 1 - Uplifter - How To Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/G4Tc59aAeoE/agent-skill-fm-stack-uplifter-pitch-env-noise-swell.json"
+  },
+  "prerequisites": [
+    "FM synth or operator stack with ratios, feedback, shared pitch envelope, noise op"
+  ],
+  "inputs": [
+    {
+      "name": "rise_bars",
+      "type": "number",
+      "description": "Length of the pitch rise (transcript ~8 bars / pitch env ~31\u201332/4)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fm_uplifter",
+      "type": "synth-patch",
+      "description": "Layered FM uplifter with noise intensity swell"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Map FM8 operator letters to generic carriers/modulators; ratios and feedback amounts are the portable content, not the product UI.",
+    "Numeric depths (e.g. feedback 32, env amount ~54) are as spoken; tweak to taste on another FM engine."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Carrier/low layer: one operator to output at full level, ratio ~0.25, formant-ish wave (transcript: 3rd formant) for a low body.",
+      "tool": "op-carrier",
+      "expect": "Soloed low tonal bed"
+    },
+    {
+      "n": 2,
+      "action": "Add a raspy modulator into that carrier (~28 depth) with self-feedback on both (~5 on the mod, ~32 on the carrier); set mod ratio ~0.5 with a higher formant wave (transcript: 8th formant).",
+      "tool": "op-feedback",
+      "expect": "Grittier low complex tone"
+    },
+    {
+      "n": 3,
+      "action": "Bright layers to output: triangle at ratio 4 and a square-ish (1+3+5) at ratio 1, each ~88 level, with some self-feedback on the triangle (~16).",
+      "tool": "op-bright",
+      "expect": "High metallic edge above the bed"
+    },
+    {
+      "n": 4,
+      "action": "Distort a mid operator with two further ops (triangle at ratio ~1.25 into it ~54; saw-ish 1+2+3 at ratio 0.25 into that modulator) for a slight chord/cluster rasp.",
+      "tool": "op-cluster",
+      "expect": "Inharmonic/chordy grit on the mid layer"
+    },
+    {
+      "n": 5,
+      "action": "Master: monophonic, 2 voices, detune off, light pan (~25\u201326%) between voices; add mild bit-crush/digital (~65) for FX character.",
+      "tool": "voice",
+      "expect": "Stable mono-ish FX with light width and digital edge"
+    },
+    {
+      "n": 6,
+      "action": "Envelopes: tempo-sync; give some operators a slow reverse/fade-in looped sustain shape (e.g. over 3/16) and others a stabby attack with sustain loop so layers move against each other.",
+      "tool": "op-envs",
+      "expect": "Animated stacked contour without a single static pad"
+    },
+    {
+      "n": 7,
+      "action": "Pitch envelope: tempo-sync a long rising sustain envelope across ~8 bars (~31\u201332/4), amount ~54, slightly curved for a smoother bend; hold MIDI at a sustained note (e.g. C3).",
+      "tool": "pitch-env",
+      "expect": "Clear multi-bar pitch rise"
+    },
+    {
+      "n": 8,
+      "action": "Noise operator to output (~58) with amp up, bright cutoff, mild resonance (~55\u201357); FM-noise into several tonal ops (e.g. ~50/30/16). Save/load the same rising pitch envelope onto the noise amp so noise and its FM distortion swell with the rise. EQ low-mids/highs; reverb ~33\u201334% wet.",
+      "tool": "noise-fx",
+      "expect": "Intensity climbs with pitch; space from reverb without washing the rise"
+    }
+  ],
+  "verification": [
+    "Over the rise_bars window pitch climbs and noise contribution increases together",
+    "Tonal stack remains recognizable if noise is muted",
+    "Mono voice mode prevents uncontrolled poly detune during the glide"
+  ],
+  "tags": [
+    "fm",
+    "uplifter",
+    "operator-stack",
+    "noise-swell",
+    "pitch-envelope",
+    "transition-fx",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://fm-stack-uplifter-pitch-env-noise-swell"
+}

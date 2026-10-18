@@ -1,0 +1,177 @@
+{
+ "topic": "spectral freeze pad sound design tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "spectral freeze pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0CnW72b4-cg",
+   "title": "How to: Dhu Du Flute (Blackpink - Ddu du ddu du) in Vital - Synthesis Sound Design Tutorial",
+   "channel": "Eric Bowman",
+   "duration": 772,
+   "view_count": 10849,
+   "url": "https://www.youtube.com/watch?v=0CnW72b4-cg",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.52,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "-oFbaWsScJw",
+   "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+   "channel": "Demis Hellen",
+   "duration": 806,
+   "view_count": 5826,
+   "url": "https://www.youtube.com/watch?v=-oFbaWsScJw",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.38,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "a1PXFmZInew",
+   "title": "Spectral Time - Ableton Audio Effect Tutorial",
+   "channel": "Kermode",
+   "duration": 497,
+   "view_count": 1626,
+   "url": "https://www.youtube.com/watch?v=a1PXFmZInew",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.11,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "EwunJYwxNcs",
+   "title": "Chaotic Sounds - Max/MSP Tutorial",
+   "channel": "Hearing Glass | Umut Eldem",
+   "duration": 2276,
+   "view_count": 24099,
+   "url": "https://www.youtube.com/watch?v=EwunJYwxNcs",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.19,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "sFbNaxLr8AY",
+   "title": "Trifonic: Making Pads with Spectral Dronemaker",
+   "channel": "nextstepaudio",
+   "duration": 508,
+   "view_count": 9742,
+   "url": "https://www.youtube.com/watch?v=sFbNaxLr8AY",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.49,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "IkHBtBSuHMk",
+   "title": "Kreative Delay-Effekte mit Ableton Live's neuem Spectral Time Audio Effekt",
+   "channel": "Produziere deine Musik",
+   "duration": 723,
+   "view_count": 1668,
+   "url": "https://www.youtube.com/watch?v=IkHBtBSuHMk",
+   "query": "spectral freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.11,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "de"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Eli51HS7gwU",
+   "why": "duration 2572s"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "aiHvS739eMc",
+   "why": "duration 4986s"
+  },
+  {
+   "id": "vRKL_Br_LjM",
+   "why": "already known"
+  },
+  {
+   "id": "zF11J2Ip8GE",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "ebT9BytZNcM",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "P6zMzEvho54",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

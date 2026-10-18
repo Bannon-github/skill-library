@@ -1,0 +1,60 @@
+{
+  "video_id": "NQ6tTIJpRDg",
+  "title": "Synth Layering for Orchestral Composers: 3 Practical Methods",
+  "url": "https://www.youtube.com/watch?v=NQ6tTIJpRDg",
+  "fetched_at": "2026-10-15T16:28:53.956560+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Dillon M. DeRosa",
+  "duration": 1678,
+  "ok": true,
+  "cue_count": 366,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/NQ6tTIJpRDg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/NQ6tTIJpRDg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "ar(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

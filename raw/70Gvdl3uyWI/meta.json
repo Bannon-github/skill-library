@@ -1,0 +1,46 @@
+{
+  "video_id": "70Gvdl3uyWI",
+  "title": "Acousmatic Sounds | Pulsing Phaser Pad Walkthrough [Kontakt 5.8 and above]",
+  "url": "https://www.youtube.com/watch?v=70Gvdl3uyWI",
+  "fetched_at": "2026-10-13T16:33:53.128710+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Alejandro Magaña Martinez",
+  "duration": 729,
+  "ok": true,
+  "cue_count": 216,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/70Gvdl3uyWI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/70Gvdl3uyWI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

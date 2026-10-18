@@ -1,0 +1,46 @@
+{
+  "video_id": "-oFbaWsScJw",
+  "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+  "url": "https://www.youtube.com/watch?v=-oFbaWsScJw",
+  "fetched_at": "2026-10-13T16:33:23.961219+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Demis Hellen",
+  "duration": 806,
+  "ok": true,
+  "cue_count": 326,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/-oFbaWsScJw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/-oFbaWsScJw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

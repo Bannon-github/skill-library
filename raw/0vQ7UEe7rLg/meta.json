@@ -1,0 +1,63 @@
+{
+  "video_id": "0vQ7UEe7rLg",
+  "title": "How to Use Google Flow (Step-by-Step Tutorial)",
+  "url": "https://www.youtube.com/watch?v=0vQ7UEe7rLg",
+  "fetched_at": "2026-10-12T21:52:33.118774+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Kevin Stratvert",
+  "duration": 554,
+  "ok": true,
+  "cue_count": 113,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/0vQ7UEe7rLg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0vQ7UEe7rLg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pt-BR(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

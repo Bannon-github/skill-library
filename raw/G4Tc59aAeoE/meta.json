@@ -1,0 +1,57 @@
+{
+  "video_id": "G4Tc59aAeoE",
+  "title": "FM8 - FX Sounds - pt 1 - Uplifter - How To Tutorial",
+  "url": "https://www.youtube.com/watch?v=G4Tc59aAeoE",
+  "fetched_at": "2026-10-09T16:34:42.555850+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "ADSR Music Production Tutorials",
+  "duration": 691,
+  "ok": true,
+  "cue_count": 229,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/G4Tc59aAeoE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/G4Tc59aAeoE/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "hi(auto)",
+        "ja(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "17St_0BfbF0",
+  "title": "Making Ambient Synth Pad and Drone sounds with Serum2",
+  "url": "https://www.youtube.com/watch?v=17St_0BfbF0",
+  "fetched_at": "2026-10-16T16:28:17.023750+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "MERAKKI",
+  "duration": 925,
+  "ok": true,
+  "cue_count": 245,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/17St_0BfbF0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/17St_0BfbF0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

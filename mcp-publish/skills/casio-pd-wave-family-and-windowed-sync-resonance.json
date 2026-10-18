@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "casio-pd-wave-family-and-windowed-sync-resonance",
+  "name": "Casio PD wave family: saw-pulse, double-sine, pulse, square, and windowed-sync resonance",
+  "goal": "Expand Casio-style phase distortion beyond the basic saw: derive saw-pulse (sine table), double-sine (warp twice / half-rate), pulse (node at full height with end hold), true square (run the warper twice per cycle), and resonant 'windowed sync' waves (slave sync reset enveloped by a decaying window to remove the click), then thicken with unison.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "94vSgZXg1nQ",
+    "url": "https://www.youtube.com/watch?v=94vSgZXg1nQ",
+    "title": "GroovyDSP: More Phase Distortion!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/94vSgZXg1nQ/agent-skill-casio-pd-wave-family-and-windowed-sync-resonance.json"
+  },
+  "prerequisites": [
+    "Working piecewise PD saw oscillator (see casio-pd-piecewise-phase-warp-cosine-to-saw)",
+    "Ability to sync-reset a higher-rate oscillator and multiply by an amplitude window"
+  ],
+  "inputs": [
+    {
+      "name": "wave_mode",
+      "type": "enum",
+      "description": "saw | saw-pulse | double-sine | pulse | square | resonance",
+      "required": true
+    },
+    {
+      "name": "skew_or_y_node",
+      "type": "number",
+      "description": "Node height/position control (0.5 for classic saw knee; toward 1.0 for pulse-style full sweep)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cz_style_oscillator",
+      "type": "synth-module",
+      "description": "Multi-shape PD oscillator including windowed-sync resonance mode"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Resonance mode is an emulation of sync+window, not a true analog filter resonance; expect formanty decaying-sine character rather than Moog-style Q."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from the piecewise phase warp (fast then slow read). For the classic saw, use a cosine table with the knee near mid-amplitude (y\u22480.5).",
+      "tool": "pd-core",
+      "expect": "Identity warp \u2192 cosine; cocked node \u2192 saw-like"
+    },
+    {
+      "n": 2,
+      "action": "Saw-pulse: swap the cosine table for a sine table under the same warp (first half read fast, second slow) to get the CZ saw-pulse family shape.",
+      "tool": "table-swap",
+      "expect": "Same x1 control yields a different, pulse-tilted spectral contour vs cosine-saw"
+    },
+    {
+      "n": 3,
+      "action": "Double-sine: apply the same shaping so one full sine cycle is played fast and the next slow (or conceptually run at half rate with the warp), producing a weird octave/double-sine texture.",
+      "tool": "double-cycle",
+      "expect": "Audible octave-ish thickening without a second oscillator"
+    },
+    {
+      "n": 4,
+      "action": "Pulse: raise the node height (y-position) toward 1.0 so the fast segment climbs higher and the cycle then waits/holds at the end before resetting \u2014 a pulse with end dwell. Cosine or sine both work; Casio often used sine.",
+      "tool": "pulse-node",
+      "expect": "Increasing skew/y toward 100% moves from mid-knee saw toward full-height pulse"
+    },
+    {
+      "n": 5,
+      "action": "Square: run the warping function twice per cycle (multiply phase by 2 then wrap 0\u21921 before the piecewise map), i.e. twice-per-cycle instead of once \u2014 Casio's fuller square uses the full 100% cycle read this way rather than a weaker half-cycle squish.",
+      "tool": "double-warp",
+      "expect": "Output approaches a square-like duty with the warp still controlling edge sharpness"
+    },
+    {
+      "n": 6,
+      "action": "Resonance / windowed-sync: run a higher-rate sine (or oscillator) that is hard-synced/reset by the fundamental, then multiply by a decaying amplitude window each master cycle so the sync gap/click is enveloped away \u2014 an exponentially decaying sine burst that mimics filter resonance.",
+      "tool": "windowed-sync",
+      "expect": "Synced overtones without a hard click; opening the sync ratio brightens like resonance"
+    },
+    {
+      "n": 7,
+      "action": "Optional CZ trick: alternate wave shapes cycle-by-cycle (e.g. square then saw) so the ear hears one compound cycle. Add a unison/detune ('fat') layer for organic thickness on leads/pads.",
+      "tool": "alternate-unison",
+      "expect": "Odd textures from alternation; unison adds weight without changing the PD core"
+    },
+    {
+      "n": 8,
+      "action": "Expose skew/y as a continuous 'DCW' macro and modulate it with envelopes for plucky filterless motion; keep pitch from the master phase ramp only.",
+      "tool": "mod-matrix",
+      "expect": "Envelope on skew opens brightness while pitch stays in key"
+    }
+  ],
+  "verification": [
+    "Each wave_mode produces a distinct scope shape under the same pitch",
+    "Resonance mode shows a decaying burst each cycle with no loud sync click",
+    "Skew/y automation does not change perceived fundamental pitch"
+  ],
+  "tags": [
+    "phase-distortion",
+    "casio-cz",
+    "windowed-sync",
+    "resonance-wave",
+    "double-sine",
+    "pulse",
+    "square",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://casio-pd-wave-family-and-windowed-sync-resonance"
+}

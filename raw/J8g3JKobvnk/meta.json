@@ -1,0 +1,82 @@
+{
+  "video_id": "J8g3JKobvnk",
+  "title": "Character Design Workflow - Concepting for 3D Games and Movies",
+  "url": "https://www.youtube.com/watch?v=J8g3JKobvnk",
+  "fetched_at": "2026-10-12T21:48:32.648012+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Proko",
+  "duration": 1486,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.6
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

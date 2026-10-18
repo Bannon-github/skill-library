@@ -1,0 +1,46 @@
+{
+  "video_id": "1fBKB9MfV7c",
+  "title": "How To Make AI Cover Songs [Tutorial + Fully Automated Workflow]",
+  "url": "https://www.youtube.com/watch?v=1fBKB9MfV7c",
+  "fetched_at": "2026-10-12T21:51:03.016928+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Kevin vs AI",
+  "duration": 1608,
+  "ok": true,
+  "cue_count": 591,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/1fBKB9MfV7c/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/1fBKB9MfV7c/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

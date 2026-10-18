@@ -1,0 +1,178 @@
+{
+ "topic": "karplus strong resonator physical modeling pad tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "karplus strong resonator physical modeling pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "O0W0in6saoo",
+   "title": "Resonator - Physical Modeling in MSoundfactory Pt 5",
+   "channel": "Chandler guitar",
+   "duration": 413,
+   "view_count": 1250,
+   "url": "https://www.youtube.com/watch?v=O0W0in6saoo",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.05,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "8elZ_HaMO00",
+   "title": "Physical Modeling in Kaivo",
+   "channel": "Sormena Project (Sormena Project)",
+   "duration": 544,
+   "view_count": 13103,
+   "url": "https://www.youtube.com/watch?v=8elZ_HaMO00",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.56,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "4GLbUpOsX3Y",
+   "title": "Physical Modeling in MSoundfactory Pt 2",
+   "channel": "Chandler guitar",
+   "duration": 675,
+   "view_count": 3496,
+   "url": "https://www.youtube.com/watch?v=4GLbUpOsX3Y",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.27,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "8b5EX9HcPGk",
+   "title": "Karplus-Strong Synthesis in Bitwig Studio 3 - The Grid",
+   "channel": "Kip Schwinger",
+   "duration": 1133,
+   "view_count": 1990,
+   "url": "https://www.youtube.com/watch?v=8b5EX9HcPGk",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.15,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "DiC1lFnSFF0",
+   "title": "Commuted synthesis - Physical Modeling in MSoundfactory Pt 6",
+   "channel": "Chandler guitar",
+   "duration": 723,
+   "view_count": 1469,
+   "url": "https://www.youtube.com/watch?v=DiC1lFnSFF0",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.08,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "SfqgigefIu0",
+   "title": "KARPLUS-STRONG synthesis in Renoise and the •REZONATOR•",
+   "channel": "Xenobaba",
+   "duration": 893,
+   "view_count": 1227,
+   "url": "https://www.youtube.com/watch?v=SfqgigefIu0",
+   "query": "karplus strong resonator physical modeling pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.04,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "UYeP0BlXQAk",
+   "why": "duration 33s"
+  },
+  {
+   "id": "kegNMGUw1DY",
+   "why": "duration 3109s"
+  },
+  {
+   "id": "DwAqjUYiMrQ",
+   "why": "duration 128s"
+  },
+  {
+   "id": "h_-KVdfeeFA",
+   "why": "duration 58s"
+  },
+  {
+   "id": "SwbAyZZ-Vjo",
+   "why": "duration 86s"
+  },
+  {
+   "id": "Ceerehoi8BY",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

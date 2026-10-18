@@ -1,0 +1,174 @@
+{
+ "topic": "folded bass patch wavefolder synth tutorial",
+ "date": "2026-10-16",
+ "params": {
+  "topic": "folded bass patch wavefolder synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0WjG0MKN_wk",
+   "title": "Wavefolding | Max/MSP Tutorial",
+   "channel": "Hearing Glass | Umut Eldem",
+   "duration": 972,
+   "view_count": 3027,
+   "url": "https://www.youtube.com/watch?v=0WjG0MKN_wk",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.24,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "PTTi6M10uws",
+   "title": "Behringer Proton: 50 Vintage Patches. Lead, Bass, Pluck Demo",
+   "channel": "Anton Anru",
+   "duration": 2171,
+   "view_count": 4443,
+   "url": "https://www.youtube.com/watch?v=PTTi6M10uws",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.82,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "JczriWljjHY",
+   "title": "RUMBLE FORGE: Kick In, Rumble Out (Techno Sub Bass Generator)",
+   "channel": "gianabrotherz",
+   "duration": 739,
+   "view_count": 342,
+   "url": "https://www.youtube.com/watch?v=JczriWljjHY",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.77,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "K460-KNHNGE",
+   "title": "Meris Ottobit X (Overview) 4k",
+   "channel": "Meris",
+   "duration": 1036,
+   "view_count": 22085,
+   "url": "https://www.youtube.com/watch?v=K460-KNHNGE",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.67,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "wRCgcTTRVjA",
+   "title": "UVI Falcon 2027 | What's new",
+   "channel": "UVI",
+   "duration": 2189,
+   "view_count": 35598,
+   "url": "https://www.youtube.com/watch?v=wRCgcTTRVjA",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.28,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Ub4d9OatoQE",
+   "title": "SUPERFREAKER - The First Custom Mod for the Arturia Microfreak with Built-in Effects!",
+   "channel": "Freakier Firmware",
+   "duration": 228,
+   "view_count": 30252,
+   "url": "https://www.youtube.com/watch?v=Ub4d9OatoQE",
+   "query": "folded bass patch wavefolder synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.24,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "t5ikyY7PzHs",
+   "why": "duration 149s"
+  },
+  {
+   "id": "5mom0y4BgII",
+   "why": "negative title signal"
+  },
+  {
+   "id": "9bKDTXDs15c",
+   "why": "negative title signal"
+  },
+  {
+   "id": "c8aQMp0vkRg",
+   "why": "already known"
+  },
+  {
+   "id": "9F-UA9jKrxU",
+   "why": "duration 39s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,200 @@
+{
+ "video_id": "7OZx7CWo3M0",
+ "started_at": "2026-10-14T16:29:53.825915+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "original-plus-machine-translation",
+ "language_code": "es",
+ "original_language": "es-US",
+ "is_generated": true,
+ "translated": true,
+ "translation_method": "machine:argos",
+ "translation_confidence": "medium",
+ "domain": "synth",
+ "graph": {
+  "video_id": "7OZx7CWo3M0",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/7OZx7CWo3M0/graph.json",
+  "segments": 112,
+  "windows": 93,
+  "nodes": 47,
+  "edges": 63,
+  "nodes_by_type": {
+   "module": 6,
+   "tool": 2,
+   "param": 4,
+   "step": 20,
+   "concept": 2,
+   "value": 3,
+   "technique": 1,
+   "phrase": 9
+  },
+  "edges_by_type": {
+   "part-of": 4,
+   "mentions": 37,
+   "precedes": 19,
+   "sets": 3
+  },
+  "words": 2063
+ },
+ "gaps": {
+  "video_id": "7OZx7CWo3M0",
+  "graph_nodes": 47,
+  "graph_edges": 63,
+  "terms_checked": 24,
+  "terms_covered": 17,
+  "gap_nodes": 7,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 3,
+  "gap_edges": 1,
+  "candidates": 1,
+  "kg": {
+   "videos": 99,
+   "nodes": 562,
+   "edges": 195,
+   "uncovered_nodes": 11,
+   "uncovered_edges": 41
+  },
+  "candidate_ids": [
+   "synth-sidechain-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "best single-skill procedure overlap 0.4 < 0.5",
+    "techniques not in the best-overlap skill: technique:sidechain"
+   ],
+   "best_skill": "reverb-pads-type-choice-and-send-setup",
+   "profile_share": 1.0,
+   "best_proc_overlap": 0.4,
+   "specific_items": 5,
+   "uncovered_techniques": [],
+   "video_novelty": 0.071,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "original-plus-machine-translation"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 2080,
+    "music_markers": 17
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": true,
+   "evidence": "machine:argos",
+   "then": "mark translated_source; distill cross-checks transcript.orig.*"
+  },
+  {
+   "q": "Q4b machine translation low-confidence (ja/zh/ko source or >5% garbled)?",
+   "a": false,
+   "evidence": {
+    "confidence": "medium",
+    "garbled_share": 0.0,
+    "repeat_loops": 0
+   }
+  },
+  {
+   "q": "Q4c was the YouTube-translated (tlang) rung skipped only because of a 429?",
+   "a": true,
+   "then": "queue an upgrade: refetch later with --refetch to get YouTube's own English"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 6,
+     "crypto": 1,
+     "drone": 1,
+     "sidehustle": 13,
+     "synth": 107
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 47,
+    "edges": 63
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 1,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "best single-skill procedure overlap 0.4 < 0.5",
+      "techniques not in the best-overlap skill: technique:sidechain"
+     ],
+     "best_skill": "reverb-pads-type-choice-and-send-setup",
+     "profile_share": 1.0,
+     "best_proc_overlap": 0.4,
+     "specific_items": 5,
+     "uncovered_techniques": [],
+     "video_novelty": 0.071,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "es-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "es(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "3:youtube-translated:es",
+    "5:original-plus-machine-translation:es"
+   ]
+  },
+  {
+   "q": "fetch youtube-translated (es)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch original-plus-machine-translation (es)",
+   "a": true
+  },
+  {
+   "q": "machine-translate es->en (argos)",
+   "a": true,
+   "evidence": null
+  }
+ ],
+ "finished_at": "2026-10-14T16:30:22.240016+00:00"
+}

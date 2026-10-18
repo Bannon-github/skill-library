@@ -1,0 +1,155 @@
+{
+ "topic": "formant filter vowel pad synth tutorial",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "formant filter vowel pad synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "sGZr4PusB0U",
+   "title": "This is the craziest synth effect I’ve ever tried",
+   "channel": "Devin Belanger",
+   "duration": 824,
+   "view_count": 18017,
+   "url": "https://www.youtube.com/watch?v=sGZr4PusB0U",
+   "query": "formant filter vowel pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.63,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "iAV0MaBj3Q8",
+   "title": "This New Creative Plugin Makes Any Sound Talk... and It's Weirdly Addictive!",
+   "channel": "Amner Hunter",
+   "duration": 965,
+   "view_count": 2862,
+   "url": "https://www.youtube.com/watch?v=iAV0MaBj3Q8",
+   "query": "formant filter vowel pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.23,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en",
+     "es"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "soo-TnRgrTU",
+   "title": "Focus Time - Free Creative Sampler Workstation (Glitch, Warp, Harmonic Partials, etc)",
+   "channel": "Touch The Universe",
+   "duration": 672,
+   "view_count": 1824,
+   "url": "https://www.youtube.com/watch?v=soo-TnRgrTU",
+   "query": "formant filter vowel pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.13,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "6AimjzOBy5I",
+   "title": "Exploring FOCUS TIME — Free Curve FX Sampler | KVR Developer Challenge Entry",
+   "channel": "Touch The Universe",
+   "duration": 1630,
+   "view_count": 401,
+   "url": "https://www.youtube.com/watch?v=6AimjzOBy5I",
+   "query": "formant filter vowel pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.8,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Kl5QIcQKFUM",
+   "title": "MPE for Serum 2: Synthesizing Human Voices",
+   "channel": "thoughtForm Max",
+   "duration": 3271,
+   "view_count": 1036,
+   "url": "https://www.youtube.com/watch?v=Kl5QIcQKFUM",
+   "query": "formant filter vowel pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.51,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "MNo97VxeiHc",
+   "why": "duration 51s"
+  },
+  {
+   "id": "1FpP8sulyhU",
+   "why": "duration 126s"
+  },
+  {
+   "id": "FfyD5ILl6q8",
+   "why": "duration 104s"
+  },
+  {
+   "id": "8gjIpOvF1Pc",
+   "why": "duration 7453s"
+  },
+  {
+   "id": "odSc71wYU6I",
+   "why": "duration 4952s"
+  },
+  {
+   "id": "2sbFFV7Q9OY",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

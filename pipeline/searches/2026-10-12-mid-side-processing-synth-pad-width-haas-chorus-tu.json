@@ -1,0 +1,128 @@
+{
+ "topic": "mid side processing synth pad width Haas chorus tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "mid side processing synth pad width Haas chorus tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 4,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Yjh2Hoz1D2I",
+   "title": "Ableton Tutorial - Synth Compression (Mixing Dance Music pt 3)",
+   "channel": "pointblank music school",
+   "duration": 439,
+   "view_count": 63661,
+   "url": "https://www.youtube.com/watch?v=Yjh2Hoz1D2I",
+   "query": "mid side processing synth pad width Haas chorus tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.9,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "TJoZEsZtrc0",
+   "title": "FL STUDIO Stereo Shaper  - Everything You Need To Know",
+   "channel": "In The Mix",
+   "duration": 825,
+   "view_count": 198213,
+   "url": "https://www.youtube.com/watch?v=TJoZEsZtrc0",
+   "query": "mid side processing synth pad width Haas chorus tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.15,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "QrugoY6V4Qg",
+   "title": "Reason 4 Quick Tips (Part 1)",
+   "channel": "PulseCrush",
+   "duration": 284,
+   "view_count": 2405,
+   "url": "https://www.youtube.com/watch?v=QrugoY6V4Qg",
+   "query": "mid side processing synth pad width Haas chorus tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.69,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "LcAcmBKryxE",
+   "title": "Stereo Width Part 2 - Widening",
+   "channel": "DJ Warmonger Official Channel",
+   "duration": 1023,
+   "view_count": 101,
+   "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+   "query": "mid side processing synth pad width Haas chorus tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "DcR34nSznJQ",
+   "why": "duration 132s"
+  },
+  {
+   "id": "XExnmlsorbM",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

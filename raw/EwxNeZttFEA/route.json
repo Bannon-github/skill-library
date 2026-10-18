@@ -1,0 +1,172 @@
+{
+ "video_id": "EwxNeZttFEA",
+ "started_at": "2026-10-16T16:19:27.545907+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "EwxNeZttFEA",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/EwxNeZttFEA/graph.json",
+  "segments": 197,
+  "windows": 56,
+  "nodes": 27,
+  "edges": 19,
+  "nodes_by_type": {
+   "concept": 4,
+   "tool": 1,
+   "param": 8,
+   "module": 7,
+   "step": 5,
+   "technique": 2
+  },
+  "edges_by_type": {
+   "part-of": 8,
+   "mentions": 7,
+   "precedes": 4
+  },
+  "words": 1296
+ },
+ "gaps": {
+  "video_id": "EwxNeZttFEA",
+  "graph_nodes": 27,
+  "graph_edges": 19,
+  "terms_checked": 22,
+  "terms_covered": 21,
+  "gap_nodes": 1,
+  "gap_nodes_excl_phrases": 1,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 145,
+   "nodes": 819,
+   "edges": 255,
+   "uncovered_nodes": 10,
+   "uncovered_edges": 69
+  },
+  "candidate_ids": [
+   "synth-transient-shaping-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "uncovered techniques: technique:transient_shaping"
+   ],
+   "best_skill": "reverb-pads-type-choice-and-send-setup",
+   "profile_share": 0.818,
+   "best_proc_overlap": 0.5,
+   "specific_items": 2,
+   "uncovered_techniques": [
+    "technique:transient_shaping"
+   ],
+   "video_novelty": 0.094,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "auto-target-original-audio"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 1300,
+    "music_markers": 4
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 2,
+     "synth": 29
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 27,
+    "edges": 19
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 1,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "uncovered techniques: technique:transient_shaping"
+     ],
+     "best_skill": "reverb-pads-type-choice-and-send-setup",
+     "profile_share": 0.818,
+     "best_proc_overlap": 0.5,
+     "specific_items": 2,
+     "uncovered_techniques": [
+      "technique:transient_shaping"
+     ],
+     "video_novelty": 0.094,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-16T16:19:31.419871+00:00"
+}

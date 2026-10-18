@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+  "name": "Turn a flat sustained drone into rolling shaker-style percussion: loop and crossfade a stable bar, re-envelope it into rhythmic hits with a transient-preserving time-stretch gate at a fast note rate, then low-cut, boost one tuned mid harmonic, layer an organic shaker texture, snap it with a transient shaper and add a short parallel bright room",
+  "goal": "Recycle a pad/drone into tuned percussion without a drum source. Pick the steadiest, least peaky bar of the drone, loop it with short crossfades to avoid clicks, consolidate, then use a transient-preserving warp/stretch mode with a fast transient rate (the presenter starts at a 1/60-type rate for shaker speed) and reduce the per-transient sustain/envelope so each grid step becomes a hit. Add a fade-in, consolidate again, high-pass the lows, boost the strongest mid harmonic so the hit is in key (the presenter's was G#), layer a shaker/tambourine texture (less hold, more attack, a little decay, slight pitch, denser), add a transient shaper (attack up, sustain way down), tidy with EQ and finish with a short, bright, no-pre-delay room in parallel (~22 ms, mixed under the dry).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "EwxNeZttFEA",
+    "url": "https://www.youtube.com/watch?v=EwxNeZttFEA",
+    "title": "Crazy Percussions Out of a Pad in Serum 2",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/EwxNeZttFEA/agent-skill-drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room.json",
+    "transcript_note": "DAW-specific warp UI mapped to a generic transient gate."
+  },
+  "prerequisites": [
+    "DAW with a transient-preserving time-stretch mode and per-transient envelope (e.g. a Beats/transient mode), or Web Audio: a GainNode envelope retriggered on a 1/16–1/32 grid (implementation note)",
+    "Parametric EQ, transient shaper, texture/noise layer source, short room reverb on a parallel chain"
+  ],
+  "inputs": [
+    {
+      "name": "drone",
+      "type": "audio",
+      "description": "Sustained pad or drone with a steady section",
+      "required": true
+    },
+    {
+      "name": "hit_rate",
+      "type": "enum",
+      "description": "Grid rate for the generated hits (fast for shaker)",
+      "required": true
+    },
+    {
+      "name": "key_harmonic",
+      "type": "note",
+      "description": "Harmonic to boost so the percussion sits in key",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "percussion_loop",
+      "type": "audio",
+      "description": "Rolling tuned percussion loop rendered from the drone"
+    },
+    {
+      "name": "fx_chain",
+      "type": "list",
+      "description": "EQ → texture layer → transient shaper → EQ → parallel room"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Spoken values only: fast transient rate (~'60 notes' wording), room ~22 ms with no pre-delay and little depth. Other moves are by ear.",
+    "Consolidate after warping so the gating is printed into the waveform before further processing.",
+    "Keep the low end cut; percussion of this type lives in the mids and tops."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Find the most stable, least peaky bar of the drone and loop it. Crossfade at each loop join so there are no clicks, then consolidate to one file.",
+      "tool": "prepare",
+      "expect": "Seamless flat drone loop"
+    },
+    {
+      "n": 2,
+      "action": "Set a transient-preserving stretch mode with linear behaviour, choose a fast transient rate for shaker speed, then reduce the transient sustain/envelope until each step becomes a short hit. Raise level, add a small fade-in, and consolidate again.",
+      "tool": "rhythmic gate",
+      "expect": "Drone becomes a rhythmic, dynamic percussive pattern"
+    },
+    {
+      "n": 3,
+      "action": "EQ: high-pass the low frequencies that are not part of the percussion, then boost one or two mid harmonics so the part has a pitch that fits the tune or groove.",
+      "tool": "tuned eq",
+      "expect": "Hits have a clear tonal centre in the mids"
+    },
+    {
+      "n": 4,
+      "action": "Layer an organic texture (tambourine/shaker-type) with less hold, more attack, a little more decay, slight pitch shift and higher density. EQ the texture to fill what is not poking through and reduce its decay.",
+      "tool": "texture",
+      "expect": "Sounds like real shakers rather than gated noise"
+    },
+    {
+      "n": 5,
+      "action": "Add a transient shaper: raise attack, remove a lot of sustain, adjust speed so it is snappy but not overdone.",
+      "tool": "snap",
+      "expect": "Tighter, punchier hits"
+    },
+    {
+      "n": 6,
+      "action": "Final EQ: bring up the gap left by processing, roll off extremes, and let the main harmonic breathe.",
+      "tool": "final eq",
+      "expect": "Balanced, perky percussion"
+    },
+    {
+      "n": 7,
+      "action": "Put a very short bright room (no pre-delay, little depth, ~22 ms) on a parallel chain beside the dry signal and mix it under.",
+      "tool": "space",
+      "expect": "Hits gain depth without washing out"
+    }
+  ],
+  "verification": [
+    "Rendered loop shows distinct transient peaks on the grid where the drone was flat.",
+    "One mid harmonic dominates an analyser and matches the track key.",
+    "No clicks at loop joins or hit onsets.",
+    "Muting the parallel room reduces depth but keeps the rhythm intact."
+  ],
+  "tags": [
+    "percussion",
+    "resampling",
+    "transient-shaper",
+    "texture-layer",
+    "drone",
+    "parallel-reverb",
+    "hybrid-score",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room"
+}

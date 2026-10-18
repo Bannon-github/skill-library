@@ -1,0 +1,187 @@
+{
+ "topic": "ring modulation sound design tutorial pad texture",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "ring modulation sound design tutorial pad texture",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "t3fD_6JEies",
+   "title": "Sounddesign with Ring Modulation | Thomann",
+   "channel": "Voltage Labs",
+   "duration": 884,
+   "view_count": 33312,
+   "url": "https://www.youtube.com/watch?v=t3fD_6JEies",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.76,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "onIY92psu60",
+   "title": "3x Osc: how to make the BEST pads! | FL Studio",
+   "channel": "imago meri",
+   "duration": 620,
+   "view_count": 36110,
+   "url": "https://www.youtube.com/watch?v=onIY92psu60",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.78,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "6IiC5jUKv4A",
+   "title": "How to make interesting pads in Vital",
+   "channel": "ARTFX",
+   "duration": 1200,
+   "view_count": 6669,
+   "url": "https://www.youtube.com/watch?v=6IiC5jUKv4A",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.41,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "uDJ5Ixmxk-w",
+   "title": "How to Modulate Omnisphere FX",
+   "channel": "Adrian Earnshaw",
+   "duration": 396,
+   "view_count": 449,
+   "url": "https://www.youtube.com/watch?v=uDJ5Ixmxk-w",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.83,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "it",
+     "pt-BR"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "J3fYYG1iwpM",
+   "title": "Opsix Ring Modulation: The Secret to Sweet Bell Tones",
+   "channel": "Ian Dixon",
+   "duration": 1219,
+   "view_count": 441,
+   "url": "https://www.youtube.com/watch?v=J3fYYG1iwpM",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.82,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "AkENvO3dvKw",
+   "title": "Vital: Ideas and concepts for bells and metallic textures",
+   "channel": "platipo",
+   "duration": 1323,
+   "view_count": 5371,
+   "url": "https://www.youtube.com/watch?v=AkENvO3dvKw",
+   "query": "ring modulation sound design tutorial pad texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.37,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "XEzotKYq__M",
+   "why": "duration 104s"
+  },
+  {
+   "id": "xNklIuo2qaQ",
+   "why": "duration 63s"
+  },
+  {
+   "id": "AjxyepdX8VE",
+   "why": "duration 5526s"
+  },
+  {
+   "id": "Tz3LlLBa2l0",
+   "why": "duration 64s"
+  },
+  {
+   "id": "FZRBJNTCl9c",
+   "why": "negative title signal"
+  },
+  {
+   "id": "LrktyRITNTs",
+   "why": "duration 34s"
+  },
+  {
+   "id": "4WGyGlqzboA",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

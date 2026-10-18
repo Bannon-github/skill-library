@@ -1,0 +1,90 @@
+{
+  "video_id": "ysMPHY5oiGc",
+  "title": "Wavefinder Tutorial // Wavetable on Tonverk with OS 1.3.0",
+  "url": "https://www.youtube.com/watch?v=ysMPHY5oiGc",
+  "fetched_at": "2026-10-15T16:15:15.145338+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Elektron",
+  "duration": 1303,
+  "ok": true,
+  "cue_count": 768,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "ysMPHY5oiGc.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/ysMPHY5oiGc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/ysMPHY5oiGc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": true
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.9
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ]
+}

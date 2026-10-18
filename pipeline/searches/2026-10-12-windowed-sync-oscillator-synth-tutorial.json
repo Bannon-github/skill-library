@@ -1,0 +1,152 @@
+{
+ "topic": "windowed sync oscillator synth tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "windowed sync oscillator synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "g0QRn65Mwwc",
+   "title": "Windowed Sync in the Grid 🪟🤓",
+   "channel": "Rumble channel",
+   "duration": 488,
+   "view_count": 580,
+   "url": "https://www.youtube.com/watch?v=g0QRn65Mwwc",
+   "query": "windowed sync oscillator synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.88,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "n3BvabscO_U",
+   "title": "NE FAITES PAS CELA CHEZ VOUS ! Le synthé MODAL ELECTRONICS ARGON 8 - Dans La Boite avec Knarf",
+   "channel": "La Boite Noire du Musicien",
+   "duration": 774,
+   "view_count": 28568,
+   "url": "https://www.youtube.com/watch?v=n3BvabscO_U",
+   "query": "windowed sync oscillator synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.73,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "fr"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "23UHaI16KyY",
+   "title": "Venom 2.11.1 Enhancements + Oscillator Tips",
+   "channel": "Dave Benham",
+   "duration": 2180,
+   "view_count": 105,
+   "url": "https://www.youtube.com/watch?v=23UHaI16KyY",
+   "query": "windowed sync oscillator synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "MBwAboKVrXE",
+   "title": "SCI-FI sounds using WINDOWED SINC in RENOISE!",
+   "channel": "Xenobaba",
+   "duration": 662,
+   "view_count": 720,
+   "url": "https://www.youtube.com/watch?v=MBwAboKVrXE",
+   "query": "windowed sync oscillator synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.93,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "izlxYMrVNfk",
+   "title": "Synthstrom Deluge FIRMWARE GAME CHANGER! - New Open Source Buffet THAT SYNTH SHOW EP.68",
+   "channel": "SYNTH SAMURAI",
+   "duration": 1021,
+   "view_count": 624,
+   "url": "https://www.youtube.com/watch?v=izlxYMrVNfk",
+   "query": "windowed sync oscillator synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.9,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "cBu-sL52vpU",
+   "why": "duration 51s"
+  },
+  {
+   "id": "LkZ3lPvTCB8",
+   "why": "duration 72s"
+  },
+  {
+   "id": "4Pb9z9QEzks",
+   "why": "negative title signal"
+  },
+  {
+   "id": "KAmrHtAYhOw",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "WyaTQdp8e1E",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "iOJpeufuWEg",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

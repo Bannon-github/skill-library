@@ -1,0 +1,46 @@
+{
+  "video_id": "rRFGaDy3uUw",
+  "title": "How to Create Massive, Evolving Pads in u-he Zebra 3",
+  "url": "https://www.youtube.com/watch?v=rRFGaDy3uUw",
+  "fetched_at": "2026-10-15T16:23:14.804737+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Sonic Tales",
+  "duration": 1582,
+  "ok": true,
+  "cue_count": 527,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/rRFGaDy3uUw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/rRFGaDy3uUw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

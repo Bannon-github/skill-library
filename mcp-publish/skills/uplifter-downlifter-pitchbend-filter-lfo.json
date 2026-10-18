@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "uplifter-downlifter-pitchbend-filter-lfo",
+  "name": "Uplifter / downlifter from any saw synth: pitch-bend span, closed LP, accelerating LFO",
+  "goal": "Create mix-ready uplifters and downlifters in any wavetable/subtractive synth: hold the root note for ~8 bars, set pitch-bend range to \u00b16 or \u00b112 st, close a 12 dB low-pass, map an LFO with an accelerating curve (quarter\u2192eighth\u2192sixteenth) to cutoff and to pitch-bend (50%\u2192100% for up, 50%\u21920% for down), thicken with unison, then sidechain and add reverb/FX.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "t97TU3p7-kE",
+    "url": "https://www.youtube.com/watch?v=t97TU3p7-kE",
+    "title": "HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/t97TU3p7-kE/agent-skill-uplifter-downlifter-pitchbend-filter-lfo.json"
+  },
+  "prerequisites": [
+    "Synth with pitch-bend range, low-pass filter, drawable/tempo LFO, unison"
+  ],
+  "inputs": [
+    {
+      "name": "direction",
+      "type": "enum",
+      "description": "uplifter | downlifter",
+      "required": true
+    },
+    {
+      "name": "bend_range_st",
+      "type": "number",
+      "description": "Pitch-bend range in semitones (transcript suggests 6 or 12)",
+      "required": true
+    },
+    {
+      "name": "hold_bars",
+      "type": "number",
+      "description": "Held root-note length (transcript uses 8 bars)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "transition_fx",
+      "type": "synth-patch",
+      "description": "Tempo-locked uplifter or downlifter clip"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Do not rely on named commercial preset packs; apply the same bend+filter+LFO recipe to an init saw or any original lead patch.",
+    "Sidechain depth is mix-dependent; transcript example pulls a kick-sidechain mix to ~75%."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "In the piano roll, draw a single root-note held for about 8 bars so the riser sits in key for a buildup.",
+      "tool": "midi",
+      "expect": "One sustained note spanning the transition"
+    },
+    {
+      "n": 2,
+      "action": "Set pitch-bend range to 6 or 12 semitones up and down (12 used in the transcript).",
+      "tool": "pitch-bend",
+      "expect": "Full-wheel (or 100% bend mod) equals the chosen span"
+    },
+    {
+      "n": 3,
+      "action": "Enable a low-pass filter (e.g. MG-style 12 dB) and pull cutoff down so highs are removed at the start.",
+      "tool": "filter",
+      "expect": "Dull closed tone before modulation"
+    },
+    {
+      "n": 4,
+      "action": "Map an LFO to cutoff. Draw an accelerating rate curve in the LFO (start slower ~1/4, then 1/8, then 1/16) and adjust LFO rate to taste.",
+      "tool": "lfo",
+      "expect": "Filter opens with increasing urgency over the clip"
+    },
+    {
+      "n": 5,
+      "action": "Map the same (or a second) LFO/envelope to pitch-bend position: from 50% toward 100% for an uplifter, or from 50% toward 0% for a downlifter.",
+      "tool": "pitch-mod",
+      "expect": "Pitch rises or falls across the held note in sync with the filter"
+    },
+    {
+      "n": 6,
+      "action": "On a saw source, raise unison (e.g. ~7 voices), reduce detune for a tighter supersaw, and raise stereo blend slightly.",
+      "tool": "unison",
+      "expect": "Thicker, wider riser without extreme beating"
+    },
+    {
+      "n": 7,
+      "action": "Sidechain the riser to the kick (or a rhythmic duck envelope), easing mix if the duck is harsh (~75% wet in the transcript example). Add reverb/FX from the synth FX rack or inserts so it sits in the mix.",
+      "tool": "mix",
+      "expect": "Riser pumps with the groove and has space without masking the kick"
+    }
+  ],
+  "verification": [
+    "Uplifter: pitch and brightness increase over the 8 bars; downlifter: both decrease",
+    "At bend center (50%) with filter closed the static tone is in key and dull",
+    "Sidechain produces audible ducking against the kick"
+  ],
+  "tags": [
+    "uplifter",
+    "downlifter",
+    "riser",
+    "pitch-bend",
+    "filter-lfo",
+    "transition-fx",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://uplifter-downlifter-pitchbend-filter-lfo"
+}

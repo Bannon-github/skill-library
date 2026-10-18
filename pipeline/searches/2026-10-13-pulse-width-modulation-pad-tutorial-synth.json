@@ -1,0 +1,166 @@
+{
+ "topic": "pulse width modulation pad tutorial synth",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "pulse width modulation pad tutorial synth",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "VQMGSsWA5MQ",
+   "title": "How To Use A Synth: What is PWM (Pulse Width Modulation)? Roland JU-06A Boutique Tutorial",
+   "channel": "Synth Tips and Tricks",
+   "duration": 488,
+   "view_count": 38764,
+   "url": "https://www.youtube.com/watch?v=VQMGSsWA5MQ",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.79,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "m7yYTAQDhI4",
+   "title": "\"Pulse-Width Modulation\"  +10 Sound Design Tips | Quick & Dirty Digitakt Tutorial #3",
+   "channel": "Jessica Saves",
+   "duration": 670,
+   "view_count": 5608,
+   "url": "https://www.youtube.com/watch?v=m7yYTAQDhI4",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.37,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "0n23itgG0LU",
+   "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+   "channel": "Justin Kennedy",
+   "duration": 517,
+   "view_count": 1437,
+   "url": "https://www.youtube.com/watch?v=0n23itgG0LU",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.08,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "TFVezOtY-_U",
+   "title": "Synthesis Explained - Part 7 - Pulse Width Modulation",
+   "channel": "Rezzonator - Electronic Music Tips,Tricks,Reviews",
+   "duration": 563,
+   "view_count": 542,
+   "url": "https://www.youtube.com/watch?v=TFVezOtY-_U",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.87,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "nkAMfbTOX9U",
+   "title": "Vital Synth - How to do Serum style PWM warping",
+   "channel": "Baphometrix",
+   "duration": 760,
+   "view_count": 10608,
+   "url": "https://www.youtube.com/watch?v=nkAMfbTOX9U",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.51,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "l0c-d8pC8lc",
+   "title": "Square Waves, Pulses & Pulse Width Modulation (PWM)",
+   "channel": "SadowickProduction",
+   "duration": 328,
+   "view_count": 6340,
+   "url": "https://www.youtube.com/watch?v=l0c-d8pC8lc",
+   "query": "pulse width modulation pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.4,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "yBnHzpaAGqM",
+   "why": "duration 105s"
+  },
+  {
+   "id": "MtCdOPBU5e8",
+   "why": "duration 108s"
+  },
+  {
+   "id": "qyT40lz8w7w",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

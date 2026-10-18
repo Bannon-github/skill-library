@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+  "name": "Scale-locked resonator bank as an instrument: up to 12 tuned resonator voices on a root and scale (e.g. D minor 9, 6 voices, octave 3), excited by a stereo noise burst or drums, with motion modes (wave, strum, arpeggio, swarm), feedback/decay/damping/spread/diffusion and gated live-key voicing",
+  "goal": "Use a bank of tuned resonators as a playable texture generator. Tune all voices to a root note and scale chord (example: root D, minor 9, 6 voices in octave 3) and pick a resonator model (string, bar, glass harmonica, bowl, membrane, bell, plate, tube; strings add position and brightness). Excite it with a short stereo white-noise burst (ADSR with no sustain, two steps), kicks, snares, hats, pads or piano. Animate which voices sound with a motion mode: wave (amplitude, per-voice frequency spread, phase, rate), strum (spread, curvature, direction up/down/alternate, alternate rate), arpeggio (rate, gate, up/down/up-down/random) or swarm (centre, cohesion, rate). Shape the tail with feedback, decay, damping, stereo spread and diffusion, plus vibrato, and switch to live keys or gated mode to set voices from held chords. More specific than our single harmonic-resonator and noise-crackle skills: a multi-voice scale bank with voice-motion sequencing.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "aPsWzEfgEOo",
+    "url": "https://www.youtube.com/watch?v=aPsWzEfgEOo",
+    "title": "Tessera by Audio Damage (Tuned Sequenced Resonator)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/aPsWzEfgEOo/agent-skill-scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter.json",
+    "transcript_note": "Product demo; factory presets and bank names not reproduced."
+  },
+  "prerequisites": [
+    "Resonator bank (modal/comb resonators per voice) with scale tuning, or Web Audio: N bandpass/comb resonators tuned from a scale table with per-voice gain envelopes (implementation note)",
+    "Exciter source (noise burst generator, drum loop, synth pad, piano)",
+    "Optional step sequencer or MIDI keyboard"
+  ],
+  "inputs": [
+    {
+      "name": "root_scale",
+      "type": "object",
+      "description": "Root note and scale chord (e.g. D, minor 9)",
+      "required": true
+    },
+    {
+      "name": "voices",
+      "type": "integer",
+      "description": "Number of active resonator voices, 1–12",
+      "required": true
+    },
+    {
+      "name": "motion_mode",
+      "type": "enum",
+      "description": "wave | strum | arp | swarm | live keys | gated",
+      "required": true
+    },
+    {
+      "name": "exciter",
+      "type": "audio",
+      "description": "Noise burst, drums or tonal input",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "resonant_texture",
+      "type": "audio",
+      "description": "Tuned, moving resonant texture locked to the scale"
+    },
+    {
+      "name": "motion_settings",
+      "type": "table",
+      "description": "Mode-specific parameters used"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Spoken examples only: root D, minor 9, 6 voices, octave 3, up to 12 voices, 11 resonator models. No preset names copied.",
+    "Feedback is mode-dependent: arpeggio mode has none; resonance feedback can build up fast, so trim output and use dry/wet.",
+    "Gated mode is silent unless keys are held, which lets you play chords alongside it."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert the resonator bank on a source. Set root (lockable) and scale, then the number of voices and octave (example D minor 9, 6 voices, octave 3).",
+      "tool": "tune",
+      "expect": "Any input rings in the chosen chord"
+    },
+    {
+      "n": 2,
+      "action": "Choose a resonator model; test kick, snare and hats through it, trimming output when loud. On string models also set position and brightness.",
+      "tool": "model",
+      "expect": "Distinct timbres per model: string, bar, glass, bowl, membrane, bell, plate, tube"
+    },
+    {
+      "n": 3,
+      "action": "Build a noise exciter: an ADSR-gated stereo white-noise generator with no sustain, triggered on two steps of a sequencer.",
+      "tool": "exciter",
+      "expect": "Short noise bursts become pitched resonant chords"
+    },
+    {
+      "n": 4,
+      "action": "Pick a motion mode. Wave: adjust amplitude, per-voice frequency spread (more chaotic), phase and rate. Strum: spread, curvature, direction (one way, opposite, alternating) and alternate rate. Arp: rate, gate, up/down/up-down/random. Swarm: centre, cohesion (tight to loose) and rate. Set steps and window size, tempo-synced if wanted, and randomise.",
+      "tool": "motion",
+      "expect": "Voices enter in patterns instead of all at once"
+    },
+    {
+      "n": 5,
+      "action": "Shape the tail: feedback, decay, damping, stereo spread, diffusion; add vibrato rate/depth; balance dry/wet.",
+      "tool": "tail",
+      "expect": "Controlled resonant sustain with stereo diffusion"
+    },
+    {
+      "n": 6,
+      "action": "Switch to live keys so the held notes set the voices (one note, two notes, four notes), or gated mode to sound only while keys are held. Try a pad or piano as input with mix fully wet.",
+      "tool": "play",
+      "expect": "Playable resonant chord texture following the keyboard"
+    }
+  ],
+  "verification": [
+    "Every input note/hit resonates at pitches in the chosen scale only.",
+    "Changing motion mode audibly changes the order in which voices sound.",
+    "With gated mode on and no keys held, output is silent.",
+    "Raising damping shortens and darkens the tail."
+  ],
+  "tags": [
+    "resonator",
+    "modal-synthesis",
+    "scale-lock",
+    "noise-exciter",
+    "strum",
+    "swarm",
+    "arpeggio",
+    "texture",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter"
+}

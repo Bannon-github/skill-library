@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "id": "triple-bandpass-bank-unsynced-lfo-pad",
+  "name": "Three-band parallel bandpass filter-bank pad with offset, unsynced cutoff LFOs",
+  "goal": "Build a pad from bandpass filters instead of low-pass: saw (+ octave-down second osc) into three parallel resonant bandpass filters set low / mid / high, each mixed to the output, each cutoff moved by a slow LFO deliberately offset in phase/value so the three bands never move in sync, then slow-attack pad envelope, ~7-voice unison, chorus and long reverb — a filter-bank pad distinct from parallel rhythmic filter chains and single-bandpass WT pads.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "L0IXE_whmso",
+    "url": "https://www.youtube.com/watch?v=L0IXE_whmso",
+    "title": "Sound Design 53: Pads 3 Bandpass",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/L0IXE_whmso/agent-skill-triple-bandpass-bank-unsynced-lfo-pad.json",
+    "transcript_note": "YouTube English auto transcript of an AI-dubbed track (original audio es-US); route auto-target-from-dub-track."
+  },
+  "prerequisites": [
+    "Synth with 3 filters routable in parallel (or 3 BiquadFilterNodes), 2 oscillators, unison, LFOs, chorus + reverb"
+  ],
+  "inputs": [
+    {
+      "name": "chord_or_note",
+      "type": "midi",
+      "description": "Sustained chords or single notes",
+      "required": true
+    },
+    {
+      "name": "resonance",
+      "type": "number",
+      "description": "Bandpass resonance (watch on bass notes)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bandpass_pad",
+      "type": "audio",
+      "description": "Evolving three-band pad"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Transcript is YouTube's English auto transcript of an AI-dubbed track (original Spanish); steps are procedural and cross-checked for consistency.",
+    "Be careful with resonance on bass notes; fix with EQ.",
+    "Web Audio: three BiquadFilter(type='bandpass') in parallel summed, each frequency driven by its own OscillatorNode LFO with different start phase/rate (implementation note)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Route oscillator 1 into filter 1, filter 2 and filter 3 in parallel, each also sent to the output. Change oscillator 1 from sine to saw.",
+      "tool": "routing",
+      "expect": "Three parallel filter paths"
+    },
+    {
+      "n": 2,
+      "action": "Set all three filters to bandpass with a little resonance: filter 1 low frequencies, filter 2 mids, filter 3 highs.",
+      "tool": "filter-bank",
+      "expect": "Strange combined tone with three peaks"
+    },
+    {
+      "n": 3,
+      "action": "Give it a pad envelope: slow attack, sustain, long release.",
+      "tool": "amp-env",
+      "expect": "Pad swell"
+    },
+    {
+      "n": 4,
+      "action": "On filter 1 cutoff add a slow LFO (global). Copy it to filters 2 and 3 but change the value/start slightly so they don't start the same or synchronize.",
+      "tool": "lfo",
+      "expect": "Three bands drift independently"
+    },
+    {
+      "n": 5,
+      "action": "Enable oscillator 2 an octave lower, also into all three filters, with the same pad envelope; nudge its speed slightly so the oscillators don't move too evenly.",
+      "tool": "osc-2",
+      "expect": "Fuller low end without phasey sync"
+    },
+    {
+      "n": 6,
+      "action": "Add unison ~7 voices, raise volume/bass as needed; resonance amount and output mix are to taste.",
+      "tool": "unison",
+      "expect": "Thick, wide pad"
+    },
+    {
+      "n": 7,
+      "action": "Add chorus for thickness and a long-decay reverb; play chords or a single sustained note.",
+      "tool": "fx",
+      "expect": "Finished evolving bandpass pad"
+    }
+  ],
+  "verification": [
+    "Muting any one filter changes the pad's spectrum noticeably.",
+    "The three bands move out of sync over a long held chord.",
+    "Bass notes don't spike excessively (EQ if needed)."
+  ],
+  "tags": [
+    "bandpass",
+    "filter-bank",
+    "pad",
+    "lfo",
+    "unison",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://triple-bandpass-bank-unsynced-lfo-pad"
+}

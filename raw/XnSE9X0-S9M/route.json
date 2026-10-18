@@ -1,0 +1,174 @@
+{
+ "video_id": "XnSE9X0-S9M",
+ "started_at": "2026-10-15T16:16:45.164200+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "ytdlp-target",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": null,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "XnSE9X0-S9M",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/XnSE9X0-S9M/graph.json",
+  "segments": 57,
+  "windows": 47,
+  "nodes": 74,
+  "edges": 139,
+  "nodes_by_type": {
+   "module": 17,
+   "concept": 4,
+   "technique": 2,
+   "param": 13,
+   "tool": 1,
+   "step": 32,
+   "phrase": 5
+  },
+  "edges_by_type": {
+   "part-of": 24,
+   "mentions": 84,
+   "precedes": 31
+  },
+  "words": 2823
+ },
+ "gaps": {
+  "video_id": "XnSE9X0-S9M",
+  "graph_nodes": 74,
+  "graph_edges": 139,
+  "terms_checked": 42,
+  "terms_covered": 38,
+  "gap_nodes": 4,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 117,
+   "nodes": 702,
+   "edges": 225,
+   "uncovered_nodes": 11,
+   "uncovered_edges": 58
+  },
+  "candidate_ids": [
+   "synth-ring-mod-saturation-devices-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "techniques not in the best-overlap skill: technique:ring_mod"
+   ],
+   "best_skill": "soft-tape-saturation-pads-before-space",
+   "profile_share": 0.714,
+   "best_proc_overlap": 0.667,
+   "specific_items": 3,
+   "uncovered_techniques": [],
+   "video_novelty": 0.09,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "ytdlp-target"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 2873,
+    "music_markers": 50
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 4,
+     "synth": 172
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 74,
+    "edges": 139
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "techniques not in the best-overlap skill: technique:ring_mod"
+     ],
+     "best_skill": "soft-tape-saturation-pads-before-space",
+     "profile_share": 0.714,
+     "best_proc_overlap": 0.667,
+     "specific_items": 3,
+     "uncovered_techniques": [],
+     "video_novelty": 0.09,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "yt-dlp fallback (en.*,en,.*-orig)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-15T16:17:27.606896+00:00"
+}

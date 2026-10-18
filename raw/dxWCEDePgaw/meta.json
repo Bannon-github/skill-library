@@ -1,0 +1,46 @@
+{
+  "video_id": "dxWCEDePgaw",
+  "title": "Sound Design Trick - Creating Sustained Textures with Granular FX",
+  "url": "https://www.youtube.com/watch?v=dxWCEDePgaw",
+  "fetched_at": "2026-10-12T16:51:25.600689+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Noah Sitrin",
+  "duration": 470,
+  "ok": true,
+  "cue_count": 150,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/dxWCEDePgaw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/dxWCEDePgaw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

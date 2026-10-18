@@ -1,0 +1,168 @@
+{
+ "topic": "granular freeze pad sound design tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "granular freeze pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Daqws1QWgXw",
+   "title": "Tutorial #21 | Turning A Marimba Into Granular Synthesis Pads",
+   "channel": "Sharpend",
+   "duration": 570,
+   "view_count": 1839,
+   "url": "https://www.youtube.com/watch?v=Daqws1QWgXw",
+   "query": "granular freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.13,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "dxWCEDePgaw",
+   "title": "Sound Design Trick - Creating Sustained Textures with Granular FX",
+   "channel": "Noah Sitrin",
+   "duration": 470,
+   "view_count": 6489,
+   "url": "https://www.youtube.com/watch?v=dxWCEDePgaw",
+   "query": "granular freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.41,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "vRKL_Br_LjM",
+   "title": "Create Lush Soundscapes with GrainFreeze",
+   "channel": "ELPHNT",
+   "duration": 417,
+   "view_count": 105158,
+   "url": "https://www.youtube.com/watch?v=vRKL_Br_LjM",
+   "query": "granular freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en",
+     "de",
+     "ja"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "XqSItRH6e7M",
+   "title": "Granular Riser in MSoundfactory",
+   "channel": "Chandler guitar",
+   "duration": 843,
+   "view_count": 559,
+   "url": "https://www.youtube.com/watch?v=XqSItRH6e7M",
+   "query": "granular freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.87,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "mBvUObtJTJI",
+   "title": "Clouds (and clones) from the Ground Up: a reverbless explanation of a Granular icon",
+   "channel": "Sound + Voltage",
+   "duration": 1314,
+   "view_count": 25270,
+   "url": "https://www.youtube.com/watch?v=mBvUObtJTJI",
+   "query": "granular freeze pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.7,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "3usgqFwcDtg",
+   "why": "duration 175s"
+  },
+  {
+   "id": "vvUB3ysanKU",
+   "why": "duration 44s"
+  },
+  {
+   "id": "zp6_UadcW7c",
+   "why": "duration 177s"
+  },
+  {
+   "id": "-IoHgyBq5BY",
+   "why": "duration 44s"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "tODOnju6shw",
+   "why": "duration 64s"
+  },
+  {
+   "id": "vROb5y2wwm0",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "72prvVn6_cU",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "ER9xua_TeSs",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

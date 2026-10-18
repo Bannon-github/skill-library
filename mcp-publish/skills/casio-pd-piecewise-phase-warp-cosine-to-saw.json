@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "id": "casio-pd-piecewise-phase-warp-cosine-to-saw",
+  "name": "Casio-style phase distortion: piecewise phase warp of a cosine into a saw (DCW node)",
+  "goal": "Implement Casio CZ-style phase distortion so a cosine (or sine) table becomes a variable saw by warping the 0\u21921 read phase with a two-slope piecewise line (breakpoint node at half-amplitude), then modulate that node for filter-like brightness without a resonant filter.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "EW12RYc7QRA",
+    "url": "https://www.youtube.com/watch?v=EW12RYc7QRA",
+    "title": "GroovyDSP: Introduction to Phase Distortion Synthesis",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/EW12RYc7QRA/agent-skill-casio-pd-piecewise-phase-warp-cosine-to-saw.json"
+  },
+  "prerequisites": [
+    "Oscillator that can look up a cosine/sine table from an external 0\u21921 phase (AudioWorklet, modular phase input, or custom DSP)",
+    "Oscilloscope to verify phase and output"
+  ],
+  "inputs": [
+    {
+      "name": "source_table",
+      "type": "waveform",
+      "description": "Cosine cycle preferred (Casio-style; starts at +1); sine also works with a different starting phase",
+      "required": true
+    },
+    {
+      "name": "dcw_node_x",
+      "type": "number",
+      "description": "Horizontal position of the breakpoint (x1 in 0..1); smaller = sharper/more saw-like",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pd_oscillator",
+      "type": "synth-module",
+      "description": "Phase-distortion oscillator with modulatable DCW/brightness node"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Keep each wave cycle the same length regardless of node position (warp the lookup phase; do not change increment speed mid-cycle or pitch drifts).",
+    "The piecewise warp introduces a knee/corner that can alias; treat anti-aliasing as a later concern."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Treat the oscillator as: play a cosine (or sine) table by reading it with a linear phase ramp 0\u21921 once per note cycle. At warp=0 the output must equal the untouched cosine.",
+      "tool": "phase-ramp",
+      "expect": "Scope shows a clean cosine when the phase map is identity (y=x)"
+    },
+    {
+      "n": 2,
+      "action": "Define a breakpoint node that always sits at half amplitude on the warped phase (y=0.5) but can slide left on the x-axis to position x1 (how far 'cocked back'). More cock-back = sharper transition from cosine toward saw.",
+      "tool": "dcw-node",
+      "expect": "A single control moves the knee while the vertical join stays at mid-cycle amplitude"
+    },
+    {
+      "n": 3,
+      "action": "Build the warped phase with two line equations meeting at (x1, 0.5): m1 = 0.5 / x1 for the fast first segment (y = m1 * x); m2 = 0.5 / (1 - x1) and b2 = 1 - m2 for the slow second segment (y = m2 * x + b2). If phase < x1 use the first; else use the second.",
+      "tool": "piecewise-math",
+      "expect": "Warped phase reaches 0.5 exactly at x1 and 1.0 at the end of the cycle"
+    },
+    {
+      "n": 4,
+      "action": "Look up cos(2\u03c0 * warped_phase) [or your cosine table at warped_phase]. Do not advance phase at two different increments across the threshold \u2014 that one missed sample at the knee throws the pitch out of tune when x1 moves.",
+      "tool": "table-lookup",
+      "expect": "Pitch stays locked to the note while x1 changes brightness/timbre"
+    },
+    {
+      "n": 5,
+      "action": "Listen while moving x1: near 0.5 the tone is closer to a sinusoid; pulled far left toward 0 it approaches a near-pure saw. Route an envelope or LFO to x1 for filter-like sweeps without filter math.",
+      "tool": "mod-matrix",
+      "expect": "EG/LFO on the node opens/closes brightness like a non-resonant filter"
+    },
+    {
+      "n": 6,
+      "action": "Optional extensions (same warper): run the warper twice per cycle for other CZ shapes; feed a rich wave (e.g. square) through the same shaper to get pulse-width/symmetry-style squeezing of the first half vs elongation of the second.",
+      "tool": "experiment",
+      "expect": "Same phase-warp block serves saw-like PD and PWM-like symmetry duties"
+    }
+  ],
+  "verification": [
+    "With x1\u22480.5 output is near-cosine; with x1 near 0 output is near-saw; pitch does not drift as x1 moves",
+    "Scope of warped phase shows a two-slope polyline with knee at y=0.5"
+  ],
+  "tags": [
+    "phase-distortion",
+    "casio-cz",
+    "dcw",
+    "piecewise-phase",
+    "cosine-saw",
+    "portable",
+    "cinematic-synth",
+    "web-audio"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://casio-pd-piecewise-phase-warp-cosine-to-saw"
+}

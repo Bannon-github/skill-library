@@ -1,0 +1,46 @@
+{
+  "video_id": "94vSgZXg1nQ",
+  "title": "GroovyDSP: More Phase Distortion!",
+  "url": "https://www.youtube.com/watch?v=94vSgZXg1nQ",
+  "fetched_at": "2026-10-09T16:34:23.680411+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Groovy DSP",
+  "duration": 967,
+  "ok": true,
+  "cue_count": 288,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/94vSgZXg1nQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/94vSgZXg1nQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

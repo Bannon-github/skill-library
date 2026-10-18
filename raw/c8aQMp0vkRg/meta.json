@@ -1,0 +1,46 @@
+{
+  "video_id": "c8aQMp0vkRg",
+  "title": "Make Noise DPO — The Ultimate Complex Oscillator?",
+  "url": "https://www.youtube.com/watch?v=c8aQMp0vkRg",
+  "fetched_at": "2026-10-14T16:29:39.833875+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "The Unperson",
+  "duration": 1675,
+  "ok": true,
+  "cue_count": 330,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/c8aQMp0vkRg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/c8aQMp0vkRg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

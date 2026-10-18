@@ -1,0 +1,53 @@
+{
+  "video_id": "acM4NM4lH0k",
+  "title": "Organic Alien Comb Filter Modulation Tutorial (Subtractive Synthesis)",
+  "url": "https://www.youtube.com/watch?v=acM4NM4lH0k",
+  "fetched_at": "2026-10-13T16:33:49.536265+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "PARANDROID",
+  "duration": 365,
+  "ok": true,
+  "cue_count": 85,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/acM4NM4lH0k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/acM4NM4lH0k/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

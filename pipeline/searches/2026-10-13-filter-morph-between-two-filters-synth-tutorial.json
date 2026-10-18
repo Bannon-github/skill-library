@@ -1,0 +1,162 @@
+{
+ "topic": "filter morph between two filters synth tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "filter morph between two filters synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "lCThZnRPd5E",
+   "title": "MPowerSynth tutorials - Part 5 - Filters",
+   "channel": "MeldaProduction",
+   "duration": 443,
+   "view_count": 4588,
+   "url": "https://www.youtube.com/watch?v=lCThZnRPd5E",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.33,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "59EOmTJ_xxM",
+   "title": "Native Instruments Massive Tutorial 04 - Filters",
+   "channel": "SadowickProduction",
+   "duration": 532,
+   "view_count": 29727,
+   "url": "https://www.youtube.com/watch?v=59EOmTJ_xxM",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.74,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Z4mMGSg6ebY",
+   "title": "Why does nobody use this filter ? (Ableton Morph Filter Tutorial)",
+   "channel": "Audioreakt",
+   "duration": 470,
+   "view_count": 11624,
+   "url": "https://www.youtube.com/watch?v=Z4mMGSg6ebY",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.53,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-GB",
+     "de",
+     "ja"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "xQ3jCu1VIcE",
+   "title": "Traktor Pro 2 Filter:92 Effect Tutorial",
+   "channel": "The DJ Podcast and DJ Peter Morgan",
+   "duration": 403,
+   "view_count": 34607,
+   "url": "https://www.youtube.com/watch?v=xQ3jCu1VIcE",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.77,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "NFWAC2kLqvo",
+   "title": "How to make your own Buchla Style Morphing Filter in VCV",
+   "channel": "CroZPatching",
+   "duration": 544,
+   "view_count": 2165,
+   "url": "https://www.youtube.com/watch?v=NFWAC2kLqvo",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.17,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "jcRcaKOi0Ck",
+   "title": "Learn With Me - Hydrasynth: Ep07 - The Filters",
+   "channel": "Chalk Walk Music",
+   "duration": 1175,
+   "view_count": 3419,
+   "url": "https://www.youtube.com/watch?v=jcRcaKOi0Ck",
+   "query": "filter morph between two filters synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.27,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "en",
+     "fr-FR",
+     "de-DE",
+     "iw"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "D0oB2-WwoXA",
+   "why": "duration 177s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

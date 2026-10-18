@@ -1,0 +1,34 @@
+{
+ "topic": "spectral freeze FFT pad sound design tutorial",
+ "date": "2026-10-14",
+ "params": {
+  "topic": "spectral freeze FFT pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "P6zMzEvho54",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "QCmdTJwSYew",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "9VaMLi2MjLk",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

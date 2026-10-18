@@ -1,0 +1,46 @@
+{
+  "video_id": "0n23itgG0LU",
+  "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+  "url": "https://www.youtube.com/watch?v=0n23itgG0LU",
+  "fetched_at": "2026-10-13T16:34:11.796095+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Justin Kennedy",
+  "duration": 517,
+  "ok": true,
+  "cue_count": 207,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/0n23itgG0LU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0n23itgG0LU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

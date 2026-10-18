@@ -1,0 +1,120 @@
+{
+ "topic": "stereo width synth pad techniques mono compatible",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "stereo width synth pad techniques mono compatible",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Mm5eO24aAec",
+   "title": "3 Stereo Width Tricks (That Sound Great In Mono)",
+   "channel": "Cableguys",
+   "duration": 522,
+   "view_count": 24664,
+   "url": "https://www.youtube.com/watch?v=Mm5eO24aAec",
+   "query": "stereo width synth pad techniques mono compatible tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.7,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Py4XQbjvn4o",
+   "title": "Philtor 12-Band FilterBank with Sequencer - MaxforLive Tutorial | White Horse Recordings",
+   "channel": "Isotonik Studios",
+   "duration": 418,
+   "view_count": 465,
+   "url": "https://www.youtube.com/watch?v=Py4XQbjvn4o",
+   "query": "stereo width synth pad techniques mono compatible tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.83,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "8SKDAekjTzc",
+   "title": "HOW TO MAKE PHONK BY KILLAPLAGUE",
+   "channel": "KILLAPLAGUE",
+   "duration": 205,
+   "view_count": 94,
+   "url": "https://www.youtube.com/watch?v=8SKDAekjTzc",
+   "query": "stereo width synth pad techniques mono compatible tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.99,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "FtTOphU_ORU",
+   "title": "I Made a Plugin That Finds the Rhythm Hiding Inside Any Sound",
+   "channel": "Hagai Davidoff",
+   "duration": 1522,
+   "view_count": 929,
+   "url": "https://www.youtube.com/watch?v=FtTOphU_ORU",
+   "query": "stereo width synth pad techniques mono compatible tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.98,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "yKOv2hYcPb0",
+   "why": "duration 98s"
+  },
+  {
+   "id": "5jFvIps2_fQ",
+   "why": "duration 126s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

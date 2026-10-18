@@ -1,0 +1,46 @@
+{
+  "video_id": "NFWAC2kLqvo",
+  "title": "How to make your own Buchla Style Morphing Filter in VCV",
+  "url": "https://www.youtube.com/watch?v=NFWAC2kLqvo",
+  "fetched_at": "2026-10-13T16:33:37.486463+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "CroZPatching",
+  "duration": 544,
+  "ok": true,
+  "cue_count": 145,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/NFWAC2kLqvo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/NFWAC2kLqvo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

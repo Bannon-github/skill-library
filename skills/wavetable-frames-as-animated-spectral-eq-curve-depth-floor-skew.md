@@ -1,0 +1,18 @@
+# Wavetable frames as an animated spectral EQ: each frame is a gain curve across the spectrum, with depth, floor, skew, smoothing, low-end bypass and per-channel time offset
+
+Goal: Build a spectral 'auto-filter' that drives the whole frequency response from a wavetable: map each frame's shape onto the spectrum as a gain curve (peak/valley up to about ±12 dB at full depth), deepen only the cuts with a floor control, warp the frequency mapping with skew (negative = into lows, positive = highs), smooth sharp frames to avoid spectral ringing, bypass everything below a safe-bass frequency (up to 400 Hz), cycle frames forward/ping-pong/reverse/random at a free or tempo-synced rate (or step keyframes with a gate), and widen by feeding L and R the curve at different times. This is an effect on existing pads, keys, loops and strings. It differs from our spectral-warp vocoder and WT-scratch pad skills, which are oscillators/vocoders, not frame-driven EQ curves.
+
+Source: [Wavefield Tutorial Video](https://www.youtube.com/watch?v=VrCSssDOxFc)
+
+1. Insert the processor on the source (or in parallel). Use a wavetable whose frames vary a lot. Each frame is read as a gain curve: left = low frequencies, right = highs.
+2. Set depth: 0 = unchanged; at maximum a frame peak/valley applies about ±12 dB to that frequency region. Lower depth for subtler curves.
+3. Set floor: lowering it stretches the negative (cut) part of the curve towards silence while boosts stay controlled by depth. Use low floor for deep notches or high-pass/low-pass/notch-style frames.
+4. Set skew to fit the source: negative spreads the shaping down into bass/low-mids (e.g. bass); positive concentrates it in the highs (hats, cymbals, airy pads).
+5. Raise smooth if sharp frames cause ringing/harsh artifacts (e.g. on vocals). Engage safe-bass (bypass below a set frequency, up to 400 Hz) on bass, full mixes or anything whose fundamental must stay solid.
+6. Choose the motion: trim start/end frames to the range with the character you want (re-adjust speed, since the trim becomes the whole cycle). Set speed (slow = evolving) or tempo-sync (e.g. 8 bars for slow cinematic evolution, quarter notes or faster for flutter). Pick playback forward, ping-pong, reverse, or random (jumps between frames at fixed intervals, beat-aligned when synced).
+7. For automation-driven motion, pin to a single frame and draw position automation to land spectral moves on specific moments in the arrangement.
+8. Draw your own table: up to 20 keyframes, interpolated to fill all frames (edited tables need faster speeds/smaller divisions for the same feel). Draw a simple high-pass shape and generate the remaining keyframes with a sweep fill (progressive shift without wrap-around), floor down, synced over 4 bars, for a classic analog-style HP sweep. Use a loop crossfade at the cycle boundary; export the table as WAV for other synths.
+9. Rhythmic variant: step through keyframes one per beat division instead of interpolating, and add gate (silence a % of each step's tail) for chopped, per-step spectral flavours on leads/arps. Using a keyframe count that doesn't divide the phrase (e.g. 20 vs 4/8 bars) gives polyrhythmic filter shaping.
+10. Width and layering: add stereo so L and R read the curve at different times (mono compatible). On parallel copies or several tracks with the same table, offset the start phase of each so they move out of sync with the same character. Use dry/wet for parallel blend, output gain to level-match, and a 0 dB limiter for aggressive boosts.
+
+Batch: `2026-10-15-morning-hunt` · transcript: YouTube-provided (Show transcript) · Developer walkthrough of a commercial spectral plugin; distilled to a portable frame-to-gain-curve recipe. Trial/download CTA dropped.

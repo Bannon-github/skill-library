@@ -1,0 +1,191 @@
+{
+ "video_id": "w7vtvdW84l4",
+ "started_at": "2026-10-16T16:29:01.779090+00:00",
+ "outcome": "COVERED",
+ "route": "original-plus-machine-translation",
+ "language_code": "fr",
+ "original_language": "fr-FR",
+ "is_generated": true,
+ "translated": true,
+ "translation_method": "machine:argos",
+ "translation_confidence": "medium",
+ "domain": "synth",
+ "graph": {
+  "video_id": "w7vtvdW84l4",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/w7vtvdW84l4/graph.json",
+  "segments": 14,
+  "windows": 12,
+  "nodes": 10,
+  "edges": 9,
+  "nodes_by_type": {
+   "module": 3,
+   "param": 3,
+   "step": 3,
+   "phrase": 1
+  },
+  "edges_by_type": {
+   "part-of": 3,
+   "mentions": 4,
+   "precedes": 2
+  },
+  "words": 263
+ },
+ "gaps": {
+  "video_id": "w7vtvdW84l4",
+  "graph_nodes": 10,
+  "graph_edges": 9,
+  "terms_checked": 7,
+  "terms_covered": 6,
+  "gap_nodes": 1,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 0,
+  "kg": {
+   "videos": 155,
+   "nodes": 863,
+   "edges": 270,
+   "uncovered_nodes": 10,
+   "uncovered_edges": 75
+  },
+  "candidate_ids": [],
+  "decision": "COVERED",
+  "covered_verdict": {
+   "reasons": [
+    "procedure-level overlap"
+   ],
+   "best_skill": null,
+   "profile_share": 1.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 0,
+   "uncovered_techniques": [],
+   "video_novelty": 0.058,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "original-plus-machine-translation"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 274,
+    "music_markers": 11
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": true,
+   "evidence": "machine:argos",
+   "then": "mark translated_source; distill cross-checks transcript.orig.*"
+  },
+  {
+   "q": "Q4b machine translation low-confidence (ja/zh/ko source or >5% garbled)?",
+   "a": false,
+   "evidence": {
+    "confidence": "medium",
+    "garbled_share": 0.0,
+    "repeat_loops": 0
+   }
+  },
+  {
+   "q": "Q4c was the YouTube-translated (tlang) rung skipped only because of a 429?",
+   "a": true,
+   "then": "queue an upgrade: refetch later with --refetch to get YouTube's own English"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 0,
+     "synth": 20
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 10,
+    "edges": 9
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": false,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 0,
+    "candidates": 0,
+    "covered_verdict": {
+     "reasons": [
+      "procedure-level overlap"
+     ],
+     "best_skill": null,
+     "profile_share": 1.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 0,
+     "uncovered_techniques": [],
+     "video_novelty": 0.058,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "covered by library; KG updated; no new skill"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "fr-FR"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "fr(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "3:youtube-translated:fr",
+    "5:original-plus-machine-translation:fr"
+   ]
+  },
+  {
+   "q": "fetch youtube-translated (fr)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch original-plus-machine-translation (fr)",
+   "a": true
+  },
+  {
+   "q": "machine-translate fr->en (argos)",
+   "a": true,
+   "evidence": null
+  }
+ ],
+ "finished_at": "2026-10-16T16:29:21.172396+00:00"
+}

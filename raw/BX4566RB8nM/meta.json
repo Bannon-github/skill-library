@@ -1,0 +1,46 @@
+{
+  "video_id": "BX4566RB8nM",
+  "title": "How to Create a Workflow | 5 Tips to Follow When you Create a Workflow",
+  "url": "https://www.youtube.com/watch?v=BX4566RB8nM",
+  "fetched_at": "2026-10-12T21:46:53.351748+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Filestage",
+  "duration": 249,
+  "ok": true,
+  "cue_count": 40,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/BX4566RB8nM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/BX4566RB8nM/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

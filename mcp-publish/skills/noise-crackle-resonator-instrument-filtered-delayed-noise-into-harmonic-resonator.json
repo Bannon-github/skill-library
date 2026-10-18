@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+  "name": "Effects-only melodic instrument: crackle/noise source → smoothed-random filter → ping-pong feedback delay → spectral harmonic resonator (note, decay, harmonic count, pitch mod) → 'smudge' lo-fi/unison macro → reverb → limiter",
+  "goal": "Make a playable wind-chime / abstract atmosphere instrument from effects only. Generate vinyl-style crackle (only its density is mapped), or feed any external audio (drums, vocals). Filter it with a resampling-type filter whose cutoff is moved by a sample-and-hold LFO smoothed 100% (random glides), with ~10% drive. Multiply it with a ping-pong delay (6/16, 5/16, down to triplets) at high feedback. Excite a harmonic spectral resonator in note mode, using the granular engine with input quantised, unison 2 and low-damp fixed at 15%. Map fundamental note, decay (blips vs pads), number of harmonics (minimum 6; more = brighter and higher, with high-damp tied to the same macro) and pitch-mod amount (up to 1 semitone) and rate. A 'smudge' macro raises resonator unison spread together with bit/sample-rate reduction (0 = 18 kHz/16-bit, i.e. off). Finish with reverb (size 100, diffusion-network filter on) on time + amount macros, a limiter, macro snapshots and randomisation that excludes note, input level and reverb. Delta vs our click-train comb texture: noise conditioning chain + harmonic resonator macro design.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "GoMfKhol88k",
+    "url": "https://www.youtube.com/watch?v=GoMfKhol88k",
+    "title": "Spectral Ambience: Turning Noise into Melodic Synths (Ableton Live 12)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/GoMfKhol88k/agent-skill-noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator.json",
+    "transcript_note": "Ableton rack build; macro range table was on-screen only (not in transcript), so only spoken values are recorded."
+  },
+  "prerequisites": [
+    "Noise/crackle generator or any audio input",
+    "Filter with LFO (S&H + smoothing), ping-pong delay with feedback",
+    "Harmonic/spectral resonator (Web Audio: bank of high-Q bandpass filters or comb/modal resonators at harmonics of a note, implementation note)",
+    "Bit/sample-rate reducer, reverb, limiter, macro rack"
+  ],
+  "inputs": [
+    {
+      "name": "excitation",
+      "type": "audio",
+      "description": "Crackle/noise (density control) or external audio such as percussion",
+      "required": true
+    },
+    {
+      "name": "note",
+      "type": "midi-note",
+      "description": "Resonator fundamental (e.g. E0 in the demo)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "resonated_atmos",
+      "type": "audio",
+      "description": "Bell-like wind chimes, plucks or pad-like resonant atmospheres from noise"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "The resonator only sounds when excited; the level macro controls its input/send amount.",
+    "The macro min/max range values were shown only in an on-screen screenshot and are not reproduced. Set ranges by ear; spoken values (6 harmonics minimum, ≤1 st pitch mod, 15% low damp, ~10% drive, 18 kHz/16-bit off point) are kept.",
+    "Exclude the note, input level and reverb from randomisation so random snapshots stay usable.",
+    "Web Audio resonator mapping is an implementation note, not transcript content."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create an effects rack (audio-effect track) with 16 macros. First device: crackle/noise generator; map only its density (crackle level) to a macro. Alternatively route external audio (e.g. bongo drums, vocals) into the rack.",
+      "tool": "source",
+      "expect": "Sparse crackle or the external signal"
+    },
+    {
+      "n": 2,
+      "action": "Add a filter in a resampling/character mode, LFO wave sample-and-hold with smoothing 100%, drive ~10%. Map cutoff, LFO amount and LFO rate to macros to sculpt which parts of the noise spectrum excite the resonator.",
+      "tool": "filter",
+      "expect": "Noise colour drifts smoothly between random positions"
+    },
+    {
+      "n": 3,
+      "action": "Add a ping-pong delay at 100% wet. Map delay time (e.g. 6/16, 5/16, limited down to triplets for ambient use), a small L/R delay offset for stereo interest, and feedback (high).",
+      "tool": "delay",
+      "expect": "Crackle multiplied into a denser, stereo stream"
+    },
+    {
+      "n": 4,
+      "action": "Add the spectral resonator: note mode, granular engine, quantise input on, unison 2, low damp fixed ~15% (cuts boomy lows). Map fundamental note, decay, number of harmonics (min 6) plus high damp on the same macro, pitch-mod amount (up to 1 st) and rate, and input level.",
+      "tool": "resonator",
+      "expect": "Pitched bell/chime tones emerge from noise; more harmonics = brighter"
+    },
+    {
+      "n": 5,
+      "action": "Add a bit/sample-rate reducer after the resonator. Make one 'smudge' macro that raises the resonator's unison spread, lowers bit depth and lowers sample rate together (0 = 18 kHz/16-bit, i.e. off).",
+      "tool": "smudge",
+      "expect": "Wider stereo spread with growing lo-fi grit"
+    },
+    {
+      "n": 6,
+      "action": "Add reverb (size 100, diffusion-network filter on) and map decay time and dry/wet, then a final limiter to catch peaks.",
+      "tool": "space",
+      "expect": "Long atmospheric tails, protected output"
+    },
+    {
+      "n": 7,
+      "action": "Play it: short decay for plucks and blips, long decay for pads. Save macro snapshots of good settings and randomise for new territory, with note, input level and reverb excluded from randomisation.",
+      "tool": "perform",
+      "expect": "Range from wind chimes to abstract atmospheres"
+    }
+  ],
+  "verification": [
+    "Muting the resonator leaves only filtered/delayed crackle; enabling it produces pitched tones at the set note.",
+    "Raising the harmonic count audibly brightens the result.",
+    "Smudge at 0 = no bit/sample-rate reduction.",
+    "Randomise never changes the fundamental note."
+  ],
+  "tags": [
+    "resonator",
+    "spectral",
+    "noise",
+    "wind-chimes",
+    "delay",
+    "lofi",
+    "macro-rack",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator"
+}

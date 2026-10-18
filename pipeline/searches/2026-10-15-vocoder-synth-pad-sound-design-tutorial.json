@@ -1,0 +1,168 @@
+{
+ "topic": "vocoder synth pad sound design tutorial",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "vocoder synth pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "YQbj-HEk1xw",
+   "title": "How to Turn a Random Sound Into a Synth in Logic (Sample Alchemy Tutorial)",
+   "channel": "Ryan Waingo",
+   "duration": 726,
+   "view_count": 3928,
+   "url": "https://www.youtube.com/watch?v=YQbj-HEk1xw",
+   "query": "vocoder synth pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.3,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "-wDkxJ8PMn4",
+   "title": "How to make vintage synth sounds on Korg MicroKorg 2",
+   "channel": "mylarmelodies",
+   "duration": 1525,
+   "view_count": 11620,
+   "url": "https://www.youtube.com/watch?v=-wDkxJ8PMn4",
+   "query": "vocoder synth pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.53,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "vfZhqBfXvdc",
+   "title": "SP404mk2 VOCODE PADS with AUDIO LOOPBACK - #sp404mk2 #tutorial #electronicmusic",
+   "channel": "ElectroNoir",
+   "duration": 457,
+   "view_count": 470,
+   "url": "https://www.youtube.com/watch?v=vfZhqBfXvdc",
+   "query": "vocoder synth pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.84,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "wsvIz4SfObw",
+   "title": "I Can’t Believe How Good the MicroKorg Is!",
+   "channel": "The Unperson",
+   "duration": 1540,
+   "view_count": 149742,
+   "url": "https://www.youtube.com/watch?v=wsvIz4SfObw",
+   "query": "vocoder synth pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.09,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "HrLG4codCLc",
+   "title": "White Fog – Future Proof",
+   "channel": "Simon Stockhausen",
+   "duration": 195,
+   "view_count": 209,
+   "url": "https://www.youtube.com/watch?v=HrLG4codCLc",
+   "query": "vocoder synth pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.16,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "vi"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "My5Hf6hZX7A",
+   "why": "duration 28s"
+  },
+  {
+   "id": "NPBfTz2PssE",
+   "why": "duration 20s"
+  },
+  {
+   "id": "z6FPeHafh6Y",
+   "why": "duration 38s"
+  },
+  {
+   "id": "v1jhRBptm60",
+   "why": "duration 32s"
+  },
+  {
+   "id": "FXY-ZL2Bpis",
+   "why": "duration 80s"
+  },
+  {
+   "id": "NnrIMwA3tn8",
+   "why": "duration 40s"
+  },
+  {
+   "id": "FfyD5ILl6q8",
+   "why": "duration 104s"
+  },
+  {
+   "id": "g5uLStJuTnw",
+   "why": "duration 8s"
+  },
+  {
+   "id": "yEFgFtFB20s",
+   "why": "duration 176s"
+  },
+  {
+   "id": "GRaBoRwejXI",
+   "why": "duration 14s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

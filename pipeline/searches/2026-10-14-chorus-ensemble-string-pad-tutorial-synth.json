@@ -1,0 +1,117 @@
+{
+ "topic": "chorus ensemble string pad tutorial synth",
+ "date": "2026-10-14",
+ "params": {
+  "topic": "chorus ensemble string pad tutorial synth",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "X4TPAWQw4ss",
+   "title": "I Tried Building an Analog Synth Inside the Opsix…",
+   "channel": "Ian Dixon",
+   "duration": 2101,
+   "view_count": 793,
+   "url": "https://www.youtube.com/watch?v=X4TPAWQw4ss",
+   "query": "chorus ensemble string pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.45,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "0LtQq86qqgk",
+   "title": "80s Icons Demo - Strings - Vocal - Organ - Sound FX - Presets New Sound Bank | Arturia",
+   "channel": "Jochen Reulbach",
+   "duration": 253,
+   "view_count": 52,
+   "url": "https://www.youtube.com/watch?v=0LtQq86qqgk",
+   "query": "chorus ensemble string pad tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.86,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "AfxPAcNQ1v8",
+   "why": "duration 82s"
+  },
+  {
+   "id": "3OeEgjFhAkk",
+   "why": "duration 16s"
+  },
+  {
+   "id": "7f5Wpse5N8s",
+   "why": "duration 34s"
+  },
+  {
+   "id": "3EqpnHfPhqA",
+   "why": "duration 121s"
+  },
+  {
+   "id": "gsNgzr15JPw",
+   "why": "duration 174s"
+  },
+  {
+   "id": "G-laOoAKtEg",
+   "why": "duration 159s"
+  },
+  {
+   "id": "4jA2u0nmImc",
+   "why": "duration 117s"
+  },
+  {
+   "id": "8r8paue3Gt0",
+   "why": "duration 70s"
+  },
+  {
+   "id": "mylDE7nEKIY",
+   "why": "duration 119s"
+  },
+  {
+   "id": "Bz72q4i21C4",
+   "why": "duration 149s"
+  },
+  {
+   "id": "dDcjM8FbJj8",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "yvfFHw1hxww",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "YUaGrunS-O0",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

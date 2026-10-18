@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "id": "resonant-filter-sample-rate-reduction-talking-formant",
+  "name": "Talking/vocal formant voice from a resonant filter into sample-rate reduction (sweet-spot aliasing formants)",
+  "goal": "Create a talking, vowel-like voice without a formant filter: send a harmonically rich oscillator through a filter with healthy resonance and then a sample-rate reducer, find the sweet spots where aliasing creates formants, then animate it with a tempo-synced LFO on cutoff whose rate multiplier is stepped by a sequencer plus slow random modulation of the reduction amount, and send only content above ~1.5 kHz to a delay — a formant-voice delta that differs from formant-filter / spectral-vocode skills.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "gzJEQiTC_SQ",
+    "url": "https://www.youtube.com/watch?v=gzJEQiTC_SQ",
+    "title": "Creating a vocal formant speaking voice in VCV Rack",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/gzJEQiTC_SQ/agent-skill-resonant-filter-sample-rate-reduction-talking-formant.json"
+  },
+  "prerequisites": [
+    "Oscillator with rich harmonics (saw/pulse), resonant filter, bit-crusher/sample-rate-reduction (decimator)",
+    "Clock-synced LFO, step sequencer for modulation values, slow random source, delay and a crossover/HP split"
+  ],
+  "inputs": [
+    {
+      "name": "rich_source",
+      "type": "synth-module",
+      "description": "Harmonically rich oscillator (sequenced line)",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Clock for synced LFO",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "talking_voice",
+      "type": "audio",
+      "description": "Formant-like vowel voice with motion"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Web Audio note (implementation, not from transcript): sample-rate reduction = AudioWorklet sample-and-hold decimator; keep it after the filter.",
+    "Distinct from cinematic-formant-comb-pad-phaser-fx and spectral-warp-vocode-formant-stretch-smear (no formant filter or spectral warp)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Patch a harmonically rich oscillator into a filter and add a healthy amount of resonance.",
+      "tool": "filter",
+      "expect": "Resonant peak emphasizes a band"
+    },
+    {
+      "n": 2,
+      "action": "Send the filter output into a sample-rate reduction stage (bit-crusher with sample-rate reduction) after the filter.",
+      "tool": "decimator",
+      "expect": "Aliasing tones appear"
+    },
+    {
+      "n": 3,
+      "action": "Slowly sweep the sample-rate reduction amount (and cutoff) to find the sweet spots where formants appear and the sound starts to 'talk'.",
+      "tool": "sweet-spot",
+      "expect": "Vowel-like formants at specific settings"
+    },
+    {
+      "n": 4,
+      "action": "In a patch: sequence the rich oscillator, modulate the filter cutoff with a tempo-synced LFO, and use a step sequencer to change the LFO's rate multiplication per step.",
+      "tool": "synced-lfo + seq",
+      "expect": "Rhythmically changing formant motion"
+    },
+    {
+      "n": 5,
+      "action": "Slowly and randomly modulate the sample-rate reduction amount for different timbres; bring the reducer's wet signal up gradually.",
+      "tool": "random-mod",
+      "expect": "Shifting formants and timbres over time"
+    },
+    {
+      "n": 6,
+      "action": "Send only the high frequencies (around 1500 Hz and above) through a delay as an extra layer.",
+      "tool": "hp-split-delay",
+      "expect": "Airy delayed formant highs without muddy lows"
+    }
+  ],
+  "verification": [
+    "Bypassing the sample-rate reducer removes the talking/formant character.",
+    "With stepped LFO multipliers the formant motion changes rate across the bar.",
+    "Delay returns contain only content above ~1.5 kHz."
+  ],
+  "tags": [
+    "formant",
+    "vocal",
+    "sample-rate-reduction",
+    "bitcrush",
+    "aliasing",
+    "resonance",
+    "modular",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://resonant-filter-sample-rate-reduction-talking-formant"
+}

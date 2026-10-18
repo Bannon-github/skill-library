@@ -1,0 +1,160 @@
+{
+ "topic": "bandpass filter bank pad sound design tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "bandpass filter bank pad sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "olk1vR0k_kQ",
+   "title": "Spectrasonics Omnisphere Tutorial Ep.10 - The Filter Bank",
+   "channel": "One Man And His Songs",
+   "duration": 977,
+   "view_count": 5945,
+   "url": "https://www.youtube.com/watch?v=olk1vR0k_kQ",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.39,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "3u-c8eSGn38",
+   "title": "Arturia Pigments 3 Tutorial Ep#4 - The Filter Bank Pt.1",
+   "channel": "One Man And His Songs",
+   "duration": 955,
+   "view_count": 3071,
+   "url": "https://www.youtube.com/watch?v=3u-c8eSGn38",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.24,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "X-kEFQPHuZE",
+   "title": "KV331 Synthmaster Tutorial 09 - Digital & Analog Filters",
+   "channel": "SadowickProduction",
+   "duration": 580,
+   "view_count": 5545,
+   "url": "https://www.youtube.com/watch?v=X-kEFQPHuZE",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.37,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "S7TH9WsIS7A",
+   "title": "Class Tutorial #44:  Separate that Sound with FFFB (Part A)",
+   "channel": "dearjohnreed",
+   "duration": 1789,
+   "view_count": 1314,
+   "url": "https://www.youtube.com/watch?v=S7TH9WsIS7A",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.06,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Ir2mZnC51nw",
+   "title": "Sound design with FabFilter Twin 2 - 1/2",
+   "channel": "FabFilter",
+   "duration": 611,
+   "view_count": 115959,
+   "url": "https://www.youtube.com/watch?v=Ir2mZnC51nw",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.03,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "L0IXE_whmso",
+   "title": "Sound Design 53: Pads 3 Bandpass",
+   "channel": "Olbaid Music",
+   "duration": 569,
+   "view_count": 1118,
+   "url": "https://www.youtube.com/watch?v=L0IXE_whmso",
+   "query": "bandpass filter bank pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "en-US",
+     "pt-BR",
+     "es"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "VOAUXNPbqL4",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "Zo6SKrfrALI",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

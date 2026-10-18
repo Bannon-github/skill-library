@@ -1,0 +1,150 @@
+{
+  "batch_id": "2026-10-12-morning-hunt",
+  "ran_at_local": "2026-10-12 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "mcp_count_before": 103,
+  "mcp_count_after": 109,
+  "searches": [
+    "windowed sync oscillator synth tutorial",
+    "cinematic impact boom layered noise pitch envelope tutorial",
+    "hybrid wavetable pad morph sound design tutorial",
+    "vector synthesis morph pad tutorial",
+    "formant filter cinematic pad tutorial",
+    "mid side stereo width synth pad tutorial",
+    "granular freeze pad sound design tutorial",
+    "comb filter phaser cinematic bed synth tutorial",
+    "dual filter morph wavetable pad tutorial",
+    "wavetable position LFO cinematic pad tutorial",
+    "phase distortion resonant wave alternation CZ tutorial",
+    "cinematic boom impact sound design noise layer pitch synth tutorial",
+    "mid side processing synth pad width Haas chorus tutorial"
+  ],
+  "published": [
+    {
+      "id": "windowed-sync-amplitude-modulator-drawable-window",
+      "video_id": "g0QRn65Mwwc",
+      "title": "Windowed Sync in the Grid",
+      "goal": "Rebuild Serum-style windowed sync via amplitude window (sine/drawable) on phase-synced osc"
+    },
+    {
+      "id": "vector-xy-four-oscillator-crossfade-blend",
+      "video_id": "SMB34GRgQWQ",
+      "title": "Vector Synthesis in Bitwig Grid with the Scrawl Oscillator",
+      "goal": "XY-blend four oscillators with nested crossfades (true 2D vector, not 1D WT)"
+    },
+    {
+      "id": "dual-layer-opposite-vector-morph-pad",
+      "video_id": "6aRgJoBxk4g",
+      "title": "Synthmaster Tutorial - Vector oscillator \"monster pad\"",
+      "goal": "Dual-layer opposite-rotation vector morph pad with filter-drive LFO"
+    },
+    {
+      "id": "marimba-wt-lfo-pluck-to-granular-pad",
+      "video_id": "Daqws1QWgXw",
+      "title": "Tutorial #21 | Turning A Marimba Into Granular Synthesis Pads",
+      "goal": "Malley WT LFO pluck + swell printed into granular freeze pad stack"
+    },
+    {
+      "id": "granular-stack-freeze-infinite-sustain-texture",
+      "video_id": "dxWCEDePgaw",
+      "title": "Sound Design Trick - Creating Sustained Textures with Granular FX",
+      "goal": "Stack granular processors to freeze short sources into infinite sustain"
+    },
+    {
+      "id": "dual-path-filter-spread-inverse-amp-lfo-stereo",
+      "video_id": "02_MBQrqJS8",
+      "title": "How to Make your Synthesizer Stereo",
+      "goal": "Stereo from mono via opposite filter freqs + inverse amplitude LFO"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "JPV5hC-9Rv0",
+      "title": "Creating a Pad with Smart Morph (FMX)",
+      "reason": "Preset/Super Knob Montage walkthrough; no portable recipe without proprietary banks."
+    },
+    {
+      "video_id": "lLAj2rvBouI",
+      "title": "Sound Design Tutorial: Layers of Cinematic Hit",
+      "reason": "Sample layering tour; synthesis deferred; overlaps braam/sub-drop/downer."
+    },
+    {
+      "video_id": "S1MhzVyQ_Jc",
+      "title": "U-he Zebra tutorial - Make Ambient Vocal pads",
+      "reason": "Near-dup of cinematic-formant-comb-pad-phaser-fx."
+    },
+    {
+      "video_id": "vRKL_Br_LjM",
+      "title": "Create Lush Soundscapes with GrainFreeze",
+      "reason": "STOP_no_transcript_asr_flagged."
+    },
+    {
+      "video_id": "EoR-zmIgUwk",
+      "title": "Advanced Wavetable Techniques with Vital",
+      "reason": "route COVERED; overlaps ambient-wavetable-scratch / warp-modes / WT morph skills; hand-check agreed low delta."
+    },
+    {
+      "video_id": "CSdXkkW-jn0",
+      "title": "Using Absynth to Morph Sound Waves",
+      "reason": "route COVERED; product morph tour vs existing WT/vector morph skills."
+    },
+    {
+      "video_id": "y0mfaQpWYQw",
+      "title": "How To Make A Riser Effect (FL Studio)",
+      "reason": "Not routed; overlaps uplifter/riser skills from prior hunts."
+    },
+    {
+      "video_id": "yMWyPdSs_wE",
+      "title": "Bass Drop Tutorial - Omnisphere Downer",
+      "reason": "Not routed; overlaps sub-drop/downer skills."
+    },
+    {
+      "video_id": "AOuTGhfU1Lo",
+      "title": "HALion 6 \u2013 Wavetable Explained",
+      "reason": "Not routed; product WT overview vs existing WT skills."
+    },
+    {
+      "video_id": "SyKSIWu0RTA",
+      "title": "Serum Resample Mode Custom Wavetables",
+      "reason": "Not routed; resample workflow thin vs portable pad recipes."
+    },
+    {
+      "video_id": "k8cvlDaK2RA",
+      "title": "The Orb - Formant Filter Plugin Overview",
+      "reason": "Not routed; plugin promo/overview."
+    },
+    {
+      "video_id": "MBwAboKVrXE",
+      "title": "SCI-FI sounds using WINDOWED SINC in RENOISE",
+      "reason": "Not routed; windowed-sinc FIR resampling \u2260 windowed-sync oscillator (wrong technique)."
+    },
+    {
+      "video_id": "7qQX6YGBQEA",
+      "title": "Free Vital Synth - Full Tutorial",
+      "reason": "Comb/phaser search returned only this; full-synth tour, not a focused bed recipe."
+    }
+  ],
+  "stopped": [
+    {
+      "video_id": "vRKL_Br_LjM",
+      "reason": "STOP_no_transcript_asr_flagged"
+    }
+  ],
+  "pivoted_to_crypto": false,
+  "git_sync": "skipped_no_credentials",
+  "pipeline_notes": [
+    "route.py again returned false COVERED for real gaps (g0QRn65Mwwc windowed-sync, SMB34GRgQWQ vector, dxWCEDePgaw granular freeze, 02_MBQrqJS8 stereo). Hand-checked against mcp-publish and distilled anyway.",
+    "PD resonant-wave / wave-alternation search returned electronics/RF false positives \u2014 still thin.",
+    "Impact/boom searches mostly sample-layering or prior-art risers/droppers; lLAj2rvBouI rejected.",
+    "Quality --strict: all 6 clean. Novelty: 5 NOVEL (max local \u22640.145); dual-path-filter-spread REVIEW at 0.192 vs asymmetric width \u2014 kept as more-specific delta (filter \u00b1 spread + inverse amp LFO, no Haas/double-track).",
+    "Deferred queue still empty; upgrade_to_tlang unchanged (MH7YiOWQIhI, kHWOIE4YTZ4, BqE9S27CZfY, beZpH9X850s).",
+    "Separate 2026-10-12-batch-01.json (Inkscape/drywall/OBS/Kdenlive) is unrelated weekly intake; not part of this synth hunt."
+  ],
+  "still_thin": [
+    "Phase-distortion resonant-wave / wave-alternation as standalone performable skill (beyond mention in 94vSgZXg1nQ)",
+    "Impact/boom from layered noise+pitch without overlapping braam/sub-drop/whoosh (searches still thin)",
+    "Dedicated comb/phaser cinematic bed beyond cinematic-formant-comb-pad-phaser-fx",
+    "Dual-filter morph as its own recipe (parallel-filter exists; morph crossfade between two filter paths still thin)",
+    "Formant vocal-pad delta beyond existing formant+comb skill"
+  ]
+}

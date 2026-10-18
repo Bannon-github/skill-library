@@ -1,0 +1,46 @@
+{
+  "video_id": "C_d3SCz2u-c",
+  "title": "Oscillator Syncing in Thor (Patch Design in Thor)",
+  "url": "https://www.youtube.com/watch?v=C_d3SCz2u-c",
+  "fetched_at": "2026-10-09T16:35:22.814377+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Groove3",
+  "duration": 472,
+  "ok": true,
+  "cue_count": 117,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/C_d3SCz2u-c/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/C_d3SCz2u-c/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

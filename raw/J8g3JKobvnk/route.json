@@ -1,0 +1,65 @@
+{
+ "video_id": "J8g3JKobvnk",
+ "started_at": "2026-10-12T21:48:32.533629+00:00",
+ "outcome": "STOP_no_transcript_asr_flagged",
+ "asr_last_resort_flag": true,
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": false,
+   "evidence": "no_track_fetchable"
+  },
+  {
+   "q": "Q2c no transcript track at all?",
+   "a": true,
+   "evidence": "no_track_fetchable",
+   "then": "STOP; flag ASR/Whisper as last resort - only if Matt explicitly asks"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en",
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "1:manual-target:en",
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch manual-target (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "yt-dlp fallback (en.*,en,.*-orig)",
+   "a": false
+  }
+ ],
+ "finished_at": "2026-10-12T21:49:46.602581+00:00"
+}

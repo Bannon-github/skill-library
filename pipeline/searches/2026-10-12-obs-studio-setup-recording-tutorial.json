@@ -1,0 +1,112 @@
+{
+ "topic": "obs studio setup recording tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "obs studio setup recording tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 4,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "9z9GiEM4uvA",
+   "title": "How to Use OBS Studio - Complete OBS Tutorial for Beginners (2025!)",
+   "channel": "Justin Brown - Primal Video",
+   "duration": 1024,
+   "view_count": 1629870,
+   "url": "https://www.youtube.com/watch?v=9z9GiEM4uvA",
+   "query": "obs studio setup recording tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Muk9LfEWHeU",
+   "title": "OBS Studio - Tutorial for Beginners in 7 MINUTES! [ COMPLETE ]",
+   "channel": "Skills Factory",
+   "duration": 471,
+   "view_count": 1032087,
+   "url": "https://www.youtube.com/watch?v=Muk9LfEWHeU",
+   "query": "obs studio setup recording tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "-puA85ciDEM",
+   "title": "How to Use OBS Studio - Complete Tutorial for Beginners!",
+   "channel": "Justin Brown - Primal Video",
+   "duration": 1699,
+   "view_count": 1572733,
+   "url": "https://www.youtube.com/watch?v=-puA85ciDEM",
+   "query": "obs studio setup recording tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "xoe9ZOzlfnQ",
+   "title": "How to Use OBS Studio to Record Screen (Beginner Tutorial)",
+   "channel": "Kevin Stratvert",
+   "duration": 703,
+   "view_count": 698122,
+   "url": "https://www.youtube.com/watch?v=xoe9ZOzlfnQ",
+   "query": "obs studio setup recording tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.42,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

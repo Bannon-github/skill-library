@@ -1,0 +1,111 @@
+{
+ "topic": "wavetable position modulation cinematic pad tutorial",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "wavetable position modulation cinematic pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "5XGrxp0ANME",
+   "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+   "channel": "Ian Dixon",
+   "duration": 1214,
+   "view_count": 1843,
+   "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+   "query": "wavetable position modulation cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.13,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "5wTH5DbifSg",
+   "title": "This FREE Plugin Turns Any Sound Into Cinematic Atmospheres",
+   "channel": "Jonathan Knightsnare ",
+   "duration": 459,
+   "view_count": 26732,
+   "url": "https://www.youtube.com/watch?v=5wTH5DbifSg",
+   "query": "wavetable position modulation cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.71,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "MRJt_i3eDMA",
+   "title": "Wavetable: Create evolving pad sounds in Ableton Live",
+   "channel": "DopperFX",
+   "duration": 479,
+   "view_count": 97,
+   "url": "https://www.youtube.com/watch?v=MRJt_i3eDMA",
+   "query": "wavetable position modulation cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "fr"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "VrCSssDOxFc",
+   "why": "already known"
+  },
+  {
+   "id": "PpS79ASDNao",
+   "why": "duration 109s"
+  },
+  {
+   "id": "iEWUNMjhkAs",
+   "why": "duration 5124s"
+  },
+  {
+   "id": "At-nna73F28",
+   "why": "duration 5466s"
+  },
+  {
+   "id": "ekgwqf1gKGM",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

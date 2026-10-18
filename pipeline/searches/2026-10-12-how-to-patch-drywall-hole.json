@@ -1,0 +1,133 @@
+{
+ "topic": "how to patch drywall hole",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "how to patch drywall hole",
+  "langs": "en",
+  "per_query": 15,
+  "top": 4,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "PLGmTzEGSIY",
+   "title": "How to Patch a Drywall Hole | Ask This Old House",
+   "channel": "This Old House",
+   "duration": 330,
+   "view_count": 708893,
+   "url": "https://www.youtube.com/watch?v=PLGmTzEGSIY",
+   "query": "how to patch drywall hole tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.43,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "XsXC-sS_KKk",
+   "title": "Drywall Repair: How to Patch a Large Hole in the Wall Like a Pro",
+   "channel": " Drywall Repair Scott",
+   "duration": 452,
+   "view_count": 166731,
+   "url": "https://www.youtube.com/watch?v=XsXC-sS_KKk",
+   "query": "how to patch drywall hole tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.11,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "uvQK7WTkKpI",
+   "title": "How to Fix Holes in Drywall - 4 Easy Methods",
+   "channel": "LRN2DIY",
+   "duration": 938,
+   "view_count": 6730828,
+   "url": "https://www.youtube.com/watch?v=uvQK7WTkKpI",
+   "query": "how to patch drywall hole tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en",
+     "fil",
+     "hi",
+     "pt-BR",
+     "es-MX"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "VoGHFJ7H_MI",
+   "title": "How to Repair Drywall",
+   "channel": "Mr. Build It",
+   "duration": 559,
+   "view_count": 1538987,
+   "url": "https://www.youtube.com/watch?v=VoGHFJ7H_MI",
+   "query": "how to patch drywall hole tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "PzII-9lHoQw",
+   "why": "duration 96s"
+  },
+  {
+   "id": "AIPhshtludA",
+   "why": "duration 98s"
+  },
+  {
+   "id": "A4AT7zDotFk",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "7AczE-EA1Is",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "17awCvAA7Q0",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

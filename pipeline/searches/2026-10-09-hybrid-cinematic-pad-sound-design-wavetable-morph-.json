@@ -1,0 +1,68 @@
+{
+ "topic": "hybrid cinematic pad sound design wavetable morph tutorial",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "hybrid cinematic pad sound design wavetable morph tutorial",
+  "langs": "en",
+  "per_query": 6,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "8nO5fje8OHI",
+   "title": "Make Any Sound Hypnotic!",
+   "channel": "MORDIO",
+   "duration": 894,
+   "view_count": 125613,
+   "url": "https://www.youtube.com/watch?v=8nO5fje8OHI",
+   "query": "hybrid cinematic pad sound design wavetable morph tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.05
+  },
+  {
+   "id": "jejzXuDk0T8",
+   "title": "Morph samples with Scenic Hybrid Instrument in Reason 12",
+   "channel": "Krinstar",
+   "duration": 620,
+   "view_count": 782,
+   "url": "https://www.youtube.com/watch?v=jejzXuDk0T8",
+   "query": "hybrid cinematic pad sound design wavetable morph tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.95
+  },
+  {
+   "id": "gvD7rkuEpNo",
+   "title": "HEXERACT - Creating Pads with Controllable Movement and Colour",
+   "channel": "Auddict OFFICIAL",
+   "duration": 571,
+   "view_count": 2304,
+   "url": "https://www.youtube.com/watch?v=gvD7rkuEpNo",
+   "query": "hybrid cinematic pad sound design wavetable morph tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.18
+  }
+ ],
+ "dropped": [
+  {
+   "id": "JCdQGX_508I",
+   "why": "duration 81s"
+  },
+  {
+   "id": "gmBPXkHr3CM",
+   "why": "duration 75s"
+  },
+  {
+   "id": "QaT4tMyI8ME",
+   "why": "duration 170s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

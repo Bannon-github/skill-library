@@ -1,0 +1,1 @@
+Rejected: Yamaha Montage/FMX Smart Morph walkthrough is preset-bank and Super Knob automation oriented (chorus Ensemble soft-wide preset, laser BCM phaser preset, FM atmoss decay part, knob Auto load sequence). No portable oscillator/filter recipe without proprietary content. Prefer vector XY blend and WT morph skills.

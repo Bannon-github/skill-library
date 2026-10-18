@@ -1,0 +1,153 @@
+{
+ "topic": "phase distortion resonant wave alternation CZ tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "phase distortion resonant wave alternation CZ tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Gvb4GIV5ig8",
+   "title": "RC Phase Shift Oscillator (using Op-Amp) Explained",
+   "channel": "ALL ABOUT ELECTRONICS",
+   "duration": 1028,
+   "view_count": 711604,
+   "url": "https://www.youtube.com/watch?v=Gvb4GIV5ig8",
+   "query": "phase distortion resonant wave alternation CZ tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.43,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "g_jxh0Qe_FY",
+   "title": "#143: Transmission Line Terminations for Digital and RF signals - Intro/Tutorial",
+   "channel": "w2aew",
+   "duration": 1155,
+   "view_count": 183880,
+   "url": "https://www.youtube.com/watch?v=g_jxh0Qe_FY",
+   "query": "phase distortion resonant wave alternation CZ tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.13,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "xJOkHephQ8s",
+   "title": "RC Phase Shift Oscillator using OpAmp (Basics, Circuit, Working & Gain Calculation) Explained",
+   "channel": "Engineering Funda",
+   "duration": 1329,
+   "view_count": 70367,
+   "url": "https://www.youtube.com/watch?v=xJOkHephQ8s",
+   "query": "phase distortion resonant wave alternation CZ tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.92,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "osyb4CiDzlQ",
+   "title": "Simulating Output Voltage Waveform of 3 Phase 6 Pulse Full Wave converter using Matlab Simulink",
+   "channel": "Professor Pahadi",
+   "duration": 571,
+   "view_count": 4804,
+   "url": "https://www.youtube.com/watch?v=osyb4CiDzlQ",
+   "query": "phase distortion resonant wave alternation CZ tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.34,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "hi"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "x_8hAnbCJW0",
+   "title": "What Is a Phase Shifter? – Daniel Fisher",
+   "channel": "Sweetwater",
+   "duration": 392,
+   "view_count": 17636,
+   "url": "https://www.youtube.com/watch?v=x_8hAnbCJW0",
+   "query": "phase distortion resonant wave alternation CZ tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.62,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "it",
+     "pt-BR"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "XA_WnyA7D6k",
+   "why": "duration 70s"
+  },
+  {
+   "id": "VLXXhyMHx2Y",
+   "why": "duration 31s"
+  },
+  {
+   "id": "I0Skbx8kC9I",
+   "why": "duration 107s"
+  },
+  {
+   "id": "GKAWnT1WA58",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "ITJX9jP-zm4",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

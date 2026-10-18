@@ -1,0 +1,138 @@
+{
+ "topic": "phase distortion synthesis resonant waveform tutorial",
+ "date": "2026-10-14",
+ "params": {
+  "topic": "phase distortion synthesis resonant waveform tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Sehlj6zgXmw",
+   "title": "Behringer CZ-1 In Depth Sound Design Guide.",
+   "channel": "iTweakX Audio",
+   "duration": 2118,
+   "view_count": 2162,
+   "url": "https://www.youtube.com/watch?v=Sehlj6zgXmw",
+   "query": "phase distortion synthesis resonant waveform tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.67,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "hi",
+     "id",
+     "it",
+     "pt-BR"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "XnSE9X0-S9M",
+   "title": "Opsix Effects Mode: The Secret to New Sounds",
+   "channel": "Ian Dixon",
+   "duration": 1284,
+   "view_count": 487,
+   "url": "https://www.youtube.com/watch?v=XnSE9X0-S9M",
+   "query": "phase distortion synthesis resonant waveform tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.84,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "op4gokKYRqU",
+   "title": "Free Plugin! Nakst Apricot",
+   "channel": "astroboy",
+   "duration": 265,
+   "view_count": 94,
+   "url": "https://www.youtube.com/watch?v=op4gokKYRqU",
+   "query": "phase distortion synthesis resonant waveform tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 0.99,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ja"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "_Y8B2Vouh3M",
+   "why": "duration 133s"
+  },
+  {
+   "id": "WxMIwFrRsFw",
+   "why": "duration 5917s"
+  },
+  {
+   "id": "ZednTCWSb1M",
+   "why": "negative title signal"
+  },
+  {
+   "id": "8gjIpOvF1Pc",
+   "why": "duration 7453s"
+  },
+  {
+   "id": "MNo97VxeiHc",
+   "why": "duration 51s"
+  },
+  {
+   "id": "A3CblEF7KmI",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "q1F82VUo4GY",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "TUre9zObdH8",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "-Pdmb1mNMIE",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "agtB8s90ke4",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "swEabaz7h0M",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

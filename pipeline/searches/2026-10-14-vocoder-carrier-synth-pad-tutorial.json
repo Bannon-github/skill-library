@@ -1,0 +1,26 @@
+{
+ "topic": "vocoder carrier synth pad tutorial",
+ "date": "2026-10-14",
+ "params": {
+  "topic": "vocoder carrier synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "NnrIMwA3tn8",
+   "why": "duration 40s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

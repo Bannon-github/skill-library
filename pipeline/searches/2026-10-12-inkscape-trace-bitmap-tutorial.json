@@ -1,0 +1,123 @@
+{
+ "topic": "inkscape trace bitmap tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "inkscape trace bitmap tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 4,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "a8SAAJBo3yU",
+   "title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+   "channel": "IronEcho Design",
+   "duration": 430,
+   "view_count": 206479,
+   "url": "https://www.youtube.com/watch?v=a8SAAJBo3yU",
+   "query": "inkscape trace bitmap tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.16,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "hQ--Z_HrES0",
+   "title": "How To Trace In Inkscape (2026 Easy Guide)",
+   "channel": "Tedd's Tutorials",
+   "duration": 185,
+   "view_count": 3328,
+   "url": "https://www.youtube.com/watch?v=hQ--Z_HrES0",
+   "query": "inkscape trace bitmap tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.76,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "dGzZW8mVEhM",
+   "title": "How To Use Bitmap In Inkscape (2026 Easy Guide)",
+   "channel": "Tedd's Tutorials",
+   "duration": 249,
+   "view_count": 2066,
+   "url": "https://www.youtube.com/watch?v=dGzZW8mVEhM",
+   "query": "inkscape trace bitmap tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.66,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "VQ97Y35qO9A",
+   "title": "Learn Inkscape: #3 Trace Bitmap - Tutorial",
+   "channel": "Invent Box Tutorials",
+   "duration": 233,
+   "view_count": 1805,
+   "url": "https://www.youtube.com/watch?v=VQ97Y35qO9A",
+   "query": "inkscape trace bitmap tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.63,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "W_H0bEbt5fw",
+   "why": "duration 158s"
+  },
+  {
+   "id": "1r95Ya-BjdM",
+   "why": "duration 175s"
+  },
+  {
+   "id": "vY7G1XTnpUY",
+   "why": "duration 106s"
+  },
+  {
+   "id": "aVPV6AtjGBg",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "dual-wt-interval-locked-per-osc-position-level-animators",
+  "name": "Dual wavetable voice with an interval-locked tune/detune pair and a per-oscillator 'animator' on position and level: Reese bass, phasing-in harmony, S&H atmos pad and level-ramp pluck recipes",
+  "goal": "Patch a two-wavetable-oscillator voice in which tune transposes both oscillators while detune holds osc 2's interval (fifth, fourth, compound fifth, or a few cents). Each oscillator has its own modulator on WT position and on level (bipolar depth from the current position; one-shot envelope shapes or looping, tempo-synced LFO/S&H/random). Use it for four portable recipes: (1) a Reese bass with ~15 cents detune and opposite-direction position modulation; (2) a chord lead where osc 2 at −5 st fades in on a slow ramp-up level shape and brightens as it enters; (3) an atmospheric pad with tempo-synced sample-and-hold on both positions at different speeds, osc 2 at +19 st, and modulated S&H speed for generative bursts; (4) a pluck made from a looping ramp-down level shape. Delta vs our wavetable-crossfade and opposite-vector pads: interval locking plus per-osc level animators as the envelope.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ysMPHY5oiGc",
+    "url": "https://www.youtube.com/watch?v=ysMPHY5oiGc",
+    "title": "Wavefinder Tutorial // Wavetable on Tonverk with OS 1.3.0",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ysMPHY5oiGc/agent-skill-dual-wt-interval-locked-per-osc-position-level-animators.json",
+    "transcript_note": "Groovebox OS feature tutorial; hardware button paths dropped, recipes mapped to generic dual-WT modules. Factory wavetable names omitted."
+  },
+  "prerequisites": [
+    "Two wavetable oscillators (Web Audio: PeriodicWave crossfades or an AudioWorklet WT osc, implementation note)",
+    "Per-oscillator modulators with envelope-like one-shot and tempo-synced looping shapes incl. S&H/random",
+    "Low-pass filter (as an effect), reverb send, overdrive"
+  ],
+  "inputs": [
+    {
+      "name": "wavetables",
+      "type": "wavetable",
+      "description": "Original/free tables: identical saws for Reese; saw + metallic FM; airy/hollow + noisy; noisy brightening layer",
+      "required": true
+    },
+    {
+      "name": "notes",
+      "type": "midi",
+      "description": "Bass line, chords, or plucked pattern",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "dual_wt_patch",
+      "type": "audio",
+      "description": "Reese bass, harmonised lead, atmospheric pad or WT pluck"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Tune moves both oscillators; detune offsets osc 2 only, so the interval survives transposition.",
+    "Position modulation depth is bipolar and starts from the current base position. Negative depth subtracts.",
+    "Too much position movement thins the low end of basses. Keep it subtle and slow there.",
+    "Values beyond those named (±15/±10 cents, −5/+7/+19 st) are by ear."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a wavetable on each oscillator and balance them with the level controls. Set an interval with osc-2 detune (e.g. +7 st = fifth); transpose the pair with tune and confirm the interval stays.",
+      "tool": "osc",
+      "expect": "Two blended WT oscillators; transposing keeps the interval"
+    },
+    {
+      "n": 2,
+      "action": "Learn the per-osc animator: raise position depth to scan from the current base position on each note (negative depth scans backwards). Choose a one-shot envelope shape or a looping, tempo-synced LFO shape; set speed. The same animator can also drive level.",
+      "tool": "animator",
+      "expect": "Position visibly moves on each note trigger"
+    },
+    {
+      "n": 3,
+      "action": "Reese bass: identical saw tables, osc-2 detune ~15 cents (or ~10 for subtler beating), lower tune slightly to darken. Set both to similar start positions, then positive position depth on osc 1 and negative on osc 2 so they move in opposite directions, subtle depth, slow speed.",
+      "tool": "reese",
+      "expect": "Thick beating bass with gentle opposing timbral motion and a solid low end"
+    },
+    {
+      "n": 4,
+      "action": "Harmony lead: saw on osc 1 and a metallic FM-style table on osc 2, detune −5 st (fourth / inverted fifth). Put a ramp-up one-shot shape on osc 2's level at a slow speed so the harmony fades in. Scan the table first (this one gets brighter toward the end), start osc 2 partway in, and add positive position depth so it brightens as it enters. Osc 1 gets a slow, deep triangle loop on position plus a little level modulation from the same shape.",
+      "tool": "harmony",
+      "expect": "Chords bloom: harmony fades in and brightens rather than hitting at once"
+    },
+    {
+      "n": 5,
+      "action": "Optionally layer the track LFO subtly on position, a subtle pitch-envelope bend, a low-pass filter effect with slow modulation, and a reverb send; sequence per-step changes of modulation speed/depth for rhythmic variation.",
+      "tool": "finish",
+      "expect": "More alive, controlled top end"
+    },
+    {
+      "n": 6,
+      "action": "Atmospheric pad: airy/hollow table on osc 1, noisy/aggressive table on osc 2. Tempo-synced sample-and-hold on osc-1 position (jumps each step), faster; S&H on osc 2 at a slower speed (use the random/smooth shape instead for gentle drift). Detune osc 2 to +19 st (compound fifth) and lower its level with level modulation. Modulate osc-1 position depth and S&H speed so the steps alternate between slow subtle moves and busy bursts. Add the LP filter effect and reverb. Each chord note gets its own modulation.",
+      "tool": "pad",
+      "expect": "Rhythmic yet unpredictable, generative atmosphere"
+    },
+    {
+      "n": 7,
+      "action": "Pluck: main sound on osc 2 with a looping ramp-down shape on level, medium speed, full depth and low base level for a quick decay. Set base position near the bright part with positive depth so each note starts from the softer tone (or the reverse for a bright attack); compensate lost energy with overdrive. Layer a noisy table on osc 1 with the same level shape and speed. Use a long amp decay/release for a delay-like trail, then reverb and an LFO on pan.",
+      "tool": "pluck",
+      "expect": "Plucky WT voice with trailing tails"
+    },
+    {
+      "n": 8,
+      "action": "Texture variant: load a sample (vocal, field recording) in place of a wavetable and pitch it down a few octaves; the same tune/position/modulation tools give a glitchy texture.",
+      "tool": "sample-as-wt",
+      "expect": "Recognisable sample character with a glitchy, granular-like quality"
+    }
+  ],
+  "verification": [
+    "Transposing with tune leaves the osc-1/osc-2 interval unchanged.",
+    "Reese bass beats audibly; returning detune to 0 removes the beating.",
+    "In the harmony lead the second voice fades in and brightens over the note.",
+    "The S&H pad alternates between sparse and busy motion when its speed is modulated."
+  ],
+  "tags": [
+    "wavetable",
+    "dual-oscillator",
+    "detune",
+    "reese",
+    "sample-and-hold",
+    "pluck",
+    "pad",
+    "modulation",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dual-wt-interval-locked-per-osc-position-level-animators"
+}

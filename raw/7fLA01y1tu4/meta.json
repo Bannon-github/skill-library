@@ -1,0 +1,46 @@
+{
+  "video_id": "7fLA01y1tu4",
+  "title": "Why the MS2000 Still Shines: Classic Pad Patch Tutorial",
+  "url": "https://www.youtube.com/watch?v=7fLA01y1tu4",
+  "fetched_at": "2026-10-15T16:25:45.643724+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 746,
+  "ok": true,
+  "cue_count": 308,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/7fLA01y1tu4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/7fLA01y1tu4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,157 @@
+{
+ "topic": "parallel distortion synth sound design tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "parallel distortion synth sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "3RGzlJZpm3c",
+   "title": "Tutorial - How To Get Your Drums to Sound 10x Better Using Parallel Distortion",
+   "channel": "SoundOracle",
+   "duration": 628,
+   "view_count": 8743,
+   "url": "https://www.youtube.com/watch?v=3RGzlJZpm3c",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.47,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "UdGe4PlRHvo",
+   "title": "How To Use Parallel FX in FL Studio Tutorial",
+   "channel": "Inflightmuzik",
+   "duration": 574,
+   "view_count": 2584,
+   "url": "https://www.youtube.com/watch?v=UdGe4PlRHvo",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.21,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "4fpZFYG83fw",
+   "title": "Ableton Sound Design Tutorial - Distorted Delays",
+   "channel": "Finish More Music",
+   "duration": 348,
+   "view_count": 4416,
+   "url": "https://www.youtube.com/watch?v=4fpZFYG83fw",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.32,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "bLq5oPoLP0M",
+   "title": "How To Make Synths Like Aphex Twin",
+   "channel": "Anton Producer",
+   "duration": 320,
+   "view_count": 114103,
+   "url": "https://www.youtube.com/watch?v=bLq5oPoLP0M",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.03,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "OFtkARKmBvU",
+   "title": "Sound Design | Distortion Techniques | Jor van der Poel",
+   "channel": "Pyramind",
+   "duration": 731,
+   "view_count": 6303,
+   "url": "https://www.youtube.com/watch?v=OFtkARKmBvU",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.4,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "7xpMahhQoRA",
+   "title": "Parallel distortion by Nick Launay",
+   "channel": "Mix with the Masters",
+   "duration": 595,
+   "view_count": 111712,
+   "url": "https://www.youtube.com/watch?v=7xpMahhQoRA",
+   "query": "parallel distortion synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "GFLyW6ozb8o",
+   "why": "already known"
+  },
+  {
+   "id": "NbesVVxC4L0",
+   "why": "duration 37s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,171 @@
+{
+ "topic": "mid side stereo width synth pad tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "mid side stereo width synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "02_MBQrqJS8",
+   "title": "How to Make your Synthesizer Stereo",
+   "channel": "Corrado Cocco",
+   "duration": 416,
+   "view_count": 1527,
+   "url": "https://www.youtube.com/watch?v=02_MBQrqJS8",
+   "query": "mid side stereo width synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.09,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "2NESTvG0NQc",
+   "title": "Art of the Mixdown - Part 007 - Mid-Side EQ",
+   "channel": "Mixing Mastering Mentoring",
+   "duration": 811,
+   "view_count": 520,
+   "url": "https://www.youtube.com/watch?v=2NESTvG0NQc",
+   "query": "mid side stereo width synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.86,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "zjRTE41iu7s",
+   "title": "You Suck at Producing: Stereo Width",
+   "channel": "You Suck at Producing",
+   "duration": 291,
+   "view_count": 102635,
+   "url": "https://www.youtube.com/watch?v=zjRTE41iu7s",
+   "query": "mid side stereo width synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "LcAcmBKryxE",
+   "title": "Stereo Width Part 2 - Widening",
+   "channel": "DJ Warmonger Official Channel",
+   "duration": 1023,
+   "view_count": 101,
+   "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+   "query": "mid side stereo width synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "cHZN_CIyICg",
+   "title": "The secret 🔑 to true wideness!",
+   "channel": "W. A. Production",
+   "duration": 624,
+   "view_count": 1835,
+   "url": "https://www.youtube.com/watch?v=cHZN_CIyICg",
+   "query": "mid side stereo width synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.13,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "kEiILPm1VSc",
+   "why": "already known"
+  },
+  {
+   "id": "0sEyZymchTE",
+   "why": "already known"
+  },
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "zHqFoN3FTTI",
+   "why": "already known"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "mwaZ85VeUoU",
+   "why": "already known"
+  },
+  {
+   "id": "p61nhmEYVuc",
+   "why": "already known"
+  },
+  {
+   "id": "Z2mgB3LYkgQ",
+   "why": "already known"
+  },
+  {
+   "id": "lORu0zmSKzc",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

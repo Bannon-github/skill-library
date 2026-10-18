@@ -1,0 +1,177 @@
+{
+ "topic": "phase distortion synth pad tutorial",
+ "date": "2026-10-16",
+ "params": {
+  "topic": "phase distortion synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "17St_0BfbF0",
+   "title": "Making Ambient Synth Pad and Drone sounds with Serum2",
+   "channel": "MERAKKI",
+   "duration": 925,
+   "view_count": 1076,
+   "url": "https://www.youtube.com/watch?v=17St_0BfbF0",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "UH0FxXb-dF0",
+   "title": "This Plugin Changed How I Use Distortion Forever",
+   "channel": "X3N",
+   "duration": 340,
+   "view_count": 2211,
+   "url": "https://www.youtube.com/watch?v=UH0FxXb-dF0",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.17,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "nXJ86dmfzfM",
+   "title": "FULL Sylenth1 Beginners Course (Harder-Style)",
+   "channel": "On Point Samples",
+   "duration": 2173,
+   "view_count": 6833,
+   "url": "https://www.youtube.com/watch?v=nXJ86dmfzfM",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.92,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "sRI7nTtkE6E",
+   "title": "Making Psychedelic Formant Pluck leads for Psytrance/Psytech with Serum 2",
+   "channel": "MERAKKI",
+   "duration": 666,
+   "view_count": 1226,
+   "url": "https://www.youtube.com/watch?v=sRI7nTtkE6E",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.04,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "w7vtvdW84l4",
+   "title": "Free U-he The keys to composition Bazille The phase Distortion of oscillators",
+   "channel": "Tutoriels MAO",
+   "duration": 226,
+   "view_count": 59,
+   "url": "https://www.youtube.com/watch?v=w7vtvdW84l4",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.89,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "fr"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "OkCBxevhCWE",
+   "title": "MPC EXPANSION - CASIO CZ-230S - FREE",
+   "channel": "Roman 303",
+   "duration": 339,
+   "view_count": 399,
+   "url": "https://www.youtube.com/watch?v=OkCBxevhCWE",
+   "query": "phase distortion synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.8,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "8gjIpOvF1Pc",
+   "why": "duration 7453s"
+  },
+  {
+   "id": "E1VsBxiv5EY",
+   "why": "negative title signal"
+  },
+  {
+   "id": "pT7_EnwTaxY",
+   "why": "duration 71s"
+  },
+  {
+   "id": "VIxieSeVr48",
+   "why": "duration 4019s"
+  },
+  {
+   "id": "WNGpMg2ECmg",
+   "why": "duration 4285s"
+  },
+  {
+   "id": "td1-7TBk9DE",
+   "why": "duration 14143s"
+  },
+  {
+   "id": "A3CblEF7KmI",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

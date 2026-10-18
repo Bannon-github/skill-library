@@ -1,0 +1,43 @@
+{
+ "topic": "comb filter phaser cinematic bed synth tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "comb filter phaser cinematic bed synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "7qQX6YGBQEA",
+   "title": "Free Vital Synth - Full Tutorial",
+   "channel": "In The Mix",
+   "duration": 1814,
+   "view_count": 851627,
+   "url": "https://www.youtube.com/watch?v=7qQX6YGBQEA",
+   "query": "comb filter phaser cinematic bed synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

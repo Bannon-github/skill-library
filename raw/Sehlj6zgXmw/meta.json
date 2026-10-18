@@ -1,0 +1,50 @@
+{
+  "video_id": "Sehlj6zgXmw",
+  "title": "Behringer CZ-1 In Depth Sound Design Guide.",
+  "url": "https://www.youtube.com/watch?v=Sehlj6zgXmw",
+  "fetched_at": "2026-10-14T16:36:26.418677+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "iTweakX Audio",
+  "duration": 2117,
+  "ok": true,
+  "cue_count": 466,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Sehlj6zgXmw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Sehlj6zgXmw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

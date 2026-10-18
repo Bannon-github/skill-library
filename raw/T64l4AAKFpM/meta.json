@@ -1,0 +1,46 @@
+{
+  "video_id": "T64l4AAKFpM",
+  "title": "How to Make Analog Synths Sound Epic in Film Scoring | Convergence | Heavyocity",
+  "url": "https://www.youtube.com/watch?v=T64l4AAKFpM",
+  "fetched_at": "2026-10-15T16:23:32.744498+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Heavyocity Media",
+  "duration": 843,
+  "ok": true,
+  "cue_count": 277,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/T64l4AAKFpM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/T64l4AAKFpM/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

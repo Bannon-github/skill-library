@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "granular-stack-freeze-infinite-sustain-texture",
+  "name": "Stack granular processors to freeze any short sound into infinite sustain",
+  "goal": "Turn a short, gappy source into an endless sustained texture: run multi-band or multi-instance granular with linked bands, mild pitch/pan/delay randomization, one voice per band; stack the same granular chain ~4\u00d7 with independent randomization so gaps fill; follow with upward dynamics (OTT-style), high-pass to stop low buildup, slow random EQ/filter motion, optional diffused 100% wet delay for smear, limiter, and a mono fold-down check.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "dxWCEDePgaw",
+    "url": "https://www.youtube.com/watch?v=dxWCEDePgaw",
+    "title": "Sound Design Trick - Creating Sustained Textures with Granular FX",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/dxWCEDePgaw/agent-skill-granular-stack-freeze-infinite-sustain-texture.json"
+  },
+  "prerequisites": [
+    "Any granular FX/processor with density, pitch rand, pan rand, optional multi-band",
+    "EQ/filter and a clipper/limiter"
+  ],
+  "inputs": [
+    {
+      "name": "short_source",
+      "type": "audio",
+      "description": "Any short synthetic or FOLEY-like hit/texture that does not sustain long enough",
+      "required": true
+    },
+    {
+      "name": "stack_count",
+      "type": "integer",
+      "description": "Number of parallel granular instances (tutorial ~4)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "infinite_sustain_bed",
+      "type": "audio-fx-chain",
+      "description": "Forever-running cinematic sustain/texture bed mono-safe enough for point-source use"
+    }
+  ],
+  "constraints": [
+    "Portable granular stacking recipe; plugin names in the source are examples only \u2014 recreate with any granular (Portal, Grain, Clouds-class, Web Audio granulator).",
+    "Do not redistribute proprietary sample libraries mentioned as demos; the method applies to your own recordings/synths.",
+    "Always check mono: these beds often play from a single speaker in trailers."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a short source with silence gaps. Insert a granular processor; prefer a dense multi-band or 'schizophrenia-like' starting point, link bands, reduce pitch variation slightly, keep light rand on pitch/pan/delay, ~one voice per band.",
+      "tool": "granular-core",
+      "expect": "Source begins to smear but may still feel like a delay with gaps"
+    },
+    {
+      "n": 2,
+      "action": "Stack the same granular treatment about four times in series or parallel. Independent randomization + slowly moving band limits across instances fills holes into a complex continuous sustain.",
+      "tool": "granular-stack",
+      "expect": "Texture runs indefinitely after a short build-in"
+    },
+    {
+      "n": 3,
+      "action": "Add upward compression/OTT-style processing to lift grain detail, then high-pass \u2014 sustained stacks often accumulate unwanted low end.",
+      "tool": "ott-hp",
+      "expect": "More mid/high detail, controlled rumble"
+    },
+    {
+      "n": 4,
+      "action": "Animate tone: slow random modulation on a few EQ/filter bands (gentle boosts/cuts, light phasing at low mix, optional talking low-pass on the highs). Keep modulation subtle so it does not read as a phaser solo.",
+      "tool": "mod-eq",
+      "expect": "Living timbre without obvious cyclic whoosh"
+    },
+    {
+      "n": 5,
+      "action": "Optional smear path: 100% wet diffused delay (modulated delay time) when you want less discrete echoes and more smooth wash. Finish with a limiter to restore level.",
+      "tool": "diffuse-limit",
+      "expect": "Either articulate grains or smeared cloud, both loud enough"
+    },
+    {
+      "n": 6,
+      "action": "Sum to mono and confirm the bed still works (point-source playback). Apply the same chain to non-synth sources (pebbles, debris) to verify generality.",
+      "tool": "mono-check",
+      "expect": "Mono fold-down remains usable; method is source-agnostic"
+    }
+  ],
+  "verification": [
+    "After the stack, gaps no longer return to silence for the duration of a long hold.",
+    "High-pass prevents booming low buildup under the sustain.",
+    "Mono check does not hollow out the bed completely."
+  ],
+  "tags": [
+    "granular",
+    "freeze",
+    "sustain",
+    "texture",
+    "cinematic",
+    "mono-safe",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://granular-stack-freeze-infinite-sustain-texture"
+}

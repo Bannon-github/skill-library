@@ -1,0 +1,171 @@
+{
+ "topic": "cinematic impact boom synthesis tutorial synth",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "cinematic impact boom synthesis tutorial synth",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "kohxe8q614M",
+   "title": "How to create Cinematic Booms tutorial",
+   "channel": "Victor Emanuel",
+   "duration": 796,
+   "view_count": 550,
+   "url": "https://www.youtube.com/watch?v=kohxe8q614M",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.87,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "q-N55tqLUr4",
+   "title": "Sound Design Tutorial: Synthesizing Tails for Cinematic Hits & Impacts",
+   "channel": "Negativist",
+   "duration": 337,
+   "view_count": 6584,
+   "url": "https://www.youtube.com/watch?v=q-N55tqLUr4",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.41,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "jUBV73xZVrQ",
+   "title": "How to Create Cinematic Booms, Hits, and Impacts Pt 1",
+   "channel": "David Dumais Audio",
+   "duration": 308,
+   "view_count": 9258,
+   "url": "https://www.youtube.com/watch?v=jUBV73xZVrQ",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.48,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "cUeaNUTJU9o",
+   "title": "How to Create Cinematic Booms, Hits, and Impacts part 2",
+   "channel": "David Dumais Audio",
+   "duration": 342,
+   "view_count": 2057,
+   "url": "https://www.youtube.com/watch?v=cUeaNUTJU9o",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.16,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "IMgovfQjxUA",
+   "title": "Sound Design Tutorial: Making Impact Sound Effects",
+   "channel": "Designing Sound",
+   "duration": 348,
+   "view_count": 57966,
+   "url": "https://www.youtube.com/watch?v=IMgovfQjxUA",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.88,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "3rCUdTDodrc",
+   "title": "Sound Design Tutorial: Cinematic Whoosh hit",
+   "channel": "Simon Haglund Sounds",
+   "duration": 1173,
+   "view_count": 2584,
+   "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+   "query": "cinematic impact boom synthesis tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.21,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "vAPHPkx2I-M",
+   "why": "negative title signal"
+  },
+  {
+   "id": "6lnBVlQg3QI",
+   "why": "negative title signal"
+  },
+  {
+   "id": "DG4fTyKAlvQ",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "DJIp-_opW9U",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "uxV5XIcI4Qo",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

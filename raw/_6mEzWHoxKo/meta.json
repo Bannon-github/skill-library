@@ -1,0 +1,53 @@
+{
+  "video_id": "_6mEzWHoxKo",
+  "title": "DevOcean Modular - Create A Wind Noodle Patch From Scratch #modularsynth  #sounddesign  #synthesiser",
+  "url": "https://www.youtube.com/watch?v=_6mEzWHoxKo",
+  "fetched_at": "2026-10-15T16:18:19.530729+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ocean Swift / Faxi Nadu",
+  "duration": 783,
+  "ok": true,
+  "cue_count": 338,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/_6mEzWHoxKo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/_6mEzWHoxKo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

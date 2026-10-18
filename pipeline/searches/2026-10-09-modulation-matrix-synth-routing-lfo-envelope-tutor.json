@@ -1,0 +1,50 @@
+{
+ "topic": "modulation matrix synth routing LFO envelope tutorial cinematic",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "modulation matrix synth routing LFO envelope tutorial cinematic",
+  "langs": "en",
+  "per_query": 5,
+  "top": 5,
+  "min_dur": 240,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "TUCskkUqo4c",
+   "title": "Vengeance Producer Suite - Avenger - Tutorial Video #6: MODMATRIX & LFO",
+   "channel": "Vengeance-Sound",
+   "duration": 909,
+   "view_count": 15544,
+   "url": "https://www.youtube.com/watch?v=TUCskkUqo4c",
+   "query": "modulation matrix synth routing LFO envelope tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.6
+  }
+ ],
+ "dropped": [
+  {
+   "id": "8gjIpOvF1Pc",
+   "why": "duration 7453s"
+  },
+  {
+   "id": "Xuu03lhSK7c",
+   "why": "already known"
+  },
+  {
+   "id": "VPlrniT3des",
+   "why": "duration 6836s"
+  },
+  {
+   "id": "XG9L3Wh1y2I",
+   "why": "duration 2534s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -7,579 +7,2666 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 95,
+  "count": 160,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
-      "path": "/workspace/skill-library/mcp-publish/skills/ambient-organic-pluck-pad-ladder-chorus-space.json",
-      "mcp_uri": "skill://ambient-organic-pluck-pad-ladder-chorus-space",
-      "domain": "cinematic-synth"
+      "name": "Organic ambient pluck-pad with ladder, velocity, chorus-space",
+      "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity→level/cutoff, then chorus pushed toward long decay plus reverb/delay.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "ambient",
+        "pad",
+        "filter",
+        "chorus",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://ambient-organic-pluck-pad-ladder-chorus-space"
     },
     {
       "id": "ambient-wavetable-scratch-spectral-morph-pad",
-      "path": "/workspace/skill-library/mcp-publish/skills/ambient-wavetable-scratch-spectral-morph-pad.json",
-      "mcp_uri": "skill://ambient-wavetable-scratch-spectral-morph-pad",
-      "domain": "cinematic-synth"
+      "name": "From-scratch spectral-morph wavetable ambient pad",
+      "goal": "Design an ambient pad by building a soft→complex wavetable (sine + harmonics, spectral blend, phase/warp), LFO-morphing WT position, dual filters with stereo-split randomization, long amp/filter envelopes, optional pitched-down sample texture, then compressor → dotted delay → long reverb (~10–11s) with bipolar random pans.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "ambient",
+        "pad",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://ambient-wavetable-scratch-spectral-morph-pad"
     },
     {
       "id": "asymmetric-left-right-processing-width-mono-safe",
-      "path": "/workspace/skill-library/mcp-publish/skills/asymmetric-left-right-processing-width-mono-safe.json",
-      "mcp_uri": "skill://asymmetric-left-right-processing-width-mono-safe",
-      "domain": "cinematic-synth"
+      "name": "Width by processing left and right differently (L/R EQ, one-sided saturation, formant shift, slap times) with a mono-safe parallel blend",
+      "goal": "Widen synths, pads and FX by making the left and right channels genuinely different - double-tracked or alternate sources hard-panned, different L/R EQ, saturation on only one side, a formant-shifted duplicate on one side, and a short slap delay at different times per side (about 50 vs 75 ms) - and blend any phase-risky width (Haas/width plus distortion) in parallel beside an untouched dry chain so mono compatibility is preserved; delta beyond the existing Haas, mid/side and unison skills.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "stereo-width",
+        "mono-compatibility",
+        "parallel-processing",
+        "saturation",
+        "formant",
+        "slap-delay",
+        "mixing",
+        "pads",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://asymmetric-left-right-processing-width-mono-safe"
     },
     {
       "id": "audio-rate-am-wave-shape-texture",
-      "path": "/workspace/skill-library/mcp-publish/skills/audio-rate-am-wave-shape-texture.json",
-      "mcp_uri": "skill://audio-rate-am-wave-shape-texture",
-      "domain": "cinematic-synth"
+      "name": "Audio-rate AM for wave-shaping and FM/ring-like texture",
+      "goal": "Create complex cinematic textures with audio-rate amplitude modulation: feed a soft waveform (sine/triangle/saw) into a VCA and modulate that VCA at audio rate from another waveform of the same oscillator (self AM / new wave shapes) or a second oscillator (complex sidebands); put the AM depth under an envelope or LFO VCA so dynamics evolve—often reducing the need for a filter.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "am",
+        "audio-rate",
+        "vca",
+        "wave-shaping",
+        "texture",
+        "modular",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://audio-rate-am-wave-shape-texture"
     },
     {
       "id": "blender-beginner-setup-nav-and-geometry-practice",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-beginner-setup-nav-and-geometry-practice.json",
-      "mcp_uri": "skill://blender-beginner-setup-nav-and-geometry-practice",
-      "domain": "3d-blender"
+      "name": "blender beginner setup navigation and geometry practice",
+      "goal": "Start Blender the right way: Layout workspace focus, three-button mouse nav, G/S/R, Edit mode verts/edges/faces, then freeform practice.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "navigation",
+        "fundamentals",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-beginner-setup-nav-and-geometry-practice"
     },
     {
       "id": "blender-boolean-bracket-with-cylinder-holes",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-boolean-bracket-with-cylinder-holes.json",
-      "mcp_uri": "skill://blender-boolean-bracket-with-cylinder-holes",
-      "domain": "3d-blender"
+      "name": "blender boolean bracket with cylinder holes",
+      "goal": "Model a simple mm bracket plate and cut bolt holes with cylinder Boolean Difference.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "boolean",
+        "hard-surface",
+        "3d-printing",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-boolean-bracket-with-cylinder-holes"
     },
     {
       "id": "blender-chatgpt-python-script-gold-ball",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-chatgpt-python-script-gold-ball.json",
-      "mcp_uri": "skill://blender-chatgpt-python-script-gold-ball",
-      "domain": "3d-blender"
+      "name": "blender chatgpt python script create gold ball",
+      "goal": "Use ChatGPT to generate a Blender Python script, paste it in the Scripting workspace, and run it to create a material-previewable object.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "chatgpt",
+        "python",
+        "scripting",
+        "ai-assisted",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-chatgpt-python-script-gold-ball"
     },
     {
       "id": "blender-chocolate-chip-cookie-model-and-render",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-chocolate-chip-cookie-model-and-render.json",
-      "mcp_uri": "skill://blender-chocolate-chip-cookie-model-and-render",
-      "domain": "3d-blender"
+      "name": "blender chocolate chip cookie model and render",
+      "goal": "Model a cookie with chips on a tray, assign materials, light with an Area light, frame camera, and render.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modeling",
+        "materials",
+        "lighting",
+        "render",
+        "beginner",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-chocolate-chip-cookie-model-and-render"
     },
     {
       "id": "blender-easy-car-box-model-core-tools",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-easy-car-box-model-core-tools.json",
-      "mcp_uri": "skill://blender-easy-car-box-model-core-tools",
-      "domain": "3d-blender"
+      "name": "blender easy car box model with core tools",
+      "goal": "Block out a simple car using scale-axis locks, loop cut, extrude, inset, apply transforms, and duplicated wheels.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modeling",
+        "beginner",
+        "vehicle",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-easy-car-box-model-core-tools"
     },
     {
       "id": "blender-edit-mode-transform-extrude-loopcut-bevel",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-edit-mode-transform-extrude-loopcut-bevel.json",
-      "mcp_uri": "skill://blender-edit-mode-transform-extrude-loopcut-bevel",
-      "domain": "3d-blender"
+      "name": "blender edit mode transform extrude loop cut bevel",
+      "goal": "Switch Object/Edit mode and use core mesh edit hotkeys (G/S/R/E, Ctrl+R, Ctrl+B).",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "edit-mode",
+        "modeling",
+        "hotkeys",
+        "beginner",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-edit-mode-transform-extrude-loopcut-bevel"
     },
     {
       "id": "blender-first-scene-add-delete-focus-shade-smooth",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-first-scene-add-delete-focus-shade-smooth.json",
-      "mcp_uri": "skill://blender-first-scene-add-delete-focus-shade-smooth",
-      "domain": "3d-blender"
+      "name": "Blender first scene: delete/add primitives, focus, F3 search, shade smooth, save",
+      "goal": "Start a first Blender scene (Blender Guru donut/mug path or any beginner path): open Blender, navigate and recover with View Selected, use F3 operator search, Save As early, delete the default cube, add mesh primitives with the Add last-operation panel, Shade Smooth, practice G/R/S and Tab Object/Edit mode, and check camera framing with Numpad 0.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "beginner",
+        "interface",
+        "donut-tutorial",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-first-scene-add-delete-focus-shade-smooth"
     },
     {
       "id": "blender-gamedev-learning-path-advice",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-gamedev-learning-path-advice.json",
-      "mcp_uri": "skill://blender-gamedev-learning-path-advice",
-      "domain": "3d-blender"
+      "name": "blender game dev learning path advice",
+      "goal": "Follow a game-dev-oriented Blender learning order: basics → low-poly assets → early engine export → optional sculpt/bake.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "game-dev",
+        "learning-path",
+        "advice",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-gamedev-learning-path-advice"
     },
     {
       "id": "blender-install-prefs-viewport-nav-transform-tools",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-install-prefs-viewport-nav-transform-tools.json",
-      "mcp_uri": "skill://blender-install-prefs-viewport-nav-transform-tools",
-      "domain": "3d-blender"
+      "name": "Blender first launch: install, preferences, viewport navigation, Move/Rotate/Scale",
+      "goal": "Install Blender, set useful preferences (Resolution Scale, GPU/CUDA Cycles device, Undo Steps, Save Preferences), navigate the viewport with MMB orbit / Shift+MMB pan / scroll zoom and numpad or Alt+MMB orthographic snaps, then transform the default cube with the Move/Rotate/Scale tools and G/R/S hotkeys with X/Y/Z axis locks.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "install",
+        "preferences",
+        "viewport",
+        "navigation",
+        "tools",
+        "beginner",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-install-prefs-viewport-nav-transform-tools"
     },
     {
       "id": "blender-lowpoly-character-scene-prep",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-lowpoly-character-scene-prep.json",
-      "mcp_uri": "skill://blender-lowpoly-character-scene-prep",
-      "domain": "3d-blender"
+      "name": "blender low poly character scene prep",
+      "goal": "Prepare a Blender 4+ scene for stylized low-poly character work: Eevee, Standard view transform, incremental saves, image references, Rigify metarig scale.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "low-poly",
+        "character",
+        "scene-setup",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-lowpoly-character-scene-prep"
     },
     {
       "id": "blender-lowpoly-pine-tree-from-primitives",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-lowpoly-pine-tree-from-primitives.json",
-      "mcp_uri": "skill://blender-lowpoly-pine-tree-from-primitives",
-      "domain": "3d-blender"
+      "name": "blender low poly pine tree from primitives",
+      "goal": "Build a simple low-poly pine tree using cylinder and circle meshes with extrude/scale/duplicate.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "low-poly",
+        "game-asset",
+        "beginner",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-lowpoly-pine-tree-from-primitives"
     },
     {
       "id": "blender-metric-mm-setup-for-3d-print",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-metric-mm-setup-for-3d-print.json",
-      "mcp_uri": "skill://blender-metric-mm-setup-for-3d-print",
-      "domain": "3d-blender"
+      "name": "blender metric millimeters setup for 3d print",
+      "goal": "Configure Blender scene units and grid to millimeters for dimension-accurate hard-surface / 3D-print modeling.",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "units",
+        "3d-printing",
+        "hard-surface",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-metric-mm-setup-for-3d-print"
     },
     {
       "id": "blender-mug-solidify-subsurf-loopcut",
-      "path": "/workspace/skill-library/mcp-publish/skills/blender-mug-solidify-subsurf-loopcut.json",
-      "mcp_uri": "skill://blender-mug-solidify-subsurf-loopcut",
-      "domain": "3d-blender"
+      "name": "blender mug with solidify subsurf and loop cuts",
+      "goal": "Block a coffee mug from a cylinder using Edit mode, Solidify, Subdivision Surface, and Ctrl+R loop cuts (from Blender Guru beginner series).",
+      "domain": "3d-blender",
+      "tags": [
+        "blender",
+        "modifiers",
+        "solidify",
+        "subsurf",
+        "beginner",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://blender-mug-solidify-subsurf-loopcut"
     },
     {
       "id": "brooding-pw-drone-detuned-octave-stack-split-bend",
-      "path": "/workspace/skill-library/mcp-publish/skills/brooding-pw-drone-detuned-octave-stack-split-bend.json",
-      "mcp_uri": "skill://brooding-pw-drone-detuned-octave-stack-split-bend",
-      "domain": "cinematic-synth"
+      "name": "Brooding cinematic drone: three pulse-width-morph oscillators, opposed octave detune, single-osc vibrato, LFO PW breathing and split pitch-bend depths",
+      "goal": "Build a massive, brooding cinematic drone in any capable synth: three pulse-width-morphing square oscillators (two an octave down, one wide 4-voice unison), the two low oscillators nudged slightly sharp and flat around the octave for clash, vibrato on only one oscillator, a slow LFO breathing one oscillator's pulse-width morph, a 12 dB low-pass on the mod wheel, reverb plus filtered delay, and different extra pitch-bend depths per oscillator so bends spread instead of moving in lockstep.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drone",
+        "pads",
+        "pulse-width",
+        "pwm",
+        "unison",
+        "detune",
+        "pitch-bend",
+        "cinematic",
+        "dark",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://brooding-pw-drone-detuned-octave-stack-split-bend"
+    },
+    {
+      "id": "casio-pd-piecewise-phase-warp-cosine-to-saw",
+      "name": "Casio-style phase distortion: piecewise phase warp of a cosine into a saw (DCW node)",
+      "goal": "Implement Casio CZ-style phase distortion so a cosine (or sine) table becomes a variable saw by warping the 0→1 read phase with a two-slope piecewise line (breakpoint node at half-amplitude), then modulate that node for filter-like brightness without a resonant filter.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "phase-distortion",
+        "casio-cz",
+        "dcw",
+        "piecewise-phase",
+        "cosine-saw",
+        "portable",
+        "cinematic-synth",
+        "web-audio"
+      ],
+      "mcp_resource": "skill://casio-pd-piecewise-phase-warp-cosine-to-saw"
+    },
+    {
+      "id": "casio-pd-wave-family-and-windowed-sync-resonance",
+      "name": "Casio PD wave family: saw-pulse, double-sine, pulse, square, and windowed-sync resonance",
+      "goal": "Expand Casio-style phase distortion beyond the basic saw: derive saw-pulse (sine table), double-sine (warp twice / half-rate), pulse (node at full height with end hold), true square (run the warper twice per cycle), and resonant 'windowed sync' waves (slave sync reset enveloped by a decaying window to remove the click), then thicken with unison.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "phase-distortion",
+        "casio-cz",
+        "windowed-sync",
+        "resonance-wave",
+        "double-sine",
+        "pulse",
+        "square",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://casio-pd-wave-family-and-windowed-sync-resonance"
     },
     {
       "id": "chorus-ensemble-classic-vibrato-pad-modes",
-      "path": "/workspace/skill-library/mcp-publish/skills/chorus-ensemble-classic-vibrato-pad-modes.json",
-      "mcp_uri": "skill://chorus-ensemble-classic-vibrato-pad-modes",
-      "domain": "cinematic-synth"
+      "name": "Chorus-Ensemble modes: Classic, Ensemble, Vibrato",
+      "goal": "Thicken cinematic pads with a multi-mode chorus: Classic (2 delayed copies + LFO on delay time), Ensemble (third evenly-split copy for fuller body), or Vibrato (pitch-only wobble); tune rate/amount/feedback/width/dry-wet, high-pass the wet to avoid mud, optional warmth/saturation, and LFO offset for stereo vibrato.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "chorus",
+        "ensemble",
+        "vibrato",
+        "pads",
+        "fx",
+        "modulation",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://chorus-ensemble-classic-vibrato-pad-modes"
+    },
+    {
+      "id": "cinematic-bass-distortion-stack-pitch-bend-downer",
+      "name": "Cinematic bass FX bed: WT+sub through stacked distortion/compression, then pitch-bend downer",
+      "goal": "Build a full cinematic bass/impact bed by pitching a wavetable osc down an octave with subtle bend-warp and width, stacking multiple distortions and compressors so the WT choice matters less than the grind, pushing a sine sub through the same FX, adding early-chain filter/EQ movement into the grit, then reusing the patch for braams/bends/downers via one-shot pitch curves and asymmetric filter envelopes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-bass",
+        "distortion-stack",
+        "subdrop",
+        "downer",
+        "braam-bed",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://cinematic-bass-distortion-stack-pitch-bend-downer"
     },
     {
       "id": "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
-      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-braam-sine-sub-dual-saw-pitch-curve-formant.json",
-      "mcp_uri": "skill://cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
-      "domain": "cinematic-synth"
+      "name": "Cinematic braam: sine sub + two light-unison saws, curved pitch envelope, swept formant layer",
+      "goal": "Build a trailer-style cinematic braam from an init patch: sine sub one octave down plus two 3-voice saws at ~10% detune, all through one low-cut filter with random drift, a slow one-shot curved envelope pushing global pitch and opening an FX filter, a formant filter blended in by a second slow envelope, then soft-clip drive, high-pass, wide dark reverb, upper-band compression and mono lows below 120 Hz.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "braam",
+        "trailer",
+        "impact",
+        "pitch-envelope",
+        "formant-filter",
+        "unison",
+        "layering",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://cinematic-braam-sine-sub-dual-saw-pitch-curve-formant"
     },
     {
       "id": "cinematic-formant-comb-pad-phaser-fx",
-      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-formant-comb-pad-phaser-fx.json",
-      "mcp_uri": "skill://cinematic-formant-comb-pad-phaser-fx",
-      "domain": "cinematic-synth"
+      "name": "Cinematic multi-osc pad with formant/comb and slow FX motion",
+      "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B −1 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO→cutoff, then phaser→flanger→chorus→slow LFO-filtered FX→delay→reverb with restrained mixes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "formant",
+        "comb",
+        "fx",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://cinematic-formant-comb-pad-phaser-fx"
     },
     {
       "id": "cinematic-multi-envelope-osc-level-morph",
-      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-multi-envelope-osc-level-morph.json",
-      "mcp_uri": "skill://cinematic-multi-envelope-osc-level-morph",
-      "domain": "cinematic-synth"
+      "name": "Multi-envelope oscillator-level morphing pad",
+      "goal": "Create an always-in-motion pad by silencing shared amp control of oscillators and assigning staggered envelope-mode LFOs to each oscillator level (plus optional noise), with differing filter and WT motion.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "envelope",
+        "modulation",
+        "ambient",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://cinematic-multi-envelope-osc-level-morph"
     },
     {
       "id": "cinematic-warm-analog-pad-drift-stereo",
-      "path": "/workspace/skill-library/mcp-publish/skills/cinematic-warm-analog-pad-drift-stereo.json",
-      "mcp_uri": "skill://cinematic-warm-analog-pad-drift-stereo",
-      "domain": "cinematic-synth"
+      "name": "Warm analog cinematic pad with pitch drift and opposing pan",
+      "goal": "Build a warm Juno-style cinematic pad: chaos/random → master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "unison",
+        "stereo",
+        "analog-drift",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://cinematic-warm-analog-pad-drift-stereo"
     },
     {
       "id": "crypto-etherscan-token-holder-wallet-research",
-      "path": "/workspace/skill-library/mcp-publish/skills/crypto-etherscan-token-holder-wallet-research.json",
-      "mcp_uri": "skill://crypto-etherscan-token-holder-wallet-research",
-      "domain": "crypto-investing"
+      "name": "Etherscan research: token holders, wallets, network health charts",
+      "goal": "Use Etherscan (or *-scan clones) to inspect token holder distribution, trail early/smart wallets and what else they hold, and read Charts & Stats (transactions, unique addresses, verified contracts) for network health.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "etherscan",
+        "on-chain-research",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://crypto-etherscan-token-holder-wallet-research"
     },
     {
       "id": "crypto-hw-wallet-seed-backup-shamir-metal",
-      "path": "/workspace/skill-library/mcp-publish/skills/crypto-hw-wallet-seed-backup-shamir-metal.json",
-      "mcp_uri": "skill://crypto-hw-wallet-seed-backup-shamir-metal",
-      "domain": "crypto-investing"
+      "name": "Hardware-wallet seed backup: standard vs Shamir + metal storage",
+      "goal": "Create an offline hardware-wallet recovery backup: choose standard 12/24-word seed vs Shamir multi-share threshold, write shares correctly offline, store separately, optionally migrate to fire/water-resistant metal media.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "hardware-wallet",
+        "seed-backup",
+        "shamir",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://crypto-hw-wallet-seed-backup-shamir-metal"
     },
     {
       "id": "crypto-hw-wallet-unbox-seal-verify-init",
-      "path": "/workspace/skill-library/mcp-publish/skills/crypto-hw-wallet-unbox-seal-verify-init.json",
-      "mcp_uri": "skill://crypto-hw-wallet-unbox-seal-verify-init",
-      "domain": "crypto-investing"
+      "name": "Unbox hardware wallet: verify seals then initialize via official suite",
+      "goal": "Receive a hardware wallet safely by verifying carton and USB-port holographic seals, installing only the official vendor suite, completing authenticity checks, then initializing and backing up before first receive.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "hardware-wallet",
+        "setup",
+        "supply-chain",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://crypto-hw-wallet-unbox-seal-verify-init"
     },
     {
       "id": "crypto-safe-multisig-threshold-setup-execute",
-      "path": "/workspace/skill-library/mcp-publish/skills/crypto-safe-multisig-threshold-setup-execute.json",
-      "mcp_uri": "skill://crypto-safe-multisig-threshold-setup-execute",
-      "domain": "crypto-investing"
+      "name": "Safe{Wallet} multisig: signers, threshold, simulate & execute",
+      "goal": "Create a Safe smart-account multisig on a supported chain, add signers, set signature threshold, fund via Receive, then propose a Send with simulation and collect multi-signer confirmations before execute — with each signer on a separate seed/hardware key.",
+      "domain": "crypto-investing",
+      "tags": [
+        "crypto-investing",
+        "multisig",
+        "safe-wallet",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://crypto-safe-multisig-threshold-setup-execute"
     },
     {
       "id": "crypto-tax-form-8949-disposal-rows",
-      "path": "/workspace/skill-library/mcp-publish/skills/crypto-tax-form-8949-disposal-rows.json",
-      "mcp_uri": "skill://crypto-tax-form-8949-disposal-rows",
-      "domain": "personal-finance-howto"
+      "name": "Report crypto disposals on IRS Form 8949 (short vs long term)",
+      "goal": "Classify crypto disposals (sell for USD, crypto-to-crypto, spending crypto), split short-term vs long-term holding periods, select the correct 1099-B checkbox when no broker form exists, and fill description/dates/proceeds/basis/gain rows (optionally via tax-software CSV).",
+      "domain": "personal-finance-howto",
+      "tags": [
+        "personal-finance-howto",
+        "crypto-tax",
+        "form-8949",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://crypto-tax-form-8949-disposal-rows"
     },
     {
       "id": "digital-wt-morph-bandpass-chorus-echo-space",
-      "path": "/workspace/skill-library/mcp-publish/skills/digital-wt-morph-bandpass-chorus-echo-space.json",
-      "mcp_uri": "skill://digital-wt-morph-bandpass-chorus-echo-space",
-      "domain": "cinematic-synth"
+      "name": "Digital wavetable pad with series filter, chorus, echo, space",
+      "goal": "Craft a digital ambient pad: WT engine with long env→WT position, long amp attack/release, classic unison (~3 voices, wide stereo, ~1–2% detune) layered with a pure sine WT, series LP24→HP12 both opened by the morph env (band-pass-like), velocity amp mod, then Juno-style chorus → tape/ping-pong echo → long wet reverb (chorus also on the reverb path).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "chorus",
+        "reverb",
+        "pad",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://digital-wt-morph-bandpass-chorus-echo-space"
     },
     {
       "id": "distill-transcript",
-      "path": "/workspace/skill-library/mcp-publish/skills/distill-transcript.json",
-      "mcp_uri": "skill://distill-transcript",
-      "domain": "meta-pipeline"
+      "name": "distill transcript",
+      "goal": "Turn raw caption text into actionable procedure lines.",
+      "domain": "meta-pipeline",
+      "tags": [
+        "meta-pipeline",
+        "meta"
+      ],
+      "mcp_resource": "skill://distill-transcript"
     },
     {
       "id": "dji-video-to-gaussian-splat-mipmap",
-      "path": "/workspace/skill-library/mcp-publish/skills/dji-video-to-gaussian-splat-mipmap.json",
-      "mcp_uri": "skill://dji-video-to-gaussian-splat-mipmap",
-      "domain": "spatial-3d-capture"
+      "name": "DJI drone video capture (GPS subtitles) to Gaussian splat in Mip-Map",
+      "goal": "Record a geo-referenced DJI drone video for splatting (Video Subtitles GPS on, white balance Auto then locked, 4K/30fps Normal color, ISO 100 and ~1/60 shutter, smooth overlapping multi-angle orbit), then import it into Mip-Map, extract frames using the subtitle GPS, run Gaussian splat reconstruction, and inspect/export the splat.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "drone",
+        "dji",
+        "gaussian-splat",
+        "mip-map",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://dji-video-to-gaussian-splat-mipmap"
     },
     {
       "id": "drone-hyperlapse-to-splatware-splat",
-      "path": "/workspace/skill-library/mcp-publish/skills/drone-hyperlapse-to-splatware-splat.json",
-      "mcp_uri": "skill://drone-hyperlapse-to-splatware-splat",
-      "domain": "spatial-3d-capture"
+      "name": "Drone hyperlapse capture to Gaussian splat in free Splatware",
+      "goal": "Capture overlapping multi-angle views of a building/subject with DJI built-in hyperlapse modes (photogrammetry-style coverage of every facade, slow flight to avoid blur, no paid flight planner), then upload the hyperlapse/video to the free Splatware web app, process, review, and download the Gaussian splat.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "drone",
+        "gaussian-splat",
+        "splatware",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://drone-hyperlapse-to-splatware-splat"
+    },
+    {
+      "id": "dual-layer-opposite-vector-morph-pad",
+      "name": "Dual-layer opposite-rotation vector morph pad with filter-drive LFO",
+      "goal": "Build a lush evolving pad from two vector (4-corner XY) oscillators: same four portable shapes on both layers, layer B pitched up (~+12–13 st / +24–25 st on some corners for air), XY indexes modulated by one slow synced LFO but with opposite rotation directions per layer, long pad amp attack/release, then a mild driven low-pass whose drive is breathed by a second slow LFO, plus light ensemble and master reverb.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "vector-synthesis",
+        "dual-layer",
+        "pad",
+        "morph",
+        "filter-drive",
+        "ensemble",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dual-layer-opposite-vector-morph-pad"
+    },
+    {
+      "id": "dual-path-filter-spread-inverse-amp-lfo-stereo",
+      "name": "Stereo from mono: opposite filter frequencies plus inverse amplitude LFO",
+      "goal": "Widen a mono synth path without Haas delay: split into L/R, offset parallel filter cutoffs in opposite directions (plus/minus frequency spread), then apply a unipolar LFO to left amplitude and its inverse (1−x) to right amplitude so levels see-saw in opposite phase — a modular stereo image that differs from Haas, mid/side EQ, and double-tracked asymmetric processing.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "stereo-width",
+        "filter-spread",
+        "amplitude-lfo",
+        "modular",
+        "mono-safe",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dual-path-filter-spread-inverse-amp-lfo-stereo"
     },
     {
       "id": "envelope-follower-audio-driven-modulation",
-      "path": "/workspace/skill-library/mcp-publish/skills/envelope-follower-audio-driven-modulation.json",
-      "mcp_uri": "skill://envelope-follower-audio-driven-modulation",
-      "domain": "cinematic-synth"
+      "name": "Envelope follower: audio loudness as a modulation source (fold, ring mod, ducking, playback rate)",
+      "goal": "Use an envelope follower to turn one signal's amplitude into a modulation lane for organic, performance-linked movement instead of a fixed LFO: map it (with depth, rise/fall smoothing, and invert) to wavefolder amount, opposing left/right ring-mod depths, a pad's volume or filter for kick-keyed ducking or expansion, or a looped sample's playback rate.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "envelope-follower",
+        "modulation",
+        "sidechain",
+        "ring-mod",
+        "wavefolder",
+        "organic-motion",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://envelope-follower-audio-driven-modulation"
     },
     {
       "id": "evolving-pad-unison-filter-swell-fifth",
-      "path": "/workspace/skill-library/mcp-publish/skills/evolving-pad-unison-filter-swell-fifth.json",
-      "mcp_uri": "skill://evolving-pad-unison-filter-swell-fifth",
-      "domain": "cinematic-synth"
+      "name": "Evolving unison pad with filter swell and fifth layer",
+      "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO→cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "unison",
+        "filter",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://evolving-pad-unison-filter-swell-fifth"
     },
     {
       "id": "filter-ladder-diode-comb-formant-flavors",
-      "path": "/workspace/skill-library/mcp-publish/skills/filter-ladder-diode-comb-formant-flavors.json",
-      "mcp_uri": "skill://filter-ladder-diode-comb-formant-flavors",
-      "domain": "cinematic-synth"
+      "name": "Filter design flavors: ladder, diode, comb, formant",
+      "goal": "Pick filter *design* (not just LP/HP/BP): ladder/analog-style for classic resonant subtractive tone; diode for EMS/303-ish acid character (retune resonance when switching); formant XY vowel morphs; comb (tiny delayed copy + mix) for peaks/nulls, keyed harmonic shaping, phasing/flanging, and self-oscillation/string-like plucks—then A/B drive+resonance.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "filter",
+        "ladder",
+        "diode",
+        "comb",
+        "formant",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://filter-ladder-diode-comb-formant-flavors"
     },
     {
       "id": "fm-carrier-modulator-ratio-basics",
-      "path": "/workspace/skill-library/mcp-publish/skills/fm-carrier-modulator-ratio-basics.json",
-      "mcp_uri": "skill://fm-carrier-modulator-ratio-basics",
-      "domain": "music-synthesis"
+      "name": "FM synthesis carrier/modulator/ratio basics",
+      "goal": "Explain and patch basic FM: carrier vs modulator operators, amplitude→modulation depth, frequency→rate, stacking modulators (including slow modulators for evolving vibrato), audio-rate FM for bright spectra, self-mod, and preferring simple frequency ratios (1:1, 2:1) for musical results vs inharmonic mess.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "fm",
+        "operators",
+        "fundamentals",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://fm-carrier-modulator-ratio-basics"
+    },
+    {
+      "id": "fm-stack-uplifter-pitch-env-noise-swell",
+      "name": "FM/operator-stack uplifter with long pitch envelope and synced noise swell",
+      "goal": "Build a dense FM uplifter: stack multiple operators (low formant carrier, self-feedback raspy modulators, bright triangles/squares into the output, chord-ish ratios distorting a mid operator), mono with light voice pan, bit of digital crush, opposing looped envelopes (slow reverse swell vs stabby), a tempo-synced pitch envelope rising over ~8 bars, and a noise operator whose amp/FM depth shares that same rising envelope, finished with EQ and reverb.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "fm",
+        "uplifter",
+        "operator-stack",
+        "noise-swell",
+        "pitch-envelope",
+        "transition-fx",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://fm-stack-uplifter-pitch-env-noise-swell"
     },
     {
       "id": "granular-dual-saw-ambient-epic-pad",
-      "path": "/workspace/skill-library/mcp-publish/skills/granular-dual-saw-ambient-epic-pad.json",
-      "mcp_uri": "skill://granular-dual-saw-ambient-epic-pad",
-      "domain": "cinematic-synth"
+      "name": "Dual-saw ladder pad with granular spice and FX macros",
+      "goal": "Recipe for an ambient/epic pad: two saws (second −12 st, low level), long amp attack/release, ladder/diode filter with slow env→cutoff, corrective low EQ, chorus→synced delay→large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "granular",
+        "pad",
+        "macros",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://granular-dual-saw-ambient-epic-pad"
+    },
+    {
+      "id": "granular-stack-freeze-infinite-sustain-texture",
+      "name": "Stack granular processors to freeze any short sound into infinite sustain",
+      "goal": "Turn a short, gappy source into an endless sustained texture: run multi-band or multi-instance granular with linked bands, mild pitch/pan/delay randomization, one voice per band; stack the same granular chain ~4× with independent randomization so gaps fill; follow with upward dynamics (OTT-style), high-pass to stop low buildup, slow random EQ/filter motion, optional diffused 100% wet delay for smear, limiter, and a mono fold-down check.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "freeze",
+        "sustain",
+        "texture",
+        "cinematic",
+        "mono-safe",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://granular-stack-freeze-infinite-sustain-texture"
     },
     {
       "id": "haas-plus-phase-offset-width-automated",
-      "path": "/workspace/skill-library/mcp-publish/skills/haas-plus-phase-offset-width-automated.json",
-      "mcp_uri": "skill://haas-plus-phase-offset-width-automated",
-      "domain": "cinematic-synth"
+      "name": "Haas delay + per-channel phase offset width, automated, with mono check",
+      "goal": "Widen a mono synth or pad without panning by combining a small inter-channel delay (Haas range, kept under ~20 ms and often below 15 ms) with a filter-based phase offset on one channel (more mono compatible because it only shifts some frequencies), then automate the width on and off for drops/sections and always confirm in mono that comb filtering is acceptable.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "stereo-width",
+        "haas",
+        "phase",
+        "allpass",
+        "mono-compatibility",
+        "automation",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://haas-plus-phase-offset-width-automated"
+    },
+    {
+      "id": "hard-sync-master-slave-mod-envelope-timbre",
+      "name": "Hard oscillator sync: master sets pitch, slave pitch + mod envelope sets timbre",
+      "goal": "Build a classic hard-sync lead voice where oscillator 1 (master) resets oscillator 2 (slave) each cycle so master pitch is the note and slave pitch is timbre; sweep slave pitch with a mod envelope (high amount, slave starting an octave down) for the characteristic sync squeal, then add tempo delay, short reverb, and pitch-bend for performance.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "hard-sync",
+        "oscillator-sync",
+        "mod-envelope",
+        "lead",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://hard-sync-master-slave-mod-envelope-timbre"
     },
     {
       "id": "hybrid-noise-distortion-separate-sub-layer",
-      "path": "/workspace/skill-library/mcp-publish/skills/hybrid-noise-distortion-separate-sub-layer.json",
-      "mcp_uri": "skill://hybrid-noise-distortion-separate-sub-layer",
-      "domain": "cinematic-synth"
+      "name": "Hybrid noise+distortion layer separate from sub/harmonic patch",
+      "goal": "Build a portable hybrid stack: one patch/layer for filtered noise through asymmetric distortion (gritty air/texture) with EQ low-cut and slight top trim, and a separate patch/layer for sub/harmonic tones (e.g. square/WT) so you can retune harmonics or hold a fixed noise pitch without the noise timbre tracking every bass note—then blend; maps to sample/noise + WT + filter hybrid thinking for cinematic beds (not only neuro bass).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "hybrid",
+        "noise",
+        "distortion",
+        "filter",
+        "sub",
+        "layers",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://hybrid-noise-distortion-separate-sub-layer"
     },
     {
       "id": "keysol-helpling-keytrack-bass-split-delay",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-helpling-keytrack-bass-split-delay.json",
-      "mcp_uri": "skill://keysol-helpling-keytrack-bass-split-delay",
-      "domain": "cinematic-synth"
+      "name": "keytracked low-osc bass split with wet delay",
+      "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator’s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "keytrack",
+        "delay",
+        "from-youtube",
+        "helpling"
+      ],
+      "mcp_resource": "skill://keysol-helpling-keytrack-bass-split-delay"
     },
     {
       "id": "keysol-venus-fifths-pulsar-wt-impact",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-fifths-pulsar-wt-impact.json",
-      "mcp_uri": "skill://keysol-venus-fifths-pulsar-wt-impact",
-      "domain": "cinematic-synth"
+      "name": "fifths-tuned pulsar hybrid impact",
+      "goal": "Craft a throbbing aggressive impact/pulse by tuning a second oscillator up a fifth (+7 semitones), adding duo/detune/scatter width, and a wavetable layer for dimension beyond plain VA.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "impact",
+        "fifths",
+        "wavetable",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-fifths-pulsar-wt-impact"
     },
     {
       "id": "keysol-venus-fm-lfo-evolving-chase-sequence",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-fm-lfo-evolving-chase-sequence.json",
-      "mcp_uri": "skill://keysol-venus-fm-lfo-evolving-chase-sequence",
-      "domain": "cinematic-synth"
+      "name": "FM depth and LFO mix evolving chase sequence",
+      "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff — plus mod-wheel/aftertouch for tension — instead of static one-bar loops.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "fm",
+        "sequence",
+        "performance",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-fm-lfo-evolving-chase-sequence"
     },
     {
       "id": "keysol-venus-high-wt-artifact-pulse-layer",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-high-wt-artifact-pulse-layer.json",
-      "mcp_uri": "skill://keysol-venus-high-wt-artifact-pulse-layer",
-      "domain": "cinematic-synth"
+      "name": "high-pitch wavetable artifact over pulse sequence",
+      "goal": "Spice a classic pulsing bass/filter sequence by adding a very high-pitched wavetable oscillator mixed as an artifact-like layer, with WT-position modulation for constant subtle evolution.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "bass-sequence",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-high-wt-artifact-pulse-layer"
     },
     {
       "id": "keysol-venus-noise-audiorate-filter-texture",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-noise-audiorate-filter-texture.json",
-      "mcp_uri": "skill://keysol-venus-noise-audiorate-filter-texture",
-      "domain": "cinematic-synth"
+      "name": "noise and audio-rate filter texture lead",
+      "goal": "Create a radioactive/unstable cinematic texture or lead: dual detuned saws + WT character, aftertouch bringing in a sharp high oscillator, and mod-wheel sending noise (~30% mix) into audio-rate-style filter modulation (plus optional Osc2→cutoff always-on grit).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "texture",
+        "noise",
+        "filter-fm",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-noise-audiorate-filter-texture"
     },
     {
       "id": "keysol-venus-polyrhythmic-control-track-pitch",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-polyrhythmic-control-track-pitch.json",
-      "mcp_uri": "skill://keysol-venus-polyrhythmic-control-track-pitch",
-      "domain": "cinematic-synth"
+      "name": "irregular dual control-track pitch sequence",
+      "goal": "Build a never-quite-repeating cinematic sequence by driving Osc1/Osc2 pitch from two Control Tracks with irregular lengths (e.g. 15 and 14) and independent rates (e.g. dotted quarter vs quarter), over a stable low Osc3 pulse bed.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "control-track",
+        "sequence",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-polyrhythmic-control-track-pitch"
     },
     {
       "id": "keysol-venus-velocity-hybrid-bass-impact",
-      "path": "/workspace/skill-library/mcp-publish/skills/keysol-venus-velocity-hybrid-bass-impact.json",
-      "mcp_uri": "skill://keysol-venus-velocity-hybrid-bass-impact",
-      "domain": "cinematic-synth"
+      "name": "velocity-rewarding hybrid bass and impact",
+      "goal": "Design a thunderous hybrid bass/impact that responds exponentially to velocity (louder hits open filter/amp dramatically), usable as deep hits or high atmospheric stabs with HP + long space reverb.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "bass",
+        "impact",
+        "velocity",
+        "from-youtube",
+        "venus-theory"
+      ],
+      "mcp_resource": "skill://keysol-venus-velocity-hybrid-bass-impact"
     },
     {
       "id": "knowledge-graph-gap-check-skill-outline",
-      "path": "/workspace/skill-library/mcp-publish/skills/knowledge-graph-gap-check-skill-outline.json",
-      "mcp_uri": "skill://knowledge-graph-gap-check-skill-outline",
-      "domain": "agent-pipeline"
+      "name": "Check a transcript graph against the skill library, merge it into the knowledge graph, outline skills only for gaps",
+      "goal": "Compare a video's term graph with the published skill catalog and public prior-art, mark which terms and relations are new, merge everything into a persistent knowledge graph (knowledge/graph.json, references only), and draft skill outlines only where a contiguous run of grounded procedure steps covers 2+ gap items. Each outline gets nearest-skill and novelty verdicts, then goes through distill-transcript -> quality_check -> novelty_check. Delta vs generic dedupe or novelty checks: coverage is judged at the level of params, values, and modulation relations (not just title similarity), and outlines carry timestamped evidence spans instead of free-written steps.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "knowledge-graph",
+        "gap-analysis",
+        "novelty",
+        "skill-generation",
+        "dedupe"
+      ],
+      "mcp_resource": "skill://knowledge-graph-gap-check-skill-outline"
     },
     {
       "id": "lightroom-select-and-develop-photo",
-      "path": "/workspace/skill-library/mcp-publish/skills/lightroom-select-and-develop-photo.json",
-      "mcp_uri": "skill://lightroom-select-and-develop-photo",
-      "domain": "photo-editing"
+      "name": "lightroom select and develop photo",
+      "goal": "Edit one photo end-to-end in Lightroom.",
+      "domain": "photo-editing",
+      "tags": [
+        "photo-editing",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://lightroom-select-and-develop-photo"
     },
     {
       "id": "lush-stereo-saw-pad-random-pitch-texture",
-      "path": "/workspace/skill-library/mcp-publish/skills/lush-stereo-saw-pad-random-pitch-texture.json",
-      "mcp_uri": "skill://lush-stereo-saw-pad-random-pitch-texture",
-      "domain": "cinematic-synth"
+      "name": "Lush stereo saw pad with scale-snapped pitch texture",
+      "goal": "Make a lush ambient pad: dual saws panned L/R with ±5 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random → cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "stereo",
+        "ambient",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://lush-stereo-saw-pad-random-pitch-texture"
+    },
+    {
+      "id": "marimba-wt-lfo-pluck-to-granular-pad",
+      "name": "Marimba/pluck WT LFO attack into granular freeze pad stack",
+      "goal": "Turn mallet-like material into an evolving pad: synthesize a pluck from a wavetable that starts bright and ends as sine, scrub position with a very fast LFO for a clicky attack (amp: ~0.5s decay, 0 sustain, ~1s release) plus a long-attack twin for swell; print chord tones, freeze them in a granular engine (random on, loop on, tune grain spacing/attack/hold), then space with short delay, room (~20%) and very long parallel verbs, plus a quiet triangle+chorus bass.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "wavetable-position-lfo",
+        "mallet",
+        "pad",
+        "freeze",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://marimba-wt-lfo-pluck-to-granular-pad"
     },
     {
       "id": "midside-eq-bass-focus-width-depth",
-      "path": "/workspace/skill-library/mcp-publish/skills/midside-eq-bass-focus-width-depth.json",
-      "mcp_uri": "skill://midside-eq-bass-focus-width-depth",
-      "domain": "cinematic-synth"
+      "name": "Mid-side EQ: center the bass, tame mid problems, widen with side mids/highs",
+      "goal": "Use mid/side EQ on synth/sample/pad layers or mixes: split stereo into mid (L+R mono sum) and side (L−R), high-pass wide bass on the sides to focus low end center, cut resonant/harsh problems only on the mid when they live there, optionally boost the same band on the sides to preserve ambience, and try subtle upper-mid side boosts for depth (not only extreme high shelves for width).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "mid-side",
+        "eq",
+        "pads",
+        "stereo",
+        "width",
+        "mixing",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://midside-eq-bass-focus-width-depth"
     },
     {
       "id": "mix-pads-role-eq-width-clarity",
-      "path": "/workspace/skill-library/mcp-publish/skills/mix-pads-role-eq-width-clarity.json",
-      "mcp_uri": "skill://mix-pads-role-eq-width-clarity",
-      "domain": "music-synthesis"
+      "name": "Mix pads for role, EQ clarity, energy, and width control",
+      "goal": "Mix pads based on role (lead ambient vs background glue): infinite-average spectrum to see occupied bands, high-pass to protect kick/bass, filter reverb/delay lows (~100 Hz), manage mids/highs vs vocals with dynamic/sidechain EQ sparingly, automate filter/FX for section energy, and narrow stereo (or multiband width) when pads crowd the image.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "mixing",
+        "pads",
+        "eq",
+        "stereo",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://mix-pads-role-eq-width-clarity"
     },
     {
       "id": "modulation-lfo-envelope-mod-matrix-routing",
-      "path": "/workspace/skill-library/mcp-publish/skills/modulation-lfo-envelope-mod-matrix-routing.json",
-      "mcp_uri": "skill://modulation-lfo-envelope-mod-matrix-routing",
-      "domain": "cinematic-synth"
+      "name": "Modulation basics: LFO vs envelope, then mod-matrix source→destination routing",
+      "goal": "Use LFOs for cyclic motion (tremolo, vibrato, wobble, WT/PWM drift; audio-rate into AM/FM) and ADSR envelopes for note-triggered shapes (amp dynamics, filter envelope ±amount for pluck/wah), then route any source (LFO, envelope, mod wheel, key, pedal) through a modulation matrix to one or more destinations (pitch, cutoff, amp, pan, delay time/feedback/amount) with set amounts—auditing hard-to-hear routes on pitch first.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "lfo",
+        "envelope",
+        "adsr",
+        "modulation",
+        "modulation-matrix",
+        "routing",
+        "filter",
+        "pads",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://modulation-lfo-envelope-mod-matrix-routing"
     },
     {
       "id": "multiband-low-band-gentle-control-and-expand",
-      "path": "/workspace/skill-library/mcp-publish/skills/multiband-low-band-gentle-control-and-expand.json",
-      "mcp_uri": "skill://multiband-low-band-gentle-control-and-expand",
-      "domain": "cinematic-synth"
+      "name": "Multiband dynamics on a synth/pad bus: gentle low-band control, upward expand for weak lows, slow-attack top band",
+      "goal": "Use a multiband compressor as a dynamic EQ rather than a squasher on a pad/synth or mix bus: enable only the band you need (e.g. low band below ~92 Hz with ~1.5 dB range, opto-style, fairly fast attack) to tame bass build-up, use expansion with a +dB band gain to make a weak low end bigger but cleaner, and use a slow attack on a top band so transients pass while splashy highs are controlled—then check tonal shift from the crossovers.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "multiband",
+        "compression",
+        "expansion",
+        "dynamic-eq",
+        "low-end",
+        "mix-bus",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://multiband-low-band-gentle-control-and-expand"
     },
     {
       "id": "noise-layer-whoosh-doppler-and-rising-variants",
-      "path": "/workspace/skill-library/mcp-publish/skills/noise-layer-whoosh-doppler-and-rising-variants.json",
-      "mcp_uri": "skill://noise-layer-whoosh-doppler-and-rising-variants",
-      "domain": "cinematic-synth"
+      "name": "Build whooshes from noise and synth layers: bus envelope + Doppler pass-by, rising-only variant, and mod-wheel performable whoosh",
+      "goal": "Create transition whooshes without stock whoosh packs: record steady white/pink noise plus air/texture layers and a high-passed synth render into one bus, shape it with a volume swell and a Doppler-style pass-by (start/centre/end, attenuated pitch change), compress and limit it, add a rising-only variant using an upward pitch-shift curve plus a narrow EQ band swept up, or play a synth whoosh live with one mod-wheel macro that opens the filter, raises noise and raises flanger wet together.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "whoosh",
+        "transition",
+        "noise",
+        "doppler",
+        "sfx-design",
+        "flanger",
+        "macro",
+        "fx",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://noise-layer-whoosh-doppler-and-rising-variants"
     },
     {
       "id": "organic-looped-sample-unison-voicing-pad",
-      "path": "/workspace/skill-library/mcp-publish/skills/organic-looped-sample-unison-voicing-pad.json",
-      "mcp_uri": "skill://organic-looped-sample-unison-voicing-pad",
-      "domain": "cinematic-synth"
+      "name": "Organic looped-sample unison-voicing lush pad",
+      "goal": "Build lush organic pads by looping acoustic samples as pseudo-oscillators (crossfaded loops), stacking complementary body+air samples, applying chordal unison voicings (fifths/sus4), light detune/spread, long amp swell, optional WT/analog stabilizers, multiband grit/width, LFO+random filter / pitch-drift / WT motion, then convolution+long reverb space.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "organic",
+        "pad",
+        "sampler",
+        "unison",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://organic-looped-sample-unison-voicing-pad"
     },
     {
       "id": "osc-as-granular-pitch-step-delay",
-      "path": "/workspace/skill-library/mcp-publish/skills/osc-as-granular-pitch-step-delay.json",
-      "mcp_uri": "skill://osc-as-granular-pitch-step-delay",
-      "domain": "cinematic-synth"
+      "name": "Oscillator-as-delay: LFO repeats + stepped pitch-shift grains",
+      "goal": "Emulate granular pitching delays inside the synth (no delay FX): second oscillator copies the dry WT, an envelope-shaped tempo-synced LFO repeats its level like echoes, global amp release sets feedback/fade length, a fade-in LFO avoids overlapping the dry attack, and a stepped envelope-mode LFO raises pitch by octaves each repeat (e.g. +24 st over quarter-note steps) for sanding granular delay tails—then share formant/WT macros with the dry osc.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "granular",
+        "delay",
+        "lfo",
+        "wavetable",
+        "pads",
+        "pitch-shift",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://osc-as-granular-pitch-step-delay"
     },
     {
       "id": "pad-width-no-phase-smear-highband-pan-or-chord-split",
-      "path": "/workspace/skill-library/mcp-publish/skills/pad-width-no-phase-smear-highband-pan-or-chord-split.json",
-      "mcp_uri": "skill://pad-width-no-phase-smear-highband-pan-or-chord-split",
-      "domain": "cinematic-synth"
+      "name": "Widen a pad without phase smear: high-band pan LFO or hard-panned chord split",
+      "goal": "Widen a narrow pad without chorus/imager/spreader phase damage using one of two portable methods: (A) multiband-pan only the high band with a slow (bar) or 16th-note sine L/R swirl, keeping lows/mids centered and pulling amount down if motion distracts; or (B) duplicate synth+MIDI, mute alternating chord tones on each copy, and hard-pan L vs R so each side plays different notes of the same harmony—then confirm healthier correlation than chorus.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "stereo",
+        "pads",
+        "width",
+        "pan-lfo",
+        "phase",
+        "mono-compatibility",
+        "layering",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://pad-width-no-phase-smear-highband-pan-or-chord-split"
     },
     {
       "id": "parallel-filter-rhythmic-pad-chains",
-      "path": "/workspace/skill-library/mcp-publish/skills/parallel-filter-rhythmic-pad-chains.json",
-      "mcp_uri": "skill://parallel-filter-rhythmic-pad-chains",
-      "domain": "cinematic-synth"
+      "name": "Parallel filter chains for rhythmic pad motion",
+      "goal": "Thicken cinematic pads with parallel processing: run dual filters in parallel (e.g. low-pass + band-pass) with independent rhythmic/LFO cutoff motion synced to tempo, stack overlapping bands that a gentle bus compressor tames, and EQ lows after the parallel stack—portable alternative to only insert-filtering a single path.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "parallel",
+        "filter",
+        "pads",
+        "lfo",
+        "rhythm",
+        "fx",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://parallel-filter-rhythmic-pad-chains"
+    },
+    {
+      "id": "phase-distortion-shapes-modular-phase-chain",
+      "name": "Rebuild CZ-style phase-distortion shapes with an external phase chain (skew, formant, sync, fold)",
+      "goal": "Recreate Casio-like phase-distortion oscillator shapes in a modular/grid synth by driving a sine from an external phase ramp, then inserting skew, formant/PWM, fold+formant, and sync stages; animate the shape amount with an envelope for filterless brightness, and optionally raise a sync/frequency multiple for resonant overtones.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "phase-distortion",
+        "modular",
+        "bitwig-grid",
+        "skew",
+        "formant",
+        "sync",
+        "envelope-on-shape",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://phase-distortion-shapes-modular-phase-chain"
     },
     {
       "id": "pitch-ramp-riser-resonant-smear-filter-reverb",
-      "path": "/workspace/skill-library/mcp-publish/skills/pitch-ramp-riser-resonant-smear-filter-reverb.json",
-      "mcp_uri": "skill://pitch-ramp-riser-resonant-smear-filter-reverb",
-      "domain": "cinematic-synth"
+      "name": "Synth-built pitch riser: 2-octave bend ramp with reset points, smeared by a resonant diffusion filter and reverb",
+      "goal": "Build a synth-only riser that does not sour the key: one saw swept by a full-clip pitch-bend ramp from -1 to +1 octave (with reset points so mid-clip playback starts clean), then smeared by a low-set, high-resonance phase-smearing (comb/allpass-diffusion style) filter with a slight slow LFO and a reverb, so the listener hears a rising swarm rather than a clearly out-of-key moving pitch.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "riser",
+        "pitch-bend",
+        "tension",
+        "comb-filter",
+        "diffusion",
+        "reverb",
+        "fx",
+        "transition",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://pitch-ramp-riser-resonant-smear-filter-reverb"
     },
     {
       "id": "python-pathlib-basic-file-workflow",
-      "path": "/workspace/skill-library/mcp-publish/skills/python-pathlib-basic-file-workflow.json",
-      "mcp_uri": "skill://python-pathlib-basic-file-workflow",
-      "domain": "coding-filesystem"
+      "name": "python pathlib basic file workflow",
+      "goal": "Common file tasks with pathlib.",
+      "domain": "coding-filesystem",
+      "tags": [
+        "coding-filesystem",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://python-pathlib-basic-file-workflow"
     },
     {
       "id": "reverb-pads-type-choice-and-send-setup",
-      "path": "/workspace/skill-library/mcp-publish/skills/reverb-pads-type-choice-and-send-setup.json",
-      "mcp_uri": "skill://reverb-pads-type-choice-and-send-setup",
-      "domain": "cinematic-synth"
+      "name": "Reverb for pads: pick type by texture, then set up 100%-wet EQ'd send returns",
+      "goal": "Choose and route cinematic pad/synth reverb: decide if reverb is needed; pick type by texture not just length (hall lush 2–3s+ with mud risk, chamber thickening with less space, room/ambience intimate ~0.3–1s, plate bright attack→darker decay, spring metallic/boingy); keep 2–3 go-to returns (room ~1s, long plate ~6s, bright spring ~4s) at 100% wet on sends; high-pass returns ~200 Hz+; use pre-delay for clarity, layer short ambience under longer hall/plate, prefer shorter spaces in busy mixes, and pull send back on longer decays.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "reverb",
+        "send",
+        "eq",
+        "hall",
+        "chamber",
+        "room",
+        "plate",
+        "spring",
+        "pads",
+        "space",
+        "mix",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://reverb-pads-type-choice-and-send-setup"
     },
     {
       "id": "reverse-reverb-swell-print-reverse-print",
-      "path": "/workspace/skill-library/mcp-publish/skills/reverse-reverb-swell-print-reverse-print.json",
-      "mcp_uri": "skill://reverse-reverb-swell-print-reverse-print",
-      "domain": "cinematic-synth"
+      "name": "Manual reverse-reverb swell: reverse, print 100%-wet reverb, re-reverse, trim and fade into the onset",
+      "goal": "Make a reverse-reverb swell by hand (no dedicated plugin) that leads into a vocal, chord or hit with its own timbre: duplicate and reverse the source, print a large 100%-wet reverb of the reversed audio, keep only the part that leads into the first word/hit, reverse it back so it swells forward, normalize, align and fade it into the dry onset, and optionally give the swell its own late-automated reverb tail.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "reverse-reverb",
+        "swell",
+        "transition",
+        "reverb",
+        "offline-render",
+        "fx",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://reverse-reverb-swell-print-reverse-print"
     },
     {
       "id": "ring-mod-envelope-bell-stab-pulse",
-      "path": "/workspace/skill-library/mcp-publish/skills/ring-mod-envelope-bell-stab-pulse.json",
-      "mcp_uri": "skill://ring-mod-envelope-bell-stab-pulse",
-      "domain": "cinematic-synth"
+      "name": "Ring modulation: envelope on mix for bells, on tune for stabs, LFO for pulsing pads",
+      "goal": "Use ring modulation (audio-rate amplitude modulation of a carrier by a modulator, heard as tremolo taken to the extreme) to get metallic and bell tones: a pluck-shaped envelope on ring-mod mix for bells, the same envelope on ring-mod detune for synthetic stabs, or a slow LFO on mix/detune for subtle pulsing pads, placed at the 'consider FM/ring mod' point of the patch workflow.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "ring-mod",
+        "bells",
+        "metallic",
+        "stabs",
+        "pads",
+        "modulation",
+        "synth-workflow",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://ring-mod-envelope-bell-stab-pulse"
     },
     {
       "id": "selective-saturation-and-lofi-grit-toolkit",
-      "path": "/workspace/skill-library/mcp-publish/skills/selective-saturation-and-lofi-grit-toolkit.json",
-      "mcp_uri": "skill://selective-saturation-and-lofi-grit-toolkit",
-      "domain": "cinematic-synth"
+      "name": "Frequency- and level-selective saturation, exciter, bit/noise grit and small-speaker transition",
+      "goal": "Choose and set distortion as a tone tool rather than blanket crunch: band-weighted saturation (less drive on lows, more on highs, with output gain compensation), threshold/envelope-dependent saturation so only loud parts distort, saturation-as-clipper for headroom, a pre-filtered overdrive exciter at low dry/wet for brightness, subtle bit-depth/sample-rate reduction with jitter for vintage-sampler glue, narrow noise-modulation (erosion-style) grit, restoring sub after distortion, and a small-speaker cabinet on the master as a transition effect.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "saturation",
+        "distortion",
+        "exciter",
+        "bitcrush",
+        "lofi",
+        "clipper",
+        "transition-fx",
+        "mixing",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://selective-saturation-and-lofi-grit-toolkit"
     },
     {
       "id": "shepard-tone-endless-riser-octave-crossfade-voices",
-      "path": "/workspace/skill-library/mcp-publish/skills/shepard-tone-endless-riser-octave-crossfade-voices.json",
-      "mcp_uri": "skill://shepard-tone-endless-riser-octave-crossfade-voices",
-      "domain": "cinematic-synth"
+      "name": "Shepard-tone endless riser from three mono pitch-bent voices (plus rising noise-filter variant)",
+      "goal": "Build an endless-rising Shepard-tone riser from any synth: three monophonic copies of one sustained note swept by a full-length pitch-bend ramp, transposed by the sweep span so their ends dovetail, with the top voice fading out and the bottom voice fading in, then grouped into reverb to hide the reset click; plus a variant that applies the same overlap-and-crossfade trick to a ramp-LFO sweep of a resonant comb/flanging filter on white noise for a constantly rising jet/phaser texture.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "shepard-tone",
+        "riser",
+        "tension",
+        "pitch-bend",
+        "automation",
+        "noise",
+        "comb-filter",
+        "fx",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://shepard-tone-endless-riser-octave-crossfade-voices"
     },
     {
       "id": "shimmer-reverb-pitchshift-plus12-feedback",
-      "path": "/workspace/skill-library/mcp-publish/skills/shimmer-reverb-pitchshift-plus12-feedback.json",
-      "mcp_uri": "skill://shimmer-reverb-pitchshift-plus12-feedback",
-      "domain": "cinematic-synth"
+      "name": "Shimmer reverb: +12st pitch-shift into lush space",
+      "goal": "Build a portable shimmer (Eno-style) send: pitch-shift the wet path by +12 semitones into a long lush reverb/convolution, optionally feedback the shifted delay for endless bloom, high-/low-cut the delay echoes before the reverb, and EQ the wet shimmer before dry blend.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "shimmer",
+        "reverb",
+        "pitch-shift",
+        "pads",
+        "space",
+        "fx",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://shimmer-reverb-pitchshift-plus12-feedback"
     },
     {
       "id": "sidechain-compressor-duck-synth-pads",
-      "path": "/workspace/skill-library/mcp-publish/skills/sidechain-compressor-duck-synth-pads.json",
-      "mcp_uri": "skill://sidechain-compressor-duck-synth-pads",
-      "domain": "music-synthesis"
+      "name": "Sidechain-compressor duck synth/pad group to kick",
+      "goal": "Make space for a four-on-the-floor kick by sidechain-compressing a synth/pad bus from the kick: insert compressor before reverb on the group, enable external sidechain from kick, use strong ratio (~6:1), fast attack, slower release, and tune threshold so pads pump without wrecking the mix.",
+      "domain": "music-synthesis",
+      "tags": [
+        "music-synthesis",
+        "sidechain",
+        "ducking",
+        "pads",
+        "mixing",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://sidechain-compressor-duck-synth-pads"
     },
     {
       "id": "sidehustle-gumroad-digital-product-listing",
-      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-gumroad-digital-product-listing.json",
-      "mcp_uri": "skill://sidehustle-gumroad-digital-product-listing",
-      "domain": "side-hustle"
+      "name": "List a digital product on Gumroad (Discover-ready)",
+      "goal": "Open a Gumroad seller account, account for ~10% platform + payment-processing fees, create a digital product with name/description/files/price, and publish so it can sell and potentially appear on Gumroad Discover.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "gumroad",
+        "digital-products",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://sidehustle-gumroad-digital-product-listing"
     },
     {
       "id": "sidehustle-productized-service-offer-and-ops",
-      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-productized-service-offer-and-ops.json",
-      "mcp_uri": "skill://sidehustle-productized-service-offer-and-ops",
-      "domain": "side-hustle"
+      "name": "Productize a freelance service: fixed scope/price/timeline plus sustainable operating constraints",
+      "goal": "Turn repeatable freelance work into a productized offer (predetermined deliverable, fixed price, fixed timeline, inclusions/exclusions, ideal-client qualification) that lets buyers skip custom scoping, then harden it with operating constraints—capacity caps, revision limits, allowed stack, rush fees—and a standard intake→produce→QA→handoff checklist so delivery stays sustainable.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "productized-service",
+        "freelance",
+        "operations",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://sidehustle-productized-service-offer-and-ops"
     },
     {
       "id": "sidehustle-stripe-invoice-create-send",
-      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-stripe-invoice-create-send.json",
-      "mcp_uri": "skill://sidehustle-stripe-invoice-create-send",
-      "domain": "side-hustle"
+      "name": "Create and send a client invoice in Stripe Invoicing",
+      "goal": "From Stripe Dashboard Invoicing, create a native invoice: add/select customer, add line items with quantities and amounts, optionally tax/coupons, then review and send without third-party invoice plugins.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "stripe",
+        "invoicing",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://sidehustle-stripe-invoice-create-send"
     },
     {
       "id": "sidehustle-upwork-proposal-short-proof-cta",
-      "path": "/workspace/skill-library/mcp-publish/skills/sidehustle-upwork-proposal-short-proof-cta.json",
-      "mcp_uri": "skill://sidehustle-upwork-proposal-short-proof-cta",
-      "domain": "side-hustle"
+      "name": "Upwork proposal: short personalized proof + single CTA",
+      "goal": "Write Upwork cover letters that avoid archive-bait mistakes and follow a tight pattern: client first name, brief proof/social proof, one CTA to book a call, skim-friendly P.S., and prior ToS literacy.",
+      "domain": "side-hustle",
+      "tags": [
+        "side-hustle",
+        "upwork",
+        "proposals",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://sidehustle-upwork-proposal-short-proof-cta"
     },
     {
       "id": "soft-tape-saturation-pads-before-space",
-      "path": "/workspace/skill-library/mcp-publish/skills/soft-tape-saturation-pads-before-space.json",
-      "mcp_uri": "skill://soft-tape-saturation-pads-before-space",
-      "domain": "cinematic-synth"
+      "name": "Soft tape/analog saturation on pads before space FX",
+      "goal": "Make digital/synth pads and string layers feel denser and less sterile by adding gentle tape or analog-style saturation early (before big reverb/space): zero-time tape-delay as low-CPU tape sat, or gentle console/tape emulations kept near 0 VU—fullness in low-mids without obvious distortion.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "saturation",
+        "tape",
+        "pads",
+        "strings",
+        "density",
+        "fx",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://soft-tape-saturation-pads-before-space"
     },
     {
       "id": "spectral-warp-vocode-formant-stretch-smear",
-      "path": "/workspace/skill-library/mcp-publish/skills/spectral-warp-vocode-formant-stretch-smear.json",
-      "mcp_uri": "skill://spectral-warp-vocode-formant-stretch-smear",
-      "domain": "cinematic-synth"
+      "name": "Spectral warp modes: vocode, formant scale, harmonic stretch, smear",
+      "goal": "Add WT spectral/formant morph delta beyond basic wavetable-position pads: use spectral warp modes—vocode (key-tracked formant shift, vocal/vocoder character), formant scale (more exaggerated vowel/formant moves without key-tracking), harmonic stretch (even harmonic expansion; great for LFO→acid/sci-fi), inharmonic stretch (metallic/bell chaos), and smear (spectral high-pass / additive smear from bottom of table)—then modulate the warp amount for evolving cinematic texture.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "spectral",
+        "formant",
+        "vocode",
+        "morph",
+        "pads",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://spectral-warp-vocode-formant-stretch-smear"
     },
     {
       "id": "stereo-delay-pingpong-dual-parallel-two-tap",
-      "path": "/workspace/skill-library/mcp-publish/skills/stereo-delay-pingpong-dual-parallel-two-tap.json",
-      "mcp_uri": "skill://stereo-delay-pingpong-dual-parallel-two-tap",
-      "domain": "cinematic-synth"
+      "name": "Stereo delay motion: ping-pong, dual-parallel, two-tap, cross-feedback",
+      "goal": "Build musical stereo delay motion for synths/pads: tempo-synced ping-pong (feedback ~40–50%, wet ~15–25%, repeats band-limited ~100 Hz–3 kHz, optional saturation, even or offset L/R), dual-parallel (independent L/R subdivisions such as dotted-eighth vs quarter, self-feedback then cross-feedback, optional modulation/diffusion for reverb-like density), two-tap tape-head (long tap feeds short; short has no self/cross feedback), ping-pong recognized as a 2:1 two-tap, LFO panning delay and feedback-phase invert; prefer send routing and automate for evolving motion.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "delay",
+        "ping-pong",
+        "dual-delay",
+        "two-tap",
+        "cross-feedback",
+        "stereo",
+        "fx",
+        "pads",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://stereo-delay-pingpong-dual-parallel-two-tap"
+    },
+    {
+      "id": "sub-drop-sine-freq-glide-80hz-to-20hz",
+      "name": "Custom sub-drop: automate a sine from ~80 Hz down to ~20 Hz",
+      "goal": "Design original sub/bass drops without sample packs by generating a mono sine (test tone or sine osc), automating frequency from about 80 Hz (or key-matched) down to about 20 Hz over a chosen length (half-bar to multi-bar), bypassing the generator outside that window, and optionally adding bass-harmonic saturation.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "sub-drop",
+        "bass-drop",
+        "sine-glide",
+        "impact",
+        "transition-fx",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://sub-drop-sine-freq-glide-80hz-to-20hz"
     },
     {
       "id": "synth-string-section-unison-vibrato-fm-blend",
-      "path": "/workspace/skill-library/mcp-publish/skills/synth-string-section-unison-vibrato-fm-blend.json",
-      "mcp_uri": "skill://synth-string-section-unison-vibrato-fm-blend",
-      "domain": "cinematic-synth"
+      "name": "Synth string section: 7-voice unison saw, subtle bow-brightness envelope, LFO-on-detune vibrato with ramped rate, low FM blend",
+      "goal": "Build a light cinematic string section from saws: 7-voice unison saw (~7% detune) into a low-resonance 12/6 dB low-pass ~400–450 Hz with a little drive, slow amp envelope (A ~1.5 s, D ~5 s, S ~70%, R ~2 s, full velocity), a subtle filter envelope (+15% range) for bowing brightness, ensemble vibrato by LFO-modulating unison detune (1 s, small amount) whose rate is swept by a second ramp LFO, a second 7-voice osc FM'd by the first at ~30–35%, then low-cut, gentle top cut, big reverb, quiet quarter-note delay, and 20–30% soft clip on macros.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "strings",
+        "unison",
+        "vibrato",
+        "fm",
+        "filter-envelope",
+        "macros",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://synth-string-section-unison-vibrato-fm-blend"
     },
     {
       "id": "three-layer-complementary-pad-post-verb-lofi-degrade",
-      "path": "/workspace/skill-library/mcp-publish/skills/three-layer-complementary-pad-post-verb-lofi-degrade.json",
-      "mcp_uri": "skill://three-layer-complementary-pad-post-verb-lofi-degrade",
-      "domain": "cinematic-synth"
+      "name": "Three-layer complementary pad with post-reverb tape/lo-fi degradation and tail-lifting expander",
+      "goal": "Make a nostalgic, evolving ambient pad that is greater than its parts: split the spectrum into a dark low-pass+drive wavetable layer (LFO-only filter motion), a bright 24 dB band-pass layer with a long filter envelope and its own amp envelope, and a barely-there LFO'd band-pass noise layer; add very slow triangle LFOs on fine tune, subtle phaser/chorus, a ~90% wet big reverb, then degrade AFTER the reverb with stacked tape wow/flutter, drift, top-end bit-crush grit and ~3 kHz band-pass noise erosion, finishing with a subtle upward expander that lifts reverb-tail detail.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pads",
+        "layering",
+        "ambient",
+        "lofi",
+        "tape-wow-flutter",
+        "bitcrush",
+        "noise-layer",
+        "upward-expansion",
+        "reverb",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://three-layer-complementary-pad-post-verb-lofi-degrade"
     },
     {
       "id": "trance-gate-sidechain-chop-texture",
-      "path": "/workspace/skill-library/mcp-publish/skills/trance-gate-sidechain-chop-texture.json",
-      "mcp_uri": "skill://trance-gate-sidechain-chop-texture",
-      "domain": "cinematic-synth"
+      "name": "Trance-gate: sidechain-gate chop a sustained pad",
+      "goal": "Turn a long sustaining pad/wall-of-sound (or heavily reverbed short source) into rhythmic stuttered chunks by sidechain-gating it from a silent trigger pattern (e.g. clustered 16ths), then tune gate release for snap and optionally re-space with post-gate reverb.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "gate",
+        "sidechain",
+        "trance-gate",
+        "pads",
+        "rhythm",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://trance-gate-sidechain-chop-texture"
     },
     {
       "id": "transcript-domain-term-graph-extract",
-      "path": "/workspace/skill-library/mcp-publish/skills/transcript-domain-term-graph-extract.json",
-      "mcp_uri": "skill://transcript-domain-term-graph-extract",
-      "domain": "agent-pipeline"
+      "name": "Extract a term/relation graph from a how-to transcript with domain lexicons",
+      "goal": "Parse an English how-to transcript into a JSON graph of useful data. Nodes are concepts, modules, params, values, tools, procedure steps, and repeated phrases. Edges are sets (param -> value), affects (mod source -> target), precedes (step order), part-of (param -> module, module -> tool), and mentions (step -> term), each with timestamped evidence quotes. Matching uses domain lexicons for synth/sound design, Blender, crypto tooling, side hustle, and drone/splat capture, plus bigram/trigram collocation mining for terms the lexicon doesn't know. Delta vs generic keyword or knowledge-graph skills (understand-anything): deterministic and stdlib-only, unit-aware value attachment (dB -> slope/level, semitones -> pitch, voices -> unison), and evidence-grounded edges built for gap checking against a skill catalog.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "knowledge-graph",
+        "term-extraction",
+        "collocations",
+        "transcript",
+        "lexicon"
+      ],
+      "mcp_resource": "skill://transcript-domain-term-graph-extract"
     },
     {
       "id": "transcript-offline-machine-translate-glossary",
-      "path": "/workspace/skill-library/mcp-publish/skills/transcript-offline-machine-translate-glossary.json",
-      "mcp_uri": "skill://transcript-offline-machine-translate-glossary",
-      "domain": "agent-pipeline"
+      "name": "Offline machine translation of a non-English transcript with a synth/DAW glossary",
+      "goal": "Turn an original-language Show-transcript (es, de, ja, fr, pt, it) into an English transcript with a free offline translator (argos-translate), segment by segment with the original timestamps. Fix known domain mistranslations after translating ('envolvente' rendered as 'cover' -> 'envelope'), reject garbled model output, and keep the original words. Delta vs generic translation skills (azure-ai-translation-*, translate-book): offline and free, timestamp-preserving for transcripts, with a post-edit glossary for sound-design vocabulary and a garble detector.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "translation",
+        "argos-translate",
+        "offline",
+        "transcript",
+        "glossary",
+        "multilingual"
+      ],
+      "mcp_resource": "skill://transcript-offline-machine-translate-glossary"
     },
     {
       "id": "transient-splice-attack-body-hybrid-voice",
-      "path": "/workspace/skill-library/mcp-publish/skills/transient-splice-attack-body-hybrid-voice.json",
-      "mcp_uri": "skill://transient-splice-attack-body-hybrid-voice",
-      "domain": "cinematic-synth"
+      "name": "Transient splice: attack of one source + body of another (wave-sequence / concatenative hybrid)",
+      "goal": "Build a hybrid voice by concatenating the short attack/transient (~first 30–100 ms) of one sample or wave with the sustained body of another: either in one layer with a step sequence (very short first step, long crossfaded second step, loop start/end on the body step only) or across two layers (layer A gated transient with a short amp envelope, layer B looping body) so each part gets its own filter/FX while still fusing perceptually.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wave-sequencing",
+        "concatenative",
+        "hybrid",
+        "transient",
+        "layering",
+        "sampler",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://transient-splice-attack-body-hybrid-voice"
     },
     {
       "id": "traveler-walkthrough-control-track-filter-wt-animation",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-control-track-filter-wt-animation.json",
-      "mcp_uri": "skill://traveler-walkthrough-control-track-filter-wt-animation",
-      "domain": "cinematic-synth"
+      "name": "control-track rhythmic filter and WT animation",
+      "goal": "Use dual Control Tracks (sequenced controller lanes) as the heartbeat: up to 16 steps, ping-pong, DAW-synced rates, swing/gate/depth, routing to filter cutoff, wavetable position, or any mod destination.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "control-track",
+        "sequencer",
+        "modulation",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-control-track-filter-wt-animation"
     },
     {
       "id": "traveler-walkthrough-curved-envelope-evolving-pad",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-curved-envelope-evolving-pad.json",
-      "mcp_uri": "skill://traveler-walkthrough-curved-envelope-evolving-pad",
-      "domain": "cinematic-synth"
+      "name": "ADBSSR curved-envelope evolving pad",
+      "goal": "Design a long-evolving cinematic pad using multi-stage envelopes with adjustable curve handles, up to ~20s stages, optional breakpoint/slope expansion, and a modulation envelope that can start from alt control (e.g. sustain pedal) instead of note-on.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "envelope",
+        "adbssr",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-curved-envelope-evolving-pad"
     },
     {
       "id": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-fx-eq-chorus-delay-reverb.json",
-      "mcp_uri": "skill://traveler-walkthrough-fx-eq-chorus-delay-reverb",
-      "domain": "music-synthesis"
+      "name": "EQ chorus dual-delay multi-algo reverb FX chain",
+      "goal": "Finish a cinematic patch with the Traveler-style FX order: 3-band EQ → multi-type chorus → dual/ping-pong modulated delay → room/hall/space reverb (long space tails).",
+      "domain": "music-synthesis",
+      "tags": [
+        "cinematic-synth",
+        "fx",
+        "delay",
+        "reverb",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-fx-eq-chorus-delay-reverb"
     },
     {
       "id": "traveler-walkthrough-stereo-ladder-lf-width",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-stereo-ladder-lf-width.json",
-      "mcp_uri": "skill://traveler-walkthrough-stereo-ladder-lf-width",
-      "domain": "cinematic-synth"
+      "name": "dual stereo filter and LF-width imaging",
+      "goal": "Shape a cinematic tone with stereo ladder/NJM-style filters, left/right cutoff offset or per-key spread, linked high-pass for band-pass effects, and low-frequency width so bass stays centered while highs move.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "stereo",
+        "filter",
+        "imaging",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-stereo-ladder-lf-width"
     },
     {
       "id": "traveler-walkthrough-super-unison-wide-lead",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-super-unison-wide-lead.json",
-      "mcp_uri": "skill://traveler-walkthrough-super-unison-wide-lead",
-      "domain": "cinematic-synth"
+      "name": "super-unison wide stereo lead (osc2 stack)",
+      "goal": "Build a gigantic wide lead/pad layer using a multi-voice stereo unison oscillator (Traveler Osc2-style stack up to ~7 voices) with waveform morph and stereo spread.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "unison",
+        "lead",
+        "stereo",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-super-unison-wide-lead"
     },
     {
       "id": "traveler-walkthrough-wavetable-morph-filter-motion",
-      "path": "/workspace/skill-library/mcp-publish/skills/traveler-walkthrough-wavetable-morph-filter-motion.json",
-      "mcp_uri": "skill://traveler-walkthrough-wavetable-morph-filter-motion",
-      "domain": "cinematic-synth"
+      "name": "wavetable morph plus filter motion patch",
+      "goal": "Create an evolving hybrid patch using a wavetable oscillator (Osc3 role), optional duo-stack/detune/stereo spread, and animated WT position + filter cutoff.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "filter-motion",
+        "from-youtube",
+        "traveler-walkthrough"
+      ],
+      "mcp_resource": "skill://traveler-walkthrough-wavetable-morph-filter-motion"
     },
     {
       "id": "unison-odd-even-detune-width-clean-supersaw",
-      "path": "/workspace/skill-library/mcp-publish/skills/unison-odd-even-detune-width-clean-supersaw.json",
-      "mcp_uri": "skill://unison-odd-even-detune-width-clean-supersaw",
-      "domain": "cinematic-synth"
+      "name": "Unison voicing: odd vs even voice counts, detune/blend/width, clean supersaw",
+      "goal": "Set unison deliberately and build mix-ready supersaws: odd voice counts keep a centered in-tune voice for mono-compatible front-of-mix bass/leads/pads, even counts leave a center gap for ultra-wide off-center leads; keep detune/blend moderate; for supersaws use simple saw frames (not complex WT sweeps), ~6–12 voices, optional quieter Osc B, centered sub an octave down and quiet noise, EQ→compress→delay→reverb, subtle warp, and global unison width ~50% plus sparing stack modes for chord phase correlation.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "unison",
+        "supersaw",
+        "detune",
+        "stereo",
+        "width",
+        "mono-compatibility",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://unison-odd-even-detune-width-clean-supersaw"
+    },
+    {
+      "id": "uplifter-downlifter-pitchbend-filter-lfo",
+      "name": "Uplifter / downlifter from any saw synth: pitch-bend span, closed LP, accelerating LFO",
+      "goal": "Create mix-ready uplifters and downlifters in any wavetable/subtractive synth: hold the root note for ~8 bars, set pitch-bend range to ±6 or ±12 st, close a 12 dB low-pass, map an LFO with an accelerating curve (quarter→eighth→sixteenth) to cutoff and to pitch-bend (50%→100% for up, 50%→0% for down), thicken with unison, then sidechain and add reverb/FX.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "uplifter",
+        "downlifter",
+        "riser",
+        "pitch-bend",
+        "filter-lfo",
+        "transition-fx",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://uplifter-downlifter-pitchbend-filter-lfo"
+    },
+    {
+      "id": "vector-xy-four-oscillator-crossfade-blend",
+      "name": "Vector synthesis: XY-blend four oscillators with nested crossfades",
+      "goal": "Build classic vector synthesis portably: place four distinct oscillator shapes at the corners of an XY pad (bipolar −1…+1), nest three crossfade/blend stages driven by the X and Y axes so each corner is soloable and the center mixes all four, then add an amp envelope — a 2D morph that is not a 1D wavetable scan.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "vector-synthesis",
+        "xy-morph",
+        "crossfade",
+        "four-oscillator",
+        "pad",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://vector-xy-four-oscillator-crossfade-blend"
     },
     {
       "id": "velocity-filter-cutoff-envelope-amount",
-      "path": "/workspace/skill-library/mcp-publish/skills/velocity-filter-cutoff-envelope-amount.json",
-      "mcp_uri": "skill://velocity-filter-cutoff-envelope-amount",
-      "domain": "cinematic-synth"
+      "name": "Velocity into filter cutoff / filter-envelope amount",
+      "goal": "Make pads/synths expressive with velocity→filter: set lowest desired cutoff with filter EG amount at 0, raise EG amount (with sustain) for max brightness on hard hits, then map velocity so soft hits stay darker—know your synth’s polarity (many brighten on hard hits; some Moog-style reduce brightness as velocity sens rises).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "velocity",
+        "filter",
+        "envelope",
+        "expression",
+        "pads",
+        "modulation",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://velocity-filter-cutoff-envelope-amount"
     },
     {
       "id": "volyraph-browser-splat-pipeline",
-      "path": "/workspace/skill-library/mcp-publish/skills/volyraph-browser-splat-pipeline.json",
-      "mcp_uri": "skill://volyraph-browser-splat-pipeline",
-      "domain": "spatial-3d-capture"
+      "name": "volyraph browser splat pipeline",
+      "goal": "Video to splat entirely in browser.",
+      "domain": "spatial-3d-capture",
+      "tags": [
+        "spatial-3d-capture",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://volyraph-browser-splat-pipeline"
     },
     {
       "id": "warm-heavenly-supersaw-pad-keytrack-fx",
-      "path": "/workspace/skill-library/mcp-publish/skills/warm-heavenly-supersaw-pad-keytrack-fx.json",
-      "mcp_uri": "skill://warm-heavenly-supersaw-pad-keytrack-fx",
-      "domain": "cinematic-synth"
+      "name": "Warm heavenly supersaw pad with keytrack and lush FX",
+      "goal": "Dial warm heavenly pads: saw unison 5–7 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO→cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "pad",
+        "supersaw",
+        "chorus",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://warm-heavenly-supersaw-pad-keytrack-fx"
     },
     {
       "id": "warp-modes-as-phase-signal-transforms",
-      "path": "/workspace/skill-library/mcp-publish/skills/warp-modes-as-phase-signal-transforms.json",
-      "mcp_uri": "skill://warp-modes-as-phase-signal-transforms",
-      "domain": "cinematic-synth"
+      "name": "Wavetable warp modes rebuilt as phase-signal transforms (PWM, bend, asym, mirror, sync/window, flip, quantize, remap)",
+      "goal": "Rebuild wavetable 'warp modes' portably by splitting an oscillator into a 0-to-1 phase ramp that reads the waveform and then transforming that phase signal before lookup: squeeze (PWM), pinch/skew (bend/asym), mirror, overdrive-and-wrap (sync, optionally windowed), comparator-switched 180-degree rotation (flip), staircase quantize, and a drawn transfer curve (remap), so a Web Audio/AudioWorklet or modular oscillator can chain and modulate several warps at once instead of picking one mode.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "wavetable",
+        "warp-modes",
+        "phase-distortion",
+        "sync",
+        "pwm",
+        "bend",
+        "mirror",
+        "remap",
+        "oscillator",
+        "audioworklet",
+        "cinematic-synth",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://warp-modes-as-phase-signal-transforms"
     },
     {
       "id": "wavetable-crossfade-morph-modulate-pad",
-      "path": "/workspace/skill-library/mcp-publish/skills/wavetable-crossfade-morph-modulate-pad.json",
-      "mcp_uri": "skill://wavetable-crossfade-morph-modulate-pad",
-      "domain": "cinematic-synth"
+      "name": "Wavetable crossfade position + morph/PWM-style shaping",
+      "goal": "Build evolving WT pads by smoothly crossfading through table frames (not hard digital switches), modulating table position from LFO/mod sources, and using morph-style wave shapers (pulse-width-like morph on squares, mirror/stretch/narrow toward filter-like thinning, optional vintage bit-step) as a portable delta beyond basic WT-position-only pads.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "cinematic-synth",
+        "wavetable",
+        "morph",
+        "pwm",
+        "crossfade",
+        "pads",
+        "modulation",
+        "from-youtube"
+      ],
+      "mcp_resource": "skill://wavetable-crossfade-morph-modulate-pad"
+    },
+    {
+      "id": "windowed-sync-amplitude-modulator-drawable-window",
+      "name": "Windowed sync via amplitude window (sine or drawable) on a phase-synced oscillator",
+      "goal": "Rebuild Serum-style windowed sync (and half-window variants) portably: hard-sync a slave oscillator from an external phase, then multiply its amplitude by a same-rate window oscillator (sine shifted ~50% phase, or a drawable Hof/custom curve) so period start/end are forced to zero crossings — removing sync clicks when sync intensity is modulated — beyond the decaying-sine CZ resonance window already covered.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "windowed-sync",
+        "hard-sync",
+        "amplitude-window",
+        "phase-sync",
+        "drawable-window",
+        "portable",
+        "cinematic-synth",
+        "bitwig-grid"
+      ],
+      "mcp_resource": "skill://windowed-sync-amplitude-modulator-drawable-window"
     },
     {
       "id": "youtube-knowledge-pipeline-router",
-      "path": "/workspace/skill-library/mcp-publish/skills/youtube-knowledge-pipeline-router.json",
-      "mcp_uri": "skill://youtube-knowledge-pipeline-router",
-      "domain": "agent-pipeline"
+      "name": "YouTube knowledge pipeline router (self-questioning conditional chain)",
+      "goal": "Orchestrate the YouTube distillery as an explicit decision tree: the agent asks itself yes/no questions (env OK? transcript saved? video available? rate-limited? any track? which track rung? translation needed or failed? transcript usable? domain matched? gaps found?) and picks the matching skill next: topic search -> track-ladder fetch -> machine translation -> term graph -> gap check / KG merge -> distill + quality + novelty gates. Every question, answer, evidence and branch is logged. Delta vs generic agent routers or skill-chaining packs: the conditions are concrete YouTube transcript barriers (429/IP blocks, AI-dub tracks, tlang throttling, removed videos, disabled transcripts) with a logged branch for each, and ASR is never run automatically.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "router",
+        "orchestrator",
+        "decision-tree",
+        "youtube",
+        "transcript",
+        "translation",
+        "knowledge-graph"
+      ],
+      "mcp_resource": "skill://youtube-knowledge-pipeline-router"
     },
     {
       "id": "youtube-show-transcript-track-ladder-fetch",
-      "path": "/workspace/skill-library/mcp-publish/skills/youtube-show-transcript-track-ladder-fetch.json",
-      "mcp_uri": "skill://youtube-show-transcript-track-ladder-fetch",
-      "domain": "agent-pipeline"
+      "name": "Fetch YouTube Show-transcript text via a language-aware track ladder",
+      "goal": "Fetch the best English Show-transcript text for a YouTube video by listing every transcript track and walking a fixed ladder: manual English > auto English spoken in the original audio > YouTube-translated track (tlang=en) > English auto track of an AI-dub audio track > original-language track plus offline machine translation. Handle 429/IP blocks, removed videos, and disabled transcripts honestly. Delta vs generic transcript fetchers (youtube-skills, youtube-fetcher): it tells original audio apart from YouTube AI-dub tracks, keeps the original words beside any translation, and logs every decision.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "youtube",
+        "transcript",
+        "show-transcript",
+        "language",
+        "translation",
+        "rate-limit"
+      ],
+      "mcp_resource": "skill://youtube-show-transcript-track-ladder-fetch"
     },
     {
       "id": "youtube-topic-search-transcript-precheck",
-      "path": "/workspace/skill-library/mcp-publish/skills/youtube-topic-search-transcript-precheck.json",
-      "mcp_uri": "skill://youtube-topic-search-transcript-precheck",
-      "domain": "agent-pipeline"
+      "name": "YouTube how-to topic search with filters and transcript precheck",
+      "goal": "Find distillable how-to YouTube videos for a topic across several languages, filter by duration, upload recency, views and how-to title signals, and precheck which ones have a Show transcript (manual, auto, AI-dub, or YouTube-translatable to English) before anything is fetched. Delta vs generic youtube search skills (e.g. VoltAgent youtube-skills, last30days-skill): multilingual how-to keyword expansion, negative-signal filtering, and a per-video transcript-track precheck that feeds the knowledge-pipeline router.",
+      "domain": "agent-pipeline",
+      "tags": [
+        "agent-pipeline",
+        "youtube",
+        "search",
+        "transcript",
+        "multilingual",
+        "yt-dlp"
+      ],
+      "mcp_resource": "skill://youtube-topic-search-transcript-precheck"
+    },
+    {
+      "id": "process-map-workflow-design-prototype-to-final",
+      "name": "Design a workflow as a process map: messy prototype, then clean final map",
+      "goal": "Design or document a workflow by mapping it as a process map (inputs, ordered steps, decisions, stakeholders, outputs): start with a messy prototype map of the one process causing the most pain, share and iterate, then publish a clean final documentation map and keep it updated.",
+      "tags": [
+        "workflow-design",
+        "process-mapping",
+        "flowchart",
+        "planning",
+        "sop"
+      ],
+      "path": "skills/process-map-workflow-design-prototype-to-final.json"
+    },
+    {
+      "id": "agent-media-pipeline-roles-to-tools-feedback-skill",
+      "name": "Design an agent-run media production pipeline: map team roles to tools, encode style as a skill, improve it from feedback",
+      "goal": "Design an automated media workflow (shown for video editing; same pattern for automated song generation) by listing every human job in the production team, assigning each to a tool with one coordinating agent, writing the creative style into a skill file the agent reads first, and growing that skill from time-stamped human feedback after each run.",
+      "tags": [
+        "workflow-design",
+        "automation",
+        "agent-orchestration",
+        "media-pipeline",
+        "feedback-loop",
+        "song-generation"
+      ],
+      "path": "skills/agent-media-pipeline-roles-to-tools-feedback-skill.json"
+    },
+    {
+      "id": "click-train-resonant-filter-feedback-delay-comb-texture",
+      "name": "Organic alien comb texture: sub-audio saw click train → high-resonance filter → very short, high-feedback delay played by hand",
+      "goal": "Make an organic alien/sci-fi comb texture bed on most subtractive synths: pitch one saw all the way down until individual saw teeth are heard as a click train, run it through one low-pass at 80–100% resonance, then a delay at full mix with very short time and very long feedback (a comb resonator), adding optional comb filter, moderate pitch modulation and reverb — and perform delay time and cutoff manually (MIDI CC) rather than with modulation for an organic result. Distinct from formant/comb pad recipes that use a dedicated comb filter on sustained oscillators.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "comb",
+        "feedback-delay",
+        "click-train",
+        "resonance",
+        "texture",
+        "performance",
+        "sci-fi",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://click-train-resonant-filter-feedback-delay-comb-texture"
+    },
+    {
+      "id": "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+      "name": "Harmonic-locked frequency shifter layer (shift by multiples of f0) cleaned with EQ, micro-delay and a self-vocoder",
+      "goal": "Tame a frequency shifter into musical harmonics: shift by whole multiples of the note's fundamental (e.g. +130 Hz on a 130 Hz C, or 6×40 = 240 Hz on a 40 Hz E) so new partials land on the harmonic series instead of dissonant arbitrary shifts, run it as a parallel wet layer with low-cut/band-reject EQ to tame the shifted fundamental, add ~1 ms signal delay to stop bubbly phasing, and clean messy upper harmonics with a self-vocoder whose lowest band sits above the sub, keeping the clean sub on a dry path.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "frequency-shifter",
+        "vocoder",
+        "harmonics",
+        "parallel-processing",
+        "bass",
+        "texture",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://harmonic-multiple-frequency-shift-layer-vocoder-clean"
+    },
+    {
+      "id": "karplus-strong-keytracked-delay-pluck-damping-comp",
+      "name": "Karplus-Strong pluck: noise-burst exciter into a key-tracked feedback delay with decay/damping and register compensation",
+      "goal": "Build a playable Karplus-Strong plucked string in any modular/Web Audio environment: a short pink-noise burst (bandpass-filtered, velocity-scaled, optionally stereo) excites a delay line tuned to one period of the note (delay = 1/f, e.g. ~7.64 ms at C3; halve per octave up via 2^(−n/12) scaling), with feedback as decay and a low-pass in the loop as damping, both velocity-scalable and key-tracked to even out low-vs-high note ring time.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "karplus-strong",
+        "physical-modeling",
+        "pluck",
+        "delay-line",
+        "keytracking",
+        "web-audio",
+        "audioworklet",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://karplus-strong-keytracked-delay-pluck-damping-comp"
+    },
+    {
+      "id": "morph-filter-lp-bp-hp-notch-lfo-cycle",
+      "name": "Morph filter: LFO-cycle one filter continuously through LP → BP → HP → notch → LP",
+      "goal": "Animate pads, leads and repetitive noisy synths with a single continuous morph filter whose shape glides LP → bandpass → highpass → notch → back to LP, driven by a free-running (non-retriggered) LFO at 20–80% depth, optionally followed by a static classic low-pass, with LFO2 on cutoff and a little per-note random on the morph — a dedicated filter-shape morph recipe, distinct from parallel-filter chains, dual-path stereo spread and filter-flavor (ladder/diode/comb) choice.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "morph-filter",
+        "filter-type-morph",
+        "lfo",
+        "pad",
+        "random-mod",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://morph-filter-lp-bp-hp-notch-lfo-cycle"
+    },
+    {
+      "id": "resonant-filter-sample-rate-reduction-talking-formant",
+      "name": "Talking/vocal formant voice from a resonant filter into sample-rate reduction (sweet-spot aliasing formants)",
+      "goal": "Create a talking, vowel-like voice without a formant filter: send a harmonically rich oscillator through a filter with healthy resonance and then a sample-rate reducer, find the sweet spots where aliasing creates formants, then animate it with a tempo-synced LFO on cutoff whose rate multiplier is stepped by a sequencer plus slow random modulation of the reduction amount, and send only content above ~1.5 kHz to a delay — a formant-voice delta that differs from formant-filter / spectral-vocode skills.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "formant",
+        "vocal",
+        "sample-rate-reduction",
+        "bitcrush",
+        "aliasing",
+        "resonance",
+        "modular",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://resonant-filter-sample-rate-reduction-talking-formant"
+    },
+    {
+      "id": "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+      "name": "Sample-and-hold / random-glide LFO textures: random steps on pitch, wave position and filter, random glide squelch, user-drawn step LFO",
+      "goal": "Use a random-hold (sample-and-hold) LFO as a sound-design engine: random stepped pitch on a saw (sci-fi computer with reverb/delay), the same LFO on wave/wavetable tuning and filter cutoff/resonance, a random-glide shape with legato + glide for squelchy psy-style lines, mod-wheel-scaled S&H on volume, and a user-defined 8-step (steps or lines) LFO as a repeatable pseudo-S&H for bass/leads — then bounce and chop the audio into SFX. Delta beyond general LFO routing and random pitch drift in pad skills.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "sample-and-hold",
+        "random-lfo",
+        "glide",
+        "sci-fi",
+        "texture",
+        "resample",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://sample-hold-random-lfo-pitch-wave-filter-glide-textures"
+    },
+    {
+      "id": "synthesized-noise-impact-tail-lfo-shaped",
+      "name": "Synthesize a cinematic hit tail from white noise (LFO-shaped level, low boost, shared-LFO drive, Haas stereo, dark reverb)",
+      "goal": "Give an existing cinematic hit (pre-wash + sub + punch layers) body and a realistic reverb-like tail using only a white-noise generator: one LFO (or amp envelope) shapes the noise level, the same LFO drives distortion amount and a multiband compressor's mix/high band, heavy low boost and high cut make it sound like the hit's own tail, a 0-feedback single-side short delay makes it stereo, and a high-cut reverb blends it — a synthesized noise tail, not sample layering, braam, sub-drop, whoosh or downer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "impact",
+        "hit-tail",
+        "noise",
+        "sound-design",
+        "stereo-delay",
+        "multiband",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://synthesized-noise-impact-tail-lfo-shaped"
+    },
+    {
+      "id": "triple-bandpass-bank-unsynced-lfo-pad",
+      "name": "Three-band parallel bandpass filter-bank pad with offset, unsynced cutoff LFOs",
+      "goal": "Build a pad from bandpass filters instead of low-pass: saw (+ octave-down second osc) into three parallel resonant bandpass filters set low / mid / high, each mixed to the output, each cutoff moved by a slow LFO deliberately offset in phase/value so the three bands never move in sync, then slow-attack pad envelope, ~7-voice unison, chorus and long reverb — a filter-bank pad distinct from parallel rhythmic filter chains and single-bandpass WT pads.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "bandpass",
+        "filter-bank",
+        "pad",
+        "lfo",
+        "unison",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://triple-bandpass-bank-unsynced-lfo-pad"
+    },
+    {
+      "id": "tuned-filtered-delay-resonator-insert-bipolar-feedback",
+      "name": "Filtered feedback-delay resonator: bipolar feedback, swappable loop filter type, dry mute, insert on existing sounds",
+      "goal": "Turn a single filtered feedback delay into a playable 'renegade' Karplus-Strong voice and a resonator insert: impulse (noise burst or fast sine sweep, no loop) into a ~1–24 ms delay with feedback limited to ±99% (negative = hollow/odd-harmonic, positive = brighter), macro the in-loop filter type (LP/HP/BP/notch, with resonance on BP/notch) and cutoff as timbre controls, mute the dry click, map keys inversely onto delay time (long = low), then reuse the same delay as a metallic-body resonator on basses/pads — the delta beyond our key-tracked KS pluck skill is bipolar feedback polarity, loop-filter-type morphing, dry-mute and the resonator-insert use.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "karplus-strong",
+        "delay",
+        "resonator",
+        "feedback",
+        "comb",
+        "filter",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://tuned-filtered-delay-resonator-insert-bipolar-feedback"
+    },
+    {
+      "id": "pwm-80s-string-pad-free-running-lfo-detune",
+      "name": "80s PWM string pad: pulse wave with free-running (seconds-based) LFO on pulse width, slight osc-2 detune, slow attack/release, static filter",
+      "goal": "Build a classic 1980s string pad from an init patch: switch the oscillator from saw to pulse, modulate pulse width from an LFO set in seconds (free-running, ~0.7, not tempo-synced so the ensemble rate never changes with song tempo), blend a second oscillator ever so slightly detuned, low-pass to remove the very high end with the filter envelope and other filter mod sources switched off, slow fade-in attack and long release — a dedicated PWM string pad distinct from our PW drone and unison string-section skills.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pwm",
+        "pulse-width",
+        "string-pad",
+        "pad",
+        "lfo",
+        "detune",
+        "80s",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://pwm-80s-string-pad-free-running-lfo-detune"
+    },
+    {
+      "id": "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+      "name": "Buchla 291-style morphing bandpass: 6-pole bandpass with two clocked step sequencers (frequency and bandwidth) as filter snapshots, wet/dry crossfader",
+      "goal": "Build a free West-Coast-style morphing filter: a steep 6-pole bandpass (bandwidth instead of resonance) fed a harmonically rich complex oscillator, with two clocked, randomized 8-step sequencers — one on frequency (v/oct, ±10 V) and one on bandwidth (0–10 V) — so each clock step jumps to a new 'filter snapshot', blended with the dry signal on a crossfader like an aux, plus optional LFO on the main frequency; copy the voice for a triple morphing filter.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "bandpass",
+        "buchla",
+        "west-coast",
+        "sequencer",
+        "filter-snapshot",
+        "morph",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph"
+    },
+    {
+      "id": "reverb-freeze-print-seamless-loop-atmos-layer",
+      "name": "Reverb-freeze atmosphere print: freeze a 100%-wet reverb of a synth phrase, record it to audio, loop it seamlessly with overlapping tail, bus and process as an atmos layer",
+      "goal": "Create a background atmosphere layer from any melodic synth part: send it to a 100%-wet, low-cut, high-diffusion/large-size/long-decay reverb with a freeze/hold function, engage freeze while the phrase plays, record the frozen output via a group bus onto a new audio track, then EQ it, add sidechain-style volume ducking and a second ~5–6 s reverb so the loop point is masked, duplicate and overlap the clips with a short end fade for a click-free endless loop, and group the layers into an atmos bus — optionally printing separate closed-filter and open-filter freezes to follow the arrangement.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "reverb-freeze",
+        "freeze",
+        "atmosphere",
+        "ambience",
+        "print",
+        "loop",
+        "trance",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://reverb-freeze-print-seamless-loop-atmos-layer"
+    },
+    {
+      "id": "distorted-delay-return-bandlimited-send-throws",
+      "name": "Distorted-delay return: drive → ping-pong delay on a 100%-wet send, both band-limited to high mids, return pre-attenuated, played by riding the send",
+      "goal": "Add crunchy, wide echo throws to a lead/pluck without mud or volume spikes: on a send/return insert drive then ping-pong delay, band-limit both to the high mids so lows aren't delayed, feedback ~56%, both 100% wet; dial drive/tone at maximum send, then pull the return down ~−6 dB as a safety ceiling, and perform/draw send-level automation so only chosen notes throw distorted echoes — the delta vs our ping-pong delay skill is drive-before-delay on a return and send-throw performance.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "delay",
+        "distortion",
+        "ping-pong",
+        "send-return",
+        "automation",
+        "throws",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://distorted-delay-return-bandlimited-send-throws"
+    },
+    {
+      "id": "wavefolded-lfo-slew-filter-wobble",
+      "name": "Wavefolded LFO wobble: fold a sine LFO for extra peaks/valleys, then slew-limit it before filter cutoff",
+      "goal": "Make complex but smooth filter wobbles by running a plain sine LFO through a wavefolder (fold amount, symmetry, fold shape add peaks and valleys) before it reaches filter cutoff, then put a slew limiter after the folder so the folded modulation is less jumpy — a modulation-shaping recipe distinct from audio-rate wavefolding.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "wavefolder",
+        "lfo",
+        "slew",
+        "modulation-shaping",
+        "filter",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://wavefolded-lfo-slew-filter-wobble"
+    },
+    {
+      "id": "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+      "name": "Four-layer wave-sequenced cinematic pad: crossfaded seconds-based wave sequence, released keys layer, LFO-rate-modulated analog layer, tempo-locked rhythmic step layer with shape/ratchet/probability",
+      "goal": "Build an evolving cinematic pad from four complementary layers: (1) a smooth wave sequence that crossfades between several string-like sources at seconds-based step times (~1 s) with slow attack/release, compression, tape delay and reverb; (2) a plain keys/piano layer with long release, gentle velocity-sensitive filter envelope and its own delay; (3) a synthetic layer sequencing between two different saw sources through a filter envelope, with a free-running LFO whose rate is itself modulated by a second slow free-running LFO (plus a touch of pitch deviation and panning from that LFO); (4) a tempo-locked (quarter-note) step layer with crossfade off, using saw-down/triangle step shapes on cutoff, double/triple ratchets at reduced probability and a tempo-synced filter LFO — then balance layers and put the busiest one on a macro.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "wave-sequence",
+        "layering",
+        "pad",
+        "lfo",
+        "step-sequencer",
+        "ratchet",
+        "probability",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+    },
+    {
+      "id": "granular-buffer-core-position-density-freeze-feedback-modes",
+      "name": "Granular buffer core from the ground up: grain size/shape/pitch, regular vs random density, triggered grains as a voice, position delay, freeze scrubbing, partial re-freeze, random pan, two feedback modes",
+      "goal": "Understand and drive a buffer-based granular processor (the kind we need as a Web Audio module) with reverb and feedback turned down first: grains are tens-of-ms-to-1-s micro-samples plucked from a rolling 1–8 s input buffer; set size, shape (gate → triangle → Hann for overlap), pitch; density from noon (none) toward regular spacing one way and random spacing the other, or fire grains from a trigger with sequenced pitch to make a playable voice; use position as a buffer read point (= delay, newest at one end), freeze to scrub inside captured audio, gate the freeze with semi-random gates to partially overwrite and blend the buffer, mind lo-fi buffer modes (low sample rate → low-pass before input; mu-law 8-bit → keep input mid-level), random L/R grain pan for mono→stereo, and know that feedback is true input feedback when live but a separate delay/all-pass diffuser when frozen.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "freeze",
+        "buffer",
+        "density",
+        "grain-window",
+        "feedback",
+        "stereo",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://granular-buffer-core-position-density-freeze-feedback-modes"
+    },
+    {
+      "id": "frozen-granular-buffer-as-playable-wavetable-voice",
+      "name": "Frozen granular buffer as a playable 'wavetable' voice: capture an evolving sound, freeze, scan time position, sequence pitch via v/oct for overlapping grain polyphony, random-modulate time/size",
+      "goal": "Turn a granular processor's freeze into an instrument: capture an evolving sound into the buffer (lower-quality mode for ~10 s stereo / 20 s mono), freeze it, trigger seeds from gates, scan the time/position control through the capture like a homemade wavetable, sequence the frozen audio's pitch via v/oct so overlapping grains create a polyphonic illusion, use built-in random modulators on time and grain size, triangle grain window, reverb/delay, and for dark textures pitch the frozen capture down with high density and heavy reverb — the delta vs our granular-stack-freeze skill is pitched, sequenced playback of the frozen buffer.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "freeze",
+        "wavetable",
+        "v-oct",
+        "texture",
+        "drone",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://frozen-granular-buffer-as-playable-wavetable-voice"
+    },
+    {
+      "id": "complex-oscillator-cross-fm-follow-sync-fold-voice",
+      "name": "Complex-oscillator voice: bidirectional cross-FM, sync + pitch-follow slew between two VCOs, osc-modulated wavefolder into an S&H-swept self-resonant filter",
+      "goal": "Patch a West-Coast complex-oscillator voice from two VCOs: hard-wire exponential FM in both directions (osc1→osc2 and osc2→osc1) and dial sweet spots with both active, use soft/hard sync on osc1, add a 'follow' (osc1 slews to track osc2's v/oct at a set follow rate) for gliding harmonies, take osc2 through a wavefolder whose shape/angle are modulated by osc1 (mod bus), then split outputs: saw → multi-filter + chorus as bass, square → arpeggio with tiny vibrato into linear FM, folded output → filter at full resonance swept by sample-and-hold, into a clocked stereo delay.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "complex-oscillator",
+        "fm",
+        "cross-modulation",
+        "sync",
+        "wavefolder",
+        "sample-and-hold",
+        "west-coast",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://complex-oscillator-cross-fm-follow-sync-fold-voice"
+    },
+    {
+      "id": "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+      "name": "Evolving cinematic drone: random-modulated LFO rates on WT position and two parallel, opposite-panned filters, plus a randomized granular sample layer and FX chain",
+      "goal": "Build a one-key evolving cinematic drone where nothing repeats: a wavetable oscillator whose position is swept by a very slow free-running LFO whose RATE is itself nudged by a slow smooth random modulator (small amount, ~0.07), super-unison (~2.4 detune), 1 s positive-curve attack / ~4 s decay / lower sustain / 2 s release, filter 1 (resonance, keytrack, drive, filter envelope, tiny random LFO on cutoff) and a parallel 12 dB MS-20-style filter 2 driven by a second slow LFO with its own random rate modulation (~0.13), the two filters panned ~40% left/right; add a granular sample engine (triangle grains, randomized density/size/volume/pitch, LFO-scanned start position) and a touch of white noise into both filters; FX: shimmer → ping-pong tape echo (dotted 1/8) → gentle multiband compression on lows/highs, plus reverb → soft tape distortion → second reverb, mod wheel to drive.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drone",
+        "wavetable",
+        "random-modulation",
+        "lfo-rate",
+        "parallel-filters",
+        "granular",
+        "shimmer",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer"
+    },
+    {
+      "id": "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+      "name": "Three-pillar cinematic drone (layering, movement, FX): wavetable VCO pair + self-feedback delay loop + granular layer, effects after filters with master low-cut as tension control",
+      "goal": "Build a cinematic drone from three layers and three pillars: (1) a wavetable VCO pair (second one octave down on a slowly volume-modulated VCA) through a low-pass with slow LFO on table position; (2) a self-oscillating feedback loop from a granular/delay processor with no input (feedback raised until it sings, any re-patched input attenuated) through its own resonant low-pass; (3) a granular layer recording 2–3 random sources, with intensity, short grain length for lo-fi, quantized pitch randomization, follow/auto-scan, overdub, S&H choosing layers and an LFO on grain length — all summed through a master filter BEFORE a shimmer reverb so resonance in the low band excites the reverb, using the filter's low cut/cutoff as the scene's tension control (more highs = tension, more lows = suspense).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drone",
+        "wavetable",
+        "feedback-loop",
+        "granular",
+        "shimmer",
+        "filter-before-reverb",
+        "tension",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer"
+    },
+    {
+      "id": "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+      "name": "One-knob reverb → drone instrument: macro range 0–99 = wet/dry, 100–110 = muted dead zone, 110–127 = freeze + overdub drone with LFO speed, plus LFO-modulated EQ/width, unsynced auto-filter, limiter and randomizable algorithm",
+      "goal": "Wrap an algorithmic reverb in a macro rack that doubles as an ambient drone generator: one 'drone' macro maps wet/dry over its lower range, a 100–110 dead zone that mutes the rack (utility gain/off) to avoid the loud boom when leaving freeze, and from 110 up engages freeze-with-overdub so new notes add into the held reverb while the same macro sets a jittered, shaped LFO from fastest (at 110) to ~0.1 Hz (at the top); that LFO modulates mid-EQ frequency (+30), mid gain (−25), low edge (+15), high edge (−20) and stereo width (+15); a parallel-moving auto filter (~1.5 kHz, 10% res, ~5% drive, its own time-mode LFO at 10%) stays out of sync; a limiter guards overdub build-up; other reverb parameters (algorithm, decay, size, per-algorithm params) are randomizable, EQ/pre-delay/drone excluded, and good results saved as variations.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "reverb-freeze",
+        "drone",
+        "macro",
+        "overdub",
+        "lfo",
+        "randomize",
+        "ambient",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://single-macro-reverb-mix-deadzone-freeze-overdub-drone"
+    },
+    {
+      "id": "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+      "name": "Parallel FX network: same input to up to three effects, heavy drive alongside clean delay, phase-flip a loop to cancel its dry and keep only wet, per-loop EQ/levels, effects inside the delay loop",
+      "goal": "Turn a serial chain into a parallel effects network for synth/pad/lead layers: feed the same dry input to up to three effect loops and sum them (so a high-gain drive can growl in the background while a delay stays clean), use a per-loop phase invert to cancel the dry component of an effect without a wet-only mode (inverted dry + summed dry ≈ wet only), check for effects that already invert phase (chorus) against the dry, balance with per-loop EQ, send/return levels and master, and place an effect inside a delay's feedback/insert loop so repeats get processed — the portable parallel-distortion wet/dry recipe that was missing from the library.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "parallel-processing",
+        "distortion",
+        "delay",
+        "phase",
+        "wet-dry",
+        "fx-routing",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+    },
+    {
+      "id": "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+      "name": "Nested multi-notch phaser techniques for pads: grouped notches (groups × notches-per-group), pinch spacing, slow pinch 'breathing', stepped cutoff wah→flanger, scale-quantized random cutoff, slow triangle-swept full-depth bed",
+      "goal": "Use a dense, nested phaser (notches arranged in up to ~6 groups × ~11 notches, one cutoff sliding all of them, resonance = notch width, depth = intensity, pinch = squeeze/spread within each group) as a cinematic pad mover: metallic shimmer layer (4 groups, 9 notches, depth ~82, raise pinch), inside-out 'tubular' breathing (pinch modulated by a slow quarter-note-synced LFO, depth ~63, try 2 vs 4 groups), static 'radio' sculpt (1 group, 1 notch, depth ~72), 1/16 stepped cutoff that turns from wah (1 notch) into flanger-like (7–9 notches) with glide, formant-like vowel push by slowly lowering cutoff (4/7, depth 65, low resonance), scale-quantized random cutoff (1/16, minor pentatonic, ~7 octave range) that stays in tune, and a slow breathing bed (6 groups, 11 notches, depth 100%, triangle sweep with ~10% glide).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "phaser",
+        "allpass",
+        "notch",
+        "pad",
+        "modulation",
+        "scale-quantize",
+        "shimmer",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random"
+    },
+    {
+      "id": "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+      "name": "Live rolling-buffer granular processor with per-grain behaviour modes: interval 'mosaic' clouds, per-grain pitch glide, reverse+wow smear, ghost-grain bloom, LFO tide, fixed-position constellation patterns and orbiting read head",
+      "goal": "Turn a constantly recording one-bar buffer into a real-time granular effect for pads, keys, vocals and guitar (insert with dry/wet or 100% wet send). It uses the standard grain controls (size, density, spray around the playhead, pitch in perfect-fifth steps, jitter, spread, stereo scatter, reverse chance, top-end smoothing), a tempo-synced grain trigger/size option, a quantised or auto-moving playhead, and a library of grain-scheduling behaviours a Web Audio granulator can implement: mosaic (grains pitched into chordal interval sets: fifths/major/minor/discordant), glide (each grain sweeps up in pitch over its own length with a curve), reverie (all grains reversed with tape-style wow), bloom (each grain spawns a later, quieter, slightly detuned ghost grain), tide (a global LFO swells and recedes playback rate), stars (grains drawn from fixed buffer positions in forward/reverse/pendulum/random patterns, looping each bar) and orbit (grains circling the write head with width and 'slop'). Delta vs our granular-buffer-core and frozen-buffer skills: live write/read buffer and the per-grain behaviour modes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "real-time",
+        "ring-buffer",
+        "grain-modes",
+        "pitch-shift",
+        "reverse",
+        "pad",
+        "texture",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide"
+    },
+    {
+      "id": "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+      "name": "Dark hybrid vocal pad: choir-like wavetable plus an octave-up choir sample FM'd in (~34%), with sub and a little noise. Lows/mids are low-passed while the natural sample keeps the highs, a subtle LFO notch moves the mids, and one slow rising ramp drives the FX",
+      "goal": "Build a dark, haunting vocal pad for intros, breakdowns or tension layers by blending a real choir sample with synthetic layers that sound vocal. Osc A: a choir-type wavetable with chorus-like unison and its position moved by a single slow, rising ramp (one main movement). Osc B: a choir multisample an octave up with light tube saturation, frequency-modulating A at ~34% for grit. Add a default sub (choir has little sub) and very low white noise (or hum) for full-spectrum air. Route A + sub through a low-pass, but keep B (natural) out of it so the high end comes from the real voice. Then all go into filter 2, a subtle notch (~18%) whose amount and cutoff move on the LFO for mid-range expression. FX: a blended, very wide frequency-shifter/blur stereo layer (mix ~half), dimension ~6%, hyper-chorus automated up to ~32% at the top of the ramp, ping-pong delay ~10–11%, distortion only above ~300 Hz, a little comb, reverb ~10%, then a high-end presence boost. Delta vs our pad skills: natural-highs / synthetic-lows routing and the single-ramp FX bloom on a vocal pad.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "vocal-pad",
+        "choir",
+        "hybrid",
+        "fm",
+        "notch",
+        "pad",
+        "dark",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx"
+    },
+    {
+      "id": "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+      "name": "Audio-rate wavefolder from scratch: reflect the signal between ±1 (triangle fold) or use a sine fold sin(x·π/2) under up to ~50 dB of input gain, understand where aliasing comes from, choose sources that fold well, and build a small S&H-gain folded wavetable synth",
+      "goal": "Implement and use a true wavefolder rather than a clipper. Drive the signal with large input gain (sweep 0 to ~50 dB) and fold every excursion back between the upper and lower full-scale bounds, like two parallel mirrors. Do not reflect off the middle as some bitcrusher 'fold' modes do. Choose between (a) a triangle-shaped transfer function, which leaves the signal untouched until it exceeds full scale but aliases harshly, and (b) a sine fold y = sin(x·π/2), which colours slightly from the start but aliases far less at high gain. Feed it sines (rich, musical), not saws (alias and wrap), white noise (no audible change) or full guitar (harsh inharmonic aliasing); drums work around +30 dB. Turn it into a folded wavetable voice: a 512-sample single-cycle table at 48 kHz (93.75 Hz), phase reset so both ends sit at zero, sample-and-hold random gain 8× per second, a random MIDI note on every tenth gain change, and the phase ramp as a crude decay envelope. This fills our audio-rate wavefolder gap, beyond the wavefolded-LFO and complex-osc fold skills.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "wavefolder",
+        "wavefolding",
+        "waveshaping",
+        "aliasing",
+        "west-coast",
+        "dsp",
+        "pure-data",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth"
+    },
+    {
+      "id": "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+      "name": "Effects-only melodic instrument: crackle/noise source → smoothed-random filter → ping-pong feedback delay → spectral harmonic resonator (note, decay, harmonic count, pitch mod) → 'smudge' lo-fi/unison macro → reverb → limiter",
+      "goal": "Make a playable wind-chime / abstract atmosphere instrument from effects only. Generate vinyl-style crackle (only its density is mapped), or feed any external audio (drums, vocals). Filter it with a resampling-type filter whose cutoff is moved by a sample-and-hold LFO smoothed 100% (random glides), with ~10% drive. Multiply it with a ping-pong delay (6/16, 5/16, down to triplets) at high feedback. Excite a harmonic spectral resonator in note mode, using the granular engine with input quantised, unison 2 and low-damp fixed at 15%. Map fundamental note, decay (blips vs pads), number of harmonics (minimum 6; more = brighter and higher, with high-damp tied to the same macro) and pitch-mod amount (up to 1 semitone) and rate. A 'smudge' macro raises resonator unison spread together with bit/sample-rate reduction (0 = 18 kHz/16-bit, i.e. off). Finish with reverb (size 100, diffusion-network filter on) on time + amount macros, a limiter, macro snapshots and randomisation that excludes note, input level and reverb. Delta vs our click-train comb texture: noise conditioning chain + harmonic resonator macro design.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "resonator",
+        "spectral",
+        "noise",
+        "wind-chimes",
+        "delay",
+        "lofi",
+        "macro-rack",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator"
+    },
+    {
+      "id": "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+      "name": "Glitchy micro-loop buffer for ambient textures: freeze-and-scan buffer with segment length, pitch that cascades through feedback, temporary pitch from sample-rate steps, unlinked L/R (+12 / −12 st with cross feedback) and binary-random LFOs toggling freeze and reverse per side",
+      "goal": "Recreate boutique 'micro-looper' pedal textures with one buffer-delay device. A delay whose position = delay time, feedback = repeats, and segment = how much of the capture plays, plus reverse and a hold/freeze that captures the buffer so position scans it. Add random start position (plus an LFO), a short range for finer control, pitch shift (an octave or a fifth; it cascades up with every feedback pass, so use the high-cut), sample-rate steps that create temporary pitch drops and crunch, vibrato, and a low/high-cut band-pass. Unlink L and R for independent positions, segments, pitch and LFOs: L +12 st, R −12 st with cross feedback. Then automate with binary (random on/off) LFOs at unequal rates on freeze L/R and on reverse L/R, plus a random LFO stepping the sample-rate/bandwidth, and optionally a hybrid reverb. Lower dry/wet for a background whisper. Delta vs our granular-freeze, reverb-freeze and shimmer skills: per-channel random binary freeze/reverse and octave-split cross feedback.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "micro-loop",
+        "buffer",
+        "freeze",
+        "glitch",
+        "pitch-shift",
+        "stereo",
+        "random-lfo",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback"
+    },
+    {
+      "id": "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+      "name": "Scale-locked high-end atmosphere layer: sporadic random note 'sprays' (sine-like and brighter 'glass' voices) above ~3 kHz with a gravity/rate control, plus pitch-locked air and dust noise layers on random-drift LFO levels and a long reverb",
+      "goal": "Fill the empty 3 kHz–20 kHz zone of an ambient track with musical, pitch-locked detail instead of generic noise. Lock everything to the track's key and scale (e.g. B minor pentatonic). Generate sporadic random notes from two voices on different patterns: a sine-like 'spray' and a buzzier, brighter 'glass' with tone controls. Set note density with a gravity/rate control, free or tempo-synced from 1/16 up to 16 bars. Add an 'air' white-noise layer and a 'dust' blown-sand noise layer, both of which can be pitch-locked so they take on tonality: air follows spray's pattern and dust follows glass. Move each layer's level with slow LFOs (including smooth random drift). Send it all to a big reverb (size, decay, tone, mix, pre-delay, diffusion, modulation), limit the output, and optionally feed note choices from a slow generative MIDI source. Check the result on a spectrum analyser. This is a generative high-band layer, not a pad or riser.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "high-end",
+        "ambient",
+        "generative",
+        "scale-lock",
+        "noise",
+        "chimes",
+        "reverb",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+    },
+    {
+      "id": "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+      "name": "Mono-safe width tricks: a 100%-wet short room IR as a stealth widener with width trim and gain make-up, a drawn and smoothed auto-pan rhythm, and Haas kept ≤15 ms split across bands tilted in opposite directions",
+      "goal": "Widen one headline element so it still works in mono. (1) Stealth IR widener: convolution with a short, thin-room impulse at 100% wet and decay down to ~20% so there is no audible tail. It widens and re-colours the chords. Because width makes the part quieter in mono, trim stereo width to ~65% and add ~+6.5 dB to match levels instead of lowering the mix. (2) Rhythmic auto-pan: start ~50% amount, then draw a stepped pan curve that fits the arp, round it with smoothing, optionally switch to unsynced Hz set by ear, and add a touch of multiband treble reverb before the panner. (3) Haas without the lopsided, phasey mono sum: keep the L/R delay ≤15 ms, tune it while listening in mono, tilt a mid band to one side and the treble band to the other, then reduce width and re-level. Use it on incidental FX rather than lead vocals. Use width with restraint so the one wide element stands out. Delta vs our Haas/phase-offset, high-band pan and asymmetric L/R skills: the IR widener with width trim, drawn pan rhythm, and opposite-tilt multiband Haas.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "stereo-width",
+        "mono-compatible",
+        "convolution",
+        "auto-pan",
+        "haas",
+        "multiband",
+        "mixing",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas"
+    },
+    {
+      "id": "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
+      "name": "Three-layer pad/key with independent envelopes plus pitch-aware (key-ratio) ring mod, frequency shift and an octave-up granular 'cloud', each brought in by a macro whose maximum is capped",
+      "goal": "Build a pad-key from three layers with independent, deliberately different amp envelopes: a looping stereo synth sample with a very long attack, a sine with a slight attack that decays, and a second sustained sample with release. Add subtle colour stages that track the played note: a ring modulator set by ratio to the incoming frequency (×2) on all three layers, a frequency shifter on the sine layer (ratio mode adds a higher harmonic; Hz mode, e.g. 5 Hz, gives rhythmic sway), and a granular cloud an octave up mixed into layer A. Put each stage's mix on a macro capped so full macro travel reaches only a tamed maximum (ring ~60%, cloud ~50%, shift ~50%, FX wet ~0.25, inverted if needed). Add a main filter cutoff/resonance on two macros with full range, layer-volume macros (A+C vs B), more voices for long releases, gentle velocity and poly aftertouch. Delta vs our ring-mod bell/stab and three-layer complementary pad skills: key-ratio ring/shift as macro-capped 'richness' controls.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "layers",
+        "ring-mod",
+        "frequency-shifter",
+        "granular",
+        "macros",
+        "pad",
+        "key-tracking",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges"
+    },
+    {
+      "id": "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+      "name": "Endless ambient texture from one looping MIDI clip: seeded random notes in a gap-free scale, per-note chance below 50%, randomised velocity/humanise, slow sine pad, scale-degree fifth chording and stereo/granular/reverb chain",
+      "goal": "Make a single looping MIDI clip never sound the same twice. Generate seeded random notes locked to a scale without half steps (major pentatonic; Dorian also liked), in a mid register (pitch range ~2–3) with long durations. Then lower each note's play chance below 50% (or below 30% for sparse, many-voice clips) and randomise chance, velocity and timing deviation. Play a soft sine pad (~1 s attack, ~6 s release, so sparse notes overlap), add a scale-aware chord effect (scale degree +4 = fifth on every triggered note), then stereo doubling, a parallel echo, a stereo pitch-loop/micro-delay, granular delay (spray up, frequency down) and a big long reverb. For Polyrhythm Studio-style generative scheduling: probability per note, not a fixed sequence.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "generative",
+        "probability",
+        "midi",
+        "ambient",
+        "pentatonic",
+        "sine-pad",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://probability-gated-seeded-scale-loop-endless-ambient-sine-pad"
+    },
+    {
+      "id": "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+      "name": "Wavetable frames as an animated spectral EQ: each frame is a gain curve across the spectrum, with depth, floor, skew, smoothing, low-end bypass and per-channel time offset",
+      "goal": "Build a spectral 'auto-filter' that drives the whole frequency response from a wavetable: map each frame's shape onto the spectrum as a gain curve (peak/valley up to about ±12 dB at full depth), deepen only the cuts with a floor control, warp the frequency mapping with skew (negative = into lows, positive = highs), smooth sharp frames to avoid spectral ringing, bypass everything below a safe-bass frequency (up to 400 Hz), cycle frames forward/ping-pong/reverse/random at a free or tempo-synced rate (or step keyframes with a gate), and widen by feeding L and R the curve at different times. This is an effect on existing pads, keys, loops and strings. It differs from our spectral-warp vocoder and WT-scratch pad skills, which are oscillators/vocoders, not frame-driven EQ curves.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "spectral",
+        "fft",
+        "wavetable",
+        "eq",
+        "auto-filter",
+        "stereo-width",
+        "tempo-sync",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
+    },
+    {
+      "id": "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+      "name": "Build subtractive 'architectures' from operator pairs: six oscillators with their own envelopes, or three oscillator→own-filter blocks (LP / LP+sub / fixed-frequency HP) into a master bandpass, FM pairs into filters, and series HP→LP",
+      "goal": "Use a 6-operator engine (or any modular graph) as a configurable subtractive synth in two ways. (A) Six parallel carriers into one master filter, each with its own envelope (VCA before the filter). Layers: two HD saws an octave apart with detune and staggered attacks, a square with LFO-driven PWM, a bright saw with a sharp attack for transient bite, a triangle with width and self-feedback toward saw, and noise whose level is moved by an LFO. Then cutoff, envelope amount, resonance, slight LFO, key tracking, exciter, auto-pan and spring reverb. (B) Turn carriers into filters fed by their modulator to get three independent oscillator→filter blocks: MS-20-style LP with velocity on the envelope; LP with the filter's own sine underneath as a sub; HP switched from key-ratio to fixed frequency for strings, with LFO-driven PWM on the source. All three feed a master bandpass with its own envelope. Then feed FM pairs into the filters for glassy tops, and model classic voice layouts (two oscs in series through HP then LP). The delta vs our multi-envelope level-morph pad is per-oscillator filters, fixed vs key-ratio filter frequency, and FM-into-filter.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "subtractive",
+        "fm",
+        "filter",
+        "architecture",
+        "pwm",
+        "multi-filter",
+        "layering",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://operator-osc-filter-pairs-three-filters-into-master-fm-into-filter"
+    },
+    {
+      "id": "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+      "name": "Effects inside an FM operator chain: per-operator EQ/phase/delay/comb/drive/decimator/waveshaper/punch applied to the signal before it modulates or is heard, for delayed-modulator bells, noise-excited comb strings and punchy FM attacks",
+      "goal": "Treat each FM operator slot as an optional in-chain processor rather than a master effect, so the processed waveform goes on to modulate the next operator or is heard. Recipes: (1) a peak-EQ or phase (all-pass-like, with feedback) stage on a saw operator, with its frequency moved by mod wheel or LFO, for oscillator-level phasing; (2) a short delay with feedback on the modulator, which gives bells an inner 'chamber' echo when its ratio rises and its time drops, with a short envelope; (3) a comb resonator fed by a very short noise-burst operator, making a physical-model string, copied into three pairs (detuned, an octave up) and finished with chorus, delay and reverb as a 'virtual guitar'; (4) drive, decimator (bit/sample-rate reduction for early 8-bit wavetable tone), waveshaper and 'punch' on a modulator for aggressive FM attacks. Delta vs our KS-pluck, tuned-delay-resonator and FM ratio skills: placing these processors inside the modulation path.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "fm",
+        "operator",
+        "comb",
+        "physical-model",
+        "bell",
+        "delay",
+        "decimator",
+        "waveshaper",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string"
+    },
+    {
+      "id": "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+      "name": "Generative 'noodle' wind with no MIDI: one noise source into three parallel filters (slow-swept LP, high resonant BP whistle, mid SVF BP), slightly different free-running sine LFOs with light LFO cross-mod, and an LFO-modulated three-VCA mixer",
+      "goal": "Patch a self-running wind ambience bed that moves without MIDI. Split one white-noise source into three filters: a low-pass swept by a very slow sine LFO (dark rumble that brightens and darkens); a band-pass set very high with resonance pulled well up but short of self-oscillation (resonant whistle); and a mellower state-variable band-pass in the middle. Give each filter its own very slow free-running sine LFO at slightly different rates, and let one LFO lightly modulate another. Mix through a three-channel mixer whose per-channel VCA inputs are driven by three more slow sine LFOs, centred so the layers drift in and out without ever disappearing. Finish with a bracket EQ to tame and a big wash reverb. For a generative noise layer under cinematic pads, this differs from our triple-bandpass pad, which filters a played saw, and from the recorded-whoosh skill.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "noise",
+        "wind",
+        "generative",
+        "ambience",
+        "bandpass",
+        "lfo",
+        "vca",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix"
+    },
+    {
+      "id": "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+      "name": "Nested modulation depth chain: velocity → envelope decay → LFO 2 amount → LFO 1 amount → filter cutoff, for touch-sensitive rhythmic filter motion",
+      "goal": "Chain modulators so that each one sets the depth of the next, the 'modulate the modulations' approach of modular synthesis, inside any synth mod matrix. A unipolar, tempo-synced sawtooth LFO 1 (16ths, phase-bent for snap) acts as a looping filter envelope on cutoff. LFO 1's amount is zeroed and handed to a unipolar square LFO 2 (quarter notes, then quarter-note triplets) so it gates LFO 1 rhythmically. LFO 2's amount is zeroed and handed to a spare envelope whose decay brings the whole motion in and out. That envelope's decay is zeroed and driven by velocity, so soft playing gives no motion and hard playing gives the full rhythmic filter. Finish with velocity also on filter depth, key tracking, a longer 'slow' envelope tail and velocity on release. Delta vs our mod-matrix routing skill: the four-degree nested chain where only the last LFO touches the sound.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "modulation",
+        "nested-modulation",
+        "lfo",
+        "velocity",
+        "mod-matrix",
+        "rhythmic-filter",
+        "modular",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff"
+    },
+    {
+      "id": "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+      "name": "Random-modulator soundscape loop: resampled-chord drone with one random modulator on each voice's start position and pan, randomly shortened arp-driven drums, a randomly retimed delay with a +12 st pitch shifter and stepped grain size in its feedback, and a step-scanned vocal sampler",
+      "goal": "Keep a slow (88 BPM) textural loop alive using random and step modulators rather than new notes. (1) Drone: resample a plucked chord into a sampler, set it up to sustain, and have one random modulator (no smoothing; slight clicks are accepted as character) move both sample start/playhead and pan, so each voice starts somewhere different and sits elsewhere in the stereo field. Run a delay in parallel with a convolution reverb. (2) Drums: half-note mallet/brush hits from an arpeggiator whose step count is randomly shortened (16 down to a minimum of 4 steps), so the loop never repeats the same way. Send it to a delay whose time in beats is randomly modulated with smoothing (about 1–8 beats), with a pitch shifter at +12 semitones inside the feedback and a step modulator on its grain size for metallic, sideways echoes. (3) Vocal: a vocal loop in a sampler driven by an 8-step transposing arp, a 16-step modulator choosing the playhead start each step, a band-pass with a slow LFO on frequency, random pan per note, a distortion macro stepped through 16 values, then delay with reverse blur. Delta vs our shimmer and granular skills: random/step modulation of sampler playheads and delay timing as the generative engine.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "generative",
+        "random-modulation",
+        "sampler",
+        "delay",
+        "pitch-shift",
+        "soundscape",
+        "texture",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback"
+    },
+    {
+      "id": "dual-wt-interval-locked-per-osc-position-level-animators",
+      "name": "Dual wavetable voice with an interval-locked tune/detune pair and a per-oscillator 'animator' on position and level: Reese bass, phasing-in harmony, S&H atmos pad and level-ramp pluck recipes",
+      "goal": "Patch a two-wavetable-oscillator voice in which tune transposes both oscillators while detune holds osc 2's interval (fifth, fourth, compound fifth, or a few cents). Each oscillator has its own modulator on WT position and on level (bipolar depth from the current position; one-shot envelope shapes or looping, tempo-synced LFO/S&H/random). Use it for four portable recipes: (1) a Reese bass with ~15 cents detune and opposite-direction position modulation; (2) a chord lead where osc 2 at −5 st fades in on a slow ramp-up level shape and brightens as it enters; (3) an atmospheric pad with tempo-synced sample-and-hold on both positions at different speeds, osc 2 at +19 st, and modulated S&H speed for generative bursts; (4) a pluck made from a looping ramp-down level shape. Delta vs our wavetable-crossfade and opposite-vector pads: interval locking plus per-osc level animators as the envelope.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "wavetable",
+        "dual-oscillator",
+        "detune",
+        "reese",
+        "sample-and-hold",
+        "pluck",
+        "pad",
+        "modulation",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dual-wt-interval-locked-per-osc-position-level-animators"
+    },
+    {
+      "id": "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
+      "name": "Physically modelled bowed string: key-tracked noise exciters into a 100%-wet key-tracked comb, MPE pressure on gain/resonance, MPE timbre fading in a 3rd-harmonic comb, and a three-comb instrument body that retunes cello to bass, viola or violin",
+      "goal": "Build a playable bowed-string voice from synthesis only (no bow sample): a quiet noise exciter feeds a positive comb filter with full key tracking, maximum resonance, 100% wet and cutoff at C4 so it plays in the right octave. MPE pressure (through a shaped response curve) raises exciter gain and lifts comb resonance from about 80 for a scratchy light touch. MPE timbre crossfades in a second key-tracked comb at G5 (third harmonic, resonance ~40%) only near the top of the Y range. A fixed three-comb body (centre a little below 100 Hz, offsets of almost an octave and nearly three octaves, feedback ~15%, tone to taste, pans centred) sets the instrument size. Tame exciter bleed by keeping noise strongest near the played pitch: two S&H-noise oscillators, one optimised for the high end (low cut, key track +10) and one for the low end (high cut, key track −10). Delta beyond our existing noise→resonator and Karplus-style skills: MPE expression mapping plus key-tracked exciter colour and a body comb trio.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "physical-modelling",
+        "bowed-string",
+        "comb-filter",
+        "mpe",
+        "noise-exciter",
+        "surge-xt",
+        "strings",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs"
+    },
+    {
+      "id": "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+      "name": "FM electric-keys 'resonant tines' patch built on the subtractive analogy: modulation index as cutoff with its own envelope, a 10:1 bell ratio, a third operator with a no-sustain envelope, three macros (index, decay, ratio spread) and mod-wheel vibrato, aftertouch tremolo and an LFO auto-panner",
+      "goal": "Design a playable FM keys/tines patch by treating FM depth (modulation index) like a filter cutoff. Start with two sine operators: slow modulator gives vibrato, then speed it up to audio rate to hear sidebands. A 1:1 ratio gives a saw-like full series; 2:1 shifts the spectrum (the presenter compares it to a square) and 10:1 gives the bell/tine. Shape the carrier with a multi-stage envelope (instant attack, short transient decay, sustain-like stage, release) and the modulator depth with its own envelope that starts rich and falls slightly. Add a third modulator operator with a fast-attack, no-sustain envelope, then build macros for index (brightness), decay (all falling-stage times) and modulator ratios (spread wide in opposite directions, a formant-like control). Finish with performance modulation (mod wheel → LFO vibrato from ~3.2 rate, aftertouch → VCA tremolo, a third controller → LFO panner) and a short delay plus bright light long reverb. More specific than generic FM bell skills: macro layout and expressive modulation for a keys patch.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "fm-synthesis",
+        "fm-keys",
+        "bell",
+        "tines",
+        "macros",
+        "modulation-index",
+        "mpe",
+        "aftertouch",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods"
+    },
+    {
+      "id": "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+      "name": "Turn a flat sustained drone into rolling shaker-style percussion: loop and crossfade a stable bar, re-envelope it into rhythmic hits with a transient-preserving time-stretch gate at a fast note rate, then low-cut, boost one tuned mid harmonic, layer an organic shaker texture, snap it with a transient shaper and add a short parallel bright room",
+      "goal": "Recycle a pad/drone into tuned percussion without a drum source. Pick the steadiest, least peaky bar of the drone, loop it with short crossfades to avoid clicks, consolidate, then use a transient-preserving warp/stretch mode with a fast transient rate (the presenter starts at a 1/60-type rate for shaker speed) and reduce the per-transient sustain/envelope so each grid step becomes a hit. Add a fade-in, consolidate again, high-pass the lows, boost the strongest mid harmonic so the hit is in key (the presenter's was G#), layer a shaker/tambourine texture (less hold, more attack, a little decay, slight pitch, denser), add a transient shaper (attack up, sustain way down), tidy with EQ and finish with a short, bright, no-pre-delay room in parallel (~22 ms, mixed under the dry).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "percussion",
+        "resampling",
+        "transient-shaper",
+        "texture-layer",
+        "drone",
+        "parallel-reverb",
+        "hybrid-score",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room"
+    },
+    {
+      "id": "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
+      "name": "Animate a static pad with a stepped 12-band stereo filterbank: assign groups of bands to sequencer patterns (offset ups vs a big down note), set a Q slope with wider low bands and narrower high bands, tame resonant peaks with mild drive plus smoothing compression, alternate bands L/R for width, and use per-band versus group random triggering",
+      "goal": "Turn a sustained pad into rhythmic, moving texture with a sequenced filterbank of 12 bands per side. Use each band's volume as an EQ to keep what works. Assign subsets of bands to a step sequencer pattern (first five bands, then three frequencies with an offset 'up' pattern, then the last bands as one big down note). Increase the Q globally to get pointed peaks but apply a slope so low bands stay wider and high bands narrower. Add a little drive and a negative 'pull' (compression-style) setting to smooth peaks that blow up at high Q. Spread by sending alternate bands to left and right (sending the same band to both stays mono). Use random triggering per band ('S': each band triggers independently) or grouped ('A': grouped bands fire together) for subtle versus extreme motion. Distinct from our filter-spread and phaser skills: discrete stepped bandpass bank.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "filterbank",
+        "bandpass",
+        "step-sequencer",
+        "rhythmic-filter",
+        "stereo-width",
+        "pad-animation",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger"
+    },
+    {
+      "id": "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+      "name": "Scale-locked resonator bank as an instrument: up to 12 tuned resonator voices on a root and scale (e.g. D minor 9, 6 voices, octave 3), excited by a stereo noise burst or drums, with motion modes (wave, strum, arpeggio, swarm), feedback/decay/damping/spread/diffusion and gated live-key voicing",
+      "goal": "Use a bank of tuned resonators as a playable texture generator. Tune all voices to a root note and scale chord (example: root D, minor 9, 6 voices in octave 3) and pick a resonator model (string, bar, glass harmonica, bowl, membrane, bell, plate, tube; strings add position and brightness). Excite it with a short stereo white-noise burst (ADSR with no sustain, two steps), kicks, snares, hats, pads or piano. Animate which voices sound with a motion mode: wave (amplitude, per-voice frequency spread, phase, rate), strum (spread, curvature, direction up/down/alternate, alternate rate), arpeggio (rate, gate, up/down/up-down/random) or swarm (centre, cohesion, rate). Shape the tail with feedback, decay, damping, stereo spread and diffusion, plus vibrato, and switch to live keys or gated mode to set voices from held chords. More specific than our single harmonic-resonator and noise-crackle skills: a multi-voice scale bank with voice-motion sequencing.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "resonator",
+        "modal-synthesis",
+        "scale-lock",
+        "noise-exciter",
+        "strum",
+        "swarm",
+        "arpeggio",
+        "texture",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter"
+    },
+    {
+      "id": "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+      "name": "Hybrid-score 'sonic signature' chain for any source (orchestral rips, vocal phrases, synth presets, percussion loops, creature SFX): pitch/formant shift → heavy saturation → low-pass with a key-tuned resonant peak → EQ/compression → delay → reverb pushback, plus panning and LFO movement so the result blends behind an orchestra",
+      "goal": "Transform ordinary material into a unique hybrid-score sound with five tools: pitch shifting (example: +2 semitones with formant −12, or a −12 transpose of a vocal phrase, optionally a robot-type mode mixed in), heavy distortion/saturation (an aggressive mode cranked), filtering (low-pass to clear room for low instruments and cut analog top end, with a resonant peak tuned to the cue's key or around 500 Hz on percussion, before the reverb), then EQ/compression, delay and reverb that push the sound back into the orchestra's space instead of 'in your face'. Add movement (an LFO on filter frequency, an auto-panner with a mix control, subharmonic reinforcement on hits). Works on brass rips, woodwind rips, ethnic vocal phrases, preset 'hunt' results, retro drum loops and animal recordings. More specific than generic FX-chain skills: the orchestral-blend goal, the key-tuned peak and the pre-reverb low-pass.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "hybrid-score",
+        "orchestral",
+        "fx-chain",
+        "formant-shift",
+        "saturation",
+        "resonant-filter",
+        "reverb-pushback",
+        "sound-design",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback"
+    },
+    {
+      "id": "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+      "name": "Granular slicer workflow: map keys to grain position instead of pitch (key→transpose 0, key→position up) with glide between slices, lock grain size to tempo in ms, per-parameter variation and L/R pitch spread for an icy cloud, an envelope that morphs grain shape and size per note, scan + per-ear LFOs for glitch, and a square-LFO auto-recapture of live drums every two bars",
+      "goal": "Play any long recording (vocal, sound-design session, loop, live drums) as an ethereal slice instrument. Use three grain modes for different jobs: classic (overlapping, sustained), loop (non-overlapping, with reverse chance) and cloud (stacked grains, density). Set key→transpose to 0 and key→filter to 0, then turn key→position up so each key plays a different part of the file; enable mono + glide to glide between slices; smaller grains change position faster. Tune the pad version by checking the sample's pitch with a tuner. In cloud mode raise variation on grain size, small transposition (chorus) and volume, and add spread for different L/R pitch. Lock grain size to tempo by converting a note length to ms (a quarter note read as 408 ms). Remember transposition changes grain duration: 76.1 ms at 0 st becomes half at +12 st. Use the modulation envelope negatively on grain shape and size for plucky transients (decay ~1 s). Use scan (e.g. 0.25×) with LFOs (different per ear) on grain size and position for glitch, and auto-capture live drum input every two bars with a square, skewed LFO for generative texture. Delta vs our granular skills: key-to-position slicing with glide, tempo-ms grain lock and periodic self-recapture.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "granular",
+        "slicing",
+        "grain-position",
+        "tempo-sync",
+        "vocal-chops",
+        "generative",
+        "resampling",
+        "stereo",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture"
+    },
+    {
+      "id": "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
+      "name": "Cinematic ensemble string pad from noise-excited combs: two comb lanes (static vs pink noise, different comb flavours) with fast random pitch drift for a section feel, key-tracked low-pass so low notes stop sounding metallic, a smoothed saw layer and an EQ'd sine/FM low end, a low-boosting resonator, mod-wheel cutoff, velocity that shortens attack and release, a tiny strike pitch envelope and offset triangle 'bow' LFOs on comb tilt",
+      "goal": "Build a realistic, wide sustained string pad (not a solo bowed voice) on comb filters. Lane A: static noise with a slow attack and slow release into a comb whose feedback is raised until sharp, low-passed to take the edge off, with a fast random (non-synced) ramp LFO on fine detune so it behaves like many players. Lane B: pink noise (more warmth and body) into a different comb flavour, also detuned. Mix both lanes and control them through one filter with cutoff key-tracked (centre near middle E, about 64 in the middle) so higher keys stay bright and low keys are darker and less metallic; add a little comb distortion. Add body with a smoothed saw (curve filter in string range, doubled for width) and a sine/FM layer EQ'd to low end only. Global FX: subtle mod/diffusion (slow shape), reverb, an EQ resonator mode boosting lows on lane 2, light peak compression. Make it playable: mod wheel → cutoff, velocity → shorter attack and shorter release (never zero), a tiny curved pitch rise on strike applied to both comb pitches, and triangle LFOs at different second-based rates on comb tilt/flavour (not 'structure', which changes pitch). Distinct from today's MPE bowed-string skill: an ensemble pad with drift, dual-lane flavours and velocity/LFO articulation.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "string-pad",
+        "comb-filter",
+        "noise-exciter",
+        "ensemble",
+        "key-tracking",
+        "velocity",
+        "cinematic",
+        "zebra",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos"
+    },
+    {
+      "id": "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+      "name": "One-bar transition FX built on a single mod-envelope 'timeline': a rising curve with an end drop drives noise level, full left-to-right pan and a resonant driven filter; an octave-down detuned unison saw on its own amp; a second up-and-down triangle envelope on oscillator sync (~50%); multiband mid distortion; master delay then a sidechain-ducked reverb that blooms after the riser cuts",
+      "goal": "Design reusable section-transition risers in any synth with drawable envelopes. Choose the length first (usually one bar; half or two bars as needed) and draw a mod envelope from bottom at 0 to top at the bar end, then a steep drop to zero as a safeguard. Use it to raise noise from silence (depth sets loudness), pan from fully left to fully right (set pan hard left, modulate 100%), and open a bright filter with resonance and drive. Add a second voice: a saw an octave down with unison and detune on its own amp and FX bus so each target is controlled separately ('atomized'). Draw a second envelope as a triangle (up then down within the same bar) for oscillator sync (~50% depth). Modulate a multiband distortion's mid band with the timeline. Put tails on the master after distortion: delay with lows and highs cut, then reverb with decay below ~70% and sidechain ducking so the reverb opens up as the riser ends. Optional: stutter/glitch FX before the reverb, a master filter sweep, curve variants and bar-length macros. Distinct from our pitch-ramp and Shepard risers: a multi-target envelope timeline with a ducked tail.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "riser",
+        "transition",
+        "sound-fx",
+        "mod-envelope",
+        "automation",
+        "sidechain-reverb",
+        "oscillator-sync",
+        "cinematic",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+    },
+    {
+      "id": "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+      "name": "Spectral blur/freeze pad: capture incoming audio as spectral frames and morph frame-to-frame at tempo-synced blur rates (quarter notes, plus simultaneous triplet/dotted rates for polyrhythms) with a per-frame attack/decay envelope, pitch the blurred signal ±24 st (semitone-quantised), choose clicky vs lush modes, play frames forward/backward, freeze completely, and modulate with curves, cross-modulation and a kick-sidechained follower on dry/wet",
+      "goal": "Turn any input into lush pads or frozen textures with a spectral frame effect. The input is analysed into momentary spectral snapshots (frames, like video frames). Instead of playing them in order, the effect morphs from one frame to the next at a blur rate (e.g. one frame per quarter note); several blur rates can run at once, including triplets and dotted values, for blur polyrhythms. A per-playback envelope (attack/decay) makes the stepping audible or smooth. Pitch the blurred signal up/down to 24 semitones, quantised to exact semitones when needed. Pick an algorithm flavour: the default/rhythmic sound is harsh and clicky-metallic; lush/melodic washes it out. Set playback direction forward/backward and use freeze to stop morphing entirely. Modulate the envelope and pitch with drawn curves (invert/shift/skew/morph between curves), cross-modulate the first layer's LFO rate, and use a sidechained envelope follower (kick) to move dry/wet and curve amounts. Partly fills our open spectral (FFT) freeze-pad gap.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "spectral",
+        "freeze",
+        "blur",
+        "fft",
+        "pad",
+        "polyrhythm",
+        "pitch-shift",
+        "sidechain",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
     }
   ],
-  "updated_at": "2026-10-07T16:37:09+00:00",
+  "updated_at": "2026-10-16T16:31:12.462800+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "id": "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+  "name": "Spectral blur/freeze pad: capture incoming audio as spectral frames and morph frame-to-frame at tempo-synced blur rates (quarter notes, plus simultaneous triplet/dotted rates for polyrhythms) with a per-frame attack/decay envelope, pitch the blurred signal ±24 st (semitone-quantised), choose clicky vs lush modes, play frames forward/backward, freeze completely, and modulate with curves, cross-modulation and a kick-sidechained follower on dry/wet",
+  "goal": "Turn any input into lush pads or frozen textures with a spectral frame effect. The input is analysed into momentary spectral snapshots (frames, like video frames). Instead of playing them in order, the effect morphs from one frame to the next at a blur rate (e.g. one frame per quarter note); several blur rates can run at once, including triplets and dotted values, for blur polyrhythms. A per-playback envelope (attack/decay) makes the stepping audible or smooth. Pitch the blurred signal up/down to 24 semitones, quantised to exact semitones when needed. Pick an algorithm flavour: the default/rhythmic sound is harsh and clicky-metallic; lush/melodic washes it out. Set playback direction forward/backward and use freeze to stop morphing entirely. Modulate the envelope and pitch with drawn curves (invert/shift/skew/morph between curves), cross-modulate the first layer's LFO rate, and use a sidechained envelope follower (kick) to move dry/wet and curve amounts. Partly fills our open spectral (FFT) freeze-pad gap.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mllvToyambI",
+    "url": "https://www.youtube.com/watch?v=mllvToyambI",
+    "title": "Magic Blur - Overview and Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mllvToyambI/agent-skill-spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet.json",
+    "transcript_note": "Short product overview; procedure is spoken behaviour, not on-screen values."
+  },
+  "prerequisites": [
+    "Spectral blur/freeze effect, or Web Audio AudioWorklet STFT: capture FFT magnitude frames, interpolate between frames at the blur rate, resynthesise with randomised or held phase (implementation note)",
+    "Tempo source for blur rates; envelope follower with sidechain input"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Input audio (vocal, pad, loop)",
+      "required": true
+    },
+    {
+      "name": "blur_rates",
+      "type": "list",
+      "description": "Note values for frame morphing, e.g. 1/4, 1/4T, 1/8.",
+      "required": true
+    },
+    {
+      "name": "pitch_st",
+      "type": "number",
+      "description": "Pitch shift of the blurred signal, −24…+24",
+      "required": false
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "rhythmic (clicky) | melodic/lush | mixed",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "blurred_texture",
+      "type": "audio",
+      "description": "Lush pad or frozen texture derived from the input"
+    },
+    {
+      "name": "mod_setup",
+      "type": "table",
+      "description": "Curves, cross-mod and sidechain follower routings"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Spoken behaviour only: blur rate per note value, pitch ±24 st, quantised semitone toggle, rhythmic/melodic/mixed/lush modes, forward/backward, freeze. No numeric envelope times are given.",
+    "Default algorithm is harsh and clicky-metallic; use lush or melodic mode or a longer per-frame envelope for pads.",
+    "Product overview; affiliate/website CTAs dropped."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert the spectral blur on a source and set one blur rate (a quarter note: one frame morph per beat).",
+      "tool": "blur",
+      "expect": "Input becomes a stepping spectral smear"
+    },
+    {
+      "n": 2,
+      "action": "Adjust the per-playback envelope (attack/decay) to hear or hide the frame steps.",
+      "tool": "envelope",
+      "expect": "Choppy stepped frames vs smooth morphing"
+    },
+    {
+      "n": 3,
+      "action": "Add simultaneous blur rates including triplets and dotted notes for polyrhythmic blurring.",
+      "tool": "polyrhythm",
+      "expect": "Layered, shifting rhythmic smears"
+    },
+    {
+      "n": 4,
+      "action": "Pitch the blurred signal up or down (to ±24 st), enabling semitone quantisation for musical intervals.",
+      "tool": "pitch",
+      "expect": "Octave/fifth-shifted spectral pad"
+    },
+    {
+      "n": 5,
+      "action": "Choose the flavour: rhythmic (clicky metallic), melodic or lush (washed out), or mixed; set playback direction forward/backward.",
+      "tool": "mode",
+      "expect": "Pad-suitable lush texture or metallic rhythmic texture"
+    },
+    {
+      "n": 6,
+      "action": "Enable freeze to stop the frame morphing and sustain the captured spectrum.",
+      "tool": "freeze",
+      "expect": "A held, frozen spectral pad"
+    },
+    {
+      "n": 7,
+      "action": "Modulate envelope and pitch with drawn curves (randomise, invert, shift, skew, morph between up to four curves); cross-modulate the first layer's LFO rate; add an envelope follower in sidechain mode from the kick to move dry/wet and curve amounts.",
+      "tool": "modulation",
+      "expect": "Evolving soundscape that breathes with the drums"
+    }
+  ],
+  "verification": [
+    "With freeze on, the output stays sustained after the input stops.",
+    "Changing the blur rate from 1/4 to 1/8 doubles the frame-step rate.",
+    "With semitone quantisation on, the pitched output lands on exact semitone intervals (tuner check).",
+    "Kick hits audibly change the dry/wet balance when the sidechain follower is engaged."
+  ],
+  "tags": [
+    "spectral",
+    "freeze",
+    "blur",
+    "fft",
+    "pad",
+    "polyrhythm",
+    "pitch-shift",
+    "sidechain",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
+}

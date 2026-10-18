@@ -1,0 +1,179 @@
+{
+ "video_id": "L0IXE_whmso",
+ "started_at": "2026-10-13T16:34:46.749430+00:00",
+ "outcome": "COVERED",
+ "route": "auto-target-from-dub-track",
+ "language_code": "en-US",
+ "original_language": "es-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "L0IXE_whmso",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/L0IXE_whmso/graph.json",
+  "segments": 108,
+  "windows": 23,
+  "nodes": 34,
+  "edges": 49,
+  "nodes_by_type": {
+   "module": 7,
+   "param": 9,
+   "step": 10,
+   "concept": 5,
+   "tool": 1,
+   "value": 1,
+   "phrase": 1
+  },
+  "edges_by_type": {
+   "part-of": 10,
+   "mentions": 28,
+   "precedes": 9,
+   "sets": 1,
+   "affects": 1
+  },
+  "words": 758
+ },
+ "gaps": {
+  "video_id": "L0IXE_whmso",
+  "graph_nodes": 34,
+  "graph_edges": 49,
+  "terms_checked": 23,
+  "terms_covered": 22,
+  "gap_nodes": 1,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 2,
+  "gap_edges": 0,
+  "candidates": 0,
+  "kg": {
+   "videos": 92,
+   "nodes": 528,
+   "edges": 190,
+   "uncovered_nodes": 10,
+   "uncovered_edges": 39
+  },
+  "candidate_ids": [],
+  "decision": "COVERED",
+  "covered_verdict": {
+   "reasons": [
+    "procedure-level overlap"
+   ],
+   "best_skill": "traveler-walkthrough-super-unison-wide-lead",
+   "profile_share": 0.917,
+   "best_proc_overlap": 0.5,
+   "specific_items": 2,
+   "uncovered_techniques": [],
+   "video_novelty": 0.124,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": true,
+   "evidence": "auto-target-from-dub-track"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 758,
+    "music_markers": 0
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "dub-derived"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 0,
+     "synth": 57
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 34,
+    "edges": 49
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": false,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 0,
+    "candidates": 0,
+    "covered_verdict": {
+     "reasons": [
+      "procedure-level overlap"
+     ],
+     "best_skill": "traveler-walkthrough-super-unison-wide-lead",
+     "profile_share": 0.917,
+     "best_proc_overlap": 0.5,
+     "specific_items": 2,
+     "uncovered_techniques": [],
+     "video_novelty": 0.124,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "covered by library; KG updated; no new skill"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "es-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "ar(auto)",
+    "en-US(auto)",
+    "pt-BR(auto)",
+    "es(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "3:youtube-translated:es",
+    "4:auto-target-from-dub-track:en-US",
+    "5:original-plus-machine-translation:es"
+   ]
+  },
+  {
+   "q": "fetch youtube-translated (es)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch auto-target-from-dub-track (en-US)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-13T16:34:59.994147+00:00"
+}

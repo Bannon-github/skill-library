@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+  "name": "Effects inside an FM operator chain: per-operator EQ/phase/delay/comb/drive/decimator/waveshaper/punch applied to the signal before it modulates or is heard, for delayed-modulator bells, noise-excited comb strings and punchy FM attacks",
+  "goal": "Treat each FM operator slot as an optional in-chain processor rather than a master effect, so the processed waveform goes on to modulate the next operator or is heard. Recipes: (1) a peak-EQ or phase (all-pass-like, with feedback) stage on a saw operator, with its frequency moved by mod wheel or LFO, for oscillator-level phasing; (2) a short delay with feedback on the modulator, which gives bells an inner 'chamber' echo when its ratio rises and its time drops, with a short envelope; (3) a comb resonator fed by a very short noise-burst operator, making a physical-model string, copied into three pairs (detuned, an octave up) and finished with chorus, delay and reverb as a 'virtual guitar'; (4) drive, decimator (bit/sample-rate reduction for early 8-bit wavetable tone), waveshaper and 'punch' on a modulator for aggressive FM attacks. Delta vs our KS-pluck, tuned-delay-resonator and FM ratio skills: placing these processors inside the modulation path.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "XnSE9X0-S9M",
+    "url": "https://www.youtube.com/watch?v=XnSE9X0-S9M",
+    "title": "Opsix Effects Mode: The Secret to New Sounds",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/XnSE9X0-S9M/agent-skill-fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string.json",
+    "transcript_note": "Hardware FM synth walkthrough; mapped to generic operator-in-chain processing. Like/subscribe outro dropped."
+  },
+  "prerequisites": [
+    "FM synth whose operators can be processors (or a Web Audio graph where a modulator passes through Biquad/Delay/WaveShaper nodes before connecting to the carrier's frequency AudioParam, implementation note)",
+    "Mod wheel / LFO routing",
+    "Chorus, delay and reverb for finishing"
+  ],
+  "inputs": [
+    {
+      "name": "notes",
+      "type": "midi",
+      "description": "Bell, string or lead notes",
+      "required": true
+    },
+    {
+      "name": "noise_source",
+      "type": "audio",
+      "description": "White-noise operator for comb excitation",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fm_fx_patch",
+      "type": "audio",
+      "description": "Bell with inner echo, comb-string 'virtual guitar', phased saw, lo-fi or punchy FM voice"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Effects in this mode act on the operator signal in the chain, not on the final audio output like a master reverb.",
+    "Changing the noise operator's ratio does nothing; tune the comb pairs via pitch/detune instead.",
+    "The transcript gives no numeric settings beyond 4-bit decimation; set amounts by ear.",
+    "Web Audio note: a modulator delay inside an FM path needs a DelayNode between the modulator and the carrier's frequency param; very short feedback delays need an AudioWorklet (implementation note)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Single-operator EQ/phase: put a saw on an operator, switch it to an effect slot with peak EQ (centre frequency + gain) or a phase stage; raise the phase feedback, then map mod wheel or a slow LFO to the effect frequency and/or mix. Mix 0 = only the incoming operator; 100% = only this operator.",
+      "tool": "phase/eq",
+      "expect": "Oscillator-level phasing/EQ sweep, no master phaser used"
+    },
+    {
+      "n": 2,
+      "action": "Delayed-modulator bell: plain FM pair. Set the modulator (operator 2) to a short delay effect and raise its feedback; you hear the delay inside the modulation. Raise the modulator ratio (more harmonics), then shorten the delay time, give it a short envelope and increase the carrier's release.",
+      "tool": "delay-mod",
+      "expect": "Bell tone with an echo 'inside the bell chamber'"
+    },
+    {
+      "n": 3,
+      "action": "Comb string: carrier operator set to a comb (resonator) effect fed by operator 2. With a sine source it just sounds like overdrive. Switch the source to noise with a very short, clicky envelope, set the mix to only the effect, raise comb feedback for guitar-like tones, lengthen the source envelope for longer strings, and raise the carrier's release.",
+      "tool": "comb",
+      "expect": "Physical-model plucked string from noise + comb"
+    },
+    {
+      "n": 4,
+      "action": "Virtual guitar: copy the comb pair to two more operator pairs (three identical sets). Detune one pair via pitch, and set the third an octave higher with a bit of detune, then combine all three and add chorus, delay and reverb.",
+      "tool": "stack",
+      "expect": "Wide, chorused multi-string comb instrument"
+    },
+    {
+      "n": 5,
+      "action": "Drive and distortion on an operator: distortion pushes a sine toward square-like harmonics (mix it back in); 'drive' on a saw acts like an analog oscillator overdriving a VCA/filter, adding subtle warmth.",
+      "tool": "drive",
+      "expect": "Warmer or harder operator tone"
+    },
+    {
+      "n": 6,
+      "action": "Decimator: reduce bit depth (e.g. 4-bit) and sample frequency on a saw to recreate early 8-bit digital/wavetable-era oscillators. Lower frequency = lower resolution.",
+      "tool": "decimator",
+      "expect": "Stepped, 'computer-gamey' overtone-rich saw"
+    },
+    {
+      "n": 7,
+      "action": "Waveshaper on a sine or saw operator: choose shaping curves to make wavetable-like waveforms (e.g. a 'super square'), and stack it in the modulation chain as a base layer.",
+      "tool": "waveshaper",
+      "expect": "New static waveforms from simple sources"
+    },
+    {
+      "n": 8,
+      "action": "Punch on the modulator: set operator 2 to the punch effect and raise it so the FM attack hits harder; useful for aggressive attacking sounds.",
+      "tool": "punch",
+      "expect": "Exaggerated FM transient"
+    }
+  ],
+  "verification": [
+    "Raising phase feedback makes the oscillator-level phasing clearly audible on an analyser/by ear.",
+    "The delayed-modulator bell shows an audible echo inside the tone that changes with delay time.",
+    "Noise burst → comb with high feedback yields a pitched string; a sine source does not.",
+    "Decimator at 4-bit shows visible stair-steps on a scope."
+  ],
+  "tags": [
+    "fm",
+    "operator",
+    "comb",
+    "physical-model",
+    "bell",
+    "delay",
+    "decimator",
+    "waveshaper",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string"
+}

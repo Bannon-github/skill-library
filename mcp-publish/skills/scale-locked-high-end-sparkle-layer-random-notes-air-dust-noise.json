@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+  "name": "Scale-locked high-end atmosphere layer: sporadic random note 'sprays' (sine-like and brighter 'glass' voices) above ~3 kHz with a gravity/rate control, plus pitch-locked air and dust noise layers on random-drift LFO levels and a long reverb",
+  "goal": "Fill the empty 3 kHz–20 kHz zone of an ambient track with musical, pitch-locked detail instead of generic noise. Lock everything to the track's key and scale (e.g. B minor pentatonic). Generate sporadic random notes from two voices on different patterns: a sine-like 'spray' and a buzzier, brighter 'glass' with tone controls. Set note density with a gravity/rate control, free or tempo-synced from 1/16 up to 16 bars. Add an 'air' white-noise layer and a 'dust' blown-sand noise layer, both of which can be pitch-locked so they take on tonality: air follows spray's pattern and dust follows glass. Move each layer's level with slow LFOs (including smooth random drift). Send it all to a big reverb (size, decay, tone, mix, pre-delay, diffusion, modulation), limit the output, and optionally feed note choices from a slow generative MIDI source. Check the result on a spectrum analyser. This is a generative high-band layer, not a pad or riser.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "LeChNmmtNsM",
+    "url": "https://www.youtube.com/watch?v=LeChNmmtNsM",
+    "title": "Airglow Walkthrough: A High-End Atmosphere Instrument for Ambient Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/LeChNmmtNsM/agent-skill-scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise.json",
+    "transcript_note": "Developer plugin walkthrough; route.py said COVERED but hand-check found no high-band generative sparkle skill. Plugin purchase CTA dropped."
+  },
+  "prerequisites": [
+    "Generative note source quantised to a scale (Web Audio: scheduler picking random scale degrees in high octaves → sine and bright oscillators with short envelopes, implementation note)",
+    "White-noise layers with tone filters; LFOs incl. smooth random",
+    "Long reverb, limiter, spectrum analyser"
+  ],
+  "inputs": [
+    {
+      "name": "key_scale",
+      "type": "string",
+      "description": "Track key and scale, e.g. B minor pentatonic",
+      "required": true
+    },
+    {
+      "name": "rate",
+      "type": "string",
+      "description": "Gravity (free) or synced division 1/16 … 16 bars",
+      "required": true
+    },
+    {
+      "name": "midi_feed",
+      "type": "midi",
+      "description": "Optional slow generative MIDI to choose pitches",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "high_end_layer",
+      "type": "audio",
+      "description": "Sparse, pitch-locked chimes/air/dust occupying the high frequencies"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Pitch-lock is the key feature: all sparkle must be in key so it sounds 'from the same universe'.",
+    "Implementing noise pitch-lock as resonant band-pass filters tuned to the chosen notes is an implementation assumption, not stated in the transcript.",
+    "Reference-track names and product links are omitted; amounts are by ear.",
+    "Keep density low (slow gravity) for 'distant chimes'; fast rates become busy."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Analyse a reference ambient track's spectrum: note the active, sporadic, pitch-locked detail between ~3 kHz and 20 kHz.",
+      "tool": "analyse",
+      "expect": "Target band and density identified"
+    },
+    {
+      "n": 2,
+      "action": "Set the key/scale lock to the track (e.g. B minor pentatonic) and trigger the generator; random notes from the scale are sprayed out.",
+      "tool": "pitch-lock",
+      "expect": "Sporadic in-key high notes"
+    },
+    {
+      "n": 3,
+      "action": "Slow it down with the gravity/rate control so notes arrive slowly; raise the reverb ('glow') amount for long trails. Alternatively switch to tempo sync and choose intervals from 1/16 up to 16 bars.",
+      "tool": "rate",
+      "expect": "Slow spring of distant chimes, or grid-locked hits"
+    },
+    {
+      "n": 4,
+      "action": "Blend the two tonal voices: spray (standard sine-like tones) and glass (sharper, buzzier shine), each with a tone control and different patterns, so they don't fire together.",
+      "tool": "voices",
+      "expect": "Two interleaved chime colours"
+    },
+    {
+      "n": 5,
+      "action": "Add the air layer (white noise that 'blows in the distance') and modulate its level with an LFO (e.g. smooth random drift) so it comes and goes. Add the dust layer (sand-scatter-like noise) the same way with the second LFO.",
+      "tool": "noise layers",
+      "expect": "Breathing air and dust beneath the chimes"
+    },
+    {
+      "n": 6,
+      "action": "Pitch-lock the noise layers: air follows spray's note pattern and dust follows glass, so the noise gains tonality in key.",
+      "tool": "noise pitch-lock",
+      "expect": "Noise layers take on in-key pitched colour"
+    },
+    {
+      "n": 7,
+      "action": "Shape the reverb (size, decay, tone, mix, pre-delay, diffusion, modulation/chorus), use the output limiter and +6 dB make-up if quiet. Optionally drive pitches from a glacially slow generative MIDI pattern. Then confirm on the full-mix spectrum that the high end is filled.",
+      "tool": "finish",
+      "expect": "Full-spectrum ambient mix with musical high-end detail"
+    }
+  ],
+  "verification": [
+    "All generated notes belong to the chosen scale.",
+    "Spectrum of the mix shows new, sporadic activity above ~3 kHz.",
+    "With LFO on air level, the noise audibly drifts in and out.",
+    "Synced mode places notes only on the chosen division."
+  ],
+  "tags": [
+    "high-end",
+    "ambient",
+    "generative",
+    "scale-lock",
+    "noise",
+    "chimes",
+    "reverb",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+}

@@ -1,0 +1,261 @@
+{
+  "batch_id": "2026-10-14-morning-hunt",
+  "ran_at_local": "2026-10-14 PT morning",
+  "routine": "Synth YouTube skill hunt",
+  "library_entries_before": 117,
+  "library_entries_after": 132,
+  "mcp_publish_files_before": 119,
+  "mcp_publish_files_after": 134,
+  "mcp_count_before": 117,
+  "mcp_count_after": 132,
+  "cinematic_synth_domain_files_before": 79,
+  "cinematic_synth_domain_files_after": 94,
+  "searches": [
+    "phase distortion synthesis resonant waveform tutorial",
+    "phaser pad cinematic sound design tutorial",
+    "spectral freeze FFT pad sound design tutorial",
+    "wavefolder bass sound design tutorial synth",
+    "parallel distortion synth pad wet dry tutorial",
+    "vocoder carrier synth pad tutorial",
+    "granular freeze pad sound design tutorial",
+    "chorus ensemble string pad tutorial synth",
+    "shimmer reverb pad sound design tutorial",
+    "hard sync cinematic texture sound design tutorial",
+    "cinematic drone sound design synth tutorial",
+    "through-zero FM pad sound design tutorial"
+  ],
+  "search_files": [
+    "2026-10-14-chorus-ensemble-string-pad-tutorial-synth.json",
+    "2026-10-14-cinematic-drone-sound-design-synth-tutorial.json",
+    "2026-10-14-granular-freeze-pad-sound-design-tutorial.json",
+    "2026-10-14-hard-sync-cinematic-texture-sound-design-tutorial.json",
+    "2026-10-14-parallel-distortion-synth-pad-wet-dry-tutorial.json",
+    "2026-10-14-phase-distortion-synthesis-resonant-waveform-tutor.json",
+    "2026-10-14-phaser-pad-cinematic-sound-design-tutorial.json",
+    "2026-10-14-shimmer-reverb-pad-sound-design-tutorial.json",
+    "2026-10-14-spectral-freeze-fft-pad-sound-design-tutorial.json",
+    "2026-10-14-through-zero-fm-pad-sound-design-tutorial.json",
+    "2026-10-14-vocoder-carrier-synth-pad-tutorial.json",
+    "2026-10-14-wavefolder-bass-sound-design-tutorial-synth.json"
+  ],
+  "carryover_processed": [
+    "SfqgigefIu0",
+    "0n23itgG0LU",
+    "NFWAC2kLqvo",
+    "-oFbaWsScJw",
+    "4fpZFYG83fw",
+    "k9ZURoAww0k",
+    "X9nxUb1wRkg"
+  ],
+  "routed_new_ids": [
+    "Sehlj6zgXmw",
+    "28uxHnQbulE",
+    "c8aQMp0vkRg",
+    "06VEibYrLms",
+    "Dazk-D79k5U",
+    "mBvUObtJTJI",
+    "7OZx7CWo3M0",
+    "qi-3B7bbGHE",
+    "H8fsiSJzKTA",
+    "eaQtf_vm9zA",
+    "aNVjrDQANMw",
+    "fxh2ccZKEb0",
+    "l1gLp6lzcbw",
+    "0NXGraBGWvE",
+    "5bI0NSbgEUY",
+    "CdIMG0DqQa8",
+    "t0X_HQ25jmg",
+    "5xrcuaB1GNA"
+  ],
+  "route_outcomes": {
+    "CANDIDATES_READY": [
+      "28uxHnQbulE",
+      "c8aQMp0vkRg",
+      "06VEibYrLms",
+      "mBvUObtJTJI",
+      "7OZx7CWo3M0",
+      "fxh2ccZKEb0",
+      "0NXGraBGWvE",
+      "t0X_HQ25jmg",
+      "5xrcuaB1GNA",
+      "Sehlj6zgXmw (retry)",
+      "H8fsiSJzKTA (retry)",
+      "eaQtf_vm9zA (retry)"
+    ],
+    "COVERED": [
+      "Dazk-D79k5U",
+      "qi-3B7bbGHE",
+      "aNVjrDQANMw",
+      "l1gLp6lzcbw",
+      "5bI0NSbgEUY",
+      "CdIMG0DqQa8"
+    ],
+    "DEFER_rate_limited_first_pass": [
+      "Sehlj6zgXmw",
+      "28uxHnQbulE",
+      "c8aQMp0vkRg",
+      "06VEibYrLms"
+    ],
+    "STOP_no_transcript_asr_flagged_then_ok_on_retry": [
+      "Sehlj6zgXmw",
+      "H8fsiSJzKTA",
+      "eaQtf_vm9zA"
+    ]
+  },
+  "false_covered_published": [
+    "Dazk-D79k5U",
+    "aNVjrDQANMw"
+  ],
+  "published": [
+    {
+      "id": "tuned-filtered-delay-resonator-insert-bipolar-feedback",
+      "video_id": "SfqgigefIu0",
+      "title": "KARPLUS-STRONG synthesis in Renoise and the •REZONATOR•",
+      "name": "Filtered feedback-delay resonator: bipolar feedback, swappable loop filter type, dry mute, insert on existing sounds"
+    },
+    {
+      "id": "pwm-80s-string-pad-free-running-lfo-detune",
+      "video_id": "0n23itgG0LU",
+      "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+      "name": "80s PWM string pad: pulse wave with free-running (seconds-based) LFO on pulse width, slight osc-2 detune, slow attack/release, static filter"
+    },
+    {
+      "id": "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+      "video_id": "NFWAC2kLqvo",
+      "title": "How to make your own Buchla Style Morphing Filter in VCV",
+      "name": "Buchla 291-style morphing bandpass: 6-pole bandpass with two clocked step sequencers (frequency and bandwidth) as filter snapshots, wet/dry crossfader"
+    },
+    {
+      "id": "reverb-freeze-print-seamless-loop-atmos-layer",
+      "video_id": "-oFbaWsScJw",
+      "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+      "name": "Reverb-freeze atmosphere print: freeze a 100%-wet reverb of a synth phrase, record it to audio, loop it seamlessly with overlapping tail, bus and process as an atmos layer"
+    },
+    {
+      "id": "distorted-delay-return-bandlimited-send-throws",
+      "video_id": "4fpZFYG83fw",
+      "title": "Ableton Sound Design Tutorial - Distorted Delays",
+      "name": "Distorted-delay return: drive → ping-pong delay on a 100%-wet send, both band-limited to high mids, return pre-attenuated, played by riding the send"
+    },
+    {
+      "id": "wavefolded-lfo-slew-filter-wobble",
+      "video_id": "k9ZURoAww0k",
+      "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+      "name": "Wavefolded LFO wobble: fold a sine LFO for extra peaks/valleys, then slew-limit it before filter cutoff"
+    },
+    {
+      "id": "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+      "video_id": "28uxHnQbulE",
+      "title": "Wavestate Cinematic Pad in Minutes",
+      "name": "Four-layer wave-sequenced cinematic pad: crossfaded seconds-based wave sequence, released keys layer, LFO-rate-modulated analog layer, tempo-locked rhythmic step layer with shape/ratchet/probability"
+    },
+    {
+      "id": "granular-buffer-core-position-density-freeze-feedback-modes",
+      "video_id": "mBvUObtJTJI",
+      "title": "Clouds (and clones) from the Ground Up: a reverbless explanation of a Granular icon",
+      "name": "Granular buffer core from the ground up: grain size/shape/pitch, regular vs random density, triggered grains as a voice, position delay, freeze scrubbing, partial re-freeze, random pan, two feedback modes"
+    },
+    {
+      "id": "frozen-granular-buffer-as-playable-wavetable-voice",
+      "video_id": "Dazk-D79k5U",
+      "title": "Mutable Instruments Beads FREEZE Explained – Frozen Textures & Tricks",
+      "name": "Frozen granular buffer as a playable 'wavetable' voice: capture an evolving sound, freeze, scan time position, sequence pitch via v/oct for overlapping grain polyphony, random-modulate time/size"
+    },
+    {
+      "id": "complex-oscillator-cross-fm-follow-sync-fold-voice",
+      "video_id": "c8aQMp0vkRg",
+      "title": "Make Noise DPO — The Ultimate Complex Oscillator?",
+      "name": "Complex-oscillator voice: bidirectional cross-FM, sync + pitch-follow slew between two VCOs, osc-modulated wavefolder into an S&H-swept self-resonant filter"
+    },
+    {
+      "id": "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+      "video_id": "fxh2ccZKEb0",
+      "title": "Create Evolving Cinematic Drones In Pigments - Full Tutorial",
+      "name": "Evolving cinematic drone: random-modulated LFO rates on WT position and two parallel, opposite-panned filters, plus a randomized granular sample layer and FX chain"
+    },
+    {
+      "id": "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+      "video_id": "aNVjrDQANMw",
+      "title": "Ep. 04 | How to Build Powerful Cinematic Drone Sounds (Modular Synth Sound Design)",
+      "name": "Three-pillar cinematic drone (layering, movement, FX): wavetable VCO pair + self-feedback delay loop + granular layer, effects after filters with master low-cut as tension control"
+    },
+    {
+      "id": "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+      "video_id": "0NXGraBGWvE",
+      "title": "Create Ambient Drones in Ableton Live 12.2 (Hybrid Reverb Tutorial)",
+      "name": "One-knob reverb → drone instrument: macro range 0–99 = wet/dry, 100–110 = muted dead zone, 110–127 = freeze + overdub drone with LFO speed, plus LFO-modulated EQ/width, unsynced auto-filter, limiter and randomizable algorithm"
+    },
+    {
+      "id": "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+      "video_id": "t0X_HQ25jmg",
+      "title": "Pedals in Parallel - Discovering new ways to use effects you thought you knew",
+      "name": "Parallel FX network: same input to up to three effects, heavy drive alongside clean delay, phase-flip a loop to cancel its dry and keep only wet, per-loop EQ/levels, effects inside the delay loop"
+    },
+    {
+      "id": "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+      "video_id": "H8fsiSJzKTA",
+      "title": "You’ve Never Heard a Phaser Sound Like This",
+      "name": "Nested multi-notch phaser techniques for pads: grouped notches (groups × notches-per-group), pinch spacing, slow pinch 'breathing', stepped cutoff wah→flanger, scale-quantized random cutoff, slow triangle-swept full-depth bed"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "X9nxUb1wRkg",
+      "reason": "Reason: vocal-recording/pitch-correction workflow, few settings, low portability to the synth/Web Audio system; post-reverb saturation idea already covered by soft-tape-saturation / selective-saturation skills. Same rationale as earlier sample-layering rejects."
+    },
+    {
+      "video_id": "06VEibYrLms",
+      "reason": "Product showcase / preset flex: feature list (vintage knob, overdrive, X-mod, ring mod) with no adjustable recipe or settings; ends in Patreon/preset promo. Thin/promo."
+    },
+    {
+      "video_id": "7OZx7CWo3M0",
+      "reason": "Machine-translated (es→en, argos) aux-bus shimmer: 100%-wet long reverb → pitch +12 → optional HP/LP EQ, pre-delay. Near-duplicate of shimmer-reverb-pitchshift-plus12-feedback (which also covers the feedback loop); remaining content is DAW click-paths."
+    },
+    {
+      "video_id": "qi-3B7bbGHE",
+      "reason": "Route COVERED, hand-checked: 16th-note VCA/shaper gating of a deliberately huge FM/feedback drone, then bandpass + L/R-offset LFO, ping-pong + reverb; includes course promo and an interview. Near-dup of trance-gate-sidechain-chop-texture; bandpass/L-R offset delta too small for a new skill."
+    },
+    {
+      "video_id": "l1gLp6lzcbw",
+      "reason": "Route COVERED, hand-checked: essay/narrative on drones, movement and noise texture with a self-made sampler instrument; no ordered, settings-level procedure. Advice-only."
+    },
+    {
+      "video_id": "5bI0NSbgEUY",
+      "reason": "Route COVERED, hand-checked: opens with app promo and own-plugin feature tour; drone 'four foundations' built mainly from commercial presets (bass from a preset bank). Little adjustable recipe beyond tonal centre + bass + reverb. Promo-heavy/thin."
+    },
+    {
+      "video_id": "CdIMG0DqQa8",
+      "reason": "Route COVERED, hand-checked: 4-osc parallel-filter pad (detuned saw + PWM into filter A with long filter env and slow free LFO; tinkly folded osc into filter B with saw-down tempo LFO on level; WT osc with triangle pitch env; slight L/R pans). Overlaps three-layer-complementary-pad-post-verb-lofi-degrade, cinematic-multi-envelope-osc-level-morph and today's four-layer-wave-sequence skill; delta too small."
+    },
+    {
+      "video_id": "5xrcuaB1GNA",
+      "reason": "Preset browsing + plugin recommendations + huge reverbs, 60 BPM, held anchor note with chords under it. Product-recommendation heavy, no synthesis recipe. Thin."
+    },
+    {
+      "video_id": "eaQtf_vm9zA",
+      "reason": "Three-WT-osc drone (0.1 Hz curved LFO on WT positions, random-curve 0.3 Hz LFOs on unison detune, ±1 oct layers, sub, LP12, noise, chorus→dist→EQ→reverb→delay→LFO filter). Overlaps today's random-rate-lfo-wt-drone skill and existing WT/unison pad skills; only delta (random LFO on unison detune) is too small for its own skill — candidate merge note. Factory table names not portable."
+    },
+    {
+      "video_id": "Sehlj6zgXmw",
+      "reason": "Device-UI walkthrough (function keys, DCW/DCA pages) of CZ phase distortion, 8-stage envelopes with sustain/end points, ring mod + fifth detune, filter. PD waves already covered by casio-pd-piecewise-phase-warp-cosine-to-saw and casio-pd-wave-family-and-windowed-sync-resonance; no resonant-wave/wave-alternation recipe beyond those. (First route attempt hit rate limit; transcript fetched on retry.)"
+    }
+  ],
+  "carryover_next": [
+    "VrCSssDOxFc",
+    "3q-o772IYQY",
+    "IVi2y9HYBTg",
+    "Ev4nV2G-47s",
+    "ysMPHY5oiGc",
+    "XnSE9X0-S9M",
+    "X4TPAWQw4ss",
+    "S3-2yc9UJDE",
+    "LeChNmmtNsM",
+    "_6mEzWHoxKo",
+    "Rdt5Alxrg60",
+    "pYbWRCrFsHQ"
+  ],
+  "quality": "--strict 15/15 clean",
+  "novelty": "15/15 NOVEL (max local overlap 0.166)",
+  "git_sync": "skipped: no GH_TOKEN/GITHUB_TOKEN, gh not logged in",
+  "backups": "backups/2026-10-14-morning-hunt/"
+}

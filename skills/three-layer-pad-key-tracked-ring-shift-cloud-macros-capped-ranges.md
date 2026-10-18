@@ -1,0 +1,16 @@
+# Three-layer pad/key with independent envelopes plus pitch-aware (key-ratio) ring mod, frequency shift and an octave-up granular 'cloud', each brought in by a macro whose maximum is capped
+
+Goal: Build a pad-key from three layers with independent, deliberately different amp envelopes: a looping stereo synth sample with a very long attack, a sine with a slight attack that decays, and a second sustained sample with release. Add subtle colour stages that track the played note: a ring modulator set by ratio to the incoming frequency (×2) on all three layers, a frequency shifter on the sine layer (ratio mode adds a higher harmonic; Hz mode, e.g. 5 Hz, gives rhythmic sway), and a granular cloud an octave up mixed into layer A. Put each stage's mix on a macro capped so full macro travel reaches only a tamed maximum (ring ~60%, cloud ~50%, shift ~50%, FX wet ~0.25, inverted if needed). Add a main filter cutoff/resonance on two macros with full range, layer-volume macros (A+C vs B), more voices for long releases, gentle velocity and poly aftertouch. Delta vs our ring-mod bell/stab and three-layer complementary pad skills: key-ratio ring/shift as macro-capped 'richness' controls.
+
+Source: [Absynth 6  - Design a Patch From Scratch | Layers, Clouds, Macros & Note FX #absynth6  #sounddesign](https://www.youtube.com/watch?v=Rdt5Alxrg60)
+
+1. Layer A: load a looping stereo synth sample (loop on). Give it a very long attack (seconds), with subtle per-segment envelope slope changes. Layer B: sine oscillator (with a little unison detune) with a tiny attack so it isn't sharp, then decay so it dies away while A swells in. Layer C: another looping sample with an immediate attack, sustain and some release.
+2. Balance levels: if a layer is too soft, add a waveshaper for gain/harmonics and a gentle high-pass to remove excess lows from the deep layer.
+3. Ring mod on all three layers in ratio mode, ratio 2 (the modulator is placed at 2× the played note's frequency). Set each layer's mix around 60% (they needn't be identical) and assign all three mixes to one macro named 'ring' so 0 = no ring mod and maximum = ~60%.
+4. Main filter: low-pass on the whole sound; add a very slow LFO (seconds-based) on the cutoff of the second filter slot.
+5. Cloud on layer A: add a granular cloud, set its pitch exactly one octave up, add slight random pitch for chorus-like detune, and put its mix on a macro capped at about half.
+6. Frequency shifter on the sine layer B: Hz mode at a slow value (e.g. 5 Hz) gives a rhythmic sway, or ratio mode adds a higher harmonic (ratio 2 gets dirty quickly). Cap its macro at ~50%.
+7. Assign main filter cutoff and resonance to macros 3–4, setting base values so the macros have the full range. Put FX-section wet on a macro, add only wet (don't trade dry), cap at about 0.25 and invert the mapping direction if it moves the wrong way.
+8. Performance finish: macros for layer volumes (A+C together vs B), increase the voice count for overlapping releases, keep velocity response gentle, and optionally let poly aftertouch drown layer A a little.
+
+Batch: `2026-10-15-morning-hunt` · transcript: YouTube-provided (Show transcript) · Vendor sound-designer walkthrough; factory sample paths omitted; macro caps taken from transcript (60%, halfway, ~0.25).

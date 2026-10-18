@@ -1,0 +1,153 @@
+{
+ "topic": "hybrid wavetable pad morph sound design tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "hybrid wavetable pad morph sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "RPmmqRIvMuI",
+   "title": "FM8 - Cause & Effect and Sound Design - pt 4 - Modulating Envelopes - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 584,
+   "view_count": 3536,
+   "url": "https://www.youtube.com/watch?v=RPmmqRIvMuI",
+   "query": "hybrid wavetable pad morph sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.27,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "AOuTGhfU1Lo",
+   "title": "HALion 6 – Tutorial 01 – Wavetable Explained",
+   "channel": "Simon Stockhausen",
+   "duration": 1276,
+   "view_count": 21513,
+   "url": "https://www.youtube.com/watch?v=AOuTGhfU1Lo",
+   "query": "hybrid wavetable pad morph sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.67,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "SyKSIWu0RTA",
+   "title": "How to Use Serum’s Resample Mode to Create Custom Wavetables – Sound Design with Echo Sound Works",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 307,
+   "view_count": 5541,
+   "url": "https://www.youtube.com/watch?v=SyKSIWu0RTA",
+   "query": "hybrid wavetable pad morph sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.37,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "l-5blH8MjT0",
+   "title": "Elliott Garage WaveSHAPER - Tutorial and Demo",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 753,
+   "view_count": 686,
+   "url": "https://www.youtube.com/watch?v=l-5blH8MjT0",
+   "query": "hybrid wavetable pad morph sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.92,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "J5znU5e689s",
+   "title": "Morph EQ by Minimal Audio - Walkthrough",
+   "channel": "Minimal Audio",
+   "duration": 285,
+   "view_count": 37051,
+   "url": "https://www.youtube.com/watch?v=J5znU5e689s",
+   "query": "hybrid wavetable pad morph sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.28,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "id_FGjWqp-c",
+   "why": "duration 114s"
+  },
+  {
+   "id": "QKE01rZzk0Y",
+   "why": "duration 114s"
+  },
+  {
+   "id": "1CcXiZdfDeY",
+   "why": "negative title signal"
+  },
+  {
+   "id": "8LylF3dpxXk",
+   "why": "negative title signal"
+  },
+  {
+   "id": "AnOJ-uQgwP8",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

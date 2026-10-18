@@ -1,0 +1,46 @@
+{
+  "video_id": "06VEibYrLms",
+  "title": "How EVIL can the OBERHEIM TEO-5 sound?",
+  "url": "https://www.youtube.com/watch?v=06VEibYrLms",
+  "fetched_at": "2026-10-14T16:29:43.401360+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tonepusher",
+  "duration": 699,
+  "ok": true,
+  "cue_count": 165,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/06VEibYrLms/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/06VEibYrLms/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

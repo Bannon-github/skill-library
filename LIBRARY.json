@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-07T16:37:09+00:00",
-  "entry_count": 89,
+  "updated_at": "2026-10-16T16:31:12.462800+00:00",
+  "entry_count": 158,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -1634,6 +1634,915 @@
       "skills": [
         "warp-modes-as-phase-signal-transforms"
       ]
+    },
+    {
+      "id": "cinematic-synth-EW12RYc7QRA",
+      "video_id": "EW12RYc7QRA",
+      "url": "https://www.youtube.com/watch?v=EW12RYc7QRA",
+      "title": "GroovyDSP: Introduction to Phase Distortion Synthesis",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/EW12RYc7QRA/raw.txt",
+      "summary": "Skills: casio-pd-piecewise-phase-warp-cosine-to-saw",
+      "skills": [
+        "casio-pd-piecewise-phase-warp-cosine-to-saw"
+      ]
+    },
+    {
+      "id": "cinematic-synth-94vSgZXg1nQ",
+      "video_id": "94vSgZXg1nQ",
+      "url": "https://www.youtube.com/watch?v=94vSgZXg1nQ",
+      "title": "GroovyDSP: More Phase Distortion!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/94vSgZXg1nQ/raw.txt",
+      "summary": "Skills: casio-pd-wave-family-and-windowed-sync-resonance",
+      "skills": [
+        "casio-pd-wave-family-and-windowed-sync-resonance"
+      ]
+    },
+    {
+      "id": "cinematic-synth-TrkXgDQbhjk",
+      "video_id": "TrkXgDQbhjk",
+      "url": "https://www.youtube.com/watch?v=TrkXgDQbhjk",
+      "title": "What is a  Phase Distortion Oscillator and why is it 😎",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/TrkXgDQbhjk/raw.txt",
+      "summary": "Skills: phase-distortion-shapes-modular-phase-chain",
+      "skills": [
+        "phase-distortion-shapes-modular-phase-chain"
+      ]
+    },
+    {
+      "id": "cinematic-synth-C_d3SCz2u-c",
+      "video_id": "C_d3SCz2u-c",
+      "url": "https://www.youtube.com/watch?v=C_d3SCz2u-c",
+      "title": "Oscillator Syncing in Thor (Patch Design in Thor)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/C_d3SCz2u-c/raw.txt",
+      "summary": "Skills: hard-sync-master-slave-mod-envelope-timbre",
+      "skills": [
+        "hard-sync-master-slave-mod-envelope-timbre"
+      ]
+    },
+    {
+      "id": "cinematic-synth-t97TU3p7-kE",
+      "video_id": "t97TU3p7-kE",
+      "url": "https://www.youtube.com/watch?v=t97TU3p7-kE",
+      "title": "HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/t97TU3p7-kE/raw.txt",
+      "summary": "Skills: uplifter-downlifter-pitchbend-filter-lfo",
+      "skills": [
+        "uplifter-downlifter-pitchbend-filter-lfo"
+      ]
+    },
+    {
+      "id": "cinematic-synth-FULqquC3-Fc",
+      "video_id": "FULqquC3-Fc",
+      "url": "https://www.youtube.com/watch?v=FULqquC3-Fc",
+      "title": "How to make custom bass drops / sub drops in Cubase (tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/FULqquC3-Fc/raw.txt",
+      "summary": "Skills: sub-drop-sine-freq-glide-80hz-to-20hz",
+      "skills": [
+        "sub-drop-sine-freq-glide-80hz-to-20hz"
+      ]
+    },
+    {
+      "id": "cinematic-synth-G4Tc59aAeoE",
+      "video_id": "G4Tc59aAeoE",
+      "url": "https://www.youtube.com/watch?v=G4Tc59aAeoE",
+      "title": "FM8 - FX Sounds - pt 1 - Uplifter - How To Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/G4Tc59aAeoE/raw.txt",
+      "summary": "Skills: fm-stack-uplifter-pitch-env-noise-swell",
+      "skills": [
+        "fm-stack-uplifter-pitch-env-noise-swell"
+      ]
+    },
+    {
+      "id": "cinematic-synth-PUBMG__czwg",
+      "video_id": "PUBMG__czwg",
+      "url": "https://www.youtube.com/watch?v=PUBMG__czwg",
+      "title": "How To Sound Design Cinematic Basses and Subdrops",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/PUBMG__czwg/raw.txt",
+      "summary": "Skills: cinematic-bass-distortion-stack-pitch-bend-downer",
+      "skills": [
+        "cinematic-bass-distortion-stack-pitch-bend-downer"
+      ]
+    },
+    {
+      "id": "vector-graphics-a8SAAJBo3yU",
+      "video_id": "a8SAAJBo3yU",
+      "url": "https://www.youtube.com/watch?v=a8SAAJBo3yU",
+      "title": "Inkscape Trace Bitmap Tutorial: How to Convert Jpeg | PNG | Raster to Vector Image",
+      "channel": "IronEcho Design",
+      "topic": "vector-graphics",
+      "transcript_source": "youtube-provided",
+      "transcript_kind": "auto-generated",
+      "transcript_file": "raw/a8SAAJBo3yU/raw.txt",
+      "summary": "Beginner walkthrough of Inkscape Path > Trace Bitmap on a tiger photo with a neutral background: single-scan brightness cutoff at several thresholds (0.45/0.43/0.35/0.25) with default speckles 2, smooth corners 1, optimize 0.20; edge detection (busy on organic subjects, better for objects); quick color Autotrace; and multiple-scan color tracing (8 scans, smooth and stack, remove background), then isolating color layers. Keep images under about 10 MB and save before high scan counts.",
+      "skills": [
+        "inkscape-trace-bitmap-raster-to-vector"
+      ],
+      "batch_id": "2026-10-12-batch-01"
+    },
+    {
+      "id": "home-repair-PLGmTzEGSIY",
+      "video_id": "PLGmTzEGSIY",
+      "url": "https://www.youtube.com/watch?v=PLGmTzEGSIY",
+      "title": "How to Patch a Drywall Hole | Ask This Old House",
+      "channel": "This Old House",
+      "topic": "home-repair",
+      "transcript_source": "youtube-provided",
+      "transcript_kind": "auto-generated",
+      "transcript_file": "raw/PLGmTzEGSIY/raw.txt",
+      "summary": "Three drywall repairs by hole size: small nail/picture holes get spackling compound pushed in and smoothed (it shrinks, so recoat); medium holes (doorknob, baseboard) get heavy-duty mesh tape in layers or an adhesive metal mesh patch, then 2-3 smooth coats and sanding; large holes get a cut patch traced onto the wall, with backing (board, or drywall repair clips), or a \"California patch\" whose paper face extends past the gypsum core and acts as its own tape. Spackle for small/medium, joint compound for anything bigger.",
+      "skills": [
+        "drywall-hole-patch-small-medium-large"
+      ],
+      "batch_id": "2026-10-12-batch-01"
+    },
+    {
+      "id": "screen-recording-streaming-Muk9LfEWHeU",
+      "video_id": "Muk9LfEWHeU",
+      "url": "https://www.youtube.com/watch?v=Muk9LfEWHeU",
+      "title": "OBS Studio - Tutorial for Beginners in 7 MINUTES! [ COMPLETE ]",
+      "channel": "Skills Factory",
+      "topic": "screen-recording-streaming",
+      "transcript_source": "youtube-provided",
+      "transcript_kind": "youtube-provided (yt-dlp timed text)",
+      "transcript_file": "raw/Muk9LfEWHeU/raw.txt",
+      "summary": "A fast tour of OBS Studio: the auto-configuration wizard, canvas versus scenes and sources, every main source type (audio input/output capture, color, image, slideshow, media, text, browser, window/display/game capture, video capture device), arranging, cropping (Alt), hiding and locking sources, filters, Settings for stream/output/video/hotkeys, starting and stopping recording or streaming, finding recordings, and Studio Mode with transitions.",
+      "skills": [
+        "obs-studio-scene-sources-record-setup"
+      ],
+      "batch_id": "2026-10-12-batch-01"
+    },
+    {
+      "id": "video-editing-V18BX15KbKs",
+      "video_id": "V18BX15KbKs",
+      "url": "https://www.youtube.com/watch?v=V18BX15KbKs",
+      "title": "LEARN KDENLIVE IN 15 MINUTES ~ Basic Video Editing Tutorial for Beginners",
+      "channel": "Chris' Tutorials",
+      "topic": "video-editing",
+      "transcript_source": "youtube-provided",
+      "transcript_kind": "auto-generated",
+      "transcript_file": "raw/V18BX15KbKs/raw.txt",
+      "summary": "Kdenlive basics: importing clips into the project bin, choosing a clip's audio stream (and duplicating the clip to use two recorded audio tracks), locking tracks, grouping clips (Ctrl+G), the razor tool (X) for cuts, delete versus Extract/Remove Space for ripple deletes, trimming, moving clips between tracks (insert a spare track), the spacer tool, snapping, editing and saving a title clip, applying and tuning effects, a wipe composition transition (duration, copy, reverse, checkerboard), and rendering to MP4.",
+      "skills": [
+        "kdenlive-basic-edit-cut-title-transition-render"
+      ],
+      "batch_id": "2026-10-12-batch-01"
+    },
+    {
+      "id": "cinematic-synth-g0QRn65Mwwc",
+      "video_id": "g0QRn65Mwwc",
+      "url": "https://www.youtube.com/watch?v=g0QRn65Mwwc",
+      "title": "Windowed Sync in the Grid",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/g0QRn65Mwwc/raw.txt",
+      "summary": "Skills: windowed-sync-amplitude-modulator-drawable-window",
+      "skills": [
+        "windowed-sync-amplitude-modulator-drawable-window"
+      ]
+    },
+    {
+      "id": "cinematic-synth-SMB34GRgQWQ",
+      "video_id": "SMB34GRgQWQ",
+      "url": "https://www.youtube.com/watch?v=SMB34GRgQWQ",
+      "title": "Vector Synthesis in Bitwig Grid with the Scrawl Oscillator",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/SMB34GRgQWQ/raw.txt",
+      "summary": "Skills: vector-xy-four-oscillator-crossfade-blend",
+      "skills": [
+        "vector-xy-four-oscillator-crossfade-blend"
+      ]
+    },
+    {
+      "id": "cinematic-synth-6aRgJoBxk4g",
+      "video_id": "6aRgJoBxk4g",
+      "url": "https://www.youtube.com/watch?v=6aRgJoBxk4g",
+      "title": "Synthmaster Tutorial - Vector oscillator \"monster pad\"",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/6aRgJoBxk4g/raw.txt",
+      "summary": "Skills: dual-layer-opposite-vector-morph-pad",
+      "skills": [
+        "dual-layer-opposite-vector-morph-pad"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Daqws1QWgXw",
+      "video_id": "Daqws1QWgXw",
+      "url": "https://www.youtube.com/watch?v=Daqws1QWgXw",
+      "title": "Tutorial #21 | Turning A Marimba Into Granular Synthesis Pads",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Daqws1QWgXw/raw.txt",
+      "summary": "Skills: marimba-wt-lfo-pluck-to-granular-pad",
+      "skills": [
+        "marimba-wt-lfo-pluck-to-granular-pad"
+      ]
+    },
+    {
+      "id": "cinematic-synth-dxWCEDePgaw",
+      "video_id": "dxWCEDePgaw",
+      "url": "https://www.youtube.com/watch?v=dxWCEDePgaw",
+      "title": "Sound Design Trick - Creating Sustained Textures with Granular FX",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/dxWCEDePgaw/raw.txt",
+      "summary": "Skills: granular-stack-freeze-infinite-sustain-texture",
+      "skills": [
+        "granular-stack-freeze-infinite-sustain-texture"
+      ]
+    },
+    {
+      "id": "cinematic-synth-02_MBQrqJS8",
+      "video_id": "02_MBQrqJS8",
+      "url": "https://www.youtube.com/watch?v=02_MBQrqJS8",
+      "title": "How to Make your Synthesizer Stereo",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/02_MBQrqJS8/raw.txt",
+      "summary": "Skills: dual-path-filter-spread-inverse-amp-lfo-stereo",
+      "skills": [
+        "dual-path-filter-spread-inverse-amp-lfo-stereo"
+      ]
+    },
+    {
+      "id": "workflow-design-zGB9SScvoQU",
+      "video_id": "zGB9SScvoQU",
+      "url": "https://www.youtube.com/watch?v=zGB9SScvoQU",
+      "title": "Business Process Mapping 101 (Step By Step Guide)",
+      "topic": "workflow-design",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/zGB9SScvoQU/raw.txt",
+      "summary": "Skills: process-map-workflow-design-prototype-to-final",
+      "skills": [
+        "process-map-workflow-design-prototype-to-final"
+      ]
+    },
+    {
+      "id": "workflow-design-HzXD4GVqXwM",
+      "video_id": "HzXD4GVqXwM",
+      "url": "https://www.youtube.com/watch?v=HzXD4GVqXwM",
+      "title": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)",
+      "topic": "workflow-design",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/HzXD4GVqXwM/raw.txt",
+      "summary": "Skills: agent-media-pipeline-roles-to-tools-feedback-skill",
+      "skills": [
+        "agent-media-pipeline-roles-to-tools-feedback-skill"
+      ]
+    },
+    {
+      "id": "cinematic-synth-acM4NM4lH0k",
+      "video_id": "acM4NM4lH0k",
+      "url": "https://www.youtube.com/watch?v=acM4NM4lH0k",
+      "title": "Organic Alien Comb Filter Modulation Tutorial (Subtractive Synthesis)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/acM4NM4lH0k/raw.txt",
+      "summary": "Skills: click-train-resonant-filter-feedback-delay-comb-texture",
+      "skills": [
+        "click-train-resonant-filter-feedback-delay-comb-texture"
+      ]
+    },
+    {
+      "id": "cinematic-synth-54eGln75Y3Y",
+      "video_id": "54eGln75Y3Y",
+      "url": "https://www.youtube.com/watch?v=54eGln75Y3Y",
+      "title": "Chaos To Order: Frequency Shifter & Vocoder (Sound Design Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/54eGln75Y3Y/raw.txt",
+      "summary": "Skills: harmonic-multiple-frequency-shift-layer-vocoder-clean",
+      "skills": [
+        "harmonic-multiple-frequency-shift-layer-vocoder-clean"
+      ]
+    },
+    {
+      "id": "cinematic-synth-8b5EX9HcPGk",
+      "video_id": "8b5EX9HcPGk",
+      "url": "https://www.youtube.com/watch?v=8b5EX9HcPGk",
+      "title": "Karplus-Strong Synthesis in Bitwig Studio 3 - The Grid",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/8b5EX9HcPGk/raw.txt",
+      "summary": "Skills: karplus-strong-keytracked-delay-pluck-damping-comp",
+      "skills": [
+        "karplus-strong-keytracked-delay-pluck-damping-comp"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Z4mMGSg6ebY",
+      "video_id": "Z4mMGSg6ebY",
+      "url": "https://www.youtube.com/watch?v=Z4mMGSg6ebY",
+      "title": "Why does nobody use this filter ? (Ableton Morph Filter Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Z4mMGSg6ebY/raw.txt",
+      "summary": "Skills: morph-filter-lp-bp-hp-notch-lfo-cycle",
+      "skills": [
+        "morph-filter-lp-bp-hp-notch-lfo-cycle"
+      ]
+    },
+    {
+      "id": "cinematic-synth-gzJEQiTC_SQ",
+      "video_id": "gzJEQiTC_SQ",
+      "url": "https://www.youtube.com/watch?v=gzJEQiTC_SQ",
+      "title": "Creating a vocal formant speaking voice in VCV Rack",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/gzJEQiTC_SQ/raw.txt",
+      "summary": "Skills: resonant-filter-sample-rate-reduction-talking-formant",
+      "skills": [
+        "resonant-filter-sample-rate-reduction-talking-formant"
+      ]
+    },
+    {
+      "id": "cinematic-synth-IiWPL_v8Eqk",
+      "video_id": "IiWPL_v8Eqk",
+      "url": "https://www.youtube.com/watch?v=IiWPL_v8Eqk",
+      "title": "Zebra 2 - Using LFO`s Random Features (Sample & Hold) - How To Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/IiWPL_v8Eqk/raw.txt",
+      "summary": "Skills: sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+      "skills": [
+        "sample-hold-random-lfo-pitch-wave-filter-glide-textures"
+      ]
+    },
+    {
+      "id": "cinematic-synth-q-N55tqLUr4",
+      "video_id": "q-N55tqLUr4",
+      "url": "https://www.youtube.com/watch?v=q-N55tqLUr4",
+      "title": "Sound Design Tutorial: Synthesizing Tails for Cinematic Hits & Impacts",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/q-N55tqLUr4/raw.txt",
+      "summary": "Skills: synthesized-noise-impact-tail-lfo-shaped",
+      "skills": [
+        "synthesized-noise-impact-tail-lfo-shaped"
+      ]
+    },
+    {
+      "id": "cinematic-synth-L0IXE_whmso",
+      "video_id": "L0IXE_whmso",
+      "url": "https://www.youtube.com/watch?v=L0IXE_whmso",
+      "title": "Sound Design 53: Pads 3 Bandpass",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/L0IXE_whmso/raw.txt",
+      "summary": "Skills: triple-bandpass-bank-unsynced-lfo-pad",
+      "skills": [
+        "triple-bandpass-bank-unsynced-lfo-pad"
+      ]
+    },
+    {
+      "id": "cinematic-synth-SfqgigefIu0",
+      "video_id": "SfqgigefIu0",
+      "url": "https://www.youtube.com/watch?v=SfqgigefIu0",
+      "title": "KARPLUS-STRONG synthesis in Renoise and the •REZONATOR•",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/SfqgigefIu0/raw.txt",
+      "summary": "Skills: tuned-filtered-delay-resonator-insert-bipolar-feedback",
+      "skills": [
+        "tuned-filtered-delay-resonator-insert-bipolar-feedback"
+      ]
+    },
+    {
+      "id": "cinematic-synth-0n23itgG0LU",
+      "video_id": "0n23itgG0LU",
+      "url": "https://www.youtube.com/watch?v=0n23itgG0LU",
+      "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0n23itgG0LU/raw.txt",
+      "summary": "Skills: pwm-80s-string-pad-free-running-lfo-detune",
+      "skills": [
+        "pwm-80s-string-pad-free-running-lfo-detune"
+      ]
+    },
+    {
+      "id": "cinematic-synth-NFWAC2kLqvo",
+      "video_id": "NFWAC2kLqvo",
+      "url": "https://www.youtube.com/watch?v=NFWAC2kLqvo",
+      "title": "How to make your own Buchla Style Morphing Filter in VCV",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/NFWAC2kLqvo/raw.txt",
+      "summary": "Skills: six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+      "skills": [
+        "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph"
+      ]
+    },
+    {
+      "id": "cinematic-synth--oFbaWsScJw",
+      "video_id": "-oFbaWsScJw",
+      "url": "https://www.youtube.com/watch?v=-oFbaWsScJw",
+      "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/-oFbaWsScJw/raw.txt",
+      "summary": "Skills: reverb-freeze-print-seamless-loop-atmos-layer",
+      "skills": [
+        "reverb-freeze-print-seamless-loop-atmos-layer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-4fpZFYG83fw",
+      "video_id": "4fpZFYG83fw",
+      "url": "https://www.youtube.com/watch?v=4fpZFYG83fw",
+      "title": "Ableton Sound Design Tutorial - Distorted Delays",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/4fpZFYG83fw/raw.txt",
+      "summary": "Skills: distorted-delay-return-bandlimited-send-throws",
+      "skills": [
+        "distorted-delay-return-bandlimited-send-throws"
+      ]
+    },
+    {
+      "id": "cinematic-synth-k9ZURoAww0k",
+      "video_id": "k9ZURoAww0k",
+      "url": "https://www.youtube.com/watch?v=k9ZURoAww0k",
+      "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/k9ZURoAww0k/raw.txt",
+      "summary": "Skills: wavefolded-lfo-slew-filter-wobble",
+      "skills": [
+        "wavefolded-lfo-slew-filter-wobble"
+      ]
+    },
+    {
+      "id": "cinematic-synth-28uxHnQbulE",
+      "video_id": "28uxHnQbulE",
+      "url": "https://www.youtube.com/watch?v=28uxHnQbulE",
+      "title": "Wavestate Cinematic Pad in Minutes",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/28uxHnQbulE/raw.txt",
+      "summary": "Skills: four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+      "skills": [
+        "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+      ]
+    },
+    {
+      "id": "cinematic-synth-mBvUObtJTJI",
+      "video_id": "mBvUObtJTJI",
+      "url": "https://www.youtube.com/watch?v=mBvUObtJTJI",
+      "title": "Clouds (and clones) from the Ground Up: a reverbless explanation of a Granular icon",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/mBvUObtJTJI/raw.txt",
+      "summary": "Skills: granular-buffer-core-position-density-freeze-feedback-modes",
+      "skills": [
+        "granular-buffer-core-position-density-freeze-feedback-modes"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Dazk-D79k5U",
+      "video_id": "Dazk-D79k5U",
+      "url": "https://www.youtube.com/watch?v=Dazk-D79k5U",
+      "title": "Mutable Instruments Beads FREEZE Explained – Frozen Textures & Tricks",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Dazk-D79k5U/raw.txt",
+      "summary": "Skills: frozen-granular-buffer-as-playable-wavetable-voice",
+      "skills": [
+        "frozen-granular-buffer-as-playable-wavetable-voice"
+      ]
+    },
+    {
+      "id": "cinematic-synth-c8aQMp0vkRg",
+      "video_id": "c8aQMp0vkRg",
+      "url": "https://www.youtube.com/watch?v=c8aQMp0vkRg",
+      "title": "Make Noise DPO — The Ultimate Complex Oscillator?",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/c8aQMp0vkRg/raw.txt",
+      "summary": "Skills: complex-oscillator-cross-fm-follow-sync-fold-voice",
+      "skills": [
+        "complex-oscillator-cross-fm-follow-sync-fold-voice"
+      ]
+    },
+    {
+      "id": "cinematic-synth-fxh2ccZKEb0",
+      "video_id": "fxh2ccZKEb0",
+      "url": "https://www.youtube.com/watch?v=fxh2ccZKEb0",
+      "title": "Create Evolving Cinematic Drones In Pigments - Full Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/fxh2ccZKEb0/raw.txt",
+      "summary": "Skills: random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+      "skills": [
+        "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-aNVjrDQANMw",
+      "video_id": "aNVjrDQANMw",
+      "url": "https://www.youtube.com/watch?v=aNVjrDQANMw",
+      "title": "Ep. 04 | How to Build Powerful Cinematic Drone Sounds (Modular Synth Sound Design)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/aNVjrDQANMw/raw.txt",
+      "summary": "Skills: three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+      "skills": [
+        "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-0NXGraBGWvE",
+      "video_id": "0NXGraBGWvE",
+      "url": "https://www.youtube.com/watch?v=0NXGraBGWvE",
+      "title": "Create Ambient Drones in Ableton Live 12.2 (Hybrid Reverb Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0NXGraBGWvE/raw.txt",
+      "summary": "Skills: single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+      "skills": [
+        "single-macro-reverb-mix-deadzone-freeze-overdub-drone"
+      ]
+    },
+    {
+      "id": "cinematic-synth-t0X_HQ25jmg",
+      "video_id": "t0X_HQ25jmg",
+      "url": "https://www.youtube.com/watch?v=t0X_HQ25jmg",
+      "title": "Pedals in Parallel - Discovering new ways to use effects you thought you knew",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/t0X_HQ25jmg/raw.txt",
+      "summary": "Skills: parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+      "skills": [
+        "parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+      ]
+    },
+    {
+      "id": "cinematic-synth-H8fsiSJzKTA",
+      "video_id": "H8fsiSJzKTA",
+      "url": "https://www.youtube.com/watch?v=H8fsiSJzKTA",
+      "title": "You’ve Never Heard a Phaser Sound Like This",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/H8fsiSJzKTA/raw.txt",
+      "summary": "Skills: nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+      "skills": [
+        "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random"
+      ]
+    },
+    {
+      "id": "cinematic-synth-3q-o772IYQY",
+      "video_id": "3q-o772IYQY",
+      "url": "https://www.youtube.com/watch?v=3q-o772IYQY",
+      "title": "Celestine - A Realtime Granular Dream Machine (Full Walkthrough)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/3q-o772IYQY/raw.txt",
+      "summary": "Skills: live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+      "skills": [
+        "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Futy449F9OY",
+      "video_id": "Futy449F9OY",
+      "url": "https://www.youtube.com/watch?v=Futy449F9OY",
+      "title": "The Secret to HUGE Dark Vocal Pads in Serum 2",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Futy449F9OY/raw.txt",
+      "summary": "Skills: dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+      "skills": [
+        "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx"
+      ]
+    },
+    {
+      "id": "cinematic-synth-G3CIJ3l5Fd8",
+      "video_id": "G3CIJ3l5Fd8",
+      "url": "https://www.youtube.com/watch?v=G3CIJ3l5Fd8",
+      "title": "EXTREME WAVE FOLDING: a Pure Data experiment.",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/G3CIJ3l5Fd8/raw.txt",
+      "summary": "Skills: audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+      "skills": [
+        "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth"
+      ]
+    },
+    {
+      "id": "cinematic-synth-GoMfKhol88k",
+      "video_id": "GoMfKhol88k",
+      "url": "https://www.youtube.com/watch?v=GoMfKhol88k",
+      "title": "Spectral Ambience: Turning Noise into Melodic Synths (Ableton Live 12)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/GoMfKhol88k/raw.txt",
+      "summary": "Skills: noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+      "skills": [
+        "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator"
+      ]
+    },
+    {
+      "id": "cinematic-synth-KVtxIwYpGvQ",
+      "video_id": "KVtxIwYpGvQ",
+      "url": "https://www.youtube.com/watch?v=KVtxIwYpGvQ",
+      "title": "Ableton's best kept secret for ambient textures",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/KVtxIwYpGvQ/raw.txt",
+      "summary": "Skills: stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+      "skills": [
+        "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback"
+      ]
+    },
+    {
+      "id": "cinematic-synth-LeChNmmtNsM",
+      "video_id": "LeChNmmtNsM",
+      "url": "https://www.youtube.com/watch?v=LeChNmmtNsM",
+      "title": "Airglow Walkthrough: A High-End Atmosphere Instrument for Ambient Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/LeChNmmtNsM/raw.txt",
+      "summary": "Skills: scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+      "skills": [
+        "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Mm5eO24aAec",
+      "video_id": "Mm5eO24aAec",
+      "url": "https://www.youtube.com/watch?v=Mm5eO24aAec",
+      "title": "3 Stereo Width Tricks (That Sound Great In Mono)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Mm5eO24aAec/raw.txt",
+      "summary": "Skills: short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+      "skills": [
+        "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Rdt5Alxrg60",
+      "video_id": "Rdt5Alxrg60",
+      "url": "https://www.youtube.com/watch?v=Rdt5Alxrg60",
+      "title": "Absynth 6  - Design a Patch From Scratch | Layers, Clouds, Macros & Note FX #absynth6  #sounddesign",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Rdt5Alxrg60/raw.txt",
+      "summary": "Skills: three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
+      "skills": [
+        "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges"
+      ]
+    },
+    {
+      "id": "cinematic-synth-U1t3ELd1LDI",
+      "video_id": "U1t3ELd1LDI",
+      "url": "https://www.youtube.com/watch?v=U1t3ELd1LDI",
+      "title": "The Secret to Endless Ambient Textures in Ableton Live",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/U1t3ELd1LDI/raw.txt",
+      "summary": "Skills: probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+      "skills": [
+        "probability-gated-seeded-scale-loop-endless-ambient-sine-pad"
+      ]
+    },
+    {
+      "id": "cinematic-synth-VrCSssDOxFc",
+      "video_id": "VrCSssDOxFc",
+      "url": "https://www.youtube.com/watch?v=VrCSssDOxFc",
+      "title": "Wavefield Tutorial Video",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/VrCSssDOxFc/raw.txt",
+      "summary": "Skills: wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+      "skills": [
+        "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
+      ]
+    },
+    {
+      "id": "cinematic-synth-X4TPAWQw4ss",
+      "video_id": "X4TPAWQw4ss",
+      "url": "https://www.youtube.com/watch?v=X4TPAWQw4ss",
+      "title": "I Tried Building an Analog Synth Inside the Opsix…",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/X4TPAWQw4ss/raw.txt",
+      "summary": "Skills: operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+      "skills": [
+        "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter"
+      ]
+    },
+    {
+      "id": "cinematic-synth-XnSE9X0-S9M",
+      "video_id": "XnSE9X0-S9M",
+      "url": "https://www.youtube.com/watch?v=XnSE9X0-S9M",
+      "title": "Opsix Effects Mode: The Secret to New Sounds",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/XnSE9X0-S9M/raw.txt",
+      "summary": "Skills: fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+      "skills": [
+        "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string"
+      ]
+    },
+    {
+      "id": "cinematic-synth-_6mEzWHoxKo",
+      "video_id": "_6mEzWHoxKo",
+      "url": "https://www.youtube.com/watch?v=_6mEzWHoxKo",
+      "title": "DevOcean Modular - Create A Wind Noodle Patch From Scratch #modularsynth  #sounddesign  #synthesiser",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/_6mEzWHoxKo/raw.txt",
+      "summary": "Skills: generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+      "skills": [
+        "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix"
+      ]
+    },
+    {
+      "id": "cinematic-synth-pYbWRCrFsHQ",
+      "video_id": "pYbWRCrFsHQ",
+      "url": "https://www.youtube.com/watch?v=pYbWRCrFsHQ",
+      "title": "Modulate the modulations to expand your sound design with Magnolia!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/pYbWRCrFsHQ/raw.txt",
+      "summary": "Skills: nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+      "skills": [
+        "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff"
+      ]
+    },
+    {
+      "id": "cinematic-synth-uEI2Ytxn7iI",
+      "video_id": "uEI2Ytxn7iI",
+      "url": "https://www.youtube.com/watch?v=uEI2Ytxn7iI",
+      "title": "Deconstructing a Textural Soundscape | Creative Sprint #5 Breakdown",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/uEI2Ytxn7iI/raw.txt",
+      "summary": "Skills: random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+      "skills": [
+        "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ysMPHY5oiGc",
+      "video_id": "ysMPHY5oiGc",
+      "url": "https://www.youtube.com/watch?v=ysMPHY5oiGc",
+      "title": "Wavefinder Tutorial // Wavetable on Tonverk with OS 1.3.0",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ysMPHY5oiGc/raw.txt",
+      "summary": "Skills: dual-wt-interval-locked-per-osc-position-level-animators",
+      "skills": [
+        "dual-wt-interval-locked-per-osc-position-level-animators"
+      ]
+    },
+    {
+      "id": "cinematic-synth-y9eDmBUC8ZU",
+      "video_id": "y9eDmBUC8ZU",
+      "url": "https://www.youtube.com/watch?v=y9eDmBUC8ZU",
+      "title": "Physically Modeled MPE Strings in Surge XT",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/y9eDmBUC8ZU/raw.txt",
+      "summary": "Skills: bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
+      "skills": [
+        "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs"
+      ]
+    },
+    {
+      "id": "cinematic-synth-yuQqY0dx2Rw",
+      "video_id": "yuQqY0dx2Rw",
+      "url": "https://www.youtube.com/watch?v=yuQqY0dx2Rw",
+      "title": "Multiphonics CV-3 FM Core Patch Reconstruction with Adam—Resonant Tines",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/yuQqY0dx2Rw/raw.txt",
+      "summary": "Skills: fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+      "skills": [
+        "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods"
+      ]
+    },
+    {
+      "id": "cinematic-synth-EwxNeZttFEA",
+      "video_id": "EwxNeZttFEA",
+      "url": "https://www.youtube.com/watch?v=EwxNeZttFEA",
+      "title": "Crazy Percussions Out of a Pad in Serum 2",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/EwxNeZttFEA/raw.txt",
+      "summary": "Skills: drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+      "skills": [
+        "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Py4XQbjvn4o",
+      "video_id": "Py4XQbjvn4o",
+      "url": "https://www.youtube.com/watch?v=Py4XQbjvn4o",
+      "title": "Philtor 12 Band Sequencer Filter",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Py4XQbjvn4o/raw.txt",
+      "summary": "Skills: sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
+      "skills": [
+        "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger"
+      ]
+    },
+    {
+      "id": "cinematic-synth-aPsWzEfgEOo",
+      "video_id": "aPsWzEfgEOo",
+      "url": "https://www.youtube.com/watch?v=aPsWzEfgEOo",
+      "title": "Tessera by Audio Damage (Tuned Sequenced Resonator)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/aPsWzEfgEOo/raw.txt",
+      "summary": "Skills: scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+      "skills": [
+        "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter"
+      ]
+    },
+    {
+      "id": "cinematic-synth-E8b_N1RBCxE",
+      "video_id": "E8b_N1RBCxE",
+      "url": "https://www.youtube.com/watch?v=E8b_N1RBCxE",
+      "title": "Sound Design Tips From an Orchestral Composer",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/E8b_N1RBCxE/raw.txt",
+      "summary": "Skills: hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+      "skills": [
+        "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ZVLM1XMT6Z0",
+      "video_id": "ZVLM1XMT6Z0",
+      "url": "https://www.youtube.com/watch?v=ZVLM1XMT6Z0",
+      "title": "granulate EVERYTHING",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ZVLM1XMT6Z0/raw.txt",
+      "summary": "Skills: key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+      "skills": [
+        "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture"
+      ]
+    },
+    {
+      "id": "cinematic-synth-leLAm3OigI0",
+      "video_id": "leLAm3OigI0",
+      "url": "https://www.youtube.com/watch?v=leLAm3OigI0",
+      "title": "How to Design Cinematic Realistic String Pads - Zebra 3 Sound Design Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/leLAm3OigI0/raw.txt",
+      "summary": "Skills: ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
+      "skills": [
+        "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Q_0QcuRePZ0",
+      "video_id": "Q_0QcuRePZ0",
+      "url": "https://www.youtube.com/watch?v=Q_0QcuRePZ0",
+      "title": "How to Create Epic Sound FX and Risers That Transform Your Tracks | 100 Sound Design Tips Ep. 13",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Q_0QcuRePZ0/raw.txt",
+      "summary": "Skills: one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+      "skills": [
+        "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+      ]
+    },
+    {
+      "id": "cinematic-synth-mllvToyambI",
+      "video_id": "mllvToyambI",
+      "url": "https://www.youtube.com/watch?v=mllvToyambI",
+      "title": "Magic Blur - Overview and Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/mllvToyambI/raw.txt",
+      "summary": "Skills: spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+      "skills": [
+        "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -1738,6 +2647,111 @@
         "reverse-reverb-swell-print-reverse-print",
         "shepard-tone-endless-riser-octave-crossfade-voices",
         "warp-modes-as-phase-signal-transforms"
+      ]
+    },
+    {
+      "at": "2026-10-09T16:41:28+00:00",
+      "batch": "2026-10-09-morning-hunt",
+      "added": [
+        "casio-pd-piecewise-phase-warp-cosine-to-saw",
+        "casio-pd-wave-family-and-windowed-sync-resonance",
+        "phase-distortion-shapes-modular-phase-chain",
+        "hard-sync-master-slave-mod-envelope-timbre",
+        "uplifter-downlifter-pitchbend-filter-lfo",
+        "sub-drop-sine-freq-glide-80hz-to-20hz",
+        "fm-stack-uplifter-pitch-env-noise-swell",
+        "cinematic-bass-distortion-stack-pitch-bend-downer"
+      ]
+    },
+    {
+      "at": "2026-10-12T16:30:13+00:00",
+      "batch": "2026-10-12-batch-01",
+      "added": [
+        "inkscape-trace-bitmap-raster-to-vector",
+        "drywall-hole-patch-small-medium-large",
+        "obs-studio-scene-sources-record-setup",
+        "kdenlive-basic-edit-cut-title-transition-render"
+      ]
+    },
+    {
+      "at": "2026-10-12T21:50:49+00:00",
+      "batch": "2026-10-12-batch-02",
+      "added": [
+        "process-map-workflow-design-prototype-to-final",
+        "agent-media-pipeline-roles-to-tools-feedback-skill"
+      ]
+    },
+    {
+      "at": "2026-10-13T16:40:07.989131+00:00",
+      "batch": "2026-10-13-morning-hunt",
+      "added": [
+        "click-train-resonant-filter-feedback-delay-comb-texture",
+        "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+        "karplus-strong-keytracked-delay-pluck-damping-comp",
+        "morph-filter-lp-bp-hp-notch-lfo-cycle",
+        "resonant-filter-sample-rate-reduction-talking-formant",
+        "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+        "synthesized-noise-impact-tail-lfo-shaped",
+        "triple-bandpass-bank-unsynced-lfo-pad"
+      ]
+    },
+    {
+      "at": "2026-10-14T16:38:08.219944+00:00",
+      "batch": "2026-10-14-morning-hunt",
+      "added": [
+        "complex-oscillator-cross-fm-follow-sync-fold-voice",
+        "distorted-delay-return-bandlimited-send-throws",
+        "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+        "frozen-granular-buffer-as-playable-wavetable-voice",
+        "granular-buffer-core-position-density-freeze-feedback-modes",
+        "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+        "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+        "pwm-80s-string-pad-free-running-lfo-detune",
+        "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+        "reverb-freeze-print-seamless-loop-atmos-layer",
+        "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+        "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+        "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+        "tuned-filtered-delay-resonator-insert-bipolar-feedback",
+        "wavefolded-lfo-slew-filter-wobble"
+      ]
+    },
+    {
+      "at": "2026-10-15T16:33:11.876924+00:00",
+      "batch": "2026-10-15-morning-hunt",
+      "added": [
+        "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+        "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+        "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+        "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+        "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+        "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+        "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+        "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
+        "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+        "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+        "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+        "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+        "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+        "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+        "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+        "dual-wt-interval-locked-per-osc-position-level-animators"
+      ]
+    },
+    {
+      "at": "2026-10-16T16:31:12.462800+00:00",
+      "batch": "2026-10-16-morning-hunt",
+      "added": [
+        "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
+        "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+        "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+        "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
+        "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+        "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+        "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+        "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
+        "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+        "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
       ]
     }
   ]

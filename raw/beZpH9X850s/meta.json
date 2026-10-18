@@ -1,0 +1,163 @@
+{
+  "video_id": "beZpH9X850s",
+  "title": "Musikmachen mit LMMS - XXVII. Synth Basics - Part 7: Oscillator Sync",
+  "url": "https://www.youtube.com/watch?v=beZpH9X850s",
+  "fetched_at": "2026-10-09T16:35:26.175349+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de",
+  "channel": "Stefan Harth",
+  "duration": 399,
+  "ok": true,
+  "cue_count": 135,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "de",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/beZpH9X850s/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/beZpH9X850s/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/beZpH9X850s/transcript.orig.de.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "de",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "de",
+    "tgt": "en",
+    "segments": 31,
+    "glossary_hits": {
+      "Oszillator": 6,
+      "Tonhöhe": 5,
+      "Sägezahn": 1,
+      "Lautstärke": 2
+    },
+    "garbled_share": 0.0,
+    "repeat_loops_collapsed": 0,
+    "confidence": "medium",
+    "segment_terms": [
+      {
+        "t": "0:10",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "0:21",
+        "terms": [
+          "oscillator",
+          "pitch"
+        ]
+      },
+      {
+        "t": "0:41",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "0:51",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "1:10",
+        "terms": [
+          "sawtooth"
+        ]
+      },
+      {
+        "t": "1:22",
+        "terms": [
+          "pitch"
+        ]
+      },
+      {
+        "t": "2:05",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "2:17",
+        "terms": [
+          "volume",
+          "pitch"
+        ]
+      },
+      {
+        "t": "2:32",
+        "terms": [
+          "volume"
+        ]
+      },
+      {
+        "t": "2:50",
+        "terms": [
+          "pitch"
+        ]
+      },
+      {
+        "t": "5:34",
+        "terms": [
+          "oscillator"
+        ]
+      },
+      {
+        "t": "5:43",
+        "terms": [
+          "pitch"
+        ]
+      }
+    ],
+    "seconds": 12.8,
+    "original_path": "/workspace/skill-library/raw/beZpH9X850s/transcript.orig.de.txt",
+    "output_path": "/workspace/skill-library/raw/beZpH9X850s/transcript.txt",
+    "translated": true,
+    "at": "2026-10-09T16:35:54.448226+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "de"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "de(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:de",
+        "5:original-plus-machine-translation:de"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (de)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (de)",
+      "a": true
+    },
+    {
+      "q": "machine-translate de->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.9
+    }
+  ]
+}

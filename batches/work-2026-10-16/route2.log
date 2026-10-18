@@ -1,0 +1,66 @@
+  [ZVLM1XMT6Z0] Q0 pipeline env importable? -> yes
+  [ZVLM1XMT6Z0] Q1 transcript already saved? -> no  => fetch via track ladder
+  [ZVLM1XMT6Z0] Q2 track ladder produced English text? -> yes
+  [ZVLM1XMT6Z0] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [ZVLM1XMT6Z0] Q4 English text is a translation? -> no
+  [ZVLM1XMT6Z0] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [ZVLM1XMT6Z0] Q6 term graph built? -> yes
+  [ZVLM1XMT6Z0] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [ZVLM1XMT6Z0] OUTCOME CANDIDATES_READY
+  [-wDkxJ8PMn4] Q0 pipeline env importable? -> yes
+  [-wDkxJ8PMn4] Q1 transcript already saved? -> no  => fetch via track ladder
+  [-wDkxJ8PMn4] Q2 track ladder produced English text? -> yes
+  [-wDkxJ8PMn4] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [-wDkxJ8PMn4] Q4 English text is a translation? -> no
+  [-wDkxJ8PMn4] Q5 domain lexicon matched (>=8 hits)? -> no  => flag off-lexicon: extend pipeline/lexicons or plain distill-transcript
+  [-wDkxJ8PMn4] Q6 term graph built? -> no
+  [-wDkxJ8PMn4] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [-wDkxJ8PMn4] OUTCOME OFF_LEXICON
+  [Uv4yk8_vZQc] Q0 pipeline env importable? -> yes
+  [Uv4yk8_vZQc] Q1 transcript already saved? -> no  => fetch via track ladder
+  [Uv4yk8_vZQc] Q2 track ladder produced English text? -> yes
+  [Uv4yk8_vZQc] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Uv4yk8_vZQc] Q4 English text is a translation? -> no
+  [Uv4yk8_vZQc] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Uv4yk8_vZQc] Q6 term graph built? -> yes
+  [Uv4yk8_vZQc] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [Uv4yk8_vZQc] OUTCOME COVERED
+  [b5QAsgvC9sk] Q0 pipeline env importable? -> yes
+  [b5QAsgvC9sk] Q1 transcript already saved? -> no  => fetch via track ladder
+  [b5QAsgvC9sk] Q2 track ladder produced English text? -> yes
+  [b5QAsgvC9sk] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [b5QAsgvC9sk] Q4 English text is a translation? -> no
+  [b5QAsgvC9sk] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [b5QAsgvC9sk] Q6 term graph built? -> yes
+  [b5QAsgvC9sk] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [b5QAsgvC9sk] OUTCOME COVERED
+[
+ {
+  "video_id": "ZVLM1XMT6Z0",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "-wDkxJ8PMn4",
+  "outcome": "OFF_LEXICON",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": null
+ },
+ {
+  "video_id": "Uv4yk8_vZQc",
+  "outcome": "COVERED",
+  "route": "manual-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "b5QAsgvC9sk",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

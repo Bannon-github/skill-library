@@ -1,0 +1,50 @@
+{
+  "video_id": "Z4mMGSg6ebY",
+  "title": "Why does nobody use this filter ? (Ableton Morph Filter Tutorial)",
+  "url": "https://www.youtube.com/watch?v=Z4mMGSg6ebY",
+  "fetched_at": "2026-10-13T16:33:34.235585+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Audioreakt",
+  "duration": 470,
+  "ok": true,
+  "cue_count": 54,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-GB",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Z4mMGSg6ebY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Z4mMGSg6ebY/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-GB",
+        "de",
+        "ja",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-GB",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-GB)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

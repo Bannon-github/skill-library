@@ -1,0 +1,48 @@
+{
+  "video_id": "4NGywqnnl5Y",
+  "title": "Complete Graphic Design Course: The BEST Workflows & Processes (MUST KNOW)",
+  "url": "https://www.youtube.com/watch?v=4NGywqnnl5Y",
+  "fetched_at": "2026-10-12T21:48:25.035183+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Satori Graphics",
+  "duration": 1833,
+  "ok": true,
+  "cue_count": 324,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/4NGywqnnl5Y/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4NGywqnnl5Y/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

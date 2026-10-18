@@ -1,0 +1,104 @@
+{
+  "video_id": "w7vtvdW84l4",
+  "title": "U-he Gratuit Les clés de la composition Bazille La phase Distortion des oscillateurs",
+  "url": "https://www.youtube.com/watch?v=w7vtvdW84l4",
+  "fetched_at": "2026-10-16T16:29:01.779190+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "fr-FR",
+  "channel": "Tutoriels MAO",
+  "duration": 225,
+  "ok": true,
+  "cue_count": 56,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "fr",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/w7vtvdW84l4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/w7vtvdW84l4/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/w7vtvdW84l4/transcript.orig.fr.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "fr",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "fr",
+    "tgt": "en",
+    "segments": 14,
+    "glossary_hits": {
+      "résonance": 3
+    },
+    "garbled_share": 0.0,
+    "repeat_loops_collapsed": 0,
+    "confidence": "medium",
+    "segment_terms": [
+      {
+        "t": "2:24",
+        "terms": [
+          "resonance"
+        ]
+      },
+      {
+        "t": "2:48",
+        "terms": [
+          "resonance"
+        ]
+      },
+      {
+        "t": "3:14",
+        "terms": [
+          "resonance"
+        ]
+      }
+    ],
+    "seconds": 5.0,
+    "original_path": "/workspace/skill-library/raw/w7vtvdW84l4/transcript.orig.fr.txt",
+    "output_path": "/workspace/skill-library/raw/w7vtvdW84l4/transcript.txt",
+    "translated": true,
+    "at": "2026-10-16T16:29:19.851607+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "fr-FR"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "fr(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:fr",
+        "5:original-plus-machine-translation:fr"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (fr)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (fr)",
+      "a": true
+    },
+    {
+      "q": "machine-translate fr->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "CSdXkkW-jn0",
+  "title": "Using Absynth to Morph Sound Waves: Sound Design Tutorial w/ Native Instruments Komplete",
+  "url": "https://www.youtube.com/watch?v=CSdXkkW-jn0",
+  "fetched_at": "2026-10-12T16:51:38.963142+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Dubspot",
+  "duration": 1081,
+  "ok": true,
+  "cue_count": 432,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CSdXkkW-jn0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CSdXkkW-jn0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

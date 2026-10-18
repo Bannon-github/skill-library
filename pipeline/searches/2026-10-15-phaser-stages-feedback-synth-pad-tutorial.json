@@ -1,0 +1,117 @@
+{
+ "topic": "phaser stages feedback synth pad tutorial",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "phaser stages feedback synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "7fLA01y1tu4",
+   "title": "Why the MS2000 Still Shines: Classic Pad Patch Tutorial",
+   "channel": "Ian Dixon",
+   "duration": 746,
+   "view_count": 2022,
+   "url": "https://www.youtube.com/watch?v=7fLA01y1tu4",
+   "query": "phaser stages feedback synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.15,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "7B2fWwkwYSU",
+   "title": "NIVIEM KLANG 8008 — Barberpole Phaser Plugin",
+   "channel": "NIVIEM AUDIO",
+   "duration": 391,
+   "view_count": 74,
+   "url": "https://www.youtube.com/watch?v=7B2fWwkwYSU",
+   "query": "phaser stages feedback synth pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.44,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "tr"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "SSJDIte-nJo",
+   "why": "duration 123s"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "z9zMcYJfh8g",
+   "why": "duration 27s"
+  },
+  {
+   "id": "0eK6Sh3ojVc",
+   "why": "duration 97s"
+  },
+  {
+   "id": "xY7d19OXXQs",
+   "why": "duration 25s"
+  },
+  {
+   "id": "Q2vTm_PeD9o",
+   "why": "duration 32s"
+  },
+  {
+   "id": "H7OhYsCSW1E",
+   "why": "duration 39s"
+  },
+  {
+   "id": "llQdACwuFAM",
+   "why": "duration 60s"
+  },
+  {
+   "id": "XDUdRs7jDsQ",
+   "why": "duration 68s"
+  },
+  {
+   "id": "0u1fuUZFEwE",
+   "why": "duration 44s"
+  },
+  {
+   "id": "ELTmFmq5zwg",
+   "why": "duration 32s"
+  },
+  {
+   "id": "WyusPyaOC44",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "3EePati3SPQ",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

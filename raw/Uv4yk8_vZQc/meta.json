@@ -1,0 +1,68 @@
+{
+  "video_id": "Uv4yk8_vZQc",
+  "title": "How to Turn Serum into Vintage Classics",
+  "url": "https://www.youtube.com/watch?v=Uv4yk8_vZQc",
+  "fetched_at": "2026-10-16T16:20:53.676633+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Starsky Carr",
+  "duration": 1115,
+  "ok": true,
+  "cue_count": 414,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-GB",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Uv4yk8_vZQc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Uv4yk8_vZQc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-GB",
+        "ar(auto)",
+        "bn(auto)",
+        "nl(auto)",
+        "en(auto)",
+        "fr(auto)",
+        "de(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es(auto)",
+        "ta(auto)",
+        "te(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-GB",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-GB)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

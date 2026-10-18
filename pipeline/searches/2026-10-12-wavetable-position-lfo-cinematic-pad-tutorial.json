@@ -1,0 +1,168 @@
+{
+ "topic": "wavetable position LFO cinematic pad tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "wavetable position LFO cinematic pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "dqArkFl_v54",
+   "title": "Tutorial #31 | Massive X Bubbling Pad/Lead",
+   "channel": "Sharpend",
+   "duration": 470,
+   "view_count": 2410,
+   "url": "https://www.youtube.com/watch?v=dqArkFl_v54",
+   "query": "wavetable position LFO cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.19,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "V28W81FBLcQ",
+   "title": "IOS mifki miRack AUv3Host - Tutorial: AUv3 Host Parameters Modulation using LFOs",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 421,
+   "view_count": 569,
+   "url": "https://www.youtube.com/watch?v=V28W81FBLcQ",
+   "query": "wavetable position LFO cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.88,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "EoR-zmIgUwk",
+   "title": "Advanced Wavetable Techniques with Vital",
+   "channel": "Dash Glitch",
+   "duration": 1420,
+   "view_count": 31805,
+   "url": "https://www.youtube.com/watch?v=EoR-zmIgUwk",
+   "query": "wavetable position LFO cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.75,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "PZd-a6FaIxo",
+   "title": "Tricks For 3 Dimensional Pads In Massive",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 246,
+   "view_count": 24044,
+   "url": "https://www.youtube.com/watch?v=PZd-a6FaIxo",
+   "query": "wavetable position LFO cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.19,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "xRTaqrgjtwM",
+   "title": "Serum Secret Feature 🔥 Modulate the Unison Engine for Evolving Sounds",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 180,
+   "view_count": 4017,
+   "url": "https://www.youtube.com/watch?v=xRTaqrgjtwM",
+   "query": "wavetable position LFO cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.8,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "gNbKEej3rAw",
+   "why": "duration 30s"
+  },
+  {
+   "id": "6ThrXLCZl3U",
+   "why": "duration 40s"
+  },
+  {
+   "id": "gCfXK6wM_dU",
+   "why": "duration 4186s"
+  },
+  {
+   "id": "jmQJ21aIcVE",
+   "why": "duration 35s"
+  },
+  {
+   "id": "WlUTMTtt41o",
+   "why": "duration 56s"
+  },
+  {
+   "id": "2hdmFJyAwbE",
+   "why": "duration 74s"
+  },
+  {
+   "id": "R-CPRXgeRug",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "MRJt_i3eDMA",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "MBsLCsKwIw4",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "XMx7_Mac3-k",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

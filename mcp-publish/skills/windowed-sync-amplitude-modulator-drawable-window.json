@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "windowed-sync-amplitude-modulator-drawable-window",
+  "name": "Windowed sync via amplitude window (sine or drawable) on a phase-synced oscillator",
+  "goal": "Rebuild Serum-style windowed sync (and half-window variants) portably: hard-sync a slave oscillator from an external phase, then multiply its amplitude by a same-rate window oscillator (sine shifted ~50% phase, or a drawable Hof/custom curve) so period start/end are forced to zero crossings \u2014 removing sync clicks when sync intensity is modulated \u2014 beyond the decaying-sine CZ resonance window already covered.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "g0QRn65Mwwc",
+    "url": "https://www.youtube.com/watch?v=g0QRn65Mwwc",
+    "title": "Windowed Sync in the Grid",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/g0QRn65Mwwc/agent-skill-windowed-sync-amplitude-modulator-drawable-window.json"
+  },
+  "prerequisites": [
+    "Oscillator with external phase input (or disable internal phase and feed a phase ramp)",
+    "A second oscillator or drawable shaper usable as an amplitude modulator",
+    "Hard-sync / phase-reset path from master to slave"
+  ],
+  "inputs": [
+    {
+      "name": "slave_wave",
+      "type": "waveform",
+      "description": "Slave wavetable/osc shape to sync (square is a clear demo; sine shows clicks most)",
+      "required": true
+    },
+    {
+      "name": "window_shape",
+      "type": "enum",
+      "description": "sine (Serum-like), half-window (steeper ends), or drawable custom amplitude curve",
+      "required": true
+    },
+    {
+      "name": "sync_amount",
+      "type": "number",
+      "description": "How hard the master shoves extra cycles into the slave window (modulatable)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "windowed_sync_osc",
+      "type": "synth-module",
+      "description": "Phase-synced oscillator with click-softened amplitude window, ready for LFO\u2192sync"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / modular / Bitwig Grid-class tools; not affiliated with Bitwig or Serum.",
+    "Do not rip proprietary wavetables; use original/free single-cycles.",
+    "Windowing is amplitude control of the slave, not a phase trick alone \u2014 duplicate the wrong phase tap (sync out vs phase) and the window will not track."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Demo plain hard sync: feed a slave osc from an external phase with sync so raising sync amount packs more of the waveform in from the left and the cycle hard-jumps back to zero at the window end. Scope the discontinuity.",
+      "tool": "hard-sync-slave",
+      "expect": "Audible crackle/click when sync amount is modulated; fixed sync may be tolerable"
+    },
+    {
+      "n": 2,
+      "action": "State the windowed-sync goal: force amplitude to zero at the beginning and end of each master period so the reset lands on a soft zero-crossing. Half-window is the same idea with a steeper decline at the ends.",
+      "tool": "concept",
+      "expect": "Clicks disappear when a matching window is applied at full strength"
+    },
+    {
+      "n": 3,
+      "action": "Build the slave: wavetable/osc with internal phase off, driven by an external phase module that has a sync input from the master. Confirm the same crackle on modulation before windowing.",
+      "tool": "external-phase",
+      "expect": "Synced slave matches the hard-sync demo"
+    },
+    {
+      "n": 4,
+      "action": "Duplicate the oscillator as a sine window source. Disconnect it from the sync output and feed it from the phase (not sync) tap so the window runs at the master period. Route the sine into an amplitude/level modulator on the slave.",
+      "tool": "amp-mod-window",
+      "expect": "Slave is enveloped by a sine each cycle; start may look like a flattened sine until phase is aligned"
+    },
+    {
+      "n": 5,
+      "action": "Align phases: shift the window oscillator phase by about 50% so the zero of the window lines up with the sync reset (matching Serum-style windowed sync). Compare scope to the unwindowed sync.",
+      "tool": "phase-align",
+      "expect": "Window zeros sit at period boundaries; modulated sync no longer clicks"
+    },
+    {
+      "n": 6,
+      "action": "Optional half-window / custom shapes: replace the sine with a drawable oscillator (or curve) that falls steeper at the ends (Hof-like) or any unorthodox amplitude curve \u2014 Bitwig Scrawl-style freedom. Keep window rate locked to the master phase.",
+      "tool": "drawable-window",
+      "expect": "Different window shapes change brightness/softness without restoring hard clicks"
+    },
+    {
+      "n": 7,
+      "action": "Modulate sync amount with an LFO (saw or square work well for demo). Try bending/warping the slave and lighter waves (sine) when using aggressive FM-like mods. Keep the amplitude window engaged while sync moves.",
+      "tool": "mod-matrix",
+      "expect": "Timbre sweeps smoothly under sync modulation; playground for further warps"
+    }
+  ],
+  "verification": [
+    "With window off and sync modulated: clicks/crackles audible on a sine slave.",
+    "With sine window phase-aligned ~50%: same sync modulation is smooth.",
+    "Drawable/half window still zeros at boundaries; mono fold-down has no zipper noise from the reset."
+  ],
+  "tags": [
+    "windowed-sync",
+    "hard-sync",
+    "amplitude-window",
+    "phase-sync",
+    "drawable-window",
+    "portable",
+    "cinematic-synth",
+    "bitwig-grid"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://windowed-sync-amplitude-modulator-drawable-window"
+}

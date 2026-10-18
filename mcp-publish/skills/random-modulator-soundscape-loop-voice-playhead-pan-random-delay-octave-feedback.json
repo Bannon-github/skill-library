@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+  "name": "Random-modulator soundscape loop: resampled-chord drone with one random modulator on each voice's start position and pan, randomly shortened arp-driven drums, a randomly retimed delay with a +12 st pitch shifter and stepped grain size in its feedback, and a step-scanned vocal sampler",
+  "goal": "Keep a slow (88 BPM) textural loop alive using random and step modulators rather than new notes. (1) Drone: resample a plucked chord into a sampler, set it up to sustain, and have one random modulator (no smoothing; slight clicks are accepted as character) move both sample start/playhead and pan, so each voice starts somewhere different and sits elsewhere in the stereo field. Run a delay in parallel with a convolution reverb. (2) Drums: half-note mallet/brush hits from an arpeggiator whose step count is randomly shortened (16 down to a minimum of 4 steps), so the loop never repeats the same way. Send it to a delay whose time in beats is randomly modulated with smoothing (about 1–8 beats), with a pitch shifter at +12 semitones inside the feedback and a step modulator on its grain size for metallic, sideways echoes. (3) Vocal: a vocal loop in a sampler driven by an 8-step transposing arp, a 16-step modulator choosing the playhead start each step, a band-pass with a slow LFO on frequency, random pan per note, a distortion macro stepped through 16 values, then delay with reverse blur. Delta vs our shimmer and granular skills: random/step modulation of sampler playheads and delay timing as the generative engine.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "uEI2Ytxn7iI",
+    "url": "https://www.youtube.com/watch?v=uEI2Ytxn7iI",
+    "title": "Deconstructing a Textural Soundscape | Creative Sprint #5 Breakdown",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/uEI2Ytxn7iI/agent-skill-random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback.json",
+    "transcript_note": "Loop breakdown; product presets and pack names omitted."
+  },
+  "prerequisites": [
+    "Sampler with modulatable sample start and pan; random and step modulators (Web Audio: AudioBufferSourceNode.start(when, offset) with a random offset per voice, implementation note)",
+    "Arpeggiator with modulatable step count",
+    "Delay with modulatable time and an insertable pitch shifter in its feedback path",
+    "Band-pass filter, distortion, convolution reverb"
+  ],
+  "inputs": [
+    {
+      "name": "chord_resample",
+      "type": "audio",
+      "description": "Rendered pluck/piano chord to turn into a drone",
+      "required": true
+    },
+    {
+      "name": "vocal_loop",
+      "type": "audio",
+      "description": "Original/licensed vocal loop",
+      "required": false
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Slow tempo, e.g. 88 BPM",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "soundscape_loop",
+      "type": "audio",
+      "description": "Evolving multi-layer textural loop that never repeats identically"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Leaving the playhead randomiser unsmoothed causes clicks. The presenter keeps them as character; smooth or crossfade if they're too loud.",
+    "Random delay-time modulation needs smoothing to avoid zipper jumps.",
+    "The pitch shifter in the feedback re-pitches every repeat (+12 cascades), so filter if it gets shrill.",
+    "Ranges quoted (16→4 steps, 1–8 beats, +12 st, 16 steps) are from the transcript; other amounts by ear."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Resample a plucked chord into a sampler and set it up to sustain as a drone. Add one random modulator and map it to both sample playhead/start and pan.",
+      "tool": "drone",
+      "expect": "Each new voice starts at a different point in the sample and lands at a different pan"
+    },
+    {
+      "n": 2,
+      "action": "Process the drone through a standard delay in parallel with a convolution reverb.",
+      "tool": "drone fx",
+      "expect": "Atmospheric bed"
+    },
+    {
+      "n": 3,
+      "action": "Drums at slow tempo: half-note hits from a drum machine with two samples (mallet, brush) driven by an arpeggiator. Add a random modulator that shortens the arp length by up to −12 steps (16 down to 4).",
+      "tool": "drums",
+      "expect": "Sparse percussion whose pattern never repeats the same way"
+    },
+    {
+      "n": 4,
+      "action": "Send drums to a delay: random modulator with smoothing on delay time in beats (about 1 to 8), a pitch shifter at +12 semitones inside the feedback loop, and a step modulator on the shifter's grain size.",
+      "tool": "pitch-feedback delay",
+      "expect": "Metallic, octave-climbing echoes, especially in the sides"
+    },
+    {
+      "n": 5,
+      "action": "Add a background drone layer (e.g. a pad preset with longer envelope/filter and chorus) playing the same chords lower, plus an optional texture drone into a big reverb with modulated warp, kept low in the mix.",
+      "tool": "fill",
+      "expect": "Fuller low/mid spectrum without overpowering"
+    },
+    {
+      "n": 6,
+      "action": "Vocal layer: vocal loop in a sampler fed by an 8-step arp with transposition. Use a 16-step modulator to set a different playhead start per step, a slow LFO on a band-pass frequency, and a random modulator on pan.",
+      "tool": "vocal",
+      "expect": "Chopped, moving vocal fragments across the stereo field"
+    },
+    {
+      "n": 7,
+      "action": "Vocal FX: distortion preset whose saturation macro is stepped through 16 values, then a delay with reverse blur.",
+      "tool": "vocal fx",
+      "expect": "Rhythmically varying grit and smeared echoes"
+    }
+  ],
+  "verification": [
+    "Repeated notes on the drone start from audibly different sample positions and pans.",
+    "The drum arp pattern length varies between 4 and 16 steps over successive bars.",
+    "Delay repeats climb in pitch by octaves inside the feedback.",
+    "Each vocal step begins at a different point of the loop."
+  ],
+  "tags": [
+    "generative",
+    "random-modulation",
+    "sampler",
+    "delay",
+    "pitch-shift",
+    "soundscape",
+    "texture",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback"
+}

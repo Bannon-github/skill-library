@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "id": "phase-distortion-shapes-modular-phase-chain",
+  "name": "Rebuild CZ-style phase-distortion shapes with an external phase chain (skew, formant, sync, fold)",
+  "goal": "Recreate Casio-like phase-distortion oscillator shapes in a modular/grid synth by driving a sine from an external phase ramp, then inserting skew, formant/PWM, fold+formant, and sync stages; animate the shape amount with an envelope for filterless brightness, and optionally raise a sync/frequency multiple for resonant overtones.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "TrkXgDQbhjk",
+    "url": "https://www.youtube.com/watch?v=TrkXgDQbhjk",
+    "title": "What is a Phase Distortion Oscillator and why is it",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/TrkXgDQbhjk/agent-skill-phase-distortion-shapes-modular-phase-chain.json"
+  },
+  "prerequisites": [
+    "Modular or grid environment with phase oscillator, phase shaping (skew/bend, formant/PWM), sync, and scope",
+    "Familiarity with disabling an oscillator's internal phase and feeding 100% external phase"
+  ],
+  "inputs": [
+    {
+      "name": "shape_stack",
+      "type": "list",
+      "description": "Ordered phase processors, e.g. [skew], [formant], [fold, formant-12st], [sync-12st, skew]",
+      "required": true
+    },
+    {
+      "name": "shape_mod",
+      "type": "modulation",
+      "description": "Envelope or LFO mapped to the primary shape amount",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pd_voice",
+      "type": "synth-module",
+      "description": "Sine-based PD voice with switchable/combinable shape modes"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Built-in 'Phase-1'-style feedback with near-zero delay may not be reproducible with a long delay; treat feedback as optional/product-specific.",
+    "Align phases (phase reset on note) before comparing shapes so offsets do not look like different algorithms."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start with a sine oscillator. Disable its internal phase (or set internal phase ratio to 0) and drive phase modulation from an external phaser/ramp at 100% so the sine returns.",
+      "tool": "external-phase",
+      "expect": "Scope matches a normal sine; pitch tracks the phaser"
+    },
+    {
+      "n": 2,
+      "action": "Saw-like PD: insert a skew/bend on the phase so the ramp races through the first half and stretches the second (knee around 50% amplitude). Invert polarity if needed to match a reference Phase-1 oscillator.",
+      "tool": "skew",
+      "expect": "Opening skew morphs sine \u2192 saw-like without a filter"
+    },
+    {
+      "n": 3,
+      "action": "PWM/formant-style: use a formant (or PWM) phase shaper so phase stays at the start, runs quickly through the cycle, then holds at the end until reset \u2014 classic pulse-width-like PD.",
+      "tool": "formant-pwm",
+      "expect": "Scope shows dwell at ends; tone thins/thickens with amount"
+    },
+    {
+      "n": 4,
+      "action": "Folded variant: fold the lower half of the wave upward, then apply formant/PWM; for a precise match the transcript uses about \u221212 semitones on the formant stage and order matters (formant before the other stage).",
+      "tool": "fold-formant",
+      "expect": "A distinct folded-then-squeezed sine family appears"
+    },
+    {
+      "n": 5,
+      "action": "Sync+skew: put a sync stage at +12 st (double frequency) then skew to slide the doubled humps together \u2014 another CZ-like bright shape. Whole-number octave sync ratios (12 or 24 st) keep the effect tonal.",
+      "tool": "sync-skew",
+      "expect": "Brighter, more overtone-rich PD; skew still animates the shape"
+    },
+    {
+      "n": 6,
+      "action": "Squeezed whole-wave: shift phase by about 25%, then move formant to squeeze the entire sine. Animate whichever shape control is primary with an ADSR (CZ historically used rich multi-stage envelopes on DCW).",
+      "tool": "phase-shift-env",
+      "expect": "Envelope on shape gives plucky filterless accents"
+    },
+    {
+      "n": 7,
+      "action": "Resonant tilt: raise the oscillator's frequency/sync multiple (or dedicated F control akin to sync) while modulating shape so overtones bloom like resonance \u2014 related to but not identical to plain sync.",
+      "tool": "resonant-multiple",
+      "expect": "Shape motion still dominates; extra multiple adds resonant edge"
+    }
+  ],
+  "verification": [
+    "Each shape_stack setting matches a different sine deformation on the scope",
+    "Envelope on shape amount changes timbre without needing a filter",
+    "Pitch remains that of the external phaser/fundamental"
+  ],
+  "tags": [
+    "phase-distortion",
+    "modular",
+    "bitwig-grid",
+    "skew",
+    "formant",
+    "sync",
+    "envelope-on-shape",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://phase-distortion-shapes-modular-phase-chain"
+}

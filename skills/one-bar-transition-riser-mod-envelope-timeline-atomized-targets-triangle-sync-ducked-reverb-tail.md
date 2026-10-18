@@ -1,0 +1,16 @@
+# One-bar transition FX built on a single mod-envelope 'timeline': a rising curve with an end drop drives noise level, full left-to-right pan and a resonant driven filter; an octave-down detuned unison saw on its own amp; a second up-and-down triangle envelope on oscillator sync (~50%); multiband mid distortion; master delay then a sidechain-ducked reverb that blooms after the riser cuts
+
+Goal: Design reusable section-transition risers in any synth with drawable envelopes. Choose the length first (usually one bar; half or two bars as needed) and draw a mod envelope from bottom at 0 to top at the bar end, then a steep drop to zero as a safeguard. Use it to raise noise from silence (depth sets loudness), pan from fully left to fully right (set pan hard left, modulate 100%), and open a bright filter with resonance and drive. Add a second voice: a saw an octave down with unison and detune on its own amp and FX bus so each target is controlled separately ('atomized'). Draw a second envelope as a triangle (up then down within the same bar) for oscillator sync (~50% depth). Modulate a multiband distortion's mid band with the timeline. Put tails on the master after distortion: delay with lows and highs cut, then reverb with decay below ~70% and sidechain ducking so the reverb opens up as the riser ends. Optional: stutter/glitch FX before the reverb, a master filter sweep, curve variants and bar-length macros. Distinct from our pitch-ramp and Shepard risers: a multi-target envelope timeline with a ducked tail.
+
+Source: [How to Create Epic Sound FX and Risers That Transform Your Tracks | 100 Sound Design Tips Ep. 13](https://www.youtube.com/watch?v=Q_0QcuRePZ0)
+
+1. Pick the length (usually one bar). Draw mod envelope 1: start at the bottom at 0, rise to the top at the bar end (4 beats), then add a steep drop back to 0.
+2. Noise: oscillator gain at 0, noise level 0, mod envelope 1 → noise level with depth for loudness. Bend the curve for more impact; add a compressor or amp gain if it is too quiet.
+3. Pan: set noise pan hard left and modulate it 100% with the same envelope (unipolar), so it travels left to right.
+4. Filter: bright filter with some resonance and drive, cutoff modulated by the same envelope; add a little release.
+5. Second voice: a saw an octave down with unison and detune on a separate amp and FX bus. Its amp level starts at 0 and is modulated by envelope 1.
+6. Draw mod envelope 2 as a triangle over the same bar (up to the top then back down) and route it to oscillator sync (~50%). Try curve variants (fast-in or slow-drop before the downbeat).
+7. On the second voice's FX bus, modulate a multiband distortion's mid drive with envelope 1.
+8. Master tails after distortion: delay (lows and highs cut, more mix), then reverb with decay below ~70% and sidechain ducking so it stays down while the riser plays and blooms after it cuts. Optional: stutter FX between delay and reverb, a master filter sweep on envelope 1, bar-length macros (4/2/½ bars). Place a low impact/kick on the downbeat.
+
+Batch: `2026-10-16-morning-hunt` · transcript: YouTube-provided (Show transcript) · Synth-specific envelope UI mapped to a generic multi-point envelope timeline.

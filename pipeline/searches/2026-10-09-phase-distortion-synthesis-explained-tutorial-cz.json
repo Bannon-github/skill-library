@@ -1,0 +1,68 @@
+{
+ "topic": "phase distortion synthesis explained tutorial CZ",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "phase distortion synthesis explained tutorial CZ",
+  "langs": "en",
+  "per_query": 6,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "EW12RYc7QRA",
+   "title": "GroovyDSP: Introduction to Phase Distortion Synthesis",
+   "channel": "Groovy DSP",
+   "duration": 1229,
+   "view_count": 20646,
+   "url": "https://www.youtube.com/watch?v=EW12RYc7QRA",
+   "query": "phase distortion synthesis explained tutorial CZ tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.66
+  },
+  {
+   "id": "4rp4ZepdzoA",
+   "title": "Drambo by BeepStreet - Phase Distortion Synthesis",
+   "channel": "Ben Richards",
+   "duration": 698,
+   "view_count": 892,
+   "url": "https://www.youtube.com/watch?v=4rp4ZepdzoA",
+   "query": "phase distortion synthesis explained tutorial CZ tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.98
+  },
+  {
+   "id": "TrkXgDQbhjk",
+   "title": "What is a  Phase Distortion Oscillator and why is it 😎",
+   "channel": "Rumble channel",
+   "duration": 1004,
+   "view_count": 3695,
+   "url": "https://www.youtube.com/watch?v=TrkXgDQbhjk",
+   "query": "phase distortion synthesis explained tutorial CZ tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.28
+  }
+ ],
+ "dropped": [
+  {
+   "id": "n0AO7_RBX6g",
+   "why": "duration 14s"
+  },
+  {
+   "id": "9JnnG7T7tVI",
+   "why": "duration 129s"
+  },
+  {
+   "id": "QXqcJX3zvEs",
+   "why": "duration 3091s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

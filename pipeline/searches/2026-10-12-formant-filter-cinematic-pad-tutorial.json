@@ -1,0 +1,166 @@
+{
+ "topic": "formant filter cinematic pad tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "formant filter cinematic pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "S1MhzVyQ_Jc",
+   "title": "U-he Zebra tutorial - Make Ambient Vocal pads",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 832,
+   "view_count": 6858,
+   "url": "https://www.youtube.com/watch?v=S1MhzVyQ_Jc",
+   "query": "formant filter cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.42,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "q3-DybY-kGA",
+   "title": "Tutorial #38 | Phase Plant Funky Lead",
+   "channel": "Sharpend",
+   "duration": 448,
+   "view_count": 1113,
+   "url": "https://www.youtube.com/watch?v=q3-DybY-kGA",
+   "query": "formant filter cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.02,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "P9O_3xb2Fpc",
+   "title": "Aparillo Tutorial | Generating Cinematic Atmospheres & Soundscapes",
+   "channel": "Plugin Boutique",
+   "duration": 244,
+   "view_count": 10415,
+   "url": "https://www.youtube.com/watch?v=P9O_3xb2Fpc",
+   "query": "formant filter cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "k8cvlDaK2RA",
+   "title": "The Orb - Formant Filter Plugin (Overview) - AudioThing",
+   "channel": "AudioThing",
+   "duration": 243,
+   "view_count": 65354,
+   "url": "https://www.youtube.com/watch?v=k8cvlDaK2RA",
+   "query": "formant filter cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.41,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "mK5ymnMoMU4",
+   "title": "☣ Massive Evolutions II v2.0 - Create Custom Presets with Vowel Filters for Dubstep, Complextro,...",
+   "channel": "YummyBeats",
+   "duration": 554,
+   "view_count": 2736,
+   "url": "https://www.youtube.com/watch?v=mK5ymnMoMU4",
+   "query": "formant filter cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.22,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "dq3GUC8IPtw",
+   "why": "duration 123s"
+  },
+  {
+   "id": "c1ubw9J6WNg",
+   "why": "duration 152s"
+  },
+  {
+   "id": "fvwWMTk8zus",
+   "why": "duration 96s"
+  },
+  {
+   "id": "w5NcrgIYOp0",
+   "why": "duration 150s"
+  },
+  {
+   "id": "GRAZxvabk8E",
+   "why": "duration 176s"
+  },
+  {
+   "id": "AVe0-FGRV78",
+   "why": "duration 53s"
+  },
+  {
+   "id": "yoKmo6fEBhc",
+   "why": "duration 173s"
+  },
+  {
+   "id": "bNwGG0g_SYc",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "Aof37spcsDs",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

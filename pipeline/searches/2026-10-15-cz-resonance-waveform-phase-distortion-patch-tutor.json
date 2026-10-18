@@ -1,0 +1,99 @@
+{
+ "topic": "CZ resonance waveform phase distortion patch tutorial",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "CZ resonance waveform phase distortion patch tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "c2vDsQ3DB_0",
+   "title": "Behringer Mini-D: The Budget Synth Everyone Wants! | THAT SYNTH SHOW",
+   "channel": "SYNTH SAMURAI",
+   "duration": 968,
+   "view_count": 7516,
+   "url": "https://www.youtube.com/watch?v=c2vDsQ3DB_0",
+   "query": "CZ resonance waveform phase distortion patch tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.44,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "zK4FItmCaHA",
+   "title": "ASM Leviasynth: The Most Ambitious Synth of 2026?",
+   "channel": "Starsky Carr",
+   "duration": 3046,
+   "view_count": 26545,
+   "url": "https://www.youtube.com/watch?v=zK4FItmCaHA",
+   "query": "CZ resonance waveform phase distortion patch tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.21,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-GB"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "N2hxjeGUEIs",
+   "why": "duration 162s"
+  },
+  {
+   "id": "vr0qUohXFPI",
+   "why": "negative title signal"
+  },
+  {
+   "id": "YvP1hIlZZJg",
+   "why": "duration 64s"
+  },
+  {
+   "id": "FGgXCcn_oVA",
+   "why": "duration 82s"
+  },
+  {
+   "id": "A3CblEF7KmI",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "4O1K8aU8FhU",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "TUre9zObdH8",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "-Pdmb1mNMIE",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "frozen-granular-buffer-as-playable-wavetable-voice",
+  "name": "Frozen granular buffer as a playable 'wavetable' voice: capture an evolving sound, freeze, scan time position, sequence pitch via v/oct for overlapping grain polyphony, random-modulate time/size",
+  "goal": "Turn a granular processor's freeze into an instrument: capture an evolving sound into the buffer (lower-quality mode for ~10 s stereo / 20 s mono), freeze it, trigger seeds from gates, scan the time/position control through the capture like a homemade wavetable, sequence the frozen audio's pitch via v/oct so overlapping grains create a polyphonic illusion, use built-in random modulators on time and grain size, triangle grain window, reverb/delay, and for dark textures pitch the frozen capture down with high density and heavy reverb — the delta vs our granular-stack-freeze skill is pitched, sequenced playback of the frozen buffer.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Dazk-D79k5U",
+    "url": "https://www.youtube.com/watch?v=Dazk-D79k5U",
+    "title": "Mutable Instruments Beads FREEZE Explained – Frozen Textures & Tricks",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Dazk-D79k5U/agent-skill-frozen-granular-buffer-as-playable-wavetable-voice.json"
+  },
+  "prerequisites": [
+    "Granular processor with freeze, time/position, size, shape, density, pitch (v/oct) input and seed/trigger input",
+    "Gate + pitch sequencer",
+    "Reverb/delay"
+  ],
+  "inputs": [
+    {
+      "name": "capture_source",
+      "type": "audio",
+      "description": "Evolving sound/arp to freeze",
+      "required": true
+    },
+    {
+      "name": "gates",
+      "type": "trigger",
+      "description": "Gates for grain seeds",
+      "required": true
+    },
+    {
+      "name": "pitch_seq",
+      "type": "cv",
+      "description": "v/oct pitch sequence",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "frozen_voice",
+      "type": "audio",
+      "description": "Pitched, scannable frozen-buffer voice or dark texture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Freeze captures the source at that moment; record what you want to play first.",
+    "Values (buffer times per quality mode) are from the presenter's module; other engines differ."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Run the granular processor fully wet; generate grains with the seed control; set mid size and a triangle grain shape (fades in and out cleanly); add reverb — integral to big ambient textures.",
+      "tool": "granular",
+      "expect": "Smooth grain stream from the input"
+    },
+    {
+      "n": 2,
+      "action": "Patch a gate into the seed input and adjust density (grains per seed — it can reach audio rate).",
+      "tool": "density",
+      "expect": "Gated grain bursts of controllable density"
+    },
+    {
+      "n": 3,
+      "action": "Select a lower-quality buffer mode to get more record time (presenter: ~10 s stereo / 20 s mono), play an evolving sound in, and freeze it.",
+      "tool": "freeze",
+      "expect": "Captured, static buffer"
+    },
+    {
+      "n": 4,
+      "action": "Scan the time/position control through the frozen audio — like creating your own wavetable.",
+      "tool": "position",
+      "expect": "Distinct timbres at different scan positions"
+    },
+    {
+      "n": 5,
+      "action": "Patch a pitch sequence into v/oct so the frozen buffer is played melodically; use the internal random modulators (attenurandomizers) on time and size; add reverb and delay. Overlapping grains give a polyphony-like overlap.",
+      "tool": "v-oct",
+      "expect": "Melodic, polyphonic-sounding frozen-buffer voice"
+    },
+    {
+      "n": 6,
+      "action": "Try reversed grains for variation.",
+      "tool": "reverse",
+      "expect": "Reverse-grain texture"
+    },
+    {
+      "n": 7,
+      "action": "Dark texture variant: capture a simple tone, pitch the frozen buffer down with density high and reverb high, keep slow random modulation on time so it scrolls and occasionally surfaces higher partials ('ominous wind chimes'); play root changes from a sequencer.",
+      "tool": "texture",
+      "expect": "Mostly droning dystopian bed with occasional high glints"
+    },
+    {
+      "n": 8,
+      "action": "Optional: modulate freeze itself with gates to alternate between live grains and long held frozen notes.",
+      "tool": "freeze-gate",
+      "expect": "Held notes emerge and release"
+    }
+  ],
+  "verification": [
+    "Changing v/oct changes the pitch of the frozen material without changing the buffer.",
+    "Moving position audibly changes timbre (wavetable-like).",
+    "Pitch-down + high density yields a continuous drone, not discrete grains."
+  ],
+  "tags": [
+    "granular",
+    "freeze",
+    "wavetable",
+    "v-oct",
+    "texture",
+    "drone",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://frozen-granular-buffer-as-playable-wavetable-voice"
+}

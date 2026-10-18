@@ -1,0 +1,339 @@
+{
+  "batch_id": "2026-10-15-morning-hunt",
+  "ran_at_local": "2026-10-15 PT morning (~09:15–09:55 PT)",
+  "routine": "Synth YouTube skill hunt",
+  "library_entries_before": 132,
+  "library_entries_after": 148,
+  "mcp_publish_files_before": 134,
+  "mcp_publish_files_after": 150,
+  "mcp_count_before": 134,
+  "mcp_count_after": 150,
+  "cinematic_synth_domain_files_before": 94,
+  "cinematic_synth_domain_files_after": 110,
+  "taxonomy_cinematic_hybrid_synth": {
+    "before": 98,
+    "after": 114
+  },
+  "curriculum_level3": {
+    "before": 67,
+    "after": 83
+  },
+  "searches": [
+    "spectral freeze effect ambient pad how to",
+    "vocoder choir pad synth as carrier tutorial",
+    "west coast wavefolder pad patch tutorial",
+    "CZ resonance waveform phase distortion patch tutorial",
+    "phaser stages feedback synth pad tutorial",
+    "wavetable position modulation cinematic pad tutorial",
+    "comb filter pad sound design tutorial",
+    "frequency shifter sound design synth texture tutorial",
+    "formant filter vowel pad synth tutorial",
+    "stereo width synth pad techniques mono compatible",
+    "hybrid cinematic textures synth sound design tutorial",
+    "resonator effect pad sound design tutorial",
+    "vocoder synth pad sound design tutorial",
+    "wavefolding synth tutorial audio rate timbre"
+  ],
+  "search_files": [
+    "2026-10-15-comb-filter-pad-sound-design-tutorial.json",
+    "2026-10-15-cz-resonance-waveform-phase-distortion-patch-tutor.json",
+    "2026-10-15-formant-filter-vowel-pad-synth-tutorial.json",
+    "2026-10-15-frequency-shifter-sound-design-synth-texture-tutor.json",
+    "2026-10-15-hybrid-cinematic-textures-synth-sound-design-tutor.json",
+    "2026-10-15-phaser-stages-feedback-synth-pad-tutorial.json",
+    "2026-10-15-resonator-effect-pad-sound-design-tutorial.json",
+    "2026-10-15-spectral-freeze-effect-ambient-pad-how-to.json",
+    "2026-10-15-stereo-width-synth-pad-techniques-mono-compatible.json",
+    "2026-10-15-vocoder-choir-pad-synth-as-carrier-tutorial.json",
+    "2026-10-15-vocoder-synth-pad-sound-design-tutorial.json",
+    "2026-10-15-wavefolding-synth-tutorial-audio-rate-timbre.json",
+    "2026-10-15-wavetable-position-modulation-cinematic-pad-tutori.json",
+    "2026-10-15-west-coast-wavefolder-pad-patch-tutorial.json"
+  ],
+  "search_notes": {
+    "empty_first_pass": [
+      "vocoder choir pad synth as carrier tutorial",
+      "west coast wavefolder pad patch tutorial"
+    ],
+    "retried_with": [
+      "vocoder synth pad sound design tutorial",
+      "wavefolding synth tutorial audio rate timbre"
+    ]
+  },
+  "carryover_processed": [
+    "VrCSssDOxFc",
+    "ysMPHY5oiGc",
+    "3q-o772IYQY",
+    "IVi2y9HYBTg",
+    "Ev4nV2G-47s",
+    "XnSE9X0-S9M",
+    "X4TPAWQw4ss",
+    "S3-2yc9UJDE",
+    "LeChNmmtNsM",
+    "_6mEzWHoxKo",
+    "Rdt5Alxrg60",
+    "pYbWRCrFsHQ"
+  ],
+  "routed_new_ids": [
+    "GoMfKhol88k",
+    "U1t3ELd1LDI",
+    "Mm5eO24aAec",
+    "rRFGaDy3uUw",
+    "FId1jUm0zxU",
+    "T64l4AAKFpM",
+    "NQ6tTIJpRDg",
+    "Futy449F9OY",
+    "KVtxIwYpGvQ",
+    "7fLA01y1tu4",
+    "uEI2Ytxn7iI",
+    "x37IwHD-uQ4",
+    "vfZhqBfXvdc",
+    "G3CIJ3l5Fd8",
+    "rbcnLgmyjv8"
+  ],
+  "route_outcomes": {
+    "CANDIDATES_READY": [
+      "VrCSssDOxFc",
+      "ysMPHY5oiGc",
+      "3q-o772IYQY",
+      "XnSE9X0-S9M",
+      "X4TPAWQw4ss",
+      "Rdt5Alxrg60",
+      "GoMfKhol88k",
+      "U1t3ELd1LDI",
+      "Mm5eO24aAec",
+      "T64l4AAKFpM",
+      "Futy449F9OY",
+      "uEI2Ytxn7iI",
+      "vfZhqBfXvdc"
+    ],
+    "COVERED": [
+      "IVi2y9HYBTg",
+      "Ev4nV2G-47s",
+      "S3-2yc9UJDE",
+      "LeChNmmtNsM",
+      "_6mEzWHoxKo",
+      "pYbWRCrFsHQ",
+      "rRFGaDy3uUw",
+      "FId1jUm0zxU",
+      "KVtxIwYpGvQ",
+      "7fLA01y1tu4",
+      "x37IwHD-uQ4",
+      "rbcnLgmyjv8"
+    ],
+    "STOP_no_transcript_then_retry_ok": [
+      "NQ6tTIJpRDg",
+      "G3CIJ3l5Fd8"
+    ]
+  },
+  "false_covered_published": [
+    "LeChNmmtNsM",
+    "_6mEzWHoxKo",
+    "pYbWRCrFsHQ",
+    "KVtxIwYpGvQ"
+  ],
+  "published": [
+    {
+      "id": "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+      "video_id": "3q-o772IYQY",
+      "title": "Celestine - A Realtime Granular Dream Machine (Full Walkthrough)",
+      "name": "Live rolling-buffer granular processor with per-grain behaviour modes: interval 'mosaic' clouds, per-grain pitch glide, reverse+wow smear, ghost-grain bloom, LFO tide, fixed-position constellation patterns and orbiting read head"
+    },
+    {
+      "id": "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+      "video_id": "Futy449F9OY",
+      "title": "The Secret to HUGE Dark Vocal Pads in Serum 2",
+      "name": "Dark hybrid vocal pad: choir-like wavetable plus an octave-up choir sample FM'd in (~34%), with sub and a little noise. Lows/mids are low-passed while the natural sample keeps the highs, a subtle LFO notch moves the mids, and one slow rising ramp drives the FX"
+    },
+    {
+      "id": "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+      "video_id": "G3CIJ3l5Fd8",
+      "title": "EXTREME WAVE FOLDING: a Pure Data experiment.",
+      "name": "Audio-rate wavefolder from scratch: reflect the signal between ±1 (triangle fold) or use a sine fold sin(x·π/2) under up to ~50 dB of input gain, understand where aliasing comes from, choose sources that fold well, and build a small S&H-gain folded wavetable synth"
+    },
+    {
+      "id": "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+      "video_id": "GoMfKhol88k",
+      "title": "Spectral Ambience: Turning Noise into Melodic Synths (Ableton Live 12)",
+      "name": "Effects-only melodic instrument: crackle/noise source → smoothed-random filter → ping-pong feedback delay → spectral harmonic resonator (note, decay, harmonic count, pitch mod) → 'smudge' lo-fi/unison macro → reverb → limiter"
+    },
+    {
+      "id": "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+      "video_id": "KVtxIwYpGvQ",
+      "title": "Ableton's best kept secret for ambient textures",
+      "name": "Glitchy micro-loop buffer for ambient textures: freeze-and-scan buffer with segment length, pitch that cascades through feedback, temporary pitch from sample-rate steps, unlinked L/R (+12 / −12 st with cross feedback) and binary-random LFOs toggling freeze and reverse per side"
+    },
+    {
+      "id": "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+      "video_id": "LeChNmmtNsM",
+      "title": "Airglow Walkthrough: A High-End Atmosphere Instrument for Ambient Music",
+      "name": "Scale-locked high-end atmosphere layer: sporadic random note 'sprays' (sine-like and brighter 'glass' voices) above ~3 kHz with a gravity/rate control, plus pitch-locked air and dust noise layers on random-drift LFO levels and a long reverb"
+    },
+    {
+      "id": "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+      "video_id": "Mm5eO24aAec",
+      "title": "3 Stereo Width Tricks (That Sound Great In Mono)",
+      "name": "Mono-safe width tricks: a 100%-wet short room IR as a stealth widener with width trim and gain make-up, a drawn and smoothed auto-pan rhythm, and Haas kept ≤15 ms split across bands tilted in opposite directions"
+    },
+    {
+      "id": "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
+      "video_id": "Rdt5Alxrg60",
+      "title": "Absynth 6  - Design a Patch From Scratch | Layers, Clouds, Macros & Note FX #absynth6  #sounddesign",
+      "name": "Three-layer pad/key with independent envelopes plus pitch-aware (key-ratio) ring mod, frequency shift and an octave-up granular 'cloud', each brought in by a macro whose maximum is capped"
+    },
+    {
+      "id": "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+      "video_id": "U1t3ELd1LDI",
+      "title": "The Secret to Endless Ambient Textures in Ableton Live",
+      "name": "Endless ambient texture from one looping MIDI clip: seeded random notes in a gap-free scale, per-note chance below 50%, randomised velocity/humanise, slow sine pad, scale-degree fifth chording and stereo/granular/reverb chain"
+    },
+    {
+      "id": "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+      "video_id": "VrCSssDOxFc",
+      "title": "Wavefield Tutorial Video",
+      "name": "Wavetable frames as an animated spectral EQ: each frame is a gain curve across the spectrum, with depth, floor, skew, smoothing, low-end bypass and per-channel time offset"
+    },
+    {
+      "id": "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+      "video_id": "X4TPAWQw4ss",
+      "title": "I Tried Building an Analog Synth Inside the Opsix…",
+      "name": "Build subtractive 'architectures' from operator pairs: six oscillators with their own envelopes, or three oscillator→own-filter blocks (LP / LP+sub / fixed-frequency HP) into a master bandpass, FM pairs into filters, and series HP→LP"
+    },
+    {
+      "id": "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+      "video_id": "XnSE9X0-S9M",
+      "title": "Opsix Effects Mode: The Secret to New Sounds",
+      "name": "Effects inside an FM operator chain: per-operator EQ/phase/delay/comb/drive/decimator/waveshaper/punch applied to the signal before it modulates or is heard, for delayed-modulator bells, noise-excited comb strings and punchy FM attacks"
+    },
+    {
+      "id": "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+      "video_id": "_6mEzWHoxKo",
+      "title": "DevOcean Modular - Create A Wind Noodle Patch From Scratch #modularsynth  #sounddesign  #synthesiser",
+      "name": "Generative 'noodle' wind with no MIDI: one noise source into three parallel filters (slow-swept LP, high resonant BP whistle, mid SVF BP), slightly different free-running sine LFOs with light LFO cross-mod, and an LFO-modulated three-VCA mixer"
+    },
+    {
+      "id": "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+      "video_id": "pYbWRCrFsHQ",
+      "title": "Modulate the modulations to expand your sound design with Magnolia!",
+      "name": "Nested modulation depth chain: velocity → envelope decay → LFO 2 amount → LFO 1 amount → filter cutoff, for touch-sensitive rhythmic filter motion"
+    },
+    {
+      "id": "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+      "video_id": "uEI2Ytxn7iI",
+      "title": "Deconstructing a Textural Soundscape | Creative Sprint #5 Breakdown",
+      "name": "Random-modulator soundscape loop: resampled-chord drone with one random modulator on each voice's start position and pan, randomly shortened arp-driven drums, a randomly retimed delay with a +12 st pitch shifter and stepped grain size in its feedback, and a step-scanned vocal sampler"
+    },
+    {
+      "id": "dual-wt-interval-locked-per-osc-position-level-animators",
+      "video_id": "ysMPHY5oiGc",
+      "title": "Wavefinder Tutorial // Wavetable on Tonverk with OS 1.3.0",
+      "name": "Dual wavetable voice with an interval-locked tune/detune pair and a per-oscillator 'animator' on position and level: Reese bass, phasing-in harmony, S&H atmos pad and level-ramp pluck recipes"
+    }
+  ],
+  "rejected": [
+    {
+      "video_id": "IVi2y9HYBTg",
+      "reason": "Reason: thin product demo (~820 words). It names the controls (size, density, jitter, spread, scale ripple, grain shape, LFO target) but gives no ordered recipe or settings. Granular basics are already covered by granular-buffer-core-position-density-freeze-feedback-modes, and today's live-rolling-buffer skill covers grain modes."
+    },
+    {
+      "video_id": "Ev4nV2G-47s",
+      "reason": "Reason: mostly preset browsing and a Patreon/subscribe preamble. The only delta is a quantised grain harmoniser (root/minor third/fifth/octave) plus per-parameter randomisers, which is already captured by today's live-rolling-buffer \"mosaic\" mode and the existing granular core skill."
+    },
+    {
+      "video_id": "S3-2yc9UJDE",
+      "reason": "Reason: promo for a sample library (articulations, kits, sale CTA). No synthesis or FX recipe beyond generic stretch/warp/arp controls. Promo / no procedure."
+    },
+    {
+      "video_id": "rRFGaDy3uUw",
+      "reason": "Reason: Real overlap. Detuned 16-voice unison with a ramp LFO on detune, LFO waveform morph, an old-drive filter, comb with feedback on a noise lead, and mod wheel on cutoff are already covered by unison/WT-morph/comb pad skills. Patreon download preamble."
+    },
+    {
+      "video_id": "FId1jUm0zxU",
+      "reason": "Reason: Real overlap. Saw+vocal-WT unison pad with chaos LFO on position, noise outside the filter, a notch sweep, and a −7 dB cut at ~400–500 Hz overlaps mix-pads-role-eq-width-clarity, today's dark-hybrid-choir pad (same creator) and existing unison pads."
+    },
+    {
+      "video_id": "7fLA01y1tu4",
+      "reason": "Reason: Basic two-osc detuned string pad (LFO on osc control and pitch, 24 dB LP with envelope, chorus, stereo delay, motion-sequenced pan) that duplicates existing pad skills. It came from the phaser-gap query but uses chorus, not a phaser."
+    },
+    {
+      "video_id": "x37IwHD-uQ4",
+      "reason": "Reason: Same creator and device as today's GoMfKhol88k skill (harmonics, spacing stretch, scale quantise, spectral shift, chorus/wander/granular modes). Explanation of one stock device; the delta is too small for a separate skill. It could be merged into the noise-crackle resonator skill as a revision later."
+    },
+    {
+      "video_id": "T64l4AAKFpM",
+      "reason": "Reason: Track breakdown and library promo: chord voicing and arrangement commentary built on named commercial presets. Little adjustable synthesis recipe (filter-envelope bloom, offbeat bass filter motion, hard-panned arp delay) beyond existing skills."
+    },
+    {
+      "video_id": "NQ6tTIJpRDg",
+      "reason": "Reason: Orchestration advice: layer/support/feature roles, register matching, CC1 filter rides, light pitch variance, thinning arps to 1–5. Mostly opinion with preset-based examples and low portability. Better as a curriculum note than as a skill."
+    },
+    {
+      "video_id": "vfZhqBfXvdc",
+      "reason": "Reason: Device-specific cable loopback workaround (~700 words). The portable kernel (vocode a drum loop against an internal chord carrier at 100% wet, then resample) is too thin for a skill. The vocoder external-carrier gap is still open."
+    },
+    {
+      "video_id": "rbcnLgmyjv8",
+      "reason": "Reason: Narrated overview of West Coast, physical modelling and granular philosophies. Advice-only, no procedure."
+    }
+  ],
+  "carryover_next": [
+    {
+      "video_id": "aPsWzEfgEOo",
+      "title": "Audio Damage TESSERA Sequenced Resonator walkthrough"
+    },
+    {
+      "video_id": "Py4XQbjvn4o",
+      "title": "Philtor 12-band filterbank with sequencer (M4L)"
+    },
+    {
+      "video_id": "YQbj-HEk1xw",
+      "title": "Turn a random sound into a synth (Sample Alchemy)"
+    },
+    {
+      "video_id": "-wDkxJ8PMn4",
+      "title": "Vintage synth sounds on microKorg 2 (check for vocoder section)"
+    },
+    {
+      "video_id": "Uv4yk8_vZQc",
+      "title": "How to turn Serum into vintage classics (manual en-GB)"
+    },
+    {
+      "video_id": "b5QAsgvC9sk",
+      "title": "Adding movement to FM: Opsix modulation & filter sculpting"
+    },
+    {
+      "video_id": "yuQqY0dx2Rw",
+      "title": "Multiphonics CV-3 FM core patch, resonant tine"
+    },
+    {
+      "video_id": "ZVLM1XMT6Z0",
+      "title": "granulate EVERYTHING"
+    },
+    {
+      "video_id": "sGZr4PusB0U",
+      "title": "The craziest synth effect I've ever tried (formant query)"
+    },
+    {
+      "video_id": "E8b_N1RBCxE",
+      "title": "Sound design tips from an orchestral composer"
+    },
+    {
+      "video_id": "y9eDmBUC8ZU",
+      "title": "Physically modeled MPE strings in Surge XT (55 min)"
+    },
+    {
+      "video_id": "EwxNeZttFEA",
+      "title": "Crazy percussions out of a pad in Serum 2"
+    }
+  ],
+  "merge_notes": [
+    "eaQtf_vm9zA random-curve LFO → per-osc unison detune: not folded; no substantive delta for an existing skill (still optional for a WT drone revision).",
+    "x37IwHD-uQ4 spectral-resonator explainer (harmonic spacing/stretch, scale quantise, spectral shift, modes) could be merged into noise-crackle-resonator skill as a revision."
+  ],
+  "quality": "--strict 16/16 clean; full catalog 150: 122 clean, 25 warned, 3 failed (same 3 legacy FAILs: lightroom-select-and-develop-photo, python-pathlib-basic-file-workflow, volyraph-browser-splat-pipeline)",
+  "novelty": "16/16 NOVEL vs prior-art + mcp-publish; highest intra-batch overlap 0.150 (micro-loop buffer vs random-modulator soundscape)",
+  "transcripts": "All YouTube-provided (Show transcript track ladder); no ASR/Whisper; no machine-translated sources published",
+  "backups": "backups/2026-10-15-morning-hunt/ (pre-hunt LIBRARY.json, taxonomy.json, graph.json, curriculums/, mcp-publish/index.json+aliases.json)",
+  "git_sync": "skipped: no GH_TOKEN/GITHUB_TOKEN; gh not logged in",
+  "work_dir": "batches/work-2026-10-15/"
+}

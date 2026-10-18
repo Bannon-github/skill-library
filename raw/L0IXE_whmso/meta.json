@@ -1,0 +1,64 @@
+{
+  "video_id": "L0IXE_whmso",
+  "title": "Sound Design 53: Pads 3 Bandpass",
+  "url": "https://www.youtube.com/watch?v=L0IXE_whmso",
+  "fetched_at": "2026-10-13T16:34:46.749546+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "es-US",
+  "channel": "Olbaid Music",
+  "duration": 568,
+  "ok": true,
+  "cue_count": 108,
+  "route": "auto-target-from-dub-track",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/L0IXE_whmso/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/L0IXE_whmso/raw.txt",
+  "translated": false,
+  "dub_derived": true,
+  "note": "English auto track of a YouTube AI-dub audio track (speech already machine-translated).",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "es-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "en-US(auto)",
+        "pt-BR(auto)",
+        "es(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:es",
+        "4:auto-target-from-dub-track:en-US",
+        "5:original-plus-machine-translation:es"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (es)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch auto-target-from-dub-track (en-US)",
+      "a": true
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.1
+    }
+  ]
+}

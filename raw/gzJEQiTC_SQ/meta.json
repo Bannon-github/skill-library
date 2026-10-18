@@ -1,0 +1,46 @@
+{
+  "video_id": "gzJEQiTC_SQ",
+  "title": "Creating a vocal formant speaking voice in VCV Rack",
+  "url": "https://www.youtube.com/watch?v=gzJEQiTC_SQ",
+  "fetched_at": "2026-10-13T16:34:43.626384+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Omri Cohen",
+  "duration": 476,
+  "ok": true,
+  "cue_count": 161,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/gzJEQiTC_SQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/gzJEQiTC_SQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

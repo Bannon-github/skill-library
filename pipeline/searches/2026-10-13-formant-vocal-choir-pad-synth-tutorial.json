@@ -1,0 +1,170 @@
+{
+ "topic": "formant vocal choir pad synth tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "formant vocal choir pad synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "NgZA99ZuUXw",
+   "title": "Create Stunning Vocal Synths with SERUM (Wavetables Tutorial)",
+   "channel": "HR Mehrfar",
+   "duration": 296,
+   "view_count": 68275,
+   "url": "https://www.youtube.com/watch?v=NgZA99ZuUXw",
+   "query": "formant vocal choir pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.42,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "NVqwLoVo1uw",
+   "title": "Trying to create vocal formants on two different synthesizers (Reface DX and Yamaha EX5)",
+   "channel": "Floyd Steinberg",
+   "duration": 533,
+   "view_count": 2456,
+   "url": "https://www.youtube.com/watch?v=NVqwLoVo1uw",
+   "query": "formant vocal choir pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.2,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "gzJEQiTC_SQ",
+   "title": "Creating a vocal formant speaking voice in VCV Rack",
+   "channel": "Omri Cohen",
+   "duration": 476,
+   "view_count": 5895,
+   "url": "https://www.youtube.com/watch?v=gzJEQiTC_SQ",
+   "query": "formant vocal choir pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.39,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "4fB3wrcHOS4",
+   "title": "SOUND STUFF: Creating a weird choir pad with my voice",
+   "channel": "ZQ Does Stuff",
+   "duration": 945,
+   "view_count": 251,
+   "url": "https://www.youtube.com/watch?v=4fB3wrcHOS4",
+   "query": "formant vocal choir pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.7,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Hsg7qEm7TFA",
+   "title": "ET Noises using formant filter | VITAL VST",
+   "channel": "PSY-LION",
+   "duration": 496,
+   "view_count": 829,
+   "url": "https://www.youtube.com/watch?v=Hsg7qEm7TFA",
+   "query": "formant vocal choir pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.96,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "GwwqGRskv8Q",
+   "why": "duration 124s"
+  },
+  {
+   "id": "8qiLaZARIuo",
+   "why": "duration 20s"
+  },
+  {
+   "id": "GRAZxvabk8E",
+   "why": "duration 176s"
+  },
+  {
+   "id": "VNF-65laInI",
+   "why": "duration 20s"
+  },
+  {
+   "id": "dulq8IJR9nI",
+   "why": "duration 132s"
+  },
+  {
+   "id": "jEPi235BmQk",
+   "why": "duration 69s"
+  },
+  {
+   "id": "98hXVAQqq2A",
+   "why": "duration 40s"
+  },
+  {
+   "id": "lDXgahDeklY",
+   "why": "duration 69s"
+  },
+  {
+   "id": "-tQQ5O8U2Ks",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "jFRCyKVrLVM",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

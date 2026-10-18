@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
+  "name": "Physically modelled bowed string: key-tracked noise exciters into a 100%-wet key-tracked comb, MPE pressure on gain/resonance, MPE timbre fading in a 3rd-harmonic comb, and a three-comb instrument body that retunes cello to bass, viola or violin",
+  "goal": "Build a playable bowed-string voice from synthesis only (no bow sample): a quiet noise exciter feeds a positive comb filter with full key tracking, maximum resonance, 100% wet and cutoff at C4 so it plays in the right octave. MPE pressure (through a shaped response curve) raises exciter gain and lifts comb resonance from about 80 for a scratchy light touch. MPE timbre crossfades in a second key-tracked comb at G5 (third harmonic, resonance ~40%) only near the top of the Y range. A fixed three-comb body (centre a little below 100 Hz, offsets of almost an octave and nearly three octaves, feedback ~15%, tone to taste, pans centred) sets the instrument size. Tame exciter bleed by keeping noise strongest near the played pitch: two S&H-noise oscillators, one optimised for the high end (low cut, key track +10) and one for the low end (high cut, key track −10). Delta beyond our existing noise→resonator and Karplus-style skills: MPE expression mapping plus key-tracked exciter colour and a body comb trio.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "y9eDmBUC8ZU",
+    "url": "https://www.youtube.com/watch?v=y9eDmBUC8ZU",
+    "title": "Physically Modeled MPE Strings in Surge XT",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/y9eDmBUC8ZU/agent-skill-bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs.json",
+    "transcript_note": "Long single-take tutorial; on-screen-only values omitted."
+  },
+  "prerequisites": [
+    "Synth with per-voice comb filters that key-track (Surge XT is free/open source), or Web Audio: per-voice feedback delay comb tuned to note frequency (implementation note)",
+    "MPE controller or pressure/Y-axis CC sources",
+    "Noise oscillators (white/coloured and S&H/correlated noise)",
+    "Post FX comb/resonator block with three combs and a reverb"
+  ],
+  "inputs": [
+    {
+      "name": "note",
+      "type": "midi",
+      "description": "Played pitch (drives comb key tracking and exciter colour)",
+      "required": true
+    },
+    {
+      "name": "pressure",
+      "type": "cc",
+      "description": "MPE pressure / channel aftertouch",
+      "required": true
+    },
+    {
+      "name": "timbre",
+      "type": "cc",
+      "description": "MPE Y-axis (CC74)",
+      "required": false
+    },
+    {
+      "name": "instrument_size",
+      "type": "enum",
+      "description": "cello | double bass | viola | violin",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bowed_string_voice",
+      "type": "patch",
+      "description": "Expressive synthetic bowed string patch"
+    },
+    {
+      "name": "body_settings",
+      "type": "table",
+      "description": "Body comb centre/offset/feedback per instrument size"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Values are those spoken in the transcript (resonance ~80 base, G5 second comb ~40% resonance, body centre <100 Hz cello / ~50 Hz bass, feedback ~15%, S&H noise −10 with gain −38 then −48, key track ±10). Others are 'to taste'.",
+    "Exciter noise always bleeds through somewhat. The presenter suggests a coded physical-modelling synth could subtract the exciter at the end of the chain; that is an idea, not a demonstrated step.",
+    "Body combs are global FX and do not track per voice; feedback too high gives metallic drones.",
+    "Back up patches before updating Surge (the presenter lost patches on update)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Initialise the patch. Route a basic noise oscillator into filter 1 set to comb positive with key tracking full, resonance maximum, 100% wet and cutoff C4. Keep the noise level low and set the overall gain very low before first playing.",
+      "tool": "comb resonator",
+      "expect": "A pitched but harsh, robotic string-like tone"
+    },
+    {
+      "n": 2,
+      "action": "Add a concert-hall reverb, then set up an MSEG-style response curve driven by MPE pressure (loop off, rate disabled, phase ← pressure ~99%). Use it to raise exciter/output gain and to lift comb resonance from ~80 (unipolar) back toward full.",
+      "tool": "pressure",
+      "expect": "Light touch gives a scratchy bowed attack; pressing harder sounds fuller and more resonant"
+    },
+    {
+      "n": 3,
+      "action": "Add filter 2 as a second key-tracked comb at G5 (third harmonic of C4), resonance ~40%, filter mode with two filters in series/blend (S2-type), filter balance fully toward filter 1. Make a second curve named 'timbre' driven by MPE Y (≈49% because it reads as bipolar, base 50%) and shape it so the balance only moves toward filter 2 at the top of the Y range; add pressure to its resonance.",
+      "tool": "timbre harmonic",
+      "expect": "Sliding up adds a bright third-harmonic overtone; keep subtle, it can shriek"
+    },
+    {
+      "n": 4,
+      "action": "Add an instrument body with a three-comb FX block: pans 0, centre a little below 100 Hz (cello), offsets of almost an octave and closer to three octaves, feedback down to ~15%, tone low for a vintage recording sound or higher (or slightly less mix) for 'in the room'. Lower the mix of the upper combs so the centre resonates strongest.",
+      "tool": "body",
+      "expect": "Thin buzzy tone gains a woody cello body, not metallic ringing"
+    },
+    {
+      "n": 5,
+      "action": "Resize the instrument: move the body centre to ~50 Hz and lower noise colour for double bass; raise centre, noise colour and tone by ear for viola and further for violin. Play in the instrument's own range.",
+      "tool": "size",
+      "expect": "Same patch reads as bass, cello, viola or violin"
+    },
+    {
+      "n": 6,
+      "action": "Tame noise: noise near the comb cutoff resonates nicely, noise far from it sounds like hiss. Key-track the noise colour upward. Better: mute the basic noise and use two S&H-noise oscillators (level ~−10, exciter gain ~−38 then ~−48), tune correlation/width by ear (width can give a formant-like bow character). Oscillator 1 handles high notes (low cut, key track +10) and oscillator 2 handles low notes (high cut, key track −10).",
+      "tool": "exciter",
+      "expect": "Less dark rumble on high notes and enough low end on bass notes"
+    },
+    {
+      "n": 7,
+      "action": "Optionally stack a cello-body convolution IR after the combs (watch the low-end build-up and EQ it), then fine-tune levels.",
+      "tool": "finish",
+      "expect": "Expressive, playable string with controlled noise"
+    }
+  ],
+  "verification": [
+    "The comb cutoff at C4 with full key tracking plays at the correct pitch on a tuner.",
+    "Changing pressure audibly changes scratchiness and level; Y-axis adds the third harmonic only near the top.",
+    "Moving the body centre from ~100 Hz to ~50 Hz shifts the perceived instrument size down.",
+    "Highest and lowest notes have less broadband hiss than with a single un-tracked noise source."
+  ],
+  "tags": [
+    "physical-modelling",
+    "bowed-string",
+    "comb-filter",
+    "mpe",
+    "noise-exciter",
+    "surge-xt",
+    "strings",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs"
+}

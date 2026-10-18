@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+  "name": "Granular slicer workflow: map keys to grain position instead of pitch (key→transpose 0, key→position up) with glide between slices, lock grain size to tempo in ms, per-parameter variation and L/R pitch spread for an icy cloud, an envelope that morphs grain shape and size per note, scan + per-ear LFOs for glitch, and a square-LFO auto-recapture of live drums every two bars",
+  "goal": "Play any long recording (vocal, sound-design session, loop, live drums) as an ethereal slice instrument. Use three grain modes for different jobs: classic (overlapping, sustained), loop (non-overlapping, with reverse chance) and cloud (stacked grains, density). Set key→transpose to 0 and key→filter to 0, then turn key→position up so each key plays a different part of the file; enable mono + glide to glide between slices; smaller grains change position faster. Tune the pad version by checking the sample's pitch with a tuner. In cloud mode raise variation on grain size, small transposition (chorus) and volume, and add spread for different L/R pitch. Lock grain size to tempo by converting a note length to ms (a quarter note read as 408 ms). Remember transposition changes grain duration: 76.1 ms at 0 st becomes half at +12 st. Use the modulation envelope negatively on grain shape and size for plucky transients (decay ~1 s). Use scan (e.g. 0.25×) with LFOs (different per ear) on grain size and position for glitch, and auto-capture live drum input every two bars with a square, skewed LFO for generative texture. Delta vs our granular skills: key-to-position slicing with glide, tempo-ms grain lock and periodic self-recapture.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ZVLM1XMT6Z0",
+    "url": "https://www.youtube.com/watch?v=ZVLM1XMT6Z0",
+    "title": "granulate EVERYTHING",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ZVLM1XMT6Z0/agent-skill-key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture.json",
+    "transcript_note": "Sponsored video; plugin pack promotion dropped."
+  },
+  "prerequisites": [
+    "Granular sampler with grain size, position, scan, density, per-parameter variation, key modulation amounts and a capture-input mode (Granulator III is free in Live 12 Suite), or Web Audio AudioBufferSourceNode grain scheduler (implementation note)",
+    "Tuner, LFO, modulation envelope, optional live input/resampling routing"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Vocal, sound-design session, loop or live drum input",
+      "required": true
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo for grain-size lock",
+      "required": false
+    },
+    {
+      "name": "key",
+      "type": "object",
+      "description": "Song key so slices sit in key (e.g. G major / E minor)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "slice_instrument",
+      "type": "patch",
+      "description": "Key-mapped granular slice instrument"
+    },
+    {
+      "name": "textures",
+      "type": "audio",
+      "description": "Icy clouds, vocal chops, glitch loops, generative recaptured drum textures"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Spoken values only: quarter note = 408 ms example, grain 76.1 ms at 0 st halves at +12 st, scan 0.25×, envelope decay ~1 s, recapture every two bars.",
+    "Key→position mapping is not precisely quantifiable; audition amounts by ear.",
+    "MPE/note pitch bend still transposes even with key→transpose at 0.",
+    "Sponsored video; plugin pack promotion dropped."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a recording into the granular sampler and learn the three modes: classic (overlapping, sustained), loop (non-overlapping; set reverse chance) and cloud (stacked grains, density control).",
+      "tool": "modes",
+      "expect": "Hear sustained vs chopped vs dense cloud behaviour"
+    },
+    {
+      "n": 2,
+      "action": "For a pad: check the sample's pitch with a tuner and transpose so C3 plays C. In cloud mode turn up variation, with orange per-parameter amounts on grain size, a little transposition (chorus) and volume; reduce position variation if too scattered. Add spread for different L/R pitch.",
+      "tool": "icy cloud",
+      "expect": "Wide, shimmering sustained pad"
+    },
+    {
+      "n": 3,
+      "action": "For slicing: set key→transpose and key→filter to 0, set key→position up. Each key now plays a different region. Enable mono + glide to glide between slices; reduce grain size so position changes faster. Use it for vocal-chop patterns and transpose to the song key.",
+      "tool": "key→position",
+      "expect": "Keyboard becomes an ethereal slice player"
+    },
+    {
+      "n": 4,
+      "action": "Tempo-lock grain size: measure a note length in ms (e.g. select a quarter note and read its duration, 408 ms in the example) and type it in. Remember +12 st transposition halves grain duration (76.1 → ~38 ms).",
+      "tool": "tempo",
+      "expect": "Grain repetition aligns with the beat"
+    },
+    {
+      "n": 5,
+      "action": "Transient shaping: route the modulation envelope negatively to grain shape (pointy → regular) and to grain size (small → normal), decay ~1 s, in classic mode.",
+      "tool": "envelope",
+      "expect": "Plucky, articulated granular notes"
+    },
+    {
+      "n": 6,
+      "action": "Glitch motion: set scan to ~0.25× and modulate grain size and position with an LFO that differs per ear. Record knob automation while playing.",
+      "tool": "scan + lfo",
+      "expect": "Glitchy, stereo-moving textures"
+    },
+    {
+      "n": 7,
+      "action": "Generative recapture: feed live drum clips (random follow actions, legato on) into the granulator's capture input; drive capture with a square, skewed LFO every two bars; hold one note and scan slowly; map an LFO to grain size/shape. Resample the result to layer under the beat.",
+      "tool": "auto-capture",
+      "expect": "Ever-changing texture derived from the current groove"
+    }
+  ],
+  "verification": [
+    "With key→transpose 0, different keys play the same pitch but different sample regions.",
+    "Grain size set to the computed ms value repeats in time with the metronome.",
+    "With per-ear LFOs active, the left and right channels differ audibly.",
+    "Auto-capture refreshes the buffer every two bars (audible content change)."
+  ],
+  "tags": [
+    "granular",
+    "slicing",
+    "grain-position",
+    "tempo-sync",
+    "vocal-chops",
+    "generative",
+    "resampling",
+    "stereo",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture"
+}

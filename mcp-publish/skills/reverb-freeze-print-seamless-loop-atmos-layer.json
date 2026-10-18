@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "id": "reverb-freeze-print-seamless-loop-atmos-layer",
+  "name": "Reverb-freeze atmosphere print: freeze a 100%-wet reverb of a synth phrase, record it to audio, loop it seamlessly with overlapping tail, bus and process as an atmos layer",
+  "goal": "Create a background atmosphere layer from any melodic synth part: send it to a 100%-wet, low-cut, high-diffusion/large-size/long-decay reverb with a freeze/hold function, engage freeze while the phrase plays, record the frozen output via a group bus onto a new audio track, then EQ it, add sidechain-style volume ducking and a second ~5–6 s reverb so the loop point is masked, duplicate and overlap the clips with a short end fade for a click-free endless loop, and group the layers into an atmos bus — optionally printing separate closed-filter and open-filter freezes to follow the arrangement.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "-oFbaWsScJw",
+    "url": "https://www.youtube.com/watch?v=-oFbaWsScJw",
+    "title": "Trance Atmosphere Tutorial using Reverb Freeze 🥶",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/-oFbaWsScJw/agent-skill-reverb-freeze-print-seamless-loop-atmos-layer.json"
+  },
+  "prerequisites": [
+    "Reverb with freeze/hold (Web Audio: ConvolverNode with long IR is not freezable — use a feedback-delay network with feedback = 1 and input muted, implementation note)",
+    "Bus/group routing and an audio track that can record a bus",
+    "EQ, volume-shaper/sidechain tool, second reverb"
+  ],
+  "inputs": [
+    {
+      "name": "phrase",
+      "type": "audio",
+      "description": "Synth melody/chord phrase to freeze",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "atmos_loop",
+      "type": "audio",
+      "description": "Endless frozen-reverb atmosphere layer(s)"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "DAW-specific routing (group → audio input) is generic: any bus-record or bounce works.",
+    "Keep faders out of the very bottom of their travel; add gain staging instead for fine balance.",
+    "Frozen print captures the filter state at freeze time — print separate states if the source filter opens later."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert a freeze-capable reverb on (or as a send for) the synth phrase: cut the lows, mix 100% wet, raise diffusion, size and decay.",
+      "tool": "reverb",
+      "expect": "Long dense wash of the phrase"
+    },
+    {
+      "n": 2,
+      "action": "Play the phrase and engage freeze at the musically richest moment; the reverb holds indefinitely even when playback stops. Release/turn down to end.",
+      "tool": "freeze",
+      "expect": "Sustained frozen chord-cloud"
+    },
+    {
+      "n": 3,
+      "action": "Route the synth (with the freezing reverb) to a dedicated group bus, create an audio track whose input is that bus, and record a few bars (~4) of the frozen output. Then remove the temporary reverb and restore the synth's original output routing.",
+      "tool": "record",
+      "expect": "Audio clip containing only the frozen ambience"
+    },
+    {
+      "n": 4,
+      "action": "On the printed track: EQ low end out and tame highs; add a sidechain-style volume shaper so it pumps with the groove.",
+      "tool": "eq",
+      "expect": "Atmos sits behind the mix"
+    },
+    {
+      "n": 5,
+      "action": "Add a second reverb on the print (low cut, ~5–6 s decay, larger size, modulation off) so the restart of the loop isn't heard as a jump.",
+      "tool": "reverb-2",
+      "expect": "Loop seam smeared"
+    },
+    {
+      "n": 6,
+      "action": "Make the clip loop seamlessly: add a small fade at the end, duplicate it onto a second track, and overlap clips so each new clip starts while the previous tail fades.",
+      "tool": "loop",
+      "expect": "Endless loop with no clicks or pops"
+    },
+    {
+      "n": 7,
+      "action": "Group both print tracks into an 'atmos' bus; process together (another large reverb with lows cut ~600–700 Hz and reduced feedback/mix, gentle top-end saturation/exciter).",
+      "tool": "bus",
+      "expect": "Single controllable atmos layer"
+    },
+    {
+      "n": 8,
+      "action": "If the source filter opens later in the arrangement, print a second freeze with the filter open and use closed/open layers per section.",
+      "tool": "arrangement",
+      "expect": "Atmos follows the arrangement's brightness"
+    }
+  ],
+  "verification": [
+    "Muting the original synth leaves a continuous bed that never stops.",
+    "Loop boundary is inaudible (no click or jump).",
+    "Atmos bus has low end removed (spectrum check below a few hundred Hz)."
+  ],
+  "tags": [
+    "reverb-freeze",
+    "freeze",
+    "atmosphere",
+    "ambience",
+    "print",
+    "loop",
+    "trance",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://reverb-freeze-print-seamless-loop-atmos-layer"
+}

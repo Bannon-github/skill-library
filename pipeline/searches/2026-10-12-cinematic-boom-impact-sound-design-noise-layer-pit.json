@@ -1,0 +1,148 @@
+{
+ "topic": "cinematic boom impact sound design noise layer pitch synth tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "cinematic boom impact sound design noise layer pitch synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "lLAj2rvBouI",
+   "title": "Sound Design Tutorial: Layers of Cinematic Hit (Breakdown)",
+   "channel": "Negativist",
+   "duration": 394,
+   "view_count": 1756,
+   "url": "https://www.youtube.com/watch?v=lLAj2rvBouI",
+   "query": "cinematic boom impact sound design noise layer pitch synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.12,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "lQRLKSgU9Us",
+   "title": "Logic Pro: Sound Design: Creating Cinematic Pulses",
+   "channel": "Jono Buchanan Music",
+   "duration": 1189,
+   "view_count": 9560,
+   "url": "https://www.youtube.com/watch?v=lQRLKSgU9Us",
+   "query": "cinematic boom impact sound design noise layer pitch synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.49,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "_FTkUg2pFHY",
+   "title": "SOUNDWEAVER | Timeline Walkthrough",
+   "channel": "BOOM Library // Sound Effects",
+   "duration": 307,
+   "view_count": 8284,
+   "url": "https://www.youtube.com/watch?v=_FTkUg2pFHY",
+   "query": "cinematic boom impact sound design noise layer pitch synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.46,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "yMWyPdSs_wE",
+   "title": "Bass Drop Tutorial - Omnisphere Downer in 1 Minute!",
+   "channel": "Soundbed Videos",
+   "duration": 832,
+   "view_count": 3131,
+   "url": "https://www.youtube.com/watch?v=yMWyPdSs_wE",
+   "query": "cinematic boom impact sound design noise layer pitch synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "_J56n496u6k",
+   "title": "How I Design Awesome Gun Sounds | My Sound Design Process",
+   "channel": "Matt Gault",
+   "duration": 645,
+   "view_count": 135192,
+   "url": "https://www.youtube.com/watch?v=_J56n496u6k",
+   "query": "cinematic boom impact sound design noise layer pitch synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.07,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "NXeQRgWD21o",
+   "why": "negative title signal"
+  },
+  {
+   "id": "xnm5guzfKiU",
+   "why": "duration 9097s"
+  },
+  {
+   "id": "ikEUqhOnqeQ",
+   "why": "duration 55s"
+  },
+  {
+   "id": "d-CuysZKYs0",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "blAIQeY2IIw",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

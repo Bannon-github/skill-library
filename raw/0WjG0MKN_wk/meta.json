@@ -1,0 +1,46 @@
+{
+  "video_id": "0WjG0MKN_wk",
+  "title": "Wavefolding | Max/MSP Tutorial",
+  "url": "https://www.youtube.com/watch?v=0WjG0MKN_wk",
+  "fetched_at": "2026-10-16T16:28:54.496697+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Hearing Glass | Umut Eldem",
+  "duration": 972,
+  "ok": true,
+  "cue_count": 359,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/0WjG0MKN_wk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0WjG0MKN_wk/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

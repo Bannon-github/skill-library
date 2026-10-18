@@ -1,0 +1,97 @@
+{
+ "topic": "phase distortion casio CZ synthesizer how to",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "phase distortion casio CZ synthesizer how to",
+  "langs": "en",
+  "per_query": 8,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "hlgl5lfdv48",
+   "title": "Casio CZ-1 Phase Distortion Synthesizer - Part 1 - Overview",
+   "channel": "Runningonair",
+   "duration": 721,
+   "view_count": 18233,
+   "url": "https://www.youtube.com/watch?v=hlgl5lfdv48",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.63
+  },
+  {
+   "id": "60H6AJd77KA",
+   "title": "Casio CZ-1 Phase Distortion Synthesizer - Part 8 - Patch Backup/Restore over MIDI using MIDI-OX",
+   "channel": "Runningonair",
+   "duration": 398,
+   "view_count": 1928,
+   "url": "https://www.youtube.com/watch?v=60H6AJd77KA",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.14
+  },
+  {
+   "id": "WPqZhd3bxL4",
+   "title": "Casio CZ-1 Phase Distortion Synthesizer - Part 6 - Performance Controls",
+   "channel": "Runningonair",
+   "duration": 1177,
+   "view_count": 1473,
+   "url": "https://www.youtube.com/watch?v=WPqZhd3bxL4",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.08
+  },
+  {
+   "id": "EW12RYc7QRA",
+   "title": "GroovyDSP: Introduction to Phase Distortion Synthesis",
+   "channel": "Groovy DSP",
+   "duration": 1229,
+   "view_count": 20646,
+   "url": "https://www.youtube.com/watch?v=EW12RYc7QRA",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.66
+  },
+  {
+   "id": "lN0GDcG7uT8",
+   "title": "Casio CZ-1 Phase Distortion Synthesizer - Part 7 - LCD/OLED Display Replacement",
+   "channel": "Runningonair",
+   "duration": 272,
+   "view_count": 1942,
+   "url": "https://www.youtube.com/watch?v=lN0GDcG7uT8",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.64
+  },
+  {
+   "id": "94vSgZXg1nQ",
+   "title": "GroovyDSP: More Phase Distortion!",
+   "channel": "Groovy DSP",
+   "duration": 968,
+   "view_count": 2803,
+   "url": "https://www.youtube.com/watch?v=94vSgZXg1nQ",
+   "query": "phase distortion casio CZ synthesizer how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.22
+  }
+ ],
+ "dropped": [
+  {
+   "id": "9JnnG7T7tVI",
+   "why": "duration 129s"
+  },
+  {
+   "id": "n0AO7_RBX6g",
+   "why": "duration 14s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

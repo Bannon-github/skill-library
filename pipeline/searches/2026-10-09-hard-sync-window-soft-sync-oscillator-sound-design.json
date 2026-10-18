@@ -1,0 +1,61 @@
+{
+ "topic": "hard sync window soft sync oscillator sound design",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "hard sync window soft sync oscillator sound design",
+  "langs": "en",
+  "per_query": 6,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 1800,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "C_d3SCz2u-c",
+   "title": "Oscillator Syncing in Thor (Patch Design in Thor)",
+   "channel": "Groove3",
+   "duration": 473,
+   "view_count": 2863,
+   "url": "https://www.youtube.com/watch?v=C_d3SCz2u-c",
+   "query": "hard sync window soft sync oscillator sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.23
+  },
+  {
+   "id": "beZpH9X850s",
+   "title": "Musikmachen mit LMMS - XXVII. Synth Basics - Part 7: Oscillator Sync",
+   "channel": "Stefan Harth",
+   "duration": 399,
+   "view_count": 935,
+   "url": "https://www.youtube.com/watch?v=beZpH9X850s",
+   "query": "hard sync window soft sync oscillator sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.99
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ryOhX7xFZ8g",
+   "why": "duration 3095s"
+  },
+  {
+   "id": "o1CRDqrb4aE",
+   "why": "duration 129s"
+  },
+  {
+   "id": "gtmUKmlClic",
+   "why": "duration 18s"
+  },
+  {
+   "id": "vvBl3YUBUyY",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

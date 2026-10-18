@@ -1,0 +1,171 @@
+{
+ "topic": "sample and hold LFO random modulation pad tutorial",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "sample and hold LFO random modulation pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "IiWPL_v8Eqk",
+   "title": "Zebra 2 - Using LFO`s Random Features (Sample & Hold) - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 961,
+   "view_count": 2344,
+   "url": "https://www.youtube.com/watch?v=IiWPL_v8Eqk",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.19,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "alEX8oYmxsU",
+   "title": "Access Virus Ti - Sample and Hold Part 2 - How To Tutorials",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 1012,
+   "view_count": 4556,
+   "url": "https://www.youtube.com/watch?v=alEX8oYmxsU",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.33,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "iw",
+     "es-US"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "ejbXAwj32nk",
+   "title": "[tutorial] Blofeld Beginners 12: LFO Randomness",
+   "channel": "Synthesizer Video Service",
+   "duration": 311,
+   "view_count": 720,
+   "url": "https://www.youtube.com/watch?v=ejbXAwj32nk",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.93,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "3iHqbVcyIbg",
+   "title": "ROOTS Tutorial, Sample and Hold Sequence Generator, Rythm LFO, Compare, Eurorack , Tronix Audio",
+   "channel": "Tronix-audio",
+   "duration": 828,
+   "view_count": 321,
+   "url": "https://www.youtube.com/watch?v=3iHqbVcyIbg",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.75,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "btlEZphP8Kw",
+   "title": "Sample and Hold Synth tutorial  VCV Rack",
+   "channel": "Darkest Sunray",
+   "duration": 905,
+   "view_count": 3354,
+   "url": "https://www.youtube.com/watch?v=btlEZphP8Kw",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.26,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "VVpFyUE73Zc",
+   "title": "LFO Modulation PART 39 | Arturia Pigments 4 Tutorial",
+   "channel": "Jon Audio",
+   "duration": 747,
+   "view_count": 4407,
+   "url": "https://www.youtube.com/watch?v=VVpFyUE73Zc",
+   "query": "sample and hold LFO random modulation pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.32,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "XHPkN354ns8",
+   "why": "duration 91s"
+  },
+  {
+   "id": "KvjiKzBaTAs",
+   "why": "negative title signal"
+  },
+  {
+   "id": "kf6k4u-3C4w",
+   "why": "duration 33s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

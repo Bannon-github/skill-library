@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "dual-path-filter-spread-inverse-amp-lfo-stereo",
+  "name": "Stereo from mono: opposite filter frequencies plus inverse amplitude LFO",
+  "goal": "Widen a mono synth path without Haas delay: split into L/R, offset parallel filter cutoffs in opposite directions (plus/minus frequency spread), then apply a unipolar LFO to left amplitude and its inverse (1\u2212x) to right amplitude so levels see-saw in opposite phase \u2014 a modular stereo image that differs from Haas, mid/side EQ, and double-tracked asymmetric processing.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "02_MBQrqJS8",
+    "url": "https://www.youtube.com/watch?v=02_MBQrqJS8",
+    "title": "How to Make your Synthesizer Stereo",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/02_MBQrqJS8/agent-skill-dual-path-filter-spread-inverse-amp-lfo-stereo.json"
+  },
+  "prerequisites": [
+    "Mono synth voice (oscs \u2192 mixer \u2192 filters \u2192 amp is fine)",
+    "Ability to duplicate the post-filter (or post-amp) path into discrete L and R chains",
+    "LFO and simple arithmetic (invert / 1\u2212x) or dual attenuators with opposite mod depth"
+  ],
+  "inputs": [
+    {
+      "name": "mono_voice",
+      "type": "synth-module",
+      "description": "Centered dry synth to widen",
+      "required": true
+    },
+    {
+      "name": "spread_hz",
+      "type": "number",
+      "description": "How far L vs R filter cutoffs diverge",
+      "required": true
+    },
+    {
+      "name": "amp_lfo_rate",
+      "type": "number",
+      "description": "Rate of the opposite-amplitude see-saw",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "stereo_voice",
+      "type": "synth-module",
+      "description": "L/R pair with spectral and amplitude differentiation"
+    }
+  ],
+  "constraints": [
+    "Portable modular/Web Audio recipe; not affiliated with any vendor.",
+    "Check mono fold-down \u2014 opposite filters and amplitude LFO can comb or pump when summed.",
+    "Distinct from haas-plus-phase-offset-width-automated (no inter-channel delay) and asymmetric-left-right-processing-width-mono-safe (no double-tracking/slap); complementary to midside-eq-bass-focus-width-depth for finishing."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a mono voice (tutorial: two simple waves + white noise \u2192 mixer \u2192 HP/LP \u2192 envelope). Confirm it is centered.",
+      "tool": "mono-voice",
+      "expect": "Single centered image"
+    },
+    {
+      "n": 2,
+      "action": "Frequency-spread stereo: put a filter (or filter pair) into a plus/minus or dual-cutoff mode and offset the cutoff so left and right emphasize different bands. This alone creates a static spectral stereo image.",
+      "tool": "filter-spread",
+      "expect": "L and R sound tonally different but still correlated"
+    },
+    {
+      "n": 3,
+      "action": "Duplicate the signal into explicit left and right amplitude paths after the envelope (or duplicate the mixer into L/R).",
+      "tool": "split-lr",
+      "expect": "Two gain stages feeding L and R outputs"
+    },
+    {
+      "n": 4,
+      "action": "Create a unipolar LFO. Multiply the left path by the LFO. Build the right modulator as inverse unipolar: multiply LFO by \u22121 then add 1 (or use 1\u2212x) so when left is loud, right is quiet and vice versa. Multiply the right path by that inverse.",
+      "tool": "inverse-amp-lfo",
+      "expect": "Amplitude see-saw between L and R at the LFO rate"
+    },
+    {
+      "n": 5,
+      "action": "Alternate simpler wiring: two attenuators on L and R modulated with opposite depths from the same LFO. Compare against the multiply version \u2014 both yield opposite-amplitude stereo.",
+      "tool": "opposite-attenuators",
+      "expect": "Same widening effect with less patching"
+    },
+    {
+      "n": 6,
+      "action": "Audition in stereo and mono. Reduce spread or LFO depth if mono pumps or hollows. Combine later with gentle M/S EQ if lows got too wide.",
+      "tool": "mono-check",
+      "expect": "Wide in stereo; acceptable in mono"
+    }
+  ],
+  "verification": [
+    "With only filter spread: static width, no delay slap.",
+    "With inverse amp LFO: image rocks L\u2194R without changing pan knobs.",
+    "Mono sum remains usable at moderate depths."
+  ],
+  "tags": [
+    "stereo-width",
+    "filter-spread",
+    "amplitude-lfo",
+    "modular",
+    "mono-safe",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dual-path-filter-spread-inverse-amp-lfo-stereo"
+}

@@ -1,0 +1,196 @@
+{
+ "topic": "spectral freeze effect ambient pad how to",
+ "date": "2026-10-15",
+ "params": {
+  "topic": "spectral freeze effect ambient pad how to",
+  "langs": "en",
+  "per_query": 15,
+  "top": 10,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "QAnllGU32Zk",
+   "title": "AutoSwell on Valeton GP200 ⚡️ Ambient Worship Swells & Pad Guitar Tutorial",
+   "channel": "MrCrosby (Crosby Guitars)",
+   "duration": 632,
+   "view_count": 3187,
+   "url": "https://www.youtube.com/watch?v=QAnllGU32Zk",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "f11p0Eh6DXQ",
+   "title": "Ambient Modular Patch Walkthrough | Intellijel Atlantix, Swells, Multigrain, Metropolix & more",
+   "channel": "Intellijel",
+   "duration": 1377,
+   "view_count": 9675,
+   "url": "https://www.youtube.com/watch?v=f11p0Eh6DXQ",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.49,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "gOnA-Bh0NO4",
+   "title": "Electro-Harmonix Pico Atomic Cluster Spectral Decomposer Pedal",
+   "channel": "EHX",
+   "duration": 390,
+   "view_count": 123770,
+   "url": "https://www.youtube.com/watch?v=gOnA-Bh0NO4",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.05,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "c5YIeG_wxo0",
+   "title": "Charles Vestal AMBIOTICA Tutorial - Lose yourself in Music! (IOS)",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 1089,
+   "view_count": 1045,
+   "url": "https://www.youtube.com/watch?v=c5YIeG_wxo0",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "U1t3ELd1LDI",
+   "title": "The Secret to Endless Ambient Textures in Ableton Live",
+   "channel": "Tom Casey Music",
+   "duration": 748,
+   "view_count": 20344,
+   "url": "https://www.youtube.com/watch?v=U1t3ELd1LDI",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.65,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "GoMfKhol88k",
+   "title": "Spectral Ambience: Turning Noise into Melodic Synths (Ableton Live 12)",
+   "channel": "Simply Synths",
+   "duration": 1313,
+   "view_count": 399,
+   "url": "https://www.youtube.com/watch?v=GoMfKhol88k",
+   "query": "spectral freeze effect ambient pad how to tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.8,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "bBdWBuivu3U",
+   "why": "negative title signal"
+  },
+  {
+   "id": "NUJKKy-1NZM",
+   "why": "duration 16s"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "kbIS8wKD0sY",
+   "why": "duration 134s"
+  },
+  {
+   "id": "mBvUObtJTJI",
+   "why": "already known"
+  },
+  {
+   "id": "SSJDIte-nJo",
+   "why": "duration 123s"
+  },
+  {
+   "id": "P6zMzEvho54",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "QCmdTJwSYew",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

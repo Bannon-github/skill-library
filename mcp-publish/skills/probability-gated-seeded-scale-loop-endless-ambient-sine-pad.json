@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+  "name": "Endless ambient texture from one looping MIDI clip: seeded random notes in a gap-free scale, per-note chance below 50%, randomised velocity/humanise, slow sine pad, scale-degree fifth chording and stereo/granular/reverb chain",
+  "goal": "Make a single looping MIDI clip never sound the same twice. Generate seeded random notes locked to a scale without half steps (major pentatonic; Dorian also liked), in a mid register (pitch range ~2–3) with long durations. Then lower each note's play chance below 50% (or below 30% for sparse, many-voice clips) and randomise chance, velocity and timing deviation. Play a soft sine pad (~1 s attack, ~6 s release, so sparse notes overlap), add a scale-aware chord effect (scale degree +4 = fifth on every triggered note), then stereo doubling, a parallel echo, a stereo pitch-loop/micro-delay, granular delay (spray up, frequency down) and a big long reverb. For Polyrhythm Studio-style generative scheduling: probability per note, not a fixed sequence.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "U1t3ELd1LDI",
+    "url": "https://www.youtube.com/watch?v=U1t3ELd1LDI",
+    "title": "The Secret to Endless Ambient Textures in Ableton Live",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/U1t3ELd1LDI/agent-skill-probability-gated-seeded-scale-loop-endless-ambient-sine-pad.json",
+    "transcript_note": "Patreon/subscribe CTA dropped. Host-specific generator UI mapped to generic per-note probability."
+  },
+  "prerequisites": [
+    "Sequencer/clip with per-note probability (Web Audio: scheduler that rolls Math.random() < p per note, implementation note)",
+    "Seeded random note generator or a hand-made scale-locked note list",
+    "Sine/pad synth with slow attack, long release, enough voices",
+    "Chord/interval generator, stereo doubler/chorus, echo, granular delay, long reverb"
+  ],
+  "inputs": [
+    {
+      "name": "scale",
+      "type": "string",
+      "description": "Gap-free scale such as major pentatonic or Dorian",
+      "required": true
+    },
+    {
+      "name": "clip_length",
+      "type": "string",
+      "description": "Loop length (bars)",
+      "required": true
+    },
+    {
+      "name": "chance",
+      "type": "number",
+      "description": "Per-note play probability, mostly < 50%",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "endless_ambient_loop",
+      "type": "audio",
+      "description": "Evolving soundscape that varies on every loop pass"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "When you add voices/density after setting chance, chance resets to 100%; re-apply it.",
+    "'Fit to scale' re-quantises notes after changing scale.",
+    "Sparse clips need long releases so notes still connect.",
+    "DAW shortcut and device names are host-specific; the recipe is portable."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a looping MIDI clip and set its scale (e.g. C minor, then switch to major pentatonic or Dorian; scales without half steps suit generative work). Use fit-to-scale after any scale change.",
+      "tool": "clip",
+      "expect": "Loop with scale context"
+    },
+    {
+      "n": 2,
+      "action": "Generate seeded random notes: set density, pitch register around 2–3 (mid range rather than 0–1), longer durations for smooth pad-like notes, and the number of voices.",
+      "tool": "generate",
+      "expect": "Random in-scale notes across the loop"
+    },
+    {
+      "n": 3,
+      "action": "Randomise velocities and add deviation/humanise so timing and dynamics wiggle off the grid.",
+      "tool": "humanise",
+      "expect": "Expressive, less mechanical notes"
+    },
+    {
+      "n": 4,
+      "action": "Select all notes and set chance (play probability) to about 50%, then randomise it so some notes play ~90% and others ~15%. With many voices/density keep chance below 50% or even 30%. Re-apply after regenerating.",
+      "tool": "chance",
+      "expect": "Every loop pass plays a different subset"
+    },
+    {
+      "n": 5,
+      "action": "Sound: simple sine pad (second oscillator off), attack just over 1 s, release ~6 s, extra voices for overlaps.",
+      "tool": "synth",
+      "expect": "Notes float in and out and overlap"
+    },
+    {
+      "n": 6,
+      "action": "Add a chord/interval effect before the synth in scale mode with a scale degree of 4 (perfect fifth), so every triggered note becomes a power-fifth.",
+      "tool": "chord",
+      "expect": "Denser, stronger polyphony"
+    },
+    {
+      "n": 7,
+      "action": "Effects: stereo doubler, parallel echo, a stereo pitch-loop/micro-delay for randomised stereo, granular delay (raise spray, lower frequency) for glitchy texture, then a long-decay reverb.",
+      "tool": "fx",
+      "expect": "Wide, evolving ambient soundscape"
+    }
+  ],
+  "verification": [
+    "Two consecutive loop passes play audibly different note subsets.",
+    "All notes remain in the chosen scale after fit-to-scale.",
+    "With chance <30% the texture is sparse but continuous thanks to the 6 s release.",
+    "Every triggered note sounds with its fifth when the chord effect is on."
+  ],
+  "tags": [
+    "generative",
+    "probability",
+    "midi",
+    "ambient",
+    "pentatonic",
+    "sine-pad",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://probability-gated-seeded-scale-loop-endless-ambient-sine-pad"
+}

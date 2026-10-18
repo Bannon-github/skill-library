@@ -1,0 +1,46 @@
+{
+  "video_id": "t97TU3p7-kE",
+  "title": "HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!",
+  "url": "https://www.youtube.com/watch?v=t97TU3p7-kE",
+  "fetched_at": "2026-10-09T16:34:35.730902+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Valentino Manov",
+  "duration": 331,
+  "ok": true,
+  "cue_count": 108,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/t97TU3p7-kE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/t97TU3p7-kE/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

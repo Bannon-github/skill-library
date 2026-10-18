@@ -1,0 +1,46 @@
+{
+  "video_id": "LeChNmmtNsM",
+  "title": "Airglow Walkthrough: A High-End Atmosphere Instrument for Ambient Music",
+  "url": "https://www.youtube.com/watch?v=LeChNmmtNsM",
+  "fetched_at": "2026-10-15T16:18:16.266668+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "S1gns Of L1fe",
+  "duration": 1031,
+  "ok": true,
+  "cue_count": 440,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/LeChNmmtNsM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/LeChNmmtNsM/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

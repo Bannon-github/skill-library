@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "distorted-delay-return-bandlimited-send-throws",
+  "name": "Distorted-delay return: drive → ping-pong delay on a 100%-wet send, both band-limited to high mids, return pre-attenuated, played by riding the send",
+  "goal": "Add crunchy, wide echo throws to a lead/pluck without mud or volume spikes: on a send/return insert drive then ping-pong delay, band-limit both to the high mids so lows aren't delayed, feedback ~56%, both 100% wet; dial drive/tone at maximum send, then pull the return down ~−6 dB as a safety ceiling, and perform/draw send-level automation so only chosen notes throw distorted echoes — the delta vs our ping-pong delay skill is drive-before-delay on a return and send-throw performance.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "4fpZFYG83fw",
+    "url": "https://www.youtube.com/watch?v=4fpZFYG83fw",
+    "title": "Ableton Sound Design Tutorial - Distorted Delays",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/4fpZFYG83fw/agent-skill-distorted-delay-return-bandlimited-send-throws.json"
+  },
+  "prerequisites": [
+    "Send/return bus",
+    "Overdrive/distortion with a pre-filter band (or Biquad bandpass → WaveShaper)",
+    "Ping-pong delay with a filter"
+  ],
+  "inputs": [
+    {
+      "name": "lead",
+      "type": "audio",
+      "description": "Lead/pluck melody on its own track",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "delay_throws",
+      "type": "audio",
+      "description": "Selective distorted ping-pong echoes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Keep low mids out of the delay — delayed low mids muddy the track.",
+    "Return set at about −6 dB before dialing tone avoids level spikes when the send is maxed."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a spare return. Insert overdrive then delay (ping-pong).",
+      "tool": "return",
+      "expect": "Return chain ready"
+    },
+    {
+      "n": 2,
+      "action": "Set the overdrive's pre-filter to the high mids only, and do the same on the delay's filter so only that band is delayed.",
+      "tool": "filter",
+      "expect": "Echoes crunch in the high mids, low mids untouched"
+    },
+    {
+      "n": 3,
+      "action": "Delay: ping-pong for width, feedback ~56%; both devices 100% wet so only effect signal returns.",
+      "tool": "delay",
+      "expect": "Wide bouncing repeats"
+    },
+    {
+      "n": 4,
+      "action": "Turn the send to maximum and dial drive and tone to the desired timbre.",
+      "tool": "drive",
+      "expect": "Character of the distorted echoes set"
+    },
+    {
+      "n": 5,
+      "action": "Pull the return fader down (~−6 dB start) so maxed sends never produce super-loud output.",
+      "tool": "gain",
+      "expect": "Safe ceiling"
+    },
+    {
+      "n": 6,
+      "action": "Perform: jam the send knob live to feel where echoes should happen, then tidy or draw send automation per note (some full, some partial).",
+      "tool": "automation",
+      "expect": "Only chosen notes throw distorted echoes"
+    },
+    {
+      "n": 7,
+      "action": "Check in context with the full track and adjust.",
+      "tool": "mix",
+      "expect": "Echoes add interest without masking the lead"
+    }
+  ],
+  "verification": [
+    "With send at zero, the lead is completely dry.",
+    "Echoes contain little low-mid energy (spectrum check).",
+    "Maxing the send doesn't spike output above the dry lead's level."
+  ],
+  "tags": [
+    "delay",
+    "distortion",
+    "ping-pong",
+    "send-return",
+    "automation",
+    "throws",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://distorted-delay-return-bandlimited-send-throws"
+}

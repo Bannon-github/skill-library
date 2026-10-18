@@ -1,0 +1,46 @@
+{
+  "video_id": "uEI2Ytxn7iI",
+  "title": "Deconstructing a Textural Soundscape | Creative Sprint #5 Breakdown",
+  "url": "https://www.youtube.com/watch?v=uEI2Ytxn7iI",
+  "fetched_at": "2026-10-15T16:25:49.412126+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Kim Meunier",
+  "duration": 1120,
+  "ok": true,
+  "cue_count": 309,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uEI2Ytxn7iI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uEI2Ytxn7iI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

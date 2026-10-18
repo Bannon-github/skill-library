@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "id": "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+  "name": "Glitchy micro-loop buffer for ambient textures: freeze-and-scan buffer with segment length, pitch that cascades through feedback, temporary pitch from sample-rate steps, unlinked L/R (+12 / −12 st with cross feedback) and binary-random LFOs toggling freeze and reverse per side",
+  "goal": "Recreate boutique 'micro-looper' pedal textures with one buffer-delay device. A delay whose position = delay time, feedback = repeats, and segment = how much of the capture plays, plus reverse and a hold/freeze that captures the buffer so position scans it. Add random start position (plus an LFO), a short range for finer control, pitch shift (an octave or a fifth; it cascades up with every feedback pass, so use the high-cut), sample-rate steps that create temporary pitch drops and crunch, vibrato, and a low/high-cut band-pass. Unlink L and R for independent positions, segments, pitch and LFOs: L +12 st, R −12 st with cross feedback. Then automate with binary (random on/off) LFOs at unequal rates on freeze L/R and on reverse L/R, plus a random LFO stepping the sample-rate/bandwidth, and optionally a hybrid reverb. Lower dry/wet for a background whisper. Delta vs our granular-freeze, reverb-freeze and shimmer skills: per-channel random binary freeze/reverse and octave-split cross feedback.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "KVtxIwYpGvQ",
+    "url": "https://www.youtube.com/watch?v=KVtxIwYpGvQ",
+    "title": "Ableton's best kept secret for ambient textures",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/KVtxIwYpGvQ/agent-skill-stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback.json",
+    "transcript_note": "Stock-device deep dive; route.py said COVERED but hand-check found per-channel binary freeze/reverse and cross-feedback not covered. Gumroad promo dropped."
+  },
+  "prerequisites": [
+    "Buffer/looper delay with freeze, position, segment, reverse, pitch, sample-rate and filter controls (Web Audio: AudioWorklet ring buffer with per-channel read heads, implementation note)",
+    "LFOs with binary-random and random shapes, mapped as remote (not manual) controls",
+    "Optional reverb"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Melodic loop, keys or guitar-like part",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "glitch_buffer_texture",
+      "type": "audio",
+      "description": "Stereo, randomly freezing/reversing micro-loop texture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Pitch inside feedback cascades with each repeat: an octave (or a fifth) is plenty; two octaves gets shrill. Use the high-cut.",
+    "Sample-rate changes momentarily shift pitch (that's the effect); don't smooth them away.",
+    "Binary LFO rates on L vs R should differ so the channels don't freeze in sync.",
+    "Preset pack/promo in the source is omitted."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert the buffer delay. Learn the basics: position = delay time, feedback = repeats, segment = how much of the captured audio plays back, reverse toggle.",
+      "tool": "basics",
+      "expect": "Sounds like a delay at first"
+    },
+    {
+      "n": 2,
+      "action": "Freeze/hold: play a phrase and engage hold. Now position scans through the frozen buffer and segment sets the loop length. Add random start position (and/or an LFO), and use short mode for fine, small segments.",
+      "tool": "freeze",
+      "expect": "Micro-loops scanned from the captured buffer"
+    },
+    {
+      "n": 3,
+      "action": "Pitch: set +12 st (or a fifth). Each feedback pass pitches up again, so engage the high-cut to tame the cascading brightness. Try sample-rate steps (e.g. 10k, down an octave and again) for temporary pitch effects and crunch; add a little vibrato. Low and high cut together give band-pass tones.",
+      "tool": "pitch/sr",
+      "expect": "Rising cascades and crunchy temporary drops"
+    },
+    {
+      "n": 4,
+      "action": "Unlink L/R channels so each has its own position, segment, pitch and LFO. Set L +12 st and R −12 st, and set the feedback routing to cross (each side feeds the other).",
+      "tool": "stereo",
+      "expect": "Wide image; octaves interleave across channels"
+    },
+    {
+      "n": 5,
+      "action": "Map the important controls to macros. Add two LFOs in binary (random on/off) mode at different rates on freeze L and freeze R, set as remote control so they aren't hand-moved.",
+      "tool": "random freeze",
+      "expect": "Each channel freezes at random intervals"
+    },
+    {
+      "n": 6,
+      "action": "Add two more binary LFOs on reverse L and reverse R, and one random (not binary) LFO with full range on the sample-rate/bandwidth control that steps between octave settings.",
+      "tool": "random reverse/sr",
+      "expect": "Random direction flips and octave jumps"
+    },
+    {
+      "n": 7,
+      "action": "Optionally add a hybrid reverb, and lower dry/wet so the effect becomes a whisper in the background.",
+      "tool": "finish",
+      "expect": "Evocative glitch texture under the dry part"
+    }
+  ],
+  "verification": [
+    "With hold on, changing position scans through the same captured audio.",
+    "Pitch +12 with feedback produces audibly rising repeats.",
+    "L and R freeze/reverse at different times when the binary LFOs run.",
+    "Stepping sample rate causes momentary pitch dips."
+  ],
+  "tags": [
+    "micro-loop",
+    "buffer",
+    "freeze",
+    "glitch",
+    "pitch-shift",
+    "stereo",
+    "random-lfo",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback"
+}

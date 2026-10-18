@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+  "name": "Parallel FX network: same input to up to three effects, heavy drive alongside clean delay, phase-flip a loop to cancel its dry and keep only wet, per-loop EQ/levels, effects inside the delay loop",
+  "goal": "Turn a serial chain into a parallel effects network for synth/pad/lead layers: feed the same dry input to up to three effect loops and sum them (so a high-gain drive can growl in the background while a delay stays clean), use a per-loop phase invert to cancel the dry component of an effect without a wet-only mode (inverted dry + summed dry ≈ wet only), check for effects that already invert phase (chorus) against the dry, balance with per-loop EQ, send/return levels and master, and place an effect inside a delay's feedback/insert loop so repeats get processed — the portable parallel-distortion wet/dry recipe that was missing from the library.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "t0X_HQ25jmg",
+    "url": "https://www.youtube.com/watch?v=t0X_HQ25jmg",
+    "title": "Pedals in Parallel - Discovering new ways to use effects you thought you knew",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/t0X_HQ25jmg/agent-skill-parallel-fx-network-phase-flip-dry-cancel-insert-loop.json"
+  },
+  "prerequisites": [
+    "Parallel mixer/bus with per-branch gain, phase invert and EQ (Web Audio: split to 3 GainNodes, sum; invert = gain −1; implementation note)",
+    "Drive/distortion, delay (ideally with insert/feedback loop), chorus/flanger, tremolo"
+  ],
+  "inputs": [
+    {
+      "name": "dry_input",
+      "type": "audio",
+      "description": "Synth/guitar/source signal",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "parallel_mix",
+      "type": "audio",
+      "description": "Layered multi-texture effect sum"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "About three parallel branches is the practical maximum before phase issues become problems (a branch's internal dry/wet mix counts as another signal).",
+    "Some effects invert phase internally; in parallel with dry they partially cancel — always check the phase switch per branch.",
+    "Source demo is guitar pedals; signal-flow concepts are generic."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Baseline: compare serial distortion→echo with echo→distortion to hear order-dependence.",
+      "tool": "serial",
+      "expect": "Two different serial textures"
+    },
+    {
+      "n": 2,
+      "action": "Parallel: split the same dry input to drive and delay branches and sum. Keep drive high and sustaining in its branch while the delay branch handles clean repeats.",
+      "tool": "parallel",
+      "expect": "Growl under clean echoes — impossible in series"
+    },
+    {
+      "n": 3,
+      "action": "Remove the dry from an effect that has no wet-only mode: flip the phase of that branch so its dry component cancels against the dry in the sum, leaving (mostly) the delay.",
+      "tool": "phase-invert",
+      "expect": "Wet-only repeats without a kill-dry switch"
+    },
+    {
+      "n": 4,
+      "action": "Chorus = vibrato + dry: test phase flip on modulation effects; inverted dry won't fully 'unbake' into pure vibrato, and some pedals already invert phase, so pick the setting that sounds fuller.",
+      "tool": "phase-check",
+      "expect": "Avoid thin/cancelled modulation branches"
+    },
+    {
+      "n": 5,
+      "action": "Balance each branch with its EQ, send and return levels and a master volume; take the dry out entirely when only effects are wanted.",
+      "tool": "balance",
+      "expect": "Clean, controllable parallel blend"
+    },
+    {
+      "n": 6,
+      "action": "Insert loop: put another effect (e.g. modulation/space) inside the delay's insert/feedback path so delayed sound is processed again on each recirculation.",
+      "tool": "insert-loop",
+      "expect": "Repeats grow more spacious/distant each pass"
+    },
+    {
+      "n": 7,
+      "action": "Swap in different trios of effects (e.g. delay + modulation + tremolo, envelope-controlled tremolo) to discover combinations.",
+      "tool": "explore",
+      "expect": "New hybrid textures"
+    }
+  ],
+  "verification": [
+    "With phase flip on a full-mix delay branch, the summed output has noticeably less dry level.",
+    "Drive branch level can be raised without the delay repeats distorting.",
+    "Adding a fourth branch increases comb/phase artifacts (audible thinning)."
+  ],
+  "tags": [
+    "parallel-processing",
+    "distortion",
+    "delay",
+    "phase",
+    "wet-dry",
+    "fx-routing",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+}

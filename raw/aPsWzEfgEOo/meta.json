@@ -1,0 +1,53 @@
+{
+  "video_id": "aPsWzEfgEOo",
+  "title": "Audio Damage TESSERA Sequenced Resonator (NEW) : Walkthrough (IOS, MacOS, Windows, Linux)",
+  "url": "https://www.youtube.com/watch?v=aPsWzEfgEOo",
+  "fetched_at": "2026-10-16T16:18:55.665690+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "SoundForMore MusicTech Tutorials",
+  "duration": 1048,
+  "ok": true,
+  "cue_count": 224,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/aPsWzEfgEOo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/aPsWzEfgEOo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

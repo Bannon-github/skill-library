@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "karplus-strong-keytracked-delay-pluck-damping-comp",
+  "name": "Karplus-Strong pluck: noise-burst exciter into a key-tracked feedback delay with decay/damping and register compensation",
+  "goal": "Build a playable Karplus-Strong plucked string in any modular/Web Audio environment: a short pink-noise burst (bandpass-filtered, velocity-scaled, optionally stereo) excites a delay line tuned to one period of the note (delay = 1/f, e.g. ~7.64 ms at C3; halve per octave up via 2^(−n/12) scaling), with feedback as decay and a low-pass in the loop as damping, both velocity-scalable and key-tracked to even out low-vs-high note ring time.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "8b5EX9HcPGk",
+    "url": "https://www.youtube.com/watch?v=8b5EX9HcPGk",
+    "title": "Karplus-Strong Synthesis in Bitwig Studio 3 - The Grid",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/8b5EX9HcPGk/agent-skill-karplus-strong-keytracked-delay-pluck-damping-comp.json"
+  },
+  "prerequisites": [
+    "Delay with feedback and an in-loop low-pass (or build one)",
+    "Noise source, bandpass/SVF filter, short envelope, velocity and key-pitch modulation, simple math (exp/invert)"
+  ],
+  "inputs": [
+    {
+      "name": "note_pitch",
+      "type": "number",
+      "description": "Played note / frequency",
+      "required": true
+    },
+    {
+      "name": "velocity",
+      "type": "number",
+      "description": "Note velocity",
+      "required": true
+    },
+    {
+      "name": "decay",
+      "type": "number",
+      "description": "Feedback amount (near unity = long ring)",
+      "required": true
+    },
+    {
+      "name": "damping",
+      "type": "number",
+      "description": "Loop low-pass amount",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "plucked_string",
+      "type": "audio",
+      "description": "Pitched pluck/string voice"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Web Audio implementation note (not from transcript): DelayNode inside a cycle adds at least one 128-sample render quantum, which caps pitch (~345 Hz at 44.1 kHz) — use an AudioWorklet delay line for full range.",
+    "Keep exciter envelope shorter than the delay period for clean plucks; longer exciters become reverb-like swells."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build the exciter: pink noise (fuller than white) → bandpass SVF → a very short pluck envelope on level; add a velocity multiplier to scale excitation, and gain to keep long exciters in check.",
+      "tool": "exciter",
+      "expect": "Short noise click whose loudness follows velocity"
+    },
+    {
+      "n": 2,
+      "action": "Feed the burst into a delay with built-in feedback and an in-loop low-pass. Set delay = one period of the target fundamental (7.64 ms ≈ C3) and feedback high so it keeps resonating.",
+      "tool": "delay-resonator",
+      "expect": "Pitched pluck at C3 regardless of key"
+    },
+    {
+      "n": 3,
+      "action": "Key-track the delay: delay time must scale by 2^(−n/12) (n = semitones from the reference). Going up an octave halves delay; down an octave doubles it. Convert the note-pitch value to that factor (exp base 2, invert, offset so the reference note = no change) before feeding the delay-time modulation.",
+      "tool": "pitch-math",
+      "expect": "Correct pitches up and down the keyboard (not barely changing)"
+    },
+    {
+      "n": 4,
+      "action": "Exciter variations: use the envelope itself as the exciter (attack time changes tone like pluck position); widen the noise stereo for a lush tone; long exciter envelopes give a reverb-like bloom.",
+      "tool": "exciter-variants",
+      "expect": "Different pluck positions/timbres"
+    },
+    {
+      "n": 5,
+      "action": "Map Decay → feedback (near unity = rings forever; low = unpitched thump) and Damping → loop low-pass (palm-mute-like). Optionally scale both by velocity (harder = longer ring/less damping); keep velocity amounts low—it is touchy.",
+      "tool": "macros",
+      "expect": "Playable decay and damping"
+    },
+    {
+      "n": 6,
+      "action": "Compensate register: at equal feedback low notes ring longer than high notes, so key-track feedback up for high notes and adjust damping in the opposite direction so decay and brightness feel even across the scale.",
+      "tool": "keytrack-comp",
+      "expect": "Similar ring time and damping low vs high"
+    },
+    {
+      "n": 7,
+      "action": "Experiment: feed other sounds as the exciter into the tuned delay for pitched resonant textures.",
+      "tool": "resonator",
+      "expect": "Pitched resonance of arbitrary inputs"
+    }
+  ],
+  "verification": [
+    "C3 sounds at ~7.64 ms delay; an octave up uses half the delay.",
+    "Lowering decay shortens notes until unpitched; damping darkens without shortening much.",
+    "With compensation, high notes ring comparably long to low notes."
+  ],
+  "tags": [
+    "karplus-strong",
+    "physical-modeling",
+    "pluck",
+    "delay-line",
+    "keytracking",
+    "web-audio",
+    "audioworklet",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://karplus-strong-keytracked-delay-pluck-damping-comp"
+}

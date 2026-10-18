@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+  "name": "Sample-and-hold / random-glide LFO textures: random steps on pitch, wave position and filter, random glide squelch, user-drawn step LFO",
+  "goal": "Use a random-hold (sample-and-hold) LFO as a sound-design engine: random stepped pitch on a saw (sci-fi computer with reverb/delay), the same LFO on wave/wavetable tuning and filter cutoff/resonance, a random-glide shape with legato + glide for squelchy psy-style lines, mod-wheel-scaled S&H on volume, and a user-defined 8-step (steps or lines) LFO as a repeatable pseudo-S&H for bass/leads — then bounce and chop the audio into SFX. Delta beyond general LFO routing and random pitch drift in pad skills.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IiWPL_v8Eqk",
+    "url": "https://www.youtube.com/watch?v=IiWPL_v8Eqk",
+    "title": "Zebra 2 - Using LFO`s Random Features (Sample & Hold) - How To Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IiWPL_v8Eqk/agent-skill-sample-hold-random-lfo-pitch-wave-filter-glide-textures.json"
+  },
+  "prerequisites": [
+    "Synth with an LFO offering random/sample-and-hold, random-glide and user-drawable step shapes",
+    "Mod matrix with mod-wheel scaling; reverb + delay"
+  ],
+  "inputs": [
+    {
+      "name": "source_osc",
+      "type": "synth-module",
+      "description": "Saw or any oscillator/wave",
+      "required": true
+    },
+    {
+      "name": "lfo_rate",
+      "type": "number",
+      "description": "S&H step rate",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sh_textures",
+      "type": "audio",
+      "description": "Bounced random textures for chopping into SFX"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "High resonance with random cutoff can spike levels — keep depth and resonance in check.",
+    "Concept (S&H): the LFO samples a random/source value at each step and holds it until the next."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "On a basic saw oscillator, set LFO2 shape to random-hold (sample and hold) and route LFO2 → oscillator tune.",
+      "tool": "lfo→pitch",
+      "expect": "Classic random stepped sci-fi pitch"
+    },
+    {
+      "n": 2,
+      "action": "Add reverb and delay (adjust delay times) for the old sci-fi computer effect.",
+      "tool": "fx",
+      "expect": "Spacey random bleeps"
+    },
+    {
+      "n": 3,
+      "action": "Swap to a stranger oscillator wave; keep the pitch depth low so it stays usable (even as a weird bassline).",
+      "tool": "depth",
+      "expect": "Random timbre with controlled pitch"
+    },
+    {
+      "n": 4,
+      "action": "Route the same LFO2 to the wave/wavetable position (with the wave set mid) as well as tune; add lots of delay.",
+      "tool": "lfo→wave",
+      "expect": "Horror-movie style random timbre jumps"
+    },
+    {
+      "n": 5,
+      "action": "Add a filter and route the S&H LFO to cutoff and resonance — be careful with high resonance.",
+      "tool": "lfo→filter",
+      "expect": "Random filter jumps; loud peaks if resonance too high"
+    },
+    {
+      "n": 6,
+      "action": "Switch LFO shape to random glide; set legato mode and turn glide up for squelchy random glides (psytrance-style). Note long sustained notes vs retriggered behaviour; speed the LFO up as needed.",
+      "tool": "random-glide",
+      "expect": "Smoothed random pitch/filter squelch"
+    },
+    {
+      "n": 7,
+      "action": "In the mod matrix, target voice volume with LFO2 scaled by the mod wheel.",
+      "tool": "mod-wheel",
+      "expect": "Mod wheel fades in random volume chopping"
+    },
+    {
+      "n": 8,
+      "action": "Use a user-defined LFO with 8 steps as a predetermined S&H pattern (it repeats, so not truly random) for basslines or leads; switch steps → lines so glide ramps between values.",
+      "tool": "user-lfo",
+      "expect": "Repeatable stepped/ramped modulation pattern"
+    },
+    {
+      "n": 9,
+      "action": "Bounce results to audio and chop short sections for SFX and quirky elements.",
+      "tool": "resample",
+      "expect": "Library of random SFX snippets"
+    }
+  ],
+  "verification": [
+    "Random-hold produces audible discrete steps; random glide produces smooth slides.",
+    "User 8-step LFO pattern repeats identically each cycle.",
+    "Mod wheel at 0 removes the volume modulation."
+  ],
+  "tags": [
+    "sample-and-hold",
+    "random-lfo",
+    "glide",
+    "sci-fi",
+    "texture",
+    "resample",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sample-hold-random-lfo-pitch-wave-filter-glide-textures"
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "U1t3ELd1LDI",
+  "title": "The Secret to Endless Ambient Textures in Ableton Live",
+  "url": "https://www.youtube.com/watch?v=U1t3ELd1LDI",
+  "fetched_at": "2026-10-15T16:23:06.819129+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tom Casey Music",
+  "duration": 748,
+  "ok": true,
+  "cue_count": 312,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/U1t3ELd1LDI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/U1t3ELd1LDI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

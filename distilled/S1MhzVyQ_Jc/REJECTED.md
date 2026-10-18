@@ -1,0 +1,1 @@
+Rejected: Near-duplicate of cinematic-formant-comb-pad-phaser-fx (multi-osc saws, bendwerks bandpass/reject formant-ish path, comb with LFO on tone/flavor, width/unison). Vocal-ish Zebra lane wiring does not add a clear portable formant-vocal-pad delta beyond existing formant+comb skill.

@@ -1,0 +1,83 @@
+{
+ "batch_id": "2026-10-12-batch-02",
+ "ran_at": "2026-10-12T21:50:49+00:00",
+ "ran_at_local": "2026-10-12 14:50 PT",
+ "routine": "New intake (search-terms stage) test: workflow design",
+ "distill_method": "direct (Gemini browser step unavailable headless)",
+ "searches": [
+  "how to design a workflow",
+  "how to design a workflow for automated song generation"
+ ],
+ "intake_counts": {
+  "processed": 7,
+  "skipped_title_match": 1,
+  "no_transcript": 2
+ },
+ "videos": [
+  {
+   "video_id": "zGB9SScvoQU",
+   "title": "Business Process Mapping 101 (Step By Step Guide)",
+   "channel": "Toni Debelic | OpsKings",
+   "topic": "workflow-design",
+   "url": "https://www.youtube.com/watch?v=zGB9SScvoQU",
+   "transcript_kind": "auto-generated",
+   "quality": "OK",
+   "novelty": "novel (top overlap 0.04)",
+   "skills": [
+    {
+     "id": "process-map-workflow-design-prototype-to-final",
+     "name": "Design a workflow as a process map: messy prototype, then clean final map",
+     "goal": "Design or document a workflow by mapping it as a process map (inputs, ordered steps, decisions, stakeholders, outputs): start with a messy prototype map of the one process causing the most pain, share and iterate, then publish a clean final documentation map and keep it updated.",
+     "steps": [
+      "Pick the single process that is currently causing the most trouble; skip choosing tools or depth for now.",
+      "On paper/whiteboard/sticky notes, write the steps as simple boxes in sequential order (this, then this, then this, then the final output), noting inputs, decision points, and who is involved.",
+      "Expand it into a prototype map with collaborators: add context, links to tools, screenshots, problems, and improvement ideas without worrying about looks.",
+      "Share it (photo or link), walk someone through it, collect comments, and iterate.",
+      "Produce the final documentation map: only the as-is steps in order, decisions and parallel flows from trigger to final output, with notes and clutter removed.",
+      "Move it into a shareable tool with access controls if needed, one tab per subprocess, and optionally add detailed docs/SOPs that expand each box.",
+      "Revisit the map whenever the process changes or a better way is found, and update it."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "AteoA7nXdes",
+   "url": "https://www.youtube.com/watch?v=AteoA7nXdes",
+   "title": "Save Time and Create More Reliable Processes with Workflow Design",
+   "rejected": "advice-only/promo; see distilled/AteoA7nXdes/REJECTED.md",
+   "skills": []
+  },
+  {
+   "video_id": "HzXD4GVqXwM",
+   "title": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)",
+   "url": "https://www.youtube.com/watch?v=HzXD4GVqXwM",
+   "topic": "workflow-design",
+   "quality": "OK",
+   "novelty": "NOVEL (top 0.067)",
+   "skills": [
+    {
+     "id": "agent-media-pipeline-roles-to-tools-feedback-skill",
+     "name": "Design an agent-run media production pipeline: map team roles to tools, encode style as a skill, improve it from feedback",
+     "goal": "Design an automated media workflow (shown for video editing; same pattern for automated song generation) by listing every human job in the production team, assigning each to a tool with one coordinating agent, writing the creative style into a skill file the agent reads first, and growing that skill from time-stamped human feedback after each run.",
+     "steps": [
+      "List every job a human team would do to make the product (video: editor, transcriber, animator, researcher, screen editor, sound designer, finisher).",
+      "Assign each job to a tool; make the agent the coordinator/project manager that calls the others, and add a converter for any media the agent cannot perceive.",
+      "Set up the agent locally with a working folder and connect each tool/connector, then have the agent save the setup as a skill.",
+      "Open a new session and test the skill on a small piece of input, with any extra instructions.",
+      "Review the output and give specific, time-stamped feedback (look, sound, pacing, cuts); try several alternatives for one element until one fits.",
+      "Tell the agent to save what it learned into the skill, then run the next job in a fresh session with the updated skill.",
+      "Once tuned, give the full raw input, let it run unattended, then review and give final notes."
+     ]
+    }
+   ]
+  },
+  {
+   "video_id": "JSA2oezQWOU",
+   "url": "https://www.youtube.com/watch?v=JSA2oezQWOU",
+   "title": "Make.com Automation Tutorial for Beginners",
+   "deferred": "generic Make.com tutorial, not distilled to save tokens",
+   "skills": []
+  }
+ ],
+ "intake_counts_term2": "10 queued; 2 CANDIDATES_READY (JSA2oezQWOU, HzXD4GVqXwM), 6 COVERED, 1 thin, 1 off-lexicon"
+}

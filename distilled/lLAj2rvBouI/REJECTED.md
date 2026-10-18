@@ -1,0 +1,1 @@
+Rejected: Cinematic hit layering tour (Vital downer sample + boom sample + bronze + gain automation between layers). Mostly arrangement/sample stacking; synthesis steps deferred to another video. Overlaps existing braam/sub-drop/downer skills; low portable delta for impact-from-noise+pitch gap.

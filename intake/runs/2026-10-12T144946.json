@@ -1,0 +1,90 @@
+{
+ "started_at": "2026-10-12T21:46:48+00:00",
+ "search_term": "how to design a workflow",
+ "dry_run": false,
+ "items": [
+  {
+   "video_id": "FnuyET2HkPo",
+   "title": "How to Define a Workflow Process - Project Management Training",
+   "result": "processed",
+   "outcome": "OFF_LEXICON",
+   "reason": "transcript sent to processing; OFF_LEXICON"
+  },
+  {
+   "video_id": "BX4566RB8nM",
+   "title": "How to Create a Workflow | 5 Tips to Follow When you Create a Workflow",
+   "result": "processed",
+   "outcome": "OFF_LEXICON",
+   "reason": "transcript sent to processing; OFF_LEXICON"
+  },
+  {
+   "video_id": "t524U9CixZ0",
+   "title": "Designing a Workflow Engine from First Principles",
+   "result": "no_transcript",
+   "outcome": "STOP_no_transcript_asr_flagged",
+   "reason": "STOP_no_transcript_asr_flagged"
+  },
+  {
+   "video_id": "UL76TS335Vs",
+   "title": "Learn Make.com in 6 Minutes: Workflow Automation Tutorial for Beginners (2025)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "zGB9SScvoQU",
+   "title": "Business Process Mapping 101 (Step By Step Guide)",
+   "result": "processed",
+   "outcome": "CANDIDATES_READY",
+   "reason": "transcript sent to processing; gap candidates ready for distill-transcript"
+  },
+  {
+   "video_id": "AteoA7nXdes",
+   "title": "Save Time and Create More Reliable Processes with Workflow Design",
+   "result": "processed",
+   "outcome": "CANDIDATES_READY",
+   "reason": "transcript sent to processing; gap candidates ready for distill-transcript"
+  },
+  {
+   "video_id": "4NGywqnnl5Y",
+   "title": "Complete Graphic Design Course: The BEST Workflows & Processes (MUST KNOW)",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "oUdv83j7-yw",
+   "title": "Design Workflow as an Architecture Student. My Project from Start to Finish",
+   "result": "processed",
+   "outcome": "COVERED",
+   "reason": "transcript sent to processing; COVERED"
+  },
+  {
+   "video_id": "J8g3JKobvnk",
+   "title": "Character Design Workflow - Concepting for 3D Games and Movies",
+   "result": "no_transcript",
+   "outcome": "STOP_no_transcript_asr_flagged",
+   "reason": "STOP_no_transcript_asr_flagged"
+  },
+  {
+   "video_id": "Exw3uxUYgqw",
+   "title": "Automation Workflow Design:  Start from the End",
+   "result": "skipped_title_match",
+   "reason": {
+    "against_video": "oUdv83j7-yw",
+    "against_title": "Design Workflow as an Architecture Student. My Project from Start to Finish",
+    "shared": [
+     "design",
+     "start",
+     "workflow"
+    ],
+    "ratio": 0.6
+   }
+  }
+ ],
+ "finished_at": "2026-10-12T21:49:46+00:00",
+ "needs_distill": [
+  "zGB9SScvoQU",
+  "AteoA7nXdes"
+ ]
+}

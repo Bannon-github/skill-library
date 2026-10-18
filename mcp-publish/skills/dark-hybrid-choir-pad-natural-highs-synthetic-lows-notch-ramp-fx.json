@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+  "name": "Dark hybrid vocal pad: choir-like wavetable plus an octave-up choir sample FM'd in (~34%), with sub and a little noise. Lows/mids are low-passed while the natural sample keeps the highs, a subtle LFO notch moves the mids, and one slow rising ramp drives the FX",
+  "goal": "Build a dark, haunting vocal pad for intros, breakdowns or tension layers by blending a real choir sample with synthetic layers that sound vocal. Osc A: a choir-type wavetable with chorus-like unison and its position moved by a single slow, rising ramp (one main movement). Osc B: a choir multisample an octave up with light tube saturation, frequency-modulating A at ~34% for grit. Add a default sub (choir has little sub) and very low white noise (or hum) for full-spectrum air. Route A + sub through a low-pass, but keep B (natural) out of it so the high end comes from the real voice. Then all go into filter 2, a subtle notch (~18%) whose amount and cutoff move on the LFO for mid-range expression. FX: a blended, very wide frequency-shifter/blur stereo layer (mix ~half), dimension ~6%, hyper-chorus automated up to ~32% at the top of the ramp, ping-pong delay ~10–11%, distortion only above ~300 Hz, a little comb, reverb ~10%, then a high-end presence boost. Delta vs our pad skills: natural-highs / synthetic-lows routing and the single-ramp FX bloom on a vocal pad.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Futy449F9OY",
+    "url": "https://www.youtube.com/watch?v=Futy449F9OY",
+    "title": "The Secret to HUGE Dark Vocal Pads in Serum 2",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Futy449F9OY/agent-skill-dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx.json",
+    "transcript_note": "Preset walkthrough; factory content names omitted; pack promo dropped."
+  },
+  "prerequisites": [
+    "Wavetable synth with a choir-like table and a sample/multisample oscillator that can FM osc A (Web Audio: AudioBufferSource choir + oscillator with FM via GainNode to frequency, implementation note)",
+    "Sub and noise oscillators, two filters incl. notch",
+    "FX: frequency-shift/blur widener, chorus/dimension, ping-pong delay, high-passed distortion, comb, reverb, EQ"
+  ],
+  "inputs": [
+    {
+      "name": "choir_sample",
+      "type": "audio",
+      "description": "Original/licensed choir 'ah'/'oo' recording (no vendor factory content)",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Long held chords",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "dark_vocal_pad",
+      "type": "audio",
+      "description": "Cohesive dark choir pad with natural highs and synthetic low/mid power"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Use your own or licensed choir material; vendor wavetable/multisample names are omitted.",
+    "Most FX are very subtle (≈6–11% mixes); the character comes from stacking many small moves.",
+    "Distortion is applied above ~300 Hz only; full-band saturation gets muddy.",
+    "Percentages are the presenter's knob values; treat as starting points."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc A: choir-like wavetable, unison for chorus, slight low-pass. Create one main modulator, a slow triangle that effectively ramps up, on wavetable position (and later FX amounts).",
+      "tool": "osc A",
+      "expect": "Slowly evolving choir tone"
+    },
+    {
+      "n": 2,
+      "action": "Osc B: choir multisample an octave higher with a bit of tube saturation, defaults otherwise. FM it into osc A at ~34% for a touch of grit.",
+      "tool": "osc B + FM",
+      "expect": "Gritty, breathy vocal blend"
+    },
+    {
+      "n": 3,
+      "action": "Add a sub oscillator at default level under everything, and white noise (or hum) at a very low level for full-spectrum air.",
+      "tool": "sub + noise",
+      "expect": "Low-end weight and subtle high air"
+    },
+    {
+      "n": 4,
+      "action": "Filter 1: low-pass on osc A + sub only; route osc B around it so the natural choir provides the high end.",
+      "tool": "routing",
+      "expect": "Synthetic layers give low/mid power; natural sample keeps highs"
+    },
+    {
+      "n": 5,
+      "action": "Filter 2 on the combined signal: notch at ~18% mix (100% shows the full effect), with the amount rising on the LFO and the cutoff moving slightly too, for mid-range expression and cohesion.",
+      "tool": "notch",
+      "expect": "Subtle moving mid-range"
+    },
+    {
+      "n": 6,
+      "action": "FX 1: a frequency-shifter/blur stereo layer, mix ~half, blur ~half, shift and range lowered, blended in as a moving super-wide layer. Dimension ~6%. Hyper-chorus automated from low up to ~32% at the top of the ramp.",
+      "tool": "width",
+      "expect": "Wide moving layer that turns phasey only at the peak"
+    },
+    {
+      "n": 7,
+      "action": "FX 2: ping-pong delay ~10–11%; distortion with a high-pass so only ~300 Hz upward is saturated; a little comb filter (macro candidate); reverb ~10%; final high-shelf presence boost.",
+      "tool": "finish",
+      "expect": "Cohesive, polished, dark choir pad"
+    }
+  ],
+  "verification": [
+    "Muting osc B removes most of the natural high end.",
+    "Notch at 18% is subtle; sweeping to 100% reveals the full notch.",
+    "Distortion leaves content below ~300 Hz clean.",
+    "Over a held chord, chorus/phasing increases toward the end of the ramp."
+  ],
+  "tags": [
+    "vocal-pad",
+    "choir",
+    "hybrid",
+    "fm",
+    "notch",
+    "pad",
+    "dark",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx"
+}

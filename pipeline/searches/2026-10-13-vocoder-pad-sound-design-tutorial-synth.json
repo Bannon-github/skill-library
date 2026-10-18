@@ -1,0 +1,161 @@
+{
+ "topic": "vocoder pad sound design tutorial synth",
+ "date": "2026-10-13",
+ "params": {
+  "topic": "vocoder pad sound design tutorial synth",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "X9nxUb1wRkg",
+   "title": "How to Create Ambient Synth Pads from Vocals - Sound Design Tutorial",
+   "channel": "BruA1",
+   "duration": 596,
+   "view_count": 522,
+   "url": "https://www.youtube.com/watch?v=X9nxUb1wRkg",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.86,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "title": "How To Make Any Sound From Scratch (escape the preset trap)",
+   "channel": "Alex Rome",
+   "duration": 1444,
+   "view_count": 798882,
+   "url": "https://www.youtube.com/watch?v=p1-WmITJqBk",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.45,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "54eGln75Y3Y",
+   "title": "Chaos To Order: Frequency Shifter & Vocoder (Sound Design Tutorial)",
+   "channel": "[GENES!S.]",
+   "duration": 1196,
+   "view_count": 5630,
+   "url": "https://www.youtube.com/watch?v=54eGln75Y3Y",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.38,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "kJ_Mo7ToVIg",
+   "title": "Ableton Vocoder Tutorial",
+   "channel": "Seed To Stage",
+   "duration": 869,
+   "view_count": 171071,
+   "url": "https://www.youtube.com/watch?v=kJ_Mo7ToVIg",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.12,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "V5Zfl22wiu8",
+   "title": "Ableton Sound Design Tutorial - Expression With XY Pads",
+   "channel": "Finish More Music",
+   "duration": 184,
+   "view_count": 6309,
+   "url": "https://www.youtube.com/watch?v=V5Zfl22wiu8",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.9,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "_QR8G8L1OkI",
+   "title": "How to use SynthmasterOne Vocoder",
+   "channel": "UDi Audio",
+   "duration": 462,
+   "view_count": 1309,
+   "url": "https://www.youtube.com/watch?v=_QR8G8L1OkI",
+   "query": "vocoder pad sound design tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.06,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "661Qed9A9YI",
+   "why": "duration 140s"
+  },
+  {
+   "id": "KwdS01evoLk",
+   "why": "duration 154s"
+  },
+  {
+   "id": "A7q9L5wd7Mk",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

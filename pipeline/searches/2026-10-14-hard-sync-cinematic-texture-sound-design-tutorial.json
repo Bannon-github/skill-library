@@ -1,0 +1,151 @@
+{
+ "topic": "hard sync cinematic texture sound design tutorial",
+ "date": "2026-10-14",
+ "params": {
+  "topic": "hard sync cinematic texture sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "LsfcOoCc88I",
+   "title": "How to Make Ultra Realistic AI Videos - (4 STEPS)",
+   "channel": "Steven Wommack",
+   "duration": 479,
+   "view_count": 276922,
+   "url": "https://www.youtube.com/watch?v=LsfcOoCc88I",
+   "query": "hard sync cinematic texture sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.22,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Ms0gYVPAKvw",
+   "title": "What is Oscillator Sync? | Intro to Synths Part 10",
+   "channel": "Tabletop Composer",
+   "duration": 740,
+   "view_count": 601,
+   "url": "https://www.youtube.com/watch?v=Ms0gYVPAKvw",
+   "query": "hard sync cinematic texture sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.89,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "vye7qxZazm0",
+   "title": "What is Frequency Modulation? | Intro to Synths Part 11",
+   "channel": "Tabletop Composer",
+   "duration": 695,
+   "view_count": 305,
+   "url": "https://www.youtube.com/watch?v=vye7qxZazm0",
+   "query": "hard sync cinematic texture sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.74,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "y34kOvryuAs",
+   "title": "This FREE Plugin Makes Massive Basses and Pads | Void Wave Wavetable Synthesizer",
+   "channel": "Greg Kocis",
+   "duration": 185,
+   "view_count": 5816,
+   "url": "https://www.youtube.com/watch?v=y34kOvryuAs",
+   "query": "hard sync cinematic texture sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.88,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "D9hkCb8fT80",
+   "why": "duration 17s"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "JniPNOFh5Ac",
+   "why": "duration 31s"
+  },
+  {
+   "id": "ak14WDKkwZk",
+   "why": "negative title signal"
+  },
+  {
+   "id": "YwixbcH3Nro",
+   "why": "duration 91s"
+  },
+  {
+   "id": "nx5oYBOg2x4",
+   "why": "duration 19s"
+  },
+  {
+   "id": "lakQk1IMmnw",
+   "why": "duration 6359s"
+  },
+  {
+   "id": "9r7SHH0E0as",
+   "why": "duration 25s"
+  },
+  {
+   "id": "sqjjjK74-dQ",
+   "why": "duration 16s"
+  },
+  {
+   "id": "ERNVY8Wy4HI",
+   "why": "duration 8240s"
+  },
+  {
+   "id": "D-dSL0BMKyo",
+   "why": "duration 51s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

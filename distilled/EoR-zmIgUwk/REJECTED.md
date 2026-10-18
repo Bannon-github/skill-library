@@ -1,0 +1,1 @@
+Rejected: route COVERED; advanced Vital wavetable editor tour overlaps ambient-wavetable-scratch-spectral-morph-pad, warp-modes-as-phase-signal-transforms, and wavetable-crossfade-morph-modulate-pad. Low portable delta for this hunt.

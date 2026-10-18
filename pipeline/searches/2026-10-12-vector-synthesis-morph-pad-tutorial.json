@@ -1,0 +1,161 @@
+{
+ "topic": "vector synthesis morph pad tutorial",
+ "date": "2026-10-12",
+ "params": {
+  "topic": "vector synthesis morph pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 5,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "6aRgJoBxk4g",
+   "title": "Synthmaster Tutorial - Vector oscillator \"monster pad\"",
+   "channel": "Sound Design Tutorials",
+   "duration": 973,
+   "view_count": 3932,
+   "url": "https://www.youtube.com/watch?v=6aRgJoBxk4g",
+   "query": "vector synthesis morph pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.3,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "kKGUB6bkKAg",
+   "title": "What is MPE? Sensel Morph & Hydrasynth Tutorial | Sarah Belle Reid",
+   "channel": "Sarah Belle Reid",
+   "duration": 969,
+   "view_count": 23711,
+   "url": "https://www.youtube.com/watch?v=kKGUB6bkKAg",
+   "query": "vector synthesis morph pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.69,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "yf53sNR6VPA",
+   "title": "Victor Part 2 - Detailed Tutorial (1 of 2 )",
+   "channel": "O.Z. Hall",
+   "duration": 1020,
+   "view_count": 9912,
+   "url": "https://www.youtube.com/watch?v=yf53sNR6VPA",
+   "query": "vector synthesis morph pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "SMB34GRgQWQ",
+   "title": "Vector Synthesis in Bitwig Grid with the Scrawl Oscillator",
+   "channel": "Polarity Music",
+   "duration": 1372,
+   "view_count": 7137,
+   "url": "https://www.youtube.com/watch?v=SMB34GRgQWQ",
+   "query": "vector synthesis morph pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.43,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "JPV5hC-9Rv0",
+   "title": "Creating a Pad with Smart Morph. An FMX-ploration creating a 2 layer FMX Pad & Super Knob animation.",
+   "channel": "Waveform",
+   "duration": 752,
+   "view_count": 2567,
+   "url": "https://www.youtube.com/watch?v=JPV5hC-9Rv0",
+   "query": "vector synthesis morph pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.2,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "oHO1Rr03jUU",
+   "why": "negative title signal"
+  },
+  {
+   "id": "YxFD2eySg0M",
+   "why": "duration 4200s"
+  },
+  {
+   "id": "CHo4O0gE2ow",
+   "why": "duration 164s"
+  },
+  {
+   "id": "jfsJC4QmdVI",
+   "why": "duration 72s"
+  },
+  {
+   "id": "AatC-FJyXUY",
+   "why": "duration 5435s"
+  },
+  {
+   "id": "ZLuu225Ad8k",
+   "why": "duration 110s"
+  },
+  {
+   "id": "0BYgeKDAaFQ",
+   "why": "duration 108s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

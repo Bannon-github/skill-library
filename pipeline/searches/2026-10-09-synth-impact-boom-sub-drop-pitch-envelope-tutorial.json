@@ -1,0 +1,90 @@
+{
+ "topic": "synth impact boom sub drop pitch envelope tutorial",
+ "date": "2026-10-09",
+ "params": {
+  "topic": "synth impact boom sub drop pitch envelope tutorial",
+  "langs": "en",
+  "per_query": 8,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "FULqquC3-Fc",
+   "title": "How to make custom bass drops / sub drops in Cubase (tutorial)",
+   "channel": "URM Academy",
+   "duration": 382,
+   "view_count": 46716,
+   "url": "https://www.youtube.com/watch?v=FULqquC3-Fc",
+   "query": "synth impact boom sub drop pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.83
+  },
+  {
+   "id": "y0mfaQpWYQw",
+   "title": "How To Make A Riser Effect - Build Up Tutorial (FL Studio)",
+   "channel": "Transverse Audio",
+   "duration": 459,
+   "view_count": 271119,
+   "url": "https://www.youtube.com/watch?v=y0mfaQpWYQw",
+   "query": "synth impact boom sub drop pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.22
+  },
+  {
+   "id": "PUBMG__czwg",
+   "title": "How To Sound Design Cinematic Basses and Subdrops",
+   "channel": "Negativist",
+   "duration": 565,
+   "view_count": 9843,
+   "url": "https://www.youtube.com/watch?v=PUBMG__czwg",
+   "query": "synth impact boom sub drop pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5
+  },
+  {
+   "id": "tg7ixg-7xNQ",
+   "title": "How To Create A Pitch Rise or Pitch Fall Sound in the Yamaha Montage MODX",
+   "channel": "narfsounds",
+   "duration": 355,
+   "view_count": 12462,
+   "url": "https://www.youtube.com/watch?v=tg7ixg-7xNQ",
+   "query": "synth impact boom sub drop pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.55
+  },
+  {
+   "id": "acZPLjnha9o",
+   "title": "How To Sound Design Cinematic Braams & Bends (using Vital)",
+   "channel": "Negativist",
+   "duration": 246,
+   "view_count": 47365,
+   "url": "https://www.youtube.com/watch?v=acZPLjnha9o",
+   "query": "synth impact boom sub drop pitch envelope tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.34
+  }
+ ],
+ "dropped": [
+  {
+   "id": "5tRsrsmHdr0",
+   "why": "duration 69s"
+  },
+  {
+   "id": "rdNq4rhOpcI",
+   "why": "duration 147s"
+  },
+  {
+   "id": "CygFzo0aRCo",
+   "why": "duration 66s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

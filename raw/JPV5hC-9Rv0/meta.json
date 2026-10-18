@@ -1,0 +1,46 @@
+{
+  "video_id": "JPV5hC-9Rv0",
+  "title": "Creating a Pad with Smart Morph. An FMX-ploration creating a 2 layer FMX Pad & Super Knob animation.",
+  "url": "https://www.youtube.com/watch?v=JPV5hC-9Rv0",
+  "fetched_at": "2026-10-12T16:51:31.980351+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Waveform",
+  "duration": 752,
+  "ok": true,
+  "cue_count": 254,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JPV5hC-9Rv0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JPV5hC-9Rv0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

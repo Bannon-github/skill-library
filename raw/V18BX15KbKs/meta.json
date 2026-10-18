@@ -1,0 +1,46 @@
+{
+  "video_id": "V18BX15KbKs",
+  "title": "LEARN KDENLIVE IN 15 MINUTES ~ Basic Video Editing Tutorial for Beginners",
+  "url": "https://www.youtube.com/watch?v=V18BX15KbKs",
+  "fetched_at": "2026-10-12T16:26:58.821784+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Chris' Tutorials",
+  "duration": 959,
+  "ok": true,
+  "cue_count": 527,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/V18BX15KbKs/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/V18BX15KbKs/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
