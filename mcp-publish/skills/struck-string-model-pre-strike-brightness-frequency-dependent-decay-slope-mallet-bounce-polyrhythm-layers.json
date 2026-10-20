@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
+  "name": "Struck-string physical-model synth controls that differ from subtractive synthesis: brightness set before the strike (not a filter), frequency-dependent decay (cutoff + slope) instead of sustain, strike point, harmonicity, three-string unison, and mallet-bounce retriggers at different note values per layer for sequenced polyrhythmic patches",
+  "goal": "Design pads, basses and keys on a struck/plucked physical model and know which controls behave unlike a subtractive synth. Plucking brightness changes a sine-like tone into a saw-like one but only at the strike: lowering it while a note rings does nothing, so put a real filter after the model for sweeps. There is no sustain: decay and release plus a decay cutoff and slope define how partials above the cutoff die faster (low cutoff + high slope = more decay). Strike point acts like the pick position; harmonicity moves the tone from harmonic to inharmonic (steel-drum-like with more bloom); unison width detunes the three strings per note; smear softens transients. Mallet bounce makes a held note re-strike itself; stacking layers with different bounce values (dotted half, quarter, eight beats in the demo) gives sequenced, polyrhythmic patterns without a sequencer. Delta beyond our modal-partial skill: decay slope, pre-strike brightness and mallet-bounce layering.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "B3n9GOT0Q9A",
+    "url": "https://www.youtube.com/watch?v=B3n9GOT0Q9A",
+    "title": "Syngular: Pianoteq's New Physically Modeled Synth // Walkthrough & Demo",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/B3n9GOT0Q9A/agent-skill-struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers.json",
+    "transcript_note": "Product walkthrough with affiliate mention; licence and preset-tour content dropped."
+  },
+  "prerequisites": [
+    "Physical-model synth with struck-string/mallet engine, or Web Audio: Karplus/modal voice whose excitation lowpass is set per note, plus per-partial decay scaled above a cutoff (implementation note)",
+    "Post filter and EQ for sweeps",
+    "Layering (2–3 layers) for bounce polyrhythms"
+  ],
+  "inputs": [
+    {
+      "name": "brightness",
+      "type": "number",
+      "description": "Pre-strike brightness (sine-like → saw-like)",
+      "required": true
+    },
+    {
+      "name": "decay_cutoff",
+      "type": "number",
+      "description": "Frequency above which partials decay faster",
+      "required": true
+    },
+    {
+      "name": "decay_slope",
+      "type": "number",
+      "description": "How much faster partials above the cutoff decay",
+      "required": true
+    },
+    {
+      "name": "bounce_values",
+      "type": "list",
+      "description": "Mallet-bounce note values per layer, e.g. dotted half, quarter, 8 beats",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "struck_model_patch",
+      "type": "patch",
+      "description": "Physical-model pad/bass/keys patch"
+    },
+    {
+      "name": "bounce_layers",
+      "type": "patch",
+      "description": "2–3 layer self-sequencing polyrhythmic patch"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Pre-strike brightness cannot be modulated like a filter cutoff after the note starts. Use a post filter for sweeps.",
+    "No sustain stage: shape length with decay, release, the decay cutoff/slope and the sustain pedal.",
+    "Walkthrough of a licensed product; the editable parameters need a higher licence tier in that product. Affiliate and licence talk dropped. Preset names not copied.",
+    "Values were spoken as shapes (low/high), apart from the bounce note values. Set the rest by ear."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a sine-like init voice. Raise plucking/strike brightness to move toward a bright, saw-like tone. Test that turning it down while a note rings does not change that note.",
+      "tool": "brightness",
+      "expect": "Brightness changes only on the next strike"
+    },
+    {
+      "n": 2,
+      "action": "Edit the harmonic profile (raise some partials, lower others) for a new basic colour, and set unison width to detune the three strings per note for synth-style thickness.",
+      "tool": "profile + unison",
+      "expect": "Thicker, chorus-like tone without a chorus effect"
+    },
+    {
+      "n": 3,
+      "action": "Shape length: fast attack for keys or slower for pads; decay and release for ring time. Set the decay cutoff and slope: partials above the cutoff die faster as slope rises (low cutoff + high slope = shortest, darkest tail).",
+      "tool": "decay slope",
+      "expect": "Short presses show faster high-frequency decay with a higher slope"
+    },
+    {
+      "n": 4,
+      "action": "Set strike point (like pick position) and harmonicity (harmonic → inharmonic). With higher brightness and more bloom, inharmonic settings give steel-drum-like tones. Use smear to soften transients.",
+      "tool": "strike + harmonicity",
+      "expect": "From pure tones to metallic drums"
+    },
+    {
+      "n": 5,
+      "action": "Enable mallet bounce so a held note re-strikes; adjust bounce rate and decay over time.",
+      "tool": "bounce",
+      "expect": "A held note bounces rhythmically"
+    },
+    {
+      "n": 6,
+      "action": "Build a sequenced patch with 2–3 layers and different bounce note values (e.g. dotted half, quarter, 8 beats). Turning off bounce on one layer will not stop the pattern while the other layers still bounce.",
+      "tool": "polyrhythm layers",
+      "expect": "Self-sequencing interlocking pattern from one held chord"
+    },
+    {
+      "n": 7,
+      "action": "Map mod wheel → LFO rate, vibrato and tremolo depth. Finish with EQ and effects (chorus, phaser, delay, compression) and a post filter if you need cutoff sweeps.",
+      "tool": "performance + fx",
+      "expect": "Playable, finished patch"
+    }
+  ],
+  "verification": [
+    "Changing brightness during a held note has no audible effect; the next note changes.",
+    "With a higher decay slope, high partials fade noticeably faster on a short press.",
+    "A held chord on the 3-layer bounce patch produces an interlocking rhythm.",
+    "Raising harmonicity away from harmonic produces an audibly inharmonic, metallic tone."
+  ],
+  "tags": [
+    "physical-modelling",
+    "struck-string",
+    "mallet-bounce",
+    "polyrhythm",
+    "decay-slope",
+    "inharmonicity",
+    "layering",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers"
+}

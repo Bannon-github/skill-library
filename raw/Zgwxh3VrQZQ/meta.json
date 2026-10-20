@@ -1,0 +1,46 @@
+{
+  "video_id": "Zgwxh3VrQZQ",
+  "title": "How to make your Synths sound like a Movie Score (Hans Zimmer/Stranger Things Style)",
+  "url": "https://www.youtube.com/watch?v=Zgwxh3VrQZQ",
+  "fetched_at": "2026-10-19T17:31:46.565775+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Devin Belanger",
+  "duration": 689,
+  "ok": true,
+  "cue_count": 193,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Zgwxh3VrQZQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Zgwxh3VrQZQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

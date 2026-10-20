@@ -1,0 +1,48 @@
+{
+  "video_id": "FOL9EDiLp4k",
+  "title": "This FREE Plugin Turns ANY Sample Into Cinematic Risers in Seconds",
+  "url": "https://www.youtube.com/watch?v=FOL9EDiLp4k",
+  "fetched_at": "2026-10-19T17:07:48.901673+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "CoinxDaProducer",
+  "duration": 486,
+  "ok": true,
+  "cue_count": 76,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/FOL9EDiLp4k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/FOL9EDiLp4k/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-US",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-US",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-US)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

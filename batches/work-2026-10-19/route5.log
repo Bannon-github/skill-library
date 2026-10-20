@@ -1,0 +1,50 @@
+  [m6wfGX7rwiQ] Q0 pipeline env importable? -> yes
+  [m6wfGX7rwiQ] Q1 transcript already saved? -> no  => fetch via track ladder
+  [m6wfGX7rwiQ] Q2 track ladder produced English text? -> yes
+  [m6wfGX7rwiQ] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [m6wfGX7rwiQ] Q4 English text is a translation? -> no
+  [m6wfGX7rwiQ] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [m6wfGX7rwiQ] Q6 term graph built? -> yes
+  [m6wfGX7rwiQ] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [m6wfGX7rwiQ] OUTCOME CANDIDATES_READY
+  [rVRMgLa9Y9E] Q0 pipeline env importable? -> yes
+  [rVRMgLa9Y9E] Q1 transcript already saved? -> no  => fetch via track ladder
+  [rVRMgLa9Y9E] Q2 track ladder produced English text? -> yes
+  [rVRMgLa9Y9E] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [rVRMgLa9Y9E] Q4 English text is a translation? -> no
+  [rVRMgLa9Y9E] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [rVRMgLa9Y9E] Q6 term graph built? -> yes
+  [rVRMgLa9Y9E] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [rVRMgLa9Y9E] OUTCOME COVERED
+  [P_bIEn8FGzI] Q0 pipeline env importable? -> yes
+  [P_bIEn8FGzI] Q1 transcript already saved? -> no  => fetch via track ladder
+  [P_bIEn8FGzI] Q2 track ladder produced English text? -> yes
+  [P_bIEn8FGzI] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [P_bIEn8FGzI] Q4 English text is a translation? -> no
+  [P_bIEn8FGzI] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [P_bIEn8FGzI] Q6 term graph built? -> yes
+  [P_bIEn8FGzI] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [P_bIEn8FGzI] OUTCOME COVERED
+[
+ {
+  "video_id": "m6wfGX7rwiQ",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "rVRMgLa9Y9E",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "P_bIEn8FGzI",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

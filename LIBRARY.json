@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-16T16:31:12.462800+00:00",
-  "entry_count": 158,
+  "updated_at": "2026-10-20T16:28:48.715198+00:00",
+  "entry_count": 166,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -2543,6 +2543,110 @@
       "skills": [
         "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
       ]
+    },
+    {
+      "id": "cinematic-synth-Pd9AFeTcl2k",
+      "video_id": "Pd9AFeTcl2k",
+      "url": "https://www.youtube.com/watch?v=Pd9AFeTcl2k",
+      "title": "reFX 𝑹𝒊𝒑𝒑𝒍𝒆𝒓 Walkthrough - New Physical Modeling Synth!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Pd9AFeTcl2k/raw.txt",
+      "summary": "Skills: modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+      "skills": [
+        "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit"
+      ]
+    },
+    {
+      "id": "cinematic-synth-B3n9GOT0Q9A",
+      "video_id": "B3n9GOT0Q9A",
+      "url": "https://www.youtube.com/watch?v=B3n9GOT0Q9A",
+      "title": "Syngular: Pianoteq's New Physically Modeled Synth // Walkthrough & Demo",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/B3n9GOT0Q9A/raw.txt",
+      "summary": "Skills: struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
+      "skills": [
+        "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers"
+      ]
+    },
+    {
+      "id": "cinematic-synth-xil_HpL1izg",
+      "video_id": "xil_HpL1izg",
+      "url": "https://www.youtube.com/watch?v=xil_HpL1izg",
+      "title": "Why This Classic Filter Sweep Still Sounds So Good",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/xil_HpL1izg/raw.txt",
+      "summary": "Skills: classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+      "skills": [
+        "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-JC-UA2C-sZU",
+      "video_id": "JC-UA2C-sZU",
+      "url": "https://www.youtube.com/watch?v=JC-UA2C-sZU",
+      "title": "Phase Distortion / Phase Modulation Synth in VCV Rack",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/JC-UA2C-sZU/raw.txt",
+      "summary": "Skills: four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+      "skills": [
+        "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch"
+      ]
+    },
+    {
+      "id": "cinematic-synth-m6wfGX7rwiQ",
+      "video_id": "m6wfGX7rwiQ",
+      "url": "https://www.youtube.com/watch?v=m6wfGX7rwiQ",
+      "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/m6wfGX7rwiQ/raw.txt",
+      "summary": "Skills: hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+      "skills": [
+        "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+      ]
+    },
+    {
+      "id": "cinematic-synth-7OatKTrtmJ8",
+      "video_id": "7OatKTrtmJ8",
+      "url": "https://www.youtube.com/watch?v=7OatKTrtmJ8",
+      "title": "How to Make a HUGE Reese Bass in Vital | Deep Dubstep & DnB Sound Design Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/7OatKTrtmJ8/raw.txt",
+      "summary": "Skills: reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+      "skills": [
+        "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120"
+      ]
+    },
+    {
+      "id": "cinematic-synth-MjijB6ExetI",
+      "video_id": "MjijB6ExetI",
+      "url": "https://www.youtube.com/watch?v=MjijB6ExetI",
+      "title": "The Minifreak Vocoder is Awesome!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/MjijB6ExetI/raw.txt",
+      "summary": "Skills: vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
+      "skills": [
+        "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
+      ]
+    },
+    {
+      "id": "cinematic-synth-e1AMHtuuuTQ",
+      "video_id": "e1AMHtuuuTQ",
+      "url": "https://www.youtube.com/watch?v=e1AMHtuuuTQ",
+      "title": "STOP Using Stereo Reverb (Do This Instead) (Dub Techno Tutorial Mixing)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/e1AMHtuuuTQ/raw.txt",
+      "summary": "Skills: mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
+      "skills": [
+        "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -2752,6 +2856,20 @@
         "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
         "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
         "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
+      ]
+    },
+    {
+      "at": "2026-10-20T16:28:48.715198+00:00",
+      "batch": "2026-10-20-morning-hunt",
+      "added": [
+        "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+        "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+        "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+        "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+        "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
+        "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+        "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
+        "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
       ]
     }
   ]

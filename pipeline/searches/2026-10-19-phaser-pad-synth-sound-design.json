@@ -1,0 +1,151 @@
+{
+ "topic": "phaser pad synth sound design",
+ "date": "2026-10-19",
+ "params": {
+  "topic": "phaser pad synth sound design",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "b2zwGqefZw8",
+   "title": "How to Layer Synth Sounds the Right Way",
+   "channel": "Ian Dixon",
+   "duration": 544,
+   "view_count": 1044,
+   "url": "https://www.youtube.com/watch?v=b2zwGqefZw8",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Szm7CtvXY54",
+   "title": "Tutorial | Phase Issues with Synths/VSTs (How to FIX)",
+   "channel": "Just S",
+   "duration": 264,
+   "view_count": 489,
+   "url": "https://www.youtube.com/watch?v=Szm7CtvXY54",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.35,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "pO5BOqCS9mo",
+   "title": "Sound Design | Evolving Pads in Massive X, Serum & Omnisphere",
+   "channel": "BOZNER",
+   "duration": 334,
+   "view_count": 611,
+   "url": "https://www.youtube.com/watch?v=pO5BOqCS9mo",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.89,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "aDgy_IB9Ets",
+   "title": "U-HE - HIVE 2 Tutorial with AZS Organism Pack covering Arp/Seq, FX, XY Pad, Scope & Modulation",
+   "channel": "David Thom Creations",
+   "duration": 1686,
+   "view_count": 536,
+   "url": "https://www.youtube.com/watch?v=aDgy_IB9Ets",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.86,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "SSJDIte-nJo",
+   "why": "duration 123s"
+  },
+  {
+   "id": "7B2fWwkwYSU",
+   "why": "already known"
+  },
+  {
+   "id": "aob8cLw7VaY",
+   "why": "duration 56s"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "3rTd-fu9Adw",
+   "why": "duration 87s"
+  },
+  {
+   "id": "H8fsiSJzKTA",
+   "why": "already known"
+  },
+  {
+   "id": "gTWQtzrDjew",
+   "why": "duration 13s"
+  },
+  {
+   "id": "28uxHnQbulE",
+   "why": "already known"
+  },
+  {
+   "id": "esdTDRicmu8",
+   "why": "duration 26075s"
+  },
+  {
+   "id": "RKFHBQkL8wE",
+   "why": "duration 117s"
+  },
+  {
+   "id": "3EePati3SPQ",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

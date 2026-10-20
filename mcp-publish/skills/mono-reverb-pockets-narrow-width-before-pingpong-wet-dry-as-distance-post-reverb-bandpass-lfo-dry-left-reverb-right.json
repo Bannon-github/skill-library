@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
+  "name": "Mono (narrowed) reverb as a mixing and sound-design tool: narrow each 100%-wet reverb into a placeable 'pocket', pan pockets to separate parts, put a stereo ping-pong delay after the width stage so the pocket travels left-right, use the wet/dry mix as a distance control, filter the reverb tail post-reverb with an LFO-moved bandpass, and split dry left / mono reverb right for pseudo-stereo",
+  "goal": "Clean up a crowded ambient or electronic mix and get new textures by making reverbs mono or narrow instead of wide. For each sound, decide what stays stereo (e.g. a wide atmos bed with high-end detail) and what becomes a pocket: narrow the reverb width (it does not have to be fully mono; side-reducing imagers sound better than fold-to-mono), then pan the pocket to its own spot and turn it down, since a centred or narrow reverb is more audible and needs less level. Put a ping-pong delay after the width utility (low feedback, lowpass in the feedback path) so the mono pocket moves left and right without washing the whole field. Treat the wet/dry mix as a distance knob: fully wet is far, fully dry is close, which is more obvious with mono reverb. Filter after the reverb with a bandpass moved back and forth (manually or by LFO), with the filter mix keeping some high end, to shape the tail as its own sound. For pseudo-stereo, put a mono reverb on a send, pan the dry sound fully left and the reverb fully right, then bus both through a driven resonant filter. A fully wet mono reverb on an atmos track, sidechained, becomes a wall of sound that sits behind the lead.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "e1AMHtuuuTQ",
+    "url": "https://www.youtube.com/watch?v=e1AMHtuuuTQ",
+    "title": "STOP Using Stereo Reverb (Do This Instead) (Dub Techno Tutorial Mixing)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/e1AMHtuuuTQ/agent-skill-mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right.json",
+    "transcript_note": "Mixing tutorial; end-screen promotion dropped."
+  },
+  "prerequisites": [
+    "DAW or Web Audio graph with reverb, stereo width/imager utility, panner, ping-pong delay and filters; in Web Audio: ConvolverNode → mono sum (ChannelMerger/Splitter or a mid-only gain) → StereoPannerNode → ping-pong delay pair (implementation note)",
+    "Sidechain compressor (optional)",
+    "LFO for filter movement"
+  ],
+  "inputs": [
+    {
+      "name": "tracks",
+      "type": "list",
+      "description": "Parts competing for space (atmos, steps, plucks, chords)",
+      "required": true
+    },
+    {
+      "name": "width_per_reverb",
+      "type": "number",
+      "description": "0 = mono pocket … 100% = full stereo",
+      "required": true
+    },
+    {
+      "name": "pan_positions",
+      "type": "table",
+      "description": "Where each pocket sits",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "stereo_map",
+      "type": "table",
+      "description": "Per-track: stays stereo or pocket, width, pan, reverb level"
+    },
+    {
+      "name": "pocket_fx_chains",
+      "type": "patch",
+      "description": "Reverb → width → pan → ping-pong delay → post filter chains"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Narrowing can be partial: keep a sound slightly wider if it serves the part, as long as it reads as one source.",
+    "Prefer side-reducing width control over hard mono summing to avoid phase cancellation.",
+    "If vocals are the main element, the presenter suggests stereo reverb on them; mono reverb suits chops, drums, claps and hats.",
+    "No numbers were given apart from 100% wet and full-left/full-right pans. Set the rest by ear. Plugin names not needed."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Solo through the parts and decide which stays stereo (e.g. an atmos bed with high-end detail through a moving notch filter into a 100% wet reverb) and which become mono/narrow pockets.",
+      "tool": "stereo plan",
+      "expect": "A list of stereo vs pocket tracks"
+    },
+    {
+      "n": 2,
+      "action": "For a pocket track, set its reverb 100% wet (on the insert) and narrow its width with a side-reducing imager or width utility, partly or fully.",
+      "tool": "narrow reverb",
+      "expect": "The reverb becomes a focused, one-dimensional pocket"
+    },
+    {
+      "n": 3,
+      "action": "Pan each pocket to its own spot (e.g. short step pocket right, layered second step slightly wider and left, main part centre) and turn levels down: narrow reverbs are more audible, so they need less.",
+      "tool": "place pockets",
+      "expect": "Parts stop fighting; the mix gets clearer at lower levels"
+    },
+    {
+      "n": 4,
+      "action": "Put the ping-pong delay after the width stage, with low feedback and a lowpass on the feedback, so the mono pocket is carried left and right.",
+      "tool": "delay after width",
+      "expect": "A narrow sound that still moves across the stereo field"
+    },
+    {
+      "n": 5,
+      "action": "Use the reverb mix as a distance control: fully wet = far behind, fully dry = right in front. Shave highs for extra depth.",
+      "tool": "distance",
+      "expect": "Front-to-back placement by one knob"
+    },
+    {
+      "n": 6,
+      "action": "Place a bandpass filter after the reverb and move it back and forth by hand or with an LFO; use the filter's mix to keep some high end. Post-reverb filtering shapes the tail as its own sound.",
+      "tool": "post-reverb filter",
+      "expect": "The reverb shadow becomes a moving, organic texture"
+    },
+    {
+      "n": 7,
+      "action": "Pseudo-stereo: send the sound to a mono reverb return, pan the dry sound hard left and the reverb hard right, then route both to a bus with a driven, resonant filter (cut lows, shorten the reverb, add movement).",
+      "tool": "dry/wet split",
+      "expect": "Two mono sources that together sound wide"
+    },
+    {
+      "n": 8,
+      "action": "For a background wall: put a fully wet mono reverb on the atmos track and sidechain it to the lead or kick so it ducks out of the way.",
+      "tool": "wall of sound",
+      "expect": "A dense bed that sits behind the main part"
+    }
+  ],
+  "verification": [
+    "After narrowing, the pocket can be moved with the pan control and is heard as one spot.",
+    "With the delay placed after the width utility, repeats alternate left and right while the reverb itself stays narrow.",
+    "Sweeping the reverb mix from dry to wet makes the source move audibly from front to back.",
+    "The dry-left / reverb-right pair sounds wider than either part alone, while each side stays a single focused source."
+  ],
+  "tags": [
+    "mono-reverb",
+    "stereo-width",
+    "mixing",
+    "ping-pong-delay",
+    "depth",
+    "post-reverb-filter",
+    "ambient",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right"
+}

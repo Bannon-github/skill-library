@@ -1,0 +1,46 @@
+{
+  "video_id": "P_bIEn8FGzI",
+  "title": "DAY 5  Why Do Some Textures Feel Cinematic?",
+  "url": "https://www.youtube.com/watch?v=P_bIEn8FGzI",
+  "fetched_at": "2026-10-19T17:32:42.153794+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Xander Music",
+  "duration": 692,
+  "ok": true,
+  "cue_count": 85,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/P_bIEn8FGzI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/P_bIEn8FGzI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

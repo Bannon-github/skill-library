@@ -1,0 +1,68 @@
+  [jC_ckXoCHYE] Q0 pipeline env importable? -> yes
+  [jC_ckXoCHYE] Q1 transcript already saved? -> no  => fetch via track ladder
+  [jC_ckXoCHYE] Q2 track ladder produced English text? -> no
+  [jC_ckXoCHYE] Q2b rate-limited / IP-blocked after backoff? -> yes  => DEFER to pipeline/queue/deferred.json; retry later or Matt sets YT_TRANSCRIPT_PROXY
+  [jC_ckXoCHYE] OUTCOME DEFER_rate_limited
+  [YGrzmmZKb8w] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [YGrzmmZKb8w] OUTCOME DEFER_rate_limited
+  [7B2fWwkwYSU] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [7B2fWwkwYSU] OUTCOME DEFER_rate_limited
+  [Pd9AFeTcl2k] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [Pd9AFeTcl2k] OUTCOME DEFER_rate_limited
+  [B3n9GOT0Q9A] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [B3n9GOT0Q9A] OUTCOME DEFER_rate_limited
+  [FOL9EDiLp4k] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [FOL9EDiLp4k] OUTCOME DEFER_rate_limited
+  [xil_HpL1izg] Q-cool: did an earlier video in this run hit a 429/IP block? -> yes  => DEFER without contacting YouTube (more requests extend the block)
+  [xil_HpL1izg] OUTCOME DEFER_rate_limited
+[
+ {
+  "video_id": "jC_ckXoCHYE",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "YGrzmmZKb8w",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "7B2fWwkwYSU",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "Pd9AFeTcl2k",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "B3n9GOT0Q9A",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "FOL9EDiLp4k",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "xil_HpL1izg",
+  "outcome": "DEFER_rate_limited",
+  "route": null,
+  "translated": null,
+  "domain": null
+ }
+]

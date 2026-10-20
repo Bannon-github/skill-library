@@ -1,0 +1,74 @@
+{
+ "topic": "euclidean rhythm generative ambient synth tutorial",
+ "date": "2026-10-20",
+ "params": {
+  "topic": "euclidean rhythm generative ambient synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "D1O2xaKMOuU",
+   "why": "duration 20s"
+  },
+  {
+   "id": "fAMH6_3nDxE",
+   "why": "duration 21s"
+  },
+  {
+   "id": "30n3rFgEHds",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "QmemFx2cpa0",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "ljC1F__Ds5w",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "UchJGizLiLM",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "WeOuxcN0pV8",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "mb3yqXO9JiE",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "PP6dAPAhIrQ",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "pIHoR1pqAYo",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "uiEE-2J2wqA",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "_76A4r3Nwl0",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "mPYP-IJmc_c",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

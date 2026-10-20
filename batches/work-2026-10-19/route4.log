@@ -1,0 +1,50 @@
+  [MjijB6ExetI] Q0 pipeline env importable? -> yes
+  [MjijB6ExetI] Q1 transcript already saved? -> no  => fetch via track ladder
+  [MjijB6ExetI] Q2 track ladder produced English text? -> yes
+  [MjijB6ExetI] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [MjijB6ExetI] Q4 English text is a translation? -> no
+  [MjijB6ExetI] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [MjijB6ExetI] Q6 term graph built? -> yes
+  [MjijB6ExetI] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [MjijB6ExetI] OUTCOME COVERED
+  [JC-UA2C-sZU] Q0 pipeline env importable? -> yes
+  [JC-UA2C-sZU] Q1 transcript already saved? -> no  => fetch via track ladder
+  [JC-UA2C-sZU] Q2 track ladder produced English text? -> yes
+  [JC-UA2C-sZU] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [JC-UA2C-sZU] Q4 English text is a translation? -> no
+  [JC-UA2C-sZU] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [JC-UA2C-sZU] Q6 term graph built? -> yes
+  [JC-UA2C-sZU] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [JC-UA2C-sZU] OUTCOME CANDIDATES_READY
+  [Zgwxh3VrQZQ] Q0 pipeline env importable? -> yes
+  [Zgwxh3VrQZQ] Q1 transcript already saved? -> no  => fetch via track ladder
+  [Zgwxh3VrQZQ] Q2 track ladder produced English text? -> yes
+  [Zgwxh3VrQZQ] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Zgwxh3VrQZQ] Q4 English text is a translation? -> no
+  [Zgwxh3VrQZQ] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Zgwxh3VrQZQ] Q6 term graph built? -> yes
+  [Zgwxh3VrQZQ] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [Zgwxh3VrQZQ] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "MjijB6ExetI",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "JC-UA2C-sZU",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "Zgwxh3VrQZQ",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

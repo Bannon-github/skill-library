@@ -1,0 +1,186 @@
+{
+ "topic": "hybrid synthesis cinematic pad tutorial",
+ "date": "2026-10-19",
+ "params": {
+  "topic": "hybrid synthesis cinematic pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Zgwxh3VrQZQ",
+   "title": "How to make your Synths sound like a Movie Score (Hans Zimmer/Stranger Things Style)",
+   "channel": "Devin Belanger",
+   "duration": 689,
+   "view_count": 5303,
+   "url": "https://www.youtube.com/watch?v=Zgwxh3VrQZQ",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "hDWkxDPTFGE",
+   "title": "TRAVELER - Cinematic Hybrid Synthesizer - The BIG Sound Test - PC & Mac",
+   "channel": "The Sound Test Room",
+   "duration": 2674,
+   "view_count": 10274,
+   "url": "https://www.youtube.com/watch?v=hDWkxDPTFGE",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.01,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "8aoYp7VoO_o",
+   "title": "Treehouse — A New Hybrid Acoustic Instrument (Official Overview) #vstplugin #vst",
+   "channel": "OCCULT AUDIO - VST Instruments & Plugins",
+   "duration": 647,
+   "view_count": 331,
+   "url": "https://www.youtube.com/watch?v=8aoYp7VoO_o",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.76,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "YxCy3haPOOY",
+   "title": "My Best Omnisphere Soundset Yet? Hear Eternia 2",
+   "channel": "S1gns Of L1fe",
+   "duration": 1359,
+   "view_count": 3407,
+   "url": "https://www.youtube.com/watch?v=YxCy3haPOOY",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.27,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "m6wfGX7rwiQ",
+   "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together",
+   "channel": "Guy Michelmore",
+   "duration": 2003,
+   "view_count": 16290,
+   "url": "https://www.youtube.com/watch?v=m6wfGX7rwiQ",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.11,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "LU_GtXUT6E4",
+   "title": "Absynth 6 Is Back !! Native Instruments’ Legendary Synth + Ableton Live 12.3 Splice Integration",
+   "channel": "WaveBits",
+   "duration": 1190,
+   "view_count": 717,
+   "url": "https://www.youtube.com/watch?v=LU_GtXUT6E4",
+   "query": "hybrid synthesis cinematic pad tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.93,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "it",
+     "ja",
+     "ml"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "IU76c2Cygs4",
+   "why": "already known"
+  },
+  {
+   "id": "92xrqvIOypU",
+   "why": "negative title signal"
+  },
+  {
+   "id": "fdI99qShctA",
+   "why": "duration 64s"
+  },
+  {
+   "id": "JCdQGX_508I",
+   "why": "duration 81s"
+  },
+  {
+   "id": "b0HwrCuzPx0",
+   "why": "duration 46s"
+  },
+  {
+   "id": "gmBPXkHr3CM",
+   "why": "duration 75s"
+  },
+  {
+   "id": "eaQtf_vm9zA",
+   "why": "already known"
+  },
+  {
+   "id": "tJrluVq0hgw",
+   "why": "duration 72s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

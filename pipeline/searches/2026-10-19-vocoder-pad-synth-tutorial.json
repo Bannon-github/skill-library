@@ -1,0 +1,134 @@
+{
+ "topic": "vocoder pad synth tutorial",
+ "date": "2026-10-19",
+ "params": {
+  "topic": "vocoder pad synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "4xRXpsBHOgg",
+   "title": "Montage M MODX M Tutorial: Add a Sample to an Existing Performance on the Montage M",
+   "channel": "narfsounds",
+   "duration": 313,
+   "view_count": 8522,
+   "url": "https://www.youtube.com/watch?v=4xRXpsBHOgg",
+   "query": "vocoder pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.47,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "MjijB6ExetI",
+   "title": "The Minifreak Vocoder is Awesome!",
+   "channel": "Free Beat",
+   "duration": 919,
+   "view_count": 9153,
+   "url": "https://www.youtube.com/watch?v=MjijB6ExetI",
+   "query": "vocoder pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.48,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "HrLG4codCLc",
+   "title": "White Fog – Future Proof",
+   "channel": "Simon Stockhausen",
+   "duration": 195,
+   "view_count": 209,
+   "url": "https://www.youtube.com/watch?v=HrLG4codCLc",
+   "query": "vocoder pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.16,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "vi"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": false,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "vfZhqBfXvdc",
+   "why": "already known"
+  },
+  {
+   "id": "My5Hf6hZX7A",
+   "why": "duration 28s"
+  },
+  {
+   "id": "u23mPOSZvzA",
+   "why": "duration 22s"
+  },
+  {
+   "id": "FXY-ZL2Bpis",
+   "why": "duration 80s"
+  },
+  {
+   "id": "z6FPeHafh6Y",
+   "why": "duration 38s"
+  },
+  {
+   "id": "v1jhRBptm60",
+   "why": "duration 32s"
+  },
+  {
+   "id": "azcPnEn6W78",
+   "why": "duration 16s"
+  },
+  {
+   "id": "fCTaYd-AtR0",
+   "why": "duration 54s"
+  },
+  {
+   "id": "c6pGuvAZC2k",
+   "why": "duration 37s"
+  },
+  {
+   "id": "NnrIMwA3tn8",
+   "why": "duration 40s"
+  },
+  {
+   "id": "FfyD5ILl6q8",
+   "why": "duration 104s"
+  },
+  {
+   "id": "NPBfTz2PssE",
+   "why": "duration 20s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

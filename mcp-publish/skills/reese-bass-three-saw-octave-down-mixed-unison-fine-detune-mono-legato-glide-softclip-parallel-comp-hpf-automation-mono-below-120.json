@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "id": "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+  "name": "Reese bass from three octave-down saws (outer two with 3-voice unison at about 10% detune and zero phase randomization, middle one single voice, outer pair fine-tuned slightly up and down), mono legato always-glide, soft-clip drive, half-mix compressor, resonant high-pass, low-cut reverb, soft-clip saturation, high roll-off, automated high-pass movement, mono below 120 Hz and kick/snare sidechain",
+  "goal": "Build a wide, moving Reese bass for dark hybrid cues. Use three saw oscillators all one octave down: oscillators 1 and 3 with 3 unison voices, unison detune around 10% and phase randomization at 0; oscillator 2 a single voice. Fine-tune oscillator 1 slightly up and oscillator 3 slightly down for the slow beating. Set one voice (mono), glide about halfway, always-glide and legato on, and overlap MIDI notes to get slides. In the synth FX: soft-clip distortion at about 9 dB, then a compressor after it at about 50% mix (release ~36%, attack ~56% on its relative scale), an EQ with a slightly resonant high-pass, and a little short reverb with its low end removed. After the synth: soft-clip saturation (drive just over 3 dB, output −2 dB), an EQ rolling off the high end with a small mid dip, automated high-pass cutoff for movement, a slight pitch-wheel drift, mono below 120 Hz, and compressors sidechained to the kick and the snare.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "7OatKTrtmJ8",
+    "url": "https://www.youtube.com/watch?v=7OatKTrtmJ8",
+    "title": "How to Make a HUGE Reese Bass in Vital | Deep Dubstep & DnB Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/7OatKTrtmJ8/agent-skill-reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120.json",
+    "transcript_note": "Short tutorial; subscribe CTA dropped."
+  },
+  "prerequisites": [
+    "Any synth with 3 oscillators, unison, mono/legato/glide and an FX rack (the video uses a free wavetable synth), or Web Audio: three detuned OscillatorNode groups → WaveShaper → DynamicsCompressor → BiquadFilter highpass with automated frequency (implementation note)",
+    "Post saturator and EQ with automation",
+    "Mono-below-frequency utility and sidechain compressors"
+  ],
+  "inputs": [
+    {
+      "name": "root_note",
+      "type": "string",
+      "description": "Bass note, e.g. F1 in the video",
+      "required": true
+    },
+    {
+      "name": "unison_detune",
+      "type": "number",
+      "description": "About 10% on oscillators 1 and 3",
+      "required": true
+    },
+    {
+      "name": "glide",
+      "type": "number",
+      "description": "About halfway, always-glide + legato",
+      "required": true
+    },
+    {
+      "name": "mono_below_hz",
+      "type": "number",
+      "description": "120 Hz",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "reese_patch",
+      "type": "patch",
+      "description": "Three-saw Reese with FX chain"
+    },
+    {
+      "name": "automation",
+      "type": "lanes",
+      "description": "High-pass cutoff and pitch-wheel movement lanes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Percent values are on the synth's own knob scale; treat them as starting points, not absolute times.",
+    "Keep everything below 120 Hz mono so the wide unison does not smear the low end.",
+    "Bass-music tutorial adapted for dark cinematic low end; subscribe talk dropped."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Oscillator 1: basic saw, −12 semitones, unison 3 voices, unison detune ~10%, phase randomization 0. Oscillator 2: saw, −12, one voice. Oscillator 3: same as oscillator 1.",
+      "tool": "3 saws",
+      "expect": "A thick, octave-down saw stack"
+    },
+    {
+      "n": 2,
+      "action": "Fine-tune oscillator 1 slightly up and oscillator 3 slightly down.",
+      "tool": "fine detune",
+      "expect": "Slow beating/phasing movement typical of a Reese"
+    },
+    {
+      "n": 3,
+      "action": "Set voices to 1 (mono), glide about halfway, enable always-glide and legato. Overlap the start of the next MIDI note with the end of the previous one to slide into it; separated notes do not bend.",
+      "tool": "mono glide",
+      "expect": "Smooth pitch slides between overlapping notes"
+    },
+    {
+      "n": 4,
+      "action": "Synth FX: distortion in soft-clip mode at about 9 dB drive; compressor placed after the distortion with mix ~50%, release ~36%, attack ~56%.",
+      "tool": "drive + comp",
+      "expect": "Added grit with controlled, parallel-style dynamics"
+    },
+    {
+      "n": 5,
+      "action": "Add an EQ with a high-pass filter, a touch of resonance, and the cutoff set into the low-mid. Add a small reverb with its low end removed and a shorter time.",
+      "tool": "eq + reverb",
+      "expect": "Cleaner low end and slight space without low mud"
+    },
+    {
+      "n": 6,
+      "action": "After the synth: saturator in a soft-sine curve with soft clip on, drive just over 3 dB, output −2 dB. Then an EQ that rolls off the top end and makes a small mid dip.",
+      "tool": "post chain",
+      "expect": "Warmer, darker bass with headroom"
+    },
+    {
+      "n": 7,
+      "action": "Automate the high-pass cutoff so it opens and closes over the phrase, and add a small pitch-wheel drift lane for extra movement. If it sounds muffled, ease the top roll-off back a little.",
+      "tool": "automation",
+      "expect": "The bass moves and breathes over time"
+    },
+    {
+      "n": 8,
+      "action": "Make everything below 120 Hz mono and lower the gain slightly. Add two compressors sidechained to the kick and to the snare so the bass dips on each hit. Optionally resample and chop the result.",
+      "tool": "mono low + sidechain",
+      "expect": "Solid mono low end that makes room for drums"
+    }
+  ],
+  "verification": [
+    "Muting oscillators 1 and 3 leaves a thin single saw; un-muting brings back the wide beating.",
+    "Overlapping notes glide; non-overlapping notes start cleanly without a bend.",
+    "A correlation meter or mono check shows no low-end cancellation below 120 Hz.",
+    "The bass level dips audibly on kick and snare hits."
+  ],
+  "tags": [
+    "reese-bass",
+    "unison",
+    "detune",
+    "glide",
+    "soft-clip",
+    "sidechain",
+    "mono-low-end",
+    "dark-bass",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120"
+}

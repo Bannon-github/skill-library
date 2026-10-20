@@ -1,0 +1,60 @@
+{
+  "video_id": "7B2fWwkwYSU",
+  "title": "NIVIEM KLANG 8008 — Barberpole Phaser Plugin",
+  "url": "https://www.youtube.com/watch?v=7B2fWwkwYSU",
+  "fetched_at": "2026-10-19T17:06:02.987318+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "tr",
+  "channel": "NIVIEM AUDIO",
+  "duration": 390,
+  "ok": false,
+  "error": "translation_failed",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "tr"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "tr(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:tr",
+        "5:original-plus-machine-translation:tr"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (tr)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (tr)",
+      "a": true
+    },
+    {
+      "q": "machine-translate tr->en (argos)",
+      "a": false,
+      "evidence": "RuntimeError: argos language pack tr->en not installed (run --install-langs tr)"
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.4
+    }
+  ],
+  "translate": {
+    "ok": false,
+    "error": "RuntimeError: argos language pack tr->en not installed (run --install-langs tr)"
+  },
+  "original_transcript_path": "/workspace/skill-library/raw/7B2fWwkwYSU/transcript.orig.tr.txt"
+}

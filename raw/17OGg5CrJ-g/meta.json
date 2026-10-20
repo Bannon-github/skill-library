@@ -1,0 +1,46 @@
+{
+  "video_id": "17OGg5CrJ-g",
+  "title": "Prompting Synthesizers to Generate Strange, Cinematic Sounds",
+  "url": "https://www.youtube.com/watch?v=17OGg5CrJ-g",
+  "fetched_at": "2026-10-19T17:34:29.325911+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Neal Sanche (Thorinside)",
+  "duration": 888,
+  "ok": true,
+  "cue_count": 67,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/17OGg5CrJ-g/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/17OGg5CrJ-g/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

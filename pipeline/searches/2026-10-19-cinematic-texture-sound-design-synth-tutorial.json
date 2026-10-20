@@ -1,0 +1,151 @@
+{
+ "topic": "cinematic texture sound design synth tutorial",
+ "date": "2026-10-19",
+ "params": {
+  "topic": "cinematic texture sound design synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "5wTH5DbifSg",
+   "title": "This FREE Plugin Turns Any Sound Into Cinematic Atmospheres",
+   "channel": "Jonathan Knightsnare ",
+   "duration": 459,
+   "view_count": 26930,
+   "url": "https://www.youtube.com/watch?v=5wTH5DbifSg",
+   "query": "cinematic texture sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.72,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "17OGg5CrJ-g",
+   "title": "Prompting Synthesizers to Generate Strange, Cinematic Sounds",
+   "channel": "Neal Sanche (Thorinside)",
+   "duration": 888,
+   "view_count": 52,
+   "url": "https://www.youtube.com/watch?v=17OGg5CrJ-g",
+   "query": "cinematic texture sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "rVRMgLa9Y9E",
+   "title": "How I Created This Dreamy & Magical Cinematic Orchestral Sound",
+   "channel": "Composer's Compass",
+   "duration": 479,
+   "view_count": 547,
+   "url": "https://www.youtube.com/watch?v=rVRMgLa9Y9E",
+   "query": "cinematic texture sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.87,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "P_bIEn8FGzI",
+   "title": "DAY 5  Why Do Some Textures Feel Cinematic?",
+   "channel": "Xander Music",
+   "duration": 693,
+   "view_count": 1,
+   "url": "https://www.youtube.com/watch?v=P_bIEn8FGzI",
+   "query": "cinematic texture sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.65,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Cd8LWaDcELA",
+   "why": "duration 85s"
+  },
+  {
+   "id": "bNVaR_25uR8",
+   "why": "duration 22s"
+  },
+  {
+   "id": "jlUaLkv1iao",
+   "why": "duration 21s"
+  },
+  {
+   "id": "eaQtf_vm9zA",
+   "why": "already known"
+  },
+  {
+   "id": "RBHk0j29LkQ",
+   "why": "duration 36s"
+  },
+  {
+   "id": "9zWx-BnZs7Q",
+   "why": "duration 17566s"
+  },
+  {
+   "id": "GMtQsxln5yc",
+   "why": "duration 66s"
+  },
+  {
+   "id": "B1J1yYjl0n0",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "8AFRlTqDrlc",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "voR5Xuh33Ws",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "lJJbenxJ1bs",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

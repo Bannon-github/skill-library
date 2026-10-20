@@ -1,0 +1,42 @@
+  [YGrzmmZKb8w] Q0 pipeline env importable? -> yes
+  [YGrzmmZKb8w] Q1 transcript already saved? -> no  => fetch via track ladder
+  [YGrzmmZKb8w] Q2 track ladder produced English text? -> yes
+  [YGrzmmZKb8w] Q3 transcript usable (>=150 words, not music-only)? -> no  => REJECT thin
+  [YGrzmmZKb8w] OUTCOME REJECT_thin_transcript
+  [7B2fWwkwYSU] Q0 pipeline env importable? -> yes
+  [7B2fWwkwYSU] Q1 transcript already saved? -> no  => fetch via track ladder
+  [7B2fWwkwYSU] Q2 track ladder produced English text? -> no
+  [7B2fWwkwYSU] Q2d machine translation failed? -> yes  => STOP; original words kept; try --backend libretranslate or another package
+  [7B2fWwkwYSU] OUTCOME STOP_translation_failed
+  [Pd9AFeTcl2k] Q0 pipeline env importable? -> yes
+  [Pd9AFeTcl2k] Q1 transcript already saved? -> no  => fetch via track ladder
+  [Pd9AFeTcl2k] Q2 track ladder produced English text? -> yes
+  [Pd9AFeTcl2k] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Pd9AFeTcl2k] Q4 English text is a translation? -> no
+  [Pd9AFeTcl2k] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Pd9AFeTcl2k] Q6 term graph built? -> yes
+  [Pd9AFeTcl2k] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [Pd9AFeTcl2k] OUTCOME COVERED
+[
+ {
+  "video_id": "YGrzmmZKb8w",
+  "outcome": "REJECT_thin_transcript",
+  "route": "ytdlp-target",
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "7B2fWwkwYSU",
+  "outcome": "STOP_translation_failed",
+  "route": null,
+  "translated": null,
+  "domain": null
+ },
+ {
+  "video_id": "Pd9AFeTcl2k",
+  "outcome": "COVERED",
+  "route": "ytdlp-target",
+  "translated": false,
+  "domain": "synth"
+ }
+]

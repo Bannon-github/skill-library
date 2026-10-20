@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 160,
+  "count": 168,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -2665,8 +2665,161 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
+    },
+    {
+      "id": "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+      "name": "Modal (partial-bank) physical-modelling voice: exciter into one or two resonators defined by a partial model, with material (decay vs frequency), tone (level tilt), hit (random partial emphasis), inharmonic stretch, parallel or series resonators, and velocity/random modulation for a playable mallet or string",
+      "goal": "Build a playable modal physical-modelling instrument from an exciter and a resonator made of tuned partials. Pick a partial model (string, beam, membrane, vibraphone, open tube or a manual partial list with 1 to 64 partials) and shape it with four relationships from the transcript: decay/release sets how long partials ring; material sets how fast high partials decay relative to low ones (muted vs glassy); tone sets partial level only (a static tilt, different from material); hit changes which partials are boosted at random, like plucking at a different position; and an inharmonic multiplier stretches or compresses partial spacing away from integer harmonics (metallic vs compressed). Choose the exciter (impulse, long exciter, noise): it mostly sets the attack, and a bass-heavy exciter mostly excites low partials. Run two resonators in parallel (blend) or in series (resonator 1 as an extended exciter, e.g. a short-decay drum head into a tube, with optional cross-feedback). Make it playable: velocity to level, material and exciter level; an envelope for a sharper attack over the ringing tail; subtle random on tone, stronger random on hit per note; key → layer gain to lift quiet high notes. More specific than our Karplus-Strong and comb-resonator skills: a modal partial bank with decay-vs-frequency and inharmonicity controls.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "physical-modelling",
+        "modal-synthesis",
+        "resonator",
+        "exciter",
+        "mallet",
+        "inharmonicity",
+        "velocity",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit"
+    },
+    {
+      "id": "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
+      "name": "Struck-string physical-model synth controls that differ from subtractive synthesis: brightness set before the strike (not a filter), frequency-dependent decay (cutoff + slope) instead of sustain, strike point, harmonicity, three-string unison, and mallet-bounce retriggers at different note values per layer for sequenced polyrhythmic patches",
+      "goal": "Design pads, basses and keys on a struck/plucked physical model and know which controls behave unlike a subtractive synth. Plucking brightness changes a sine-like tone into a saw-like one but only at the strike: lowering it while a note rings does nothing, so put a real filter after the model for sweeps. There is no sustain: decay and release plus a decay cutoff and slope define how partials above the cutoff die faster (low cutoff + high slope = more decay). Strike point acts like the pick position; harmonicity moves the tone from harmonic to inharmonic (steel-drum-like with more bloom); unison width detunes the three strings per note; smear softens transients. Mallet bounce makes a held note re-strike itself; stacking layers with different bounce values (dotted half, quarter, eight beats in the demo) gives sequenced, polyrhythmic patterns without a sequencer. Delta beyond our modal-partial skill: decay slope, pre-strike brightness and mallet-bounce layering.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "physical-modelling",
+        "struck-string",
+        "mallet-bounce",
+        "polyrhythm",
+        "decay-slope",
+        "inharmonicity",
+        "layering",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers"
+    },
+    {
+      "id": "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+      "name": "Classic swept analog pad/lead: two detuned oscillators into a state-variable (SEM-style) filter driven by a triangle 'fin' filter envelope that rises then falls, modest resonance, mono mode with 8-voice stereo unison, light compression and tape echo, and an optional second oscillator pair through a different filter type swept the same way",
+      "goal": "Recreate the classic 70s/80s filter-sweep sound from scratch. Use a low register and two oscillators slightly detuned for a phasing movement. Put them through a state-variable (SEM/Oberheim-type) lowpass and give the filter envelope a triangle 'fin' shape: a slow attack up and a slow decay back down with low sustain, so each note sweeps open and closes again; set envelope intensity, then add a little resonance (not too much). Switch to mono mode with full stereo unison (all 8 voices) and some detune for size. Finish with light compression and tape echo (no chorus needed). Optional: route oscillators 3–4 to a second, different filter type with its own fin envelope and detune, then blend both layers. More specific than our generic pad swell skills: up-and-down fin envelope on the filter plus mono unison stack.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "filter-sweep",
+        "filter-envelope",
+        "state-variable-filter",
+        "unison",
+        "analog-pad",
+        "tape-echo",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer"
+    },
+    {
+      "id": "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+      "name": "Four-voice phasor-driven synth: each voice is a wavetable read by its own phasor (pitch = phasor rate) with a phase-shaper for phase distortion (curve, S-curve, split, triangle, fold), all four outputs fed back through a 4x4 matrix into each other's phase inputs for cross phase modulation, panned and mixed, then a lowpass→bandpass→highpass→notch morph filter and drive",
+      "goal": "Build a playable hybrid voice that combines three ways of shaping tone: wavetable morphing, phase distortion and cross phase modulation. Drive each wavetable oscillator with a rising unipolar saw phasor (the phasor's rate sets the pitch; with no phasor there is no sound). Put a phase shaper between phasor and table: bending the phasor (curve, S-curve, split, triangle or fold modes) changes how the table is read, so a sine becomes brighter shapes without a filter. Make four such voices, mix them in stereo with per-voice pan (and pan modulation), and route all four post-shaping outputs back through a 4x4 matrix mixer into each voice's phase-modulation input so any voice can modulate any other, or itself (feedback). Use octave relationships between carrier and modulator (modulator an octave or two below, slightly detuned) and keep one voice muted as a modulator only. Finish with a filter that morphs lowpass → bandpass → highpass → notch, LFOs on cutoff and morph at different rates, drive, and reverb last. Delta beyond our single-oscillator phase-distortion and warp-mode skills: the four-voice cross-PM matrix with per-voice PD and a modulator-only voice.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "phase-distortion",
+        "phase-modulation",
+        "phasor",
+        "wavetable",
+        "modulation-matrix",
+        "modular",
+        "multimode-filter",
+        "web-audio",
+        "audioworklet",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch"
+    },
+    {
+      "id": "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+      "name": "Role-first hybrid score layering: choose each part by its function (drone/pedal, rhythmic motor, lead, accompaniment, FX) and its frequency zone rather than by instrument family, then build a synth drone darkened via filter-envelope amount with mod-wheel string swells under it, a short square-wave motor with dotted-eighth ping-pong delay, staggered entries, render-to-audio and reversed hits with the transient trimmed",
+      "goal": "Combine synths with strings and percussion so they support each other instead of piling up. First list the roles the cue needs (drone or pedal, rhythmic motor or ostinato, lead, harmonic accompaniment, effects) and pick, for each role, whichever source fits that function: string or synth, or both blended. Give each part its own frequency zone (bass, mid, top) and decide per pair whether to blend or separate. Concrete recipe: a big analog-style synth drone darkened by lowering the filter envelope amount first (then brightness) with more filter sustain, held for about 10 bars and rendered to audio to save CPU; tremolo string swells under it ridden on the mod wheel for movement; a motor from three detuned square oscillators (one up an octave) with no sustain and a short decay, into a tempo-synced ping-pong delay at a dotted eighth with more feedback, plus a little room reverb; bring ideas in one at a time; an arpeggiated version of the drone synth with short steps and envelope amount on a MIDI CC; and a rendered phrase reversed with its transient trimmed so it swells into the next entry. For generative systems this maps to role-tagged voices with frequency zones and entry order.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "hybrid-score",
+        "arrangement",
+        "layering",
+        "drone",
+        "ostinato",
+        "ping-pong-delay",
+        "reverse-swell",
+        "frequency-zones",
+        "generative",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+    },
+    {
+      "id": "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+      "name": "Reese bass from three octave-down saws (outer two with 3-voice unison at about 10% detune and zero phase randomization, middle one single voice, outer pair fine-tuned slightly up and down), mono legato always-glide, soft-clip drive, half-mix compressor, resonant high-pass, low-cut reverb, soft-clip saturation, high roll-off, automated high-pass movement, mono below 120 Hz and kick/snare sidechain",
+      "goal": "Build a wide, moving Reese bass for dark hybrid cues. Use three saw oscillators all one octave down: oscillators 1 and 3 with 3 unison voices, unison detune around 10% and phase randomization at 0; oscillator 2 a single voice. Fine-tune oscillator 1 slightly up and oscillator 3 slightly down for the slow beating. Set one voice (mono), glide about halfway, always-glide and legato on, and overlap MIDI notes to get slides. In the synth FX: soft-clip distortion at about 9 dB, then a compressor after it at about 50% mix (release ~36%, attack ~56% on its relative scale), an EQ with a slightly resonant high-pass, and a little short reverb with its low end removed. After the synth: soft-clip saturation (drive just over 3 dB, output −2 dB), an EQ rolling off the high end with a small mid dip, automated high-pass cutoff for movement, a slight pitch-wheel drift, mono below 120 Hz, and compressors sidechained to the kick and the snare.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "reese-bass",
+        "unison",
+        "detune",
+        "glide",
+        "soft-clip",
+        "sidechain",
+        "mono-low-end",
+        "dark-bass",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120"
+    },
+    {
+      "id": "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
+      "name": "Vocoder as an insert effect on any synth patch: the patch itself is the carrier and a microphone is the modulator, with mode (clean, vintage, narrow, gated), decay, formant (neutral or higher) and dry-mic controls, placement in the effects chain (before or after distortion and chorus), arpeggiated carriers and a slow square LFO on formant",
+      "goal": "Turn any existing pad, bass or lead patch into a vocoder voice by putting the vocoder in an effect slot instead of building a special vocoder patch. The synth patch is the carrier (all its oscillators, voice mode, unison, envelopes and pitch bend still apply) and an external microphone is the modulator, so the patch goes silent until you speak or sing. Choose the vocoder mode (clean, vintage, narrow, gated; the presenter prefers clean), set decay (how long bands hold after the voice stops), set formant (neutral or higher; low settings sounded worse) and mix in some dry mic if wanted. Then experiment with where the vocoder sits in the chain (first, before distortion, with chorus after distortion, or replacing an EQ slot), add long reverb after it, run the arpeggiator so the vocoder speaks in rhythm, and modulate formant with a slow, deep square LFO. Rich carriers work best: e.g. a pluck oscillator plus a 2-operator FM oscillator, or a mono virtual-analog patch an octave down with filter envelope movement, chorus and distortion. Our first dedicated vocoder skill; the existing ones only borrow a 'vocode' spectral-warp mode.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "vocoder",
+        "external-carrier",
+        "formant",
+        "fx-chain",
+        "arpeggiator",
+        "voice",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
+    },
+    {
+      "id": "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
+      "name": "Mono (narrowed) reverb as a mixing and sound-design tool: narrow each 100%-wet reverb into a placeable 'pocket', pan pockets to separate parts, put a stereo ping-pong delay after the width stage so the pocket travels left-right, use the wet/dry mix as a distance control, filter the reverb tail post-reverb with an LFO-moved bandpass, and split dry left / mono reverb right for pseudo-stereo",
+      "goal": "Clean up a crowded ambient or electronic mix and get new textures by making reverbs mono or narrow instead of wide. For each sound, decide what stays stereo (e.g. a wide atmos bed with high-end detail) and what becomes a pocket: narrow the reverb width (it does not have to be fully mono; side-reducing imagers sound better than fold-to-mono), then pan the pocket to its own spot and turn it down, since a centred or narrow reverb is more audible and needs less level. Put a ping-pong delay after the width utility (low feedback, lowpass in the feedback path) so the mono pocket moves left and right without washing the whole field. Treat the wet/dry mix as a distance knob: fully wet is far, fully dry is close, which is more obvious with mono reverb. Filter after the reverb with a bandpass moved back and forth (manually or by LFO), with the filter mix keeping some high end, to shape the tail as its own sound. For pseudo-stereo, put a mono reverb on a send, pan the dry sound fully left and the reverb fully right, then bus both through a driven resonant filter. A fully wet mono reverb on an atmos track, sidechained, becomes a wall of sound that sits behind the lead.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "mono-reverb",
+        "stereo-width",
+        "mixing",
+        "ping-pong-delay",
+        "depth",
+        "post-reverb-filter",
+        "ambient",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right"
     }
   ],
-  "updated_at": "2026-10-16T16:31:12.462800+00:00",
+  "updated_at": "2026-10-20T16:28:48.715198+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "id": "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+  "name": "Role-first hybrid score layering: choose each part by its function (drone/pedal, rhythmic motor, lead, accompaniment, FX) and its frequency zone rather than by instrument family, then build a synth drone darkened via filter-envelope amount with mod-wheel string swells under it, a short square-wave motor with dotted-eighth ping-pong delay, staggered entries, render-to-audio and reversed hits with the transient trimmed",
+  "goal": "Combine synths with strings and percussion so they support each other instead of piling up. First list the roles the cue needs (drone or pedal, rhythmic motor or ostinato, lead, harmonic accompaniment, effects) and pick, for each role, whichever source fits that function: string or synth, or both blended. Give each part its own frequency zone (bass, mid, top) and decide per pair whether to blend or separate. Concrete recipe: a big analog-style synth drone darkened by lowering the filter envelope amount first (then brightness) with more filter sustain, held for about 10 bars and rendered to audio to save CPU; tremolo string swells under it ridden on the mod wheel for movement; a motor from three detuned square oscillators (one up an octave) with no sustain and a short decay, into a tempo-synced ping-pong delay at a dotted eighth with more feedback, plus a little room reverb; bring ideas in one at a time; an arpeggiated version of the drone synth with short steps and envelope amount on a MIDI CC; and a rendered phrase reversed with its transient trimmed so it swells into the next entry. For generative systems this maps to role-tagged voices with frequency zones and entry order.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "m6wfGX7rwiQ",
+    "url": "https://www.youtube.com/watch?v=m6wfGX7rwiQ",
+    "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/m6wfGX7rwiQ/agent-skill-hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render.json",
+    "transcript_note": "Long live-writing video; course promotion, product and price talk dropped."
+  },
+  "prerequisites": [
+    "Any DAW or generative engine with a synth, a string (sample or synth string) layer, delay and reverb",
+    "Mod wheel or a controller fader (CC) for swells",
+    "Render/bounce-to-audio and reverse for clips"
+  ],
+  "inputs": [
+    {
+      "name": "roles",
+      "type": "list",
+      "description": "Functions the cue needs: drone/pedal, motor/ostinato, lead, accompaniment, FX",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Song tempo for synced delay",
+      "required": true
+    },
+    {
+      "name": "zones",
+      "type": "table",
+      "description": "Frequency zone per role (low / mid / top)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "role_map",
+      "type": "table",
+      "description": "Role → chosen source → frequency zone → entry point"
+    },
+    {
+      "name": "hybrid_cue",
+      "type": "arrangement",
+      "description": "Layered drone, motor, lead and reversed-swell cue"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Arrangement plus patch recipe. The video gives few numbers (about 10 bars, dotted eighth, CC21 as an example); set other amounts by ear.",
+    "Product, course and price talk dropped. Preset names not copied; 'effect-like huge reverb' is the portable alias for the specialty reverb used on the lead.",
+    "Do not bring all ideas in at once: the video calls that a classic mistake."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write the role list first (drone/pedal, motor/ostinato, lead, accompaniment, FX). For each role choose the source by function: strings, synth, guitar, or a blend (for example a string ostinato doubled by a synth, or a drone that is synth plus strings). Assign each role a frequency zone so parts do not clash.",
+      "tool": "role map",
+      "expect": "A table of role → source → frequency zone"
+    },
+    {
+      "n": 2,
+      "action": "Drone: load a big analog-style synth sound. To darken it, lower the filter envelope amount first (not just the cutoff), then reduce brightness, and raise the filter envelope sustain. Hold the chord for about 10 bars.",
+      "tool": "drone synth",
+      "expect": "A steady, darker drone that no longer brightens on each note"
+    },
+    {
+      "n": 3,
+      "action": "Render the drone to audio and disable the synth track to save CPU, keeping it available to re-edit (for example to change key).",
+      "tool": "bounce",
+      "expect": "Same sound, lower CPU load"
+    },
+    {
+      "n": 4,
+      "action": "Layer tremolo string swells under the drone, riding the mod wheel/controller fader so the strings come and go.",
+      "tool": "string swells",
+      "expect": "The drone gains movement as the strings swell in and out"
+    },
+    {
+      "n": 5,
+      "action": "Motor: three oscillators (one an octave up), square wave, amp envelope with no sustain and a short decay, some detune. Add a tempo-synced ping-pong delay at a dotted eighth (a dotted quarter is the alternative), turn the delay feedback up, and add a little room reverb.",
+      "tool": "motor patch",
+      "expect": "A pulsing rhythmic motor whose echoes fill the gaps"
+    },
+    {
+      "n": 6,
+      "action": "Stagger the entries: start with one or two ideas and bring the motor in later, instead of three ideas at once.",
+      "tool": "arrangement",
+      "expect": "Each new layer is noticed when it enters"
+    },
+    {
+      "n": 7,
+      "action": "Lead: start from a sound close to what you want, check what the mod wheel does, and add a very large, effect-like reverb. Add a second motor by arpeggiating the drone synth with short steps and more envelope, map envelope amount to a MIDI CC (e.g. CC21) for live control, and keep its reverb moderate.",
+      "tool": "lead + arp",
+      "expect": "Lead sits in its own space; the arp brightness can be played live"
+    },
+    {
+      "n": 8,
+      "action": "Line the bassline up with the drums (a cross-rhythm can work). Quantize loose parts to eighths, and keep the best of repeated takes.",
+      "tool": "rhythm",
+      "expect": "Bass and drums lock together"
+    },
+    {
+      "n": 9,
+      "action": "Reverse swell: play a hit or phrase, render it to audio, reverse the clip, trim away the transient so only the 'shh' swell remains, and place it so it ends where the next drum element enters.",
+      "tool": "reverse render",
+      "expect": "A swell that leads into the next section without a click"
+    }
+  ],
+  "verification": [
+    "Every part in the role map has a role and a frequency zone, and no two loud parts share the same zone without a blend decision.",
+    "Lowering the filter envelope amount on the drone makes the note onsets less bright even with cutoff unchanged.",
+    "The motor's delayed repeats are on dotted eighths relative to the tempo.",
+    "The reversed clip has no audible click or transient at its end."
+  ],
+  "tags": [
+    "hybrid-score",
+    "arrangement",
+    "layering",
+    "drone",
+    "ostinato",
+    "ping-pong-delay",
+    "reverse-swell",
+    "frequency-zones",
+    "generative",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+}

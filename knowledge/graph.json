@@ -1,6 +1,6 @@
 {
  "schema": "yt-knowledge-graph/kg-v1",
- "updated_at": "2026-10-16T16:29:21.159725+00:00",
+ "updated_at": "2026-10-19T17:34:35.880478+00:00",
  "videos": {
   "A7q9L5wd7Mk": {
    "domain": "synth",
@@ -1396,6 +1396,159 @@
    "merged_at": "2026-10-16T16:29:21.159546+00:00",
    "gap_nodes": 1,
    "gap_edges": 0
+  },
+  "jC_ckXoCHYE": {
+   "domain": "synth",
+   "title": "Gorgeous Sound Redesign Transfigure AUv3 from Sugar Bytes - Tutorial / Demo (iOS)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:05:16.203444+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "Pd9AFeTcl2k": {
+   "domain": "synth",
+   "title": "reFX 𝑹𝒊𝒑𝒑𝒍𝒆𝒓 Walkthrough - New Physical Modeling Synth!",
+   "route": "ytdlp-target",
+   "translated": false,
+   "merged_at": "2026-10-19T17:06:59.748257+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 0
+  },
+  "B3n9GOT0Q9A": {
+   "domain": "synth",
+   "title": "Syngular: Pianoteq’s New Physically Modeled Synth // Walkthrough & Demo",
+   "route": "manual-target",
+   "translated": false,
+   "merged_at": "2026-10-19T17:07:48.884545+00:00",
+   "gap_nodes": 3,
+   "gap_edges": 0
+  },
+  "FOL9EDiLp4k": {
+   "domain": "synth",
+   "title": "This FREE Plugin Turns ANY Sample Into Cinematic Risers in Seconds",
+   "route": "manual-target",
+   "translated": false,
+   "merged_at": "2026-10-19T17:07:52.419344+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "xil_HpL1izg": {
+   "domain": "synth",
+   "title": "Why This Classic Filter Sweep Still Sounds So Good",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:07:56.117556+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 1
+  },
+  "MjijB6ExetI": {
+   "domain": "synth",
+   "title": "The Minifreak Vocoder is Awesome!",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:31:43.540738+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 0
+  },
+  "JC-UA2C-sZU": {
+   "domain": "synth",
+   "title": "Phase Distortion / Phase Modulation Synth in VCV Rack",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:31:46.551024+00:00",
+   "gap_nodes": 3,
+   "gap_edges": 0
+  },
+  "Zgwxh3VrQZQ": {
+   "domain": "synth",
+   "title": "How to make your Synths sound like a Movie Score (Hans Zimmer/Stranger Things Style)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:31:49.906502+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "m6wfGX7rwiQ": {
+   "domain": "synth",
+   "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:32:38.688829+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "rVRMgLa9Y9E": {
+   "domain": "synth",
+   "title": "How I Created This Dreamy & Magical Cinematic Orchestral Sound",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:32:42.138602+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 0
+  },
+  "P_bIEn8FGzI": {
+   "domain": "synth",
+   "title": "DAY 5  Why Do Some Textures Feel Cinematic?",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:32:45.028930+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "e1AMHtuuuTQ": {
+   "domain": "synth",
+   "title": "STOP Using Stereo Reverb (Do This Instead) (Dub Techno Tutorial Mixing and Sound Design)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:33:33.716970+00:00",
+   "gap_nodes": 5,
+   "gap_edges": 0
+  },
+  "nbS1pT8V7YU": {
+   "domain": "synth",
+   "title": "How to Create Classic House Pads (Any Synth!)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:33:37.281188+00:00",
+   "gap_nodes": 6,
+   "gap_edges": 0
+  },
+  "b2zwGqefZw8": {
+   "domain": "synth",
+   "title": "How to Layer Synth Sounds the Right Way",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:33:41.124730+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "pO5BOqCS9mo": {
+   "domain": "synth",
+   "title": "Sound Design | Evolving Pads in Massive X, Serum & Omnisphere",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:34:29.309470+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 1
+  },
+  "17OGg5CrJ-g": {
+   "domain": "synth",
+   "title": "Prompting Synthesizers to Generate Strange, Cinematic Sounds",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:34:32.734653+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "7OatKTrtmJ8": {
+   "domain": "synth",
+   "title": "How to Make a HUGE Reese Bass in Vital | Deep Dubstep & DnB Sound Design Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-19T17:34:35.879838+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 4
   }
  },
  "nodes": {
@@ -1458,7 +1611,14 @@
     "Uv4yk8_vZQc",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -1508,8 +1668,10 @@
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
@@ -1519,6 +1681,7 @@
     "granular-dual-saw-ambient-epic-pad",
     "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -1543,10 +1706,13 @@
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "synth-string-section-unison-vibrato-fm-blend",
@@ -1582,7 +1748,9 @@
     "lLAj2rvBouI",
     "q-N55tqLUr4",
     "5bI0NSbgEUY",
-    "Mm5eO24aAec"
+    "Mm5eO24aAec",
+    "m6wfGX7rwiQ",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -1756,7 +1924,19 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -1798,6 +1978,7 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-multi-envelope-osc-level-morph",
@@ -1805,6 +1986,7 @@
     "crypto-tax-form-8949-disposal-rows",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
@@ -1812,6 +1994,7 @@
     "evolving-pad-unison-filter-swell-fifth",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
@@ -1820,7 +2003,9 @@
     "granular-stack-freeze-infinite-sustain-texture",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "knowledge-graph-gap-check-skill-outline",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -1829,6 +2014,7 @@
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -1841,8 +2027,10 @@
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
@@ -1996,7 +2184,20 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -2052,6 +2253,7 @@
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
@@ -2176,7 +2378,21 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -2227,13 +2443,16 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -2242,6 +2461,7 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "lush-stereo-saw-pad-random-pitch-texture",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
@@ -2249,6 +2469,7 @@
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -2262,11 +2483,13 @@
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "selective-saturation-and-lofi-grit-toolkit",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "synth-string-section-unison-vibrato-fm-blend",
@@ -2342,7 +2565,14 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "P_bIEn8FGzI",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -2381,15 +2611,19 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "granular-dual-saw-ambient-epic-pad",
@@ -2409,6 +2643,7 @@
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
     "sidechain-compressor-duck-synth-pads",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -2455,7 +2690,12 @@
     "YQbj-HEk1xw",
     "yuQqY0dx2Rw",
     "EwxNeZttFEA",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -2494,7 +2734,9 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
@@ -2511,6 +2753,8 @@
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "transient-splice-attack-body-hybrid-voice",
@@ -2568,7 +2812,13 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "P_bIEn8FGzI",
+    "b2zwGqefZw8",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -2614,7 +2864,9 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-dual-saw-ambient-epic-pad",
@@ -2625,6 +2877,7 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "osc-as-granular-pitch-step-delay",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
@@ -2689,7 +2942,9 @@
     "aPsWzEfgEOo",
     "YQbj-HEk1xw",
     "leLAm3OigI0",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "Zgwxh3VrQZQ",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -2748,6 +3003,7 @@
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "reverse-reverb-swell-print-reverse-print",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "synth-string-section-unison-vibrato-fm-blend",
@@ -2826,7 +3082,17 @@
     "E8b_N1RBCxE",
     "b5QAsgvC9sk",
     "leLAm3OigI0",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "jC_ckXoCHYE",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -2881,15 +3147,19 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -2914,7 +3184,10 @@
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "synthesized-noise-impact-tail-lfo-shaped",
@@ -2976,7 +3249,10 @@
     "EwxNeZttFEA",
     "y9eDmBUC8ZU",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -3021,15 +3297,18 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-polyrhythmic-control-track-pitch",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
@@ -3040,11 +3319,13 @@
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-control-track-filter-wt-animation",
@@ -3162,7 +3443,15 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -3215,14 +3504,18 @@
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
@@ -3334,7 +3627,15 @@
     "EwxNeZttFEA",
     "ZVLM1XMT6Z0",
     "17St_0BfbF0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -3385,8 +3686,10 @@
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
@@ -3395,6 +3698,7 @@
     "granular-dual-saw-ambient-epic-pad",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-high-wt-artifact-pulse-layer",
@@ -3416,6 +3720,7 @@
     "reverb-pads-type-choice-and-send-setup",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "soft-tape-saturation-pads-before-space",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -3532,7 +3837,20 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -3572,6 +3890,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
@@ -3583,8 +3902,10 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
@@ -3593,6 +3914,7 @@
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -3602,6 +3924,7 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
@@ -3681,7 +4004,11 @@
     "sGZr4PusB0U",
     "EwxNeZttFEA",
     "ZVLM1XMT6Z0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Zgwxh3VrQZQ",
+    "rVRMgLa9Y9E",
+    "P_bIEn8FGzI",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -3724,6 +4051,7 @@
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-warm-analog-pad-drift-stereo",
     "click-train-resonant-filter-feedback-delay-comb-texture",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "envelope-follower-audio-driven-modulation",
     "frozen-granular-buffer-as-playable-wavetable-voice",
@@ -3733,6 +4061,7 @@
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -3747,8 +4076,11 @@
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-pads-type-choice-and-send-setup",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -3818,7 +4150,11 @@
     "Uv4yk8_vZQc",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "Pd9AFeTcl2k",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -3858,10 +4194,13 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
@@ -3874,8 +4213,10 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
     "shepard-tone-endless-riser-octave-crossfade-voices",
@@ -3985,7 +4326,20 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -4040,9 +4394,11 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
@@ -4051,6 +4407,7 @@
     "granular-dual-saw-ambient-epic-pad",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
@@ -4062,6 +4419,7 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -4228,7 +4586,24 @@
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
     "mllvToyambI",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "17OGg5CrJ-g",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -4270,6 +4645,7 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -4284,6 +4660,7 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
@@ -4307,6 +4684,7 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -4420,7 +4798,16 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -4468,18 +4855,21 @@
     "cinematic-warm-analog-pad-drift-stereo",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "haas-plus-phase-offset-width-automated",
     "keysol-venus-fifths-pulsar-wt-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
@@ -4541,7 +4931,13 @@
     "yuQqY0dx2Rw",
     "E8b_N1RBCxE",
     "ZVLM1XMT6Z0",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -4591,11 +4987,14 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "haas-plus-phase-offset-width-automated",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
@@ -4604,11 +5003,14 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -4805,7 +5207,18 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -4857,6 +5270,7 @@
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -4865,6 +5279,7 @@
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
@@ -4875,6 +5290,7 @@
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
@@ -5019,7 +5435,21 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -5060,6 +5490,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -5074,14 +5505,17 @@
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "distorted-delay-return-bandlimited-send-throws",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -5090,7 +5524,9 @@
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
@@ -5106,6 +5542,7 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -5124,6 +5561,7 @@
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
@@ -5207,7 +5645,13 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "Pd9AFeTcl2k",
+    "xil_HpL1izg",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -5245,6 +5689,7 @@
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
@@ -5264,12 +5709,14 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "phase-distortion-shapes-modular-phase-chain",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "synth-string-section-unison-vibrato-fm-blend",
@@ -5307,7 +5754,9 @@
     "7fLA01y1tu4",
     "Py4XQbjvn4o",
     "Uv4yk8_vZQc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "B3n9GOT0Q9A",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -5353,6 +5802,7 @@
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "osc-as-granular-pitch-step-delay",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -5442,7 +5892,12 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "B3n9GOT0Q9A",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -5481,6 +5936,7 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
@@ -5493,13 +5949,16 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-noise-audiorate-filter-texture",
@@ -5510,6 +5969,7 @@
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -5634,7 +6094,9 @@
     "YQbj-HEk1xw",
     "y9eDmBUC8ZU",
     "ZVLM1XMT6Z0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -5676,6 +6138,7 @@
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "marimba-wt-lfo-pluck-to-granular-pad",
@@ -5794,7 +6257,16 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "17OGg5CrJ-g",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -5833,6 +6305,7 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -5844,12 +6317,15 @@
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
@@ -5859,7 +6335,9 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-polyrhythmic-control-track-pitch",
     "keysol-venus-velocity-hybrid-bass-impact",
@@ -5870,6 +6348,7 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
@@ -5881,10 +6360,12 @@
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidehustle-upwork-proposal-short-proof-cta",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -5941,7 +6422,8 @@
     "28uxHnQbulE",
     "Sehlj6zgXmw",
     "KVtxIwYpGvQ",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -6023,7 +6505,11 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -6063,11 +6549,13 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "distorted-delay-return-bandlimited-send-throws",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -6082,6 +6570,7 @@
     "phase-distortion-shapes-modular-phase-chain",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "reverb-freeze-print-seamless-loop-atmos-layer",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidehustle-upwork-proposal-short-proof-cta",
     "stereo-delay-pingpong-dual-parallel-two-tap",
@@ -6134,7 +6623,14 @@
     "vfZhqBfXvdc",
     "ZVLM1XMT6Z0",
     "Uv4yk8_vZQc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -6180,10 +6676,13 @@
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "granular-dual-saw-ambient-epic-pad",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "mix-pads-role-eq-width-clarity",
     "organic-looped-sample-unison-voicing-pad",
@@ -6295,7 +6794,15 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -6335,6 +6842,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
@@ -6344,6 +6852,8 @@
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "distorted-delay-return-bandlimited-send-throws",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
@@ -6356,6 +6866,7 @@
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
@@ -6370,6 +6881,7 @@
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
@@ -6381,13 +6893,16 @@
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "sidechain-compressor-duck-synth-pads",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
@@ -6444,7 +6959,11 @@
     "yuQqY0dx2Rw",
     "y9eDmBUC8ZU",
     "b5QAsgvC9sk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "JC-UA2C-sZU",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -6484,6 +7003,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -6491,6 +7011,7 @@
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
@@ -6500,6 +7021,7 @@
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "synth-string-section-unison-vibrato-fm-blend",
     "triple-bandpass-bank-unsynced-lfo-pad",
@@ -6645,7 +7167,16 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "JC-UA2C-sZU",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -6688,6 +7219,7 @@
     "blender-beginner-setup-nav-and-geometry-practice",
     "blender-first-scene-add-delete-focus-shade-smooth",
     "blender-install-prefs-viewport-nav-transform-tools",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
@@ -6700,15 +7232,19 @@
     "distorted-delay-return-bandlimited-send-throws",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-stack-freeze-infinite-sustain-texture",
     "haas-plus-phase-offset-width-automated",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -6719,6 +7255,7 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
@@ -6728,7 +7265,9 @@
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
@@ -6874,7 +7413,13 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "xil_HpL1izg",
+    "JC-UA2C-sZU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -6914,15 +7459,19 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "evolving-pad-unison-filter-swell-fifth",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "mix-pads-role-eq-width-clarity",
     "multiband-low-band-gentle-control-and-expand",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "sidechain-compressor-duck-synth-pads",
     "soft-tape-saturation-pads-before-space",
     "synthesized-noise-impact-tail-lfo-shaped",
@@ -6981,7 +7530,10 @@
     "Py4XQbjvn4o",
     "YQbj-HEk1xw",
     "yuQqY0dx2Rw",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -7021,23 +7573,28 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "blender-boolean-bracket-with-cylinder-holes",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
     "distill-transcript",
     "dual-layer-opposite-vector-morph-pad",
     "evolving-pad-unison-filter-swell-fifth",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "shimmer-reverb-pitchshift-plus12-feedback",
@@ -7096,7 +7653,10 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -7135,10 +7695,13 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "asymmetric-left-right-processing-width-mono-safe",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
@@ -7146,6 +7709,7 @@
     "granular-stack-freeze-infinite-sustain-texture",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "multiband-low-band-gentle-control-and-expand",
@@ -7159,6 +7723,7 @@
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "soft-tape-saturation-pads-before-space",
@@ -7210,7 +7775,11 @@
     "E8b_N1RBCxE",
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "Pd9AFeTcl2k",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -7247,13 +7816,16 @@
     }
    ],
    "covered_by": [
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "granular-stack-freeze-infinite-sustain-texture",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "midside-eq-bass-focus-width-depth",
@@ -7261,6 +7833,7 @@
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
@@ -7268,6 +7841,7 @@
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "stereo-delay-pingpong-dual-parallel-two-tap",
@@ -7304,7 +7878,13 @@
     "XnSE9X0-S9M",
     "U1t3ELd1LDI",
     "7fLA01y1tu4",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -7349,6 +7929,7 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "phase-distortion-shapes-modular-phase-chain",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "three-layer-complementary-pad-post-verb-lofi-degrade"
    ]
@@ -7428,7 +8009,12 @@
     "sGZr4PusB0U",
     "E8b_N1RBCxE",
     "y9eDmBUC8ZU",
-    "leLAm3OigI0"
+    "leLAm3OigI0",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "b2zwGqefZw8"
    ],
    "refs": [
     {
@@ -7465,12 +8051,15 @@
     }
    ],
    "covered_by": [
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "knowledge-graph-gap-check-skill-outline",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "reverb-pads-type-choice-and-send-setup",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "soft-tape-saturation-pads-before-space",
     "synth-string-section-unison-vibrato-fm-blend",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
@@ -7483,7 +8072,9 @@
    "videos": [
     "MH7YiOWQIhI",
     "aPsWzEfgEOo",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -7501,6 +8092,14 @@
     {
      "video_id": "17St_0BfbF0",
      "t": "2:13"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "6:12"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "2:39"
     }
    ],
    "covered_by": [
@@ -7511,6 +8110,7 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "unison-odd-even-detune-width-clean-supersaw",
@@ -7533,7 +8133,10 @@
     "pYbWRCrFsHQ",
     "x37IwHD-uQ4",
     "Uv4yk8_vZQc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "Pd9AFeTcl2k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -7616,7 +8219,12 @@
     "7fLA01y1tu4",
     "yuQqY0dx2Rw",
     "b5QAsgvC9sk",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "jC_ckXoCHYE",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "b2zwGqefZw8"
    ],
    "refs": [
     {
@@ -7656,8 +8264,10 @@
     "audio-rate-am-wave-shape-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -7742,7 +8352,11 @@
     "EwxNeZttFEA",
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -7783,6 +8397,7 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
     "blender-chocolate-chip-cookie-model-and-render",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
@@ -7790,19 +8405,24 @@
     "cinematic-warm-analog-pad-drift-stereo",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-velocity-hybrid-bass-impact",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "osc-as-granular-pitch-step-delay",
     "phase-distortion-shapes-modular-phase-chain",
@@ -7869,7 +8489,9 @@
     "Futy449F9OY",
     "KVtxIwYpGvQ",
     "ZVLM1XMT6Z0",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "P_bIEn8FGzI",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -7914,10 +8536,13 @@
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "mix-pads-role-eq-width-clarity",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "reverse-reverb-swell-print-reverse-print",
     "shepard-tone-endless-riser-octave-crossfade-voices",
@@ -7977,7 +8602,12 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E"
    ],
    "refs": [
     {
@@ -8018,12 +8648,15 @@
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
     "cinematic-multi-envelope-osc-level-morph",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "evolving-pad-unison-filter-swell-fifth",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
@@ -8031,14 +8664,17 @@
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
@@ -8187,7 +8823,12 @@
     "T64l4AAKFpM",
     "KVtxIwYpGvQ",
     "rbcnLgmyjv8",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "P_bIEn8FGzI",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -8237,6 +8878,7 @@
     "cinematic-warm-analog-pad-drift-stereo",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
@@ -8253,6 +8895,7 @@
     "mix-pads-role-eq-width-clarity",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "parallel-filter-rhythmic-pad-chains",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
@@ -8319,7 +8962,9 @@
     "x37IwHD-uQ4",
     "rbcnLgmyjv8",
     "aPsWzEfgEOo",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A"
    ],
    "refs": [
     {
@@ -8369,12 +9014,14 @@
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "haas-plus-phase-offset-width-automated",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "traveler-walkthrough-stereo-ladder-lf-width",
@@ -8441,7 +9088,11 @@
     "aPsWzEfgEOo",
     "y9eDmBUC8ZU",
     "ZVLM1XMT6Z0",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -8592,7 +9243,8 @@
    "videos": [
     "kHWOIE4YTZ4",
     "hlgl5lfdv48",
-    "x37IwHD-uQ4"
+    "x37IwHD-uQ4",
+    "xil_HpL1izg"
    ],
    "refs": [
     {
@@ -8606,6 +9258,10 @@
     {
      "video_id": "x37IwHD-uQ4",
      "t": "18:27"
+    },
+    {
+     "video_id": "xil_HpL1izg",
+     "t": "2:42"
     }
    ],
    "covered_by": []
@@ -8655,7 +9311,10 @@
     "FId1jUm0zxU",
     "Futy449F9OY",
     "Uv4yk8_vZQc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -8753,7 +9412,10 @@
     "rRFGaDy3uUw",
     "7fLA01y1tu4",
     "NQ6tTIJpRDg",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "jC_ckXoCHYE",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -8826,7 +9488,9 @@
     "ysMPHY5oiGc",
     "Futy449F9OY",
     "NQ6tTIJpRDg",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI"
    ],
    "refs": [
     {
@@ -8868,6 +9532,7 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "blender-first-scene-add-delete-focus-shade-smooth",
     "blender-lowpoly-character-scene-prep",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -8900,12 +9565,17 @@
    "label": "3 voices",
    "domain": "synth",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "9:24"
+    },
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "0:46"
     }
    ],
    "covered_by": []
@@ -9006,7 +9676,16 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -9055,6 +9734,7 @@
     "distorted-delay-return-bandlimited-send-throws",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
@@ -9062,6 +9742,8 @@
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-noise-audiorate-filter-texture",
@@ -9070,6 +9752,7 @@
     "lush-stereo-saw-pad-random-pitch-texture",
     "modulation-lfo-envelope-mod-matrix-routing",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "organic-looped-sample-unison-voicing-pad",
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
@@ -9079,6 +9762,7 @@
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
@@ -9142,7 +9826,12 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -9182,6 +9871,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-warm-analog-pad-drift-stereo",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -9192,11 +9882,13 @@
     "granular-stack-freeze-infinite-sustain-texture",
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "multiband-low-band-gentle-control-and-expand",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "pwm-80s-string-pad-free-running-lfo-detune",
@@ -9249,7 +9941,8 @@
     "X4TPAWQw4ss",
     "rRFGaDy3uUw",
     "7fLA01y1tu4",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -9299,7 +9992,9 @@
     "H8fsiSJzKTA",
     "U1t3ELd1LDI",
     "FId1jUm0zxU",
-    "7fLA01y1tu4"
+    "7fLA01y1tu4",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -9369,7 +10064,8 @@
     "5bI0NSbgEUY",
     "5xrcuaB1GNA",
     "YQbj-HEk1xw",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -9446,7 +10142,10 @@
     "EwxNeZttFEA",
     "ZVLM1XMT6Z0",
     "Uv4yk8_vZQc",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "MjijB6ExetI",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -9491,6 +10190,7 @@
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "modulation-lfo-envelope-mod-matrix-routing",
     "noise-layer-whoosh-doppler-and-rising-variants",
@@ -9552,7 +10252,14 @@
     "E8b_N1RBCxE",
     "b5QAsgvC9sk",
     "leLAm3OigI0",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "MjijB6ExetI",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -9598,10 +10305,12 @@
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "granular-dual-saw-ambient-epic-pad",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "lush-stereo-saw-pad-random-pitch-texture",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
@@ -9650,7 +10359,15 @@
     "E8b_N1RBCxE",
     "y9eDmBUC8ZU",
     "Uv4yk8_vZQc",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E",
+    "b2zwGqefZw8",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -9687,6 +10404,7 @@
     }
    ],
    "covered_by": [
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dual-wt-interval-locked-per-osc-position-level-animators",
@@ -9951,12 +10669,21 @@
    "label": "10 %",
    "domain": "synth",
    "videos": [
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
      "video_id": "IK7cIBPKM1s",
      "t": "9:29"
+    },
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "0:46"
+    },
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "1:21"
     }
    ],
    "covered_by": []
@@ -10036,7 +10763,8 @@
     "acZPLjnha9o",
     "8b5EX9HcPGk",
     "aNVjrDQANMw",
-    "Rdt5Alxrg60"
+    "Rdt5Alxrg60",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -10261,7 +10989,12 @@
     "Uv4yk8_vZQc",
     "b5QAsgvC9sk",
     "17St_0BfbF0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -10300,15 +11033,18 @@
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "envelope-follower-audio-driven-modulation",
     "fm-carrier-modulator-ratio-basics",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -10325,11 +11061,13 @@
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "ring-mod-envelope-bell-stab-pulse",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "sidehustle-productized-service-offer-and-ops",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-control-track-filter-wt-animation",
@@ -10464,7 +11202,10 @@
     "x37IwHD-uQ4",
     "yuQqY0dx2Rw",
     "b5QAsgvC9sk",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -10507,6 +11248,7 @@
     "crypto-safe-multisig-threshold-setup-execute",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "multiband-low-band-gentle-control-and-expand",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
@@ -10586,7 +11328,10 @@
     "Futy449F9OY",
     "yuQqY0dx2Rw",
     "leLAm3OigI0",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -10634,9 +11379,12 @@
     "distorted-delay-return-bandlimited-send-throws",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "haas-plus-phase-offset-width-automated",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
@@ -10644,6 +11392,7 @@
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "synthesized-noise-impact-tail-lfo-shaped",
@@ -10786,7 +11535,10 @@
     "XnSE9X0-S9M",
     "Mm5eO24aAec",
     "rRFGaDy3uUw",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "xil_HpL1izg",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8"
    ],
    "refs": [
     {
@@ -10874,7 +11626,8 @@
     "t0X_HQ25jmg",
     "3q-o772IYQY",
     "NQ6tTIJpRDg",
-    "yuQqY0dx2Rw"
+    "yuQqY0dx2Rw",
+    "B3n9GOT0Q9A"
    ],
    "refs": [
     {
@@ -10913,6 +11666,7 @@
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
     "envelope-follower-audio-driven-modulation",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "modulation-lfo-envelope-mod-matrix-routing",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "ring-mod-envelope-bell-stab-pulse"
@@ -11417,7 +12171,8 @@
    "domain": "synth",
    "videos": [
     "9V56-jd48_k",
-    "NQ6tTIJpRDg"
+    "NQ6tTIJpRDg",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -11431,6 +12186,10 @@
     {
      "video_id": "NQ6tTIJpRDg",
      "t": "4:32"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:20"
     }
    ],
    "covered_by": []
@@ -11453,7 +12212,10 @@
     "uEI2Ytxn7iI",
     "rbcnLgmyjv8",
     "YQbj-HEk1xw",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "Zgwxh3VrQZQ",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -11611,7 +12373,8 @@
     "4fpZFYG83fw",
     "7OZx7CWo3M0",
     "vfZhqBfXvdc",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -12091,7 +12854,9 @@
     "rRFGaDy3uUw",
     "uEI2Ytxn7iI",
     "EwxNeZttFEA",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -12128,10 +12893,12 @@
     }
    ],
    "covered_by": [
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dji-video-to-gaussian-splat-mipmap",
     "drone-hyperlapse-to-splatware-splat",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "pwm-80s-string-pad-free-running-lfo-detune",
@@ -12173,7 +12940,8 @@
     "EoR-zmIgUwk",
     "Sehlj6zgXmw",
     "VrCSssDOxFc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -12410,7 +13178,11 @@
     "7fLA01y1tu4",
     "aPsWzEfgEOo",
     "Py4XQbjvn4o",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -12451,6 +13223,8 @@
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "resonant-filter-sample-rate-reduction-talking-formant",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "traveler-walkthrough-control-track-filter-wt-animation"
    ]
@@ -12491,7 +13265,12 @@
     "YQbj-HEk1xw",
     "sGZr4PusB0U",
     "Uv4yk8_vZQc",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "Pd9AFeTcl2k",
+    "MjijB6ExetI",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "b2zwGqefZw8"
    ],
    "refs": [
     {
@@ -12532,6 +13311,7 @@
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "traveler-walkthrough-control-track-filter-wt-animation"
    ]
@@ -12721,7 +13501,8 @@
     "TrkXgDQbhjk",
     "H8fsiSJzKTA",
     "yuQqY0dx2Rw",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -12747,6 +13528,14 @@
     {
      "video_id": "y9eDmBUC8ZU",
      "t": "38:59"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "4:42"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "4:48"
     }
    ],
    "covered_by": [
@@ -12757,8 +13546,10 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "filter-ladder-diode-comb-formant-flavors",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "osc-as-granular-pitch-step-delay",
     "phase-distortion-shapes-modular-phase-chain",
     "resonant-filter-sample-rate-reduction-talking-formant",
@@ -12885,7 +13676,11 @@
     "S3-2yc9UJDE",
     "T64l4AAKFpM",
     "E8b_N1RBCxE",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ",
+    "17OGg5CrJ-g",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -12924,8 +13719,10 @@
    "covered_by": [
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-velocity-hybrid-bass-impact",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "shepard-tone-endless-riser-octave-crossfade-voices"
@@ -12963,7 +13760,8 @@
     "gRh9BL-W8kQ",
     "Vp66dS7o3R0",
     "S3-2yc9UJDE",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "FOL9EDiLp4k"
    ],
    "refs": [
     {
@@ -13001,6 +13799,7 @@
    ],
    "covered_by": [
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "shepard-tone-endless-riser-octave-crossfade-voices",
@@ -13020,7 +13819,10 @@
     "5bI0NSbgEUY",
     "pYbWRCrFsHQ",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -13060,10 +13862,12 @@
     "envelope-follower-audio-driven-modulation",
     "mix-pads-role-eq-width-clarity",
     "multiband-low-band-gentle-control-and-expand",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "trance-gate-sidechain-chop-texture",
     "uplifter-downlifter-pitchbend-filter-lfo"
@@ -13212,7 +14016,8 @@
     "G4Tc59aAeoE",
     "EN_X_IdPaog",
     "Sehlj6zgXmw",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -13230,6 +14035,14 @@
     {
      "video_id": "Uv4yk8_vZQc",
      "t": "10:24"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "5:52"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "21:14"
     }
    ],
    "covered_by": [
@@ -13392,7 +14205,9 @@
     "GoMfKhol88k",
     "uEI2Ytxn7iI",
     "G3CIJ3l5Fd8",
-    "Py4XQbjvn4o"
+    "Py4XQbjvn4o",
+    "JC-UA2C-sZU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -13453,7 +14268,9 @@
     "3q-o772IYQY",
     "FId1jUm0zxU",
     "ZVLM1XMT6Z0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "rVRMgLa9Y9E",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -13492,6 +14309,7 @@
    "covered_by": [
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
@@ -13615,7 +14433,8 @@
     "GoMfKhol88k",
     "NQ6tTIJpRDg",
     "vfZhqBfXvdc",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -13652,6 +14471,8 @@
     }
    ],
    "covered_by": [
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
@@ -13877,7 +14698,10 @@
     "06VEibYrLms",
     "NQ6tTIJpRDg",
     "E8b_N1RBCxE",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "b2zwGqefZw8"
    ],
    "refs": [
     {
@@ -13914,7 +14738,8 @@
     }
    ],
    "covered_by": [
-    "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+    "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback"
    ]
   },
   "value:oscillator=50 %": {
@@ -14013,7 +14838,8 @@
     "8b5EX9HcPGk",
     "54eGln75Y3Y",
     "X4TPAWQw4ss",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "Pd9AFeTcl2k"
    ],
    "refs": [
     {
@@ -14051,11 +14877,13 @@
    ],
    "covered_by": [
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-warm-analog-pad-drift-stereo",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "reverb-freeze-print-seamless-loop-atmos-layer",
+    "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "selective-saturation-and-lofi-grit-toolkit",
     "sub-drop-sine-freq-glide-80hz-to-20hz"
    ]
@@ -14231,7 +15059,9 @@
     "GoMfKhol88k",
     "Mm5eO24aAec",
     "KVtxIwYpGvQ",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "jC_ckXoCHYE",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -14335,12 +15165,17 @@
    "label": "create your own",
    "domain": "synth",
    "videos": [
-    "JPV5hC-9Rv0"
+    "JPV5hC-9Rv0",
+    "jC_ckXoCHYE"
    ],
    "refs": [
     {
      "video_id": "JPV5hC-9Rv0",
      "t": "8:05"
+    },
+    {
+     "video_id": "jC_ckXoCHYE",
+     "t": "9:02"
     }
    ],
    "covered_by": []
@@ -14443,7 +15278,8 @@
    "domain": "synth",
    "videos": [
     "JPV5hC-9Rv0",
-    "7fLA01y1tu4"
+    "7fLA01y1tu4",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -14453,6 +15289,10 @@
     {
      "video_id": "7fLA01y1tu4",
      "t": "0:44"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "0:01"
     }
    ],
    "covered_by": [
@@ -14475,7 +15315,9 @@
     "YQbj-HEk1xw",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "B3n9GOT0Q9A"
    ],
    "refs": [
     {
@@ -14530,6 +15372,7 @@
     "parallel-filter-rhythmic-pad-chains",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "resonant-filter-sample-rate-reduction-talking-formant",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "warp-modes-as-phase-signal-transforms",
@@ -14694,7 +15537,8 @@
    "videos": [
     "lLAj2rvBouI",
     "hC00Qdhfjww",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -14708,6 +15552,10 @@
     {
      "video_id": "ZVLM1XMT6Z0",
      "t": "0:40"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "6:27"
     }
    ],
    "covered_by": [
@@ -16611,12 +17459,17 @@
    "label": "straight away",
    "domain": "synth",
    "videos": [
-    "CghKYofqzfI"
+    "CghKYofqzfI",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
      "video_id": "CghKYofqzfI",
      "t": "1:14"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "7:16"
     }
    ],
    "covered_by": []
@@ -17780,7 +18633,8 @@
    "label": "FL Studio",
    "domain": "synth",
    "videos": [
-    "X9nxUb1wRkg"
+    "X9nxUb1wRkg",
+    "FOL9EDiLp4k"
    ],
    "refs": [
     {
@@ -17790,6 +18644,10 @@
     {
      "video_id": "X9nxUb1wRkg",
      "t": "2:23"
+    },
+    {
+     "video_id": "FOL9EDiLp4k",
+     "t": "5:43"
     }
    ],
    "covered_by": []
@@ -17831,7 +18689,8 @@
    "videos": [
     "54eGln75Y3Y",
     "7fLA01y1tu4",
-    "vfZhqBfXvdc"
+    "vfZhqBfXvdc",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -17853,11 +18712,20 @@
     {
      "video_id": "vfZhqBfXvdc",
      "t": "1:49"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "0:00"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "0:13"
     }
    ],
    "covered_by": [
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
-    "spectral-warp-vocode-formant-stretch-smear"
+    "spectral-warp-vocode-formant-stretch-smear",
+    "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
    ]
   },
   "value:delay=1 ms": {
@@ -18148,7 +19016,10 @@
     "mBvUObtJTJI",
     "H8fsiSJzKTA",
     "eaQtf_vm9zA",
-    "Futy449F9OY"
+    "Futy449F9OY",
+    "B3n9GOT0Q9A",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -18174,11 +19045,20 @@
     {
      "video_id": "Futy449F9OY",
      "t": "7:43"
+    },
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "9:10"
+    },
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "0:37"
     }
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
@@ -18369,7 +19249,8 @@
    "videos": [
     "gzJEQiTC_SQ",
     "t0X_HQ25jmg",
-    "GoMfKhol88k"
+    "GoMfKhol88k",
+    "jC_ckXoCHYE"
    ],
    "refs": [
     {
@@ -18387,10 +19268,17 @@
     {
      "video_id": "GoMfKhol88k",
      "t": "8:21"
+    },
+    {
+     "video_id": "jC_ckXoCHYE",
+     "t": "5:46"
     }
    ],
    "covered_by": [
     "granular-buffer-core-position-density-freeze-feedback-modes",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "selective-saturation-and-lofi-grit-toolkit",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
@@ -18599,7 +19487,8 @@
    "videos": [
     "c8aQMp0vkRg",
     "Dazk-D79k5U",
-    "S3-2yc9UJDE"
+    "S3-2yc9UJDE",
+    "rVRMgLa9Y9E"
    ],
    "refs": [
     {
@@ -18612,6 +19501,10 @@
     },
     {
      "video_id": "S3-2yc9UJDE",
+     "t": "0:00"
+    },
+    {
+     "video_id": "rVRMgLa9Y9E",
      "t": "0:00"
     }
    ],
@@ -18656,7 +19549,8 @@
    "videos": [
     "06VEibYrLms",
     "eaQtf_vm9zA",
-    "X4TPAWQw4ss"
+    "X4TPAWQw4ss",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -18670,9 +19564,16 @@
     {
      "video_id": "X4TPAWQw4ss",
      "t": "23:21"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "13:48"
     }
    ],
-   "covered_by": []
+   "covered_by": [
+    "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
+    "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter"
+   ]
   },
   "phrase:oberheim_teo-5": {
    "type": "phrase",
@@ -19260,7 +20161,8 @@
    "videos": [
     "fxh2ccZKEb0",
     "rRFGaDy3uUw",
-    "NQ6tTIJpRDg"
+    "NQ6tTIJpRDg",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -19274,6 +20176,10 @@
     {
      "video_id": "NQ6tTIJpRDg",
      "t": "6:19"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "8:25"
     }
    ],
    "covered_by": [
@@ -19322,7 +20228,8 @@
     "0NXGraBGWvE",
     "5bI0NSbgEUY",
     "LeChNmmtNsM",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -19348,6 +20255,14 @@
     {
      "video_id": "E8b_N1RBCxE",
      "t": "17:46"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "1:52"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "2:10"
     }
    ],
    "covered_by": [
@@ -21222,12 +22137,17 @@
    "label": "turn off",
    "domain": "synth",
    "videos": [
-    "3q-o772IYQY"
+    "3q-o772IYQY",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
      "video_id": "3q-o772IYQY",
      "t": "7:42"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "0:57"
     }
    ],
    "covered_by": [
@@ -22577,12 +23497,22 @@
    "label": "physical modeling",
    "domain": "synth",
    "videos": [
-    "rbcnLgmyjv8"
+    "rbcnLgmyjv8",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A"
    ],
    "refs": [
     {
      "video_id": "rbcnLgmyjv8",
      "t": "3:53"
+    },
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "0:01"
+    },
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "0:25"
     }
    ],
    "covered_by": []
@@ -22908,7 +23838,8 @@
    "videos": [
     "sGZr4PusB0U",
     "EwxNeZttFEA",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE"
    ],
    "refs": [
     {
@@ -22930,10 +23861,15 @@
     {
      "video_id": "mllvToyambI",
      "t": "6:27"
+    },
+    {
+     "video_id": "jC_ckXoCHYE",
+     "t": "2:10"
     }
    ],
    "covered_by": [
-    "envelope-follower-audio-driven-modulation"
+    "envelope-follower-audio-driven-modulation",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet"
    ]
   },
   "phrase:filter_bank": {
@@ -23859,6 +24795,622 @@
     }
    ],
    "covered_by": []
+  },
+  "phrase:still_a_piano": {
+   "type": "phrase",
+   "label": "still a piano",
+   "domain": "synth",
+   "videos": [
+    "jC_ckXoCHYE"
+   ],
+   "refs": [
+    {
+     "video_id": "jC_ckXoCHYE",
+     "t": "4:48"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:physical_modeling_synth": {
+   "type": "phrase",
+   "label": "physical modeling synth",
+   "domain": "synth",
+   "videos": [
+    "Pd9AFeTcl2k"
+   ],
+   "refs": [
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "0:01"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:manual_mode": {
+   "type": "phrase",
+   "label": "manual mode",
+   "domain": "synth",
+   "videos": [
+    "Pd9AFeTcl2k"
+   ],
+   "refs": [
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "4:10"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:different_partials": {
+   "type": "phrase",
+   "label": "different partials",
+   "domain": "synth",
+   "videos": [
+    "Pd9AFeTcl2k"
+   ],
+   "refs": [
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "2:20"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:plucking_brightness": {
+   "type": "phrase",
+   "label": "plucking brightness",
+   "domain": "synth",
+   "videos": [
+    "B3n9GOT0Q9A"
+   ],
+   "refs": [
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "5:51"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:mallet_bounce": {
+   "type": "phrase",
+   "label": "mallet bounce",
+   "domain": "synth",
+   "videos": [
+    "B3n9GOT0Q9A"
+   ],
+   "refs": [
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "3:13"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:subtractive_synth": {
+   "type": "phrase",
+   "label": "subtractive synth",
+   "domain": "synth",
+   "videos": [
+    "B3n9GOT0Q9A"
+   ],
+   "refs": [
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "1:45"
+    }
+   ],
+   "covered_by": [
+    "click-train-resonant-filter-feedback-delay-comb-texture",
+    "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+    "pwm-80s-string-pad-free-running-lfo-detune",
+    "uplifter-downlifter-pitchbend-filter-lfo"
+   ]
+  },
+  "technique:reverse_reverb": {
+   "type": "technique",
+   "label": "reverse reverb",
+   "domain": "synth",
+   "videos": [
+    "FOL9EDiLp4k"
+   ],
+   "refs": [
+    {
+     "video_id": "FOL9EDiLp4k",
+     "t": "1:04"
+    }
+   ],
+   "covered_by": [
+    "reverse-reverb-swell-print-reverse-print"
+   ]
+  },
+  "value:sequencer=100 %": {
+   "type": "value",
+   "label": "100 %",
+   "domain": "synth",
+   "videos": [
+    "FOL9EDiLp4k"
+   ],
+   "refs": [
+    {
+     "video_id": "FOL9EDiLp4k",
+     "t": "6:46"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:riser_effect": {
+   "type": "phrase",
+   "label": "riser effect",
+   "domain": "synth",
+   "videos": [
+    "FOL9EDiLp4k"
+   ],
+   "refs": [
+    {
+     "video_id": "FOL9EDiLp4k",
+     "t": "6:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:live_setting": {
+   "type": "phrase",
+   "label": "live setting",
+   "domain": "synth",
+   "videos": [
+    "MjijB6ExetI"
+   ],
+   "refs": [
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "1:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:effect_slot": {
+   "type": "phrase",
+   "label": "effect slot",
+   "domain": "synth",
+   "videos": [
+    "MjijB6ExetI"
+   ],
+   "refs": [
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "5:27"
+    }
+   ],
+   "covered_by": [
+    "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "spectral-warp-vocode-formant-stretch-smear"
+   ]
+  },
+  "phrase:through_the_sine": {
+   "type": "phrase",
+   "label": "through the sine",
+   "domain": "synth",
+   "videos": [
+    "JC-UA2C-sZU"
+   ],
+   "refs": [
+    {
+     "video_id": "JC-UA2C-sZU",
+     "t": "2:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:matrix_mixer": {
+   "type": "phrase",
+   "label": "matrix mixer",
+   "domain": "synth",
+   "videos": [
+    "JC-UA2C-sZU"
+   ],
+   "refs": [
+    {
+     "video_id": "JC-UA2C-sZU",
+     "t": "4:14"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:move_between": {
+   "type": "phrase",
+   "label": "move between",
+   "domain": "synth",
+   "videos": [
+    "JC-UA2C-sZU"
+   ],
+   "refs": [
+    {
+     "video_id": "JC-UA2C-sZU",
+     "t": "6:39"
+    }
+   ],
+   "covered_by": [
+    "vector-xy-four-oscillator-crossfade-blend"
+   ]
+  },
+  "phrase:even_modulate": {
+   "type": "phrase",
+   "label": "even modulate",
+   "domain": "synth",
+   "videos": [
+    "JC-UA2C-sZU"
+   ],
+   "refs": [
+    {
+     "video_id": "JC-UA2C-sZU",
+     "t": "9:03"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:run_it_backwards": {
+   "type": "phrase",
+   "label": "run it backwards",
+   "domain": "synth",
+   "videos": [
+    "m6wfGX7rwiQ"
+   ],
+   "refs": [
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "26:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:mono_reverb": {
+   "type": "phrase",
+   "label": "mono reverb",
+   "domain": "synth",
+   "videos": [
+    "e1AMHtuuuTQ"
+   ],
+   "refs": [
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "0:00"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:show_you_real": {
+   "type": "phrase",
+   "label": "show you real",
+   "domain": "synth",
+   "videos": [
+    "e1AMHtuuuTQ"
+   ],
+   "refs": [
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "9:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:main_step": {
+   "type": "phrase",
+   "label": "main step",
+   "domain": "synth",
+   "videos": [
+    "e1AMHtuuuTQ"
+   ],
+   "refs": [
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "9:50"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:stereo_image": {
+   "type": "phrase",
+   "label": "stereo image",
+   "domain": "synth",
+   "videos": [
+    "e1AMHtuuuTQ"
+   ],
+   "refs": [
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "0:48"
+    }
+   ],
+   "covered_by": [
+    "dual-path-filter-spread-inverse-amp-lfo-stereo",
+    "midside-eq-bass-focus-width-depth",
+    "traveler-walkthrough-super-unison-wide-lead"
+   ]
+  },
+  "phrase:reverb_sounds": {
+   "type": "phrase",
+   "label": "reverb sounds",
+   "domain": "synth",
+   "videos": [
+    "e1AMHtuuuTQ"
+   ],
+   "refs": [
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "23:54"
+    }
+   ],
+   "covered_by": []
+  },
+  "tool:Helm": {
+   "type": "tool",
+   "label": "Helm",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "8:14"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:classic_house": {
+   "type": "phrase",
+   "label": "classic house",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "3:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:classic_house_pad": {
+   "type": "phrase",
+   "label": "classic house pad",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "3:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:stereo_field": {
+   "type": "phrase",
+   "label": "stereo field",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "5:01"
+    }
+   ],
+   "covered_by": [
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+    "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+    "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "phrase:ableton_live": {
+   "type": "phrase",
+   "label": "ableton live",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "1:38"
+    }
+   ],
+   "covered_by": [
+    "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "single-macro-reverb-mix-deadzone-freeze-overdub-drone"
+   ]
+  },
+  "phrase:chorusing_effect": {
+   "type": "phrase",
+   "label": "chorusing effect",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "4:28"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:house_pads": {
+   "type": "phrase",
+   "label": "house pads",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "3:19"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:maybe_even": {
+   "type": "phrase",
+   "label": "maybe even",
+   "domain": "synth",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "2:35"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:four_layers": {
+   "type": "phrase",
+   "label": "four layers",
+   "domain": "synth",
+   "videos": [
+    "b2zwGqefZw8"
+   ],
+   "refs": [
+    {
+     "video_id": "b2zwGqefZw8",
+     "t": "0:35"
+    }
+   ],
+   "covered_by": [
+    "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+   ]
+  },
+  "phrase:multiple_layers": {
+   "type": "phrase",
+   "label": "multiple layers",
+   "domain": "synth",
+   "videos": [
+    "b2zwGqefZw8"
+   ],
+   "refs": [
+    {
+     "video_id": "b2zwGqefZw8",
+     "t": "0:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:percussive_sound": {
+   "type": "phrase",
+   "label": "percussive sound",
+   "domain": "synth",
+   "videos": [
+    "b2zwGqefZw8"
+   ],
+   "refs": [
+    {
+     "video_id": "b2zwGqefZw8",
+     "t": "3:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:filter=900 hz": {
+   "type": "value",
+   "label": "900 hz",
+   "domain": "synth",
+   "videos": [
+    "pO5BOqCS9mo"
+   ],
+   "refs": [
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:34"
+    }
+   ],
+   "covered_by": []
+  },
+  "technique:ensemble_strings": {
+   "type": "technique",
+   "label": "ensemble strings",
+   "domain": "synth",
+   "videos": [
+    "17OGg5CrJ-g"
+   ],
+   "refs": [
+    {
+     "video_id": "17OGg5CrJ-g",
+     "t": "3:43"
+    }
+   ],
+   "covered_by": [
+    "synth-string-section-unison-vibrato-fm-blend"
+   ]
+  },
+  "value:release=36 %": {
+   "type": "value",
+   "label": "36 %",
+   "domain": "synth",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "3:13"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:attack=56 %": {
+   "type": "value",
+   "label": "56 %",
+   "domain": "synth",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "3:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:distortion=2 db": {
+   "type": "value",
+   "label": "2 db",
+   "domain": "synth",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "4:30"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:distortion=3 db": {
+   "type": "value",
+   "label": "3 db",
+   "domain": "synth",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "4:30"
+    }
+   ],
+   "covered_by": []
   }
  },
  "edges": {
@@ -23967,7 +25519,19 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24055,7 +25619,14 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "P_bIEn8FGzI",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24126,7 +25697,12 @@
     "YQbj-HEk1xw",
     "yuQqY0dx2Rw",
     "EwxNeZttFEA",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -24212,7 +25788,13 @@
     "y9eDmBUC8ZU",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "P_bIEn8FGzI",
+    "b2zwGqefZw8",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24291,7 +25873,10 @@
     "EwxNeZttFEA",
     "y9eDmBUC8ZU",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -24426,7 +26011,20 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "xil_HpL1izg",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24511,7 +26109,13 @@
     "yuQqY0dx2Rw",
     "E8b_N1RBCxE",
     "ZVLM1XMT6Z0",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24666,7 +26270,13 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "Q_0QcuRePZ0",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "Pd9AFeTcl2k",
+    "xil_HpL1izg",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -24727,7 +26337,9 @@
     "7fLA01y1tu4",
     "Py4XQbjvn4o",
     "Uv4yk8_vZQc",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "B3n9GOT0Q9A",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -24851,7 +26463,12 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "B3n9GOT0Q9A",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -25107,7 +26724,16 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "m6wfGX7rwiQ",
+    "nbS1pT8V7YU",
+    "b2zwGqefZw8",
+    "17OGg5CrJ-g",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -25198,7 +26824,8 @@
     "28uxHnQbulE",
     "Sehlj6zgXmw",
     "KVtxIwYpGvQ",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -25289,7 +26916,11 @@
     "b5QAsgvC9sk",
     "leLAm3OigI0",
     "17St_0BfbF0",
-    "Q_0QcuRePZ0"
+    "Q_0QcuRePZ0",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -25418,7 +27049,15 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "jC_ckXoCHYE",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "Zgwxh3VrQZQ",
+    "m6wfGX7rwiQ",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -25493,7 +27132,11 @@
     "yuQqY0dx2Rw",
     "y9eDmBUC8ZU",
     "b5QAsgvC9sk",
-    "w7vtvdW84l4"
+    "w7vtvdW84l4",
+    "JC-UA2C-sZU",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -25626,7 +27269,10 @@
     "Py4XQbjvn4o",
     "YQbj-HEk1xw",
     "yuQqY0dx2Rw",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "Pd9AFeTcl2k",
+    "FOL9EDiLp4k",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -25671,7 +27317,9 @@
    "videos": [
     "MH7YiOWQIhI",
     "aPsWzEfgEOo",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -25685,6 +27333,14 @@
     {
      "video_id": "17St_0BfbF0",
      "t": "2:13"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "6:12"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "2:39"
     }
    ],
    "covered_by": []
@@ -25816,7 +27472,12 @@
     "17St_0BfbF0",
     "Q_0QcuRePZ0",
     "0WjG0MKN_wk",
-    "mllvToyambI"
+    "mllvToyambI",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A",
+    "MjijB6ExetI",
+    "m6wfGX7rwiQ",
+    "rVRMgLa9Y9E"
    ],
    "refs": [
     {
@@ -25898,7 +27559,9 @@
     "x37IwHD-uQ4",
     "rbcnLgmyjv8",
     "aPsWzEfgEOo",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "Pd9AFeTcl2k",
+    "B3n9GOT0Q9A"
    ],
    "refs": [
     {
@@ -25963,7 +27626,8 @@
    "videos": [
     "kHWOIE4YTZ4",
     "hlgl5lfdv48",
-    "x37IwHD-uQ4"
+    "x37IwHD-uQ4",
+    "xil_HpL1izg"
    ],
    "refs": [
     {
@@ -25977,6 +27641,10 @@
     {
      "video_id": "x37IwHD-uQ4",
      "t": "18:27"
+    },
+    {
+     "video_id": "xil_HpL1izg",
+     "t": "2:42"
     }
    ],
    "covered_by": []
@@ -26000,7 +27668,9 @@
     "ysMPHY5oiGc",
     "Futy449F9OY",
     "NQ6tTIJpRDg",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "m6wfGX7rwiQ",
+    "P_bIEn8FGzI"
    ],
    "refs": [
     {
@@ -26043,16 +27713,23 @@
    "dst": "value:unison=3 voices",
    "type": "sets",
    "videos": [
-    "UShjYsGgWcM"
+    "UShjYsGgWcM",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
      "video_id": "UShjYsGgWcM",
      "t": "9:24"
+    },
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "0:46"
     }
    ],
    "covered_by": [
-    "digital-wt-morph-bandpass-chorus-echo-space"
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "digital-wt-morph-bandpass-chorus-echo-space",
+    "shepard-tone-endless-riser-octave-crossfade-voices"
    ]
   },
   "param:lfo_shape|part-of|module:lfo": {
@@ -26102,7 +27779,8 @@
     "X4TPAWQw4ss",
     "rRFGaDy3uUw",
     "7fLA01y1tu4",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -26176,7 +27854,8 @@
     "5bI0NSbgEUY",
     "XnSE9X0-S9M",
     "X4TPAWQw4ss",
-    "Py4XQbjvn4o"
+    "Py4XQbjvn4o",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -26206,6 +27885,10 @@
     {
      "video_id": "Py4XQbjvn4o",
      "t": "0:39"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "1:34"
     }
    ],
    "covered_by": []
@@ -26294,7 +27977,8 @@
     "pYbWRCrFsHQ",
     "yuQqY0dx2Rw",
     "Q_0QcuRePZ0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "Pd9AFeTcl2k"
    ],
    "refs": [
     {
@@ -26316,18 +28000,25 @@
     {
      "video_id": "0WjG0MKN_wk",
      "t": "11:37"
+    },
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "9:31"
     }
    ],
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
     "cinematic-multi-envelope-osc-level-morph",
+    "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "modulation-lfo-envelope-mod-matrix-routing",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "osc-as-granular-pitch-step-delay",
     "synthesized-noise-impact-tail-lfo-shaped",
@@ -26486,15 +28177,25 @@
    "dst": "value:detune=10 %",
    "type": "sets",
    "videos": [
-    "IK7cIBPKM1s"
+    "IK7cIBPKM1s",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
      "video_id": "IK7cIBPKM1s",
      "t": "9:29"
+    },
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "0:46"
     }
    ],
-   "covered_by": []
+   "covered_by": [
+    "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "synth-string-section-unison-vibrato-fm-blend"
+   ]
   },
   "param:pitch|sets|value:pitch=1 octaves": {
    "src": "param:pitch",
@@ -26511,7 +28212,8 @@
     "acZPLjnha9o",
     "8b5EX9HcPGk",
     "aNVjrDQANMw",
-    "Rdt5Alxrg60"
+    "Rdt5Alxrg60",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -26552,6 +28254,7 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "unison-odd-even-detune-width-clean-supersaw"
    ]
@@ -26690,7 +28393,12 @@
     "Uv4yk8_vZQc",
     "b5QAsgvC9sk",
     "17St_0BfbF0",
-    "mllvToyambI"
+    "mllvToyambI",
+    "B3n9GOT0Q9A",
+    "FOL9EDiLp4k",
+    "MjijB6ExetI",
+    "JC-UA2C-sZU",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -26745,7 +28453,10 @@
     "x37IwHD-uQ4",
     "yuQqY0dx2Rw",
     "b5QAsgvC9sk",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "jC_ckXoCHYE",
+    "Pd9AFeTcl2k",
+    "JC-UA2C-sZU"
    ],
    "refs": [
     {
@@ -27276,7 +28987,8 @@
     "kohxe8q614M",
     "5xrcuaB1GNA",
     "YQbj-HEk1xw",
-    "E8b_N1RBCxE"
+    "E8b_N1RBCxE",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -27298,6 +29010,10 @@
     {
      "video_id": "E8b_N1RBCxE",
      "t": "5:53"
+    },
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "3:15"
     }
    ],
    "covered_by": []
@@ -27311,7 +29027,8 @@
     "SMB34GRgQWQ",
     "5bI0NSbgEUY",
     "YQbj-HEk1xw",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -27333,6 +29050,10 @@
     {
      "video_id": "y9eDmBUC8ZU",
      "t": "19:56"
+    },
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "3:15"
     }
    ],
    "covered_by": []
@@ -27349,7 +29070,8 @@
     "4fpZFYG83fw",
     "7OZx7CWo3M0",
     "vfZhqBfXvdc",
-    "y9eDmBUC8ZU"
+    "y9eDmBUC8ZU",
+    "e1AMHtuuuTQ"
    ],
    "refs": [
     {
@@ -27386,6 +29108,7 @@
     }
    ],
    "covered_by": [
+    "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
     "click-train-resonant-filter-feedback-delay-comb-texture",
@@ -27397,6 +29120,7 @@
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
+    "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
@@ -27443,12 +29167,17 @@
    "dst": "tool:Serum",
    "type": "part-of",
    "videos": [
-    "ZXhm-j0T3xo"
+    "ZXhm-j0T3xo",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
      "video_id": "ZXhm-j0T3xo",
      "t": "0:01"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "1:53"
     }
    ],
    "covered_by": []
@@ -27654,7 +29383,8 @@
     "SfqgigefIu0",
     "4fpZFYG83fw",
     "aNVjrDQANMw",
-    "XnSE9X0-S9M"
+    "XnSE9X0-S9M",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -27676,6 +29406,10 @@
     {
      "video_id": "XnSE9X0-S9M",
      "t": "4:37"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "17:42"
     }
    ],
    "covered_by": []
@@ -27687,7 +29421,10 @@
    "videos": [
     "Z2mgB3LYkgQ",
     "eaQtf_vm9zA",
-    "Futy449F9OY"
+    "Futy449F9OY",
+    "e1AMHtuuuTQ",
+    "nbS1pT8V7YU",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -27701,6 +29438,18 @@
     {
      "video_id": "Futy449F9OY",
      "t": "9:17"
+    },
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "4:06"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "4:58"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "1:53"
     }
    ],
    "covered_by": []
@@ -27711,7 +29460,8 @@
    "type": "part-of",
    "videos": [
     "Z2mgB3LYkgQ",
-    "eaQtf_vm9zA"
+    "eaQtf_vm9zA",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -27721,6 +29471,10 @@
     {
      "video_id": "eaQtf_vm9zA",
      "t": "5:08"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "1:53"
     }
    ],
    "covered_by": []
@@ -27733,7 +29487,9 @@
     "Z2mgB3LYkgQ",
     "5bI0NSbgEUY",
     "eaQtf_vm9zA",
-    "Futy449F9OY"
+    "Futy449F9OY",
+    "e1AMHtuuuTQ",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
@@ -27751,6 +29507,14 @@
     {
      "video_id": "Futy449F9OY",
      "t": "9:17"
+    },
+    {
+     "video_id": "e1AMHtuuuTQ",
+     "t": "4:06"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:34"
     }
    ],
    "covered_by": []
@@ -28156,7 +29920,8 @@
     "WZt_nok-ipk",
     "acZPLjnha9o",
     "5bI0NSbgEUY",
-    "7fLA01y1tu4"
+    "7fLA01y1tu4",
+    "Pd9AFeTcl2k"
    ],
    "refs": [
     {
@@ -28178,18 +29943,24 @@
     {
      "video_id": "7fLA01y1tu4",
      "t": "2:23"
+    },
+    {
+     "video_id": "Pd9AFeTcl2k",
+     "t": "9:31"
     }
    ],
    "covered_by": [
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "dual-layer-opposite-vector-morph-pad",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "modulation-lfo-envelope-mod-matrix-routing",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "uplifter-downlifter-pitchbend-filter-lfo"
@@ -28386,7 +30157,8 @@
     "G4Tc59aAeoE",
     "EN_X_IdPaog",
     "Sehlj6zgXmw",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -28404,6 +30176,10 @@
     {
      "video_id": "Uv4yk8_vZQc",
      "t": "10:24"
+    },
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "5:52"
     }
    ],
    "covered_by": []
@@ -28419,7 +30195,8 @@
     "XnSE9X0-S9M",
     "X4TPAWQw4ss",
     "yuQqY0dx2Rw",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -28449,6 +30226,10 @@
     {
      "video_id": "b5QAsgvC9sk",
      "t": "4:12"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "6:01"
     }
    ],
    "covered_by": []
@@ -28523,7 +30304,9 @@
     "3q-o772IYQY",
     "FId1jUm0zxU",
     "ZVLM1XMT6Z0",
-    "0WjG0MKN_wk"
+    "0WjG0MKN_wk",
+    "rVRMgLa9Y9E",
+    "7OatKTrtmJ8"
    ],
    "refs": [
     {
@@ -28764,7 +30547,8 @@
    "videos": [
     "g0QRn65Mwwc",
     "6aRgJoBxk4g",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -28778,14 +30562,20 @@
     {
      "video_id": "ZVLM1XMT6Z0",
      "t": "14:57"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "11:49"
     }
    ],
    "covered_by": [
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "dual-layer-opposite-vector-morph-pad",
+    "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -29022,7 +30812,9 @@
     "GoMfKhol88k",
     "Mm5eO24aAec",
     "KVtxIwYpGvQ",
-    "17St_0BfbF0"
+    "17St_0BfbF0",
+    "jC_ckXoCHYE",
+    "m6wfGX7rwiQ"
    ],
    "refs": [
     {
@@ -29561,7 +31353,8 @@
     "t3fD_6JEies",
     "XnSE9X0-S9M",
     "X4TPAWQw4ss",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "MjijB6ExetI"
    ],
    "refs": [
     {
@@ -29579,6 +31372,10 @@
     {
      "video_id": "b5QAsgvC9sk",
      "t": "2:56"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "6:01"
     }
    ],
    "covered_by": []
@@ -29843,7 +31640,9 @@
    "videos": [
     "aNVjrDQANMw",
     "0NXGraBGWvE",
-    "XnSE9X0-S9M"
+    "XnSE9X0-S9M",
+    "MjijB6ExetI",
+    "nbS1pT8V7YU"
    ],
    "refs": [
     {
@@ -29857,6 +31656,14 @@
     {
      "video_id": "XnSE9X0-S9M",
      "t": "0:02"
+    },
+    {
+     "video_id": "MjijB6ExetI",
+     "t": "6:01"
+    },
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "1:34"
     }
    ],
    "covered_by": []
@@ -30048,12 +31855,17 @@
    "dst": "tool:Massive",
    "type": "part-of",
    "videos": [
-    "5bI0NSbgEUY"
+    "5bI0NSbgEUY",
+    "pO5BOqCS9mo"
    ],
    "refs": [
     {
      "video_id": "5bI0NSbgEUY",
      "t": "26:02"
+    },
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "1:39"
     }
    ],
    "covered_by": []
@@ -31090,13 +32902,199 @@
     }
    ],
    "covered_by": []
+  },
+  "module:lfo|affects|module:am": {
+   "src": "module:lfo",
+   "dst": "module:am",
+   "type": "affects",
+   "videos": [
+    "B3n9GOT0Q9A"
+   ],
+   "refs": [
+    {
+     "video_id": "B3n9GOT0Q9A",
+     "t": "7:42"
+    }
+   ],
+   "covered_by": [
+    "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+    "modulation-lfo-envelope-mod-matrix-routing"
+   ]
+  },
+  "module:sequencer|sets|value:sequencer=100 %": {
+   "src": "module:sequencer",
+   "dst": "value:sequencer=100 %",
+   "type": "sets",
+   "videos": [
+    "FOL9EDiLp4k"
+   ],
+   "refs": [
+    {
+     "video_id": "FOL9EDiLp4k",
+     "t": "6:46"
+    }
+   ],
+   "covered_by": [
+    "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph"
+   ]
+  },
+  "module:wavetable|part-of|tool:Pigments": {
+   "src": "module:wavetable",
+   "dst": "tool:Pigments",
+   "type": "part-of",
+   "videos": [
+    "m6wfGX7rwiQ"
+   ],
+   "refs": [
+    {
+     "video_id": "m6wfGX7rwiQ",
+     "t": "2:10"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:unison|part-of|tool:Helm": {
+   "src": "module:unison",
+   "dst": "tool:Helm",
+   "type": "part-of",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "8:14"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:chorus|part-of|tool:Ableton Live": {
+   "src": "module:chorus",
+   "dst": "tool:Ableton Live",
+   "type": "part-of",
+   "videos": [
+    "nbS1pT8V7YU"
+   ],
+   "refs": [
+    {
+     "video_id": "nbS1pT8V7YU",
+     "t": "15:03"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:phaser|part-of|tool:Serum": {
+   "src": "module:phaser",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "pO5BOqCS9mo"
+   ],
+   "refs": [
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:34"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:chorus|part-of|tool:Serum": {
+   "src": "module:chorus",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "pO5BOqCS9mo"
+   ],
+   "refs": [
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:34"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:filter|sets|value:filter=900 hz": {
+   "src": "module:filter",
+   "dst": "value:filter=900 hz",
+   "type": "sets",
+   "videos": [
+    "pO5BOqCS9mo"
+   ],
+   "refs": [
+    {
+     "video_id": "pO5BOqCS9mo",
+     "t": "2:34"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:release|sets|value:release=36 %": {
+   "src": "param:release",
+   "dst": "value:release=36 %",
+   "type": "sets",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "3:13"
+    }
+   ],
+   "covered_by": []
+  },
+  "param:attack|sets|value:attack=56 %": {
+   "src": "param:attack",
+   "dst": "value:attack=56 %",
+   "type": "sets",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "3:18"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|sets|value:distortion=2 db": {
+   "src": "module:distortion",
+   "dst": "value:distortion=2 db",
+   "type": "sets",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "4:30"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:distortion|sets|value:distortion=3 db": {
+   "src": "module:distortion",
+   "dst": "value:distortion=3 db",
+   "type": "sets",
+   "videos": [
+    "7OatKTrtmJ8"
+   ],
+   "refs": [
+    {
+     "video_id": "7OatKTrtmJ8",
+     "t": "4:30"
+    }
+   ],
+   "covered_by": []
   }
  },
  "stats": {
-  "videos": 155,
-  "nodes": 863,
-  "edges": 270,
+  "videos": 172,
+  "nodes": 902,
+  "edges": 282,
   "uncovered_nodes": 10,
-  "uncovered_edges": 75
+  "uncovered_edges": 79
  }
 }

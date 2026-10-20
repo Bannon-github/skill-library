@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
+  "name": "Vocoder as an insert effect on any synth patch: the patch itself is the carrier and a microphone is the modulator, with mode (clean, vintage, narrow, gated), decay, formant (neutral or higher) and dry-mic controls, placement in the effects chain (before or after distortion and chorus), arpeggiated carriers and a slow square LFO on formant",
+  "goal": "Turn any existing pad, bass or lead patch into a vocoder voice by putting the vocoder in an effect slot instead of building a special vocoder patch. The synth patch is the carrier (all its oscillators, voice mode, unison, envelopes and pitch bend still apply) and an external microphone is the modulator, so the patch goes silent until you speak or sing. Choose the vocoder mode (clean, vintage, narrow, gated; the presenter prefers clean), set decay (how long bands hold after the voice stops), set formant (neutral or higher; low settings sounded worse) and mix in some dry mic if wanted. Then experiment with where the vocoder sits in the chain (first, before distortion, with chorus after distortion, or replacing an EQ slot), add long reverb after it, run the arpeggiator so the vocoder speaks in rhythm, and modulate formant with a slow, deep square LFO. Rich carriers work best: e.g. a pluck oscillator plus a 2-operator FM oscillator, or a mono virtual-analog patch an octave down with filter envelope movement, chorus and distortion. Our first dedicated vocoder skill; the existing ones only borrow a 'vocode' spectral-warp mode.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "MjijB6ExetI",
+    "url": "https://www.youtube.com/watch?v=MjijB6ExetI",
+    "title": "The Minifreak Vocoder is Awesome!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/MjijB6ExetI/agent-skill-vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant.json",
+    "transcript_note": "Hardware walkthrough; mounting tip, patron and preset-pack talk dropped."
+  },
+  "prerequisites": [
+    "Synth or DAW with a vocoder effect that accepts an external audio input (or a vocoder plugin with sidechain), or Web Audio: getUserMedia mic → bank of bandpass BiquadFilters + envelope followers controlling gains on the same bands of the synth carrier (implementation note)",
+    "Microphone",
+    "Distortion, chorus, reverb and an LFO/mod matrix"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_patch",
+      "type": "patch",
+      "description": "Any existing synth patch (pad, bass, lead)",
+      "required": true
+    },
+    {
+      "name": "modulator",
+      "type": "audio",
+      "description": "Live mic or recorded voice",
+      "required": true
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "clean | vintage | narrow | gated",
+      "required": false
+    },
+    {
+      "name": "formant",
+      "type": "number",
+      "description": "Neutral or higher",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "vocoder_voice",
+      "type": "patch",
+      "description": "Patch with vocoder in its FX chain"
+    },
+    {
+      "name": "fx_order",
+      "type": "list",
+      "description": "Final effects order, e.g. vocoder → distortion → chorus → reverb"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "The carrier is silent without modulator input: check the mic before assuming the patch is broken.",
+    "Only one vocoder instance per patch in the source synth; if your host allows more, start with one anyway.",
+    "Product walkthrough; hardware mounting tip, patron shout-out and preset-pack names dropped. Values were given as positions (neutral, deep, slow), not numbers."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from an init patch or any existing preset. Put the vocoder (external input) in a free effect slot, replacing a less important effect such as EQ or delay if needed. Connect a microphone to the audio input.",
+      "tool": "vocoder slot",
+      "expect": "Playing keys alone is silent; speaking while holding keys produces the vocoded voice"
+    },
+    {
+      "n": 2,
+      "action": "Pick the vocoder mode (clean, vintage, narrow, gated). Set decay for how long the bands hang on, formant at neutral or a bit higher, and the dry-mic amount to taste.",
+      "tool": "vocoder controls",
+      "expect": "Clear, intelligible speech with the synth's pitch"
+    },
+    {
+      "n": 3,
+      "action": "Make the carrier rich: e.g. oscillator 1 a plucked-string type, oscillator 2 a 2-operator FM type; or a mono virtual-analog patch an octave down with filter-envelope movement. Use unison or mono as needed and play lead lines with pitch bend.",
+      "tool": "carrier design",
+      "expect": "Brighter, fuller carriers give more intelligible vocoding"
+    },
+    {
+      "n": 4,
+      "action": "Try different slot positions: vocoder first, then distortion, then chorus after the distortion; or vocoder after a chorus and distortion carrier. Add a long reverb after.",
+      "tool": "fx order",
+      "expect": "Each order gives a noticeably different texture"
+    },
+    {
+      "n": 5,
+      "action": "Turn on the arpeggiator with a held chord so the vocoded voice is re-triggered rhythmically.",
+      "tool": "arp carrier",
+      "expect": "Speech becomes a rhythmic vocal pattern"
+    },
+    {
+      "n": 6,
+      "action": "Modulate formant with an LFO: square shape, slow rate, deep (even maximum) depth. Reduce unison spread if the result gets too smeared.",
+      "tool": "formant LFO",
+      "expect": "The vowel character flips between two formant positions in time"
+    }
+  ],
+  "verification": [
+    "With no mic input the patch is silent; with speech it is audible and pitched by the keys.",
+    "Changing formant from neutral to higher audibly shifts vowel character without changing played pitch.",
+    "Moving the vocoder before vs after distortion produces an audible difference in grit and intelligibility.",
+    "With the square LFO on formant, the voice alternates between two distinct timbres at the LFO rate."
+  ],
+  "tags": [
+    "vocoder",
+    "external-carrier",
+    "formant",
+    "fx-chain",
+    "arpeggiator",
+    "voice",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
+}

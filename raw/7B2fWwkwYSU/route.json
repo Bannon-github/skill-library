@@ -1,0 +1,66 @@
+{
+ "video_id": "7B2fWwkwYSU",
+ "started_at": "2026-10-19T17:06:02.987212+00:00",
+ "outcome": "STOP_translation_failed",
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": false,
+   "then": "fetch via track ladder"
+  },
+  {
+   "q": "Q2 track ladder produced English text?",
+   "a": false,
+   "evidence": "translation_failed"
+  },
+  {
+   "q": "Q2d machine translation failed?",
+   "a": true,
+   "evidence": {
+    "ok": false,
+    "error": "RuntimeError: argos language pack tr->en not installed (run --install-langs tr)"
+   },
+   "then": "STOP; original words kept; try --backend libretranslate or another package"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "tr"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "tr(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "3:youtube-translated:tr",
+    "5:original-plus-machine-translation:tr"
+   ]
+  },
+  {
+   "q": "fetch youtube-translated (tr)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch original-plus-machine-translation (tr)",
+   "a": true
+  },
+  {
+   "q": "machine-translate tr->en (argos)",
+   "a": false,
+   "evidence": "RuntimeError: argos language pack tr->en not installed (run --install-langs tr)"
+  }
+ ],
+ "finished_at": "2026-10-19T17:06:17.167404+00:00"
+}

@@ -1,0 +1,50 @@
+  [pO5BOqCS9mo] Q0 pipeline env importable? -> yes
+  [pO5BOqCS9mo] Q1 transcript already saved? -> no  => fetch via track ladder
+  [pO5BOqCS9mo] Q2 track ladder produced English text? -> yes
+  [pO5BOqCS9mo] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [pO5BOqCS9mo] Q4 English text is a translation? -> no
+  [pO5BOqCS9mo] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [pO5BOqCS9mo] Q6 term graph built? -> yes
+  [pO5BOqCS9mo] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [pO5BOqCS9mo] OUTCOME COVERED
+  [17OGg5CrJ-g] Q0 pipeline env importable? -> yes
+  [17OGg5CrJ-g] Q1 transcript already saved? -> no  => fetch via track ladder
+  [17OGg5CrJ-g] Q2 track ladder produced English text? -> yes
+  [17OGg5CrJ-g] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [17OGg5CrJ-g] Q4 English text is a translation? -> no
+  [17OGg5CrJ-g] Q5 domain lexicon matched (>=8 hits)? -> no  => flag off-lexicon: extend pipeline/lexicons or plain distill-transcript
+  [17OGg5CrJ-g] Q6 term graph built? -> yes
+  [17OGg5CrJ-g] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [17OGg5CrJ-g] OUTCOME OFF_LEXICON
+  [7OatKTrtmJ8] Q0 pipeline env importable? -> yes
+  [7OatKTrtmJ8] Q1 transcript already saved? -> no  => fetch via track ladder
+  [7OatKTrtmJ8] Q2 track ladder produced English text? -> yes
+  [7OatKTrtmJ8] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [7OatKTrtmJ8] Q4 English text is a translation? -> no
+  [7OatKTrtmJ8] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [7OatKTrtmJ8] Q6 term graph built? -> yes
+  [7OatKTrtmJ8] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [7OatKTrtmJ8] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "pO5BOqCS9mo",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "17OGg5CrJ-g",
+  "outcome": "OFF_LEXICON",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "7OatKTrtmJ8",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

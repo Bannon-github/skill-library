@@ -1,0 +1,50 @@
+  [B3n9GOT0Q9A] Q0 pipeline env importable? -> yes
+  [B3n9GOT0Q9A] Q1 transcript already saved? -> no  => fetch via track ladder
+  [B3n9GOT0Q9A] Q2 track ladder produced English text? -> yes
+  [B3n9GOT0Q9A] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [B3n9GOT0Q9A] Q4 English text is a translation? -> no
+  [B3n9GOT0Q9A] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [B3n9GOT0Q9A] Q6 term graph built? -> yes
+  [B3n9GOT0Q9A] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [B3n9GOT0Q9A] OUTCOME COVERED
+  [FOL9EDiLp4k] Q0 pipeline env importable? -> yes
+  [FOL9EDiLp4k] Q1 transcript already saved? -> no  => fetch via track ladder
+  [FOL9EDiLp4k] Q2 track ladder produced English text? -> yes
+  [FOL9EDiLp4k] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [FOL9EDiLp4k] Q4 English text is a translation? -> no
+  [FOL9EDiLp4k] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [FOL9EDiLp4k] Q6 term graph built? -> yes
+  [FOL9EDiLp4k] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [FOL9EDiLp4k] OUTCOME COVERED
+  [xil_HpL1izg] Q0 pipeline env importable? -> yes
+  [xil_HpL1izg] Q1 transcript already saved? -> no  => fetch via track ladder
+  [xil_HpL1izg] Q2 track ladder produced English text? -> yes
+  [xil_HpL1izg] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [xil_HpL1izg] Q4 English text is a translation? -> no
+  [xil_HpL1izg] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [xil_HpL1izg] Q6 term graph built? -> yes
+  [xil_HpL1izg] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> no  => covered by library; KG updated; no new skill
+  [xil_HpL1izg] OUTCOME COVERED
+[
+ {
+  "video_id": "B3n9GOT0Q9A",
+  "outcome": "COVERED",
+  "route": "manual-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "FOL9EDiLp4k",
+  "outcome": "COVERED",
+  "route": "manual-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "xil_HpL1izg",
+  "outcome": "COVERED",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

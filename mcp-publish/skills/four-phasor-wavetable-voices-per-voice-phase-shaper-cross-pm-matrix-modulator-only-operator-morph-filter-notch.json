@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+  "name": "Four-voice phasor-driven synth: each voice is a wavetable read by its own phasor (pitch = phasor rate) with a phase-shaper for phase distortion (curve, S-curve, split, triangle, fold), all four outputs fed back through a 4x4 matrix into each other's phase inputs for cross phase modulation, panned and mixed, then a lowpass→bandpass→highpass→notch morph filter and drive",
+  "goal": "Build a playable hybrid voice that combines three ways of shaping tone: wavetable morphing, phase distortion and cross phase modulation. Drive each wavetable oscillator with a rising unipolar saw phasor (the phasor's rate sets the pitch; with no phasor there is no sound). Put a phase shaper between phasor and table: bending the phasor (curve, S-curve, split, triangle or fold modes) changes how the table is read, so a sine becomes brighter shapes without a filter. Make four such voices, mix them in stereo with per-voice pan (and pan modulation), and route all four post-shaping outputs back through a 4x4 matrix mixer into each voice's phase-modulation input so any voice can modulate any other, or itself (feedback). Use octave relationships between carrier and modulator (modulator an octave or two below, slightly detuned) and keep one voice muted as a modulator only. Finish with a filter that morphs lowpass → bandpass → highpass → notch, LFOs on cutoff and morph at different rates, drive, and reverb last. Delta beyond our single-oscillator phase-distortion and warp-mode skills: the four-voice cross-PM matrix with per-voice PD and a modulator-only voice.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "JC-UA2C-sZU",
+    "url": "https://www.youtube.com/watch?v=JC-UA2C-sZU",
+    "title": "Phase Distortion / Phase Modulation Synth in VCV Rack",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/JC-UA2C-sZU/agent-skill-four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch.json",
+    "transcript_note": "Free-module walkthrough; download link mention dropped."
+  },
+  "prerequisites": [
+    "Modular or grid environment with phasor, phase-driven wavetable oscillator, phase shaper, matrix mixer, multimode filter (the video uses free VCV Rack modules), or Web Audio: an AudioWorklet that keeps four phase accumulators, applies a shaping curve to each phase, reads a wavetable, and adds a scaled matrix of the other voices' previous outputs to each phase (implementation note)",
+    "LFOs with attenuverters",
+    "Reverb for the final space"
+  ],
+  "inputs": [
+    {
+      "name": "voice_count",
+      "type": "integer",
+      "description": "Number of phasor voices (4 in the video)",
+      "required": true
+    },
+    {
+      "name": "pd_mode",
+      "type": "enum",
+      "description": "curve | S-curve | split | triangle | fold, per voice",
+      "required": true
+    },
+    {
+      "name": "pm_matrix",
+      "type": "table",
+      "description": "4x4 amounts: source voice output → destination voice phase input (diagonal = feedback)",
+      "required": true
+    },
+    {
+      "name": "octave_offsets",
+      "type": "list",
+      "description": "Per-voice octave relationship, e.g. carrier C4, modulator C3, deep modulator C2",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pd_pm_voice",
+      "type": "patch",
+      "description": "Four-voice PD + cross-PM instrument"
+    },
+    {
+      "name": "mod_map",
+      "type": "table",
+      "description": "LFO assignments for PD amount, pan, cutoff and filter morph"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Phase modulation needs sample-accurate phase control. In Web Audio, build it in an AudioWorklet; OscillatorNode frequency modulation is FM, not phase modulation.",
+    "Self-feedback (a voice modulating itself) quickly turns noisy. Raise it slowly.",
+    "The video gives relationships and octave choices, not knob values. Set amounts by ear.",
+    "Module names from the video are not required. Any phasor, phase shaper, matrix mixer and multimode filter will do."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Drive a wavetable oscillator with a rising unipolar saw phasor. Confirm on a scope that there is no output without the phasor, and that the phasor's rate sets the pitch. Start on a sine frame and morph between a few basic frames.",
+      "tool": "phasor + wavetable",
+      "expect": "A pitched sine that follows the phasor rate; morphing changes the basic shape"
+    },
+    {
+      "n": 2,
+      "action": "Insert a phase shaper between phasor and table. Raise the shape amount in curve mode, then try S-curve, split, triangle and fold modes, watching the bent phasor on the scope.",
+      "tool": "phase shaper",
+      "expect": "The same sine table sounds brighter and changes character per mode (phase distortion)"
+    },
+    {
+      "n": 3,
+      "action": "Duplicate the voice to four voices. Mix them in a stereo mixer with per-voice pan. For unipolar pan modulation, set pan fully left and the attenuverter fully right so the modulation sweeps across the field.",
+      "tool": "4 voices + pan mixer",
+      "expect": "Four independent voices you can place and move in stereo"
+    },
+    {
+      "n": 4,
+      "action": "Feed the four post-shaping voice outputs into a 4x4 matrix mixer and send its four outputs to the voices' phase-modulation inputs (inputs fully open). Example: listen to voice 1 only, and use voice 2 an octave down (slightly detuned) to modulate voice 1's phase; then put voice 3 two octaves down to modulate voice 2.",
+      "tool": "cross-PM matrix",
+      "expect": "Increasingly complex, metallic or growling timbres as matrix amounts rise"
+    },
+    {
+      "n": 5,
+      "action": "Add phase distortion and a different shape on a modulator voice (for example triangle mode on voice 2, folding on voice 4) and modulate its shape and PD amount with LFOs. Keep voice 4 muted in the mix so it works only as a modulator.",
+      "tool": "modulator shaping",
+      "expect": "Modulators change the colour of the audible voices without being heard themselves"
+    },
+    {
+      "n": 6,
+      "action": "Modulate PD amount with a slow LFO through an attenuverter; optionally modulate the matrix amounts too (for example voice 1 → voice 2) so cross-PM depth moves over time.",
+      "tool": "movement",
+      "expect": "The tone evolves while a chord is held"
+    },
+    {
+      "n": 7,
+      "action": "Route the mix through a multimode filter that morphs lowpass → bandpass → highpass → notch. Close the cutoff, then modulate cutoff and morph with two LFOs at different rates. Add drive, choose a plucky or long amp envelope, and add reverb last.",
+      "tool": "filter + drive + reverb",
+      "expect": "A finished pad or pluck with slow spectral motion and a sense of space"
+    }
+  ],
+  "verification": [
+    "With the phase shaper at zero and the matrix at zero, each voice outputs the clean selected wavetable frame.",
+    "Raising one matrix amount (source voice → destination phase) audibly changes only the destination voice's timbre.",
+    "Muting the modulator-only voice in the mixer does not remove its effect on the voices it modulates.",
+    "Filter morph sweeps audibly through lowpass, bandpass, highpass and notch colours."
+  ],
+  "tags": [
+    "phase-distortion",
+    "phase-modulation",
+    "phasor",
+    "wavetable",
+    "modulation-matrix",
+    "modular",
+    "multimode-filter",
+    "web-audio",
+    "audioworklet",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch"
+}

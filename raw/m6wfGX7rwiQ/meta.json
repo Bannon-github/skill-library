@@ -1,0 +1,46 @@
+{
+  "video_id": "m6wfGX7rwiQ",
+  "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together",
+  "url": "https://www.youtube.com/watch?v=m6wfGX7rwiQ",
+  "fetched_at": "2026-10-19T17:32:35.103359+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Guy Michelmore",
+  "duration": 2002,
+  "ok": true,
+  "cue_count": 773,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/m6wfGX7rwiQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/m6wfGX7rwiQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
