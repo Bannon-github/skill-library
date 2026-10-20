@@ -4,7 +4,7 @@ Also finishes the interrupted 2026-10-19 run (no 10-19 report was written; its 3
 
 ## Counts
 - MCP count: 160 → 168. LIBRARY entries 158 → 166. Taxonomy cinematic-hybrid-synth 124 → 132; curriculum level 3 93 → 101.
-- New skills: 8 (3 drafted on 10-19, 3 from 10-19 CANDIDATES_READY, 2 from router-COVERED false positives hand-checked today). Rejected or skipped: 7. Crypto pivot: no.
+- New skills: 8 (3 drafted on 10-19, 3 from 10-19 CANDIDATES_READY, 2 from router-COVERED false positives hand-checked today). Rejected or skipped: 6 (4 new today, 2 already rejected on 10-19). Searches: 2 run, both 0 kept because of rate limiting. Crypto pivot: no.
 
 ## New skill IDs
 - `modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit` ← Pd9AFeTcl2k (10-19 draft; route COVERED was a false positive)
@@ -17,7 +17,7 @@ Also finishes the interrupted 2026-10-19 run (no 10-19 report was written; its 3
 - `mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right` ← e1AMHtuuuTQ (route COVERED; false positive)
 
 ## Rejects / skipped
-Zgwxh3VrQZQ (sponsored preset browsing, thin), b2zwGqefZw8 (layering advice; near-dup of transient-splice / three-layer pad skills), pO5BOqCS9mo (hand-checked COVERED; commercial-preset layer tour), 7B2fWwkwYSU (transcript is music markers only), jC_ckXoCHYE and FOL9EDiLp4k (already rejected on 10-19: product demo / covered reverse-riser), Today's 2 searches gave 0 kept (all prechecks rate-limited).
+Zgwxh3VrQZQ (sponsored preset browsing, thin), b2zwGqefZw8 (layering advice; near-dup of transient-splice / three-layer pad skills), pO5BOqCS9mo (hand-checked COVERED; commercial-preset layer tour), 7B2fWwkwYSU (transcript is music markers only), jC_ckXoCHYE and FOL9EDiLp4k (already rejected on 10-19: product demo / covered reverse-riser).
 
 ## Pipeline notes
 - Verified that all 3 10-19 drafts were grounded in fetched YouTube transcripts (raw/<id>/transcript.txt + raw.txt). Fixed the Pd9AFeTcl2k source title to match meta.json.
