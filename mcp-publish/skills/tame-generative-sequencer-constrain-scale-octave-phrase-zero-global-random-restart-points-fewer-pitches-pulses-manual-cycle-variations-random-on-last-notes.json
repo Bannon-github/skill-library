@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "id": "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes",
+  "name": "Three rules for making a randomised/Euclidean sequencer sound intentional: constrain (scale, octave range, pitches pulled close, phrase length), repeat (global randomness to zero, reset per-step random, restart points so the phrase retriggers each bar), and simplify (about three pitches, fewer pulses, complexity from layering simple parts), then add hand-made variations on chosen cycles and random pitch options on only the last few notes",
+  "goal": "Fix a generative patch that sounds aimlessly random. Rule 1, constrain: set a scale (e.g. minor), reduce octave range/voicing, and pull spread-out notes into closer octaves; limit phrase length. Rule 2, repetition creates anticipation: turn global continuous randomisation to zero, reset any per-step randomisation (use only a little, on a couple of notes), and set a restart point so the pitch and trigger lists start together each bar, so the ear can remember the hook. Rule 3, less is more: cut to about three pitches and fewer pulses; get complexity from several simple layers, not one complex one. Then add intentional variation: in a later cycle (e.g. bar 2) add extra notes, copy that variation to other cycles, move start points, push one note up an octave or add a roll; for controlled surprise, give only the last four notes extra pitch options. Apply the same rules to each part. Complements our probability/seeded generative skills as the taming pass.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "gyhfAdy6eq8",
+    "url": "https://www.youtube.com/watch?v=gyhfAdy6eq8",
+    "title": "Torso T1: The 3 Rules That Make Generative Sequencing Musical",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/gyhfAdy6eq8/agent-skill-tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes.json",
+    "transcript_note": "Hardware-sequencer walkthrough; membership promotion dropped."
+  },
+  "prerequisites": [
+    "Any generative or Euclidean step sequencer or DAW, or Polyrhythm Studio lanes / JS scheduler with scale quantiser, per-step random amounts, and a phrase reset (implementation note)"
+  ],
+  "inputs": [
+    {
+      "name": "parts",
+      "type": "list",
+      "description": "Generative parts currently playing (four in the video)",
+      "required": true
+    },
+    {
+      "name": "scale",
+      "type": "enum",
+      "description": "e.g. minor",
+      "required": true
+    },
+    {
+      "name": "pitch_count",
+      "type": "integer",
+      "description": "About 3 after simplifying",
+      "required": false
+    },
+    {
+      "name": "restart_period",
+      "type": "duration",
+      "description": "e.g. every bar",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tamed_parts",
+      "type": "patch",
+      "description": "Constrained, repeating, simplified parts with deliberate variations"
+    },
+    {
+      "name": "variation_map",
+      "type": "table",
+      "description": "Which cycles and notes carry variation or randomness"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "These are taste rules; break them deliberately once the hook works.",
+    "Device controls are specific to the presenter's sequencer; apply the same moves in any sequencer. Membership promotion dropped."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Solo one part. Set a scale, reduce octave range, and move notes into nearby octaves.",
+      "tool": "constrain",
+      "expect": "Still varied, but boxed into a coherent register"
+    },
+    {
+      "n": 2,
+      "action": "Set global continuous randomisation to zero and reset per-step random amounts on all steps.",
+      "tool": "remove random",
+      "expect": "The line repeats and sounds intentional"
+    },
+    {
+      "n": 3,
+      "action": "Add a restart point so pitch and trigger cycles realign at the start of every bar.",
+      "tool": "restart",
+      "expect": "A clear start point; the motif is recognisable"
+    },
+    {
+      "n": 4,
+      "action": "Reduce to about three pitches and fewer pulses; optionally add a second restart point.",
+      "tool": "simplify",
+      "expect": "A catchier, sparser part"
+    },
+    {
+      "n": 5,
+      "action": "Pick a cycle (e.g. bar 2) and hand-add notes; copy that variation to other cycles, change start points, raise one note an octave, add a roll.",
+      "tool": "manual variation",
+      "expect": "A hook with deliberate variations"
+    },
+    {
+      "n": 6,
+      "action": "Give only the last few notes (e.g. last four) extra pitch options or randomisation.",
+      "tool": "targeted random",
+      "expect": "Small surprises at phrase ends while the hook stays fixed"
+    },
+    {
+      "n": 7,
+      "action": "Repeat rules 1–3 for each other part and listen to them together.",
+      "tool": "layer simple parts",
+      "expect": "Complexity from layering simple parts"
+    }
+  ],
+  "verification": [
+    "With global random at zero and a restart each bar, the part is identical on consecutive bars except at the chosen variation notes.",
+    "All notes fall within the chosen scale and the reduced octave range.",
+    "Only the targeted last notes change pitch from cycle to cycle."
+  ],
+  "tags": [
+    "generative",
+    "sequencer",
+    "euclidean",
+    "composition",
+    "constraint",
+    "repetition",
+    "polyrhythm-studio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes"
+}

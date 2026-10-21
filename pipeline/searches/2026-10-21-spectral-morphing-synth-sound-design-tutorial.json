@@ -1,0 +1,139 @@
+{
+ "topic": "spectral morphing synth sound design tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "spectral morphing synth sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "LP1rbAbojkc",
+   "title": "Wavegrab Spectral Morphing Wavetable Synthesizer for Ableton \"walkthrough\"",
+   "channel": "Techtronix",
+   "duration": 1523,
+   "view_count": 191,
+   "url": "https://www.youtube.com/watch?v=LP1rbAbojkc",
+   "query": "spectral morphing synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.64,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr",
+     "de",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "HXKz89TIlJI",
+   "title": "Logic Pro Advanced Tutorial : Morphing with Alchemy",
+   "channel": "Rishabh Rajan",
+   "duration": 778,
+   "view_count": 569,
+   "url": "https://www.youtube.com/watch?v=HXKz89TIlJI",
+   "query": "spectral morphing synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.88,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "cwwOLuAuvbc",
+   "title": "DJW Audio: Morolith - Spectral Analysis Introduction Tutorial",
+   "channel": "DJW Audio",
+   "duration": 666,
+   "view_count": 42,
+   "url": "https://www.youtube.com/watch?v=cwwOLuAuvbc",
+   "query": "spectral morphing synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.32,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ybwXvuCEe24",
+   "why": "duration 46s"
+  },
+  {
+   "id": "W8oBEyEieDU",
+   "why": "duration 150s"
+  },
+  {
+   "id": "sf_RyrNSVs4",
+   "why": "duration 33s"
+  },
+  {
+   "id": "q59AFSN0Cc8",
+   "why": "duration 25s"
+  },
+  {
+   "id": "lZjJv51sm3Y",
+   "why": "duration 168s"
+  },
+  {
+   "id": "BnCeHTKcqwo",
+   "why": "duration 55s"
+  },
+  {
+   "id": "wVLMkN48TQ8",
+   "why": "duration 51s"
+  },
+  {
+   "id": "YWIRXhS-TbM",
+   "why": "duration 55s"
+  },
+  {
+   "id": "9p7r1-nxGDk",
+   "why": "duration 32s"
+  },
+  {
+   "id": "lXh1IF_j-YY",
+   "why": "duration 77s"
+  },
+  {
+   "id": "YA8i4dovEDA",
+   "why": "duration 61s"
+  },
+  {
+   "id": "wgT9argKXSk",
+   "why": "duration 162s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

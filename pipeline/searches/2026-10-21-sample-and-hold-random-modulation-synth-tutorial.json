@@ -1,0 +1,183 @@
+{
+ "topic": "sample and hold random modulation synth tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "sample and hold random modulation synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "jfwv0Gasf6Q",
+   "title": "Rippler Tutorial 3: How to Make Sounds Move with Modulation",
+   "channel": "reFX",
+   "duration": 424,
+   "view_count": 964,
+   "url": "https://www.youtube.com/watch?v=jfwv0Gasf6Q",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.99,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [
+     "en-US"
+    ],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "SZKIODnJuwU",
+   "title": "This is Sample & Hold | Cubase Modulators Explained",
+   "channel": "Cubase",
+   "duration": 629,
+   "view_count": 4605,
+   "url": "https://www.youtube.com/watch?v=SZKIODnJuwU",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.33,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "X_zozWSx-RU",
+   "title": "Magnolia Polymove Explained: The Ultimate Randomization Tool",
+   "channel": "Frap Tools",
+   "duration": 745,
+   "view_count": 1889,
+   "url": "https://www.youtube.com/watch?v=X_zozWSx-RU",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.14,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "L1Vy2ZmHQ3Y",
+   "title": "Oxi One MkII Modulation Tutorial",
+   "channel": "Alec Sea",
+   "duration": 1952,
+   "view_count": 2973,
+   "url": "https://www.youtube.com/watch?v=L1Vy2ZmHQ3Y",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.74,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "uorRN6iH87U",
+   "title": "Patching Up Analog Random Gate Generators & Processors",
+   "channel": "Matthew Ryals",
+   "duration": 1393,
+   "view_count": 1171,
+   "url": "https://www.youtube.com/watch?v=uorRN6iH87U",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.03,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "ypYhfCt874s",
+   "title": "LFOs Explained by Electronic Music Professor",
+   "channel": "Olympia Noise Co.",
+   "duration": 1437,
+   "view_count": 847,
+   "url": "https://www.youtube.com/watch?v=ypYhfCt874s",
+   "query": "sample and hold random modulation synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.96,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "FyyMxmr4i6E",
+   "why": "duration 76s"
+  },
+  {
+   "id": "35VPlDL5jZE",
+   "why": "duration 60s"
+  },
+  {
+   "id": "86WOgmae1Ec",
+   "why": "duration 49s"
+  },
+  {
+   "id": "UDDpfuOSQaY",
+   "why": "duration 88s"
+  },
+  {
+   "id": "6l3tE2yEfqE",
+   "why": "duration 130s"
+  },
+  {
+   "id": "kOjYt2nlGA4",
+   "why": "duration 39s"
+  },
+  {
+   "id": "TryE6_7nSxc",
+   "why": "no transcript (transcripts_disabled)"
+  },
+  {
+   "id": "wAoyJRWwViM",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

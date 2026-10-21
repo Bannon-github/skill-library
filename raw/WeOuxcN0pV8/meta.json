@@ -1,0 +1,46 @@
+{
+  "video_id": "WeOuxcN0pV8",
+  "title": "How I Actually Use Euclidean Sequencing on Digitone 2",
+  "url": "https://www.youtube.com/watch?v=WeOuxcN0pV8",
+  "fetched_at": "2026-10-21T16:14:16.141046+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "SLUMPFISH OFFICIAL",
+  "duration": 731,
+  "ok": true,
+  "cue_count": 268,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/WeOuxcN0pV8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/WeOuxcN0pV8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

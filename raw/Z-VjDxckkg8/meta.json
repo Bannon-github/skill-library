@@ -1,0 +1,46 @@
+{
+  "video_id": "Z-VjDxckkg8",
+  "title": "Recreating The Impossible Rhythm Illusion In \"The Odyssey\" Soundtrack",
+  "url": "https://www.youtube.com/watch?v=Z-VjDxckkg8",
+  "fetched_at": "2026-10-21T16:24:05.154401+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Signals Music Studio",
+  "duration": 524,
+  "ok": true,
+  "cue_count": 241,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Z-VjDxckkg8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Z-VjDxckkg8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "id": "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+  "name": "Classic house pad in any synth: minor 9 / minor 7 / major 7 chords, many-voice detuned unison with oscillator retrigger off (free-running), stereo spread from the unison width control or a chorus/ensemble if the synth has none, slightly resonant lowpass plus serial highpass to remove mud, slow LFO on cutoff, slow amp attack with no filter envelope, coloured noise partly bypassing the lowpass, delay + reverb sends; plus a quick pad from a looped chord-stab sample",
+  "goal": "Build the classic house pad and know which ingredient does what. Use extended chords (minor 9, minor 7, major 7, major 9 and inversions). Turn unison up (up to 16 voices per oscillator, or 32), detune until it is wide and airy but not seasick, and give a second oscillator a different detune so voices do not sit on top of each other. Turn oscillator retrigger off so voices run free; with retrigger on, voices start in phase and just phase against each other. If unison does not spread voices in stereo, use the width control or add a chorus (an ensemble chorus suits pads). Set a lowpass cutoff a little laid-back with some resonance for character, cut the lows with a highpass (in series), and move cutoff with a slow LFO. Use a slow amp attack and full sustain, and remove any filter envelope. Try pulse waves and PWM by LFO, a sub oscillator for weight, and coloured noise at low level fed partly around the lowpass so its highs survive. Finish with delay and reverb sends. Quick alternative: loop a steady section of a chord-stab sample with a crossfade and slow attack, then hide the loop with delay, reverb and a filter.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "nbS1pT8V7YU",
+    "url": "https://www.youtube.com/watch?v=nbS1pT8V7YU",
+    "title": "How to Create Classic House Pads (Any Synth!)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/nbS1pT8V7YU/agent-skill-classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad.json",
+    "transcript_note": "Walkthrough across several synths; sample-pack and course promotion dropped."
+  },
+  "prerequisites": [
+    "Any polyphonic synth with unison/detune, retrigger option, lowpass and highpass filters, LFO and noise, or Web Audio: per voice 8–16 detuned OscillatorNodes with random start phases (free-run), StereoPannerNode spread, BiquadFilter lowpass→highpass, slow LFO → frequency (implementation note)",
+    "Chorus/ensemble, delay and reverb",
+    "Sampler with loop crossfade (for the chord-stab variant)"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "list",
+      "description": "Extended chords: m9, m7, maj7, maj9, inversions",
+      "required": true
+    },
+    {
+      "name": "unison_voices",
+      "type": "integer",
+      "description": "8–16 per oscillator (up to 32 if available)",
+      "required": true
+    },
+    {
+      "name": "detune",
+      "type": "number",
+      "description": "Wide and airy, below obvious out-of-tune",
+      "required": true
+    },
+    {
+      "name": "width_source",
+      "type": "enum",
+      "description": "unison width | chorus/ensemble",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "house_pad",
+      "type": "patch",
+      "description": "Classic house pad patch"
+    },
+    {
+      "name": "chord_stab_pad",
+      "type": "patch",
+      "description": "Optional looped chord-stab pad"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Retrigger on (all voices start in phase) causes phasing instead of chorusing; turn it off.",
+    "A chorus sounds different from true unison spread; choose per synth.",
+    "Too much detune sounds out of tune; back off until airy.",
+    "Plugin names from the video are not required; no preset pack or sample pack content used. Values were described, not given numerically, except voice counts."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Program extended chords (e.g. Em9, Em7, Emaj7) on an init saw patch with the filter open.",
+      "tool": "chords",
+      "expect": "Dense, warm harmonic base"
+    },
+    {
+      "n": 2,
+      "action": "Raise unison toward 16 voices and detune until wide and airy; add oscillator 2 with its own unison at a slightly different detune.",
+      "tool": "unison",
+      "expect": "A thick chorused sound"
+    },
+    {
+      "n": 3,
+      "action": "Turn off oscillator retrigger so unison voices free-run.",
+      "tool": "free-run",
+      "expect": "No phasing at note start; continuous chorus motion"
+    },
+    {
+      "n": 4,
+      "action": "If voices are not spread in stereo, raise the unison width/spread control; if the synth has none, add a chorus/ensemble after it.",
+      "tool": "stereo spread",
+      "expect": "A wide pad instead of a mono chorus"
+    },
+    {
+      "n": 5,
+      "action": "Set the lowpass cutoff a little low with some resonance; add a highpass in series to remove muddy lows; add a slow LFO on cutoff.",
+      "tool": "filters",
+      "expect": "Laid-back, band-limited pad with gentle movement"
+    },
+    {
+      "n": 6,
+      "action": "Set a slow amp attack with full sustain and remove filter-envelope amount.",
+      "tool": "envelopes",
+      "expect": "Pad fades in smoothly without a filter blip"
+    },
+    {
+      "n": 7,
+      "action": "Optional colour: switch to pulse or mix pulse and saw, modulate pulse width with a slow LFO, add a sub oscillator; add coloured noise at low level, routing some of it straight to the highpass/output so its highs bypass the lowpass.",
+      "tool": "colour",
+      "expect": "Vintage air and extra weight"
+    },
+    {
+      "n": 8,
+      "action": "Add delay and reverb on sends and check against drums.",
+      "tool": "space",
+      "expect": "Spacious pad sitting behind the drums"
+    },
+    {
+      "n": 9,
+      "action": "Chord-stab variant: load a chord stab into a sampler, loop a steady section after the transient (snap off), add loop crossfade and slow attack, then hide the repeat with delay, reverb and a filter.",
+      "tool": "sampler pad",
+      "expect": "A usable pad from a one-shot chord"
+    }
+  ],
+  "verification": [
+    "With retrigger on vs off, the free-run version has no phase-aligned 'zip' at chord start.",
+    "Raising unison width changes the image from centred to wide (check with a correlation meter or by soloing L/R).",
+    "The highpass audibly removes low mud without thinning the chord.",
+    "The noise layer is audible as air above the lowpass cutoff."
+  ],
+  "tags": [
+    "pad",
+    "house",
+    "unison",
+    "detune",
+    "free-run",
+    "stereo-width",
+    "chorus",
+    "filter",
+    "noise",
+    "chords",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
+}

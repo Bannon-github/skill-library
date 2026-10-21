@@ -1,0 +1,97 @@
+{
+ "topic": "euclidean rhythm generative ambient synth tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "euclidean rhythm generative ambient synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "gyhfAdy6eq8",
+   "title": "Torso T1: The 3 Rules That Make Generative Sequencing Musical",
+   "channel": "Analog Sol",
+   "duration": 369,
+   "view_count": 7211,
+   "url": "https://www.youtube.com/watch?v=gyhfAdy6eq8",
+   "query": "euclidean rhythm generative ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.43,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "_76A4r3Nwl0",
+   "why": "already known"
+  },
+  {
+   "id": "UchJGizLiLM",
+   "why": "already known"
+  },
+  {
+   "id": "PP6dAPAhIrQ",
+   "why": "already known"
+  },
+  {
+   "id": "ljC1F__Ds5w",
+   "why": "already known"
+  },
+  {
+   "id": "WeOuxcN0pV8",
+   "why": "already known"
+  },
+  {
+   "id": "mPYP-IJmc_c",
+   "why": "already known"
+  },
+  {
+   "id": "D1O2xaKMOuU",
+   "why": "duration 20s"
+  },
+  {
+   "id": "QmemFx2cpa0",
+   "why": "already known"
+  },
+  {
+   "id": "fAMH6_3nDxE",
+   "why": "duration 21s"
+  },
+  {
+   "id": "mb3yqXO9JiE",
+   "why": "already known"
+  },
+  {
+   "id": "30n3rFgEHds",
+   "why": "already known"
+  },
+  {
+   "id": "pIHoR1pqAYo",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

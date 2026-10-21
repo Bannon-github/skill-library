@@ -1,0 +1,46 @@
+{
+  "video_id": "6AimjzOBy5I",
+  "title": "Exploring FOCUS TIME — Free Curve FX Sampler | KVR Developer Challenge Entry",
+  "url": "https://www.youtube.com/watch?v=6AimjzOBy5I",
+  "fetched_at": "2026-10-21T16:15:26.385758+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Touch The Universe",
+  "duration": 1630,
+  "ok": true,
+  "cue_count": 631,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/6AimjzOBy5I/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/6AimjzOBy5I/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

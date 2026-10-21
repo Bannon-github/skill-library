@@ -1,0 +1,31 @@
+{
+  "video_id": "ljC1F__Ds5w",
+  "title": "Making Ambient Music with Euclidean Sequences – Generative VCV RACK patch",
+  "url": "https://www.youtube.com/watch?v=ljC1F__Ds5w",
+  "fetched_at": "2026-10-21T16:13:57.150699+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "SATURATA MODULAR",
+  "duration": 195,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
+  "name": "Two Euclidean pulse generators per track combined with Boolean logic (OR, XOR, AND, SUB), per-generator rotation and whole-track rotation, then printed to an ordinary step sequence for hand edits; also used to redistribute an existing bassline and to leave gaps an arpeggiator fills",
+  "goal": "Generate musically coherent, non-obvious drum and melodic patterns by combining two Euclidean pulse generators on one track. Each generator spreads N pulses as evenly as possible over the track length (e.g. 16 or 32 steps); numbers that do not divide the length (5, 9, 11, 12) give the interesting grooves. Combine the two with a Boolean operator: OR (any pulse plays; overlaps become one note), XOR (overlaps are removed, leaving space), AND (only overlaps play; the number of possible notes is limited by the smaller pulse count) or SUB (generator 1 minus where it overlaps generator 2, a way to carve notes out). Rotate each generator to change their relationship, then rotate the whole track to move the downbeat of the combined pattern. Print the result to a normal step sequence to edit single notes, apply the same Euclidean distribution to a pre-programmed melodic line (notes stay, positions change), randomise the Euclidean settings with a snapshot to return to, and let an arpeggiator with step offsets fill the gaps. Delta beyond our probability/seeded loop skills: the two-generator Boolean combine plus print-to-steps workflow, mapped to Polyrhythm Studio lanes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "WeOuxcN0pV8",
+    "url": "https://www.youtube.com/watch?v=WeOuxcN0pV8",
+    "title": "How I Actually Use Euclidean Sequencing on Digitone 2",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/WeOuxcN0pV8/agent-skill-dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill.json",
+    "transcript_note": "Hardware walkthrough; device button combos and part-two teaser dropped."
+  },
+  "prerequisites": [
+    "Step sequencer or DAW/MIDI tool that can compute Euclidean patterns, or Web Audio / JS: compute Bjorklund patterns for two (pulses, length, rotation) sets and combine the boolean arrays per step (implementation note)",
+    "Drum and bass voices; optional arpeggiator"
+  ],
+  "inputs": [
+    {
+      "name": "length",
+      "type": "integer",
+      "description": "Track length in steps (16 or 32 in the video)",
+      "required": true
+    },
+    {
+      "name": "pulses_1",
+      "type": "integer",
+      "description": "Pulses for generator 1",
+      "required": true
+    },
+    {
+      "name": "pulses_2",
+      "type": "integer",
+      "description": "Pulses for generator 2",
+      "required": true
+    },
+    {
+      "name": "operator",
+      "type": "enum",
+      "description": "OR | XOR | AND | SUB",
+      "required": true
+    },
+    {
+      "name": "rotation_1",
+      "type": "integer",
+      "description": "Rotation of generator 1",
+      "required": false
+    },
+    {
+      "name": "rotation_2",
+      "type": "integer",
+      "description": "Rotation of generator 2",
+      "required": false
+    },
+    {
+      "name": "track_rotation",
+      "type": "integer",
+      "description": "Rotation applied to the combined pattern",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pattern",
+      "type": "list",
+      "description": "Combined boolean step pattern per track"
+    },
+    {
+      "name": "printed_sequence",
+      "type": "pattern",
+      "description": "Ordinary step sequence after printing, ready for hand edits"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "AND with no overlaps is silent; raise pulse counts or rotate until hits appear.",
+    "Printing converts the pattern to fixed steps; Euclidean edits after that no longer apply unless you re-enable it.",
+    "Device button combos are product-specific and omitted; use any Euclidean tool. No numbers beyond pulses, length and rotations were given."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Turn on Euclidean mode for a drum track. Set generator 1 to a simple count (e.g. 4 pulses over 16 steps) and listen; then try counts that do not divide 16 (5, 11).",
+      "tool": "euclid gen 1",
+      "expect": "Evenly spread hits; odd counts give syncopated grooves"
+    },
+    {
+      "n": 2,
+      "action": "Enable generator 2 with a different count (e.g. 5 against 4) using OR. Rotate generator 2 to move its hits against generator 1.",
+      "tool": "euclid gen 2 + rotation",
+      "expect": "An overlaid polyrhythmic feel that changes with rotation; overlaps count as one note"
+    },
+    {
+      "n": 3,
+      "action": "Switch the operator: XOR to remove overlapping hits and open space; AND to keep only overlaps (raise counts, e.g. 9 and 12, and rotate until notes appear); SUB to keep generator 1 except where generator 2 lands.",
+      "tool": "boolean operator",
+      "expect": "Same two generators give four different densities and feels"
+    },
+    {
+      "n": 4,
+      "action": "When an emergent pattern makes a new downbeat, use whole-track rotation (e.g. +3 steps) to move both generators together so that hit becomes step 1.",
+      "tool": "track rotation",
+      "expect": "The pattern starts where you want without changing the inner relationship"
+    },
+    {
+      "n": 5,
+      "action": "Print the pattern to the normal step sequencer, then hand-edit (move a note, leave room for a snare). Build hats on another track at length 32 with SUB to carve notes out of a dense generator 1.",
+      "tool": "print + edit",
+      "expect": "Fixed, editable steps keep the Euclidean groove"
+    },
+    {
+      "n": 6,
+      "action": "On a melodic (bass) track with notes already programmed, enable Euclidean mode so those notes are redistributed by the pulse pattern; add generator 2 with XOR and rotate the track. Randomise the Euclidean settings repeatedly until a version works.",
+      "tool": "melodic redistribute",
+      "expect": "Same notes in new rhythmic positions"
+    },
+    {
+      "n": 7,
+      "action": "For sparse patterns, enable an arpeggiator and remove one arp note with its offset/step mask so it fills gaps without crowding.",
+      "tool": "arp fill",
+      "expect": "Gaps filled with a grooving arp line"
+    },
+    {
+      "n": 8,
+      "action": "For performance, change rotations and pulses on all tracks at once, and keep a snapshot so you can jump back to the original pattern.",
+      "tool": "live control",
+      "expect": "Patterns tangle and untangle; one action returns to the saved state"
+    }
+  ],
+  "verification": [
+    "For pulses 4 and 5 over 16 steps, OR yields more hits than XOR, and AND yields only the shared positions.",
+    "Changing rotation of one generator changes the combined pattern while total pulse counts stay the same.",
+    "After printing, editing one step changes only that step.",
+    "The redistributed bassline keeps its original pitches."
+  ],
+  "tags": [
+    "euclidean",
+    "sequencer",
+    "boolean-logic",
+    "polyrhythm",
+    "rotation",
+    "generative",
+    "drums",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill"
+}

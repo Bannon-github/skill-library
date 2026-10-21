@@ -1,0 +1,15 @@
+# Record a piano for maximum sustain and resonance with a contact/geophone pickup (about 10 Hz–1 kHz) at the most resonant spot plus air microphones inside and above the body for the highs, build a sampler with per-mic blend and a lowpassed 'muffled' mix, then make ambient textures by extreme time-stretching held notes and tails (FFT size: small = grainy, large = smooth; tonal vs noise emphasis) and reuse samples as wavetables, looped dual-sample pads and phaser-hollowed basses
+
+Goal: Turn an acoustic piano (or any resonant instrument) into an intimate sample set and ambient source material. Test contact-pickup positions on the body and choose the one that gives the longest, most natural sustain (in the video: the bottom-left corner beside the lowest key; a metal plate inside sounded resonant but metallic). Because the contact pickup captures only about 10 Hz–1 kHz, add air mics: one inside the closed lower body and one on the lid near the keys. Record each note several times, letting it ring fully (low notes 40–50 s), plus the key release. Denoise, align all mics, and build a sampler with a per-mic volume mix; lowpassing the full mix to the contact-pickup range gives a fuller, more sustained muffled piano than the pickup alone. For sound design, extreme-stretch held notes, chords and tiny leftover tails (30 s to over 20 minutes) and adjust FFT size (small = grainy, large = smooth) and tonal-vs-noise emphasis, pitch-shifting results. Reuse samples as wavetables: 16-voice unison with zero phase randomisation, an extreme many-pole phaser with high feedback for hollowness, slow spectral/granular scanning, and two loops of the same note with slightly different loop lengths panned L/R so the beating speeds up at higher pitches.
+
+Source: [Field Recording a Piano - Exploring Resonance & Sustain](https://www.youtube.com/watch?v=bIbOgZn1h_Y)
+
+1. Attach the contact pickup at several spots and play the same notes; choose the spot with the longest natural sustain (bottom corner next to the lowest key in the video).
+2. Add air mics: one inside the closed lower body, one on the lid near the keys, to recover highs above about 1 kHz.
+3. Record every note several times, letting each ring out fully, and record the key-release noise too.
+4. Denoise, chop, and align all mic tracks; map them into a sampler with a volume control per mic, plus a mix lowpassed to about the contact-pickup range.
+5. Extreme-stretch held notes, chords and short tails with an FFT stretch tool. Try small FFT sizes for grain and large for smoothness; shift tonal vs noise emphasis; pitch-shift the results.
+6. Load samples as wavetables: try 16 unison voices with zero phase randomisation; for a bass, add an extreme phaser (many poles, high feedback) and a 'muted' lowpass macro.
+7. Make a pad or bass from two loops of the same note with slightly different loop lengths, panned left and right, blended with a resampled wavetable and drive.
+
+Batch: `2026-10-21-morning-hunt` · transcript: YouTube-provided (Show transcript) · Sampling/sound-design walkthrough; Patreon and sample-pack promotion dropped.

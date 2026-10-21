@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 168,
+  "count": 175,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -2818,8 +2818,151 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right"
+    },
+    {
+      "id": "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
+      "name": "Eight-layer Euclidean pattern generator with two modes: drums (each layer = one MIDI drum note) and melody (each layer = a different note of a chosen scale and root, so stacked layers form in-key chords); per-layer steps, pulses, rotation, velocity and gate, a drift action that nudges each layer's pulses by ±1, layer or global randomise that never changes note assignment, and scale/root changes that keep the rhythm",
+      "goal": "Write in-key polyrhythmic melodies and grooves by stacking up to eight Euclidean layers. Each layer has steps (pattern length), pulses (hits spread as evenly as possible), rotation (offset, which shifts layers against each other), velocity and gate (note length). In drum mode each layer triggers its own drum note; in melody mode each layer is assigned a different note from a chosen scale and root, so layers of different lengths interlock into melodies and coinciding hits make chords, always in key. Generate the result into a clip, add layers one at a time, use drift to randomly move each active layer's pulse count up or down by one, and randomise a layer or everything except the note assignment. Keep a rhythm you like and change scale (e.g. to Phrygian) or root afterwards. Shorten gate if notes are too long. For Polyrhythm Studio: one Euclidean lane per scale degree with independent lengths.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "euclidean",
+        "polyrhythm",
+        "generative",
+        "melody",
+        "scale-quantize",
+        "sequencer",
+        "midi",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale"
+    },
+    {
+      "id": "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
+      "name": "Two Euclidean pulse generators per track combined with Boolean logic (OR, XOR, AND, SUB), per-generator rotation and whole-track rotation, then printed to an ordinary step sequence for hand edits; also used to redistribute an existing bassline and to leave gaps an arpeggiator fills",
+      "goal": "Generate musically coherent, non-obvious drum and melodic patterns by combining two Euclidean pulse generators on one track. Each generator spreads N pulses as evenly as possible over the track length (e.g. 16 or 32 steps); numbers that do not divide the length (5, 9, 11, 12) give the interesting grooves. Combine the two with a Boolean operator: OR (any pulse plays; overlaps become one note), XOR (overlaps are removed, leaving space), AND (only overlaps play; the number of possible notes is limited by the smaller pulse count) or SUB (generator 1 minus where it overlaps generator 2, a way to carve notes out). Rotate each generator to change their relationship, then rotate the whole track to move the downbeat of the combined pattern. Print the result to a normal step sequence to edit single notes, apply the same Euclidean distribution to a pre-programmed melodic line (notes stay, positions change), randomise the Euclidean settings with a snapshot to return to, and let an arpeggiator with step offsets fill the gaps. Delta beyond our probability/seeded loop skills: the two-generator Boolean combine plus print-to-steps workflow, mapped to Polyrhythm Studio lanes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "euclidean",
+        "sequencer",
+        "boolean-logic",
+        "polyrhythm",
+        "rotation",
+        "generative",
+        "drums",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill"
+    },
+    {
+      "id": "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
+      "name": "Endless-accelerando (Risset rhythm) illusion for cinematic tension: the same pattern at double speed fading out and at half speed fading in while tempo automates to double, dropped subdivisions (fade every other note of a six-pulse group as tempo doubles), half-speed (3/4) and third-speed (6/8) copies forming a 3:2 hemiola fractal, voices swapping roles across cycles, and a long note gliding slowly against a sustained pitch",
+      "goal": "Make a rhythm that seems to speed up forever without ever getting too fast, the rhythmic version of a Shepard tone. Basic form: play a pattern, the same pattern at double speed fading out above it, and at half speed fading in below it, while tempo automates up to double; then loop. In a track: take a group of six steady pulses and, as tempo rises toward double, fade every second note until it disappears, so at double tempo you hear the original rhythm again. Layer the same six-pulse pattern at half speed (three strong pulses, 3/4 feel) and at one-third speed (two pulses, 6/8 feel) for a 3:2 hemiola; give each layer its own dropped-subdivision transformation and fade layers in and out across cycles so the ear never locks onto one, and let a voice that played the 2-pulse role take the 3-pulse role in the next cycle. Double tempo per cycle (150 → 300 → 600 in the video) and reset where the DAW tempo ceiling is reached. Add tension with a long note rising slowly against a sustained pitch, passing every dissonance. Fits Polyrhythm Studio as tempo-scaled lanes with per-lane gain automation.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "risset-rhythm",
+        "polyrhythm",
+        "hemiola",
+        "tempo-automation",
+        "illusion",
+        "tension",
+        "cinematic",
+        "shepard",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance"
+    },
+    {
+      "id": "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+      "name": "Record a piano for maximum sustain and resonance with a contact/geophone pickup (about 10 Hz–1 kHz) at the most resonant spot plus air microphones inside and above the body for the highs, build a sampler with per-mic blend and a lowpassed 'muffled' mix, then make ambient textures by extreme time-stretching held notes and tails (FFT size: small = grainy, large = smooth; tonal vs noise emphasis) and reuse samples as wavetables, looped dual-sample pads and phaser-hollowed basses",
+      "goal": "Turn an acoustic piano (or any resonant instrument) into an intimate sample set and ambient source material. Test contact-pickup positions on the body and choose the one that gives the longest, most natural sustain (in the video: the bottom-left corner beside the lowest key; a metal plate inside sounded resonant but metallic). Because the contact pickup captures only about 10 Hz–1 kHz, add air mics: one inside the closed lower body and one on the lid near the keys. Record each note several times, letting it ring fully (low notes 40–50 s), plus the key release. Denoise, align all mics, and build a sampler with a per-mic volume mix; lowpassing the full mix to the contact-pickup range gives a fuller, more sustained muffled piano than the pickup alone. For sound design, extreme-stretch held notes, chords and tiny leftover tails (30 s to over 20 minutes) and adjust FFT size (small = grainy, large = smooth) and tonal-vs-noise emphasis, pitch-shifting results. Reuse samples as wavetables: 16-voice unison with zero phase randomisation, an extreme many-pole phaser with high feedback for hollowness, slow spectral/granular scanning, and two loops of the same note with slightly different loop lengths panned L/R so the beating speeds up at higher pitches.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "field-recording",
+        "sampling",
+        "contact-mic",
+        "paulstretch",
+        "time-stretch",
+        "ambient",
+        "wavetable",
+        "phaser",
+        "sound-design",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches"
+    },
+    {
+      "id": "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes",
+      "name": "Three rules for making a randomised/Euclidean sequencer sound intentional: constrain (scale, octave range, pitches pulled close, phrase length), repeat (global randomness to zero, reset per-step random, restart points so the phrase retriggers each bar), and simplify (about three pitches, fewer pulses, complexity from layering simple parts), then add hand-made variations on chosen cycles and random pitch options on only the last few notes",
+      "goal": "Fix a generative patch that sounds aimlessly random. Rule 1, constrain: set a scale (e.g. minor), reduce octave range/voicing, and pull spread-out notes into closer octaves; limit phrase length. Rule 2, repetition creates anticipation: turn global continuous randomisation to zero, reset any per-step randomisation (use only a little, on a couple of notes), and set a restart point so the pitch and trigger lists start together each bar, so the ear can remember the hook. Rule 3, less is more: cut to about three pitches and fewer pulses; get complexity from several simple layers, not one complex one. Then add intentional variation: in a later cycle (e.g. bar 2) add extra notes, copy that variation to other cycles, move start points, push one note up an octave or add a roll; for controlled surprise, give only the last four notes extra pitch options. Apply the same rules to each part. Complements our probability/seeded generative skills as the taming pass.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "generative",
+        "sequencer",
+        "euclidean",
+        "composition",
+        "constraint",
+        "repetition",
+        "polyrhythm-studio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes"
+    },
+    {
+      "id": "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
+      "name": "Generative rhythmic sequence from a hand-written 8-step pattern: live length and start-point changes, chance-based rests, a 5-step Euclidean trigger length phasing against the 8 steps (a 40-step cycle), random modulation of octave and scale degree kept subtle, random distortion and release for accents and note lengths, smooth-random slow LFOs on filter and wavetable position, introduced gradually in performance",
+      "goal": "Turn a short, intentional sequence into an evolving techno or ambient line without writing new notes. Start from a programmed 8-step pattern (or, for pure random, a one-step root note with random → scale degree attenuated to about 7–8 degrees, which gives quantised random melodies within one octave). Vary it by changing pattern length and start point while it plays. Add rests with chance (about 75% means roughly one in four steps silent) and/or a Euclidean trigger length that does not divide the step count (5 against 8): with chance slightly under 100% (about 90%) the 5-step trigger pattern shifts across the 8 notes and the cycle repeats only after 40 steps. Add a tempo-synced delay so echoes fill the rests. Then add pitch variation by patching random to octave (positive for up, negative for down jumps) and to scale degree (jumps of about 4–5 degrees), keeping both subtle so the line's shape survives. Add sound variation: random → distortion (accents) and random → release (note lengths, with a lower base release), and slow smooth-random LFOs (around 5 s) on filter cutoff and wavetable position. Don't use everything at once; bring modulations in gradually across a set.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "generative",
+        "sequencer",
+        "euclidean",
+        "probability",
+        "random-modulation",
+        "polymeter",
+        "techno",
+        "ambient",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt"
+    },
+    {
+      "id": "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+      "name": "Classic house pad in any synth: minor 9 / minor 7 / major 7 chords, many-voice detuned unison with oscillator retrigger off (free-running), stereo spread from the unison width control or a chorus/ensemble if the synth has none, slightly resonant lowpass plus serial highpass to remove mud, slow LFO on cutoff, slow amp attack with no filter envelope, coloured noise partly bypassing the lowpass, delay + reverb sends; plus a quick pad from a looped chord-stab sample",
+      "goal": "Build the classic house pad and know which ingredient does what. Use extended chords (minor 9, minor 7, major 7, major 9 and inversions). Turn unison up (up to 16 voices per oscillator, or 32), detune until it is wide and airy but not seasick, and give a second oscillator a different detune so voices do not sit on top of each other. Turn oscillator retrigger off so voices run free; with retrigger on, voices start in phase and just phase against each other. If unison does not spread voices in stereo, use the width control or add a chorus (an ensemble chorus suits pads). Set a lowpass cutoff a little laid-back with some resonance for character, cut the lows with a highpass (in series), and move cutoff with a slow LFO. Use a slow amp attack and full sustain, and remove any filter envelope. Try pulse waves and PWM by LFO, a sub oscillator for weight, and coloured noise at low level fed partly around the lowpass so its highs survive. Finish with delay and reverb sends. Quick alternative: loop a steady section of a chord-stab sample with a crossfade and slow attack, then hide the loop with delay, reverb and a filter.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "house",
+        "unison",
+        "detune",
+        "free-run",
+        "stereo-width",
+        "chorus",
+        "filter",
+        "noise",
+        "chords",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
     }
   ],
-  "updated_at": "2026-10-20T16:28:48.715198+00:00",
+  "updated_at": "2026-10-21T16:27:28.939177+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

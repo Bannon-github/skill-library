@@ -1,0 +1,31 @@
+{
+  "video_id": "_76A4r3Nwl0",
+  "title": "Dark Energy: Euclidean Prophecy - Making Ambient  in VCV RACK",
+  "url": "https://www.youtube.com/watch?v=_76A4r3Nwl0",
+  "fetched_at": "2026-10-21T16:15:04.262608+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "SATURATA MODULAR",
+  "duration": 232,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -1,0 +1,38 @@
+{
+ "topic": "paulstretch extreme time stretch ambient tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "paulstretch extreme time stretch ambient tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "rohC8yxP0iU",
+   "why": "duration 100s"
+  },
+  {
+   "id": "xCaB-IHjtL4",
+   "why": "duration 4046s"
+  },
+  {
+   "id": "bIbOgZn1h_Y",
+   "why": "already known"
+  },
+  {
+   "id": "6AimjzOBy5I",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

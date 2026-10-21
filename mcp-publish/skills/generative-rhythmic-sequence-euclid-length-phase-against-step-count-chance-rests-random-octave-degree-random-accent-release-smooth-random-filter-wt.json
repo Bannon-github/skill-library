@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "id": "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
+  "name": "Generative rhythmic sequence from a hand-written 8-step pattern: live length and start-point changes, chance-based rests, a 5-step Euclidean trigger length phasing against the 8 steps (a 40-step cycle), random modulation of octave and scale degree kept subtle, random distortion and release for accents and note lengths, smooth-random slow LFOs on filter and wavetable position, introduced gradually in performance",
+  "goal": "Turn a short, intentional sequence into an evolving techno or ambient line without writing new notes. Start from a programmed 8-step pattern (or, for pure random, a one-step root note with random → scale degree attenuated to about 7–8 degrees, which gives quantised random melodies within one octave). Vary it by changing pattern length and start point while it plays. Add rests with chance (about 75% means roughly one in four steps silent) and/or a Euclidean trigger length that does not divide the step count (5 against 8): with chance slightly under 100% (about 90%) the 5-step trigger pattern shifts across the 8 notes and the cycle repeats only after 40 steps. Add a tempo-synced delay so echoes fill the rests. Then add pitch variation by patching random to octave (positive for up, negative for down jumps) and to scale degree (jumps of about 4–5 degrees), keeping both subtle so the line's shape survives. Add sound variation: random → distortion (accents) and random → release (note lengths, with a lower base release), and slow smooth-random LFOs (around 5 s) on filter cutoff and wavetable position. Don't use everything at once; bring modulations in gradually across a set.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mb3yqXO9JiE",
+    "url": "https://www.youtube.com/watch?v=mb3yqXO9JiE",
+    "title": "Part 2: Generative Sequencing for Techno (or any other style of music)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mb3yqXO9JiE/agent-skill-generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt.json",
+    "transcript_note": "Hardware walkthrough; firmware-version, Discord, release-pricing talk and the closing jam (music only) dropped."
+  },
+  "prerequisites": [
+    "Sequencer with chance, Euclidean length and per-step random modulation (the video uses a small hardware synth), or Web Audio / JS: a step clock, a Bjorklund trigger mask of length 5 indexed mod 5 while notes are indexed mod 8, Math.random() gates, and scale quantising (implementation note)",
+    "Synth voice with distortion, release, filter and wavetable position as modulation targets",
+    "Tempo-synced delay"
+  ],
+  "inputs": [
+    {
+      "name": "steps",
+      "type": "list",
+      "description": "Programmed notes (8 in the video)",
+      "required": true
+    },
+    {
+      "name": "chance",
+      "type": "number",
+      "description": "Probability each step plays, 0–100%",
+      "required": true
+    },
+    {
+      "name": "euclid_length",
+      "type": "integer",
+      "description": "Trigger pattern length, preferably not a divisor of the step count (5)",
+      "required": false
+    },
+    {
+      "name": "degree_random",
+      "type": "number",
+      "description": "Random → scale degree depth (≈4–5 degrees subtle; 7–8 = one octave)",
+      "required": false
+    },
+    {
+      "name": "octave_random",
+      "type": "number",
+      "description": "Random → octave depth (sign sets up or down)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "generative_sequence",
+      "type": "patch",
+      "description": "Sequence + modulation routing"
+    },
+    {
+      "name": "performance_plan",
+      "type": "list",
+      "description": "Order in which modulations are introduced during a set"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Chance only creates rests with the Euclidean trigger if chance is below 100%.",
+    "Wavetable-position modulation only works when its base value is above zero (in the video's synth, negative values switch to pulse width and modulation cannot pass through zero).",
+    "Heavy random on both octave and degree turns the line into noise; keep it subtle.",
+    "Firmware-specific behaviour and device pad names omitted; values are the presenter's approximations."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Program an 8-step sequence (or one root step plus random → scale degree around 7–8 degrees for an instant quantised random melody). Save it as the base.",
+      "tool": "base sequence",
+      "expect": "A repeating line that stays in key"
+    },
+    {
+      "n": 2,
+      "action": "While playing, change pattern length and set a different start point to get variation from the same notes (e.g. steps 1–16 vs 17–32 for different song sections).",
+      "tool": "length/start",
+      "expect": "New phrase shapes without new notes"
+    },
+    {
+      "n": 3,
+      "action": "Set chance to about 75% for random rests. Alternatively set a Euclidean trigger length of 5 with chance about 90%, so the 5-step trigger pattern drifts across the 8 notes.",
+      "tool": "chance + euclid length",
+      "expect": "Rests appear; with 5 vs 8 the pattern repeats only every 40 steps"
+    },
+    {
+      "n": 4,
+      "action": "Add a tempo-synced delay so echoes land in the rests.",
+      "tool": "timed delay",
+      "expect": "Rests filled by in-time echoes"
+    },
+    {
+      "n": 5,
+      "action": "Patch random → octave (positive = up jumps, negative = down) and random → scale degree, attenuating until jumps of about 4–5 degrees appear. Optionally map degree to a knob to sweep between bassline and lead register.",
+      "tool": "pitch random",
+      "expect": "Occasional octave and degree jumps while the line keeps its shape"
+    },
+    {
+      "n": 6,
+      "action": "Patch random → distortion for accents and random → release for varied note lengths; lower the base release so variation is audible.",
+      "tool": "sound random",
+      "expect": "Uneven accents and note lengths"
+    },
+    {
+      "n": 7,
+      "action": "Add LFO X (smooth random, slow) → filter cutoff and LFO Y (smooth random, about 5 s) → wavetable position, with base position above zero.",
+      "tool": "slow LFOs",
+      "expect": "Slow tonal drift even without touching controls"
+    },
+    {
+      "n": 8,
+      "action": "When performing, start with the plain sequence and introduce degree, octave and timbre modulation one by one over time.",
+      "tool": "arrangement",
+      "expect": "The piece develops instead of starting at full chaos"
+    }
+  ],
+  "verification": [
+    "With euclid length 5 over 8 steps and chance <100%, the triggered note set differs on successive passes and repeats after 40 steps.",
+    "At chance 75%, about a quarter of steps are silent over many loops.",
+    "With degree random subtle, most notes stay close to the original line.",
+    "Filter and wavetable modulation are audible over 5–10 s without any manual change."
+  ],
+  "tags": [
+    "generative",
+    "sequencer",
+    "euclidean",
+    "probability",
+    "random-modulation",
+    "polymeter",
+    "techno",
+    "ambient",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt"
+}

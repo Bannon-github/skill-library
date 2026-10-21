@@ -1,0 +1,46 @@
+{
+  "video_id": "HXKz89TIlJI",
+  "title": "Logic Pro Advanced Tutorial : Morphing with Alchemy",
+  "url": "https://www.youtube.com/watch?v=HXKz89TIlJI",
+  "fetched_at": "2026-10-21T16:24:21.258514+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Rishabh Rajan",
+  "duration": 777,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.7
+    }
+  ]
+}

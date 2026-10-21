@@ -1,0 +1,82 @@
+{
+ "topic": "vocoder chords synth pad tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "vocoder chords synth pad tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [],
+ "dropped": [
+  {
+   "id": "OmZACQCZWZU",
+   "why": "duration 9s"
+  },
+  {
+   "id": "_xo_Xh1t17Y",
+   "why": "duration 57s"
+  },
+  {
+   "id": "bjgzv6mfZnA",
+   "why": "duration 12s"
+  },
+  {
+   "id": "9husdTB9X4I",
+   "why": "duration 11s"
+  },
+  {
+   "id": "InqRDrH0bog",
+   "why": "duration 7s"
+  },
+  {
+   "id": "0Baxd2ZW4jE",
+   "why": "duration 10s"
+  },
+  {
+   "id": "pOifApQkHEw",
+   "why": "duration 9s"
+  },
+  {
+   "id": "jLL7yE76QhQ",
+   "why": "duration 15s"
+  },
+  {
+   "id": "vHkfXhhfCRU",
+   "why": "duration 6s"
+  },
+  {
+   "id": "x4i9sSZTRXU",
+   "why": "duration 5s"
+  },
+  {
+   "id": "mDqz6SmV1Rg",
+   "why": "duration 39s"
+  },
+  {
+   "id": "WuYgLIBrKt8",
+   "why": "duration 64s"
+  },
+  {
+   "id": "p8HgeQFy480",
+   "why": "duration 6s"
+  },
+  {
+   "id": "fg0wAf6NGSs",
+   "why": "duration 30s"
+  },
+  {
+   "id": "WlcOiJ1-x0Q",
+   "why": "duration 15s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,31 @@
+{
+  "video_id": "uiEE-2J2wqA",
+  "title": "Ableton Euclidean SEQ | Roland TR-909",
+  "url": "https://www.youtube.com/watch?v=uiEE-2J2wqA",
+  "fetched_at": "2026-10-21T16:14:53.800589+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Akihiko Matsumoto",
+  "duration": 518,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -1,0 +1,48 @@
+{
+  "video_id": "PP6dAPAhIrQ",
+  "title": "Mutable Dreams 1.0 — Generative Ambient & Rhythms for the FM-1 | Full Tour",
+  "url": "https://www.youtube.com/watch?v=PP6dAPAhIrQ",
+  "fetched_at": "2026-10-21T16:14:34.521539+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Kid Bunka",
+  "duration": 236,
+  "ok": true,
+  "cue_count": 55,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/PP6dAPAhIrQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/PP6dAPAhIrQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,168 @@
+{
+ "topic": "phaser pad synth sound design tutorial",
+ "date": "2026-10-21",
+ "params": {
+  "topic": "phaser pad synth sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Szm7CtvXY54",
+   "title": "Tutorial | Phase Issues with Synths/VSTs (How to FIX)",
+   "channel": "Just S",
+   "duration": 264,
+   "view_count": 500,
+   "url": "https://www.youtube.com/watch?v=Szm7CtvXY54",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.35,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "aDgy_IB9Ets",
+   "title": "U-HE - HIVE 2 Tutorial with AZS Organism Pack covering Arp/Seq, FX, XY Pad, Scope & Modulation",
+   "channel": "David Thom Creations",
+   "duration": 1686,
+   "view_count": 536,
+   "url": "https://www.youtube.com/watch?v=aDgy_IB9Ets",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.86,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "P68bG3JEskQ",
+   "title": "This is better than any Wavetable Synth",
+   "channel": "Polarity Music",
+   "duration": 1532,
+   "view_count": 10984,
+   "url": "https://www.youtube.com/watch?v=P68bG3JEskQ",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.52,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "m7IPr280TL0",
+   "title": "The New Performance FX Rack — Ambient Atelier 1.1",
+   "channel": "KVNDRA and Isotonik Studios",
+   "duration": 433,
+   "view_count": 7763,
+   "url": "https://www.youtube.com/watch?v=m7IPr280TL0",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.45,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "RqF7snjZj60",
+   "title": "Echorium - Overview & Demo",
+   "channel": "BeatSkillz",
+   "duration": 1035,
+   "view_count": 442,
+   "url": "https://www.youtube.com/watch?v=RqF7snjZj60",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.82,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "b2zwGqefZw8",
+   "why": "already known"
+  },
+  {
+   "id": "SSJDIte-nJo",
+   "why": "duration 123s"
+  },
+  {
+   "id": "H8fsiSJzKTA",
+   "why": "already known"
+  },
+  {
+   "id": "pO5BOqCS9mo",
+   "why": "already known"
+  },
+  {
+   "id": "7B2fWwkwYSU",
+   "why": "already known"
+  },
+  {
+   "id": "m3w7RsckJoI",
+   "why": "duration 58s"
+  },
+  {
+   "id": "wbPdp_DRkPE",
+   "why": "negative title signal"
+  },
+  {
+   "id": "VrCSssDOxFc",
+   "why": "already known"
+  },
+  {
+   "id": "aob8cLw7VaY",
+   "why": "duration 56s"
+  },
+  {
+   "id": "3rTd-fu9Adw",
+   "why": "duration 87s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
