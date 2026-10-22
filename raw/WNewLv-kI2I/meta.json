@@ -1,0 +1,46 @@
+{
+  "video_id": "WNewLv-kI2I",
+  "title": "How to Create Isochronic Tones in Ableton Live with Huon Studio",
+  "url": "https://www.youtube.com/watch?v=WNewLv-kI2I",
+  "fetched_at": "2026-10-22T16:29:51.200583+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Huōn",
+  "duration": 1920,
+  "ok": true,
+  "cue_count": 530,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/WNewLv-kI2I/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/WNewLv-kI2I/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

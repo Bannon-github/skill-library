@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "id": "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+  "name": "Patch three random-gate tools from generic functions: noise sampled-and-held by a clock into a window comparator, ANDed with the clock, as a probability gate skipper (window size = probability); the same with S&H output fed back into the clock rate for free random bursts; and a Bernoulli gate where comparator out and not-out each AND the clock to trigger two panned voices",
+  "goal": "Make random and probabilistic gates without dedicated modules. Raw noise into a window comparator gives random gates, but only at a very small window size and with no sync or range. Instead, sample-and-hold the noise on a clock and feed the held value to the comparator: keep shift (window position) high so only the top of the held voltage range passes, and use window size as the probability control (max = all pass, fully closed = none). Because the comparator only fires when the window opens, AND its output with the original clock so every clock passes at maximum. For free random bursts, feed the S&H output back into the clock's rate CV for an unsteady clock. For a Bernoulli gate, use the comparator's out and not-out, each ANDed with the clock (a VCA works as AND), to trigger two envelopes on a higher voice panned left and a lower voice panned right; size then sets the odds of left vs right and they never fire together. Modulate size with a slow LFO and add clock feedback for a generative patch. Maps to Polyrhythm Studio as per-step random gating lanes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "uorRN6iH87U",
+    "url": "https://www.youtube.com/watch?v=uorRN6iH87U",
+    "title": "Patch Programmability - Episode 4 - Random Gate Generators",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/uorRN6iH87U/agent-skill-random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice.json",
+    "transcript_note": "Modular patching tutorial; channel CTA dropped; module names kept only as functions."
+  },
+  "prerequisites": [
+    "Modular, semi-modular or software modular with noise, sample-and-hold, a window comparator (with not-output, or logic to invert), AND logic or VCAs, a clock/cycling function generator, envelopes and VCAs, or Web Audio / JS: on each clock tick sample r=Math.random(); pass if r falls in [shift-size/2, shift+size/2]; Bernoulli: route to voice A if in window else voice B (implementation note)",
+    "Two oscillator voices tuned high and low"
+  ],
+  "inputs": [
+    {
+      "name": "clock",
+      "type": "signal",
+      "description": "Steady clock (or one with rate CV for the free-random variant)",
+      "required": true
+    },
+    {
+      "name": "window_size",
+      "type": "number",
+      "description": "Comparator window size = probability control",
+      "required": true
+    },
+    {
+      "name": "window_shift",
+      "type": "number",
+      "description": "Window position; keep high in the skipper patch",
+      "required": true
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "skipper | free random | bernoulli",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "random_gate_patch",
+      "type": "patch",
+      "description": "Gate skipper / random burst / Bernoulli patch"
+    },
+    {
+      "name": "gates",
+      "type": "signal",
+      "description": "Probabilistic gate stream(s)"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Unclocked noise into a comparator works only at very small window sizes; open it slightly and gates reach audio rate.",
+    "Without the AND with the clock, some gates are dropped even at maximum probability (the comparator stays high across consecutive in-window samples, and S&H sampling is not instantaneous).",
+    "Using raw out/not-out in the Bernoulli patch can let both outputs fire on one clock; the extra AND stage fixed this in the video.",
+    "The size knob's mapping to probability is not calibrated (roughly 50/50 near the middle). Module brands are not required; functions only."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Run noise into a window comparator; trigger an envelope → VCA on a voice from the comparator output. Set window size very low and move shift.",
+      "tool": "raw noise gates",
+      "expect": "Random gates, but only usable in a narrow knob range and unsynced"
+    },
+    {
+      "n": 2,
+      "action": "Add sample-and-hold: noise into S&H input, a cycling clock into S&H clock, S&H output into the comparator. Set shift high so only the top of the held range passes.",
+      "tool": "clocked S&H",
+      "expect": "Random gates aligned to the clock"
+    },
+    {
+      "n": 3,
+      "action": "AND the comparator output with the original clock (second comparator, logic module, or a VCA with clock as input and comparator as CV). Use window size as the probability: max = all clocks pass, closed = none. Listen against a second voice playing the raw clock.",
+      "tool": "gate skipper",
+      "expect": "A probability gate skipper; skipped clocks are audible against the reference"
+    },
+    {
+      "n": 4,
+      "action": "Free random variant: patch the S&H output into the clock's rate CV.",
+      "tool": "feedback",
+      "expect": "Unsteady, burst-like random gates"
+    },
+    {
+      "n": 5,
+      "action": "Bernoulli variant: remove the feedback; take comparator out and not-out, AND each with a copy of the clock, and send them to two envelopes: one on a higher voice panned slightly left, one on a lower voice panned slightly right.",
+      "tool": "bernoulli gate",
+      "expect": "Each clock goes to exactly one of the two voices"
+    },
+    {
+      "n": 6,
+      "action": "Sweep size: fully clockwise = only the high voice, fully counter-clockwise = only the low voice, middle = random choice. Then modulate size with a slow LFO and add clock-rate feedback for a generative patch.",
+      "tool": "probability modulation",
+      "expect": "A self-playing, two-voice call-and-response pattern"
+    }
+  ],
+  "verification": [
+    "In the skipper at maximum size every clock passes; at minimum none pass.",
+    "In the Bernoulli patch the two voices never trigger on the same clock.",
+    "With S&H → clock-rate feedback the gate intervals are uneven.",
+    "Window size in the middle gives a roughly even split between the two voices."
+  ],
+  "tags": [
+    "random",
+    "gates",
+    "probability",
+    "bernoulli",
+    "sample-and-hold",
+    "comparator",
+    "logic",
+    "modular",
+    "generative",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
+}

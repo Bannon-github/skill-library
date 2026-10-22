@@ -2,14 +2,22 @@
   "video_id": "HXKz89TIlJI",
   "title": "Logic Pro Advanced Tutorial : Morphing with Alchemy",
   "url": "https://www.youtube.com/watch?v=HXKz89TIlJI",
-  "fetched_at": "2026-10-21T16:24:21.258514+00:00",
+  "fetched_at": "2026-10-22T16:15:38.762537+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "Rishabh Rajan",
   "duration": 777,
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "ok": true,
+  "cue_count": 266,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HXKz89TIlJI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HXKz89TIlJI/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -18,29 +26,21 @@
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.1
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.6
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.7
-    }
-  ]
+  "retries": []
 }

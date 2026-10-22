@@ -1,0 +1,8 @@
+{"id":"isochronic-flow-state","version":2,"trackType":"isochronic","preset":"Flow State","note":"Original sound. Band names are convention only; no health claims.",
+"lengthSec":600,"seed":7,"fadeInSec":20,"fadeOutSec":60,"targetLufs":-16,"peakCeilDb":-1.0,"noiseRelDb":-34,"noiseLpHz":1500,"checkWinSec":20,
+"iso":{"carrierHz":432,"duty":0.5,"edgeFrac":0.22,"h2":0.1,"depthFloor":0.0,"relDbUnderBed":-17,
+ "rampPoints":[[0,8],[90,10],[240,10],[270,14],[510,14],[540,12],[600,12]]},
+"binaural":{"enabled":true,"carrierHz":432,"level":0.2,"note":"beat = same ramp, split +/- half across ears; headphones only; 432 Hz is above the 120 Hz mono-lows line"},
+"beds":[
+ {"name":"shimmer drone (warmed)","files":["systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav","systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__43-50_seed11.wav"],"trim":[1.5,9.5],"xfadeSec":3.0,"lpHz":3500,"levelDb":0},
+ {"name":"supersaw pad (softened)","files":["systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav"],"trim":[2.5,8.5],"xfadeSec":2.5,"lpHz":1800,"levelDb":-9}]}

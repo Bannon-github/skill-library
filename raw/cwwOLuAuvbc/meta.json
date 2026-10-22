@@ -1,0 +1,46 @@
+{
+  "video_id": "cwwOLuAuvbc",
+  "title": "DJW Audio: Morolith - Spectral Analysis Introduction Tutorial",
+  "url": "https://www.youtube.com/watch?v=cwwOLuAuvbc",
+  "fetched_at": "2026-10-22T16:17:02.532676+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "DJW Audio",
+  "duration": 665,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ]
+}

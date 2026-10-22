@@ -1,0 +1,46 @@
+{
+  "video_id": "L1Vy2ZmHQ3Y",
+  "title": "Oxi One MkII Modulation Tutorial",
+  "url": "https://www.youtube.com/watch?v=L1Vy2ZmHQ3Y",
+  "fetched_at": "2026-10-22T16:16:39.414049+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Alec Sea",
+  "duration": 1951,
+  "ok": true,
+  "cue_count": 612,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/L1Vy2ZmHQ3Y/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/L1Vy2ZmHQ3Y/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

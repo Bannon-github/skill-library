@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
+  "name": "Four-source morph engine: an XY/linear crossfade (centre = all four mixed, corners = one source) versus true parameter morphing of analysed (additive + spectral) sources, where the centre is a composite sound, with separate morph positions per element (additive, spectral, pitch, formant, analysed envelope), each driven by its own LFO type",
+  "goal": "Build evolving hybrid textures from four contrasting sources and know the difference between crossfading and morphing. Crossfade mode only mixes the four sources by an XY point (centre = all four at once, a corner = that source alone) or along X only (A-B, B-C, C-D). Parameter morph needs analysed sources (additive + spectral resynthesis of imported samples, not virtual-analog saws) at a similar pitch; after time alignment, the centre point produces a composite of all four, not a mix. Morph can be split per element: additive partials, spectral processing, pitch, formant and the analysed amplitude envelope of each sample (not the AHDSR), each with its own position. Give each element a different LFO (slow smooth, very fast, stepped) with depth raised, keep a manual centre point, and add reverb. For Polyrhythm Studio: four analysed partial sets interpolated per element by independent control lanes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "HXKz89TIlJI",
+    "url": "https://www.youtube.com/watch?v=HXKz89TIlJI",
+    "title": "Logic Pro Advanced Tutorial : Morphing with Alchemy",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/HXKz89TIlJI/agent-skill-four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos.json",
+    "transcript_note": "DAW synth walkthrough; factory sample names used only as examples of source types, not reproduced."
+  },
+  "prerequisites": [
+    "Synth with a four-source XY morph of resynthesised (additive/spectral) sources (the video uses a DAW's bundled synth), or Web Audio / JS: four partial-amplitude arrays + four formant/envelope curves, bilinear interpolation by (x,y) per element, rendered with a PeriodicWave or additive OscillatorNode bank (implementation note)",
+    "Four contrasting sustained samples (original or free), e.g. a drone, a ghostly texture, an atmospheric event, a sustained vocal",
+    "LFOs (smooth, fast, stepped) and a reverb"
+  ],
+  "inputs": [
+    {
+      "name": "sources",
+      "type": "list",
+      "description": "Four contrasting sustained samples at similar pitch (the video picks C3 versions)",
+      "required": true
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "crossfade XY | crossfade linear | morph XY | morph linear",
+      "required": true
+    },
+    {
+      "name": "element_positions",
+      "type": "map",
+      "description": "XY position per element: additive, spectral, pitch, formant, envelope",
+      "required": false
+    },
+    {
+      "name": "lfos",
+      "type": "list",
+      "description": "One LFO per element morph (shape, rate, depth)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "morph_patch",
+      "type": "patch",
+      "description": "Four-source morph patch with per-element LFO lanes"
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "Which element morphs give the strongest change"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Parameter morph does not work well with virtual-analog sources (they reset to saw); use analysed samples.",
+    "Each re-import or switch to linear mode recomputes time alignment; wait for it.",
+    "Turning fixed pitch off gives a smoother morph but the pitch wanders; keep auto-align on.",
+    "Locked (non-morphable) settings are shared by all four sources; only knobs with a morph indicator differ per source.",
+    "Pitch morph sounds the most drastic; results depend heavily on the samples. No numeric values were given; no factory samples or presets should be redistributed."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init a patch, enable four sources with different waveforms and slightly different tuning, and choose XY crossfade. Move the XY point: centre plays all four, each corner plays one; try linear crossfade (X only: A-B, B-C, C-D). Optionally put a complex LFO on the XY point.",
+      "tool": "crossfade",
+      "expect": "Plain mixing between sources; no new timbre at the centre"
+    },
+    {
+      "n": 2,
+      "action": "Re-init and import four contrasting sustained samples (drone, ghostly texture, atmospheric event, sustained vocal) as additive + spectral sources at similar pitch; wait for time alignment after each import.",
+      "tool": "analysed sources",
+      "expect": "Four analysed sources ready to morph"
+    },
+    {
+      "n": 3,
+      "action": "Switch to morph XY with all elements linked and play a note; move between A, B, C, D and the centre.",
+      "tool": "true morph",
+      "expect": "The centre gives a composite sound that is none of the four, not a crossfade"
+    },
+    {
+      "n": 4,
+      "action": "Keep auto-align on; try fixed pitch off for a smoother morph and back on if the pitch wanders too much.",
+      "tool": "morph options",
+      "expect": "Smoother morph or steadier pitch, by choice"
+    },
+    {
+      "n": 5,
+      "action": "Split by element: reset all element points to centre, then move only the additive point; then spectral, pitch, formant and envelope (the samples' analysed envelopes, not the AHDSR). Per source, randomise morphable additive knobs, enable a spectral processor (e.g. metallize) on some, and shift formant settings so the sources differ.",
+      "tool": "per-element morph",
+      "expect": "Each element changes a different aspect of the sound"
+    },
+    {
+      "n": 6,
+      "action": "Try morph linear: X only between A and B, C and D, or across all four.",
+      "tool": "linear morph",
+      "expect": "A one-dimensional morph path"
+    },
+    {
+      "n": 7,
+      "action": "Return to morph XY and assign a different LFO to each element point: slow smooth on additive, very fast on spectral, stepped on formant, smooth on another; raise each depth. Keep moving the centre manually. Add reverb on the whole patch.",
+      "tool": "modulate",
+      "expect": "An evolving, experimental texture with independent motion per element"
+    }
+  ],
+  "verification": [
+    "At the XY centre in crossfade mode the sound is a mix of four; in morph mode it is a single composite timbre.",
+    "Moving only the formant point changes vowel colour while pitch stays the same.",
+    "Each element LFO produces audible motion only after its depth is raised from zero.",
+    "With fixed pitch on, the played pitch stays put while additive/spectral points move."
+  ],
+  "tags": [
+    "morph",
+    "vector-synthesis",
+    "xy-pad",
+    "additive",
+    "spectral",
+    "resynthesis",
+    "formant",
+    "lfo",
+    "texture",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos"
+}

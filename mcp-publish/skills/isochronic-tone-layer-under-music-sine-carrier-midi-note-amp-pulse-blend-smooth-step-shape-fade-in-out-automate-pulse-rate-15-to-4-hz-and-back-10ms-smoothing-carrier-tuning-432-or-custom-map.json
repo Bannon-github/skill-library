@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "id": "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+  "name": "Add an isochronic pulse layer under an existing track: a sine (or noise) carrier played by one long MIDI note, amplitude-pulsed at a chosen rate (e.g. 4 Hz) with a smooth-step pulse shape and a 0–100% isochronic blend, faded in and out by gain automation, with the pulse rate automated (e.g. 15 Hz → 4 Hz → 15 Hz) using ~10 ms parameter smoothing, carrier tuned by reference (440/432) or a custom note-to-frequency map and verified with a tuner, then mixed barely audible",
+  "goal": "Build the Mind Amend-style isochronic layer as its own track. A tone generator plays a sine carrier from MIDI; with beat frequency 0 it is just a plain sine. Pick the pulse rate (e.g. 4 Hz) and raise the isochronic blend from 0% (steady tone) through 50% to 100% (full on/off pulses); choose a smooth-step pulse shape for focused but soft pulses. An amplitude-pulsing (LFO/tremolo) device lets you pulse noise or any audio as well. Use one long MIDI note for an uninterrupted tone (chords also work and pulse together). Fade in over about 30 s and out over 30–60 s with gain automation. Automate the pulse rate with exact typed breakpoints (e.g. start 15 Hz, glide to 4 Hz, return to 15 Hz at the end) and set the device's parameter smoothing to its minimum (0.01 = 10 ms) for automation. Keep pulse rates low (the speaker suggests below ~100 Hz); carrier frequencies (e.g. 432 Hz reference tuning, or a custom mapping where a note equals 528 Hz) are a separate layer of choice; check the actual pitch with a tuner set to the same reference. Finally set the layer's level in the mixer so it sits barely audible under the music. Polyrhythm Studio: OscillatorNode → GainNode whose gain follows a pulse-shaped LFO at rate r(t) with a ramped automation curve.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "WNewLv-kI2I",
+    "url": "https://www.youtube.com/watch?v=WNewLv-kI2I",
+    "title": "How to Create Isochronic Tones in Ableton Live with Huon Studio",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/WNewLv-kI2I/agent-skill-isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map.json",
+    "transcript_note": "Two-person screen-share session; off-topic chat dropped; product UI mapped to generic tone generator + amplitude pulse."
+  },
+  "prerequisites": [
+    "DAW with a tone/isochronic generator or any synth + tremolo/LFO amplitude device, gain utility with automation, and a tuner, or Web Audio: OscillatorNode (sine) → GainNode; gain driven by a smoothed square/raised-cosine LFO whose frequency AudioParam is automated with linearRampToValueAtTime (implementation note)",
+    "An existing music track to sit under"
+  ],
+  "inputs": [
+    {
+      "name": "carrier",
+      "type": "number|note",
+      "description": "Carrier pitch (MIDI note, or Hz via tuning reference/custom map)",
+      "required": true
+    },
+    {
+      "name": "pulse_rate",
+      "type": "number|curve",
+      "description": "Pulse rate in Hz (e.g. 4) or an automation curve (15 → 4 → 15 Hz)",
+      "required": true
+    },
+    {
+      "name": "blend",
+      "type": "number",
+      "description": "Isochronic blend 0–100%",
+      "required": true
+    },
+    {
+      "name": "pulse_shape",
+      "type": "enum",
+      "description": "Pulse shape (smooth step recommended in the video)",
+      "required": false
+    },
+    {
+      "name": "fades",
+      "type": "object",
+      "description": "Fade-in (~30 s) and fade-out (30–60 s) times",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "isochronic_layer",
+      "type": "track",
+      "description": "Pulsed carrier track with fades and rate automation"
+    },
+    {
+      "name": "mix_level",
+      "type": "number",
+      "description": "Final layer level relative to the music"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "No health or brainwave-entrainment claims are made by this skill; it is a sound-construction recipe only. Keep pulse/beat layers at low listening level.",
+    "Beat/pulse rate (a few Hz) and carrier frequency (hundreds of Hz) are different parameters; don't type a carrier value into the pulse rate.",
+    "With beat frequency 0 or blend 0% nothing is pulsed.",
+    "Set parameter smoothing to its minimum before automating rate, or fast changes lag.",
+    "Specific note-to-frequency maps (e.g. 'solfeggio' tunings) are user-supplied tuning tables; verify each pitch with a tuner rather than trusting the label. Product names mapped to generic tone generator + amplitude LFO."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a MIDI track with the tone generator; set the device output low (about -20 dB) so the layer starts quiet.",
+      "tool": "setup",
+      "expect": "A plain sine carrier at low level"
+    },
+    {
+      "n": 2,
+      "action": "Program one long MIDI note (or loop a short note while designing; chords also work).",
+      "tool": "carrier note",
+      "expect": "A steady carrier tone without interruptions"
+    },
+    {
+      "n": 3,
+      "action": "Set the pulse rate (e.g. 4 Hz) and raise isochronic blend from 0% to 100%; choose a smooth-step pulse shape.",
+      "tool": "pulse",
+      "expect": "The tone turns on and off 4 times per second with soft edges"
+    },
+    {
+      "n": 4,
+      "action": "Add a gain utility and automate a ~30 s fade-in at the start and a 30–60 s fade-out at the end.",
+      "tool": "fades",
+      "expect": "The pulsed tone fades in and out gently"
+    },
+    {
+      "n": 5,
+      "action": "Expose the pulse-rate parameter for automation, set parameter smoothing to 0.01 (10 ms), and draw breakpoints with typed values: 15 Hz at the start, 4 Hz in the middle section, back to 15 Hz at the end.",
+      "tool": "rate automation",
+      "expect": "Pulses audibly slow from fast to 4 Hz and speed up again"
+    },
+    {
+      "n": 6,
+      "action": "Optional carrier tuning: switch the tuning reference (440 → 432 Hz) or load a custom note-to-frequency map and find the note that gives the target frequency (e.g. 528 Hz); confirm with a tuner set to the same reference.",
+      "tool": "carrier tuning",
+      "expect": "The tuner confirms the intended carrier pitch"
+    },
+    {
+      "n": 7,
+      "action": "Set the track fader so the layer is barely audible under the music.",
+      "tool": "mix",
+      "expect": "Pulses are perceptible but stay in the background"
+    }
+  ],
+  "verification": [
+    "At blend 0% the output is a steady sine; at 100% it is fully gated at the pulse rate.",
+    "Counting pulses over 1 s at the 4 Hz section gives about 4.",
+    "The rate automation lane shows 15 → 4 → 15 Hz with exact typed values.",
+    "A tuner shows the intended carrier frequency."
+  ],
+  "tags": [
+    "isochronic",
+    "pulse",
+    "amplitude-modulation",
+    "meditation",
+    "ambient",
+    "automation",
+    "carrier",
+    "tuning",
+    "mind-amend",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map"
+}

@@ -1,0 +1,48 @@
+{
+  "video_id": "jfwv0Gasf6Q",
+  "title": "Rippler Tutorial 3: How to Make Sounds Move with Modulation",
+  "url": "https://www.youtube.com/watch?v=jfwv0Gasf6Q",
+  "fetched_at": "2026-10-22T16:16:17.943930+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "reFX",
+  "duration": 423,
+  "ok": true,
+  "cue_count": 49,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/jfwv0Gasf6Q/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/jfwv0Gasf6Q/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-US",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-US",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-US)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

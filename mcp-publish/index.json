@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 175,
+  "count": 182,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -2961,8 +2961,163 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
+    },
+    {
+      "id": "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+      "name": "Produce a binaural-beat meditation track: a two-chord pad foundation with long reverb and overlapping glided notes, a sparse echoing piano and subtle bass, volume-automated arrangement, then a binaural layer of two pure sines (440 Hz and 432 Hz for an 8 Hz difference) panned hard left/right, a narrow high-Q EQ cut at the carrier frequency on the music bus so nothing masks it, fades, a gentle limiter (~3 dB input, no audible gain reduction) and WAV/MP3 export at 44.1 kHz",
+      "goal": "Make the whole track, not just the beat. Start from pads: play a simple two-chord loop (around A and D), add reverb with high decay and wet mix, keep chord changes on the grid, and let notes overlap with glide so transitions slide instead of stepping. Add a short piano line with an echo (more feedback, ping-pong on) and its own reverb, then a subtle low bass on the same roots; pull all levels down to avoid overdrive. Arrange by drawing volume automation so elements enter and leave (less is more; one element can carry minutes), boost the highs with a high shelf on bright parts, put delay before reverb. Binaural layer: a sine at the root frequency (A = 440 Hz) and a duplicate at 432 Hz (8 Hz difference); unpanned they make an audible wobble (monaural beat), panned hard left and right they form the binaural beat. Group the music and cut a narrow notch (high Q) at 440 Hz so the instrumental doesn't overlap the carrier. Fade the beat in and out, keep it quiet but present when muted/unmuted. On the master, add a limiter on the loudest section with only ~3 dB input and no audible gain reduction; export 44.1 kHz WAV plus an MP3, then do a calm test listen later and adjust.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "binaural",
+        "meditation",
+        "ambient",
+        "pad",
+        "glide",
+        "reverb",
+        "notch-eq",
+        "mixing",
+        "mastering",
+        "mind-amend",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export"
+    },
+    {
+      "id": "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+      "name": "Add an isochronic pulse layer under an existing track: a sine (or noise) carrier played by one long MIDI note, amplitude-pulsed at a chosen rate (e.g. 4 Hz) with a smooth-step pulse shape and a 0–100% isochronic blend, faded in and out by gain automation, with the pulse rate automated (e.g. 15 Hz → 4 Hz → 15 Hz) using ~10 ms parameter smoothing, carrier tuned by reference (440/432) or a custom note-to-frequency map and verified with a tuner, then mixed barely audible",
+      "goal": "Build the Mind Amend-style isochronic layer as its own track. A tone generator plays a sine carrier from MIDI; with beat frequency 0 it is just a plain sine. Pick the pulse rate (e.g. 4 Hz) and raise the isochronic blend from 0% (steady tone) through 50% to 100% (full on/off pulses); choose a smooth-step pulse shape for focused but soft pulses. An amplitude-pulsing (LFO/tremolo) device lets you pulse noise or any audio as well. Use one long MIDI note for an uninterrupted tone (chords also work and pulse together). Fade in over about 30 s and out over 30–60 s with gain automation. Automate the pulse rate with exact typed breakpoints (e.g. start 15 Hz, glide to 4 Hz, return to 15 Hz at the end) and set the device's parameter smoothing to its minimum (0.01 = 10 ms) for automation. Keep pulse rates low (the speaker suggests below ~100 Hz); carrier frequencies (e.g. 432 Hz reference tuning, or a custom mapping where a note equals 528 Hz) are a separate layer of choice; check the actual pitch with a tuner set to the same reference. Finally set the layer's level in the mixer so it sits barely audible under the music. Polyrhythm Studio: OscillatorNode → GainNode whose gain follows a pulse-shaped LFO at rate r(t) with a ramped automation curve.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "isochronic",
+        "pulse",
+        "amplitude-modulation",
+        "meditation",
+        "ambient",
+        "automation",
+        "carrier",
+        "tuning",
+        "mind-amend",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map"
+    },
+    {
+      "id": "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+      "name": "Layered binaural + isochronic track architecture: carrier in the left ear and carrier+beat in the right (e.g. 100/104 or 100/110 Hz), octave-up/down copies for depth, an isochronic pulse ratio-locked to the beat rate (1:1, 1:2, 2:1) with sine pulse shape, optional left-right ping-pong pulsing, extra harmonic/anchor tone layers pulsed at the same rate, a slow lowpass sweep that fades harmonic layers in and out, panned drifting pink/white/brown noise atmosphere, a drone a fifth below, and a 'journey' of timed beat-rate segments with smooth ramps (e.g. 10 → 1.5 Hz descent)",
+      "goal": "Design richer Mind Amend-style tracks than a bare two-tone beat. Binaural: one pure tone per ear, the right ear tone = carrier + beat (100 Hz left, 104 Hz right gives a 4 Hz beat; removing one ear leaves a steady tone). Isochronic: the same rate as on/off pulsing of a tone; both can play together. Choose any comfortable carrier (100 Hz in the demo, with micro-tuning), add octave layers (½× and 2× carrier) for depth, and pulse layers at a rate locked to the beat by a simple ratio (1:1, half, double) so nothing drifts out of sync when the beat changes; sine pulse shape is preferred. Ping-pong pulse alternates the pulse left/right instead of on/off. Extra harmonic tones (the presenter uses solfeggio-labelled frequencies and says they lack scientific basis) or a fifth/12th harmonic stack are pulsed at the same rate. A lowpass sweep (period ~6 s and longer) fades harmonic layers in and out so no tone is constant. Pink/white/brown noise as wind/ocean air, auto-panned. A low drone a fifth below supports the field. A journey timeline holds a beat rate for set minutes, then glides smoothly to the next (5 Hz 5 min → 2 Hz → 1 Hz; sleep descent 10 → 1.5 Hz; a 12 → 4.5 Hz ramp). Polyrhythm Studio: one shared rate LFO drives beat offset and every pulse lane via integer ratios.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "binaural",
+        "isochronic",
+        "pulse",
+        "layering",
+        "octave",
+        "drone",
+        "noise",
+        "journey",
+        "ramps",
+        "mind-amend",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+    },
+    {
+      "id": "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
+      "name": "Four-source morph engine: an XY/linear crossfade (centre = all four mixed, corners = one source) versus true parameter morphing of analysed (additive + spectral) sources, where the centre is a composite sound, with separate morph positions per element (additive, spectral, pitch, formant, analysed envelope), each driven by its own LFO type",
+      "goal": "Build evolving hybrid textures from four contrasting sources and know the difference between crossfading and morphing. Crossfade mode only mixes the four sources by an XY point (centre = all four at once, a corner = that source alone) or along X only (A-B, B-C, C-D). Parameter morph needs analysed sources (additive + spectral resynthesis of imported samples, not virtual-analog saws) at a similar pitch; after time alignment, the centre point produces a composite of all four, not a mix. Morph can be split per element: additive partials, spectral processing, pitch, formant and the analysed amplitude envelope of each sample (not the AHDSR), each with its own position. Give each element a different LFO (slow smooth, very fast, stepped) with depth raised, keep a manual centre point, and add reverb. For Polyrhythm Studio: four analysed partial sets interpolated per element by independent control lanes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "morph",
+        "vector-synthesis",
+        "xy-pad",
+        "additive",
+        "spectral",
+        "resynthesis",
+        "formant",
+        "lfo",
+        "texture",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos"
+    },
+    {
+      "id": "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+      "name": "Use sample-and-hold as a processor on another modulator (not as a random source): step a sine LFO at a rate, automate the LFO rate and the S&H rate separately on a filtered-noise riser so the end seems to slow down through aliasing, and turn a regular step pattern into random hat-loop volume dips with the inverse amount on an FX mix, on a duplicated layer",
+      "goal": "Delta beyond our random S&H LFO skill: here S&H samples an input modulator at its own rate. With a sine LFO (unipolar, full amount) into the S&H input, a low S&H rate gives coarse steps over the sine and a high rate follows it finely, so you keep the LFO's regularity with random-feeling steps. On white noise through a filter, map S&H → cutoff at a reduced amount; instead of a linear ramp LFO riser over four bars, put the LFO rate and the S&H rate on automation lanes, ramp the LFO rate to maximum and start the S&H rate low (individual steps audible), so near the end the sampled pattern sounds like it is slowing down. For hat loops, feed a random-drawn 4-bar step modulator (1/8 rather than 1/16) into the S&H and map S&H → volume (unipolar, ~80%) for random level dips, map the same S&H inversely to a metallic FX mix, and keep the processed loop as an extra layer over the original.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "sample-and-hold",
+        "lfo",
+        "riser",
+        "noise",
+        "automation",
+        "modulation",
+        "hats",
+        "variation",
+        "fx",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer"
+    },
+    {
+      "id": "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+      "name": "Per-voice, per-parameter random value drawn at each note-on (many synced sample-and-holds): offset compensation for bipolar values at a parameter's minimum or maximum, unison/chord voices that each get different timbre, random envelope times on an arpeggiated FM pluck, per-voice morph between two cloned-then-edited parts, and per-voice random LFO rate with depth brought in by aftertouch",
+      "goal": "Make every note and every voice differ slightly without sequencing anything. A per-voice random source picks a new value at each key press for each voice the key allocates and for each parameter it modulates (so 8 unison voices get 8 different wavefolder and FM values, and each note in a chord differs). Values are bipolar: if a parameter sits at its minimum, only positive values have an effect, and an open filter only moves when values are negative, so set the base knob to the middle (offset) to use the full range. Good targets: wavefolder, through-zero FM, filter, envelope times on a plucky FM arpeggio (2-octave up/down), filter envelope, and morph between two parts (clone part A to B, edit B, set morph halfway). A global effect at the end of the chain (e.g. ping-pong delay mix or time) cannot vary per voice and takes the highest value. Randomise LFO rate per voice with LFO depth at zero and aftertouch adding depth for expressive control. Maps to Polyrhythm Studio as a per-voice random draw at note-on.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "random",
+        "per-voice",
+        "note-on-random",
+        "unison",
+        "chords",
+        "arpeggiator",
+        "morph",
+        "fm",
+        "wavefolder",
+        "aftertouch",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth"
+    },
+    {
+      "id": "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+      "name": "Patch three random-gate tools from generic functions: noise sampled-and-held by a clock into a window comparator, ANDed with the clock, as a probability gate skipper (window size = probability); the same with S&H output fed back into the clock rate for free random bursts; and a Bernoulli gate where comparator out and not-out each AND the clock to trigger two panned voices",
+      "goal": "Make random and probabilistic gates without dedicated modules. Raw noise into a window comparator gives random gates, but only at a very small window size and with no sync or range. Instead, sample-and-hold the noise on a clock and feed the held value to the comparator: keep shift (window position) high so only the top of the held voltage range passes, and use window size as the probability control (max = all pass, fully closed = none). Because the comparator only fires when the window opens, AND its output with the original clock so every clock passes at maximum. For free random bursts, feed the S&H output back into the clock's rate CV for an unsteady clock. For a Bernoulli gate, use the comparator's out and not-out, each ANDed with the clock (a VCA works as AND), to trigger two envelopes on a higher voice panned left and a lower voice panned right; size then sets the odds of left vs right and they never fire together. Modulate size with a slow LFO and add clock feedback for a generative patch. Maps to Polyrhythm Studio as per-step random gating lanes.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "random",
+        "gates",
+        "probability",
+        "bernoulli",
+        "sample-and-hold",
+        "comparator",
+        "logic",
+        "modular",
+        "generative",
+        "polyrhythm-studio",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
     }
   ],
-  "updated_at": "2026-10-21T16:27:28.939177+00:00",
+  "updated_at": "2026-10-22T16:33:09.363544+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

@@ -1,0 +1,14 @@
+# Patch three random-gate tools from generic functions: noise sampled-and-held by a clock into a window comparator, ANDed with the clock, as a probability gate skipper (window size = probability); the same with S&H output fed back into the clock rate for free random bursts; and a Bernoulli gate where comparator out and not-out each AND the clock to trigger two panned voices
+
+Goal: Make random and probabilistic gates without dedicated modules. Raw noise into a window comparator gives random gates, but only at a very small window size and with no sync or range. Instead, sample-and-hold the noise on a clock and feed the held value to the comparator: keep shift (window position) high so only the top of the held voltage range passes, and use window size as the probability control (max = all pass, fully closed = none). Because the comparator only fires when the window opens, AND its output with the original clock so every clock passes at maximum. For free random bursts, feed the S&H output back into the clock's rate CV for an unsteady clock. For a Bernoulli gate, use the comparator's out and not-out, each ANDed with the clock (a VCA works as AND), to trigger two envelopes on a higher voice panned left and a lower voice panned right; size then sets the odds of left vs right and they never fire together. Modulate size with a slow LFO and add clock feedback for a generative patch. Maps to Polyrhythm Studio as per-step random gating lanes.
+
+Source: [Patch Programmability - Episode 4 - Random Gate Generators](https://www.youtube.com/watch?v=uorRN6iH87U)
+
+1. Run noise into a window comparator; trigger an envelope → VCA on a voice from the comparator output. Set window size very low and move shift.
+2. Add sample-and-hold: noise into S&H input, a cycling clock into S&H clock, S&H output into the comparator. Set shift high so only the top of the held range passes.
+3. AND the comparator output with the original clock (second comparator, logic module, or a VCA with clock as input and comparator as CV). Use window size as the probability: max = all clocks pass, closed = none. Listen against a second voice playing the raw clock.
+4. Free random variant: patch the S&H output into the clock's rate CV.
+5. Bernoulli variant: remove the feedback; take comparator out and not-out, AND each with a copy of the clock, and send them to two envelopes: one on a higher voice panned slightly left, one on a lower voice panned slightly right.
+6. Sweep size: fully clockwise = only the high voice, fully counter-clockwise = only the low voice, middle = random choice. Then modulate size with a slow LFO and add clock-rate feedback for a generative patch.
+
+Batch: `2026-10-22-morning-hunt` · transcript: YouTube-provided (Show transcript) · Modular patching tutorial; channel CTA dropped; module names kept only as functions.

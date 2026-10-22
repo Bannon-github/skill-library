@@ -1,43 +1,46 @@
 {
   "video_id": "SZKIODnJuwU",
-  "title": null,
+  "title": "This is Sample & Hold | Cubase Modulators Explained",
   "url": "https://www.youtube.com/watch?v=SZKIODnJuwU",
-  "fetched_at": "2026-10-21T16:25:45.098512+00:00",
+  "fetched_at": "2026-10-22T16:16:00.655520+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "original_language": "en-US",
+  "channel": "Cubase",
+  "duration": 629,
+  "ok": true,
+  "cue_count": 256,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/SZKIODnJuwU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/SZKIODnJuwU/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en-US"
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 6.0
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.7
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.3
-    }
-  ]
+  "retries": []
 }

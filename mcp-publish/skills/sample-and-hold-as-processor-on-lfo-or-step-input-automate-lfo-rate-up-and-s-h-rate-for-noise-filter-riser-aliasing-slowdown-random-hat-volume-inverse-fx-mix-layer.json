@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "id": "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+  "name": "Use sample-and-hold as a processor on another modulator (not as a random source): step a sine LFO at a rate, automate the LFO rate and the S&H rate separately on a filtered-noise riser so the end seems to slow down through aliasing, and turn a regular step pattern into random hat-loop volume dips with the inverse amount on an FX mix, on a duplicated layer",
+  "goal": "Delta beyond our random S&H LFO skill: here S&H samples an input modulator at its own rate. With a sine LFO (unipolar, full amount) into the S&H input, a low S&H rate gives coarse steps over the sine and a high rate follows it finely, so you keep the LFO's regularity with random-feeling steps. On white noise through a filter, map S&H → cutoff at a reduced amount; instead of a linear ramp LFO riser over four bars, put the LFO rate and the S&H rate on automation lanes, ramp the LFO rate to maximum and start the S&H rate low (individual steps audible), so near the end the sampled pattern sounds like it is slowing down. For hat loops, feed a random-drawn 4-bar step modulator (1/8 rather than 1/16) into the S&H and map S&H → volume (unipolar, ~80%) for random level dips, map the same S&H inversely to a metallic FX mix, and keep the processed loop as an extra layer over the original.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "SZKIODnJuwU",
+    "url": "https://www.youtube.com/watch?v=SZKIODnJuwU",
+    "title": "This is Sample & Hold | Cubase Modulators Explained",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/SZKIODnJuwU/agent-skill-sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer.json",
+    "transcript_note": "DAW modulator walkthrough; channel intro and comments CTA dropped."
+  },
+  "prerequisites": [
+    "DAW or synth where a sample-and-hold modulator can take another modulator as input, or Web Audio / JS: a step clock at rate r_sh that latches the current value of an LFO or step array and writes it with setValueAtTime to a gain or BiquadFilter frequency (implementation note)",
+    "White noise source with a filter",
+    "Hat loop, a volume/gain stage and an FX with a mix control (metallic/comb-like FX in the video)"
+  ],
+  "inputs": [
+    {
+      "name": "input_mod",
+      "type": "enum",
+      "description": "sine LFO | step modulator",
+      "required": true
+    },
+    {
+      "name": "sh_rate",
+      "type": "number",
+      "description": "S&H rate in Hz or tempo division (start low for audible steps)",
+      "required": true
+    },
+    {
+      "name": "lfo_rate",
+      "type": "number",
+      "description": "Input LFO rate; ramped to maximum in the riser",
+      "required": false
+    },
+    {
+      "name": "depth",
+      "type": "number",
+      "description": "Modulation amount (reduced on cutoff, ~80% on volume)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "riser",
+      "type": "audio",
+      "description": "Filtered-noise riser with stepped, decelerating-feeling motion"
+    },
+    {
+      "name": "hat_variation_layer",
+      "type": "audio",
+      "description": "Hat loop layer with random volume dips and inverse FX"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "An S&H with no input modulator does nothing; it must sample something.",
+    "Set the input modulator unipolar and to maximum amount so the S&H input spans 0–100%.",
+    "The slowdown at the end is a by-product (the fast LFO sampled at a lower S&H rate); it is not a tempo change.",
+    "A 1/16 step modulator was too fast for the hat variation; 1/8 worked. Values other than the ~80% volume depth and the 4-bar pattern were set by ear."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Add a sine LFO and a sample-and-hold modulator, both in Hz. Route LFO → S&H input, LFO unipolar at maximum amount. Sweep the S&H rate from about 1 upward.",
+      "tool": "S&H on LFO",
+      "expect": "Large steps over the sine at low rates, fine steps at high rates"
+    },
+    {
+      "n": 2,
+      "action": "Generate white noise through a filter and route S&H → cutoff; reduce the amount until it is not excessive.",
+      "tool": "noise + filter",
+      "expect": "Stepped random-ish filter movement on noise"
+    },
+    {
+      "n": 3,
+      "action": "Compare with a simple riser: an upward-ramp LFO over 4 bars on both rates. Note it is linear and not editable; remove it.",
+      "tool": "linear riser",
+      "expect": "A predictable riser (reference only)"
+    },
+    {
+      "n": 4,
+      "action": "Expose the LFO rate and S&H rate as automation lanes. Ramp the LFO rate up to maximum over the riser; start the S&H rate low and shape it with its own curve and a few random moves.",
+      "tool": "automated riser",
+      "expect": "A riser with irregular steps that appears to slow down at the end"
+    },
+    {
+      "n": 5,
+      "action": "For a hat loop: draw a random 4-bar step pattern on a step modulator at 1/8, route it to the S&H input (unipolar, max), and route S&H → loop volume (unipolar, ~80%).",
+      "tool": "hat variation",
+      "expect": "Random level dips on otherwise steady hats"
+    },
+    {
+      "n": 6,
+      "action": "Route the same S&H to the mix of a metallic FX with inverted amount, so the FX closes where the volume is high.",
+      "tool": "inverse FX",
+      "expect": "FX colour appears in the opposite places to the volume"
+    },
+    {
+      "n": 7,
+      "action": "Duplicate the channel: keep the original loop and use the modulated version as a second layer; let other loops fill the quiet sections.",
+      "tool": "layer",
+      "expect": "Added depth and variation without new samples"
+    }
+  ],
+  "verification": [
+    "With the S&H rate below the LFO rate, the modulation shows flat steps rather than a smooth sine.",
+    "In the riser, the last bars sound slower or irregular even though the LFO rate is at maximum.",
+    "On the hat layer, loud steps have less FX and quiet steps more FX.",
+    "The original and modulated hat layers play together without timing changes."
+  ],
+  "tags": [
+    "sample-and-hold",
+    "lfo",
+    "riser",
+    "noise",
+    "automation",
+    "modulation",
+    "hats",
+    "variation",
+    "fx",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer"
+}

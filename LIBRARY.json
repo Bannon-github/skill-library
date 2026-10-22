@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-21T16:27:28.939177+00:00",
-  "entry_count": 173,
+  "updated_at": "2026-10-22T16:33:09.363544+00:00",
+  "entry_count": 180,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -2738,6 +2738,97 @@
       "skills": [
         "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
       ]
+    },
+    {
+      "id": "cinematic-synth-GndBM5EifHA",
+      "video_id": "GndBM5EifHA",
+      "url": "https://www.youtube.com/watch?v=GndBM5EifHA",
+      "title": "Producing a Binaural Beats Meditation Track in Ableton Live (Step-By-Step)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/GndBM5EifHA/raw.txt",
+      "summary": "Skills: binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+      "skills": [
+        "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export"
+      ]
+    },
+    {
+      "id": "cinematic-synth-WNewLv-kI2I",
+      "video_id": "WNewLv-kI2I",
+      "url": "https://www.youtube.com/watch?v=WNewLv-kI2I",
+      "title": "How to Create Isochronic Tones in Ableton Live with Huon Studio",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/WNewLv-kI2I/raw.txt",
+      "summary": "Skills: isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+      "skills": [
+        "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map"
+      ]
+    },
+    {
+      "id": "cinematic-synth-bFaYEPLlIxQ",
+      "video_id": "bFaYEPLlIxQ",
+      "url": "https://www.youtube.com/watch?v=bFaYEPLlIxQ",
+      "title": "Binaural Beats Are Boring… So I Built Something Else | Bisochronic® Studio",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/bFaYEPLlIxQ/raw.txt",
+      "summary": "Skills: layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+      "skills": [
+        "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+      ]
+    },
+    {
+      "id": "cinematic-synth-HXKz89TIlJI",
+      "video_id": "HXKz89TIlJI",
+      "url": "https://www.youtube.com/watch?v=HXKz89TIlJI",
+      "title": "Logic Pro Advanced Tutorial : Morphing with Alchemy",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/HXKz89TIlJI/raw.txt",
+      "summary": "Skills: four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
+      "skills": [
+        "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos"
+      ]
+    },
+    {
+      "id": "cinematic-synth-SZKIODnJuwU",
+      "video_id": "SZKIODnJuwU",
+      "url": "https://www.youtube.com/watch?v=SZKIODnJuwU",
+      "title": "This is Sample & Hold | Cubase Modulators Explained",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/SZKIODnJuwU/raw.txt",
+      "summary": "Skills: sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+      "skills": [
+        "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-X_zozWSx-RU",
+      "video_id": "X_zozWSx-RU",
+      "url": "https://www.youtube.com/watch?v=X_zozWSx-RU",
+      "title": "Magnolia Polymove Explained: The Ultimate Randomization Tool",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/X_zozWSx-RU/raw.txt",
+      "summary": "Skills: per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+      "skills": [
+        "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth"
+      ]
+    },
+    {
+      "id": "cinematic-synth-uorRN6iH87U",
+      "video_id": "uorRN6iH87U",
+      "url": "https://www.youtube.com/watch?v=uorRN6iH87U",
+      "title": "Patch Programmability - Episode 4 - Random Gate Generators",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/uorRN6iH87U/raw.txt",
+      "summary": "Skills: random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+      "skills": [
+        "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -2974,6 +3065,19 @@
         "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes",
         "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
         "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
+      ]
+    },
+    {
+      "at": "2026-10-22T16:33:09.363544+00:00",
+      "batch": "2026-10-22-morning-hunt",
+      "added": [
+        "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+        "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+        "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+        "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
+        "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+        "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+        "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
       ]
     }
   ]

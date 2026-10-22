@@ -1,0 +1,6 @@
+{"id":"isochronic-ambient-entrainment","version":1,"trackType":"isochronic","note":"Original sound; style reference only. Rate bands are a common convention, no health claims.",
+"reusedSkills":["drone-wavetable-artifact-drone system (ambient-organic-pluck-pad -> stereo-ladder -> reverb send -> shimmer -> odd-even)","trance-gate-sidechain-chop-texture (gate idea, smoothed to raised-cosine)","risset-rhythm (rate-ramp concept)"],
+"lengthSec":150,"seed":11,"fadeInSec":12,"fadeOutSec":12,"targetLufs":-16,"peakCeilDb":-1.0,"noiseDb":-38,
+"iso":{"carrierHz":200,"duty":0.5,"edgeFrac":0.2,"levelDb":-14,"rampPoints":[[0,12],[20,12],[70,8],[110,6],[150,6]]},
+"binaural":{"enabled":true,"carrierHz":200,"level":0.15,"note":"headphones only; beat offset follows the same ramp. 200 Hz is above the 120 Hz mono-lows line, so no conflict."},
+"bed":{"levelDb":0,"files":["systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav","systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__38-45_seed11.wav","systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__43-50_seed11.wav"]}}

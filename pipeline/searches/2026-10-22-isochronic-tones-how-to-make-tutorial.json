@@ -1,0 +1,156 @@
+{
+ "topic": "isochronic tones how to make tutorial",
+ "date": "2026-10-22",
+ "params": {
+  "topic": "isochronic tones how to make tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": "year",
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "WNewLv-kI2I",
+   "title": "How to Create Isochronic Tones in Ableton Live with Huon Studio",
+   "channel": "Huōn",
+   "duration": 1920,
+   "view_count": 65,
+   "url": "https://www.youtube.com/watch?v=WNewLv-kI2I",
+   "query": "isochronic tones how to make tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.91,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "sFckKx8rsCs",
+   "title": "Make an Ambient Loop in Bitwig Studio Using Only Stock Devices",
+   "channel": "EtherLoops",
+   "duration": 991,
+   "view_count": 3233,
+   "url": "https://www.youtube.com/watch?v=sFckKx8rsCs",
+   "query": "isochronic tones how to make tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.25,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "bFaYEPLlIxQ",
+   "title": "Binaural Beats Are Boring… So I Built Something Else | Bisochronic® Studio",
+   "channel": "REIDOS Sonic Healing",
+   "duration": 1921,
+   "view_count": 2856,
+   "url": "https://www.youtube.com/watch?v=bFaYEPLlIxQ",
+   "query": "isochronic tones how to make tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.73,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "5XcwTO7Z_L0",
+   "title": "Stack Creation with NeuralStack.io:  Create a custom Stack",
+   "channel": "NeuralStack",
+   "duration": 413,
+   "view_count": 3,
+   "url": "https://www.youtube.com/watch?v=5XcwTO7Z_L0",
+   "query": "isochronic tones how to make tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.8,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ql0s7pJEAuw",
+   "why": "duration 3999s"
+  },
+  {
+   "id": "x84g9gDIqcI",
+   "why": "duration 3639s"
+  },
+  {
+   "id": "GVDsvRvBKeE",
+   "why": "duration 3601s"
+  },
+  {
+   "id": "uKpK0L-0KwA",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "1zRXcLV7e_g",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "69LMnU3GwLo",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "rkd1raX3H5g",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "34Dvy0bsm40",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "8GYXSO6zwxk",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "GndBM5EifHA",
+   "why": "no transcript (rate_limited_or_ip_blocked)"
+  },
+  {
+   "id": "SfsGGcswLww",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
