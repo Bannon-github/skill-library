@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation",
+  "name": "Breakdown arrangement after a drop: 4-bar break of impacts and reverse sweeps, two 8-bar breakdown halves (chords from the drop with rhythm removed, melody simplified then foreshadowed through a rising lowpass), then an 8-bar build-up of chopped parts and one silent bar before the drop",
+  "goal": "Lay out the section after a drop with markers: Break (4 bars) → Breakdown 1 (8) → Breakdown 2 (8) → Build-up (8) → drop. Break: big impact, sub drop, reverse crashes/sweeps and a quiet ambience bed. Breakdown effects first: repeat impacts and sub drops at each breakdown start, add a quiet background-motion loop and shaker with lots of reverb and low dry level. Breakdown harmony: copy the chords from the drop, remove the rhythm and merge notes into long chords, and simplify offbeat notes. Layer a soft piano with a second synth, and add automation (volume or cutoff rising at the end of each repetition) for reverse-like tension; make a reverse piano by recording a hit and reversing it. Melody: use the drop melody simplified (first four notes, rest, next five). Breakdown 2: same material plus 'drop clap' accents with reverb to signal the second half, a simple piano melody, and the full drop melody low-pass filtered in with an automation ramp from closed to open. Build-up: chop breakdown sounds down to the first chord repeated, chop more in the second half, add up-filters, reverse sweeps/impacts at the start, a snare fill (4 hits then doubled), melody foreshadowed with its ending in the last bar, then everything cut one bar before the drop.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ojDea0jCQ5o",
+    "url": "https://www.youtube.com/watch?v=ojDea0jCQ5o",
+    "title": "You'll Never Make Bad Breakdown & Buildup Again After Watching This - FL Studio 20 Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ojDea0jCQ5o/agent-skill-breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation.json",
+    "transcript_note": "Auto-generated YouTube transcript; sponsor segment omitted"
+  },
+  "prerequisites": [
+    "A finished drop (chords + melody) in a DAW",
+    "Impact, sub-drop, reverse crash and ambience sounds; piano and a second synth"
+  ],
+  "inputs": [
+    {
+      "name": "drop_chords",
+      "type": "midi",
+      "description": "Chords from the drop.",
+      "required": true
+    },
+    {
+      "name": "drop_melody",
+      "type": "midi",
+      "description": "Melody from the drop.",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Scale used (use scale highlighting).",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "section_map",
+      "type": "markers",
+      "description": "Break 4 / Breakdown 1 8 / Breakdown 2 8 / Build-up 8 + pre-drop silence."
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Source is EDM-oriented and uses named free instruments/plugins; portable equivalents (soft piano, pluck synth, low-pass EQ) are used here.",
+    "YouTube Show transcript is auto-generated and partly garbled; steps are approximated from the spoken description only.",
+    "Keep breakdown effects low in level and wetter than the drop."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Place markers: Break (4 bars), Breakdown 1 (8), Breakdown 2 (8), Build-up (8), then the drop returns.",
+      "tool": "DAW markers",
+      "expect": "Section map visible."
+    },
+    {
+      "n": 2,
+      "action": "Break: big impact, sub drop, reverse crashes, a reversed sweep going up, plus a background ambience effect.",
+      "tool": "DAW",
+      "expect": "Tension is created before the calm."
+    },
+    {
+      "n": 3,
+      "action": "Breakdown background: repeat impacts and sub drops at the start of each breakdown, add smaller impacts, a motion loop and a shaker with reverb and reduced dry level.",
+      "tool": "DAW",
+      "expect": "Background stays busy but quiet."
+    },
+    {
+      "n": 4,
+      "action": "Chords: copy the drop chords, delete rhythm so notes become long chords (Ctrl+L to legato-join), remove offbeat notes, play on soft piano layered with a second synth; keep within one scale using scale highlighting.",
+      "tool": "Piano roll",
+      "expect": "Same harmony, much calmer."
+    },
+    {
+      "n": 5,
+      "action": "Tension motion: automate the synth's volume or cutoff rising at the end of each repetition; make a reverse piano by recording a piano hit and reversing it, then place it in the gap.",
+      "tool": "Automation + audio edit",
+      "expect": "Subtle reverse-like swell and a transition."
+    },
+    {
+      "n": 6,
+      "action": "Melody: take the first four notes of the drop melody, leave space, then the next five; for Breakdown 2 add drop-claps with reverb, a simple piano melody, and the full drop melody low-passed with an automation ramp from fully closed to open.",
+      "tool": "EQ low-pass automation",
+      "expect": "Melody is previewed, not revealed."
+    },
+    {
+      "n": 7,
+      "action": "Build-up: chop breakdown sounds to the first chord repeated, chop more in the second half, add up-filters, reverse sweeps and impacts at the start, a snare fill (four hits then doubled), keep the drop claps, bring in the real melody gradually filtered, put the melody ending in the last bar, and turn everything off one bar before the drop.",
+      "tool": "DAW",
+      "expect": "One quiet bar before the drop."
+    }
+  ],
+  "verification": [
+    "Markers match 4/8/8/8 bars.",
+    "Breakdown chords have no rhythmic pattern from the drop.",
+    "Melody low-pass ramps from closed to open before the drop."
+  ],
+  "tags": [
+    "song-structure",
+    "breakdown",
+    "build-up",
+    "arrangement",
+    "transitions",
+    "reverse",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+}

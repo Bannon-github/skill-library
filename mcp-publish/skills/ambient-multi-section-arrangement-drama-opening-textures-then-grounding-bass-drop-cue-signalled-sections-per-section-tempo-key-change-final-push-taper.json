@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+  "name": "Ambient/electronic multi-section arrangement: open with layered textures for drama, ground with a short bass hit, signal each new section with a small auditory cue (hat, whoosh, snare), change tempo per section, then a final push and a taper-out",
+  "goal": "Arrange a long ambient/electronic piece as several bite-sized sections that each lead the listener on. Open by drawing the listener in with layered high-frequency textures (modulated square-wave glitches resampled and glitched again, pads on top) to build drama; ground it with a simple four-bar bass 'boom'; go to a first big drop around bar 56 where a whoosh/boom sample and sidechained bass start. Signal each section change with a small cue that tells the listener change is coming (tiny hats entering, a whoosh, a snare), but skip the cue when the incoming part is soft enough to stand alone. Change section tempo/key via a master tempo lane (about 131 BPM to 111 to 136 in the source). Give each element space to breathe and let them live inside one another. Finish with a 'final push' (hat in, bass line changes, one pad ducked 4-5 dB to make space), then taper: bass fades out, leaving the inner atmosphere.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "0bB8rWEcScA",
+    "url": "https://www.youtube.com/watch?v=0bB8rWEcScA",
+    "title": "Ambient Arrangements | Tips for Arranging Ambient Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/0bB8rWEcScA/agent-skill-ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper.json",
+    "transcript_note": "Auto-generated YouTube transcript; stated BPMs and bar numbers taken from speech"
+  },
+  "prerequisites": [
+    "DAW with a master tempo automation lane",
+    "A set of textures, pads, bass, kick, hats, whoosh and snare sounds"
+  ],
+  "inputs": [
+    {
+      "name": "sections",
+      "type": "list",
+      "description": "Two to four section ideas (texture world, bass world, final push).",
+      "required": true
+    },
+    {
+      "name": "tempo_plan",
+      "type": "list",
+      "description": "Per-section BPM (source uses roughly 131, 111, 136).",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "timeline",
+      "description": "Sections with cue types, tempo changes and the final taper."
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Source is a demo arrangement showcasing a sound set; vendor sound names are omitted. No presets or samples are reproduced.",
+    "YouTube Show transcript is auto-generated and partly garbled; steps are approximated from the spoken description only.",
+    "Sidechain the bass to the kick where a kick is present."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Open with the first three or four texture patches (pads plus a modulated square-wave 'electric' texture with reverb and delay) to create drama before any drums.",
+      "tool": "DAW + synth",
+      "expect": "Listener is pulled in; each second does something."
+    },
+    {
+      "n": 2,
+      "action": "Resample the square-wave textures and glitch them in a sampler/glitch device as a high-frequency 'afterthought' layer; bring it back later so it is not forgotten.",
+      "tool": "Sampler",
+      "expect": "Subtle high detail returns across sections."
+    },
+    {
+      "n": 3,
+      "action": "Ground the texture bed with a simple four-bar bass hit, then keep building (extra pads layered on top) toward a crescendo.",
+      "tool": "DAW",
+      "expect": "Weight arrives after the texture build."
+    },
+    {
+      "n": 4,
+      "action": "At the first drop (about bar 56) release the tension: a whoosh/boom sample, then the bass line, sidechained to the kick.",
+      "tool": "DAW + sidechain compressor",
+      "expect": "Bass and kick both read clearly."
+    },
+    {
+      "n": 5,
+      "action": "Signal each new section with a small cue (tiny hats entering, snare, whoosh) so the listener subconsciously hears 'change is coming'; omit the cue when the new part is soft enough to stand on its own.",
+      "tool": "DAW",
+      "expect": "Transitions are audible without hard cuts."
+    },
+    {
+      "n": 6,
+      "action": "Change tempo in the master tempo lane at section boundaries (e.g. 131 → 111 → 136 BPM) and let a new bass line or pad define the new section.",
+      "tool": "Master tempo automation",
+      "expect": "Each section has its own pace."
+    },
+    {
+      "n": 7,
+      "action": "Final push: hat enters, bass line changes, lower the competing pad about 4-5 dB so another pad has room; then taper — fade the bass out and leave the inner atmosphere.",
+      "tool": "DAW mixer",
+      "expect": "Ends by tapering, not cutting."
+    }
+  ],
+  "verification": [
+    "Each section change is preceded or accompanied by a cue or an intentional absence of one.",
+    "Tempo lane shows at least two tempo changes; final section ends by tapering.",
+    "No two layers in the final push mask each other (a ducked pad was adjusted)."
+  ],
+  "tags": [
+    "song-structure",
+    "arrangement",
+    "ambient",
+    "section-transitions",
+    "tempo-change",
+    "sidechain",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper"
+}

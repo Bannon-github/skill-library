@@ -1,0 +1,46 @@
+{
+  "video_id": "CfyOOGAxJEs",
+  "title": "Tips for Ambient Music Arrangement",
+  "url": "https://www.youtube.com/watch?v=CfyOOGAxJEs",
+  "fetched_at": "2026-10-23T17:01:27.795620+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Go Make Music",
+  "duration": 763,
+  "ok": true,
+  "cue_count": 247,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CfyOOGAxJEs/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CfyOOGAxJEs/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

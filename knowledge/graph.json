@@ -1,6 +1,6 @@
 {
  "schema": "yt-knowledge-graph/kg-v1",
- "updated_at": "2026-10-19T17:34:35.880478+00:00",
+ "updated_at": "2026-10-23T18:36:50.268807+00:00",
  "videos": {
   "A7q9L5wd7Mk": {
    "domain": "synth",
@@ -1549,6 +1549,87 @@
    "merged_at": "2026-10-19T17:34:35.879838+00:00",
    "gap_nodes": 0,
    "gap_edges": 4
+  },
+  "0bB8rWEcScA": {
+   "domain": "synth",
+   "title": "Ambient Arrangements | Tips for Arranging Ambient Music",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:43.798467+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 0
+  },
+  "8sfw9SwXqhc": {
+   "domain": "synth",
+   "title": "A Beginners Guide to Ambient Songwriting Ep 2 - Songwriting",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:44.659463+00:00",
+   "gap_nodes": 5,
+   "gap_edges": 0
+  },
+  "CfyOOGAxJEs": {
+   "domain": "synth",
+   "title": "Tips for Ambient Music Arrangement",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:45.467093+00:00",
+   "gap_nodes": 3,
+   "gap_edges": 0
+  },
+  "gtg27jkzY1s": {
+   "domain": "synth",
+   "title": "How to Create Emotional Cinematic Music in Logic Pro | Full Tutorial & Project Breakdown",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:46.272316+00:00",
+   "gap_nodes": 4,
+   "gap_edges": 1
+  },
+  "ojDea0jCQ5o": {
+   "domain": "synth",
+   "title": "You'll Never Make Bad Breakdown & Buildup Again After Watching This - FL Studio 20 Tutorial",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:47.127268+00:00",
+   "gap_nodes": 8,
+   "gap_edges": 0
+  },
+  "v11TzDYmarQ": {
+   "domain": "synth",
+   "title": "How to Ambient Music without BORING everyone",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:47.908322+00:00",
+   "gap_nodes": 0,
+   "gap_edges": 0
+  },
+  "wirMkOC-hGQ": {
+   "domain": "synth",
+   "title": "HOW TO PRODUCE AMBIENT MUSIC - ARRANGING YOUR AMBIENT SONG",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:48.673880+00:00",
+   "gap_nodes": 2,
+   "gap_edges": 0
+  },
+  "nkNSlRVGb38": {
+   "domain": "synth",
+   "title": null,
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:49.494614+00:00",
+   "gap_nodes": 7,
+   "gap_edges": 0
+  },
+  "peChlwCphgM": {
+   "domain": "synth",
+   "title": "Phaser Effect? When Should you Use it? | Trance Tutorials",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-10-23T18:36:50.268272+00:00",
+   "gap_nodes": 1,
+   "gap_edges": 0
   }
  },
  "nodes": {
@@ -1618,7 +1699,13 @@
     "rVRMgLa9Y9E",
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "0bB8rWEcScA",
+    "CfyOOGAxJEs",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -1659,12 +1746,15 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -1677,6 +1767,8 @@
     "filter-ladder-diode-comb-formant-flavors",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "haas-plus-phase-offset-width-automated",
@@ -1685,6 +1777,7 @@
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
@@ -1699,6 +1792,7 @@
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
@@ -1715,6 +1809,7 @@
     "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
@@ -1728,6 +1823,7 @@
     "unison-odd-even-detune-width-clean-supersaw",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-crossfade-morph-modulate-pad",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
@@ -1750,7 +1846,9 @@
     "5bI0NSbgEUY",
     "Mm5eO24aAec",
     "m6wfGX7rwiQ",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc"
    ],
    "refs": [
     {
@@ -1936,7 +2034,13 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -1978,11 +2082,13 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "crypto-tax-form-8949-disposal-rows",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
@@ -1997,6 +2103,7 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
@@ -2004,12 +2111,16 @@
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "knowledge-graph-gap-check-skill-outline",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -2021,11 +2132,15 @@
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
@@ -2197,7 +2312,15 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -2235,9 +2358,11 @@
    ],
    "covered_by": [
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "crypto-safe-multisig-threshold-setup-execute",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -2245,11 +2370,14 @@
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
@@ -2257,6 +2385,7 @@
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
@@ -2392,7 +2521,11 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -2442,6 +2575,8 @@
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
@@ -2455,16 +2590,21 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -2475,9 +2615,11 @@
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-pads-type-choice-and-send-setup",
@@ -2510,6 +2652,7 @@
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warp-modes-as-phase-signal-transforms",
     "wavetable-crossfade-morph-modulate-pad",
     "youtube-knowledge-pipeline-router"
@@ -2818,7 +2961,9 @@
     "B3n9GOT0Q9A",
     "P_bIEn8FGzI",
     "b2zwGqefZw8",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -2869,23 +3014,29 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "osc-as-granular-pitch-step-delay",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "sidechain-compressor-duck-synth-pads",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
@@ -2944,7 +3095,12 @@
     "leLAm3OigI0",
     "17St_0BfbF0",
     "Zgwxh3VrQZQ",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -2981,24 +3137,34 @@
     }
    ],
    "covered_by": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "granular-dual-saw-ambient-epic-pad",
     "haas-plus-phase-offset-width-automated",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "keysol-venus-fifths-pulsar-wt-impact",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
@@ -3006,12 +3172,14 @@
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "trance-gate-sidechain-chop-texture",
     "triple-bandpass-bank-unsynced-lfo-pad",
     "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
   },
@@ -3092,7 +3260,14 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "8sfw9SwXqhc",
+    "CfyOOGAxJEs",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -3133,6 +3308,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-lowpoly-character-scene-prep",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -3141,6 +3317,8 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -3154,11 +3332,15 @@
     "fm-carrier-modulator-ratio-basics",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
@@ -3168,9 +3350,11 @@
     "keysol-venus-polyrhythmic-control-track-pitch",
     "keysol-venus-velocity-hybrid-bass-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
@@ -3178,12 +3362,15 @@
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
@@ -3202,6 +3389,7 @@
     "triple-bandpass-bank-unsynced-lfo-pad",
     "unison-odd-even-detune-width-clean-supersaw",
     "vector-xy-four-oscillator-crossfade-blend",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "warp-modes-as-phase-signal-transforms",
     "wavetable-crossfade-morph-modulate-pad",
@@ -3252,7 +3440,11 @@
     "Q_0QcuRePZ0",
     "FOL9EDiLp4k",
     "MjijB6ExetI",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -3292,6 +3484,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-formant-comb-pad-phaser-fx",
@@ -3306,27 +3499,35 @@
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-polyrhythmic-control-track-pitch",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
     "midside-eq-bass-focus-width-depth",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
@@ -3336,6 +3537,7 @@
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "warp-modes-as-phase-signal-transforms",
     "wavetable-crossfade-morph-modulate-pad",
@@ -3451,7 +3653,11 @@
     "JC-UA2C-sZU",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -3499,6 +3705,7 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "dual-layer-opposite-vector-morph-pad",
@@ -3511,17 +3718,24 @@
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "haas-plus-phase-offset-width-automated",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -3533,14 +3747,17 @@
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -3569,6 +3786,7 @@
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "warp-modes-as-phase-signal-transforms",
     "wavefolded-lfo-slew-filter-wobble",
@@ -3635,7 +3853,11 @@
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "0bB8rWEcScA",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -3675,6 +3897,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-lowpoly-pine-tree-from-primitives",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-wave-family-and-windowed-sync-resonance",
@@ -3683,12 +3906,15 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
@@ -3698,14 +3924,19 @@
     "granular-dual-saw-ambient-epic-pad",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-noise-audiorate-filter-texture",
     "keysol-venus-polyrhythmic-control-track-pitch",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
@@ -3718,11 +3949,15 @@
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "soft-tape-saturation-pads-before-space",
     "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
     "synthesized-noise-impact-tail-lfo-shaped",
+    "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
@@ -3850,7 +4085,12 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -3890,6 +4130,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
@@ -3897,6 +4138,7 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -3908,6 +4150,8 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -3915,23 +4159,29 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
@@ -3958,6 +4208,7 @@
     "triple-bandpass-bank-unsynced-lfo-pad",
     "unison-odd-even-detune-width-clean-supersaw",
     "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-crossfade-morph-modulate-pad"
    ]
@@ -4008,7 +4259,12 @@
     "Zgwxh3VrQZQ",
     "rVRMgLa9Y9E",
     "P_bIEn8FGzI",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "CfyOOGAxJEs",
+    "v11TzDYmarQ",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -4048,12 +4304,14 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-warm-analog-pad-drift-stereo",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "envelope-follower-audio-driven-modulation",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
@@ -4065,16 +4323,20 @@
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "organic-looped-sample-unison-voicing-pad",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-pads-type-choice-and-send-setup",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -4087,7 +4349,8 @@
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
-    "unison-odd-even-detune-width-clean-supersaw"
+    "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
    ]
   },
   "module:noise": {
@@ -4154,7 +4417,10 @@
     "Pd9AFeTcl2k",
     "m6wfGX7rwiQ",
     "P_bIEn8FGzI",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "v11TzDYmarQ"
    ],
    "refs": [
     {
@@ -4197,6 +4463,7 @@
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
@@ -4205,17 +4472,25 @@
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "keysol-venus-noise-audiorate-filter-texture",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -4339,7 +4614,9 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -4380,6 +4657,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-chocolate-chip-cookie-model-and-render",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
@@ -4388,12 +4666,16 @@
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
     "dual-layer-opposite-vector-morph-pad",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-carrier-modulator-ratio-basics",
@@ -4401,12 +4683,16 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -4414,7 +4700,9 @@
     "keysol-venus-noise-audiorate-filter-texture",
     "keysol-venus-polyrhythmic-control-track-pitch",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -4424,12 +4712,15 @@
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "selective-saturation-and-lofi-grit-toolkit",
     "sidechain-compressor-duck-synth-pads",
@@ -4445,6 +4736,7 @@
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "warp-modes-as-phase-signal-transforms",
     "wavefolded-lfo-slew-filter-wobble",
@@ -4603,7 +4895,14 @@
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
     "17OGg5CrJ-g",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -4655,6 +4954,8 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -4666,11 +4967,13 @@
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
@@ -4678,9 +4981,11 @@
     "keysol-venus-noise-audiorate-filter-texture",
     "keysol-venus-velocity-hybrid-bass-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "noise-layer-whoosh-doppler-and-rising-variants",
@@ -4695,6 +5000,7 @@
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
@@ -4723,6 +5029,7 @@
     "unison-odd-even-detune-width-clean-supersaw",
     "vector-xy-four-oscillator-crossfade-blend",
     "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "warp-modes-as-phase-signal-transforms",
     "wavetable-crossfade-morph-modulate-pad",
@@ -4807,7 +5114,10 @@
     "P_bIEn8FGzI",
     "nbS1pT8V7YU",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "CfyOOGAxJEs",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -4853,12 +5163,16 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "haas-plus-phase-offset-width-automated",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-venus-fifths-pulsar-wt-impact",
     "lush-stereo-saw-pad-random-pitch-texture",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -4866,13 +5180,19 @@
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "transcript-domain-term-graph-extract",
@@ -4881,6 +5201,7 @@
     "triple-bandpass-bank-unsynced-lfo-pad",
     "unison-odd-even-detune-width-clean-supersaw",
     "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
   },
@@ -4937,7 +5258,10 @@
     "JC-UA2C-sZU",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "CfyOOGAxJEs",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -4984,21 +5308,28 @@
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "digital-wt-morph-bandpass-chorus-echo-space",
+    "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "dual-wt-interval-locked-per-osc-position-level-animators",
+    "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "haas-plus-phase-offset-width-automated",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-noise-audiorate-filter-texture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -5008,10 +5339,12 @@
     "organic-looped-sample-unison-voicing-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
@@ -5022,6 +5355,7 @@
     "unison-odd-even-detune-width-clean-supersaw",
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
   },
@@ -5074,7 +5408,8 @@
     "mBvUObtJTJI",
     "ysMPHY5oiGc",
     "rbcnLgmyjv8",
-    "b5QAsgvC9sk"
+    "b5QAsgvC9sk",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -5117,12 +5452,16 @@
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "ring-mod-envelope-bell-stab-pulse",
     "transient-splice-attack-body-hybrid-voice",
-    "tuned-filtered-delay-resonator-insert-bipolar-feedback"
+    "tuned-filtered-delay-resonator-insert-bipolar-feedback",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
    ]
   },
   "module:delay": {
@@ -5218,7 +5557,10 @@
     "rVRMgLa9Y9E",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -5258,10 +5600,13 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -5273,6 +5618,7 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "frozen-granular-buffer-as-playable-wavetable-voice",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
@@ -5280,19 +5626,24 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-polyrhythmic-control-track-pitch",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
@@ -5306,6 +5657,7 @@
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
@@ -5314,6 +5666,7 @@
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
     "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-crossfade-morph-modulate-pad",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
@@ -5449,7 +5802,11 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -5490,6 +5847,7 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
@@ -5500,6 +5858,8 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -5517,6 +5877,8 @@
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
@@ -5525,6 +5887,7 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-helpling-keytrack-bass-split-delay",
@@ -5532,10 +5895,14 @@
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-noise-audiorate-filter-texture",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -5548,16 +5915,20 @@
     "osc-as-granular-pitch-step-delay",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -5570,6 +5941,7 @@
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -5651,7 +6023,8 @@
     "m6wfGX7rwiQ",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -5689,11 +6062,14 @@
    ],
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -5711,9 +6087,12 @@
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
@@ -5897,7 +6276,10 @@
     "JC-UA2C-sZU",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -5943,6 +6325,8 @@
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
@@ -5955,10 +6339,13 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-noise-audiorate-filter-texture",
@@ -5974,14 +6361,18 @@
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
@@ -6266,7 +6657,12 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "17OGg5CrJ-g",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -6305,6 +6701,7 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
@@ -6328,7 +6725,10 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
@@ -6336,14 +6736,19 @@
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-polyrhythmic-control-track-pitch",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -6352,13 +6757,18 @@
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "osc-as-granular-pitch-step-delay",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "shepard-tone-endless-riser-octave-crossfade-voices",
@@ -6368,6 +6778,7 @@
     "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "synth-string-section-unison-vibrato-fm-blend",
+    "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
@@ -6378,7 +6789,8 @@
     "triple-bandpass-bank-unsynced-lfo-pad",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
     "unison-odd-even-detune-width-clean-supersaw",
-    "uplifter-downlifter-pitchbend-filter-lfo"
+    "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
    ]
   },
   "value:filter=24 db": {
@@ -6509,7 +6921,9 @@
     "JC-UA2C-sZU",
     "Zgwxh3VrQZQ",
     "m6wfGX7rwiQ",
-    "e1AMHtuuuTQ"
+    "e1AMHtuuuTQ",
+    "8sfw9SwXqhc",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -6549,6 +6963,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
@@ -6558,16 +6973,21 @@
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "granular-buffer-core-position-density-freeze-feedback-modes",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "osc-as-granular-pitch-step-delay",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
@@ -6630,7 +7050,8 @@
     "MjijB6ExetI",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "8sfw9SwXqhc"
    ],
    "refs": [
     {
@@ -6672,6 +7093,8 @@
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -6683,8 +7106,10 @@
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
@@ -6694,11 +7119,13 @@
     "soft-tape-saturation-pads-before-space",
     "spectral-warp-vocode-formant-stretch-smear",
     "stereo-delay-pingpong-dual-parallel-two-tap",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "triple-bandpass-bank-unsynced-lfo-pad",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-crossfade-morph-modulate-pad"
    ]
@@ -6802,7 +7229,12 @@
     "m6wfGX7rwiQ",
     "e1AMHtuuuTQ",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "gtg27jkzY1s",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -6842,12 +7274,14 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "click-train-resonant-filter-feedback-delay-comb-texture",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -6858,6 +7292,8 @@
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
@@ -6875,9 +7311,11 @@
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
@@ -6886,13 +7324,17 @@
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -6919,6 +7361,7 @@
     "unison-odd-even-detune-width-clean-supersaw",
     "uplifter-downlifter-pitchbend-filter-lfo",
     "vector-xy-four-oscillator-crossfade-blend",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
    ]
   },
@@ -6963,7 +7406,8 @@
     "JC-UA2C-sZU",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -7008,19 +7452,24 @@
     "casio-pd-piecewise-phase-warp-cosine-to-saw",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
     "dual-path-filter-spread-inverse-amp-lfo-stereo",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "haas-plus-phase-offset-width-automated",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "synth-string-section-unison-vibrato-fm-blend",
@@ -7048,7 +7497,8 @@
     "uEI2Ytxn7iI",
     "YQbj-HEk1xw",
     "y9eDmBUC8ZU",
-    "ZVLM1XMT6Z0"
+    "ZVLM1XMT6Z0",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -7085,7 +7535,11 @@
     }
    ],
    "covered_by": [
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "organic-looped-sample-unison-voicing-pad",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "transient-splice-attack-body-hybrid-voice"
    ]
@@ -7176,7 +7630,10 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -7216,6 +7673,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-beginner-setup-nav-and-geometry-practice",
     "blender-first-scene-add-delete-focus-shade-smooth",
     "blender-install-prefs-viewport-nav-transform-tools",
@@ -7226,6 +7684,8 @@
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-multi-envelope-osc-level-morph",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "digital-wt-morph-bandpass-chorus-echo-space",
@@ -7238,6 +7698,7 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-stack-freeze-infinite-sustain-texture",
@@ -7248,9 +7709,12 @@
     "keysol-venus-fifths-pulsar-wt-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -7260,9 +7724,12 @@
     "organic-looped-sample-unison-voicing-pad",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverse-reverb-swell-print-reverse-print",
     "ring-mod-envelope-bell-stab-pulse",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
@@ -7273,6 +7740,7 @@
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
@@ -7285,6 +7753,7 @@
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "unison-odd-even-detune-width-clean-supersaw",
     "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
     "windowed-sync-amplitude-modulator-drawable-window"
@@ -7533,7 +8002,8 @@
     "ZVLM1XMT6Z0",
     "Pd9AFeTcl2k",
     "FOL9EDiLp4k",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "0bB8rWEcScA"
    ],
    "refs": [
     {
@@ -7577,6 +8047,7 @@
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
     "distill-transcript",
     "dual-layer-opposite-vector-morph-pad",
     "evolving-pad-unison-filter-swell-fifth",
@@ -7585,11 +8056,15 @@
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "osc-as-granular-pitch-step-delay",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
@@ -7600,6 +8075,7 @@
     "shimmer-reverb-pitchshift-plus12-feedback",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
@@ -7656,7 +8132,8 @@
     "Q_0QcuRePZ0",
     "B3n9GOT0Q9A",
     "MjijB6ExetI",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -7695,6 +8172,7 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "asymmetric-left-right-processing-width-mono-safe",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
@@ -7710,6 +8188,7 @@
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "multiband-low-band-gentle-control-and-expand",
@@ -7720,6 +8199,7 @@
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "reverb-pads-type-choice-and-send-setup",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -7729,12 +8209,14 @@
     "soft-tape-saturation-pads-before-space",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
     "triple-bandpass-bank-unsynced-lfo-pad",
     "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx",
     "wavetable-crossfade-morph-modulate-pad",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
@@ -7779,7 +8261,8 @@
     "Pd9AFeTcl2k",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -7816,10 +8299,12 @@
     }
    ],
    "covered_by": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
@@ -7830,6 +8315,8 @@
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "noise-layer-whoosh-doppler-and-rising-variants",
@@ -7838,6 +8325,7 @@
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-filter-rhythmic-pad-chains",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -7884,7 +8372,8 @@
     "MjijB6ExetI",
     "JC-UA2C-sZU",
     "b2zwGqefZw8",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -7926,11 +8415,14 @@
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "granular-stack-freeze-infinite-sustain-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
     "shepard-tone-endless-riser-octave-crossfade-voices",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "three-layer-complementary-pad-post-verb-lofi-degrade"
    ]
   },
@@ -8014,7 +8506,9 @@
     "B3n9GOT0Q9A",
     "m6wfGX7rwiQ",
     "rVRMgLa9Y9E",
-    "b2zwGqefZw8"
+    "b2zwGqefZw8",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -8055,12 +8549,14 @@
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "knowledge-graph-gap-check-skill-outline",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "pwm-80s-string-pad-free-running-lfo-detune",
     "reverb-pads-type-choice-and-send-setup",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "soft-tape-saturation-pads-before-space",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
    ]
@@ -8136,7 +8632,8 @@
     "17St_0BfbF0",
     "Pd9AFeTcl2k",
     "MjijB6ExetI",
-    "JC-UA2C-sZU"
+    "JC-UA2C-sZU",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -8174,6 +8671,7 @@
    ],
    "covered_by": [
     "dual-layer-opposite-vector-morph-pad",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "modulation-lfo-envelope-mod-matrix-routing",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -8356,7 +8854,9 @@
     "B3n9GOT0Q9A",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "CfyOOGAxJEs",
+    "ojDea0jCQ5o"
    ],
    "refs": [
     {
@@ -8396,6 +8896,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-chocolate-chip-cookie-model-and-render",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
@@ -8412,12 +8913,15 @@
     "fm-carrier-modulator-ratio-basics",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-venus-fifths-pulsar-wt-impact",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "multiband-low-band-gentle-control-and-expand",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
@@ -8427,16 +8931,19 @@
     "osc-as-granular-pitch-step-delay",
     "phase-distortion-shapes-modular-phase-chain",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "synthesized-noise-impact-tail-lfo-shaped",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
-    "velocity-filter-cutoff-envelope-amount"
+    "velocity-filter-cutoff-envelope-amount",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
    ]
   },
   "phrase:orchestral_sound": {
@@ -8491,7 +8998,12 @@
     "ZVLM1XMT6Z0",
     "Uv4yk8_vZQc",
     "P_bIEn8FGzI",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -8528,6 +9040,7 @@
     }
    ],
    "covered_by": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "casio-pd-wave-family-and-windowed-sync-resonance",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
@@ -8537,14 +9050,19 @@
     "hard-sync-master-slave-mod-envelope-timbre",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-high-wt-artifact-pulse-layer",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "mix-pads-role-eq-width-clarity",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverse-reverb-swell-print-reverse-print",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
@@ -8607,7 +9125,9 @@
     "B3n9GOT0Q9A",
     "MjijB6ExetI",
     "m6wfGX7rwiQ",
-    "rVRMgLa9Y9E"
+    "rVRMgLa9Y9E",
+    "ojDea0jCQ5o",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -8646,7 +9166,9 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "cinematic-multi-envelope-osc-level-morph",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "drone-to-percussion-transient-gated-warp-mid-harmonic-eq-texture-layer-parallel-room",
     "dual-layer-opposite-vector-morph-pad",
@@ -8655,12 +9177,14 @@
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "karplus-strong-keytracked-delay-pluck-damping-comp",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
     "marimba-wt-lfo-pluck-to-granular-pad",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "modulation-lfo-envelope-mod-matrix-routing",
     "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
@@ -8675,12 +9199,14 @@
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "transient-splice-attack-body-hybrid-voice",
     "traveler-walkthrough-curved-envelope-evolving-pad",
     "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warm-heavenly-supersaw-pad-keytrack-fx"
    ]
   },
@@ -8828,7 +9354,13 @@
     "m6wfGX7rwiQ",
     "rVRMgLa9Y9E",
     "P_bIEn8FGzI",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -8868,6 +9400,7 @@
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "ambient-wavetable-scratch-spectral-morph-pad",
     "audio-rate-am-wave-shape-texture",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "blender-lowpoly-character-scene-prep",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
@@ -8880,11 +9413,14 @@
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "ensemble-string-pad-dual-noise-comb-lanes-random-drift-keytracked-darkening-velocity-env-bow-tilt-lfos",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-source-morph-xy-crossfade-vs-true-parameter-morph-analysed-sources-per-element-additive-spectral-pitch-formant-envelope-lanes-separate-lfos",
     "frozen-granular-buffer-as-playable-wavetable-voice",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-dual-saw-ambient-epic-pad",
     "granular-stack-freeze-infinite-sustain-texture",
     "hybrid-noise-distortion-separate-sub-layer",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-fm-lfo-evolving-chase-sequence",
     "keysol-venus-noise-audiorate-filter-texture",
@@ -8892,15 +9428,20 @@
     "keysol-venus-velocity-hybrid-bass-impact",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "mix-pads-role-eq-width-clarity",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "parallel-filter-rhythmic-pad-chains",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-pads-type-choice-and-send-setup",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "spectral-warp-vocode-formant-stretch-smear",
@@ -9314,7 +9855,8 @@
     "17St_0BfbF0",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "v11TzDYmarQ"
    ],
    "refs": [
     {
@@ -9415,7 +9957,8 @@
     "Q_0QcuRePZ0",
     "jC_ckXoCHYE",
     "MjijB6ExetI",
-    "m6wfGX7rwiQ"
+    "m6wfGX7rwiQ",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -9452,13 +9995,17 @@
     }
    ],
    "covered_by": [
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
     "distorted-delay-return-bandlimited-send-throws",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "filter-ladder-diode-comb-formant-flavors",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-venus-noise-audiorate-filter-texture",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "reverb-pads-type-choice-and-send-setup",
     "ring-mod-envelope-bell-stab-pulse",
@@ -9466,7 +10013,8 @@
     "stereo-delay-pingpong-dual-parallel-two-tap",
     "traveler-walkthrough-super-unison-wide-lead",
     "unison-odd-even-detune-width-clean-supersaw",
-    "uplifter-downlifter-pitchbend-filter-lfo"
+    "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
    ]
   },
   "param:blend": {
@@ -9685,7 +10233,8 @@
     "e1AMHtuuuTQ",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -9726,10 +10275,12 @@
     "ambient-wavetable-scratch-spectral-morph-pad",
     "asymmetric-left-right-processing-width-mono-safe",
     "audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth",
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
     "dual-layer-opposite-vector-morph-pad",
@@ -9739,6 +10290,8 @@
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "hybrid-noise-distortion-separate-sub-layer",
@@ -9750,6 +10303,7 @@
     "keysol-venus-velocity-hybrid-bass-impact",
     "knowledge-graph-gap-check-skill-outline",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "modulation-lfo-envelope-mod-matrix-routing",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
@@ -9757,8 +10311,10 @@
     "parallel-filter-rhythmic-pad-chains",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "phase-distortion-shapes-modular-phase-chain",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -9777,6 +10333,7 @@
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
     "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "warp-modes-as-phase-signal-transforms"
    ]
   },
@@ -10145,7 +10702,10 @@
     "b5QAsgvC9sk",
     "MjijB6ExetI",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "v11TzDYmarQ"
    ],
    "refs": [
     {
@@ -10187,6 +10747,7 @@
     "brooding-pw-drone-detuned-octave-stack-split-bend",
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+    "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-carrier-modulator-ratio-basics",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
@@ -10259,7 +10820,8 @@
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -10302,6 +10864,8 @@
     "chorus-ensemble-classic-vibrato-pad-modes",
     "cinematic-formant-comb-pad-phaser-fx",
     "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
     "digital-wt-morph-bandpass-chorus-echo-space",
     "dual-layer-opposite-vector-morph-pad",
@@ -10312,6 +10876,7 @@
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
     "lush-stereo-saw-pad-random-pitch-texture",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "operator-osc-filter-pairs-three-filters-into-master-fm-into-filter",
     "organic-looped-sample-unison-voicing-pad",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -10367,7 +10932,12 @@
     "m6wfGX7rwiQ",
     "rVRMgLa9Y9E",
     "b2zwGqefZw8",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "gtg27jkzY1s",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -10404,23 +10974,30 @@
     }
    ],
    "covered_by": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "bowed-string-noise-exciter-keytracked-comb-mpe-pressure-timbre-body-combs",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "complex-oscillator-cross-fm-follow-sync-fold-voice",
+    "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
     "dual-wt-interval-locked-per-osc-position-level-animators",
     "evolving-pad-unison-filter-swell-fifth",
     "filter-ladder-diode-comb-formant-flavors",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "hybrid-noise-distortion-separate-sub-layer",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
     "keysol-helpling-keytrack-bass-split-delay",
     "keysol-venus-high-wt-artifact-pulse-layer",
     "keysol-venus-velocity-hybrid-bass-impact",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "midside-eq-bass-focus-width-depth",
     "mix-pads-role-eq-width-clarity",
     "modulation-lfo-envelope-mod-matrix-routing",
     "multiband-low-band-gentle-control-and-expand",
     "osc-as-granular-pitch-step-delay",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -10432,6 +11009,7 @@
     "triple-bandpass-bank-unsynced-lfo-pad",
     "tuned-filtered-delay-resonator-insert-bipolar-feedback",
     "unison-odd-even-detune-width-clean-supersaw",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
    ]
   },
@@ -10764,7 +11342,8 @@
     "8b5EX9HcPGk",
     "aNVjrDQANMw",
     "Rdt5Alxrg60",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -10994,7 +11573,8 @@
     "FOL9EDiLp4k",
     "MjijB6ExetI",
     "JC-UA2C-sZU",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -11046,21 +11626,29 @@
     "fm-carrier-modulator-ratio-basics",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
     "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic",
+    "four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch",
     "frozen-granular-buffer-as-playable-wavetable-voice",
     "granular-buffer-core-position-density-freeze-feedback-modes",
     "granular-dual-saw-ambient-epic-pad",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "keysol-venus-polyrhythmic-control-track-pitch",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
     "marimba-wt-lfo-pluck-to-granular-pad",
     "modulation-lfo-envelope-mod-matrix-routing",
     "morph-filter-lp-bp-hp-notch-lfo-cycle",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "noise-crackle-resonator-instrument-filtered-delayed-noise-into-harmonic-resonator",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
+    "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
     "pwm-80s-string-pad-free-running-lfo-detune",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "ring-mod-envelope-bell-stab-pulse",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-12-voice-sequenced-resonator-bank-wave-strum-arp-swarm-noise-exciter",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "selective-saturation-and-lofi-grit-toolkit",
@@ -11069,10 +11657,12 @@
     "single-macro-reverb-mix-deadzone-freeze-overdub-drone",
     "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers",
     "synth-string-section-unison-vibrato-fm-blend",
     "traveler-walkthrough-control-track-filter-wt-animation",
     "triple-bandpass-bank-unsynced-lfo-pad",
     "uplifter-downlifter-pitchbend-filter-lfo",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
     "wavefolded-lfo-slew-filter-wobble",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
     "windowed-sync-amplitude-modulator-drawable-window"
@@ -11538,7 +12128,8 @@
     "b5QAsgvC9sk",
     "xil_HpL1izg",
     "nbS1pT8V7YU",
-    "b2zwGqefZw8"
+    "b2zwGqefZw8",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -11576,14 +12167,18 @@
    ],
    "covered_by": [
     "asymmetric-left-right-processing-width-mono-safe",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "filter-ladder-diode-comb-formant-flavors",
     "fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-stack-freeze-infinite-sustain-texture",
     "haas-plus-phase-offset-width-automated",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
     "unison-odd-even-detune-width-clean-supersaw",
@@ -11627,7 +12222,8 @@
     "3q-o772IYQY",
     "NQ6tTIJpRDg",
     "yuQqY0dx2Rw",
-    "B3n9GOT0Q9A"
+    "B3n9GOT0Q9A",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -11667,9 +12263,12 @@
     "audio-rate-am-wave-shape-texture",
     "envelope-follower-audio-driven-modulation",
     "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "modulation-lfo-envelope-mod-matrix-routing",
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
-    "ring-mod-envelope-bell-stab-pulse"
+    "ring-mod-envelope-bell-stab-pulse",
+    "struck-string-model-pre-strike-brightness-frequency-dependent-decay-slope-mallet-bounce-polyrhythm-layers"
    ]
   },
   "phrase:modulate_the_phase": {
@@ -11832,7 +12431,8 @@
     "T64l4AAKFpM",
     "G3CIJ3l5Fd8",
     "YQbj-HEk1xw",
-    "Uv4yk8_vZQc"
+    "Uv4yk8_vZQc",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -11871,9 +12471,11 @@
    "covered_by": [
     "asymmetric-left-right-processing-width-mono-safe",
     "brooding-pw-drone-detuned-octave-stack-split-bend",
+    "dual-euclidean-pulse-generators-boolean-or-xor-and-sub-rotation-track-rotate-print-to-steps-melodic-redistribute-arp-fill",
     "multiband-low-band-gentle-control-and-expand",
     "noise-layer-whoosh-doppler-and-rising-variants",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
     "reverse-reverb-swell-print-reverse-print",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "warp-modes-as-phase-signal-transforms"
@@ -12172,7 +12774,8 @@
    "videos": [
     "9V56-jd48_k",
     "NQ6tTIJpRDg",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -12190,6 +12793,14 @@
     {
      "video_id": "pO5BOqCS9mo",
      "t": "2:20"
+    },
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "6:16"
+    },
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "7:02"
     }
    ],
    "covered_by": []
@@ -13112,12 +13723,17 @@
    "label": "second part",
    "domain": "synth",
    "videos": [
-    "EW12RYc7QRA"
+    "EW12RYc7QRA",
+    "ojDea0jCQ5o"
    ],
    "refs": [
     {
      "video_id": "EW12RYc7QRA",
      "t": "6:30"
+    },
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "13:51"
     }
    ],
    "covered_by": []
@@ -13127,12 +13743,17 @@
    "label": "first part",
    "domain": "synth",
    "videos": [
-    "EW12RYc7QRA"
+    "EW12RYc7QRA",
+    "ojDea0jCQ5o"
    ],
    "refs": [
     {
      "video_id": "EW12RYc7QRA",
      "t": "6:26"
+    },
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "13:47"
     }
    ],
    "covered_by": []
@@ -13761,7 +14382,8 @@
     "Vp66dS7o3R0",
     "S3-2yc9UJDE",
     "Q_0QcuRePZ0",
-    "FOL9EDiLp4k"
+    "FOL9EDiLp4k",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -13801,6 +14423,7 @@
     "fm-stack-uplifter-pitch-env-noise-swell",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "uplifter-downlifter-pitchbend-filter-lfo"
@@ -13822,7 +14445,8 @@
     "mllvToyambI",
     "e1AMHtuuuTQ",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA"
    ],
    "refs": [
     {
@@ -13861,9 +14485,11 @@
    "covered_by": [
     "envelope-follower-audio-driven-modulation",
     "mix-pads-role-eq-width-clarity",
+    "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right",
     "multiband-low-band-gentle-control-and-expand",
     "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
     "pitch-ramp-riser-resonant-smear-filter-reverb",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "reverb-freeze-print-seamless-loop-atmos-layer",
     "shimmer-reverb-pitchshift-plus12-feedback",
     "sidechain-compressor-duck-synth-pads",
@@ -14270,7 +14896,8 @@
     "ZVLM1XMT6Z0",
     "0WjG0MKN_wk",
     "rVRMgLa9Y9E",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -14307,12 +14934,16 @@
     }
    ],
    "covered_by": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
     "cinematic-bass-distortion-stack-pitch-bend-downer",
     "fm-stack-uplifter-pitch-env-noise-swell",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
     "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
     "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "ring-mod-envelope-bell-stab-pulse",
     "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
     "sub-drop-sine-freq-glide-80hz-to-20hz",
@@ -14400,7 +15031,8 @@
    "domain": "synth",
    "videos": [
     "WZt_nok-ipk",
-    "S3-2yc9UJDE"
+    "S3-2yc9UJDE",
+    "0bB8rWEcScA"
    ],
    "refs": [
     {
@@ -14414,6 +15046,14 @@
     {
      "video_id": "S3-2yc9UJDE",
      "t": "6:43"
+    },
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "6:55"
+    },
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "13:24"
     }
    ],
    "covered_by": [
@@ -14520,7 +15160,9 @@
     "gRh9BL-W8kQ",
     "3q-o772IYQY",
     "U1t3ELd1LDI",
-    "x37IwHD-uQ4"
+    "x37IwHD-uQ4",
+    "gtg27jkzY1s",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -14542,6 +15184,14 @@
     {
      "video_id": "x37IwHD-uQ4",
      "t": "14:03"
+    },
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "12:21"
+    },
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "8:48"
     }
    ],
    "covered_by": []
@@ -16229,12 +16879,17 @@
    "label": "keep in mind",
    "domain": "synth",
    "videos": [
-    "4NGywqnnl5Y"
+    "4NGywqnnl5Y",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
      "video_id": "4NGywqnnl5Y",
      "t": "2:06"
+    },
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "2:01"
     }
    ],
    "covered_by": []
@@ -18634,7 +19289,8 @@
    "domain": "synth",
    "videos": [
     "X9nxUb1wRkg",
-    "FOL9EDiLp4k"
+    "FOL9EDiLp4k",
+    "ojDea0jCQ5o"
    ],
    "refs": [
     {
@@ -18648,6 +19304,10 @@
     {
      "video_id": "FOL9EDiLp4k",
      "t": "5:43"
+    },
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "8:15"
     }
    ],
    "covered_by": []
@@ -19019,7 +19679,9 @@
     "Futy449F9OY",
     "B3n9GOT0Q9A",
     "e1AMHtuuuTQ",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "8sfw9SwXqhc",
+    "CfyOOGAxJEs"
    ],
    "refs": [
     {
@@ -19058,11 +19720,15 @@
    "covered_by": [
     "ambient-organic-pluck-pad-ladder-chorus-space",
     "chorus-ensemble-classic-vibrato-pad-modes",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
     "dark-hybrid-choir-pad-natural-highs-synthetic-lows-notch-ramp-fx",
     "distorted-delay-return-bandlimited-send-throws",
     "granular-dual-saw-ambient-epic-pad",
     "hybrid-noise-distortion-separate-sub-layer",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+    "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "resonant-filter-sample-rate-reduction-talking-formant",
     "reverb-pads-type-choice-and-send-setup",
     "reverse-reverb-swell-print-reverse-print",
@@ -20690,15 +21356,27 @@
    "label": "ambient music",
    "domain": "synth",
    "videos": [
-    "5bI0NSbgEUY"
+    "5bI0NSbgEUY",
+    "8sfw9SwXqhc",
+    "v11TzDYmarQ"
    ],
    "refs": [
     {
      "video_id": "5bI0NSbgEUY",
      "t": "1:03"
+    },
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "0:06"
+    },
+    {
+     "video_id": "v11TzDYmarQ",
+     "t": "0:09"
     }
    ],
-   "covered_by": []
+   "covered_by": [
+    "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+   ]
   },
   "phrase:space_drone": {
    "type": "phrase",
@@ -25411,6 +26089,492 @@
     }
    ],
    "covered_by": []
+  },
+  "phrase:square_waves": {
+   "type": "phrase",
+   "label": "square waves",
+   "domain": "synth",
+   "videos": [
+    "0bB8rWEcScA"
+   ],
+   "refs": [
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "3:57"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:transitional_element": {
+   "type": "phrase",
+   "label": "transitional element",
+   "domain": "synth",
+   "videos": [
+    "0bB8rWEcScA"
+   ],
+   "refs": [
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "10:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:next_week": {
+   "type": "phrase",
+   "label": "next week",
+   "domain": "synth",
+   "videos": [
+    "0bB8rWEcScA"
+   ],
+   "refs": [
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "1:02"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:sound_set": {
+   "type": "phrase",
+   "label": "sound set",
+   "domain": "synth",
+   "videos": [
+    "0bB8rWEcScA"
+   ],
+   "refs": [
+    {
+     "video_id": "0bB8rWEcScA",
+     "t": "2:01"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:i've_been_playing": {
+   "type": "phrase",
+   "label": "i've been playing",
+   "domain": "synth",
+   "videos": [
+    "8sfw9SwXqhc"
+   ],
+   "refs": [
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "1:38"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:benjamin_malk": {
+   "type": "phrase",
+   "label": "benjamin malk",
+   "domain": "synth",
+   "videos": [
+    "8sfw9SwXqhc"
+   ],
+   "refs": [
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "2:42"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:trying_to_find": {
+   "type": "phrase",
+   "label": "trying to find",
+   "domain": "synth",
+   "videos": [
+    "8sfw9SwXqhc"
+   ],
+   "refs": [
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "14:26"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:certain_section": {
+   "type": "phrase",
+   "label": "certain section",
+   "domain": "synth",
+   "videos": [
+    "8sfw9SwXqhc"
+   ],
+   "refs": [
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "8:59"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:write_music": {
+   "type": "phrase",
+   "label": "write music",
+   "domain": "synth",
+   "videos": [
+    "8sfw9SwXqhc"
+   ],
+   "refs": [
+    {
+     "video_id": "8sfw9SwXqhc",
+     "t": "2:54"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:beats_per_minute": {
+   "type": "phrase",
+   "label": "beats per minute",
+   "domain": "synth",
+   "videos": [
+    "CfyOOGAxJEs"
+   ],
+   "refs": [
+    {
+     "video_id": "CfyOOGAxJEs",
+     "t": "0:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:music_theory": {
+   "type": "phrase",
+   "label": "music theory",
+   "domain": "synth",
+   "videos": [
+    "CfyOOGAxJEs",
+    "ojDea0jCQ5o"
+   ],
+   "refs": [
+    {
+     "video_id": "CfyOOGAxJEs",
+     "t": "0:11"
+    },
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "8:28"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:octave_above": {
+   "type": "phrase",
+   "label": "octave above",
+   "domain": "synth",
+   "videos": [
+    "CfyOOGAxJEs"
+   ],
+   "refs": [
+    {
+     "video_id": "CfyOOGAxJEs",
+     "t": "6:25"
+    }
+   ],
+   "covered_by": []
+  },
+  "value:cutoff=20 hz": {
+   "type": "value",
+   "label": "20 hz",
+   "domain": "synth",
+   "videos": [
+    "gtg27jkzY1s"
+   ],
+   "refs": [
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "20:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:stock_logic": {
+   "type": "phrase",
+   "label": "stock logic",
+   "domain": "synth",
+   "videos": [
+    "gtg27jkzY1s"
+   ],
+   "refs": [
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "15:33"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:chord_progression": {
+   "type": "phrase",
+   "label": "chord progression",
+   "domain": "synth",
+   "videos": [
+    "gtg27jkzY1s"
+   ],
+   "refs": [
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "3:43"
+    }
+   ],
+   "covered_by": [
+    "pad-width-no-phase-smear-highband-pan-or-chord-split"
+   ]
+  },
+  "phrase:start_making": {
+   "type": "phrase",
+   "label": "start making",
+   "domain": "synth",
+   "videos": [
+    "gtg27jkzY1s"
+   ],
+   "refs": [
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "17:14"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:before_the_drop": {
+   "type": "phrase",
+   "label": "before the drop",
+   "domain": "synth",
+   "videos": [
+    "ojDea0jCQ5o"
+   ],
+   "refs": [
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "15:58"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:automation_clip": {
+   "type": "phrase",
+   "label": "automation clip",
+   "domain": "synth",
+   "videos": [
+    "ojDea0jCQ5o"
+   ],
+   "refs": [
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "9:40"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:app_filters": {
+   "type": "phrase",
+   "label": "app filters",
+   "domain": "synth",
+   "videos": [
+    "ojDea0jCQ5o"
+   ],
+   "refs": [
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "17:04"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:eight_bars": {
+   "type": "phrase",
+   "label": "eight bars",
+   "domain": "synth",
+   "videos": [
+    "ojDea0jCQ5o",
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "1:16"
+    },
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "0:27"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:music_production": {
+   "type": "phrase",
+   "label": "music production",
+   "domain": "synth",
+   "videos": [
+    "ojDea0jCQ5o"
+   ],
+   "refs": [
+    {
+     "video_id": "ojDea0jCQ5o",
+     "t": "7:54"
+    }
+   ],
+   "covered_by": [
+    "reverse-reverb-swell-print-reverse-print"
+   ]
+  },
+  "phrase:rim_shot": {
+   "type": "phrase",
+   "label": "rim shot",
+   "domain": "synth",
+   "videos": [
+    "wirMkOC-hGQ"
+   ],
+   "refs": [
+    {
+     "video_id": "wirMkOC-hGQ",
+     "t": "3:15"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:full_bar": {
+   "type": "phrase",
+   "label": "full bar",
+   "domain": "synth",
+   "videos": [
+    "wirMkOC-hGQ"
+   ],
+   "refs": [
+    {
+     "video_id": "wirMkOC-hGQ",
+     "t": "8:00"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:lots_of_different": {
+   "type": "phrase",
+   "label": "lots of different",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "0:56"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:first_four_bars": {
+   "type": "phrase",
+   "label": "first four bars",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "3:21"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:four_bars": {
+   "type": "phrase",
+   "label": "four bars",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "3:21"
+    }
+   ],
+   "covered_by": [
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer"
+   ]
+  },
+  "phrase:first_four": {
+   "type": "phrase",
+   "label": "first four",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "3:21"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:case_i've": {
+   "type": "phrase",
+   "label": "case i've",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "3:28"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:last_four": {
+   "type": "phrase",
+   "label": "last four",
+   "domain": "synth",
+   "videos": [
+    "nkNSlRVGb38"
+   ],
+   "refs": [
+    {
+     "video_id": "nkNSlRVGb38",
+     "t": "3:23"
+    }
+   ],
+   "covered_by": [
+    "tame-generative-sequencer-constrain-scale-octave-phrase-zero-global-random-restart-points-fewer-pitches-pulses-manual-cycle-variations-random-on-last-notes"
+   ]
+  },
+  "phrase:low_mid": {
+   "type": "phrase",
+   "label": "low mid",
+   "domain": "synth",
+   "videos": [
+    "peChlwCphgM"
+   ],
+   "refs": [
+    {
+     "video_id": "peChlwCphgM",
+     "t": "1:14"
+    }
+   ],
+   "covered_by": [
+    "distorted-delay-return-bandlimited-send-throws",
+    "granular-dual-saw-ambient-epic-pad"
+   ]
+  },
+  "phrase:different_results": {
+   "type": "phrase",
+   "label": "different results",
+   "domain": "synth",
+   "videos": [
+    "peChlwCphgM"
+   ],
+   "refs": [
+    {
+     "video_id": "peChlwCphgM",
+     "t": "5:24"
+    }
+   ],
+   "covered_by": []
   }
  },
  "edges": {
@@ -25531,7 +26695,13 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -25794,7 +26964,9 @@
     "B3n9GOT0Q9A",
     "P_bIEn8FGzI",
     "b2zwGqefZw8",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -25876,7 +27048,11 @@
     "Q_0QcuRePZ0",
     "FOL9EDiLp4k",
     "MjijB6ExetI",
-    "pO5BOqCS9mo"
+    "pO5BOqCS9mo",
+    "v11TzDYmarQ",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -26024,7 +27200,9 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "wirMkOC-hGQ"
    ],
    "refs": [
     {
@@ -26115,7 +27293,10 @@
     "JC-UA2C-sZU",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "CfyOOGAxJEs",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -26276,7 +27457,8 @@
     "m6wfGX7rwiQ",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -26468,7 +27650,10 @@
     "JC-UA2C-sZU",
     "m6wfGX7rwiQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -26733,7 +27918,12 @@
     "nbS1pT8V7YU",
     "b2zwGqefZw8",
     "17OGg5CrJ-g",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "CfyOOGAxJEs",
+    "gtg27jkzY1s",
+    "ojDea0jCQ5o",
+    "wirMkOC-hGQ",
+    "nkNSlRVGb38"
    ],
    "refs": [
     {
@@ -26920,7 +28110,9 @@
     "JC-UA2C-sZU",
     "Zgwxh3VrQZQ",
     "m6wfGX7rwiQ",
-    "e1AMHtuuuTQ"
+    "e1AMHtuuuTQ",
+    "8sfw9SwXqhc",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -27057,7 +28249,12 @@
     "m6wfGX7rwiQ",
     "e1AMHtuuuTQ",
     "pO5BOqCS9mo",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "0bB8rWEcScA",
+    "8sfw9SwXqhc",
+    "gtg27jkzY1s",
+    "nkNSlRVGb38",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -27136,7 +28333,8 @@
     "JC-UA2C-sZU",
     "e1AMHtuuuTQ",
     "nbS1pT8V7YU",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -27272,7 +28470,8 @@
     "ZVLM1XMT6Z0",
     "Pd9AFeTcl2k",
     "FOL9EDiLp4k",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "0bB8rWEcScA"
    ],
    "refs": [
     {
@@ -27477,7 +28676,9 @@
     "B3n9GOT0Q9A",
     "MjijB6ExetI",
     "m6wfGX7rwiQ",
-    "rVRMgLa9Y9E"
+    "rVRMgLa9Y9E",
+    "ojDea0jCQ5o",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -28213,7 +29414,8 @@
     "8b5EX9HcPGk",
     "aNVjrDQANMw",
     "Rdt5Alxrg60",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -28252,8 +29454,10 @@
    "covered_by": [
     "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
     "cinematic-formant-comb-pad-phaser-fx",
+    "generative-rhythmic-sequence-euclid-length-phase-against-step-count-chance-rests-random-octave-degree-random-accent-release-smooth-random-filter-wt",
     "granular-dual-saw-ambient-epic-pad",
     "hard-sync-master-slave-mod-envelope-timbre",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
     "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "unison-odd-even-detune-width-clean-supersaw"
@@ -28398,7 +29602,8 @@
     "FOL9EDiLp4k",
     "MjijB6ExetI",
     "JC-UA2C-sZU",
-    "nbS1pT8V7YU"
+    "nbS1pT8V7YU",
+    "peChlwCphgM"
    ],
    "refs": [
     {
@@ -28923,12 +30128,17 @@
    "dst": "tool:Omnisphere",
    "type": "part-of",
    "videos": [
-    "9V56-jd48_k"
+    "9V56-jd48_k",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
      "video_id": "9V56-jd48_k",
      "t": "6:33"
+    },
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "6:16"
     }
    ],
    "covered_by": []
@@ -30306,7 +31516,8 @@
     "ZVLM1XMT6Z0",
     "0WjG0MKN_wk",
     "rVRMgLa9Y9E",
-    "7OatKTrtmJ8"
+    "7OatKTrtmJ8",
+    "gtg27jkzY1s"
    ],
    "refs": [
     {
@@ -33088,13 +34299,60 @@
     }
    ],
    "covered_by": []
+  },
+  "param:cutoff|sets|value:cutoff=20 hz": {
+   "src": "param:cutoff",
+   "dst": "value:cutoff=20 hz",
+   "type": "sets",
+   "videos": [
+    "gtg27jkzY1s"
+   ],
+   "refs": [
+    {
+     "video_id": "gtg27jkzY1s",
+     "t": "20:11"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:reverb|part-of|tool:Serum": {
+   "src": "module:reverb",
+   "dst": "tool:Serum",
+   "type": "part-of",
+   "videos": [
+    "v11TzDYmarQ"
+   ],
+   "refs": [
+    {
+     "video_id": "v11TzDYmarQ",
+     "t": "0:22"
+    }
+   ],
+   "covered_by": []
+  },
+  "module:envelope|affects|module:phaser": {
+   "src": "module:envelope",
+   "dst": "module:phaser",
+   "type": "affects",
+   "videos": [
+    "peChlwCphgM"
+   ],
+   "refs": [
+    {
+     "video_id": "peChlwCphgM",
+     "t": "6:51"
+    }
+   ],
+   "covered_by": [
+    "four-layer-wave-sequence-cinematic-pad-crossfade-vs-rhythmic"
+   ]
   }
  },
  "stats": {
-  "videos": 172,
-  "nodes": 902,
-  "edges": 282,
+  "videos": 181,
+  "nodes": 933,
+  "edges": 285,
   "uncovered_nodes": 10,
-  "uncovered_edges": 79
+  "uncovered_edges": 80
  }
 }

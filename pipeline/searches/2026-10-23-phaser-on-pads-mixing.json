@@ -1,0 +1,135 @@
+{
+ "topic": "phaser on pads mixing",
+ "date": "2026-10-23",
+ "params": {
+  "topic": "phaser on pads mixing",
+  "langs": "en",
+  "per_query": 15,
+  "top": 8,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "TbqMvaZ905Y",
+   "title": "Phaser Effect Tutorial - (How To Use A Phaser Effect)",
+   "channel": "Transverse Audio",
+   "duration": 232,
+   "view_count": 42442,
+   "url": "https://www.youtube.com/watch?v=TbqMvaZ905Y",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.31
+  },
+  {
+   "id": "ZdKxOsK4nQ8",
+   "title": "Xfer Records Serum Tutorial 09 - FX Flanger, Phaser & Chorus",
+   "channel": "SadowickProduction",
+   "duration": 346,
+   "view_count": 4083,
+   "url": "https://www.youtube.com/watch?v=ZdKxOsK4nQ8",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.31
+  },
+  {
+   "id": "B4NNME4naPA",
+   "title": "Sylenth1 Tutorial 10 - Phaser, Chorus & EQ",
+   "channel": "SadowickProduction",
+   "duration": 314,
+   "view_count": 4229,
+   "url": "https://www.youtube.com/watch?v=B4NNME4naPA",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.31
+  },
+  {
+   "id": "8CEZiu8efrs",
+   "title": "SVEP Chorus, Phaser, Flanger Demo and Tutorial for iPad",
+   "channel": "The Sound Test Room",
+   "duration": 366,
+   "view_count": 3466,
+   "url": "https://www.youtube.com/watch?v=8CEZiu8efrs",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.27
+  },
+  {
+   "id": "peChlwCphgM",
+   "title": "Phaser Effect? When Should you Use it? | Trance Tutorials",
+   "channel": "Demis Hellen",
+   "duration": 705,
+   "view_count": 2193,
+   "url": "https://www.youtube.com/watch?v=peChlwCphgM",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.17
+  },
+  {
+   "id": "M74rWuwU8Oo",
+   "title": "Harmor Tutorial PART 12 Phaser | FL Studio",
+   "channel": "Jon Audio",
+   "duration": 703,
+   "view_count": 1669,
+   "url": "https://www.youtube.com/watch?v=M74rWuwU8Oo",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.11
+  },
+  {
+   "id": "uhC-5pwVHLw",
+   "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+   "channel": "Jon Audio",
+   "duration": 261,
+   "view_count": 473,
+   "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.34
+  },
+  {
+   "id": "nIGiY1jYgWM",
+   "title": "Using Phaser Effects",
+   "channel": "Sound On Sound magazine",
+   "duration": 1019,
+   "view_count": 2892,
+   "url": "https://www.youtube.com/watch?v=nIGiY1jYgWM",
+   "query": "phaser on pads mixing tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.23
+  }
+ ],
+ "dropped": [
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "DHfOKrjqdE0",
+   "why": "duration 112s"
+  },
+  {
+   "id": "R_X64PhXgyQ",
+   "why": "duration 33s"
+  },
+  {
+   "id": "RdLYJtnboC8",
+   "why": "duration 146s"
+  },
+  {
+   "id": "V_ednvEuqE4",
+   "why": "duration 52s"
+  },
+  {
+   "id": "wdpVw9v4zu0",
+   "why": "duration 133s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

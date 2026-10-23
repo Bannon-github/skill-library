@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+  "name": "Ambient chord arrangement: give each chord tone to a separate instrument (sub root, synth third a tenth up, choir fifth, string doubling the third), each swelling in on its own, moving in parallel and spread wide, at about 55 BPM",
+  "goal": "Make a 2-3 chord ambient progression feel like a living choir. Use a slow tempo around 55 BPM (6 s breath cycle) or 60 BPM / halftime. Split each triad across instruments instead of block chords: a sub plays the root of each chord and swells with the mod wheel; a dark synth pad plays the third an octave and more up (a tenth), a choir-like pad adds the fifth above, and a frozen string reinforces the third to define the key. Each part swells in at its own pace and the voices move in parallel. Spread notes apart (avoid close block voicing in the low register to avoid mud): move the third up an octave, the fifth up an octave, or the fifth above the third. Then add reverse textures that move within the key.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "CfyOOGAxJEs",
+    "url": "https://www.youtube.com/watch?v=CfyOOGAxJEs",
+    "title": "Tips for Ambient Music Arrangement",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/CfyOOGAxJEs/agent-skill-ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo.json",
+    "transcript_note": "Auto-generated YouTube transcript"
+  },
+  "prerequisites": [
+    "A DAW with sub bass, pad, choir pad and strings (or equivalents)"
+  ],
+  "inputs": [
+    {
+      "name": "progression",
+      "type": "list",
+      "description": "Two to four chords (e.g. I, vi, I, V).",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "int",
+      "description": "About 55 BPM, 60 BPM or halftime of 120.",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "voicing",
+      "type": "list",
+      "description": "Which instrument plays which chord tone and in which octave."
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Example progression in the source is E → C#m → E → B (I, vi, I, V in E major); use any key.",
+    "YouTube Show transcript is auto-generated and partly garbled; steps are approximated from the spoken description only.",
+    "Instrument libraries named in the source are omitted; use any equivalents."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set tempo around 55 BPM (4/4 or 6/4) or 60/halftime; the source ties 55 BPM to a roughly six-second breathing cycle.",
+      "tool": "DAW",
+      "expect": "Slow, meditative pulse."
+    },
+    {
+      "n": 2,
+      "action": "Write the progression as plain triads (e.g. I, vi, I, V).",
+      "tool": "Piano roll",
+      "expect": "Basic harmony in place."
+    },
+    {
+      "n": 3,
+      "action": "Instrument 1: sub plays only the root of each chord, long notes with a swell (mod wheel).",
+      "tool": "Sub synth",
+      "expect": "Foundation without harmonic clutter."
+    },
+    {
+      "n": 4,
+      "action": "Instrument 2: dark pad plays the third, placed a tenth above the root; subtle, gives key/chord quality.",
+      "tool": "Pad",
+      "expect": "Chord quality implied."
+    },
+    {
+      "n": 5,
+      "action": "Instrument 3: choir-like pad plays the fifth above; each instrument swells in uniquely.",
+      "tool": "Choir pad",
+      "expect": "Choir-like feel instead of a block chord."
+    },
+    {
+      "n": 6,
+      "action": "Instrument 4: frozen string reinforces the third to make the key strong. Move all voices in parallel (all up or all down).",
+      "tool": "String patch",
+      "expect": "Strong key identity."
+    },
+    {
+      "n": 7,
+      "action": "Spread the voicing: lift the third or the fifth by an octave, or place the fifth above the third, so the notes are not close together, especially in low registers; add reverse textures in the key.",
+      "tool": "Piano roll + reverse sample",
+      "expect": "No muddiness; texture adds motion."
+    }
+  ],
+  "verification": [
+    "No two voices sound within a third of each other in the low register.",
+    "Each instrument plays exactly one chord tone per chord."
+  ],
+  "tags": [
+    "song-structure",
+    "arrangement",
+    "ambient",
+    "chord-voicing",
+    "layering",
+    "slow-tempo",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo"
+}

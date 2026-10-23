@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-22T16:33:09.363544+00:00",
-  "entry_count": 180,
+  "updated_at": "2026-10-23T18:39:14.210114+00:00",
+  "entry_count": 187,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -2829,6 +2829,97 @@
       "skills": [
         "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
       ]
+    },
+    {
+      "id": "cinematic-synth-C871ckX4GfQ",
+      "video_id": "C871ckX4GfQ",
+      "url": "https://www.youtube.com/watch?v=C871ckX4GfQ",
+      "title": "How to Make Beautiful Ambient Soundscapes",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/C871ckX4GfQ/raw.txt",
+      "summary": "Skills: lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+      "skills": [
+        "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-wirMkOC-hGQ",
+      "video_id": "wirMkOC-hGQ",
+      "url": "https://www.youtube.com/watch?v=wirMkOC-hGQ",
+      "title": "HOW TO PRODUCE AMBIENT MUSIC - ARRANGING YOUR AMBIENT SONG",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/wirMkOC-hGQ/raw.txt",
+      "summary": "Skills: ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+      "skills": [
+        "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+      ]
+    },
+    {
+      "id": "cinematic-synth-0bB8rWEcScA",
+      "video_id": "0bB8rWEcScA",
+      "url": "https://www.youtube.com/watch?v=0bB8rWEcScA",
+      "title": "Ambient Arrangements | Tips for Arranging Ambient Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0bB8rWEcScA/raw.txt",
+      "summary": "Skills: ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+      "skills": [
+        "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper"
+      ]
+    },
+    {
+      "id": "cinematic-synth-nkNSlRVGb38",
+      "video_id": "nkNSlRVGb38",
+      "url": "https://www.youtube.com/watch?v=nkNSlRVGb38",
+      "title": "3 Step Guide To Make The Perfect Build Up | Structure, Transitions & Core Elements",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/nkNSlRVGb38/raw.txt",
+      "summary": "Skills: eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+      "skills": [
+        "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ojDea0jCQ5o",
+      "video_id": "ojDea0jCQ5o",
+      "url": "https://www.youtube.com/watch?v=ojDea0jCQ5o",
+      "title": "You'll Never Make Bad Breakdown & Buildup Again After Watching This - FL Studio 20 Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ojDea0jCQ5o/raw.txt",
+      "summary": "Skills: breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation",
+      "skills": [
+        "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+      ]
+    },
+    {
+      "id": "cinematic-synth-CfyOOGAxJEs",
+      "video_id": "CfyOOGAxJEs",
+      "url": "https://www.youtube.com/watch?v=CfyOOGAxJEs",
+      "title": "Tips for Ambient Music Arrangement",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/CfyOOGAxJEs/raw.txt",
+      "summary": "Skills: ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+      "skills": [
+        "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo"
+      ]
+    },
+    {
+      "id": "cinematic-synth-gtg27jkzY1s",
+      "video_id": "gtg27jkzY1s",
+      "url": "https://www.youtube.com/watch?v=gtg27jkzY1s",
+      "title": "How to Create Emotional Cinematic Music in Logic Pro | Full Tutorial & Project Breakdown",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/gtg27jkzY1s/raw.txt",
+      "summary": "Skills: emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+      "skills": [
+        "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3078,6 +3169,19 @@
         "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
         "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
         "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice"
+      ]
+    },
+    {
+      "at": "2026-10-23T18:39:14.210114+00:00",
+      "batch": "2026-10-23-morning-hunt",
+      "added": [
+        "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+        "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+        "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+        "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation",
+        "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+        "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+        "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement"
       ]
     }
   ]

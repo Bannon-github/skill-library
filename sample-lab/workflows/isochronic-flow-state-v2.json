@@ -1,0 +1,729 @@
+{
+ "id": "isochronic-flow-state-v2",
+ "version": 1,
+ "trackType": "isochronic",
+ "preset": "Flow State v2 (sectioned)",
+ "note": "Original sound. Band names are convention only; no health claims. Headphones needed for the binaural layer.",
+ "lengthSec": 600,
+ "seed": 21,
+ "targetLufs": -14,
+ "peakCeilDb": -1.0,
+ "checkWinSec": 10,
+ "sectionBoundaries": [
+  90,
+  210,
+  360,
+  420,
+  525
+ ],
+ "rate": [
+  [
+   0,
+   8
+  ],
+  [
+   90,
+   8
+  ],
+  [
+   210,
+   10
+  ],
+  [
+   240,
+   10
+  ],
+  [
+   280,
+   14
+  ],
+  [
+   360,
+   14
+  ],
+  [
+   390,
+   12
+  ],
+  [
+   420,
+   12
+  ],
+  [
+   460,
+   14
+  ],
+  [
+   525,
+   14
+  ],
+  [
+   585,
+   8
+  ],
+  [
+   600,
+   8
+  ]
+ ],
+ "iso": {
+  "carrierHz": 432,
+  "duty": 0.5,
+  "edgeFrac": 0.22,
+  "relDbUnderBed": -17,
+  "octaves": [
+   [
+    0.5,
+    -6
+   ],
+   [
+    2.0,
+    -12
+   ]
+  ],
+  "octaveGateDb": [
+   [
+    0,
+    null
+   ],
+   [
+    430,
+    null
+   ],
+   [
+    450,
+    0
+   ],
+   [
+    525,
+    0
+   ],
+   [
+    560,
+    null
+   ],
+   [
+    600,
+    null
+   ]
+  ],
+  "levelAutomationDb": [
+   [
+    0,
+    null
+   ],
+   [
+    45,
+    null
+   ],
+   [
+    75,
+    0
+   ],
+   [
+    360,
+    0
+   ],
+   [
+    380,
+    -6
+   ],
+   [
+    415,
+    -6
+   ],
+   [
+    432,
+    0
+   ],
+   [
+    540,
+    0
+   ],
+   [
+    600,
+    null
+   ]
+  ]
+ },
+ "binaural": {
+  "level": 0.2,
+  "levelAutomationDb": [
+   [
+    0,
+    null
+   ],
+   [
+    45,
+    null
+   ],
+   [
+    75,
+    0
+   ],
+   [
+    360,
+    0
+   ],
+   [
+    380,
+    -6
+   ],
+   [
+    415,
+    -6
+   ],
+   [
+    432,
+    0
+   ],
+   [
+    540,
+    0
+   ],
+   [
+    600,
+    null
+   ]
+  ],
+  "note": "left = carrier, right = carrier + beat (isochronic/binaural skill form). 432 Hz is above the 120 Hz mono-lows line"
+ },
+ "noise": {
+  "relDb": -34,
+  "lpHz": 1500,
+  "panPeriodSec": 45,
+  "gainAutomationDb": [
+   [
+    0,
+    null
+   ],
+   [
+    165,
+    null
+   ],
+   [
+    190,
+    0
+   ],
+   [
+    560,
+    0
+   ],
+   [
+    600,
+    null
+   ]
+  ]
+ },
+ "layers": [
+  {
+   "name": "drone (shimmer drone chain)",
+   "levelDb": 0,
+   "lpHz": 3500,
+   "overlapSec": 6,
+   "gainAutomationDb": [
+    [
+     0,
+     null
+    ],
+    [
+     14,
+     0
+    ],
+    [
+     360,
+     0
+    ],
+    [
+     375,
+     -2
+    ],
+    [
+     415,
+     -2
+    ],
+    [
+     430,
+     0
+    ],
+    [
+     560,
+     0
+    ],
+    [
+     600,
+     null
+    ]
+   ],
+   "segments": [
+    {
+     "start": 0,
+     "end": 90,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    },
+    {
+     "start": 90,
+     "end": 210,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav",
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__43-50_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    },
+    {
+     "start": 210,
+     "end": 360,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__43-50_seed11.wav",
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__38-45_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    },
+    {
+     "start": 360,
+     "end": 420,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    },
+    {
+     "start": 420,
+     "end": 525,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__38-45_seed11.wav",
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__43-50_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    },
+    {
+     "start": 525,
+     "end": 600,
+     "files": [
+      "$LAB/systems/drone-wavetable-artifact-drone/drone-wavetable-artifact-drone__36-43_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      9.5
+     ],
+     "xfadeSec": 3
+    }
+   ]
+  },
+  {
+   "name": "pad (supersaw chord pad chain)",
+   "levelDb": -9,
+   "lpHz": 1800,
+   "overlapSec": 6,
+   "gainAutomationDb": [
+    [
+     0,
+     null
+    ],
+    [
+     50,
+     null
+    ],
+    [
+     85,
+     0
+    ],
+    [
+     360,
+     0
+    ],
+    [
+     375,
+     -6
+    ],
+    [
+     415,
+     -6
+    ],
+    [
+     432,
+     0
+    ],
+    [
+     545,
+     0
+    ],
+    [
+     585,
+     null
+    ],
+    [
+     600,
+     null
+    ]
+   ],
+   "segments": [
+    {
+     "start": 0,
+     "end": 90,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 90,
+     "end": 210,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__53-57-60-64_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 210,
+     "end": 360,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav",
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__50-53-57-64_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 360,
+     "end": 420,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__53-57-60-64_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 420,
+     "end": 525,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__53-57-60-64_seed11.wav",
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 525,
+     "end": 600,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav"
+     ],
+     "trim": [
+      2.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    }
+   ]
+  },
+  {
+   "name": "swell (multi-envelope swell chain)",
+   "levelDb": -11,
+   "lpHz": 2500,
+   "overlapSec": 6,
+   "gainAutomationDb": [
+    [
+     0,
+     null
+    ],
+    [
+     120,
+     null
+    ],
+    [
+     150,
+     0
+    ],
+    [
+     360,
+     0
+    ],
+    [
+     375,
+     null
+    ],
+    [
+     420,
+     null
+    ],
+    [
+     435,
+     0
+    ],
+    [
+     535,
+     0
+    ],
+    [
+     565,
+     null
+    ],
+    [
+     600,
+     null
+    ]
+   ],
+   "segments": [
+    {
+     "start": 90,
+     "end": 210,
+     "files": [
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__45-52-57-64_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 210,
+     "end": 360,
+     "files": [
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__48-55-60-64_seed11.wav",
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__45-52-57-64_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 420,
+     "end": 525,
+     "files": [
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__50-57-62-65_seed11.wav",
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__48-55-60-64_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    },
+    {
+     "start": 525,
+     "end": 600,
+     "files": [
+      "$LAB/systems/swell-multi-envelope-morph-swell/swell-multi-envelope-morph-swell__45-52-57-64_seed11.wav"
+     ],
+     "trim": [
+      1.5,
+      10.5
+     ],
+     "xfadeSec": 2.5
+    }
+   ]
+  },
+  {
+   "name": "octave pad (supersaw pad resampled +1 oct)",
+   "levelDb": -13,
+   "lpHz": 2200,
+   "octave": true,
+   "overlapSec": 6,
+   "gainAutomationDb": [
+    [
+     0,
+     null
+    ],
+    [
+     430,
+     null
+    ],
+    [
+     455,
+     0
+    ],
+    [
+     525,
+     0
+    ],
+    [
+     550,
+     null
+    ],
+    [
+     600,
+     null
+    ]
+   ],
+   "segments": [
+    {
+     "start": 420,
+     "end": 560,
+     "files": [
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__53-57-60-64_seed11.wav",
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__45-52-57-60_seed11.wav",
+      "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__50-53-57-64_seed11.wav"
+     ],
+     "trim": [
+      2.0,
+      10.0
+     ],
+     "xfadeSec": 1.5
+    }
+   ]
+  }
+ ],
+ "riser": {
+  "endAt": 210,
+  "lengthSec": 8,
+  "tailSec": 4,
+  "fHz": [
+   250,
+   3800
+  ],
+  "q": 2.5,
+  "sawHz": 65.41,
+  "gainDb": -5
+ },
+ "revSwell": {
+  "endAt": 420,
+  "irSec": 6,
+  "sourceFile": "$LAB/systems/pad-wide-supersaw-chord-pad/pad-wide-supersaw-chord-pad__53-57-60-64_seed11.wav",
+  "sourceTrim": [
+   2.5,
+   6.5
+  ],
+  "lpHz": 1800,
+  "gainDbRelBed": -3
+ },
+ "subDrop": {
+  "startAt": 525,
+  "lengthSec": 9,
+  "hz": [
+   72,
+   24
+  ],
+  "gainDbRelBed": -16
+ },
+ "masterFadeDb": [
+  [
+   0,
+   null
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   585,
+   0
+  ],
+  [
+   600,
+   null
+  ]
+ ],
+ "sections": [
+  {
+   "name": "Intro",
+   "start": 0,
+   "end": 90,
+   "layers": "drone (C-G); pad (Am) enters ~0:50 (staggered); pulse fades in 0:45-1:15",
+   "rateText": "8 Hz",
+   "skills": [
+    "hybrid-score-role-first-layering (staggered entry, drone first)",
+    "isochronic-tone-layer-under-music (30 s fade-in, 10 ms rate smoothing)"
+   ]
+  },
+  {
+   "name": "Build",
+   "start": 90,
+   "end": 210,
+   "layers": "drone (C-G, G-D); pad (F); swell enters 2:00-2:30; pink-noise air enters 2:45-3:10; riser 3:22-3:30 + ducked tail",
+   "rateText": "8 -> 10 Hz",
+   "skills": [
+    "hybrid-score-role-first-layering (one layer at a time)",
+    "one-bar-transition-riser-mod-envelope-timeline (noise + L->R pan + resonant filter sweep + octave-down detuned saw, tail ducked until the cut)"
+   ]
+  },
+  {
+   "name": "Main A",
+   "start": 210,
+   "end": 360,
+   "layers": "drone (G-D, D-A); pad (Am, Dm); swell (C, Am); noise; pulse+binaural at full",
+   "rateText": "10 Hz hold, glide to 14 Hz by 4:40, hold",
+   "skills": [
+    "layered-binaural-plus-isochronic-architecture (carrier L / carrier+beat R, shared rate)",
+    "isochronic-tone-layer-under-music (rate automation)"
+   ]
+  },
+  {
+   "name": "Breakdown",
+   "start": 360,
+   "end": 420,
+   "layers": "drone (C-G) kept; pad -6 dB; swell and noise leave; pulse and binaural -6 dB; reverse-reverb swell into Main B",
+   "rateText": "14 -> 12 Hz",
+   "skills": [
+    "hybrid-score-role-first-layering (drop to the drone role)",
+    "reverse-reverb-swell-print-reverse-print (Main B pad chord, 6 s lead-in)"
+   ]
+  },
+  {
+   "name": "Main B",
+   "start": 420,
+   "end": 525,
+   "layers": "drone (D-A, G-D); pad (F, Am); swell (Dsus/C); noise; octave pad (+1 oct, 3 chords); pulse with octave-down/up pulses locked 1:1",
+   "rateText": "12 -> 14 Hz, hold 14",
+   "skills": [
+    "layered-binaural-plus-isochronic-architecture (octave layers 0.5x/2x pulsed at ratio 1:1 to the beat)",
+    "hybrid-score-role-first-layering (fuller return)"
+   ]
+  },
+  {
+   "name": "Outro",
+   "start": 525,
+   "end": 600,
+   "layers": "octave pad leaves first, then swell, pad, drone last; sub drop 72->24 Hz at 8:45; pulse fades 9:00-10:00",
+   "rateText": "14 -> 8 Hz by 9:45",
+   "skills": [
+    "sub-drop-sine-freq-glide-80hz-to-20hz",
+    "isochronic-tone-layer-under-music (60 s fade-out)",
+    "hybrid-score-role-first-layering (reverse-order exit)"
+   ]
+  }
+ ]
+}
