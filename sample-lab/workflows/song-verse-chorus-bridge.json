@@ -1,0 +1,1248 @@
+{
+ "id": "song-verse-chorus-bridge",
+ "form": "Verse-chorus-bridge instrumental pop: Intro, V1, C1, V2, C2, Bridge, C3 (up a whole step), Outro (56 bars @100)",
+ "version": 1,
+ "note": "Instrumental: the 'vocal' role is a plucked lead. Original sound. Form after the Ableton Making Music forms chapter and open music theory texts (see research/song-structure.md).",
+ "bpm": 100,
+ "seed": 56,
+ "targetLufs": -14,
+ "peakCeilDb": -1.0,
+ "tailSec": 5.0,
+ "xfadeSec": 0.4,
+ "masterFade": {
+  "inSec": 0.1,
+  "outSec": 4.0
+ },
+ "drumLevelDb": {
+  "kick": -5,
+  "snare": -9,
+  "clap": -12,
+  "hat": -20,
+  "ohat": -22,
+  "shaker": -24,
+  "rim": -20
+ },
+ "targetLengthSec": [
+  120,
+  150
+ ],
+ "skillIds": [
+  "sidechain-compressor-duck-synth-pads",
+  "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+  "reverse-reverb-swell-print-reverse-print",
+  "noise-layer-whoosh-doppler-and-rising-variants",
+  "synthesized-noise-impact-tail-lfo-shaped",
+  "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+ ],
+ "chordLoops": {
+  "V": [
+   {
+    "voices": {
+     "root": [
+      36
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      60
+     ],
+     "high": [
+      64,
+      67,
+      72
+     ],
+     "mid": [
+      52,
+      55,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      33
+     ],
+     "full": [
+      45,
+      52,
+      57,
+      60
+     ],
+     "high": [
+      64,
+      69,
+      72
+     ],
+     "mid": [
+      52,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      41
+     ],
+     "full": [
+      48,
+      53,
+      57,
+      60
+     ],
+     "high": [
+      65,
+      69,
+      72
+     ],
+     "mid": [
+      53,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      31
+     ],
+     "full": [
+      47,
+      50,
+      55,
+      62
+     ],
+     "high": [
+      62,
+      67,
+      71
+     ],
+     "mid": [
+      50,
+      55,
+      62
+     ]
+    },
+    "bars": 2
+   }
+  ],
+  "Ch": [
+   {
+    "voices": {
+     "root": [
+      41
+     ],
+     "full": [
+      48,
+      53,
+      57,
+      60
+     ],
+     "high": [
+      65,
+      69,
+      72
+     ],
+     "mid": [
+      53,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      36
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      60
+     ],
+     "high": [
+      64,
+      67,
+      72
+     ],
+     "mid": [
+      52,
+      55,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      31
+     ],
+     "full": [
+      47,
+      50,
+      55,
+      62
+     ],
+     "high": [
+      62,
+      67,
+      71
+     ],
+     "mid": [
+      50,
+      55,
+      62
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      33
+     ],
+     "full": [
+      45,
+      52,
+      57,
+      60
+     ],
+     "high": [
+      64,
+      69,
+      72
+     ],
+     "mid": [
+      52,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   }
+  ],
+  "Br": [
+   {
+    "voices": {
+     "root": [
+      33
+     ],
+     "full": [
+      45,
+      52,
+      57,
+      60
+     ],
+     "high": [
+      64,
+      69,
+      72
+     ],
+     "mid": [
+      52,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      38
+     ],
+     "full": [
+      50,
+      53,
+      57,
+      62
+     ],
+     "high": [
+      65,
+      69,
+      74
+     ],
+     "mid": [
+      53,
+      57,
+      62
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      40
+     ],
+     "full": [
+      47,
+      52,
+      55,
+      59
+     ],
+     "high": [
+      64,
+      67,
+      71
+     ],
+     "mid": [
+      52,
+      55,
+      59
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      31
+     ],
+     "full": [
+      47,
+      50,
+      55,
+      62
+     ],
+     "high": [
+      62,
+      67,
+      71
+     ],
+     "mid": [
+      50,
+      55,
+      62
+     ]
+    },
+    "bars": 2
+   }
+  ],
+  "Out": [
+   {
+    "voices": {
+     "root": [
+      36
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      60
+     ],
+     "high": [
+      64,
+      67,
+      72
+     ],
+     "mid": [
+      52,
+      55,
+      60
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      33
+     ],
+     "full": [
+      45,
+      52,
+      57,
+      60
+     ],
+     "high": [
+      64,
+      69,
+      72
+     ],
+     "mid": [
+      52,
+      57,
+      60
+     ]
+    },
+    "bars": 2
+   }
+  ]
+ },
+ "motifs": {
+  "verse": {
+   "bars": 8,
+   "notes": [
+    [
+     0,
+     67,
+     1.5,
+     0.7
+    ],
+    [
+     2,
+     72,
+     1,
+     0.7
+    ],
+    [
+     4,
+     71,
+     2,
+     0.7
+    ],
+    [
+     8,
+     69,
+     1.5,
+     0.7
+    ],
+    [
+     10,
+     67,
+     1,
+     0.7
+    ],
+    [
+     12,
+     64,
+     2,
+     0.7
+    ],
+    [
+     16,
+     65,
+     1.5,
+     0.7
+    ],
+    [
+     18,
+     69,
+     1,
+     0.7
+    ],
+    [
+     20,
+     72,
+     2,
+     0.7
+    ],
+    [
+     24,
+     71,
+     1.5,
+     0.7
+    ],
+    [
+     26,
+     67,
+     1,
+     0.7
+    ],
+    [
+     28,
+     67,
+     3,
+     0.7
+    ]
+   ]
+  },
+  "chorus": {
+   "bars": 8,
+   "notes": [
+    [
+     0,
+     72,
+     1,
+     0.95
+    ],
+    [
+     1,
+     76,
+     1,
+     0.9
+    ],
+    [
+     2,
+     79,
+     2,
+     1.0
+    ],
+    [
+     4,
+     76,
+     1,
+     0.85
+    ],
+    [
+     5,
+     74,
+     1,
+     0.85
+    ],
+    [
+     6,
+     72,
+     2,
+     0.9
+    ],
+    [
+     8,
+     74,
+     1,
+     0.95
+    ],
+    [
+     9,
+     77,
+     1,
+     0.9
+    ],
+    [
+     10,
+     81,
+     2,
+     1.0
+    ],
+    [
+     12,
+     79,
+     1,
+     0.85
+    ],
+    [
+     13,
+     77,
+     1,
+     0.85
+    ],
+    [
+     14,
+     74,
+     2,
+     0.9
+    ],
+    [
+     16,
+     72,
+     1,
+     0.95
+    ],
+    [
+     17,
+     76,
+     1,
+     0.9
+    ],
+    [
+     18,
+     79,
+     2,
+     1.0
+    ],
+    [
+     20,
+     84,
+     2,
+     0.95
+    ],
+    [
+     22,
+     83,
+     2,
+     0.9
+    ],
+    [
+     24,
+     81,
+     1,
+     0.9
+    ],
+    [
+     25,
+     79,
+     1,
+     0.85
+    ],
+    [
+     26,
+     76,
+     2,
+     0.9
+    ],
+    [
+     28,
+     74,
+     1,
+     0.85
+    ],
+    [
+     29,
+     72,
+     3,
+     0.9
+    ]
+   ]
+  },
+  "bridge": {
+   "bars": 8,
+   "notes": [
+    [
+     0,
+     76,
+     4,
+     0.75
+    ],
+    [
+     4,
+     74,
+     2,
+     0.7
+    ],
+    [
+     6,
+     72,
+     2,
+     0.7
+    ],
+    [
+     8,
+     77,
+     4,
+     0.75
+    ],
+    [
+     12,
+     76,
+     2,
+     0.7
+    ],
+    [
+     14,
+     74,
+     2,
+     0.7
+    ],
+    [
+     16,
+     79,
+     3,
+     0.8
+    ],
+    [
+     19,
+     76,
+     1,
+     0.7
+    ],
+    [
+     20,
+     74,
+     3,
+     0.75
+    ],
+    [
+     24,
+     71,
+     4,
+     0.8
+    ],
+    [
+     28,
+     74,
+     3,
+     0.8
+    ]
+   ]
+  },
+  "tag": {
+   "bars": 4,
+   "notes": [
+    [
+     0,
+     72,
+     1,
+     0.8
+    ],
+    [
+     1,
+     76,
+     1,
+     0.75
+    ],
+    [
+     2,
+     79,
+     4,
+     0.75
+    ]
+   ]
+  }
+ },
+ "layers": {
+  "bass": {
+   "kind": "chords",
+   "voice": "root",
+   "levelDb": -1,
+   "tailSec": 3.0,
+   "rhythm": [
+    [
+     0,
+     0.9,
+     0.95
+    ],
+    [
+     1.5,
+     0.4,
+     0.75
+    ],
+    [
+     2,
+     0.9,
+     0.9
+    ],
+    [
+     3.5,
+     0.4,
+     0.7
+    ]
+   ],
+   "skillIds": [
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "soft-tape-saturation-pads-before-space",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "role": "bass: root pattern",
+   "system": "bass-velocity-hybrid-bass",
+   "chainSkillIds": [
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "soft-tape-saturation-pads-before-space"
+   ]
+  },
+  "pad": {
+   "kind": "chords",
+   "voice": "high",
+   "levelDb": -8,
+   "tailSec": 4.0,
+   "seedOff": 3,
+   "sidechainDb": 3,
+   "skillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "role": "chord pad",
+   "system": "pad-wide-supersaw-chord-pad",
+   "chainSkillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "keys": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -8,
+   "tailSec": 4.0,
+   "seedOff": 5,
+   "rhythm": [
+    [
+     0,
+     0.9,
+     0.7
+    ],
+    [
+     1.5,
+     0.5,
+     0.55
+    ],
+    [
+     3,
+     0.9,
+     0.6
+    ]
+   ],
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "chord comping",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "counter": {
+   "kind": "chords",
+   "voice": "mid",
+   "levelDb": -10,
+   "tailSec": 5.0,
+   "seedOff": 7,
+   "skillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "counter-layer: slow swell pads (added on repeats = variation)",
+   "system": "swell-multi-envelope-morph-swell",
+   "chainSkillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "lead": {
+   "kind": "melody",
+   "levelDb": -4,
+   "tailSec": 4.0,
+   "seedOff": 9,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "lead / vocal stand-in",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  }
+ },
+ "sections": [
+  {
+   "name": "Intro",
+   "bars": 4,
+   "keyLabel": "C: C Am F G (2 bars each)",
+   "chords": "V",
+   "energy": 2,
+   "layers": {
+    "pad": -2,
+    "keys": -3
+   },
+   "drums": {
+    "hat": "offbeat",
+    "rim": "rim_sparse",
+    "levelDb": {
+     "hat": -24
+    }
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "transitions": [
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare",
+     "gapBeats": 0
+    }
+   ]
+  },
+  {
+   "name": "Verse 1",
+   "bars": 8,
+   "keyLabel": "C Am F G",
+   "chords": "V",
+   "energy": 4,
+   "layers": {
+    "bass": -2,
+    "pad": -10,
+    "keys": -8,
+    "lead": -4
+   },
+   "drums": {
+    "kick": "kick_pop",
+    "snare": "backbeat",
+    "hat": "eighth_hat",
+    "levelDb": {
+     "kick": -7,
+     "snare": -12,
+     "hat": -24
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "verse"
+   },
+   "skillIds": [],
+   "transitions": [
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare"
+    },
+    {
+     "type": "riser",
+     "bars": 2,
+     "fHz": [
+      300,
+      4000
+     ],
+     "gainDb": -18,
+     "tailSec": 0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Chorus 1",
+   "bars": 8,
+   "keyLabel": "C: F C G Am",
+   "chords": "Ch",
+   "energy": 7,
+   "layers": {
+    "bass": 0,
+    "pad": -8,
+    "keys": -7,
+    "lead": -3
+   },
+   "drums": {
+    "kick": "four",
+    "snare": "backbeat",
+    "hat": "eighth_hat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -5
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "chorus"
+   },
+   "skillIds": [],
+   "transitions": [
+    {
+     "type": "impact",
+     "lengthSec": 3,
+     "hz": [
+      60,
+      34
+     ],
+     "noiseSec": 2.0,
+     "gainDb": -20,
+     "skillIds": [
+      "synthesized-noise-impact-tail-lfo-shaped"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Verse 2",
+   "bars": 8,
+   "keyLabel": "C Am F G",
+   "chords": "V",
+   "energy": 5,
+   "layers": {
+    "bass": -1,
+    "pad": -9,
+    "keys": -8,
+    "counter": -14,
+    "lead": -4
+   },
+   "drums": {
+    "kick": "kick_pop",
+    "snare": "backbeat",
+    "hat": "eighth_hat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -6,
+     "snare": -11,
+     "hat": -23,
+     "shaker": -28
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "verse",
+    "transpose": 0,
+    "velScale": 1.0
+   },
+   "skillIds": [],
+   "transitions": [
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare"
+    },
+    {
+     "type": "riser",
+     "bars": 2,
+     "fHz": [
+      300,
+      4500
+     ],
+     "gainDb": -17,
+     "tailSec": 0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Chorus 2",
+   "bars": 8,
+   "keyLabel": "C: F C G Am",
+   "chords": "Ch",
+   "energy": 8,
+   "layers": {
+    "bass": 0,
+    "pad": -8,
+    "keys": -7,
+    "counter": -9,
+    "lead": -3
+   },
+   "drums": {
+    "kick": "four",
+    "snare": "backbeat",
+    "hat": "eighth_hat",
+    "ohat": "offbeat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -4.5
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "chorus"
+   },
+   "skillIds": [],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 3.0,
+     "gainDb": -18,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bridge",
+   "bars": 8,
+   "keyLabel": "C: Am Dm Em G (new chords, thinner)",
+   "chords": "Br",
+   "energy": 3,
+   "layers": {
+    "pad": -7,
+    "keys": {
+     "db": -12,
+     "toDb": -8
+    },
+    "counter": -10,
+    "lead": -4
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "shaker": "shaker16",
+    "levelDb": {
+     "shaker": -28
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "bridge"
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 2,
+     "fHz": [
+      250,
+      5000
+     ],
+     "gainDb": -12,
+     "tailSec": 0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    },
+    {
+     "type": "reverse_swell",
+     "source": "pad",
+     "trim": [
+      0.3,
+      4.3
+     ],
+     "irSec": 4.0,
+     "gainDbRel": -6,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    },
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare",
+     "gapBeats": 0.5
+    },
+    {
+     "type": "gap",
+     "beats": 0.5,
+     "floorDb": -50
+    }
+   ]
+  },
+  {
+   "name": "Chorus 3 (up a whole step)",
+   "bars": 8,
+   "keyLabel": "D: G D A Bm (C chorus +2 semitones)",
+   "chords": "Ch",
+   "transpose": 2,
+   "energy": 10,
+   "layers": {
+    "bass": 0,
+    "pad": -7,
+    "keys": -6,
+    "counter": -8,
+    "lead": -2
+   },
+   "drums": {
+    "kick": "four",
+    "snare": "backbeat",
+    "hat": "sixteenth_hat",
+    "ohat": "offbeat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -4
+    }
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "chorus",
+    "transpose": 0,
+    "velScale": 1.0
+   },
+   "skillIds": [],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 3.0,
+     "gainDb": -16,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Outro",
+   "bars": 4,
+   "keyLabel": "D: tag over G D (loop A Bm)",
+   "chords": "Ch",
+   "transpose": 2,
+   "energy": 3,
+   "layers": {
+    "pad": {
+     "db": -8,
+     "toDb": -20
+    },
+    "keys": {
+     "db": -8,
+     "toDb": -20
+    },
+    "lead": -5
+   },
+   "drums": {
+    "kick": "half",
+    "levelDb": {
+     "kick": -12
+    },
+    "stopAtBeat": 8
+   },
+   "melody": {
+    "layer": "lead",
+    "motif": "tag"
+   },
+   "skillIds": [],
+   "transitions": []
+  }
+ ],
+ "qualityGates": {
+  "targetVersion": "TARGET.md v1.3 (the parts that apply to a full-length mix; per-note metrics M3/M4/M6-M11/M13/M15 are not used)",
+  "G1_truePeakMaxDb": -1.0,
+  "G2_clippedSamples": 0,
+  "G3_dcMax": 0.001,
+  "G4_determinism": "a rendered clip re-renders bit-identical",
+  "G5_cleanTailRmsMaxDb": -60,
+  "G6_cleanStartPeakMax": 0.003,
+  "G7_finite": true,
+  "M1_loudnessLufsBand": [
+   -18,
+   -12
+  ],
+  "M2_monoFoldLossMaxDb": 3.0,
+  "M5_sideMidBelow150HzMaxDb": -15,
+  "M12_energyAbove12kMaxDb": -24,
+  "M14_limiterGainReductionMaxDb": 4,
+  "seams": {
+   "stepVsP999Max": 8,
+   "note": "section boundaries are intentional changes: their flux and loudness steps are reported, not gated"
+  },
+  "plannedCurve": {
+   "spearmanLufsVsPlannedEnergyMin": 0.7,
+   "note": "section loudness should follow the planned 1-10 energy order; reported with each render"
+  }
+ },
+ "totalBars": 56,
+ "sectionTableMd": "| # | section | bars | bpm | key / chords | layers entering | layers leaving | energy | transition into next |\n|---|---|---|---|---|---|---|---|---|\n| 1 | Intro | 4 | 100 | C: C Am F G (2 bars each) | keys, pad | - | 2 | snare_roll 1b |\n| 2 | Verse 1 | 8 | 100 | C Am F G | bass, lead | - | 4 | snare_roll 1b, riser 2b |\n| 3 | Chorus 1 | 8 | 100 | C: F C G Am | - | - | 7 | impact |\n| 4 | Verse 2 | 8 | 100 | C Am F G | counter | - | 5 | snare_roll 1b, riser 2b |\n| 5 | Chorus 2 | 8 | 100 | C: F C G Am | - | - | 8 | downlifter |\n| 6 | Bridge | 8 | 100 | C: Am Dm Em G (new chords, thinner) | - | bass | 3 | riser 2b, reverse_swell, snare_roll 1b, gap 0.5beat |\n| 7 | Chorus 3 (up a whole step) | 8 | 100 | D: G D A Bm (C chorus +2 semitones) | bass | - | 10 | downlifter |\n| 8 | Outro | 4 | 100 | D: tag over G D (loop A Bm) | - | bass, counter | 3 | - |",
+ "lengthSecPlanned": 139.4
+}

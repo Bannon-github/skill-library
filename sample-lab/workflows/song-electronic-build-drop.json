@@ -1,0 +1,976 @@
+{
+ "id": "song-electronic-build-drop",
+ "form": "Electronic: intro -> build -> drop -> break/breakdown -> build -> drop 2 -> outro (dance-leaning, 76 bars @128)",
+ "version": 1,
+ "note": "Short demo version: the intro and outro are 8 bars (club mixes use 16-32). Drums are engine-built synth voices (no drum skill in the library). Original sound.",
+ "bpm": 128,
+ "seed": 76,
+ "targetLufs": -14,
+ "peakCeilDb": -1.0,
+ "tailSec": 5.0,
+ "xfadeSec": 0.05,
+ "masterFade": {
+  "inSec": 0.1,
+  "outSec": 6.0
+ },
+ "drumBusDb": 0,
+ "drumLevelDb": {
+  "kick": -4,
+  "clap": -10,
+  "snare": -10,
+  "hat": -18,
+  "ohat": -20,
+  "shaker": -24,
+  "rim": -20
+ },
+ "targetLengthSec": [
+  130,
+  150
+ ],
+ "skillIds": [
+  "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+  "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation",
+  "sidechain-compressor-duck-synth-pads",
+  "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+  "sub-drop-sine-freq-glide-80hz-to-20hz",
+  "synthesized-noise-impact-tail-lfo-shaped",
+  "reverse-reverb-swell-print-reverse-print",
+  "noise-layer-whoosh-doppler-and-rising-variants"
+ ],
+ "chordLoops": {
+  "M": [
+   {
+    "voices": {
+     "root": [
+      33
+     ],
+     "full": [
+      57,
+      60,
+      64,
+      69
+     ],
+     "high": [
+      69,
+      72,
+      76
+     ],
+     "mid": [
+      57,
+      60,
+      64
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      29
+     ],
+     "full": [
+      57,
+      60,
+      65,
+      69
+     ],
+     "high": [
+      69,
+      72,
+      77
+     ],
+     "mid": [
+      57,
+      60,
+      65
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      36
+     ],
+     "full": [
+      55,
+      60,
+      64,
+      67
+     ],
+     "high": [
+      67,
+      72,
+      76
+     ],
+     "mid": [
+      55,
+      60,
+      64
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      31
+     ],
+     "full": [
+      55,
+      59,
+      62,
+      67
+     ],
+     "high": [
+      67,
+      71,
+      74
+     ],
+     "mid": [
+      55,
+      59,
+      62
+     ]
+    },
+    "bars": 2
+   }
+  ]
+ },
+ "motifs": {
+  "hook": {
+   "bars": 4,
+   "notes": [
+    [
+     0,
+     81,
+     0.75,
+     0.9
+    ],
+    [
+     1,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     2,
+     88,
+     1.5,
+     0.95
+    ],
+    [
+     4,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     5,
+     81,
+     0.75,
+     0.8
+    ],
+    [
+     6,
+     79,
+     1.5,
+     0.85
+    ],
+    [
+     8,
+     77,
+     0.75,
+     0.9
+    ],
+    [
+     9,
+     81,
+     0.75,
+     0.8
+    ],
+    [
+     10,
+     84,
+     1.5,
+     0.9
+    ],
+    [
+     12,
+     83,
+     0.75,
+     0.8
+    ],
+    [
+     13,
+     79,
+     0.75,
+     0.8
+    ],
+    [
+     14,
+     76,
+     1.5,
+     0.85
+    ]
+   ]
+  },
+  "preview4": {
+   "bars": 4,
+   "notes": [
+    [
+     0,
+     81,
+     0.75,
+     0.9
+    ],
+    [
+     1,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     2,
+     88,
+     1.5,
+     0.95
+    ],
+    [
+     4,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     5,
+     81,
+     0.75,
+     0.8
+    ],
+    [
+     6,
+     79,
+     1.5,
+     0.85
+    ]
+   ]
+  },
+  "preview9": {
+   "bars": 4,
+   "notes": [
+    [
+     0,
+     81,
+     0.75,
+     0.9
+    ],
+    [
+     1,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     2,
+     88,
+     1.5,
+     0.95
+    ],
+    [
+     4,
+     84,
+     0.75,
+     0.8
+    ],
+    [
+     5,
+     81,
+     0.75,
+     0.8
+    ],
+    [
+     6,
+     79,
+     1.5,
+     0.85
+    ],
+    [
+     8,
+     77,
+     0.75,
+     0.9
+    ],
+    [
+     9,
+     81,
+     0.75,
+     0.8
+    ],
+    [
+     10,
+     84,
+     1.5,
+     0.9
+    ]
+   ]
+  }
+ },
+ "layers": {
+  "bass": {
+   "kind": "chords",
+   "voice": "root",
+   "levelDb": 0,
+   "tailSec": 3.0,
+   "rhythm": [
+    [
+     0.5,
+     0.4,
+     0.95
+    ],
+    [
+     1.5,
+     0.4,
+     0.8
+    ],
+    [
+     2.5,
+     0.4,
+     0.9
+    ],
+    [
+     3.5,
+     0.4,
+     0.8
+    ]
+   ],
+   "sidechainDb": 9,
+   "skillIds": [
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "soft-tape-saturation-pads-before-space",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "role": "rolling off-beat bass, ducked by the kick",
+   "system": "bass-velocity-hybrid-bass",
+   "chainSkillIds": [
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "soft-tape-saturation-pads-before-space"
+   ]
+  },
+  "stabs": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -6,
+   "tailSec": 3.0,
+   "seedOff": 2,
+   "sidechainDb": 6,
+   "gateFloorDb": -14,
+   "skillIds": [
+    "evolving-pad-unison-filter-swell-fifth",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad"
+   ],
+   "role": "gated chord texture",
+   "system": "gated-fifth-swell-trance-gate",
+   "chainSkillIds": [
+    "evolving-pad-unison-filter-swell-fifth",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb"
+   ]
+  },
+  "pad": {
+   "kind": "chords",
+   "voice": "high",
+   "levelDb": -8,
+   "tailSec": 4.0,
+   "seedOff": 4,
+   "sidechainDb": 6,
+   "skillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "role": "wide chord pad / held note for builds",
+   "system": "pad-wide-supersaw-chord-pad",
+   "chainSkillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "soft": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -9,
+   "tailSec": 4.0,
+   "seedOff": 6,
+   "rhythm": [
+    [
+     0,
+     6.0,
+     0.6
+    ]
+   ],
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+   ],
+   "role": "soft piano stand-in: drop chords as long chords",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "hook": {
+   "kind": "melody",
+   "levelDb": -4,
+   "tailSec": 3.0,
+   "seedOff": 8,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+   ],
+   "role": "drop melody",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "air": {
+   "kind": "noise",
+   "lpHz": 2500,
+   "panPeriodSec": 20,
+   "levelDb": -14,
+   "role": "quiet ambience bed for the break"
+  }
+ },
+ "sections": [
+  {
+   "name": "Intro",
+   "bars": 8,
+   "keyLabel": "A minor: Am F C G (2 bars each)",
+   "chords": "M",
+   "energy": 4,
+   "layers": {
+    "pad": {
+     "db": -14,
+     "toDb": -8
+    }
+   },
+   "drums": {
+    "kick": "four",
+    "hat": "offbeat",
+    "byBar": {
+     "hat": [
+      "off",
+      "off",
+      "offbeat",
+      "offbeat",
+      "offbeat",
+      "offbeat",
+      "offbeat",
+      "offbeat"
+     ]
+    },
+    "shaker": "off",
+    "levelDb": {
+     "kick": -4
+    }
+   },
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": []
+  },
+  {
+   "name": "Build 1 (bars 1-7)",
+   "bars": 7,
+   "keyLabel": "Am F C G",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 6,
+   "layers": {
+    "pad": -8,
+    "stabs": {
+     "db": -18,
+     "toDb": -8
+    }
+   },
+   "drums": {
+    "kick": "four",
+    "hat": "offbeat",
+    "shaker": "shaker16",
+    "clap": "off",
+    "byBar": {
+     "kick": [
+      "four",
+      "four",
+      "four",
+      "four",
+      "eighth",
+      "eighth",
+      "sixteenth"
+     ],
+     "clap": [
+      "off",
+      "off",
+      "off",
+      "off",
+      "off",
+      "backbeat",
+      "backbeat"
+     ]
+    }
+   },
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 7,
+     "fHz": [
+      250,
+      5000
+     ],
+     "gainDb": -11,
+     "tailSec": 0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    },
+    {
+     "type": "lowcut",
+     "bars": 4,
+     "hz": [
+      30,
+      350
+     ],
+     "skillIds": [
+      "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pre-drop (bar 8)",
+   "bars": 1,
+   "keyLabel": "Am",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 4,
+   "layers": {
+    "pad": -10
+   },
+   "drums": {},
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": [
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare",
+     "gapBeats": 0.5
+    },
+    {
+     "type": "gap",
+     "beats": 0.5,
+     "floorDb": -60
+    }
+   ]
+  },
+  {
+   "name": "Drop 1",
+   "bars": 16,
+   "keyLabel": "Am F C G",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 9,
+   "layers": {
+    "bass": 0,
+    "stabs": -8,
+    "pad": -12,
+    "hook": -4
+   },
+   "drums": {
+    "kick": "four",
+    "clap": "backbeat",
+    "hat": "offbeat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -4
+    }
+   },
+   "melody": {
+    "layer": "hook",
+    "motif": "hook",
+    "skillIds": []
+   },
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "transitions": [
+    {
+     "type": "impact",
+     "lengthSec": 5,
+     "hz": [
+      70,
+      26
+     ],
+     "noiseSec": 3.0,
+     "gainDb": -8,
+     "skillIds": [
+      "synthesized-noise-impact-tail-lfo-shaped",
+      "sub-drop-sine-freq-glide-80hz-to-20hz"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Break (4 bars)",
+   "bars": 4,
+   "keyLabel": "Am F",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 3,
+   "layers": {
+    "pad": -10,
+    "air": -18
+   },
+   "drums": {},
+   "skillIds": [
+    "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+   ],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 3.0,
+     "gainDb": -14,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Breakdown",
+   "bars": 8,
+   "keyLabel": "Am F C G (long chords)",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 2,
+   "layers": {
+    "pad": -4,
+    "soft": 0,
+    "hook": {
+     "db": -10,
+     "toDb": -4,
+     "lp": [
+      500,
+      12000
+     ]
+    },
+    "air": -20
+   },
+   "drums": {
+    "shaker": "shaker16",
+    "hat": "sixteenth_hat",
+    "levelDb": {
+     "shaker": -28,
+     "hat": -30
+    }
+   },
+   "melody": {
+    "layer": "hook",
+    "motif": "preview4",
+    "startBar": 0,
+    "endBar": 4
+   },
+   "skillIds": [
+    "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation"
+   ],
+   "transitions": [
+    {
+     "type": "reverse_swell",
+     "source": "pad",
+     "trim": [
+      0.3,
+      4.3
+     ],
+     "irSec": 4.0,
+     "gainDbRel": -6,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Build 2 (bars 1-7)",
+   "bars": 7,
+   "keyLabel": "Am F C G",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 6,
+   "layers": {
+    "pad": -8,
+    "soft": -10,
+    "stabs": {
+     "db": -20,
+     "toDb": -8
+    },
+    "hook": {
+     "db": -9,
+     "toDb": -3,
+     "lp": [
+      900,
+      14000
+     ]
+    }
+   },
+   "drums": {
+    "kick": "four",
+    "hat": "offbeat",
+    "shaker": "shaker16",
+    "byBar": {
+     "kick": [
+      "off",
+      "four",
+      "four",
+      "four",
+      "eighth",
+      "eighth",
+      "sixteenth"
+     ],
+     "clap": [
+      "off",
+      "off",
+      "off",
+      "backbeat",
+      "backbeat",
+      "backbeat",
+      "backbeat"
+     ]
+    }
+   },
+   "melody": {
+    "layer": "hook",
+    "motif": "preview9",
+    "startBar": 0,
+    "endBar": 8
+   },
+   "skillIds": [
+    "breakdown-arrangement-4-bar-break-two-8-bar-breakdowns-8-bar-build-up-rhythm-stripped-drop-chords-melody-foreshadowed-via-lowpass-automation",
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 7,
+     "fHz": [
+      250,
+      5500
+     ],
+     "gainDb": -10,
+     "tailSec": 0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    },
+    {
+     "type": "lowcut",
+     "bars": 4,
+     "hz": [
+      30,
+      380
+     ],
+     "skillIds": [
+      "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pre-drop 2 (bar 8)",
+   "bars": 1,
+   "keyLabel": "Am",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 4,
+   "layers": {
+    "pad": -10
+   },
+   "drums": {},
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": [
+    {
+     "type": "snare_roll",
+     "bars": 1,
+     "voice": "snare",
+     "gapBeats": 0.5
+    },
+    {
+     "type": "gap",
+     "beats": 0.5,
+     "floorDb": -60
+    }
+   ]
+  },
+  {
+   "name": "Drop 2",
+   "bars": 16,
+   "keyLabel": "Am F C G",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 10,
+   "layers": {
+    "bass": 0,
+    "stabs": -7,
+    "pad": -10,
+    "hook": -3,
+    "soft": -14
+   },
+   "drums": {
+    "kick": "four",
+    "clap": "backbeat",
+    "hat": "offbeat",
+    "ohat": "offbeat",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -3.5
+    }
+   },
+   "melody": {
+    "layer": "hook",
+    "motif": "hook",
+    "transpose": 0
+   },
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+    "sidechain-compressor-duck-synth-pads"
+   ],
+   "transitions": []
+  },
+  {
+   "name": "Outro",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "M",
+   "chordStart": 0,
+   "energy": 3,
+   "layers": {
+    "bass": {
+     "db": 0,
+     "toDb": -24
+    },
+    "stabs": null,
+    "pad": {
+     "db": -10,
+     "toDb": -24
+    }
+   },
+   "drums": {
+    "kick": "four",
+    "hat": "offbeat",
+    "byBar": {
+     "kick": [
+      "four",
+      "four",
+      "four",
+      "four",
+      "four",
+      "four",
+      "half",
+      "half"
+     ],
+     "hat": [
+      "offbeat",
+      "offbeat",
+      "offbeat",
+      "offbeat",
+      "off",
+      "off",
+      "off",
+      "off"
+     ]
+    },
+    "levelDb": {
+     "kick": -12
+    }
+   },
+   "skillIds": [
+    "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+   ],
+   "transitions": []
+  }
+ ],
+ "qualityGates": {
+  "targetVersion": "TARGET.md v1.3 (the parts that apply to a full-length mix; per-note metrics M3/M4/M6-M11/M13/M15 are not used)",
+  "G1_truePeakMaxDb": -1.0,
+  "G2_clippedSamples": 0,
+  "G3_dcMax": 0.001,
+  "G4_determinism": "a rendered clip re-renders bit-identical",
+  "G5_cleanTailRmsMaxDb": -60,
+  "G6_cleanStartPeakMax": 0.003,
+  "G7_finite": true,
+  "M1_loudnessLufsBand": [
+   -18,
+   -12
+  ],
+  "M2_monoFoldLossMaxDb": 3.0,
+  "M5_sideMidBelow150HzMaxDb": -15,
+  "M12_energyAbove12kMaxDb": -24,
+  "M14_limiterGainReductionMaxDb": 4,
+  "seams": {
+   "stepVsP999Max": 8,
+   "note": "section boundaries are intentional changes: their flux and loudness steps are reported, not gated"
+  },
+  "plannedCurve": {
+   "spearmanLufsVsPlannedEnergyMin": 0.7,
+   "note": "section loudness should follow the planned 1-10 energy order; reported with each render"
+  }
+ },
+ "totalBars": 76,
+ "sectionTableMd": "| # | section | bars | bpm | key / chords | layers entering | layers leaving | energy | transition into next |\n|---|---|---|---|---|---|---|---|---|\n| 1 | Intro | 8 | 128 | A minor: Am F C G (2 bars each) | pad | - | 4 | - |\n| 2 | Build 1 (bars 1-7) | 7 | 128 | Am F C G | stabs | - | 6 | riser 7b, lowcut 4b |\n| 3 | Pre-drop (bar 8) | 1 | 128 | Am | - | stabs | 4 | snare_roll 1b, gap 0.5beat |\n| 4 | Drop 1 | 16 | 128 | Am F C G | bass, hook, stabs | - | 9 | impact |\n| 5 | Break (4 bars) | 4 | 128 | Am F | air | bass, hook, stabs | 3 | downlifter |\n| 6 | Breakdown | 8 | 128 | Am F C G (long chords) | hook, soft | - | 2 | reverse_swell |\n| 7 | Build 2 (bars 1-7) | 7 | 128 | Am F C G | stabs | air | 6 | riser 7b, lowcut 4b |\n| 8 | Pre-drop 2 (bar 8) | 1 | 128 | Am | - | hook, soft, stabs | 4 | snare_roll 1b, gap 0.5beat |\n| 9 | Drop 2 | 16 | 128 | Am F C G | bass, hook, soft, stabs | - | 10 | - |\n| 10 | Outro | 8 | 128 | Am F C G | - | hook, soft, stabs | 3 | - |",
+ "lengthSecPlanned": 147.5
+}

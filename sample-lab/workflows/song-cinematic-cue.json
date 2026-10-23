@@ -1,0 +1,795 @@
+{
+ "id": "song-cinematic-cue",
+ "form": "Cinematic cue: intro (nothing -> warmth) -> build (add layers) -> climax (the only melody) -> fade outro; 48 bars",
+ "version": 1,
+ "note": "Original sound. Chord loop is a familiar vi-IV-I-V in C (A minor tonic) as the arrangement-arc skill suggests; the melody is written from chord tones.",
+ "bpm": 72,
+ "seed": 48,
+ "targetLufs": -16,
+ "peakCeilDb": -1.0,
+ "tailSec": 7.0,
+ "xfadeSec": 3.0,
+ "masterFade": {
+  "inSec": 6.0,
+  "outSec": 8.0
+ },
+ "drumLevelDb": {
+  "kick": -12,
+  "shaker": -26
+ },
+ "targetLengthSec": [
+  150,
+  175
+ ],
+ "skillIds": [
+  "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+  "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+  "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+  "reverse-reverb-swell-print-reverse-print",
+  "sub-drop-sine-freq-glide-80hz-to-20hz"
+ ],
+ "chordLoops": {
+  "L": [
+   {
+    "voices": {
+     "root": [
+      33,
+      40
+     ],
+     "mid": [
+      57,
+      60,
+      64
+     ],
+     "high": [
+      64,
+      69,
+      72
+     ],
+     "full": [
+      57,
+      60,
+      64,
+      69
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      29,
+      36
+     ],
+     "mid": [
+      57,
+      60,
+      65
+     ],
+     "high": [
+      65,
+      69,
+      72
+     ],
+     "full": [
+      57,
+      60,
+      65,
+      69
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      36,
+      43
+     ],
+     "mid": [
+      55,
+      60,
+      64
+     ],
+     "high": [
+      64,
+      67,
+      72
+     ],
+     "full": [
+      55,
+      60,
+      64,
+      67
+     ]
+    },
+    "bars": 2
+   },
+   {
+    "voices": {
+     "root": [
+      31,
+      38
+     ],
+     "mid": [
+      55,
+      59,
+      62
+     ],
+     "high": [
+      62,
+      67,
+      71
+     ],
+     "full": [
+      55,
+      59,
+      62,
+      67
+     ]
+    },
+    "bars": 2
+   }
+  ]
+ },
+ "motifs": {
+  "theme": {
+   "bars": 8,
+   "notes": [
+    [
+     0,
+     76,
+     3,
+     0.9
+    ],
+    [
+     3,
+     74,
+     1,
+     0.7
+    ],
+    [
+     4,
+     72,
+     2,
+     0.8
+    ],
+    [
+     6,
+     69,
+     2,
+     0.75
+    ],
+    [
+     8,
+     72,
+     3,
+     0.85
+    ],
+    [
+     11,
+     69,
+     1,
+     0.7
+    ],
+    [
+     12,
+     77,
+     2,
+     0.85
+    ],
+    [
+     14,
+     76,
+     2,
+     0.8
+    ],
+    [
+     16,
+     79,
+     3,
+     0.95
+    ],
+    [
+     19,
+     76,
+     1,
+     0.7
+    ],
+    [
+     20,
+     72,
+     2,
+     0.8
+    ],
+    [
+     22,
+     76,
+     2,
+     0.8
+    ],
+    [
+     24,
+     74,
+     3,
+     0.85
+    ],
+    [
+     27,
+     71,
+     1,
+     0.7
+    ],
+    [
+     28,
+     74,
+     2,
+     0.8
+    ],
+    [
+     30,
+     71,
+     2,
+     0.7
+    ]
+   ]
+  },
+  "dialogue": {
+   "bars": 4,
+   "notes": [
+    [
+     0,
+     69,
+     3,
+     0.6
+    ],
+    [
+     6,
+     72,
+     2,
+     0.5
+    ],
+    [
+     10,
+     76,
+     4,
+     0.5
+    ],
+    [
+     14,
+     69,
+     2,
+     0.45
+    ]
+   ]
+  }
+ },
+ "layers": {
+  "drone": {
+   "kind": "chords",
+   "voice": "root",
+   "levelDb": 0,
+   "tailSec": 8.0,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "role": "low drone: the role that enters first",
+   "system": "drone-wavetable-artifact-drone",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "strings": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -4,
+   "tailSec": 7.0,
+   "seedOff": 2,
+   "skillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "string-like swells (slow attack)",
+   "system": "swell-multi-envelope-morph-swell",
+   "chainSkillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "pad": {
+   "kind": "chords",
+   "voice": "mid",
+   "levelDb": -6,
+   "tailSec": 7.0,
+   "seedOff": 4,
+   "skillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "warm pad body",
+   "system": "pad-wide-supersaw-chord-pad",
+   "chainSkillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "piano": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -9,
+   "tailSec": 5.0,
+   "seedOff": 6,
+   "rhythm": [
+    [
+     0.0,
+     0.45,
+     0.45
+    ],
+    [
+     0.5,
+     0.45,
+     0.7
+    ],
+    [
+     1.0,
+     0.45,
+     0.45
+    ],
+    [
+     1.5,
+     0.45,
+     0.7
+    ],
+    [
+     2.0,
+     0.45,
+     0.45
+    ],
+    [
+     2.5,
+     0.45,
+     0.7
+    ],
+    [
+     3.0,
+     0.45,
+     0.45
+    ],
+    [
+     3.5,
+     0.45,
+     0.7
+    ]
+   ],
+   "arp": "updown",
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "piano stand-in: chord arpeggio forward/backward (the melody-from-chords method)",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "motor": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": -14,
+   "tailSec": 6.0,
+   "seedOff": 8,
+   "gateFloorDb": -10,
+   "skillIds": [
+    "evolving-pad-unison-filter-swell-fifth",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "role": "motor: soft gated pulse that tightens the build",
+   "system": "gated-fifth-swell-trance-gate",
+   "chainSkillIds": [
+    "evolving-pad-unison-filter-swell-fifth",
+    "trance-gate-sidechain-chop-texture",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb"
+   ]
+  },
+  "melody": {
+   "kind": "melody",
+   "levelDb": -5,
+   "tailSec": 6.0,
+   "seedOff": 9,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "the climax melody (nowhere else)",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "dialogue": {
+   "kind": "melody",
+   "levelDb": -8,
+   "tailSec": 7.0,
+   "seedOff": 11,
+   "octave": 0,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "role": "outro piano dialogue",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "sub": {
+   "kind": "noise",
+   "lpHz": 300,
+   "panPeriodSec": 60,
+   "levelDb": -26,
+   "role": "low air under the intro"
+  }
+ },
+ "sections": [
+  {
+   "name": "Intro",
+   "bars": 8,
+   "keyLabel": "Am F C G (2 bars each)",
+   "chords": "L",
+   "energy": 2,
+   "layers": {
+    "drone": {
+     "db": -24,
+     "toDb": -2
+    },
+    "strings": {
+     "db": -30,
+     "toDb": -10
+    },
+    "sub": -20
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "transitions": [
+    {
+     "type": "whoosh",
+     "sec": 3.0,
+     "gainDb": -28,
+     "dir": "up"
+    }
+   ]
+  },
+  {
+   "name": "Build A: pad joins",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "L",
+   "energy": 3,
+   "layers": {
+    "drone": -2,
+    "strings": {
+     "db": -10,
+     "toDb": -5
+    },
+    "pad": {
+     "db": -18,
+     "toDb": -7
+    },
+    "sub": -22
+   },
+   "skillIds": [
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "transitions": [
+    {
+     "type": "reverse_swell",
+     "source": "piano",
+     "trim": [
+      0.2,
+      3.5
+     ],
+     "irSec": 4.5,
+     "gainDbRel": -8,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Build B: arpeggio + motor",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "L",
+   "energy": 5,
+   "layers": {
+    "drone": -2,
+    "strings": -5,
+    "pad": -7,
+    "piano": {
+     "db": -16,
+     "toDb": -8
+    },
+    "motor": {
+     "db": -24,
+     "toDb": -12
+    }
+   },
+   "drums": {
+    "kick": "half",
+    "levelDb": {
+     "kick": -20
+    }
+   },
+   "skillIds": [
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 3,
+     "fHz": [
+      250,
+      4200
+     ],
+     "gainDb": -12,
+     "tailSec": 4.0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    },
+    {
+     "type": "reverse_swell",
+     "source": "strings",
+     "trim": [
+      0.3,
+      4.3
+     ],
+     "irSec": 6.0,
+     "gainDbRel": -4,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    },
+    {
+     "type": "gap",
+     "beats": 1.0,
+     "floorDb": -40
+    },
+    {
+     "type": "impact",
+     "lengthSec": 6,
+     "hz": [
+      70,
+      26
+     ],
+     "noiseSec": 3.5,
+     "gainDb": -9,
+     "skillIds": [
+      "sub-drop-sine-freq-glide-80hz-to-20hz",
+      "synthesized-noise-impact-tail-lfo-shaped"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Climax A: melody",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "L",
+   "energy": 8,
+   "layers": {
+    "drone": 0,
+    "strings": -2,
+    "pad": -5,
+    "piano": -7,
+    "motor": -12,
+    "melody": -4
+   },
+   "drums": {
+    "kick": "half",
+    "levelDb": {
+     "kick": -14
+    }
+   },
+   "melody": {
+    "layer": "melody",
+    "motif": "theme"
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "transitions": []
+  },
+  {
+   "name": "Climax B: melody up",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "L",
+   "energy": 9,
+   "layers": {
+    "drone": 0,
+    "strings": -1,
+    "pad": -4,
+    "piano": -6,
+    "motor": -11,
+    "melody": -3
+   },
+   "drums": {
+    "kick": "half",
+    "shaker": "shaker16",
+    "levelDb": {
+     "kick": -12,
+     "shaker": -28
+    }
+   },
+   "melody": {
+    "layer": "melody",
+    "motif": "theme",
+    "transpose": 12,
+    "velScale": 1.0
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 4.0,
+     "gainDb": -14,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    },
+    {
+     "type": "sub_drop",
+     "lengthSec": 6,
+     "hz": [
+      60,
+      24
+     ],
+     "gainDb": -14,
+     "skillIds": [
+      "sub-drop-sine-freq-glide-80hz-to-20hz"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Outro: fade",
+   "bars": 8,
+   "keyLabel": "Am F C G",
+   "chords": "L",
+   "energy": 1,
+   "layers": {
+    "drone": {
+     "db": -2,
+     "toDb": -26
+    },
+    "strings": {
+     "db": -6,
+     "toDb": -30
+    },
+    "pad": {
+     "db": -9,
+     "toDb": -30
+    },
+    "dialogue": -6
+   },
+   "melody": {
+    "layer": "dialogue",
+    "motif": "dialogue",
+    "transpose": 0
+   },
+   "skillIds": [
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+   ],
+   "transitions": [
+    {
+     "type": "whoosh",
+     "sec": 5.0,
+     "gainDb": -26,
+     "dir": "up"
+    }
+   ]
+  }
+ ],
+ "qualityGates": {
+  "targetVersion": "TARGET.md v1.3 (the parts that apply to a full-length mix; per-note metrics M3/M4/M6-M11/M13/M15 are not used)",
+  "G1_truePeakMaxDb": -1.0,
+  "G2_clippedSamples": 0,
+  "G3_dcMax": 0.001,
+  "G4_determinism": "a rendered clip re-renders bit-identical",
+  "G5_cleanTailRmsMaxDb": -60,
+  "G6_cleanStartPeakMax": 0.003,
+  "G7_finite": true,
+  "M1_loudnessLufsBand": [
+   -19,
+   -13
+  ],
+  "M2_monoFoldLossMaxDb": 3.0,
+  "M5_sideMidBelow150HzMaxDb": -15,
+  "M12_energyAbove12kMaxDb": -24,
+  "M14_limiterGainReductionMaxDb": 4,
+  "seams": {
+   "stepVsP999Max": 8,
+   "note": "section boundaries are intentional changes: their flux and loudness steps are reported, not gated"
+  },
+  "plannedCurve": {
+   "spearmanLufsVsPlannedEnergyMin": 0.7,
+   "note": "section loudness should follow the planned 1-10 energy order; reported with each render"
+  }
+ },
+ "totalBars": 48,
+ "sectionTableMd": "| # | section | bars | bpm | key / chords | layers entering | layers leaving | energy | transition into next |\n|---|---|---|---|---|---|---|---|---|\n| 1 | Intro | 8 | 72 | Am F C G (2 bars each) | drone, strings, sub | - | 2 | whoosh |\n| 2 | Build A: pad joins | 8 | 72 | Am F C G | pad | - | 3 | reverse_swell |\n| 3 | Build B: arpeggio + motor | 8 | 72 | Am F C G | motor, piano | sub | 5 | riser 3b, reverse_swell, gap 1.0beat, impact |\n| 4 | Climax A: melody | 8 | 72 | Am F C G | melody | - | 8 | - |\n| 5 | Climax B: melody up | 8 | 72 | Am F C G | - | - | 9 | downlifter, sub_drop |\n| 6 | Outro: fade | 8 | 72 | Am F C G | dialogue | melody, motor, piano | 1 | whoosh |",
+ "lengthSecPlanned": 167.0
+}

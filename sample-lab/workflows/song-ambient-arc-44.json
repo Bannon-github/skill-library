@@ -1,0 +1,591 @@
+{
+ "id": "song-ambient-arc-44",
+ "form": "Ambient arc: staggered entry -> full -> strip-back -> return with new chords -> coda (through-composed layers, 44 bars)",
+ "version": 1,
+ "note": "Original sound. Skills define the layer roles and the bar map; tempo 70 BPM and C Lydian come from the Lydian layering skill. Pad parts follow the chord-tone split skill (root / mid / high).",
+ "bpm": 70,
+ "seed": 44,
+ "targetLufs": -16,
+ "peakCeilDb": -1.0,
+ "tailSec": 6.0,
+ "xfadeSec": 2.0,
+ "masterFade": {
+  "inSec": 3.0,
+  "outSec": 5.0
+ },
+ "drumBusDb": 12,
+ "drumLevelDb": {
+  "rim": -24,
+  "ohat": -26,
+  "shaker": -26,
+  "hat": -28
+ },
+ "targetLengthSec": [
+  140,
+  160
+ ],
+ "skillIds": [
+  "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+  "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+  "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+  "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper"
+ ],
+ "chordLoops": {
+  "A": [
+   {
+    "voices": {
+     "root": [
+      36,
+      43
+     ],
+     "mid": [
+      55,
+      59,
+      64
+     ],
+     "high": [
+      60,
+      64,
+      67,
+      71
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      59
+     ]
+    },
+    "bars": 4
+   },
+   {
+    "voices": {
+     "root": [
+      36,
+      43
+     ],
+     "mid": [
+      54,
+      64,
+      67
+     ],
+     "high": [
+      60,
+      64,
+      66,
+      71
+     ],
+     "full": [
+      48,
+      52,
+      54,
+      59
+     ]
+    },
+    "bars": 4
+   },
+   {
+    "voices": {
+     "root": [
+      36,
+      43
+     ],
+     "mid": [
+      55,
+      62,
+      64
+     ],
+     "high": [
+      60,
+      62,
+      64,
+      67
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      62
+     ]
+    },
+    "bars": 4
+   },
+   {
+    "voices": {
+     "root": [
+      36,
+      43
+     ],
+     "mid": [
+      55,
+      59,
+      64
+     ],
+     "high": [
+      60,
+      64,
+      67,
+      71
+     ],
+     "full": [
+      48,
+      52,
+      55,
+      59
+     ]
+    },
+    "bars": 4
+   }
+  ],
+  "B": [
+   {
+    "voices": {
+     "root": [
+      40,
+      47
+     ],
+     "mid": [
+      55,
+      59,
+      62
+     ],
+     "high": [
+      64,
+      67,
+      71,
+      74
+     ],
+     "full": [
+      52,
+      55,
+      59,
+      62
+     ]
+    },
+    "bars": 4
+   },
+   {
+    "voices": {
+     "root": [
+      38,
+      45
+     ],
+     "mid": [
+      54,
+      57,
+      62
+     ],
+     "high": [
+      62,
+      66,
+      69,
+      73
+     ],
+     "full": [
+      50,
+      54,
+      57,
+      62
+     ]
+    },
+    "bars": 4
+   }
+  ]
+ },
+ "layers": {
+  "lowPad": {
+   "kind": "chords",
+   "voice": "root",
+   "levelDb": -6,
+   "tailSec": 6.0,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "role": "low pad: chord roots + fifths",
+   "system": "drone-wavetable-artifact-drone",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "highPad": {
+   "kind": "chords",
+   "voice": "high",
+   "levelDb": 2,
+   "tailSec": 6.0,
+   "seedOff": 3,
+   "skillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo"
+   ],
+   "role": "high pad: upper chord tones",
+   "system": "pad-wide-supersaw-chord-pad",
+   "chainSkillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "choir": {
+   "kind": "chords",
+   "voice": "mid",
+   "levelDb": 0,
+   "tailSec": 6.0,
+   "seedOff": 5,
+   "skillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo"
+   ],
+   "role": "mid swell pad: third / fifth (choir stand-in)",
+   "system": "swell-multi-envelope-morph-swell",
+   "chainSkillIds": [
+    "cinematic-multi-envelope-osc-level-morph",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "mix-pads-role-eq-width-clarity",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "piano": {
+   "kind": "chords",
+   "voice": "full",
+   "levelDb": 1,
+   "tailSec": 5.0,
+   "seedOff": 7,
+   "rhythm": [
+    [
+     0,
+     3.0,
+     0.7
+    ]
+   ],
+   "arp": null,
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "role": "piano stand-in: whole chord replayed every bar",
+   "system": "pluck-organic-velocity-pluck",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "keysol-venus-high-wt-artifact-pulse-layer",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "stereo-delay-pingpong-dual-parallel-two-tap",
+    "reverb-pads-type-choice-and-send-setup",
+    "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "air": {
+   "kind": "noise",
+   "lpHz": 1800,
+   "panPeriodSec": 40,
+   "levelDb": 0,
+   "skillIds": [
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement"
+   ],
+   "role": "quiet noise bed (field-recording stand-in)"
+  }
+ },
+ "sections": [
+  {
+   "name": "Intro",
+   "bars": 4,
+   "keyLabel": "C Lydian: Cmaj7",
+   "chords": "A",
+   "chordStart": 0,
+   "energy": 2,
+   "layers": {
+    "lowPad": 0,
+    "air": -30
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "ohat": "x...............",
+    "levelDb": {
+     "rim": -26,
+     "ohat": -28
+    }
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "transitions": [
+    {
+     "type": "whoosh",
+     "sec": 2.0,
+     "gainDb": -26,
+     "dir": "up"
+    }
+   ]
+  },
+  {
+   "name": "Rising: high pad",
+   "bars": 8,
+   "keyLabel": "Cadd#11 -> Cadd9",
+   "chords": "A",
+   "chordStart": 1,
+   "energy": 3,
+   "layers": {
+    "lowPad": 0,
+    "highPad": -7,
+    "air": -28
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "ohat": "x..............."
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+    "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo"
+   ],
+   "transitions": [
+    {
+     "type": "reverse_swell",
+     "source": "piano",
+     "trim": [
+      0.2,
+      3.5
+     ],
+     "irSec": 4.0,
+     "gainDbRel": -6,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Piano enters",
+   "bars": 4,
+   "keyLabel": "Cmaj7",
+   "chords": "A",
+   "chordStart": 3,
+   "energy": 4,
+   "layers": {
+    "lowPad": 0,
+    "highPad": -7,
+    "choir": -10,
+    "piano": -8,
+    "air": -28
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "ohat": "x..............."
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "transitions": [
+    {
+     "type": "whoosh",
+     "sec": 1.5,
+     "gainDb": -26,
+     "dir": "up"
+    }
+   ]
+  },
+  {
+   "name": "Full track: shaker",
+   "bars": 8,
+   "keyLabel": "Cmaj7 -> Cadd#11",
+   "chords": "A",
+   "chordStart": 0,
+   "energy": 6,
+   "layers": {
+    "lowPad": 0,
+    "highPad": -6,
+    "choir": -8,
+    "piano": -7,
+    "air": -26
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "ohat": "x...............",
+    "shaker": "shaker16"
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement"
+   ],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 3.0,
+     "gainDb": -18,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Strip-back: shaker + hat",
+   "bars": 8,
+   "keyLabel": "Cadd9 -> Cmaj7",
+   "chords": "A",
+   "chordStart": 2,
+   "energy": 3,
+   "layers": {
+    "lowPad": null,
+    "highPad": -4,
+    "choir": null,
+    "piano": null,
+    "air": -20
+   },
+   "drums": {
+    "shaker": "shaker16",
+    "hat": "eighth_hat"
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+    "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 2,
+     "fHz": [
+      300,
+      3000
+     ],
+     "gainDb": -16,
+     "tailSec": 3.0,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    },
+    {
+     "type": "reverse_swell",
+     "source": "lowPad",
+     "trim": [
+      0.3,
+      4.3
+     ],
+     "irSec": 5.0,
+     "gainDbRel": -4,
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Return: new chords",
+   "bars": 8,
+   "keyLabel": "Em7 -> D6 (new)",
+   "chords": "B",
+   "chordStart": 0,
+   "energy": 7,
+   "layers": {
+    "lowPad": 0,
+    "highPad": -5,
+    "choir": -7,
+    "piano": -6,
+    "air": -26
+   },
+   "drums": {
+    "rim": "rim_sparse",
+    "ohat": "x...............",
+    "shaker": "shaker16"
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "transitions": [
+    {
+     "type": "downlifter",
+     "sec": 3.0,
+     "gainDb": -18,
+     "skillIds": [
+      "noise-layer-whoosh-doppler-and-rising-variants"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Coda: piano ending",
+   "bars": 4,
+   "keyLabel": "Cmaj7",
+   "chords": "A",
+   "chordStart": 0,
+   "energy": 2,
+   "layers": {
+    "lowPad": {
+     "db": -3,
+     "toDb": -14
+    },
+    "highPad": {
+     "db": -8,
+     "toDb": -16
+    },
+    "choir": null,
+    "piano": -8,
+    "air": -30
+   },
+   "drums": {
+    "shaker": "shaker16",
+    "stopAtBeat": 14
+   },
+   "skillIds": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+   ],
+   "transitions": []
+  }
+ ],
+ "qualityGates": {
+  "targetVersion": "TARGET.md v1.3 (the parts that apply to a full-length mix; per-note metrics M3/M4/M6-M11/M13/M15 are not used)",
+  "G1_truePeakMaxDb": -1.0,
+  "G2_clippedSamples": 0,
+  "G3_dcMax": 0.001,
+  "G4_determinism": "a rendered clip re-renders bit-identical",
+  "G5_cleanTailRmsMaxDb": -60,
+  "G6_cleanStartPeakMax": 0.003,
+  "G7_finite": true,
+  "M1_loudnessLufsBand": [
+   -19,
+   -13
+  ],
+  "M2_monoFoldLossMaxDb": 3.0,
+  "M5_sideMidBelow150HzMaxDb": -15,
+  "M12_energyAbove12kMaxDb": -24,
+  "M14_limiterGainReductionMaxDb": 4,
+  "seams": {
+   "stepVsP999Max": 8,
+   "note": "section boundaries are intentional changes: their flux and loudness steps are reported, not gated"
+  },
+  "plannedCurve": {
+   "spearmanLufsVsPlannedEnergyMin": 0.7,
+   "note": "section loudness should follow the planned 1-10 energy order; reported with each render"
+  }
+ },
+ "totalBars": 44,
+ "sectionTableMd": "| # | section | bars | bpm | key / chords | layers entering | layers leaving | energy | transition into next |\n|---|---|---|---|---|---|---|---|---|\n| 1 | Intro | 4 | 70 | C Lydian: Cmaj7 | air, lowPad | - | 2 | whoosh |\n| 2 | Rising: high pad | 8 | 70 | Cadd#11 -> Cadd9 | highPad | - | 3 | reverse_swell |\n| 3 | Piano enters | 4 | 70 | Cmaj7 | choir, piano | - | 4 | whoosh |\n| 4 | Full track: shaker | 8 | 70 | Cmaj7 -> Cadd#11 | - | - | 6 | downlifter |\n| 5 | Strip-back: shaker + hat | 8 | 70 | Cadd9 -> Cmaj7 | - | choir, lowPad, piano | 3 | riser 2b, reverse_swell |\n| 6 | Return: new chords | 8 | 70 | Em7 -> D6 (new) | choir, lowPad, piano | - | 7 | downlifter |\n| 7 | Coda: piano ending | 4 | 70 | Cmaj7 | - | choir | 2 | - |",
+ "lengthSecPlanned": 156.9
+}

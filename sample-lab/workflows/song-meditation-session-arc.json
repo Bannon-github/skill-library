@@ -1,0 +1,289 @@
+{
+ "id": "song-meditation-session-arc",
+ "form": "Meditation / entrainment session arc: settle -> descend -> deep hold -> gentle rise -> integrate -> close (extends isochronic-flow-state-v2)",
+ "version": 1,
+ "note": "Recipe only. Rendered by isochronic/render_flow_state_v2.py once a v3 JSON carries this rate map (the engine in song/ does not synthesise the pulse). Band names are convention only; no health claims. The research found the evidence for entrainment is mixed (see research/song-structure.md).",
+ "delegate": {
+  "renderer": "isochronic/render_flow_state_v2.py",
+  "extends": "workflows/isochronic-flow-state-v2.json",
+  "carrierHz": 432,
+  "binauralLevel": 0.2
+ },
+ "bpm": 60,
+ "seed": 61,
+ "targetLufs": -14,
+ "peakCeilDb": -1.0,
+ "tailSec": 0,
+ "targetLengthSec": [
+  480,
+  900
+ ],
+ "skillIds": [
+  "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+  "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+  "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+  "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+  "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail",
+  "reverse-reverb-swell-print-reverse-print",
+  "sub-drop-sine-freq-glide-80hz-to-20hz",
+  "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance"
+ ],
+ "layers": {
+  "drone": {
+   "kind": "chords",
+   "voice": "root",
+   "skillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "role": "drone bed (enters first)",
+   "system": "drone-wavetable-artifact-drone",
+   "chainSkillIds": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "reverb-pads-type-choice-and-send-setup",
+    "shimmer-reverb-pitchshift-plus12-feedback",
+    "unison-odd-even-detune-width-clean-supersaw"
+   ]
+  },
+  "pad": {
+   "kind": "chords",
+   "voice": "full",
+   "skillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "role": "warm pad",
+   "system": "pad-wide-supersaw-chord-pad",
+   "chainSkillIds": [
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "traveler-walkthrough-stereo-ladder-lf-width"
+   ]
+  },
+  "isoPulse": {
+   "kind": "delegate",
+   "skillIds": [
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+   ],
+   "role": "isochronic pulse, rate automated (see pulseRateHz per section)"
+  },
+  "binaural": {
+   "kind": "delegate",
+   "skillIds": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+   ],
+   "role": "binaural layer: carrier L, carrier+beat R"
+  }
+ },
+ "sections": [
+  {
+   "name": "Settle",
+   "bars": 24,
+   "keyLabel": "A minor drone",
+   "energy": 2,
+   "pulseRateHz": [
+    14,
+    12
+   ],
+   "layers": {
+    "drone": 0,
+    "pad": null,
+    "isoPulse": {
+     "db": -30,
+     "toDb": -17
+    },
+    "binaural": null
+   },
+   "skillIds": [
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 1,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Descend",
+   "bars": 36,
+   "keyLabel": "A minor",
+   "energy": 3,
+   "pulseRateHz": [
+    12,
+    8
+   ],
+   "layers": {
+    "drone": 0,
+    "pad": -8,
+    "isoPulse": -17,
+    "binaural": -20
+   },
+   "skillIds": [
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+    "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance"
+   ],
+   "transitions": [
+    {
+     "type": "reverse_swell",
+     "source": "pad",
+     "skillIds": [
+      "reverse-reverb-swell-print-reverse-print"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Deep hold",
+   "bars": 48,
+   "keyLabel": "A minor",
+   "energy": 2,
+   "pulseRateHz": [
+    8,
+    6
+   ],
+   "layers": {
+    "drone": 0,
+    "pad": -12,
+    "isoPulse": -19,
+    "binaural": -18
+   },
+   "skillIds": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+   ],
+   "transitions": [
+    {
+     "type": "riser",
+     "bars": 2,
+     "skillIds": [
+      "one-bar-transition-riser-mod-envelope-timeline-atomized-targets-triangle-sync-ducked-reverb-tail"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Gentle rise",
+   "bars": 24,
+   "keyLabel": "A minor",
+   "energy": 4,
+   "pulseRateHz": [
+    6,
+    10
+   ],
+   "layers": {
+    "drone": 0,
+    "pad": -6,
+    "isoPulse": -17,
+    "binaural": -20
+   },
+   "skillIds": [
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map"
+   ],
+   "transitions": []
+  },
+  {
+   "name": "Integrate",
+   "bars": 24,
+   "keyLabel": "A minor",
+   "energy": 3,
+   "pulseRateHz": [
+    10,
+    10
+   ],
+   "layers": {
+    "drone": 0,
+    "pad": -6,
+    "isoPulse": -18,
+    "binaural": -22
+   },
+   "skillIds": [
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render"
+   ],
+   "transitions": []
+  },
+  {
+   "name": "Close",
+   "bars": 24,
+   "keyLabel": "A minor",
+   "energy": 1,
+   "pulseRateHz": [
+    10,
+    8
+   ],
+   "layers": {
+    "drone": {
+     "db": 0,
+     "toDb": -30
+    },
+    "pad": {
+     "db": -6,
+     "toDb": -30
+    },
+    "isoPulse": {
+     "db": -18,
+     "toDb": -40
+    },
+    "binaural": null
+   },
+   "skillIds": [
+    "sub-drop-sine-freq-glide-80hz-to-20hz"
+   ],
+   "transitions": [
+    {
+     "type": "sub_drop",
+     "lengthSec": 9,
+     "hz": [
+      72,
+      24
+     ],
+     "skillIds": [
+      "sub-drop-sine-freq-glide-80hz-to-20hz"
+     ]
+    }
+   ]
+  }
+ ],
+ "qualityGates": {
+  "targetVersion": "TARGET.md v1.3 (the parts that apply to a full-length mix; per-note metrics M3/M4/M6-M11/M13/M15 are not used)",
+  "G1_truePeakMaxDb": -1.0,
+  "G2_clippedSamples": 0,
+  "G3_dcMax": 0.001,
+  "G4_determinism": "a rendered clip re-renders bit-identical",
+  "G5_cleanTailRmsMaxDb": -60,
+  "G6_cleanStartPeakMax": 0.003,
+  "G7_finite": true,
+  "M1_loudnessLufsBand": [
+   -18,
+   -12
+  ],
+  "M2_monoFoldLossMaxDb": 3.0,
+  "M5_sideMidBelow150HzMaxDb": -15,
+  "M12_energyAbove12kMaxDb": -24,
+  "M14_limiterGainReductionMaxDb": 4,
+  "seams": {
+   "stepVsP999Max": 8,
+   "note": "section boundaries are intentional changes: their flux and loudness steps are reported, not gated"
+  },
+  "plannedCurve": {
+   "spearmanLufsVsPlannedEnergyMin": 0.7,
+   "note": "section loudness should follow the planned 1-10 energy order; reported with each render"
+  }
+ },
+ "totalBars": 180,
+ "sectionTableMd": "| # | section | bars | bpm | key / chords | layers entering | layers leaving | energy | transition into next |\n|---|---|---|---|---|---|---|---|---|\n| 1 | Settle | 24 | 60 | A minor drone | drone, isoPulse | - | 2 | riser 1b |\n| 2 | Descend | 36 | 60 | A minor | binaural, pad | - | 3 | reverse_swell |\n| 3 | Deep hold | 48 | 60 | A minor | - | - | 2 | riser 2b |\n| 4 | Gentle rise | 24 | 60 | A minor | - | - | 4 | - |\n| 5 | Integrate | 24 | 60 | A minor | - | - | 3 | - |\n| 6 | Close | 24 | 60 | A minor | - | binaural | 1 | sub_drop |",
+ "lengthSecPlanned": 720.0
+}
