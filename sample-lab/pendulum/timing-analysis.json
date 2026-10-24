@@ -1,0 +1,29 @@
+{
+ "f_100.png": {
+  "P0px": 131.2,
+  "incPctPerLane": 0.249,
+  "noteOverPeriod": 0.364,
+  "residLinPeriodPx": 0.5,
+  "residLinFreqPx": 0.49,
+  "P0beats": 0.501,
+  "lastOverFirst": 1.0846
+ },
+ "f_20.png": {
+  "P0px": 578.0,
+  "incPctPerLane": 0.244,
+  "noteOverPeriod": 0.372,
+  "residLinPeriodPx": 0.82,
+  "residLinFreqPx": 0.76,
+  "P0beats": 0.5,
+  "lastOverFirst": 1.0831
+ },
+ "g_120.png": {
+  "P0px": 426.4,
+  "incPctPerLane": 0.241,
+  "noteOverPeriod": 0.371,
+  "residLinPeriodPx": 0.62,
+  "residLinFreqPx": 0.62,
+  "P0beats": null,
+  "lastOverFirst": 1.0821
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "name": "isochronic-peak-focus-dubstep",
+ "inspiredBy": "https://www.youtube.com/watch?v=TRWsmGdtgZM (style only; description gives no Hz/BPM, defaults used)",
+ "bpm": 140,
+ "key": "F minor",
+ "seed": 14,
+ "targetLufs": -15,
+ "peakCeilDb": -1.0,
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "build",
+   24
+  ],
+  [
+   "main",
+   48
+  ],
+  [
+   "breakdown",
+   24
+  ],
+  [
+   "peak2",
+   48
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "layers": {
+  "intro": [
+   "pad",
+   "pulse",
+   "hat"
+  ],
+  "build": [
+   "pad",
+   "pulse",
+   "hat",
+   "kick",
+   "riser"
+  ],
+  "main": [
+   "pad",
+   "pulse",
+   "hat",
+   "kick",
+   "snare",
+   "sub",
+   "wobble"
+  ],
+  "breakdown": [
+   "pad",
+   "pulse",
+   "sub-drop",
+   "revswell"
+  ],
+  "peak2": [
+   "pad",
+   "pulse",
+   "hat",
+   "kick",
+   "snare",
+   "sub",
+   "wobble",
+   "perc"
+  ],
+  "outro": [
+   "pad",
+   "pulse"
+  ]
+ },
+ "rate": [
+  [
+   0,
+   36
+  ],
+  [
+   20,
+   40
+  ],
+  [
+   302,
+   40
+  ]
+ ],
+ "iso": {
+  "carrierHz": 523.25,
+  "duty": 0.5,
+  "edgeFrac": 0.15,
+  "relDbUnderBed": -9,
+  "note": "C5 = 5th of F minor, ~13 carrier cycles per 25 ms gate; edges 3.75 ms; bed notched at carrier"
+ },
+ "skills": [
+  "isochronic-tone-layer-under-music...",
+  "layered-binaural-plus-isochronic-architecture...",
+  "eight-bar-build-up-seven-bars-risers...",
+  "breakdown-arrangement-4-bar-break...",
+  "reese-bass-three-saw-octave-down...mono-below-120"
+ ],
+ "renderer": "sample-lab/dubstep/render_peak_focus_dubstep.py",
+ "version": "40hz-gamma (previous beta 14-18 Hz recipe kept as isochronic-peak-focus-dubstep-beta-v1.json)",
+ "verify": [
+  25,
+  60
+ ]
+}
