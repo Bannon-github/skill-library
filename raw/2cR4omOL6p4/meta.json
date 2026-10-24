@@ -1,0 +1,48 @@
+{
+  "video_id": "2cR4omOL6p4",
+  "title": "I HATED Mixing Until I Learned This Hack",
+  "url": "https://www.youtube.com/watch?v=2cR4omOL6p4",
+  "fetched_at": "2026-10-24T14:16:50.387796+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "TheCosmicAcademy",
+  "duration": 392,
+  "ok": true,
+  "cue_count": 127,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/2cR4omOL6p4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/2cR4omOL6p4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-US",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-US",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-US)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

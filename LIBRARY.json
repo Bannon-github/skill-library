@@ -1,8 +1,8 @@
 {
  "library_name": "YouTube Practical Skills Library",
  "version": 1,
- "updated_at": "2026-10-24T14:15:38.798671+00:00",
- "entry_count": 188,
+ "updated_at": "2026-10-24T14:17:37.990711+00:00",
+ "entry_count": 189,
  "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
  "entries": [
   {
@@ -2932,6 +2932,19 @@
    "summary": "Skills: sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap",
    "skills": [
     "sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap"
+   ]
+  },
+  {
+   "id": "mixing-2cR4omOL6p4",
+   "video_id": "2cR4omOL6p4",
+   "url": "https://www.youtube.com/watch?v=2cR4omOL6p4",
+   "title": "I HATED Mixing Until I Learned This Hack",
+   "topic": "mixing-eq",
+   "transcript_source": "youtube-provided",
+   "transcript_file": "raw/2cR4omOL6p4/raw.txt",
+   "summary": "Skills: eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+   "skills": [
+    "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono"
    ]
   }
  ],

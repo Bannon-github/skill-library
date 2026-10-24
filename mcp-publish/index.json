@@ -7,7 +7,7 @@
   "/workspace/skill-library/mcp-server/server.py"
  ],
  "skills_root": "/workspace/skill-library/mcp-publish/skills",
- "count": 190,
+ "count": 191,
  "skills": [
   {
    "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -3271,8 +3271,25 @@
     "edm"
    ],
    "mcp_resource": "skill://sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap"
+  },
+  {
+   "id": "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+   "name": "EQ for balance in three questions: what is the focus, is the clash static or dynamic (sidechained dynamic EQ), and where in the stereo field (mid-only)",
+   "goal": "Resolve frequency competition between a focus element (for example a lead vocal) and other loud parts (lead synth, mid bass, piano) with a three-question framework instead of a fixed EQ scoop. (1) Name the section's focus and which parts still compete with it. (2) If the overlap changes with the focus's level, notes and pauses, use a dynamic EQ on the competing part with the focus as its sidechain key, so cuts follow the focus. (3) If the focus is mono but the competitor is stereo, run that dynamic EQ in mid-only mode so the sides keep their full level. Delta vs generic sidechain/EQ skills: the decision order and the mid-only dynamic cut.",
+   "domain": "mixing",
+   "tags": [
+    "mixing",
+    "eq",
+    "dynamic-eq",
+    "sidechain",
+    "mid-side",
+    "masking",
+    "vocal",
+    "balance"
+   ],
+   "mcp_resource": "skill://eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono"
   }
  ],
- "updated_at": "2026-10-24T14:15:17.071102+00:00",
+ "updated_at": "2026-10-24T14:17:37.990711+00:00",
  "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }
