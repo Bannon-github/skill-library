@@ -1,0 +1,5 @@
+{"name":"latest-distills-2-halftime-sidechain-dubstep","track":2,"bpm":140,"key":"F minor","seed":21,"targetLufs":-14.5,"peakCeilDb":-1.0,
+ "sections":[["intro",12],["build",16],["drop A",24],["breakdown",12],["drop B",20],["outro",4]],
+ "sidechain":{"kickLenSec":0.30,"sub":{"len":0.30,"depth":0.98},"wobbleLow":{"len":0.30,"depth":0.95,"splitHz":150},"wobbleHigh":{"len":0.06,"depth":0.6},"lead":{"len":0.06,"depth":0.7},"pad":{"len":0.06,"depth":0.3}},
+ "iso":{"rateHz":40,"carrierHz":523.25,"relDb":-16,"sections":["breakdown"]},
+ "skills":["sidechain-shape-per-element (bass full-kick deep, mids/highs punch-only, depth by loudness, multiband reese)","reese-bass three-saw","8-bar build riser","breakdown arrangement","isochronic 40 Hz (breakdown only)"]}

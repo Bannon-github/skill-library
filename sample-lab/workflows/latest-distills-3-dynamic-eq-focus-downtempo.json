@@ -1,0 +1,6 @@
+{"name":"latest-distills-3-dynamic-eq-focus-downtempo","track":3,"bpm":90,"key":"E minor","seed":33,"targetLufs":-14.5,"peakCeilDb":-1.0,
+ "sections":[["intro",8],["verse",16],["chorus",12],["break",8],["chorus 2",12]],
+ "pendulumStem":"/workspace/scratch/pend90.wav","pendulumStemRecipe":"sample-lab/combo/pendulum-stem-90bpm.json",
+ "dynEq":{"maxCutDb":9,"midOnly":true,"keyedBy":"focus lead","targets":["pendulum arp","pad"]},
+ "sidechain":{"kickLenSec":0.25,"bass":{"len":0.25,"depth":0.95},"arp":{"len":0.05,"depth":0.3}},
+ "skills":["eq-balance-three-questions (focus = formant lead; sidechained dynamic EQ; mid-only)","pendulum-wave arpeggio stem (90 BPM, 24 lanes, realign every 32 s)","sidechain per element (bass full-kick, arp punch-only light)"]}

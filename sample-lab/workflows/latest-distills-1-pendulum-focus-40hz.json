@@ -1,0 +1,132 @@
+{
+ "name": "latest-distills-1-pendulum-focus-40hz",
+ "doc": {
+  "inspiration": "Virtual Riot 'Pendulum Sequence 2' (Ableton, 'I heard you like polyrhythms'): pattern idea only, original synthesis",
+  "formula": "MEASURED (see pendulum/timing-analysis.md): lane i (0 = top note) repeats with frequency f_i = f0*(N-i)/N, f0 = 1/topPeriodBeats beats; equivalently period grows ~+0.245%/lane going down (linear-period and linear-frequency fits are indistinguishable, resid <1 px). All lanes realign every N top-lane cycles = N*topPeriod.",
+  "staircaseOffsetSec": "lane i is delayed by i*staircaseOffsetSec, so at every realign the figure is a clean descending arpeggio",
+  "analysis": "Measured from video frames (pixel run-lengths of piano-roll notes, 3 zoom levels): 30 BPM 4/4, 35 lanes E1..E8 (folded, E-minor/G-major set w/o C below E4 partly), top period 0.50 beat, +0.245%/lane, bottom/top 1.083, note length 0.37 x lane period, all lanes start together (staircase = drift). Spectrum readout ~786 Hz (G5+4c) peak, dark mix."
+ },
+ "bpm": 30,
+ "direction": "down",
+ "realignSec": null,
+ "layers": {
+  "count": 10,
+  "detuneCents": 7,
+  "offsetMs": 9,
+  "panSpread": 0.45
+ },
+ "voice": {
+  "saws": 3,
+  "sawDetuneCents": 12,
+  "lowpassHz": 2800,
+  "attackMs": 3,
+  "decay": 9,
+  "velocityTopDb": -3,
+  "velocityBottomDb": 0
+ },
+ "space": {
+  "delayMs": [
+   23,
+   37,
+   53
+  ],
+  "feedback": 0.35,
+  "wet": 0.25
+ },
+ "sections": [
+  {
+   "name": "sparse intro",
+   "start": 0,
+   "end": 22,
+   "laneEvery": 4,
+   "gainDb": -4
+  },
+  {
+   "name": "build",
+   "start": 22,
+   "end": 44,
+   "laneEvery": 2,
+   "gainDb": -2
+  },
+  {
+   "name": "full phasing",
+   "start": 44,
+   "end": 92,
+   "laneEvery": 1,
+   "gainDb": 0
+  },
+  {
+   "name": "realign peak",
+   "start": 92,
+   "end": 118,
+   "laneEvery": 1,
+   "gainDb": 1,
+   "note": "realign at 1:40"
+  },
+  {
+   "name": "outro",
+   "start": 118,
+   "end": 150,
+   "laneEvery": 3,
+   "gainDb": -3
+  }
+ ],
+ "lengthSec": 150,
+ "targetLufs": -14.5,
+ "peakCeilDb": -1.5,
+ "isochronic": {
+  "enabled": true,
+  "rateHz": 40,
+  "carrierHz": 659.26,
+  "edgeFrac": 0.15,
+  "duty": 0.5,
+  "relDb": -14
+ },
+ "seed": 7,
+ "lanes": [
+  "E8",
+  "D8",
+  "B7",
+  "A7",
+  "G7",
+  "F#7",
+  "E7",
+  "D7",
+  "B6",
+  "A6",
+  "G6",
+  "F#6",
+  "E6",
+  "D6",
+  "B5",
+  "A5",
+  "G5",
+  "F#5",
+  "E5",
+  "D5",
+  "B4",
+  "A4",
+  "G4",
+  "F#4",
+  "E4",
+  "D4",
+  "B3",
+  "G3",
+  "E3",
+  "D3",
+  "B2",
+  "G2",
+  "E2",
+  "B1",
+  "E1"
+ ],
+ "topPeriodBeats": 0.5,
+ "cyclesPerRealign": 408,
+ "noteLenFrac": 0.37,
+ "staircaseOffsetSec": 0.0,
+ "patternStartSec": 308,
+ "skills": [
+  "pendulum-wave-arpeggio (measured)",
+  "isochronic 40 Hz raised-cosine (peak-focus-dubstep-40hz work)"
+ ]
+}
