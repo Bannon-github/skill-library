@@ -1,0 +1,192 @@
+{
+ "date": "2026-10-24",
+ "title": "Euclid Pockets (D Dorian -> D Phrygian)",
+ "skills": {
+  "source": "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
+  "modulation": "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+  "space": "mono-reverb-pockets-narrow-width-before-pingpong-wet-dry-as-distance-post-reverb-bandpass-lfo-dry-left-reverb-right"
+ },
+ "bpm": 96,
+ "stepsPerBar": 16,
+ "bars": 28,
+ "tailSec": 5,
+ "seed": 1024,
+ "weaver": {
+  "mode": "melody",
+  "root": 50,
+  "scaleA": "dorian",
+  "scaleB": "phrygian",
+  "rekeyBar": 16,
+  "driftBar": 8,
+  "layers": [
+   {
+    "deg": 0,
+    "steps": 16,
+    "pulses": 5,
+    "rot": 0,
+    "vel": 0.95,
+    "gate": 0.9,
+    "pocket": "front",
+    "enterBar": 0,
+    "exitBar": 28
+   },
+   {
+    "deg": 2,
+    "steps": 12,
+    "pulses": 4,
+    "rot": 2,
+    "vel": 0.75,
+    "gate": 0.7,
+    "pocket": "front",
+    "enterBar": 2,
+    "exitBar": 26
+   },
+   {
+    "deg": 4,
+    "steps": 10,
+    "pulses": 3,
+    "rot": 1,
+    "vel": 0.7,
+    "gate": 0.6,
+    "pocket": "right",
+    "enterBar": 4,
+    "exitBar": 25
+   },
+   {
+    "deg": 6,
+    "steps": 9,
+    "pulses": 4,
+    "rot": 3,
+    "vel": 0.6,
+    "gate": 0.5,
+    "pocket": "right",
+    "enterBar": 6,
+    "exitBar": 24
+   },
+   {
+    "deg": 7,
+    "steps": 13,
+    "pulses": 5,
+    "rot": 0,
+    "vel": 0.8,
+    "gate": 0.6,
+    "pocket": "left",
+    "enterBar": 1,
+    "exitBar": 27
+   },
+   {
+    "deg": 8,
+    "steps": 7,
+    "pulses": 3,
+    "rot": 2,
+    "vel": 0.55,
+    "gate": 0.45,
+    "pocket": "right",
+    "enterBar": 8,
+    "exitBar": 23
+   },
+   {
+    "deg": 11,
+    "steps": 11,
+    "pulses": 4,
+    "rot": 5,
+    "vel": 0.5,
+    "gate": 0.4,
+    "pocket": "left",
+    "enterBar": 10,
+    "exitBar": 22
+   },
+   {
+    "deg": 14,
+    "steps": 15,
+    "pulses": 4,
+    "rot": 7,
+    "vel": 0.45,
+    "gate": 0.35,
+    "pocket": "left",
+    "enterBar": 12,
+    "exitBar": 21
+   }
+  ],
+  "drift": [
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   -1
+  ]
+ },
+ "voice": {
+  "partA": {
+   "ratio": 2.0,
+   "fmIndex": 1.2,
+   "fold": 0.5,
+   "cutoff": 5000,
+   "decay": 0.45
+  },
+  "partB": {
+   "ratio": 3.5,
+   "fmIndex": 0.6,
+   "fold": 0.25,
+   "cutoff": 7500,
+   "decay": 0.8
+  },
+  "random": {
+   "fmIndex": 0.6,
+   "fmOffsetComp": 0.3,
+   "fold": 0.35,
+   "cutoffOct": 0.7,
+   "decayOct": 0.8,
+   "morph": 0.5,
+   "delaySend": 0.15
+  }
+ },
+ "pockets": {
+  "front": {
+   "pan": 0.0,
+   "wet": 0.15,
+   "width": 0.0
+  },
+  "right": {
+   "pan": 0.55,
+   "wet": 0.55,
+   "width": 0.2,
+   "dryPan": 0.25
+  },
+  "left": {
+   "pan": -0.6,
+   "wet": 0.75,
+   "width": 0.2,
+   "dryPan": -0.3
+  },
+  "reverbRt60": 3.2,
+  "pingpong": {
+   "timeSteps": 3,
+   "feedback": 0.3,
+   "fbLowpassHz": 2500,
+   "mix": 0.25
+  },
+  "postReverbBandpass": {
+   "lowHz": 400,
+   "highHz": 2400,
+   "lfoHz": 0.06,
+   "mix": 0.6
+  },
+  "bed": {
+   "levelDb": -14,
+   "notchLfoHz": 0.05,
+   "reverbWet": 1.0
+  }
+ },
+ "master": {
+  "targetLufs": -17,
+  "tpCeil": -1.2,
+  "sideHpHz": 120,
+  "fadeInSec": 1.5,
+  "fadeOutSec": 5
+ },
+ "iterationNote": "v2 after iter1 scored 87.4 but failed M6 tilt (-8.7 dB/oct, too dark) and M7 balance (14.5 dB): raised part A/B cutoffs 2600/3800 -> 5000/7500, pocket high-shave 7k-3k*wet -> 11k-3k*wet, bed voicing moved up an octave from 73 Hz root; v3 after iter2 scored 93.4 but M7 0.48 (8 kHz band 20 dB under the tilt): reverb IR damping 5k -> 10k, bed air noise band 0.8-4k -> 3-11k"
+}
