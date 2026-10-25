@@ -1,0 +1,175 @@
+{
+ "date": "2026-10-25",
+ "title": "Glass Arc (A minor, Am-F-C-G)",
+ "skills": {
+  "source": "modal-partial-resonator-exciter-material-tone-hit-inharmonic-series-parallel-velocity-random-hit",
+  "modulation": "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+  "structure": "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method"
+ },
+ "bpm": 72,
+ "bars": 20,
+ "tailSec": 5,
+ "seed": 1025,
+ "chords": [
+  [
+   57,
+   60,
+   64
+  ],
+  [
+   53,
+   57,
+   60
+  ],
+  [
+   48,
+   52,
+   55
+  ],
+  [
+   55,
+   59,
+   62
+  ]
+ ],
+ "sections": {
+  "intro": [
+   0,
+   4
+  ],
+  "build": [
+   4,
+   8
+  ],
+  "hats": [
+   8,
+   16
+  ],
+  "riser": [
+   10,
+   12
+  ],
+  "climax": [
+   12,
+   16
+  ],
+  "outro": [
+   16,
+   20
+  ]
+ },
+ "modal": {
+  "harp": {
+   "model": "string",
+   "partials": 16,
+   "decay": 1.6,
+   "material": 0.9,
+   "tone": -0.6,
+   "hit": 0.6,
+   "inharm": 1.0,
+   "exciter": "impulse",
+   "level": 0.5
+  },
+  "vibe": {
+   "model": "vibraphone",
+   "partials": 6,
+   "decay": 3.0,
+   "material": 0.5,
+   "tone": -0.3,
+   "hit": 0.8,
+   "inharm": 1.0,
+   "exciter": "long",
+   "level": 0.6,
+   "lfoHz": 5.5,
+   "lfoCents": 4,
+   "r2": {
+    "model": "beam",
+    "partials": 4,
+    "decay": 1.2,
+    "material": 1.2,
+    "inharm": 1.02,
+    "blend": 0.3
+   }
+  },
+  "tick": {
+   "r1": {
+    "model": "membrane",
+    "partials": 6,
+    "decay": 0.03,
+    "material": 1.5,
+    "inharm": 1.0
+   },
+   "r2": {
+    "model": "tube",
+    "partials": 10,
+    "decay": 0.12,
+    "material": 0.8,
+    "inharm": 1.0
+   },
+   "midi": 86,
+   "crossFb": 0.15,
+   "level": 0.25
+  },
+  "velocity": {
+   "toLevel": 0.6,
+   "toMaterial": 0.4,
+   "toExciter": 0.5
+  },
+  "attackEnvBoost": 0.6,
+  "randomTone": 0.1,
+  "randomHit": 1.0,
+  "keyGainDbPerOct": 1.5
+ },
+ "sh": {
+  "riser": {
+   "lfoHzStart": 0.5,
+   "lfoHzEnd": 24,
+   "shHzStart": 2,
+   "shHzEnd": 9,
+   "cutLow": 400,
+   "cutHigh": 9000,
+   "amount": 0.7,
+   "level": 0.18
+  },
+  "hats": {
+   "stepDiv": 8,
+   "volAmount": 0.8,
+   "fxMixInverse": true,
+   "fxMixMax": 0.6,
+   "combHz": 1480,
+   "combFb": 0.7,
+   "dupLayerDb": -3
+  },
+  "mallet": {
+   "lfoHz": 0.23,
+   "shHz": 2.4,
+   "toHit": 0.5
+  }
+ },
+ "arc": {
+  "padFadeInBars": 4,
+  "swellBars": [
+   6,
+   8
+  ],
+  "swellMidi": 76,
+  "tremoloHz": 6,
+  "vibratoFadeBars": 3,
+  "cymbalSwellBars": [
+   17,
+   19.5
+  ],
+  "outroFadeBars": 4
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 150,
+  "fadeInSec": 1.5,
+  "fadeOutSec": 3.0,
+  "satDrive": 1.3
+ },
+ "subLevel": 0.4,
+ "lowPadLevel": 0.12,
+ "hatTrimDb": -3
+}
