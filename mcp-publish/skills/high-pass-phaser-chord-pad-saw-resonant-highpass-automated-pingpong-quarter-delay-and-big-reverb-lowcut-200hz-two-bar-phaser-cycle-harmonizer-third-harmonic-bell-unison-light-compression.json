@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+  "name": "High-pass phaser chord pad: saw chords through a heavily resonant high-pass whose cutoff is automated, ping-pong 1/4 delay and a big reverb both low-cut at about 200 Hz, a phaser on a slow 2-bar cycle, a harmonizer shifted to the 3rd harmonic for a bell tone, unison and light compression",
+  "goal": "Make moving chords or a pad from a plain saw wave using a high-pass filter and a phaser (works in any synth with these, or as post-processing on a saw). Play low chords on a single saw. Add a high-pass filter with resonance turned way up and automate its cutoff to sweep the chord's movement. Add a ping-pong delay at 1/4 note with a low cut around 200 Hz (so the bass isn't muddy) and some stereo spread, then a large reverb, also low-cut about 200 Hz, with size up, slightly longer decay, damping and wet up. Add a phaser set to complete one cycle every 2 bars (its direction sets whether it sweeps up or down) for slow top-end motion. Add a harmonizer (octave copies) with amount and width high, then shift its interval from the octave to the 3rd harmonic for a bell-like tone. Add unison voices to taste, light compression, and pull the highs and some mids down a little.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "cR23JfH_33U",
+    "url": "https://www.youtube.com/watch?v=cR23JfH_33U",
+    "title": "Sound Design Weekly 6: High Pass Phaser Chord / Pad",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/cR23JfH_33U/agent-skill-high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "Any synth (or DAW FX) with a resonant high-pass filter, phaser with tempo-synced rate, ping-pong delay, reverb; harmonic or octave stacking (harmonizer or extra oscillators) optional"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Low chord progression",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Project tempo for syncing the 2-bar phaser cycle",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "patch",
+      "type": "preset",
+      "description": "Portable recipe for the high-pass phaser chord pad"
+    },
+    {
+      "name": "automation",
+      "type": "text",
+      "description": "High-pass cutoff automation lane"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "The phaser 'one cycle per 2 bars' is a tempo-synced rate (e.g. 32 sixteenths); set it in your phaser's sync units.",
+    "Without a harmonizer, approximate the 3rd-harmonic bell by layering a sine or saw at +19 semitones (octave + fifth) quietly.",
+    "Phaser-pad coverage in the library is near-exhausted; this adds the resonant-high-pass-as-motion plus 3rd-harmonic bell variant only.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Play low chords on a single saw oscillator.",
+      "tool": "Synth",
+      "expect": "A raw, buzzy chord."
+    },
+    {
+      "n": 2,
+      "action": "Insert a high-pass with resonance very high; automate its cutoff across the chords.",
+      "tool": "HPF + automation",
+      "expect": "Resonant, vocal-like movement inside the chord."
+    },
+    {
+      "n": 3,
+      "action": "Add a ping-pong 1/4-note delay with a ~200 Hz low cut and some extra stereo width.",
+      "tool": "Delay",
+      "expect": "Bouncing ambience without low mud."
+    },
+    {
+      "n": 4,
+      "action": "Add a big reverb: low cut ~200 Hz, size up, decay slightly up, damping up, wet up.",
+      "tool": "Reverb",
+      "expect": "A large wash under the movement."
+    },
+    {
+      "n": 5,
+      "action": "Add a phaser synced to one full cycle per 2 bars; choose its sweep direction (up or down).",
+      "tool": "Phaser",
+      "expect": "Slow top-end swirl."
+    },
+    {
+      "n": 6,
+      "action": "Add harmonic stacking: harmonizer amount and width high, interval shifted from the octave to the 3rd harmonic.",
+      "tool": "Harmonizer / extra oscillator",
+      "expect": "A bell-like shimmer above the chord."
+    },
+    {
+      "n": 7,
+      "action": "Add unison voices to taste, light compression, and pull the highs and some mids down slightly.",
+      "tool": "Unison + compressor + EQ",
+      "expect": "A finished, glued moving pad."
+    }
+  ],
+  "verification": [
+    "The high-pass automation is audible as movement on a sustained chord.",
+    "The phaser completes exactly one cycle every 2 bars at project tempo.",
+    "There is no low-end mud from the delay or reverb (both low-cut)."
+  ],
+  "tags": [
+    "pad",
+    "phaser",
+    "high-pass",
+    "resonance",
+    "chords",
+    "bell",
+    "ambient",
+    "movement",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression"
+}

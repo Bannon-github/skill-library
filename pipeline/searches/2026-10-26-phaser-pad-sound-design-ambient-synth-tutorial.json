@@ -1,0 +1,101 @@
+{
+ "topic": "phaser pad sound design ambient synth tutorial",
+ "date": "2026-10-26",
+ "params": {
+  "topic": "phaser pad sound design ambient synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "uI74d3nDC8I",
+   "title": "U-he Zebra - Ambient Sound Design - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 477,
+   "view_count": 20288,
+   "url": "https://www.youtube.com/watch?v=uI74d3nDC8I",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.65
+  },
+  {
+   "id": "nVpMD4IIH0A",
+   "title": "How To: Make an Airy Pad/Chord (Sound Design Tutorial)",
+   "channel": "Ryan Devenney Music Production Tutorials",
+   "duration": 288,
+   "view_count": 14357,
+   "url": "https://www.youtube.com/watch?v=nVpMD4IIH0A",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.08
+  },
+  {
+   "id": "_cVKvtFm8J0",
+   "title": "How To Synth 5: Synthetic Ambient Orchestraish Strings",
+   "channel": "SeamlessR",
+   "duration": 1189,
+   "view_count": 36273,
+   "url": "https://www.youtube.com/watch?v=_cVKvtFm8J0",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.78
+  },
+  {
+   "id": "D8TQ4Udn44Y",
+   "title": "How to create a Synth Pad with a Real Human Voice",
+   "channel": "Julian Doe",
+   "duration": 315,
+   "view_count": 888,
+   "url": "https://www.youtube.com/watch?v=D8TQ4Udn44Y",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "title": "Sylenth 1 Tutorial \"Phasing\" Pad",
+   "channel": "Sound Design Tutorials",
+   "duration": 698,
+   "view_count": 585,
+   "url": "https://www.youtube.com/watch?v=ZsbcQZtklGI",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.88
+  },
+  {
+   "id": "cR23JfH_33U",
+   "title": "Sound Design Weekly 6: High Pass Phaser Chord / Pad",
+   "channel": "ORACLE BALL",
+   "duration": 355,
+   "view_count": 382,
+   "url": "https://www.youtube.com/watch?v=cR23JfH_33U",
+   "query": "phaser pad sound design ambient synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.79
+  }
+ ],
+ "dropped": [
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "snUdckhiIOs",
+   "why": "duration 177s"
+  },
+  {
+   "id": "V_ednvEuqE4",
+   "why": "duration 52s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

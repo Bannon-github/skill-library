@@ -1,0 +1,101 @@
+{
+ "topic": "punchy ambient bass drums cinematic percussion sound design tutorial",
+ "date": "2026-10-26",
+ "params": {
+  "topic": "punchy ambient bass drums cinematic percussion sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "6CWmImkHDgs",
+   "title": "EPIC Cinematic Drums from White Noise 🥁| A Sound Design Tutorial",
+   "channel": "Venus Theory",
+   "duration": 1067,
+   "view_count": 47633,
+   "url": "https://www.youtube.com/watch?v=6CWmImkHDgs",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.84
+  },
+  {
+   "id": "oc5YQf_Xy14",
+   "title": "Ableton Sound Design Tutorial - Drums That Cut Through The Mix",
+   "channel": "Finish More Music",
+   "duration": 670,
+   "view_count": 6969,
+   "url": "https://www.youtube.com/watch?v=oc5YQf_Xy14",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.42
+  },
+  {
+   "id": "xlBInB7BOzE",
+   "title": "The VITAL Drum Sound Design Tutorial!! (FREE PLUGIN)",
+   "channel": "Bongonzo",
+   "duration": 1152,
+   "view_count": 31188,
+   "url": "https://www.youtube.com/watch?v=xlBInB7BOzE",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.75
+  },
+  {
+   "id": "-qOgbJyAJVQ",
+   "title": "VOLTRA BASS in Serum | Sounddesign Tutorial | by. Fruutiy",
+   "channel": "Fruutiy",
+   "duration": 259,
+   "view_count": 761,
+   "url": "https://www.youtube.com/watch?v=-qOgbJyAJVQ",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.44
+  },
+  {
+   "id": "oRhBZ6L9rU8",
+   "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)",
+   "channel": "DNB Academy",
+   "duration": 604,
+   "view_count": 6016,
+   "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.39
+  },
+  {
+   "id": "PGSyt5zIDCE",
+   "title": "SOUND DESIGN | How I make Cinematic Impacts | Sebastian Bach",
+   "channel": "Harmony of Sound",
+   "duration": 744,
+   "view_count": 1086,
+   "url": "https://www.youtube.com/watch?v=PGSyt5zIDCE",
+   "query": "punchy ambient bass drums cinematic percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.02
+  }
+ ],
+ "dropped": [
+  {
+   "id": "SVKAHF-nExc",
+   "why": "duration 29s"
+  },
+  {
+   "id": "Qj_z_ZoY3g0",
+   "why": "duration 118s"
+  },
+  {
+   "id": "uWG4QFUzkWA",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

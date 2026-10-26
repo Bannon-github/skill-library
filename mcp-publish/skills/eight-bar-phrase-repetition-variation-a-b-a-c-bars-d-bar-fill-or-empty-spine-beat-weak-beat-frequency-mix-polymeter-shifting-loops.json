@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "eight-bar-phrase-repetition-variation-a-b-a-c-bars-d-bar-fill-or-empty-spine-beat-weak-beat-frequency-mix-polymeter-shifting-loops",
+  "name": "Eight-bar rhythmic phrasing: spine beat on strong beats, bar-level A/B/A/C variation, and a last-bar D that is either a fill (adds syncopation and toms) or an empty (drops the kick or main rhythm) to set up the next section",
+  "goal": "Turn a one-bar loop into an 8-bar phrase that tells the listener where the section boundaries are. Build a spine beat (kick on 1-2-3-4, snare/clap on the backbeat 2 and 4, closed hat on the offbeat 'ands'), then put lighter percussion on the weak 16ths ('e' and 'a'), mixing low-mid and high sounds there. Use bar-level variation: A = core bar, B = one small change (add, remove or swap one hit), back to A in bar 3, C = a slightly bigger change at bar 4, then A material again, and D in bar 8: either a fill (extra syncopation, snare hits on weak beats, extra eighth-note kicks, toms high to low) or an empty (remove most or all main rhythmic elements, e.g. drop the kick for the last bar) before the next downbeat. The bigger the coming change, the more anticipation the fill or empty should build. Optionally layer a polymeter (for example a 3-step pattern over a 4-beat grid) so loops shift against each other over time.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "JE3QM_9sljI",
+    "url": "https://www.youtube.com/watch?v=JE3QM_9sljI",
+    "title": "Fundamentals of Rhythm for Electronic Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/JE3QM_9sljI/agent-skill-eight-bar-phrase-repetition-variation-a-b-a-c-bars-d-bar-fill-or-empty-spine-beat-weak-beat-frequency-mix-polymeter-shifting-loops.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "A DAW or step sequencer with drum or percussion voices",
+    "Tempo and a 4/4 grid (other meters work the same way)"
+  ],
+  "inputs": [
+    {
+      "name": "loop",
+      "type": "midi",
+      "description": "One-bar drum or percussion loop (or empty, to build from scratch)",
+      "required": false
+    },
+    {
+      "name": "next_section_change",
+      "type": "enum",
+      "description": "small | medium | large: how big the change at the next downbeat is",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "phrase",
+      "type": "midi",
+      "description": "8-bar drum phrase with A/B/A/C variation and a D-bar fill or empty"
+    },
+    {
+      "name": "arrangement_notes",
+      "type": "text",
+      "description": "Where the fills and empties fall relative to section changes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Bar letter scheme from the transcript: A, B, A, C over bars 1-4, then A material and D in bar 8. The transcript is garbled for bars 5-7 ('a a d'), so keep bars 5-7 as A or a light B variant.",
+    "Avoid putting strong low sounds (kick, snare, low tom) on weak 16ths: that loses coherence. Use percussion, toms, synth blips or vocal hits there.",
+    "For ambient or cinematic tracks, use pulses or percussion layers instead of a full kit; the empty (removing the low pulse for the last bar) also works for drone beds.",
+    "Treat polyrhythms (3 against 2 in the same bar) with care; polymeters (3-step over a 4-beat grid) are easier to keep clean.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build the spine beat: kick on beats 1-4, snare or clap on 2 and 4, closed hat on each offbeat eighth ('and').",
+      "tool": "DAW / step sequencer",
+      "expect": "A steady, grounded 4/4 pulse."
+    },
+    {
+      "n": 2,
+      "action": "Add ghost or weak-beat hits on the 'e' and 'a' 16ths with quieter or lighter sounds (ghost snares, percussion, toms, synth hits), mixing low-mid and high-frequency sounds.",
+      "tool": "DAW",
+      "expect": "The groove gains push without losing the downbeat."
+    },
+    {
+      "n": 3,
+      "action": "Set the bar to A. Make bar 2 B: one small change only (add, remove or swap one hit). Bar 3 returns to A.",
+      "tool": "DAW",
+      "expect": "The listener hears repetition plus a small surprise."
+    },
+    {
+      "n": 4,
+      "action": "Make bar 4 C: a slightly bigger variation than B (it doesn't need to include B's change). This closes the 4-bar half-phrase.",
+      "tool": "DAW",
+      "expect": "The 4-bar boundary is audible."
+    },
+    {
+      "n": 5,
+      "action": "Bars 5-7: return to A material (optionally a light B variant).",
+      "tool": "DAW",
+      "expect": "The second half of the phrase feels familiar."
+    },
+    {
+      "n": 6,
+      "action": "Bar 8 = D. If the next section is a big lift, write a fill: extra syncopation, snares on weak beats, a couple of extra eighth-note kicks, toms stepping high to low. If you want a vacuum instead, write an empty: remove most or all main elements, e.g. drop the kick for the whole bar (or just its last beat).",
+      "tool": "DAW",
+      "expect": "Anticipation builds into the next downbeat; the bigger the coming change, the bigger the fill or empty."
+    },
+    {
+      "n": 7,
+      "action": "Line up section changes with the downbeat after D, and repeat the 8-bar scheme for every section, choosing fill or empty each time.",
+      "tool": "DAW arrangement",
+      "expect": "Section boundaries land every 8 or 16 bars and feel prepared."
+    },
+    {
+      "n": 8,
+      "action": "Optional: add a polymeter layer (a 3-step pattern on the same grid as 4-beat bars) so its accent drifts against the downbeat.",
+      "tool": "Sequencer with per-track length",
+      "expect": "Slowly shifting relationships with no extra programming."
+    }
+  ],
+  "verification": [
+    "Bars 1, 3 (and 5-7) are identical or near-identical; bars 2 and 4 each differ by a small and slightly larger change respectively.",
+    "Bar 8 is a fill or an empty, and the next section's first downbeat restores the full spine.",
+    "No kick, snare or low tom sits on a weak 16th in the main spine."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "phrasing",
+    "8-bar-phrase",
+    "drums",
+    "fills",
+    "loop-based-structure",
+    "polymeter",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://eight-bar-phrase-repetition-variation-a-b-a-c-bars-d-bar-fill-or-empty-spine-beat-weak-beat-frequency-mix-polymeter-shifting-loops"
+}

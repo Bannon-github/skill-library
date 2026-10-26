@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "rule-of-three-phrase-repetition-play-idea-twice-then-third-pass-goes-somewhere-new-or-starts-same-and-diverges-halfway",
+  "name": "Rule of three for repeating musical ideas: play a 4-bar idea twice so it sticks, then on the third pass either go somewhere new (new melody on the same chords, or new chords) or start the same and diverge halfway",
+  "goal": "Stop over-looping a phrase. Play a musical idea (e.g. a 4-bar chord progression with melody) once to spark interest and a second time to reinforce it so the listener can remember it. On the third pass, never repeat it unchanged: option 1, go somewhere different (a new melody over the same chords, or a new progression with a new melody); option 2, start the third pass the same and diverge partway (around halfway through the phrase). Choose the option by intent (the response you want from the listener). Use as a check across a loop-based arrangement.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "iiL3K3ewfuc",
+    "url": "https://www.youtube.com/watch?v=iiL3K3ewfuc",
+    "title": "This Arrangement Rule Will Change Your Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/iiL3K3ewfuc/agent-skill-rule-of-three-phrase-repetition-play-idea-twice-then-third-pass-goes-somewhere-new-or-starts-same-and-diverges-halfway.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "A written musical idea (e.g. 4-bar chords + melody) in a DAW or sequencer"
+  ],
+  "inputs": [
+    {
+      "name": "phrase",
+      "type": "midi",
+      "description": "The 4-bar idea to be repeated",
+      "required": true
+    },
+    {
+      "name": "intent",
+      "type": "text",
+      "description": "What response the section should create (settle, surprise, lift)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "midi",
+      "description": "Idea x2 followed by a third pass that is new or diverges partway"
+    },
+    {
+      "name": "repetition_audit",
+      "type": "text",
+      "description": "List of places where an idea repeats 3+ times unchanged, with the fix chosen"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "This is a guideline, not a law; break it on purpose (e.g. minimal or drone music where repetition is the point), not by accident.",
+    "For ambient or isochronic beds, apply it to the foreground idea (melody or motif), not to the drone or pulse layer, which is meant to stay steady.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write or pick a 4-bar idea (progression + melody) and place it once.",
+      "tool": "DAW",
+      "expect": "First pass: new to the listener."
+    },
+    {
+      "n": 2,
+      "action": "Repeat it once (2 passes in total) so it is reinforced and memorable.",
+      "tool": "DAW",
+      "expect": "The listener could sing it back."
+    },
+    {
+      "n": 3,
+      "action": "Third pass, option 1: go somewhere different: keep the chords and write a new melody, or move to a new progression with a new melody.",
+      "tool": "DAW",
+      "expect": "It sounds related but new; interest is renewed."
+    },
+    {
+      "n": 4,
+      "action": "Third pass, option 2: start identical to the first two passes, then change the melody or chords about halfway through the phrase.",
+      "tool": "DAW",
+      "expect": "The listener expects a repeat and is surprised partway."
+    },
+    {
+      "n": 5,
+      "action": "Choose option 1 or 2 by the section's intent and audit the whole arrangement: anywhere an idea plays 3+ times unchanged, apply one of the two options.",
+      "tool": "DAW arrangement view",
+      "expect": "No foreground idea repeats more than twice unchanged."
+    }
+  ],
+  "verification": [
+    "Every foreground phrase appears at most twice in a row unchanged.",
+    "Each third occurrence is either new material or diverges by about its midpoint."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "repetition",
+    "phrasing",
+    "loop-based-structure",
+    "composition",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://rule-of-three-phrase-repetition-play-idea-twice-then-third-pass-goes-somewhere-new-or-starts-same-and-diverges-halfway"
+}

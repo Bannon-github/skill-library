@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
+  "name": "Slow ambient harmony in one key: suspended and 7sus4 chords, a held root under a changing upper chord, or a static chord over a moving bass note, plus inversions and a band-passed 1-2-3 scale-degree cluster for tension, all moved slowly over a long timeline",
+  "goal": "Get movement in a long-form ambient or drone track without leaving the key. Pick one key (a minor or modal key such as Aeolian, Dorian or Lydian suits dark, suspended moods) and stay in it for the whole track; a key change should signal a completely new passage. Use 2-4-note chords: sus2 (1-2-5) or sus4 (1-4-5) over a low root as neutral, suspended openers, then the minor triad, then a 7sus-style shape (1-5-7) for contrast. Create variation from the same notes: invert (put a different chord tone on the bottom), drop notes down an octave or two, or make a non-root chord tone the root of the next chord. Two core motion techniques: (1) keep the root as a pedal and change the upper chord above it (e.g. A root under Am, Dm, C); (2) keep the upper chord static and move the bass note under it (e.g. Am over the 6th degree). For tension, play scale degrees 1-2-3 together as a cluster and squeeze it with a high-pass and low-pass to roughly 600-1000 Hz. Spread single chord tones across several layered instruments instead of one dense patch. Make changes slowly across the timeline.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "tfJocFdYxsg",
+    "url": "https://www.youtube.com/watch?v=tfJocFdYxsg",
+    "title": "Music Theory for Ambient (theory you can actually use!)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/tfJocFdYxsg/agent-skill-ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "A synth pad or any sustaining instrument",
+    "A DAW or sequencer with scale or key awareness (optional)"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "text",
+      "description": "One key or mode for the whole track (e.g. A minor)",
+      "required": true
+    },
+    {
+      "name": "track_length_min",
+      "type": "number",
+      "description": "Target length, which sets how slowly chords change",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "chord_plan",
+      "type": "text",
+      "description": "Ordered chord list with pedal or moving-bass choices and timings"
+    },
+    {
+      "name": "midi",
+      "type": "midi",
+      "description": "Chord MIDI realised over the timeline"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Stay in one key for the whole track unless you are deliberately starting a new passage.",
+    "Change chords slowly: at ambient tempos one chord can hold for many bars; avoid a 'flurry' of changes.",
+    "The 600-1000 Hz cluster band comes from the transcript and is approximate; tune it by ear.",
+    "Pairs with the chord-tone-per-instrument and Lydian layering skills; this one is about harmonic motion over time, not voicing per layer.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose a single key or mode (a minor or modal key for dark or suspended moods) and keep every chord inside it.",
+      "tool": "DAW / scale mode",
+      "expect": "All later chords share the key's notes."
+    },
+    {
+      "n": 2,
+      "action": "Open with a neutral suspended chord, sus2 (1-2-5) or sus4 (1-4-5), over a low root note, then move to the minor triad.",
+      "tool": "Pad synth",
+      "expect": "A suspended, ethereal start resolving to the key's colour."
+    },
+    {
+      "n": 3,
+      "action": "Add contrast with a 7sus-style shape (root, 5th, 7th) and return to the suspended or minor chords; stick to 2-4 notes per chord.",
+      "tool": "Pad synth",
+      "expect": "Variation without leaving the key."
+    },
+    {
+      "n": 4,
+      "action": "Make variants from the same notes: inversions (different chord tone in the bass), dropping tones down 1-2 octaves, or using a non-root chord tone as the next chord's root.",
+      "tool": "Piano roll",
+      "expect": "The same chord sounds new."
+    },
+    {
+      "n": 5,
+      "action": "Pedal-root motion: hold the root (e.g. A) and change the upper chord above it (e.g. Am, then Dm, then C).",
+      "tool": "Piano roll (left hand / right hand)",
+      "expect": "The feeling shifts while the foundation stays put."
+    },
+    {
+      "n": 6,
+      "action": "Moving-bass motion: hold the upper chord and step the bass note underneath (e.g. Am over the 6th degree).",
+      "tool": "Piano roll",
+      "expect": "An ascending, 'signs of life' movement under a static pad."
+    },
+    {
+      "n": 7,
+      "action": "Tension colour: play scale degrees 1, 2 and 3 together and band-limit them with high-pass and low-pass filters to roughly 600-1000 Hz.",
+      "tool": "Pad + HPF/LPF or EQ",
+      "expect": "A tense, dense atmosphere from three notes."
+    },
+    {
+      "n": 8,
+      "action": "Spread chord tones across several layered instruments and stretch all changes across the timeline (many bars per change).",
+      "tool": "DAW arrangement",
+      "expect": "A wide, slowly morphing harmonic bed."
+    }
+  ],
+  "verification": [
+    "All chords are diatonic to the one chosen key.",
+    "At least one section uses a pedal root under changing upper chords, or a static chord over a moving bass.",
+    "Chord changes are spaced many bars apart, matching the track's long-form pace."
+  ],
+  "tags": [
+    "ambient",
+    "harmony",
+    "chords",
+    "long-form",
+    "drone",
+    "pacing",
+    "music-theory",
+    "pedal-tone",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster"
+}

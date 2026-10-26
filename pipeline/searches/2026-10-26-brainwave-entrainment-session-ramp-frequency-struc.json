@@ -1,0 +1,46 @@
+{
+ "topic": "brainwave entrainment session ramp frequency structure how to make meditation track",
+ "date": "2026-10-26",
+ "params": {
+  "topic": "brainwave entrainment session ramp frequency structure how to make meditation track",
+  "langs": "en",
+  "per_query": 15,
+  "top": 6,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "XKN2WOaQ0S0",
+   "title": "Battimenti binaurali | binaural beat con Mind WorkStation - Tutorial",
+   "channel": "Marco AmadeuX Stefanelli",
+   "duration": 951,
+   "view_count": 231,
+   "url": "https://www.youtube.com/watch?v=XKN2WOaQ0S0",
+   "query": "brainwave entrainment session ramp frequency structure how to make meditation track tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.68
+  }
+ ],
+ "dropped": [
+  {
+   "id": "twwS9tuxQWM",
+   "why": "duration 5401s"
+  },
+  {
+   "id": "fZCthK3DB9U",
+   "why": "duration 5496s"
+  },
+  {
+   "id": "JMMChtw6FMY",
+   "why": "duration 28800s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

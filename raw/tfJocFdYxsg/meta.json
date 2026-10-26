@@ -1,0 +1,46 @@
+{
+  "video_id": "tfJocFdYxsg",
+  "title": "Music Theory for Ambient (theory you can actually use!)",
+  "url": "https://www.youtube.com/watch?v=tfJocFdYxsg",
+  "fetched_at": "2026-10-26T16:35:23.390713+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "S1gns Of L1fe",
+  "duration": 1108,
+  "ok": true,
+  "cue_count": 507,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/tfJocFdYxsg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/tfJocFdYxsg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

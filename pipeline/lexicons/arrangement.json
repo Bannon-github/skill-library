@@ -1,0 +1,34 @@
+{
+ "domain": "arrangement",
+ "label": "Song structure / arrangement (added 2026-10-26 so route.py gap checks see section-level terms)",
+ "modules": {},
+ "params": {},
+ "mod_sources": {},
+ "tools": {},
+ "concepts": {
+  "section": ["section", "sections", "passage", "part of the song", "part of the track"],
+  "intro": ["intro", "introduction", "opening"],
+  "outro": ["outro", "ending", "coda", "taper"],
+  "build_up": ["build up", "build-up", "buildup", "build"],
+  "breakdown": ["breakdown", "break down", "strip back", "stripped back"],
+  "drop": ["drop", "the drop"],
+  "chorus_hook": ["chorus", "hook", "verse", "bridge"],
+  "climax": ["climax", "peak", "second peak"],
+  "phrase": ["phrase", "phrases", "phrasing", "four bar", "4 bar", "eight bar", "8 bar", "16 bar", "sixteen bar"],
+  "bar_letters": ["a section", "b section", "c section", "a/b", "aaba", "abac"],
+  "repetition": ["repetition", "repeat", "repeating", "over repetition", "rule of three"],
+  "variation": ["variation", "variations", "change it up", "switch it up"],
+  "downbeat": ["downbeat", "down beat", "bar line", "barline"],
+  "tension_release": ["tension", "release", "anticipation", "payoff"],
+  "pacing": ["pacing", "long form", "long-form", "slow changes", "over time", "timeline", "session arc", "journey"]
+ },
+ "unit_targets": {},
+ "techniques": {
+  "arrangement": ["arrangement", "arranging", "arrange", "song structure", "track structure"],
+  "transition": ["transition", "transitions", "riser", "risers", "downlifter", "impact", "whoosh", "swell", "reverse reverb", "reverse cymbal"],
+  "fill_or_empty": ["fill", "fills", "drum roll", "tom fill", "empty", "drop out", "dropping the kick"],
+  "staggered_entry": ["staggered entry", "bring in", "comes in", "enter early", "pickup", "pick up"],
+  "automation_arc": ["volume automation", "filter automation", "automate", "automation"],
+  "silence": ["silence", "moment of silence", "pause"]
+ }
+}

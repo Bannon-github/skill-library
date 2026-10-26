@@ -1,0 +1,31 @@
+{
+  "video_id": "U-Tn1o83yDk",
+  "title": "How to Make Any Song Cinematic (Hollywood's Secret Trick)",
+  "url": "https://www.youtube.com/watch?v=U-Tn1o83yDk",
+  "fetched_at": "2026-10-26T16:26:58.321864+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Multiply Sound",
+  "duration": 1112,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

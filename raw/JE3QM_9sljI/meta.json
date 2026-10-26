@@ -1,0 +1,46 @@
+{
+  "video_id": "JE3QM_9sljI",
+  "title": "Fundamentals of Rhythm for Electronic Music",
+  "url": "https://www.youtube.com/watch?v=JE3QM_9sljI",
+  "fetched_at": "2026-10-26T16:35:41.791878+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Red Means Recording",
+  "duration": 1262,
+  "ok": true,
+  "cue_count": 488,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JE3QM_9sljI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JE3QM_9sljI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

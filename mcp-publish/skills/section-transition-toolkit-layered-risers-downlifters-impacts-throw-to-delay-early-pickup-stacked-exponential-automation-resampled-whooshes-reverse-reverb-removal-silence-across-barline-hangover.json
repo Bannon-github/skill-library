@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "id": "section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover",
+  "name": "Section transition toolkit: layered risers and impacts, throwing a part to a growing delay, a next-section instrument entering early, stacked exponential automation, resampled or reverse-reverb whooshes, removing elements or silence, and transitions that cross or hang over the bar line",
+  "goal": "Glue song sections together so they don't feel like 'one thing, then the next thing'. Add transition sounds (risers, whooshes, downlifters; layer and vary them by intensity so they aren't the same every time; synthesize them for control), plus an impact on the landing downbeat (crash or noisy hit into reverb). Make transitions out of existing parts: play the transition (pull back or push harder), throw a vocal or lead into a delay whose mix goes 0 to 100% while feedback grows and a resonant filter sweeps, add upward multiband compression for excitement, and let an instrument from the next section enter early with a pickup. Stack several automations at once (distortion drive, width, delay or grain mix, filter cutoff, envelope decay and release from plucky to ringing) and compensate output gain. Design the end sound first, then automate toward it. Shape curves (exponential by default; hold-then-ramp; turn-back; slam-then-recede). Resample parts and time-stretch or pitch them into custom whooshes; reverse a fully-wet reverb print before the hit. Remove sounds: cut drums or bass, or use a moment of silence. Let transitions cross the bar line (drop instruments for the first beat of the new section) or hang over and fade into it. Combine techniques.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "lnJA5rOrp-M",
+    "url": "https://www.youtube.com/watch?v=lnJA5rOrp-M",
+    "title": "25 song transition tips I wish I learned from the start",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/lnJA5rOrp-M/agent-skill-section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "A DAW with automation lanes and audio resampling",
+    "An arrangement with at least two sections"
+  ],
+  "inputs": [
+    {
+      "name": "section_boundary",
+      "type": "text",
+      "description": "Bar where section A ends and B starts",
+      "required": true
+    },
+    {
+      "name": "intensity",
+      "type": "enum",
+      "description": "subtle | medium | big",
+      "required": true
+    },
+    {
+      "name": "source_parts",
+      "type": "audio",
+      "description": "Existing tracks (lead, vocal, pads, drums) to throw, resample or remove",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "transition",
+      "type": "audio",
+      "description": "Transition region (pre-roll, landing, optional hangover) with automation and FX layers"
+    },
+    {
+      "name": "automation_map",
+      "type": "text",
+      "description": "Which params are automated, with curve shapes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Vary the transition sounds across the track by intensity; never paste the identical riser stack at every boundary.",
+    "Use exponential automation curves by default; linear or logarithmic curves give away too much too early and plateau.",
+    "When stacking drive or compression automation, automate output gain down to compensate for the louder sound.",
+    "For ambient or cinematic beds, favour removal, reverse reverb, delay throws and early pickups over big risers and explosions.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick 1-3 riser, whoosh or downlifter layers sized to the intensity; synthesize at least one (e.g. noise or saw with pitch and filter rising) so length and range fit the boundary. A smaller 'transition to the transition' can lead into a bigger swell.",
+      "tool": "Synth / sampler",
+      "expect": "Pre-roll grows toward the boundary."
+    },
+    {
+      "n": 2,
+      "action": "Put an impact on the landing downbeat: a crash, or any noisy hit sent into a big reverb.",
+      "tool": "Sampler + reverb",
+      "expect": "The new section's downbeat feels bigger than without it."
+    },
+    {
+      "n": 3,
+      "action": "Throw a lead or vocal to a delay over the last bars: delay mix automated 0 to 100%, feedback rising, a resonant filter sweeping and blending in; optionally add upward multiband compression on the throw.",
+      "tool": "Delay + filter + multiband compressor",
+      "expect": "The tail grows and smears into the next section."
+    },
+    {
+      "n": 4,
+      "action": "Bring one instrument from the next section in early with a short pickup phrase.",
+      "tool": "DAW",
+      "expect": "Sections feel joined, not mechanical."
+    },
+    {
+      "n": 5,
+      "action": "Stack automations together: drive on bass, shaper on drums, width, delay or grain mix, filter cutoff, envelope decay/release from short to ringing; compensate with output gain. Build the end sound first, then automate toward it.",
+      "tool": "DAW automation",
+      "expect": "Energy rises across several dimensions at once."
+    },
+    {
+      "n": 6,
+      "action": "Shape every curve: exponential (default), hold-then-ramp, turn back at the end, or slam to full then recede.",
+      "tool": "Automation curve editing",
+      "expect": "The rate of change keeps rising into the boundary."
+    },
+    {
+      "n": 7,
+      "action": "Resample parts of the track through effects, then time-stretch and pitch-automate them into custom whooshes and risers; or duplicate a part to a 100%-wet reverb, print it and reverse it into the hit; or chop audio for a stutter transition.",
+      "tool": "Resampling / audio editing",
+      "expect": "Transition sounds with the track's own character."
+    },
+    {
+      "n": 8,
+      "action": "Remove elements: cut drums, bass or atmosphere before the new entries, or insert a short silence before the downbeat.",
+      "tool": "DAW",
+      "expect": "The new section lands with contrast."
+    },
+    {
+      "n": 9,
+      "action": "Work across the bar line: drop some instruments for the first beat of the new section, or let a delay or reverb tail hang over and fade under the new section.",
+      "tool": "DAW",
+      "expect": "The boundary is blurred rather than a hard cut."
+    },
+    {
+      "n": 10,
+      "action": "Combine 2-4 of the above per boundary, scaled to the intensity.",
+      "tool": "DAW",
+      "expect": "Each transition is distinct and fits its section change."
+    }
+  ],
+  "verification": [
+    "Every section boundary uses at least two techniques, and not all boundaries use the same set.",
+    "Automated curves at boundaries are exponential or deliberately shaped, not default linear.",
+    "Loudness doesn't jump from stacked drive alone (output compensated)."
+  ],
+  "tags": [
+    "arrangement",
+    "transitions",
+    "song-structure",
+    "risers",
+    "impacts",
+    "automation",
+    "resampling",
+    "reverse-reverb",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover"
+}

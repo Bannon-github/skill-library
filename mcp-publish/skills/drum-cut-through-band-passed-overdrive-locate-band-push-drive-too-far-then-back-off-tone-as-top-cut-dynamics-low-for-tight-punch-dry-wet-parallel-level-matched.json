@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "id": "drum-cut-through-band-passed-overdrive-locate-band-push-drive-too-far-then-back-off-tone-as-top-cut-dynamics-low-for-tight-punch-dry-wet-parallel-level-matched",
+  "name": "Make a weak drum (e.g. a clap) cut through and drive the groove with band-passed overdrive: choose the band that gets distorted, push the drive too far then back off, use tone to tame harsh top, set the dynamics control low for a tight punch, blend dry/wet, and level-match",
+  "goal": "Fix a drum hit that sounds wimpy or sits on top of the mix. On the soloed hit (reverb off, low cut kept so it doesn't fight the kick and bass), insert an overdrive with a band-pass before the distortion stage, inside a group with a gain utility after it for level matching. Sweep the band-pass to find the range you want to emphasize (avoid the thick, murky lows) and narrow the Q roughly. Push the drive hard to hear what it does, then back it off (about 60%) so the brittle upper-mid hiss doesn't dominate. Use the tone control as a top-end cut. Set the dynamics control lower for a tighter, punchier, shorter-feeling hit, or higher for a washed-out, relaxed one (it acts like note length and articulation for the groove). Dial dry/wet (parallel) from about 50 to 100%. Level-match against bypass with the gain utility, then put the reverb back and fine-tune in context, leaving final tweaks for the mixdown.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "oc5YQf_Xy14",
+    "url": "https://www.youtube.com/watch?v=oc5YQf_Xy14",
+    "title": "Ableton Sound Design Tutorial - Drums That Cut Through The Mix",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/oc5YQf_Xy14/agent-skill-drum-cut-through-band-passed-overdrive-locate-band-push-drive-too-far-then-back-off-tone-as-top-cut-dynamics-low-for-tight-punch-dry-wet-parallel-level-matched.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "Any overdrive or distortion with a pre-drive band-pass (or a band-pass EQ into a drive), a gain utility, and a dry/wet mix"
+  ],
+  "inputs": [
+    {
+      "name": "drum_track",
+      "type": "audio",
+      "description": "The weak hit (clap, snare, perc)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "processed_drum",
+      "type": "audio",
+      "description": "Level-matched band-driven drum that cuts through"
+    },
+    {
+      "name": "settings",
+      "type": "text",
+      "description": "Band centre/Q, drive, tone, dynamics, mix"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Always level-match before judging; louder fools the ear.",
+    "Only frequencies passed by the band-pass get distorted; keep the drum's low cut so it doesn't compete with kick and bass.",
+    "Numbers (drive about 60, dynamics 20-50, wet 50-100%) are approximate from the transcript; set them by ear in context.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Solo the hit, bypass its reverb, keep its low-cut EQ.",
+      "tool": "Mixer",
+      "expect": "A dry reference."
+    },
+    {
+      "n": 2,
+      "action": "Insert band-pass -> overdrive -> gain utility in a group.",
+      "tool": "Overdrive / EQ + drive / utility",
+      "expect": "A chain ready for level matching."
+    },
+    {
+      "n": 3,
+      "action": "Add a little drive and sweep the band-pass centre to find the range to emphasize; avoid murky lows; narrow the Q roughly.",
+      "tool": "Band-pass",
+      "expect": "The chosen band gets louder and grittier."
+    },
+    {
+      "n": 4,
+      "action": "Push the drive too far to hear the effect, then back off (about 60%) until the brittle top isn't dominant; lower the tone to cut harsh upper mids if needed.",
+      "tool": "Drive + tone",
+      "expect": "Bite without hiss."
+    },
+    {
+      "n": 5,
+      "action": "Set the dynamics control low (about 20-30) for tight punch, or higher for a looser, washed-out feel.",
+      "tool": "Dynamics",
+      "expect": "The hit's length and articulation fit the groove."
+    },
+    {
+      "n": 6,
+      "action": "Set dry/wet (50-100%) in context with the full mix.",
+      "tool": "Mix knob",
+      "expect": "The hit sits in the track and drives the groove."
+    },
+    {
+      "n": 7,
+      "action": "Level-match with the utility against bypass, restore the reverb (adjust decay), and leave final tweaks to the mixdown.",
+      "tool": "Utility + reverb",
+      "expect": "Before/after at equal loudness shows the improvement."
+    }
+  ],
+  "verification": [
+    "At matched loudness the processed hit is clearly more present in the full mix.",
+    "No harsh brittle top in solo at the final drive setting."
+  ],
+  "tags": [
+    "drums",
+    "punch",
+    "distortion",
+    "overdrive",
+    "mixing",
+    "parallel-processing",
+    "clap",
+    "snare",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://drum-cut-through-band-passed-overdrive-locate-band-push-drive-too-far-then-back-off-tone-as-top-cut-dynamics-low-for-tight-punch-dry-wet-parallel-level-matched"
+}

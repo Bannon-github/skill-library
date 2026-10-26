@@ -1,0 +1,46 @@
+{
+  "video_id": "55qkyBH9-6Y",
+  "title": "How To Make Film Score Music (Ludwig Göransson, Hans Zimmer) // FL Studio Tutorial + FLP",
+  "url": "https://www.youtube.com/watch?v=55qkyBH9-6Y",
+  "fetched_at": "2026-10-26T16:24:02.125205+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Seventh' Beats",
+  "duration": 723,
+  "ok": true,
+  "cue_count": 248,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/55qkyBH9-6Y/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/55qkyBH9-6Y/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

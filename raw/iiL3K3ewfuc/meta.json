@@ -1,0 +1,46 @@
+{
+  "video_id": "iiL3K3ewfuc",
+  "title": "This Arrangement Rule Will Change Your Music",
+  "url": "https://www.youtube.com/watch?v=iiL3K3ewfuc",
+  "fetched_at": "2026-10-26T16:27:14.149646+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Nathan James Larsen",
+  "duration": 446,
+  "ok": true,
+  "cue_count": 227,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/iiL3K3ewfuc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/iiL3K3ewfuc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
