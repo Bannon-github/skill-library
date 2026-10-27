@@ -1,0 +1,177 @@
+{
+ "date": "2026-10-26",
+ "title": "Still Key (A Aeolian, one key throughout)",
+ "skills": {
+  "source": "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+  "harmony": "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
+  "structure": "section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover"
+ },
+ "bpm": 80,
+ "bars": 20,
+ "tailSec": 5,
+ "seed": 1026,
+ "category": "pad",
+ "progression_note": "2 bars per change; [bass, upper chord]. sus2 -> minor -> pedal A under Dm, C -> 1-5-7 sus shape -> Am over F, G (moving bass) -> sus4 + 1-2-3 cluster -> sus2 -> Am 1st inversion",
+ "progression": [
+  [
+   45,
+   [
+    57,
+    59,
+    64
+   ]
+  ],
+  [
+   45,
+   [
+    57,
+    60,
+    64
+   ]
+  ],
+  [
+   45,
+   [
+    62,
+    65,
+    69
+   ]
+  ],
+  [
+   45,
+   [
+    60,
+    64,
+    67
+   ]
+  ],
+  [
+   45,
+   [
+    57,
+    64,
+    67
+   ]
+  ],
+  [
+   41,
+   [
+    57,
+    60,
+    64
+   ]
+  ],
+  [
+   43,
+   [
+    57,
+    60,
+    64
+   ]
+  ],
+  [
+   45,
+   [
+    57,
+    62,
+    64
+   ]
+  ],
+  [
+   45,
+   [
+    57,
+    59,
+    64
+   ]
+  ],
+  [
+   48,
+   [
+    57,
+    64,
+    60
+   ]
+  ]
+ ],
+ "pad": {
+  "unison": 3,
+  "detuneCents": 9,
+  "hpQ": 7.0,
+  "hpLow": 140,
+  "hpHigh": 2000,
+  "phaserBars": 2,
+  "phaserDepth": 0.55,
+  "phaserFb": 0.45,
+  "phaserStages": 6,
+  "phaserMix": 0.7,
+  "harmonizerRatio": 3.0,
+  "harmonizerAmt": 0.5,
+  "harmonizerWidth": 0.9,
+  "delayFb": 0.35,
+  "delayHp": 200,
+  "delayMix": 0.35,
+  "verbHp": 200,
+  "verbRt60": 6.0,
+  "verbWet": 0.45,
+  "compThreshDb": -18,
+  "compRatio": 2.0,
+  "highShelfDb": 0,
+  "midCutDb": -1,
+  "level": 0.6,
+  "spread": 0.8
+ },
+ "bassLevel": 0.16,
+ "warmLevel": 0.11,
+ "bellLevel": 0.32,
+ "cluster": {
+  "bars": [
+   14,
+   16
+  ],
+  "notes": [
+   57,
+   59,
+   60
+  ],
+  "bpLow": 600,
+  "bpHigh": 1000,
+  "level": 0.5
+ },
+ "trans1": {
+  "atBar": 8,
+  "riserBars": 2.0,
+  "riserLevel": 0.09,
+  "reverseVerbLevel": 0.5,
+  "impactLevel": 0.5,
+  "pickupBeats": 2,
+  "dropFirstBeat": true
+ },
+ "trans2": {
+  "atBar": 16,
+  "throwBars": 2.0,
+  "throwFb": [
+   0.3,
+   0.78
+  ],
+  "bassSilenceBeats": 1,
+  "downlifterBars": 2.0,
+  "downLevel": 0.06
+ },
+ "master": {
+  "satDrive": 1.2,
+  "sideHpHz": 150,
+  "fadeInSec": 1.5,
+  "fadeOutSec": 3.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.5
+ },
+ "drums": {
+  "swing": 0.53,
+  "kick": 0.55,
+  "snare": 0.22,
+  "hat": 0.1,
+  "lowDuck": 0.45,
+  "hiDuck": 0.15
+ }
+}
