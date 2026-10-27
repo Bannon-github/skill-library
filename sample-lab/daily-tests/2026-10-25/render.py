@@ -37,7 +37,7 @@ def exciter(kind, vel):
 def mallet(name, midi, vel, hitpos):
     p = MD[name]; f0 = hz(midi); L = int(min(p["decay"] * 5, 6) * SR)
     lfo = None
-    if "lfoHz" in p: lfo = (2 ** (p["lfoCents"] / 1200) - 1) * np.sin(2 * np.pi * p["lfoHz"] * np.arange(L) / SR)  # vibraphone pitch LFO
+    if "lfoHz" in p and R.get("vibeLfo", True): lfo = (2 ** (p["lfoCents"] / 1200) - 1) * np.sin(2 * np.pi * p["lfoHz"] * np.arange(L) / SR)  # vibraphone pitch LFO
     tone = MD["randomTone"] * rng.uniform(-1, 1)                                               # subtle random tone
     y = bank(f0, p, L, vel, hitpos, tone, lfo)
     if "r2" in p: y = (1 - p["r2"]["blend"]) * y + p["r2"]["blend"] * bank(f0, p["r2"], L, vel, rng.random())  # step 5 parallel
@@ -70,7 +70,7 @@ pad = np.zeros((N, 2))
 for b in range(R["bars"] - 1):
     i0, i1 = bars(b, b + 1.15); L = i1 - i0; tt = np.arange(L) / SR
     for j, m in enumerate(chord_at(b)):
-        for d, side in ((-6, 0), (6, 1)):
+        for d, side in ((-R.get("padDetune", 6), 0), (R.get("padDetune", 6), 1)):
             f = hz(m) * 2 ** (d / 1200); ph = rng.random() * 6.28
             x = 0.6 * np.sin(2*np.pi*f*tt + ph) + 0.25 * np.sin(4*np.pi*f*tt + ph) + 0.12 * np.sin(6*np.pi*f*tt + ph)
             w = np.clip(tt / 0.8, 0, 1) * np.clip((L / SR - tt) / 0.5, 0, 1)
@@ -82,6 +82,12 @@ for b in range(R["bars"] - 1):
 padenv = (0.2 + 0.8 * np.clip(t / (ARC["padFadeInBars"] * bar), 0, 1)) * (0.6 + 0.4 * np.clip((t - 12*bar) / (2*bar), 0, 1))
 padenv *= 0.08 + 0.92 * np.clip((R["bars"] * bar - t) / (ARC["outroFadeBars"] * bar), 0, 1)
 dry += pad * padenv[:, None] * 0.7; dry += (lowpad * padenv * R.get("lowPadLevel", 0.0))[:, None]; verb_send += pad * padenv[:, None] * 0.5
+if R.get("lowMidLevel", 0):  # v2: fill 150-400 Hz hole with steady chord-tone pad an octave down
+    lm = np.zeros(N)
+    for b in range(R["bars"] - 1):
+        i0, i1 = bars(b, b + 1.15); L = i1 - i0; tt = np.arange(L) / SR
+        for m in chord_at(b): lm[i0:i1] += (np.sin(2*np.pi*hz(m-12)*tt) + 0.2*np.sin(4*np.pi*hz(m-12)*tt)) * np.clip(tt/0.8,0,1) * np.clip((L/SR-tt)/0.5,0,1)
+    dry += (lm * padenv * R["lowMidLevel"])[:, None]
 # sub root, mono, enters build
 sub = np.zeros(N)
 for b in range(4, 19):
@@ -100,7 +106,7 @@ for b in range(4, 18):
         place(dry, y, s, 0.35 if k % 2 else -0.35); place(verb_send, y * 0.6, s)
 # angelic-wind swell: one-note soft lead, tremolo, volume automation, octave-up double
 i0, i1 = bars(*ARC["swellBars"]); L = i1 - i0; tt = np.arange(L) / SR
-sw = np.sin(np.pi * tt / (L / SR)) ** 2 * (0.75 + 0.25 * np.sin(2*np.pi*ARC["tremoloHz"]*tt))
+sw = np.sin(np.pi * tt / (L / SR)) ** 2 * (1 - R.get("tremoloDepth", 0.25) + R.get("tremoloDepth", 0.25) * np.sin(2*np.pi*ARC["tremoloHz"]*tt))
 lead = (np.sin(2*np.pi*hz(ARC["swellMidi"])*tt) + 0.4*np.sin(2*np.pi*hz(ARC["swellMidi"]+12)*tt) + 0.08*np.sin(6*np.pi*hz(ARC["swellMidi"])*tt)) * sw * 0.12
 dry[i0:i1] += lead[:, None] * 0.5; verb_send[i0:i1] += lead[:, None] * 0.8
 # climax (written first): melody from chord arpeggios, edited to stepwise line, on modal vibraphone (parallel beam)
@@ -121,11 +127,11 @@ for n, m in enumerate(mel):
     place(dry, y, s, 0.1 * np.sin(n)); place(verb_send, y * 0.7, s)
 # strings: sustained climax chords with vibrato faded in
 i0, i1 = bars(12, 17); L = i1 - i0; tt = np.arange(L) / SR; strings = np.zeros(L)
-vib = np.clip(tt / (ARC["vibratoFadeBars"] * bar), 0, 1) * 0.004 * np.sin(2*np.pi*5.2*tt)
+vib = np.clip(tt / (ARC["vibratoFadeBars"] * bar), 0, 1) * R.get("stringVib", 0.004) * np.sin(2*np.pi*5.2*tt)
 for k in range(L // int(bar * SR) + 1):
     a0 = k * int(bar * SR); a1 = min(L, a0 + int(bar * SR * 1.1))
     for m in chord_at(12 + k):
-        for d in (-8, 0, 8):
+        for d in (-R.get("stringDetune", 8), 0, R.get("stringDetune", 8)):
             f = hz(m) * 2 ** (d / 1200); ph = 2*np.pi*f*np.cumsum(1 + vib[a0:a1]) / SR
             x = sum(np.sin(h * ph) / h for h in range(1, 9))
             strings[a0:a1] += x * np.clip((np.arange(a1-a0))/SR/0.6, 0, 1) * np.clip(((a1-a0)/SR - np.arange(a1-a0)/SR)/0.5, 0, 1)
@@ -153,9 +159,10 @@ dry += np.stack([loop * 0.6 + proc * 0.2, loop * 0.3 + proc * 0.6], 1) * henv[:,
 # riser: white noise -> LP, cutoff from S&H(sine LFO); LFO rate ramps to max, S&H rate starts low (aliasing slow-down)
 rs = SH["riser"]; i0, i1 = bars(*S_["riser"]); L = i1 - i0; tt = np.arange(L) / SR; u = tt / tt[-1]
 lfo_hz = rs["lfoHzStart"] * (rs["lfoHzEnd"] / rs["lfoHzStart"]) ** u
-sh_hz = rs["shHzStart"] + (rs["shHzEnd"] - rs["shHzStart"]) * u ** 2 + 1.5 * np.sin(2*np.pi*0.7*tt)  # own curve + random-ish moves
+sh_hz = rs["shHzStart"] + (rs["shHzEnd"] - rs["shHzStart"]) * u ** 2 + R.get("riserWander", 1.5) * np.sin(2*np.pi*0.7*tt)  # own curve + random-ish moves
 lsig = 0.5 + 0.5 * np.sin(2 * np.pi * np.cumsum(lfo_hz) / SR)
 Nsave = N; N = L; held = sh(lsig, sh_hz); N = Nsave
+held = R.get("riserSH", 1.0) * held + (1 - R.get("riserSH", 1.0)) * u
 cut = rs["cutLow"] * (rs["cutHigh"] / rs["cutLow"]) ** (np.clip(rs["amount"] * held + 0.3 * u, 0, 1))
 nz = rng.standard_normal((L, 2)); y = np.zeros((L, 2)); blk = 240; zi = np.zeros((2, 2))
 for k in range(0, L, blk):
