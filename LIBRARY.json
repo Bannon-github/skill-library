@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-26T16:39:53.215213+00:00",
-  "entry_count": 196,
+  "updated_at": "2026-10-27T16:27:04.355196+00:00",
+  "entry_count": 203,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3037,6 +3037,97 @@
       "skills": [
         "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression"
       ]
+    },
+    {
+      "id": "cinematic-synth-CRWBHFIikqc",
+      "video_id": "CRWBHFIikqc",
+      "url": "https://www.youtube.com/watch?v=CRWBHFIikqc",
+      "title": "30 min Ambient Track for Beginners - Get Inspired & Find Your Sound",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/CRWBHFIikqc/raw.txt",
+      "summary": "Skills: ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+      "skills": [
+        "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice"
+      ]
+    },
+    {
+      "id": "cinematic-synth-H6i55lXAMh0",
+      "video_id": "H6i55lXAMh0",
+      "url": "https://www.youtube.com/watch?v=H6i55lXAMh0",
+      "title": "Bass Sound Design: 808s, Plucks, Growls and Sub Bass",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/H6i55lXAMh0/raw.txt",
+      "summary": "Skills: four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+      "skills": [
+        "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack"
+      ]
+    },
+    {
+      "id": "cinematic-synth-_cVKvtFm8J0",
+      "video_id": "_cVKvtFm8J0",
+      "url": "https://www.youtube.com/watch?v=_cVKvtFm8J0",
+      "title": "How To Synth 5: Synthetic Ambient Orchestraish Strings",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/_cVKvtFm8J0/raw.txt",
+      "summary": "Skills: hidden-context-synth-strings-two-opposite-direction-arpeggiated-saw-plucks-brassy-filter-env-vibrato-spectral-phaser-above-fundamental-shared-pitch-mod-shimmer-reverb-gated-glimpses-under-sidechain",
+      "skills": [
+        "hidden-context-synth-strings-two-opposite-direction-arpeggiated-saw-plucks-brassy-filter-env-vibrato-spectral-phaser-above-fundamental-shared-pitch-mod-shimmer-reverb-gated-glimpses-under-sidechain"
+      ]
+    },
+    {
+      "id": "cinematic-synth-gIVUpqVRf-w",
+      "video_id": "gIVUpqVRf-w",
+      "url": "https://www.youtube.com/watch?v=gIVUpqVRf-w",
+      "title": "How to Structure Melodic House Tracks Like a Pro",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/gIVUpqVRf-w/raw.txt",
+      "summary": "Skills: loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro",
+      "skills": [
+        "loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro"
+      ]
+    },
+    {
+      "id": "cinematic-synth-r45X4PYH-fg",
+      "video_id": "r45X4PYH-fg",
+      "url": "https://www.youtube.com/watch?v=r45X4PYH-fg",
+      "title": "How to Create a Shimmering Pad",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/r45X4PYH-fg/raw.txt",
+      "summary": "Skills: self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow",
+      "skills": [
+        "self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow"
+      ]
+    },
+    {
+      "id": "cinematic-synth-xY7vRHiSJSM",
+      "video_id": "xY7vRHiSJSM",
+      "url": "https://www.youtube.com/watch?v=xY7vRHiSJSM",
+      "title": "turn your loop into a story: an arrangement masterclass",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/xY7vRHiSJSM/raw.txt",
+      "summary": "Skills: four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence",
+      "skills": [
+        "four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence"
+      ]
+    },
+    {
+      "id": "cinematic-synth-xlBInB7BOzE",
+      "video_id": "xlBInB7BOzE",
+      "url": "https://www.youtube.com/watch?v=xlBInB7BOzE",
+      "title": "The VITAL Drum Sound Design Tutorial!! (FREE PLUGIN)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/xlBInB7BOzE/raw.txt",
+      "summary": "Skills: synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
+      "skills": [
+        "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3312,6 +3403,19 @@
         "cinematic-taiko-ensemble-drums-from-white-noise-velocity-to-amp-decay-and-filter-env-resonant-hp-60hz-low-boost-tanh-softclip-limiter-before-convolution-hall-plus-detuned-sine-fm-sub-random-sample-layers",
         "drum-cut-through-band-passed-overdrive-locate-band-push-drive-too-far-then-back-off-tone-as-top-cut-dynamics-low-for-tight-punch-dry-wet-parallel-level-matched",
         "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression"
+      ]
+    },
+    {
+      "at": "2026-10-27T16:27:04.355196+00:00",
+      "batch": "2026-10-27-morning-hunt",
+      "added": [
+        "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+        "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+        "hidden-context-synth-strings-two-opposite-direction-arpeggiated-saw-plucks-brassy-filter-env-vibrato-spectral-phaser-above-fundamental-shared-pitch-mod-shimmer-reverb-gated-glimpses-under-sidechain",
+        "loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro",
+        "self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow",
+        "four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence",
+        "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
       ]
     }
   ]

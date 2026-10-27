@@ -1,0 +1,172 @@
+{
+ "video_id": "EXx9At3iUOw",
+ "started_at": "2026-10-27T16:21:22.036285+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "manual-target",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": false,
+ "translated": false,
+ "translation_method": null,
+ "domain": "arrangement",
+ "graph": {
+  "video_id": "EXx9At3iUOw",
+  "domain": "arrangement",
+  "out": "/workspace/skill-library/raw/EXx9At3iUOw/graph.json",
+  "segments": 155,
+  "windows": 69,
+  "nodes": 49,
+  "edges": 108,
+  "nodes_by_type": {
+   "concept": 8,
+   "technique": 2,
+   "step": 31,
+   "phrase": 8
+  },
+  "edges_by_type": {
+   "mentions": 78,
+   "precedes": 30
+  },
+  "words": 2604
+ },
+ "gaps": {
+  "video_id": "EXx9At3iUOw",
+  "graph_nodes": 49,
+  "graph_edges": 108,
+  "terms_checked": 18,
+  "terms_covered": 3,
+  "gap_nodes": 15,
+  "gap_nodes_excl_phrases": 10,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 184,
+   "nodes": 978,
+   "edges": 291,
+   "uncovered_nodes": 21,
+   "uncovered_edges": 83
+  },
+  "candidate_ids": [
+   "arrangement-drop-chorus-hook-build-up-1-53"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:arrangement",
+    "thin procedure evidence (1 items) and best single-skill topic profile 0.0 < 0.8"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 1,
+   "uncovered_techniques": [
+    "technique:arrangement"
+   ],
+   "video_novelty": 0.046,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "manual-target",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 2604,
+    "music_markers": 0
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "arrangement",
+    "scores": {
+     "arrangement": 154,
+     "blender": 1,
+     "crypto": 4,
+     "drone": 0,
+     "sidehustle": 0,
+     "synth": 35
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 49,
+    "edges": 108
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 10,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:arrangement",
+      "thin procedure evidence (1 items) and best single-skill topic profile 0.0 < 0.8"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 1,
+     "uncovered_techniques": [
+      "technique:arrangement"
+     ],
+     "video_novelty": 0.046,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en",
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "1:manual-target:en",
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch manual-target (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-27T16:21:22.299625+00:00"
+}

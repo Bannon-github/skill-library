@@ -1,0 +1,46 @@
+{
+  "video_id": "_cVKvtFm8J0",
+  "title": "How To Synth 5: Synthetic Ambient Orchestraish Strings",
+  "url": "https://www.youtube.com/watch?v=_cVKvtFm8J0",
+  "fetched_at": "2026-10-27T16:20:18.646844+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "SeamlessR",
+  "duration": 1189,
+  "ok": true,
+  "cue_count": 521,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/_cVKvtFm8J0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/_cVKvtFm8J0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

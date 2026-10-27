@@ -1,0 +1,16 @@
+# Four levels of loop-to-story arrangement: (1) subtractive Lego-block arrangement from a duplicated loop shaped by an energy contour, (2) turnaround-and-marker transitions at section edges, (3) a performed protagonist element that crescendos and decrescendos across sections, (4) an additive cinematic pass that starts from silence and adds only motivated elements
+
+Goal: Turn a 16-bar loop into a musical story in four escalating levels. Level 1 (subtractive): duplicate the loop across the whole target length (4-5 minutes), then cut away in 8- or 16-bar blocks following an energy contour (low start, build to the middle, kick-out dips, peak, outro); add a little silence at the start and room at the end for reverb tails. Level 2 (transitions): at each section edge add a turnaround (signals the end: remove low energy, reverse reverb swell or noise riser) and a marker on the downbeat (a splash: white noise, crash, one percussion hit into big reverb, stutter or false drop), built from the track's own timbres resampled, reversed or processed; transitions can be explicit or hypnotic. Level 3 (performance): record a performed element (e.g. filter, level or intensity moves on one sound) that starts mellow, grows to dominant and subsides, spanning section boundaries as the 'protagonist'; split and move the audio if needed. Level 4 (additive): start from silence and add elements only when the music is motivated (when you would get bored), like a film composer, letting well-designed elements play for a long time.
+
+Source: [turn your loop into a story: an arrangement masterclass](https://www.youtube.com/watch?v=xY7vRHiSJSM)
+
+1. Decide the target length; select the loop and duplicate it end to end until the timeline exceeds that length; trim any extra.
+2. Sketch an energy contour: low start, additions toward the middle, dips where the kick goes away, a maximum, then an outro. Optionally align a reference track to the grid and copy its arrangement (not its sounds).
+3. Subtract in 8- or 16-bar blocks so each section boundary adds some elements and removes others. Insert a little silence at the start and leave space at the end for reverb tails.
+4. At each section edge, add a turnaround in the last bar(s): remove low-end energy and add a reverse reverb swell or noise riser built from the track's own sounds.
+5. On the new section's downbeat, add a marker: white noise burst, crash, one percussion hit into a big reverb, a stutter, or a false drop (withhold the first hit).
+6. Revisit breaks and drops: e.g. a very sparse moment, then build, build, build, then a short silence before the drop.
+7. Pick one protagonist element and perform it across the whole track (record filter/level/intensity moves) so it starts mellow, grows dominant and subsides, crossing section boundaries; split and rearrange the performance if needed.
+8. Additive pass: from silence, peel everything back to almost nothing and add elements one at a time only when the music needs them (when you notice boredom), giving each element time and space.
+
+Batch: `2026-10-27-morning-hunt` · transcript: YouTube-provided (Show transcript) · Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'.

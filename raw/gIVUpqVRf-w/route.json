@@ -1,0 +1,178 @@
+{
+ "video_id": "gIVUpqVRf-w",
+ "started_at": "2026-10-27T16:21:21.674158+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "arrangement",
+ "graph": {
+  "video_id": "gIVUpqVRf-w",
+  "domain": "arrangement",
+  "out": "/workspace/skill-library/raw/gIVUpqVRf-w/graph.json",
+  "segments": 680,
+  "windows": 97,
+  "nodes": 66,
+  "edges": 85,
+  "nodes_by_type": {
+   "technique": 5,
+   "concept": 11,
+   "step": 35,
+   "phrase": 15
+  },
+  "edges_by_type": {
+   "mentions": 51,
+   "precedes": 34
+  },
+  "words": 4377
+ },
+ "gaps": {
+  "video_id": "gIVUpqVRf-w",
+  "graph_nodes": 66,
+  "graph_edges": 85,
+  "terms_checked": 31,
+  "terms_covered": 4,
+  "gap_nodes": 27,
+  "gap_nodes_excl_phrases": 16,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 183,
+   "nodes": 972,
+   "edges": 291,
+   "uncovered_nodes": 21,
+   "uncovered_edges": 83
+  },
+  "candidate_ids": [
+   "arrangement-drop-staggered-entry-arrangement-0-47"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:arrangement, technique:automation_arc, technique:staggered_entry, technique:fill_or_empty, technique:transition",
+    "best single-skill procedure overlap 0.0 < 0.5"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 5,
+   "uncovered_techniques": [
+    "technique:arrangement",
+    "technique:automation_arc",
+    "technique:staggered_entry",
+    "technique:fill_or_empty",
+    "technique:transition"
+   ],
+   "video_novelty": 0.046,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 4463,
+    "music_markers": 84
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "arrangement",
+    "scores": {
+     "arrangement": 103,
+     "blender": 4,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 11,
+     "synth": 103
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 66,
+    "edges": 85
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 16,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:arrangement, technique:automation_arc, technique:staggered_entry, technique:fill_or_empty, technique:transition",
+      "best single-skill procedure overlap 0.0 < 0.5"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 5,
+     "uncovered_techniques": [
+      "technique:arrangement",
+      "technique:automation_arc",
+      "technique:staggered_entry",
+      "technique:fill_or_empty",
+      "technique:transition"
+     ],
+     "video_novelty": 0.046,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-27T16:21:22.035886+00:00"
+}

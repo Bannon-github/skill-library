@@ -1,0 +1,17 @@
+# Loop-to-track arrangement where the finished loop is the climax and everything before it 'gives away' that loop gradually: whole elements, the power of elements (high-passed kick, thin high-and-low-passed bass), and the chord progression itself (root-note pedal first), with a change at every 8-bar boundary and an outro that mirrors the intro
+
+Goal: Arrange a finished loop into a full track. First map a reference track: listen through and drop markers for what enters or leaves at each section (every 8 bars something changes). Treat your loop as the climax and plan how to reach it by giving things away over time. Drums first: copy the full drum loop to the start, high-pass the kick at about 120 Hz for the first 16 bars, start with fewer parts (no shaker/hats), bring shaker in, save hats and snare for later, and remove the kick's last bar (or last two bars) before each full-kick entry or drop. Atmosphere runs throughout. Bass: start as a single root-note pedal (monotonic) instead of the progression, with an octave jump at the end of each 8 bars; give away its power with labelled high-pass and low-pass filters automated from thin and dark to full. Melodic parts: bring in stripped-back fragments (first bar only, fewer notes), filter elements in instead of hard entries, reveal the full chord progression and full lead later; hold back some parts for the second drop. Outro: do the opposite of the intro (high-pass the kick again for 8 bars, filter the bass out and darker, return to the root pedal and a resolving last note).
+
+Source: [How to Structure Melodic House Tracks Like a Pro](https://www.youtube.com/watch?v=gIVUpqVRf-w)
+
+1. Import a reference track, listen through and drop a marker each time something enters, leaves or changes (expect a change every 8 bars). Write the macro structure, e.g. intro, bass in, build, drop, breakdown, drop 2, outro.
+2. List what you can give away: whole elements; element power (kick without lows, bass without sub, thinner versions); the chord progression; stripped-back versions of parts.
+3. Drums first: copy the full drum loop to the start; high-pass the kick at about 120 Hz for the first 16 bars; remove shaker, hats and snare at first and stage them in later (shaker early, hats and snare saved for later).
+4. Delete the kick's last bar (or last 2 bars) before each full-kick entry or drop.
+5. Run the atmosphere/texture throughout to set the tone.
+6. Bass: write a single root-note pedal for the early sections with an octave jump at the end of each 8 bars. Add labelled HP and LP filters and automate from thin and dark to full and bright; switch to the full chord progression only at the main section.
+7. Melodic parts: enter with fragments (first bar only, fewer notes), filter them in rather than hard-cutting, then reveal the full progression, full lead and extra layers (piano chords, high pluck) only at later peaks; hold some back for drop 2.
+8. Before a drop, filter percussion/kick from thin and clicky to full, leave a short moment of near-silence, then hit the drop with everything un-high-passed.
+9. Outro: mirror the intro: high-pass the kick for 8 bars, filter the bass out and darker, return to the root pedal and end on a resolving note.
+
+Batch: `2026-10-27-morning-hunt` · transcript: YouTube-provided (Show transcript) · Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'.

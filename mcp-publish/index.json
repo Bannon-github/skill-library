@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 198,
+  "count": 205,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -3419,8 +3419,142 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression"
+    },
+    {
+      "id": "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+      "name": "Three-layer ambient starter in about 30 minutes: a slow-envelope wavetable pad with a 4-bar bipolar position LFO and random cutoff drift, a saw-plus-sine bass pad through a 24 dB low-pass, and a sustain-less detail voice whose filter is stepped by a sample-and-hold style modulator into heavy delay and reverb, all composed by frequency region",
+      "goal": "Build the core of an ambient track (70-80 BPM, one minor key, 32-bar canvas) from three complementary layers. Pad: wavetable osc with attack about 3-5 s (4 s), decay about 4 s, sustain a few dB down, long release; 5 unison voices with moderate detune; wavetable position on a bipolar LFO synced to 4 bars; low-pass cutoff set to the 'sweet spot' where partials just peek through, with a random (chaos) modulator on cutoff at a low depth; a sub osc one octave down kept quiet; a second wavetable osc routed around the filter at low level and auto-panned by a 2-bar LFO for width. Send (not insert) to a dotted-eighth dual delay and a very long room/hall reverb (about 55 s decay, 100% wet on the return). Write only a few sustained notes over 32 bars, then pull the cutoff down and let the reverb do the opening. Bass pad: faster envelope, saw through a 24 dB/oct low-pass plus a sine, a touch of reverb, one long root note. Detail voice: attack-decay envelope with zero sustain (a key that rises and falls regardless of hold), 24 dB low-pass whose cutoff is moved by a stepped random (sample-and-hold) modulator at a slow rate, cranked delay and reverb. Check the layers on a spectrum analyser and place each in a different frequency region.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "ambient",
+        "pad",
+        "wavetable",
+        "bass-pad",
+        "sample-and-hold",
+        "layering",
+        "frequency-separation",
+        "beginner-track",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice"
+    },
+    {
+      "id": "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+      "name": "Design four bass types from scratch with fit-to-kick rules: a punchy 808 (sine, hold and 1.5 s decay, a 35 ms pitch-envelope punch, tube drive, low boost, attack delayed 80-100 ms when the kick already punches), a pluck bass (mono square through an enveloped 24 dB low-pass plus a wide unison top layer), a sidechained saw growl, and a click-free sine sub",
+      "goal": "Four punchy bass recipes. 808: one sine osc, attack near 0 (raise slightly until the click disappears), hold about 300-400 ms, decay about 1.5 s, sustain 0; a little wavetable bend/warp for character; a second envelope (attack about 0.5 ms, hold 0, decay about 35 ms, sustain 0, release about 15 ms) routed to master tune for a kick-like pitch punch (set amount to the middle); tube distortion with mix pulled back; EQ lift around 100 Hz. If the kick already supplies the punch, raise the 808 attack to about 80-100 ms so it fills in behind the kick instead of sidechaining. Pluck/house bass: mono voice, square wave through a 24 dB low-pass, short attack, no hold, low sustain, some release; the same envelope also drives cutoff for the pluck; drive the filter a little; add a second osc (PWM-type wave, 5-7 unison voices, detuned) for a wide top, keep content below about 100-150 Hz mono, reverb and delay with low cut. Growl bass: saw with a low-pass, second osc with 7-8 unison voices, mono, very short release, an LFO shaped as a sidechain duck on both osc levels, cutoff on a macro, then boost about 140 Hz to keep it a bass. Sub: sine, one voice, mono/legato, attack about 5 ms and a short release to avoid clicks.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "bass",
+        "808",
+        "sub-bass",
+        "pluck-bass",
+        "punch",
+        "pitch-envelope",
+        "mono-low-end",
+        "sidechain",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack"
+    },
+    {
+      "id": "hidden-context-synth-strings-two-opposite-direction-arpeggiated-saw-plucks-brassy-filter-env-vibrato-spectral-phaser-above-fundamental-shared-pitch-mod-shimmer-reverb-gated-glimpses-under-sidechain",
+      "name": "Make synth layers read as strings or orchestra by obscuring them: two saw-based arpeggiated plucks moving in opposite directions, a fast-open filter envelope and vibrato, a shared pitch-shifting modulated reverb, and level automation plus sidechain so the listener only hears brief glimpses without context",
+      "goal": "Imply acoustic strings with simple synthesis plus psychoacoustics. Harmonic content: saw-like spectra (strings and brass are close to a saw series). Layer two arpeggiators playing the same chords: one rising, one reversed so they cross; double the arp step time (half speed); each voice uses a brass-like filter envelope (opens fast, decays: a smoothed pluck), light unison, real vibrato, and a spectral/frequency-mode phaser masked to act above the fundamental so the note pitch stays clean; the second voice has a longer pluck, darker filter and more unison. Arp cycle length depends on chord note count, so voice chords deliberately. Send both to one shared reverb with large size and diffusion, low feedback, a downward pitch shimmer and high modulation depth. Then automate the layer's level by feel so it only comes through at chosen moments, and sidechain it under the drums; a supporting soft chord stack gets a big reverb with a gate so tails don't run on. The brain fills in an orchestra because it never hears the sound's before/after context.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "strings",
+        "orchestral",
+        "arpeggiator",
+        "shimmer-reverb",
+        "psychoacoustics",
+        "layering",
+        "sidechain",
+        "cinematic",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://hidden-context-synth-strings-two-opposite-direction-arpeggiated-saw-plucks-brassy-filter-env-vibrato-spectral-phaser-above-fundamental-shared-pitch-mod-shimmer-reverb-gated-glimpses-under-sidechain"
+    },
+    {
+      "id": "loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro",
+      "name": "Loop-to-track arrangement where the finished loop is the climax and everything before it 'gives away' that loop gradually: whole elements, the power of elements (high-passed kick, thin high-and-low-passed bass), and the chord progression itself (root-note pedal first), with a change at every 8-bar boundary and an outro that mirrors the intro",
+      "goal": "Arrange a finished loop into a full track. First map a reference track: listen through and drop markers for what enters or leaves at each section (every 8 bars something changes). Treat your loop as the climax and plan how to reach it by giving things away over time. Drums first: copy the full drum loop to the start, high-pass the kick at about 120 Hz for the first 16 bars, start with fewer parts (no shaker/hats), bring shaker in, save hats and snare for later, and remove the kick's last bar (or last two bars) before each full-kick entry or drop. Atmosphere runs throughout. Bass: start as a single root-note pedal (monotonic) instead of the progression, with an octave jump at the end of each 8 bars; give away its power with labelled high-pass and low-pass filters automated from thin and dark to full. Melodic parts: bring in stripped-back fragments (first bar only, fewer notes), filter elements in instead of hard entries, reveal the full chord progression and full lead later; hold back some parts for the second drop. Outro: do the opposite of the intro (high-pass the kick again for 8 bars, filter the bass out and darker, return to the root pedal and a resolving last note).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "song-structure",
+        "loop-to-song",
+        "subtractive-arrangement",
+        "filter-automation",
+        "reference-track",
+        "breakdown",
+        "outro",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro"
+    },
+    {
+      "id": "self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow",
+      "name": "Turn a few played notes into a self-sustaining shimmering pad by feeding them once into a clean stereo delay at 99% feedback with very different left/right times (about 1 s and 150 ms), so the melody dissolves into a continuous texture for the rest of the track",
+      "goal": "Feedback-delay pad generator. Play a short phrase of three or four notes once into a neutral (uncoloured) stereo delay; nothing else is fed in for the rest of the track. Set feedback to the maximum safe value (99%) and set the delay times far apart: about 1 s on the left and about 150 ms on the right. The repeats keep cycling through the whole track; the original melody vanishes and is replaced by a shimmering secondary texture. Optional: use a tape-style delay instead for pitch warble, which strengthens the shimmer. Use the plain feedback control rather than cross-feed, which grows the signal quickly.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "shimmer",
+        "delay",
+        "feedback",
+        "texture",
+        "stereo-width",
+        "generative",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow"
+    },
+    {
+      "id": "four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence",
+      "name": "Four levels of loop-to-story arrangement: (1) subtractive Lego-block arrangement from a duplicated loop shaped by an energy contour, (2) turnaround-and-marker transitions at section edges, (3) a performed protagonist element that crescendos and decrescendos across sections, (4) an additive cinematic pass that starts from silence and adds only motivated elements",
+      "goal": "Turn a 16-bar loop into a musical story in four escalating levels. Level 1 (subtractive): duplicate the loop across the whole target length (4-5 minutes), then cut away in 8- or 16-bar blocks following an energy contour (low start, build to the middle, kick-out dips, peak, outro); add a little silence at the start and room at the end for reverb tails. Level 2 (transitions): at each section edge add a turnaround (signals the end: remove low energy, reverse reverb swell or noise riser) and a marker on the downbeat (a splash: white noise, crash, one percussion hit into big reverb, stutter or false drop), built from the track's own timbres resampled, reversed or processed; transitions can be explicit or hypnotic. Level 3 (performance): record a performed element (e.g. filter, level or intensity moves on one sound) that starts mellow, grows to dominant and subsides, spanning section boundaries as the 'protagonist'; split and move the audio if needed. Level 4 (additive): start from silence and add elements only when the music is motivated (when you would get bored), like a film composer, letting well-designed elements play for a long time.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "song-structure",
+        "loop-to-song",
+        "transitions",
+        "energy-contour",
+        "crescendo",
+        "additive-arrangement",
+        "cinematic",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence"
+    },
+    {
+      "id": "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
+      "name": "Synthesize a whole drum kit (808, kick, clap, snare, closed and open hat) from a basic synth: sine and noise sources, envelope-drawn transients, fast pitch envelopes, and targeted EQ, then test and re-tweak each sound inside a real beat",
+      "goal": "Build six drum sounds in one synth with no samples. 808: sine tuned so its fundamental sits around 45 Hz (an octave below where it first lands), plus a saw and white noise whose levels follow a drawn envelope with a quick dip for the transient; low-pass the saw; boost mids a little, soft-clip, use a very gentle high-pass around 20 Hz (a steep one sounds bad), and a narrow bell cut around 78 Hz; optional parallel copy with reverb faded in and kept to the sides. Kick: sine pitched down, very short amp envelope, a very fast pitch envelope (about 0.07 s) on pitch, soft clip, light bit-crush, multiband drive, cut boxy mids around 400 Hz, high-pass. Clap: white noise whose level envelope has three quick transients then one longer decay (about 0.085 s spacing on a 9-step grid), band-limited (energy above about 600 Hz, key areas about 1 kHz and 6 kHz), high end added with bells not shelves, a little chorus and very short delays for width, compression, reduce side highs. Snare: two or three sines in octaves (the reference showed tones at about 240, 484 and 1 kHz), noise with two quick transients, one shared filter, a very short pitch envelope on all tones, distortion; optionally layer the clap. Closed hat: white noise, about 0.22 s envelope, band/high-pass that keeps some mids. Open hat: longer noise envelope with a second transient, low-cut reverb, very short (1/64) ping-pong delay, shorten decay to taste. Render each and tweak inside a beat (e.g. re-export pitched up a few semitones).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "drum-synthesis",
+        "808",
+        "kick",
+        "clap",
+        "snare",
+        "hi-hat",
+        "punch",
+        "web-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
     }
   ],
-  "updated_at": "2026-10-26T16:39:53.215213+00:00",
+  "updated_at": "2026-10-27T16:27:04.355196+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

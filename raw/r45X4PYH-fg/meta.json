@@ -1,0 +1,46 @@
+{
+  "video_id": "r45X4PYH-fg",
+  "title": "How to Create a Shimmering Pad",
+  "url": "https://www.youtube.com/watch?v=r45X4PYH-fg",
+  "fetched_at": "2026-10-27T16:23:34.847579+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Cosine Sound",
+  "duration": 376,
+  "ok": true,
+  "cue_count": 74,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/r45X4PYH-fg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/r45X4PYH-fg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
