@@ -1,0 +1,105 @@
+{
+ "seed": 1027,
+ "bpm": 96,
+ "bars": 28,
+ "tailSec": 6.0,
+ "category": "pad",
+ "key": "G minor",
+ "progression": [
+  [
+   43,
+   [
+    55,
+    58,
+    62
+   ]
+  ],
+  [
+   39,
+   [
+    55,
+    58,
+    63
+   ]
+  ],
+  [
+   46,
+   [
+    53,
+    58,
+    62
+   ]
+  ],
+  [
+   41,
+   [
+    53,
+    57,
+    60
+   ]
+  ]
+ ],
+ "shimmer": {
+  "notes": [
+   79,
+   86,
+   81,
+   82
+  ],
+  "noteBeats": 1.0,
+  "delayL": 1.0,
+  "delayR": 0.15,
+  "fb": 0.99,
+  "loopLp": 9000,
+  "level": 0.4,
+  "tapeWow": 0
+ },
+ "sections": {
+  "introEnd": 4,
+  "kickHpEnd": 12,
+  "drop": 12,
+  "outro": 20,
+  "kickHpHz": 120,
+  "kickGapBars": [
+   11
+  ],
+  "end": 27
+ },
+ "drums": {
+  "k808Hz": 49.0,
+  "notchHz": 78,
+  "notchDb": -4,
+  "kick": 0.5,
+  "clap": 0.22,
+  "snare": 0.18,
+  "hat": 0.055,
+  "ohat": 0.04,
+  "b808": 0.5
+ },
+ "melody": {
+  "notes": [
+   74,
+   72,
+   70,
+   69,
+   70,
+   72,
+   74,
+   77
+  ],
+  "level": 0.16
+ },
+ "chordPad": {
+  "level": 0.24,
+  "lpLo": 500,
+  "lpHi": 3200
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.2,
+  "sideHpHz": 120,
+  "fadeInSec": 0.4,
+  "fadeOutSec": 4.0,
+  "satDrive": 1.2
+ }
+}
