@@ -1,0 +1,120 @@
+{
+ "topic": "punchy bass sound design synth tutorial cinematic",
+ "date": "2026-10-27",
+ "params": {
+  "topic": "punchy bass sound design synth tutorial cinematic",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 2400,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "QMueZaoCPMA",
+   "title": "U-he Zebra - Make Huge Cinematic Bass - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 401,
+   "view_count": 7041,
+   "url": "https://www.youtube.com/watch?v=QMueZaoCPMA",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.42
+  },
+  {
+   "id": "tlygYWeOzTg",
+   "title": "Advanced Sound Design and Synths Tutorial",
+   "channel": "In The Mix",
+   "duration": 1246,
+   "view_count": 523732,
+   "url": "https://www.youtube.com/watch?v=tlygYWeOzTg",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.36
+  },
+  {
+   "id": "2GVSHTl2bY0",
+   "title": "Sound Design Tutorial: Create Punchy Sounds out of any Source",
+   "channel": "Simon Haglund Sounds",
+   "duration": 420,
+   "view_count": 2760,
+   "url": "https://www.youtube.com/watch?v=2GVSHTl2bY0",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.22
+  },
+  {
+   "id": "Y3IHvWksrLE",
+   "title": "7 Serum Tips That Will Make You a Sound Design Genius",
+   "channel": "Akayo",
+   "duration": 513,
+   "view_count": 74178,
+   "url": "https://www.youtube.com/watch?v=Y3IHvWksrLE",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.94
+  },
+  {
+   "id": "-qOgbJyAJVQ",
+   "title": "VOLTRA BASS in Serum | Sounddesign Tutorial | by. Fruutiy",
+   "channel": "Fruutiy",
+   "duration": 259,
+   "view_count": 761,
+   "url": "https://www.youtube.com/watch?v=-qOgbJyAJVQ",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.44
+  },
+  {
+   "id": "H6i55lXAMh0",
+   "title": "Bass Sound Design: 808s, Plucks, Growls and Sub Bass",
+   "channel": "In The Mix",
+   "duration": 1043,
+   "view_count": 629408,
+   "url": "https://www.youtube.com/watch?v=H6i55lXAMh0",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.4
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "title": "Vital BASS Sound Design: 808s, Plucks, Growls and Sub Bass",
+   "channel": "In The Mix",
+   "duration": 1018,
+   "view_count": 513969,
+   "url": "https://www.youtube.com/watch?v=9Ba2boGeznQ",
+   "query": "punchy bass sound design synth tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.36
+  }
+ ],
+ "dropped": [
+  {
+   "id": "T97uy6SKOL0",
+   "why": "duration 229s"
+  },
+  {
+   "id": "IasuDra7Zp0",
+   "why": "duration 44s"
+  },
+  {
+   "id": "ruGGFepXjeY",
+   "why": "duration 198s"
+  },
+  {
+   "id": "acZPLjnha9o",
+   "why": "already known"
+  },
+  {
+   "id": "Osm0UoQRcnQ",
+   "why": "duration 235s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "CRWBHFIikqc",
+  "title": "30 min Ambient Track for Beginners - Get Inspired & Find Your Sound",
+  "url": "https://www.youtube.com/watch?v=CRWBHFIikqc",
+  "fetched_at": "2026-10-27T16:18:34.736478+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "S1gns Of L1fe",
+  "duration": 1974,
+  "ok": true,
+  "cue_count": 775,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CRWBHFIikqc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CRWBHFIikqc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

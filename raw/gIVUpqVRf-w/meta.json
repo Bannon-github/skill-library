@@ -1,0 +1,46 @@
+{
+  "video_id": "gIVUpqVRf-w",
+  "title": "How to Structure Melodic House Tracks Like a Pro",
+  "url": "https://www.youtube.com/watch?v=gIVUpqVRf-w",
+  "fetched_at": "2026-10-27T16:18:52.787476+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Marksman's Producer Academy",
+  "duration": 2568,
+  "ok": true,
+  "cue_count": 773,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/gIVUpqVRf-w/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/gIVUpqVRf-w/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
