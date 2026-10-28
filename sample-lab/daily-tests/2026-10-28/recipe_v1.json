@@ -1,0 +1,11 @@
+{"seed": 1028, "bpm": 100, "bars": 30, "tailSec": 6.0, "category": "pad", "key": "D minor", "title": "Slow Reveal",
+ "sections": {"ostIn": 2, "kickIn": 4, "snareIn": 12, "reveal": 20, "bassStop": 24, "silence": [25.5, 26], "outro": 26, "kickOut": 28, "end": 30},
+ "padChords": {"pre": [[0,4,8,12,16], [50,57,62,65,69,72,76]], "revealA": [[20], [46,53,58,62,65,69,74]], "revealB": [[23.5], [43,50,55,58,62,65,70]], "outro": [[26,28], [50,57,62,65,69,72,76]]},
+ "padSrc": {"epRt": 33, "vibRt": [16, 16], "vibLevel": 0.5, "pnRt": 22, "pnBits": 5, "pnHold": 3, "pnLp": 4500, "glRt": [20, 20], "glPreLp": 6000, "busHp": 150, "busLpLo": 350, "busLpHi": 7000, "openBars": 4},
+ "padDb": {"build": -3, "full": -14},
+ "ostinato": {"A": [74, 69, 77], "B": [70, 74, 77], "C": [67, 70, 74], "level": 0.22, "lp": 2600},
+ "bass": {"pedal": 38, "lowcutBars": [8, 9, 14, 15], "lineB": [34, 34, 46, 41], "lineC": [43, 43, 50, 46], "level": 0.30},
+ "lead": {"notes": [81, 79, 77, 74, 77, 79, 81, 84, 82, 81, 79, 77], "level": 0.14},
+ "drums": {"kickF0": 50, "tomF0": [98, 131], "pitchUp1": 5, "pitchUp2": 29, "pitchTau": 0.012, "ampTau": 0.22, "kickLpLo": 260, "kick": 0.55, "tom": 0.22, "fx": 0.16, "hat": 0.035, "shaker": 0.05, "scoopDb": -6, "subHp": 35},
+ "drone": {"notes": [50, 57], "level": 0.10},
+ "master": {"satDrive": 1.2, "sideHpHz": 120, "fadeInSec": 0.05, "fadeOutSec": 4.0, "targetLufs": -17.0, "tpCeil": -1.5}}
