@@ -1,0 +1,48 @@
+{
+  "video_id": "5kIWJen9tcI",
+  "title": "How To Properly Double Track Synths to get a Wider Mix",
+  "url": "https://www.youtube.com/watch?v=5kIWJen9tcI",
+  "fetched_at": "2026-10-28T16:31:07.805359+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Transverse Audio",
+  "duration": 340,
+  "ok": true,
+  "cue_count": 61,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/5kIWJen9tcI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/5kIWJen9tcI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

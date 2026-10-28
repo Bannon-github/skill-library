@@ -1,0 +1,46 @@
+{
+  "video_id": "fjO8HIZzhZs",
+  "title": "Creating Generative Ambient Soundscapes with Ableton Live & Pigments (Tutorial)",
+  "url": "https://www.youtube.com/watch?v=fjO8HIZzhZs",
+  "fetched_at": "2026-10-28T16:17:14.818299+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Dr Brown Music",
+  "duration": 1129,
+  "ok": true,
+  "cue_count": 443,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/fjO8HIZzhZs/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/fjO8HIZzhZs/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

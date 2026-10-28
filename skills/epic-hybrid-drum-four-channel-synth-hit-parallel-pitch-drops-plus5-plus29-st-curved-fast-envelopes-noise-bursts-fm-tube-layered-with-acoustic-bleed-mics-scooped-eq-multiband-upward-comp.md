@@ -1,0 +1,18 @@
+# Epic trailer-style hybrid drum built from a four-layer synth hit (pitched additive and FM oscillators with very fast exponential pitch drops, e.g. +5 and +29 semitones, plus filtered white and pink noise bursts with overload, tube drive, MS-20-style low-pass and a high-pass) layered with any three acoustic drum samples including bleed/ambient mics, then glued with a scooped EQ, sub trim, multiband compression and gentle upward (OTT-style) compression
+
+Goal: Make big hybrid drums from tools you already have. Synth drum (one patch, four channels): (1) a simple additive/harmonic oscillator, stereo, with a pitch envelope dropping from about 5 semitones up, plus white noise through a low-pass whose cutoff envelope closes extremely fast with a strong exponential curve (a pitched, roto-tom-like burst); (2) pink noise through an aggressive low-pass with the same envelope, then a second overloaded filter that also takes channel 1's signal for grit; (3) an FM (or simple triangle/square) oscillator with a very fast pitch drop into tube distortion, an MS-20-style low-pass and a high-pass to remove rumble; (4) another additive high-content oscillator whose pitch drop starts about 29 semitones up, giving parallel pitch drops with channel 1. Key: very fast, strongly curved envelopes that hit hard and decay to nothing; play lower or higher on the keyboard for pitch, or several notes for a flam/ensemble. Global: two EQs, compression and reverb. Acoustic layer: any three acoustic drum samples, mixed with room/bleed mics (snare, hats, toms, ambience) so the kick is not dead. Process the combined layers: heavily scooped EQ for a trailer sound, trim the very lowest subs, per-layer EQ (less top on acoustic), multiband compression on the low end letting transients through, and optionally OTT-style compression at low depth with more upward than downward. Render the acoustic element, set its notes to the sample's root pitch and add the same fast envelope in the sampler; add velocity tracking for dynamics.
+
+Source: [How to Make Your Own Epic Hybrid Drums WITHOUT Buying New Sounds (Tutorial)](https://www.youtube.com/watch?v=B75uC7h8bBo)
+
+1. Channel 1: additive/harmonic oscillator, stereo, with a pitch envelope dropping from about +5 semitones; fast exponential amp envelope.
+2. Channel 2: white noise into a low-pass whose cutoff envelope closes extremely fast with a strong curve.
+3. Channel 3: pink noise into an aggressive low-pass using the same envelope, then a second overloaded filter that also receives channel 1.
+4. Channel 3: FM (or triangle/square) oscillator with a very fast pitch drop into tube distortion, an MS-20-style low-pass, then a high-pass to cut rumble.
+5. Channel 4: a second additive high-content oscillator whose pitch drop starts about +29 semitones; play with channel 1 for parallel pitch drops.
+6. Add global EQ (two), compression and reverb; compare a less-curved envelope to confirm the strong curve is needed.
+7. Layer three acoustic drum samples, bringing up bleed/ambient mics (snare, hats, toms, room) so the low drum has life.
+8. On the combined layers: heavily scooped EQ, trim the very lowest subs, per-layer EQ (e.g. less top on the acoustic), multiband compression on the low band letting transients through.
+9. Optionally add OTT-style compression at low depth with more upward than downward; EQ after any extreme multiband effect.
+10. Render the acoustic element, set its notes to the sample's root pitch, apply the same fast envelope in the sampler and add velocity tracking to both layers.
+
+Batch: `2026-10-28-morning-hunt` · transcript: YouTube-provided (Show transcript) · Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'.

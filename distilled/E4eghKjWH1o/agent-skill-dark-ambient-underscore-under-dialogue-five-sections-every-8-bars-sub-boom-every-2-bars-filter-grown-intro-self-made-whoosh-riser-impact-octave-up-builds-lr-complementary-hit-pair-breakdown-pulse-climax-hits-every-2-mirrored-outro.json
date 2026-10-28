@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "id": "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+  "name": "Dark, tense ambient underscore that sits under TV dialogue, arranged in sections that change every 8 bars (intro, build, breakdown, climax, outro): a reverbed pad plus a quiet sub-boom hit every 2 bars, an intro grown by opening a low-pass filter, a 16th-note pluck pulse faded in, home-made whooshes (resampled synth note, chopped, faded in, filter opening, plate tail) as riser-and-impact glue, octave-up doubling for builds, a left/right pair of complementary hits on a shared reverb, a pulsing bass in the breakdown, denser hits in the climax and a mirrored fading outro",
+  "goal": "Write an unobtrusive but tense dark ambient cue meant to sit under dialogue (think minimal, ominous sci-fi film scoring). Set markers so the section changes every 8 bars. Intro: a pad with a plate reverb recorded as a long chord, a sub-boom impact every 2 bars kept quiet, a sustained bass note, a low-pass filter automated from dark to open while raising the patch brightness so the intro grows into the next section, a textural layer on the second half, and a 16th-note pluck pulse whose volume fades in. Glue each section edge with a rise and an impact: a quiet stock whoosh aligned to the beat, or a home-made whoosh (render a low synth note, chop it, fade it in, automate a low-pass opening and add a plate tail with longer decay). Build: remove the intro filter automation so the full spectrum plays, double notes an octave up, add a sustained melodic layer with its highs filtered (bring highs back later), raise notes of the pulse/arp an octave, duplicate without overthinking. Add new hits every 2 bars; duplicate a hit track with a different sound panned to the other side and send both through the same reverb for width. Breakdown: make the bass pulse rhythmically (shaper/tremolo automation on), reintroduce a texture briefly, bring back single-note pulses, a resampled clap, and a heavy synth note with falling pitch automation (braam-like). Climax: copy the build, add the breakdown layers, hits every 2 bars instead of every 4, a long high string note doubled an octave up for the second half, a 2-bar riser (pitched down if too bright, time-stretched), and a quiet low eighth-note percussion pulse. Outro: copy the intro and reverse the moves (fade and close instead of opening), fading the hits out.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "E4eghKjWH1o",
+    "url": "https://www.youtube.com/watch?v=E4eghKjWH1o",
+    "title": "Dark Ambient Production From Start to Finish | Sync Ready Tracks",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/E4eghKjWH1o/agent-skill-dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A DAW with markers, freeze/render-in-place, fades and filter automation",
+    "A pad synth, a pluck, a bass and a string sound",
+    "Impact/sub-boom hits and a plate reverb; optional tape/wow plug-in"
+  ],
+  "inputs": [
+    {
+      "name": "key_or_root",
+      "type": "string",
+      "description": "Root note for the pad and sustained bass",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Cue tempo",
+      "required": true
+    },
+    {
+      "name": "section_bars",
+      "type": "integer",
+      "description": "Bars per section (8 in the video)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cue",
+      "type": "daw-arrangement",
+      "description": "Intro-build-breakdown-climax-outro underscore"
+    },
+    {
+      "name": "stems",
+      "type": "audio",
+      "description": "Pad, pulse, hits, risers, bass stems for editing under picture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Underscore rule: nothing intrusive; keep hits, whooshes and risers turned well down so dialogue sits on top.",
+    "The speaker's tape 'wear' warble on strings is optional for unease; Matt prefers steady pitch, so leave it off or keep it very subtle.",
+    "Matt prefers a pulse early: the sub-boom every 2 bars and the faded-in 16th pluck start in the intro, so there is no long beatless opening.",
+    "Commercial libraries and plug-ins in the video are mapped to generic pad, pluck, impact and riser sources; render your own whooshes instead of using library ones where possible.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set markers so the section changes every 8 bars: intro, build, breakdown, climax, outro.",
+      "tool": "DAW markers",
+      "expect": "A 5-section grid."
+    },
+    {
+      "n": 2,
+      "action": "Intro: record a long pad chord with plate reverb; add a quiet sub-boom impact every 2 bars and a sustained bass note.",
+      "tool": "Pad, impact sample, bass",
+      "expect": "A dark bed with a slow pulse of impacts."
+    },
+    {
+      "n": 3,
+      "action": "Put a low-pass filter on the pad and automate it from dark to open across the intro; raise the patch brightness so it opens further by the section end.",
+      "tool": "Auto filter automation",
+      "expect": "The intro grows into the build."
+    },
+    {
+      "n": 4,
+      "action": "Add a texture layer on the second half of the intro and a 16th-note pluck pulse quantized and faded in by volume automation.",
+      "tool": "Synth + quantize + volume automation",
+      "expect": "A rhythmic motif appears without a hard entrance."
+    },
+    {
+      "n": 5,
+      "action": "At each section edge add a rise and an impact: a quiet whoosh aligned to the beat, or render a low synth note, chop it, fade it in, automate a low-pass opening and add a plate tail with a longer decay.",
+      "tool": "Resample, fades, filter, reverb",
+      "expect": "Sections are glued by a home-made riser into a hit."
+    },
+    {
+      "n": 6,
+      "action": "Build: drop the intro filter so the pad is full-spectrum, double it an octave up, add a sustained melodic layer with its highs filtered, and move some pulse/arp notes up an octave; duplicate the build blocks.",
+      "tool": "Arrangement",
+      "expect": "More frequencies and register without new material."
+    },
+    {
+      "n": 7,
+      "action": "Add new hits every 2 bars; duplicate the hit track with a different hit panned to the opposite side and group both into one shared reverb.",
+      "tool": "Hits + group + reverb",
+      "expect": "A wide, complementary left/right impact pair."
+    },
+    {
+      "n": 8,
+      "action": "Breakdown: switch the bass from sustained to rhythmically pulsing (tremolo/shaper automation on), bring back the texture briefly and the single-note pulses, add a resampled clap and a heavy synth note with falling pitch automation; hits every 4 bars.",
+      "tool": "Bass FX automation, pitch automation",
+      "expect": "A more intense but sparse middle section."
+    },
+    {
+      "n": 9,
+      "action": "Climax: copy the build, add breakdown elements, hits every 2 bars, a long high string note doubled an octave up for the second half, a 2-bar riser (pitch it down or time-stretch if needed) and a quiet low eighth-note percussion pulse.",
+      "tool": "Arrangement",
+      "expect": "The densest, most driving section."
+    },
+    {
+      "n": 10,
+      "action": "Outro: copy the intro and mirror it: filter closing and fading instead of opening, hits fading out; then do a quick mix pass.",
+      "tool": "Arrangement + automation",
+      "expect": "The cue resolves in reverse of how it began."
+    }
+  ],
+  "verification": [
+    "Section boundaries fall every 8 bars and each one has a riser or whoosh into an impact.",
+    "Hit density goes from every 2 bars (intro/build) to every 4 (breakdown) to every 2 again (climax).",
+    "Outro automation is the reverse of the intro automation."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "dark-ambient",
+    "underscore",
+    "cinematic",
+    "risers",
+    "impacts",
+    "sync",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro"
+}

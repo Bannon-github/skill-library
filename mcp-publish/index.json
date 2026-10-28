@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 205,
+  "count": 211,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -3553,8 +3553,122 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
+    },
+    {
+      "id": "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+      "name": "Self-running generative ambient soundscape built from per-layer clip pools that pick their next clip by weighted chance (about 50/50 repeat vs jump, with silent and sparse clips to weight density), over a reverbed noise/field-recording foundation, a tonic drone and a root bass note at random intervals, with sample-and-hold auto-pan on random one-shot FX and weighted-probability quantized note sequences",
+      "goal": "Build an ambient soundscape that keeps evolving on its own so you can focus on sound design and later harvest the best stretches. Layers: (1) a sonic foundation of field recording or noise run through a lot of reverb, plus a granular noise layer whose playheads are modulated; (2) a drone pad on the tonic chord (E minor in the video) with several slow modulators on its macros; (3) a simple FM bass with a little chorus that plays the root at random intervals. Give every track a pool of pre-built clips (including pure-silence clips and busier vs sparser variants) and a follow action on every clip: when a clip ends it either repeats or jumps to another clip, with a probability slider (about 50/50 in the video). Add a random one-shot layer: a single MIDI note through a random-pitch MIDI effect into a drum-rack/sampler of chosen FX one-shots, ending in an auto-pan driven by a sample-and-hold LFO. Use per-note chance and a velocity range on clips, and inside the synth use three independent sample-and-hold modulators on different parameters, a repeating (Turing-machine-style) random sequence quantized to the minor scale, and a step sequencer with weighted note probabilities (root high, others medium or low).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "generative",
+        "ambient",
+        "follow-actions",
+        "probability",
+        "sample-and-hold",
+        "soundscape",
+        "clip-launching",
+        "loops",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence"
+    },
+    {
+      "id": "macro-randomizable-evolving-wavetable-pad-two-formant-wt-oscs-minus-1-and-2-oct-serial-12db-lp-hp-macro-env2-to-wt-positions-env3-to-env2-attack-external-triangle-lfo-opposing-adsr-offsets-unison-shimmer",
+      "name": "Self-evolving wavetable pad rack you can safely randomize: two formant-style wavetable oscillators (-1 and -2 octaves) through serial 12 dB low-pass and high-pass filters on one macro, an internal matrix where envelope 2 drives both wavetable positions and envelope 3 drives envelope 2's attack, plus an external slow triangle LFO that pushes the amp envelope times in opposite directions, with ADSR excluded from macro randomization",
+      "goal": "Build a lush, gently moving pad as a macro rack. Oscillators: osc 1 and osc 2 on formant/voice-type wavetables, osc 1 at -1 octave and osc 2 at -2 octaves, sub on, volume about -12 dB, unison 'shimmer' mode with 4 voices. Filters: two 12 dB filters in serial (low-pass and high-pass) with about 2 dB and 1 dB drive and one shared frequency macro so raising it also trims lows, and one shared resonance macro kept low. Internal mod matrix: env 2 to osc 1 position 50 and to osc 2 position 75; LFO 1 to each position 15; env 2 to filter 1 frequency 10 and LFO 1 to it 3; env 3 to env 2 attack 100; LFO 1 to env 2 sustain 50; env 2 to filter 2 frequency -2; LFO 1 retrigger off, very slow. External LFO (triangle, low Hz) after the synth: filter frequency 50, amp attack -60, decay +30, sustain -40, release +40 (opposing directions for complexity), osc 1 warp 50, osc 1 fold 20, osc 2 effect 50. Macros: positions, warp/fold, osc 2 transpose, filter frequency, resonance, ADSR (amp + env 2 + env 3 together), mod rate (both LFOs), mod amount, LFO shape, shimmer amount. Add a limiter last. Exclude the ADSR macros from randomize, then randomize and store snapshots.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "wavetable",
+        "mod-matrix",
+        "macro-rack",
+        "randomize",
+        "evolving",
+        "formant",
+        "modulation",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://macro-randomizable-evolving-wavetable-pad-two-formant-wt-oscs-minus-1-and-2-oct-serial-12db-lp-hp-macro-env2-to-wt-positions-env3-to-env2-attack-external-triangle-lfo-opposing-adsr-offsets-unison-shimmer"
+    },
+    {
+      "id": "fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal",
+      "name": "Turn bright percussive or decaying instruments (electric piano, vibraphone, piano, glockenspiel) into an evolving ambient pad by running each through 100% wet reverbs of about 20-40 s (chaining two reverbs for longer tails), bit-crushing the piano before the reverb to sustain and add harmonics, taming harsh highs with EQ, then busing the layers with a low cut, compression, sidechain and a filter that reveals the pad",
+      "goal": "Make an ambient pad from stock instruments rather than a synth. Pick sources with rich, bright harmonics (distorted electric piano, vibraphone, piano, glockenspiel) and play the same chords stacked across several octaves, panning some layers slightly left and right. Put each through a reverb set to fully wet with no dry signal and a very long decay (about 33 s, 22 s, 40 s in the video); daisy-chain two algorithmic reverbs to get even longer tails and lower the level. The reverb smears the transients away and effectively adds a long attack. For extra brightness and sustain, bit-crush (distort) the piano before its reverb, then EQ down the harsh upper-mid/top it added. Roll off some highs on very bright sources like glockenspiel before the reverb. Because the layers use different reverb lengths they create multiple attack phases, so the sound evolves. Bus all layers; EQ out the large low-frequency/sub-20 Hz build-up from the long reverbs, add compression, sidechain compression and a low-pass filter that you automate open to introduce the pad.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "reverb",
+        "ambient",
+        "percussive-to-pad",
+        "bit-crush",
+        "brightness",
+        "layering",
+        "atmosphere",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal"
+    },
+    {
+      "id": "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
+      "name": "Arrangement that saves several 'firsts' for one climactic moment: keep a three-note ostinato unchanged from the start to that moment, keep the bass on one note until then, and change the ostinato, start the moving bassline and bring in a new percussion layer and the lead together; pull the constant pad from about -3 dB to about -14 dB in full sections, mark every entry or exit with a small FX hit, put a short silence before big mutes, and keep intro and outro loopable",
+      "goal": "Delta vs the existing loop-is-the-climax and four-levels arrangement skills: those reveal the loop gradually; this one holds one element deliberately unchanged and stacks several first-time changes into one moment. Structure from the video: loopable intro (no fade noise across the loop point); the arpeggio/ostinato and a filtered kick from the start; a feedback drone building; around 1 minute in, bassline, snare and the rest come together; take your time with the build-up but not 2 minutes; a short break optional; faster hats and opening the arp filter for an early peak; low-cut the bass to put focus on the arp. In the drop keep the bass on one note. In full sections check each channel and mute what is not needed; turn the constant pad down from about -3 dB to about -14 dB. Mark each entry or exit with small FX or drum fills (orchestral hits in the intro). After about 3.5-4 minutes, change the arp for the first time at the same moment the moving bassline enters, a new off-beat shaker enters, the lead enters and the pad plays the arp's harmony. Then the drop: the bass stops briefly while the hats keep running; every 8 bars switch one element. Put a quick moment of silence before muting many channels. Build down slowly and keep the outro loopable but not overly long for album versions.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "song-structure",
+        "reveal",
+        "ostinato",
+        "melodic-techno",
+        "breakdown",
+        "gain-staging",
+        "loopable-intro",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges"
+    },
+    {
+      "id": "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+      "name": "Dark, tense ambient underscore that sits under TV dialogue, arranged in sections that change every 8 bars (intro, build, breakdown, climax, outro): a reverbed pad plus a quiet sub-boom hit every 2 bars, an intro grown by opening a low-pass filter, a 16th-note pluck pulse faded in, home-made whooshes (resampled synth note, chopped, faded in, filter opening, plate tail) as riser-and-impact glue, octave-up doubling for builds, a left/right pair of complementary hits on a shared reverb, a pulsing bass in the breakdown, denser hits in the climax and a mirrored fading outro",
+      "goal": "Write an unobtrusive but tense dark ambient cue meant to sit under dialogue (think minimal, ominous sci-fi film scoring). Set markers so the section changes every 8 bars. Intro: a pad with a plate reverb recorded as a long chord, a sub-boom impact every 2 bars kept quiet, a sustained bass note, a low-pass filter automated from dark to open while raising the patch brightness so the intro grows into the next section, a textural layer on the second half, and a 16th-note pluck pulse whose volume fades in. Glue each section edge with a rise and an impact: a quiet stock whoosh aligned to the beat, or a home-made whoosh (render a low synth note, chop it, fade it in, automate a low-pass opening and add a plate tail with longer decay). Build: remove the intro filter automation so the full spectrum plays, double notes an octave up, add a sustained melodic layer with its highs filtered (bring highs back later), raise notes of the pulse/arp an octave, duplicate without overthinking. Add new hits every 2 bars; duplicate a hit track with a different sound panned to the other side and send both through the same reverb for width. Breakdown: make the bass pulse rhythmically (shaper/tremolo automation on), reintroduce a texture briefly, bring back single-note pulses, a resampled clap, and a heavy synth note with falling pitch automation (braam-like). Climax: copy the build, add the breakdown layers, hits every 2 bars instead of every 4, a long high string note doubled an octave up for the second half, a 2-bar riser (pitched down if too bright, time-stretched), and a quiet low eighth-note percussion pulse. Outro: copy the intro and reverse the moves (fade and close instead of opening), fading the hits out.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "song-structure",
+        "dark-ambient",
+        "underscore",
+        "cinematic",
+        "risers",
+        "impacts",
+        "sync",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro"
+    },
+    {
+      "id": "epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp",
+      "name": "Epic trailer-style hybrid drum built from a four-layer synth hit (pitched additive and FM oscillators with very fast exponential pitch drops, e.g. +5 and +29 semitones, plus filtered white and pink noise bursts with overload, tube drive, MS-20-style low-pass and a high-pass) layered with any three acoustic drum samples including bleed/ambient mics, then glued with a scooped EQ, sub trim, multiband compression and gentle upward (OTT-style) compression",
+      "goal": "Make big hybrid drums from tools you already have. Synth drum (one patch, four channels): (1) a simple additive/harmonic oscillator, stereo, with a pitch envelope dropping from about 5 semitones up, plus white noise through a low-pass whose cutoff envelope closes extremely fast with a strong exponential curve (a pitched, roto-tom-like burst); (2) pink noise through an aggressive low-pass with the same envelope, then a second overloaded filter that also takes channel 1's signal for grit; (3) an FM (or simple triangle/square) oscillator with a very fast pitch drop into tube distortion, an MS-20-style low-pass and a high-pass to remove rumble; (4) another additive high-content oscillator whose pitch drop starts about 29 semitones up, giving parallel pitch drops with channel 1. Key: very fast, strongly curved envelopes that hit hard and decay to nothing; play lower or higher on the keyboard for pitch, or several notes for a flam/ensemble. Global: two EQs, compression and reverb. Acoustic layer: any three acoustic drum samples, mixed with room/bleed mics (snare, hats, toms, ambience) so the kick is not dead. Process the combined layers: heavily scooped EQ for a trailer sound, trim the very lowest subs, per-layer EQ (less top on acoustic), multiband compression on the low end letting transients through, and optionally OTT-style compression at low depth with more upward than downward. Render the acoustic element, set its notes to the sample's root pitch and add the same fast envelope in the sampler; add velocity tracking for dynamics.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "hybrid-drums",
+        "epic-percussion",
+        "trailer",
+        "pitch-envelope",
+        "noise",
+        "layering",
+        "multiband-compression",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
     }
   ],
-  "updated_at": "2026-10-27T16:27:04.355196+00:00",
+  "updated_at": "2026-10-28T16:33:25.405181+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

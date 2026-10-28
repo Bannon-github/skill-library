@@ -1,0 +1,46 @@
+{
+  "video_id": "mnledZoD4QE",
+  "title": "How to make an ambient pad in Logic Pro X - Trance Production Tutorials #10",
+  "url": "https://www.youtube.com/watch?v=mnledZoD4QE",
+  "fetched_at": "2026-10-28T16:19:19.252313+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Trance Production Tutorials",
+  "duration": 825,
+  "ok": true,
+  "cue_count": 199,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/mnledZoD4QE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/mnledZoD4QE/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

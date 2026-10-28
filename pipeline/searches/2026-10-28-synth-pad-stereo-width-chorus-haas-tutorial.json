@@ -1,0 +1,125 @@
+{
+ "topic": "synth pad stereo width chorus haas tutorial",
+ "date": "2026-10-28",
+ "params": {
+  "topic": "synth pad stereo width chorus haas tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "s8zR_x_cWZM",
+   "title": "Ableton Mixdown Tutorial - 3 Stereo Widening Tricks",
+   "channel": "Finish More Music",
+   "duration": 524,
+   "view_count": 75989,
+   "url": "https://www.youtube.com/watch?v=s8zR_x_cWZM",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.94
+  },
+  {
+   "id": "5kIWJen9tcI",
+   "title": "How To Properly Double Track Synths to get a Wider Mix",
+   "channel": "Transverse Audio",
+   "duration": 340,
+   "view_count": 11597,
+   "url": "https://www.youtube.com/watch?v=5kIWJen9tcI",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.53
+  },
+  {
+   "id": "TJoZEsZtrc0",
+   "title": "FL STUDIO Stereo Shaper  - Everything You Need To Know",
+   "channel": "In The Mix",
+   "duration": 825,
+   "view_count": 199294,
+   "url": "https://www.youtube.com/watch?v=TJoZEsZtrc0",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.15
+  },
+  {
+   "id": "LcAcmBKryxE",
+   "title": "Stereo Width Part 2 - Widening",
+   "channel": "DJ Warmonger Official Channel",
+   "duration": 1023,
+   "view_count": 102,
+   "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51
+  },
+  {
+   "id": "zvQBXoyjgKw",
+   "title": "Multi-band Stereo Imager for Ableton Live",
+   "channel": "Scruffy Cat Studios",
+   "duration": 700,
+   "view_count": 10356,
+   "url": "https://www.youtube.com/watch?v=zvQBXoyjgKw",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51
+  },
+  {
+   "id": "O3jXTtGSoVA",
+   "title": "Free Combinator: Haas Effect in Reason (Watch in HD 1080)",
+   "channel": "mesaoneCCK",
+   "duration": 420,
+   "view_count": 1326,
+   "url": "https://www.youtube.com/watch?v=O3jXTtGSoVA",
+   "query": "synth pad stereo width chorus haas tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.06
+  }
+ ],
+ "dropped": [
+  {
+   "id": "L6lSgIsnhls",
+   "why": "negative title signal"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "6Lw6d4RW7YI",
+   "why": "duration 134s"
+  },
+  {
+   "id": "DcR34nSznJQ",
+   "why": "duration 132s"
+  },
+  {
+   "id": "rjoDEzuHKGA",
+   "why": "duration 239s"
+  },
+  {
+   "id": "eFIIikcmswk",
+   "why": "duration 177s"
+  },
+  {
+   "id": "XCyulT_MDl0",
+   "why": "duration 85s"
+  },
+  {
+   "id": "V_ednvEuqE4",
+   "why": "duration 52s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

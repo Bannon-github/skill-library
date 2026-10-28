@@ -1,0 +1,171 @@
+{
+ "video_id": "36RxPGRMsZU",
+ "started_at": "2026-10-28T16:33:08.693933+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "36RxPGRMsZU",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/36RxPGRMsZU/graph.json",
+  "segments": 548,
+  "windows": 184,
+  "nodes": 121,
+  "edges": 201,
+  "nodes_by_type": {
+   "param": 16,
+   "module": 17,
+   "concept": 9,
+   "step": 52,
+   "tool": 4,
+   "technique": 3,
+   "value": 7,
+   "phrase": 13
+  },
+  "edges_by_type": {
+   "part-of": 23,
+   "mentions": 118,
+   "precedes": 51,
+   "sets": 7,
+   "affects": 2
+  },
+  "words": 3506
+ },
+ "gaps": {
+  "video_id": "36RxPGRMsZU",
+  "graph_nodes": 121,
+  "graph_edges": 201,
+  "terms_checked": 62,
+  "terms_covered": 52,
+  "gap_nodes": 10,
+  "gap_nodes_excl_phrases": 0,
+  "relations_checked": 9,
+  "gap_edges": 3,
+  "candidates": 1,
+  "kg": {
+   "videos": 203,
+   "nodes": 1056,
+   "edges": 327,
+   "uncovered_nodes": 23,
+   "uncovered_edges": 90
+  },
+  "candidate_ids": [
+   "synth-wavetable-warp-whole-video"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "best single-skill procedure overlap 0.333 < 0.5",
+    "techniques not in the best-overlap skill: technique:wavetable_warp"
+   ],
+   "best_skill": "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+   "profile_share": 0.731,
+   "best_proc_overlap": 0.333,
+   "specific_items": 12,
+   "uncovered_techniques": [],
+   "video_novelty": 0.127,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 3518,
+    "music_markers": 12
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "arrangement": 14,
+     "blender": 5,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 6,
+     "synth": 223
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 121,
+    "edges": 201
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 0,
+    "gap_edges": 3,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "best single-skill procedure overlap 0.333 < 0.5",
+      "techniques not in the best-overlap skill: technique:wavetable_warp"
+     ],
+     "best_skill": "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+     "profile_share": 0.731,
+     "best_proc_overlap": 0.333,
+     "specific_items": 12,
+     "uncovered_techniques": [],
+     "video_novelty": 0.127,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-10-28T16:33:09.653313+00:00"
+}

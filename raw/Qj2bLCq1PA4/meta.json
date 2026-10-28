@@ -1,43 +1,46 @@
 {
   "video_id": "Qj2bLCq1PA4",
-  "title": null,
+  "title": "Soundpaint Shepard Tones Walkthrough",
   "url": "https://www.youtube.com/watch?v=Qj2bLCq1PA4",
-  "fetched_at": "2026-10-22T16:19:37.573239+00:00",
+  "fetched_at": "2026-10-28T16:21:41.888517+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "original_language": "en",
+  "channel": "Soundpaint",
+  "duration": 1118,
+  "ok": true,
+  "cue_count": 257,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Qj2bLCq1PA4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Qj2bLCq1PA4/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en"
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.3
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.3
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.8
-    }
-  ]
+  "retries": []
 }

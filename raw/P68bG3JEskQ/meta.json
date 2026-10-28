@@ -1,43 +1,46 @@
 {
   "video_id": "P68bG3JEskQ",
-  "title": null,
+  "title": "This is better than any Wavetable Synth",
   "url": "https://www.youtube.com/watch?v=P68bG3JEskQ",
-  "fetched_at": "2026-10-22T16:18:51.281824+00:00",
+  "fetched_at": "2026-10-28T16:21:27.125755+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "original_language": "en",
+  "channel": "Polarity Music",
+  "duration": 1531,
+  "ok": true,
+  "cue_count": 508,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/P68bG3JEskQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/P68bG3JEskQ/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en"
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.7
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.9
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.6
-    }
-  ]
+  "retries": []
 }

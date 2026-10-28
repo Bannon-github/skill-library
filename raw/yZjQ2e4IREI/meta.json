@@ -1,0 +1,55 @@
+{
+  "video_id": "yZjQ2e4IREI",
+  "title": "Step-by-Step Guide: Beautiful Wavetable Pads (Ableton Live 12)",
+  "url": "https://www.youtube.com/watch?v=yZjQ2e4IREI",
+  "fetched_at": "2026-10-28T16:18:09.704545+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Simply Synths",
+  "duration": 1293,
+  "ok": true,
+  "cue_count": 946,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "yZjQ2e4IREI.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/yZjQ2e4IREI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/yZjQ2e4IREI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": true
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ]
+}

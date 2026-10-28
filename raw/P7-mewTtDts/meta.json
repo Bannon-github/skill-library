@@ -1,43 +1,46 @@
 {
   "video_id": "P7-mewTtDts",
-  "title": null,
+  "title": "UPLIFTER: One Note In, Full Transition Out (Riser & Drop Designer VST)",
   "url": "https://www.youtube.com/watch?v=P7-mewTtDts",
-  "fetched_at": "2026-10-22T16:20:19.804963+00:00",
+  "fetched_at": "2026-10-28T16:21:56.497669+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "original_language": "en-US",
+  "channel": "gianabrotherz",
+  "duration": 453,
+  "ok": true,
+  "cue_count": 124,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/P7-mewTtDts/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/P7-mewTtDts/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en-US"
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.6
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.1
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.2
-    }
-  ]
+  "retries": []
 }

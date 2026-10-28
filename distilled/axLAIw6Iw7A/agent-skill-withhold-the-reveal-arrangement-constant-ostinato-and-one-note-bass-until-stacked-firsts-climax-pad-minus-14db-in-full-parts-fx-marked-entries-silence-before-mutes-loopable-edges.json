@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "id": "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
+  "name": "Arrangement that saves several 'firsts' for one climactic moment: keep a three-note ostinato unchanged from the start to that moment, keep the bass on one note until then, and change the ostinato, start the moving bassline and bring in a new percussion layer and the lead together; pull the constant pad from about -3 dB to about -14 dB in full sections, mark every entry or exit with a small FX hit, put a short silence before big mutes, and keep intro and outro loopable",
+  "goal": "Delta vs the existing loop-is-the-climax and four-levels arrangement skills: those reveal the loop gradually; this one holds one element deliberately unchanged and stacks several first-time changes into one moment. Structure from the video: loopable intro (no fade noise across the loop point); the arpeggio/ostinato and a filtered kick from the start; a feedback drone building; around 1 minute in, bassline, snare and the rest come together; take your time with the build-up but not 2 minutes; a short break optional; faster hats and opening the arp filter for an early peak; low-cut the bass to put focus on the arp. In the drop keep the bass on one note. In full sections check each channel and mute what is not needed; turn the constant pad down from about -3 dB to about -14 dB. Mark each entry or exit with small FX or drum fills (orchestral hits in the intro). After about 3.5-4 minutes, change the arp for the first time at the same moment the moving bassline enters, a new off-beat shaker enters, the lead enters and the pad plays the arp's harmony. Then the drop: the bass stops briefly while the hats keep running; every 8 bars switch one element. Put a quick moment of silence before muting many channels. Build down slowly and keep the outro loopable but not overly long for album versions.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "axLAIw6Iw7A",
+    "url": "https://www.youtube.com/watch?v=axLAIw6Iw7A",
+    "title": "Arrangement Hacks for MELODIC TECHNO | Jonas Saalbach | Ableton Live",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/axLAIw6Iw7A/agent-skill-withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A DAW arrangement with gain automation and markers",
+    "A loop with an ostinato/arp, bass, pad, percussion and a lead"
+  ],
+  "inputs": [
+    {
+      "name": "ostinato",
+      "type": "midi",
+      "description": "A short repeating figure (three notes in the video)",
+      "required": true
+    },
+    {
+      "name": "reveal_time",
+      "type": "string",
+      "description": "Where the big first-time change lands (about 3.5-4 min in a 6-8 min track)",
+      "required": true
+    },
+    {
+      "name": "track_length_min",
+      "type": "number",
+      "description": "Target length",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "daw-arrangement",
+      "description": "Arrangement with one stacked reveal moment"
+    },
+    {
+      "name": "reveal_checklist",
+      "type": "text",
+      "description": "List of elements held back and released at the reveal"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Melodic-techno timings (1 min build, 4 min reveal) scale down for shorter ambient/cinematic cues: keep the ratio (reveal at about 55-65% of the length).",
+    "Matt prefers drums entering early: start the kick (filtered) from bar 1 as in the video rather than a long beatless intro.",
+    "The held ostinato must stay rhythmically and melodically steady until the reveal; no random variation.",
+    "Specific plug-ins and presets in the video are not used; any synth or drum source works.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Make the intro loopable: no fade-in noise or tails across the loop point so it can be repeated or mixed.",
+      "tool": "Arrangement",
+      "expect": "A clean loopable opening."
+    },
+    {
+      "n": 2,
+      "action": "Start the ostinato and a filtered kick from the beginning; add a building drone; bring in bassline, snare and other drums around the 1-minute mark (build-up shorter than about 2 minutes).",
+      "tool": "Arrangement + filter automation",
+      "expect": "Steady pulse early, a clear build."
+    },
+    {
+      "n": 3,
+      "action": "Write the held-back list: ostinato change, moving bassline, a new percussion layer (e.g. off-beat shaker), the lead, pad switching to the ostinato's harmony.",
+      "tool": "Notes",
+      "expect": "A reveal checklist."
+    },
+    {
+      "n": 4,
+      "action": "In the drops before the reveal, keep the bass on one note and low-cut it at times so focus stays on the ostinato.",
+      "tool": "Bass part + EQ automation",
+      "expect": "Tension without spending the bassline."
+    },
+    {
+      "n": 5,
+      "action": "In full sections solo-check each channel and mute anything not needed; automate the constant pad from about -3 dB down to about -14 dB.",
+      "tool": "Mixer automation",
+      "expect": "Drops lean on kick, bass and one melody."
+    },
+    {
+      "n": 6,
+      "action": "Mark every entry or exit with a small FX hit, drum fill or (in the intro) an orchestral hit.",
+      "tool": "FX/fill track",
+      "expect": "Listeners notice each change."
+    },
+    {
+      "n": 7,
+      "action": "Before muting many channels at once, insert a short moment of silence.",
+      "tool": "Arrangement",
+      "expect": "A clean break that makes large mutes feel intentional."
+    },
+    {
+      "n": 8,
+      "action": "At the reveal point change the ostinato for the first time, start the moving bassline, add the new percussion layer and the lead, and move the pad to the ostinato's harmony, all on the same downbeat.",
+      "tool": "Arrangement",
+      "expect": "A single goosebump moment where several firsts coincide."
+    },
+    {
+      "n": 9,
+      "action": "In the following drop let the bass stop briefly while hats keep running; then switch one element every 8 bars (add, remove, or octave shift).",
+      "tool": "Arrangement",
+      "expect": "Momentum continues after the reveal."
+    },
+    {
+      "n": 10,
+      "action": "Build down slowly to a loopable outro; keep it shorter for album versions.",
+      "tool": "Arrangement",
+      "expect": "An outro that can be looped or ended."
+    }
+  ],
+  "verification": [
+    "The ostinato's notes are identical from its first bar until the reveal bar.",
+    "At least three held-back elements first appear on the same bar.",
+    "Pad gain automation is about 10 dB lower in full sections than in sparse ones."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "reveal",
+    "ostinato",
+    "melodic-techno",
+    "breakdown",
+    "gain-staging",
+    "loopable-intro",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges"
+}

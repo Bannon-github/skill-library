@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-27T16:27:04.355196+00:00",
-  "entry_count": 203,
+  "updated_at": "2026-10-28T16:33:25.405181+00:00",
+  "entry_count": 209,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3128,6 +3128,84 @@
       "skills": [
         "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
       ]
+    },
+    {
+      "id": "cinematic-synth-fjO8HIZzhZs",
+      "video_id": "fjO8HIZzhZs",
+      "url": "https://www.youtube.com/watch?v=fjO8HIZzhZs",
+      "title": "Creating Generative Ambient Soundscapes with Ableton Live & Pigments (Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/fjO8HIZzhZs/raw.txt",
+      "summary": "Skills: follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+      "skills": [
+        "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence"
+      ]
+    },
+    {
+      "id": "cinematic-synth-yZjQ2e4IREI",
+      "video_id": "yZjQ2e4IREI",
+      "url": "https://www.youtube.com/watch?v=yZjQ2e4IREI",
+      "title": "Step-by-Step Guide: Beautiful Wavetable Pads (Ableton Live 12)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/yZjQ2e4IREI/raw.txt",
+      "summary": "Skills: macro-randomizable-evolving-wavetable-pad-two-formant-wt-oscs-minus-1-and-2-oct-serial-12db-lp-hp-macro-env2-to-wt-positions-env3-to-env2-attack-external-triangle-lfo-opposing-adsr-offsets-unison-shimmer",
+      "skills": [
+        "macro-randomizable-evolving-wavetable-pad-two-formant-wt-oscs-minus-1-and-2-oct-serial-12db-lp-hp-macro-env2-to-wt-positions-env3-to-env2-attack-external-triangle-lfo-opposing-adsr-offsets-unison-shimmer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-mnledZoD4QE",
+      "video_id": "mnledZoD4QE",
+      "url": "https://www.youtube.com/watch?v=mnledZoD4QE",
+      "title": "How to make an ambient pad in Logic Pro X - Trance Production Tutorials #10",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/mnledZoD4QE/raw.txt",
+      "summary": "Skills: fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal",
+      "skills": [
+        "fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal"
+      ]
+    },
+    {
+      "id": "cinematic-synth-axLAIw6Iw7A",
+      "video_id": "axLAIw6Iw7A",
+      "url": "https://www.youtube.com/watch?v=axLAIw6Iw7A",
+      "title": "Arrangement Hacks for MELODIC TECHNO | Jonas Saalbach | Ableton Live",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/axLAIw6Iw7A/raw.txt",
+      "summary": "Skills: withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
+      "skills": [
+        "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges"
+      ]
+    },
+    {
+      "id": "cinematic-synth-E4eghKjWH1o",
+      "video_id": "E4eghKjWH1o",
+      "url": "https://www.youtube.com/watch?v=E4eghKjWH1o",
+      "title": "Dark Ambient Production From Start to Finish | Sync Ready Tracks",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/E4eghKjWH1o/raw.txt",
+      "summary": "Skills: dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+      "skills": [
+        "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro"
+      ]
+    },
+    {
+      "id": "cinematic-synth-B75uC7h8bBo",
+      "video_id": "B75uC7h8bBo",
+      "url": "https://www.youtube.com/watch?v=B75uC7h8bBo",
+      "title": "How to Make Your Own Epic Hybrid Drums WITHOUT Buying New Sounds (Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/B75uC7h8bBo/raw.txt",
+      "summary": "Skills: epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp",
+      "skills": [
+        "epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3416,6 +3494,18 @@
         "self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow",
         "four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence",
         "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context"
+      ]
+    },
+    {
+      "at": "2026-10-28T16:33:25.405181+00:00",
+      "batch": "2026-10-28-morning-hunt",
+      "added": [
+        "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+        "macro-randomizable-evolving-wavetable-pad-two-formant-wt-oscs-minus-1-and-2-oct-serial-12db-lp-hp-macro-env2-to-wt-positions-env3-to-env2-attack-external-triangle-lfo-opposing-adsr-offsets-unison-shimmer",
+        "fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal",
+        "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
+        "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+        "epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
       ]
     }
   ]

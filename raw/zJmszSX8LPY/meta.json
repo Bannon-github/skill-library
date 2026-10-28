@@ -1,0 +1,46 @@
+{
+  "video_id": "zJmszSX8LPY",
+  "title": "How to make Ambient Music (that doesn't sound like AI slop)",
+  "url": "https://www.youtube.com/watch?v=zJmszSX8LPY",
+  "fetched_at": "2026-10-28T16:17:39.688759+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jameson Nathan Jones",
+  "duration": 923,
+  "ok": true,
+  "cue_count": 359,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/zJmszSX8LPY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/zJmszSX8LPY/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

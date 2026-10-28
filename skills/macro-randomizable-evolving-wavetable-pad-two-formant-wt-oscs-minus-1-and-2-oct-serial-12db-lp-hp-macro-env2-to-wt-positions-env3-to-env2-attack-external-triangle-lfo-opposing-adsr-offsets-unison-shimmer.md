@@ -1,0 +1,16 @@
+# Self-evolving wavetable pad rack you can safely randomize: two formant-style wavetable oscillators (-1 and -2 octaves) through serial 12 dB low-pass and high-pass filters on one macro, an internal matrix where envelope 2 drives both wavetable positions and envelope 3 drives envelope 2's attack, plus an external slow triangle LFO that pushes the amp envelope times in opposite directions, with ADSR excluded from macro randomization
+
+Goal: Build a lush, gently moving pad as a macro rack. Oscillators: osc 1 and osc 2 on formant/voice-type wavetables, osc 1 at -1 octave and osc 2 at -2 octaves, sub on, volume about -12 dB, unison 'shimmer' mode with 4 voices. Filters: two 12 dB filters in serial (low-pass and high-pass) with about 2 dB and 1 dB drive and one shared frequency macro so raising it also trims lows, and one shared resonance macro kept low. Internal mod matrix: env 2 to osc 1 position 50 and to osc 2 position 75; LFO 1 to each position 15; env 2 to filter 1 frequency 10 and LFO 1 to it 3; env 3 to env 2 attack 100; LFO 1 to env 2 sustain 50; env 2 to filter 2 frequency -2; LFO 1 retrigger off, very slow. External LFO (triangle, low Hz) after the synth: filter frequency 50, amp attack -60, decay +30, sustain -40, release +40 (opposing directions for complexity), osc 1 warp 50, osc 1 fold 20, osc 2 effect 50. Macros: positions, warp/fold, osc 2 transpose, filter frequency, resonance, ADSR (amp + env 2 + env 3 together), mod rate (both LFOs), mod amount, LFO shape, shimmer amount. Add a limiter last. Exclude the ADSR macros from randomize, then randomize and store snapshots.
+
+Source: [Step-by-Step Guide: Beautiful Wavetable Pads (Ableton Live 12)](https://www.youtube.com/watch?v=yZjQ2e4IREI)
+
+1. Create a rack on a MIDI track and expose all 16 macros; insert the wavetable synth.
+2. Osc 1: formant/voice wavetable at -1 octave; enable osc 2 with a darker formant wavetable at -2 octaves; enable the sub; set synth volume to about -12 dB; unison mode 'shimmer' with 4 voices.
+3. Enable both filters as 12 dB types in serial (low-pass then high-pass), drive about 2 dB and 1 dB.
+4. Matrix: env 2 → osc 1 position 50, osc 2 position 75; LFO 1 → both positions 15; env 2 → filter 1 freq 10; LFO 1 → filter 1 freq 3; env 3 → env 2 attack 100; LFO 1 → env 2 sustain 50; env 2 → filter 2 freq -2. LFO 1: sine, retrigger off, slow.
+5. Map macros: osc 1 position, osc 1 warp, osc 1 fold, osc 2 position, osc 2 effect, osc 2 transpose, filter frequency (both filters on one knob), resonance (both), amp/env 2/env 3 ADSR, mod rate (LFO rate), mod amount, mod shape, shimmer amount.
+6. Add an external LFO after the synth, set to triangle at a low Hz rate; map its rate/depth to the mod-rate/mod-amount macros. Map it to filter frequency (50), amp attack (-60), decay (+30), sustain (-40), release (+40), osc 1 warp (50), osc 1 fold (20), osc 2 effect (50).
+7. Add a limiter last as a safety against level jumps.
+8. Exclude the ADSR macros from randomization, press randomize until a pad you like appears, and save each as a snapshot; save the rack.
+
+Batch: `2026-10-28-morning-hunt` · transcript: YouTube-provided (Show transcript) · Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'.

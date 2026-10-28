@@ -1,43 +1,53 @@
 {
   "video_id": "LP1rbAbojkc",
-  "title": null,
+  "title": "Wavegrab Spectral Morphing Wavetable Synthesizer for Ableton \"walkthrough\"",
   "url": "https://www.youtube.com/watch?v=LP1rbAbojkc",
-  "fetched_at": "2026-10-22T16:21:04.439592+00:00",
+  "fetched_at": "2026-10-28T16:22:11.425377+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "rate_limited_or_ip_blocked",
+  "original_language": "en-US",
+  "channel": "Techtronix",
+  "duration": 1523,
+  "ok": true,
+  "cue_count": 448,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/LP1rbAbojkc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/LP1rbAbojkc/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en-US"
     },
     {
       "q": "transcript tracks listed?",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr(auto)",
+        "de(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt(auto)",
+        "es(auto)"
+      ]
     },
     {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.2
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.9
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.1
-    }
-  ]
+  "retries": []
 }
