@@ -1,0 +1,145 @@
+{
+ "seed": 1030,
+ "bpm": 80,
+ "bars": 26,
+ "tailSec": 6.0,
+ "category": "pad",
+ "key": "F Lydian",
+ "title": "Planetarium",
+ "sections": {
+  "drumsIn": 4,
+  "leadSolo": 7,
+  "drop1": 8,
+  "mid": 14,
+  "drop2": 16,
+  "tease": 20,
+  "fill": 21.75,
+  "allIn": 22,
+  "end": 26
+ },
+ "chords": [
+  [
+   41,
+   [
+    53,
+    57,
+    60,
+    64
+   ]
+  ],
+  [
+   43,
+   [
+    55,
+    59,
+    62,
+    69
+   ]
+  ]
+ ],
+ "pad": {
+  "lfoRateHz": [
+   0.07,
+   0.11
+  ],
+  "cross": 0.5,
+  "lvl12": 0.55,
+  "lvl19": 0.45,
+  "sub": 0.3,
+  "noise": 0.06,
+  "lpBase": 5500,
+  "lpMod": 0.25,
+  "atk": 2.5,
+  "sus": 0.6,
+  "unisonCents": [
+   -4,
+   0,
+   4
+  ],
+  "verbRt": 7.0,
+  "verbMix": [
+   0.35,
+   0.6
+  ],
+  "dlyBeats": 1.5,
+  "dlyFb": [
+   0.25,
+   0.5
+  ],
+  "dlyMix": [
+   0.12,
+   0.3
+  ],
+  "fxLowcut": 250,
+  "shimmerMix": [
+   0.0,
+   0.12
+  ],
+  "lpDip": 500,
+  "shelfDb": 9
+ },
+ "drums": {
+  "kick": 0.5,
+  "kickF0": 52,
+  "snare": 0.22,
+  "hatSoft": 0.08,
+  "hatPair": 0.12,
+  "hatOpen": 0.07,
+  "clap": 0.18,
+  "tom": 0.3,
+  "swing": 0.12,
+  "pairLp": [
+   9000,
+   3500
+  ],
+  "revSwell": 0.18,
+  "bed": 0.035,
+  "duck": 0.3
+ },
+ "lead": {
+  "notes": [
+   72,
+   76,
+   79,
+   77,
+   76,
+   72,
+   74,
+   76
+  ],
+  "var1": [
+   72,
+   76,
+   79,
+   81,
+   79,
+   76,
+   74,
+   72
+  ],
+  "var2": [
+   79,
+   81,
+   84,
+   81,
+   79,
+   76,
+   74,
+   76
+  ],
+  "level": 0.16,
+  "lp": 8000
+ },
+ "bass": {
+  "level": 0.28,
+  "lp": 700,
+  "hpMid": 220
+ },
+ "master": {
+  "sideHpHz": 120,
+  "fadeOutSec": 5.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "satDrive": 1.1
+ }
+}

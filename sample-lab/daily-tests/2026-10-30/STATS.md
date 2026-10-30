@@ -1,0 +1,15 @@
+# Daily 3-skill test, 2026-10-30: "Planetarium"
+
+Track: `planetarium-2026-10-30.mp3` (84 s incl. 6 s tail, 80 BPM, F Lydian two-chord vamp F / G over F, 26 bars). Audio stays local.
+Renderer: `render.py recipe.json track.wav` (original synthesis, deterministic), ~55 s render.
+Map: bars 1-4 Eno pad alone; bar 5 (12 s) sparse kick + soft swung hats + paired hats; bar 8 lead alone while pad filter closes (transition 1); bar 9 (24 s) drop: snares on phrase bars 2/4, open hats, bass, lead; bars 15-16 transition 2 (kick/closed hats out, pad LP down, clap on every beat, bass high-passed, lead variation looped, one tom in the last beat); bar 17 all drums back with variation 2 and full bass; bars 21-22 tease (hats only, pad dips, no kick/bass, lead with new velocity/pan/spacing) ending in a 1-beat sweep+clap fill; bar 23 all in, fade out.
+
+| skill | role | what it added | where it fell short |
+|---|---|---|---|
+| Eno space pad | source / space | sines at 0/+12/+19 st x 3-voice unison, triangle sub, two cross-modulated smooth-random LFOs blended on osc levels, cutoff, reverb mix, delay mix and delay feedback, 7 s hall + 1.5-beat ping-pong delay, +7 st shimmer moved in and out; pitch stays dead steady | pure sines are very dark: tilt -8.2 dB/oct as written; needed a +10 dB pad shelf, opened cutoff (5.5 kHz), more noise trace and a +4 dB master shelf. "Cross-modulate LFO rates" has no amount given; used 0.5 |
+| spacious ambient drums | drums | kick only in phrase bar 1 plus ghost, snares bars 2 and 4, big verb on second round only, reversed reverb swell before bar 4 only, paired hats ahead of the beat with the second one darker, soft crackly swung hats, ducked noise bed with 3 s release, pad sidechained to kick | step 6's "80 and 100" EQ values are ambiguous (used 9 kHz vs 3.5 kHz LP); DAW-specific steps (warp Beats mode, vocoder cymbal swirl, foley) skipped. Kick-on-bar-1-only is so sparse it fights the riser-free skill's "kick is the metronome" idea |
+| three riser-free transitions | structure | all three transitions worked by subtraction: solo lead over closing pad filter, clap-on-beat/no-kick mid with high-passed bass and single tom, hats-only tease with lead variations then a one-beat fill into all in. Clear sections without any risers | written for a lead/pluck track with a bassline drop; assumes a busier kick than the drum skill gives, so the payoff re-entries are gentler than intended |
+
+Scores (TARGET.md, pad bands): iter1 94.5 (M6 tilt -8.2 fail) -> iter2 95.9 (pad shelf +9, cutoff 5.5 k; M6 -7.8) -> iter3 98.3 PASS (less sub/bass/kick, +4 dB master shelf; M6 -6.7, M5 side lows -13.7) -> **final 99.6 PASS** (side HP 160 Hz, pad shelf +10).
+Final: -17.0 LUFS, true peak -6.4 dBTP, limiter GR 0 dB, lows mono under 160 Hz, tilt -6.6 dB/oct (M6 0.945, only sub-score under 1). All gates pass.
+Next tweak: give the Eno pad its own brightness at the source (add a soft saw or +31 st sine partial instead of a post shelf); brightness/air on ambient pads is still the library's top gap (third test in a row that came out too dark).
