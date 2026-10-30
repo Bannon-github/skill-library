@@ -1,0 +1,24 @@
+import sys; sys.path.insert(0,'.')
+from mk import mk
+A="Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+mk("2Yt1Ae91fv0","How to Make HORROR Soundscapes in Ableton Live",
+ "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+ "Atmospheric horror / unsettling soundscape from one held MIDI note and one simple synth: a chord MIDI effect stacks two clashing major triads (shifts +4 +7 +13 +17 +20), the two oscillators are spread far apart (+3 and -2 octaves), a low-pass around 170 Hz with resonance about 6, a smooth-random 'wander' LFO on oscillator shape, stereo voice mode, a 100%-wet ping-pong delay with fade on a parallel chain whose rate/time/filter/width are moved by a separate smooth-random LFO with a narrow min/max range, then a large reverb",
+ "Build an evolving, clashing, dark soundscape for horror or tense game moments from a single trigger note. Dissonance comes from the polychord, depth from the extreme pitch spread, and motion from smooth-random LFOs whose ranges are clamped so the movement stays understated.",
+ ["A DAW with a chord MIDI effect (or play the six notes), a simple two-oscillator subtractive synth with a smooth-random LFO and mod matrix","Delay with ping-pong and fade/crossfade time mode, a rack or parallel bus, a standalone LFO modulator, a large reverb"],
+ [("trigger_note","string","Single held note, e.g. C3, one bar or longer",True),("darkness","number","Filter cutoff target (about 170 Hz in the video, higher reveals the 'electric' buzz)",False)],
+ [("horror_soundscape","synth-chain","Saved one-note soundscape rack"),("bed_audio","audio","Long evolving dissonant bed")],
+ ["Stock device names in the video (a simple subtractive synth, chord MIDI effect, rack/chain, LFO modulator, factory reverb preset) are mapped to generic modules; the downloadable preset is not copied.",
+  "The speaker calls it the Elektra chord (C major plus A major). The shifts as spoken (+4 +7 +13 +17 +20 above the root) actually stack C major and C#/Db major. Use the shifts as given, or C plus A major if you want the historical spelling. Both clash strongly.",
+  "Steady pitch (Matt's taste): the video also puts the LFO on oscillator 2 detune (about 8%) and on the delay time, which makes pitch moan and wobble. For Matt, leave detune and delay-time modulation off or tiny, and keep the motion on shape, filter, delay filter, feedback and width.",
+  "Place reverb first while designing, because it changes the synth decisions.", A],
+ [("Trigger one note (C3) with a one-bar or longer MIDI clip into a chord effect that adds the shifts +4, +7, +13, +17, +20.","chord MIDI effect","Six-note clashing polychord from one note"),
+  ("Put a large reverb after the synth before you start sound design.","reverb","The sound is already wider and less dry, which guides the next steps"),
+  ("Pitch spread: oscillator 1 up about +3 octaves and oscillator 2 down about -2 octaves. Use a saturated/sharp shape on the upper oscillator with shape raised. Use a sine on the low oscillator, mixed up about +2.5 dB.","synth osc","Deep low body under a buzzing, electric top"),
+  ("Low-pass down to about 170 Hz with resonance about 6, and clear any default filter modulation.","filter","Dark, mellow, mysterious bed"),
+  ("Set the synth LFO to a smooth-random ('wander') shape and route it fully to the upper oscillator's shape. Switch the voice mode to stereo (voices panned L/R).","LFO + mod matrix","Upper partials drift and evolve unpredictably; wider image"),
+  ("Parallel delay: wrap a delay in a rack/parallel chain with dry kept, delay 100% wet, feedback about 80%, fade (crossfade) time mode and ping-pong on.","delay in parallel chain","A wide, smeared echo cloud under the dry sound"),
+  ("Add a separate smooth-random ('glider') LFO and map it to the delay filter, width, rate and feedback, then turn its depth down so the motion is slow.","standalone LFO","Echo cloud slowly changes colour and width"),
+  ("Optionally map the LFO to the synth filter cutoff with a narrow min/max window (for example about 33-39%), raising it only to let in more mid frequencies.","LFO range","Filter breathes in a narrow band without opening to harsh buzz")],
+ ["Rendered bed contains six simultaneous pitches from one MIDI note.","Spectrum mostly sits below a few hundred Hz with resonant emphasis near cutoff; the top buzz stays understated.","Over 60 s the timbre and the echo width change without a repeating cycle.","In the Matt-safe version, pitch tracking shows no detune wobble."],
+ ["soundscape","horror","dark-ambient","dissonance","polychord","smooth-random","delay","game-audio"])

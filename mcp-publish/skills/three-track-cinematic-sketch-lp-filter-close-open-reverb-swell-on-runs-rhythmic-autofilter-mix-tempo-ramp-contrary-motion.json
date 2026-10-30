@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+  "name": "Fast cinematic sketch with only three tracks (piano, full-orchestra patch, synthetic rhythmic swell layer): contrary-motion second melody, transitions made only by automation (low-pass close then open with reverb-mix swells on runs, rhythmic auto-filter dry/wet rising into the chorus) and a tempo ramp of about 95 to 100 to 115 BPM",
+  "goal": "Write and arrange a short cinematic cue fast by limiting yourself to three tracks, so you finish the melody, harmony and form before choosing sounds. Without a separate FX track, every section change is made with automation on the existing tracks. This adds the 'three tracks, no FX track' limit and the tempo ramp to the section transition toolkit.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "0Jj5qQQzDLU",
+    "url": "https://www.youtube.com/watch?v=0Jj5qQQzDLU",
+    "title": "How to Compose Cinematic Music - FAST",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/0Jj5qQQzDLU/agent-skill-three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion.json"
+  },
+  "prerequisites": [
+    "A DAW with automation lanes and tempo automation",
+    "A piano, one full-ensemble orchestral patch (or a layered string/brass synth patch), and a synthetic swell/pulse layer",
+    "A big reverb, a low-pass filter and a rhythmic auto-filter/gate effect"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "list",
+      "description": "Two-chord emotional core plus variations",
+      "required": true
+    },
+    {
+      "name": "tempo_plan",
+      "type": "object",
+      "description": "Start, steady and climax BPM (about 95, 100, 115 in the video)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cue_sketch",
+      "type": "daw-session",
+      "description": "Intro, build run, main chorus and outro on three tracks"
+    },
+    {
+      "name": "automation_map",
+      "type": "list",
+      "description": "Filter, reverb-mix, auto-filter mix and tempo lanes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Library and plugin names in the video (piano, orchestra and swell libraries, an auto-filter plugin) are mapped to generic piano, ensemble, swell, filter and reverb modules.",
+    "Match drums to Matt's taste: if the cue has a pulse, bring percussion hits in early (within about 8 bars), not only at the chorus.",
+    "Tempo ramps only work when everything is MIDI or synth-generated; bounce audio stems after the ramp is final.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Track 1, piano: find two chords that feel emotional going back and forth, add variations, a high ostinato figure on top and a big roll-up. Light low/high EQ lift and a big reverb, then a compressor after the reverb to bring the tail forward.",
+      "tool": "piano + reverb + comp",
+      "expect": "Full piano bed that carries harmony and motion alone"
+    },
+    {
+      "n": 2,
+      "action": "Track 2, full orchestra in one patch: bass instruments play the chord roots. Write a second melody that answers the piano, moving root to third to fifth, and in contrary motion (when the piano goes up, it goes down). Ride expression (CC) for dynamics.",
+      "tool": "ensemble patch",
+      "expect": "Clear two-voice texture; voices separate by direction"
+    },
+    {
+      "n": 3,
+      "action": "End the build with a big string run into the main chorus. In the chorus, the brass/strings carry the main melody with high-woodwind sparkle in the same patch. Voice the sections separately only after the arrangement is done.",
+      "tool": "ensemble patch",
+      "expect": "Arrangement finished quickly without breaking flow"
+    },
+    {
+      "n": 4,
+      "action": "Track 3, synthetic swell layer for rhythm and texture: tweak attack/ADSR, then put a rhythmic auto-filter/envelope effect on it and automate its dry/wet, low in the intro and full in the chorus.",
+      "tool": "swell synth + auto-filter",
+      "expect": "The pulse is clearly stronger in the chorus than in the intro"
+    },
+    {
+      "n": 5,
+      "action": "Transitions without an FX track: on the piano run and the orchestra before each new section, automate the low-pass filter closing, then opening as the run lands. Automate reverb mix up during the run for a denser wash. Repeat a smaller close/open later for variation.",
+      "tool": "filter + reverb automation",
+      "expect": "Sections 'open up' at the downbeat; presence drops then returns"
+    },
+    {
+      "n": 6,
+      "action": "Tempo automation: start at about 95 BPM, settle at 100, then ramp to about 110-115 BPM during the last run into the main chorus. Keep the new tempo or ease back for the end section.",
+      "tool": "tempo lane",
+      "expect": "The lift into the chorus feels urgent without adding parts"
+    },
+    {
+      "n": 7,
+      "action": "Chorus extras: bring in cinematic drum patterns (in the orchestra patch's percussion layer) and have the synth double the bass roots plus the main melody. Outro mirrors the build: synth goes back to roots only.",
+      "tool": "arrangement",
+      "expect": "Chorus is the densest point; outro thins out symmetrically"
+    },
+    {
+      "n": 8,
+      "action": "Master: narrow the lows to mono, EQ plus compression on lows and mids with gentle upward compression on highs for clarity, light bus compression, final EQ and limiter.",
+      "tool": "master chain",
+      "expect": "Mono-safe low end, clear top, controlled peaks"
+    }
+  ],
+  "verification": [
+    "The session uses exactly three instrument tracks and no separate FX/riser track.",
+    "Each section boundary has a visible filter-close then open automation, and the reverb-mix rises on the run.",
+    "The tempo map shows a ramp of at least about 10 BPM into the main chorus.",
+    "The orchestra counter-line moves opposite to the piano melody at least at the main phrase peaks."
+  ],
+  "tags": [
+    "arrangement",
+    "cinematic",
+    "transitions",
+    "automation",
+    "tempo-ramp",
+    "song-structure",
+    "contrary-motion",
+    "constraint-workflow",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion"
+}

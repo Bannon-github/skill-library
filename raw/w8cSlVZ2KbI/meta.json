@@ -1,0 +1,43 @@
+{
+  "video_id": "w8cSlVZ2KbI",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=w8cSlVZ2KbI",
+  "fetched_at": "2026-10-30T16:36:43.887686+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": true,
+  "cue_count": 469,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/w8cSlVZ2KbI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/w8cSlVZ2KbI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

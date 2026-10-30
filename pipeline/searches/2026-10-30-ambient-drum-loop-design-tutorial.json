@@ -1,0 +1,112 @@
+{
+ "topic": "ambient drum loop design tutorial",
+ "date": "2026-10-30",
+ "params": {
+  "topic": "ambient drum loop design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "f-7N6B172V4",
+   "title": "How to Make Tech House Drums from Scratch | Tech House Production Tutorial",
+   "channel": "Tomorrowland Academy",
+   "duration": 455,
+   "view_count": 3837,
+   "url": "https://www.youtube.com/watch?v=f-7N6B172V4",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.29
+  },
+  {
+   "id": "OfdrYDJ-NnA",
+   "title": "How to make Ambient Music by destroying Cassette Tapes [Tape Loop Tutorial]",
+   "channel": "Jameson Nathan Jones",
+   "duration": 1515,
+   "view_count": 49968,
+   "url": "https://www.youtube.com/watch?v=OfdrYDJ-NnA",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.85
+  },
+  {
+   "id": "g11aNq3C7gg",
+   "title": "BETTER AMBIENT DNB IN 8 MINUTES | Ableton ambient drum and bass tutorial",
+   "channel": "GLUEUE",
+   "duration": 475,
+   "view_count": 19224,
+   "url": "https://www.youtube.com/watch?v=g11aNq3C7gg",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.64
+  },
+  {
+   "id": "N9M5FPEiStE",
+   "title": "Trip Hop Drums Tutorial: Return of the BOOM BAP 2021",
+   "channel": "Reason Studios",
+   "duration": 622,
+   "view_count": 285149,
+   "url": "https://www.youtube.com/watch?v=N9M5FPEiStE",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.23
+  },
+  {
+   "id": "e4zq3HQdcIY",
+   "title": "How To Make Ambient Future Garage Music | Drums (Part 7)",
+   "channel": "Venus Theory",
+   "duration": 1637,
+   "view_count": 46200,
+   "url": "https://www.youtube.com/watch?v=e4zq3HQdcIY",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.83
+  },
+  {
+   "id": "BcbSwdsC7W8",
+   "title": "How to Create Tasty DRUMS for Ambient / Lofi | Live 11",
+   "channel": "Will Hatton",
+   "duration": 862,
+   "view_count": 18999,
+   "url": "https://www.youtube.com/watch?v=BcbSwdsC7W8",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.64
+  },
+  {
+   "id": "14qGCPG-hPY",
+   "title": "HOW TO MAKE DRUMS FOR AMBIENT BEATS",
+   "channel": "6astard family",
+   "duration": 644,
+   "view_count": 7493,
+   "url": "https://www.youtube.com/watch?v=14qGCPG-hPY",
+   "query": "ambient drum loop design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.44
+  }
+ ],
+ "dropped": [
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "RqHKX4BDJ1Q",
+   "why": "duration 199s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

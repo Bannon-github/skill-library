@@ -1,0 +1,46 @@
+{
+  "video_id": "7xpMahhQoRA",
+  "title": "Parallel distortion by Nick Launay",
+  "url": "https://www.youtube.com/watch?v=7xpMahhQoRA",
+  "fetched_at": "2026-10-30T16:39:26.881325+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Mix with the Masters",
+  "duration": 595,
+  "ok": true,
+  "cue_count": 258,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/7xpMahhQoRA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/7xpMahhQoRA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

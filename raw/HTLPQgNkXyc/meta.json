@@ -1,0 +1,53 @@
+{
+  "video_id": "HTLPQgNkXyc",
+  "title": "ableton sound design | EXPONENTIAL RHYTHMS [3/5] Texture Mode",
+  "url": "https://www.youtube.com/watch?v=HTLPQgNkXyc",
+  "fetched_at": "2026-10-30T16:34:57.496509+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "asd",
+  "duration": 883,
+  "ok": true,
+  "cue_count": 193,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HTLPQgNkXyc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HTLPQgNkXyc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

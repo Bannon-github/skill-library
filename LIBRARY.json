@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-10-28T16:33:25.405181+00:00",
-  "entry_count": 209,
+  "updated_at": "2026-10-30T16:43:34.818710+00:00",
+  "entry_count": 219,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3206,6 +3206,136 @@
       "skills": [
         "epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
       ]
+    },
+    {
+      "id": "cinematic-synth-0Jj5qQQzDLU",
+      "video_id": "0Jj5qQQzDLU",
+      "url": "https://www.youtube.com/watch?v=0Jj5qQQzDLU",
+      "title": "How to Compose Cinematic Music - FAST",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0Jj5qQQzDLU/raw.txt",
+      "summary": "Skills: three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+      "skills": [
+        "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-2Yt1Ae91fv0",
+      "video_id": "2Yt1Ae91fv0",
+      "url": "https://www.youtube.com/watch?v=2Yt1Ae91fv0",
+      "title": "How to Make HORROR Soundscapes in Ableton Live",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/2Yt1Ae91fv0/raw.txt",
+      "summary": "Skills: one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+      "skills": [
+        "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ALHZHHPAdI0",
+      "video_id": "ALHZHHPAdI0",
+      "url": "https://www.youtube.com/watch?v=ALHZHHPAdI0",
+      "title": "Epic Drums 3 - Sound design tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ALHZHHPAdI0/raw.txt",
+      "summary": "Skills: synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
+      "skills": [
+        "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm"
+      ]
+    },
+    {
+      "id": "cinematic-synth-BcbSwdsC7W8",
+      "video_id": "BcbSwdsC7W8",
+      "url": "https://www.youtube.com/watch?v=BcbSwdsC7W8",
+      "title": "Spacious ambient / lo-fi drums that still have character",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/BcbSwdsC7W8/raw.txt",
+      "summary": "Skills: spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release",
+      "skills": [
+        "spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Oq5TCAKw64Y",
+      "video_id": "Oq5TCAKw64Y",
+      "url": "https://www.youtube.com/watch?v=Oq5TCAKw64Y",
+      "title": "How to make an ambient space pad in any synth.  Sound Design Tutorial 1",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Oq5TCAKw64Y/raw.txt",
+      "summary": "Skills: eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+      "skills": [
+        "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix"
+      ]
+    },
+    {
+      "id": "cinematic-synth-XRCwoFjZFMc",
+      "video_id": "XRCwoFjZFMc",
+      "url": "https://www.youtube.com/watch?v=XRCwoFjZFMc",
+      "title": "Synth + Pedal Sound Design Tutorial - Arturia MicroFreak and Zoom MS-70CDR",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/XRCwoFjZFMc/raw.txt",
+      "summary": "Skills: eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+      "skills": [
+        "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ZYn08bUlmG0",
+      "video_id": "ZYn08bUlmG0",
+      "url": "https://www.youtube.com/watch?v=ZYn08bUlmG0",
+      "title": "Epic Drums 2 - Sound design tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ZYn08bUlmG0/raw.txt",
+      "summary": "Skills: distant-explosion-boom-from-synth-tom-sub-enhance-6db-lp-reverb-lowcut-100hz-stereo-offset-quarter-delay-env-delayed-tremolo-autopan-low-comb-metal-drop",
+      "skills": [
+        "distant-explosion-boom-from-synth-tom-sub-enhance-6db-lp-reverb-lowcut-100hz-stereo-offset-quarter-delay-env-delayed-tremolo-autopan-low-comb-metal-drop"
+      ]
+    },
+    {
+      "id": "cinematic-synth-e4zq3HQdcIY",
+      "video_id": "e4zq3HQdcIY",
+      "url": "https://www.youtube.com/watch?v=e4zq3HQdcIY",
+      "title": "Future garage / ambient drum patterns, layer by layer, plus post-processing",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/e4zq3HQdcIY/raw.txt",
+      "summary": "Skills: future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit",
+      "skills": [
+        "future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit"
+      ]
+    },
+    {
+      "id": "cinematic-synth-vzlZ4GabrAs",
+      "video_id": "vzlZ4GabrAs",
+      "url": "https://www.youtube.com/watch?v=vzlZ4GabrAs",
+      "title": "3 SIMPLE transitions WITHOUT using risers or snare roll build ups",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/vzlZ4GabrAs/raw.txt",
+      "summary": "Skills: three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in",
+      "skills": [
+        "three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in"
+      ]
+    },
+    {
+      "id": "cinematic-synth-w8cSlVZ2KbI",
+      "video_id": "w8cSlVZ2KbI",
+      "url": "https://www.youtube.com/watch?v=w8cSlVZ2KbI",
+      "title": "Epic Drums 4 - Sound design tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/w8cSlVZ2KbI/raw.txt",
+      "summary": "Skills: resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce",
+      "skills": [
+        "resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3506,6 +3636,22 @@
         "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
         "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
         "epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
+      ]
+    },
+    {
+      "at": "2026-10-30T16:43:34.818710+00:00",
+      "batch": "2026-10-30-morning-hunt",
+      "added": [
+        "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+        "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+        "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
+        "spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release",
+        "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+        "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+        "distant-explosion-boom-from-synth-tom-sub-enhance-6db-lp-reverb-lowcut-100hz-stereo-offset-quarter-delay-env-delayed-tremolo-autopan-low-comb-metal-drop",
+        "future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit",
+        "three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in",
+        "resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce"
       ]
     }
   ]

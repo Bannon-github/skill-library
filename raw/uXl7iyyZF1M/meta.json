@@ -1,0 +1,52 @@
+{
+  "video_id": "uXl7iyyZF1M",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=uXl7iyyZF1M",
+  "fetched_at": "2026-10-30T16:38:40.803963+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": true,
+  "cue_count": 267,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uXl7iyyZF1M/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uXl7iyyZF1M/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en",
+        "3:youtube-translated:fr-FR",
+        "5:original-plus-machine-translation:fr-FR"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

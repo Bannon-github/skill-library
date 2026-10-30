@@ -7,7 +7,7 @@
     "/workspace/skill-library/mcp-server/server.py"
   ],
   "skills_root": "/workspace/skill-library/mcp-publish/skills",
-  "count": 211,
+  "count": 221,
   "skills": [
     {
       "id": "ambient-organic-pluck-pad-ladder-chorus-space",
@@ -3667,8 +3667,199 @@
         "cinematic-synth"
       ],
       "mcp_resource": "skill://epic-hybrid-drum-four-channel-synth-hit-parallel-pitch-drops-plus5-plus29-st-curved-fast-envelopes-noise-bursts-fm-tube-layered-with-acoustic-bleed-mics-scooped-eq-multiband-upward-comp"
+    },
+    {
+      "id": "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+      "name": "Fast cinematic sketch with only three tracks (piano, full-orchestra patch, synthetic rhythmic swell layer): contrary-motion second melody, transitions made only by automation (low-pass close then open with reverb-mix swells on runs, rhythmic auto-filter dry/wet rising into the chorus) and a tempo ramp of about 95 to 100 to 115 BPM",
+      "goal": "Write and arrange a short cinematic cue fast by limiting yourself to three tracks, so you finish the melody, harmony and form before choosing sounds. Without a separate FX track, every section change is made with automation on the existing tracks. This adds the 'three tracks, no FX track' limit and the tempo ramp to the section transition toolkit.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "cinematic",
+        "transitions",
+        "automation",
+        "tempo-ramp",
+        "song-structure",
+        "contrary-motion",
+        "constraint-workflow",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion"
+    },
+    {
+      "id": "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+      "name": "Atmospheric horror / unsettling soundscape from one held MIDI note and one simple synth: a chord MIDI effect stacks two clashing major triads (shifts +4 +7 +13 +17 +20), the two oscillators are spread far apart (+3 and -2 octaves), a low-pass around 170 Hz with resonance about 6, a smooth-random 'wander' LFO on oscillator shape, stereo voice mode, a 100%-wet ping-pong delay with fade on a parallel chain whose rate/time/filter/width are moved by a separate smooth-random LFO with a narrow min/max range, then a large reverb",
+      "goal": "Build an evolving, clashing, dark soundscape for horror or tense game moments from a single trigger note. Dissonance comes from the polychord, depth from the extreme pitch spread, and motion from smooth-random LFOs whose ranges are clamped so the movement stays understated.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "soundscape",
+        "horror",
+        "dark-ambient",
+        "dissonance",
+        "polychord",
+        "smooth-random",
+        "delay",
+        "game-audio",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider"
+    },
+    {
+      "id": "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
+      "name": "Make one synth epic-drum patch sound like an ensemble of drummers: copy it to about four instances on the same MIDI, give each a different global decay, snap-EQ frequency and pan (about ±40), and add per-note random envelope delay (about 0-22 ms, tighten to about 7 ms, too loose at 65 ms) so the hits flam naturally. Optionally drive a filter with a tempo-synced step sequencer for rhythmic patterns",
+      "goal": "Layer synthesized epic drums into a big, human-feeling ensemble quickly. Copying the same patch and MIDI usually just sounds like one louder hit. Put a few macro controls on the patch (global decay, snap frequency, global pitch, timing randomness) so each copy differs with a few slider moves, instead of editing each synth and the MIDI by hand.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "cinematic",
+        "ensemble",
+        "layering",
+        "humanize",
+        "random-timing",
+        "step-sequencer",
+        "trailer",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm"
+    },
+    {
+      "id": "spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release",
+      "name": "Add drums to a gorgeous slow pad track without crushing it: map the track's accents first, put kicks only in bar 1 (plus one ghost note) of each 4-bar phrase, snares on bars 2 and 4 with a big reverb only on the second round and a reversed-reverb swell before bar 4's downbeat, view the grid at double tempo (67 to 134 BPM) to find off-kick hat spots, alternate two hats' brightness with a 2-bar LFO on an EQ, add a ride in only two places, and let a quiet high-passed noise bed seep into the gaps, ducked by the percussion with about a 3 s release",
+      "goal": "Sparse drums that leave space for the pads, with variation across a 4-bar phrase instead of a busy repeating rock pattern (the 'Walk This Way' kick-snare-kick-kick-snare trap the student fell into).",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "ambient",
+        "lo-fi",
+        "sparse-groove",
+        "reverse-reverb",
+        "sidechain",
+        "noise-bed",
+        "drums-early",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release"
+    },
+    {
+      "id": "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+      "name": "Planetarium / Eno-style ambient space pad on any synth: sines at 0, +12 and +19 semitones, a triangle sub, two slow free-running smooth-random LFOs that modulate each other's rate and are mixed on every target, low-sustain amp envelope, gentle filter, and LFO-moved reverb/delay mix",
+      "goal": "Build the classic slow 'space / planetarium / Brian Eno' meditation pad from an init patch on any synth with three oscillators, two LFOs and a reverb and delay. Everything moves a little, and no two parameters move together, so the ear never locks onto a pattern. Pitch stays steady: all movement is in level, timbre and effect mix.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "ambient",
+        "space-pad",
+        "lfo",
+        "smooth-random",
+        "free-running",
+        "shimmer",
+        "meditation",
+        "steady-pitch",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix"
+    },
+    {
+      "id": "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+      "name": "Eerie, dreamy pad from a basic paraphonic supersaw patch plus outboard-style effects: cutoff key-tracked about 50%, long attack and release, two slow low-resonance phasers in stereo mode, about 0.5 s modulated delay, a second about 1.5 s ping-pong delay with a little more feedback and lower mix, a reverb with dwell at zero, then a looping (cyclic) envelope on cutoff whose rise/fall times an LFO slowly varies",
+      "goal": "Turn an init-patch supersaw into a wide, whooshing, dreamy pad using mainly a phaser-delay-reverb chain. The effects do most of the work: slow stereo phasing for the whoosh, two delay lengths for stereo spread, and an irregular filter breath from a cycling envelope whose speed drifts. Fills the phaser-pad gap with a non-high-pass recipe.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "pad",
+        "phaser",
+        "ambient",
+        "dreamy",
+        "stereo-width",
+        "delay",
+        "cyclic-envelope",
+        "supersaw",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall"
+    },
+    {
+      "id": "distant-explosion-boom-from-synth-tom-sub-enhance-6db-lp-reverb-lowcut-100hz-stereo-offset-quarter-delay-env-delayed-tremolo-autopan-low-comb-metal-drop",
+      "name": "Turn a synth tom-style epic drum hit into a distant low explosion / drop boom: harmonic bass enhance plus an octave-down sub, a 6 dB/oct low-pass instead of an attack boost, reverb low-cut around 100 Hz at 24 dB/oct, a band-limited quarter-note delay with about 7 ms early/late L/R offsets, a parallel tremolo or auto-pan tail whose depth is faded in by a delayed envelope, and an optional low comb filter (about 14-40 Hz) for a modern metallic drop",
+      "goal": "Make a far-away 'whoa, what happened' cinematic boom for drops and section hits, starting from a synthesized drum hit (see the epic hybrid drum / taiko-from-noise skills for building the hit itself). This skill adds the distance, sub and tail processing: a rumbling, darker boom with a moving stereo tail.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "cinematic",
+        "boom",
+        "sub",
+        "reverb",
+        "stereo-delay",
+        "tremolo",
+        "comb-filter",
+        "trailer",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://distant-explosion-boom-from-synth-tom-sub-enhance-6db-lp-reverb-lowcut-100hz-stereo-offset-quarter-delay-env-delayed-tremolo-autopan-low-comb-metal-drop"
+    },
+    {
+      "id": "future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit",
+      "name": "Build a loose future-garage/ambient drum groove in layers: halftime kick and rim, a guide 'base hat' on every 'and', accent hats and rims on hand-swung 16ths (some early, some late, some on the grid), flair hats from one sample with a reversed copy, then faded Foley chops for crunch. Process it with LP24 on the kick (about 1 kHz, 30% resonance) and a band-passed rim (about 1.5 kHz), a frequency shift on the hat group (example -898 Hz), the rims vocoding themselves with chorus, a fast unsynced auto-pan and phaser on Foley (about 6.1 Hz), a half-note volume duck on the hat group, and a 12-bit lo-fi sampler with gentle clip/saturation on the drum bus",
+      "goal": "A restrained, organic, swinging drum groove that sits behind ambient pads (lo-fi, in the background, not in-your-face like dubstep/D&B), varied every 2-4 bars so it doesn't sound loopy.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "future-garage",
+        "ambient",
+        "swing",
+        "micro-timing",
+        "foley",
+        "lo-fi",
+        "frequency-shifter",
+        "drums-early",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit"
+    },
+    {
+      "id": "three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in",
+      "name": "Three section transitions with no big risers or snare rolls, for simple two-chord tracks: (1) the lead plays alone while the pad's filter closes, a simple sweep and a lead variation, then kick, hats and bass drop in; (2) keep open hats, filter the pad down, put a clap on the beat with no kick and a high-passed bass, loop a lead variation, then one quarter-note tom hit opens the drop with the bass filter removed; (3) strip to the hat loop, tease lead variations (velocity, pan, spacing) with no kick or bass, then a very short fill and everything returns at once",
+      "goal": "Make transitions by subtraction and re-entry instead of piling on FX. Simple material needs simple transitions. The kick-plus-bass re-entry is the payoff, and the kick acts as the track's metronome that listeners wait for. A riser-free counterpart to the section transition toolkit and the three-track automation sketch.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "arrangement",
+        "transitions",
+        "song-structure",
+        "subtraction",
+        "drops",
+        "drums-early",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in"
+    },
+    {
+      "id": "resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce",
+      "name": "Resample a synthesized epic drum into a reusable sampler instrument: record 8 spaced hits on a velocity ramp into auto velocity-split layers (soften the velocity-to-amp curve so the softest layer is still audible), or record 8 slightly different hits as round-robins for fast repeats (16ths/32nds without machine-gunning), add velocity-to-low-pass (floor about 1-1.5 kHz) and small start-time jitter, and bounce a panned 4-5 instance ensemble as its own multisample",
+      "goal": "Stop running several synth instances for one drum. Capture the epic drum (see the synth drum ensemble skill for the multi-instance setup) into a sampler with velocity layers or round-robins, so it can be reused across songs, played in fast rolls, and loaded into a Web Audio sample player for Polyrhythm Studio.",
+      "domain": "cinematic-synth",
+      "tags": [
+        "drums",
+        "sampling",
+        "round-robin",
+        "velocity-layers",
+        "cinematic",
+        "humanize",
+        "web-audio",
+        "trailer",
+        "portable",
+        "cinematic-synth"
+      ],
+      "mcp_resource": "skill://resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce"
     }
   ],
-  "updated_at": "2026-10-28T16:33:25.405181+00:00",
+  "updated_at": "2026-10-30T16:43:34.818710+00:00",
   "aliases_path": "/workspace/skill-library/mcp-publish/aliases.json"
 }

@@ -1,0 +1,64 @@
+{
+  "video_id": "BcbSwdsC7W8",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=BcbSwdsC7W8",
+  "fetched_at": "2026-10-30T16:39:04.076817+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": true,
+  "cue_count": 331,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/BcbSwdsC7W8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/BcbSwdsC7W8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en",
+        "3:youtube-translated:ar",
+        "5:original-plus-machine-translation:ar"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

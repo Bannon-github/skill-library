@@ -1,0 +1,46 @@
+{
+  "video_id": "k7ZJge24Xbo",
+  "title": "FAW Circle2 Sound Design Tutorial 9 - Analogue Underwater Pad",
+  "url": "https://www.youtube.com/watch?v=k7ZJge24Xbo",
+  "fetched_at": "2026-10-30T16:33:43.756741+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Future Audio Workshop",
+  "duration": 417,
+  "ok": true,
+  "cue_count": 120,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/k7ZJge24Xbo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/k7ZJge24Xbo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}
