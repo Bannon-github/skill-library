@@ -1,0 +1,190 @@
+{
+ "seed": 1031,
+ "title": "Lantern Drift",
+ "key": "A minor (Am add9 / Fmaj7 vamp)",
+ "category": "pad",
+ "tailSec": 6.0,
+ "tempo": [
+  95,
+  97,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  104,
+  108,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  112,
+  106,
+  100,
+  100,
+  100
+ ],
+ "sections": {
+  "drumsIn": 4,
+  "build": 4,
+  "run": 11,
+  "chorus": 12,
+  "smallRun": 17,
+  "outro": 24,
+  "end": 28
+ },
+ "chords": [
+  [
+   45,
+   [
+    57,
+    59,
+    60,
+    64
+   ]
+  ],
+  [
+   41,
+   [
+    57,
+    60,
+    64,
+    65
+   ]
+  ]
+ ],
+ "pad": {
+  "saws": 7,
+  "detuneCents": 18,
+  "cutoff": 1800,
+  "keytrack": 0.5,
+  "res": 1.3,
+  "atk": 1.6,
+  "rel": 2.5,
+  "cycRise": 1.8,
+  "cycFall": 2.6,
+  "cycAmt": 0.8,
+  "lfoHz": 0.05,
+  "lfoToTimes": 0.45,
+  "lfoToCut": 0.25,
+  "phaserRates": [
+   0.07,
+   0.11
+  ],
+  "phaserDepth": 0.75,
+  "phaserFb": 0.2,
+  "phaserMix": 0.5,
+  "dly1": {
+   "t": 0.5,
+   "fb": 0.35,
+   "mix": 0.25,
+   "mod": 0.004
+  },
+  "dly2": {
+   "t": 1.5,
+   "fb": 0.45,
+   "mix": 0.15
+  },
+  "verbRt": 4.5,
+  "verbMix": 0.35,
+  "level": 0.68,
+  "spread": 1.6
+ },
+ "piano": {
+  "level": 0.42,
+  "verbRt": 3.8,
+  "verbMix": 0.4,
+  "lowShelf": 2,
+  "highShelf": 3
+ },
+ "orch": {
+  "bassLevel": 0.5,
+  "counterLevel": 0.28,
+  "leadLevel": 0.36,
+  "sparkle": 0.25
+ },
+ "swell": {
+  "level": 0.26,
+  "wetIntro": 0.15,
+  "wetChorus": 1.0,
+  "atk": 1.2,
+  "fcBase": 600,
+  "fcOct": 3.0
+ },
+ "drums": {
+  "instances": [
+   {
+    "decay": 1.0,
+    "snap": 2200,
+    "pan": 0.0,
+    "rand": 0.5,
+    "pitch": 0
+   },
+   {
+    "decay": 1.35,
+    "snap": 1400,
+    "pan": -0.4,
+    "rand": 0.68,
+    "pitch": -2
+   },
+   {
+    "decay": 0.8,
+    "snap": 3200,
+    "pan": 0.4,
+    "rand": 0.6,
+    "pitch": 1
+   },
+   {
+    "decay": 1.15,
+    "snap": 2600,
+    "pan": 0.15,
+    "rand": 0.09,
+    "pitch": -1
+   }
+  ],
+  "randMaxMs": 44,
+  "level": 0.6,
+  "shaker": 0.09,
+  "stepSeq": [
+   1,
+   0.3,
+   0.6,
+   0.2,
+   1,
+   0.4,
+   0.25,
+   0.7,
+   1,
+   0.3,
+   0.6,
+   0.2,
+   0.9,
+   0.5,
+   0.8,
+   0.35
+  ],
+  "duck": 0.3
+ },
+ "master": {
+  "shelfDb": 0,
+  "satDrive": 1.15,
+  "sideHpHz": 120,
+  "fadeOutSec": 6.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.5
+ },
+ "runDepth": [
+  0.65,
+  0.4
+ ]
+}
