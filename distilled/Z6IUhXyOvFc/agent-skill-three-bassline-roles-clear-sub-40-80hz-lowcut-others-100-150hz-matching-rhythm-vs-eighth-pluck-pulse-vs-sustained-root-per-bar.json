@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar",
+  "name": "Clear-bass workflow: low-cut every other part at 100-150 Hz, keep bass notes at 40-80 Hz, then audition three bass-line roles (matching-rhythm, eighth-note pulsing pluck with saw plus same-octave sine and a duck, sustained root per bar) and pick the one that fits",
+  "goal": "Give a track a clear, satisfying low end by first making room for the bass and then writing the bass line three ways from the chord roots: a matching bass that copies the melody's rhythm, a pulsing eighth-note pluck bass, and a sustained one-note-per-bar bass. Audition all three against the track and keep the one that fits best. The delta against our bass sound-design skills is the bass-line writing roles and the cleanup order, not the patch.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Z6IUhXyOvFc",
+    "url": "https://www.youtube.com/watch?v=Z6IUhXyOvFc",
+    "title": "I Fix A Beginner Producer's Weak Bass (in under 15 minutes)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Z6IUhXyOvFc/agent-skill-three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar.json"
+  },
+  "prerequisites": [
+    "Any DAW with a piano roll and a spectrum analyzer",
+    "Any synth with a saw/sine oscillator, low-pass filter and a spare envelope",
+    "A sidechain/volume-duck tool or LFO on gain"
+  ],
+  "inputs": [
+    {
+      "name": "track",
+      "type": "project",
+      "description": "Song or loop with chords and a melody, before the bass is written",
+      "required": true
+    },
+    {
+      "name": "chord_roots",
+      "type": "list",
+      "description": "Root note of each chord",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bass_options",
+      "type": "midi+audio",
+      "description": "Three bass tracks (matching, pulsing, sustained) for A/B choice"
+    },
+    {
+      "name": "clean_mix",
+      "type": "project",
+      "description": "Other parts low-cut so the sub range belongs to the bass"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Do not layer several basses while learning; one clear bass is easier to mix.",
+    "Keep other instruments out of the sub range: low-cut them somewhere around 100-150 Hz.",
+    "Glide on the sustained bass is optional; if used, keep it short and only between notes, never as a random or LFO pitch wobble.",
+    "Steady pitch (Matt's taste): no random pitch or detune wobble; keep unison detune small and static.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only pad before that.",
+    "Polyrhythm Studio / Web Audio mapping: OscillatorNode + GainNode per layer, BiquadFilterNode (lowpass/highpass/allpass) for filters, DelayNode/ConvolverNode for space, AudioParam automation or slow custom LFOs for movement.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Clean up first: mute or delete the old bass layers, thin out muddy duplicate chord layers, reduce heavy reverb on the lead/piano, and leave small gaps between melody notes so it reads more rhythmic.",
+      "tool": "DAW mixer / piano roll",
+      "expect": "A clear melody on its own, with space for a bass"
+    },
+    {
+      "n": 2,
+      "action": "Low-cut every non-bass instrument at a sweet spot between about 100 and 150 Hz. Check the analyzer: nothing else should spill into the sub range.",
+      "tool": "EQ / analyzer",
+      "expect": "Sub range is empty except for the bass"
+    },
+    {
+      "n": 3,
+      "action": "Make the bass patch: init synth, shift the octave until the fundamental sits below 100 Hz with notes landing between about 40 and 80 Hz, then use a tight low-pass to focus any waveform toward its lowest frequencies. Try several waveforms; add mid presence by opening the cutoff slightly or with light distortion.",
+      "tool": "synth",
+      "expect": "A full, focused bass tone in the 40-80 Hz zone"
+    },
+    {
+      "n": 4,
+      "action": "Option 1, matching bass: copy the chord roots to a new track and cut them to the exact rhythm of the melody, so bass and melody hit together.",
+      "tool": "piano roll",
+      "expect": "Bass mirrors the melody rhythm and harmonizes it"
+    },
+    {
+      "n": 5,
+      "action": "If any bass note gets lost in the chords or piano, move that note down an octave so the two parts sit in separate ranges.",
+      "tool": "piano roll",
+      "expect": "Every bass note stays audible and clear"
+    },
+    {
+      "n": 6,
+      "action": "Option 2, pulsing bass: eighth notes (8 per bar) following the chord roots. Make it a pluck: put a spare envelope on a fully closed cutoff with sustain at zero; use a saw and add a sine at the same octave to thicken it; add a light sidechain-style duck to enhance the pulse.",
+      "tool": "synth + duck",
+      "expect": "Tight, driving pluck pulse on the roots (a 16th-note version moves twice as fast)"
+    },
+    {
+      "n": 7,
+      "action": "Option 3, sustained bass: one bass note per bar on the chord root. If it holds the energy back, try mono with a short glide between notes, or a wider high-unison saw version, optionally with a filter envelope; remember a mono sub sounds more anchored.",
+      "tool": "synth",
+      "expect": "Relaxed, reliable foundation that works with almost any chords"
+    },
+    {
+      "n": 8,
+      "action": "Play the track with each option and pick the one that fits: matching moves the melody along, pulsing gives a tighter foundation, sustained is the calmest.",
+      "tool": "DAW",
+      "expect": "One chosen bass role, the others kept as alternates"
+    }
+  ],
+  "verification": [
+    "No other track has significant energy below about 100 Hz on the analyzer.",
+    "The bass fundamentals sit roughly between 40 and 80 Hz.",
+    "Three bass versions exist (matching, pulsing eighths, sustained per bar) and all follow the chord roots.",
+    "No bass note is masked by the chords; masked notes were moved down an octave."
+  ],
+  "tags": [
+    "bass",
+    "bassline",
+    "sub-bass",
+    "mix-clarity",
+    "arrangement",
+    "punchy-bass",
+    "steady-pitch",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar"
+}

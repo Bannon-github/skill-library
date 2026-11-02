@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "id": "mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return",
+  "name": "Mix by arrangement in an ambient-techno track: a kick-plus-sub made only from a self-oscillating filter (snappy envelopes, sustain above zero, key-tracked, tuned to the root), a low and a mid/high pad pair, sequences on the same chord tones, and sections where pads rotate out so the kick, bass and main pad have room",
+  "goal": "Build a clean ambient-techno arrangement where most of the mixing happens by choosing which parts play when. Make the kick and sub from a self-oscillating filter, voice pads as a low/high pair without a third, derive sequences from the same chord tones, and rotate pads out before kick, bass and the main pad enter. Use a high-passed kick before the drums return and end with pads muted and only the sequences left.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "CwRN2ZVZweA",
+    "url": "https://www.youtube.com/watch?v=CwRN2ZVZweA",
+    "title": "Ambient track walkthrough - how to make music like Martin Stürtzer",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/CwRN2ZVZweA/agent-skill-mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return.json"
+  },
+  "prerequisites": [
+    "Synth with a self-oscillating resonant filter, filter key-tracking and separate filter/amp envelopes",
+    "DAW with clips/piano roll, delay and reverb",
+    "Bitcrusher and a beat-repeat/glitch effect with adjustable loop length (optional)"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Track root (example: F sharp)",
+      "required": true
+    },
+    {
+      "name": "chord",
+      "type": "list",
+      "description": "Chord tones without a third, e.g. root, fifth, seventh, plus a fourth for sequences",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "project",
+      "description": "Sectioned track with pads, sequences, kick+sub and percussion that never all play at once"
+    },
+    {
+      "name": "kick_sub_patch",
+      "type": "synth-preset",
+      "description": "Self-oscillating filter kick with sub tail"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Tune the self-oscillating filter cutoff exactly to the root note, or the kick/sub will sound dissonant.",
+    "Do not run every pad at once; the arrangement is the mix. The master chain stays nearly empty.",
+    "Per-note random modulation may target FM amount or timbre only, never pitch. Steady pitch (Matt's taste): no random pitch or detune wobble; keep unison detune small and static.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only pad before that. The source brings the kick in after a pad intro; shorten that intro to about 8 counts.",
+    "Rebuild pads from generic saw/sine unison patches; no third-party presets.",
+    "Polyrhythm Studio / Web Audio mapping: OscillatorNode + GainNode per layer, BiquadFilterNode (lowpass/highpass/allpass) for filters, DelayNode/ConvolverNode for space, AudioParam automation or slow custom LFOs for movement.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Kick + sub: set all oscillator levels to zero so only the self-oscillating filter sounds. Give the filter envelope a very snappy decay, give the amp envelope a snappy decay with sustain above zero so a sub tone rings after the attack, and modulate the filter envelope amount by key tracking so higher notes hit higher.",
+      "tool": "synth",
+      "expect": "A punchy kick with a sustained tuned sub after the click"
+    },
+    {
+      "n": 2,
+      "action": "Tune the filter cutoff to the track root. Write the kick clip with notes in up to three octaves (root plus an extra note two octaves up) for variation.",
+      "tool": "synth + clip",
+      "expect": "Kick and sub in key with the track"
+    },
+    {
+      "n": 3,
+      "action": "Percussion: a short drum hit through a bitcrusher and a repeat/reverse glitch effect whose loop is 14 steps against the 16-step clip, then a little delay and reverb. Add a simple hi-hat on bar 3 later.",
+      "tool": "drum rack + FX",
+      "expect": "Shifting, self-varying percussion with no extra programming"
+    },
+    {
+      "n": 4,
+      "action": "Pads as a pair: a mid/high chord pad of root, fifth and seventh with no third (major/minor stays ambiguous), held 4 bars then 4 bars of rest, through a slow delay and a big reverb; plus a very low pad on the root. The pair together sets the mood.",
+      "tool": "synth + delay/reverb",
+      "expect": "Spacious, ambiguous chord mood split across low and mid/high ranges"
+    },
+    {
+      "n": 5,
+      "action": "Sequence: a single sine-like FM oscillator playing the same chord tones (root, fifth, seventh, plus the fourth) as a 4-bar improvised line; random per-note FM amount from two random LFOs, a little unison, a plucky envelope with short decay running into a longer release, filter fully open, delay and reverb on the insert. Optionally add a clock-synced repeat sparkle an octave up.",
+      "tool": "FM synth",
+      "expect": "Lush, gently varying pluck line built from the pad's notes"
+    },
+    {
+      "n": 6,
+      "action": "Second sequence later: a lightly detuned saw unison patch with snappy filter and amp envelopes, written as a 3-bar pattern (not 4) so it shifts against the 4-bar sections; ride its filter cutoff by hand through the track.",
+      "tool": "synth",
+      "expect": "Evolving polymetric counter-line"
+    },
+    {
+      "n": 7,
+      "action": "Arrange by decluttering: open with the pads, add the first sequence, then let one pad die out so only the sequence remains, which makes room for the kick, bass and main pad to enter. Keep the opening pads silent while the main pad plays.",
+      "tool": "arrangement",
+      "expect": "Each new part is clearly heard; nothing gets muddy"
+    },
+    {
+      "n": 8,
+      "action": "Rotate: after the main pad plays twice, bring the opening pads back with kick and bass; then add the percussion and a simple high pad of three long notes to open the top range, muting the other pads.",
+      "tool": "arrangement",
+      "expect": "The arrangement opens up without piling layers"
+    },
+    {
+      "n": 9,
+      "action": "Break and return: stop kick and bass for a while; before they return, high-pass the kick for a bar or two, then bring them back full. Use the same high-pass before the final fade.",
+      "tool": "filter automation",
+      "expect": "A tension-and-release break with a smooth drum re-entry"
+    },
+    {
+      "n": 10,
+      "action": "Ending: mute all pads and let only the two sequences play out.",
+      "tool": "arrangement",
+      "expect": "A light, sequence-only outro"
+    }
+  ],
+  "verification": [
+    "The kick/sub patch has all oscillators at zero, and its tone is in tune with the track root.",
+    "At no point are all pads playing together; the opening pads are silent while the main pad plays.",
+    "The glitch loop length differs from the clip length (14 vs 16 steps), and the second sequence is 3 bars long.",
+    "The kick is high-passed for the bars before each return.",
+    "With Matt's taste applied, the kick enters by about 12 s."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "sections",
+    "drums",
+    "kick",
+    "sub-bass",
+    "self-oscillating-filter",
+    "pads",
+    "ambient-techno",
+    "polymeter",
+    "drums-early",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return"
+}

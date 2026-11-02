@@ -1,0 +1,46 @@
+{
+  "video_id": "vYRIXi4A6CU",
+  "title": "Beginners Tutorial- How to generate unique binaural+Isochronic tones with SERUM plugin in Fl Studio",
+  "url": "https://www.youtube.com/watch?v=vYRIXi4A6CU",
+  "fetched_at": "2026-11-02T17:42:37.379801+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Binousic",
+  "duration": 402,
+  "ok": true,
+  "cue_count": 61,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/vYRIXi4A6CU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/vYRIXi4A6CU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

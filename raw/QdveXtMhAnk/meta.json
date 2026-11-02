@@ -1,0 +1,46 @@
+{
+  "video_id": "QdveXtMhAnk",
+  "title": "Tutorial #36 | Flanger Sequence Pads",
+  "url": "https://www.youtube.com/watch?v=QdveXtMhAnk",
+  "fetched_at": "2026-11-02T17:34:46.081935+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Sharpend",
+  "duration": 574,
+  "ok": true,
+  "cue_count": 174,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/QdveXtMhAnk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/QdveXtMhAnk/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

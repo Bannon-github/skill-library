@@ -1,0 +1,46 @@
+{
+  "video_id": "Y3eB64YwCow",
+  "title": "How to Layer & Arrange Atmos/Ambient Sounds for Minimal House",
+  "url": "https://www.youtube.com/watch?v=Y3eB64YwCow",
+  "fetched_at": "2026-11-02T17:50:42.529140+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Durosai",
+  "duration": 845,
+  "ok": true,
+  "cue_count": 336,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Y3eB64YwCow/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Y3eB64YwCow/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

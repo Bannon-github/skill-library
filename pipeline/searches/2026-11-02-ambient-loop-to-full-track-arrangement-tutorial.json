@@ -1,0 +1,120 @@
+{
+ "topic": "ambient loop to full track arrangement tutorial",
+ "date": "2026-11-02",
+ "params": {
+  "topic": "ambient loop to full track arrangement tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "CwRN2ZVZweA",
+   "title": "Ambient track walkthrough - how to make music like Martin Stürtzer (explained by Martin Stürtzer)",
+   "channel": "Martin Stürtzer",
+   "duration": 1681,
+   "view_count": 14974,
+   "url": "https://www.youtube.com/watch?v=CwRN2ZVZweA",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.59
+  },
+  {
+   "id": "5A8mI4l-erg",
+   "title": "Make a Full Ambient Loop in Bitwig Studio Using Only Native Tools (Beginner Tutorial)",
+   "channel": "EtherLoops",
+   "duration": 1392,
+   "view_count": 312,
+   "url": "https://www.youtube.com/watch?v=5A8mI4l-erg",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.75
+  },
+  {
+   "id": "tAHpU-qkAMU",
+   "title": "How to Arrange a 1990s Ambient Jungle Song - Template and Tutorial",
+   "channel": "arcologies",
+   "duration": 1394,
+   "view_count": 6387,
+   "url": "https://www.youtube.com/watch?v=tAHpU-qkAMU",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.4
+  },
+  {
+   "id": "Qjx4xRXErXk",
+   "title": "It's Magic! // Beginner Friendly Ambient Track Tutorial",
+   "channel": "S1gns Of L1fe",
+   "duration": 2022,
+   "view_count": 6570,
+   "url": "https://www.youtube.com/watch?v=Qjx4xRXErXk",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.91
+  },
+  {
+   "id": "S_HbhNRQJFY",
+   "title": "From Idea to Ambient Track — Ether Harmony & Bitwig Studio 6 Beginner Workflow",
+   "channel": "EtherLoops",
+   "duration": 661,
+   "view_count": 547,
+   "url": "https://www.youtube.com/watch?v=S_HbhNRQJFY",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.87
+  },
+  {
+   "id": "NZJ9bvuyII4",
+   "title": "How to Make Lazy Ambient Music in Session View",
+   "channel": "wowflower",
+   "duration": 867,
+   "view_count": 47377,
+   "url": "https://www.youtube.com/watch?v=NZJ9bvuyII4",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.84
+  },
+  {
+   "id": "PE3c8J6glho",
+   "title": "Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)",
+   "channel": "EtherLoops",
+   "duration": 1117,
+   "view_count": 300,
+   "url": "https://www.youtube.com/watch?v=PE3c8J6glho",
+   "query": "ambient loop to full track arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.74
+  }
+ ],
+ "dropped": [
+  {
+   "id": "0bB8rWEcScA",
+   "why": "already known"
+  },
+  {
+   "id": "C871ckX4GfQ",
+   "why": "already known"
+  },
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "WncucZ9hnM4",
+   "why": "duration 11078s"
+  },
+  {
+   "id": "sFckKx8rsCs",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

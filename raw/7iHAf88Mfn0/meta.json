@@ -1,0 +1,46 @@
+{
+  "video_id": "7iHAf88Mfn0",
+  "title": "\"ambient?\" talkie: ep 24 - Settle Down TRACK BREAKDOWN",
+  "url": "https://www.youtube.com/watch?v=7iHAf88Mfn0",
+  "fetched_at": "2026-11-02T17:52:18.925495+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "tworoundrobins",
+  "duration": 1725,
+  "ok": true,
+  "cue_count": 558,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/7iHAf88Mfn0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/7iHAf88Mfn0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

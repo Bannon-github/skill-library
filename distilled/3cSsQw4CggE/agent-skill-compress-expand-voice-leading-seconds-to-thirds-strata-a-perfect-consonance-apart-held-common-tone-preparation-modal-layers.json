@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
+  "name": "Cinematic voice-leading rule for pad/string layers: each two-voice layer alternates compressed seconds and expanded thirds, keeps one common tone between moves, and each new layer starts a perfect fourth, fifth or octave from the layer above, all inside one mode",
+  "goal": "Write lush, emotional cinematic chord textures without analyzing harmony: build two-voice layers (strata) that alternate between a second and a third, keep one note held into each new interval, and stack further layers starting a perfect consonance (4th, 5th or octave) away from the layer above, staying inside one mode. Works for synth strings, pad voices or choir layers.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "3cSsQw4CggE",
+    "url": "https://www.youtube.com/watch?v=3cSsQw4CggE",
+    "title": "The only trick you need for Epic Emotional Cinematic composing",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/3cSsQw4CggE/agent-skill-compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers.json"
+  },
+  "prerequisites": [
+    "Any DAW or notation with a piano roll",
+    "Basic interval names: second, third, fourth, fifth, octave",
+    "A chosen mode/scale (the example is a modal F)"
+  ],
+  "inputs": [
+    {
+      "name": "mode",
+      "type": "string",
+      "description": "One scale/mode to stay inside (white-key mode works)",
+      "required": true
+    },
+    {
+      "name": "layers",
+      "type": "int",
+      "description": "Number of strata (2-4 typical: e.g. high strings, low strings, woodwind-like line)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "voiced_texture",
+      "type": "midi",
+      "description": "Layered two-voice strata with prepared dissonances and contour"
+    },
+    {
+      "name": "render",
+      "type": "audio",
+      "description": "Pads/strings playing the texture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Stay inside a single mode; you do not need to know the chord names.",
+    "Seconds are the compressed/dissonant state, thirds the imperfect-consonant release; alternate them.",
+    "Synth voices playing this keep steady pitch: no random pitch wobble; vibrato, if any, slow and tiny.",
+    "Composition rule only; renders with any pad, string or choir patch.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only pad before that.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a mode and write the top layer as two voices that alternate a second (compressed) and a third (expanded), e.g. a second that falls out to a third.",
+      "tool": "piano roll",
+      "expect": "A two-voice line that breathes in and out"
+    },
+    {
+      "n": 2,
+      "action": "On each move, keep one of the two notes from the previous interval (a held common tone or preparation) and move only the other.",
+      "tool": "piano roll",
+      "expect": "Each new dissonance sounds prepared and smooth"
+    },
+    {
+      "n": 3,
+      "action": "Start the second layer a perfect consonance (4th, 5th or octave) below the top layer's top note, and run it in the opposite phase: where the top layer is compressed, this one starts expanded, and vice versa. Being less strict about common tones is OK here.",
+      "tool": "piano roll",
+      "expect": "Two strata that interact, giving thick, counterpoint-like chords"
+    },
+    {
+      "n": 4,
+      "action": "Add further layers the same way (e.g. a scale-wise woodwind-like line), each starting a perfect consonance away from the layer above. Let some voices move in parallel and some in contrary motion.",
+      "tool": "piano roll",
+      "expect": "Rich, modal texture with contrary motion"
+    },
+    {
+      "n": 5,
+      "action": "For a growing, expansive feeling, let the layers move wider and wider apart over the phrase.",
+      "tool": "piano roll",
+      "expect": "The texture opens up toward the climax"
+    },
+    {
+      "n": 6,
+      "action": "Assign layers to separate pad/string voices and listen; adjust by ear rather than analysis.",
+      "tool": "synth/sampler",
+      "expect": "An emotional cinematic texture with prepared dissonances"
+    }
+  ],
+  "verification": [
+    "Every two-voice layer alternates seconds and thirds.",
+    "Consecutive intervals in the top layer share one held note.",
+    "Each layer starts a 4th, 5th or octave from the layer above.",
+    "All notes belong to the chosen mode."
+  ],
+  "tags": [
+    "composition",
+    "voice-leading",
+    "harmony",
+    "cinematic",
+    "strings",
+    "pads",
+    "arrangement",
+    "modal",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers"
+}

@@ -1,0 +1,82 @@
+{
+  "video_id": "3rCUdTDodrc",
+  "title": "Sound Design Tutorial: Cinematic Whoosh hit",
+  "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+  "fetched_at": "2026-11-02T17:57:02.927593+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Simon Haglund Sounds",
+  "duration": 1172,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.8
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 10.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+  "name": "Flanger sequence pad: triangle plus a pulse one octave up whose level fades out and in once per bar, low-pass, a flanger with its own rate at zero whose delay time is stepped by a square/synced LFO for an arpeggio-like comb movement, then resample pitched down with rising delay/reverb mix for a transition",
+  "goal": "Make a pad on held chords that moves like an arpeggio without playing extra notes: freeze the flanger's own sweep and step its delay time with a square or saw LFO so the comb peaks jump between positions. Then resample it slowed down into an ambient transition whose delay/reverb mix rises as the sample plays.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "QdveXtMhAnk",
+    "url": "https://www.youtube.com/watch?v=QdveXtMhAnk",
+    "title": "Tutorial #36 | Flanger Sequence Pads",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/QdveXtMhAnk/agent-skill-flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition.json"
+  },
+  "prerequisites": [
+    "Any synth with two oscillators, a low-pass filter, LFOs that can be retriggered or tempo-synced, and a flanger whose rate can be zero (or a modulated short delay with feedback)",
+    "Optional vocoder/formant effect and a sampler or audio track for resampling"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "A looping chord pattern; this is a chord pad, single notes sound thin",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "bpm",
+      "description": "Project tempo for the synced LFOs",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sequence_pad",
+      "type": "synth-preset",
+      "description": "Pad with stepped flanger movement"
+    },
+    {
+      "name": "transition_fx",
+      "type": "audio",
+      "description": "Pitched-down resample with rising wet tail"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Keep the flanger's own rate at zero; all movement comes from the stepped delay-time LFO.",
+    "Pitch stays steady (Matt's taste): add a few ms of slew on the stepped flanger-time LFO so steps do not click or pitch-glitch, and keep unison detune low and static on the main oscillator. No random pitch modulation.",
+    "Resampling down an octave is a deliberate, fixed transposition for transitions, not a wobble.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only pad before that.",
+    "Polyrhythm Studio / Web Audio mapping: OscillatorNode + GainNode per layer, BiquadFilterNode (lowpass/highpass/allpass) for filters, DelayNode/ConvolverNode for space, AudioParam automation or slow custom LFOs for movement.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc A: triangle with about 3 unison voices and low detune (it plays all the time). Osc B: pulse/square one octave up, level at zero, slightly more voices/detune.",
+      "tool": "synth",
+      "expect": "Mellow base with a brighter octave layer ready"
+    },
+    {
+      "n": 2,
+      "action": "Put an LFO on osc B's level at a rate of about one bar, retriggered, with a shape that fades out and back in (or drops fast and comes back up slowly).",
+      "tool": "LFO",
+      "expect": "The octave layer breathes once per bar"
+    },
+    {
+      "n": 3,
+      "action": "Low-pass the sound for a mellow tone, with key tracking; filter the harsher upper oscillator more if needed.",
+      "tool": "filter",
+      "expect": "Soft pad, upper layer not harsh"
+    },
+    {
+      "n": 4,
+      "action": "Add a flanger at full mix (or high), set its own rate to zero, and modulate its delay time (depth/time) with a second LFO: a square wave as an on/off switch, or a tempo-synced 1/8 saw, unipolar, at a small amount. Find a sweet spot by ear, then adjust flanger feedback and phase.",
+      "tool": "flanger + LFO",
+      "expect": "Comb peaks jump between positions, giving arpeggio-like movement on a held chord"
+    },
+    {
+      "n": 5,
+      "action": "Optionally add a vocoder/formant effect and adjust bandwidth, formant and band count for color. Lengthen the amp attack and release to remove sharp clicks.",
+      "tool": "FX + amp env",
+      "expect": "Smoother, more ambient pad with no clicking"
+    },
+    {
+      "n": 6,
+      "action": "Record the pad. For a transition, resample it pitched down (slower), place it before a section change, send it to delay and reverb, automate both FX mixes to rise as the sample plays, and fade the sample's level from 0 up to about half.",
+      "tool": "sampler + automation",
+      "expect": "A swelling transition that ends in pure delay/reverb tail"
+    }
+  ],
+  "verification": [
+    "The flanger's free-running rate is zero; movement stops if the time LFO is disabled.",
+    "Osc B's level visibly cycles once per bar.",
+    "No audible clicks at the flanger steps.",
+    "In the transition, the delay/reverb mix ends higher than it starts, and the tail continues after the sample ends."
+  ],
+  "tags": [
+    "pads",
+    "flanger",
+    "phaser-pad",
+    "modulation",
+    "comb",
+    "transitions",
+    "resampling",
+    "fx",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition"
+}

@@ -1,0 +1,12 @@
+{"seed": 1102, "bpm": 92, "bars": 26, "tailSec": 5.0, "category": "pad",
+ "chords": [[40, [64, 67, 71]], [36, [64, 67, 72]], [43, [62, 67, 71]], [38, [62, 66, 69]]],
+ "sections": {"drumsIn": 4, "B": 12, "outro": 20, "drumsOut": 22, "end": 25},
+ "pad": {"level": 0.45, "subLevel": 0.18, "verbRt": 5.0, "verbMix": 0.6, "bright": 2.0},
+ "strings": {"level": 0.62, "brightness": 0.75, "partials": 14, "profile": [1.0, 0.7, 1.2, 0.5, 0.8, 0.4], "unisonCents": 7,
+   "attackMs": 1.5, "decaySec": 2.4, "decayCutoffHz": 2500, "decaySlope": 2.2, "strikePoint": 0.13, "inharm": 0.0004, "smearMs": 2.0,
+   "bounceDecay": 0.86, "layers": [{"voice": 2, "oct": 12, "everyBeats": 1.0, "from": "B"}, {"voice": 1, "oct": 0, "everyBeats": 3.0, "from": "drumsIn"}, {"voice": 0, "oct": -12, "everyBeats": 8.0, "from": "drumsIn"}],
+   "tremHz": 4.5, "tremDepth": 0.12, "vibCents": 4, "chorusMix": 0.35, "delayMix": 0.22, "verbRt": 3.2, "verbMix": 0.45},
+ "drums": {"level": 0.72, "lpHz": 1000, "envPeakHz": 7000, "envDecay": 0.025, "drive": 1.6, "hpHz": 60, "lowBellHz": 95, "lowBellDb": 5.0,
+   "mudCutDb": -3.5, "presenceDb": 2.0, "shelfDb": 1.5, "verbRt": 2.4, "verbMix": 0.35, "verbHp": 180, "verbDamp": 7000, "wetLift5kDb": 3.0,
+   "sineLayer": 0.5, "subLayer": 0.35, "rattle": 0.25, "sc": 0.25},
+ "master": {"shelfDb": 2.0, "satDrive": 1.2, "sideHpHz": 120, "fadeOutSec": 4.0, "targetLufs": -17.0, "tpCeil": -1.5}}

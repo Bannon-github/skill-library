@@ -1,0 +1,132 @@
+{
+ "topic": "cinematic hybrid percussion sound design tutorial",
+ "date": "2026-11-02",
+ "params": {
+  "topic": "cinematic hybrid percussion sound design tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "p1-WmITJqBk",
+   "title": "How To Make Any Sound From Scratch (escape the preset trap)",
+   "channel": "Alex Rome",
+   "duration": 1444,
+   "view_count": 848632,
+   "url": "https://www.youtube.com/watch?v=p1-WmITJqBk",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.46
+  },
+  {
+   "id": "3rCUdTDodrc",
+   "title": "Sound Design Tutorial: Cinematic Whoosh hit",
+   "channel": "Simon Haglund Sounds",
+   "duration": 1173,
+   "view_count": 2663,
+   "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.21
+  },
+  {
+   "id": "4B-0CLYCPFU",
+   "title": "Hybrid Head Crusher by Pulsesetter Sounds - Cinematic percussion and sound design ideal for horror",
+   "channel": "Martin Heidenreich Music",
+   "duration": 825,
+   "view_count": 366,
+   "url": "https://www.youtube.com/watch?v=4B-0CLYCPFU",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.78
+  },
+  {
+   "id": "LMInvlw-iAE",
+   "title": "Quick Tip: How To Make Cinematic Drums",
+   "channel": "Spitfire Audio",
+   "duration": 385,
+   "view_count": 170562,
+   "url": "https://www.youtube.com/watch?v=LMInvlw-iAE",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.12
+  },
+  {
+   "id": "gIlpMR64KRc",
+   "title": "TOMMEE PROFITT PERCUSSION Complete Walkthrough",
+   "channel": "Cinematic Tools",
+   "duration": 967,
+   "view_count": 9620,
+   "url": "https://www.youtube.com/watch?v=gIlpMR64KRc",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.49
+  },
+  {
+   "id": "m788n74Ldd4",
+   "title": "Random Sound Design 4 - Hybrid Percussion",
+   "channel": "Braden Deal",
+   "duration": 545,
+   "view_count": 27,
+   "url": "https://www.youtube.com/watch?v=m788n74Ldd4",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.22
+  },
+  {
+   "id": "THdfUp1XWtM",
+   "title": "Soundpaint - Hybrid Cinema Slams",
+   "channel": "Soundpaint",
+   "duration": 1242,
+   "view_count": 3010,
+   "url": "https://www.youtube.com/watch?v=THdfUp1XWtM",
+   "query": "cinematic hybrid percussion sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.24
+  }
+ ],
+ "dropped": [
+  {
+   "id": "yJQ5hXbH11Y",
+   "why": "negative title signal"
+  },
+  {
+   "id": "GEXQIHXg6OQ",
+   "why": "duration 199s"
+  },
+  {
+   "id": "NXeQRgWD21o",
+   "why": "negative title signal"
+  },
+  {
+   "id": "CuF7pb3Hw1E",
+   "why": "already known"
+  },
+  {
+   "id": "d0uwxmv_gcw",
+   "why": "negative title signal"
+  },
+  {
+   "id": "8irPQxaKuC4",
+   "why": "duration 170s"
+  },
+  {
+   "id": "hErr3bACySE",
+   "why": "duration 172s"
+  },
+  {
+   "id": "IK7cIBPKM1s",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

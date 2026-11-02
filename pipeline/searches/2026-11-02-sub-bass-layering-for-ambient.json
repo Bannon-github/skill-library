@@ -1,0 +1,116 @@
+{
+ "topic": "sub bass layering for ambient",
+ "date": "2026-11-02",
+ "params": {
+  "topic": "sub bass layering for ambient",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "2kLF7w-EaCg",
+   "title": "LAYERING PADS | A Simple Guide for Ambient Music Producers",
+   "channel": "S1gns Of L1fe",
+   "duration": 1172,
+   "view_count": 21765,
+   "url": "https://www.youtube.com/watch?v=2kLF7w-EaCg",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.67
+  },
+  {
+   "id": "Z6IUhXyOvFc",
+   "title": "I Fix A Beginner Producer's Weak Bass (in under 15 minutes)",
+   "channel": "Alex Rome",
+   "duration": 847,
+   "view_count": 335231,
+   "url": "https://www.youtube.com/watch?v=Z6IUhXyOvFc",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.26
+  },
+  {
+   "id": "Y3eB64YwCow",
+   "title": "How to Layer & Arrange Atmos/Ambient Sounds for Minimal House",
+   "channel": "Durosai",
+   "duration": 846,
+   "view_count": 2296,
+   "url": "https://www.youtube.com/watch?v=Y3eB64YwCow",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.18
+  },
+  {
+   "id": "_XXedUyBBQM",
+   "title": "How To Layer Supersaws So They Actually Sound Amazing (A Pro Way)",
+   "channel": "Oversampled",
+   "duration": 435,
+   "view_count": 206536,
+   "url": "https://www.youtube.com/watch?v=_XXedUyBBQM",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.16
+  },
+  {
+   "id": "63FvtgN6Yrc",
+   "title": "Create \"Audible\" Sub Bass in Ableton Live",
+   "channel": "Seed To Stage",
+   "duration": 707,
+   "view_count": 77625,
+   "url": "https://www.youtube.com/watch?v=63FvtgN6Yrc",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.95
+  },
+  {
+   "id": "eDErfMlnh7c",
+   "title": "Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music",
+   "channel": "Holosuite Mastering",
+   "duration": 447,
+   "view_count": 639,
+   "url": "https://www.youtube.com/watch?v=eDErfMlnh7c",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.9
+  },
+  {
+   "id": "MULPJOhSrZ0",
+   "title": "Get BETTER ambient bass EVERY time",
+   "channel": "S1gns Of L1fe",
+   "duration": 823,
+   "view_count": 9481,
+   "url": "https://www.youtube.com/watch?v=MULPJOhSrZ0",
+   "query": "sub bass layering for ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.49
+  }
+ ],
+ "dropped": [
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "673R2Ht3g58",
+   "why": "duration 176s"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "C871ckX4GfQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

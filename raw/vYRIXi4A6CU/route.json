@@ -1,0 +1,55 @@
+{
+ "video_id": "vYRIXi4A6CU",
+ "started_at": "2026-11-02T17:43:55.021489+00:00",
+ "outcome": "REJECT_thin_transcript",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": true,
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": false,
+   "evidence": {
+    "words": 157,
+    "music_markers": 11
+   },
+   "then": "REJECT thin"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-11-02T17:43:55.021713+00:00"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "id": "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+  "name": "Build a phaser from scratch: a chain of 1-7 all-pass biquads summed with the dry signal at half gain to make notches, Q 0.7071 for 'spread', a center frequency (50 Hz-18 kHz, start 500 Hz) swept exponentially by a 0.05-30 Hz sine/triangle LFO, a per-channel LFO phase offset up to 180 degrees and a dry/wet mix",
+  "goal": "Implement your own stereo phaser in any patching environment or Web Audio (BiquadFilterNode type 'allpass'): phase-shift the signal through a chain of all-pass filters, add it back to the dry signal to create moving notches, and sweep the shared center frequency exponentially with an LFO offset between left and right. This gives Polyrhythm Studio a native phaser for slow phaser pads.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "1s_wcjB31iA",
+    "url": "https://www.youtube.com/watch?v=1s_wcjB31iA",
+    "title": "How to build a basic Phaser Effect | Max for Live Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/1s_wcjB31iA/agent-skill-build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180.json"
+  },
+  "prerequisites": [
+    "A patching or audio-graph environment with all-pass biquads (Web Audio BiquadFilterNode 'allpass', Max, Pd, any modular)",
+    "An LFO source (phasor ramp mapped to sine/triangle)"
+  ],
+  "inputs": [
+    {
+      "name": "input",
+      "type": "audio",
+      "description": "Pad or any signal to phase",
+      "required": true
+    },
+    {
+      "name": "stages",
+      "type": "int",
+      "description": "Number of all-pass stages, 1-7 (more stages means more notches)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "phaser",
+      "type": "audio-effect",
+      "description": "Stereo phaser with order, spread, center, rate, depth, offset and dry/wet controls"
+    },
+    {
+      "name": "phased_pad",
+      "type": "audio",
+      "description": "Pad with slow moving notches"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Grounding note: the speaker adds a power operator that 'raises the input value by the exponent of 16'; this skill reads that as 16^(bipolar LFO x depth), i.e. up to x16 / ÷16 around the center at full depth. Treat the exact curve as approximate.",
+    "Sweep the center frequency exponentially (multiply/divide around the center), not linearly.",
+    "A phaser only moves notches (all-pass phase), so pitch stays steady. For pads use slow rates (well under 1 Hz) to suit Matt's steady, calm taste.",
+    "Selecting the stage count is 1-based (1-7); do not add an extra +1 offset.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only pad before that.",
+    "Polyrhythm Studio / Web Audio mapping: OscillatorNode + GainNode per layer, BiquadFilterNode (lowpass/highpass/allpass) for filters, DelayNode/ConvolverNode for space, AudioParam automation or slow custom LFOs for movement.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Chain up to seven all-pass biquad filters (two-pole all-pass coefficients) and use a selector so only the chosen number of stages (1-7, the 'order' or notch count) is in the path.",
+      "tool": "all-pass chain",
+      "expect": "A phase-shifted copy of the input"
+    },
+    {
+      "n": 2,
+      "action": "Add the phase-shifted signal to the original and multiply the sum by 0.5 for gain matching.",
+      "tool": "sum + gain",
+      "expect": "Notches appear in the spectrum where the copies cancel"
+    },
+    {
+      "n": 3,
+      "action": "Controls for the filters: 'spread' = Q (range up to about 16, start at 0.7071 = square root of 0.5; higher means narrower notches) and 'center' frequency (50 Hz to about 18 kHz, start 500 Hz).",
+      "tool": "parameters",
+      "expect": "Notch width and position can be set"
+    },
+    {
+      "n": 4,
+      "action": "Duplicate the whole chain for the right channel so left and right are processed separately.",
+      "tool": "stereo",
+      "expect": "Independent L/R phasers"
+    },
+    {
+      "n": 5,
+      "action": "Build the LFO from a 0-1 ramp (phasor) at 0.05-30 Hz, starting at 1 Hz: map it to a triangle with a centered peak or to a sine, selectable.",
+      "tool": "LFO",
+      "expect": "Smooth periodic control signal"
+    },
+    {
+      "n": 6,
+      "action": "Sweep exponentially: center × 16^(LFO × depth), so at the LFO maximum the center is multiplied by a factor and at the minimum divided by the same factor. Scale with a depth control.",
+      "tool": "modulation math",
+      "expect": "Notches sweep evenly across octaves"
+    },
+    {
+      "n": 7,
+      "action": "For stereo, add an offset to the right channel's ramp before the wave shaper and wrap it with modulo 1. Scale the offset control by 0.5 so 100% equals 180 degrees.",
+      "tool": "stereo offset",
+      "expect": "Left and right notches move in opposite phase at full offset"
+    },
+    {
+      "n": 8,
+      "action": "Add dry/wet: multiply the processed path by wet and the dry path by (1 - wet) per channel, then sum.",
+      "tool": "mix",
+      "expect": "Blendable phaser; at 0% wet the signal is untouched"
+    }
+  ],
+  "verification": [
+    "With depth at 0, the notches are static at the center frequency.",
+    "Raising the stage count adds visible notches on a spectrum analyzer.",
+    "At 100% offset the L and R notch sweeps are 180 degrees apart.",
+    "The sweep is exponential: equal LFO steps move the notches by equal musical intervals."
+  ],
+  "tags": [
+    "phaser",
+    "phaser-pad",
+    "dsp",
+    "web-audio",
+    "allpass",
+    "modulation",
+    "stereo-width",
+    "fx",
+    "polyrhythm-studio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180"
+}
