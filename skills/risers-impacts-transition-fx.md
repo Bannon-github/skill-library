@@ -120,3 +120,23 @@ Source: [HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!](https://www.youtube.co
 - Map the same (or a second) LFO/envelope to pitch-bend position: from 50% toward 100% for an uplifter, or from 50% toward 0% for a downlifter.
 - On a saw source, raise unison (e.g. ~7 voices), reduce detune for a tighter supersaw, and raise stereo blend slightly.
 - Sidechain the riser to the kick (or a rhythmic duck envelope), easing mix if the duck is harsh (~75% wet in the transcript example). Add reverb/FX from the synth FX rack or inserts so it sits in the mix.
+
+### Cinematic whoosh-hit: layer sub-whoosh, whoosh and three hit layers, edit the whoosh quieter than the hit and tighten the flam, resample at milestones, dark dual reverbs, upward/parallel compression, clipping, sub removed from the whoosh only, multiband then true-peak limiting
+Source: [Sound Design Tutorial: Cinematic Whoosh hit](https://www.youtube.com/watch?v=3rCUdTDodrc) · was `whoosh-into-hit-layer-resample-chain`
+- Layer: a sub layer made from the reversed tail of a sub kick, a resonant whoosh layer (e.g. noise or foley swept past a resonant body), and three short hit layers lightly pitched down, each with a small whoosh into a clean transient and a tail.
+- Resample the sum at the first milestone and keep the original; work on a duplicate.
+- Edit without plugins: chop the whoosh and lower its level below the hit; trim the hit layers so the transients flam only slightly (a small flam lengthens the body, too much sounds messy).
+- Resample again, add gentle tape saturation to glue the layers.
+- Send to two dark reverbs on returns: a room with about 2.75 s decay and a low filter, and a plate with about 3.6 s decay low-passed around 1.4 kHz; sum dry and reverbs into one bus.
+- On the bus: tame the high-end noise in the tail after the transient (adaptive denoise or a dynamic high-shelf cut that acts after the hit), then two upward/downward multiband compressors in series at low mix, then aggressive parallel compression at 50% wet.
+- Clip the peak hard (about 6 dB of clipping) to square off and prolong the transient, then limit lightly. Resample (milestone 3).
+- Final pass: re-edit any unwanted whoosh section with fades; high-pass only the whoosh portion at about 60 Hz; a few EQ notches/boosts by ear; light clipping (~1.5 dB); a multiband limiter (lowest band ~0-100 Hz) with some transient emphasis; then a true-peak limiter as a safety net.
+
+### Organic build-up tension without riser samples: one oscillator of the main riff slowly ramps up in pitch, an irregular-length loop of the vocal (or lead) with chorus gets pitch-shifted up over the build, and a fully fed 1/8 delay return is revealed by return-volume automation with rising feedback, all ducked under the dry part
+Source: [How The Pros Build Tension (Without FX Samples)](https://www.youtube.com/watch?v=Pp88aLB3LpE) · was `organic-tension-from-track-sounds`
+- Riff riser: on the riff synth, automate only one oscillator's pitch to glide gradually upward across the build while the other oscillator and the notes stay in tune.
+- Irregular loop: load the vocal (or lead) into a sampler and loop a section whose length is not tied to the tempo; add a wide chorus.
+- Automate that loop's volume and EQ to bring it in over the build; sidechain it lightly to the dry vocal so the main part stays clear.
+- Pitch-shift the loop up gradually across the build with automation (a slow, steady upward shift).
+- Send the vocal group to a return with a 1/8-note delay at 100% wet; set the send to full and leave it; automate the return's fader instead, revealing it only for the swell.
+- Automate the delay feedback to ramp up slowly through the build (moderate maximum), lightly sidechain the echoes to the dry vocal, and fade the return to zero right before the drop.

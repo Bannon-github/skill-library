@@ -77,3 +77,35 @@ Source: [Pedals in Parallel - Discovering new ways to use effects you thought yo
 - Balance each branch with its EQ, send and return levels and a master volume; take the dry out entirely when only effects are wanted.
 - Insert loop: put another effect (e.g. modulation/space) inside the delay's insert/feedback path so delayed sound is processed again on each recirculation.
 - Swap in different trios of effects (e.g. delay + modulation + tremolo, envelope-controlled tremolo) to discover combinations.
+
+### Flanger sequence pad: triangle plus a pulse one octave up whose level fades out and in once per bar, low-pass, a flanger with its own rate at zero whose delay time is stepped by a square/synced LFO for an arpeggio-like comb movement, then resample pitched down with rising delay/reverb mix for a transition
+Source: [Tutorial #36 | Flanger Sequence Pads](https://www.youtube.com/watch?v=QdveXtMhAnk) · was `flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition`
+- Osc A: triangle with about 3 unison voices and low detune (it plays all the time). Osc B: pulse/square one octave up, level at zero, slightly more voices/detune.
+- Put an LFO on osc B's level at a rate of about one bar, retriggered, with a shape that fades out and back in (or drops fast and comes back up slowly).
+- Low-pass the sound for a mellow tone, with key tracking; filter the harsher upper oscillator more if needed.
+- Add a flanger at full mix (or high), set its own rate to zero, and modulate its delay time (depth/time) with a second LFO: a square wave as an on/off switch, or a tempo-synced 1/8 saw, unipolar, at a small amount. Find a sweet spot by ear, then adjust flanger feedback and phase.
+- Optionally add a vocoder/formant effect and adjust bandwidth, formant and band count for color. Lengthen the amp attack and release to remove sharp clicks.
+- Record the pad. For a transition, resample it pitched down (slower), place it before a section change, send it to delay and reverb, automate both FX mixes to rise as the sample plays, and fade the sample's level from 0 up to about half.
+
+### Build a phaser from scratch: a chain of 1-7 all-pass biquads summed with the dry signal at half gain to make notches, Q 0.7071 for 'spread', a center frequency (50 Hz-18 kHz, start 500 Hz) swept exponentially by a 0.05-30 Hz sine/triangle LFO, a per-channel LFO phase offset up to 180 degrees and a dry/wet mix
+Source: [How to build a basic Phaser Effect | Max for Live Tutorial](https://www.youtube.com/watch?v=1s_wcjB31iA) · was `build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180`
+- Chain up to seven all-pass biquad filters (two-pole all-pass coefficients) and use a selector so only the chosen number of stages (1-7, the 'order' or notch count) is in the path.
+- Add the phase-shifted signal to the original and multiply the sum by 0.5 for gain matching.
+- Controls for the filters: 'spread' = Q (range up to about 16, start at 0.7071 = square root of 0.5; higher means narrower notches) and 'center' frequency (50 Hz to about 18 kHz, start 500 Hz).
+- Duplicate the whole chain for the right channel so left and right are processed separately.
+- Build the LFO from a 0-1 ramp (phasor) at 0.05-30 Hz, starting at 1 Hz: map it to a triangle with a centered peak or to a sine, selectable.
+- Sweep exponentially: center × 16^(LFO × depth), so at the LFO maximum the center is multiplied by a factor and at the minimum divided by the same factor. Scale with a depth control.
+- For stereo, add an offset to the right channel's ramp before the wave shaper and wrap it with modulo 1. Scale the offset control by 0.5 so 100% equals 180 degrees.
+- Add dry/wet: multiply the processed path by wet and the dry path by (1 - wet) per channel, then sum.
+
+### Phaser + chorus pad from pure waves: triangle and sine unison stacks on one note in three octaves, slow filter-envelope opening, triplet-synced phaser, deep feedback chorus, notch the phaser whistle, dark church-style reverb
+Source: [Sylenth 1 Tutorial "Phasing" Pad](https://www.youtube.com/watch?v=ZsbcQZtklGI) · was `phaser-chorus-pure-wave-octave-pad`
+- Write the clip as the same note in three octaves (e.g. B0, B1, B2) following the progression of the bass.
+- Osc 1: triangle, 6 unison voices, small static detune, wide stereo, centre pan, retrigger on. Osc 2: sine, 8 unison voices, slightly more detune, phase offset (~85 degrees), retrigger on. Raise polyphony since several notes play.
+- Amp envelope: back the attack off so each note fades in slowly; keep sustain high.
+- 24 dB/oct low-pass with a mod envelope on cutoff: cutoff a little below full (about 70% of range), slow envelope attack (about 65% of its range) and medium sustain (about 50%), so the filter opens gradually while notes hold.
+- Phaser: spread at maximum, left/right offset centred, width about half, default feedback, dry/wet about 38-40%, LFO rate tempo-synced slightly slower than 1/8 (the source uses a 4/1-triplet style setting).
+- Chorus after the phaser: delay about 4 ms, rate about 0.25 Hz, depth about 60%, feedback on (chorus feeds back into itself), width maximum, dry/wet about 40%.
+- Solo the pad and listen for a resonant whistle the phaser creates; cut that band with a narrow, deep EQ notch.
+- Reverb as an insert or send at about 35% wet: slow, large hall/church-type space, pre-delay about 10 ms, size and decay at maximum; on the reverb's EQ cut everything below 150 Hz and roll the highs off around 4.5 kHz. Add a light compressor after it (shorter release) to bring the reverb up.
+- Sidechain-compress the pad to the kick for gentle pump and automate the pad filter so it comes in and out across sections.

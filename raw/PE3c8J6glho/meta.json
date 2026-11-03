@@ -2,14 +2,22 @@
   "video_id": "PE3c8J6glho",
   "title": "Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)",
   "url": "https://www.youtube.com/watch?v=PE3c8J6glho",
-  "fetched_at": "2026-11-02T18:09:32.476804+00:00",
+  "fetched_at": "2026-11-03T17:26:55.717678+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "EtherLoops",
   "duration": 1117,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 244,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/PE3c8J6glho/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/PE3c8J6glho/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -38,30 +46,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.8
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.5
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.7
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

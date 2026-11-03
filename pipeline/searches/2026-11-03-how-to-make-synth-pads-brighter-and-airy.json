@@ -1,0 +1,118 @@
+{
+ "topic": "how to make synth pads brighter and airy",
+ "date": "2026-11-03",
+ "params": {
+  "topic": "how to make synth pads brighter and airy",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "bAovHufTsc8",
+   "title": "How To Make Ambient Pads 100% From Scratch (Vital Tutorial)",
+   "channel": "Sleepy Vibes ",
+   "duration": 326,
+   "view_count": 63683,
+   "url": "https://www.youtube.com/watch?v=bAovHufTsc8",
+   "query": "how to make synth pads brighter and airy tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.9
+  },
+  {
+   "id": "p5ETZc7Zfw4",
+   "title": "How to Make Lush Evolving Pads in Wavetable | Ableton Tutorial",
+   "channel": "Ableton Tips by PML",
+   "duration": 895,
+   "view_count": 59251,
+   "url": "https://www.youtube.com/watch?v=p5ETZc7Zfw4",
+   "query": "how to make synth pads brighter and airy tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.89
+  },
+  {
+   "id": "TosV3erGfsg",
+   "title": "Sound Design - Ambient Pads and Atmospheres",
+   "channel": "In The Mix",
+   "duration": 1069,
+   "view_count": 435261,
+   "url": "https://www.youtube.com/watch?v=TosV3erGfsg",
+   "query": "how to make synth pads brighter and airy tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.32
+  },
+  {
+   "id": "i6A4rAWqiEU",
+   "title": "[SERUM TUTORIAL] Glassy Sounding Pluck (Free Preset)",
+   "channel": "itsandyd",
+   "duration": 364,
+   "view_count": 5110,
+   "url": "https://www.youtube.com/watch?v=i6A4rAWqiEU",
+   "query": "how to make synth pads brighter and airy tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.35
+  },
+  {
+   "id": "ktfmchBTKq0",
+   "title": "Recreating the most beautiful FM Patches from Ekhozone's Infinite Cycles in dexed (see description)",
+   "channel": "aquanodemusic",
+   "duration": 835,
+   "view_count": 844,
+   "url": "https://www.youtube.com/watch?v=ktfmchBTKq0",
+   "query": "how to make synth pads brighter and airy tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.96
+  }
+ ],
+ "dropped": [
+  {
+   "id": "A7q9L5wd7Mk",
+   "why": "already known"
+  },
+  {
+   "id": "ehKoz6ILmxQ",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "G4u4BBDdtdE",
+   "why": "already known"
+  },
+  {
+   "id": "UKYiJl5l50g",
+   "why": "duration 196s"
+  },
+  {
+   "id": "ENVL2pI3kpM",
+   "why": "negative title signal"
+  },
+  {
+   "id": "IhIrkXdIWtU",
+   "why": "duration 74s"
+  },
+  {
+   "id": "p0lkGohHCkk",
+   "why": "duration 80s"
+  },
+  {
+   "id": "RZjCZKWX430",
+   "why": "duration 61s"
+  },
+  {
+   "id": "fVB6f4VEpCc",
+   "why": "duration 52s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

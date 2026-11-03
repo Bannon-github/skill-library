@@ -43,3 +43,14 @@ Source: [Spacious ambient / lo-fi drums that still have character](https://www.y
 - Add drummer character: a ride only at the end of bar 3 and straight on the downbeats of bars 7-8, a few panned glass Foley hits, and chopped toms. Saturate and low-cut the toms and lower their transients.
 - Swap a stock cymbal for a cymbal/organic swirl through delay, large-hall reverb and a vocoder. Automate the vocoder, reverb and delay dry/wet and fade it in.
 - Noise bed: run a noise generator through a ducking envelope (depth about x8, threshold low, release about 3 s), keyed by the percussion and high-passed. Set it very low, about -13 to -17 dB, so noise seeps into the gaps about 3 s after percussion stops.
+
+### Human drums on any step sequencer: four-on-the-floor kick, eighth hats with the hats that land on the kick turned down, 56% swing, a 16th-hat layer only on the second bar with every other hit softer, open hat on the last step of bar 2, a loose clap built from 3-4 stacked clap tracks nudged early/late with varied velocity and pitch, a track with an odd 24-step second bar and an 8-bar reset, random sample-start drift on the closed hat, and a pumping bus compressor
+Source: [Drum programming Tips for ANY machine](https://www.youtube.com/watch?v=Fj7E0DXML1o) · was `velocity-and-flam-groove-on-step-sequencer`
+- Program a four-on-the-floor kick.
+- Eighth hats: lower the velocity of the hats that coincide with the kick so the off-beat hats stand out; set swing to about 56%.
+- On a second hat track, add 16th hats only in the second bar of a two-bar pattern, with every other hit lower in velocity.
+- Put a softer, slightly pitched-down open hat on step 15 of bar 2 with a little reverb send.
+- Loose clap: copy the clap to 3-4 tracks; leave one on the grid, push one a little early, one later and one even later; vary velocities and pitch one copy up (and one far down, quieter, high-passed); add a little reverb.
+- Make one track 32 steps with the second bar shortened to 24 steps and a pattern reset every 8 bars (128 steps), so it cycles against the bar.
+- On the closed hat, route a slow, free LFO (odd length) at low depth to sample start, with a soft attack.
+- Balance the claps down, then add a pumping bus compressor; if the kick blooms too much, shorten it and tune it down slightly.

@@ -144,3 +144,13 @@ Source: [How to Make Super Warm, Heavenly Pads with Vital](https://www.youtube.c
 - Subtle slow irregular LFO → cutoff for life; EQ after FX as needed (gentle HP, optional shimmer highs).
 - Optional layer: PWM wavetable with moderate unison and slower PWM LFO; combine with supersaw; if subs build, serial HP after LP; optional unfiltered sine to reinforce fundamental against phase cancellation.
 - Optional second patch/layer for shimmer (additive/WT, little unison, LFO→level or short decay + harmonic stretch); pitch-up delay/shimmer on that layer only.
+
+### Ambient pad from scratch with staggered layer attacks: sine foundation with light unison, saw and triangle layers on their own filters (triangle an octave up), a separate amp envelope per layer with longer attacks for higher layers, a pitched-down foley texture in the noise slot, slow 4-bar filter LFO, panning LFO, light random on one filter and random level on the foley, then chorus, multiband compression, delay and reverb
+Source: [How To Make Ambient Pads 100% From Scratch (Vital Tutorial)](https://www.youtube.com/watch?v=bAovHufTsc8) · was `staggered-attack-octave-layer-pad`
+- Osc 1: sine with a little unison as the foundation; set amp attack and release moderately long.
+- Osc 2: saw with unison; Osc 3: triangle with unison, pitched up one octave. Route osc 2 and osc 3 to separate filters.
+- Give each layer its own amp envelope (routed to its level): layer 2 a longer attack, layer 3 a much longer attack so the octave-up layer is mainly heard toward the end of each chord.
+- Put a quiet ambient foley texture (e.g. clicks) in the noise slot; pitch it down to the key if it is tonal.
+- LFO 1: triangle reshaped to open slowly and close quickly, tempo 4 bars (4/1), on one filter's cutoff. LFO 2: sine, bipolar, on osc 3 pan.
+- Add a small random modulation on the saw layer's filter and a random modulator on the foley level so it comes and goes.
+- FX: a bit of chorus to tie oscillators together, multiband compression to bring up subtle detail, then delay and reverb.

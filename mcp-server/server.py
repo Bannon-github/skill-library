@@ -75,6 +75,7 @@ def search_skills(query: str) -> str:
                 s.get("domain", ""),
                 " ".join(s.get("tags", [])),
                 " ".join(s.get("aliases", [])),
+                " ".join(v.get("name", "") + " " + v.get("goal", "") for v in s.get("variants", [])),
             ]
         ).lower()
         if q in blob:

@@ -1,0 +1,3 @@
+# Rejected 2026-11-03 (morning hunt)
+Video: How to Build Tension in a Film Score with Analog and Virtual Synths (MNSoaIHyIfY), YouTube-provided transcript.
+Reason: walkthrough without a reusable recipe. Mostly a tour of plugin layers in one film cue (noise beds EQ'd to remove 5 kHz hiss, growing automation, risers into a hard stop and silence). Few settings, and its tonal centre is a microtonally drifting bass played by hand, which conflicts with Matt's steady-pitch rule. The arc (layers added slowly, big upper-range risers into a hard cut) is already covered by the arrangement-ambient-cinematic-score underscore variants and the risers cluster.

@@ -208,6 +208,23 @@
     "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant": "vocoder-formant-and-spectral-voice-fx",
     "harmonic-multiple-frequency-shift-layer-vocoder-clean": "vocoder-formant-and-spectral-voice-fx",
     "spectral-warp-vocode-formant-stretch-smear": "vocoder-formant-and-spectral-voice-fx",
-    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback": "vocoder-formant-and-spectral-voice-fx"
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback": "vocoder-formant-and-spectral-voice-fx",
+    "three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar": "bass-design-sub-reese-808-and-layering",
+    "ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz": "bass-design-sub-reese-808-and-layering",
+    "audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt": "bass-design-sub-reese-808-and-layering",
+    "parallel-octave-down-bass-from-stereo-mix": "bass-design-sub-reese-808-and-layering",
+    "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers": "harmony-chords-voicing-and-slow-motion",
+    "mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return": "arrangement-ambient-cinematic-score",
+    "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition": "pad-phaser-notch-comb-movement",
+    "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180": "pad-phaser-notch-comb-movement",
+    "phaser-chorus-pure-wave-octave-pad": "pad-phaser-notch-comb-movement",
+    "whoosh-into-hit-layer-resample-chain": "risers-impacts-transition-fx",
+    "organic-tension-from-track-sounds": "risers-impacts-transition-fx",
+    "staggered-attack-octave-layer-pad": "pad-supersaw-unison-detune-width",
+    "drone-role-pedal-point-and-polychords": "harmony-chords-voicing-and-slow-motion",
+    "metric-modulation-action-cue": "arrangement-ambient-cinematic-score",
+    "velocity-and-flam-groove-on-step-sequencer": "drum-groove-programming-swing-and-ghosts",
+    "dynamics-restoring-saturation": "mix-eq-gain-staging-and-balance",
+    "ambient-loop-to-track-arp-rate-energy": "arrangement-loop-to-song-build-drop"
   }
 }

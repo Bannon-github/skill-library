@@ -1,0 +1,112 @@
+{
+ "topic": "ambient drum programming tutorial",
+ "date": "2026-11-03",
+ "params": {
+  "topic": "ambient drum programming tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "xeuYUFZpOdA",
+   "title": "How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]",
+   "channel": "DNB Academy",
+   "duration": 772,
+   "view_count": 9998,
+   "url": "https://www.youtube.com/watch?v=xeuYUFZpOdA",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.5
+  },
+  {
+   "id": "g11aNq3C7gg",
+   "title": "BETTER AMBIENT DNB IN 8 MINUTES | Ableton ambient drum and bass tutorial",
+   "channel": "GLUEUE",
+   "duration": 475,
+   "view_count": 19264,
+   "url": "https://www.youtube.com/watch?v=g11aNq3C7gg",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.64
+  },
+  {
+   "id": "iAAdhqb4ee8",
+   "title": "HOW TO: Breakcore Drums (+Free Project/Presets) - Ableton Live 12 Tutorial---- Eptiar",
+   "channel": "Eptiar ",
+   "duration": 1366,
+   "view_count": 13576,
+   "url": "https://www.youtube.com/watch?v=iAAdhqb4ee8",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.57
+  },
+  {
+   "id": "Fj7E0DXML1o",
+   "title": "Drum programming Tips for ANY machine",
+   "channel": "Ricky Tinez",
+   "duration": 895,
+   "view_count": 48278,
+   "url": "https://www.youtube.com/watch?v=Fj7E0DXML1o",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.84
+  },
+  {
+   "id": "yy1YyLrTt9I",
+   "title": "How to Make Liquid DnB Drums Breaks",
+   "channel": "Unders - Warrior Sound",
+   "duration": 555,
+   "view_count": 100171,
+   "url": "https://www.youtube.com/watch?v=yy1YyLrTt9I",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "L0mST_BaaBA",
+   "title": "How To Write Drums for ANY Electronic Music Genre",
+   "channel": "Matt Tinkler",
+   "duration": 1480,
+   "view_count": 36415,
+   "url": "https://www.youtube.com/watch?v=L0mST_BaaBA",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.78
+  },
+  {
+   "id": "8PVK04yxyhY",
+   "title": "IDM click and cut MICRO-DRUMS sound design tutorial",
+   "channel": "Trash Sound Design",
+   "duration": 245,
+   "view_count": 26431,
+   "url": "https://www.youtube.com/watch?v=8PVK04yxyhY",
+   "query": "ambient drum programming tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.21
+  }
+ ],
+ "dropped": [
+  {
+   "id": "BcbSwdsC7W8",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "bwW245q5668",
+   "why": "duration 236s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

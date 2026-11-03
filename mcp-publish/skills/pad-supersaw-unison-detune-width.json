@@ -80,6 +80,12 @@
         "video_id": "cF5ku3Og0Nk",
         "url": "https://www.youtube.com/watch?v=cF5ku3Og0Nk",
         "title": "How to Make Super Warm, Heavenly Pads with Vital"
+      },
+      {
+        "from_skill": "staggered-attack-octave-layer-pad",
+        "video_id": "bAovHufTsc8",
+        "url": "https://www.youtube.com/watch?v=bAovHufTsc8",
+        "title": "How To Make Ambient Pads 100% From Scratch (Vital Tutorial)"
       }
     ]
   },
@@ -351,6 +357,20 @@
         "Optional layer: PWM wavetable with moderate unison and slower PWM LFO; combine with supersaw; if subs build, serial HP after LP; optional unfiltered sine to reinforce fundamental against phase cancellation.",
         "Optional second patch/layer for shimmer (additive/WT, little unison, LFO→level or short decay + harmonic stretch); pitch-up delay/shimmer on that layer only."
       ]
+    },
+    {
+      "from_skill": "staggered-attack-octave-layer-pad",
+      "name": "Ambient pad from scratch with staggered layer attacks: sine foundation with light unison, saw and triangle layers on their own filters (triangle an octave up), a separate amp envelope per layer with longer attacks for higher layers, a pitched-down foley texture in the noise slot, slow 4-bar filter LFO, panning LFO, light random on one filter and random level on the foley, then chorus, multiband compression, delay and reverb",
+      "goal": "Build a lush, developing ambient pad from scratch where each layer arrives at a different time: a sine core is heard first, a saw layer fades in later and an octave-up triangle layer only blooms near the end of each held chord (so held chords get brighter and fuller over time), with a quiet tonal foley texture and slow filter/pan motion. Delta vs our pad variants: per-layer amp envelopes as the main development tool and a foley layer in the noise oscillator.",
+      "steps": [
+        "Osc 1: sine with a little unison as the foundation; set amp attack and release moderately long.",
+        "Osc 2: saw with unison; Osc 3: triangle with unison, pitched up one octave. Route osc 2 and osc 3 to separate filters.",
+        "Give each layer its own amp envelope (routed to its level): layer 2 a longer attack, layer 3 a much longer attack so the octave-up layer is mainly heard toward the end of each chord.",
+        "Put a quiet ambient foley texture (e.g. clicks) in the noise slot; pitch it down to the key if it is tonal.",
+        "LFO 1: triangle reshaped to open slowly and close quickly, tempo 4 bars (4/1), on one filter's cutoff. LFO 2: sine, bipolar, on osc 3 pan.",
+        "Add a small random modulation on the saw layer's filter and a random modulator on the foley level so it comes and goes.",
+        "FX: a bit of chorus to tie oscillators together, multiband compression to bring up subtle detail, then delay and reverb."
+      ]
     }
   ],
   "merged_from": [
@@ -365,7 +385,8 @@
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-super-unison-wide-lead",
     "unison-odd-even-detune-width-clean-supersaw",
-    "warm-heavenly-supersaw-pad-keytrack-fx"
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "staggered-attack-octave-layer-pad"
   ],
   "tags": [
     "ambient",
@@ -415,6 +436,7 @@
     "three-layer-complementary-pad-post-verb-lofi-degrade",
     "traveler-walkthrough-super-unison-wide-lead",
     "unison-odd-even-detune-width-clean-supersaw",
-    "warm-heavenly-supersaw-pad-keytrack-fx"
+    "warm-heavenly-supersaw-pad-keytrack-fx",
+    "staggered-attack-octave-layer-pad"
   ]
 }

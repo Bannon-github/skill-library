@@ -37,3 +37,21 @@ Source: [Music Theory for Ambient (theory you can actually use!)](https://www.yo
 - Moving-bass motion: hold the upper chord and step the bass note underneath (e.g. Am over the 6th degree).
 - Tension colour: play scale degrees 1, 2 and 3 together and band-limit them with high-pass and low-pass filters to roughly 600-1000 Hz.
 - Spread chord tones across several layered instruments and stretch all changes across the timeline (many bars per change).
+
+### Cinematic voice-leading rule for pad/string layers: each two-voice layer alternates compressed seconds and expanded thirds, keeps one common tone between moves, and each new layer starts a perfect fourth, fifth or octave from the layer above, all inside one mode
+Source: [The only trick you need for Epic Emotional Cinematic composing](https://www.youtube.com/watch?v=3cSsQw4CggE) · was `compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers`
+- Pick a mode and write the top layer as two voices that alternate a second (compressed) and a third (expanded), e.g. a second that falls out to a third.
+- On each move, keep one of the two notes from the previous interval (a held common tone or preparation) and move only the other.
+- Start the second layer a perfect consonance (4th, 5th or octave) below the top layer's top note, and run it in the opposite phase: where the top layer is compressed, this one starts expanded, and vice versa. Being less strict about common tones is OK here.
+- Add further layers the same way (e.g. a scale-wise woodwind-like line), each starting a perfect consonance away from the layer above. Let some voices move in parallel and some in contrary motion.
+- For a growing, expansive feeling, let the layers move wider and wider apart over the phrase.
+- Assign layers to separate pad/string voices and listen; adjust by ear rather than analysis.
+
+### Make drones interesting by role: a bass pedal point under changing harmony (or a repeated arpeggiated root), a non-key-tracked mid-range drone as a through-line with the bass and an upper note moving around it, layered drones tuned to a static chord with a progression underneath for polychords, and wavetable-position sweeps for texture
+Source: [How to SYNTH DRONE without boring everyone](https://www.youtube.com/watch?v=9Re-L7z0068) · was `drone-role-pedal-point-and-polychords`
+- Choose the drone's role: foundation (bass pedal point) or textural through-line in the mids/high mids.
+- Pedal point: hold or repeat one bass note for the whole piece (an arpeggiator repeating the root counts); change chords, textures and rhythm above it, e.g. hold the dominant to build tension before resolving to the tonic.
+- Through-line: switch off key tracking on one oscillator and tune it to a mid-range note; play bass notes and a note above that move around it, auditioning chords for the rubs they create. A second fixed partial (e.g. A440) can be added rhythmically.
+- Polychords: tune several mid/high drones to a static chord and play a different chord progression underneath so the two combine into polychords that never fully resolve.
+- Texture: on exposed drones, find sweet spots in a rich wavetable and sweep the position slowly with an LFO.
+- Change the bass note under the drone at key moments; a single new pedal note recolours everything above it.

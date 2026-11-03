@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "dynamics-restoring-saturation",
+  "name": "Saturate drums without losing punch: an envelope follower reads the clean signal on a muted parallel chain, and its output drives a gain stage placed after the saturator so the saturated signal's peaks are pushed back up and its dynamic range is restored",
+  "goal": "Add saturation warmth to drums (or a melody loop) while keeping their punch: because saturation shaves peaks and flattens dynamic range, measure the dry signal's envelope on a muted parallel chain and use it to modulate a gain stage after the saturator, so loud hits get louder again. Delta vs our saturation variants: envelope-follower-driven gain restoration after the saturator.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "GomiGC__HC0",
+    "url": "https://www.youtube.com/watch?v=GomiGC__HC0",
+    "title": "Saturation Is Killing Your Mix",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/GomiGC__HC0/agent-skill-dynamics-restoring-saturation.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with an envelope follower / peak controller that can modulate a parameter",
+    "Any saturator and a gain/utility device"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Drum bus or loop that loses punch when saturated",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "punchy_saturated",
+      "type": "audio",
+      "description": "Saturated signal with restored transients"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Only gain is modulated after the saturator; nothing else in that chain.",
+    "Values (base/depth) are set by ear; the source quotes about 30-40% base and 60-70% amount on its follower.",
+    "Original routing recipe; the free patch offered in the source is not needed.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Saturate the drums and watch the waveform: peaks get shaved and the drums stop hitting in the mix.",
+      "tool": "Saturator + scope",
+      "expect": "Problem confirmed: warmth but lost punch"
+    },
+    {
+      "n": 2,
+      "action": "Build two parallel chains: chain A holds only an envelope follower/peak controller and is muted (it just measures); chain B holds the saturator followed by a gain/utility device.",
+      "tool": "Rack / parallel chains",
+      "expect": "Measuring chain + processing chain"
+    },
+    {
+      "n": 3,
+      "action": "Map the follower's output to the gain device in chain B.",
+      "tool": "Modulation mapping",
+      "expect": "Gain rises with each dry peak"
+    },
+    {
+      "n": 4,
+      "action": "Set the follower base around 30-40% and the amount around 60-70%, then adjust until saturated hits match the original punch.",
+      "tool": "Follower settings",
+      "expect": "Warmth kept, peaks restored"
+    },
+    {
+      "n": 5,
+      "action": "Compare in the mix; for melodic loops combine with sidechain ducking to the drum loop for pump.",
+      "tool": "A/B",
+      "expect": "Punchy drums with saturation colour"
+    }
+  ],
+  "verification": [
+    "Peak-to-RMS (crest factor) of the processed drums is close to the dry drums while harmonics are added.",
+    "Chain A passes no audio."
+  ],
+  "tags": [
+    "saturation",
+    "drums",
+    "punch",
+    "dynamics",
+    "envelope-follower",
+    "mixing",
+    "punchy-bass",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dynamics-restoring-saturation"
+}

@@ -44,6 +44,24 @@
         "video_id": "t0X_HQ25jmg",
         "url": "https://www.youtube.com/watch?v=t0X_HQ25jmg",
         "title": "Pedals in Parallel - Discovering new ways to use effects you thought you knew"
+      },
+      {
+        "from_skill": "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+        "video_id": "QdveXtMhAnk",
+        "url": "https://www.youtube.com/watch?v=QdveXtMhAnk",
+        "title": "Tutorial #36 | Flanger Sequence Pads"
+      },
+      {
+        "from_skill": "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+        "video_id": "1s_wcjB31iA",
+        "url": "https://www.youtube.com/watch?v=1s_wcjB31iA",
+        "title": "How to build a basic Phaser Effect | Max for Live Tutorial"
+      },
+      {
+        "from_skill": "phaser-chorus-pure-wave-octave-pad",
+        "video_id": "ZsbcQZtklGI",
+        "url": "https://www.youtube.com/watch?v=ZsbcQZtklGI",
+        "title": "Sylenth 1 Tutorial \"Phasing\" Pad"
       }
     ]
   },
@@ -221,6 +239,50 @@
         "Insert loop: put another effect (e.g. modulation/space) inside the delay's insert/feedback path so delayed sound is processed again on each recirculation.",
         "Swap in different trios of effects (e.g. delay + modulation + tremolo, envelope-controlled tremolo) to discover combinations."
       ]
+    },
+    {
+      "from_skill": "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+      "name": "Flanger sequence pad: triangle plus a pulse one octave up whose level fades out and in once per bar, low-pass, a flanger with its own rate at zero whose delay time is stepped by a square/synced LFO for an arpeggio-like comb movement, then resample pitched down with rising delay/reverb mix for a transition",
+      "goal": "Make a pad on held chords that moves like an arpeggio without playing extra notes: freeze the flanger's own sweep and step its delay time with a square or saw LFO so the comb peaks jump between positions. Then resample it slowed down into an ambient transition whose delay/reverb mix rises as the sample plays.",
+      "steps": [
+        "Osc A: triangle with about 3 unison voices and low detune (it plays all the time). Osc B: pulse/square one octave up, level at zero, slightly more voices/detune.",
+        "Put an LFO on osc B's level at a rate of about one bar, retriggered, with a shape that fades out and back in (or drops fast and comes back up slowly).",
+        "Low-pass the sound for a mellow tone, with key tracking; filter the harsher upper oscillator more if needed.",
+        "Add a flanger at full mix (or high), set its own rate to zero, and modulate its delay time (depth/time) with a second LFO: a square wave as an on/off switch, or a tempo-synced 1/8 saw, unipolar, at a small amount. Find a sweet spot by ear, then adjust flanger feedback and phase.",
+        "Optionally add a vocoder/formant effect and adjust bandwidth, formant and band count for color. Lengthen the amp attack and release to remove sharp clicks.",
+        "Record the pad. For a transition, resample it pitched down (slower), place it before a section change, send it to delay and reverb, automate both FX mixes to rise as the sample plays, and fade the sample's level from 0 up to about half."
+      ]
+    },
+    {
+      "from_skill": "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+      "name": "Build a phaser from scratch: a chain of 1-7 all-pass biquads summed with the dry signal at half gain to make notches, Q 0.7071 for 'spread', a center frequency (50 Hz-18 kHz, start 500 Hz) swept exponentially by a 0.05-30 Hz sine/triangle LFO, a per-channel LFO phase offset up to 180 degrees and a dry/wet mix",
+      "goal": "Implement your own stereo phaser in any patching environment or Web Audio (BiquadFilterNode type 'allpass'): phase-shift the signal through a chain of all-pass filters, add it back to the dry signal to create moving notches, and sweep the shared center frequency exponentially with an LFO offset between left and right. This gives Polyrhythm Studio a native phaser for slow phaser pads.",
+      "steps": [
+        "Chain up to seven all-pass biquad filters (two-pole all-pass coefficients) and use a selector so only the chosen number of stages (1-7, the 'order' or notch count) is in the path.",
+        "Add the phase-shifted signal to the original and multiply the sum by 0.5 for gain matching.",
+        "Controls for the filters: 'spread' = Q (range up to about 16, start at 0.7071 = square root of 0.5; higher means narrower notches) and 'center' frequency (50 Hz to about 18 kHz, start 500 Hz).",
+        "Duplicate the whole chain for the right channel so left and right are processed separately.",
+        "Build the LFO from a 0-1 ramp (phasor) at 0.05-30 Hz, starting at 1 Hz: map it to a triangle with a centered peak or to a sine, selectable.",
+        "Sweep exponentially: center × 16^(LFO × depth), so at the LFO maximum the center is multiplied by a factor and at the minimum divided by the same factor. Scale with a depth control.",
+        "For stereo, add an offset to the right channel's ramp before the wave shaper and wrap it with modulo 1. Scale the offset control by 0.5 so 100% equals 180 degrees.",
+        "Add dry/wet: multiply the processed path by wet and the dry path by (1 - wet) per channel, then sum."
+      ]
+    },
+    {
+      "from_skill": "phaser-chorus-pure-wave-octave-pad",
+      "name": "Phaser + chorus pad from pure waves: triangle and sine unison stacks on one note in three octaves, slow filter-envelope opening, triplet-synced phaser, deep feedback chorus, notch the phaser whistle, dark church-style reverb",
+      "goal": "Make a soft trance/ambient background pad whose movement comes almost entirely from a phaser and a feedback chorus rather than modulation: soft triangle and sine unison stacks play the same note in three octaves, a slow filter envelope opens the tone as notes hold, and the space comes from a dark, low-cut convolution-style reverb. Delta vs the phaser cluster: pure-wave (triangle/sine) source, phaser + chorus in series as the only motion, and cutting the resonant 'whistle' the phaser creates.",
+      "steps": [
+        "Write the clip as the same note in three octaves (e.g. B0, B1, B2) following the progression of the bass.",
+        "Osc 1: triangle, 6 unison voices, small static detune, wide stereo, centre pan, retrigger on. Osc 2: sine, 8 unison voices, slightly more detune, phase offset (~85 degrees), retrigger on. Raise polyphony since several notes play.",
+        "Amp envelope: back the attack off so each note fades in slowly; keep sustain high.",
+        "24 dB/oct low-pass with a mod envelope on cutoff: cutoff a little below full (about 70% of range), slow envelope attack (about 65% of its range) and medium sustain (about 50%), so the filter opens gradually while notes hold.",
+        "Phaser: spread at maximum, left/right offset centred, width about half, default feedback, dry/wet about 38-40%, LFO rate tempo-synced slightly slower than 1/8 (the source uses a 4/1-triplet style setting).",
+        "Chorus after the phaser: delay about 4 ms, rate about 0.25 Hz, depth about 60%, feedback on (chorus feeds back into itself), width maximum, dry/wet about 40%.",
+        "Solo the pad and listen for a resonant whistle the phaser creates; cut that band with a narrow, deep EQ notch.",
+        "Reverb as an insert or send at about 35% wet: slow, large hall/church-type space, pre-delay about 10 ms, size and decay at maximum; on the reverb's EQ cut everything below 150 Hz and roll the highs off around 4.5 kHz. Add a light compressor after it (shorter release) to bring the reverb up.",
+        "Sidechain-compress the pad to the kick for gentle pump and automate the pad filter so it comes in and out across sections."
+      ]
     }
   ],
   "merged_from": [
@@ -229,7 +291,10 @@
     "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
     "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
-    "parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+    "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+    "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+    "phaser-chorus-pure-wave-octave-pad"
   ],
   "tags": [
     "allpass",
@@ -273,6 +338,9 @@
     "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
     "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
     "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
-    "parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+    "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+    "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+    "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+    "phaser-chorus-pure-wave-octave-pad"
   ]
 }

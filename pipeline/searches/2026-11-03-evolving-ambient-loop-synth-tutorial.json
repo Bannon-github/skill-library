@@ -1,0 +1,116 @@
+{
+ "topic": "evolving ambient loop synth tutorial",
+ "date": "2026-11-03",
+ "params": {
+  "topic": "evolving ambient loop synth tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 7,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "bAovHufTsc8",
+   "title": "How To Make Ambient Pads 100% From Scratch (Vital Tutorial)",
+   "channel": "Sleepy Vibes ",
+   "duration": 326,
+   "view_count": 63674,
+   "url": "https://www.youtube.com/watch?v=bAovHufTsc8",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.9
+  },
+  {
+   "id": "5A8mI4l-erg",
+   "title": "Make a Full Ambient Loop in Bitwig Studio Using Only Native Tools (Beginner Tutorial)",
+   "channel": "EtherLoops",
+   "duration": 1392,
+   "view_count": 316,
+   "url": "https://www.youtube.com/watch?v=5A8mI4l-erg",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.75
+  },
+  {
+   "id": "LItTSca5Avc",
+   "title": "Simple Ambient Loop on the Roland MC-101 - Demo and Tutorial",
+   "channel": "Algoritmarte",
+   "duration": 690,
+   "view_count": 3502,
+   "url": "https://www.youtube.com/watch?v=LItTSca5Avc",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.27
+  },
+  {
+   "id": "eu0zpa7OiYA",
+   "title": "Synthesis for beginners",
+   "channel": "Underdog Electronic Music School",
+   "duration": 944,
+   "view_count": 146464,
+   "url": "https://www.youtube.com/watch?v=eu0zpa7OiYA",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.08
+  },
+  {
+   "id": "9Re-L7z0068",
+   "title": "How to SYNTH DRONE without boring everyone",
+   "channel": "Jameson Nathan Jones",
+   "duration": 671,
+   "view_count": 84880,
+   "url": "https://www.youtube.com/watch?v=9Re-L7z0068",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.96
+  },
+  {
+   "id": "HJZG-qD4oso",
+   "title": "Make an Ambient Loop with One Free Synth (Vital + Organic Wavetables)",
+   "channel": "EtherLoops",
+   "duration": 1164,
+   "view_count": 876,
+   "url": "https://www.youtube.com/watch?v=HJZG-qD4oso",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.97
+  },
+  {
+   "id": "r_GQ2yp7KKY",
+   "title": "Korg Volca Keys: the Unlikely Ambient Drone Synthesizer",
+   "channel": "Electro / Magnetic",
+   "duration": 488,
+   "view_count": 71198,
+   "url": "https://www.youtube.com/watch?v=r_GQ2yp7KKY",
+   "query": "evolving ambient loop synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.93
+  }
+ ],
+ "dropped": [
+  {
+   "id": "KrVtkC8usmI",
+   "why": "already known"
+  },
+  {
+   "id": "tfJocFdYxsg",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

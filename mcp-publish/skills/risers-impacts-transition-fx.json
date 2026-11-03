@@ -62,6 +62,18 @@
         "video_id": "t97TU3p7-kE",
         "url": "https://www.youtube.com/watch?v=t97TU3p7-kE",
         "title": "HOW TO MAKE UPLIFTERS & DOWNLIFTERS IN SERUM!!!"
+      },
+      {
+        "from_skill": "whoosh-into-hit-layer-resample-chain",
+        "video_id": "3rCUdTDodrc",
+        "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+        "title": "Sound Design Tutorial: Cinematic Whoosh hit"
+      },
+      {
+        "from_skill": "organic-tension-from-track-sounds",
+        "video_id": "Pp88aLB3LpE",
+        "url": "https://www.youtube.com/watch?v=Pp88aLB3LpE",
+        "title": "How The Pros Build Tension (Without FX Samples)"
       }
     ]
   },
@@ -293,6 +305,34 @@
         "On a saw source, raise unison (e.g. ~7 voices), reduce detune for a tighter supersaw, and raise stereo blend slightly.",
         "Sidechain the riser to the kick (or a rhythmic duck envelope), easing mix if the duck is harsh (~75% wet in the transcript example). Add reverb/FX from the synth FX rack or inserts so it sits in the mix."
       ]
+    },
+    {
+      "from_skill": "whoosh-into-hit-layer-resample-chain",
+      "name": "Cinematic whoosh-hit: layer sub-whoosh, whoosh and three hit layers, edit the whoosh quieter than the hit and tighten the flam, resample at milestones, dark dual reverbs, upward/parallel compression, clipping, sub removed from the whoosh only, multiband then true-peak limiting",
+      "goal": "Build a punchy cinematic whoosh-into-hit impact by layering (a reversed sub-kick tail plus a resonant whoosh leading into three short metallic/wooden hits), then editing so the whoosh is quieter than the hit and the hit transients are only slightly flammed, and finishing with a resample-by-milestone processing chain. Delta vs our riser/whoosh variants: the whoosh-to-hit contrast rules (quieter whoosh, no sub in the whoosh) and the clip/limit finishing chain for impacts.",
+      "steps": [
+        "Layer: a sub layer made from the reversed tail of a sub kick, a resonant whoosh layer (e.g. noise or foley swept past a resonant body), and three short hit layers lightly pitched down, each with a small whoosh into a clean transient and a tail.",
+        "Resample the sum at the first milestone and keep the original; work on a duplicate.",
+        "Edit without plugins: chop the whoosh and lower its level below the hit; trim the hit layers so the transients flam only slightly (a small flam lengthens the body, too much sounds messy).",
+        "Resample again, add gentle tape saturation to glue the layers.",
+        "Send to two dark reverbs on returns: a room with about 2.75 s decay and a low filter, and a plate with about 3.6 s decay low-passed around 1.4 kHz; sum dry and reverbs into one bus.",
+        "On the bus: tame the high-end noise in the tail after the transient (adaptive denoise or a dynamic high-shelf cut that acts after the hit), then two upward/downward multiband compressors in series at low mix, then aggressive parallel compression at 50% wet.",
+        "Clip the peak hard (about 6 dB of clipping) to square off and prolong the transient, then limit lightly. Resample (milestone 3).",
+        "Final pass: re-edit any unwanted whoosh section with fades; high-pass only the whoosh portion at about 60 Hz; a few EQ notches/boosts by ear; light clipping (~1.5 dB); a multiband limiter (lowest band ~0-100 Hz) with some transient emphasis; then a true-peak limiter as a safety net."
+      ]
+    },
+    {
+      "from_skill": "organic-tension-from-track-sounds",
+      "name": "Organic build-up tension without riser samples: one oscillator of the main riff slowly ramps up in pitch, an irregular-length loop of the vocal (or lead) with chorus gets pitch-shifted up over the build, and a fully fed 1/8 delay return is revealed by return-volume automation with rising feedback, all ducked under the dry part",
+      "goal": "Build tension in a build-up section from material already in the track instead of stock risers: (1) a hidden riser inside the riff synth by ramping one oscillator's pitch upward while the other stays in tune, (2) a sampler loop of the vocal/lead at an irregular, non-tempo length with chorus, faded in and slowly pitch-shifted up, (3) a 100%-wet eighth-note delay fed at full send whose return level and feedback are automated up, then cut cleanly before the drop. Delta vs our riser variants: tension sourced from the track's own parts.",
+      "steps": [
+        "Riff riser: on the riff synth, automate only one oscillator's pitch to glide gradually upward across the build while the other oscillator and the notes stay in tune.",
+        "Irregular loop: load the vocal (or lead) into a sampler and loop a section whose length is not tied to the tempo; add a wide chorus.",
+        "Automate that loop's volume and EQ to bring it in over the build; sidechain it lightly to the dry vocal so the main part stays clear.",
+        "Pitch-shift the loop up gradually across the build with automation (a slow, steady upward shift).",
+        "Send the vocal group to a return with a 1/8-note delay at 100% wet; set the send to full and leave it; automate the return's fader instead, revealing it only for the swell.",
+        "Automate the delay feedback to ramp up slowly through the build (moderate maximum), lightly sidechain the echoes to the dry vocal, and fade the return to zero right before the drop."
+      ]
     }
   ],
   "merged_from": [
@@ -304,7 +344,9 @@
     "section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "synthesized-noise-impact-tail-lfo-shaped",
-    "uplifter-downlifter-pitchbend-filter-lfo"
+    "uplifter-downlifter-pitchbend-filter-lfo",
+    "whoosh-into-hit-layer-resample-chain",
+    "organic-tension-from-track-sounds"
   ],
   "tags": [
     "arrangement",
@@ -351,6 +393,8 @@
     "section-transition-toolkit-layered-risers-downlifters-impacts-throw-to-delay-early-pickup-stacked-exponential-automation-resampled-whooshes-reverse-reverb-removal-silence-across-barline-hangover",
     "shepard-tone-endless-riser-octave-crossfade-voices",
     "synthesized-noise-impact-tail-lfo-shaped",
-    "uplifter-downlifter-pitchbend-filter-lfo"
+    "uplifter-downlifter-pitchbend-filter-lfo",
+    "whoosh-into-hit-layer-resample-chain",
+    "organic-tension-from-track-sounds"
   ]
 }

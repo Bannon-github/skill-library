@@ -108,3 +108,26 @@ Source: [How to Compose Cinematic Music - FAST](https://www.youtube.com/watch?v=
 - Tempo automation: start at about 95 BPM, settle at 100, then ramp to about 110-115 BPM during the last run into the main chorus. Keep the new tempo or ease back for the end section.
 - Chorus extras: bring in cinematic drum patterns (in the orchestra patch's percussion layer) and have the synth double the bass roots plus the main melody. Outro mirrors the build: synth goes back to roots only.
 - Master: narrow the lows to mono, EQ plus compression on lows and mids with gentle upward compression on highs for clarity, light bus compression, final EQ and limiter.
+
+### Mix by arrangement in an ambient-techno track: a kick-plus-sub made only from a self-oscillating filter (snappy envelopes, sustain above zero, key-tracked, tuned to the root), a low and a mid/high pad pair, sequences on the same chord tones, and sections where pads rotate out so the kick, bass and main pad have room
+Source: [Ambient track walkthrough - how to make music like Martin Stürtzer](https://www.youtube.com/watch?v=CwRN2ZVZweA) · was `mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return`
+- Kick + sub: set all oscillator levels to zero so only the self-oscillating filter sounds. Give the filter envelope a very snappy decay, give the amp envelope a snappy decay with sustain above zero so a sub tone rings after the attack, and modulate the filter envelope amount by key tracking so higher notes hit higher.
+- Tune the filter cutoff to the track root. Write the kick clip with notes in up to three octaves (root plus an extra note two octaves up) for variation.
+- Percussion: a short drum hit through a bitcrusher and a repeat/reverse glitch effect whose loop is 14 steps against the 16-step clip, then a little delay and reverb. Add a simple hi-hat on bar 3 later.
+- Pads as a pair: a mid/high chord pad of root, fifth and seventh with no third (major/minor stays ambiguous), held 4 bars then 4 bars of rest, through a slow delay and a big reverb; plus a very low pad on the root. The pair together sets the mood.
+- Sequence: a single sine-like FM oscillator playing the same chord tones (root, fifth, seventh, plus the fourth) as a 4-bar improvised line; random per-note FM amount from two random LFOs, a little unison, a plucky envelope with short decay running into a longer release, filter fully open, delay and reverb on the insert. Optionally add a clock-synced repeat sparkle an octave up.
+- Second sequence later: a lightly detuned saw unison patch with snappy filter and amp envelopes, written as a 3-bar pattern (not 4) so it shifts against the 4-bar sections; ride its filter cutoff by hand through the track.
+- Arrange by decluttering: open with the pads, add the first sequence, then let one pad die out so only the sequence remains, which makes room for the kick, bass and main pad to enter. Keep the opening pads silent while the main pad plays.
+- Rotate: after the main pad plays twice, bring the opening pads back with kick and bass; then add the percussion and a simple high pad of three long notes to open the top range, muting the other pads.
+- Break and return: stop kick and bass for a while; before they return, high-pass the kick for a bar or two, then bring them back full. Use the same high-pass before the final fade.
+- Ending: mute all pads and let only the two sequences play out.
+
+### Action-cue tension with metric modulation: tempo map from sync-point markers, 100 BPM 4/4 to quarter-note triplet = 150 BPM, 3/4 -> 6/8 -> 5/8 (truncate an eighth), dotted-eighth = 133 BPM, return to tempo primo; piano sketch with ostinatos from one motif, then an edited MIDI rhythm track and orchestration by role
+Source: [Build tension for your action cue: Metric modulation, time signature changes, ostinatos and more !](https://www.youtube.com/watch?v=Dscd9Q79fwQ) · was `metric-modulation-action-cue`
+- Set a starting tempo and meter (e.g. 100 BPM, 4/4) and place markers at each sync point.
+- Metric modulation up: let the quarter-note triplet of the old tempo become the new beat (100 x 3/2 = 150 BPM).
+- Change meters to fit sync points and add drive: 3/4 -> 6/8, then 5/8 by truncating one eighth note.
+- Modulate again: make the dotted eighth of the old tempo the new quarter (100 / 0.75 = ~133 BPM); finally return to the opening tempo (tempo primo) to end the cycle.
+- Piano sketch over the tempo map: derive ostinatos and simple variations from the motif.
+- Temp rhythm track: export loop MIDI into the DAW and edit accents, rests and notes so it fits your sections.
+- Orchestrate by role: replace the piano opening with a harp-like plucked voice, double low ostinatos in low strings/bass synth, use winds to support and brass (the loudest section) for key dynamic points; bring piano back as a percussive ostinato; add clusters/effects at the opening.

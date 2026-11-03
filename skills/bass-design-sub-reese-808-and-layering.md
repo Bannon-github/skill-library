@@ -90,3 +90,44 @@ Source: [How to make custom bass drops / sub drops in Cubase (tutorial)](https:/
 - Draw frequency automation from start_hz to end_hz across the chosen length (e.g. 1 bar). Elongate or shorten the automation for brutal long drops vs fast stabs.
 - Automate bypass/mute so the generator is only active during the drop window.
 - Optional: add bass-harmonic exciters/saturation (e.g. 'max bass'-style) if you want audible upper harmonics; verify on a spectrum that harmonics appear only when desired. Export several lengths/keys into a personal drop folder.
+
+### Clear-bass workflow: low-cut every other part at 100-150 Hz, keep bass notes at 40-80 Hz, then audition three bass-line roles (matching-rhythm, eighth-note pulsing pluck with saw plus same-octave sine and a duck, sustained root per bar) and pick the one that fits
+Source: [I Fix A Beginner Producer's Weak Bass (in under 15 minutes)](https://www.youtube.com/watch?v=Z6IUhXyOvFc) · was `three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar`
+- Clean up first: mute or delete the old bass layers, thin out muddy duplicate chord layers, reduce heavy reverb on the lead/piano, and leave small gaps between melody notes so it reads more rhythmic.
+- Low-cut every non-bass instrument at a sweet spot between about 100 and 150 Hz. Check the analyzer: nothing else should spill into the sub range.
+- Make the bass patch: init synth, shift the octave until the fundamental sits below 100 Hz with notes landing between about 40 and 80 Hz, then use a tight low-pass to focus any waveform toward its lowest frequencies. Try several waveforms; add mid presence by opening the cutoff slightly or with light distortion.
+- Option 1, matching bass: copy the chord roots to a new track and cut them to the exact rhythm of the melody, so bass and melody hit together.
+- If any bass note gets lost in the chords or piano, move that note down an octave so the two parts sit in separate ranges.
+- Option 2, pulsing bass: eighth notes (8 per bar) following the chord roots. Make it a pluck: put a spare envelope on a fully closed cutoff with sustain at zero; use a saw and add a sine at the same octave to thicken it; add a light sidechain-style duck to enhance the pulse.
+- Option 3, sustained bass: one bass note per bar on the chord root. If it holds the energy back, try mono with a short glide between notes, or a wider high-unison saw version, optionally with a filter envelope; remember a mono sub sounds more anchored.
+- Play the track with each option and pick the one that fits: matching moves the melody along, pulsing gives a tighter foundation, sustained is the calmest.
+
+### Ambient bass with a solid floor: one mono voice with light unison, a single slow retriggered master LFO (about 4 bars) on many timbre targets (wavetable position, both filter cutoffs, drive, formant, FX filter) so everything moves together, an FM macro for grit, and a clean sine sub sent direct-out past the filter while the upper layers are high-passed
+Source: [Get BETTER ambient bass EVERY time](https://www.youtube.com/watch?v=MULPJOhSrZ0) · was `ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz`
+- Set the bass to a single voice (mono) and add light unison (the source uses 5 voices on two oscillators) for subtle motion that shows on an oscilloscope without smearing the low end.
+- Make one master LFO: retriggered on each note, slow (about 4 bars per cycle), and route it to many destinations at small amounts: wavetable position on both oscillators, filter 1 and filter 2 cutoff, distortion amount, spectral morph/harmonic stretch, a negative formant scale, and the FX distortion's filter and drive.
+- Add an FM macro: osc 2 frequency-modulates osc 1 (and vice versa), and the same macro brings in an offset distortion that only starts once FM is applied. Try it an octave up if it is muddy.
+- Add an osc-mix macro that fades a third oscillator in from zero.
+- For a solid floor, set a sub/extra oscillator to a plain sine with no LFO modulation and route it direct out (past the filter and effects).
+- Put a high-pass EQ on the moving layers (or the full patch before the sub joins) so they are cut at the low end and leave room for the sine; balance the sub level by ear.
+- Apply bass mono below about 100-120 Hz on the channel (or rely on the single voice), and A/B in the track: the bass should stand out a little and guide the track without dominating.
+
+### Make a sine sub audible on phones and laptops: keep the 20-60 Hz fundamental but add pleasing harmonics in the 60-200 Hz bass range with volume-compensated hard clipping (odd harmonics) and/or an added overtone series (octave, fifth, octave), then scoop the honky low mids, low-pass the fizz, optionally add soft sine layers two and four octaves up, and tilt toward the top only if notes are still unclear
+Source: [Create "Audible" Sub Bass in Ableton Live](https://www.youtube.com/watch?v=63FvtgN6Yrc) · was `audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt`
+- Check the sine sub on an analyzer: only the fundamental shows, inside 20-60 Hz, and the notes are hard to make out on small speakers.
+- Add volume-compensated hard clipping and raise it slowly until the bass line becomes audible. It adds odd harmonics (e.g. one at 139 Hz for a low F sharp).
+- Alternatively or in addition, add the harmonic overtone series to the sine: an octave, a fifth above that, and the next octave, at low levels.
+- Scoop the low mid-range that the harmonics create with a bell cut, which also emphasizes the lows and makes the bass less honky.
+- Low-pass the result to tame the upper harmonics and any fizz.
+- To keep a subby, 'wumpy' character instead of grit, add soft triangle/sine-like layers two octaves up and four octaves up and set their level with the low-pass. A little saturation on top goes a long way.
+- For a thinner, different distortion color, compress the sub with a very fast attack and fast release (multiband if available); low-pass afterwards to clean up the aliasing junk.
+- If notes are still unclear, tilt the EQ to favor the top and reduce the sub, re-scoop a little and low-pass again. Check on phone/laptop speakers and on headphones.
+
+### Parallel octave-down bass for a thin ambient stereo take: duplicate the mix, pitch it down an octave at the same tempo, low-pass it at ~100 Hz (12 dB/oct), high-pass the original at the same point (24 dB/oct), squash the copy with a limiter and blend it in quietly, checking phase correlation
+Source: [Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music](https://www.youtube.com/watch?v=eDErfMlnh7c) · was `parallel-octave-down-bass-from-stereo-mix`
+- Analyse the mix: find where the low end rolls off (e.g. steeply below ~100 Hz).
+- Duplicate the track and pitch the copy down one octave while keeping the playback speed (warp/time-stretch). Energy at 100 Hz now appears at 50 Hz.
+- Turn the copy well down, then low-pass it gently (12 dB/oct) at about the original's roll-off (~100 Hz).
+- High-pass the original (24 dB/oct) at the same point so the two paths do not overlap.
+- Check a phase-correlation meter around 100 Hz; adjust the crossover if correlation drops.
+- Limit the copy aggressively (several dB of gain reduction, e.g. ~6-7 dB) so its dynamics are flattened, then set its level low and A/B on and off.

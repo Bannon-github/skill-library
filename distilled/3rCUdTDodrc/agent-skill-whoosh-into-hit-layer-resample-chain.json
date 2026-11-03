@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "whoosh-into-hit-layer-resample-chain",
+  "name": "Cinematic whoosh-hit: layer sub-whoosh, whoosh and three hit layers, edit the whoosh quieter than the hit and tighten the flam, resample at milestones, dark dual reverbs, upward/parallel compression, clipping, sub removed from the whoosh only, multiband then true-peak limiting",
+  "goal": "Build a punchy cinematic whoosh-into-hit impact by layering (a reversed sub-kick tail plus a resonant whoosh leading into three short metallic/wooden hits), then editing so the whoosh is quieter than the hit and the hit transients are only slightly flammed, and finishing with a resample-by-milestone processing chain. Delta vs our riser/whoosh variants: the whoosh-to-hit contrast rules (quieter whoosh, no sub in the whoosh) and the clip/limit finishing chain for impacts.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "3rCUdTDodrc",
+    "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+    "title": "Sound Design Tutorial: Cinematic Whoosh hit",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/3rCUdTDodrc/agent-skill-whoosh-into-hit-layer-resample-chain.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with audio editing, resampling/bounce and return tracks",
+    "Source layers: a synth or recorded sub kick, noise/foley whooshes, 2-3 short impact hits (own recordings or synthesized)",
+    "Tape saturation, two reverbs, EQ, multiband/upward compressor, clipper, multiband limiter, true-peak limiter (any brands)"
+  ],
+  "inputs": [
+    {
+      "name": "layers",
+      "type": "audio",
+      "description": "Sub layer, 1-2 whoosh layers, 2-3 hit layers",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "whoosh_hit",
+      "type": "audio",
+      "description": "Mastered whoosh-into-hit impact, true-peak safe"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "The whoosh must be quieter than the hit transient so the hit feels loud by contrast.",
+    "Remove sub (below ~60 Hz) from the whoosh so the low end arrives with the hit.",
+    "Pitch moves are fixed transpositions of hit layers (lowered pitch), not wobble.",
+    "Keep a copy at each resample milestone so you can always go back.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer: a sub layer made from the reversed tail of a sub kick, a resonant whoosh layer (e.g. noise or foley swept past a resonant body), and three short hit layers lightly pitched down, each with a small whoosh into a clean transient and a tail.",
+      "tool": "Arrangement / sampler",
+      "expect": "Five layers that read as whoosh -> hit"
+    },
+    {
+      "n": 2,
+      "action": "Resample the sum at the first milestone and keep the original; work on a duplicate.",
+      "tool": "Bounce / resample",
+      "expect": "Safe restore point"
+    },
+    {
+      "n": 3,
+      "action": "Edit without plugins: chop the whoosh and lower its level below the hit; trim the hit layers so the transients flam only slightly (a small flam lengthens the body, too much sounds messy).",
+      "tool": "Clip editing / gain",
+      "expect": "Quieter whoosh, cleaner single hit"
+    },
+    {
+      "n": 4,
+      "action": "Resample again, add gentle tape saturation to glue the layers.",
+      "tool": "Tape saturation",
+      "expect": "Layers sit together"
+    },
+    {
+      "n": 5,
+      "action": "Send to two dark reverbs on returns: a room with about 2.75 s decay and a low filter, and a plate with about 3.6 s decay low-passed around 1.4 kHz; sum dry and reverbs into one bus.",
+      "tool": "Reverb returns",
+      "expect": "Deep, low tail with two characters"
+    },
+    {
+      "n": 6,
+      "action": "On the bus: tame the high-end noise in the tail after the transient (adaptive denoise or a dynamic high-shelf cut that acts after the hit), then two upward/downward multiband compressors in series at low mix, then aggressive parallel compression at 50% wet.",
+      "tool": "Dynamics",
+      "expect": "Denser, more energetic body without hissy tail"
+    },
+    {
+      "n": 7,
+      "action": "Clip the peak hard (about 6 dB of clipping) to square off and prolong the transient, then limit lightly. Resample (milestone 3).",
+      "tool": "Clipper + limiter",
+      "expect": "Heavier, boxier transient"
+    },
+    {
+      "n": 8,
+      "action": "Final pass: re-edit any unwanted whoosh section with fades; high-pass only the whoosh portion at about 60 Hz; a few EQ notches/boosts by ear; light clipping (~1.5 dB); a multiband limiter (lowest band ~0-100 Hz) with some transient emphasis; then a true-peak limiter as a safety net.",
+      "tool": "EQ + clipper + multiband limiter + true-peak limiter",
+      "expect": "Punchy, heavy impact that cuts through without digital clipping"
+    }
+  ],
+  "verification": [
+    "Whoosh peak level is clearly below the hit transient level.",
+    "No energy below ~60 Hz before the hit; the sub arrives with the hit.",
+    "Hit transient shows at most a slight flam.",
+    "Final file has no true-peak overs."
+  ],
+  "tags": [
+    "impact",
+    "whoosh",
+    "hit",
+    "transition-fx",
+    "trailer",
+    "layering",
+    "clipping",
+    "resampling",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://whoosh-into-hit-layer-resample-chain"
+}

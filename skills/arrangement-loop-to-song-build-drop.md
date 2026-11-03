@@ -104,3 +104,14 @@ Source: [Arrangement Hacks for MELODIC TECHNO | Jonas Saalbach | Ableton Live](h
 - At the reveal point change the ostinato for the first time, start the moving bassline, add the new percussion layer and the lead, and move the pad to the ostinato's harmony, all on the same downbeat.
 - In the following drop let the bass stop briefly while hats keep running; then switch one element every 8 bars (add, remove, or octave shift).
 - Build down slowly to a loopable outro; keep it shorter for album versions.
+
+### Ambient loop to full track: split the chord progression into single-chord clips, intro from the loop, slower evolving section -> 'chorus' with faster chord changes -> slow outro; per-layer slow movement (band-pass pad filter with two LFOs, random LP and comb on the atmos, slow auto-pan), cutoff 'spikes' on the bass drone, arpeggiator rate automated whole -> half -> quarter -> eighth notes for energy, a double-speed drum clip and an arpeggiated pluck bass replacing the drone in the peak
+Source: [Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)](https://www.youtube.com/watch?v=PE3c8J6glho) · was `ambient-loop-to-track-arp-rate-energy`
+- Duplicate the loop to a clip slot and cut the chord progression into single-chord clips (consolidate each first).
+- Make a 16-bar intro from the loop scene.
+- Pad: band-pass (2-pole) filter with two independent slow LFOs on frequency and resonance. Atmos: smooth slow random modulator (unipolar, subtle) on a low-pass cutoff, a comb filter with a slow LFO on feedback and smooth random on frequency, and a very slow bipolar LFO on pan.
+- Automate the bass drone's oscillator cutoff in short 'spikes', copy the automation along the timeline and vary level/shape.
+- Arrange: slower evolving section, then a chorus-like section with more frequent chord changes and higher dynamics, then a slower outro.
+- Automate the arpeggiator rate: whole notes in the slow section, then half, quarter and eighth notes as energy rises (eighths in the chorus).
+- Duplicate the drum clip and scale it to 50% length for a double-time peak section; sprinkle squelch hits, moving them by octaves for faster/slower squelches.
+- For the peak, add an arpeggiated pluck bass fed with the pad chords (tune its ratio/octave lower for depth) and mute the bass drone there; finish with lightly EQ'd, delayed, reverbed one-shots.

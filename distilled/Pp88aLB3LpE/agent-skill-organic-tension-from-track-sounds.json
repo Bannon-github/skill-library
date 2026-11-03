@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "organic-tension-from-track-sounds",
+  "name": "Organic build-up tension without riser samples: one oscillator of the main riff slowly ramps up in pitch, an irregular-length loop of the vocal (or lead) with chorus gets pitch-shifted up over the build, and a fully fed 1/8 delay return is revealed by return-volume automation with rising feedback, all ducked under the dry part",
+  "goal": "Build tension in a build-up section from material already in the track instead of stock risers: (1) a hidden riser inside the riff synth by ramping one oscillator's pitch upward while the other stays in tune, (2) a sampler loop of the vocal/lead at an irregular, non-tempo length with chorus, faded in and slowly pitch-shifted up, (3) a 100%-wet eighth-note delay fed at full send whose return level and feedback are automated up, then cut cleanly before the drop. Delta vs our riser variants: tension sourced from the track's own parts.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Pp88aLB3LpE",
+    "url": "https://www.youtube.com/watch?v=Pp88aLB3LpE",
+    "title": "How The Pros Build Tension (Without FX Samples)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Pp88aLB3LpE/agent-skill-organic-tension-from-track-sounds.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with automation, return tracks and sidechain",
+    "Synth with two oscillators, a sampler with loop points, chorus, a pitch shifter, a tempo-synced delay"
+  ],
+  "inputs": [
+    {
+      "name": "build_section",
+      "type": "project",
+      "description": "The bars leading into a drop/climax, with a riff synth and a vocal or lead part",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tension_layers",
+      "type": "audio",
+      "description": "Three in-track tension layers automated across the build"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Pitch ramps are smooth, monotonic automation over the build (deliberate rises), never random wobble; the riff's other oscillator stays in tune.",
+    "Cut delay tails before the drop so it lands cleanly.",
+    "Keep feedback below runaway; the echoes should intensify without swamping the mix.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Riff riser: on the riff synth, automate only one oscillator's pitch to glide gradually upward across the build while the other oscillator and the notes stay in tune.",
+      "tool": "Synth osc pitch automation",
+      "expect": "The riff itself strains upward; no separate riser track"
+    },
+    {
+      "n": 2,
+      "action": "Irregular loop: load the vocal (or lead) into a sampler and loop a section whose length is not tied to the tempo; add a wide chorus.",
+      "tool": "Sampler + chorus",
+      "expect": "A loop that drifts against the groove"
+    },
+    {
+      "n": 3,
+      "action": "Automate that loop's volume and EQ to bring it in over the build; sidechain it lightly to the dry vocal so the main part stays clear.",
+      "tool": "Volume/EQ automation + sidechain",
+      "expect": "Subliminal tension that grows"
+    },
+    {
+      "n": 4,
+      "action": "Pitch-shift the loop up gradually across the build with automation (a slow, steady upward shift).",
+      "tool": "Pitch shifter automation",
+      "expect": "Loop becomes a synthetic riser made from the track"
+    },
+    {
+      "n": 5,
+      "action": "Send the vocal group to a return with a 1/8-note delay at 100% wet; set the send to full and leave it; automate the return's fader instead, revealing it only for the swell.",
+      "tool": "Return track + delay",
+      "expect": "Wall of echoes controllable by one fader"
+    },
+    {
+      "n": 6,
+      "action": "Automate the delay feedback to ramp up slowly through the build (moderate maximum), lightly sidechain the echoes to the dry vocal, and fade the return to zero right before the drop.",
+      "tool": "Delay feedback automation",
+      "expect": "Echoes intensify, then stop cleanly at the drop"
+    }
+  ],
+  "verification": [
+    "Three tension layers rise over the build and all stop or resolve at the drop.",
+    "Only one riff oscillator changes pitch; the riff still reads in key.",
+    "No delay tail overlaps the first beat of the drop."
+  ],
+  "tags": [
+    "tension",
+    "build-up",
+    "riser",
+    "arrangement",
+    "transition-fx",
+    "delay-throw",
+    "resampling",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://organic-tension-from-track-sounds"
+}

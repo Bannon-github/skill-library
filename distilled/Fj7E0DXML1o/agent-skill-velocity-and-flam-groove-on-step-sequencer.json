@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "velocity-and-flam-groove-on-step-sequencer",
+  "name": "Human drums on any step sequencer: four-on-the-floor kick, eighth hats with the hats that land on the kick turned down, 56% swing, a 16th-hat layer only on the second bar with every other hit softer, open hat on the last step of bar 2, a loose clap built from 3-4 stacked clap tracks nudged early/late with varied velocity and pitch, a track with an odd 24-step second bar and an 8-bar reset, random sample-start drift on the closed hat, and a pumping bus compressor",
+  "goal": "Get movement and feel into rigid step-sequenced drums with velocity, micro-timing and pattern length rather than more parts: accent the off-beat hats, add a second-bar 16th hat layer, build a loose 'flammed' clap from stacked copies shifted slightly early and late, let one track's pattern length make a cycle against the bar, and glue with a pumping compressor. Delta vs our groove variants: four-on-the-floor velocity shaping, stacked-clap flam and odd-length pattern resets.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Fj7E0DXML1o",
+    "url": "https://www.youtube.com/watch?v=Fj7E0DXML1o",
+    "title": "Drum programming Tips for ANY machine",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Fj7E0DXML1o/agent-skill-velocity-and-flam-groove-on-step-sequencer.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "Any step sequencer or drum machine with per-step velocity, swing, micro-timing, per-track length and an LFO",
+    "Kick, closed/open hat and clap sounds (synthesized or own samples)"
+  ],
+  "inputs": [
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Track tempo",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "groove",
+      "type": "midi+audio",
+      "description": "2-bar (and 8-bar cycle) drum groove with human feel"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Keep the kick on the grid; feel comes from hats and claps.",
+    "Micro-timing offsets are small and fixed per copy (no random pitch).",
+    "Bring the drums in early (by about count 8).",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Program a four-on-the-floor kick.",
+      "tool": "Sequencer",
+      "expect": "Steady pulse"
+    },
+    {
+      "n": 2,
+      "action": "Eighth hats: lower the velocity of the hats that coincide with the kick so the off-beat hats stand out; set swing to about 56%.",
+      "tool": "Velocity + swing",
+      "expect": "Bouncy hat line that sounds compressed"
+    },
+    {
+      "n": 3,
+      "action": "On a second hat track, add 16th hats only in the second bar of a two-bar pattern, with every other hit lower in velocity.",
+      "tool": "Second hat track (32 steps)",
+      "expect": "Bar-2 lift"
+    },
+    {
+      "n": 4,
+      "action": "Put a softer, slightly pitched-down open hat on step 15 of bar 2 with a little reverb send.",
+      "tool": "Open hat track",
+      "expect": "Phrase-end lift"
+    },
+    {
+      "n": 5,
+      "action": "Loose clap: copy the clap to 3-4 tracks; leave one on the grid, push one a little early, one later and one even later; vary velocities and pitch one copy up (and one far down, quieter, high-passed); add a little reverb.",
+      "tool": "Stacked clap tracks + micro-timing",
+      "expect": "A wide, loose, flammed clap"
+    },
+    {
+      "n": 6,
+      "action": "Make one track 32 steps with the second bar shortened to 24 steps and a pattern reset every 8 bars (128 steps), so it cycles against the bar.",
+      "tool": "Per-track length + reset",
+      "expect": "Variation over an 8-bar cycle"
+    },
+    {
+      "n": 7,
+      "action": "On the closed hat, route a slow, free LFO (odd length) at low depth to sample start, with a soft attack.",
+      "tool": "LFO -> sample start",
+      "expect": "Subtle hit-to-hit timbre drift"
+    },
+    {
+      "n": 8,
+      "action": "Balance the claps down, then add a pumping bus compressor; if the kick blooms too much, shorten it and tune it down slightly.",
+      "tool": "Bus compressor",
+      "expect": "Glued, pumping groove"
+    }
+  ],
+  "verification": [
+    "Kick-aligned hats are measurably lower in velocity than off-beat hats.",
+    "Clap copies are offset by small, different amounts.",
+    "Pattern repeats exactly only every 8 bars."
+  ],
+  "tags": [
+    "drums",
+    "groove",
+    "velocity",
+    "swing",
+    "micro-timing",
+    "house",
+    "step-sequencer",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://velocity-and-flam-groove-on-step-sequencer"
+}

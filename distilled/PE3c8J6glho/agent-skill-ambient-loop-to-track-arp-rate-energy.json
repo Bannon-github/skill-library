@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-loop-to-track-arp-rate-energy",
+  "name": "Ambient loop to full track: split the chord progression into single-chord clips, intro from the loop, slower evolving section -> 'chorus' with faster chord changes -> slow outro; per-layer slow movement (band-pass pad filter with two LFOs, random LP and comb on the atmos, slow auto-pan), cutoff 'spikes' on the bass drone, arpeggiator rate automated whole -> half -> quarter -> eighth notes for energy, a double-speed drum clip and an arpeggiated pluck bass replacing the drone in the peak",
+  "goal": "Expand a finished ambient loop into a structured track by turning it into rearrangeable single-chord clips and using rhythmic density as the energy control: the arp's note rate steps up from whole notes to eighths as sections intensify, the chorus changes chords more often, drums go double-time by scaling the clip to 50%, and an arpeggiated pluck bass takes over from the drone at the peak. Delta vs our loop-to-song variants: arp-rate and harmonic-rhythm as the section energy dials.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "PE3c8J6glho",
+    "url": "https://www.youtube.com/watch?v=PE3c8J6glho",
+    "title": "Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/PE3c8J6glho/agent-skill-ambient-loop-to-track-arp-rate-energy.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with clip launcher or loop regions, automation and clip time-scaling",
+    "Synth with arpeggiator, filters with modulators, comb filter, auto-pan/utility"
+  ],
+  "inputs": [
+    {
+      "name": "loop",
+      "type": "project",
+      "description": "Finished ambient loop: pad, atmos, bass drone, arp pluck, drum clip",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "project",
+      "description": "Intro, evolving section, chorus-like peak, outro"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Drums early (Matt's taste) overrides the source's slow start: bring the drum clip in by about count 8 even in the evolving section; keep the double-time clip for the peak.",
+    "Modulators move filters/pan only, not pitch.",
+    "Mute the drone while the pluck bass plays so they do not compete.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Duplicate the loop to a clip slot and cut the chord progression into single-chord clips (consolidate each first).",
+      "tool": "Clip launcher / editor",
+      "expect": "Rearrangeable chord blocks"
+    },
+    {
+      "n": 2,
+      "action": "Make a 16-bar intro from the loop scene.",
+      "tool": "Timeline",
+      "expect": "Intro section"
+    },
+    {
+      "n": 3,
+      "action": "Pad: band-pass (2-pole) filter with two independent slow LFOs on frequency and resonance. Atmos: smooth slow random modulator (unipolar, subtle) on a low-pass cutoff, a comb filter with a slow LFO on feedback and smooth random on frequency, and a very slow bipolar LFO on pan.",
+      "tool": "Filters + modulators",
+      "expect": "Each layer moves slowly on its own"
+    },
+    {
+      "n": 4,
+      "action": "Automate the bass drone's oscillator cutoff in short 'spikes', copy the automation along the timeline and vary level/shape.",
+      "tool": "Automation",
+      "expect": "Periodic flares in the drone"
+    },
+    {
+      "n": 5,
+      "action": "Arrange: slower evolving section, then a chorus-like section with more frequent chord changes and higher dynamics, then a slower outro.",
+      "tool": "Timeline",
+      "expect": "Clear energy arc"
+    },
+    {
+      "n": 6,
+      "action": "Automate the arpeggiator rate: whole notes in the slow section, then half, quarter and eighth notes as energy rises (eighths in the chorus).",
+      "tool": "Arp rate automation",
+      "expect": "Rhythmic density tracks the arc"
+    },
+    {
+      "n": 7,
+      "action": "Duplicate the drum clip and scale it to 50% length for a double-time peak section; sprinkle squelch hits, moving them by octaves for faster/slower squelches.",
+      "tool": "Clip scaling",
+      "expect": "Faster drums at the peak"
+    },
+    {
+      "n": 8,
+      "action": "For the peak, add an arpeggiated pluck bass fed with the pad chords (tune its ratio/octave lower for depth) and mute the bass drone there; finish with lightly EQ'd, delayed, reverbed one-shots.",
+      "tool": "Synth + arpeggiator",
+      "expect": "Peak section with a moving bass"
+    }
+  ],
+  "verification": [
+    "Arp rate automation increases step-wise toward the peak and drops in the outro.",
+    "Peak section has the double-time drum clip and no drone/pluck-bass overlap.",
+    "Drums enter by about 10-12 s."
+  ],
+  "tags": [
+    "arrangement",
+    "loop-to-song",
+    "ambient",
+    "arpeggiator",
+    "energy-curve",
+    "sections",
+    "loops",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-loop-to-track-arp-rate-energy"
+}

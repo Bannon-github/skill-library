@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "parallel-octave-down-bass-from-stereo-mix",
+  "name": "Parallel octave-down bass for a thin ambient stereo take: duplicate the mix, pitch it down an octave at the same tempo, low-pass it at ~100 Hz (12 dB/oct), high-pass the original at the same point (24 dB/oct), squash the copy with a limiter and blend it in quietly, checking phase correlation",
+  "goal": "Add weight to a thin one-take ambient/modular stereo recording (or a bounced pad/drone stem) without writing a new bass part: derive a sub layer by pitching a copy of the mix down one octave, crossover it against the original at about 100 Hz, remove its dynamics and tuck it underneath. Delta vs our bass-design variants: a sub generated from the existing material by octave transposition plus a complementary crossover, for when there are no multitracks.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "eDErfMlnh7c",
+    "url": "https://www.youtube.com/watch?v=eDErfMlnh7c",
+    "title": "Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/eDErfMlnh7c/agent-skill-parallel-octave-down-bass-from-stereo-mix.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with pitch shifting/warping that keeps tempo",
+    "EQ/filters, a limiter, a spectrum analyzer and a phase-correlation meter"
+  ],
+  "inputs": [
+    {
+      "name": "stereo_mix",
+      "type": "audio",
+      "description": "Finished stereo take or stem whose low end rolls off steeply around 100 Hz",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "parallel_sub",
+      "type": "audio",
+      "description": "Octave-down, low-passed, flattened copy blended under the original"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Octave shift is a fixed -12 semitone transposition; no pitch modulation.",
+    "The added layer supports the track; keep it quiet so it does not take over.",
+    "Crossover the two paths at the same frequency to avoid doubled frequencies and phase problems.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Analyse the mix: find where the low end rolls off (e.g. steeply below ~100 Hz).",
+      "tool": "Spectrum analyzer",
+      "expect": "Roll-off frequency noted"
+    },
+    {
+      "n": 2,
+      "action": "Duplicate the track and pitch the copy down one octave while keeping the playback speed (warp/time-stretch). Energy at 100 Hz now appears at 50 Hz.",
+      "tool": "Pitch shift / warp",
+      "expect": "Octave-down copy in time with the original"
+    },
+    {
+      "n": 3,
+      "action": "Turn the copy well down, then low-pass it gently (12 dB/oct) at about the original's roll-off (~100 Hz).",
+      "tool": "Low-pass filter",
+      "expect": "Copy contributes only sub/bass"
+    },
+    {
+      "n": 4,
+      "action": "High-pass the original (24 dB/oct) at the same point so the two paths do not overlap.",
+      "tool": "High-pass filter",
+      "expect": "Complementary crossover"
+    },
+    {
+      "n": 5,
+      "action": "Check a phase-correlation meter around 100 Hz; adjust the crossover if correlation drops.",
+      "tool": "Correlation meter",
+      "expect": "No phase problems at the crossover"
+    },
+    {
+      "n": 6,
+      "action": "Limit the copy aggressively (several dB of gain reduction, e.g. ~6-7 dB) so its dynamics are flattened, then set its level low and A/B on and off.",
+      "tool": "Limiter + fader",
+      "expect": "Steady, quiet sub support; mix feels heavier, not boomy"
+    }
+  ],
+  "verification": [
+    "Sub band (~40-80 Hz) shows new, steady energy after blending.",
+    "Correlation stays positive around the crossover.",
+    "Bypassing the copy makes the mix sound noticeably thinner, but enabling it does not mask the original."
+  ],
+  "tags": [
+    "bass",
+    "sub-bass",
+    "punchy-bass",
+    "parallel-processing",
+    "ambient",
+    "mastering",
+    "crossover",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://parallel-octave-down-bass-from-stereo-mix"
+}

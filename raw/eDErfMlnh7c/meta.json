@@ -2,14 +2,22 @@
   "video_id": "eDErfMlnh7c",
   "title": "Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music",
   "url": "https://www.youtube.com/watch?v=eDErfMlnh7c",
-  "fetched_at": "2026-11-02T18:07:52.498119+00:00",
+  "fetched_at": "2026-11-03T17:15:23.601809+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "Holosuite Mastering",
   "duration": 447,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 174,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/eDErfMlnh7c/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/eDErfMlnh7c/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -31,30 +39,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.7
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 10.0
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.2
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

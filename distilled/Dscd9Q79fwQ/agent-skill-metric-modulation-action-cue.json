@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "metric-modulation-action-cue",
+  "name": "Action-cue tension with metric modulation: tempo map from sync-point markers, 100 BPM 4/4 to quarter-note triplet = 150 BPM, 3/4 -> 6/8 -> 5/8 (truncate an eighth), dotted-eighth = 133 BPM, return to tempo primo; piano sketch with ostinatos from one motif, then an edited MIDI rhythm track and orchestration by role",
+  "goal": "Turn one simple motif into a minute of escalating action music by changing tempo and meter smoothly instead of randomly: mark sync points, then use metric modulation (a subdivision of the old beat becomes the new beat) plus time-signature changes to hit them, sketch on piano with ostinatos and motif variations, build a temp rhythm track from loop MIDI that you edit (accents, rests), and orchestrate with low ostinatos, supporting winds/brass and a percussive piano.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Dscd9Q79fwQ",
+    "url": "https://www.youtube.com/watch?v=Dscd9Q79fwQ",
+    "title": "Build tension for your action cue: Metric modulation, time signature changes, ostinatos and more !",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Dscd9Q79fwQ/agent-skill-metric-modulation-action-cue.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with a tempo/signature track and markers",
+    "Piano and any orchestral or synth ensemble sounds; a rhythm-loop instrument that can export MIDI"
+  ],
+  "inputs": [
+    {
+      "name": "motif",
+      "type": "midi",
+      "description": "A short simple piano motif",
+      "required": true
+    },
+    {
+      "name": "sync_points",
+      "type": "list",
+      "description": "Times (s or SMPTE) the music must hit",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cue",
+      "type": "midi+audio",
+      "description": "~1-minute cue with a tempo map of metric modulations hitting the sync points"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Tempo changes follow metric relationships (new tempo = old tempo x subdivision ratio), not arbitrary jumps.",
+    "Edit loop MIDI (accents, rests, notes) so the rhythm track is not a stock loop.",
+    "Synth voices keep steady pitch (no random wobble).",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set a starting tempo and meter (e.g. 100 BPM, 4/4) and place markers at each sync point.",
+      "tool": "Tempo track + markers",
+      "expect": "Grid of hit points"
+    },
+    {
+      "n": 2,
+      "action": "Metric modulation up: let the quarter-note triplet of the old tempo become the new beat (100 x 3/2 = 150 BPM).",
+      "tool": "Tempo track",
+      "expect": "Smooth, faster feel"
+    },
+    {
+      "n": 3,
+      "action": "Change meters to fit sync points and add drive: 3/4 -> 6/8, then 5/8 by truncating one eighth note.",
+      "tool": "Signature track",
+      "expect": "Off-balance, urgent phrasing"
+    },
+    {
+      "n": 4,
+      "action": "Modulate again: make the dotted eighth of the old tempo the new quarter (100 / 0.75 = ~133 BPM); finally return to the opening tempo (tempo primo) to end the cycle.",
+      "tool": "Tempo track",
+      "expect": "Escalation then return"
+    },
+    {
+      "n": 5,
+      "action": "Piano sketch over the tempo map: derive ostinatos and simple variations from the motif.",
+      "tool": "Piano",
+      "expect": "Full-length sketch from one idea"
+    },
+    {
+      "n": 6,
+      "action": "Temp rhythm track: export loop MIDI into the DAW and edit accents, rests and notes so it fits your sections.",
+      "tool": "Loop instrument + MIDI editor",
+      "expect": "Personal, non-prefab rhythm bed"
+    },
+    {
+      "n": 7,
+      "action": "Orchestrate by role: replace the piano opening with a harp-like plucked voice, double low ostinatos in low strings/bass synth, use winds to support and brass (the loudest section) for key dynamic points; bring piano back as a percussive ostinato; add clusters/effects at the opening.",
+      "tool": "Instrument assignment",
+      "expect": "Escalating, coherent cue"
+    }
+  ],
+  "verification": [
+    "Every tempo change can be written as old BPM x ratio (3/2, 4/3...).",
+    "Section boundaries line up with the sync-point markers.",
+    "The motif is recognisable in at least two variations."
+  ],
+  "tags": [
+    "arrangement",
+    "tension",
+    "metric-modulation",
+    "odd-meter",
+    "ostinato",
+    "cinematic",
+    "music-theory",
+    "rhythm",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://metric-modulation-action-cue"
+}

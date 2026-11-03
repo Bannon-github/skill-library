@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "drone-role-pedal-point-and-polychords",
+  "name": "Make drones interesting by role: a bass pedal point under changing harmony (or a repeated arpeggiated root), a non-key-tracked mid-range drone as a through-line with the bass and an upper note moving around it, layered drones tuned to a static chord with a progression underneath for polychords, and wavetable-position sweeps for texture",
+  "goal": "Decide what a drone does in the track and write around it: as a pedal point (one bass note held or repeated for the whole track while chords and textures change above), as a mid-range 'connective tissue' oscillator (pitch tracking off) that the bass line and a note above it rub against, or as a stack of drones forming a fixed chord over a moving progression to create polychords and unresolved tension. Keep exposed drones alive with slow wavetable-position sweeps. Delta vs the existing 'held root under a changing chord' harmony variant: the mid-range fixed-pitch through-line and drone-stack polychords.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "9Re-L7z0068",
+    "url": "https://www.youtube.com/watch?v=9Re-L7z0068",
+    "title": "How to SYNTH DRONE without boring everyone",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/9Re-L7z0068/agent-skill-drone-role-pedal-point-and-polychords.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "Synth where one oscillator can have key tracking off (fixed pitch), or a separate drone voice",
+    "Wavetable synth with a modulatable position",
+    "Basic chord knowledge"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Track key and the drone note(s)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "drone_arrangement",
+      "type": "midi+audio",
+      "description": "Drone layer plus the moving parts written around it"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Steady pitch (Matt's taste): the source likes wobbly tape loops on drones; skip tape wow/flutter or keep it tiny and never on the foundation.",
+    "A drone used as the foundation locks the low end; then interest must come from harmony, texture and rhythm above it.",
+    "Do not stack several drones in the low end; keep stacked drones in the mids/high mids.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose the drone's role: foundation (bass pedal point) or textural through-line in the mids/high mids.",
+      "tool": "Planning",
+      "expect": "Role decided"
+    },
+    {
+      "n": 2,
+      "action": "Pedal point: hold or repeat one bass note for the whole piece (an arpeggiator repeating the root counts); change chords, textures and rhythm above it, e.g. hold the dominant to build tension before resolving to the tonic.",
+      "tool": "Bass voice + chords",
+      "expect": "Tension from harmony moving over a fixed bass"
+    },
+    {
+      "n": 3,
+      "action": "Through-line: switch off key tracking on one oscillator and tune it to a mid-range note; play bass notes and a note above that move around it, auditioning chords for the rubs they create. A second fixed partial (e.g. A440) can be added rhythmically.",
+      "tool": "Synth with fixed-pitch oscillator",
+      "expect": "A constant middle tone with harmony shifting around it; bass line free to move"
+    },
+    {
+      "n": 4,
+      "action": "Polychords: tune several mid/high drones to a static chord and play a different chord progression underneath so the two combine into polychords that never fully resolve.",
+      "tool": "Drone stack + progression",
+      "expect": "Uneasy, angular harmony"
+    },
+    {
+      "n": 5,
+      "action": "Texture: on exposed drones, find sweet spots in a rich wavetable and sweep the position slowly with an LFO.",
+      "tool": "Wavetable + slow LFO",
+      "expect": "Evolving timbre on a static pitch"
+    },
+    {
+      "n": 6,
+      "action": "Change the bass note under the drone at key moments; a single new pedal note recolours everything above it.",
+      "tool": "Arrangement",
+      "expect": "Big harmonic shifts from one note"
+    }
+  ],
+  "verification": [
+    "The drone pitch never changes; harmonic interest comes from parts around it.",
+    "At least one moment where a new bass note recolours the drone.",
+    "Wavetable position moves slowly on exposed drones."
+  ],
+  "tags": [
+    "drone",
+    "pedal-point",
+    "harmony",
+    "polychords",
+    "ambient",
+    "wavetable",
+    "music-theory",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://drone-role-pedal-point-and-polychords"
+}

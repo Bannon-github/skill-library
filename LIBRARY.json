@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-03T15:01:03.604619+00:00",
-  "entry_count": 219,
+  "updated_at": "2026-11-03T17:28:59.336734+00:00",
+  "entry_count": 236,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3290,6 +3290,227 @@
       "skills": [
         "drum-synthesis-and-hybrid-percussion"
       ]
+    },
+    {
+      "id": "cinematic-synth-Z6IUhXyOvFc",
+      "video_id": "Z6IUhXyOvFc",
+      "url": "https://www.youtube.com/watch?v=Z6IUhXyOvFc",
+      "title": "I Fix A Beginner Producer's Weak Bass (in under 15 minutes)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Z6IUhXyOvFc/raw.txt",
+      "summary": "Skills: three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-MULPJOhSrZ0",
+      "video_id": "MULPJOhSrZ0",
+      "url": "https://www.youtube.com/watch?v=MULPJOhSrZ0",
+      "title": "Get BETTER ambient bass EVERY time",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/MULPJOhSrZ0/raw.txt",
+      "summary": "Skills: ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-63FvtgN6Yrc",
+      "video_id": "63FvtgN6Yrc",
+      "url": "https://www.youtube.com/watch?v=63FvtgN6Yrc",
+      "title": "Create \"Audible\" Sub Bass in Ableton Live",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/63FvtgN6Yrc/raw.txt",
+      "summary": "Skills: audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-eDErfMlnh7c",
+      "video_id": "eDErfMlnh7c",
+      "url": "https://www.youtube.com/watch?v=eDErfMlnh7c",
+      "title": "Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/eDErfMlnh7c/raw.txt",
+      "summary": "Skills: parallel-octave-down-bass-from-stereo-mix (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-3cSsQw4CggE",
+      "video_id": "3cSsQw4CggE",
+      "url": "https://www.youtube.com/watch?v=3cSsQw4CggE",
+      "title": "The only trick you need for Epic Emotional Cinematic composing",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/3cSsQw4CggE/raw.txt",
+      "summary": "Skills: compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers (folded into harmony-chords-voicing-and-slow-motion)",
+      "skills": [
+        "harmony-chords-voicing-and-slow-motion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-CwRN2ZVZweA",
+      "video_id": "CwRN2ZVZweA",
+      "url": "https://www.youtube.com/watch?v=CwRN2ZVZweA",
+      "title": "Ambient track walkthrough - how to make music like Martin Stürtzer",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/CwRN2ZVZweA/raw.txt",
+      "summary": "Skills: mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-QdveXtMhAnk",
+      "video_id": "QdveXtMhAnk",
+      "url": "https://www.youtube.com/watch?v=QdveXtMhAnk",
+      "title": "Tutorial #36 | Flanger Sequence Pads",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/QdveXtMhAnk/raw.txt",
+      "summary": "Skills: flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-1s_wcjB31iA",
+      "video_id": "1s_wcjB31iA",
+      "url": "https://www.youtube.com/watch?v=1s_wcjB31iA",
+      "title": "How to build a basic Phaser Effect | Max for Live Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/1s_wcjB31iA/raw.txt",
+      "summary": "Skills: build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180 (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-ZsbcQZtklGI",
+      "video_id": "ZsbcQZtklGI",
+      "url": "https://www.youtube.com/watch?v=ZsbcQZtklGI",
+      "title": "Sylenth 1 Tutorial \"Phasing\" Pad",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ZsbcQZtklGI/raw.txt",
+      "summary": "Skills: phaser-chorus-pure-wave-octave-pad (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-3rCUdTDodrc",
+      "video_id": "3rCUdTDodrc",
+      "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
+      "title": "Sound Design Tutorial: Cinematic Whoosh hit",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/3rCUdTDodrc/raw.txt",
+      "summary": "Skills: whoosh-into-hit-layer-resample-chain (folded into risers-impacts-transition-fx)",
+      "skills": [
+        "risers-impacts-transition-fx"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Pp88aLB3LpE",
+      "video_id": "Pp88aLB3LpE",
+      "url": "https://www.youtube.com/watch?v=Pp88aLB3LpE",
+      "title": "How The Pros Build Tension (Without FX Samples)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Pp88aLB3LpE/raw.txt",
+      "summary": "Skills: organic-tension-from-track-sounds (folded into risers-impacts-transition-fx)",
+      "skills": [
+        "risers-impacts-transition-fx"
+      ]
+    },
+    {
+      "id": "cinematic-synth-bAovHufTsc8",
+      "video_id": "bAovHufTsc8",
+      "url": "https://www.youtube.com/watch?v=bAovHufTsc8",
+      "title": "How To Make Ambient Pads 100% From Scratch (Vital Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/bAovHufTsc8/raw.txt",
+      "summary": "Skills: staggered-attack-octave-layer-pad (folded into pad-supersaw-unison-detune-width)",
+      "skills": [
+        "pad-supersaw-unison-detune-width"
+      ]
+    },
+    {
+      "id": "cinematic-synth-9Re-L7z0068",
+      "video_id": "9Re-L7z0068",
+      "url": "https://www.youtube.com/watch?v=9Re-L7z0068",
+      "title": "How to SYNTH DRONE without boring everyone",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/9Re-L7z0068/raw.txt",
+      "summary": "Skills: drone-role-pedal-point-and-polychords (folded into harmony-chords-voicing-and-slow-motion)",
+      "skills": [
+        "harmony-chords-voicing-and-slow-motion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Dscd9Q79fwQ",
+      "video_id": "Dscd9Q79fwQ",
+      "url": "https://www.youtube.com/watch?v=Dscd9Q79fwQ",
+      "title": "Build tension for your action cue: Metric modulation, time signature changes, ostinatos and more !",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Dscd9Q79fwQ/raw.txt",
+      "summary": "Skills: metric-modulation-action-cue (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Fj7E0DXML1o",
+      "video_id": "Fj7E0DXML1o",
+      "url": "https://www.youtube.com/watch?v=Fj7E0DXML1o",
+      "title": "Drum programming Tips for ANY machine",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Fj7E0DXML1o/raw.txt",
+      "summary": "Skills: velocity-and-flam-groove-on-step-sequencer (folded into drum-groove-programming-swing-and-ghosts)",
+      "skills": [
+        "drum-groove-programming-swing-and-ghosts"
+      ]
+    },
+    {
+      "id": "cinematic-synth-GomiGC__HC0",
+      "video_id": "GomiGC__HC0",
+      "url": "https://www.youtube.com/watch?v=GomiGC__HC0",
+      "title": "Saturation Is Killing Your Mix",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/GomiGC__HC0/raw.txt",
+      "summary": "Skills: dynamics-restoring-saturation (folded into mix-eq-gain-staging-and-balance)",
+      "skills": [
+        "mix-eq-gain-staging-and-balance"
+      ]
+    },
+    {
+      "id": "cinematic-synth-PE3c8J6glho",
+      "video_id": "PE3c8J6glho",
+      "url": "https://www.youtube.com/watch?v=PE3c8J6glho",
+      "title": "Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/PE3c8J6glho/raw.txt",
+      "summary": "Skills: ambient-loop-to-track-arp-rate-energy (folded into arrangement-loop-to-song-build-drop)",
+      "skills": [
+        "arrangement-loop-to-song-build-drop"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3640,6 +3861,97 @@
         "synth-strings-choir-ensemble-layers",
         "vocoder-formant-and-spectral-voice-fx",
         "wavetable-and-vector-morph-pads"
+      ]
+    },
+    {
+      "at": "2026-11-03T17:28:59.336734+00:00",
+      "batch": "2026-11-03-morning-hunt",
+      "folded": [
+        {
+          "video_id": "Z6IUhXyOvFc",
+          "skill": "three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "MULPJOhSrZ0",
+          "skill": "ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "63FvtgN6Yrc",
+          "skill": "audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "eDErfMlnh7c",
+          "skill": "parallel-octave-down-bass-from-stereo-mix",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "3cSsQw4CggE",
+          "skill": "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
+          "cluster": "harmony-chords-voicing-and-slow-motion"
+        },
+        {
+          "video_id": "CwRN2ZVZweA",
+          "skill": "mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "QdveXtMhAnk",
+          "skill": "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
+          "cluster": "pad-phaser-notch-comb-movement"
+        },
+        {
+          "video_id": "1s_wcjB31iA",
+          "skill": "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
+          "cluster": "pad-phaser-notch-comb-movement"
+        },
+        {
+          "video_id": "ZsbcQZtklGI",
+          "skill": "phaser-chorus-pure-wave-octave-pad",
+          "cluster": "pad-phaser-notch-comb-movement"
+        },
+        {
+          "video_id": "3rCUdTDodrc",
+          "skill": "whoosh-into-hit-layer-resample-chain",
+          "cluster": "risers-impacts-transition-fx"
+        },
+        {
+          "video_id": "Pp88aLB3LpE",
+          "skill": "organic-tension-from-track-sounds",
+          "cluster": "risers-impacts-transition-fx"
+        },
+        {
+          "video_id": "bAovHufTsc8",
+          "skill": "staggered-attack-octave-layer-pad",
+          "cluster": "pad-supersaw-unison-detune-width"
+        },
+        {
+          "video_id": "9Re-L7z0068",
+          "skill": "drone-role-pedal-point-and-polychords",
+          "cluster": "harmony-chords-voicing-and-slow-motion"
+        },
+        {
+          "video_id": "Dscd9Q79fwQ",
+          "skill": "metric-modulation-action-cue",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "Fj7E0DXML1o",
+          "skill": "velocity-and-flam-groove-on-step-sequencer",
+          "cluster": "drum-groove-programming-swing-and-ghosts"
+        },
+        {
+          "video_id": "GomiGC__HC0",
+          "skill": "dynamics-restoring-saturation",
+          "cluster": "mix-eq-gain-staging-and-balance"
+        },
+        {
+          "video_id": "PE3c8J6glho",
+          "skill": "ambient-loop-to-track-arp-rate-energy",
+          "cluster": "arrangement-loop-to-song-build-drop"
+        }
       ]
     }
   ]

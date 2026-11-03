@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "staggered-attack-octave-layer-pad",
+  "name": "Ambient pad from scratch with staggered layer attacks: sine foundation with light unison, saw and triangle layers on their own filters (triangle an octave up), a separate amp envelope per layer with longer attacks for higher layers, a pitched-down foley texture in the noise slot, slow 4-bar filter LFO, panning LFO, light random on one filter and random level on the foley, then chorus, multiband compression, delay and reverb",
+  "goal": "Build a lush, developing ambient pad from scratch where each layer arrives at a different time: a sine core is heard first, a saw layer fades in later and an octave-up triangle layer only blooms near the end of each held chord (so held chords get brighter and fuller over time), with a quiet tonal foley texture and slow filter/pan motion. Delta vs our pad variants: per-layer amp envelopes as the main development tool and a foley layer in the noise oscillator.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "bAovHufTsc8",
+    "url": "https://www.youtube.com/watch?v=bAovHufTsc8",
+    "title": "How To Make Ambient Pads 100% From Scratch (Vital Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/bAovHufTsc8/agent-skill-staggered-attack-octave-layer-pad.json",
+    "batch": "2026-11-03-morning-hunt"
+  },
+  "prerequisites": [
+    "Any synth with 3 oscillators, a noise/sample slot, 2 filters, 3+ envelopes, LFOs and random modulators",
+    "Chorus, multiband compressor, delay, reverb"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Held chord progression",
+      "required": true
+    },
+    {
+      "name": "foley_texture",
+      "type": "audio",
+      "description": "Own recording of a clicky/ambient texture (optional)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad",
+      "type": "audio",
+      "description": "Pad whose upper layers bloom later in each held chord"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Steady pitch (Matt's taste): the source also adds an LFO on oscillator pitch bend; leave it off (or tiny) here.",
+    "Use your own or free foley recordings; if tonal, pitch it to the track key.",
+    "Keep unison light on the sine core.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc 1: sine with a little unison as the foundation; set amp attack and release moderately long.",
+      "tool": "Osc 1 + amp env",
+      "expect": "Soft core"
+    },
+    {
+      "n": 2,
+      "action": "Osc 2: saw with unison; Osc 3: triangle with unison, pitched up one octave. Route osc 2 and osc 3 to separate filters.",
+      "tool": "Oscillators + filter routing",
+      "expect": "Fuller, layered tone"
+    },
+    {
+      "n": 3,
+      "action": "Give each layer its own amp envelope (routed to its level): layer 2 a longer attack, layer 3 a much longer attack so the octave-up layer is mainly heard toward the end of each chord.",
+      "tool": "Per-layer envelopes",
+      "expect": "Held chords develop and brighten over time"
+    },
+    {
+      "n": 4,
+      "action": "Put a quiet ambient foley texture (e.g. clicks) in the noise slot; pitch it down to the key if it is tonal.",
+      "tool": "Noise/sample slot",
+      "expect": "Organic grain under the pad"
+    },
+    {
+      "n": 5,
+      "action": "LFO 1: triangle reshaped to open slowly and close quickly, tempo 4 bars (4/1), on one filter's cutoff. LFO 2: sine, bipolar, on osc 3 pan.",
+      "tool": "LFOs",
+      "expect": "Slow opening sweeps and gentle stereo motion"
+    },
+    {
+      "n": 6,
+      "action": "Add a small random modulation on the saw layer's filter and a random modulator on the foley level so it comes and goes.",
+      "tool": "Random modulators",
+      "expect": "No two chords sound identical"
+    },
+    {
+      "n": 7,
+      "action": "FX: a bit of chorus to tie oscillators together, multiband compression to bring up subtle detail, then delay and reverb.",
+      "tool": "FX chain",
+      "expect": "Lush finished pad"
+    }
+  ],
+  "verification": [
+    "The octave-up layer is clearly louder at the end of a held chord than at its start.",
+    "Filter sweep completes about once every 4 bars.",
+    "No pitch modulation is audible."
+  ],
+  "tags": [
+    "pad",
+    "ambient",
+    "layering",
+    "envelopes",
+    "octave-layer",
+    "brightness",
+    "foley",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://staggered-attack-octave-layer-pad"
+}

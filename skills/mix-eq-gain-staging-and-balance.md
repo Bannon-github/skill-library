@@ -72,3 +72,11 @@ Source: [How to mix Pads & Strings - The complete process - Part 1 - Saturation 
 - Option B — gentle console/tape emulation: raise input until meters approach ~0 (not deep into red) for natural saturation; back off if obvious distortion appears.
 - A/B dry vs sat: expect slightly fuller low-mid presence and mild soft compression—rewind/listen carefully; changes are subtle by design.
 - Then continue the pad chain (EQ/chorus/delay/reverb). Keep this sat stage before big space so reverb blooms on the denser tone.
+
+### Saturate drums without losing punch: an envelope follower reads the clean signal on a muted parallel chain, and its output drives a gain stage placed after the saturator so the saturated signal's peaks are pushed back up and its dynamic range is restored
+Source: [Saturation Is Killing Your Mix](https://www.youtube.com/watch?v=GomiGC__HC0) · was `dynamics-restoring-saturation`
+- Saturate the drums and watch the waveform: peaks get shaved and the drums stop hitting in the mix.
+- Build two parallel chains: chain A holds only an envelope follower/peak controller and is muted (it just measures); chain B holds the saturator followed by a gain/utility device.
+- Map the follower's output to the gain device in chain B.
+- Set the follower base around 30-40% and the amount around 60-70%, then adjust until saturated hits match the original punch.
+- Compare in the mix; for melodic loops combine with sidechain ducking to the drum loop for pump.

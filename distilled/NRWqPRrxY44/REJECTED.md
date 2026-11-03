@@ -1,0 +1,3 @@
+# Rejected 2026-11-03 (morning hunt)
+Video: How To Create Theta Wave Binaural Beats In Ableton (NRWqPRrxY44), YouTube-provided transcript.
+Reason: covered + mostly theory/wellness talk. The only procedure (two identical sines hard-panned L/R, fine-tune one sharp until the beat is 4-8 Hz, optionally automate the fine-tune) is already in the brainwave-binaural-isochronic-layers cluster (carrier L / carrier+beat R). Minor delta noted: the same cents offset gives a faster beat at higher pitch (beat Hz = f x (2^(cents/1200) - 1)), so set the offset in Hz, not cents. Also contains unverified health claims, which we do not encode.
