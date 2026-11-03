@@ -1,0 +1,149 @@
+{
+ "seed": 1103,
+ "bpm": 96,
+ "bars": 27,
+ "tailSec": 4.0,
+ "category": "pad",
+ "chords": [
+  [
+   47,
+   [
+    66,
+    71,
+    74
+   ]
+  ],
+  [
+   43,
+   [
+    67,
+    71,
+    74
+   ]
+  ],
+  [
+   50,
+   [
+    66,
+    69,
+    74
+   ]
+  ],
+  [
+   45,
+   [
+    64,
+    69,
+    73
+   ]
+  ]
+ ],
+ "sections": {
+  "drumsIn": 4,
+  "peak": 12,
+  "outro": 20,
+  "drumsOut": 24,
+  "end": 26
+ },
+ "pad": {
+  "level": 0.55,
+  "octaves": [
+   0,
+   12,
+   24
+  ],
+  "base": 0,
+  "triUnison": 6,
+  "triDetune": 9,
+  "sineUnison": 8,
+  "sineDetune": 13,
+  "sinePhaseDeg": 85,
+  "attack": 1.6,
+  "release": 1.2,
+  "lpFrac": 0.7,
+  "lpMaxHz": 9000,
+  "envAttack": 3.5,
+  "envSustain": 0.5,
+  "lpSectionGain": {
+   "intro": 0.9,
+   "slow": 0.95,
+   "peak": 1.0,
+   "outro": 0.9
+  },
+  "phaserMix": 0.39,
+  "phaserStages": 6,
+  "phaserFb": 0.3,
+  "phaserDepth": 0.8,
+  "phaserLRdeg": 90,
+  "chorusMs": 4.0,
+  "chorusRate": 0.25,
+  "chorusDepthMs": 2.4,
+  "chorusFb": 0.35,
+  "chorusMix": 0.4,
+  "notchDepthDb": -12,
+  "verbMix": 0.35,
+  "verbRt": 6.5,
+  "verbHp": 150,
+  "verbLp": 4500,
+  "sc": 0.35,
+  "bright": 3.0
+ },
+ "arp": {
+  "level": 0.42,
+  "rates": {
+   "slow": [
+    4,
+    2
+   ],
+   "peak": [
+    1,
+    0.5
+   ],
+   "outro": [
+    2,
+    4
+   ]
+  },
+  "cutoff": 3200,
+  "envHz": 4500,
+  "decay": 0.35,
+  "delayMix": 0.28,
+  "verbMix": 0.4
+ },
+ "atmos": {
+  "level": 0.12,
+  "lpBase": 1800,
+  "lpRand": 1400,
+  "combMs": 6.0,
+  "combFb": 0.6
+ },
+ "bass": {
+  "level": 0.38,
+  "unison": 5,
+  "detune": 8,
+  "lfoBars": 4,
+  "cutBase": 220,
+  "cutLfo": 380,
+  "driveBase": 1.2,
+  "driveLfo": 0.8,
+  "fmIdx": 0.6,
+  "fmLfo": 0.5,
+  "hp": 110,
+  "subLevel": 0.6,
+  "spikes": 0.6,
+  "pluckLevel": 0.55
+ },
+ "drums": {
+  "level": 0.36,
+  "hatLevel": 0.12,
+  "rimLevel": 0.25
+ },
+ "master": {
+  "shelfDb": 1.5,
+  "satDrive": 1.2,
+  "sideHpHz": 120,
+  "fadeOutSec": 4.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.3
+ }
+}
