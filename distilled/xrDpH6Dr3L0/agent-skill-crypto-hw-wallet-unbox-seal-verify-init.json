@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "crypto-hw-wallet-unbox-seal-verify-init",
+  "name": "Unbox hardware wallet: verify seals then initialize via official suite",
+  "goal": "Receive a hardware wallet safely by verifying carton and USB-port holographic seals, installing only the official vendor suite, completing authenticity checks, then initializing and backing up before first receive.",
+  "domain": "crypto-investing",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "xrDpH6Dr3L0",
+    "url": "https://www.youtube.com/watch?v=xrDpH6Dr3L0",
+    "title": "How to Set Up Your Trezor Safe 5 Hardware Wallet: Step-by-Step Guide",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/xrDpH6Dr3L0/agent-skill-crypto-hw-wallet-unbox-seal-verify-init.json"
+  },
+  "prerequisites": [
+    "Shipment from official shop or authorized reseller",
+    "Computer for vendor suite"
+  ],
+  "inputs": [
+    {
+      "name": "purchase_channel",
+      "type": "enum",
+      "description": "official_store | authorized_reseller",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "initialized_hw_wallet",
+      "type": "device",
+      "description": "Seal-verified initialized wallet"
+    }
+  ],
+  "constraints": [
+    "Educational self-custody/tax procedure only \u2014 not financial advice; no coin tips or return promises.",
+    "Ground every step in YouTube-provided captions; portable UI names OK when vendor chrome drifts.",
+    "Never digitize a seed phrase or enter it into a website/phone camera.",
+    "Stop if seals look VOID/tampered and contact vendor.",
+    "Buy only via official/authorized channels."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Inspect outer package security seal; confirm intact before opening; contact vendor if unsure.",
+      "tool": "physical-inspection",
+      "expect": "Untampered carton"
+    },
+    {
+      "n": 2,
+      "action": "Inventory box: device, get-started pack (instructions, stickers, two backup cards), USB-C cable.",
+      "tool": "inventory",
+      "expect": "Accessories present"
+    },
+    {
+      "n": 3,
+      "action": "Verify holographic seal over USB port is not already VOID; remove only when ready to connect.",
+      "tool": "physical-inspection",
+      "expect": "First-user seal OK"
+    },
+    {
+      "n": 4,
+      "action": "Connect device, follow redirect to vendor start page, download/install official suite (not a third-party mirror).",
+      "tool": "vendor-suite",
+      "expect": "Official suite installed"
+    },
+    {
+      "n": 5,
+      "action": "Launch suite and complete security checklist that repeats seal guidance; confirm purchase channel advice.",
+      "tool": "vendor-suite",
+      "expect": "Checks acknowledged"
+    },
+    {
+      "n": 6,
+      "action": "Initialize device and finish backup using on-device screens as source of truth; when receiving, verify full address on the device screen rather than trusting the computer alone.",
+      "tool": "hardware-wallet",
+      "expect": "Backed-up wallet; on-device address verify habit"
+    }
+  ],
+  "verification": [
+    "No VOID seals pre-connect",
+    "Suite from official redirect",
+    "Backup done before meaningful funds"
+  ],
+  "tags": [
+    "crypto-investing",
+    "hardware-wallet",
+    "setup",
+    "supply-chain",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://crypto-hw-wallet-unbox-seal-verify-init"
+}

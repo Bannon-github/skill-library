@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "soft-tape-saturation-pads-before-space",
+  "name": "Soft tape/analog saturation on pads before space FX",
+  "goal": "Make digital/synth pads and string layers feel denser and less sterile by adding gentle tape or analog-style saturation early (before big reverb/space): zero-time tape-delay as low-CPU tape sat, or gentle console/tape emulations kept near 0 VU\u2014fullness in low-mids without obvious distortion.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "o71KYxEqPdU",
+    "url": "https://www.youtube.com/watch?v=o71KYxEqPdU",
+    "title": "How to mix Pads & Strings - The complete process - Part 1 - Saturation - Mini Series",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/o71KYxEqPdU/agent-skill-soft-tape-saturation-pads-before-space.json"
+  },
+  "prerequisites": [
+    "Pad/string/synth sustain layer; tape sat, tape delay, or gentle analog-drive plugin/module"
+  ],
+  "inputs": [
+    {
+      "name": "saturation_type",
+      "type": "enum",
+      "description": "tape-delay-zero-time | tape-sat | gentle-console-drive",
+      "required": true
+    },
+    {
+      "name": "drive_level",
+      "type": "string",
+      "description": "Keep near unity/0 VU for gentle sat; only push for intentional grit",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "saturated_pad_bus",
+      "type": "audio-bus",
+      "description": "Pad/string bus with soft sat ahead of later FX"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Identify sterile/digital pad or synth-string sustains that need density. Goal is subtle analog juice, not crunch.",
+      "tool": "audit",
+      "expect": "Target layer sounds clean/digital and thin in low-mids"
+    },
+    {
+      "n": 2,
+      "action": "Option A \u2014 low-CPU tape: insert a tape-delay emulator, set delay time to zero so only tape saturation remains (no echoes).",
+      "tool": "tape-sat",
+      "expect": "Subtle fullness/compression in low-mids without audible delay"
+    },
+    {
+      "n": 3,
+      "action": "Option B \u2014 gentle console/tape emulation: raise input until meters approach ~0 (not deep into red) for natural saturation; back off if obvious distortion appears.",
+      "tool": "console-sat",
+      "expect": "Analog-ish body; needles near zero, not hard clipping"
+    },
+    {
+      "n": 4,
+      "action": "A/B dry vs sat: expect slightly fuller low-mid presence and mild soft compression\u2014rewind/listen carefully; changes are subtle by design.",
+      "tool": "ab-check",
+      "expect": "Pad feels more real/dense, not crushed"
+    },
+    {
+      "n": 5,
+      "action": "Then continue the pad chain (EQ/chorus/delay/reverb). Keep this sat stage before big space so reverb blooms on the denser tone.",
+      "tool": "fx-order",
+      "expect": "Saturation precedes space FX in the rack"
+    }
+  ],
+  "verification": [
+    "Saturation is gentle (near 0 VU / no obvious crunch unless intended)",
+    "Pad low-mids feel fuller vs dry",
+    "No unintended delay tails from zero-time tape-delay trick"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "saturation",
+    "tape",
+    "pads",
+    "strings",
+    "density",
+    "fx",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://soft-tape-saturation-pads-before-space",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Place soft saturation early (before lush reverb/delay) so space FX bloom on denser harmonics\u2014matches Traveler-style density goals."
+  ]
+}

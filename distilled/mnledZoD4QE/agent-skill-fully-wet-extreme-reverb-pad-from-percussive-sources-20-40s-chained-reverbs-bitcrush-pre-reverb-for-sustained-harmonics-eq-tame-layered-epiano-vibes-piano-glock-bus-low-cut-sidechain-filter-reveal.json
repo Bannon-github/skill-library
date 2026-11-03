@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal",
+  "name": "Turn bright percussive or decaying instruments (electric piano, vibraphone, piano, glockenspiel) into an evolving ambient pad by running each through 100% wet reverbs of about 20-40 s (chaining two reverbs for longer tails), bit-crushing the piano before the reverb to sustain and add harmonics, taming harsh highs with EQ, then busing the layers with a low cut, compression, sidechain and a filter that reveals the pad",
+  "goal": "Make an ambient pad from stock instruments rather than a synth. Pick sources with rich, bright harmonics (distorted electric piano, vibraphone, piano, glockenspiel) and play the same chords stacked across several octaves, panning some layers slightly left and right. Put each through a reverb set to fully wet with no dry signal and a very long decay (about 33 s, 22 s, 40 s in the video); daisy-chain two algorithmic reverbs to get even longer tails and lower the level. The reverb smears the transients away and effectively adds a long attack. For extra brightness and sustain, bit-crush (distort) the piano before its reverb, then EQ down the harsh upper-mid/top it added. Roll off some highs on very bright sources like glockenspiel before the reverb. Because the layers use different reverb lengths they create multiple attack phases, so the sound evolves. Bus all layers; EQ out the large low-frequency/sub-20 Hz build-up from the long reverbs, add compression, sidechain compression and a low-pass filter that you automate open to introduce the pad.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mnledZoD4QE",
+    "url": "https://www.youtube.com/watch?v=mnledZoD4QE",
+    "title": "How to make an ambient pad in Logic Pro X - Trance Production Tutorials #10",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mnledZoD4QE/agent-skill-fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A DAW with buses and automation",
+    "Two or more reverbs with wet/dry control and decay above 20 s",
+    "A bit crusher or distortion, EQ, compressor with sidechain, and a filter",
+    "Instrument sounds: electric piano, vibraphone, piano, glockenspiel or any bright, harmonic source"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Chords stacked across several octaves",
+      "required": true
+    },
+    {
+      "name": "sources",
+      "type": "list",
+      "description": "Bright, harmonically rich instruments",
+      "required": true
+    },
+    {
+      "name": "reverb_decays_s",
+      "type": "list",
+      "description": "Per-layer decay, about 20-40 s",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_bus",
+      "type": "audio-bus",
+      "description": "Layered fully wet reverb pad"
+    },
+    {
+      "name": "pad_audio",
+      "type": "audio",
+      "description": "Rendered pad for reuse"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Any reverb works as long as it has a wet/dry control and a very long decay; convolution and algorithmic both shown.",
+    "Always check the low end: extreme reverbs build up a lot of low and sub-20 Hz energy that must be cut on the bus.",
+    "Bit-crush adds harsh highs; follow it with EQ cuts so the pad is not fatiguing.",
+    "Brightness lever for Matt's palette: the bit-crush/distortion before reverb is the harmonic exciter step; dial it to taste rather than boosting EQ.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Program a couple of chords stacked across several octaves; load bright sources (distorted electric piano, vibraphone, piano, glockenspiel) on separate tracks, panning a few slightly left or right.",
+      "tool": "DAW + instruments",
+      "expect": "Dry, plucky layers with lots of high harmonics."
+    },
+    {
+      "n": 2,
+      "action": "On the electric piano, insert a reverb at 100% wet / 0% dry with about 33 s decay.",
+      "tool": "Reverb",
+      "expect": "The quick attack becomes a slow swell; it reads as a pad."
+    },
+    {
+      "n": 3,
+      "action": "On the vibraphone, daisy-chain two algorithmic reverbs (fully wet) for an even longer tail; turn the track down.",
+      "tool": "Two reverbs in series",
+      "expect": "An ethereal sustained tone where the source is no longer recognisable."
+    },
+    {
+      "n": 4,
+      "action": "On the piano, insert bit crusher → EQ → reverb (fully wet, about 22 s); crush fairly hard to sustain and add harmonics, then cut the harsh upper-mid/top with EQ.",
+      "tool": "Bit crusher, EQ, reverb",
+      "expect": "Louder sustained harmonics feeding the reverb; a brighter, less fatiguing texture."
+    },
+    {
+      "n": 5,
+      "action": "On the glockenspiel, roll off some of the top with EQ before a fully wet reverb of about 40 s (chained reverbs).",
+      "tool": "EQ + reverbs",
+      "expect": "A shimmering but not piercing high layer."
+    },
+    {
+      "n": 6,
+      "action": "Listen to all layers together: different decays give multiple attack phases that morph over time.",
+      "tool": "Mixer",
+      "expect": "A pad that evolves dynamically compared with the dry chord."
+    },
+    {
+      "n": 7,
+      "action": "Route all layers to a bus: EQ out the low/sub build-up, add compression and sidechain compression, and a low-pass filter.",
+      "tool": "Bus processing",
+      "expect": "A controlled, pumping-ready pad bus."
+    },
+    {
+      "n": 8,
+      "action": "Automate the bus filter open to introduce the pad in the arrangement.",
+      "tool": "Filter automation",
+      "expect": "The atmosphere rises in rather than appearing abruptly."
+    }
+  ],
+  "verification": [
+    "Each source track has its reverb at 100% wet and decay of 20 s or more.",
+    "A spectrum analyser shows the bus low cut removing sub-20 Hz build-up.",
+    "The dry chord and processed pad are clearly different in attack (pad swells in over seconds)."
+  ],
+  "tags": [
+    "pad",
+    "reverb",
+    "ambient",
+    "percussive-to-pad",
+    "bit-crush",
+    "brightness",
+    "layering",
+    "atmosphere",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://fully-wet-extreme-reverb-pad-from-percussive-sources-20-40s-chained-reverbs-bitcrush-pre-reverb-for-sustained-harmonics-eq-tame-layered-epiano-vibes-piano-glock-bus-low-cut-sidechain-filter-reveal"
+}

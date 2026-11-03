@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "id": "sidechain-ducking-per-element",
+  "name": "Sidechain and ducking per element (kick/bass, pads, trance gate, pump)",
+  "goal": "Apply sidechain correctly per element: bass/lows duck fully for the whole kick, leads/pads duck only on the punch, depth follows loudness, multiband sidechain for full-range sounds, plus trance-gate chops and pumping pads.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "sidechain-compressor-duck-synth-pads",
+        "video_id": "e6Ek5Kmieq0",
+        "url": "https://www.youtube.com/watch?v=e6Ek5Kmieq0",
+        "title": "Sidechain Synthesizers (and any other instruments, also called the sidechain effect or ducking)"
+      },
+      {
+        "from_skill": "sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap",
+        "video_id": null,
+        "url": "https://www.youtube.com/watch?v=UwrnD0CSi_U",
+        "title": "Sidechain Tutorials Ruined A Generation of Producers"
+      },
+      {
+        "from_skill": "trance-gate-sidechain-chop-texture",
+        "video_id": "DxyQNgNKUf8",
+        "url": "https://www.youtube.com/watch?v=DxyQNgNKUf8",
+        "title": "The trance gate technique (like Ross from Friends, Bicep, Max Cooper and Moderat)"
+      }
+    ]
+  },
+  "theory": "Ducking gain g(t) = 1 - depth·env(t) after each kick; release decides 'pump'. A 50% wet mix only hides a wrong shape and pushes the limiter.",
+  "generator": {
+    "path": "sample-lab/theory/sidechain_ducking.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/sidechain_ducking.wav"
+  },
+  "prerequisites": [
+    "A DAW with volume-shaping sidechain (shaper/LFO-tool or compressor keyed from the kick)",
+    "A master limiter to test the result",
+    "A multiband sidechain/shaper for full-range sounds (the video uses a free multiband sidechain plugin)",
+    "DAW compressor with external/sidechain input; grouped synth/pad bus; kick track",
+    "DAW with sidechain-capable gate (or equivalent gain chop); sustained synth/pad source; optional muteable trigger track"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Key every sidechain from a clean kick trigger (ghost kick if needed).",
+      "expect": "Reliable trigger"
+    },
+    {
+      "n": 2,
+      "action": "Bass/sub: duck 100% for the kick's length (release ~150-250 ms at 120-128 BPM).",
+      "expect": "Kick and bass alternate"
+    },
+    {
+      "n": 3,
+      "action": "Pads/leads: duck 3-6 dB on the punch only, fast release ~50-80 ms; louder elements duck deeper.",
+      "expect": "Punch without pumping"
+    },
+    {
+      "n": 4,
+      "action": "Full-range sounds: multiband sidechain on lows only.",
+      "expect": "Highs stay steady"
+    },
+    {
+      "n": 5,
+      "action": "Creative pump/trance gate: volume shaper or gate in 1/16 patterns for chopped pads.",
+      "expect": "Rhythmic pumping"
+    },
+    {
+      "n": 6,
+      "action": "Avoid wet/dry 50% fixes; adjust shape instead; check limiter gain reduction.",
+      "expect": "Clean dynamics"
+    },
+    {
+      "n": 7,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/sidechain_ducking.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "sidechain-compressor-duck-synth-pads",
+      "name": "Sidechain-compressor duck synth/pad group to kick",
+      "goal": "Make space for a four-on-the-floor kick by sidechain-compressing a synth/pad bus from the kick: insert compressor before reverb on the group, enable external sidechain from kick, use strong ratio (~6:1), fast attack, slower release, and tune threshold so pads pump without wrecking the mix.",
+      "steps": [
+        "Identify dense synth/pad stacks competing with a loud kick on beats 1–2–3–4. Goal: duck those instruments each kick hit to open mix space.",
+        "Group the synth waves onto one bus. Insert a compressor on that group *before* reverb (optional HP on the bus to clear mud). Plain compression without sidechain just thickens—enable sidechain instead.",
+        "Turn on compressor sidechain / external key; set audio-from to the kick track so compression engages when the kick hits.",
+        "Set a strong starting ratio (~6:1). Use a very fast attack so the duck grabs with the kick; start with a slower release so the pad swells back between hits (adjust to taste; exaggerated settings teach the effect).",
+        "Tune threshold (and makeup if needed) so ducking makes kick space without squashing musicality; A/B bypass to confirm clearer kick and breathing pads."
+      ]
+    },
+    {
+      "from_skill": "sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap",
+      "name": "Per-element sidechain shapes: bass ducks the whole kick, mids/highs duck only the punch, depth set by loudness, multiband for full-range sounds",
+      "goal": "Set sidechain ducking per element instead of one kick-shaped duck on everything: the bass and low end duck deeply for the whole kick length (returning exactly as the tail ends), mid/high instruments duck only briefly around the kick's punch/transient, and loud foreground layers duck deeper than quiet background layers. Full-range sounds such as a reese use multiband sidechain with separate low and mid/high shapes. Don't fix pumping by lowering the mix knob, because partial ducking leaves kick and element overlapping and that shared volume hits the master limiter early. Delta vs the generic sidechain-compressor-duck-synth-pads skill: shape and depth rules per element and the loudness/limiter reason.",
+      "steps": [
+        "Split the kick mentally into punch (transient/click/attack, the only part with mid/high energy) and tail (mostly low end). Check the kick's total length.",
+        "On the bass/low end, draw a deep duck (high mix/depth, near full) that lasts the whole kick and returns right as the kick tail ends: not before, not way after. A longer kick needs a longer duck.",
+        "On mid and high instruments (leads, synths, pads, vocals to an extent), use a short duck that covers only the kick's punch and then recovers quickly.",
+        "Set depth by loudness. Loud, important foreground layers get deeper, more precise ducks (they pump a bit more); quiet background layers can duck less.",
+        "For a sound with lows plus mids/highs (for example a reese bass), use multiband sidechain: a long, deep full-kick shape on the low band and a short punch-only shape on the mid/high band.",
+        "Avoid partial ducking (for example a 50% mix) as a cure for pumping: the element stays on top of the kick, their summed volume makes peaks, and across many elements it buries the kick.",
+        "Test into a master limiter: raise the input to the fixed ceiling and compare against the old setting."
+      ]
+    },
+    {
+      "from_skill": "trance-gate-sidechain-chop-texture",
+      "name": "Trance-gate: sidechain-gate chop a sustained pad",
+      "goal": "Turn a long sustaining pad/wall-of-sound (or heavily reverbed short source) into rhythmic stuttered chunks by sidechain-gating it from a silent trigger pattern (e.g. clustered 16ths), then tune gate release for snap and optionally re-space with post-gate reverb.",
+      "steps": [
+        "Build a source that sustains loudly while held (long notes or short hits + lots of reverb/compression so the wash stays continuous). Optionally thicken with power-chord voicing (root + octave + perfect fifth / +7 st).",
+        "Create a separate trigger track with short clicks/samples on a 16th grid; classic patterns: repeating clusters of 3 sixteenths, or every 16th. Mute/do not mix the trigger into the output.",
+        "Put a gate on the source. Enable sidechain/external key from the trigger track. Raise/lower threshold until the source opens only when triggers fire.",
+        "Adjust gate release for more/less snap (shorter = choppier). Try alternate trigger densities.",
+        "Optional: same technique on a vocal snippet + huge reverb before the gate; add another reverb after the gate to reintroduce space around chops."
+      ]
+    }
+  ],
+  "merged_from": [
+    "sidechain-compressor-duck-synth-pads",
+    "sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap",
+    "trance-gate-sidechain-chop-texture"
+  ],
+  "tags": [
+    "bass",
+    "cinematic-synth",
+    "ducking",
+    "edm",
+    "from-youtube",
+    "gate",
+    "kick",
+    "limiter",
+    "loudness",
+    "mixing",
+    "multiband",
+    "music-production",
+    "music-synthesis",
+    "pads",
+    "rhythm",
+    "sidechain",
+    "trance-gate",
+    "workflow"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sidechain-ducking-per-element",
+  "aliases": [
+    "sidechain-compressor-duck-synth-pads",
+    "sidechain-shape-per-element-bass-full-kick-mids-highs-punch-only-depth-by-loudness-multiband-for-full-range-avoid-50pct-mix-limiter-overlap",
+    "trance-gate-sidechain-chop-texture"
+  ]
+}

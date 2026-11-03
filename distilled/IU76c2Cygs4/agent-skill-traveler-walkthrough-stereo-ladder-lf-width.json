@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-stereo-ladder-lf-width",
+  "name": "dual stereo filter and LF-width imaging",
+  "goal": "Shape a cinematic tone with stereo ladder/NJM-style filters, left/right cutoff offset or per-key spread, linked high-pass for band-pass effects, and low-frequency width so bass stays centered while highs move.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-stereo-ladder-lf-width.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "filter_model",
+      "type": "enum",
+      "description": "ladder-6/12/18/24 or NJM-style",
+      "required": true
+    },
+    {
+      "name": "stereo_offset",
+      "type": "number",
+      "description": "L/R cutoff offset or per-key spread",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "stereo_filter_patch",
+      "type": "synth-patch",
+      "description": "Stereo-imaged filtered patch with centered lows"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose ladder-style LPF slope from gentle 6 dB to steep 24 dB (four ladder variants) OR NJM 2069-style model for DW/Poly-era character.",
+      "tool": "filter",
+      "expect": "Desired filter color selected"
+    },
+    {
+      "n": 2,
+      "action": "Enable stereo filter path. Offset left vs right cutoff, or use automatic per-key spread, for subtle stereo timbre differences (good automation target).",
+      "tool": "filter-stereo",
+      "expect": "L/R tonal difference audible but not phasey chaos"
+    },
+    {
+      "n": 3,
+      "action": "Add dedicated high-pass; optionally link HP to primary cutoff for band-pass style sweeps. Set keyboard tracking and envelope amounts for both LP and HP.",
+      "tool": "highpass",
+      "expect": "Band-pass motion available when linked"
+    },
+    {
+      "n": 4,
+      "action": "Output section: set pan-spread so successive voices fan across the stereo field; optional random voice position.",
+      "tool": "pan-spread",
+      "expect": "Polyphonic width increases with notes"
+    },
+    {
+      "n": 5,
+      "action": "Engage low-frequency width / LF-width: narrow pan of content below ~middle C so bass stays mono-centered while upper spectrum keeps stereo motion.",
+      "tool": "lf-width",
+      "expect": "Sub/bass centered; highs still wide"
+    },
+    {
+      "n": 6,
+      "action": "Optional vintage/voice-offset knob for slight per-voice drift of tune, mixer, filter, envelopes \u2014 keep near 0 for clean cinematic pads.",
+      "tool": "vintage",
+      "expect": "Controlled analog variance if used"
+    }
+  ],
+  "verification": [
+    "Bass notes centered under LF-width",
+    "Stereo offset creates subtle L/R difference",
+    "HP+LP link yields band-pass when intended"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo",
+    "filter",
+    "imaging",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-stereo-ladder-lf-width"
+}

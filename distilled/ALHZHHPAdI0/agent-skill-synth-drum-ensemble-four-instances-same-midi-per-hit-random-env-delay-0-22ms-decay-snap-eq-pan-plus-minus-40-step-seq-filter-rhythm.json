@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
+  "name": "Make one synth epic-drum patch sound like an ensemble of drummers: copy it to about four instances on the same MIDI, give each a different global decay, snap-EQ frequency and pan (about ±40), and add per-note random envelope delay (about 0-22 ms, tighten to about 7 ms, too loose at 65 ms) so the hits flam naturally. Optionally drive a filter with a tempo-synced step sequencer for rhythmic patterns",
+  "goal": "Layer synthesized epic drums into a big, human-feeling ensemble quickly. Copying the same patch and MIDI usually just sounds like one louder hit. Put a few macro controls on the patch (global decay, snap frequency, global pitch, timing randomness) so each copy differs with a few slider moves, instead of editing each synth and the MIDI by hand.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ALHZHHPAdI0",
+    "url": "https://www.youtube.com/watch?v=ALHZHHPAdI0",
+    "title": "Epic Drums 3 - Sound design tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ALHZHHPAdI0/agent-skill-synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm.json"
+  },
+  "prerequisites": [
+    "A synthesized drum patch (noise/oscillator hit with amp and filter envelopes; see the epic hybrid drum skill)",
+    "A synth or host with macros, per-note random modulation and a tempo-synced step-sequencer LFO",
+    "A DAW that can duplicate tracks and MIDI"
+  ],
+  "inputs": [
+    {
+      "name": "drum_patch",
+      "type": "synth-preset",
+      "description": "The single epic drum hit",
+      "required": true
+    },
+    {
+      "name": "pattern",
+      "type": "midi",
+      "description": "Simple rhythm pattern to copy to every instance",
+      "required": true
+    },
+    {
+      "name": "instances",
+      "type": "integer",
+      "description": "Number of layered copies (about 4)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ensemble_drums",
+      "type": "daw-tracks",
+      "description": "Four or so differentiated drum layers on shared MIDI"
+    },
+    {
+      "name": "rhythmic_variant",
+      "type": "synth-preset",
+      "description": "Step-sequenced filter version for patterns"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Vendor synth named in the video is mapped to generic macros and modulators.",
+    "Matt prefers steady pitch: keep per-hit random pitch off or very small. Use timing (envelope delay), decay, snap EQ and pan for variety, and use a fixed global pitch offset per layer instead.",
+    "Drums should enter early in Matt's tracks; this ensemble is a good early-entry layer if kept quiet at first.",
+    "Web Audio mapping: per voice, schedule start time = t + random(0, maxJitter) with maxJitter about 0.007-0.022 s, use a per-layer decay multiplier and pan via StereoPannerNode, and drive a BiquadFilter frequency from a tempo-locked step array.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Add macros to the patch: global decay (amp-env and filter-env decay together), snap frequency (a peaking EQ band on the attack), global pitch in semitones (about ±4) and randomness depth.",
+      "tool": "synth macros",
+      "expect": "Four or five sliders that change each layer's character"
+    },
+    {
+      "n": 2,
+      "action": "Add a per-note random modulator (new value on every MIDI note) on the amp-envelope delay and filter-envelope delay. Range about 0-22 ms at 50% randomness; 100% gives about 0-65 ms (too loose), and about 9% gives about 7 ms (tight).",
+      "tool": "random-per-note mod",
+      "expect": "Each hit starts slightly late by a random amount"
+    },
+    {
+      "n": 3,
+      "action": "Write a simple pattern on instance 1, then duplicate the instance and its MIDI about three times.",
+      "tool": "DAW",
+      "expect": "Four identical layers (still sounds like one hit)"
+    },
+    {
+      "n": 4,
+      "action": "On each copy, move the macros differently: decay up or down, snap frequency up or down, randomness slightly different, small fixed pitch offset. Pan pairs about 39-40 left and right.",
+      "tool": "synth macros + pan",
+      "expect": "Copies separate into audibly distinct drummers across the stereo field"
+    },
+    {
+      "n": 5,
+      "action": "Listen and tighten: if a layer is too loose, lower its randomness (for example 86 to 68, 90 to 60).",
+      "tool": "mix",
+      "expect": "Big flammed ensemble that still lands on the beat"
+    },
+    {
+      "n": 6,
+      "action": "Optional rhythmic variant: an arpeggiator on eighth notes or a tempo-synced step-sequencer LFO driving the filter cutoff range. Change the step pattern or rate (8 to 16 steps, double speed) for new grooves. Lengthen the attack to turn hits into reverse-drum or noise-sweep textures.",
+      "tool": "step sequencer + filter",
+      "expect": "Rhythmic drum sequences and swells from the same patch"
+    }
+  ],
+  "verification": [
+    "Four layers on identical MIDI produce audibly separate onsets (about 0-22 ms spread), not one summed hit.",
+    "No layer drifts more than about 25 ms from the grid after tightening.",
+    "Layers are panned about ±40 and differ in decay/brightness on solo comparison.",
+    "Per-hit pitch variation is zero or under about 0.5 semitone."
+  ],
+  "tags": [
+    "drums",
+    "cinematic",
+    "ensemble",
+    "layering",
+    "humanize",
+    "random-timing",
+    "step-sequencer",
+    "trailer",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm"
+}

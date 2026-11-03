@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-lowpoly-character-scene-prep",
+  "name": "blender low poly character scene prep",
+  "goal": "Prepare a Blender 4+ scene for stylized low-poly character work: Eevee, Standard view transform, incremental saves, image references, Rigify metarig scale.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Use9T2IX1XE",
+    "url": "https://www.youtube.com/watch?v=Use9T2IX1XE",
+    "title": "Blender Low Poly Character Modeling Tutorial - Part 1",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Use9T2IX1XE/agent-skill-blender-lowpoly-character-scene-prep.json"
+  },
+  "prerequisites": [
+    "Blender 4.0 or newer recommended",
+    "Reference front/side images available"
+  ],
+  "inputs": [
+    {
+      "name": "front_ref_image",
+      "type": "file",
+      "description": "Front character reference image",
+      "required": true
+    },
+    {
+      "name": "side_ref_image",
+      "type": "file",
+      "description": "Side character reference image",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "prepared_blend",
+      "type": "file",
+      "description": ".blend with refs aligned and metarig scale reference"
+    }
+  ],
+  "constraints": [
+    "Render engine Eevee; disable AO/bloom/SSR/motion blur as stated",
+    "Color Management View Transform = Standard (not AgX) for stylized/game-like colors",
+    "Enable Rigify add-on for Human Meta-Rig scale reference"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Render Properties: Engine Eevee; ensure Ambient Occlusion, Bloom, Screen Space Reflections, Motion Blur off.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Color Management \u2192 View Transform \u2192 Standard.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Delete default cube if desired; File \u2192 Save As into a project folder; use Ctrl+S often and Ctrl+Alt+S for incremental saves.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Shift+A \u2192 Image \u2192 Reference; import front and side images.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Edit \u2192 Preferences \u2192 Add-ons \u2192 enable Rigify; Shift+A \u2192 Armature \u2192 Human Meta-Rig for human scale.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Select both references; front ortho view; Alt+G/Alt+S/Alt+R reset as needed; R then X 90 to stand images up.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "G/S and axis locks (G+Z, G+Y, R+Z 90) to align feet to ground and match metarig height; set reference Opacity ~0.5.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "View Transform is Standard",
+    "Front and side refs visible and roughly human-scaled",
+    "Incremental .blend versions exist"
+  ],
+  "tags": [
+    "blender",
+    "low-poly",
+    "character",
+    "scene-setup",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-lowpoly-character-scene-prep"
+}

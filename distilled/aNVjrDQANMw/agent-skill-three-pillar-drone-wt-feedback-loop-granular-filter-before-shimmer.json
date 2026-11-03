@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+  "name": "Three-pillar cinematic drone (layering, movement, FX): wavetable VCO pair + self-feedback delay loop + granular layer, effects after filters with master low-cut as tension control",
+  "goal": "Build a cinematic drone from three layers and three pillars: (1) a wavetable VCO pair (second one octave down on a slowly volume-modulated VCA) through a low-pass with slow LFO on table position; (2) a self-oscillating feedback loop from a granular/delay processor with no input (feedback raised until it sings, any re-patched input attenuated) through its own resonant low-pass; (3) a granular layer recording 2–3 random sources, with intensity, short grain length for lo-fi, quantized pitch randomization, follow/auto-scan, overdub, S&H choosing layers and an LFO on grain length — all summed through a master filter BEFORE a shimmer reverb so resonance in the low band excites the reverb, using the filter's low cut/cutoff as the scene's tension control (more highs = tension, more lows = suspense).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "aNVjrDQANMw",
+    "url": "https://www.youtube.com/watch?v=aNVjrDQANMw",
+    "title": "Ep. 04 | How to Build Powerful Cinematic Drone Sounds (Modular Synth Sound Design)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/aNVjrDQANMw/agent-skill-three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer.json"
+  },
+  "prerequisites": [
+    "Wavetable oscillators, VCAs, LFOs, resonant low-pass filters",
+    "Delay/granular processor that can self-feedback, granular sampler with record/overdub",
+    "Shimmer reverb, delay (Web Audio: DelayNode feedback loops with gain < 1 plus limiter, implementation note)"
+  ],
+  "inputs": [
+    {
+      "name": "scene_mood",
+      "type": "text",
+      "description": "Desired tension/suspense balance",
+      "required": false
+    },
+    {
+      "name": "grain_sources",
+      "type": "audio",
+      "description": "2–3 recorded sources (clicks, mic, random samples)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cinematic_drone",
+      "type": "audio",
+      "description": "Layered, moving drone bed with tension control"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Never leave a feedback loop unattenuated — you lose control.",
+    "Presenter worked mono into stereo FX at the end; stereo grains are better if available.",
+    "Gear-specific modules are mapped to generic functions only."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer 1: two wavetable VCOs on separate VCA channels, VCO2 one octave below; slowly modulate VCO2's level so the sub appears sometimes; low-pass to cut buzzy harmonics.",
+      "tool": "wt-layer",
+      "expect": "Already a usable drone with reverb"
+    },
+    {
+      "n": 2,
+      "action": "Movement on layer 1: very slow LFO on wavetable position/axis; optionally resonance/drive/wave-shaper for more harmonics.",
+      "tool": "lfo",
+      "expect": "Slowly morphing tone"
+    },
+    {
+      "n": 3,
+      "action": "Layer 2 (feedback loop): with no input, raise the processor's feedback until it starts self-generating; keep delay lines close; run it into its own resonant low-pass; if feeding output back to input, attenuate it first and lower input gain.",
+      "tool": "feedback",
+      "expect": "Noisy, unpredictable tonal bed; sub-octave/tone controls shape it"
+    },
+    {
+      "n": 4,
+      "action": "Layer 3 (granular): record 2–3 different short sources (even a click or mic sound) as layers; set intensity (grain count), short grain length for lo-fi, quantized pitch randomization; use follow mode to auto-scan through the recording, forward or reverse; overdub (e.g. whistling) for new tones.",
+      "tool": "granular",
+      "expect": "Three tonal strata: high ethereal, mid, sub"
+    },
+    {
+      "n": 5,
+      "action": "Movement on layer 3: sample-and-hold selects which recorded layer plays; an LFO modulates grain length.",
+      "tool": "s&h",
+      "expect": "Ever-changing grain layer"
+    },
+    {
+      "n": 6,
+      "action": "Sum layers, then a master low-pass with resonance BEFORE shimmer reverb and delay so resonant low harmonics feed the reverb.",
+      "tool": "master-filter",
+      "expect": "Harmonic correlation in the low band; shimmer adds high overtones from them"
+    },
+    {
+      "n": 7,
+      "action": "Use the master filter's low cut / cutoff as the tension control: more high frequencies = tension ('something is coming'), lows = suspense; choose reverb type for mood; end a scene by pulling inputs out and leaving a little wet.",
+      "tool": "perform",
+      "expect": "Drone follows scene dynamics"
+    }
+  ],
+  "verification": [
+    "Muting each layer changes the bed distinctly (tone/noise/texture).",
+    "Raising master cutoff increases perceived tension; lowering it darkens without stopping.",
+    "Feedback layer stays bounded (no runaway) over a 1-minute hold."
+  ],
+  "tags": [
+    "drone",
+    "wavetable",
+    "feedback-loop",
+    "granular",
+    "shimmer",
+    "filter-before-reverb",
+    "tension",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer"
+}

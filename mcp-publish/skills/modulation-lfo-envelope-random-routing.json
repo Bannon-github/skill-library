@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "id": "modulation-lfo-envelope-random-routing",
+  "name": "Modulation: LFOs, envelopes, sample & hold, random and nested routing",
+  "goal": "Animate sounds with a mod matrix: LFO rate/sync/shape, envelopes and curves, sample & hold, smooth random, envelope followers, per-voice random offsets, nested modulation (mod of mod depth) and random/probability gates.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "envelope-follower-audio-driven-modulation",
+        "video_id": "odosCwWVL2c",
+        "url": "https://www.youtube.com/watch?v=odosCwWVL2c",
+        "title": "Using Envelope Followers for Modulation in Your Music! The How, the When, the Why"
+      },
+      {
+        "from_skill": "keysol-venus-fm-lfo-evolving-chase-sequence",
+        "video_id": "jLGz5wq2CRE",
+        "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+        "title": "TRAVELER Track Walkthrough by Venus Theory"
+      },
+      {
+        "from_skill": "keysol-venus-polyrhythmic-control-track-pitch",
+        "video_id": "jLGz5wq2CRE",
+        "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+        "title": "TRAVELER Track Walkthrough by Venus Theory"
+      },
+      {
+        "from_skill": "modulation-lfo-envelope-mod-matrix-routing",
+        "video_id": null,
+        "url": null,
+        "title": "Merged from 2 YouTube how-to transcripts"
+      },
+      {
+        "from_skill": "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+        "video_id": "pYbWRCrFsHQ",
+        "url": "https://www.youtube.com/watch?v=pYbWRCrFsHQ",
+        "title": "Modulate the modulations to expand your sound design with Magnolia!"
+      },
+      {
+        "from_skill": "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+        "video_id": "uorRN6iH87U",
+        "url": "https://www.youtube.com/watch?v=uorRN6iH87U",
+        "title": "Patch Programmability - Episode 4 - Random Gate Generators"
+      },
+      {
+        "from_skill": "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+        "video_id": "fxh2ccZKEb0",
+        "url": "https://www.youtube.com/watch?v=fxh2ccZKEb0",
+        "title": "Create Evolving Cinematic Drones In Pigments - Full Tutorial"
+      },
+      {
+        "from_skill": "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+        "video_id": "SZKIODnJuwU",
+        "url": "https://www.youtube.com/watch?v=SZKIODnJuwU",
+        "title": "This is Sample & Hold | Cubase Modulators Explained"
+      },
+      {
+        "from_skill": "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+        "video_id": "IiWPL_v8Eqk",
+        "url": "https://www.youtube.com/watch?v=IiWPL_v8Eqk",
+        "title": "Zebra 2 - Using LFO`s Random Features (Sample & Hold) - How To Tutorial"
+      },
+      {
+        "from_skill": "traveler-walkthrough-curved-envelope-evolving-pad",
+        "video_id": "IU76c2Cygs4",
+        "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+        "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough"
+      },
+      {
+        "from_skill": "wavefolded-lfo-slew-filter-wobble",
+        "video_id": "k9ZURoAww0k",
+        "url": "https://www.youtube.com/watch?v=k9ZURoAww0k",
+        "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design"
+      }
+    ]
+  },
+  "theory": "Modulation = control signal x depth added to a parameter. Rate decides perception: <1 Hz drift, 1-10 Hz rhythmic/vibrato, audio rate = new timbres (FM/AM). S&H samples a source at a clock -> stepped random.",
+  "generator": {
+    "path": "sample-lab/theory/modulation_lfo.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/modulation_lfo.wav"
+  },
+  "prerequisites": [
+    "DAW or synth where a sample-and-hold modulator can take another modulator as input, or Web Audio / JS: a step clock at rate r_sh that latches the current value of an LFO or step array and writes it with setValueAtTime to a gain or BiquadFilter frequency (implementation note)",
+    "Envelope follower that outputs a control signal (CC or internal mod) with depth, rise/attack, fall/release and invert; destination params that can be modulated (fold, ring-mod, filter, channel volume, sample rate)",
+    "Hat loop, a volume/gain stage and an FX with a mix control (metallic/comb-like FX in the video)",
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)",
+    "LFO, wavefolder accepting a control signal (Web Audio: WaveShaperNode on an LFO signal, implementation note), slew limiter / one-pole smoother, filter",
+    "Mod matrix with mod-wheel scaling; reverb + delay",
+    "Modular, semi-modular or software modular with noise, sample-and-hold, a window comparator (with not-output, or logic to invert), AND logic or VCAs, a clock/cycling function generator, envelopes and VCAs, or Web Audio / JS: on each clock tick sample r=Math.random(); pass if r falls in [shift-size/2, shift+size/2]; Bernoulli: route to voice A if in window else voice B (implementation note)",
+    "Shimmer reverb, tape/ping-pong delay, multiband compressor, reverb, tape distortion",
+    "Simple subtractive patch: closed low-pass, lower register",
+    "Synth or Web Audio graph with at least one LFO, one ADSR, amp and filter cutoff destinations, and a modulation matrix or equivalent source→destination slots",
+    "Synth with an LFO offering random/sample-and-hold, random-glide and user-drawable step shapes",
+    "Synth with ≥2 tempo-syncable LFOs with modulatable amount, a spare envelope, velocity source and a mod matrix (Web Audio: chain GainNodes, LFO→gain.gain of the next LFO's depth, implementation note)"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "List targets (cutoff, wavetable pos, pitch, pan, amp) and pick one source each in the matrix.",
+      "expect": "Mod map"
+    },
+    {
+      "n": 2,
+      "action": "LFO: sine/triangle for smooth, square/saw for rhythmic; sync to tempo (1/8 wobble, 1-4 bars sweeps) or free for drift.",
+      "expect": "Movement at the right rate"
+    },
+    {
+      "n": 3,
+      "action": "Envelopes: shape curves (exponential attack = natural); a second env can modulate the first's time.",
+      "expect": "Evolving attacks"
+    },
+    {
+      "n": 4,
+      "action": "Random: S&H for stepped, smoothed random for organic drift; per-voice note-on random offsets for analog variation (compensate bipolar offsets).",
+      "expect": "Human, non-static sound"
+    },
+    {
+      "n": 5,
+      "action": "Envelope follower: drive cutoff or width from a drum bus for audio-reactive motion.",
+      "expect": "Groove-locked modulation"
+    },
+    {
+      "n": 6,
+      "action": "Nest: velocity -> env depth -> LFO depth -> cutoff; keep total depth capped so extremes stay musical.",
+      "expect": "Complex but controlled motion"
+    },
+    {
+      "n": 7,
+      "action": "Gates: noise-derived random gates, comparator windows and probability skippers for generative triggers.",
+      "expect": "Generative rhythm from modulation"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/modulation_lfo.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "envelope-follower-audio-driven-modulation",
+      "name": "Envelope follower: audio loudness as a modulation source (fold, ring mod, ducking, playback rate)",
+      "goal": "Use an envelope follower to turn one signal's amplitude into a modulation lane for organic, performance-linked movement instead of a fixed LFO: map it (with depth, rise/fall smoothing, and invert) to wavefolder amount, opposing left/right ring-mod depths, a pad's volume or filter for kick-keyed ducking or expansion, or a looped sample's playback rate.",
+      "steps": [
+        "Contrast with an LFO: an LFO cycles a parameter regardless of the music; an envelope follower raises the parameter when the source gets louder and lowers it when quieter.",
+        "Insert the follower on the source channel, set it to output its envelope as a control signal, and map it to the destination (e.g. wavefolder fold amount) via learn/assign; disable any competing LFO on that parameter.",
+        "Tune Depth for how aggressive the effect is, and raise Rise/Fall times to reduce volatility (slower up and down movement); lower them for jittery, transient-tracking motion.",
+        "Stereo opposing motion: use the left and right follower outputs on two separate lanes into two ring-mod (or similar) depths, invert one, so one rises as the other falls when the source gets louder.",
+        "Kick-keyed motion: follow the kick and map to a pad's channel volume. Non-inverted = sidechain expansion (pad louder on kicks); inverted = ducking (quieter on kicks). Same mapping inverted onto fold or a filter opens the effect in the gaps between kicks.",
+        "Texture rate: follow a looped percussive/mechanical sample and map to its own playback rate (faster when loud, slower when quiet); invert to speed up in the gaps. Optionally use that loop's follower to duck a synth.",
+        "Optional follower types where available: pitch follower (higher pitch → higher value) and spectral-brightness follower (brighter → higher value) instead of amplitude."
+      ]
+    },
+    {
+      "from_skill": "keysol-venus-fm-lfo-evolving-chase-sequence",
+      "name": "FM depth and LFO mix evolving chase sequence",
+      "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff — plus mod-wheel/aftertouch for tension — instead of static one-bar loops.",
+      "steps": [
+        "Establish rhythmic pulse/sequence foundation (arp or control-track → cutoff). Aim for cinematic intensity rather than clean EDM purity.",
+        "Introduce FM: vary modulator frequency slightly and automate/modulate FM depth so timbre breathes over the phrase.",
+        "Use LFOs to change oscillator mix balances over time; also modulate filter cutoff so the sequence refuses to feel static across long cues.",
+        "Assign mod wheel / aftertouch to open tension (depth, cutoff, or drive) for scene dynamics.",
+        "Play deeper registers for more body when the cue needs weight; keep FX (delay bounce) feeding syncopated rhythms for living grooves."
+      ]
+    },
+    {
+      "from_skill": "keysol-venus-polyrhythmic-control-track-pitch",
+      "name": "irregular dual control-track pitch sequence",
+      "goal": "Build a never-quite-repeating cinematic sequence by driving Osc1/Osc2 pitch from two Control Tracks with irregular lengths (e.g. 15 and 14) and independent rates (e.g. dotted quarter vs quarter), over a stable low Osc3 pulse bed.",
+      "steps": [
+        "Create a stable bed on Osc3 (e.g. pulse) an octave or two below; add delay/space lightly so the bed feels cinematic but steady.",
+        "Raise Osc1 and Osc2 to much higher pitch registers; they need not sound pretty alone — they supply character over the bed.",
+        "Control Track A → Osc1 pitch, length 15, rate dotted-quarter (or similar). Control Track B → Osc2 pitch, length 14, rate quarter. Keep modulation depth small so pitch breaks subtly rather than jumping wildly.",
+        "Map mod wheel (or expression) to increase the depth of those pitch mods for performance tension.",
+        "Mix: keep Osc3 dominant; blend high oscs underneath. Solo high pair to verify the irregular interlocking, then restore full mix."
+      ]
+    },
+    {
+      "from_skill": "modulation-lfo-envelope-mod-matrix-routing",
+      "name": "Modulation basics: LFO vs envelope, then mod-matrix source→destination routing",
+      "goal": "Use LFOs for cyclic motion (tremolo, vibrato, wobble, WT/PWM drift; audio-rate into AM/FM) and ADSR envelopes for note-triggered shapes (amp dynamics, filter envelope ±amount for pluck/wah), then route any source (LFO, envelope, mod wheel, key, pedal) through a modulation matrix to one or more destinations (pitch, cutoff, amp, pan, delay time/feedback/amount) with set amounts—auditing hard-to-hear routes on pitch first.",
+      "steps": [
+        "Treat LFO as a very slow oscillator (usually below hearing): set shape (sine/tri/square/saw/custom) and rate, then assign to a destination so the parameter follows the oscillation.",
+        "Classic LFO recipes: → amp = tremolo; → pitch = vibrato; → low-pass cutoff = wobble; → waveform/PWM/WT position = evolving source timbre. Tempo-sync for rhythmic motion or keep slow free-rate for subtle drift.",
+        "Raise LFO rate into audio range: amp mod → AM sidebands; pitch mod → FM-like spectra; very fast FX-param mod (e.g. phaser) can become a distortion/timbre effect.",
+        "If available, try LFO one-shot mode—shape plays once, behaving like an envelope.",
+        "Amp envelope ADSR: Attack = fade-in time; Decay = time to sustain; Sustain = held level (if sustain = max, decay has no effect); Release = fade-out after key-up. Percussive: attack+sustain low, length from decay (+ some release). Pad/violin-like: longer attack+release, sustain full.",
+        "Filter envelope: assign to cutoff with ±amount/depth. Positive amount opens from a low cutoff (plucky bass with short A, some D, no S, short R). Negative amount with high cutoff can wah downward; longer attack + positive amount opens wah; raise sustain to keep open while held.",
+        "Ensure amp envelope lets enough signal through to hear filter motion. Also try envelopes on PWM or wavetable position so the source evolves per note.",
+        "Mod matrix: Treat the mod matrix as deep synthesis: any controller source (self-running LFO/env or performer control like wheel/key/pedal) can move any available audible destination (pitch, cutoff, amp, vibrato rate, pan, delay params, …).",
+        "On an init/simple patch, create a route: choose source, choose destination, raise amount. Prefer starting with destination = oscillator pitch so the modulation shape is immediately audible.",
+        "Example performer control: mod wheel → filter cutoff. Lower cutoff, raise amount, move wheel; set wheel to max while trimming amount for the brightest intended ceiling. Add resonance/delay for musicality.",
+        "Retarget or add destinations: pan, volume, delay amount/regen/time, etc. Stack multiple routes so several parameters move together for evolving pads.",
+        "If a route is hard to hear on its real destination, temporarily assign that source to pitch to audit the shape, then reconnect to the intended destination with an appropriate amount."
+      ]
+    },
+    {
+      "from_skill": "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+      "name": "Nested modulation depth chain: velocity → envelope decay → LFO 2 amount → LFO 1 amount → filter cutoff, for touch-sensitive rhythmic filter motion",
+      "goal": "Chain modulators so that each one sets the depth of the next, the 'modulate the modulations' approach of modular synthesis, inside any synth mod matrix. A unipolar, tempo-synced sawtooth LFO 1 (16ths, phase-bent for snap) acts as a looping filter envelope on cutoff. LFO 1's amount is zeroed and handed to a unipolar square LFO 2 (quarter notes, then quarter-note triplets) so it gates LFO 1 rhythmically. LFO 2's amount is zeroed and handed to a spare envelope whose decay brings the whole motion in and out. That envelope's decay is zeroed and driven by velocity, so soft playing gives no motion and hard playing gives the full rhythmic filter. Finish with velocity also on filter depth, key tracking, a longer 'slow' envelope tail and velocity on release. Delta vs our mod-matrix routing skill: the four-degree nested chain where only the last LFO touches the sound.",
+      "steps": [
+        "Start from a default patch: simple subtractive tone, close the low-pass filter, play in a lower register.",
+        "Degree 1: LFO 1 → cutoff. Sawtooth, unipolar (acts like a looping envelope); add phase bend for a snappier shape; tempo-sync to 16ths, and raise the tempo a little if needed.",
+        "Degree 2: set LFO 1's amount to zero. LFO 2 = square, unipolar, synced to quarter notes; assign it to LFO 1's amount so it ducks LFO 1 on and off. Try other resolutions; the presenter likes quarter-note triplets. Optionally add more cutoff modulation.",
+        "Degree 3: set LFO 2's amount to zero. Assign a spare envelope (e.g. one otherwise used for FM) to LFO 2's amount, fully up. Sustain sets the overall motion; use decay to bring the whole modulation up then away.",
+        "Degree 4: set that envelope's decay to zero and assign velocity to the decay. Soft playing gives no modulation; harder strikes emphasise it.",
+        "Refine for consistency: use the same velocity on filter modulation, add keyboard tracking so upper notes are brighter, use the envelope's slow mode for a longer tail, add release time and put velocity on the release too."
+      ]
+    },
+    {
+      "from_skill": "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+      "name": "Patch three random-gate tools from generic functions: noise sampled-and-held by a clock into a window comparator, ANDed with the clock, as a probability gate skipper (window size = probability); the same with S&H output fed back into the clock rate for free random bursts; and a Bernoulli gate where comparator out and not-out each AND the clock to trigger two panned voices",
+      "goal": "Make random and probabilistic gates without dedicated modules. Raw noise into a window comparator gives random gates, but only at a very small window size and with no sync or range. Instead, sample-and-hold the noise on a clock and feed the held value to the comparator: keep shift (window position) high so only the top of the held voltage range passes, and use window size as the probability control (max = all pass, fully closed = none). Because the comparator only fires when the window opens, AND its output with the original clock so every clock passes at maximum. For free random bursts, feed the S&H output back into the clock's rate CV for an unsteady clock. For a Bernoulli gate, use the comparator's out and not-out, each ANDed with the clock (a VCA works as AND), to trigger two envelopes on a higher voice panned left and a lower voice panned right; size then sets the odds of left vs right and they never fire together. Modulate size with a slow LFO and add clock feedback for a generative patch. Maps to Polyrhythm Studio as per-step random gating lanes.",
+      "steps": [
+        "Run noise into a window comparator; trigger an envelope → VCA on a voice from the comparator output. Set window size very low and move shift.",
+        "Add sample-and-hold: noise into S&H input, a cycling clock into S&H clock, S&H output into the comparator. Set shift high so only the top of the held range passes.",
+        "AND the comparator output with the original clock (second comparator, logic module, or a VCA with clock as input and comparator as CV). Use window size as the probability: max = all clocks pass, closed = none. Listen against a second voice playing the raw clock.",
+        "Free random variant: patch the S&H output into the clock's rate CV.",
+        "Bernoulli variant: remove the feedback; take comparator out and not-out, AND each with a copy of the clock, and send them to two envelopes: one on a higher voice panned slightly left, one on a lower voice panned slightly right.",
+        "Sweep size: fully clockwise = only the high voice, fully counter-clockwise = only the low voice, middle = random choice. Then modulate size with a slow LFO and add clock-rate feedback for a generative patch."
+      ]
+    },
+    {
+      "from_skill": "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+      "name": "Evolving cinematic drone: random-modulated LFO rates on WT position and two parallel, opposite-panned filters, plus a randomized granular sample layer and FX chain",
+      "goal": "Build a one-key evolving cinematic drone where nothing repeats: a wavetable oscillator whose position is swept by a very slow free-running LFO whose RATE is itself nudged by a slow smooth random modulator (small amount, ~0.07), super-unison (~2.4 detune), 1 s positive-curve attack / ~4 s decay / lower sustain / 2 s release, filter 1 (resonance, keytrack, drive, filter envelope, tiny random LFO on cutoff) and a parallel 12 dB MS-20-style filter 2 driven by a second slow LFO with its own random rate modulation (~0.13), the two filters panned ~40% left/right; add a granular sample engine (triangle grains, randomized density/size/volume/pitch, LFO-scanned start position) and a touch of white noise into both filters; FX: shimmer → ping-pong tape echo (dotted 1/8) → gentle multiband compression on lows/highs, plus reverb → soft tape distortion → second reverb, mod wheel to drive.",
+      "steps": [
+        "Wavetable engine: pick a folded/rich table; route LFO1 (free-running, very slow) to wavetable position from a start around the table's middle.",
+        "Make LFO1's speed drift: route a slow, smooth, free-running random modulator to LFO1 rate with a small amount (~0.07) so the sweep speeds up and slows down unpredictably.",
+        "Size: super-unison with ~2.4 detune, main tune 0; no glide/legato.",
+        "Amp envelope: ~1 s attack with slightly positive curve, ~4 s decay, slightly lower sustain, ~2 s release. Second envelope similar for filter.",
+        "Filter 1: lowered cutoff with filter envelope, some resonance, keytracking (higher keys open more) and a little drive; add LFO1 to cutoff with a tiny range.",
+        "LFO2: another slow free-running LFO whose rate is modulated by a second random source (~0.13). Add filter 2 as a 12 dB low-pass with character (MS-20-like), set filters to PARALLEL, send sources to both, and let LFO2 move filter 2 cutoff. Pan filter 1 ~40% left and filter 2 ~40% right.",
+        "Engine 2 (granular): load an original granular-friendly sample into both filters; enable granular with random density both directions, random size, some random volume and pitch; change grain shape to triangle (smoother than the rhythmic default); scan the start position with LFO1.",
+        "Add a little white noise into both filters (no sub needed).",
+        "FX A: shimmer (bigger size) → tape echo ping-pong dotted 1/8 → multiband compression mostly taming lows (and some highs) while letting mids through. FX B: reverb (longer decay) → soft tape distortion → second reverb.",
+        "Map mod wheel to distortion drive; trim low end/clipping as needed and save."
+      ]
+    },
+    {
+      "from_skill": "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+      "name": "Use sample-and-hold as a processor on another modulator (not as a random source): step a sine LFO at a rate, automate the LFO rate and the S&H rate separately on a filtered-noise riser so the end seems to slow down through aliasing, and turn a regular step pattern into random hat-loop volume dips with the inverse amount on an FX mix, on a duplicated layer",
+      "goal": "Delta beyond our random S&H LFO skill: here S&H samples an input modulator at its own rate. With a sine LFO (unipolar, full amount) into the S&H input, a low S&H rate gives coarse steps over the sine and a high rate follows it finely, so you keep the LFO's regularity with random-feeling steps. On white noise through a filter, map S&H → cutoff at a reduced amount; instead of a linear ramp LFO riser over four bars, put the LFO rate and the S&H rate on automation lanes, ramp the LFO rate to maximum and start the S&H rate low (individual steps audible), so near the end the sampled pattern sounds like it is slowing down. For hat loops, feed a random-drawn 4-bar step modulator (1/8 rather than 1/16) into the S&H and map S&H → volume (unipolar, ~80%) for random level dips, map the same S&H inversely to a metallic FX mix, and keep the processed loop as an extra layer over the original.",
+      "steps": [
+        "Add a sine LFO and a sample-and-hold modulator, both in Hz. Route LFO → S&H input, LFO unipolar at maximum amount. Sweep the S&H rate from about 1 upward.",
+        "Generate white noise through a filter and route S&H → cutoff; reduce the amount until it is not excessive.",
+        "Compare with a simple riser: an upward-ramp LFO over 4 bars on both rates. Note it is linear and not editable; remove it.",
+        "Expose the LFO rate and S&H rate as automation lanes. Ramp the LFO rate up to maximum over the riser; start the S&H rate low and shape it with its own curve and a few random moves.",
+        "For a hat loop: draw a random 4-bar step pattern on a step modulator at 1/8, route it to the S&H input (unipolar, max), and route S&H → loop volume (unipolar, ~80%).",
+        "Route the same S&H to the mix of a metallic FX with inverted amount, so the FX closes where the volume is high.",
+        "Duplicate the channel: keep the original loop and use the modulated version as a second layer; let other loops fill the quiet sections."
+      ]
+    },
+    {
+      "from_skill": "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+      "name": "Sample-and-hold / random-glide LFO textures: random steps on pitch, wave position and filter, random glide squelch, user-drawn step LFO",
+      "goal": "Use a random-hold (sample-and-hold) LFO as a sound-design engine: random stepped pitch on a saw (sci-fi computer with reverb/delay), the same LFO on wave/wavetable tuning and filter cutoff/resonance, a random-glide shape with legato + glide for squelchy psy-style lines, mod-wheel-scaled S&H on volume, and a user-defined 8-step (steps or lines) LFO as a repeatable pseudo-S&H for bass/leads — then bounce and chop the audio into SFX. Delta beyond general LFO routing and random pitch drift in pad skills.",
+      "steps": [
+        "On a basic saw oscillator, set LFO2 shape to random-hold (sample and hold) and route LFO2 → oscillator tune.",
+        "Add reverb and delay (adjust delay times) for the old sci-fi computer effect.",
+        "Swap to a stranger oscillator wave; keep the pitch depth low so it stays usable (even as a weird bassline).",
+        "Route the same LFO2 to the wave/wavetable position (with the wave set mid) as well as tune; add lots of delay.",
+        "Add a filter and route the S&H LFO to cutoff and resonance — be careful with high resonance.",
+        "Switch LFO shape to random glide; set legato mode and turn glide up for squelchy random glides (psytrance-style). Note long sustained notes vs retriggered behaviour; speed the LFO up as needed.",
+        "In the mod matrix, target voice volume with LFO2 scaled by the mod wheel.",
+        "Use a user-defined LFO with 8 steps as a predetermined S&H pattern (it repeats, so not truly random) for basslines or leads; switch steps → lines so glide ramps between values.",
+        "Bounce results to audio and chop short sections for SFX and quirky elements."
+      ]
+    },
+    {
+      "from_skill": "traveler-walkthrough-curved-envelope-evolving-pad",
+      "name": "ADBSSR curved-envelope evolving pad",
+      "goal": "Design a long-evolving cinematic pad using multi-stage envelopes with adjustable curve handles, up to ~20s stages, optional breakpoint/slope expansion, and a modulation envelope that can start from alt control (e.g. sustain pedal) instead of note-on.",
+      "steps": [
+        "Set three envelopes: filter, VCA, and modulation. Open the on-screen envelope editor and drag curve handles on time stages.",
+        "Use long time stages (up to ~20s each) for cinematic bloom. Expand envelope to add breakpoint + slope stages (ADBSSR-style) when you need a mid-bloom reshape.",
+        "Route filter envelope to stereo LPF cutoff with moderate amount; VCA envelope for amplitude; mod envelope to WT position, pan, or secondary cutoff.",
+        "Optional alt-control on mod envelope: start envelope from sustain pedal (or other mod-bus source) instead of key press for expressive delayed motion.",
+        "LFOs: choose from varied shapes including unipolar and slew/random; key-sync or free; tempo-sync optional; dedicate pitch or filter vibrato with fade-in on LFO1/2.",
+        "Finish with soft EQ, light chorus, long space/hall reverb (space algo up to very long tails). Keep limiter available as safety for dynamic patches."
+      ]
+    },
+    {
+      "from_skill": "wavefolded-lfo-slew-filter-wobble",
+      "name": "Wavefolded LFO wobble: fold a sine LFO for extra peaks/valleys, then slew-limit it before filter cutoff",
+      "goal": "Make complex but smooth filter wobbles by running a plain sine LFO through a wavefolder (fold amount, symmetry, fold shape add peaks and valleys) before it reaches filter cutoff, then put a slew limiter after the folder so the folded modulation is less jumpy — a modulation-shaping recipe distinct from audio-rate wavefolding.",
+      "steps": [
+        "Baseline: route a regular sine LFO to filter cutoff and listen.",
+        "Insert a wavefolder between LFO and filter cutoff; compare the folded and plain sine on a scope.",
+        "Slow the LFO down (folding multiplies apparent rate) and adjust fold amount, symmetry and fold shape.",
+        "Add a slew limiter after the wavefolder, before the cutoff input, to soften the jumps."
+      ]
+    }
+  ],
+  "merged_from": [
+    "envelope-follower-audio-driven-modulation",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+    "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+    "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "wavefolded-lfo-slew-filter-wobble"
+  ],
+  "tags": [
+    "adbssr",
+    "adsr",
+    "automation",
+    "bernoulli",
+    "cinematic-synth",
+    "comparator",
+    "control-track",
+    "drone",
+    "envelope",
+    "envelope-follower",
+    "filter",
+    "fm",
+    "from-youtube",
+    "fx",
+    "gates",
+    "generative",
+    "glide",
+    "granular",
+    "hats",
+    "lfo",
+    "lfo-rate",
+    "logic",
+    "mod-matrix",
+    "modular",
+    "modulation",
+    "modulation-matrix",
+    "modulation-shaping",
+    "music-production",
+    "nested-modulation",
+    "noise"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://modulation-lfo-envelope-random-routing",
+  "aliases": [
+    "envelope-follower-audio-driven-modulation",
+    "keysol-venus-fm-lfo-evolving-chase-sequence",
+    "keysol-venus-polyrhythmic-control-track-pitch",
+    "modulation-lfo-envelope-mod-matrix-routing",
+    "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+    "random-gate-generators-from-noise-sample-and-hold-window-comparator-and-logic-probability-skipper-free-random-burst-clock-feedback-bernoulli-two-voice",
+    "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+    "sample-and-hold-as-processor-on-lfo-or-step-input-automate-lfo-rate-up-and-s-h-rate-for-noise-filter-riser-aliasing-slowdown-random-hat-volume-inverse-fx-mix-layer",
+    "sample-hold-random-lfo-pitch-wave-filter-glide-textures",
+    "traveler-walkthrough-curved-envelope-evolving-pad",
+    "wavefolded-lfo-slew-filter-wobble"
+  ]
+}

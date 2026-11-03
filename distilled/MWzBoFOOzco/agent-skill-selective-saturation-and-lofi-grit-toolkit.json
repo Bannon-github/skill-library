@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "selective-saturation-and-lofi-grit-toolkit",
+  "name": "Frequency- and level-selective saturation, exciter, bit/noise grit and small-speaker transition",
+  "goal": "Choose and set distortion as a tone tool rather than blanket crunch: band-weighted saturation (less drive on lows, more on highs, with output gain compensation), threshold/envelope-dependent saturation so only loud parts distort, saturation-as-clipper for headroom, a pre-filtered overdrive exciter at low dry/wet for brightness, subtle bit-depth/sample-rate reduction with jitter for vintage-sampler glue, narrow noise-modulation (erosion-style) grit, restoring sub after distortion, and a small-speaker cabinet on the master as a transition effect.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "MWzBoFOOzco",
+    "url": "https://www.youtube.com/watch?v=MWzBoFOOzco",
+    "title": "How to use DISTORTION properly in Ableton Live: Tips & tricks for Saturator, Redux, Erosion & more",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/MWzBoFOOzco/agent-skill-selective-saturation-and-lofi-grit-toolkit.json"
+  },
+  "prerequisites": [
+    "DAW or Web Audio graph with a saturator/waveshaper, band-split or pre-EQ before distortion, bit/sample-rate reducer, noise-modulation effect, overdrive with pre-filter, cabinet/speaker sim"
+  ],
+  "inputs": [
+    {
+      "name": "source_type",
+      "type": "enum",
+      "description": "sub-bass | drums | pad/chords | vocal | full mix",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "processed_track",
+      "type": "audio",
+      "description": "Track with targeted harmonic colour and controlled level"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Add saturation drive gradually and turn output down by the same amount to compare at matched loudness; decide whether the post-saturation clipper stage is wanted (adds more distortion) or off.",
+      "tool": "saturator",
+      "expect": "Colour heard without a loudness bias"
+    },
+    {
+      "n": 2,
+      "action": "Weight saturation by band: reduce drive on the low band so subs stay clean while upper harmonics remain (helps 808/sub cut through small speakers); push the high band and width for brighter grit. Avoid cranking the low band\u2014sub content collapses.",
+      "tool": "saturator-eq",
+      "expect": "Bass audible on small speakers, sub still solid"
+    },
+    {
+      "n": 3,
+      "action": "Level-selective: use a threshold/waveshaper mode where only signal above the threshold saturates, or an envelope-follow control that adds more bias/drive on louder parts (tube-style).",
+      "tool": "dynamic-sat",
+      "expect": "Loud peaks warm up; quiet detail stays clean"
+    },
+    {
+      "n": 4,
+      "action": "Clipper use: set saturation so peaks are shaved (e.g. peak meter drops ~6 dB with little audible change), then raise the track level by the recovered headroom.",
+      "tool": "clip",
+      "expect": "Same sound, more headroom"
+    },
+    {
+      "n": 5,
+      "action": "Exciter: overdrive with its pre-distortion band filter aimed at the highs, low drive, low dry/wet, a touch of tone\u2014adds new harmonics instead of EQ boost to dull or lossy material.",
+      "tool": "exciter",
+      "expect": "Clarity returns to muddy sources"
+    },
+    {
+      "n": 6,
+      "action": "Vintage grit: subtle bit-depth/sample-rate reduction (old samplers ran ~12-bit at roughly 20-something kHz), small jitter; lower bits = noisier, lower rate = crunchy ringing. Or noise-modulation (erosion-like: sine, noise, wide-noise modes; width sets the noise band) at very low amounts; wide-noise adds stereo width.",
+      "tool": "lofi",
+      "expect": "Glue and dirt at subtle settings; obvious lo-fi when pushed"
+    },
+    {
+      "n": 7,
+      "action": "After heavy distortion on bass, re-add/restore sub (sub switch or low shelf) because distortion thins lows.",
+      "tool": "eq",
+      "expect": "Low end weight returns"
+    },
+    {
+      "n": 8,
+      "action": "Transition trick: cabinet/small-speaker sim on the master (small speaker, far/dynamic mic, mono) during an intro or bridge, then bypass when the full track drops.",
+      "tool": "transition",
+      "expect": "Phone-speaker sound then a big impact on bypass"
+    }
+  ],
+  "verification": [
+    "Loudness-matched A/B performed",
+    "Low band less driven than high band on sub material",
+    "Lo-fi stages audible only as subtle texture unless intentionally pushed",
+    "Cabinet bypass lands on a section boundary"
+  ],
+  "tags": [
+    "saturation",
+    "distortion",
+    "exciter",
+    "bitcrush",
+    "lofi",
+    "clipper",
+    "transition-fx",
+    "mixing",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "published_at": "2026-10-06T16:32:53+00:00",
+  "mcp_resource": "skill://selective-saturation-and-lofi-grit-toolkit",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source synth's own units.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Vital/Ableton/Dune/Massive X/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Product names (Saturator, Erosion, Redux, Pedal, Dynamic Tube, Cabinet) map to generic saturator, noise-modulator, bit/rate reducer, guitar-pedal drive, tube waveshaper, speaker-cab IR.",
+    "Web Audio: WaveShaperNode with oversample, band-split via BiquadFilters before shaping, AudioWorklet for bit/rate reduction, ConvolverNode with small-speaker IR for the transition."
+  ]
+}

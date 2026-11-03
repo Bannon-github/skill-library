@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+  "name": "Classic swept analog pad/lead: two detuned oscillators into a state-variable (SEM-style) filter driven by a triangle 'fin' filter envelope that rises then falls, modest resonance, mono mode with 8-voice stereo unison, light compression and tape echo, and an optional second oscillator pair through a different filter type swept the same way",
+  "goal": "Recreate the classic 70s/80s filter-sweep sound from scratch. Use a low register and two oscillators slightly detuned for a phasing movement. Put them through a state-variable (SEM/Oberheim-type) lowpass and give the filter envelope a triangle 'fin' shape: a slow attack up and a slow decay back down with low sustain, so each note sweeps open and closes again; set envelope intensity, then add a little resonance (not too much). Switch to mono mode with full stereo unison (all 8 voices) and some detune for size. Finish with light compression and tape echo (no chorus needed). Optional: route oscillators 3–4 to a second, different filter type with its own fin envelope and detune, then blend both layers. More specific than our generic pad swell skills: up-and-down fin envelope on the filter plus mono unison stack.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "xil_HpL1izg",
+    "url": "https://www.youtube.com/watch?v=xil_HpL1izg",
+    "title": "Why This Classic Filter Sweep Still Sounds So Good",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/xil_HpL1izg/agent-skill-classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer.json",
+    "transcript_note": "Short tutorial; preset name omitted."
+  },
+  "prerequisites": [
+    "Analog-style synth with a state-variable or multimode filter and filter envelope, or Web Audio: two detuned OscillatorNodes → BiquadFilter lowpass with frequency automated up then down (implementation note)",
+    "Unison/mono voice mode",
+    "Compressor and tape-style echo"
+  ],
+  "inputs": [
+    {
+      "name": "register",
+      "type": "string",
+      "description": "Low register for the sweep",
+      "required": true
+    },
+    {
+      "name": "fin_attack",
+      "type": "number",
+      "description": "Filter envelope rise time (slow)",
+      "required": true
+    },
+    {
+      "name": "fin_decay",
+      "type": "number",
+      "description": "Filter envelope fall time (slow), low sustain",
+      "required": true
+    },
+    {
+      "name": "resonance",
+      "type": "number",
+      "description": "Moderate resonance",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sweep_patch",
+      "type": "patch",
+      "description": "Classic swept pad/lead"
+    },
+    {
+      "name": "dual_filter_variant",
+      "type": "patch",
+      "description": "Two-filter layered version"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "The video gives shapes, not numbers, except 8 unison voices. Set times and amounts by ear.",
+    "Vendor preset names from the video are not used. The SEM/Oberheim-type filter is a portable alias for a 12 dB state-variable lowpass.",
+    "Amp drive made little difference in the demo, so it is optional."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init a patch. Choose a state-variable (SEM-style) lowpass, and if the synth offers vintage amp/envelope models, use them. Play in a low register with two oscillators slightly detuned.",
+      "tool": "osc + filter",
+      "expect": "Slow phasing between the two oscillators"
+    },
+    {
+      "n": 2,
+      "action": "Shape the filter envelope as a triangle 'fin': slow rise to the peak, slow fall back down, low sustain. Set envelope intensity so the cutoff travels a wide range.",
+      "tool": "fin envelope",
+      "expect": "Each note sweeps up and then back down"
+    },
+    {
+      "n": 3,
+      "action": "Add a little resonance, just enough to make the sweep sing without whistling.",
+      "tool": "resonance",
+      "expect": "Sweep becomes vocal and obvious"
+    },
+    {
+      "n": 4,
+      "action": "Switch to mono mode with full stereo unison (8 voices) and add unison detune.",
+      "tool": "unison",
+      "expect": "Wide, thick single voice"
+    },
+    {
+      "n": 5,
+      "action": "Add light compression and a tape echo. Skip chorus, because unison already gives width.",
+      "tool": "fx",
+      "expect": "Finished classic sweep with echo tail"
+    },
+    {
+      "n": 6,
+      "action": "Optional: enable a second filter of a different type, send oscillators 3–4 to it, give it its own fin envelope and some detune, then blend both layers (pull back if it gets too dense).",
+      "tool": "dual filter",
+      "expect": "Two sweep characters layered"
+    }
+  ],
+  "verification": [
+    "Holding a note shows the cutoff rising and then falling without retriggering.",
+    "Turning resonance up makes the sweep peak clearly audible; turning it down returns a smooth sweep.",
+    "Mono + 8-voice unison sounds wider than the dual-oscillator patch alone."
+  ],
+  "tags": [
+    "filter-sweep",
+    "filter-envelope",
+    "state-variable-filter",
+    "unison",
+    "analog-pad",
+    "tape-echo",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer"
+}

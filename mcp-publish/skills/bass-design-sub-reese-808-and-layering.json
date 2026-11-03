@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "id": "bass-design-sub-reese-808-and-layering",
+  "name": "Bass design: sub, Reese, 808, punchy bass and distortion layering",
+  "goal": "Design basses that translate: clean sine sub split from a distorted mid layer, Reese detuned saws, punchy 808 with pitch envelope, archetype punchy basses, sub drops and cinematic distortion stacks; keep kick/bass relationship clear.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "brooding-pw-drone-detuned-octave-stack-split-bend",
+        "video_id": "DFLshMLKkHE",
+        "url": "https://www.youtube.com/watch?v=DFLshMLKkHE",
+        "title": "How to create Massive, Brooding, Cinematic Drones in any Synth"
+      },
+      {
+        "from_skill": "cinematic-bass-distortion-stack-pitch-bend-downer",
+        "video_id": "PUBMG__czwg",
+        "url": "https://www.youtube.com/watch?v=PUBMG__czwg",
+        "title": "How To Sound Design Cinematic Basses and Subdrops"
+      },
+      {
+        "from_skill": "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+        "video_id": "H6i55lXAMh0",
+        "url": "https://www.youtube.com/watch?v=H6i55lXAMh0",
+        "title": "Bass Sound Design: 808s, Plucks, Growls and Sub Bass"
+      },
+      {
+        "from_skill": "hybrid-noise-distortion-separate-sub-layer",
+        "video_id": "EWe_Fnjcceo",
+        "url": "https://www.youtube.com/watch?v=EWe_Fnjcceo",
+        "title": "Serum Tutorial: White Noise Bass (Copycatt/Chee)"
+      },
+      {
+        "from_skill": "keysol-helpling-keytrack-bass-split-delay",
+        "video_id": "yJWS77wyVe0",
+        "url": "https://www.youtube.com/watch?v=yJWS77wyVe0",
+        "title": "TRAVELER | Behind the Scenes with David Helpling"
+      },
+      {
+        "from_skill": "keysol-venus-velocity-hybrid-bass-impact",
+        "video_id": "jLGz5wq2CRE",
+        "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+        "title": "TRAVELER Track Walkthrough by Venus Theory"
+      },
+      {
+        "from_skill": "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+        "video_id": "7OatKTrtmJ8",
+        "url": "https://www.youtube.com/watch?v=7OatKTrtmJ8",
+        "title": "How to Make a HUGE Reese Bass in Vital | Deep Dubstep & DnB Sound Design Tutorial"
+      },
+      {
+        "from_skill": "sub-drop-sine-freq-glide-80hz-to-20hz",
+        "video_id": "FULqquC3-Fc",
+        "url": "https://www.youtube.com/watch?v=FULqquC3-Fc",
+        "title": "How to make custom bass drops / sub drops in Cubase (tutorial)"
+      }
+    ]
+  },
+  "theory": "Fundamental below ~100 Hz must stay mono and clean; harmonics (100 Hz-2 kHz) make bass audible on small speakers. Detuned saws beat to create Reese movement; fast pitch envelopes create punch.",
+  "generator": {
+    "path": "sample-lab/theory/bass_design.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/bass_design.wav"
+  },
+  "prerequisites": [
+    "A drum loop with a kick for context",
+    "A synth with envelopes, mod matrix (envelope → pitch), unison, mono mode, LFO shapes",
+    "Any synth with 3 oscillators, unison, mono/legato/glide and an FX rack (the video uses a free wavetable synth), or Web Audio: three detuned OscillatorNode groups → WaveShaper → DynamicsCompressor → BiquadFilter highpass with automated frequency (implementation note)",
+    "DAW automation lanes",
+    "EQ and distortion",
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)",
+    "Mono-below-frequency utility and sidechain compressors",
+    "Post saturator and EQ with automation",
+    "Reverb and delay with high-/low-pass on repeats",
+    "Sine oscillator or test-tone generator with automatable frequency",
+    "Synth with 3 oscillators offering pulse-width/shape morph, unison, per-osc vibrato routing, LFO, 12 dB low-pass, mod-wheel and pitch-wheel routing",
+    "Synth with key-tracking to oscillator level, and a wettable delay"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick the root note and check its Hz (e.g. A1 = 55 Hz); tune 808/kick to the key.",
+      "expect": "Key-locked low end"
+    },
+    {
+      "n": 2,
+      "action": "Sub layer: sine/triangle, mono, low-passed ~100 Hz; never distort it.",
+      "expect": "Solid fundamental"
+    },
+    {
+      "n": 3,
+      "action": "Mid layer: Reese (3 saws, ±10-20 cents, one octave down), or FM/noise grit; high-pass ~100 Hz then distort/saturate; parallel compress.",
+      "expect": "Audible character"
+    },
+    {
+      "n": 4,
+      "action": "808: sine with pitch envelope (+12 st -> 0 in ~35 ms), hold/decay to taste, tube drive for harmonics, glide between notes.",
+      "expect": "Punchy 808"
+    },
+    {
+      "n": 5,
+      "action": "Kick relationship: either the kick owns the transient (delay bass attack ~10-30 ms) or sidechain the bass fully to the kick.",
+      "expect": "Kick and bass do not fight"
+    },
+    {
+      "n": 6,
+      "action": "Sub drop: sine 80 -> 20 Hz over 1/2-2 bars at impacts.",
+      "expect": "Impact low end"
+    },
+    {
+      "n": 7,
+      "action": "Check on small speakers and mono; level bass against a reference.",
+      "expect": "Translating bass"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/bass_design.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "brooding-pw-drone-detuned-octave-stack-split-bend",
+      "name": "Brooding cinematic drone: three pulse-width-morph oscillators, opposed octave detune, single-osc vibrato, LFO PW breathing and split pitch-bend depths",
+      "goal": "Build a massive, brooding cinematic drone in any capable synth: three pulse-width-morphing square oscillators (two an octave down, one wide 4-voice unison), the two low oscillators nudged slightly sharp and flat around the octave for clash, vibrato on only one oscillator, a slow LFO breathing one oscillator's pulse-width morph, a 12 dB low-pass on the mod wheel, reverb plus filtered delay, and different extra pitch-bend depths per oscillator so bends spread instead of moving in lockstep.",
+      "steps": [
+        "Use three oscillators, all set to a pulse-width-shifting square (a square whose pulse width can morph). Square/odd-harmonic content gives the hollow, brooding foundation.",
+        "Osc 1: move the shape slightly away from pure square for a biting edge, use 2 voices slightly detuned, add a slight vibrato, tune -12 semitones.",
+        "Osc 2: keep a square, tune -12 semitones, 4 unison voices detuned very wide.",
+        "Osc 3: leave at the higher (unshifted) pitch, give it a different pulse shape, 2 voices slightly detuned.",
+        "Amp envelope 'pad treatment': slow attack so the sound creeps in, long tapering release.",
+        "Add drama/clash: nudge the two octave-down oscillators by a small fraction in opposite directions (presenter's display: about -12.10 and -11.90) and offset Osc 3 slightly (~.5 in the synth's fine units).",
+        "Restrict vibrato to one oscillator only; the others get none.",
+        "Set pitch-bend range to +-1 so you can bend up and down by small amounts.",
+        "Assign a slow LFO to Osc 3's waveform/pulse-width morph for a little breathing.",
+        "Add a 12 dB low-pass (cascade-style) to tame harshness and map the mod wheel to cutoff; start notes with the mod wheel up and ride it.",
+        "Global FX: reverb with larger size and more wet so it holds on; then a delay (~140 in the presenter's units) with a little feedback and high-pass/low-pass on the repeats.",
+        "Make bends spread: add a small extra pitch-wheel -> tune amount on Osc 1 (~20) and a larger one on Osc 3 (tried ~75, settled near 60 and then pulled slightly lower) so oscillators bend at slightly different rates."
+      ]
+    },
+    {
+      "from_skill": "cinematic-bass-distortion-stack-pitch-bend-downer",
+      "name": "Cinematic bass FX bed: WT+sub through stacked distortion/compression, then pitch-bend downer",
+      "goal": "Build a full cinematic bass/impact bed by pitching a wavetable osc down an octave with subtle bend-warp and width, stacking multiple distortions and compressors so the WT choice matters less than the grind, pushing a sine sub through the same FX, adding early-chain filter/EQ movement into the grit, then reusing the patch for braams/bends/downers via one-shot pitch curves and asymmetric filter envelopes.",
+      "steps": [
+        "Init WT osc; transpose −12 st. Apply a bend-style warp in small amounts to soften robotic digital WT character. Add modest unison width with reduced detune so it is wide but not chorus-wobbly.",
+        "Stack several distortions and compressors in series. The more extreme the stack, the less the specific WT matters. Use some compressors to bring high-end back; disable multiband modes if the tone goes boxy.",
+        "Place a filter or EQ early in the FX chain and modulate a morph/cutoff with one slow LFO plus a second LFO (different rate, limited depth) so movement is smashed into the distortion.",
+        "Add a second oscillator +12 st with fewer unison voices for air. Keep a sine sub in the patch and intentionally run it through the same FX — bypassing FX shows how much the sub colors the grind; tweak sub pitch for large timbral changes.",
+        "Post: more compression/saturation (soft-clip/inflator-style with low drive), limiter, enable legato/glide. For braams/bends draw a one-shot pitch curve (e.g. 2 bars). For downers invert the pitch gesture and automate filter cutoff with a fast-then-slow asymmetric curve over ~2 bars, optionally keeping lows less affected."
+      ]
+    },
+    {
+      "from_skill": "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+      "name": "Design four bass types from scratch with fit-to-kick rules: a punchy 808 (sine, hold and 1.5 s decay, a 35 ms pitch-envelope punch, tube drive, low boost, attack delayed 80-100 ms when the kick already punches), a pluck bass (mono square through an enveloped 24 dB low-pass plus a wide unison top layer), a sidechained saw growl, and a click-free sine sub",
+      "goal": "Four punchy bass recipes. 808: one sine osc, attack near 0 (raise slightly until the click disappears), hold about 300-400 ms, decay about 1.5 s, sustain 0; a little wavetable bend/warp for character; a second envelope (attack about 0.5 ms, hold 0, decay about 35 ms, sustain 0, release about 15 ms) routed to master tune for a kick-like pitch punch (set amount to the middle); tube distortion with mix pulled back; EQ lift around 100 Hz. If the kick already supplies the punch, raise the 808 attack to about 80-100 ms so it fills in behind the kick instead of sidechaining. Pluck/house bass: mono voice, square wave through a 24 dB low-pass, short attack, no hold, low sustain, some release; the same envelope also drives cutoff for the pluck; drive the filter a little; add a second osc (PWM-type wave, 5-7 unison voices, detuned) for a wide top, keep content below about 100-150 Hz mono, reverb and delay with low cut. Growl bass: saw with a low-pass, second osc with 7-8 unison voices, mono, very short release, an LFO shaped as a sidechain duck on both osc levels, cutoff on a macro, then boost about 140 Hz to keep it a bass. Sub: sine, one voice, mono/legato, attack about 5 ms and a short release to avoid clicks.",
+      "steps": [
+        "808 body: sine osc, attack near 0 then raised just enough to remove the click, hold about 300-400 ms, decay about 1.5 s, sustain 0; add a slight bend/warp to the wave for character.",
+        "808 punch: second envelope (attack about 0.5 ms, hold 0, decay about 35 ms, sustain 0, release about 15 ms) → master/global tune; set the amount between too little and too much.",
+        "808 FX: tube distortion with mix pulled back, EQ lift around 100 Hz. Play with the drums: if both kick and 808 punch, raise the 808 attack to about 80-100 ms so the kick provides the transient.",
+        "Pluck bass: mono voicing, square osc into a 24 dB low-pass; amp envelope with tiny attack, no hold, low sustain, a bit of release; route the same envelope to cutoff and add a little filter drive.",
+        "Pluck top layer: second osc with a PWM-style wave, 5-7 unison voices, detune set for width, through the same filter at lower level; add reverb and delay with their lows cut; keep lows mono below about 100-150 Hz.",
+        "Growl bass: saw + low-pass, second saw osc with 7-8 unison voices, mono, very short release; draw an LFO shaped like a sidechain duck and route it to both osc levels; put cutoff (and optionally reverb/delay mix) on macros; boost around 140 Hz.",
+        "Sub: sine, 1 voice, mono/legato, attack about 5 ms, short-but-not-instant release; play low."
+      ]
+    },
+    {
+      "from_skill": "hybrid-noise-distortion-separate-sub-layer",
+      "name": "Hybrid noise+distortion layer separate from sub/harmonic patch",
+      "goal": "Build a portable hybrid stack: one patch/layer for filtered noise through asymmetric distortion (gritty air/texture) with EQ low-cut and slight top trim, and a separate patch/layer for sub/harmonic tones (e.g. square/WT) so you can retune harmonics or hold a fixed noise pitch without the noise timbre tracking every bass note—then blend; maps to sample/noise + WT + filter hybrid thinking for cinematic beds (not only neuro bass).",
+      "steps": [
+        "Layer A (noise texture): start from a sine (or muted tonal osc), enable noise oscillator/source; set noise level ~50% and adjust noise pitch (~55% in source) to taste.",
+        "Add asymmetric (or similar) distortion ~50% to grit the noise. Filter the noise path (source ~cutoff example in mid-high range) to pull harshness back.",
+        "EQ the noise layer: high-pass/roll off the bottom (Q ~45% to flatten a hump), set HP frequency into the low-mid region so the noise isn’t muddy; optionally trim highs ~−2.5 dB. Mute the tonal osc on this layer if sub will be separate.",
+        "Layer B (harmonics/sub): separate instance/patch for low tones so changing WT/harmonics won’t rewrite the noise timbre. Prefer a harmonically useful wave (transcript favors square) or WT; shape independently.",
+        "Performance trick: hold one noise-layer pitch across moving sub notes so grit stays consistent while bass harmony moves—or map both together if you want noise to track. Blend to taste; for pads, lower distortion and lengthen amps, still keeping noise and WT/filter on independent paths."
+      ]
+    },
+    {
+      "from_skill": "keysol-helpling-keytrack-bass-split-delay",
+      "name": "keytracked low-osc bass split with wet delay",
+      "goal": "Make a simple expressive patch where delay can dominate the mix, and a low oscillator’s level is key-tracked so bass appears mainly in the left-hand/low register while upper notes stay clearer.",
+      "steps": [
+        "Create a simple two-layer patch: mid/high tonal oscillator(s) plus a dedicated low oscillator.",
+        "Modulate the low oscillator’s volume with keyboard tracking so it is strong only in the lower register (left hand / low keys) and fades as you play higher.",
+        "Set delay wet very high (delay almost louder than the dry sound) to showcase modulation/space; filter delay feedback to taste."
+      ]
+    },
+    {
+      "from_skill": "keysol-venus-velocity-hybrid-bass-impact",
+      "name": "velocity-rewarding hybrid bass and impact",
+      "goal": "Design a thunderous hybrid bass/impact that responds exponentially to velocity (louder hits open filter/amp dramatically), usable as deep hits or high atmospheric stabs with HP + long space reverb.",
+      "steps": [
+        "Start with dark hybrid oscillators (saw/pulse + optional WT). Fast amp attack, punchy decay, moderate sustain for bass; shorter for impacts.",
+        "Map velocity strongly (near-exponential) to filter cutoff and/or drive so louder playing blooms dramatically.",
+        "For atmospheric use: apply aggressive high-pass on the mix, play high register with pitch bend, and use a broad smooth space-style reverb so hits become huge pads/stingers.",
+        "For deep bass: keep HP low/off, emphasize transient, optionally underscoring with sub; avoid static sine-only subs — keep some transient character."
+      ]
+    },
+    {
+      "from_skill": "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+      "name": "Reese bass from three octave-down saws (outer two with 3-voice unison at about 10% detune and zero phase randomization, middle one single voice, outer pair fine-tuned slightly up and down), mono legato always-glide, soft-clip drive, half-mix compressor, resonant high-pass, low-cut reverb, soft-clip saturation, high roll-off, automated high-pass movement, mono below 120 Hz and kick/snare sidechain",
+      "goal": "Build a wide, moving Reese bass for dark hybrid cues. Use three saw oscillators all one octave down: oscillators 1 and 3 with 3 unison voices, unison detune around 10% and phase randomization at 0; oscillator 2 a single voice. Fine-tune oscillator 1 slightly up and oscillator 3 slightly down for the slow beating. Set one voice (mono), glide about halfway, always-glide and legato on, and overlap MIDI notes to get slides. In the synth FX: soft-clip distortion at about 9 dB, then a compressor after it at about 50% mix (release ~36%, attack ~56% on its relative scale), an EQ with a slightly resonant high-pass, and a little short reverb with its low end removed. After the synth: soft-clip saturation (drive just over 3 dB, output −2 dB), an EQ rolling off the high end with a small mid dip, automated high-pass cutoff for movement, a slight pitch-wheel drift, mono below 120 Hz, and compressors sidechained to the kick and the snare.",
+      "steps": [
+        "Oscillator 1: basic saw, −12 semitones, unison 3 voices, unison detune ~10%, phase randomization 0. Oscillator 2: saw, −12, one voice. Oscillator 3: same as oscillator 1.",
+        "Fine-tune oscillator 1 slightly up and oscillator 3 slightly down.",
+        "Set voices to 1 (mono), glide about halfway, enable always-glide and legato. Overlap the start of the next MIDI note with the end of the previous one to slide into it; separated notes do not bend.",
+        "Synth FX: distortion in soft-clip mode at about 9 dB drive; compressor placed after the distortion with mix ~50%, release ~36%, attack ~56%.",
+        "Add an EQ with a high-pass filter, a touch of resonance, and the cutoff set into the low-mid. Add a small reverb with its low end removed and a shorter time.",
+        "After the synth: saturator in a soft-sine curve with soft clip on, drive just over 3 dB, output −2 dB. Then an EQ that rolls off the top end and makes a small mid dip.",
+        "Automate the high-pass cutoff so it opens and closes over the phrase, and add a small pitch-wheel drift lane for extra movement. If it sounds muffled, ease the top roll-off back a little.",
+        "Make everything below 120 Hz mono and lower the gain slightly. Add two compressors sidechained to the kick and to the snare so the bass dips on each hit. Optionally resample and chop the result."
+      ]
+    },
+    {
+      "from_skill": "sub-drop-sine-freq-glide-80hz-to-20hz",
+      "name": "Custom sub-drop: automate a sine from ~80 Hz down to ~20 Hz",
+      "goal": "Design original sub/bass drops without sample packs by generating a mono sine (test tone or sine osc), automating frequency from about 80 Hz (or key-matched) down to about 20 Hz over a chosen length (half-bar to multi-bar), bypassing the generator outside that window, and optionally adding bass-harmonic saturation.",
+      "steps": [
+        "Create a mono track and insert a sine test-tone generator (or a sine-only oscillator). Name the track as a sub-drop layer.",
+        "Pick a start frequency near 80 Hz (or look up the Hz for your song's root); set end near 20 Hz for a deep trailer-style drop.",
+        "Draw frequency automation from start_hz to end_hz across the chosen length (e.g. 1 bar). Elongate or shorten the automation for brutal long drops vs fast stabs.",
+        "Automate bypass/mute so the generator is only active during the drop window.",
+        "Optional: add bass-harmonic exciters/saturation (e.g. 'max bass'-style) if you want audible upper harmonics; verify on a spectrum that harmonics appear only when desired. Export several lengths/keys into a personal drop folder."
+      ]
+    }
+  ],
+  "merged_from": [
+    "brooding-pw-drone-detuned-octave-stack-split-bend",
+    "cinematic-bass-distortion-stack-pitch-bend-downer",
+    "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+    "sub-drop-sine-freq-glide-80hz-to-20hz"
+  ],
+  "tags": [
+    "808",
+    "bass",
+    "bass-drop",
+    "braam-bed",
+    "cinematic",
+    "cinematic-bass",
+    "cinematic-synth",
+    "dark",
+    "dark-bass",
+    "delay",
+    "detune",
+    "distortion",
+    "distortion-stack",
+    "downer",
+    "drone",
+    "filter",
+    "from-youtube",
+    "glide",
+    "helpling",
+    "hybrid",
+    "impact",
+    "keytrack",
+    "layers",
+    "mono-low-end",
+    "music-production",
+    "noise",
+    "pads",
+    "pitch-bend",
+    "pitch-envelope",
+    "pluck-bass"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://bass-design-sub-reese-808-and-layering",
+  "aliases": [
+    "brooding-pw-drone-detuned-octave-stack-split-bend",
+    "cinematic-bass-distortion-stack-pitch-bend-downer",
+    "four-punchy-bass-archetypes-808-sine-hold-decay-35ms-pitch-env-punch-tube-drive-100hz-lift-attack-delay-vs-kick-pluck-mono-square-lp24-env-plus-wide-pwm-unison-saw-growl-lfo-duck-sub-sine-5ms-attack",
+    "hybrid-noise-distortion-separate-sub-layer",
+    "keysol-helpling-keytrack-bass-split-delay",
+    "keysol-venus-velocity-hybrid-bass-impact",
+    "reese-bass-three-saw-octave-down-mixed-unison-fine-detune-mono-legato-glide-softclip-parallel-comp-hpf-automation-mono-below-120",
+    "sub-drop-sine-freq-glide-80hz-to-20hz"
+  ]
+}

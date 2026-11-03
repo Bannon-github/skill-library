@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+  "name": "Ambient 44-bar arrangement map: low pad + light percussion, high pad at bar 5, piano at bar 13, shaker at ~bar 17, a mid-track strip-back to shaker/hat that sets up a return with new piano chords, and a coda that ends on the piano",
+  "goal": "Turn a 4-5 bar ambient loop into a ~44-bar song with a deliberate shape: set the tone with a low pad and sparse rim/cymbal (bars 1-5), add a high pad at bar 5 for gentle rising action, add piano around bar 13 and shaker around bar 16-17 to reach the 'full track', then strip the main percussion and low pad (keep only shaker and hat) for about 8 bars so the ending feels near, bring everything back around bar 33 with piano chords the listener has not heard yet (the spike of interest), stop the percussion half a bar early and end on the calming piano chords at bar 45 as a coda. Voice the new chords so the low pad only plays the notes that change while the piano replays the full chord every bar.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "wirMkOC-hGQ",
+    "url": "https://www.youtube.com/watch?v=wirMkOC-hGQ",
+    "title": "HOW TO PRODUCE AMBIENT MUSIC - ARRANGING YOUR AMBIENT SONG",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/wirMkOC-hGQ/agent-skill-ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending.json",
+    "transcript_note": "Auto-generated YouTube transcript; garbled in places (percussion names approximated)"
+  },
+  "prerequisites": [
+    "A DAW with a short ambient loop (low pad, high pad, rim/cymbal, piano, shaker) already written",
+    "Group/submix tracks and colour-coded tracks set up (the source does this before arranging)"
+  ],
+  "inputs": [
+    {
+      "name": "loop_layers",
+      "type": "list",
+      "description": "Pad low, pad high, rim shot, cymbal, piano, shaker (or equivalents).",
+      "required": true
+    },
+    {
+      "name": "target_bars",
+      "type": "int",
+      "description": "About 44 bars.",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement_map",
+      "type": "table",
+      "description": "Bar-by-bar entry/exit list for each layer, plus the coda."
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Approximate bar numbers come from a spoken walkthrough; treat them as a template, not exact positions.",
+    "YouTube Show transcript is auto-generated and partly garbled; steps are approximated from the spoken description only.",
+    "Arrangement only: EQ/mixing are out of scope (separate episode)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Colour-code tracks and put related layers on group/submix tracks so entries and exits are easy to see.",
+      "tool": "DAW",
+      "expect": "Arrangement view is readable per layer."
+    },
+    {
+      "n": 2,
+      "action": "Bars 1-5: play only the low pad plus a sparse rim shot and cymbal to set the tone (calm, slightly upbeat, comfortable).",
+      "tool": "DAW",
+      "expect": "Mood is established with minimal parts."
+    },
+    {
+      "n": 3,
+      "action": "Bar 5: add the high-pitched pad for a little movement; keep it non-intense. Hold this for ~8 more bars.",
+      "tool": "DAW",
+      "expect": "Action rises slightly."
+    },
+    {
+      "n": 4,
+      "action": "Bar 13: add piano; around bar 16-17 add the shaker so you reach what sounds like the full track.",
+      "tool": "DAW",
+      "expect": "Full-density section present."
+    },
+    {
+      "n": 5,
+      "action": "Strip back: remove the rim shot, cymbal and low pad so only the shaker and a hi-hat-like element remain; hold ~8 bars. The listener may think the song is ending.",
+      "tool": "DAW",
+      "expect": "Density drops sharply; only light percussion left."
+    },
+    {
+      "n": 6,
+      "action": "Bar ~33: bring everything back (low pad, rim, cymbal) and add piano chords and melody the listener has not heard before to spike interest. Hold ~9 bars.",
+      "tool": "DAW",
+      "expect": "Return feels fresh, not a repeat."
+    },
+    {
+      "n": 7,
+      "action": "Voice the new chords: low pad plays only the notes that change between chords (holding up to two bars) while the piano replays the whole chord every bar with full-bar note lengths; automate volume where needed.",
+      "tool": "DAW piano roll + volume automation",
+      "expect": "Pad stays smooth, piano re-articulates each bar."
+    },
+    {
+      "n": 8,
+      "action": "End: stop the percussion about half a bar before the end so it finishes at an odd angle, leaving the calm piano chords to finish at bar 45 as a coda.",
+      "tool": "DAW",
+      "expect": "Last thing heard is the familiar calming piano."
+    }
+  ],
+  "verification": [
+    "Print an entry/exit table: each layer's first and last bar matches the map within a few bars.",
+    "At the strip-back only shaker and hat play; at the return at least one chord set is new vs bars 1-32."
+  ],
+  "tags": [
+    "song-structure",
+    "arrangement",
+    "ambient",
+    "intro-build-breakdown",
+    "coda",
+    "layer-entry",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending"
+}

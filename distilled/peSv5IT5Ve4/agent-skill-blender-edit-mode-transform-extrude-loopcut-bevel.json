@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-edit-mode-transform-extrude-loopcut-bevel",
+  "name": "blender edit mode transform extrude loop cut bevel",
+  "goal": "Switch Object/Edit mode and use core mesh edit hotkeys (G/S/R/E, Ctrl+R, Ctrl+B).",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "peSv5IT5Ve4",
+    "url": "https://www.youtube.com/watch?v=peSv5IT5Ve4",
+    "title": "ABSOLUTE Beginner Basics.. Blender For Noobs 2025",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/peSv5IT5Ve4/agent-skill-blender-edit-mode-transform-extrude-loopcut-bevel.json"
+  },
+  "prerequisites": [
+    "Blender open",
+    "Mesh object selected"
+  ],
+  "inputs": [
+    {
+      "name": "mesh_object",
+      "type": "mesh",
+      "description": "Default cube or other mesh",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "edited_mesh",
+      "type": "mesh",
+      "description": "Mesh with extruded/scaled/beveled geometry"
+    }
+  ],
+  "constraints": [
+    "Object mode moves whole mesh; Edit mode edits vertices/edges/faces",
+    "Axis lock by pressing X/Y/Z after G/S/R/E",
+    "Prefer face select for extrude in many cases"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Select the mesh; use Object mode for whole-object transforms (G grab/move).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Enter Edit mode (Tab) to edit vertices, edges, or faces; switch selection modes for verts/edges/faces.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Press A to select all; S to scale selection; R to rotate (optionally R then Y/X/Z to axis-lock).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Select a face and press E to extrude; axis-lock with E then Z (or X/Y) when needed.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Press Ctrl+R for a loop cut; scroll wheel for multiple cuts; click to confirm.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Alt-select an edge loop; Ctrl+B to bevel; scroll wheel to add bevel segments.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Optional: right-click Shade Smooth / Auto Smooth for softer shading without micro-bevels.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Tab toggles Object/Edit",
+    "Extrude and loop cut change geometry",
+    "Bevel rounds selected edges"
+  ],
+  "tags": [
+    "blender",
+    "edit-mode",
+    "modeling",
+    "hotkeys",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-edit-mode-transform-extrude-loopcut-bevel"
+}

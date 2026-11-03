@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition",
+  "name": "Eight-bar build-up template: seven bars of risers, drums and sustained parts, one bar of pre-drop with everything cut, low end automated away, kick doubling schedule, filtered-in snare, single-note pad with pitch rise, and a readable vocal before the drop",
+  "goal": "Build a 4/4 build-up before a drop. Structure: 8 bars (16 bars for drum and bass). Seven bars of risers, drums and sustained instruments; the final bar is the pre-drop where everything else cuts off (snare roll, pre-drop vocal, sub build). Transitions: into the build-up use quiet up-risers and down-filters starting at its first bar; take one note of a chord-progression pad, hold it for the build, and automate pitch up over the last four bars; use vocals that actually say something in the last four bars (chop only the first four); thin the drums before the build if there is no breakdown, filter them in gradually if there is. Into the drop: always include one pre-drop bar, gradually automate low end out of bass, pads and risers, and optionally dip the loudest elements (not vocals) just before the drop. Elements: kick every beat for 4 bars, doubled for 2, doubled again for 1 (and through the last bar if the vocal matches), filtering out as it goes; a snare every step, filtering in from already half-open, plus a second low snare after 4 bars; hats/claps/percussion loop for depth; bring back an element from the intro/breakdown as a sustained part with a riser; layer multiple quiet risers.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "nkNSlRVGb38",
+    "url": "https://www.youtube.com/watch?v=nkNSlRVGb38",
+    "title": "3 Step Guide To Make The Perfect Build Up | Structure, Transitions & Core Elements",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/nkNSlRVGb38/agent-skill-eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition.json",
+    "transcript_note": "Auto-generated YouTube transcript; video title retrieved from the search record (YouTube metadata was rate-limited)"
+  },
+  "prerequisites": [
+    "A DAW project with the track's intro/breakdown and drop already laid out",
+    "Riser, down-filter, snare and vocal-chop sounds"
+  ],
+  "inputs": [
+    {
+      "name": "bars",
+      "type": "int",
+      "description": "Build-up length: 8 (4/4 styles) or 16 (drum and bass).",
+      "required": true
+    },
+    {
+      "name": "has_breakdown",
+      "type": "bool",
+      "description": "Changes how drums transition in.",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "build_up",
+      "type": "timeline",
+      "description": "Eight-bar build-up with pre-drop bar and low-end automation."
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Genre guidance is for 4/4 dance music (house, bass, techno, drum and bass); adapt density for ambient/cinematic builds.",
+    "YouTube Show transcript is auto-generated and partly garbled; steps are approximated from the spoken description only.",
+    "Keep all effects quiet and in the background so they do not wreck the mix."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the length: 8 bars for 4/4 styles, 16 bars for faster drum and bass. Typical layout: 16-bar intro, optional 8-bar breakdown, 8-bar build-up, drop.",
+      "tool": "DAW arrangement",
+      "expect": "Markers/lanes set."
+    },
+    {
+      "n": 2,
+      "action": "Bars 1-7: risers, drums and sustained instruments; bar 8: pre-drop where everything else cuts off (snare roll, pre-drop vocal, sub build). Do not skip the pre-drop bar unless the groove rolls straight into the drop.",
+      "tool": "DAW",
+      "expect": "Silence/cut before the drop is audible."
+    },
+    {
+      "n": 3,
+      "action": "Start quiet up-risers and down-filters at bar 1 of the build-up so the transition into it carries momentum; layer several risers, all low in level.",
+      "tool": "DAW",
+      "expect": "Momentum continues across the boundary."
+    },
+    {
+      "n": 4,
+      "action": "Take one note of the previous chord pad, hold it for the whole build-up, keep it static for four bars, then automate pitch rising over the last four bars.",
+      "tool": "Pitch automation",
+      "expect": "Pad climbs without chord changes."
+    },
+    {
+      "n": 5,
+      "action": "Vocals: chop them in the first four bars; make the last four bars (pre-drop) say something recognisable. If a full vocal runs through the track, skip chops.",
+      "tool": "Sampler",
+      "expect": "Pre-drop vocal is intelligible."
+    },
+    {
+      "n": 6,
+      "action": "Drums: with no breakdown, remove some drums in the transition so the return hits harder; with a breakdown, filter elements in gradually instead. Kick: every beat for 4 bars, double time for 2 bars, double again for 1 bar (continue through the pre-drop bar if the vocal matches), filtering out as it goes.",
+      "tool": "Drum rack + filter",
+      "expect": "Kick density visibly doubles at bars 5 and 7."
+    },
+    {
+      "n": 7,
+      "action": "Snare: a hit every step, filtered in starting already half-open; after 4 bars add a second low snare; add hats, claps and a percussion loop for movement. Stop all drums at the pre-drop.",
+      "tool": "Drum rack + filter",
+      "expect": "Snare gets louder and brighter into the drop."
+    },
+    {
+      "n": 8,
+      "action": "Remove low end as you approach the drop: automate bass, pads and risers' low frequencies down gradually. Optionally dip the loudest non-vocal elements (instruments/drums) rather than the master if vocals are present.",
+      "tool": "EQ/filter automation",
+      "expect": "Drop hits harder because low end returns at once."
+    }
+  ],
+  "verification": [
+    "Build-up is 8 bars (or 16) and bar 8 contains the cut/pre-drop.",
+    "Kick density schedule 1×/2×/4× is visible.",
+    "Low-frequency energy decreases measurably across the build-up."
+  ],
+  "tags": [
+    "song-structure",
+    "build-up",
+    "pre-drop",
+    "transitions",
+    "risers",
+    "drum-fills",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://eight-bar-build-up-seven-bars-risers-drums-then-one-bar-pre-drop-low-end-removal-kick-doubling-schedule-vocal-and-single-note-pad-transition"
+}

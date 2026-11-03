@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "hybrid-noise-distortion-separate-sub-layer",
+  "name": "Hybrid noise+distortion layer separate from sub/harmonic patch",
+  "goal": "Build a portable hybrid stack: one patch/layer for filtered noise through asymmetric distortion (gritty air/texture) with EQ low-cut and slight top trim, and a separate patch/layer for sub/harmonic tones (e.g. square/WT) so you can retune harmonics or hold a fixed noise pitch without the noise timbre tracking every bass note\u2014then blend; maps to sample/noise + WT + filter hybrid thinking for cinematic beds (not only neuro bass).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "EWe_Fnjcceo",
+    "url": "https://www.youtube.com/watch?v=EWe_Fnjcceo",
+    "title": "Serum Tutorial: White Noise Bass (Copycatt/Chee)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/EWe_Fnjcceo/agent-skill-hybrid-noise-distortion-separate-sub-layer.json"
+  },
+  "prerequisites": [
+    "Synth with noise source (or noise osc), filter, distortion/waveshape, EQ; ability to run two instances or two layers"
+  ],
+  "inputs": [
+    {
+      "name": "noise_color",
+      "type": "string",
+      "description": "Noise type / table (transcript likes AC-hum-style noise)",
+      "required": false
+    },
+    {
+      "name": "sub_wave",
+      "type": "enum",
+      "description": "sine | square | wavetable",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hybrid_noise_sub_stack",
+      "type": "synth-patch",
+      "description": "Two-layer noise-grit + harmonic/sub stack"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Source is neuro-bass oriented; for cinematic pads keep distortion/filter milder and use the same split-layer principle (noise texture \u2260 harmonic engine)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer A (noise texture): start from a sine (or muted tonal osc), enable noise oscillator/source; set noise level ~50% and adjust noise pitch (~55% in source) to taste.",
+      "tool": "noise-osc",
+      "expect": "Audible noise bed"
+    },
+    {
+      "n": 2,
+      "action": "Add asymmetric (or similar) distortion ~50% to grit the noise. Filter the noise path (source ~cutoff example in mid-high range) to pull harshness back.",
+      "tool": "distort-filter",
+      "expect": "Gritty but controlled noise"
+    },
+    {
+      "n": 3,
+      "action": "EQ the noise layer: high-pass/roll off the bottom (Q ~45% to flatten a hump), set HP frequency into the low-mid region so the noise isn\u2019t muddy; optionally trim highs ~\u22122.5 dB. Mute the tonal osc on this layer if sub will be separate.",
+      "tool": "eq",
+      "expect": "Noise without competing sub mush"
+    },
+    {
+      "n": 4,
+      "action": "Layer B (harmonics/sub): separate instance/patch for low tones so changing WT/harmonics won\u2019t rewrite the noise timbre. Prefer a harmonically useful wave (transcript favors square) or WT; shape independently.",
+      "tool": "osc",
+      "expect": "Defined pitch/sub separate from grit"
+    },
+    {
+      "n": 5,
+      "action": "Performance trick: hold one noise-layer pitch across moving sub notes so grit stays consistent while bass harmony moves\u2014or map both together if you want noise to track. Blend to taste; for pads, lower distortion and lengthen amps, still keeping noise and WT/filter on independent paths.",
+      "tool": "mixer",
+      "expect": "Hybrid stack with independent noise vs harmonic control"
+    }
+  ],
+  "verification": [
+    "Solo noise layer \u2192 grit only; solo sub layer \u2192 pitched tone only",
+    "Changing sub WT does not alter noise distortion character",
+    "Combined blend is fuller than either layer alone"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "hybrid",
+    "noise",
+    "distortion",
+    "filter",
+    "sub",
+    "layers",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://hybrid-noise-distortion-separate-sub-layer"
+}

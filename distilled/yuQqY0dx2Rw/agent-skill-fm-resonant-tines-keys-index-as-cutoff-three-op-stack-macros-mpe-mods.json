@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods",
+  "name": "FM electric-keys 'resonant tines' patch built on the subtractive analogy: modulation index as cutoff with its own envelope, a 10:1 bell ratio, a third operator with a no-sustain envelope, three macros (index, decay, ratio spread) and mod-wheel vibrato, aftertouch tremolo and an LFO auto-panner",
+  "goal": "Design a playable FM keys/tines patch by treating FM depth (modulation index) like a filter cutoff. Start with two sine operators: slow modulator gives vibrato, then speed it up to audio rate to hear sidebands. A 1:1 ratio gives a saw-like full series; 2:1 shifts the spectrum (the presenter compares it to a square) and 10:1 gives the bell/tine. Shape the carrier with a multi-stage envelope (instant attack, short transient decay, sustain-like stage, release) and the modulator depth with its own envelope that starts rich and falls slightly. Add a third modulator operator with a fast-attack, no-sustain envelope, then build macros for index (brightness), decay (all falling-stage times) and modulator ratios (spread wide in opposite directions, a formant-like control). Finish with performance modulation (mod wheel → LFO vibrato from ~3.2 rate, aftertouch → VCA tremolo, a third controller → LFO panner) and a short delay plus bright light long reverb. More specific than generic FM bell skills: macro layout and expressive modulation for a keys patch.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "yuQqY0dx2Rw",
+    "url": "https://www.youtube.com/watch?v=yuQqY0dx2Rw",
+    "title": "Multiphonics CV-3 FM Core Patch Reconstruction with Adam—Resonant Tines",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/yuQqY0dx2Rw/agent-skill-fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods.json",
+    "transcript_note": "Sound-pack patch reconstruction; pack promo dropped and no pack content copied."
+  },
+  "prerequisites": [
+    "FM-capable synth or modular (operators with FM input, multi-stage envelopes); Web Audio: OscillatorNode modulators into a carrier's frequency AudioParam via GainNode index (implementation note)",
+    "Spectrum analyser for feedback",
+    "Controller with mod wheel and aftertouch (or MPE)"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_ratio",
+      "type": "number",
+      "description": "Carrier frequency ratio (1 = in tune with the keyboard)",
+      "required": true
+    },
+    {
+      "name": "mod_ratios",
+      "type": "list",
+      "description": "Modulator ratios, e.g. 10:1 for the tine; also try 2 and 10",
+      "required": true
+    },
+    {
+      "name": "macros",
+      "type": "list",
+      "description": "Index, decay, ratio spread",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fm_keys_patch",
+      "type": "patch",
+      "description": "Polyphonic FM resonant-tine keys patch with three macros"
+    },
+    {
+      "name": "mod_map",
+      "type": "table",
+      "description": "Controller → vibrato / tremolo / pan routing"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Only the transcript's spoken values are used (8 Hz LFO-rate demo, ratios 1:1, 2:1, 10:1, LFO ~3.2). Envelope times are described shapes, not numbers.",
+    "Use carrier envelope to control level directly (no extra VCA needed when the operator has a level/envelope input).",
+    "Ratio-spread macro gives unpredictable results by design; cap ranges if it gets harsh."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Patch one sine operator to the output with a spectrum analyser. Add a second operator at LFO rate (~8 Hz) into the first's FM input: you hear vibrato. Raise it to audio rate and key-track both from the keyboard to hear sidebands.",
+      "tool": "fm basics",
+      "expect": "Vibrato becomes sidebands/new harmonics"
+    },
+    {
+      "n": 2,
+      "action": "Compare ratios: 1:1 gives a saw-like spectrum with FM depth acting as cutoff; 2:1 changes the harmonic pattern (square-like per the presenter) and the harmonic tail detaches; 10:1 gives a classic FM keys/bell. Make the voice polyphonic.",
+      "tool": "ratios",
+      "expect": "Clear timbre changes with ratio; depth behaves like a filter"
+    },
+    {
+      "n": 3,
+      "action": "Carrier amplitude: multi-stage envelope used like an ADSR (instant attack to max, short transient decay, a sustain-like third stage, last stage as release), gated by the keyboard.",
+      "tool": "amp env",
+      "expect": "Keys-style note shape"
+    },
+    {
+      "n": 4,
+      "action": "Modulator depth: give the FM index its own envelope: rich at the start, falling slightly, staying fairly rich.",
+      "tool": "index env",
+      "expect": "Bright attack that mellows"
+    },
+    {
+      "n": 5,
+      "action": "Add a third operator as an extra modulator with a fast attack and no sustain (falls to zero, a bit longer than the transient). Check the carrier stays at ratio 1 on the analyser while modulator ratios like 2 and 10 enrich the attack.",
+      "tool": "3rd operator",
+      "expect": "Spectacular evolving attack harmonics, pitch stays in tune"
+    },
+    {
+      "n": 6,
+      "action": "Macros: (1) FM index across all modulators (brightness/'cutoff'), (2) decay: the falling-stage time of all envelopes, (3) modulator ratios moved wide in opposite directions (one up high, one down low) for a formant-like colour.",
+      "tool": "macros",
+      "expect": "Three performable timbre controls"
+    },
+    {
+      "n": 7,
+      "action": "Performance mods: mod wheel speeds an LFO from ~3.2 and sets its level into all operators' fine-tune (slight detune for tremble/vibrato); aftertouch drives a biased VCA after the carrier for tremolo; a third controller drives an LFO panner. Add a short delay and a bright, light, long reverb.",
+      "tool": "expression + fx",
+      "expect": "Expressive tine keys with vibrato, tremolo and pan movement"
+    }
+  ],
+  "verification": [
+    "With index at zero only a sine is heard; raising the index adds harmonics, like opening a filter.",
+    "The fundamental stays at the played pitch for all modulator ratio settings.",
+    "Each macro audibly changes brightness, decay length or formant colour.",
+    "Mod wheel adds vibrato, aftertouch adds tremolo, and the panner moves the sound left to right."
+  ],
+  "tags": [
+    "fm-synthesis",
+    "fm-keys",
+    "bell",
+    "tines",
+    "macros",
+    "modulation-index",
+    "mpe",
+    "aftertouch",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods"
+}

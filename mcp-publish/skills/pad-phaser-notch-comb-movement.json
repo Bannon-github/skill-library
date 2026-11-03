@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "id": "pad-phaser-notch-comb-movement",
+  "name": "Phaser, flanger and comb movement on pads",
+  "goal": "Add sweeping notch movement to pads with phasers (all-pass notches), flangers/combs (harmonic notches) and chorus/ensemble, including the high-pass phaser chord pad and the dual slow stereo phaser dreamy pad.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "chorus-ensemble-classic-vibrato-pad-modes",
+        "video_id": "25Uiav5UA9c",
+        "url": "https://www.youtube.com/watch?v=25Uiav5UA9c",
+        "title": "Learn Live: Chorus-Ensemble"
+      },
+      {
+        "from_skill": "cinematic-formant-comb-pad-phaser-fx",
+        "video_id": "TmoP3i6-jl0",
+        "url": "https://www.youtube.com/watch?v=TmoP3i6-jl0",
+        "title": "HOW TO MAKE THE WEEKND CINEMATIC PAD | Serum 2 Sound Design Tutorial"
+      },
+      {
+        "from_skill": "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+        "video_id": "XRCwoFjZFMc",
+        "url": "https://www.youtube.com/watch?v=XRCwoFjZFMc",
+        "title": "Synth + Pedal Sound Design Tutorial - Arturia MicroFreak and Zoom MS-70CDR"
+      },
+      {
+        "from_skill": "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+        "video_id": "cR23JfH_33U",
+        "url": "https://www.youtube.com/watch?v=cR23JfH_33U",
+        "title": "Sound Design Weekly 6: High Pass Phaser Chord / Pad"
+      },
+      {
+        "from_skill": "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+        "video_id": "H8fsiSJzKTA",
+        "url": "https://www.youtube.com/watch?v=H8fsiSJzKTA",
+        "title": "You’ve Never Heard a Phaser Sound Like This"
+      },
+      {
+        "from_skill": "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+        "video_id": "t0X_HQ25jmg",
+        "url": "https://www.youtube.com/watch?v=t0X_HQ25jmg",
+        "title": "Pedals in Parallel - Discovering new ways to use effects you thought you knew"
+      }
+    ]
+  },
+  "theory": "A phaser sums the dry signal with an all-pass-shifted copy -> irregularly spaced notches; a flanger uses a 1-5 ms delay -> harmonically spaced comb notches. Slow LFOs (bars-long cycles) read as 'dreamy'; fast ones read as effects.",
+  "generator": {
+    "path": "sample-lab/theory/phaser_notch.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/phaser_notch.wav"
+  },
+  "prerequisites": [
+    "A phaser with many notches and per-group spacing — or build one: several cascaded all-pass chains whose notch frequencies are distributed in groups (Web Audio: many BiquadFilter(type='allpass') nodes with computed frequencies summed with dry; implementation note)",
+    "A phaser with stereo mode, a modulated delay, a ping-pong delay and a reverb (pedal, plugin or Web Audio)",
+    "A synth with a supersaw/unison oscillator, key-tracking mod and a looping (cyclic) envelope or function generator",
+    "Any synth (or DAW FX) with a resonant high-pass filter, phaser with tempo-synced rate, ping-pong delay, reverb; harmonic or octave stacking (harmonizer or extra oscillators) optional",
+    "Drive/distortion, delay (ideally with insert/feedback loop), chorus/flanger, tremolo",
+    "LFO, step sequencer with glide, random modulator with scale quantize",
+    "Multi-osc synth with unison, formant and comb-like filters, phaser/flanger/chorus/delay/reverb",
+    "Parallel mixer/bus with per-branch gain, phase invert and EQ (Web Audio: split to 3 GainNodes, sum; invert = gain −1; implementation note)",
+    "Stereo chorus/ensemble FX with Classic/Ensemble/Vibrato-style modes (or portable multi-voice chorus + vibrato); pad/synth source"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a harmonically rich source (detuned saw/supersaw pad); notches need harmonics to cut.",
+      "expect": "Rich source"
+    },
+    {
+      "n": 2,
+      "action": "Optional resonant high-pass (cutoff automated 200-800 Hz) to make the pad hollow/glassy before the phaser.",
+      "expect": "Thin, glassy chord pad"
+    },
+    {
+      "n": 3,
+      "action": "Insert phaser: 4-12 stages, rate synced to 1-2 bars (or 0.05-0.3 Hz free), feedback 30-60%, low resonance for smooth, higher for whistling.",
+      "expect": "Audible sweeping notches"
+    },
+    {
+      "n": 4,
+      "action": "For width, run two phasers on L and R at slightly different rates (e.g. 0.11 and 0.13 Hz).",
+      "expect": "Stereo shimmering motion"
+    },
+    {
+      "n": 5,
+      "action": "Alternative: flanger/comb (1-5 ms delay, feedback) for metallic jet sweeps, or chorus/ensemble for gentle 80s width.",
+      "expect": "Different colour of movement"
+    },
+    {
+      "n": 6,
+      "action": "Follow with ping-pong quarter delay and large reverb; low-cut reverb at ~200 Hz.",
+      "expect": "Dreamy space"
+    },
+    {
+      "n": 7,
+      "action": "Check mono: deep stereo phasing can cancel; reduce depth or mix if the pad disappears in mono.",
+      "expect": "Mono-safe movement"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/phaser_notch.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "chorus-ensemble-classic-vibrato-pad-modes",
+      "name": "Chorus-Ensemble modes: Classic, Ensemble, Vibrato",
+      "goal": "Thicken cinematic pads with a multi-mode chorus: Classic (2 delayed copies + LFO on delay time), Ensemble (third evenly-split copy for fuller body), or Vibrato (pitch-only wobble); tune rate/amount/feedback/width/dry-wet, high-pass the wet to avoid mud, optional warmth/saturation, and LFO offset for stereo vibrato.",
+      "steps": [
+        "Choose mode: Classic duplicates the input twice with short delay; LFO modulates those delay times (also slight pitch) so stacked copies thicken/widen. Ensemble adds a third evenly-split copy for a richer full-bodied chorus. Vibrato modulates pitch only (feedback and dry/wet disabled in that mode).",
+        "In Classic/Ensemble: set rate and amount to a warm sweet spot; raise both together only when you want obvious oscillations. Use feedback to stack more copies—extreme feedback turns metallic; Invert Polarity makes feedback hollow.",
+        "Enable high-pass on the processed path and raise cutoff so lows are cut—prevents mud/clipping when feedback/rate are high.",
+        "Set width: 0% = mono chorus; up to extreme (~200% when available) spreads copies L/R. Blend with dry/wet so the pad stays present.",
+        "Optional warmth/saturation at end of the device for subtle drive. In Vibrato: use small amount + faster rate to humanize leads/pads; Offset splits LFO L vs R (up to 180°) for spatial vibrato; Shape sine→triangle for sharper edges."
+      ]
+    },
+    {
+      "from_skill": "cinematic-formant-comb-pad-phaser-fx",
+      "name": "Cinematic multi-osc pad with formant/comb and slow FX motion",
+      "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B −1 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO→cutoff, then phaser→flanger→chorus→slow LFO-filtered FX→delay→reverb with restrained mixes.",
+      "steps": [
+        "Osc A: analog basic shapes + unison/detune for width.",
+        "Osc B: same family, −1 octave, higher unison (tutorial ~14) + detune.",
+        "Osc C: light unison (~2) + detune; Filter1 formant-style on C only — set cutoff/resonance for vocal-like body.",
+        "Filter2 comb-minus (or comb) on A+B+C; set cutoff, resonance, drive.",
+        "Amp env: raise attack and release for pad.",
+        "Free slow LFO1 → filter cutoff(s) for movement.",
+        "FX: phaser (lower mix) → flanger (lower mix) → chorus (tweak delay/depth/mix down) → extra FX filter (low 24 dB) with very slow free LFO2 (e.g. 2 bars) unipolar to cutoff → delay → reverb; keep mixes moderate."
+      ]
+    },
+    {
+      "from_skill": "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+      "name": "Eerie, dreamy pad from a basic paraphonic supersaw patch plus outboard-style effects: cutoff key-tracked about 50%, long attack and release, two slow low-resonance phasers in stereo mode, about 0.5 s modulated delay, a second about 1.5 s ping-pong delay with a little more feedback and lower mix, a reverb with dwell at zero, then a looping (cyclic) envelope on cutoff whose rise/fall times an LFO slowly varies",
+      "goal": "Turn an init-patch supersaw into a wide, whooshing, dreamy pad using mainly a phaser-delay-reverb chain. The effects do most of the work: slow stereo phasing for the whoosh, two delay lengths for stereo spread, and an irregular filter breath from a cycling envelope whose speed drifts. Fills the phaser-pad gap with a non-high-pass recipe.",
+      "steps": [
+        "Start from an init patch, switch to paraphonic (up to 4 notes) and choose the supersaw oscillator at default settings.",
+        "Set filter cutoff and resonance by ear, then key-track cutoff by about 50% so higher notes open the filter. Raise attack and release for a pad envelope (shorten them temporarily while designing effects).",
+        "Add two phasers (dual phaser) for the whoosh. Reduce the rates for slow movement, lower resonance so the effect is subtle, turn on stereo mode and reduce depth a little.",
+        "Add a modulated delay at default (about half a second), then a second delay of about 1.5 s with slightly more feedback, lower mix, in ping-pong mode.",
+        "Add a lush (particle-style) reverb with dwell set to zero, other settings default.",
+        "Automate cutoff with a cyclic (looping rise/fall) envelope, and change rise and fall times to set its rate.",
+        "Route a slow LFO to the cyclic envelope's rise and fall times, and also directly to cutoff, so the breathing speed keeps changing.",
+        "Play chords, adjusting resonance, cutoff and cyclic-envelope amount live."
+      ]
+    },
+    {
+      "from_skill": "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+      "name": "High-pass phaser chord pad: saw chords through a heavily resonant high-pass whose cutoff is automated, ping-pong 1/4 delay and a big reverb both low-cut at about 200 Hz, a phaser on a slow 2-bar cycle, a harmonizer shifted to the 3rd harmonic for a bell tone, unison and light compression",
+      "goal": "Make moving chords or a pad from a plain saw wave using a high-pass filter and a phaser (works in any synth with these, or as post-processing on a saw). Play low chords on a single saw. Add a high-pass filter with resonance turned way up and automate its cutoff to sweep the chord's movement. Add a ping-pong delay at 1/4 note with a low cut around 200 Hz (so the bass isn't muddy) and some stereo spread, then a large reverb, also low-cut about 200 Hz, with size up, slightly longer decay, damping and wet up. Add a phaser set to complete one cycle every 2 bars (its direction sets whether it sweeps up or down) for slow top-end motion. Add a harmonizer (octave copies) with amount and width high, then shift its interval from the octave to the 3rd harmonic for a bell-like tone. Add unison voices to taste, light compression, and pull the highs and some mids down a little.",
+      "steps": [
+        "Play low chords on a single saw oscillator.",
+        "Insert a high-pass with resonance very high; automate its cutoff across the chords.",
+        "Add a ping-pong 1/4-note delay with a ~200 Hz low cut and some extra stereo width.",
+        "Add a big reverb: low cut ~200 Hz, size up, decay slightly up, damping up, wet up.",
+        "Add a phaser synced to one full cycle per 2 bars; choose its sweep direction (up or down).",
+        "Add harmonic stacking: harmonizer amount and width high, interval shifted from the octave to the 3rd harmonic.",
+        "Add unison voices to taste, light compression, and pull the highs and some mids down slightly."
+      ]
+    },
+    {
+      "from_skill": "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+      "name": "Nested multi-notch phaser techniques for pads: grouped notches (groups × notches-per-group), pinch spacing, slow pinch 'breathing', stepped cutoff wah→flanger, scale-quantized random cutoff, slow triangle-swept full-depth bed",
+      "goal": "Use a dense, nested phaser (notches arranged in up to ~6 groups × ~11 notches, one cutoff sliding all of them, resonance = notch width, depth = intensity, pinch = squeeze/spread within each group) as a cinematic pad mover: metallic shimmer layer (4 groups, 9 notches, depth ~82, raise pinch), inside-out 'tubular' breathing (pinch modulated by a slow quarter-note-synced LFO, depth ~63, try 2 vs 4 groups), static 'radio' sculpt (1 group, 1 notch, depth ~72), 1/16 stepped cutoff that turns from wah (1 notch) into flanger-like (7–9 notches) with glide, formant-like vowel push by slowly lowering cutoff (4/7, depth 65, low resonance), scale-quantized random cutoff (1/16, minor pentatonic, ~7 octave range) that stays in tune, and a slow breathing bed (6 groups, 11 notches, depth 100%, triangle sweep with ~10% glide).",
+      "steps": [
+        "Map the controls: groups ('nests'), notches per group ('peaks'), cutoff (moves all notches), resonance (notch width), depth (0 transparent → full phaser), pinch (squeeze/spread notches within each group).",
+        "Shimmer layer on a pad: 4 groups, 9 notches, depth ~82; slowly raise pinch until a metallic bell-like shimmer appears without taking over.",
+        "Tubular breathing: same density (4/9), depth ~63; modulate pinch with a slow LFO synced to ~1/4 note. Compare 4 groups vs 2 groups — same motion, different character.",
+        "Static sculpt: 1 group, 1 notch, depth ~72 for a radio/telephone colour; move the notch up for 'pickup switch' tones; add groups to smooth it.",
+        "Stepped wah→flanger: 1/16-synced sequencer on cutoff at ~40–50% amount, 1 notch (wah); raise to 7–9 notches for a flanger-like texture; add glide so steps don't snap.",
+        "Vowel push on vocal-like material: 4 groups, 7 notches, depth 65, resonance low (~4), slowly lower cutoff.",
+        "Tuned random: random modulator on cutoff at ~1/16, quantized to a scale (e.g. minor pentatonic), range ~7.2 octaves. Change the scale to change the mood.",
+        "Breathing bed under a pad: 6 groups, 11 notches (maximum density), depth 100%, cutoff swept by a slow triangle sequence (rate ~2) with ~10% glide; then vary pattern, pinch and depth."
+      ]
+    },
+    {
+      "from_skill": "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
+      "name": "Parallel FX network: same input to up to three effects, heavy drive alongside clean delay, phase-flip a loop to cancel its dry and keep only wet, per-loop EQ/levels, effects inside the delay loop",
+      "goal": "Turn a serial chain into a parallel effects network for synth/pad/lead layers: feed the same dry input to up to three effect loops and sum them (so a high-gain drive can growl in the background while a delay stays clean), use a per-loop phase invert to cancel the dry component of an effect without a wet-only mode (inverted dry + summed dry ≈ wet only), check for effects that already invert phase (chorus) against the dry, balance with per-loop EQ, send/return levels and master, and place an effect inside a delay's feedback/insert loop so repeats get processed — the portable parallel-distortion wet/dry recipe that was missing from the library.",
+      "steps": [
+        "Baseline: compare serial distortion→echo with echo→distortion to hear order-dependence.",
+        "Parallel: split the same dry input to drive and delay branches and sum. Keep drive high and sustaining in its branch while the delay branch handles clean repeats.",
+        "Remove the dry from an effect that has no wet-only mode: flip the phase of that branch so its dry component cancels against the dry in the sum, leaving (mostly) the delay.",
+        "Chorus = vibrato + dry: test phase flip on modulation effects; inverted dry won't fully 'unbake' into pure vibrato, and some pedals already invert phase, so pick the setting that sounds fuller.",
+        "Balance each branch with its EQ, send and return levels and a master volume; take the dry out entirely when only effects are wanted.",
+        "Insert loop: put another effect (e.g. modulation/space) inside the delay's insert/feedback path so delayed sound is processed again on each recirculation.",
+        "Swap in different trios of effects (e.g. delay + modulation + tremolo, envelope-controlled tremolo) to discover combinations."
+      ]
+    }
+  ],
+  "merged_from": [
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+    "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+    "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+  ],
+  "tags": [
+    "allpass",
+    "ambient",
+    "bell",
+    "chords",
+    "chorus",
+    "cinematic-synth",
+    "comb",
+    "cyclic-envelope",
+    "delay",
+    "distortion",
+    "dreamy",
+    "ensemble",
+    "formant",
+    "from-youtube",
+    "fx",
+    "fx-routing",
+    "high-pass",
+    "modulation",
+    "movement",
+    "music-production",
+    "notch",
+    "pad",
+    "pads",
+    "parallel-processing",
+    "phase",
+    "phaser",
+    "portable",
+    "resonance",
+    "scale-quantize",
+    "shimmer"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://pad-phaser-notch-comb-movement",
+  "aliases": [
+    "chorus-ensemble-classic-vibrato-pad-modes",
+    "cinematic-formant-comb-pad-phaser-fx",
+    "eerie-dreamy-phaser-pad-supersaw-keytracked-cutoff-dual-slow-stereo-phasers-low-res-half-second-mod-delay-1-5s-pingpong-reverb-cyclic-env-cutoff-lfo-on-rise-fall",
+    "high-pass-phaser-chord-pad-saw-resonant-highpass-automated-pingpong-quarter-delay-and-big-reverb-lowcut-200hz-two-bar-phaser-cycle-harmonizer-third-harmonic-bell-unison-light-compression",
+    "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+    "parallel-fx-network-phase-flip-dry-cancel-insert-loop"
+  ]
+}

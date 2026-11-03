@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "reverb-pads-type-choice-and-send-setup",
+  "name": "Reverb for pads: pick type by texture, then set up 100%-wet EQ'd send returns",
+  "goal": "Choose and route cinematic pad/synth reverb: decide if reverb is needed; pick type by texture not just length (hall lush 2–3s+ with mud risk, chamber thickening with less space, room/ambience intimate ~0.3–1s, plate bright attack→darker decay, spring metallic/boingy); keep 2–3 go-to returns (room ~1s, long plate ~6s, bright spring ~4s) at 100% wet on sends; high-pass returns ~200 Hz+; use pre-delay for clarity, layer short ambience under longer hall/plate, prefer shorter spaces in busy mixes, and pull send back on longer decays.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 2 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-reverb-pads-type-choice-and-send-setup.json"
+  },
+  "sources": [
+    {
+      "from_skill": "reverb-types-hall-chamber-room-plate-spring",
+      "video_id": "_fHK9g9nwMM",
+      "url": "https://www.youtube.com/watch?v=_fHK9g9nwMM",
+      "title": "Unlock Reverb Types-How to Use Room, Hall, Chamber, Plate, Spring",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/_fHK9g9nwMM/agent-skill-reverb-types-hall-chamber-room-plate-spring.json"
+    },
+    {
+      "from_skill": "reverb-send-wet100-eq-room-plate-spring",
+      "video_id": "VnCpRTsg_G8",
+      "url": "https://www.youtube.com/watch?v=VnCpRTsg_G8",
+      "title": "5 Rules of Reverb",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/VnCpRTsg_G8/agent-skill-reverb-send-wet100-eq-room-plate-spring.json"
+    }
+  ],
+  "merged_from": [
+    "reverb-types-hall-chamber-room-plate-spring",
+    "reverb-send-wet100-eq-room-plate-spring"
+  ],
+  "aliases": [
+    "reverb-types-hall-chamber-room-plate-spring",
+    "reverb-send-wet100-eq-room-plate-spring"
+  ],
+  "prerequisites": [
+    "DAW sends/returns; reverb with hall/chamber/room/plate/spring (or IR) modes; EQ after reverb on the return"
+  ],
+  "inputs": [
+    {
+      "name": "type",
+      "type": "enum",
+      "description": "hall | chamber | room-ambience | plate | spring",
+      "required": true
+    },
+    {
+      "name": "mix_density",
+      "type": "enum",
+      "description": "sparse-long-ok | busy-prefer-short",
+      "required": true
+    },
+    {
+      "name": "reverb_slots",
+      "type": "string",
+      "description": "room + plate + spring (or third bright flavor) saved returns",
+      "required": false
+    },
+    {
+      "name": "hp_hz",
+      "type": "number",
+      "description": "High-pass on reverb return (~200 Hz baseline from transcript)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_space_choice",
+      "type": "fx-settings",
+      "description": "Chosen reverb type + layering notes for pads/strings"
+    },
+    {
+      "name": "reverb_send_template",
+      "type": "fx-template",
+      "description": "Two–three EQ'd 100%-wet reverb returns ready for pad/vocal/synth sends"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only — map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source videos; recreate with comparable modules.",
+    "Prefer sends over insert mix knobs so dry pad level stays independent of wet amount.",
+    "Shimmer (pitch-shifted) reverb is a separate skill: shimmer-reverb-pitchshift-plus12-feedback."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide intentionally whether the source needs reverb (do not add by default). Match genre references.",
+      "tool": "audit",
+      "expect": "Clear yes/no for reverb on the pad/synth"
+    },
+    {
+      "n": 2,
+      "action": "Recall controls: pre-delay separates dry from reverb onset (clarity); early reflections cue size/material; tail/late reflections = sustain; decay = fade. Think texture/tonality more than length alone.",
+      "tool": "reverb-params",
+      "expect": "Pre-delay/ER/tail understood before picking type"
+    },
+    {
+      "n": 3,
+      "action": "Hall: large auditorium character, often ~2–3s+ (longer for cinematic/atmosphere); lush/deep, thickens and pushes source back—high mud risk. Natural for piano/strings/orchestra.",
+      "tool": "hall",
+      "expect": "Deep lush space or intentional depth push"
+    },
+    {
+      "n": 4,
+      "action": "Chamber: studio reflective-room character—lush thickening with less mix real-estate than hall; very versatile (pads, strings, vocals). Room/ambience: smaller/intimate; ambiences often ~0.3–1s, ER-heavy—liveliness without takeover.",
+      "tool": "chamber-room",
+      "expect": "Thickening or intimate space without hall mud"
+    },
+    {
+      "n": 5,
+      "action": "Plate: mechanical metal-plate density; bright quick attack then darker decay—great sustain/sheen. Spring: metallic/boingy modulation in decay—character FX more than lush pad default.",
+      "tool": "plate-spring",
+      "expect": "Plate sheen or spring character as intended"
+    },
+    {
+      "n": 6,
+      "action": "Build 2–3 saved returns: (1) room ~1s+ decay for basic space; (2) long ambient plate (transcript example ~6.2s); (3) spring or other bright flavor (~4s). Save in template.",
+      "tool": "reverb-template",
+      "expect": "Three distinct go-to spaces ready"
+    },
+    {
+      "n": 7,
+      "action": "Use sends: set reverb mix to 100% wet on the return. Control amount only via send level so dry stays constant and wet can be EQ'd independently.",
+      "tool": "send",
+      "expect": "Dry on channel; wet-only on return"
+    },
+    {
+      "n": 8,
+      "action": "EQ the reverb return after the algo: high-pass everything below ~200 Hz (or higher) so reverb does not invent mud. Optional cuts for metallic harshness (e.g. spring).",
+      "tool": "eq",
+      "expect": "Wet space without boom below ~200 Hz"
+    },
+    {
+      "n": 9,
+      "action": "Practice: pick type in solo for texture, set level in full mix. Layer short ambience under longer hall/plate. Busy mixes → shorter rooms/plates; sparse/ballad → longer halls/plates. Optional high-cut on reverb darkens and pushes wet further back.",
+      "tool": "layer-mix",
+      "expect": "Pad sits in space without muddying the bed"
+    },
+    {
+      "n": 10,
+      "action": "Add too much send, then back off to a musical amount. Longer decays usually need less send; shorter rooms can take more. Share one long plate across lead vs backgrounds with different send depths.",
+      "tool": "level",
+      "expect": "Audible halo without wash; longer = quieter send"
+    }
+  ],
+  "verification": [
+    "Type chosen for texture (hall vs chamber vs plate etc.), not length alone",
+    "Busy mix uses shorter spaces; sparse allows longer lush halls/plates",
+    "Pre-delay and/or wet EQ used when dry clarity suffers",
+    "Returns are 100% wet; amount via sends",
+    "Each return has post-reverb HPF ~200 Hz+",
+    "Template has room + long plate + bright third option"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "reverb",
+    "send",
+    "eq",
+    "hall",
+    "chamber",
+    "room",
+    "plate",
+    "spring",
+    "pads",
+    "space",
+    "mix",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://reverb-pads-type-choice-and-send-setup",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "midside-eq-bass-focus-width-depth",
+  "name": "Mid-side EQ: center the bass, tame mid problems, widen with side mids/highs",
+  "goal": "Use mid/side EQ on synth/sample/pad layers or mixes: split stereo into mid (L+R mono sum) and side (L\u2212R), high-pass wide bass on the sides to focus low end center, cut resonant/harsh problems only on the mid when they live there, optionally boost the same band on the sides to preserve ambience, and try subtle upper-mid side boosts for depth (not only extreme high shelves for width).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "kEiILPm1VSc",
+    "url": "https://www.youtube.com/watch?v=kEiILPm1VSc",
+    "title": "Mid Side EQ Simplified - A Powerful Tool for Stereo Mixing",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/kEiILPm1VSc/agent-skill-midside-eq-bass-focus-width-depth.json"
+  },
+  "prerequisites": [
+    "EQ with mid/side mode (or dual-mono M/S), headphones/monitors; basic EQ balance literacy"
+  ],
+  "inputs": [
+    {
+      "name": "target",
+      "type": "enum",
+      "description": "synth_pad_layer | sample_loop | mix_bus",
+      "required": true
+    },
+    {
+      "name": "goal_mode",
+      "type": "enum",
+      "description": "focus_bass | tame_mid_harshness | add_side_depth_width",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ms_eq_settings",
+      "type": "fx-chain",
+      "description": "Portable M/S EQ moves for pads/synths/mixes"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Do not always remove bass from sides \u2014 transcript notes stereo kick/side bass can be intentional; listen first.",
+    "Prefer smaller moves than dramatic YouTube demos; preserve what you can leave alone."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Enable mid/side on the EQ. Confirm mid \u2248 mono sum of L+R and side \u2248 L minus R (spatial difference, not merely hard-panned parts).",
+      "tool": "eq-ms",
+      "expect": "Separate mid and side monitoring"
+    },
+    {
+      "n": 2,
+      "action": "If a synth/sample has overly wide bass: solo sides, high-pass the side channel to remove bass so sides keep ambience/air while lows become narrower and centered; A/B with full stereo.",
+      "tool": "eq-ms",
+      "expect": "Tighter, focused low end without killing side ambience"
+    },
+    {
+      "n": 3,
+      "action": "If a lead/pad resonance is mostly mid-localized: solo mid vs side to locate it, then cut the problem band on the mid channel only.",
+      "tool": "eq-ms",
+      "expect": "Harshness reduced without flattening the whole stereo image"
+    },
+    {
+      "n": 4,
+      "action": "Optionally boost a little top end on the sides after mid cuts so width/air remains; for mix problems where stereo EQ mushifies everything, cut only the mid band that holds the squeaky/scratchy energy (example: guitars in mid) and leave lush side reverb/ambience alone \u2014 even boost that same band on sides if you want air back.",
+      "tool": "eq-ms",
+      "expect": "Problem controlled; ambience preserved"
+    },
+    {
+      "n": 5,
+      "action": "For width/depth: try a subtle boost in the upper midrange on the sides (not only extreme high shelves) \u2014 transcript finds upper-mid side boosts create more depth/aliveness than highs-alone width tricks. Keep mastering-style moves modest.",
+      "tool": "eq-ms",
+      "expect": "Sensed depth/width without mono collapse disasters"
+    }
+  ],
+  "verification": [
+    "Side solo shows less bass after side HPF when focusing lows",
+    "Mid-only cuts fix harshness without dulling side reverb/ambience",
+    "Mono check still has solid centered low end"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "mid-side",
+    "eq",
+    "pads",
+    "stereo",
+    "width",
+    "mixing",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://midside-eq-bass-focus-width-depth"
+}

@@ -1,0 +1,420 @@
+{
+  "schema_version": "1.0",
+  "id": "pad-supersaw-unison-detune-width",
+  "name": "Supersaw / unison pads: detune, voice count, width and filter swell",
+  "goal": "Build a wide, warm detuned-saw pad (house, trance, cinematic) by choosing voice count and detune in cents, spreading voices in stereo, then shaping with a key-tracked low-pass, slow attack/release and space FX.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "ambient-organic-pluck-pad-ladder-chorus-space",
+        "video_id": "ehKoz6ILmxQ",
+        "url": "https://www.youtube.com/watch?v=ehKoz6ILmxQ",
+        "title": "Making Dreamy & Organic Pads | Vital Sound Design Tutorial"
+      },
+      {
+        "from_skill": "cinematic-warm-analog-pad-drift-stereo",
+        "video_id": "CcXGRCXv8lQ",
+        "url": "https://www.youtube.com/watch?v=CcXGRCXv8lQ",
+        "title": "Serum Tutorial - Warm 'Analog' Cinematic Pad Synth"
+      },
+      {
+        "from_skill": "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+        "video_id": "xil_HpL1izg",
+        "url": "https://www.youtube.com/watch?v=xil_HpL1izg",
+        "title": "Why This Classic Filter Sweep Still Sounds So Good"
+      },
+      {
+        "from_skill": "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+        "video_id": "nbS1pT8V7YU",
+        "url": "https://www.youtube.com/watch?v=nbS1pT8V7YU",
+        "title": "How to Create Classic House Pads (Any Synth!)"
+      },
+      {
+        "from_skill": "evolving-pad-unison-filter-swell-fifth",
+        "video_id": "rv0X7eZNnEo",
+        "url": "https://www.youtube.com/watch?v=rv0X7eZNnEo",
+        "title": "Sound Design with VITAL - Wide BASS - Evolving PAD - Lead PLUCK"
+      },
+      {
+        "from_skill": "granular-dual-saw-ambient-epic-pad",
+        "video_id": "FZ9oXRJIR6o",
+        "url": "https://www.youtube.com/watch?v=FZ9oXRJIR6o",
+        "title": "Amazing pads with the new Granular Generator in Phase Plant"
+      },
+      {
+        "from_skill": "lush-stereo-saw-pad-random-pitch-texture",
+        "video_id": "pQFr594QwI4",
+        "url": "https://www.youtube.com/watch?v=pQFr594QwI4",
+        "title": "How to make LUSH ambient pads in Vital"
+      },
+      {
+        "from_skill": "organic-looped-sample-unison-voicing-pad",
+        "video_id": "CMkXW17LYyA",
+        "url": "https://www.youtube.com/watch?v=CMkXW17LYyA",
+        "title": "Phase Plant | Creating Lush Organic Pads"
+      },
+      {
+        "from_skill": "three-layer-complementary-pad-post-verb-lofi-degrade",
+        "video_id": "UShjYsGgWcM",
+        "url": "https://www.youtube.com/watch?v=UShjYsGgWcM",
+        "title": "How To Create AMAZING Pads and Drones | A Sound Design Tutorial (Venus Theory)"
+      },
+      {
+        "from_skill": "traveler-walkthrough-super-unison-wide-lead",
+        "video_id": "IU76c2Cygs4",
+        "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+        "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough"
+      },
+      {
+        "from_skill": "unison-odd-even-detune-width-clean-supersaw",
+        "video_id": null,
+        "url": null,
+        "title": "Merged from 2 YouTube how-to transcripts"
+      },
+      {
+        "from_skill": "warm-heavenly-supersaw-pad-keytrack-fx",
+        "video_id": "cF5ku3Og0Nk",
+        "url": "https://www.youtube.com/watch?v=cF5ku3Og0Nk",
+        "title": "How to Make Super Warm, Heavenly Pads with Vital"
+      }
+    ]
+  },
+  "theory": "Detuned voices beat at |f1-f2| Hz; 5-16 voices at 10-30 cents produce a chorus-like shimmer. Odd/even voice spread keeps the centre solid; stereo decorrelation gives width that partly cancels in mono.",
+  "generator": {
+    "path": "sample-lab/theory/detune_unison.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/detune_unison.wav"
+  },
+  "prerequisites": [
+    "Analog-style synth with a state-variable or multimode filter and filter envelope, or Web Audio: two detuned OscillatorNodes → BiquadFilter lowpass with frequency automated up then down (implementation note)",
+    "Any polyphonic synth with unison/detune, retrigger option, lowpass and highpass filters, LFO and noise, or Web Audio: per voice 8–16 detuned OscillatorNodes with random start phases (free-run), StereoPannerNode spread, BiquadFilter lowpass→highpass, slow LFO → frequency (implementation note)",
+    "Chorus/ensemble, delay and reverb",
+    "Compressor and tape-style echo",
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)",
+    "Polyphonic synth with ≥2 osc, unison, mod matrix/LFO, LP filter, reverb",
+    "Sampler or synth sampler osc with loop crossfade, unison chord modes, filters, multiband FX, reverb",
+    "Sampler with loop crossfade (for the chord-stab variant)",
+    "Subtractive/WT synth with unison, dual env, filter, compressor, reverb, chorus",
+    "Synth with layers (or several synth instances grouped to one bus), wavetable oscillators, LP and BP filters, multi-LFO/MSEG, noise source; FX: phaser, chorus, big algorithmic reverb, tape/VHS-style saturators, bit-crusher, noise-modulation (erosion-like) effect, multiband upward expander",
+    "Synth with multi-voice unison, detune, blend/stereo spread (or Web Audio multi-osc detune pan); for supersaws a sub/noise source, FX rack, and global unison width/stack",
+    "Synth with ≥2 osc, ladder filter, envelopes, chorus/delay/reverb, optional granular engine, macros"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick the chord first (extended voicings: add9/maj7/min9 sound best detuned); play it as a held loop.",
+      "expect": "Chord loop"
+    },
+    {
+      "n": 2,
+      "action": "Oscillator: 1-2 saws, unison 5-16 voices, detune 10-25 cents (go to ~50 only for trance supersaw); free-running phase so each note starts differently.",
+      "expect": "Thick, beating saw stack"
+    },
+    {
+      "n": 3,
+      "action": "Spread voices across stereo (width 60-100%) but keep one centre voice or a mono sub layer below ~150 Hz.",
+      "expect": "Wide pad, solid centre"
+    },
+    {
+      "n": 4,
+      "action": "Filter: 12/24 dB low-pass, cutoff ~1.5-4 kHz, key-tracking ~50%, light resonance; optional slow LFO (0.05-0.3 Hz) on cutoff for drift.",
+      "expect": "Smooth top, movement over bars"
+    },
+    {
+      "n": 5,
+      "action": "Amp envelope: attack 0.3-1.5 s, sustain high, release 1-3 s; optional filter-envelope swell (or a fifth-up layer) to bloom into each chord.",
+      "expect": "Pad breathes in and out"
+    },
+    {
+      "n": 6,
+      "action": "Space: chorus or ensemble if unison is low, then plate/hall reverb send 2-4 s with low-cut ~200-300 Hz on the return; tape saturation before reverb for glue.",
+      "expect": "Pad sits behind the mix"
+    },
+    {
+      "n": 7,
+      "action": "Mix: high-pass the pad at 150-250 Hz, duck it lightly to the kick (punch-only), check mono — reduce width if the pad thins out.",
+      "expect": "Pad supports, does not mask bass or kick"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/detune_unison.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "ambient-organic-pluck-pad-ladder-chorus-space",
+      "name": "Organic ambient pluck-pad with ladder, velocity, chorus-space",
+      "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity→level/cutoff, then chorus pushed toward long decay plus reverb/delay.",
+      "steps": [
+        "Init patch. Amp env: short attack, raised decay, mid sustain (not zero), some release so held notes act as pads.",
+        "Osc: soft sine/basic shape; apply warp/squeeze toward a saw–sine hybrid for mild harmonics.",
+        "Filter1 ladder (or analog): env2 pluck contour → cutoff (~+24 semitones depth); low resonance; key track on; drive near zero for subtlety.",
+        "FX distortion (e.g. sine-fold): moderate drive, reduced mix; enable post-filter with high cutoff/low resonance/blend to control level vs harmonics.",
+        "Low pink noise → band-pass filter2 with drive, key track, low resonance so noise blends and stays mid-focused.",
+        "Add slow pitch drift; optional formant/warp random (stereo, ~2s) bipolar for organic movement.",
+        "Velocity → osc level and warp/squeeze and cutoff so soft plays are darker/quieter.",
+        "Chorus: freeze/tempo off, raise depth/delay, high feedback for long decay; high-pass; envelope → spread for note-ducked lush tails; then real reverb (~80 size, ~30% mix, low cut) and dotted-quarter delay (~30% mix)."
+      ]
+    },
+    {
+      "from_skill": "cinematic-warm-analog-pad-drift-stereo",
+      "name": "Warm analog cinematic pad with pitch drift and opposing pan",
+      "goal": "Build a warm Juno-style cinematic pad: chaos/random → master tune drift, dual unison oscillators (saw + brighter triangle-like), reduced unison width, opposing LFO pans, mild LP filter, space reverb with post-filter open.",
+      "steps": [
+        "Before oscillators, route a slow chaos/random/noise mod source to master tune (or global pitch) for gentle analog-style pitch drift.",
+        "Osc A: choose an analog/Juno-like saw; set ~5 unison voices; soften amp attack and release for a pad contour.",
+        "Osc B: choose a softer/scuffed triangle-like analog wave; ~5 unison; pitch +1 octave; mix level slightly under Osc A.",
+        "In global/unison settings, reduce per-oscillator unison stereo width to ~50% so later pan mods have room.",
+        "Free-running very-slow LFO → Osc A pan and Osc B pan with inverted depth so they sweep opposite sides.",
+        "Optional: layer a quiet granular/noise texture under the oscs for enharmonic air (original sample, not a ripped pack).",
+        "12 dB low-pass: tame Osc A + noise highs so Osc B harmonics read; also LFO-modulate filter pan/offset for extra stereo motion.",
+        "Add spacious reverb; place another filter after reverb and slowly open it (or raise filter mix) over time for a blooming spacey finish."
+      ]
+    },
+    {
+      "from_skill": "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+      "name": "Classic swept analog pad/lead: two detuned oscillators into a state-variable (SEM-style) filter driven by a triangle 'fin' filter envelope that rises then falls, modest resonance, mono mode with 8-voice stereo unison, light compression and tape echo, and an optional second oscillator pair through a different filter type swept the same way",
+      "goal": "Recreate the classic 70s/80s filter-sweep sound from scratch. Use a low register and two oscillators slightly detuned for a phasing movement. Put them through a state-variable (SEM/Oberheim-type) lowpass and give the filter envelope a triangle 'fin' shape: a slow attack up and a slow decay back down with low sustain, so each note sweeps open and closes again; set envelope intensity, then add a little resonance (not too much). Switch to mono mode with full stereo unison (all 8 voices) and some detune for size. Finish with light compression and tape echo (no chorus needed). Optional: route oscillators 3–4 to a second, different filter type with its own fin envelope and detune, then blend both layers. More specific than our generic pad swell skills: up-and-down fin envelope on the filter plus mono unison stack.",
+      "steps": [
+        "Init a patch. Choose a state-variable (SEM-style) lowpass, and if the synth offers vintage amp/envelope models, use them. Play in a low register with two oscillators slightly detuned.",
+        "Shape the filter envelope as a triangle 'fin': slow rise to the peak, slow fall back down, low sustain. Set envelope intensity so the cutoff travels a wide range.",
+        "Add a little resonance, just enough to make the sweep sing without whistling.",
+        "Switch to mono mode with full stereo unison (8 voices) and add unison detune.",
+        "Add light compression and a tape echo. Skip chorus, because unison already gives width.",
+        "Optional: enable a second filter of a different type, send oscillators 3–4 to it, give it its own fin envelope and some detune, then blend both layers (pull back if it gets too dense)."
+      ]
+    },
+    {
+      "from_skill": "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+      "name": "Classic house pad in any synth: minor 9 / minor 7 / major 7 chords, many-voice detuned unison with oscillator retrigger off (free-running), stereo spread from the unison width control or a chorus/ensemble if the synth has none, slightly resonant lowpass plus serial highpass to remove mud, slow LFO on cutoff, slow amp attack with no filter envelope, coloured noise partly bypassing the lowpass, delay + reverb sends; plus a quick pad from a looped chord-stab sample",
+      "goal": "Build the classic house pad and know which ingredient does what. Use extended chords (minor 9, minor 7, major 7, major 9 and inversions). Turn unison up (up to 16 voices per oscillator, or 32), detune until it is wide and airy but not seasick, and give a second oscillator a different detune so voices do not sit on top of each other. Turn oscillator retrigger off so voices run free; with retrigger on, voices start in phase and just phase against each other. If unison does not spread voices in stereo, use the width control or add a chorus (an ensemble chorus suits pads). Set a lowpass cutoff a little laid-back with some resonance for character, cut the lows with a highpass (in series), and move cutoff with a slow LFO. Use a slow amp attack and full sustain, and remove any filter envelope. Try pulse waves and PWM by LFO, a sub oscillator for weight, and coloured noise at low level fed partly around the lowpass so its highs survive. Finish with delay and reverb sends. Quick alternative: loop a steady section of a chord-stab sample with a crossfade and slow attack, then hide the loop with delay, reverb and a filter.",
+      "steps": [
+        "Program extended chords (e.g. Em9, Em7, Emaj7) on an init saw patch with the filter open.",
+        "Raise unison toward 16 voices and detune until wide and airy; add oscillator 2 with its own unison at a slightly different detune.",
+        "Turn off oscillator retrigger so unison voices free-run.",
+        "If voices are not spread in stereo, raise the unison width/spread control; if the synth has none, add a chorus/ensemble after it.",
+        "Set the lowpass cutoff a little low with some resonance; add a highpass in series to remove muddy lows; add a slow LFO on cutoff.",
+        "Set a slow amp attack with full sustain and remove filter-envelope amount.",
+        "Optional colour: switch to pulse or mix pulse and saw, modulate pulse width with a slow LFO, add a sub oscillator; add coloured noise at low level, routing some of it straight to the highpass/output so its highs bypass the lowpass.",
+        "Add delay and reverb on sends and check against drums.",
+        "Chord-stab variant: load a chord stab into a sampler, loop a steady section after the transient (snap off), add loop crossfade and slow attack, then hide the repeat with delay, reverb and a filter."
+      ]
+    },
+    {
+      "from_skill": "evolving-pad-unison-filter-swell-fifth",
+      "name": "Evolving unison pad with filter swell and fifth layer",
+      "goal": "From a Vital-style workflow: shape a pad with immediate amp and slow filter-open envelope, unison with spread, slow LFO→cutoff, layer a fifth (and optional higher) osc through the same filter with unison, compress, large reverb, optional chorus; keep peaks controlled.",
+      "steps": [
+        "Init tonal osc (saw/rich wave). Amp can be quicker; env2 slow attack → filter cutoff with low resonance so tone arrives then opens.",
+        "Add unison with noticeable stereo spread; optional slow LFO→cutoff for ongoing motion.",
+        "Second osc pitched a fifth (+7) into the same filter with similar/less unison so it coheres as a chordal pad; optional third higher voice with LFO→level for late shimmer.",
+        "Multiband or glue compression to control peaks and bring highs; large size/decay reverb with rising mix; optional chorus for extra spread; watch distortion from overload."
+      ]
+    },
+    {
+      "from_skill": "granular-dual-saw-ambient-epic-pad",
+      "name": "Dual-saw ladder pad with granular spice and FX macros",
+      "goal": "Recipe for an ambient/epic pad: two saws (second −12 st, low level), long amp attack/release, ladder/diode filter with slow env→cutoff, corrective low EQ, chorus→synced delay→large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level.",
+      "steps": [
+        "Two analog saws: second −1 octave at ~20–25% level as low texture; lower master gain.",
+        "Amp env attack ~4s, release ~4–5s.",
+        "Ladder/diode filter, low cutoff; second envelope (attack ~2–3s, low sustain, longer decay/release, convex curve) → cutoff for slow open.",
+        "Corrective EQ: high-pass ~60 Hz; gentle cut ~120–150 Hz mud.",
+        "Chorus (e.g. 3 taps, high mix, moderate depth, slow rate) → sync delay (1/4) for chord transitions → large reverb (~35–40% mix).",
+        "Add granular layer mid-position, bipolar grain jitter, +12 st, small pitch variation; blend under saws through same FX.",
+        "Macros: cutoff, resonance, FX wet (chorus/delay/reverb mixes), granular level — start FX mapped from 0 so macro brings space in."
+      ]
+    },
+    {
+      "from_skill": "lush-stereo-saw-pad-random-pitch-texture",
+      "name": "Lush stereo saw pad with scale-snapped pitch texture",
+      "goal": "Make a lush ambient pad: dual saws panned L/R with ±5 cent fine tune, 4-voice unison ~3% detune, dirty 12 dB filter with drive/resonance, dual envelopes (amp + filter), stereo random → cutoff, then a third osc with scale-snapped random pitch/pan, squeeze distortion, global voice detune drift, noise sample, and reverb+ping-pong delay.",
+      "steps": [
+        "Osc1+2: basic saws; pan opposite; fine-tune ~±5 cents.",
+        "Add ~4 unison voices @ ~3% detune for depth.",
+        "Filter1 dirty/12 dB on both oscs; set drive and resonance; env1 mid attack/decay/sustain + longer release for level.",
+        "Env2: short attack, long decay, sustain <50%, release up → filter cutoff for per-chord harmonic bloom; also stereo random (1 bar) → cutoff.",
+        "Osc3 texture: random (sine-interpolate, ~5.2s) → transpose with scale snap + global snap; +12 st base; map same random to pan (stereo mode for independent movers).",
+        "Squeeze/distort osc3 via macro; optional random → fine pitch; slow stereo random → global voice detune (bipolar) for analog warp.",
+        "Sample noise (e.g. HVAC) keytrack off; filter2 on osc3+sample; reverb ~50% mix; ping-pong delay 1/4; re-enable osc1/2."
+      ]
+    },
+    {
+      "from_skill": "organic-looped-sample-unison-voicing-pad",
+      "name": "Organic looped-sample unison-voicing lush pad",
+      "goal": "Build lush organic pads by looping acoustic samples as pseudo-oscillators (crossfaded loops), stacking complementary body+air samples, applying chordal unison voicings (fifths/sus4), light detune/spread, long amp swell, optional WT/analog stabilizers, multiband grit/width, LFO+random filter / pitch-drift / WT motion, then convolution+long reverb space.",
+      "steps": [
+        "Load an acoustic sample; loop with crossfade so the loop point is inaudible — treat it as a static organic oscillator.",
+        "Layer a second contrasting organic loop (body vs air).",
+        "Apply unison chord voicings (e.g. fifths on one, sus4 on the other); add tasteful detune/spread; amp env with soft attack and slightly reduced sustain for swell-then-settle.",
+        "Add low-level WT + analog/saw stabilizers with mild unison for synthetic glue; macro to bring body in as needed.",
+        "Post FX: ensemble/flanger/filter experiments; multiband — saturate lows, light ring-mod in mids, stereo widen+chorus on highs; light glue saturation/EQ/dynamics.",
+        "Mod: LFO + random → filter (never identical motion); random → global fine pitch drift; random → WT position; aftertouch→filter; velocity→volume; macros for detune and cutoff.",
+        "Space: convolution or character reverb from original impulse (~wet) plus long lush reverb (~15s, mostly wet) for dimension."
+      ]
+    },
+    {
+      "from_skill": "three-layer-complementary-pad-post-verb-lofi-degrade",
+      "name": "Three-layer complementary pad with post-reverb tape/lo-fi degradation and tail-lifting expander",
+      "goal": "Make a nostalgic, evolving ambient pad that is greater than its parts: split the spectrum into a dark low-pass+drive wavetable layer (LFO-only filter motion), a bright 24 dB band-pass layer with a long filter envelope and its own amp envelope, and a barely-there LFO'd band-pass noise layer; add very slow triangle LFOs on fine tune, subtle phaser/chorus, a ~90% wet big reverb, then degrade AFTER the reverb with stacked tape wow/flutter, drift, top-end bit-crush grit and ~3 kHz band-pass noise erosion, finishing with a subtle upward expander that lifts reverb-tail detail.",
+      "steps": [
+        "Plan three complementary layers that each own a spectral job: layer 1 low/low-mid body, layer 2 upper-mid/air, layer 3 a hint of modulated noise for space. Use one multitimbral synth or several synth instances grouped to one bus.",
+        "Layer 1: wavetable oscs with LFO 1 → wavetable position on osc 1 and 2; low-pass with some resonance and filter drive; NO filter envelope—cutoff moved only by a slow LFO (LFO 3); very long amp attack/decay/release.",
+        "Layer 2: wavetable oscs with their own LFO-swept positions; 24 dB/oct band-pass with high resonance; long filter envelope (long attack/decay/release, closing back) plus the shared slow LFO on cutoff; a DIFFERENT long amp envelope from layer 1 so movements don't line up.",
+        "Layer 3: oscillators off, noise only at ~6% level; noise into a 12 dB/oct band-pass (high-passed noise, fair resonance), cutoff moved by LFO; LFO 1 → noise volume ~15%. All these LFOs run at a fraction of a cycle per second.",
+        "Use slow triangle LFOs/MSEGs on the fine tuning (and/or global pitch) of layers 1 and 2 for constant gentle detune drift; add filter drive and in-synth subtle slow phaser and chorus.",
+        "Insert a large modulated reverb ~90% wet on the pad bus (outer-space/lush style; try several reverbs and pick by the character they give).",
+        "AFTER the reverb, stack degradation: tape sim with wow and flutter (pitch warble + saturation/glue) → second saturator adding heat and drift (combine saturators for different colours) → tape/lo-fi stage with a bit-crush style harmonic grit on the top end, hiss, wow/shake, colour biased brighter, slower warble speed → noise-modulation (erosion-like) with band-pass noise around ~3 kHz, kept low.",
+        "Last: a very subtle multiband upward expander/compressor (OTT-style at low depth) after the reverb to lift decaying tail detail between notes.",
+        "Optionally place field recordings (e.g. rain) very low under it, and plan contrasting parts (warm low bass vs cold pad)."
+      ]
+    },
+    {
+      "from_skill": "traveler-walkthrough-super-unison-wide-lead",
+      "name": "super-unison wide stereo lead (osc2 stack)",
+      "goal": "Build a gigantic wide lead/pad layer using a multi-voice stereo unison oscillator (Traveler Osc2-style stack up to ~7 voices) with waveform morph and stereo spread.",
+      "steps": [
+        "Assign Oscillator 2 role as the Super/unison stack: continuous waveform from saw through sine to thin pulse.",
+        "Enable stereo voice stack (up to ~7 voices). Increase detune and stereo spread until the stack alone sounds gigantic.",
+        "Optionally add Osc1 as FM/sync carrier support (sync Osc2; FM from Osc2/3 linear or exponential, variable depth) for bite.",
+        "Mixer: set Osc2 level primary; pan can be modulated later. Mild drive into filter if available.",
+        "Route through stereo ladder-style LPF (12–24 dB). Keep cutoff high enough to preserve width; use modest resonance.",
+        "Amp envelope: medium attack for pads or fast attack for leads; sustain mid-high; release 0.5–2s. Enable pan-spread / voice stereo distribution if available."
+      ]
+    },
+    {
+      "from_skill": "unison-odd-even-detune-width-clean-supersaw",
+      "name": "Unison voicing: odd vs even voice counts, detune/blend/width, clean supersaw",
+      "goal": "Set unison deliberately and build mix-ready supersaws: odd voice counts keep a centered in-tune voice for mono-compatible front-of-mix bass/leads/pads, even counts leave a center gap for ultra-wide off-center leads; keep detune/blend moderate; for supersaws use simple saw frames (not complex WT sweeps), ~6–12 voices, optional quieter Osc B, centered sub an octave down and quiet noise, EQ→compress→delay→reverb, subtle warp, and global unison width ~50% plus sparing stack modes for chord phase correlation.",
+      "steps": [
+        "Start from 1 voice, then set 2 voices: expect one left and one right with a center gap; default detune often sounds harsh—lower detune.",
+        "Switch to 3 (odd) voices: confirm a center voice appears; with blend lowered you hear more of that center while keeping similar detune.",
+        "Compare 4 (even) vs 5 (odd) at similar detune: higher even counts can sound more detuned/wide; very high odd counts (e.g. ~15) pack many voices near center so the patch can sound *less* detuned than a mid even count.",
+        "For reese/detuned saw bass or other front-and-present mix parts, prefer odd voice counts for mono compatibility (center represented).",
+        "For an uber-wide lead you will pan off-center, even counts (2/4/…) with blend favoring outer voices are acceptable.",
+        "Example starting detune for chord/lead work: modest (~0.16 in the video’s demo); reset blend to default then adjust; always A/B odd vs even in context.",
+        "Supersaw: Load a simple saw (or rounded/noisy saw variant), not a multi-frame complex WT you plan to sweep aggressively.",
+        "Supersaw (apply the odd/even rule above when choosing the count): Set unison ~6–12 (example ~10); set detune and blend near mid — extreme detune+blend is for FX, not clean chords.",
+        "Optional Osc B: fewer unison voices, pitch ±octaves, lower level to thicken without doubling chaos.",
+        "Optional centered saw sub one octave down (no unison) for mono mid-weight; quiet unique noise sample for texture.",
+        "FX order example: EQ (cut lows, lift highs) → compression → ping-pong delay → reverb last; optional light hyper/dimension detune on the bus (can widen even the sub).",
+        "Subtle warp (e.g. bend+/−) via envelope/LFO for 3D motion — keep amounts small on supersaws.",
+        "Global unison: reduce width (~50%) for better chord phase correlation; try stack modes (super, fifths, center−2, octave) sparingly; warp-offset per voice only if warp is intentional."
+      ]
+    },
+    {
+      "from_skill": "warm-heavenly-supersaw-pad-keytrack-fx",
+      "name": "Warm heavenly supersaw pad with keytrack and lush FX",
+      "goal": "Dial warm heavenly pads: saw unison 5–7 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO→cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer.",
+      "steps": [
+        "Saw osc, unison ~5–7, reduce detune from max; amp slow attack + long release; raise voice count for big chords.",
+        "Optional: velocity → attack with inverted depth (harder = shorter attack); straighten release curve if needed.",
+        "LP filter: zero resonance; 24 dB slope; cutoff for warm lows; compare analog/ladder/diode; enable key track until high notes remain audible in wide chords.",
+        "FX: rich chorus for constant motion; reverb with low cut, ~3s; dotted-eighth delay with stereo spread/ping-pong and controlled feedback.",
+        "Subtle slow irregular LFO → cutoff for life; EQ after FX as needed (gentle HP, optional shimmer highs).",
+        "Optional layer: PWM wavetable with moderate unison and slower PWM LFO; combine with supersaw; if subs build, serial HP after LP; optional unfiltered sine to reinforce fundamental against phase cancellation.",
+        "Optional second patch/layer for shimmer (additive/WT, little unison, LFO→level or short decay + harmonic stretch); pitch-up delay/shimmer on that layer only."
+      ]
+    }
+  ],
+  "merged_from": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+  ],
+  "tags": [
+    "ambient",
+    "analog-drift",
+    "analog-pad",
+    "bitcrush",
+    "chords",
+    "chorus",
+    "cinematic-synth",
+    "detune",
+    "filter",
+    "filter-envelope",
+    "filter-sweep",
+    "free-run",
+    "from-youtube",
+    "granular",
+    "house",
+    "layering",
+    "lead",
+    "lofi",
+    "macros",
+    "mono-compatibility",
+    "music-production",
+    "noise",
+    "noise-layer",
+    "organic",
+    "pad",
+    "pads",
+    "portable",
+    "reverb",
+    "sampler",
+    "state-variable-filter"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://pad-supersaw-unison-detune-width",
+  "aliases": [
+    "ambient-organic-pluck-pad-ladder-chorus-space",
+    "cinematic-warm-analog-pad-drift-stereo",
+    "classic-fin-envelope-filter-sweep-dual-detuned-osc-mono-8-voice-unison-tape-echo-dual-filter-layer",
+    "classic-house-pad-ext-chords-16-voice-free-run-unison-width-vs-chorus-resonant-lp-plus-hp-slow-lfo-cutoff-slow-amp-noise-bypass-filter-chord-stab-loop-pad",
+    "evolving-pad-unison-filter-swell-fifth",
+    "granular-dual-saw-ambient-epic-pad",
+    "lush-stereo-saw-pad-random-pitch-texture",
+    "organic-looped-sample-unison-voicing-pad",
+    "three-layer-complementary-pad-post-verb-lofi-degrade",
+    "traveler-walkthrough-super-unison-wide-lead",
+    "unison-odd-even-detune-width-clean-supersaw",
+    "warm-heavenly-supersaw-pad-keytrack-fx"
+  ]
+}

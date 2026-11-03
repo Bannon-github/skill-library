@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "id": "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+  "name": "Produce a binaural-beat meditation track: a two-chord pad foundation with long reverb and overlapping glided notes, a sparse echoing piano and subtle bass, volume-automated arrangement, then a binaural layer of two pure sines (440 Hz and 432 Hz for an 8 Hz difference) panned hard left/right, a narrow high-Q EQ cut at the carrier frequency on the music bus so nothing masks it, fades, a gentle limiter (~3 dB input, no audible gain reduction) and WAV/MP3 export at 44.1 kHz",
+  "goal": "Make the whole track, not just the beat. Start from pads: play a simple two-chord loop (around A and D), add reverb with high decay and wet mix, keep chord changes on the grid, and let notes overlap with glide so transitions slide instead of stepping. Add a short piano line with an echo (more feedback, ping-pong on) and its own reverb, then a subtle low bass on the same roots; pull all levels down to avoid overdrive. Arrange by drawing volume automation so elements enter and leave (less is more; one element can carry minutes), boost the highs with a high shelf on bright parts, put delay before reverb. Binaural layer: a sine at the root frequency (A = 440 Hz) and a duplicate at 432 Hz (8 Hz difference); unpanned they make an audible wobble (monaural beat), panned hard left and right they form the binaural beat. Group the music and cut a narrow notch (high Q) at 440 Hz so the instrumental doesn't overlap the carrier. Fade the beat in and out, keep it quiet but present when muted/unmuted. On the master, add a limiter on the loudest section with only ~3 dB input and no audible gain reduction; export 44.1 kHz WAV plus an MP3, then do a calm test listen later and adjust.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "GndBM5EifHA",
+    "url": "https://www.youtube.com/watch?v=GndBM5EifHA",
+    "title": "Producing a Binaural Beats Meditation Track in Ableton Live (Step-By-Step)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/GndBM5EifHA/agent-skill-binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export.json",
+    "transcript_note": "Long DAW walkthrough; coaching/one-on-one call promo and project-download talk dropped; numeric values are the presenter's."
+  },
+  "prerequisites": [
+    "DAW with stock pad/piano/bass instruments, reverb, echo/delay, EQ, utility gain and limiter, or Web Audio: two OscillatorNodes (f and f-Δ) each through a StereoPannerNode at -1/+1, a BiquadFilter type 'notch' at f with high Q on the music bus, a DynamicsCompressor as gentle limiter (implementation note)",
+    "Headphones for checking the binaural layer"
+  ],
+  "inputs": [
+    {
+      "name": "root_hz",
+      "type": "number",
+      "description": "Carrier frequency matching the track's root (440 Hz for A in the video)",
+      "required": true
+    },
+    {
+      "name": "beat_hz",
+      "type": "number",
+      "description": "Left/right difference (8 Hz in the video)",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "list",
+      "description": "Simple pad progression (A and D in the video)",
+      "required": true
+    },
+    {
+      "name": "length",
+      "type": "duration",
+      "description": "Track length",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "meditation_track",
+      "type": "audio",
+      "description": "Exported WAV (44.1 kHz) and MP3"
+    },
+    {
+      "name": "binaural_layer",
+      "type": "track",
+      "description": "Two panned sines with fades"
+    },
+    {
+      "name": "arrangement",
+      "type": "automation",
+      "description": "Volume automation for entries/exits"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "No health or brainwave-entrainment claims are made by this skill; it is a sound-construction recipe only. Keep pulse/beat layers at low listening level.",
+    "Without hard left/right panning the two sines only produce a monaural wobble.",
+    "Skip the notch and other instruments around the carrier frequency mask it; cut narrowly so the music isn't thinned.",
+    "Avoid heavy compression/limiting in meditation music; no audible distortion or pumping.",
+    "Factory preset names are not needed; any soft pad, piano and bass work. Bit depth depends on the distributor."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a soft pad, play a simple two-chord loop (e.g. A then D), add reverb with high decay and wet mix, capture the MIDI and align chord changes to the grid; loop it.",
+      "tool": "pad foundation",
+      "expect": "A spacious harmonic bed"
+    },
+    {
+      "n": 2,
+      "action": "Layer a second pad for texture and a sparse piano phrase; add an echo with more feedback and ping-pong, plus a reverb with moderated wet mix.",
+      "tool": "layers",
+      "expect": "A moving echo line over the pads"
+    },
+    {
+      "n": 3,
+      "action": "Lengthen notes so they overlap at chord changes and enable glide so pitch slides between them.",
+      "tool": "glide",
+      "expect": "Smooth gliding transitions instead of steps"
+    },
+    {
+      "n": 4,
+      "action": "Add a subtle low bass on the roots; lower all instrument levels to avoid clipping.",
+      "tool": "bass",
+      "expect": "Grounded low end with headroom"
+    },
+    {
+      "n": 5,
+      "action": "Arrange with volume automation: bring elements in and out gradually; high-shelf boost and mid cut on bright parts; put delay before reverb.",
+      "tool": "arrangement",
+      "expect": "A slowly evolving track that starts and ends gently"
+    },
+    {
+      "n": 6,
+      "action": "Binaural layer: a sine instrument at 440 Hz and a duplicate at 432 Hz; listen unpanned (wobble), then pan one hard left and one hard right; program one note across the whole track.",
+      "tool": "binaural",
+      "expect": "Two pure tones forming an 8 Hz binaural beat on headphones"
+    },
+    {
+      "n": 7,
+      "action": "Group the music tracks and add a narrow, high-Q EQ cut at 440 Hz on the group.",
+      "tool": "carrier notch",
+      "expect": "The beat sounds clean, without resonance from the music"
+    },
+    {
+      "n": 8,
+      "action": "Fade the beat in and out; set its level so it is quiet but noticeably different when muted.",
+      "tool": "beat level",
+      "expect": "Present but unobtrusive beat"
+    },
+    {
+      "n": 9,
+      "action": "On the master, loop the loudest section and add a limiter with about 3 dB input and no audible gain reduction; export WAV 44.1 kHz and an MP3; test-listen later in a calm setting and adjust.",
+      "tool": "master + export",
+      "expect": "Clean, gentle final files"
+    }
+  ],
+  "verification": [
+    "Left channel contains only the 440 Hz sine and right only the 432 Hz sine (check by soloing each side).",
+    "A spectrum of the music group shows a narrow dip at 440 Hz.",
+    "The limiter shows little or no gain reduction on the loudest section.",
+    "Exported files are 44.1 kHz."
+  ],
+  "tags": [
+    "binaural",
+    "meditation",
+    "ambient",
+    "pad",
+    "glide",
+    "reverb",
+    "notch-eq",
+    "mixing",
+    "mastering",
+    "mind-amend",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export"
+}

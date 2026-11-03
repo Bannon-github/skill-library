@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow",
+  "name": "Turn a few played notes into a self-sustaining shimmering pad by feeding them once into a clean stereo delay at 99% feedback with very different left/right times (about 1 s and 150 ms), so the melody dissolves into a continuous texture for the rest of the track",
+  "goal": "Feedback-delay pad generator. Play a short phrase of three or four notes once into a neutral (uncoloured) stereo delay; nothing else is fed in for the rest of the track. Set feedback to the maximum safe value (99%) and set the delay times far apart: about 1 s on the left and about 150 ms on the right. The repeats keep cycling through the whole track; the original melody vanishes and is replaced by a shimmering secondary texture. Optional: use a tape-style delay instead for pitch warble, which strengthens the shimmer. Use the plain feedback control rather than cross-feed, which grows the signal quickly.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "r45X4PYH-fg",
+    "url": "https://www.youtube.com/watch?v=r45X4PYH-fg",
+    "title": "How to Create a Shimmering Pad",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/r45X4PYH-fg/agent-skill-self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A stereo delay with independent left/right times and feedback up to 99%",
+    "A short note phrase (3-4 notes)"
+  ],
+  "inputs": [
+    {
+      "name": "phrase",
+      "type": "midi",
+      "description": "3-4 notes played once at the start",
+      "required": true
+    },
+    {
+      "name": "left_delay_s",
+      "type": "number",
+      "description": "About 1 s",
+      "required": false
+    },
+    {
+      "name": "right_delay_s",
+      "type": "number",
+      "description": "About 0.15 s",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "shimmer_pad",
+      "type": "audio",
+      "description": "Self-sustaining texture that runs under the track"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Feedback near 100% can run away; feed the source only once and keep cross-feed at zero; put a limiter after the delay as a safety.",
+    "Matt prefers steady sounds: the tape-wow option adds pitch wobble, so keep it subtle or skip it.",
+    "Web Audio: two DelayNodes (1.0 s, 0.15 s) with GainNode feedback 0.99 and a ChannelMerger reproduce this.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write a 3-4 note phrase and route it to a stereo delay set 100% wet on that channel (or on a send).",
+      "tool": "DAW / delay",
+      "expect": "Only the source phrase feeds the delay."
+    },
+    {
+      "n": 2,
+      "action": "Set left delay about 1 s and right delay about 150 ms; set feedback to 99% on both sides; leave cross-feed at zero.",
+      "tool": "Stereo delay",
+      "expect": "Repeats sustain indefinitely, with very different rhythms per side."
+    },
+    {
+      "n": 3,
+      "action": "Play the phrase once and let it run; do not feed more notes in.",
+      "tool": "Transport",
+      "expect": "The melody disappears into a shimmering continuous texture within a few cycles."
+    },
+    {
+      "n": 4,
+      "action": "Optional: swap to a tape-style delay with light wow/flutter to exaggerate shimmer.",
+      "tool": "Tape delay",
+      "expect": "More perceived shimmer through slight pitch variation."
+    },
+    {
+      "n": 5,
+      "action": "Add a limiter or level automation after the delay and check the level over the full track length.",
+      "tool": "Limiter",
+      "expect": "Texture stays at a stable level without runaway build-up."
+    }
+  ],
+  "verification": [
+    "Left and right delay times differ by roughly 6-7x (1 s vs 0.15 s).",
+    "After the source phrase ends, the texture continues for the length of the track without new input.",
+    "Output level stays bounded (no runaway)."
+  ],
+  "tags": [
+    "pad",
+    "shimmer",
+    "delay",
+    "feedback",
+    "texture",
+    "stereo-width",
+    "generative",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://self-sustaining-shimmer-pad-few-notes-into-99pct-feedback-asymmetric-stereo-delay-1s-left-150ms-right-melody-dissolves-into-texture-optional-tape-wow"
+}

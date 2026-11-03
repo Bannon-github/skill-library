@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "complex-oscillator-cross-fm-follow-sync-fold-voice",
+  "name": "Complex-oscillator voice: bidirectional cross-FM, sync + pitch-follow slew between two VCOs, osc-modulated wavefolder into an S&H-swept self-resonant filter",
+  "goal": "Patch a West-Coast complex-oscillator voice from two VCOs: hard-wire exponential FM in both directions (osc1→osc2 and osc2→osc1) and dial sweet spots with both active, use soft/hard sync on osc1, add a 'follow' (osc1 slews to track osc2's v/oct at a set follow rate) for gliding harmonies, take osc2 through a wavefolder whose shape/angle are modulated by osc1 (mod bus), then split outputs: saw → multi-filter + chorus as bass, square → arpeggio with tiny vibrato into linear FM, folded output → filter at full resonance swept by sample-and-hold, into a clocked stereo delay.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "c8aQMp0vkRg",
+    "url": "https://www.youtube.com/watch?v=c8aQMp0vkRg",
+    "title": "Make Noise DPO — The Ultimate Complex Oscillator?",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/c8aQMp0vkRg/agent-skill-complex-oscillator-cross-fm-follow-sync-fold-voice.json"
+  },
+  "prerequisites": [
+    "Two oscillators with expo + linear FM between them, sync, a slew/'follow' path for pitch (Web Audio: two OscillatorNodes cross-feeding frequency AudioParams via GainNodes; AudioWorklet for sync, implementation note)",
+    "Wavefolder with shape/symmetry controls (WaveShaperNode)",
+    "Resonant filter, sample-and-hold, stereo delay, sequencer"
+  ],
+  "inputs": [
+    {
+      "name": "seq_pitch",
+      "type": "cv",
+      "description": "Pitch sequence into osc2 (and optionally osc1)",
+      "required": true
+    },
+    {
+      "name": "clock",
+      "type": "trigger",
+      "description": "Clock for S&H and delay",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "complex_voice",
+      "type": "audio",
+      "description": "Evolving FM/folded voice with bass, arp and resonant layer"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Presenter jams by ear; no numeric settings — 'dial in the sweet spots'.",
+    "Cross-FM in both directions at once gets unstable/chaotic quickly; small amounts first."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Exponential FM osc1→osc2: raise the amount and listen; then osc2→osc1 likewise; then use both simultaneously and find sweet spots (a little delay helps hear it).",
+      "tool": "cross-fm",
+      "expect": "Rich, then chaotic FM spectra"
+    },
+    {
+      "n": 2,
+      "action": "Osc1 options: soft sync (lock) or hard sync to osc2 with a richer waveform; or switch osc1 to LFO mode as an internal modulator.",
+      "tool": "sync",
+      "expect": "Sync timbres / internal modulation"
+    },
+    {
+      "n": 3,
+      "action": "Follow: send v/oct to osc2; set osc1 to follow osc2's pitch with a follow (slew) rate so osc1 glides after it; combine sync + follow, then move osc1's pitch to find harmonies/harmonics, or disable follow so osc1 drones on one note.",
+      "tool": "follow",
+      "expect": "Gliding second voice tracking the sequence"
+    },
+    {
+      "n": 4,
+      "action": "Wavefolder output: lower the sine outputs, listen to the folder; adjust shape and angle (symmetry); bring up the mod bus so osc1 modulates the folder.",
+      "tool": "wavefolder",
+      "expect": "Animated folded timbres"
+    },
+    {
+      "n": 5,
+      "action": "Bass: osc1 saw sequenced separately → analog filter → stereo chorus.",
+      "tool": "bass",
+      "expect": "Big fat bassline"
+    },
+    {
+      "n": 6,
+      "action": "Arp: osc2 square plays an arpeggiated sequence with a tiny vibrato into the linear FM input.",
+      "tool": "arp",
+      "expect": "Arpeggio with subtle pitch life"
+    },
+    {
+      "n": 7,
+      "action": "Resonant layer: folded output → filter with resonance fully up, cutoff modulated by sample-and-hold; blend in some FM on the folder.",
+      "tool": "s&h-filter",
+      "expect": "Folded tone plus singing sine from the self-resonant filter, randomly stepping"
+    },
+    {
+      "n": 8,
+      "action": "Send everything through a clocked stereo delay; record — results are hard to recreate.",
+      "tool": "fx",
+      "expect": "Epic evolving patch printed"
+    }
+  ],
+  "verification": [
+    "Both FM directions active produces audibly different spectra from either alone.",
+    "With follow on, osc1 audibly glides after each osc2 pitch change.",
+    "Filter at full resonance with S&H shows stepped sine pitches."
+  ],
+  "tags": [
+    "complex-oscillator",
+    "fm",
+    "cross-modulation",
+    "sync",
+    "wavefolder",
+    "sample-and-hold",
+    "west-coast",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://complex-oscillator-cross-fm-follow-sync-fold-voice"
+}

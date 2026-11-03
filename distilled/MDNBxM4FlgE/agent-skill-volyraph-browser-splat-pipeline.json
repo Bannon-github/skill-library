@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "id": "volyraph-browser-splat-pipeline",
+  "name": "volyraph browser splat pipeline",
+  "goal": "Video to splat entirely in browser.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "MDNBxM4FlgE",
+    "url": "https://www.youtube.com/watch?v=MDNBxM4FlgE",
+    "title": "Drone Video to 3D Gaussian Splat in the Browser Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/MDNBxM4FlgE/distilled.json"
+  },
+  "prerequisites": [
+    "Volyraph account",
+    "Video under 5 GB (MP4/MOV/MKV)"
+  ],
+  "inputs": [
+    {
+      "name": "project_name",
+      "type": "string",
+      "description": "Studio project name",
+      "required": true
+    },
+    {
+      "name": "video_file",
+      "type": "file",
+      "description": "Capture video \u22645GB",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "browser_splat",
+      "type": "3d_asset",
+      "description": "Editable map-placed Gaussian splat"
+    }
+  ],
+  "constraints": [
+    "File under 5 GB",
+    "Processing may take ~60\u201390 minutes on cloud GPU"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Sign in to Volyraph; create and open a project.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Capture \u2192 Standard video; upload MP4/MOV under 5GB.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Wait for queue and cloud GPU processing.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Edit, annotate, place on map; share/export.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Capture job completes",
+    "Splat visible in studio; can annotate/map"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "published_at": "2026-09-24T01:02:02.270348+00:00",
+  "mcp_resource": "skill://volyraph-browser-splat-pipeline"
+}

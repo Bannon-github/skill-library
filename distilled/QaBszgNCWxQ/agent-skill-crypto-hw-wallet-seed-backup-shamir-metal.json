@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "id": "crypto-hw-wallet-seed-backup-shamir-metal",
+  "name": "Hardware-wallet seed backup: standard vs Shamir + metal storage",
+  "goal": "Create an offline hardware-wallet recovery backup: choose standard 12/24-word seed vs Shamir multi-share threshold, write shares correctly offline, store separately, optionally migrate to fire/water-resistant metal media.",
+  "domain": "crypto-investing",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "QaBszgNCWxQ",
+    "url": "https://www.youtube.com/watch?v=QaBszgNCWxQ",
+    "title": "How to backup your bitcoin hardware wallet",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/QaBszgNCWxQ/agent-skill-crypto-hw-wallet-seed-backup-shamir-metal.json"
+  },
+  "prerequisites": [
+    "Hardware wallet (Shamir needs a model that supports it)",
+    "Pen + paper cards or metal kit",
+    "Private offline space"
+  ],
+  "inputs": [
+    {
+      "name": "backup_mode",
+      "type": "enum",
+      "description": "standard_seed | shamir_shares",
+      "required": true
+    },
+    {
+      "name": "shamir_threshold",
+      "type": "string",
+      "description": "e.g. 2-of-3",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "offline_recovery_backup",
+      "type": "physical-backup",
+      "description": "Paper/metal seed or Shamir shares"
+    }
+  ],
+  "constraints": [
+    "Educational self-custody/tax procedure only \u2014 not financial advice; no coin tips or return promises.",
+    "Ground every step in YouTube-provided captions; portable UI names OK when vendor chrome drifts.",
+    "Never digitize a seed phrase or enter it into a website/phone camera.",
+    "Never photograph/type/cloud-sync seed words.",
+    "Spell words exactly; keep order."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "In setup/backup menu choose standard recovery seed OR Shamir backup if the device supports it.",
+      "tool": "hardware-wallet",
+      "expect": "Mode selected on device screen"
+    },
+    {
+      "n": 2,
+      "action": "Standard path: write 12/18/24 words in order on the included paper cards.",
+      "tool": "paper-cards",
+      "expect": "Complete ordered list"
+    },
+    {
+      "n": 3,
+      "action": "Shamir path: generate multiple unique shares and set a threshold (example 3 shares, any 2 required); write each share fully.",
+      "tool": "hardware-wallet",
+      "expect": "K-of-N shares recorded"
+    },
+    {
+      "n": 4,
+      "action": "Enforce write rules: correct spelling, correct order, no digital copies, keep away from other people.",
+      "tool": "offline-procedure",
+      "expect": "No digital residue"
+    },
+    {
+      "n": 5,
+      "action": "Store a standard seed in a safe/hidden place; for Shamir, split shares across locations (also helps inheritance planning).",
+      "tool": "physical-security",
+      "expect": "No single loss reveals spend authority"
+    },
+    {
+      "n": 6,
+      "action": "Optional: punch/stamp words onto metal backup (plate, tile cassette, or dual capsule that can hold multiple Shamir shares).",
+      "tool": "metal-backup",
+      "expect": "Fire/water-resistant backup"
+    }
+  ],
+  "verification": [
+    "Seed/shares offline only",
+    "Order/spelling checked",
+    "Shares stored separately if Shamir"
+  ],
+  "tags": [
+    "crypto-investing",
+    "hardware-wallet",
+    "seed-backup",
+    "shamir",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://crypto-hw-wallet-seed-backup-shamir-metal"
+}

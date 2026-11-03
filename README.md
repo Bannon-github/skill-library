@@ -2,6 +2,9 @@
 
 **Guiding purpose:** An agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not pixels), via skills, workflows, and sequenced curriculums.
 
+## Compacted music library (2026-11-03)
+`mcp-publish/skills/` now holds 26 music-production cluster skills + 7 pipeline/tooling skills (was 221). Each cluster has a step-by-step mainstream workflow, a `theory` note, a runnable generator in `sample-lab/theory/` (run all: `/home/box/audio-tools/bin/python sample-lab/theory/run_all.py`), and `variants` that keep every source video's concrete steps and numbers. Originals: `archive/merged/` and `archive/removed/`, mapping in `archive/MAPPING.md`; old ids resolve via `mcp-publish/aliases.json`. New hunt skills fold in with `pipeline/compact/fold_in.py`.
+
 ## Layout
 - `LIBRARY.json` — catalog
 - `topics/taxonomy.json` — topic categories

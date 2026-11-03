@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "velocity-filter-cutoff-envelope-amount",
+  "name": "Velocity into filter cutoff / filter-envelope amount",
+  "goal": "Make pads/synths expressive with velocity\u2192filter: set lowest desired cutoff with filter EG amount at 0, raise EG amount (with sustain) for max brightness on hard hits, then map velocity so soft hits stay darker\u2014know your synth\u2019s polarity (many brighten on hard hits; some Moog-style reduce brightness as velocity sens rises).",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "cWPfqPwXBos",
+    "url": "https://www.youtube.com/watch?v=cWPfqPwXBos",
+    "title": "Adjusting Velocity to Filter Cutoff \u2013 Synth Clips 7 \u2013 Daniel Fisher",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/cWPfqPwXBos/agent-skill-velocity-filter-cutoff-envelope-amount.json"
+  },
+  "prerequisites": [
+    "Synth with low-pass filter, filter envelope amount, and velocity\u2192filter (or velocity\u2192EG amount) routing"
+  ],
+  "inputs": [
+    {
+      "name": "velocity_polarity",
+      "type": "enum",
+      "description": "brightens-on-hard | darkens-as-sens-up (Moog-style)",
+      "required": true
+    },
+    {
+      "name": "darkest_cutoff",
+      "type": "string",
+      "description": "Cutoff with EG amount 0 = softest intended tone",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "expressive_filter_pad",
+      "type": "patch",
+      "description": "Velocity-sensitive filter brightness on pad/synth voice"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init: single bright oscillator (e.g. saw), 24 dB/oct LP, resonance off, filter EG amount 0, keytrack 0. Sweep cutoff to hear range (can go below fundamental).",
+      "tool": "filter-init",
+      "expect": "Clean LP range established"
+    },
+    {
+      "n": 2,
+      "action": "Set cutoff to the darkest tone you want when the envelope is not pushing (EG amount still 0).",
+      "tool": "cutoff",
+      "expect": "Soft-hit floor tone chosen"
+    },
+    {
+      "n": 3,
+      "action": "With sustain-full filter envelope, raise EG amount until held notes reach maximum intended brightness (hard-hit ceiling).",
+      "tool": "filter-eg",
+      "expect": "Bright ceiling set via EG amount"
+    },
+    {
+      "n": 4,
+      "action": "Enable velocity\u2192filter (or velocity\u2192filter EG amount). Learn polarity: typical = harder = brighter; some synths (Subsequent/Sub 37 style) increase velocity sens to make soft playing darker instead\u2014strategy reverses.",
+      "tool": "velocity",
+      "expect": "Soft vs hard hits change brightness predictably"
+    },
+    {
+      "n": 5,
+      "action": "Play slow soft velocities while raising velocity amount until darkest desired soft tone; verify fast hits still hit the bright ceiling. Trim EG amount if hard hits are too bright; resonance exaggerates the difference.",
+      "tool": "tune",
+      "expect": "Natural soft\u2192bright response without accidental extremes"
+    }
+  ],
+  "verification": [
+    "Soft velocities darker than hard velocities (per chosen polarity)",
+    "EG amount 0 defines dark floor; EG amount sets bright ceiling",
+    "Resonance (if used) does not make response unusable"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "velocity",
+    "filter",
+    "envelope",
+    "expression",
+    "pads",
+    "modulation",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://velocity-filter-cutoff-envelope-amount",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Portable for Traveler/Web Audio: velocity curve \u2192 filter cutoff and/or filter-envelope depth."
+  ]
+}

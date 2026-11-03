@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "warm-heavenly-supersaw-pad-keytrack-fx",
+  "name": "Warm heavenly supersaw pad with keytrack and lush FX",
+  "goal": "Dial warm heavenly pads: saw unison 5\u20137 with moderated detune, slow attack/long release (velocity can shorten attack), 24 dB low-pass with no resonance and key tracking, subtle slow LFO\u2192cutoff, rich chorus + low-cut reverb (~3s) + dotted-eighth stereo delay; optional PWM layer, serial HP to control sub build-up, sine reinforce, and a separate shimmer layer.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "cF5ku3Og0Nk",
+    "url": "https://www.youtube.com/watch?v=cF5ku3Og0Nk",
+    "title": "How to Make Super Warm, Heavenly Pads with Vital",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/cF5ku3Og0Nk/agent-skill-warm-heavenly-supersaw-pad-keytrack-fx.json"
+  },
+  "prerequisites": [
+    "VA/WT synth with unison, keytrack, chorus/delay/reverb, optional second instance for shimmer layer"
+  ],
+  "inputs": [
+    {
+      "name": "filter_slope",
+      "type": "enum",
+      "description": "Prefer 24 dB/oct (4-pole) for warmth",
+      "required": true
+    },
+    {
+      "name": "polyphony",
+      "type": "number",
+      "description": "Enough voices for wide chords",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "heavenly_pad",
+      "type": "synth-patch",
+      "description": "Warm wide heavenly pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Key tracking is required if fixed cutoff makes high chords disappear.",
+    "PWM layers need less unison/detune than supersaws to avoid overload."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Saw osc, unison ~5\u20137, reduce detune from max; amp slow attack + long release; raise voice count for big chords.",
+      "tool": "oscillator",
+      "expect": "Soft wide supersaw bed"
+    },
+    {
+      "n": 2,
+      "action": "Optional: velocity \u2192 attack with inverted depth (harder = shorter attack); straighten release curve if needed.",
+      "tool": "velocity",
+      "expect": "Playable attack dynamics"
+    },
+    {
+      "n": 3,
+      "action": "LP filter: zero resonance; 24 dB slope; cutoff for warm lows; compare analog/ladder/diode; enable key track until high notes remain audible in wide chords.",
+      "tool": "filter",
+      "expect": "Balanced warmth across register"
+    },
+    {
+      "n": 4,
+      "action": "FX: rich chorus for constant motion; reverb with low cut, ~3s; dotted-eighth delay with stereo spread/ping-pong and controlled feedback.",
+      "tool": "fx-bus",
+      "expect": "Warm modulated space"
+    },
+    {
+      "n": 5,
+      "action": "Subtle slow irregular LFO \u2192 cutoff for life; EQ after FX as needed (gentle HP, optional shimmer highs).",
+      "tool": "lfo",
+      "expect": "Living warmth"
+    },
+    {
+      "n": 6,
+      "action": "Optional layer: PWM wavetable with moderate unison and slower PWM LFO; combine with supersaw; if subs build, serial HP after LP; optional unfiltered sine to reinforce fundamental against phase cancellation.",
+      "tool": "oscillator",
+      "expect": "Organic combined pad with controlled lows"
+    },
+    {
+      "n": 7,
+      "action": "Optional second patch/layer for shimmer (additive/WT, little unison, LFO\u2192level or short decay + harmonic stretch); pitch-up delay/shimmer on that layer only.",
+      "tool": "layer",
+      "expect": "High shimmer without wrecking warm body"
+    }
+  ],
+  "verification": [
+    "High and low chords both audible (keytrack working)",
+    "Chorus motion present",
+    "Reverb low-cut prevents mud"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "supersaw",
+    "chorus",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://warm-heavenly-supersaw-pad-keytrack-fx"
+}

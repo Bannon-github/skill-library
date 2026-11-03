@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-taiko-ensemble-drums-from-white-noise-velocity-to-amp-decay-and-filter-env-resonant-hp-60hz-low-boost-tanh-softclip-limiter-before-convolution-hall-plus-detuned-sine-fm-sub-random-sample-layers",
+  "name": "Cinematic taiko-style ensemble drums from white noise: velocity sets the amp and filter decay, a resonant 60 Hz high-pass plus low boost adds weight, a tanh soft clip and limiter go before a large-hall convolution reverb, with optional detuned sine, FM sub and round-robin sample layers",
+  "goal": "Make big cinematic ensemble drums (taiko-like) with no recordings, using any synth with a noise oscillator, a filter, two envelopes and velocity sensitivity. Think in four categories: frequency, amplitude, time and timbre. Start with white noise; amp envelope with no sustain and a short decay, with velocity routed to decay (soft hits short, hard hits long and ringing) and a wide velocity-to-level range. Add a low-pass filter (about 1 kHz) with its own short envelope on cutoff, also scaled by velocity, so each hit starts bright and closes darker; add a little filter drive. EQ: resonant high-pass at about 60 Hz plus a low bell boost for weight, a mud cut, presence, a slight high shelf; add a little release so hits breathe. Soft clip (tanh waveshaper) driven a little by that low boost to mimic an overloaded ensemble, trim the output and the extreme sub. Put a limiter or maximizer, then a convolution reverb with a cathedral or large-hall impulse (shortened, low end tamed, highs damped, about 5 kHz lifted). Layers: several detuned sines with a pitch envelope for tone, an FM sub at 20-50 Hz, and a round-robin layer of rattly found-object hits with slight random pitch to avoid machine-gunning.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "6CWmImkHDgs",
+    "url": "https://www.youtube.com/watch?v=6CWmImkHDgs",
+    "title": "EPIC Cinematic Drums from White Noise | A Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/6CWmImkHDgs/agent-skill-cinematic-taiko-ensemble-drums-from-white-noise-velocity-to-amp-decay-and-filter-env-resonant-hp-60hz-low-boost-tanh-softclip-limiter-before-convolution-hall-plus-detuned-sine-fm-sub-random-sample-layers.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  },
+  "prerequisites": [
+    "Any synth with a noise oscillator, a filter, 2 envelopes and velocity modulation",
+    "EQ, waveshaper or soft clipper, limiter, convolution reverb with hall or church impulse responses"
+  ],
+  "inputs": [
+    {
+      "name": "velocity_range",
+      "type": "text",
+      "description": "Expected soft-to-hard playing range",
+      "required": false
+    },
+    {
+      "name": "space",
+      "type": "enum",
+      "description": "cathedral | concert hall | large room impulse",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "drum_patch",
+      "type": "preset",
+      "description": "Velocity-responsive noise drum patch (portable recipe)"
+    },
+    {
+      "name": "rendered_hits",
+      "type": "audio",
+      "description": "Soft and hard example hits in the hall"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Order matters: limiter before the convolution reverb, otherwise it crushes the tail.",
+    "The low boost into the soft clipper overdrives easily; a little drive goes a long way.",
+    "Values (1 kHz filter, 60 Hz high-pass, 20-50 Hz sub, about 5 kHz lift) are approximate from the transcript; tune by ear. The source used one particular synth; any synth with these modules works.",
+    "Auto-generated YouTube Show transcript; partly garbled, values approximate from transcript description."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load white noise in a fresh patch; set the amp envelope to sustain 0 and a short decay; widen the velocity-to-level range.",
+      "tool": "Synth noise osc + amp env",
+      "expect": "Short percussive noise bursts with dynamic range."
+    },
+    {
+      "n": 2,
+      "action": "Route velocity to amp decay so soft hits are short and hard hits ring out long.",
+      "tool": "Mod matrix",
+      "expect": "Quiet taps vs big booming hits."
+    },
+    {
+      "n": 3,
+      "action": "Add a low-pass (about 1 kHz) and a second envelope on cutoff with a short decay, opening bright at the attack and closing darker; scale its amount or decay by velocity and add a little filter drive.",
+      "tool": "Filter + env 2",
+      "expect": "A bright transient that falls into a dark body."
+    },
+    {
+      "n": 4,
+      "action": "EQ for weight: resonant high-pass at about 60 Hz plus a low bell boost; cut mud, add some presence and a slight high shelf; add a little amp release.",
+      "tool": "EQ",
+      "expect": "It reads as a drum, not filtered noise, with sub movement."
+    },
+    {
+      "n": 5,
+      "action": "Soft clip with a tanh waveshaper (small drive), trim the output, filter a little extreme sub.",
+      "tool": "Waveshaper",
+      "expect": "An overloaded, ensemble-like loudness."
+    },
+    {
+      "n": 6,
+      "action": "Add a limiter, THEN a convolution reverb with a cathedral or large-hall impulse; shorten the decay, tame the low end, damp the highs and lift about 5 kHz.",
+      "tool": "Limiter -> convolution reverb",
+      "expect": "A convincing big-room drum, with the tail intact."
+    },
+    {
+      "n": 7,
+      "action": "Optional layers: 3 detuned sines with a pitch-drop envelope (tone), an FM or sine sub at 20-50 Hz, and a round-robin layer of found-object or rattle hits with slight random pitch.",
+      "tool": "Multi-layer synth/sampler",
+      "expect": "A richer, non-repetitive ensemble hit."
+    }
+  ],
+  "verification": [
+    "Soft and hard hits differ clearly in length and brightness.",
+    "Repeated hits don't sound identical (round-robin or random pitch).",
+    "The reverb tail isn't squashed (limiter sits before the reverb)."
+  ],
+  "tags": [
+    "drums",
+    "cinematic-percussion",
+    "taiko",
+    "noise-synthesis",
+    "velocity",
+    "convolution-reverb",
+    "impacts",
+    "punch",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://cinematic-taiko-ensemble-drums-from-white-noise-velocity-to-amp-decay-and-filter-env-resonant-hp-60hz-low-boost-tanh-softclip-limiter-before-convolution-hall-plus-detuned-sine-fm-sub-random-sample-layers"
+}

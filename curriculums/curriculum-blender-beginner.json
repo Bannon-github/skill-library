@@ -6,33 +6,17 @@
     {
       "level": 1,
       "name": "Install, UI, navigation",
-      "skills": [
-        "blender-install-prefs-viewport-nav-transform-tools",
-        "blender-first-scene-add-delete-focus-shade-smooth",
-        "blender-beginner-setup-nav-and-geometry-practice"
-      ]
+      "skills": []
     },
     {
       "level": 2,
       "name": "Edit mode and first models",
-      "skills": [
-        "blender-edit-mode-transform-extrude-loopcut-bevel",
-        "blender-lowpoly-pine-tree-from-primitives",
-        "blender-easy-car-box-model-core-tools",
-        "blender-metric-mm-setup-for-3d-print",
-        "blender-boolean-bracket-with-cylinder-holes"
-      ]
+      "skills": []
     },
     {
       "level": 3,
       "name": "Modifiers, materials, render, character prep",
-      "skills": [
-        "blender-mug-solidify-subsurf-loopcut",
-        "blender-chocolate-chip-cookie-model-and-render",
-        "blender-lowpoly-character-scene-prep",
-        "blender-chatgpt-python-script-gold-ball",
-        "blender-gamedev-learning-path-advice"
-      ]
+      "skills": []
     }
   ],
   "status": "draft",

@@ -1,0 +1,397 @@
+{
+  "schema_version": "1.0",
+  "id": "granular-and-spectral-texture-design",
+  "name": "Granular and spectral texture design (freeze, clouds, blur, stretch)",
+  "goal": "Turn short sources into sustained, evolving textures with grain size, density, position, spray and freeze, live granular buffers, spectral blur/freeze/warp and extreme time-stretch.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "frozen-granular-buffer-as-playable-wavetable-voice",
+        "video_id": "Dazk-D79k5U",
+        "url": "https://www.youtube.com/watch?v=Dazk-D79k5U",
+        "title": "Mutable Instruments Beads FREEZE Explained – Frozen Textures & Tricks"
+      },
+      {
+        "from_skill": "granular-buffer-core-position-density-freeze-feedback-modes",
+        "video_id": "mBvUObtJTJI",
+        "url": "https://www.youtube.com/watch?v=mBvUObtJTJI",
+        "title": "Clouds (and clones) from the Ground Up: a reverbless explanation of a Granular icon"
+      },
+      {
+        "from_skill": "granular-stack-freeze-infinite-sustain-texture",
+        "video_id": "dxWCEDePgaw",
+        "url": "https://www.youtube.com/watch?v=dxWCEDePgaw",
+        "title": "Sound Design Trick - Creating Sustained Textures with Granular FX"
+      },
+      {
+        "from_skill": "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+        "video_id": "ZVLM1XMT6Z0",
+        "url": "https://www.youtube.com/watch?v=ZVLM1XMT6Z0",
+        "title": "granulate EVERYTHING"
+      },
+      {
+        "from_skill": "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+        "video_id": "3q-o772IYQY",
+        "url": "https://www.youtube.com/watch?v=3q-o772IYQY",
+        "title": "Celestine - A Realtime Granular Dream Machine (Full Walkthrough)"
+      },
+      {
+        "from_skill": "marimba-wt-lfo-pluck-to-granular-pad",
+        "video_id": "Daqws1QWgXw",
+        "url": "https://www.youtube.com/watch?v=Daqws1QWgXw",
+        "title": "Tutorial #21 | Turning A Marimba Into Granular Synthesis Pads"
+      },
+      {
+        "from_skill": "osc-as-granular-pitch-step-delay",
+        "video_id": "XVHx0eCGf5g",
+        "url": "https://www.youtube.com/watch?v=XVHx0eCGf5g",
+        "title": "How to Turn Any Synth Into a Granular Delay ✨ | Vital Pad Tutorial"
+      },
+      {
+        "from_skill": "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+        "video_id": "bIbOgZn1h_Y",
+        "url": "https://www.youtube.com/watch?v=bIbOgZn1h_Y",
+        "title": "Field Recording a Piano - Exploring Resonance & Sustain"
+      },
+      {
+        "from_skill": "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+        "video_id": "mllvToyambI",
+        "url": "https://www.youtube.com/watch?v=mllvToyambI",
+        "title": "Magic Blur - Overview and Tutorial"
+      },
+      {
+        "from_skill": "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+        "video_id": "KVtxIwYpGvQ",
+        "url": "https://www.youtube.com/watch?v=KVtxIwYpGvQ",
+        "title": "Ableton's best kept secret for ambient textures"
+      },
+      {
+        "from_skill": "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+        "video_id": "aNVjrDQANMw",
+        "url": "https://www.youtube.com/watch?v=aNVjrDQANMw",
+        "title": "Ep. 04 | How to Build Powerful Cinematic Drone Sounds (Modular Synth Sound Design)"
+      }
+    ]
+  },
+  "theory": "Grains of 20-200 ms with smooth windows overlap into a continuous tone; position = which part of the source, density = grains/s, spray = randomness. Freezing position sustains a single spectrum.",
+  "generator": {
+    "path": "sample-lab/theory/granular_cloud.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/granular_cloud.wav"
+  },
+  "prerequisites": [
+    "A gate/trigger source and pitch sequencer/quantizer for the voice demo",
+    "Any granular FX/processor with density, pitch rand, pan rand, optional multi-band",
+    "Audio editor with denoise; sampler with per-group volume",
+    "Buffer/looper delay with freeze, position, segment, reverse, pitch, sample-rate and filter controls (Web Audio: AudioWorklet ring buffer with per-channel read heads, implementation note)",
+    "Contact microphone or geophone, plus one or two wide-range recorders/mics",
+    "Delay + reverb bus",
+    "Delay/granular processor that can self-feedback, granular sampler with record/overdub",
+    "EQ/filter and a clipper/limiter",
+    "Extreme time-stretch tool (Paulstretch or similar FFT stretch), wavetable/granular synth; in Web Audio, a phase-vocoder AudioWorklet or offline stretch, and two AudioBufferSourceNodes with different loopEnd panned L/R (implementation note)",
+    "Gate + pitch sequencer",
+    "Granular engine reading a circular buffer that is continuously written (Web Audio: AudioWorklet ring buffer + grain scheduler, implementation note)",
+    "Granular processor with freeze, time/position, size, shape, density, pitch (v/oct) input and seed/trigger input"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a source with clear harmonic content (pluck chord, piano, voice, field recording).",
+      "expect": "Source"
+    },
+    {
+      "n": 2,
+      "action": "Grain size 40-150 ms, density 20-80 grains/s, Hann/Gaussian window.",
+      "expect": "Smooth cloud"
+    },
+    {
+      "n": 3,
+      "action": "Modulate position slowly through the source, or freeze at a sweet spot for infinite sustain.",
+      "expect": "Evolving or frozen texture"
+    },
+    {
+      "n": 4,
+      "action": "Add pitch spray quantized to octaves/fifths and stereo spray for width; keep pitch within scale.",
+      "expect": "Wide, musical cloud"
+    },
+    {
+      "n": 5,
+      "action": "Live buffer modes: feed a rolling buffer, map keys to slice positions, tempo-lock grain size for rhythmic mosaics.",
+      "expect": "Playable granular instrument"
+    },
+    {
+      "n": 6,
+      "action": "Spectral: blur/freeze frames, warp formants, or stretch 8-50x (paulstretch) for tonal drones; layer with the dry source.",
+      "expect": "Spectral pad"
+    },
+    {
+      "n": 7,
+      "action": "Finish with filter, reverb, and level under the main elements.",
+      "expect": "Background texture"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/granular_cloud.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "frozen-granular-buffer-as-playable-wavetable-voice",
+      "name": "Frozen granular buffer as a playable 'wavetable' voice: capture an evolving sound, freeze, scan time position, sequence pitch via v/oct for overlapping grain polyphony, random-modulate time/size",
+      "goal": "Turn a granular processor's freeze into an instrument: capture an evolving sound into the buffer (lower-quality mode for ~10 s stereo / 20 s mono), freeze it, trigger seeds from gates, scan the time/position control through the capture like a homemade wavetable, sequence the frozen audio's pitch via v/oct so overlapping grains create a polyphonic illusion, use built-in random modulators on time and grain size, triangle grain window, reverb/delay, and for dark textures pitch the frozen capture down with high density and heavy reverb — the delta vs our granular-stack-freeze skill is pitched, sequenced playback of the frozen buffer.",
+      "steps": [
+        "Run the granular processor fully wet; generate grains with the seed control; set mid size and a triangle grain shape (fades in and out cleanly); add reverb — integral to big ambient textures.",
+        "Patch a gate into the seed input and adjust density (grains per seed — it can reach audio rate).",
+        "Select a lower-quality buffer mode to get more record time (presenter: ~10 s stereo / 20 s mono), play an evolving sound in, and freeze it.",
+        "Scan the time/position control through the frozen audio — like creating your own wavetable.",
+        "Patch a pitch sequence into v/oct so the frozen buffer is played melodically; use the internal random modulators (attenurandomizers) on time and size; add reverb and delay. Overlapping grains give a polyphony-like overlap.",
+        "Try reversed grains for variation.",
+        "Dark texture variant: capture a simple tone, pitch the frozen buffer down with density high and reverb high, keep slow random modulation on time so it scrolls and occasionally surfaces higher partials ('ominous wind chimes'); play root changes from a sequencer.",
+        "Optional: modulate freeze itself with gates to alternate between live grains and long held frozen notes."
+      ]
+    },
+    {
+      "from_skill": "granular-buffer-core-position-density-freeze-feedback-modes",
+      "name": "Granular buffer core from the ground up: grain size/shape/pitch, regular vs random density, triggered grains as a voice, position delay, freeze scrubbing, partial re-freeze, random pan, two feedback modes",
+      "goal": "Understand and drive a buffer-based granular processor (the kind we need as a Web Audio module) with reverb and feedback turned down first: grains are tens-of-ms-to-1-s micro-samples plucked from a rolling 1–8 s input buffer; set size, shape (gate → triangle → Hann for overlap), pitch; density from noon (none) toward regular spacing one way and random spacing the other, or fire grains from a trigger with sequenced pitch to make a playable voice; use position as a buffer read point (= delay, newest at one end), freeze to scrub inside captured audio, gate the freeze with semi-random gates to partially overwrite and blend the buffer, mind lo-fi buffer modes (low sample rate → low-pass before input; mu-law 8-bit → keep input mid-level), random L/R grain pan for mono→stereo, and know that feedback is true input feedback when live but a separate delay/all-pass diffuser when frozen.",
+      "steps": [
+        "Turn internal feedback and reverb down. Feed a simple source (sine) and listen to individual grains.",
+        "Grain structure: size sets grain length (tens of ms → ~1 s); shape/texture morphs from no contour (gate) through triangle to Hann-like windows; use gate-like shapes for individual grains and Hann for overlapping grains; pitch shifts each grain up/down.",
+        "Grain generation: density at noon = no grains; one direction = evenly spaced grains getting faster until they overlap; the other = randomly spaced grains until they overlap. Fine control near noon matters for counting individual grains.",
+        "Triggered voice: density at noon, feed clock-derived gates into the trigger input and quantized pitch per grain from a random/looping sequencer; send an occasional pulse into size to lengthen some notes.",
+        "Position: switch to a varied source (speech/radio). Small grains + enough density reconstructs the input; moving position away from the newest end adds a growing delay (there's always a tiny conversion delay at minimum).",
+        "Freeze (fully wet): buffer stops updating; the same grain repeats at the current position; shrink size from a whole word to a tiny tone, then sweep position to scrub through captured audio (note: newest audio sits at one end, so 'forward' playback means moving position toward the older end).",
+        "Evolving buffer: gate the freeze input with semi-random gates so it briefly unfreezes, writing a few seconds of new audio at the front while the rest of the buffer is kept.",
+        "Post-processing: set wet/dry blend; use random L/R grain panning to turn a mono input into a stereo output; add reverb externally if preferred.",
+        "Feedback: when live, it's true feedback of output into the buffer input (can run away — tame by modulating size/position); when frozen, feedback becomes a separate delay + all-pass diffusion that sounds reverb-like without altering the buffer. Watch for jumps when unfreezing."
+      ]
+    },
+    {
+      "from_skill": "granular-stack-freeze-infinite-sustain-texture",
+      "name": "Stack granular processors to freeze any short sound into infinite sustain",
+      "goal": "Turn a short, gappy source into an endless sustained texture: run multi-band or multi-instance granular with linked bands, mild pitch/pan/delay randomization, one voice per band; stack the same granular chain ~4× with independent randomization so gaps fill; follow with upward dynamics (OTT-style), high-pass to stop low buildup, slow random EQ/filter motion, optional diffused 100% wet delay for smear, limiter, and a mono fold-down check.",
+      "steps": [
+        "Start from a short source with silence gaps. Insert a granular processor; prefer a dense multi-band or 'schizophrenia-like' starting point, link bands, reduce pitch variation slightly, keep light rand on pitch/pan/delay, ~one voice per band.",
+        "Stack the same granular treatment about four times in series or parallel. Independent randomization + slowly moving band limits across instances fills holes into a complex continuous sustain.",
+        "Add upward compression/OTT-style processing to lift grain detail, then high-pass — sustained stacks often accumulate unwanted low end.",
+        "Animate tone: slow random modulation on a few EQ/filter bands (gentle boosts/cuts, light phasing at low mix, optional talking low-pass on the highs). Keep modulation subtle so it does not read as a phaser solo.",
+        "Optional smear path: 100% wet diffused delay (modulated delay time) when you want less discrete echoes and more smooth wash. Finish with a limiter to restore level.",
+        "Sum to mono and confirm the bed still works (point-source playback). Apply the same chain to non-synth sources (pebbles, debris) to verify generality."
+      ]
+    },
+    {
+      "from_skill": "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+      "name": "Granular slicer workflow: map keys to grain position instead of pitch (key→transpose 0, key→position up) with glide between slices, lock grain size to tempo in ms, per-parameter variation and L/R pitch spread for an icy cloud, an envelope that morphs grain shape and size per note, scan + per-ear LFOs for glitch, and a square-LFO auto-recapture of live drums every two bars",
+      "goal": "Play any long recording (vocal, sound-design session, loop, live drums) as an ethereal slice instrument. Use three grain modes for different jobs: classic (overlapping, sustained), loop (non-overlapping, with reverse chance) and cloud (stacked grains, density). Set key→transpose to 0 and key→filter to 0, then turn key→position up so each key plays a different part of the file; enable mono + glide to glide between slices; smaller grains change position faster. Tune the pad version by checking the sample's pitch with a tuner. In cloud mode raise variation on grain size, small transposition (chorus) and volume, and add spread for different L/R pitch. Lock grain size to tempo by converting a note length to ms (a quarter note read as 408 ms). Remember transposition changes grain duration: 76.1 ms at 0 st becomes half at +12 st. Use the modulation envelope negatively on grain shape and size for plucky transients (decay ~1 s). Use scan (e.g. 0.25×) with LFOs (different per ear) on grain size and position for glitch, and auto-capture live drum input every two bars with a square, skewed LFO for generative texture. Delta vs our granular skills: key-to-position slicing with glide, tempo-ms grain lock and periodic self-recapture.",
+      "steps": [
+        "Load a recording into the granular sampler and learn the three modes: classic (overlapping, sustained), loop (non-overlapping; set reverse chance) and cloud (stacked grains, density control).",
+        "For a pad: check the sample's pitch with a tuner and transpose so C3 plays C. In cloud mode turn up variation, with orange per-parameter amounts on grain size, a little transposition (chorus) and volume; reduce position variation if too scattered. Add spread for different L/R pitch.",
+        "For slicing: set key→transpose and key→filter to 0, set key→position up. Each key now plays a different region. Enable mono + glide to glide between slices; reduce grain size so position changes faster. Use it for vocal-chop patterns and transpose to the song key.",
+        "Tempo-lock grain size: measure a note length in ms (e.g. select a quarter note and read its duration, 408 ms in the example) and type it in. Remember +12 st transposition halves grain duration (76.1 → ~38 ms).",
+        "Transient shaping: route the modulation envelope negatively to grain shape (pointy → regular) and to grain size (small → normal), decay ~1 s, in classic mode.",
+        "Glitch motion: set scan to ~0.25× and modulate grain size and position with an LFO that differs per ear. Record knob automation while playing.",
+        "Generative recapture: feed live drum clips (random follow actions, legato on) into the granulator's capture input; drive capture with a square, skewed LFO every two bars; hold one note and scan slowly; map an LFO to grain size/shape. Resample the result to layer under the beat."
+      ]
+    },
+    {
+      "from_skill": "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+      "name": "Live rolling-buffer granular processor with per-grain behaviour modes: interval 'mosaic' clouds, per-grain pitch glide, reverse+wow smear, ghost-grain bloom, LFO tide, fixed-position constellation patterns and orbiting read head",
+      "goal": "Turn a constantly recording one-bar buffer into a real-time granular effect for pads, keys, vocals and guitar (insert with dry/wet or 100% wet send). It uses the standard grain controls (size, density, spray around the playhead, pitch in perfect-fifth steps, jitter, spread, stereo scatter, reverse chance, top-end smoothing), a tempo-synced grain trigger/size option, a quantised or auto-moving playhead, and a library of grain-scheduling behaviours a Web Audio granulator can implement: mosaic (grains pitched into chordal interval sets: fifths/major/minor/discordant), glide (each grain sweeps up in pitch over its own length with a curve), reverie (all grains reversed with tape-style wow), bloom (each grain spawns a later, quieter, slightly detuned ghost grain), tide (a global LFO swells and recedes playback rate), stars (grains drawn from fixed buffer positions in forward/reverse/pendulum/random patterns, looping each bar) and orbit (grains circling the write head with width and 'slop'). Delta vs our granular-buffer-core and frozen-buffer skills: live write/read buffer and the per-grain behaviour modes.",
+      "steps": [
+        "Insert the processor on a track (balance dry/wet) or on a send at 100% wet. A one-bar ring buffer records whatever plays, and grains are read from it continuously.",
+        "Set the base cloud: size (grain length), density (grains at once, sparse to dense), spray (how far from the playhead grains may be fetched; 0 = exactly at the playhead), pitch in perfect-fifth steps, jitter (slight per-grain pitch warble, good for cloudy drones), spread (any pitch per grain, extreme), stereo (grains scattered around the field; presenter keeps it high), reverse chance, and smooth (roll off top end if grains get clicky).",
+        "Playhead: scrub manually, or quantise it to eight positions (eighth notes in the one-bar buffer) to land on downbeat transients, or set a move rate (slow/fast, forward or reverse) to scan automatically.",
+        "Sync sub-mode: when synced, grains fire on time divisions (e.g. 16ths) and size switches to note lengths. Each behaviour mode below has a free and a synced variant.",
+        "Mosaic: pitch successive grains into chordal intervals (a couple at root, then +7, +12 …) with a soft bloom and slight lo-fi. Pick an interval set: fifths, major, minor or discordant. Reduce density; add jitter or spread. Good for pads with lots of reverb.",
+        "Glide: each grain glides up in pitch (micro-portamento). Glide depth sets the interval; grain size sets how long it takes, and a shape control sets the curve. Long grains give a smooth effect; percussive input makes a texture generator.",
+        "Reverie: force all grains into reverse and add tape-like wow/flutter (wow depth control) with a slight lo-fi tone; longer sizes give stretched tape-echo smears. Reverse chance has no further effect here.",
+        "Bloom: every triggered grain spawns a secondary ghost grain that enters slightly later, quieter and subtly detuned. Raise density and size for overlapping halos.",
+        "Tide: a global LFO makes all grains swell and recede in playback rate together. Long size = ambient breathing; short size = tremolo-like.",
+        "Stars: ignore the heads and read grains from fixed positions in the buffer. Spray becomes a pattern selector (forward, reverse, pendulum, random), which cycles each bar into recognisable melodic or rhythmic fragment loops.",
+        "Orbit: grains circle the write head in a spiralling orbit. Spray becomes orbit width, plus a slop control for imperfection/lo-fi. Works best at slow tempos and lower densities and plays alongside the dry signal like its own loop.",
+        "Finish inside the grain path: a wavefolder or bitcrusher with its own mix for grit, then a simple hall reverb (decay + mix); long decay feels almost frozen. Revisit playhead/spray/sync after picking a mode, since each changes the mode's result a lot."
+      ]
+    },
+    {
+      "from_skill": "marimba-wt-lfo-pluck-to-granular-pad",
+      "name": "Marimba/pluck WT LFO attack into granular freeze pad stack",
+      "goal": "Turn mallet-like material into an evolving pad: synthesize a pluck from a wavetable that starts bright and ends as sine, scrub position with a very fast LFO for a clicky attack (amp: ~0.5s decay, 0 sustain, ~1s release) plus a long-attack twin for swell; print chord tones, freeze them in a granular engine (random on, loop on, tune grain spacing/attack/hold), then space with short delay, room (~20%) and very long parallel verbs, plus a quiet triangle+chorus bass.",
+      "steps": [
+        "Pluck layer: one osc with a mallet-like WT (rich highs at frame 0 → sine at the end). Modulate WT position with LFO1 at a very high rate so you mostly hear the bright click, then the sine body.",
+        "Amp envelope: decay ~0.5 s, sustain 0, release ~1 s. Add delay+reverb. Optional: set LFO to trigger (retrigger) mode so fast WT scrubbing repeats like a decaying delay while amp has no sustain.",
+        "Swell twin: duplicate the pluck patch and add substantial amp attack so the same WT becomes a slow pad swell (works with one-shots too — just raise attack).",
+        "Sequence sparse chord tones (e.g. B D F#) split across two octaves so each note can ring; render/print pluck and swell passes to audio.",
+        "Load both into a granular engine: random fully up (forward/back from random points, occasional overlaps), loop on, raise grain attack and adjust grain spacing to slow frantic textures, increase hold for more sustain. Match settings on the swell buffer.",
+        "FX: delay with low feedback (~3 repeats), room reverb ~20% mix with highs eased, plus a parallel bus of very long verbs (~10–12 s) at 100% wet while keeping a dry path for clarity.",
+        "Optional bass: quiet triangle with chorus and long attack (mallet pads rarely need loud subs). Optional high air: heavily blurred/smudged print of the pluck and/or low-level ambience into the same reverb bus."
+      ]
+    },
+    {
+      "from_skill": "osc-as-granular-pitch-step-delay",
+      "name": "Oscillator-as-delay: LFO repeats + stepped pitch-shift grains",
+      "goal": "Emulate granular pitching delays inside the synth (no delay FX): second oscillator copies the dry WT, an envelope-shaped tempo-synced LFO repeats its level like echoes, global amp release sets feedback/fade length, a fade-in LFO avoids overlapping the dry attack, and a stepped envelope-mode LFO raises pitch by octaves each repeat (e.g. +24 st over quarter-note steps) for sanding granular delay tails—then share formant/WT macros with the dry osc.",
+      "steps": [
+        "Dry voice: osc1 on basic/WT shape; use a non-global envelope (env2) on osc1 level so amp envelope 1’s release can later control delay ring-out. Filter with driven LP (~24 dB), key track, env3→cutoff (decay/release up, sustain ~halfway, some attack).",
+        "Optional: sculpt WT (sine↔saw spectral blend), macro→WT position + cutoff; velocity→filter attack and env3 depth for soft vs bright hits; light unison (~2%).",
+        "Delay osc: enable osc2, copy osc1 waveform. Instead of an ADSR on level, draw an echo-like shape on LFO1 and map it to osc2 level; tempo-sync LFO1 to set delay time.",
+        "Feedback/fade: use global envelope release to control how long repeats die out. Fade-in: another LFO in envelope mode with a ramp-up modulating the delay-level mod depth so repeats don’t pile on the dry attack.",
+        "Granular pitch sanding: LFO in envelope/step mode → osc2 pitch; set amount to +24 semitones (two octaves) with steps aligned to the delay subdivision (e.g. each quarter step up) so each repeat rises in pitch like a granular pitch-shift delay.",
+        "Link formant-scale / WT position macros so delay osc timbre tracks the dry sound. Optional reverse-delay style LFOs: leave space in the shape to fade down and avoid clicks; try faster eighth-note rates."
+      ]
+    },
+    {
+      "from_skill": "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+      "name": "Record a piano for maximum sustain and resonance with a contact/geophone pickup (about 10 Hz–1 kHz) at the most resonant spot plus air microphones inside and above the body for the highs, build a sampler with per-mic blend and a lowpassed 'muffled' mix, then make ambient textures by extreme time-stretching held notes and tails (FFT size: small = grainy, large = smooth; tonal vs noise emphasis) and reuse samples as wavetables, looped dual-sample pads and phaser-hollowed basses",
+      "goal": "Turn an acoustic piano (or any resonant instrument) into an intimate sample set and ambient source material. Test contact-pickup positions on the body and choose the one that gives the longest, most natural sustain (in the video: the bottom-left corner beside the lowest key; a metal plate inside sounded resonant but metallic). Because the contact pickup captures only about 10 Hz–1 kHz, add air mics: one inside the closed lower body and one on the lid near the keys. Record each note several times, letting it ring fully (low notes 40–50 s), plus the key release. Denoise, align all mics, and build a sampler with a per-mic volume mix; lowpassing the full mix to the contact-pickup range gives a fuller, more sustained muffled piano than the pickup alone. For sound design, extreme-stretch held notes, chords and tiny leftover tails (30 s to over 20 minutes) and adjust FFT size (small = grainy, large = smooth) and tonal-vs-noise emphasis, pitch-shifting results. Reuse samples as wavetables: 16-voice unison with zero phase randomisation, an extreme many-pole phaser with high feedback for hollowness, slow spectral/granular scanning, and two loops of the same note with slightly different loop lengths panned L/R so the beating speeds up at higher pitches.",
+      "steps": [
+        "Attach the contact pickup at several spots and play the same notes; choose the spot with the longest natural sustain (bottom corner next to the lowest key in the video).",
+        "Add air mics: one inside the closed lower body, one on the lid near the keys, to recover highs above about 1 kHz.",
+        "Record every note several times, letting each ring out fully, and record the key-release noise too.",
+        "Denoise, chop, and align all mic tracks; map them into a sampler with a volume control per mic, plus a mix lowpassed to about the contact-pickup range.",
+        "Extreme-stretch held notes, chords and short tails with an FFT stretch tool. Try small FFT sizes for grain and large for smoothness; shift tonal vs noise emphasis; pitch-shift the results.",
+        "Load samples as wavetables: try 16 unison voices with zero phase randomisation; for a bass, add an extreme phaser (many poles, high feedback) and a 'muted' lowpass macro.",
+        "Make a pad or bass from two loops of the same note with slightly different loop lengths, panned left and right, blended with a resampled wavetable and drive."
+      ]
+    },
+    {
+      "from_skill": "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+      "name": "Spectral blur/freeze pad: capture incoming audio as spectral frames and morph frame-to-frame at tempo-synced blur rates (quarter notes, plus simultaneous triplet/dotted rates for polyrhythms) with a per-frame attack/decay envelope, pitch the blurred signal ±24 st (semitone-quantised), choose clicky vs lush modes, play frames forward/backward, freeze completely, and modulate with curves, cross-modulation and a kick-sidechained follower on dry/wet",
+      "goal": "Turn any input into lush pads or frozen textures with a spectral frame effect. The input is analysed into momentary spectral snapshots (frames, like video frames). Instead of playing them in order, the effect morphs from one frame to the next at a blur rate (e.g. one frame per quarter note); several blur rates can run at once, including triplets and dotted values, for blur polyrhythms. A per-playback envelope (attack/decay) makes the stepping audible or smooth. Pitch the blurred signal up/down to 24 semitones, quantised to exact semitones when needed. Pick an algorithm flavour: the default/rhythmic sound is harsh and clicky-metallic; lush/melodic washes it out. Set playback direction forward/backward and use freeze to stop morphing entirely. Modulate the envelope and pitch with drawn curves (invert/shift/skew/morph between curves), cross-modulate the first layer's LFO rate, and use a sidechained envelope follower (kick) to move dry/wet and curve amounts. Partly fills our open spectral (FFT) freeze-pad gap.",
+      "steps": [
+        "Insert the spectral blur on a source and set one blur rate (a quarter note: one frame morph per beat).",
+        "Adjust the per-playback envelope (attack/decay) to hear or hide the frame steps.",
+        "Add simultaneous blur rates including triplets and dotted notes for polyrhythmic blurring.",
+        "Pitch the blurred signal up or down (to ±24 st), enabling semitone quantisation for musical intervals.",
+        "Choose the flavour: rhythmic (clicky metallic), melodic or lush (washed out), or mixed; set playback direction forward/backward.",
+        "Enable freeze to stop the frame morphing and sustain the captured spectrum.",
+        "Modulate envelope and pitch with drawn curves (randomise, invert, shift, skew, morph between up to four curves); cross-modulate the first layer's LFO rate; add an envelope follower in sidechain mode from the kick to move dry/wet and curve amounts."
+      ]
+    },
+    {
+      "from_skill": "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+      "name": "Glitchy micro-loop buffer for ambient textures: freeze-and-scan buffer with segment length, pitch that cascades through feedback, temporary pitch from sample-rate steps, unlinked L/R (+12 / −12 st with cross feedback) and binary-random LFOs toggling freeze and reverse per side",
+      "goal": "Recreate boutique 'micro-looper' pedal textures with one buffer-delay device. A delay whose position = delay time, feedback = repeats, and segment = how much of the capture plays, plus reverse and a hold/freeze that captures the buffer so position scans it. Add random start position (plus an LFO), a short range for finer control, pitch shift (an octave or a fifth; it cascades up with every feedback pass, so use the high-cut), sample-rate steps that create temporary pitch drops and crunch, vibrato, and a low/high-cut band-pass. Unlink L and R for independent positions, segments, pitch and LFOs: L +12 st, R −12 st with cross feedback. Then automate with binary (random on/off) LFOs at unequal rates on freeze L/R and on reverse L/R, plus a random LFO stepping the sample-rate/bandwidth, and optionally a hybrid reverb. Lower dry/wet for a background whisper. Delta vs our granular-freeze, reverb-freeze and shimmer skills: per-channel random binary freeze/reverse and octave-split cross feedback.",
+      "steps": [
+        "Insert the buffer delay. Learn the basics: position = delay time, feedback = repeats, segment = how much of the captured audio plays back, reverse toggle.",
+        "Freeze/hold: play a phrase and engage hold. Now position scans through the frozen buffer and segment sets the loop length. Add random start position (and/or an LFO), and use short mode for fine, small segments.",
+        "Pitch: set +12 st (or a fifth). Each feedback pass pitches up again, so engage the high-cut to tame the cascading brightness. Try sample-rate steps (e.g. 10k, down an octave and again) for temporary pitch effects and crunch; add a little vibrato. Low and high cut together give band-pass tones.",
+        "Unlink L/R channels so each has its own position, segment, pitch and LFO. Set L +12 st and R −12 st, and set the feedback routing to cross (each side feeds the other).",
+        "Map the important controls to macros. Add two LFOs in binary (random on/off) mode at different rates on freeze L and freeze R, set as remote control so they aren't hand-moved.",
+        "Add two more binary LFOs on reverse L and reverse R, and one random (not binary) LFO with full range on the sample-rate/bandwidth control that steps between octave settings.",
+        "Optionally add a hybrid reverb, and lower dry/wet so the effect becomes a whisper in the background."
+      ]
+    },
+    {
+      "from_skill": "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
+      "name": "Three-pillar cinematic drone (layering, movement, FX): wavetable VCO pair + self-feedback delay loop + granular layer, effects after filters with master low-cut as tension control",
+      "goal": "Build a cinematic drone from three layers and three pillars: (1) a wavetable VCO pair (second one octave down on a slowly volume-modulated VCA) through a low-pass with slow LFO on table position; (2) a self-oscillating feedback loop from a granular/delay processor with no input (feedback raised until it sings, any re-patched input attenuated) through its own resonant low-pass; (3) a granular layer recording 2–3 random sources, with intensity, short grain length for lo-fi, quantized pitch randomization, follow/auto-scan, overdub, S&H choosing layers and an LFO on grain length — all summed through a master filter BEFORE a shimmer reverb so resonance in the low band excites the reverb, using the filter's low cut/cutoff as the scene's tension control (more highs = tension, more lows = suspense).",
+      "steps": [
+        "Layer 1: two wavetable VCOs on separate VCA channels, VCO2 one octave below; slowly modulate VCO2's level so the sub appears sometimes; low-pass to cut buzzy harmonics.",
+        "Movement on layer 1: very slow LFO on wavetable position/axis; optionally resonance/drive/wave-shaper for more harmonics.",
+        "Layer 2 (feedback loop): with no input, raise the processor's feedback until it starts self-generating; keep delay lines close; run it into its own resonant low-pass; if feeding output back to input, attenuate it first and lower input gain.",
+        "Layer 3 (granular): record 2–3 different short sources (even a click or mic sound) as layers; set intensity (grain count), short grain length for lo-fi, quantized pitch randomization; use follow mode to auto-scan through the recording, forward or reverse; overdub (e.g. whistling) for new tones.",
+        "Movement on layer 3: sample-and-hold selects which recorded layer plays; an LFO modulates grain length.",
+        "Sum layers, then a master low-pass with resonance BEFORE shimmer reverb and delay so resonant low harmonics feed the reverb.",
+        "Use the master filter's low cut / cutoff as the tension control: more high frequencies = tension ('something is coming'), lows = suspense; choose reverb type for mood; end a scene by pulling inputs out and leaving a little wet."
+      ]
+    }
+  ],
+  "merged_from": [
+    "frozen-granular-buffer-as-playable-wavetable-voice",
+    "granular-buffer-core-position-density-freeze-feedback-modes",
+    "granular-stack-freeze-infinite-sustain-texture",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+    "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "marimba-wt-lfo-pluck-to-granular-pad",
+    "osc-as-granular-pitch-step-delay",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+    "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer"
+  ],
+  "tags": [
+    "ambient",
+    "blur",
+    "buffer",
+    "cinematic",
+    "cinematic-synth",
+    "contact-mic",
+    "delay",
+    "density",
+    "drone",
+    "feedback",
+    "feedback-loop",
+    "fft",
+    "field-recording",
+    "filter-before-reverb",
+    "freeze",
+    "from-youtube",
+    "generative",
+    "glitch",
+    "grain-modes",
+    "grain-position",
+    "grain-window",
+    "granular",
+    "lfo",
+    "mallet",
+    "micro-loop",
+    "modular",
+    "mono-safe",
+    "music-production",
+    "pad",
+    "pads"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://granular-and-spectral-texture-design",
+  "aliases": [
+    "frozen-granular-buffer-as-playable-wavetable-voice",
+    "granular-buffer-core-position-density-freeze-feedback-modes",
+    "granular-stack-freeze-infinite-sustain-texture",
+    "key-mapped-grain-position-slicing-glide-between-slices-tempo-locked-grain-size-auto-recapture",
+    "live-rolling-buffer-granular-grain-behaviour-modes-mosaic-glide-bloom-tide",
+    "marimba-wt-lfo-pluck-to-granular-pad",
+    "osc-as-granular-pitch-step-delay",
+    "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+    "spectral-frame-blur-freeze-pad-polyrhythmic-blur-rates-quantized-pitch-lush-mode-sidechain-wet",
+    "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
+    "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer"
+  ]
+}

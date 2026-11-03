@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "crypto-safe-multisig-threshold-setup-execute",
+  "name": "Safe{Wallet} multisig: signers, threshold, simulate & execute",
+  "goal": "Create a Safe smart-account multisig on a supported chain, add signers, set signature threshold, fund via Receive, then propose a Send with simulation and collect multi-signer confirmations before execute \u2014 with each signer on a separate seed/hardware key.",
+  "domain": "crypto-investing",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "hO3D6J-6qQ0",
+    "url": "https://www.youtube.com/watch?v=hO3D6J-6qQ0",
+    "title": "Safe{Wallet}: How to Securely Set Up and Use Your Safe MultiSig Wallet",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/hO3D6J-6qQ0/agent-skill-crypto-safe-multisig-threshold-setup-execute.json"
+  },
+  "prerequisites": [
+    "Browser wallet or hardware signer",
+    "Second signer on a separate seed/device"
+  ],
+  "inputs": [
+    {
+      "name": "chain",
+      "type": "string",
+      "description": "Safe-supported chain",
+      "required": true
+    },
+    {
+      "name": "signers",
+      "type": "number",
+      "description": "Owner count",
+      "required": true
+    },
+    {
+      "name": "threshold",
+      "type": "number",
+      "description": "Required signatures",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "funded_safe",
+      "type": "smart-account",
+      "description": "Multisig Safe with threshold"
+    }
+  ],
+  "constraints": [
+    "Educational self-custody/tax procedure only \u2014 not financial advice; no coin tips or return promises.",
+    "Ground every step in YouTube-provided captions; portable UI names OK when vendor chrome drifts.",
+    "Never digitize a seed phrase or enter it into a website/phone camera.",
+    "Do not put all signers on one browser seed \u2014 that defeats multisig.",
+    "Prefer hardware signers for meaningful balances."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Safe homepage \u2192 Launch Wallet; select chain (many mainnets + testnets).",
+      "tool": "safe-app",
+      "expect": "Correct network"
+    },
+    {
+      "n": 2,
+      "action": "Get Started \u2192 continue with connected wallet; name Safe; confirm chain; Next.",
+      "tool": "safe-app",
+      "expect": "Named draft"
+    },
+    {
+      "n": 3,
+      "action": "Add owner addresses; set threshold (e.g. 2-of-2). Review \u2192 Create (pay deploy fee).",
+      "tool": "safe-app",
+      "expect": "Deployed Safe"
+    },
+    {
+      "n": 4,
+      "action": "Dashboard \u2192 Receive \u2192 copy Safe address \u2192 fund from a separate wallet.",
+      "tool": "safe-app",
+      "expect": "Balance > 0"
+    },
+    {
+      "n": 5,
+      "action": "Send \u2192 Send tokens: destination + amount. Run transaction check / Tenderly simulation especially for contract interactions.",
+      "tool": "safe-app",
+      "expect": "Simulated proposal"
+    },
+    {
+      "n": 6,
+      "action": "Signer 1 signs (queue shows e.g. 1/2). Switch to signer 2 connected to Safe \u2192 Confirm \u2192 Execute. Verify History.",
+      "tool": "safe-app",
+      "expect": "Tx executed"
+    }
+  ],
+  "verification": [
+    "Threshold \u2265 2 for real funds",
+    "Independent signer keys",
+    "History shows success"
+  ],
+  "tags": [
+    "crypto-investing",
+    "multisig",
+    "safe-wallet",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://crypto-safe-multisig-threshold-setup-execute"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random",
+  "name": "Nested multi-notch phaser techniques for pads: grouped notches (groups × notches-per-group), pinch spacing, slow pinch 'breathing', stepped cutoff wah→flanger, scale-quantized random cutoff, slow triangle-swept full-depth bed",
+  "goal": "Use a dense, nested phaser (notches arranged in up to ~6 groups × ~11 notches, one cutoff sliding all of them, resonance = notch width, depth = intensity, pinch = squeeze/spread within each group) as a cinematic pad mover: metallic shimmer layer (4 groups, 9 notches, depth ~82, raise pinch), inside-out 'tubular' breathing (pinch modulated by a slow quarter-note-synced LFO, depth ~63, try 2 vs 4 groups), static 'radio' sculpt (1 group, 1 notch, depth ~72), 1/16 stepped cutoff that turns from wah (1 notch) into flanger-like (7–9 notches) with glide, formant-like vowel push by slowly lowering cutoff (4/7, depth 65, low resonance), scale-quantized random cutoff (1/16, minor pentatonic, ~7 octave range) that stays in tune, and a slow breathing bed (6 groups, 11 notches, depth 100%, triangle sweep with ~10% glide).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "H8fsiSJzKTA",
+    "url": "https://www.youtube.com/watch?v=H8fsiSJzKTA",
+    "title": "You’ve Never Heard a Phaser Sound Like This",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/H8fsiSJzKTA/agent-skill-nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random.json"
+  },
+  "prerequisites": [
+    "A phaser with many notches and per-group spacing — or build one: several cascaded all-pass chains whose notch frequencies are distributed in groups (Web Audio: many BiquadFilter(type='allpass') nodes with computed frequencies summed with dry; implementation note)",
+    "LFO, step sequencer with glide, random modulator with scale quantize"
+  ],
+  "inputs": [
+    {
+      "name": "pad",
+      "type": "audio",
+      "description": "Pad, guitar or vocal to process",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Host tempo for synced modulators",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "phased_pad",
+      "type": "audio",
+      "description": "Pad with shimmer, breathing or tuned-random spectral motion"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Source is a sponsored demo of one plugin algorithm; group/notch/pinch are generic aliases — any many-stage phaser or custom all-pass network can approximate it; no presets copied.",
+    "Settings are the presenter's display values; tune by ear.",
+    "Too many groups → mud; start around 4."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Map the controls: groups ('nests'), notches per group ('peaks'), cutoff (moves all notches), resonance (notch width), depth (0 transparent → full phaser), pinch (squeeze/spread notches within each group).",
+      "tool": "phaser",
+      "expect": "Understanding of how each control moves the notch pattern"
+    },
+    {
+      "n": 2,
+      "action": "Shimmer layer on a pad: 4 groups, 9 notches, depth ~82; slowly raise pinch until a metallic bell-like shimmer appears without taking over.",
+      "tool": "shimmer",
+      "expect": "Shimmer that sits between granular and shimmer reverb"
+    },
+    {
+      "n": 3,
+      "action": "Tubular breathing: same density (4/9), depth ~63; modulate pinch with a slow LFO synced to ~1/4 note. Compare 4 groups vs 2 groups — same motion, different character.",
+      "tool": "pinch-lfo",
+      "expect": "Notches squeeze/expand inside each group instead of sweeping left-right"
+    },
+    {
+      "n": 4,
+      "action": "Static sculpt: 1 group, 1 notch, depth ~72 for a radio/telephone colour; move the notch up for 'pickup switch' tones; add groups to smooth it.",
+      "tool": "sculpt",
+      "expect": "Mix-placement colour with no modulation"
+    },
+    {
+      "n": 5,
+      "action": "Stepped wah→flanger: 1/16-synced sequencer on cutoff at ~40–50% amount, 1 notch (wah); raise to 7–9 notches for a flanger-like texture; add glide so steps don't snap.",
+      "tool": "sequencer",
+      "expect": "Rhythmic spectral movement that tracks the groove"
+    },
+    {
+      "n": 6,
+      "action": "Vowel push on vocal-like material: 4 groups, 7 notches, depth 65, resonance low (~4), slowly lower cutoff.",
+      "tool": "formant-like",
+      "expect": "Vowel/formant-like character shift and darkening"
+    },
+    {
+      "n": 7,
+      "action": "Tuned random: random modulator on cutoff at ~1/16, quantized to a scale (e.g. minor pentatonic), range ~7.2 octaves. Change the scale to change the mood.",
+      "tool": "random-quantized",
+      "expect": "Jumping notches that still sound in key"
+    },
+    {
+      "n": 8,
+      "action": "Breathing bed under a pad: 6 groups, 11 notches (maximum density), depth 100%, cutoff swept by a slow triangle sequence (rate ~2) with ~10% glide; then vary pattern, pinch and depth.",
+      "tool": "bed",
+      "expect": "Deep, slow breathing movement under the pad"
+    }
+  ],
+  "verification": [
+    "Shimmer setting audibly adds high metallic content vs bypass without obvious sweep.",
+    "Pinch-LFO setting has motion with no obvious left-to-right sweep.",
+    "Scale-quantized random stays consonant over 30 s on a sustained chord."
+  ],
+  "tags": [
+    "phaser",
+    "allpass",
+    "notch",
+    "pad",
+    "modulation",
+    "scale-quantize",
+    "shimmer",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://nested-multi-notch-phaser-pad-shimmer-pinch-breath-scale-random"
+}

@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0",
+  "id": "arrangement-ambient-cinematic-score",
+  "name": "Ambient and cinematic arrangement: staggered layers, arcs, underscore and hybrid score roles",
+  "goal": "Arrange ambient and cinematic cues: role-first layering (drone, string swells, motor ostinato), staggered entries, frequency-range layering, emotional arc (subtle intro -> climax -> fade), dialogue-safe underscore, multi-section arcs and minimal one-note horror cues.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+        "video_id": "wirMkOC-hGQ",
+        "url": "https://www.youtube.com/watch?v=wirMkOC-hGQ",
+        "title": "HOW TO PRODUCE AMBIENT MUSIC - ARRANGING YOUR AMBIENT SONG"
+      },
+      {
+        "from_skill": "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+        "video_id": "0bB8rWEcScA",
+        "url": "https://www.youtube.com/watch?v=0bB8rWEcScA",
+        "title": "Ambient Arrangements | Tips for Arranging Ambient Music"
+      },
+      {
+        "from_skill": "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+        "video_id": "E4eghKjWH1o",
+        "url": "https://www.youtube.com/watch?v=E4eghKjWH1o",
+        "title": "Dark Ambient Production From Start to Finish | Sync Ready Tracks"
+      },
+      {
+        "from_skill": "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+        "video_id": "gtg27jkzY1s",
+        "url": "https://www.youtube.com/watch?v=gtg27jkzY1s",
+        "title": "How to Create Emotional Cinematic Music in Logic Pro | Full Tutorial & Project Breakdown"
+      },
+      {
+        "from_skill": "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+        "video_id": "m6wfGX7rwiQ",
+        "url": "https://www.youtube.com/watch?v=m6wfGX7rwiQ",
+        "title": "Hybrid Orchestral Scoring: Synths + Strings + Percussion That Work Together"
+      },
+      {
+        "from_skill": "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+        "video_id": "C871ckX4GfQ",
+        "url": "https://www.youtube.com/watch?v=C871ckX4GfQ",
+        "title": "How to Make Beautiful Ambient Soundscapes"
+      },
+      {
+        "from_skill": "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+        "video_id": "2Yt1Ae91fv0",
+        "url": "https://www.youtube.com/watch?v=2Yt1Ae91fv0",
+        "title": "How to Make HORROR Soundscapes in Ableton Live"
+      },
+      {
+        "from_skill": "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+        "video_id": "0Jj5qQQzDLU",
+        "url": "https://www.youtube.com/watch?v=0Jj5qQQzDLU",
+        "title": "How to Compose Cinematic Music - FAST"
+      }
+    ]
+  },
+  "theory": "Cinematic music builds by density and register rather than drums: each layer owns a frequency range and role; the main melody often appears only at the climax.",
+  "generator": {
+    "path": "sample-lab/theory/arrangement_energy.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/arrangement_energy.wav"
+  },
+  "prerequisites": [
+    "A DAW with a chord MIDI effect (or play the six notes), a simple two-oscillator subtractive synth with a smooth-random LFO and mod matrix",
+    "A DAW with a short ambient loop (low pad, high pad, rim/cymbal, piano, shaker) already written",
+    "A DAW with automation lanes and tempo automation",
+    "A DAW with markers, freeze/render-in-place, fades and filter automation",
+    "A big reverb, a low-pass filter and a rhythmic auto-filter/gate effect",
+    "A pad synth, a pluck, a bass and a string sound",
+    "A piano, one full-ensemble orchestral patch (or a layered string/brass synth patch), and a synthetic swell/pulse layer",
+    "A set of textures, pads, bass, kick, hats, whoosh and snare sounds",
+    "A simple, familiar chord progression",
+    "An original or free piano one-shot and a textured sample (no pack content redistributed)",
+    "Any DAW or generative engine with a synth, a string (sample or synth string) layer, delay and reverb",
+    "DAW or Web Audio with: a sampled or synthetic soft choir/pad, a synth with noise-loop or noise oscillator, two-saw bass synth, a granular sampler with loop/scan/grain size, saturation with modulatable drive, phaser, echo, EQ, lowpass filters and a very large reverb (Web Audio: ConvolverNode with a long IR or feedback delay network; granular via AudioBufferSourceNode grain scheduler; implementation note)"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Define roles: low drone/bass, mid pad/chords, rhythmic motor (ostinato, dotted ping-pong), high detail (bells, sparkle), melody.",
+      "expect": "Role sheet"
+    },
+    {
+      "n": 2,
+      "action": "Assign each role its own frequency range so layers do not mask.",
+      "expect": "Clear layering"
+    },
+    {
+      "n": 3,
+      "action": "Stagger entries every 4-8 bars; start from silence or textures, ground with a bass entry.",
+      "expect": "Gradual build"
+    },
+    {
+      "n": 4,
+      "action": "Shape the arc: subtle intro, additions, climax with first full melody, fade/out with arpeggio.",
+      "expect": "Emotional curve"
+    },
+    {
+      "n": 5,
+      "action": "Underscore: keep 1-4 kHz light under dialogue, sub boom every 2 bars, filter-grown intro.",
+      "expect": "Dialogue-safe cue"
+    },
+    {
+      "n": 6,
+      "action": "Transitions: filter close/open, reverb swells, tempo ramp or section key change.",
+      "expect": "Smooth sections"
+    },
+    {
+      "n": 7,
+      "action": "Horror/tension: one note or stacked triad shifts, low LP, slow pitch spreads.",
+      "expect": "Dread"
+    },
+    {
+      "n": 8,
+      "action": "End with a coda or taper rather than a hard stop.",
+      "expect": "Resolved ending"
+    },
+    {
+      "n": 9,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/arrangement_energy.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+      "name": "Ambient 44-bar arrangement map: low pad + light percussion, high pad at bar 5, piano at bar 13, shaker at ~bar 17, a mid-track strip-back to shaker/hat that sets up a return with new piano chords, and a coda that ends on the piano",
+      "goal": "Turn a 4-5 bar ambient loop into a ~44-bar song with a deliberate shape: set the tone with a low pad and sparse rim/cymbal (bars 1-5), add a high pad at bar 5 for gentle rising action, add piano around bar 13 and shaker around bar 16-17 to reach the 'full track', then strip the main percussion and low pad (keep only shaker and hat) for about 8 bars so the ending feels near, bring everything back around bar 33 with piano chords the listener has not heard yet (the spike of interest), stop the percussion half a bar early and end on the calming piano chords at bar 45 as a coda. Voice the new chords so the low pad only plays the notes that change while the piano replays the full chord every bar.",
+      "steps": [
+        "Colour-code tracks and put related layers on group/submix tracks so entries and exits are easy to see.",
+        "Bars 1-5: play only the low pad plus a sparse rim shot and cymbal to set the tone (calm, slightly upbeat, comfortable).",
+        "Bar 5: add the high-pitched pad for a little movement; keep it non-intense. Hold this for ~8 more bars.",
+        "Bar 13: add piano; around bar 16-17 add the shaker so you reach what sounds like the full track.",
+        "Strip back: remove the rim shot, cymbal and low pad so only the shaker and a hi-hat-like element remain; hold ~8 bars. The listener may think the song is ending.",
+        "Bar ~33: bring everything back (low pad, rim, cymbal) and add piano chords and melody the listener has not heard before to spike interest. Hold ~9 bars.",
+        "Voice the new chords: low pad plays only the notes that change between chords (holding up to two bars) while the piano replays the whole chord every bar with full-bar note lengths; automate volume where needed.",
+        "End: stop the percussion about half a bar before the end so it finishes at an odd angle, leaving the calm piano chords to finish at bar 45 as a coda."
+      ]
+    },
+    {
+      "from_skill": "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+      "name": "Ambient/electronic multi-section arrangement: open with layered textures for drama, ground with a short bass hit, signal each new section with a small auditory cue (hat, whoosh, snare), change tempo per section, then a final push and a taper-out",
+      "goal": "Arrange a long ambient/electronic piece as several bite-sized sections that each lead the listener on. Open by drawing the listener in with layered high-frequency textures (modulated square-wave glitches resampled and glitched again, pads on top) to build drama; ground it with a simple four-bar bass 'boom'; go to a first big drop around bar 56 where a whoosh/boom sample and sidechained bass start. Signal each section change with a small cue that tells the listener change is coming (tiny hats entering, a whoosh, a snare), but skip the cue when the incoming part is soft enough to stand alone. Change section tempo/key via a master tempo lane (about 131 BPM to 111 to 136 in the source). Give each element space to breathe and let them live inside one another. Finish with a 'final push' (hat in, bass line changes, one pad ducked 4-5 dB to make space), then taper: bass fades out, leaving the inner atmosphere.",
+      "steps": [
+        "Open with the first three or four texture patches (pads plus a modulated square-wave 'electric' texture with reverb and delay) to create drama before any drums.",
+        "Resample the square-wave textures and glitch them in a sampler/glitch device as a high-frequency 'afterthought' layer; bring it back later so it is not forgotten.",
+        "Ground the texture bed with a simple four-bar bass hit, then keep building (extra pads layered on top) toward a crescendo.",
+        "At the first drop (about bar 56) release the tension: a whoosh/boom sample, then the bass line, sidechained to the kick.",
+        "Signal each new section with a small cue (tiny hats entering, snare, whoosh) so the listener subconsciously hears 'change is coming'; omit the cue when the new part is soft enough to stand on its own.",
+        "Change tempo in the master tempo lane at section boundaries (e.g. 131 → 111 → 136 BPM) and let a new bass line or pad define the new section.",
+        "Final push: hat enters, bass line changes, lower the competing pad about 4-5 dB so another pad has room; then taper — fade the bass out and leave the inner atmosphere."
+      ]
+    },
+    {
+      "from_skill": "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+      "name": "Dark, tense ambient underscore that sits under TV dialogue, arranged in sections that change every 8 bars (intro, build, breakdown, climax, outro): a reverbed pad plus a quiet sub-boom hit every 2 bars, an intro grown by opening a low-pass filter, a 16th-note pluck pulse faded in, home-made whooshes (resampled synth note, chopped, faded in, filter opening, plate tail) as riser-and-impact glue, octave-up doubling for builds, a left/right pair of complementary hits on a shared reverb, a pulsing bass in the breakdown, denser hits in the climax and a mirrored fading outro",
+      "goal": "Write an unobtrusive but tense dark ambient cue meant to sit under dialogue (think minimal, ominous sci-fi film scoring). Set markers so the section changes every 8 bars. Intro: a pad with a plate reverb recorded as a long chord, a sub-boom impact every 2 bars kept quiet, a sustained bass note, a low-pass filter automated from dark to open while raising the patch brightness so the intro grows into the next section, a textural layer on the second half, and a 16th-note pluck pulse whose volume fades in. Glue each section edge with a rise and an impact: a quiet stock whoosh aligned to the beat, or a home-made whoosh (render a low synth note, chop it, fade it in, automate a low-pass opening and add a plate tail with longer decay). Build: remove the intro filter automation so the full spectrum plays, double notes an octave up, add a sustained melodic layer with its highs filtered (bring highs back later), raise notes of the pulse/arp an octave, duplicate without overthinking. Add new hits every 2 bars; duplicate a hit track with a different sound panned to the other side and send both through the same reverb for width. Breakdown: make the bass pulse rhythmically (shaper/tremolo automation on), reintroduce a texture briefly, bring back single-note pulses, a resampled clap, and a heavy synth note with falling pitch automation (braam-like). Climax: copy the build, add the breakdown layers, hits every 2 bars instead of every 4, a long high string note doubled an octave up for the second half, a 2-bar riser (pitched down if too bright, time-stretched), and a quiet low eighth-note percussion pulse. Outro: copy the intro and reverse the moves (fade and close instead of opening), fading the hits out.",
+      "steps": [
+        "Set markers so the section changes every 8 bars: intro, build, breakdown, climax, outro.",
+        "Intro: record a long pad chord with plate reverb; add a quiet sub-boom impact every 2 bars and a sustained bass note.",
+        "Put a low-pass filter on the pad and automate it from dark to open across the intro; raise the patch brightness so it opens further by the section end.",
+        "Add a texture layer on the second half of the intro and a 16th-note pluck pulse quantized and faded in by volume automation.",
+        "At each section edge add a rise and an impact: a quiet whoosh aligned to the beat, or render a low synth note, chop it, fade it in, automate a low-pass opening and add a plate tail with a longer decay.",
+        "Build: drop the intro filter so the pad is full-spectrum, double it an octave up, add a sustained melodic layer with its highs filtered, and move some pulse/arp notes up an octave; duplicate the build blocks.",
+        "Add new hits every 2 bars; duplicate the hit track with a different hit panned to the opposite side and group both into one shared reverb.",
+        "Breakdown: switch the bass from sustained to rhythmically pulsing (tremolo/shaper automation on), bring back the texture briefly and the single-note pulses, add a resampled clap and a heavy synth note with falling pitch automation; hits every 4 bars.",
+        "Climax: copy the build, add breakdown elements, hits every 2 bars, a long high string note doubled an octave up for the second half, a 2-bar riser (pitch it down or time-stretch if needed) and a quiet low eighth-note percussion pulse.",
+        "Outro: copy the intro and mirror it: filter closing and fading instead of opening, hits fading out; then do a quick mix pass."
+      ]
+    },
+    {
+      "from_skill": "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+      "name": "Emotional cinematic arrangement arc: background-only subtle intro, gradual additions, a climax built first where the melody appears, gentle fade outro, melody derived from chord arpeggios, light master chain",
+      "goal": "Build a warm, nostalgic cinematic piece around a familiar chord progression played by piano, strings, choir, bells/celesta and harp. Arc: start from a very subtle, transparent warmth that appears from nowhere; keep a background with no certain melody; add instruments little by little; one-note tremolo 'angelic wind' swell from a soft lead with volume automation (octave-up double); a climax where all emotion and melody goes (you can write it first and build the other parts around it); strings that fade vibrato in rather than starting vibrating immediately; an outro that fades continuously to nowhere with a final legato fade and a single-note cymbal swell. Melody method: write the chord progression, arpeggiate chord notes forward/backward on piano, loop ~10 rounds, then edit notes.",
+      "steps": [
+        "Choose the chord progression and palette: piano (with a reverse/una-corda-style setting for airy sound), strings, choir, bells/celesta, harp.",
+        "Write a background without a defined melody; start intro as quiet, transparent warmth that seems to appear from nowhere and everything slowly rises.",
+        "Add instruments little by little; use a one-note soft lead swell with tremolo and volume automation (plus an octave-up double) as an 'angelic wind' appearing effect.",
+        "Climax: put the melody here and all emotion; build it first if useful and then build the other parts around it. Fade vibrato into sustained strings gradually.",
+        "Outro: fade out constantly and end on a legato string fade, a single-note cymbal swell and a short piano dialogue.",
+        "Make melodies from chords: play chord-note arpeggios (forward, backward, improvise), loop about 10 rounds, then edit notes in the piano roll to smooth the line.",
+        "Master lightly: high-pass at 20 Hz, a little saturation, a mastering preset tweaked toward middle settings, a limiter and a level meter."
+      ]
+    },
+    {
+      "from_skill": "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+      "name": "Role-first hybrid score layering: choose each part by its function (drone/pedal, rhythmic motor, lead, accompaniment, FX) and its frequency zone rather than by instrument family, then build a synth drone darkened via filter-envelope amount with mod-wheel string swells under it, a short square-wave motor with dotted-eighth ping-pong delay, staggered entries, render-to-audio and reversed hits with the transient trimmed",
+      "goal": "Combine synths with strings and percussion so they support each other instead of piling up. First list the roles the cue needs (drone or pedal, rhythmic motor or ostinato, lead, harmonic accompaniment, effects) and pick, for each role, whichever source fits that function: string or synth, or both blended. Give each part its own frequency zone (bass, mid, top) and decide per pair whether to blend or separate. Concrete recipe: a big analog-style synth drone darkened by lowering the filter envelope amount first (then brightness) with more filter sustain, held for about 10 bars and rendered to audio to save CPU; tremolo string swells under it ridden on the mod wheel for movement; a motor from three detuned square oscillators (one up an octave) with no sustain and a short decay, into a tempo-synced ping-pong delay at a dotted eighth with more feedback, plus a little room reverb; bring ideas in one at a time; an arpeggiated version of the drone synth with short steps and envelope amount on a MIDI CC; and a rendered phrase reversed with its transient trimmed so it swells into the next entry. For generative systems this maps to role-tagged voices with frequency zones and entry order.",
+      "steps": [
+        "Write the role list first (drone/pedal, motor/ostinato, lead, accompaniment, FX). For each role choose the source by function: strings, synth, guitar, or a blend (for example a string ostinato doubled by a synth, or a drone that is synth plus strings). Assign each role a frequency zone so parts do not clash.",
+        "Drone: load a big analog-style synth sound. To darken it, lower the filter envelope amount first (not just the cutoff), then reduce brightness, and raise the filter envelope sustain. Hold the chord for about 10 bars.",
+        "Render the drone to audio and disable the synth track to save CPU, keeping it available to re-edit (for example to change key).",
+        "Layer tremolo string swells under the drone, riding the mod wheel/controller fader so the strings come and go.",
+        "Motor: three oscillators (one an octave up), square wave, amp envelope with no sustain and a short decay, some detune. Add a tempo-synced ping-pong delay at a dotted eighth (a dotted quarter is the alternative), turn the delay feedback up, and add a little room reverb.",
+        "Stagger the entries: start with one or two ideas and bring the motor in later, instead of three ideas at once.",
+        "Lead: start from a sound close to what you want, check what the mod wheel does, and add a very large, effect-like reverb. Add a second motor by arpeggiating the drone synth with short steps and more envelope, map envelope amount to a MIDI CC (e.g. CC21) for live control, and keep its reverb moderate.",
+        "Line the bassline up with the drums (a cross-rhythm can work). Quantize loose parts to eighths, and keep the best of repeated takes.",
+        "Reverse swell: play a hit or phrase, render it to audio, reverse the clip, trim away the transient so only the 'shh' swell remains, and place it so it ends where the next drum element enters."
+      ]
+    },
+    {
+      "from_skill": "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+      "name": "Lydian ambient soundscape layered by frequency range: lower-mid choir chords, mid noise-loop pad, dark saw bass and upper-mid granular/reversed piano sparkles, each checked with a mute test, then arranged by fade-ins, slowly opening filters and an automated reverb mix that merges everything into a cloud",
+      "goal": "Build a lush ambient soundscape at 70 BPM in a Lydian key by assigning each layer a frequency range rather than stacking similar pads. Write a 16-bar extended-chord cadence (Cmaj7 → Cadd#11 with the #11 a semitone from the 5th an octave down for gentle dissonance → back to C with the 9th), voice it on a soft choir, bounce it, then filter + EQ + big convolution reverb (lower mids). Add a mid pad: single noise-loop oscillator, soft attack and release, lowpass, a sparser two-note voicing of the same changes an octave up, a slow wandering LFO on noise rate/fade, slight detune spread, tube saturation whose drive is modulated by random noise, a phaser for wash and a huge reverb. Add a dark warm bass (two saws, gradually opening envelope, noise-modulated saturation, chorus, lowpass). Cover the upper mids/highs with a looped granular piano one-shot (small scan, mid grain size, EQ, echo) playing chord tones, bounced and reversed for reverse hits through a big boost EQ, echo and a very large reverb, plus a textured sample through the same chain. Mute-test every layer; keep only the ones you can still hear adding something. Arrange as a slow-evolving piece: bounce layers to audio, fade the intro in, sprinkle unreversed sparkles, slowly open each layer's lowpass over the whole track, and automate the reverb mix on the reversed layer from dry-ish to fully wet so it ends as a sparkly cloud. Polyrhythm Studio: per-layer band roles + long filter/reverb-mix control lanes.",
+      "steps": [
+        "Set 70 BPM and a Lydian key (C Lydian: F# instead of F). Write a 16-bar cadence of 4-bar chords: Cmaj7; then drop the 7th and add F# (#11), and move the 5th down an octave so G and F# sit a semitone apart; then the first chord again with the 9th (D) added.",
+        "Play the cadence on a soft choir/pad, bounce to audio, and add EQ, a lowpass filter (for later automation) and a fully convolution-type, very large reverb so chord changes flow into each other.",
+        "Mid pad: one noise-loop oscillator (second osc off), soft attack and release, lowpass after it. Copy the MIDI up an octave and thin it to two-note voicings (root+5th, root+3rd, then the D and F# unused elsewhere).",
+        "Modulate the pad: a slow wandering random LFO on the noise rate and fade, slight detune spread, a tube-type saturation whose drive amount is modulated by a noise (random) source, then a phaser for wash and a very large reverb; optionally an LFO on the filter for stereo movement at a slow rate.",
+        "Bass: two saw oscillators with a gradually opening filter envelope, saturation with noise-modulated drive, chorus, and a lowpass cutting all high frequencies; follow the chord roots.",
+        "Upper mids/highs: load a piano one-shot into a granular sampler in loop mode, keep scan small and grain size mid-way (between glitchy and natural), add EQ and echo, and play chord tones (G, F#, D).",
+        "Bounce the granular part, reverse it, and process with a big EQ boost in the upper mids, echo and a very large dark reverb; run a textured sample through the same chain and bounce it.",
+        "Mute-test: solo/mute each layer in turn in the full mix; keep only layers you can still hear adding something and that do not muddy others.",
+        "Arrange: bounce all layers to audio, fade the opening in gradually, add an optional ambient field recording (e.g. rain) underneath, sprinkle short unreversed granular 'sparkles', slowly open every layer's lowpass across the whole track, and automate the reverb mix on the reversed layer from low to fully wet near the end."
+      ]
+    },
+    {
+      "from_skill": "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+      "name": "Atmospheric horror / unsettling soundscape from one held MIDI note and one simple synth: a chord MIDI effect stacks two clashing major triads (shifts +4 +7 +13 +17 +20), the two oscillators are spread far apart (+3 and -2 octaves), a low-pass around 170 Hz with resonance about 6, a smooth-random 'wander' LFO on oscillator shape, stereo voice mode, a 100%-wet ping-pong delay with fade on a parallel chain whose rate/time/filter/width are moved by a separate smooth-random LFO with a narrow min/max range, then a large reverb",
+      "goal": "Build an evolving, clashing, dark soundscape for horror or tense game moments from a single trigger note. Dissonance comes from the polychord, depth from the extreme pitch spread, and motion from smooth-random LFOs whose ranges are clamped so the movement stays understated.",
+      "steps": [
+        "Trigger one note (C3) with a one-bar or longer MIDI clip into a chord effect that adds the shifts +4, +7, +13, +17, +20.",
+        "Put a large reverb after the synth before you start sound design.",
+        "Pitch spread: oscillator 1 up about +3 octaves and oscillator 2 down about -2 octaves. Use a saturated/sharp shape on the upper oscillator with shape raised. Use a sine on the low oscillator, mixed up about +2.5 dB.",
+        "Low-pass down to about 170 Hz with resonance about 6, and clear any default filter modulation.",
+        "Set the synth LFO to a smooth-random ('wander') shape and route it fully to the upper oscillator's shape. Switch the voice mode to stereo (voices panned L/R).",
+        "Parallel delay: wrap a delay in a rack/parallel chain with dry kept, delay 100% wet, feedback about 80%, fade (crossfade) time mode and ping-pong on.",
+        "Add a separate smooth-random ('glider') LFO and map it to the delay filter, width, rate and feedback, then turn its depth down so the motion is slow.",
+        "Optionally map the LFO to the synth filter cutoff with a narrow min/max window (for example about 33-39%), raising it only to let in more mid frequencies."
+      ]
+    },
+    {
+      "from_skill": "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
+      "name": "Fast cinematic sketch with only three tracks (piano, full-orchestra patch, synthetic rhythmic swell layer): contrary-motion second melody, transitions made only by automation (low-pass close then open with reverb-mix swells on runs, rhythmic auto-filter dry/wet rising into the chorus) and a tempo ramp of about 95 to 100 to 115 BPM",
+      "goal": "Write and arrange a short cinematic cue fast by limiting yourself to three tracks, so you finish the melody, harmony and form before choosing sounds. Without a separate FX track, every section change is made with automation on the existing tracks. This adds the 'three tracks, no FX track' limit and the tempo ramp to the section transition toolkit.",
+      "steps": [
+        "Track 1, piano: find two chords that feel emotional going back and forth, add variations, a high ostinato figure on top and a big roll-up. Light low/high EQ lift and a big reverb, then a compressor after the reverb to bring the tail forward.",
+        "Track 2, full orchestra in one patch: bass instruments play the chord roots. Write a second melody that answers the piano, moving root to third to fifth, and in contrary motion (when the piano goes up, it goes down). Ride expression (CC) for dynamics.",
+        "End the build with a big string run into the main chorus. In the chorus, the brass/strings carry the main melody with high-woodwind sparkle in the same patch. Voice the sections separately only after the arrangement is done.",
+        "Track 3, synthetic swell layer for rhythm and texture: tweak attack/ADSR, then put a rhythmic auto-filter/envelope effect on it and automate its dry/wet, low in the intro and full in the chorus.",
+        "Transitions without an FX track: on the piano run and the orchestra before each new section, automate the low-pass filter closing, then opening as the run lands. Automate reverb mix up during the run for a denser wash. Repeat a smaller close/open later for variation.",
+        "Tempo automation: start at about 95 BPM, settle at 100, then ramp to about 110-115 BPM during the last run into the main chorus. Keep the new tempo or ease back for the end section.",
+        "Chorus extras: bring in cinematic drum patterns (in the orchestra patch's percussion layer) and have the synth double the bass roots plus the main melody. Outro mirrors the build: synth goes back to roots only.",
+        "Master: narrow the lows to mono, EQ plus compression on lows and mids with gentle upward compression on highs for clarity, light bus compression, final EQ and limiter."
+      ]
+    }
+  ],
+  "merged_from": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+    "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+    "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+    "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+    "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion"
+  ],
+  "tags": [
+    "ambient",
+    "arrangement",
+    "automation",
+    "bass",
+    "cinematic",
+    "cinematic-synth",
+    "climax",
+    "coda",
+    "constraint-workflow",
+    "contrary-motion",
+    "dark-ambient",
+    "delay",
+    "dissonance",
+    "drone",
+    "emotional",
+    "frequency-ranges",
+    "frequency-zones",
+    "game-audio",
+    "generative",
+    "granular",
+    "horror",
+    "hybrid-score",
+    "impacts",
+    "intro-build-breakdown",
+    "intro-outro",
+    "layer-entry",
+    "layering",
+    "lydian",
+    "music-production",
+    "ostinato"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://arrangement-ambient-cinematic-score",
+  "aliases": [
+    "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
+    "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+    "dark-ambient-underscore-under-dialogue-five-sections-every-8-bars-sub-boom-every-2-bars-filter-grown-intro-self-made-whoosh-riser-impact-octave-up-builds-lr-complementary-hit-pair-breakdown-pulse-climax-hits-every-2-mirrored-outro",
+    "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+    "hybrid-score-role-first-layering-synth-drone-string-swells-square-motor-dotted-pingpong-staggered-entry-reverse-render",
+    "lydian-ambient-soundscape-layering-by-frequency-range-choir-chords-noise-loop-mid-pad-dark-bass-granular-reversed-piano-sparkle-mute-test-fade-in-filter-open-reverb-mix-swell-arrangement",
+    "one-note-horror-soundscape-stacked-triad-chord-shifts-4-7-13-17-20-osc-pitch-spread-plus3-minus2-oct-lp-170hz-res-wander-lfo-shape-parallel-wet-pingpong-fade-delay-range-limited-glider",
+    "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion"
+  ]
+}

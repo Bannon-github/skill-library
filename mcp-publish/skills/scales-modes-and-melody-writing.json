@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "scales-modes-and-melody-writing",
+  "name": "Scales, modes and melody writing (mode colour, motifs, phrasing)",
+  "goal": "Choose a scale/mode for the mood (Lydian bright -> Phrygian dark), use the characteristic note, and write motifs with call-and-response and rule-of-three phrasing.",
+  "domain": "music-production",
+  "source": {
+    "kind": "original-theory",
+    "note": "Written from established production practice to fill a library gap; no single source video.",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00"
+  },
+  "theory": "Modes of the major scale share notes but change the tonal centre; each has a characteristic degree (Lydian #4, Dorian natural 6, Phrygian b2, Mixolydian b7). Pentatonics remove semitones for safe melodies.",
+  "generator": {
+    "path": "sample-lab/theory/scales_modes.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/scales_modes.wav"
+  },
+  "prerequisites": [
+    "DAW or the numpy renderer in sample-lab",
+    "Headphones and a reference track"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick mood -> mode: Lydian dreamy, Ionian happy, Mixolydian bluesy, Dorian cool, Aeolian sad, Phrygian dark.",
+      "expect": "Mode"
+    },
+    {
+      "n": 2,
+      "action": "Emphasise the characteristic note on strong beats over a tonic drone.",
+      "expect": "Mode colour audible"
+    },
+    {
+      "n": 3,
+      "action": "Write a 1-2 bar motif using mostly steps with one leap; end phrases on chord tones.",
+      "expect": "Singable motif"
+    },
+    {
+      "n": 4,
+      "action": "Repeat motif twice, vary the third time (rhythm or ending).",
+      "expect": "Phrase"
+    },
+    {
+      "n": 5,
+      "action": "Call and response between two instruments; keep melody in its own register.",
+      "expect": "Dialogue"
+    },
+    {
+      "n": 6,
+      "action": "For generative melodies lock to scale/pentatonic and limit range.",
+      "expect": "Always in key"
+    },
+    {
+      "n": 7,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/scales_modes.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [],
+  "merged_from": [],
+  "tags": [
+    "music-production",
+    "scales",
+    "workflow"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://scales-modes-and-melody-writing",
+  "aliases": []
+}

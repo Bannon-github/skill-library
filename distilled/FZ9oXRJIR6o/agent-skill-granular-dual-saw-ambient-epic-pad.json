@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "granular-dual-saw-ambient-epic-pad",
+  "name": "Dual-saw ladder pad with granular spice and FX macros",
+  "goal": "Recipe for an ambient/epic pad: two saws (second \u221212 st, low level), long amp attack/release, ladder/diode filter with slow env\u2192cutoff, corrective low EQ, chorus\u2192synced delay\u2192large reverb, then a granular generator layer with pitch variation; macro cutoff, resonance, FX wet, and granular level.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "FZ9oXRJIR6o",
+    "url": "https://www.youtube.com/watch?v=FZ9oXRJIR6o",
+    "title": "Amazing pads with the new Granular Generator in Phase Plant",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/FZ9oXRJIR6o/agent-skill-granular-dual-saw-ambient-epic-pad.json"
+  },
+  "prerequisites": [
+    "Synth with \u22652 osc, ladder filter, envelopes, chorus/delay/reverb, optional granular engine, macros"
+  ],
+  "inputs": [
+    {
+      "name": "amp_attack_s",
+      "type": "number",
+      "description": "Long attack (~3\u20134s)",
+      "required": true
+    },
+    {
+      "name": "granular_sample",
+      "type": "audio-file",
+      "description": "Original sample for grains (optional if engine has sources)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "granular_pad",
+      "type": "synth-patch",
+      "description": "Soft round pad that can turn epic via macros"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "If no granular engine, approximate with a sparsely delayed/pitched noise or particle layer \u2014 still keep macros.",
+    "Enable polyphonic voice stealing behavior appropriately so new notes don\u2019t hard-cut pads."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Two analog saws: second \u22121 octave at ~20\u201325% level as low texture; lower master gain.",
+      "tool": "oscillator",
+      "expect": "Main saw + quiet low bed"
+    },
+    {
+      "n": 2,
+      "action": "Amp env attack ~4s, release ~4\u20135s.",
+      "tool": "amp-envelope",
+      "expect": "Slow pad contour"
+    },
+    {
+      "n": 3,
+      "action": "Ladder/diode filter, low cutoff; second envelope (attack ~2\u20133s, low sustain, longer decay/release, convex curve) \u2192 cutoff for slow open.",
+      "tool": "filter",
+      "expect": "Ambient swell; macro can brighten later"
+    },
+    {
+      "n": 4,
+      "action": "Corrective EQ: high-pass ~60 Hz; gentle cut ~120\u2013150 Hz mud.",
+      "tool": "eq",
+      "expect": "Cleaner low mids"
+    },
+    {
+      "n": 5,
+      "action": "Chorus (e.g. 3 taps, high mix, moderate depth, slow rate) \u2192 sync delay (1/4) for chord transitions \u2192 large reverb (~35\u201340% mix).",
+      "tool": "fx-bus",
+      "expect": "Glued spacious pad"
+    },
+    {
+      "n": 6,
+      "action": "Add granular layer mid-position, bipolar grain jitter, +12 st, small pitch variation; blend under saws through same FX.",
+      "tool": "granular",
+      "expect": "Spicy texture on a round bed"
+    },
+    {
+      "n": 7,
+      "action": "Macros: cutoff, resonance, FX wet (chorus/delay/reverb mixes), granular level \u2014 start FX mapped from 0 so macro brings space in.",
+      "tool": "macro",
+      "expect": "Ambient\u2194epic without rebuilding"
+    }
+  ],
+  "verification": [
+    "Long attack present",
+    "Octave-down saw is quieter than main",
+    "Macros move cutoff and FX wet",
+    "Granular (or proxy) audible when macro up"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "granular",
+    "pad",
+    "macros",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://granular-dual-saw-ambient-epic-pad"
+}

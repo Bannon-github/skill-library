@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+  "name": "Harmonic-locked frequency shifter layer (shift by multiples of f0) cleaned with EQ, micro-delay and a self-vocoder",
+  "goal": "Tame a frequency shifter into musical harmonics: shift by whole multiples of the note's fundamental (e.g. +130 Hz on a 130 Hz C, or 6×40 = 240 Hz on a 40 Hz E) so new partials land on the harmonic series instead of dissonant arbitrary shifts, run it as a parallel wet layer with low-cut/band-reject EQ to tame the shifted fundamental, add ~1 ms signal delay to stop bubbly phasing, and clean messy upper harmonics with a self-vocoder whose lowest band sits above the sub, keeping the clean sub on a dry path.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "54eGln75Y3Y",
+    "url": "https://www.youtube.com/watch?v=54eGln75Y3Y",
+    "title": "Chaos To Order: Frequency Shifter & Vocoder (Sound Design Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/54eGln75Y3Y/agent-skill-harmonic-multiple-frequency-shift-layer-vocoder-clean.json"
+  },
+  "prerequisites": [
+    "Frequency shifter (coarse/fine Hz), EQ, vocoder (4–40 bands, bandwidth, formant), small signal delay, saturation",
+    "Know the fundamental frequency of the played note"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "synth-patch",
+      "description": "Sine/FM bass or pad",
+      "required": true
+    },
+    {
+      "name": "f0_hz",
+      "type": "number",
+      "description": "Fundamental of the note (e.g. 130 Hz for C3, 40 Hz for E)",
+      "required": true
+    },
+    {
+      "name": "multiple",
+      "type": "integer",
+      "description": "Shift multiple k (shift = k × f0)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "shifted_layer",
+      "type": "audio",
+      "description": "Harmonic-aligned frequency-shift layer blended with dry"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Shifting by non-multiples (e.g. 174 Hz on C) gives dissonant overtones — intentional only.",
+    "Harmonic alignment holds for the note whose f0 you used; other notes drift unless shift is key-tracked (implementation note).",
+    "Web Audio note (implementation, not from transcript): a frequency shifter is a Hilbert-transform single-sideband modulator (AudioWorklet)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start on a plain sine to learn it: note C ≈ 130 Hz. Add 130 Hz shift → up an octave; add multiples (260, 390, 520 …) and listen to each land on further harmonic-series notes (fifth, octave, third…).",
+      "tool": "freq-shifter",
+      "expect": "Clean harmonic intervals, not clangor"
+    },
+    {
+      "n": 2,
+      "action": "Compare with an arbitrary shift (e.g. 174 Hz) to hear dissonant overtones.",
+      "tool": "a/b",
+      "expect": "Arbitrary shift = dissonant"
+    },
+    {
+      "n": 3,
+      "action": "Apply to a richer sound (e.g. a bass an octave down); harmonics that already line up change little, other patches gain dark, cool harmonics. Blend with the original.",
+      "tool": "blend",
+      "expect": "Darker, richer layered tone"
+    },
+    {
+      "n": 4,
+      "action": "Build a dry/wet split; on the wet path add EQ to tame the loud shifted 'fundamental' (low cut, or a band reject; low cut before the shifter also works).",
+      "tool": "parallel-eq",
+      "expect": "Overtones without a blaring shifted fundamental"
+    },
+    {
+      "n": 5,
+      "action": "If the layer bubbles/phases (shifts under ~1 kHz), add a ~1 ms signal delay to the path to remove it.",
+      "tool": "micro-delay",
+      "expect": "Phasing disappears"
+    },
+    {
+      "n": 6,
+      "action": "Clean the messy layer with a vocoder on itself: lowest band set above the sub so lows are untouched, run it on another dry/wet chain so the clean sub stays; adjust band count/bandwidth (narrower = crystalline/metallic), formant and per-band levels as EQ.",
+      "tool": "vocoder",
+      "expect": "Tamed upper harmonics with controllable sheen"
+    },
+    {
+      "n": 7,
+      "action": "Example bass: FM sine with modulator ×8, E at 40 Hz, shift ×6 = 240 Hz, EQ wet to keep only above ~400 Hz, vocoder, two saturators, rhythmic delay and a wash reverb; automate shifter/vocoder for performance.",
+      "tool": "bass-example",
+      "expect": "Harmonic, gritty moving bass"
+    },
+    {
+      "n": 8,
+      "action": "Iterate non-linearly: revisit earlier FX settings after adding later ones.",
+      "tool": "iterate",
+      "expect": "Better overall balance"
+    }
+  ],
+  "verification": [
+    "Shift = k×f0 sounds consonant; random Hz shift sounds dissonant on the same note.",
+    "Sub stays clean on the dry path after vocoder.",
+    "1 ms delay removes bubbly phasing on low shifts."
+  ],
+  "tags": [
+    "frequency-shifter",
+    "vocoder",
+    "harmonics",
+    "parallel-processing",
+    "bass",
+    "texture",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://harmonic-multiple-frequency-shift-layer-vocoder-clean"
+}

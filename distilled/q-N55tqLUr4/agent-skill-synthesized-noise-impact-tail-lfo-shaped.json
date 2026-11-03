@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "synthesized-noise-impact-tail-lfo-shaped",
+  "name": "Synthesize a cinematic hit tail from white noise (LFO-shaped level, low boost, shared-LFO drive, Haas stereo, dark reverb)",
+  "goal": "Give an existing cinematic hit (pre-wash + sub + punch layers) body and a realistic reverb-like tail using only a white-noise generator: one LFO (or amp envelope) shapes the noise level, the same LFO drives distortion amount and a multiband compressor's mix/high band, heavy low boost and high cut make it sound like the hit's own tail, a 0-feedback single-side short delay makes it stereo, and a high-cut reverb blends it — a synthesized noise tail, not sample layering, braam, sub-drop, whoosh or downer.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "q-N55tqLUr4",
+    "url": "https://www.youtube.com/watch?v=q-N55tqLUr4",
+    "title": "Sound Design Tutorial: Synthesizing Tails for Cinematic Hits & Impacts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/q-N55tqLUr4/agent-skill-synthesized-noise-impact-tail-lfo-shaped.json"
+  },
+  "prerequisites": [
+    "Synth with a noise source, LFO (or envelope) and FX: EQ/filter, distortion, multiband compressor, stereo delay, reverb",
+    "An existing short hit/impact (attack + sub) that lacks body"
+  ],
+  "inputs": [
+    {
+      "name": "hit_layers",
+      "type": "audio",
+      "description": "Existing pre-wash, sub and punch layers",
+      "required": true
+    },
+    {
+      "name": "tail_length",
+      "type": "number",
+      "description": "How long the noise tail decays",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "noise_tail",
+      "type": "audio",
+      "description": "Stereo synthesized tail layer"
+    },
+    {
+      "name": "full_hit",
+      "type": "audio",
+      "description": "Group of all layers, compressed"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Shape tail length to the hit; keep tail darker than the attack so it reads as the hit's reverb."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Audition the hit layers (pre-wash, sub, punch) together and note the missing body/tail.",
+      "tool": "listen",
+      "expect": "Hit sounds short and thin"
+    },
+    {
+      "n": 2,
+      "action": "Init a synth: disable oscillator 1 and enable only white noise (any white-noise generator or sample works).",
+      "tool": "noise-osc",
+      "expect": "Raw white noise"
+    },
+    {
+      "n": 3,
+      "action": "Shape the noise volume over time with an LFO used as a one-shot level contour (or the main amp envelope) so it swells/decays like a tail.",
+      "tool": "lfo-or-env",
+      "expect": "Noise has a tail-like volume contour"
+    },
+    {
+      "n": 4,
+      "action": "Drastically reshape the spectrum: filter to boost the lows a lot and cut the highs; make the bigger changes with EQ.",
+      "tool": "filter-eq",
+      "expect": "Noise sounds like a dark rumble rather than hiss"
+    },
+    {
+      "n": 5,
+      "action": "Add distortion and modulate its amount with the same LFO so drive follows the volume movement.",
+      "tool": "distortion",
+      "expect": "Grit rises and falls with the tail"
+    },
+    {
+      "n": 6,
+      "action": "Add a multiband compressor; modulate its mix (and its high band) with the same LFO so it is not boosting the whole time.",
+      "tool": "multiband",
+      "expect": "Density changes over the tail instead of constant pumping"
+    },
+    {
+      "n": 7,
+      "action": "Make it stereo: delay in stereo mode, time in seconds/ms, both at the shortest setting, then delay only one of the two sides; feedback 0, mix 100%.",
+      "tool": "stereo-delay",
+      "expect": "Mono noise becomes wide without echoes"
+    },
+    {
+      "n": 8,
+      "action": "Add reverb as the last step, cut the reverb's highs, and mix to taste.",
+      "tool": "reverb",
+      "expect": "Tail blends into a dark space"
+    },
+    {
+      "n": 9,
+      "action": "Play with the other hit layers, compress/raise the tail, EQ further if needed, and add gentle compression on the group of all elements (back off if too much).",
+      "tool": "group-bus",
+      "expect": "Hit now has body and a convincing tail"
+    }
+  ],
+  "verification": [
+    "Hit with tail is longer and fuller than the original layers alone.",
+    "Noise tail alone has strong lows, little high hiss.",
+    "Mono check: single-side short delay widens without audible slap."
+  ],
+  "tags": [
+    "impact",
+    "hit-tail",
+    "noise",
+    "sound-design",
+    "stereo-delay",
+    "multiband",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://synthesized-noise-impact-tail-lfo-shaped"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-chocolate-chip-cookie-model-and-render",
+  "name": "blender chocolate chip cookie model and render",
+  "goal": "Model a cookie with chips on a tray, assign materials, light with an Area light, frame camera, and render.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Ci3Has4L5W4",
+    "url": "https://www.youtube.com/watch?v=Ci3Has4L5W4",
+    "title": "Blender Tutorial for Beginners",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Ci3Has4L5W4/agent-skill-blender-chocolate-chip-cookie-model-and-render.json"
+  },
+  "prerequisites": [
+    "Viewport basics and G/R/S",
+    "Blender Object/Edit mode"
+  ],
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "rendered_image",
+      "type": "file",
+      "description": "Saved render of cookie on tray"
+    }
+  ],
+  "constraints": [
+    "Shade Smooth on cookie/chips",
+    "Ctrl+L Link Materials after multi-selecting chips (active = last selected)",
+    "Uncheck Lock Camera to View after framing"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Object mode: add Cylinder as cookie base (Shift while drawing for 1:1 circle); scale Z flatter; right-click Shade Smooth; rename to cookie.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Shift+A \u2192 Mesh \u2192 UV Sphere for a chip; S scale; G then Z place into cookie; Shade Smooth; Shift+D duplicate many chips.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Add thin Cube tray (Shift for square); Tab Edit mode; face select top; I inset; Extrude region downward for tray lip; Tab Object mode; position under cookie.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Select cookie \u2192 Material Properties \u2192 New \u2192 set Base Color (eyedropper optional); switch Viewport to Material Preview.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Select one chip \u2192 set dark Base Color; Shift-select all chips ending on the colored one; Ctrl+L \u2192 Link Materials.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Material on tray (e.g. blue). Delete default light; Shift+A \u2192 Light \u2192 Area; raise Power (~800\u2013850), lower temperature (~4000K); move/rotate to light cookie.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Numpad 0 camera view; N \u2192 View \u2192 Lock Camera to View; compose shot; uncheck Lock Camera to View.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 8,
+      "action": "Render Properties: choose Eevee or Cycles (GPU if available); Render \u2192 Render Image (F12); Image \u2192 Save As.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Material Preview shows cookie/chip/tray colors",
+    "Render saved to disk"
+  ],
+  "tags": [
+    "blender",
+    "modeling",
+    "materials",
+    "lighting",
+    "render",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-chocolate-chip-cookie-model-and-render"
+}

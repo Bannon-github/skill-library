@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale",
+  "name": "Eight-layer Euclidean pattern generator with two modes: drums (each layer = one MIDI drum note) and melody (each layer = a different note of a chosen scale and root, so stacked layers form in-key chords); per-layer steps, pulses, rotation, velocity and gate, a drift action that nudges each layer's pulses by ±1, layer or global randomise that never changes note assignment, and scale/root changes that keep the rhythm",
+  "goal": "Write in-key polyrhythmic melodies and grooves by stacking up to eight Euclidean layers. Each layer has steps (pattern length), pulses (hits spread as evenly as possible), rotation (offset, which shifts layers against each other), velocity and gate (note length). In drum mode each layer triggers its own drum note; in melody mode each layer is assigned a different note from a chosen scale and root, so layers of different lengths interlock into melodies and coinciding hits make chords, always in key. Generate the result into a clip, add layers one at a time, use drift to randomly move each active layer's pulse count up or down by one, and randomise a layer or everything except the note assignment. Keep a rhythm you like and change scale (e.g. to Phrygian) or root afterwards. Shorten gate if notes are too long. For Polyrhythm Studio: one Euclidean lane per scale degree with independent lengths.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "UchJGizLiLM",
+    "url": "https://www.youtube.com/watch?v=UchJGizLiLM",
+    "title": "Euclidean Weaver v1.2.0 | Generate Euclidean Rhythms and Melodies in Bitwig Studio",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/UchJGizLiLM/agent-skill-eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale.json",
+    "transcript_note": "Script promo; Patreon/download and preset browsing dropped."
+  },
+  "prerequisites": [
+    "DAW with a Euclidean generator script, or Web Audio / JS: up to 8 lanes, each a Bjorklund(pulses, steps) array rotated by its offset, mapped to scale[root + layerIndex] with per-lane velocity and gate (implementation note)",
+    "Any melodic synth or drum rack"
+  ],
+  "inputs": [
+    {
+      "name": "layers",
+      "type": "list",
+      "description": "Up to 8: {steps, pulses, rotation, velocity, gate}",
+      "required": true
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "drums | melody",
+      "required": true
+    },
+    {
+      "name": "scale",
+      "type": "enum",
+      "description": "Scale for melody mode (12 available in the video)",
+      "required": false
+    },
+    {
+      "name": "root",
+      "type": "note",
+      "description": "Root note for melody mode",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "clip",
+      "type": "pattern",
+      "description": "Generated MIDI pattern"
+    },
+    {
+      "name": "layer_table",
+      "type": "table",
+      "description": "Layer settings and note assignment"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Randomise should not change note assignments, otherwise layers switch instruments or scale degrees.",
+    "Too many long gates in melody mode turn into a wash; reduce gate first.",
+    "Promo for the presenter's script: presets and download talk dropped; no factory presets copied."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose drum mode and assign layers to drum notes (kick, snare, closed hat, etc.). Enable two layers, set steps/pulses/rotation, and generate.",
+      "tool": "drum mode",
+      "expect": "A basic Euclidean groove in the clip"
+    },
+    {
+      "n": 2,
+      "action": "Add layers one at a time (e.g. closed hat, crash), set each layer's velocity and gate, and regenerate.",
+      "tool": "add layers",
+      "expect": "A denser interlocking groove"
+    },
+    {
+      "n": 3,
+      "action": "Change a layer's rotation or pulses (e.g. move the snare), or press randomise for one layer; use drift to move every active layer's pulse count by ±1.",
+      "tool": "variation",
+      "expect": "New grooves that stay related to the previous one"
+    },
+    {
+      "n": 4,
+      "action": "Switch to melody mode, choose scale and root. Each layer now plays a different scale note; enable several layers with different step lengths.",
+      "tool": "melody mode",
+      "expect": "An in-key melodic pattern; coinciding hits form chords"
+    },
+    {
+      "n": 5,
+      "action": "Shorten gate if notes overlap too much; randomise all (notes stay fixed) until a rhythm works.",
+      "tool": "shape notes",
+      "expect": "Clear, articulated in-key melody"
+    },
+    {
+      "n": 6,
+      "action": "Keep the rhythm and change the scale or root (e.g. to Phrygian) and regenerate.",
+      "tool": "re-key",
+      "expect": "Same rhythm, new harmonic colour"
+    }
+  ],
+  "verification": [
+    "In melody mode, every generated note belongs to the chosen scale.",
+    "After drift, each active layer's pulses differ from before by at most one.",
+    "Changing the scale changes pitches but not hit positions."
+  ],
+  "tags": [
+    "euclidean",
+    "polyrhythm",
+    "generative",
+    "melody",
+    "scale-quantize",
+    "sequencer",
+    "midi",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://eight-layer-euclidean-weaver-drum-or-scale-melody-mode-one-scale-note-per-layer-steps-pulses-rotation-gate-drift-randomize-keep-rhythm-change-scale"
+}

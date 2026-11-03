@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-wavetable-morph-filter-motion",
+  "name": "wavetable morph plus filter motion patch",
+  "goal": "Create an evolving hybrid patch using a wavetable oscillator (Osc3 role), optional duo-stack/detune/stereo spread, and animated WT position + filter cutoff.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-wavetable-morph-filter-motion.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "wavetable_source",
+      "type": "wavetable",
+      "description": "Original or freely licensed WT \u2014 never rip Traveler banks",
+      "required": true
+    },
+    {
+      "name": "morph_mod",
+      "type": "mod-source",
+      "description": "LFO, envelope, or control-track driving WT position",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wt_motion_patch",
+      "type": "synth-patch",
+      "description": "Wavetable morph + filter motion cinematic patch"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc3 role: switch from analog waveforms to wavetable mode. Load an original/freely available WT (do not import Traveler proprietary tables).",
+      "tool": "oscillator-3-wt",
+      "expect": "WT engine audible"
+    },
+    {
+      "n": 2,
+      "action": "Optional: enable 2-voice stack, detune, and stereo spread on the WT osc for width.",
+      "tool": "duo-stack",
+      "expect": "Slightly thicker WT without mush"
+    },
+    {
+      "n": 3,
+      "action": "Optional drone mode: disconnect Osc3 from keyboard for a fixed-pitch layer, or use it as an extra LFO-rate modulator.",
+      "tool": "osc-mode",
+      "expect": "Drone or extra mod source if chosen"
+    },
+    {
+      "n": 4,
+      "action": "Modulate wavetable position from LFO or Control Track; keep depth subtle for evolving texture rather than obvious sweeps unless desired.",
+      "tool": "mod-matrix",
+      "expect": "Timbre slowly morphs"
+    },
+    {
+      "n": 5,
+      "action": "Stereo filter: ladder model (6\u201324 dB) or NJM-style; add HP that can link to primary cutoff for band-pass motion. Modulate cutoff from filter envelope and/or LFO.",
+      "tool": "filter",
+      "expect": "Filter motion complements WT morph"
+    },
+    {
+      "n": 6,
+      "action": "Mixer: balance WT vs analog oscs; add noise (white/pink) sparingly; light drive into filter.",
+      "tool": "mixer",
+      "expect": "Hybrid blend, not one osc dominating unless intentional"
+    }
+  ],
+  "verification": [
+    "WT position clearly moves under modulation",
+    "Filter and WT motion are musically related",
+    "Only original/free wavetables used"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "filter-motion",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-wavetable-morph-filter-motion"
+}

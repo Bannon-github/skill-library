@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff",
+  "name": "Nested modulation depth chain: velocity → envelope decay → LFO 2 amount → LFO 1 amount → filter cutoff, for touch-sensitive rhythmic filter motion",
+  "goal": "Chain modulators so that each one sets the depth of the next, the 'modulate the modulations' approach of modular synthesis, inside any synth mod matrix. A unipolar, tempo-synced sawtooth LFO 1 (16ths, phase-bent for snap) acts as a looping filter envelope on cutoff. LFO 1's amount is zeroed and handed to a unipolar square LFO 2 (quarter notes, then quarter-note triplets) so it gates LFO 1 rhythmically. LFO 2's amount is zeroed and handed to a spare envelope whose decay brings the whole motion in and out. That envelope's decay is zeroed and driven by velocity, so soft playing gives no motion and hard playing gives the full rhythmic filter. Finish with velocity also on filter depth, key tracking, a longer 'slow' envelope tail and velocity on release. Delta vs our mod-matrix routing skill: the four-degree nested chain where only the last LFO touches the sound.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "pYbWRCrFsHQ",
+    "url": "https://www.youtube.com/watch?v=pYbWRCrFsHQ",
+    "title": "Modulate the modulations to expand your sound design with Magnolia!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/pYbWRCrFsHQ/agent-skill-nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff.json",
+    "transcript_note": "Short tutorial; route.py said COVERED but hand-check found the nested depth-chain not covered by the mod-matrix basics skill."
+  },
+  "prerequisites": [
+    "Synth with ≥2 tempo-syncable LFOs with modulatable amount, a spare envelope, velocity source and a mod matrix (Web Audio: chain GainNodes, LFO→gain.gain of the next LFO's depth, implementation note)",
+    "Simple subtractive patch: closed low-pass, lower register"
+  ],
+  "inputs": [
+    {
+      "name": "notes",
+      "type": "midi",
+      "description": "Played notes with varied velocity",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Song tempo the LFOs sync to",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "velocity_sensitive_rhythmic_filter",
+      "type": "audio",
+      "description": "Subtractive voice whose rhythmic filter motion depends on how hard you play"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Only LFO 1 modulates a sound parameter; every higher level only scales the level below it.",
+    "Each stage is set up by first zeroing the amount it will control, then assigning the next source to that amount.",
+    "Division choices (16ths, quarters, quarter-note triplets) are presenter starting points; experiment with resolution and tempo.",
+    "This is not an arpeggiator; rhythm comes from synced LFOs sharing one grid."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a default patch: simple subtractive tone, close the low-pass filter, play in a lower register.",
+      "tool": "init",
+      "expect": "Dark static tone"
+    },
+    {
+      "n": 2,
+      "action": "Degree 1: LFO 1 → cutoff. Sawtooth, unipolar (acts like a looping envelope); add phase bend for a snappier shape; tempo-sync to 16ths, and raise the tempo a little if needed.",
+      "tool": "lfo-1",
+      "expect": "Rhythmic 16th-note filter plucks"
+    },
+    {
+      "n": 3,
+      "action": "Degree 2: set LFO 1's amount to zero. LFO 2 = square, unipolar, synced to quarter notes; assign it to LFO 1's amount so it ducks LFO 1 on and off. Try other resolutions; the presenter likes quarter-note triplets. Optionally add more cutoff modulation.",
+      "tool": "lfo-2",
+      "expect": "LFO 1's pattern switches on/off in a second rhythm"
+    },
+    {
+      "n": 4,
+      "action": "Degree 3: set LFO 2's amount to zero. Assign a spare envelope (e.g. one otherwise used for FM) to LFO 2's amount, fully up. Sustain sets the overall motion; use decay to bring the whole modulation up then away.",
+      "tool": "envelope",
+      "expect": "Rhythmic filter motion appears at note start and fades over the decay"
+    },
+    {
+      "n": 5,
+      "action": "Degree 4: set that envelope's decay to zero and assign velocity to the decay. Soft playing gives no modulation; harder strikes emphasise it.",
+      "tool": "velocity",
+      "expect": "Touch-sensitive amount of rhythmic motion"
+    },
+    {
+      "n": 6,
+      "action": "Refine for consistency: use the same velocity on filter modulation, add keyboard tracking so upper notes are brighter, use the envelope's slow mode for a longer tail, add release time and put velocity on the release too.",
+      "tool": "refine",
+      "expect": "Coherent, expressive patch without touching FX"
+    }
+  ],
+  "verification": [
+    "With all degrees set, a soft note produces a static filter and a hard note produces the rhythmic pattern.",
+    "Zeroing LFO 2's amount stops the gating while LFO 1 stays silent, proving the chain is nested.",
+    "Changing LFO 2's division alters the on/off rhythm of LFO 1's plucks."
+  ],
+  "tags": [
+    "modulation",
+    "nested-modulation",
+    "lfo",
+    "velocity",
+    "mod-matrix",
+    "rhythmic-filter",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://nested-modulation-depth-chain-velocity-env-lfo-lfo-cutoff"
+}

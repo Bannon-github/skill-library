@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "pad-width-no-phase-smear-highband-pan-or-chord-split",
+  "name": "Widen a pad without phase smear: high-band pan LFO or hard-panned chord split",
+  "goal": "Widen a narrow pad without chorus/imager/spreader phase damage using one of two portable methods: (A) multiband-pan only the high band with a slow (bar) or 16th-note sine L/R swirl, keeping lows/mids centered and pulling amount down if motion distracts; or (B) duplicate synth+MIDI, mute alternating chord tones on each copy, and hard-pan L vs R so each side plays different notes of the same harmony—then confirm healthier correlation than chorus.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 2 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-pad-width-no-phase-smear-highband-pan-or-chord-split.json"
+  },
+  "sources": [
+    {
+      "from_skill": "highband-pan-lfo-pad-width-keep-lows",
+      "video_id": "zHqFoN3FTTI",
+      "url": "https://www.youtube.com/watch?v=zHqFoN3FTTI",
+      "title": "How to widen pads without causing phase issues",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/zHqFoN3FTTI/agent-skill-highband-pan-lfo-pad-width-keep-lows.json"
+    },
+    {
+      "from_skill": "mono-compatible-chord-split-stereo-pad",
+      "video_id": "EZG7Pdh9gms",
+      "url": "https://www.youtube.com/watch?v=EZG7Pdh9gms",
+      "title": "How to make true mono compatible stereo widening to your synth sounds #kyaalmix",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/EZG7Pdh9gms/agent-skill-mono-compatible-chord-split-stereo-pad.json"
+    }
+  ],
+  "merged_from": [
+    "highband-pan-lfo-pad-width-keep-lows",
+    "mono-compatible-chord-split-stereo-pad"
+  ],
+  "aliases": [
+    "highband-pan-lfo-pad-width-keep-lows",
+    "mono-compatible-chord-split-stereo-pad"
+  ],
+  "prerequisites": [
+    "Pad that sounds good but narrow; for A: multiband pan or band-split + auto-pan; for B: DAW that can duplicate instrument+MIDI and a pad with multi-note chords; correlation/phase meter"
+  ],
+  "inputs": [
+    {
+      "name": "method",
+      "type": "enum",
+      "description": "highband_pan_lfo | chord_split_hard_pan",
+      "required": true
+    },
+    {
+      "name": "lfo_rate",
+      "type": "string",
+      "description": "Method A: bar (4/4 slow swirl) or 16th notes; high band only",
+      "required": false
+    },
+    {
+      "name": "chord_midi",
+      "type": "midi",
+      "description": "Method B: pad chord progression to split across two layers",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wide_pad",
+      "type": "fx-chain",
+      "description": "Pad widened by high-band pan motion or by a dual-layer hard-panned complementary chord split"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only — map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source videos; recreate with comparable modules.",
+    "Prefer these over broadband chorus/imagers when the complaint is phase smear in low/mid.",
+    "Method B goal is different L vs R note content—not delayed/frequency-split copies of the same notes.",
+    "Delta vs odd/even unison (voice count) and mid/side EQ skills: width here comes from high-band pan modulation or MIDI note splits."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a good but narrow pad. Avoid broadband chorus/imager wideners (phasy/warbly, phase issues in lows/mids) and frequency stereo-spread (often not truly wide, can sound inside-out). Choose a method: A) high-band pan LFO on the same patch (steps 2–5), or B) interleaved chord split across two hard-panned layers (steps 6–9).",
+      "tool": "audit",
+      "expect": "Pad tone kept; width method chosen"
+    },
+    {
+      "n": 2,
+      "action": "Method A: Insert multiband pan / band-limited auto-pan. Solo or target the high band only so lows stay centered.",
+      "tool": "multiband-pan",
+      "expect": "Only highs are eligible to move L/R"
+    },
+    {
+      "n": 3,
+      "action": "Method A: Draw a sine (or subdued sine) pan path so highs slowly swirl L↔R. Try bar-length (4/4) for gentle immersion or 16th-note rate for more motion.",
+      "tool": "lfo-pan",
+      "expect": "Audible high-band L/R motion"
+    },
+    {
+      "n": 4,
+      "action": "Method A: If 16ths feel too pronounced: switch to a less extreme pan profile and/or lower overall mix/amount of the pan effect.",
+      "tool": "amount",
+      "expect": "Width illusion without distracting swirl"
+    },
+    {
+      "n": 5,
+      "action": "Method A: A/B before/after in context: pad should envelop more without the washy phase of chorus/imager on full-band signal.",
+      "tool": "ab-check",
+      "expect": "Wider highs; stable lows/mids"
+    },
+    {
+      "n": 6,
+      "action": "Method B: Duplicate the synth instance with identical settings and copy the MIDI to both tracks.",
+      "tool": "daw",
+      "expect": "Two identical layers"
+    },
+    {
+      "n": 7,
+      "action": "Method B: On track A piano roll, mute every other note top→bottom; on track B mute the complementary set bottom→top so together they reconstruct the full chords but separately play different notes.",
+      "tool": "midi-edit",
+      "expect": "Complementary note sets"
+    },
+    {
+      "n": 8,
+      "action": "Method B: Hard-pan A fully left and B fully right; play together for maximum width.",
+      "tool": "pan",
+      "expect": "Super-wide harmonic split"
+    },
+    {
+      "n": 9,
+      "action": "Method B: Check a correlation/phase meter: split technique should sit near ~0 (very wide) without deep negative swings; compare vs chorus (often flangy + negative correlation) and spreader (weaker width).",
+      "tool": "meter",
+      "expect": "Wide image, healthier correlation than chorus"
+    }
+  ],
+  "verification": [
+    "Only high band is auto-panned; lows remain centered",
+    "No full-band chorus/imager on the pad for this width",
+    "Mix/amount not so high that motion distracts",
+    "Alone, each layer is incomplete chords; together they form full harmony",
+    "Hard L/R pan yields strong width",
+    "Correlation stays healthier than chorus comparison"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo",
+    "pads",
+    "width",
+    "pan-lfo",
+    "phase",
+    "mono-compatibility",
+    "layering",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://pad-width-no-phase-smear-highband-pan-or-chord-split",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

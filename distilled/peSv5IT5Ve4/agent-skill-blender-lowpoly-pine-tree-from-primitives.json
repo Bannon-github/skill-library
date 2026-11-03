@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-lowpoly-pine-tree-from-primitives",
+  "name": "blender low poly pine tree from primitives",
+  "goal": "Build a simple low-poly pine tree using cylinder and circle meshes with extrude/scale/duplicate.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "peSv5IT5Ve4",
+    "url": "https://www.youtube.com/watch?v=peSv5IT5Ve4",
+    "title": "ABSOLUTE Beginner Basics.. Blender For Noobs 2025",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/peSv5IT5Ve4/agent-skill-blender-lowpoly-pine-tree-from-primitives.json"
+  },
+  "prerequisites": [
+    "Know viewport nav and Edit mode basics"
+  ],
+  "inputs": [
+    {
+      "name": "empty_or_default_scene",
+      "type": "blender-scene",
+      "description": "Scene ready for new meshes",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pine_tree_meshes",
+      "type": "mesh",
+      "description": "Trunk + layered foliage circles approximating a pine"
+    }
+  ],
+  "constraints": [
+    "Keep vertex counts low for games (e.g. cylinder ~8 sides, circle ~12)",
+    "Shift+A Add > Mesh for primitives"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Delete unneeded default mesh if present.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Shift+A \u2192 Mesh \u2192 Cylinder; in Add Cylinder adjust vertices down (e.g. 8) for low poly.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Tab Edit mode; scale trunk; select top face, move up, S scale for trunk taper; optional Shade Smooth Auto Smooth.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Shift+A \u2192 Mesh \u2192 Circle (e.g. 12 sides).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Edit mode, edge select; E then Z to extrude on Z; S scale; Ctrl+R loop cuts and scale for foliage layers.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "L select linked pieces as needed; Shift+D duplicate foliage layers; R/S (and R then Z) to vary layers.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Stack scaled/rotated circle extrusions above the trunk for a pine silhouette.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Scene contains trunk cylinder and multiple foliage layers",
+    "Looks recognizably tree-like in viewport"
+  ],
+  "tags": [
+    "blender",
+    "low-poly",
+    "game-asset",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-lowpoly-pine-tree-from-primitives"
+}

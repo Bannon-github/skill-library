@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "haas-plus-phase-offset-width-automated",
+  "name": "Haas delay + per-channel phase offset width, automated, with mono check",
+  "goal": "Widen a mono synth or pad without panning by combining a small inter-channel delay (Haas range, kept under ~20 ms and often below 15 ms) with a filter-based phase offset on one channel (more mono compatible because it only shifts some frequencies), then automate the width on and off for drops/sections and always confirm in mono that comb filtering is acceptable.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "msDDpbSvdPc",
+    "url": "https://www.youtube.com/watch?v=msDDpbSvdPc",
+    "title": "Principles of Mixing 38 - Stereo Widening with Haas Effect and Phase",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/msDDpbSvdPc/agent-skill-haas-plus-phase-offset-width-automated.json"
+  },
+  "prerequisites": [
+    "Stereo tool or delay with independent L/R delay offset; all-pass/phase-offset per channel (any 'stereo shaper' style plugin or Web Audio DelayNode + BiquadFilter allpass); mono-sum monitoring"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Mono or narrow synth/pad",
+      "required": true
+    },
+    {
+      "name": "delay_ms",
+      "type": "number",
+      "description": "Inter-channel delay, \u226420 ms (\u226415 ms if audible on the source)",
+      "required": true
+    },
+    {
+      "name": "phase_offset",
+      "type": "number",
+      "description": "Amount of all-pass phase shift on one channel",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "widened_stereo",
+      "type": "audio",
+      "description": "Wider image that leaves center elements (kick/snare) clear, with acceptable mono sum"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Portable alias: Haas = short L/R delay offset; phase offset = all-pass filter on one side.",
+    "Delta vs pad-width-no-phase-smear-highband-pan-or-chord-split and unison-odd-even-detune-width-clean-supersaw: time/phase-difference widening with automation and a mono check, not band panning, split chords, or unison."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start with the mono source through a stereo tool set to pass-through; confirm it is centered.",
+      "tool": "stereo-tool",
+      "expect": "Baseline mono image"
+    },
+    {
+      "n": 2,
+      "action": "Add a delay between left and right. Large offsets are heard as an echo; stay in Haas range (\u2264 ~20 ms, and for some sounds even 15 ms is noticeable) so it reads as width/position instead.",
+      "tool": "delay",
+      "expect": "Image moves/widens without an audible slap"
+    },
+    {
+      "n": 3,
+      "action": "Sum to mono: time offsets cause comb filtering (static phaser-like coloration). Reduce the delay or skip the effect if the mono sum sounds hollow or wrong.",
+      "tool": "mono-check",
+      "expect": "Mono sum acceptable"
+    },
+    {
+      "n": 4,
+      "action": "Add phase offset (filter-based phase shift) to one channel instead of, or with, the delay; it only moves some frequencies so it is more mono compatible.",
+      "tool": "allpass",
+      "expect": "Spread with fewer mono problems"
+    },
+    {
+      "n": 5,
+      "action": "Combine a small phase shift with a small delay shift (try either direction) to place the sound wide and out of the way of centered kick/snare; as an alternative to panning it stays on both sides.",
+      "tool": "stereo-tool",
+      "expect": "Element sits wide while center stays clear"
+    },
+    {
+      "n": 6,
+      "action": "Automate the widener: off for verses, on (or wider) when a drop hits, or sweep from wide to mono for contrast.",
+      "tool": "automation",
+      "expect": "Space audibly opens at the section change"
+    },
+    {
+      "n": 7,
+      "action": "Before rendering, do a final mono check of the full mix.",
+      "tool": "mono-check",
+      "expect": "No collapsed or phasey elements in mono"
+    }
+  ],
+  "verification": [
+    "Delay setting is \u226420 ms",
+    "Mono sum checked and comb filtering judged acceptable",
+    "Width automation changes the image at the intended section"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "stereo-width",
+    "haas",
+    "phase",
+    "allpass",
+    "mono-compatibility",
+    "automation",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-05T16:31:33+00:00",
+  "mcp_resource": "skill://haas-plus-phase-offset-width-automated"
+}

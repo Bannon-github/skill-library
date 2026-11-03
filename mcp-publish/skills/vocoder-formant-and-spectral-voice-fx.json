@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "id": "vocoder-formant-and-spectral-voice-fx",
+  "name": "Vocoder, formant and spectral voice effects",
+  "goal": "Use vocoders and formant tools: vocoder as an insert on any patch (carrier/modulator), formant shifting, frequency-shifted harmonic layers, spectral warp/stretch and five-stage hybrid transform chains (pitch, formant, saturation, key-tuned peak, LP push-back).",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+        "video_id": "54eGln75Y3Y",
+        "url": "https://www.youtube.com/watch?v=54eGln75Y3Y",
+        "title": "Chaos To Order: Frequency Shifter & Vocoder (Sound Design Tutorial)"
+      },
+      {
+        "from_skill": "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+        "video_id": "E8b_N1RBCxE",
+        "url": "https://www.youtube.com/watch?v=E8b_N1RBCxE",
+        "title": "Sound Design Tips From an Orchestral Composer"
+      },
+      {
+        "from_skill": "spectral-warp-vocode-formant-stretch-smear",
+        "video_id": "iqrPF8t72sU",
+        "url": "https://www.youtube.com/watch?v=iqrPF8t72sU",
+        "title": "The ULTIMATE Guide To Master Vital - Spectral Warp Modes"
+      },
+      {
+        "from_skill": "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
+        "video_id": "MjijB6ExetI",
+        "url": "https://www.youtube.com/watch?v=MjijB6ExetI",
+        "title": "The Minifreak Vocoder is Awesome!"
+      }
+    ]
+  },
+  "theory": "Formants are fixed resonant peaks that define vowels independent of pitch; a vocoder imposes the modulator's band envelopes onto a carrier's spectrum.",
+  "generator": {
+    "path": "sample-lab/theory/formant_vowels.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/formant_vowels.wav"
+  },
+  "prerequisites": [
+    "A source sound: orchestral sample, vocal phrase, synth preset, percussion loop or field recording",
+    "Any pitch/formant shifter, saturator/distortion, resonant filter, EQ, compressor, delay and reverb (plugin names in the source are examples only)",
+    "Distortion, chorus, reverb and an LFO/mod matrix",
+    "Frequency shifter (coarse/fine Hz), EQ, vocoder (4–40 bands, bandwidth, formant), small signal delay, saturation",
+    "Know the fundamental frequency of the played note",
+    "Microphone",
+    "Optional: LFO/auto-pan with a mix knob, subharmonic enhancer, resonator/filterbank",
+    "Synth or DAW with a vocoder effect that accepts an external audio input (or a vocoder plugin with sidechain), or Web Audio: getUserMedia mic → bank of bandpass BiquadFilters + envelope followers controlling gains on the same bands of the synth carrier (implementation note)",
+    "Wavetable synth with spectral/formant warp or equivalent (vocode/formant/stretch/smear-like) oscillator effects; LFO/mod matrix"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Carrier: rich harmonic synth (saw, supersaw); modulator: voice or drums.",
+      "expect": "Inputs"
+    },
+    {
+      "n": 2,
+      "action": "Set band count (16-32 for intelligibility), decay/release, formant shift.",
+      "expect": "Talking synth"
+    },
+    {
+      "n": 3,
+      "action": "Alternatively apply formant filters (vowel BP peaks) or frequency shift by harmonic multiples for clean layers.",
+      "expect": "Vocal colour"
+    },
+    {
+      "n": 4,
+      "action": "Transform chain: pitch -> formant -> saturation -> key-tuned peak -> LP to push it back.",
+      "expect": "Hybrid texture"
+    },
+    {
+      "n": 5,
+      "action": "Blend dry for intelligibility; EQ out mud.",
+      "expect": "Mix-ready"
+    },
+    {
+      "n": 6,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/formant_vowels.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+      "name": "Harmonic-locked frequency shifter layer (shift by multiples of f0) cleaned with EQ, micro-delay and a self-vocoder",
+      "goal": "Tame a frequency shifter into musical harmonics: shift by whole multiples of the note's fundamental (e.g. +130 Hz on a 130 Hz C, or 6×40 = 240 Hz on a 40 Hz E) so new partials land on the harmonic series instead of dissonant arbitrary shifts, run it as a parallel wet layer with low-cut/band-reject EQ to tame the shifted fundamental, add ~1 ms signal delay to stop bubbly phasing, and clean messy upper harmonics with a self-vocoder whose lowest band sits above the sub, keeping the clean sub on a dry path.",
+      "steps": [
+        "Start on a plain sine to learn it: note C ≈ 130 Hz. Add 130 Hz shift → up an octave; add multiples (260, 390, 520 …) and listen to each land on further harmonic-series notes (fifth, octave, third…).",
+        "Compare with an arbitrary shift (e.g. 174 Hz) to hear dissonant overtones.",
+        "Apply to a richer sound (e.g. a bass an octave down); harmonics that already line up change little, other patches gain dark, cool harmonics. Blend with the original.",
+        "Build a dry/wet split; on the wet path add EQ to tame the loud shifted 'fundamental' (low cut, or a band reject; low cut before the shifter also works).",
+        "If the layer bubbles/phases (shifts under ~1 kHz), add a ~1 ms signal delay to the path to remove it.",
+        "Clean the messy layer with a vocoder on itself: lowest band set above the sub so lows are untouched, run it on another dry/wet chain so the clean sub stays; adjust band count/bandwidth (narrower = crystalline/metallic), formant and per-band levels as EQ.",
+        "Example bass: FM sine with modulator ×8, E at 40 Hz, shift ×6 = 240 Hz, EQ wet to keep only above ~400 Hz, vocoder, two saturators, rhythmic delay and a wash reverb; automate shifter/vocoder for performance.",
+        "Iterate non-linearly: revisit earlier FX settings after adding later ones."
+      ]
+    },
+    {
+      "from_skill": "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+      "name": "Hybrid-score 'sonic signature' chain for any source (orchestral rips, vocal phrases, synth presets, percussion loops, creature SFX): pitch/formant shift → heavy saturation → low-pass with a key-tuned resonant peak → EQ/compression → delay → reverb pushback, plus panning and LFO movement so the result blends behind an orchestra",
+      "goal": "Transform ordinary material into a unique hybrid-score sound with five tools: pitch shifting (example: +2 semitones with formant −12, or a −12 transpose of a vocal phrase, optionally a robot-type mode mixed in), heavy distortion/saturation (an aggressive mode cranked), filtering (low-pass to clear room for low instruments and cut analog top end, with a resonant peak tuned to the cue's key or around 500 Hz on percussion, before the reverb), then EQ/compression, delay and reverb that push the sound back into the orchestra's space instead of 'in your face'. Add movement (an LFO on filter frequency, an auto-panner with a mix control, subharmonic reinforcement on hits). Works on brass rips, woodwind rips, ethnic vocal phrases, preset 'hunt' results, retro drum loops and animal recordings. More specific than generic FX-chain skills: the orchestral-blend goal, the key-tuned peak and the pre-reverb low-pass.",
+      "steps": [
+        "Pick a source (brass or woodwind rip, vocal phrase, synth preset found by auditioning many, percussion loop or creature SFX). Audition it dry.",
+        "Pitch stage: shift pitch and/or formant (example +2 st pitch, formant −12; or transpose a vocal −12). Optionally mix in a robot/lo-fi mode with the dry/wet control.",
+        "Distortion stage: an aggressive saturation/'punish' mode cranked, or a clipper preset, until the sound is gnarly.",
+        "Filter stage: low-pass to cut the analog top end and leave room for low instruments, with a resonant peak at the cue's key (or ~500 Hz on percussion). Several filters in a row or a resonator bank can carve further; add an LFO to filter frequency for movement.",
+        "Tone/dynamics: EQ (tame low-mid boxiness, lift highs if needed), light compression for loudness; on hits add subharmonic reinforcement.",
+        "Space: add delay, then reverb (plate/hall/large) to push the sound back; add an auto-panner with a mix knob for movement rather than a static patch.",
+        "Record parameter tweaks as automation while performing, and keep the version that best fits the character, place or story."
+      ]
+    },
+    {
+      "from_skill": "spectral-warp-vocode-formant-stretch-smear",
+      "name": "Spectral warp modes: vocode, formant scale, harmonic stretch, smear",
+      "goal": "Add WT spectral/formant morph delta beyond basic wavetable-position pads: use spectral warp modes—vocode (key-tracked formant shift, vocal/vocoder character), formant scale (more exaggerated vowel/formant moves without key-tracking), harmonic stretch (even harmonic expansion; great for LFO→acid/sci-fi), inharmonic stretch (metallic/bell chaos), and smear (spectral high-pass / additive smear from bottom of table)—then modulate the warp amount for evolving cinematic texture.",
+      "steps": [
+        "Load a rich wavetable (complex/harmonic content). Open oscillator spectral warp / formant-style effect slot.",
+        "Try vocode: shifts formants in a key-tracked way so formant character stays steadier across notes — good for vocal/vocoder-ish WT pads and text-to-speech tables without wild pitch-of-formant jumps.",
+        "Compare formant scale: moves harmonics/formants more exaggeratedly than vocode while keeping relative harmonic structure, but without the same key-tracking steadiness — stronger vowel changes, more note-to-note timbre shift.",
+        "Use harmonic stretch for even, patterned spectral expansion; modulate with LFO for spacey acid / high sci-fi alarm motion. Switch to inharmonic stretch for uneven metallic/bell/crystal textures and aggressive growls.",
+        "Use smear as a spectral high-pass / additive smear: table starts at the bottom of the control and spreads harmonics upward until the sound thins/smears out (Razor/Harmor-like). Good for whippy high-pass spectral gestures.",
+        "For cinematic pads: pick one warp mode, set modest amount, LFO or envelope the warp (and optionally WT position); follow with filter → chorus → delay → reverb. Avoid stacking every mode at once."
+      ]
+    },
+    {
+      "from_skill": "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant",
+      "name": "Vocoder as an insert effect on any synth patch: the patch itself is the carrier and a microphone is the modulator, with mode (clean, vintage, narrow, gated), decay, formant (neutral or higher) and dry-mic controls, placement in the effects chain (before or after distortion and chorus), arpeggiated carriers and a slow square LFO on formant",
+      "goal": "Turn any existing pad, bass or lead patch into a vocoder voice by putting the vocoder in an effect slot instead of building a special vocoder patch. The synth patch is the carrier (all its oscillators, voice mode, unison, envelopes and pitch bend still apply) and an external microphone is the modulator, so the patch goes silent until you speak or sing. Choose the vocoder mode (clean, vintage, narrow, gated; the presenter prefers clean), set decay (how long bands hold after the voice stops), set formant (neutral or higher; low settings sounded worse) and mix in some dry mic if wanted. Then experiment with where the vocoder sits in the chain (first, before distortion, with chorus after distortion, or replacing an EQ slot), add long reverb after it, run the arpeggiator so the vocoder speaks in rhythm, and modulate formant with a slow, deep square LFO. Rich carriers work best: e.g. a pluck oscillator plus a 2-operator FM oscillator, or a mono virtual-analog patch an octave down with filter envelope movement, chorus and distortion. Our first dedicated vocoder skill; the existing ones only borrow a 'vocode' spectral-warp mode.",
+      "steps": [
+        "Start from an init patch or any existing preset. Put the vocoder (external input) in a free effect slot, replacing a less important effect such as EQ or delay if needed. Connect a microphone to the audio input.",
+        "Pick the vocoder mode (clean, vintage, narrow, gated). Set decay for how long the bands hang on, formant at neutral or a bit higher, and the dry-mic amount to taste.",
+        "Make the carrier rich: e.g. oscillator 1 a plucked-string type, oscillator 2 a 2-operator FM type; or a mono virtual-analog patch an octave down with filter-envelope movement. Use unison or mono as needed and play lead lines with pitch bend.",
+        "Try different slot positions: vocoder first, then distortion, then chorus after the distortion; or vocoder after a chorus and distortion carrier. Add a long reverb after.",
+        "Turn on the arpeggiator with a held chord so the vocoded voice is re-triggered rhythmically.",
+        "Modulate formant with an LFO: square shape, slow rate, deep (even maximum) depth. Reduce unison spread if the result gets too smeared."
+      ]
+    }
+  ],
+  "merged_from": [
+    "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
+  ],
+  "tags": [
+    "arpeggiator",
+    "bass",
+    "cinematic-synth",
+    "external-carrier",
+    "formant",
+    "formant-shift",
+    "frequency-shifter",
+    "from-youtube",
+    "fx-chain",
+    "harmonics",
+    "hybrid-score",
+    "morph",
+    "music-production",
+    "orchestral",
+    "pads",
+    "parallel-processing",
+    "portable",
+    "resonant-filter",
+    "reverb-pushback",
+    "saturation",
+    "sound-design",
+    "spectral",
+    "texture",
+    "vocode",
+    "vocoder",
+    "voice",
+    "wavetable",
+    "web-audio",
+    "workflow"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://vocoder-formant-and-spectral-voice-fx",
+  "aliases": [
+    "harmonic-multiple-frequency-shift-layer-vocoder-clean",
+    "hybrid-score-five-stage-transform-chain-pitch-formant-heavy-saturation-key-tuned-peak-lp-pushback",
+    "spectral-warp-vocode-formant-stretch-smear",
+    "vocoder-as-insert-fx-any-patch-carrier-mic-modulator-mode-decay-formant-dry-mic-slot-order-arp-square-lfo-formant"
+  ]
+}

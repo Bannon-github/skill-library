@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-boolean-bracket-with-cylinder-holes",
+  "name": "blender boolean bracket with cylinder holes",
+  "goal": "Model a simple mm bracket plate and cut bolt holes with cylinder Boolean Difference.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "8_0RptMbhe0",
+    "url": "https://www.youtube.com/watch?v=8_0RptMbhe0",
+    "title": "How to 3D Model Using Blender - Easy Beginner Guide + Tips and Tricks",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/8_0RptMbhe0/agent-skill-blender-boolean-bracket-with-cylinder-holes.json"
+  },
+  "prerequisites": [
+    "Metric mm scene setup",
+    "Know Object vs Edit mode"
+  ],
+  "inputs": [
+    {
+      "name": "plate_dims_mm",
+      "type": "string",
+      "description": "e.g. 100 x 12 x 3 mm",
+      "required": false
+    },
+    {
+      "name": "bolt_hole_mm",
+      "type": "number",
+      "description": "Hole diameter with clearance (e.g. 5.6 for 5mm bolt)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bracket_mesh",
+      "type": "mesh",
+      "description": "Plate with boolean-cut holes; optional L-flange via extrude"
+    }
+  ],
+  "constraints": [
+    "Cutter cylinders should be taller than plate thickness to avoid coplanar glitches",
+    "Increase cylinder vertices (e.g. 256) before confirming add for rounder printed holes",
+    "Boolean Difference then Apply; delete cutters afterward"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Optional: delete Camera and Light (right-click Delete) to declutter.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Set cube dimensions for the plate (e.g. 100 mm wide, 12 deep, 3 thick); rename to bracket.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Add \u2192 Mesh \u2192 Cylinder; before confirming, open Add Cylinder panel and raise Vertices (e.g. 256).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Size cutter diameter with clearance (e.g. 5.6 mm) and height taller than plate (e.g. 10 mm); rename hole cutter.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Duplicate cutters, position along plate (set Location numerically); Shift-select cutters \u2192 Join into one cutter object.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Select bracket \u2192 Modifiers \u2192 Add Boolean \u2192 Object = hole cutter, Operation Difference \u2192 Apply.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "Delete cutter object(s); verify holes. Tab Edit mode; Face select; E extrude an edge/face to form an L-bracket flange as needed.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 8,
+      "action": "Optional: enable MeasureIt add-on (Edit\u2192Preferences\u2192Add-ons) to measure hole diameters in mm.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Holes visible after deleting cutters",
+    "Dimensions remain in mm",
+    "Boolean applied (modifier not still live unless intentional)"
+  ],
+  "tags": [
+    "blender",
+    "boolean",
+    "hard-surface",
+    "3d-printing",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-boolean-bracket-with-cylinder-holes"
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-curved-envelope-evolving-pad",
+  "name": "ADBSSR curved-envelope evolving pad",
+  "goal": "Design a long-evolving cinematic pad using multi-stage envelopes with adjustable curve handles, up to ~20s stages, optional breakpoint/slope expansion, and a modulation envelope that can start from alt control (e.g. sustain pedal) instead of note-on.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-curved-envelope-evolving-pad.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "pad_layers",
+      "type": "osc-config",
+      "description": "Blend of analog + optional WT layers",
+      "required": true
+    },
+    {
+      "name": "envelope_style",
+      "type": "enum",
+      "description": "standard ADSR vs expanded ADBSSR",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "evolving_pad_patch",
+      "type": "synth-patch",
+      "description": "Slow-bloom cinematic pad with curved envelopes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set three envelopes: filter, VCA, and modulation. Open the on-screen envelope editor and drag curve handles on time stages.",
+      "tool": "envelopes",
+      "expect": "Non-linear attack/decay curves visible"
+    },
+    {
+      "n": 2,
+      "action": "Use long time stages (up to ~20s each) for cinematic bloom. Expand envelope to add breakpoint + slope stages (ADBSSR-style) when you need a mid-bloom reshape.",
+      "tool": "envelope-expand",
+      "expect": "Pad swells and morphs after note-on"
+    },
+    {
+      "n": 3,
+      "action": "Route filter envelope to stereo LPF cutoff with moderate amount; VCA envelope for amplitude; mod envelope to WT position, pan, or secondary cutoff.",
+      "tool": "mod-routing",
+      "expect": "Timbre evolves over the note"
+    },
+    {
+      "n": 4,
+      "action": "Optional alt-control on mod envelope: start envelope from sustain pedal (or other mod-bus source) instead of key press for expressive delayed motion.",
+      "tool": "alt-control",
+      "expect": "Pedal/mod triggers secondary evolution"
+    },
+    {
+      "n": 5,
+      "action": "LFOs: choose from varied shapes including unipolar and slew/random; key-sync or free; tempo-sync optional; dedicate pitch or filter vibrato with fade-in on LFO1/2.",
+      "tool": "lfo",
+      "expect": "Gentle ongoing motion without fighting envelopes"
+    },
+    {
+      "n": 6,
+      "action": "Finish with soft EQ, light chorus, long space/hall reverb (space algo up to very long tails). Keep limiter available as safety for dynamic patches.",
+      "tool": "fx",
+      "expect": "Pad sits wide and deep without clipping"
+    }
+  ],
+  "verification": [
+    "Attack/decay curves are non-linear",
+    "Pad continues evolving after initial attack",
+    "Dynamics stay controlled with limiter if needed"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "envelope",
+    "adbssr",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-curved-envelope-evolving-pad"
+}

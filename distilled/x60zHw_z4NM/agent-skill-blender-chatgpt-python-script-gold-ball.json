@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-chatgpt-python-script-gold-ball",
+  "name": "blender chatgpt python script create gold ball",
+  "goal": "Use ChatGPT to generate a Blender Python script, paste it in the Scripting workspace, and run it to create a material-previewable object.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "x60zHw_z4NM",
+    "url": "https://www.youtube.com/watch?v=x60zHw_z4NM",
+    "title": "Blender Tutorial \u2013 How to Use AI to Create 3D Models (ChatGPT and Blender)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/x60zHw_z4NM/agent-skill-blender-chatgpt-python-script-gold-ball.json"
+  },
+  "prerequisites": [
+    "Blender installed (blender.org)",
+    "ChatGPT account (free or Plus)",
+    "Basic familiarity with Blender UI helps prompting"
+  ],
+  "inputs": [
+    {
+      "name": "prompt",
+      "type": "string",
+      "description": "Ask ChatGPT to write a Blender script (must say script)",
+      "required": true
+    },
+    {
+      "name": "blender_version",
+      "type": "string",
+      "description": "Blender version for prompt context",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "generated_object",
+      "type": "mesh",
+      "description": "Object created by running the script (e.g. gold ball)"
+    }
+  ],
+  "constraints": [
+    "Prompt must request a script or ChatGPT may return manual steps instead",
+    "Scripts may fail on newer Blender APIs; paste error text back to ChatGPT to iterate",
+    "Complex prompts often fail on free GPT-3.5; simpler prompts work more reliably"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Install/launch Blender from blender.org; dismiss splash.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Open chat.openai.com; prompt e.g. write a Blender script that creates a gold ball (include the word script).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Copy the code block from ChatGPT.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "In Blender, select default cube, press X and confirm delete for a blank start.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Open Scripting workspace tab \u2192 New \u2192 paste (Ctrl/Cmd+V).",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Click Run; switch back to Layout; enable Material Preview shading to see material color.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 7,
+      "action": "If the script errors, copy the error into ChatGPT and retry with the fixed script.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Script runs without error",
+    "New object visible in Layout",
+    "Material Preview shows non-default look if material was assigned"
+  ],
+  "tags": [
+    "blender",
+    "chatgpt",
+    "python",
+    "scripting",
+    "ai-assisted",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-chatgpt-python-script-gold-ball"
+}

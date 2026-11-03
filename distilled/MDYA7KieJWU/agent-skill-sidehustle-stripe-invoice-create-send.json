@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-stripe-invoice-create-send",
+  "name": "Create and send a client invoice in Stripe Invoicing",
+  "goal": "From Stripe Dashboard Invoicing, create a native invoice: add/select customer, add line items with quantities and amounts, optionally tax/coupons, then review and send without third-party invoice plugins.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "MDYA7KieJWU",
+    "url": "https://www.youtube.com/watch?v=MDYA7KieJWU",
+    "title": "How To Send Invoices with Stripe for Beginners | Stripe Invoicing Tutorial 2021",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/MDYA7KieJWU/agent-skill-sidehustle-stripe-invoice-create-send.json"
+  },
+  "prerequisites": [
+    "Stripe account with Invoicing",
+    "Customer email"
+  ],
+  "inputs": [
+    {
+      "name": "customer_email",
+      "type": "string",
+      "description": "Bill-to",
+      "required": true
+    },
+    {
+      "name": "line_items",
+      "type": "list",
+      "description": "Description, qty, unit amount",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sent_invoice",
+      "type": "invoice",
+      "description": "Sent Stripe invoice"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only \u2014 no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus.",
+    "Tax/VAT UI path only \u2014 not tax advice."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Dashboard \u2192 Invoicing (under More if needed) \u2192 Create invoice.",
+      "tool": "stripe",
+      "expect": "Editor open"
+    },
+    {
+      "n": 2,
+      "action": "Select existing customer or Add new customer (name+email) \u2192 Save.",
+      "tool": "stripe",
+      "expect": "Customer attached"
+    },
+    {
+      "n": 3,
+      "action": "Add one-time line items (description, qty, amount); add additional items as needed.",
+      "tool": "stripe",
+      "expect": "Correct totals"
+    },
+    {
+      "n": 4,
+      "action": "Optionally attach tax rates or coupons if configured; save.",
+      "tool": "stripe",
+      "expect": "Tax/discount only when appropriate"
+    },
+    {
+      "n": 5,
+      "action": "Review preview \u2192 Send invoice; confirm it appears in Invoices list.",
+      "tool": "stripe",
+      "expect": "Customer receives payable invoice"
+    }
+  ],
+  "verification": [
+    "Correct customer/totals",
+    "Status Sent/Open",
+    "Payment link works in intended mode"
+  ],
+  "tags": [
+    "side-hustle",
+    "stripe",
+    "invoicing",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://sidehustle-stripe-invoice-create-send"
+}

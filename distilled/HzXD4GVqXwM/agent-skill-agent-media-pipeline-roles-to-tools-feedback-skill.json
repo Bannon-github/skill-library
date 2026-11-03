@@ -1,0 +1,43 @@
+{
+ "schema_version": "1.0",
+ "id": "agent-media-pipeline-roles-to-tools-feedback-skill",
+ "name": "Design an agent-run media production pipeline: map team roles to tools, encode style as a skill, improve it from feedback",
+ "goal": "Design an automated media workflow (shown for video editing; same pattern for automated song generation) by listing every human job in the production team, assigning each to a tool with one coordinating agent, writing the creative style into a skill file the agent reads first, and growing that skill from time-stamped human feedback after each run.",
+ "domain": "workflow-design",
+ "source": {"youtube_video_id": "HzXD4GVqXwM", "url": "https://www.youtube.com/watch?v=HzXD4GVqXwM", "title": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)", "transcript": "youtube-provided", "transcript_note": "Auto-generated English track, same as Show transcript. Video example is video editing; song-generation mapping is an analogy, not from the video."},
+ "prerequisites": ["A coordinating agent that can run locally, use files and call tools (Claude Code desktop, local mode, working folder set, in the video)", "Tools/connectors for each role (video used Parakeet, Hyperframes, Chrome, Tella MCP, Epidemic Sound, FFmpeg)"],
+ "inputs": [
+  {"name": "raw_material", "type": "file[]", "description": "Raw input for the run (raw footage in the video)", "required": true},
+  {"name": "style_skill", "type": "file", "description": "Instruction file describing preferred style and rules", "required": false}
+ ],
+ "outputs": [
+  {"name": "role_tool_map", "type": "table", "description": "Each production job mapped to the tool that does it"},
+  {"name": "draft_output", "type": "file", "description": "V1 product for human review"},
+  {"name": "updated_skill", "type": "file", "description": "Style skill with rules learned from feedback"}
+ ],
+ "constraints": [
+  "The human keeps director jobs: providing the input and giving feedback (human in the loop).",
+  "One agent coordinates; it cannot perceive some media directly (it could not hear audio), so add a tool that converts it to readable data (timestamped transcription).",
+  "Tools do not know the desired look/sound; that lives in the skill file.",
+  "Start with small pieces (a hook) before whole products; feed the full input only once the skill is tuned.",
+  "Track cost per run (video measured token use per video).",
+  "Mapping to song generation (e.g. composer, sound designer, mixer roles) is an analogy and must be checked against real tools."
+ ],
+ "steps": [
+  {"n": 1, "action": "List every job a human team would do to make the product (video: editor, transcriber, animator, researcher, screen editor, sound designer, finisher).", "expect": "Ordered list of roles"},
+  {"n": 2, "action": "Assign each job to a tool; make the agent the coordinator/project manager that calls the others, and add a converter for any media the agent cannot perceive.", "expect": "Role-to-tool map with one coordinator"},
+  {"n": 3, "action": "Set up the agent locally with a working folder and connect each tool/connector, then have the agent save the setup as a skill.", "expect": "Connectors active; skill file saved"},
+  {"n": 4, "action": "Open a new session and test the skill on a small piece of input, with any extra instructions.", "expect": "V1 output plus a summary of what the agent did"},
+  {"n": 5, "action": "Review the output and give specific, time-stamped feedback (look, sound, pacing, cuts); try several alternatives for one element until one fits.", "expect": "Revised output"},
+  {"n": 6, "action": "Tell the agent to save what it learned into the skill, then run the next job in a fresh session with the updated skill.", "expect": "Skill gains rules (video grew to 36 rules); repeated mistakes stop"},
+  {"n": 7, "action": "Once tuned, give the full raw input, let it run unattended, then review and give final notes.", "expect": "Near-final product needing only a few notes"}
+ ],
+ "verification": [
+  "Every production role has exactly one assigned tool or is marked human",
+  "Skill file changes after each feedback round",
+  "A fresh session using the updated skill does not repeat an earlier corrected mistake"
+ ],
+ "tags": ["workflow-design", "automation", "agent-orchestration", "media-pipeline", "feedback-loop", "song-generation"],
+ "curriculum_ids": ["workflow-design"],
+ "mcp_resource": "skill://agent-media-pipeline-roles-to-tools-feedback-skill"
+}

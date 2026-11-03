@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-velocity-hybrid-bass-impact",
+  "name": "velocity-rewarding hybrid bass and impact",
+  "goal": "Design a thunderous hybrid bass/impact that responds exponentially to velocity (louder hits open filter/amp dramatically), usable as deep hits or high atmospheric stabs with HP + long space reverb.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-velocity-hybrid-bass-impact.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "velocity_curve",
+      "type": "curve",
+      "description": "Strong velocity \u2192 cutoff/amp/drive mapping",
+      "required": true
+    },
+    {
+      "name": "register_mode",
+      "type": "enum",
+      "description": "deep-bass vs high-atmospheric",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hybrid_bass_impact",
+      "type": "synth-patch",
+      "description": "Velocity-expressive hybrid bass/impact patch"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start with dark hybrid oscillators (saw/pulse + optional WT). Fast amp attack, punchy decay, moderate sustain for bass; shorter for impacts.",
+      "tool": "osc-env",
+      "expect": "Solid transient body"
+    },
+    {
+      "n": 2,
+      "action": "Map velocity strongly (near-exponential) to filter cutoff and/or drive so louder playing blooms dramatically.",
+      "tool": "velocity",
+      "expect": "Soft vs hard hits differ a lot"
+    },
+    {
+      "n": 3,
+      "action": "For atmospheric use: apply aggressive high-pass on the mix, play high register with pitch bend, and use a broad smooth space-style reverb so hits become huge pads/stingers.",
+      "tool": "hp-reverb",
+      "expect": "High notes feel epic and layerable"
+    },
+    {
+      "n": 4,
+      "action": "For deep bass: keep HP low/off, emphasize transient, optionally underscoring with sub; avoid static sine-only subs \u2014 keep some transient character.",
+      "tool": "bass-mode",
+      "expect": "Dynamic sub impact"
+    }
+  ],
+  "verification": [
+    "Velocity clearly changes brightness/weight",
+    "High+HP+space mode works as atmosphere",
+    "Low mode works as hybrid bass"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "bass",
+    "impact",
+    "velocity",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-velocity-hybrid-bass-impact"
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "id": "wavefolded-lfo-slew-filter-wobble",
+  "name": "Wavefolded LFO wobble: fold a sine LFO for extra peaks/valleys, then slew-limit it before filter cutoff",
+  "goal": "Make complex but smooth filter wobbles by running a plain sine LFO through a wavefolder (fold amount, symmetry, fold shape add peaks and valleys) before it reaches filter cutoff, then put a slew limiter after the folder so the folded modulation is less jumpy — a modulation-shaping recipe distinct from audio-rate wavefolding.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "k9ZURoAww0k",
+    "url": "https://www.youtube.com/watch?v=k9ZURoAww0k",
+    "title": "Wavefolding LFO's in VCV Rack to make interesting wobble effects and unique waves Synth Sound Design",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/k9ZURoAww0k/agent-skill-wavefolded-lfo-slew-filter-wobble.json"
+  },
+  "prerequisites": [
+    "LFO, wavefolder accepting a control signal (Web Audio: WaveShaperNode on an LFO signal, implementation note), slew limiter / one-pole smoother, filter"
+  ],
+  "inputs": [
+    {
+      "name": "lfo",
+      "type": "control",
+      "description": "Sine LFO",
+      "required": true
+    },
+    {
+      "name": "audio",
+      "type": "audio",
+      "description": "Sound into the filter",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wobble_filter",
+      "type": "audio",
+      "description": "Filter moved by a folded, slewed LFO"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Transcript is short (≈380 words); amounts are by ear, no numeric settings given.",
+    "Folded LFO at fast rates becomes jumpy — slow it down or slew it."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Baseline: route a regular sine LFO to filter cutoff and listen.",
+      "tool": "lfo",
+      "expect": "Plain wobble"
+    },
+    {
+      "n": 2,
+      "action": "Insert a wavefolder between LFO and filter cutoff; compare the folded and plain sine on a scope.",
+      "tool": "wavefolder",
+      "expect": "Folded sine shows extra peaks and valleys; wobble becomes more complex"
+    },
+    {
+      "n": 3,
+      "action": "Slow the LFO down (folding multiplies apparent rate) and adjust fold amount, symmetry and fold shape.",
+      "tool": "wavefolder",
+      "expect": "Different repeating wobble patterns per setting"
+    },
+    {
+      "n": 4,
+      "action": "Add a slew limiter after the wavefolder, before the cutoff input, to soften the jumps.",
+      "tool": "slew",
+      "expect": "Smoother, less jumpy complex modulation"
+    }
+  ],
+  "verification": [
+    "Scope shows more peaks per cycle after the folder than before.",
+    "Increasing slew audibly smooths jumps without removing the extra contour."
+  ],
+  "tags": [
+    "wavefolder",
+    "lfo",
+    "slew",
+    "modulation-shaping",
+    "filter",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://wavefolded-lfo-slew-filter-wobble"
+}

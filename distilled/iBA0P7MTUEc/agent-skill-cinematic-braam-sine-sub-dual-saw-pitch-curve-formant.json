@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+  "name": "Cinematic braam: sine sub + two light-unison saws, curved pitch envelope, swept formant layer",
+  "goal": "Build a trailer-style cinematic braam from an init patch: sine sub one octave down plus two 3-voice saws at ~10% detune, all through one low-cut filter with random drift, a slow one-shot curved envelope pushing global pitch and opening an FX filter, a formant filter blended in by a second slow envelope, then soft-clip drive, high-pass, wide dark reverb, upper-band compression and mono lows below 120 Hz.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "iBA0P7MTUEc",
+    "url": "https://www.youtube.com/watch?v=iBA0P7MTUEc",
+    "title": "Vital Sound Design: Build Cinematic Braams from Scratch",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/iBA0P7MTUEc/agent-skill-cinematic-braam-sine-sub-dual-saw-pitch-curve-formant.json"
+  },
+  "prerequisites": [
+    "Wavetable/VA synth with 3 oscillators, 2 filters (one with formant mode), 2+ LFOs that can run one-shot/envelope mode, random modulator, mod matrix, FX rack; a DAW reverb send bus and a mono-below-frequency utility"
+  ],
+  "inputs": [
+    {
+      "name": "root_note",
+      "type": "string",
+      "description": "Low note or cluster to play (braams sit low; sub osc is \u22121 oct)",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Host BPM; the slow envelopes are tempo-synced to ~4 bars in the source",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "braam_patch",
+      "type": "synth-patch",
+      "description": "Layered braam voice with pitch/formant/filter motion"
+    },
+    {
+      "name": "braam_render",
+      "type": "audio",
+      "description": "Rendered hit, lows mono below ~120 Hz"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from an init patch. Osc 1: basic sine, phase randomization 0, transpose \u22121 octave (the sub/body).",
+      "tool": "osc",
+      "expect": "Clean sine one octave under the played note"
+    },
+    {
+      "n": 2,
+      "action": "Osc 2: saw, phase randomization 0, 3 unison voices, unison detune ~10%; apply a formant/spectral scale warp around ~36% and give it a small random-modulator amount for drift.",
+      "tool": "osc",
+      "expect": "Slightly thick, vocal-tinged saw that wanders subtly"
+    },
+    {
+      "n": 3,
+      "action": "Osc 3: saw, phase randomization 0, 3 voices, detune ~10 (no warp).",
+      "tool": "osc",
+      "expect": "Second saw adds density without wide chorus"
+    },
+    {
+      "n": 4,
+      "action": "Route osc 1\u20133 into Filter 1 (low-pass style): lower the resonance/peak slightly, cutoff around the lower third of the range (~35 on a 0\u2013127-ish scale), and add a random modulator to cutoff at a small amount.",
+      "tool": "filter",
+      "expect": "Dark, slightly moving tone"
+    },
+    {
+      "n": 5,
+      "action": "Filter 2: formant type (A-O-I-E vowel), formant position 0, mix 0. Shape LFO 2 as a single rise, set it to one-shot/envelope mode at ~4 bars (4/1), and route it to Filter 2 mix so the vowel character fades in over the hit.",
+      "tool": "filter+lfo",
+      "expect": "Vowel/growl colour blooms over the first bars"
+    },
+    {
+      "n": 6,
+      "action": "LFO 1: draw a custom multi-point curve (low start, quick rise, dip, rise at end) with curved segments; envelope mode, 4/1 length. Route LFO 1 \u2192 global pitch transpose at a small amount (~5 in the source's units).",
+      "tool": "mod-matrix",
+      "expect": "Pitch bends/swells over the hit instead of sitting static"
+    },
+    {
+      "n": 7,
+      "action": "FX order: distortion first (soft clip, ~10 dB drive) \u2192 EQ with high-pass on \u2192 FX filter with resonance 0 and cutoff low, LFO 1 opening that cutoff \u2192 reverb with its low-cut raised high (the source slides the band to ~102 semitones), time ~2.3 s, size ~40%, mix ~74% \u2192 multiband compressor with upper band pushed (~18 dB).",
+      "tool": "fx-chain",
+      "expect": "Gritty, wide, dark-to-open braam with long tail"
+    },
+    {
+      "n": 8,
+      "action": "After the synth: a utility set to mono everything below ~120 Hz, then also send the track to the shared reverb send channel.",
+      "tool": "mix",
+      "expect": "Low end stays centred; braam sits in the same space as the rest of the cue"
+    }
+  ],
+  "verification": [
+    "Sub sine is one octave below the played note and stays mono below ~120 Hz",
+    "LFO 1 runs once per note (envelope mode) and moves both pitch and FX-filter cutoff",
+    "Formant filter mix starts at 0 and rises with LFO 2",
+    "Distortion precedes EQ/filter/reverb in the FX order"
+  ],
+  "tags": [
+    "braam",
+    "trailer",
+    "impact",
+    "pitch-envelope",
+    "formant-filter",
+    "unison",
+    "layering",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "published_at": "2026-10-06T16:32:53+00:00",
+  "mcp_resource": "skill://cinematic-braam-sine-sub-dual-saw-pitch-curve-formant",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source synth's own units.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Vital/Ableton/Dune/Massive X/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Vital-specific units (e.g. cutoff 35, transpose amount 5, reverb band 102 semitones) are approximate; match by ear in other synths.",
+    "For Web Audio: sine+2 saw OscillatorNodes, BiquadFilter + formant bandpass bank, AudioParam automation curves (setValueCurveAtTime) for the one-shot envelopes, WaveShaper soft clip, ConvolverNode reverb."
+  ]
+}

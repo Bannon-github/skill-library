@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-fm-lfo-evolving-chase-sequence",
+  "name": "FM depth and LFO mix evolving chase sequence",
+  "goal": "Keep long cinematic chase/arp-like sequences alive by modulating FM depth, oscillator mix via LFOs, and filter cutoff \u2014 plus mod-wheel/aftertouch for tension \u2014 instead of static one-bar loops.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-fm-lfo-evolving-chase-sequence.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "fm_pair",
+      "type": "osc-pair",
+      "description": "Carrier/modulator pair for FM depth play",
+      "required": true
+    },
+    {
+      "name": "performance_mods",
+      "type": "mod-sources",
+      "description": "Mod wheel and/or aftertouch destinations",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "chase_seq_patch",
+      "type": "synth-patch",
+      "description": "Non-static cinematic chase/pulse sequence"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Establish rhythmic pulse/sequence foundation (arp or control-track \u2192 cutoff). Aim for cinematic intensity rather than clean EDM purity.",
+      "tool": "seq-foundation",
+      "expect": "Driving pulse"
+    },
+    {
+      "n": 2,
+      "action": "Introduce FM: vary modulator frequency slightly and automate/modulate FM depth so timbre breathes over the phrase.",
+      "tool": "fm",
+      "expect": "Harmonic motion over time"
+    },
+    {
+      "n": 3,
+      "action": "Use LFOs to change oscillator mix balances over time; also modulate filter cutoff so the sequence refuses to feel static across long cues.",
+      "tool": "lfo-mix",
+      "expect": "Ongoing evolution without constant DAW drawing"
+    },
+    {
+      "n": 4,
+      "action": "Assign mod wheel / aftertouch to open tension (depth, cutoff, or drive) for scene dynamics.",
+      "tool": "expression",
+      "expect": "Performable tension build/release"
+    },
+    {
+      "n": 5,
+      "action": "Play deeper registers for more body when the cue needs weight; keep FX (delay bounce) feeding syncopated rhythms for living grooves.",
+      "tool": "performance",
+      "expect": "Register and delay accent the chase"
+    }
+  ],
+  "verification": [
+    "Disabling FM/LFO mix returns a flatter loop",
+    "Useful across long film/game cue lengths",
+    "Expression controls create/release tension"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "fm",
+    "sequence",
+    "performance",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-fm-lfo-evolving-chase-sequence"
+}

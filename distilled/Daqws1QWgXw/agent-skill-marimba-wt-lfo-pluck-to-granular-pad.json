@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "marimba-wt-lfo-pluck-to-granular-pad",
+  "name": "Marimba/pluck WT LFO attack into granular freeze pad stack",
+  "goal": "Turn mallet-like material into an evolving pad: synthesize a pluck from a wavetable that starts bright and ends as sine, scrub position with a very fast LFO for a clicky attack (amp: ~0.5s decay, 0 sustain, ~1s release) plus a long-attack twin for swell; print chord tones, freeze them in a granular engine (random on, loop on, tune grain spacing/attack/hold), then space with short delay, room (~20%) and very long parallel verbs, plus a quiet triangle+chorus bass.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Daqws1QWgXw",
+    "url": "https://www.youtube.com/watch?v=Daqws1QWgXw",
+    "title": "Tutorial #21 | Turning A Marimba Into Granular Synthesis Pads",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Daqws1QWgXw/agent-skill-marimba-wt-lfo-pluck-to-granular-pad.json"
+  },
+  "prerequisites": [
+    "Wavetable oscillator with position modulatable by LFO",
+    "Granular processor/sampler with loop, random start, grain spacing, attack/hold",
+    "Delay + reverb bus"
+  ],
+  "inputs": [
+    {
+      "name": "mallet_table",
+      "type": "wavetable",
+      "description": "Original/free WT or resampled mallet that progresses bright harmonics \u2192 sine",
+      "required": true
+    },
+    {
+      "name": "chord",
+      "type": "list",
+      "description": "Sparse chord tones across octaves (tutorial example: B minor = B D F#)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "granular_mallet_pad",
+      "type": "synth-patch",
+      "description": "Pluck+swell prints frozen into a lush granular pad with quiet sub layer"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any granular plugin brand. Use original/free samples or synthesized WT \u2014 no ripped Kontakt libraries.",
+    "If using one-shots instead of WT: long sustain + decaying velocity pattern can fake the delay-like repeats."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pluck layer: one osc with a mallet-like WT (rich highs at frame 0 \u2192 sine at the end). Modulate WT position with LFO1 at a very high rate so you mostly hear the bright click, then the sine body.",
+      "tool": "wt-lfo-pluck",
+      "expect": "Clicky mallet attack with sine sustain character"
+    },
+    {
+      "n": 2,
+      "action": "Amp envelope: decay ~0.5 s, sustain 0, release ~1 s. Add delay+reverb. Optional: set LFO to trigger (retrigger) mode so fast WT scrubbing repeats like a decaying delay while amp has no sustain.",
+      "tool": "amp-delay",
+      "expect": "Notes die away; trigger-mode LFO can simulate delayed clicks"
+    },
+    {
+      "n": 3,
+      "action": "Swell twin: duplicate the pluck patch and add substantial amp attack so the same WT becomes a slow pad swell (works with one-shots too \u2014 just raise attack).",
+      "tool": "swell-layer",
+      "expect": "Same timbre, soft entry"
+    },
+    {
+      "n": 4,
+      "action": "Sequence sparse chord tones (e.g. B D F#) split across two octaves so each note can ring; render/print pluck and swell passes to audio.",
+      "tool": "print-chords",
+      "expect": "Two audio beds ready for granular"
+    },
+    {
+      "n": 5,
+      "action": "Load both into a granular engine: random fully up (forward/back from random points, occasional overlaps), loop on, raise grain attack and adjust grain spacing to slow frantic textures, increase hold for more sustain. Match settings on the swell buffer.",
+      "tool": "granular-freeze",
+      "expect": "Continuous evolving cloud instead of discrete hits"
+    },
+    {
+      "n": 6,
+      "action": "FX: delay with low feedback (~3 repeats), room reverb ~20% mix with highs eased, plus a parallel bus of very long verbs (~10\u201312 s) at 100% wet while keeping a dry path for clarity.",
+      "tool": "space-bus",
+      "expect": "Pad feels deep but not only-wet mush"
+    },
+    {
+      "n": 7,
+      "action": "Optional bass: quiet triangle with chorus and long attack (mallet pads rarely need loud subs). Optional high air: heavily blurred/smudged print of the pluck and/or low-level ambience into the same reverb bus.",
+      "tool": "bass-air",
+      "expect": "Full stack: granular mid pad + soft bass + gentle air"
+    }
+  ],
+  "verification": [
+    "Dry WT pluck has a clear mallet click when LFO rate is high.",
+    "Granular stage loops indefinitely without silent gaps.",
+    "Dry/wet balance still shows the pad body; bass stays under the mallet midrange."
+  ],
+  "tags": [
+    "granular",
+    "wavetable-position-lfo",
+    "mallet",
+    "pad",
+    "freeze",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://marimba-wt-lfo-pluck-to-granular-pad"
+}

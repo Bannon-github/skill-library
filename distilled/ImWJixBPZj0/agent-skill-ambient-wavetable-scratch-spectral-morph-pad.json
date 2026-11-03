@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-wavetable-scratch-spectral-morph-pad",
+  "name": "From-scratch spectral-morph wavetable ambient pad",
+  "goal": "Design an ambient pad by building a soft\u2192complex wavetable (sine + harmonics, spectral blend, phase/warp), LFO-morphing WT position, dual filters with stereo-split randomization, long amp/filter envelopes, optional pitched-down sample texture, then compressor \u2192 dotted delay \u2192 long reverb (~10\u201311s) with bipolar random pans.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ImWJixBPZj0",
+    "url": "https://www.youtube.com/watch?v=ImWJixBPZj0",
+    "title": "Ambient Pads in Vital From Scratch",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ImWJixBPZj0/agent-skill-ambient-wavetable-scratch-spectral-morph-pad.json"
+  },
+  "prerequisites": [
+    "Wavetable synth with WT editor (harmonics/phase/spectral blend), dual filters, sample osc, FX"
+  ],
+  "inputs": [
+    {
+      "name": "attack_release_s",
+      "type": "number",
+      "description": "Long attack/release (tutorial ~4s attack, ~6s release)",
+      "required": true
+    },
+    {
+      "name": "sample_texture",
+      "type": "audio-file",
+      "description": "Optional original Foley/noise sample pitched down",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ambient_wt_pad",
+      "type": "synth-patch",
+      "description": "Evolving from-scratch ambient pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Build or use original wavetables; do not copy commercial bank tables named in the video.",
+    "Prefer 12 dB filter slopes for subtle ambient moves unless a steeper cut is intentional."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "In WT editor: start from sine; remove extra keyframes; add harmonics gradually; duplicate end frame; spectral-blend; alter phase/harmonics on the end frame so position morphs soft\u2192complex.",
+      "tool": "wavetable-editor",
+      "expect": "Two-frame (or more) morphing table"
+    },
+    {
+      "n": 2,
+      "action": "Synced LFO (e.g. 4 bars) \u2192 wavetable position at high depth so the custom table evolves.",
+      "tool": "lfo",
+      "expect": "Audible WT morph on hold"
+    },
+    {
+      "n": 3,
+      "action": "Second osc: draw/warp another shape; optional harmonic-stretch randomized slowly; unison with octave-stack mode at low detune (~3\u20134%).",
+      "tool": "oscillator",
+      "expect": "Second evolving layer"
+    },
+    {
+      "n": 4,
+      "action": "Amp env ~4s attack / ~6s release; optional curve bend.",
+      "tool": "amp-envelope",
+      "expect": "Slow bloom pad"
+    },
+    {
+      "n": 5,
+      "action": "Dual filters (e.g. osc1 LP 12 dB, osc2 HP) with env\u2192cutoff; randomize stereo-split/phase for width.",
+      "tool": "filter",
+      "expect": "Separated roles + living stereo"
+    },
+    {
+      "n": 6,
+      "action": "Optional sample osc: original garage/Foley texture pitched \u22121\u20132 octaves, low level.",
+      "tool": "sample",
+      "expect": "Organic tickle above the pure synth"
+    },
+    {
+      "n": 7,
+      "action": "FX: multiband compress for air \u2192 dotted delay with feedback \u2192 reverb time ~10\u201311s; bipolar random \u2192 pan on oscs for width.",
+      "tool": "fx-bus",
+      "expect": "Washes without harsh peaks"
+    }
+  ],
+  "verification": [
+    "Wavetable was authored or clearly morphed, not a static stock saw only",
+    "Long attack/release present",
+    "Stereo motion from split and/or pan randomization"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "ambient",
+    "pad",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://ambient-wavetable-scratch-spectral-morph-pad"
+}

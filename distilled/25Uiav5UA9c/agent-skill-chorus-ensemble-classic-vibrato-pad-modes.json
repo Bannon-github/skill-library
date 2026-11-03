@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "chorus-ensemble-classic-vibrato-pad-modes",
+  "name": "Chorus-Ensemble modes: Classic, Ensemble, Vibrato",
+  "goal": "Thicken cinematic pads with a multi-mode chorus: Classic (2 delayed copies + LFO on delay time), Ensemble (third evenly-split copy for fuller body), or Vibrato (pitch-only wobble); tune rate/amount/feedback/width/dry-wet, high-pass the wet to avoid mud, optional warmth/saturation, and LFO offset for stereo vibrato.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "25Uiav5UA9c",
+    "url": "https://www.youtube.com/watch?v=25Uiav5UA9c",
+    "title": "Learn Live: Chorus-Ensemble",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/25Uiav5UA9c/agent-skill-chorus-ensemble-classic-vibrato-pad-modes.json"
+  },
+  "prerequisites": [
+    "Stereo chorus/ensemble FX with Classic/Ensemble/Vibrato-style modes (or portable multi-voice chorus + vibrato); pad/synth source"
+  ],
+  "inputs": [
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "classic | ensemble | vibrato",
+      "required": true
+    },
+    {
+      "name": "rate_amount",
+      "type": "string",
+      "description": "LFO rate + depth sweet spot for warm thickness vs obvious wobble",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "chorus_ensemble_rack",
+      "type": "fx-chain",
+      "description": "Configured multi-mode chorus/ensemble/vibrato on pad bus"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose mode: Classic duplicates the input twice with short delay; LFO modulates those delay times (also slight pitch) so stacked copies thicken/widen. Ensemble adds a third evenly-split copy for a richer full-bodied chorus. Vibrato modulates pitch only (feedback and dry/wet disabled in that mode).",
+      "tool": "chorus-ensemble",
+      "expect": "Mode matches desired thickness vs pitch wobble"
+    },
+    {
+      "n": 2,
+      "action": "In Classic/Ensemble: set rate and amount to a warm sweet spot; raise both together only when you want obvious oscillations. Use feedback to stack more copies\u2014extreme feedback turns metallic; Invert Polarity makes feedback hollow.",
+      "tool": "chorus-ensemble",
+      "expect": "Warm thickness without harsh metallic swirl unless intended"
+    },
+    {
+      "n": 3,
+      "action": "Enable high-pass on the processed path and raise cutoff so lows are cut\u2014prevents mud/clipping when feedback/rate are high.",
+      "tool": "eq",
+      "expect": "Chorus motion without low-end mud or clipping"
+    },
+    {
+      "n": 4,
+      "action": "Set width: 0% = mono chorus; up to extreme (~200% when available) spreads copies L/R. Blend with dry/wet so the pad stays present.",
+      "tool": "chorus-ensemble",
+      "expect": "Desired spatial spread with audible dry body"
+    },
+    {
+      "n": 5,
+      "action": "Optional warmth/saturation at end of the device for subtle drive. In Vibrato: use small amount + faster rate to humanize leads/pads; Offset splits LFO L vs R (up to 180\u00b0) for spatial vibrato; Shape sine\u2192triangle for sharper edges.",
+      "tool": "chorus-ensemble",
+      "expect": "Subtle warmth and/or controlled vibrato motion"
+    }
+  ],
+  "verification": [
+    "Classic or Ensemble thickens without wrecking low end (HPF engaged if feedback high)",
+    "Width and dry/wet leave mono-compatible body when width is reduced",
+    "Vibrato (if used) only pitch-modulates; feedback/dry-wet not required"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "chorus",
+    "ensemble",
+    "vibrato",
+    "pads",
+    "fx",
+    "modulation",
+    "from-youtube"
+  ],
+  "published_at": "2026-09-25T16:27:22+00:00",
+  "mcp_resource": "skill://chorus-ensemble-classic-vibrato-pad-modes",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Ableton/Vital/Serum/VAST/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with plugin/synth vendors named in the source video.",
+    "Place chorus early in Traveler-style FX order (after EQ, before delay/reverb) when building a cinematic pad bus."
+  ]
+}

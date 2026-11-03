@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "vector-xy-four-oscillator-crossfade-blend",
+  "name": "Vector synthesis: XY-blend four oscillators with nested crossfades",
+  "goal": "Build classic vector synthesis portably: place four distinct oscillator shapes at the corners of an XY pad (bipolar \u22121\u2026+1), nest three crossfade/blend stages driven by the X and Y axes so each corner is soloable and the center mixes all four, then add an amp envelope \u2014 a 2D morph that is not a 1D wavetable scan.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "SMB34GRgQWQ",
+    "url": "https://www.youtube.com/watch?v=SMB34GRgQWQ",
+    "title": "Vector Synthesis in Bitwig Grid with the Scrawl Oscillator",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/SMB34GRgQWQ/agent-skill-vector-xy-four-oscillator-crossfade-blend.json"
+  },
+  "prerequisites": [
+    "Four oscillators or drawable single-cycle shapes",
+    "An XY / vector control (or two bipolar modulators for X and Y)",
+    "Crossfade/blend modules (or equal-power pan laws) that mix two inputs by a 0\u20261 or \u22121\u2026+1 control"
+  ],
+  "inputs": [
+    {
+      "name": "corner_waves",
+      "type": "list",
+      "description": "Four original/free shapes (e.g. sine, saw, complex drawable, noisy/odd) assigned to NW/NE/SW/SE",
+      "required": true
+    },
+    {
+      "name": "xy",
+      "type": "vector2",
+      "description": "Bipolar XY position; automate or LFO later for motion",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "vector_osc_bus",
+      "type": "synth-module",
+      "description": "Single mixed oscillator bus whose timbre is the XY blend of four corners"
+    }
+  ],
+  "constraints": [
+    "Portable module recipe; not affiliated with Bitwig. Use original/free waveforms \u2014 do not copy proprietary Scrawl factory drawings as content.",
+    "Vector \u2260 wavetable: WT scans one dimension; vector lets you move between corners and through the interior mix."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Instantiate four oscillators. Load contrasting shapes into the four corners (e.g. sine, saw, a complex drawable, an odd/noisy shape). Keep pitches unified unless you intentionally detune later.",
+      "tool": "four-oscs",
+      "expect": "Each corner alone is a clear, different timbre"
+    },
+    {
+      "n": 2,
+      "action": "Add an XY control set to bipolar mode so (0,0) is the center and each axis runs \u22121\u2026+1 (unipolar XY only covers one quadrant and cannot reach all four corners).",
+      "tool": "xy-pad",
+      "expect": "Center is neutral; each corner of the pad is reachable"
+    },
+    {
+      "n": 3,
+      "action": "First vertical blends: mix top-left with bottom-left using the Y axis (positive Y favors the upper osc, negative the lower). Separately mix top-right with bottom-right with the same Y.",
+      "tool": "blend-y",
+      "expect": "Moving only on Y morphs within the left column and within the right column"
+    },
+    {
+      "n": 4,
+      "action": "Horizontal master blend: mix the left-column result with the right-column result using the X axis (wire X at full bipolar depth, e.g. \u00b150% into the blend if your modulator is bipolar).",
+      "tool": "blend-x",
+      "expect": "Park the XY in each corner and confirm only that corner oscillator is audible (scope helps)"
+    },
+    {
+      "n": 5,
+      "action": "Verify interior points: center should combine all four; edges should be two-osc mixes. Contrast with a 1D wavetable scan that cannot jump sideways between non-adjacent frames.",
+      "tool": "verify-vector",
+      "expect": "2D motion yields combinations a linear WT position cannot"
+    },
+    {
+      "n": 6,
+      "action": "Finish with an ADSR (or similar) on the blended output level. Optionally LFO/automate X and Y slowly for evolving pads; keep mono compatibility in mind if later widening.",
+      "tool": "amp-env",
+      "expect": "Playable vector voice with a clean amp envelope"
+    }
+  ],
+  "verification": [
+    "Each of the four XY corners solos its assigned oscillator.",
+    "Center mix is a blend of all four, not silence or a single osc.",
+    "Moving diagonally changes timbre continuously without zipper from discontinuous WT frame jumps."
+  ],
+  "tags": [
+    "vector-synthesis",
+    "xy-morph",
+    "crossfade",
+    "four-oscillator",
+    "pad",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://vector-xy-four-oscillator-crossfade-blend"
+}

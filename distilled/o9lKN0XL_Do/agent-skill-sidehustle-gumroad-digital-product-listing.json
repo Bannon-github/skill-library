@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-gumroad-digital-product-listing",
+  "name": "List a digital product on Gumroad (Discover-ready)",
+  "goal": "Open a Gumroad seller account, account for ~10% platform + payment-processing fees, create a digital product with name/description/files/price, and publish so it can sell and potentially appear on Gumroad Discover.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "o9lKN0XL_Do",
+    "url": "https://www.youtube.com/watch?v=o9lKN0XL_Do",
+    "title": "How To Sell Digital Products on Gumroad",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/o9lKN0XL_Do/agent-skill-sidehustle-gumroad-digital-product-listing.json"
+  },
+  "prerequisites": [
+    "Digital files you can sell",
+    "Supported payout method"
+  ],
+  "inputs": [
+    {
+      "name": "product_name",
+      "type": "string",
+      "description": "Title",
+      "required": true
+    },
+    {
+      "name": "content_files",
+      "type": "file[]",
+      "description": "Deliverables",
+      "required": true
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "description": "List price",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "live_gumroad_product",
+      "type": "url",
+      "description": "Published product URL"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only \u2014 no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus.",
+    "Price in ~10% Gumroad + ~2\u20133%+ processing when setting list price."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create free Gumroad account; read fee schedule (~10% plus PayPal/Stripe processing \u2192 often ~12\u201313%+ all-in).",
+      "tool": "gumroad",
+      "expect": "Seller ready"
+    },
+    {
+      "n": 2,
+      "action": "Products \u2192 New product \u2192 name \u2192 select Digital product.",
+      "tool": "gumroad",
+      "expect": "Draft product"
+    },
+    {
+      "n": 3,
+      "action": "Write full description/sales copy; upload thumbnail and downloadable files.",
+      "tool": "gumroad",
+      "expect": "Content complete"
+    },
+    {
+      "n": 4,
+      "action": "Set price (and versions/upsells if needed); save.",
+      "tool": "gumroad",
+      "expect": "Priced"
+    },
+    {
+      "n": 5,
+      "action": "Publish/list so checkout works and Discover can surface it.",
+      "tool": "gumroad",
+      "expect": "Live URL"
+    }
+  ],
+  "verification": [
+    "Preview/test download works",
+    "Fees reflected in net math",
+    "URL live"
+  ],
+  "tags": [
+    "side-hustle",
+    "gumroad",
+    "digital-products",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "published_at": "2026-09-24T12:34:43+00:00",
+  "mcp_resource": "skill://sidehustle-gumroad-digital-product-listing"
+}

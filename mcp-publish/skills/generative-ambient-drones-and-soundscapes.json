@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "id": "generative-ambient-drones-and-soundscapes",
+  "name": "Generative ambient: drones, wind, sparkle layers and self-playing soundscapes",
+  "goal": "Build self-playing ambient pieces: noise beds and generative wind, tonic drones and PW drones, Eno-style sine pads, probability-gated seeded loops, follow-action clip pools, random-modulated loop voices, high-end sparkle layers and three-layer starters.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+        "video_id": "CRWBHFIikqc",
+        "url": "https://www.youtube.com/watch?v=CRWBHFIikqc",
+        "title": "30 min Ambient Track for Beginners - Get Inspired & Find Your Sound"
+      },
+      {
+        "from_skill": "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+        "video_id": "Oq5TCAKw64Y",
+        "url": "https://www.youtube.com/watch?v=Oq5TCAKw64Y",
+        "title": "How to make an ambient space pad in any synth.  Sound Design Tutorial 1"
+      },
+      {
+        "from_skill": "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+        "video_id": "fjO8HIZzhZs",
+        "url": "https://www.youtube.com/watch?v=fjO8HIZzhZs",
+        "title": "Creating Generative Ambient Soundscapes with Ableton Live & Pigments (Tutorial)"
+      },
+      {
+        "from_skill": "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+        "video_id": "_6mEzWHoxKo",
+        "url": "https://www.youtube.com/watch?v=_6mEzWHoxKo",
+        "title": "DevOcean Modular - Create A Wind Noodle Patch From Scratch #modularsynth  #sounddesign  #synthesiser"
+      },
+      {
+        "from_skill": "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+        "video_id": "U1t3ELd1LDI",
+        "url": "https://www.youtube.com/watch?v=U1t3ELd1LDI",
+        "title": "The Secret to Endless Ambient Textures in Ableton Live"
+      },
+      {
+        "from_skill": "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+        "video_id": "uEI2Ytxn7iI",
+        "url": "https://www.youtube.com/watch?v=uEI2Ytxn7iI",
+        "title": "Deconstructing a Textural Soundscape | Creative Sprint #5 Breakdown"
+      },
+      {
+        "from_skill": "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+        "video_id": "LeChNmmtNsM",
+        "url": "https://www.youtube.com/watch?v=LeChNmmtNsM",
+        "title": "Airglow Walkthrough: A High-End Atmosphere Instrument for Ambient Music"
+      }
+    ]
+  },
+  "theory": "Generative music = rules + controlled randomness. Loops of different lengths and probabilities rarely line up, so the piece evolves; a tonic drone keeps everything in key.",
+  "generator": {
+    "path": "sample-lab/theory/granular_cloud.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/granular_cloud.wav"
+  },
+  "prerequisites": [
+    "A DAW with clip launching and follow actions (or a scheduler that can pick the next clip by weighted chance)",
+    "A DAW with send/return tracks",
+    "A long reverb",
+    "A small set of field recordings / noise sources and FX one-shots you are allowed to use",
+    "A spectrum analyser on the master",
+    "A synth with sample-and-hold/random modulators, pitch quantize and a step sequencer (or equivalent MIDI tools)",
+    "A wavetable or virtual-analog synth with LFOs, a random/chaos or stepped modulator and a 24 dB low-pass",
+    "Any synth (VST, hardware or Web Audio) with at least three oscillators plus a sub/noise source, two or three LFOs with free-run and smooth-random shapes, a low-pass/band-pass filter, reverb and delay",
+    "Arpeggiator with modulatable step count",
+    "Band-pass filter, distortion, convolution reverb",
+    "Basic idea of LFO depth and bipolar/unipolar modulation",
+    "Chord/interval generator, stereo doubler/chorus, echo, granular delay, long reverb"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Foundation: reverbed noise bed or generative wind (3 filtered noises with slow LFOs) plus a tonic drone.",
+      "expect": "Bed"
+    },
+    {
+      "n": 2,
+      "action": "Pad: Eno-style sines (0/12/19 st) with slow cross-modulation, steady pitch.",
+      "expect": "Harmonic cloud"
+    },
+    {
+      "n": 3,
+      "action": "Loops: several scale-locked note loops with different lengths and per-note probability; fixed seed.",
+      "expect": "Evolving melody"
+    },
+    {
+      "n": 4,
+      "action": "Clip pools/follow actions: weighted random choice of next clip including silence clips.",
+      "expect": "Structure without composing"
+    },
+    {
+      "n": 5,
+      "action": "Sparkle: random high scale notes + air noise, low level.",
+      "expect": "High detail"
+    },
+    {
+      "n": 6,
+      "action": "Mix: each layer its own range; long reverb; slow autopan.",
+      "expect": "Coherent soundscape"
+    },
+    {
+      "n": 7,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/granular_cloud.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+      "name": "Three-layer ambient starter in about 30 minutes: a slow-envelope wavetable pad with a 4-bar bipolar position LFO and random cutoff drift, a saw-plus-sine bass pad through a 24 dB low-pass, and a sustain-less detail voice whose filter is stepped by a sample-and-hold style modulator into heavy delay and reverb, all composed by frequency region",
+      "goal": "Build the core of an ambient track (70-80 BPM, one minor key, 32-bar canvas) from three complementary layers. Pad: wavetable osc with attack about 3-5 s (4 s), decay about 4 s, sustain a few dB down, long release; 5 unison voices with moderate detune; wavetable position on a bipolar LFO synced to 4 bars; low-pass cutoff set to the 'sweet spot' where partials just peek through, with a random (chaos) modulator on cutoff at a low depth; a sub osc one octave down kept quiet; a second wavetable osc routed around the filter at low level and auto-panned by a 2-bar LFO for width. Send (not insert) to a dotted-eighth dual delay and a very long room/hall reverb (about 55 s decay, 100% wet on the return). Write only a few sustained notes over 32 bars, then pull the cutoff down and let the reverb do the opening. Bass pad: faster envelope, saw through a 24 dB/oct low-pass plus a sine, a touch of reverb, one long root note. Detail voice: attack-decay envelope with zero sustain (a key that rises and falls regardless of hold), 24 dB low-pass whose cutoff is moved by a stepped random (sample-and-hold) modulator at a slow rate, cranked delay and reverb. Check the layers on a spectrum analyser and place each in a different frequency region.",
+      "steps": [
+        "Set tempo to about 75 BPM and pick one minor key; set a 32-bar loop.",
+        "Pad amp envelope: attack about 4 s (3-5 s range), decay about 4 s, sustain a couple of dB down, long release. Gain-stage the synth output down.",
+        "Load a soft wavetable in osc A, set 5 unison voices and adjust detune between wild (wide) and tight. Modulate wavetable position with an LFO synced to 4 bars in bipolar mode.",
+        "Turn on a low-pass filter and find the sweet spot where partials just peek out; put a random/chaos modulator on cutoff and lower its depth in the mod matrix.",
+        "Send the pad to a dotted-eighth dual delay and a very long reverb (about 55 s decay, 100% wet on its return track).",
+        "Add a sub osc one octave down at low level. Add osc B with a second wavetable bypassing the filter at low level, and auto-pan it with a 2-bar LFO (optionally its own bipolar WT-position LFO).",
+        "In a 32-bar MIDI clip, place a minimal chord shape and only a few slow sustained notes; then lower the pad cutoff slightly and let the reverb open it.",
+        "Bass pad: new instance, saw through a 24 dB/oct low-pass, faster envelope with some decay, add a sine (or sine sub) layer and a touch of reverb; write one long root note.",
+        "Detail voice: attack-decay envelope with sustain at zero, 24 dB low-pass with cutoff stepped by a slow sample-and-hold/step modulator; send heavily to delay and reverb; write a few sparse notes.",
+        "Check the master spectrum: confirm pad, bass pad and detail voice occupy different frequency regions; adjust levels or filters where they collide."
+      ]
+    },
+    {
+      "from_skill": "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+      "name": "Planetarium / Eno-style ambient space pad on any synth: sines at 0, +12 and +19 semitones, a triangle sub, two slow free-running smooth-random LFOs that modulate each other's rate and are mixed on every target, low-sustain amp envelope, gentle filter, and LFO-moved reverb/delay mix",
+      "goal": "Build the classic slow 'space / planetarium / Brian Eno' meditation pad from an init patch on any synth with three oscillators, two LFOs and a reverb and delay. Everything moves a little, and no two parameters move together, so the ear never locks onto a pattern. Pitch stays steady: all movement is in level, timbre and effect mix.",
+      "steps": [
+        "Init the patch and set the oscillators to sine waves: osc 1 at 0 st, osc 2 at +12 st (one octave), osc 3 at +19 st (an octave and a fifth).",
+        "Set up two LFOs: rate in Hz (not tempo-synced) and very slow, smooth-random shape (random but gliding, not stepped), free-running so they do not restart on each key, bipolar.",
+        "Cross-modulate the LFOs: send a small amount of LFO 3 to the rate of LFO 2, and of LFO 2 to the rate of LFO 3.",
+        "Modulate the level of the +12 osc with LFO 3 and the +19 osc with LFO 2, plus a smaller amount on osc 1 (the root should move least). On every target, mix a bit of both LFOs, sometimes inverted.",
+        "Add a sub oscillator one octave down using a triangle wave (square is too buzzy with sines). Add a trace of noise (pink, white or blue) for high-end character, barely audible.",
+        "Amp envelope: long attack, long decay, sustain lowered (sloping down), long release.",
+        "Low-pass filter for roundness with low resonance. Move cutoff only slightly with the LFOs.",
+        "Effects: a big cathedral-type reverb and a delay. Put both LFOs, mixed, on reverb dry/wet, delay dry/wet and delay feedback, but not on delay time. Low-cut the effects returns to avoid mud.",
+        "Turn on unison on the oscillators (several voices) with only slight LFO movement, then stop adding things. Save the patch, take a 5-15 minute break and come back for small balance tweaks.",
+        "Optional: add shimmer reverb tuned to +7 st (a fifth) instead of the default octave, with its mix moved slowly in and out.",
+        "Optional: add a low-level consistent noise bed (rain, metallic flow, forest) through a slow, subtle band-pass in parallel with the main filter. Add slow LFO on overall volume and pan, plus small EQ dips on any resonant buildup (not many narrow cuts, which cause a comb-filter effect)."
+      ]
+    },
+    {
+      "from_skill": "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+      "name": "Self-running generative ambient soundscape built from per-layer clip pools that pick their next clip by weighted chance (about 50/50 repeat vs jump, with silent and sparse clips to weight density), over a reverbed noise/field-recording foundation, a tonic drone and a root bass note at random intervals, with sample-and-hold auto-pan on random one-shot FX and weighted-probability quantized note sequences",
+      "goal": "Build an ambient soundscape that keeps evolving on its own so you can focus on sound design and later harvest the best stretches. Layers: (1) a sonic foundation of field recording or noise run through a lot of reverb, plus a granular noise layer whose playheads are modulated; (2) a drone pad on the tonic chord (E minor in the video) with several slow modulators on its macros; (3) a simple FM bass with a little chorus that plays the root at random intervals. Give every track a pool of pre-built clips (including pure-silence clips and busier vs sparser variants) and a follow action on every clip: when a clip ends it either repeats or jumps to another clip, with a probability slider (about 50/50 in the video). Add a random one-shot layer: a single MIDI note through a random-pitch MIDI effect into a drum-rack/sampler of chosen FX one-shots, ending in an auto-pan driven by a sample-and-hold LFO. Use per-note chance and a velocity range on clips, and inside the synth use three independent sample-and-hold modulators on different parameters, a repeating (Turing-machine-style) random sequence quantized to the minor scale, and a step sequencer with weighted note probabilities (root high, others medium or low).",
+      "steps": [
+        "Create the foundation: a field-recording or noise track through a lot of reverb, plus a granular noise layer with its playheads/position modulated.",
+        "Add a drone pad on the tonic chord and route several slow modulators (LFOs, random) to its macros.",
+        "Add a simple FM bass with a little chorus that plays the root note at random intervals.",
+        "For each track, build a pool of clips: varied patterns, sparser and busier ones, and at least one clip of pure silence.",
+        "Turn on a follow action for every clip: after it finishes, repeat itself or jump to another clip in the pool; set the probability slider (about 50/50 to start) and weight it by clip content.",
+        "Random one-shots: feed one MIDI note through a random-pitch MIDI effect into a drum rack/sampler holding your FX one-shots; on that FX track add an auto-pan whose LFO is sample-and-hold.",
+        "In clips, set per-note chance (probability) and a velocity range; map velocity to a synth parameter so dynamics also change timbre.",
+        "Inside the synth, run three independent sample-and-hold modulators on different parameters; for melodic voices use a repeating random (Turing-style) sequence on coarse pitch quantized to the minor scale, or a step sequencer with weighted note probabilities (root high, other notes medium/low).",
+        "Let the set run for a while, record it, then cut out the passages you like for a later track or reuse the designed sounds."
+      ]
+    },
+    {
+      "from_skill": "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+      "name": "Generative 'noodle' wind with no MIDI: one noise source into three parallel filters (slow-swept LP, high resonant BP whistle, mid SVF BP), slightly different free-running sine LFOs with light LFO cross-mod, and an LFO-modulated three-VCA mixer",
+      "goal": "Patch a self-running wind ambience bed that moves without MIDI. Split one white-noise source into three filters: a low-pass swept by a very slow sine LFO (dark rumble that brightens and darkens); a band-pass set very high with resonance pulled well up but short of self-oscillation (resonant whistle); and a mellower state-variable band-pass in the middle. Give each filter its own very slow free-running sine LFO at slightly different rates, and let one LFO lightly modulate another. Mix through a three-channel mixer whose per-channel VCA inputs are driven by three more slow sine LFOs, centred so the layers drift in and out without ever disappearing. Finish with a bracket EQ to tame and a big wash reverb. For a generative noise layer under cinematic pads, this differs from our triple-bandpass pad, which filters a played saw, and from the recorded-whoosh skill.",
+      "steps": [
+        "Start a patch with output, a gain mixer and an EQ (disconnected). Add a white-noise oscillator at low volume, with a little extra gain on the noise module.",
+        "Channel 1: noise → low-pass, fairly closed. Add a very slow free-running sine LFO (no MIDI, no retrigger) to its cutoff, slowed further if needed.",
+        "Channel 2: same noise → band-pass (RBJ-type) set very high, resonance pulled way up but not to a tone, to make a resonating whistle. Add its own slow LFO.",
+        "Channel 3: same noise → state-variable band-pass in the middle range, a mellower flavour, with its own slow LFO.",
+        "Make all three LFO rates slightly different, still very slow, and let one LFO modulate another 'just a touch'.",
+        "Mix the three channels in a 3-input mixer with per-channel modulation inputs (each channel = a VCA), in attenuation mode, bipolar depth set in the correct direction. Drive each modulation input with its own slow sine LFO at a different speed, positioned in the middle so channels go in and out but don't disappear.",
+        "Add a bracket (low/high-cut) EQ to tame the bed, then a big wash reverb. Save it as a patch, then explore by changing LFO rates and shapes on both filters and mixers."
+      ]
+    },
+    {
+      "from_skill": "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+      "name": "Endless ambient texture from one looping MIDI clip: seeded random notes in a gap-free scale, per-note chance below 50%, randomised velocity/humanise, slow sine pad, scale-degree fifth chording and stereo/granular/reverb chain",
+      "goal": "Make a single looping MIDI clip never sound the same twice. Generate seeded random notes locked to a scale without half steps (major pentatonic; Dorian also liked), in a mid register (pitch range ~2–3) with long durations. Then lower each note's play chance below 50% (or below 30% for sparse, many-voice clips) and randomise chance, velocity and timing deviation. Play a soft sine pad (~1 s attack, ~6 s release, so sparse notes overlap), add a scale-aware chord effect (scale degree +4 = fifth on every triggered note), then stereo doubling, a parallel echo, a stereo pitch-loop/micro-delay, granular delay (spray up, frequency down) and a big long reverb. For Polyrhythm Studio-style generative scheduling: probability per note, not a fixed sequence.",
+      "steps": [
+        "Create a looping MIDI clip and set its scale (e.g. C minor, then switch to major pentatonic or Dorian; scales without half steps suit generative work). Use fit-to-scale after any scale change.",
+        "Generate seeded random notes: set density, pitch register around 2–3 (mid range rather than 0–1), longer durations for smooth pad-like notes, and the number of voices.",
+        "Randomise velocities and add deviation/humanise so timing and dynamics wiggle off the grid.",
+        "Select all notes and set chance (play probability) to about 50%, then randomise it so some notes play ~90% and others ~15%. With many voices/density keep chance below 50% or even 30%. Re-apply after regenerating.",
+        "Sound: simple sine pad (second oscillator off), attack just over 1 s, release ~6 s, extra voices for overlaps.",
+        "Add a chord/interval effect before the synth in scale mode with a scale degree of 4 (perfect fifth), so every triggered note becomes a power-fifth.",
+        "Effects: stereo doubler, parallel echo, a stereo pitch-loop/micro-delay for randomised stereo, granular delay (raise spray, lower frequency) for glitchy texture, then a long-decay reverb."
+      ]
+    },
+    {
+      "from_skill": "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+      "name": "Random-modulator soundscape loop: resampled-chord drone with one random modulator on each voice's start position and pan, randomly shortened arp-driven drums, a randomly retimed delay with a +12 st pitch shifter and stepped grain size in its feedback, and a step-scanned vocal sampler",
+      "goal": "Keep a slow (88 BPM) textural loop alive using random and step modulators rather than new notes. (1) Drone: resample a plucked chord into a sampler, set it up to sustain, and have one random modulator (no smoothing; slight clicks are accepted as character) move both sample start/playhead and pan, so each voice starts somewhere different and sits elsewhere in the stereo field. Run a delay in parallel with a convolution reverb. (2) Drums: half-note mallet/brush hits from an arpeggiator whose step count is randomly shortened (16 down to a minimum of 4 steps), so the loop never repeats the same way. Send it to a delay whose time in beats is randomly modulated with smoothing (about 1–8 beats), with a pitch shifter at +12 semitones inside the feedback and a step modulator on its grain size for metallic, sideways echoes. (3) Vocal: a vocal loop in a sampler driven by an 8-step transposing arp, a 16-step modulator choosing the playhead start each step, a band-pass with a slow LFO on frequency, random pan per note, a distortion macro stepped through 16 values, then delay with reverse blur. Delta vs our shimmer and granular skills: random/step modulation of sampler playheads and delay timing as the generative engine.",
+      "steps": [
+        "Resample a plucked chord into a sampler and set it up to sustain as a drone. Add one random modulator and map it to both sample playhead/start and pan.",
+        "Process the drone through a standard delay in parallel with a convolution reverb.",
+        "Drums at slow tempo: half-note hits from a drum machine with two samples (mallet, brush) driven by an arpeggiator. Add a random modulator that shortens the arp length by up to −12 steps (16 down to 4).",
+        "Send drums to a delay: random modulator with smoothing on delay time in beats (about 1 to 8), a pitch shifter at +12 semitones inside the feedback loop, and a step modulator on the shifter's grain size.",
+        "Add a background drone layer (e.g. a pad preset with longer envelope/filter and chorus) playing the same chords lower, plus an optional texture drone into a big reverb with modulated warp, kept low in the mix.",
+        "Vocal layer: vocal loop in a sampler fed by an 8-step arp with transposition. Use a 16-step modulator to set a different playhead start per step, a slow LFO on a band-pass frequency, and a random modulator on pan.",
+        "Vocal FX: distortion preset whose saturation macro is stepped through 16 values, then a delay with reverse blur."
+      ]
+    },
+    {
+      "from_skill": "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
+      "name": "Scale-locked high-end atmosphere layer: sporadic random note 'sprays' (sine-like and brighter 'glass' voices) above ~3 kHz with a gravity/rate control, plus pitch-locked air and dust noise layers on random-drift LFO levels and a long reverb",
+      "goal": "Fill the empty 3 kHz–20 kHz zone of an ambient track with musical, pitch-locked detail instead of generic noise. Lock everything to the track's key and scale (e.g. B minor pentatonic). Generate sporadic random notes from two voices on different patterns: a sine-like 'spray' and a buzzier, brighter 'glass' with tone controls. Set note density with a gravity/rate control, free or tempo-synced from 1/16 up to 16 bars. Add an 'air' white-noise layer and a 'dust' blown-sand noise layer, both of which can be pitch-locked so they take on tonality: air follows spray's pattern and dust follows glass. Move each layer's level with slow LFOs (including smooth random drift). Send it all to a big reverb (size, decay, tone, mix, pre-delay, diffusion, modulation), limit the output, and optionally feed note choices from a slow generative MIDI source. Check the result on a spectrum analyser. This is a generative high-band layer, not a pad or riser.",
+      "steps": [
+        "Analyse a reference ambient track's spectrum: note the active, sporadic, pitch-locked detail between ~3 kHz and 20 kHz.",
+        "Set the key/scale lock to the track (e.g. B minor pentatonic) and trigger the generator; random notes from the scale are sprayed out.",
+        "Slow it down with the gravity/rate control so notes arrive slowly; raise the reverb ('glow') amount for long trails. Alternatively switch to tempo sync and choose intervals from 1/16 up to 16 bars.",
+        "Blend the two tonal voices: spray (standard sine-like tones) and glass (sharper, buzzier shine), each with a tone control and different patterns, so they don't fire together.",
+        "Add the air layer (white noise that 'blows in the distance') and modulate its level with an LFO (e.g. smooth random drift) so it comes and goes. Add the dust layer (sand-scatter-like noise) the same way with the second LFO.",
+        "Pitch-lock the noise layers: air follows spray's note pattern and dust follows glass, so the noise gains tonality in key.",
+        "Shape the reverb (size, decay, tone, mix, pre-delay, diffusion, modulation/chorus), use the output limiter and +6 dB make-up if quiet. Optionally drive pitches from a glacially slow generative MIDI pattern. Then confirm on the full-mix spectrum that the high end is filled."
+      ]
+    }
+  ],
+  "merged_from": [
+    "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+    "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+    "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+    "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+    "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+    "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+    "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+  ],
+  "tags": [
+    "ambience",
+    "ambient",
+    "bandpass",
+    "bass-pad",
+    "beginner-track",
+    "chimes",
+    "cinematic-synth",
+    "clip-launching",
+    "delay",
+    "follow-actions",
+    "free-running",
+    "frequency-separation",
+    "generative",
+    "high-end",
+    "layering",
+    "lfo",
+    "loops",
+    "meditation",
+    "midi",
+    "modular",
+    "music-production",
+    "noise",
+    "pad",
+    "pentatonic",
+    "pitch-shift",
+    "polyrhythm-studio",
+    "portable",
+    "probability",
+    "random-modulation",
+    "reverb"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://generative-ambient-drones-and-soundscapes",
+  "aliases": [
+    "ambient-three-layer-starter-slow-env-wt-pad-bipolar-4-bar-wt-lfo-random-cutoff-unfiltered-panned-osc-b-sub-saw-sine-bass-pad-24db-sustainless-stepped-filter-detail-voice",
+    "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+    "follow-action-clip-pool-generative-soundscape-reverbed-noise-foundation-tonic-drone-random-interval-root-bass-weighted-repeat-or-jump-silence-clips-sh-autopan-fx-weighted-note-probability-quantized-sequence",
+    "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+    "probability-gated-seeded-scale-loop-endless-ambient-sine-pad",
+    "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
+    "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
+  ]
+}

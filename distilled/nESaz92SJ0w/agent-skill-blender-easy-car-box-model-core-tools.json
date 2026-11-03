@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-easy-car-box-model-core-tools",
+  "name": "blender easy car box model with core tools",
+  "goal": "Block out a simple car using scale-axis locks, loop cut, extrude, inset, apply transforms, and duplicated wheels.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "nESaz92SJ0w",
+    "url": "https://www.youtube.com/watch?v=nESaz92SJ0w",
+    "title": "The World's Easiest Blender Tutorial for Beginners",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/nESaz92SJ0w/agent-skill-blender-easy-car-box-model-core-tools.json"
+  },
+  "prerequisites": [
+    "Blender open",
+    "Three-button mouse"
+  ],
+  "inputs": [
+    {
+      "name": "default_cube",
+      "type": "mesh",
+      "description": "Starting cube for car body",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "blockout_car",
+      "type": "mesh",
+      "description": "Low-detail car body with inset windows and cylinder wheels"
+    }
+  ],
+  "constraints": [
+    "Apply All Transforms (Ctrl+A) in Object mode before inset if scale was non-uniform",
+    "Tab toggles Object/Edit; Shift+A adds meshes in Object mode",
+    "Core hotkeys used: S+axis, A, Ctrl+R, E, I, R, Ctrl snap rotate"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Select cube; S then Y stretch length; S then Z flatten height to a car-body proportion.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 2,
+      "action": "Tab Edit mode; A select all; Ctrl+R loop cut (scroll for 2 cuts); place cuts; wireframe view to move side verts for body shape.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 3,
+      "action": "Face select roof region; E extrude upward; pull windshield verts back on Y for rake.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 4,
+      "action": "Object mode Ctrl+A Apply All Transforms; Edit mode again; select window faces; I inset then E extrude inward for glass recesses.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 5,
+      "action": "Object mode; Shift+A Mesh \u2192 Cylinder for a tire; S and S+Z to tire proportions; Edit mode I/E for hub detail.",
+      "tool": null,
+      "expect": null
+    },
+    {
+      "n": 6,
+      "action": "Front orthographic view; R rotate tire with Ctrl for snapped angle; rename objects; duplicate wheels to four corners.",
+      "tool": null,
+      "expect": null
+    }
+  ],
+  "verification": [
+    "Body has cabin extrusion and inset windows",
+    "Four wheel-like cylinders positioned"
+  ],
+  "tags": [
+    "blender",
+    "modeling",
+    "beginner",
+    "vehicle",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "published_at": "2026-09-24T02:45:49.270590+00:00",
+  "mcp_resource": "skill://blender-easy-car-box-model-core-tools"
+}

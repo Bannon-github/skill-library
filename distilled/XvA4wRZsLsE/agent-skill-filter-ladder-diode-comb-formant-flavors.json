@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "filter-ladder-diode-comb-formant-flavors",
+  "name": "Filter design flavors: ladder, diode, comb, formant",
+  "goal": "Pick filter *design* (not just LP/HP/BP): ladder/analog-style for classic resonant subtractive tone; diode for EMS/303-ish acid character (retune resonance when switching); formant XY vowel morphs; comb (tiny delayed copy + mix) for peaks/nulls, keyed harmonic shaping, phasing/flanging, and self-oscillation/string-like plucks\u2014then A/B drive+resonance.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "XvA4wRZsLsE",
+    "url": "https://www.youtube.com/watch?v=XvA4wRZsLsE",
+    "title": "Vital's Filter Types Explained | Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/XvA4wRZsLsE/agent-skill-filter-ladder-diode-comb-formant-flavors.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Web Audio filters exposing multiple models (ladder/diode/comb/formant) or approximations"
+  ],
+  "inputs": [
+    {
+      "name": "filter_model",
+      "type": "enum",
+      "description": "ladder/analog, diode, formant, comb, phaser-like",
+      "required": true
+    },
+    {
+      "name": "mode",
+      "type": "enum",
+      "description": "LP/BP/HP/notch/peak or vowel/comb variant",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "filter_flavor_notes",
+      "type": "synth-patch",
+      "description": "Chosen model + drive/res settings for the role"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Map Vital-named models to portable descriptions (transistor ladder, diode ladder, formant, comb, phaser); ignore proprietary custom spectral editor unless recreating conceptually."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start with standard modes: low-pass, high-pass, band-pass, notch, peak. Note 12 vs 24 dB slopes; many multimode filters morph LP\u2194BP\u2194HP (or LP/HP via notch) with blend.",
+      "tool": "filter",
+      "expect": "Mode/slope basics clear"
+    },
+    {
+      "n": 2,
+      "action": "A/B design flavors at same cutoff with LFO on cutoff: raise drive then resonance. Ladder/analog tend similar (ladder often more resonant); \u2018dirty\u2019 grit scales strongly with drive; digital may sound harsher or sometimes smoother/controlled.",
+      "tool": "filter",
+      "expect": "Audible design differences under drive/res"
+    },
+    {
+      "n": 3,
+      "action": "Try diode model (historically EMS workaround vs Moog transistor ladder; famous in TB-303 acid). Expect different resonance scaling\u2014re-adjust resonance when switching from ladder.",
+      "tool": "filter",
+      "expect": "Acid-adjacent diode character"
+    },
+    {
+      "n": 4,
+      "action": "Formant filters: use XY-style controls for vowels (A/O/I/E or A/I/U/O sets); peak strength, spread between peaks, and formant transpose (pitch of the formant structure).",
+      "tool": "formant",
+      "expect": "Vowel-like peaks"
+    },
+    {
+      "n": 5,
+      "action": "Comb: duplicate + tiny delay + remix \u2192 peak/null series. Enable key tracking aligned to pitch to shape harmonics; type semitone offsets carefully to avoid inharmonic chaos unless desired. Resonance can go \u00b1; useful for phasing/flanging-like motion and physical-ish string tones.",
+      "tool": "comb",
+      "expect": "Harmonic peaks/nulls or whoosh"
+    },
+    {
+      "n": 6,
+      "action": "Self-oscillation: with enough drive+resonance, ladder/analog/dirty/diode (and comb when tuned) can keep sounding after the osc dies if the note is held; digital/formant typically do not. Use for singing filter tones or comb pluck realism.",
+      "tool": "filter",
+      "expect": "Filter sings / sustains without osc"
+    },
+    {
+      "n": 7,
+      "action": "Phaser-like filters resemble sparse combs; set pole/notch count via blend, reshape with resonance, add cutoff modulation for classic sweep. Pick model by ear for bass/lead/pad roles.",
+      "tool": "phaser-filter",
+      "expect": "Sweeping notches/peaks"
+    }
+  ],
+  "verification": [
+    "Can name when to reach for ladder vs diode vs formant vs comb",
+    "Drive+res A/B shows character differences",
+    "Comb key-tracked offset stays musical when desired"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "filter",
+    "ladder",
+    "diode",
+    "comb",
+    "formant",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://filter-ladder-diode-comb-formant-flavors"
+}

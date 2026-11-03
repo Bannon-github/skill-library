@@ -1,0 +1,169 @@
+# FM, phase modulation, phase distortion, sync, ring mod and wavefolding
+
+Goal: Create bells, keys, metallic and aggressive timbres with carrier:modulator ratios and index, operator stacks, phase distortion (Casio-style), hard/windowed sync, ring/amplitude modulation, cross-modulation and wavefolding.
+
+**Theory:** FM sidebands appear at fc ± k·fm; integer ratios are harmonic, irrational ratios inharmonic (bells). Index (depth) controls brightness; decaying index = bright attack, mellow tail. Sync resets the slave phase -> formant-like peaks; folding reflects peaks -> added odd harmonics.
+
+**Hear it:** `sample-lab/theory/fm_ratios.py`
+
+## Workflow
+1. Pick ratio: 1:1 (saw-like), 2:1 (square-ish), 3.5:1 or 1.414 (bell/metal), 14:1 (tine/click).
+2. Set index with an envelope: high at attack, decaying over 0.2-2 s (EP/bell) or swept by LFO for growls.
+3. Stack 3+ operators: modulator->modulator->carrier for denser spectra; add feedback for noise/saw.
+4. Phase distortion: warp the phase of a cosine with a piecewise curve to sweep cosine->saw (resonant PD with a window).
+5. Hard sync: modulate slave pitch with an envelope for a tearing lead; windowed sync smooths the reset.
+6. Ring/AM at audio rate for bell stabs; wavefolder with gain sweep for buzzy harmonic growth (watch aliasing).
+7. Tame with LP filter and level; FM can be very bright.
+8. Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/fm_ratios.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.
+
+## Source techniques (merged, numbers kept)
+
+### Audio-rate AM for wave-shaping and FM/ring-like texture
+Source: [Don’t forget about this old trick – Audio rate amplitude modulation (AM)](https://www.youtube.com/watch?v=5686u1c9kdM) · was `audio-rate-am-wave-shape-texture`
+- Recall ordinary AM: envelopes/LFOs into a VCA control volume or mod depth. Audio-rate AM instead uses an audio-frequency signal as the VCA CV so amplitude changes happen inside each cycle → new wave shapes / sidebands.
+- Self-AM wave-shaping: send a soft shape (sine/triangle) into VCA1 audio input; modulate VCA1 with an alternate waveform of the same oscillator (e.g. square). Use a separate final VCA for note volume so VCA1 is only the shaper.
+- Dynamic depth: route the modulator through another VCA controlled by the same envelope (or an LFO) that also opens the amp VCA—so AM depth blooms with the note instead of staying static.
+- Two-oscillator AM: modulate VCA1 with a second oscillator at a different frequency for more complex signals (often both pitches audible). Experiment with VCA bias/response for softer vs harder AM.
+- Expand: mix multiple alternate waves through VCAs before they modulate the carrier; replace envelope with LFO for continuous wave-shape motion. Keep levels modest for pads; follow with gentle filter/space FX if needed.
+
+### Audio-rate wavefolder from scratch: reflect the signal between ±1 (triangle fold) or use a sine fold sin(x·π/2) under up to ~50 dB of input gain, understand where aliasing comes from, choose sources that fold well, and build a small S&H-gain folded wavetable synth
+Source: [EXTREME WAVE FOLDING: a Pure Data experiment.](https://www.youtube.com/watch?v=G3CIJ3l5Fd8) · was `audio-rate-wavefolder-triangle-vs-sine-fold-gain-sweep-aliasing-wt-synth`
+- Build a test oscillator (e.g. a 200 Hz cosine), scale the output down (~0.2) or use a volume-controlled output, and add a scope/array view so you can see the waveform.
+- Add an input gain stage that can go far beyond full scale (sweep 0 → ~50 dB over ~10 s for testing). Note that plain clipping only flattens the peaks.
+- Triangle fold: map the overdriven signal through a triangle-shaped transfer curve so excursions reflect between +1 and −1 repeatedly (build it from absolute value and a modulo). Use a modulo/remainder that behaves correctly for negative numbers; a C-style fmod breaks it. The signal stays untouched until it exceeds full scale.
+- Sine fold alternative: y = sin(x·π/2) (a sine transfer with period 4). It adds a little distortion even at low gain but much less aliasing at high gain. Prefer it for musical use.
+- Test sources: sine sweeps sound interesting; a saw becomes triangles and then 'wraps around' (aliasing); white noise is unchanged; a guitar gives irregular, obnoxious inharmonic peaks; a drum beat at ~+30 dB is a usable trashy texture. Compare against plain clipping.
+- Folded wavetable voice: write one folded cycle into a 512-sample table (power-of-two period; at 48 kHz that is 93.75 Hz). Reset the oscillator phase (0.25 to turn cosine into sine) so the cycle starts and ends at zero before applying gain.
+- Generative control: sample-and-hold white noise on a phase ramp to apply a random fold gain 8 times per second, trigger a random MIDI note (mtof) on every tenth gain change, and use the phase ramp as a crude amplitude envelope (each note starts louder and ends quieter).
+
+### Casio-style phase distortion: piecewise phase warp of a cosine into a saw (DCW node)
+Source: [GroovyDSP: Introduction to Phase Distortion Synthesis](https://www.youtube.com/watch?v=EW12RYc7QRA) · was `casio-pd-piecewise-phase-warp-cosine-to-saw`
+- Treat the oscillator as: play a cosine (or sine) table by reading it with a linear phase ramp 0→1 once per note cycle. At warp=0 the output must equal the untouched cosine.
+- Define a breakpoint node that always sits at half amplitude on the warped phase (y=0.5) but can slide left on the x-axis to position x1 (how far 'cocked back'). More cock-back = sharper transition from cosine toward saw.
+- Build the warped phase with two line equations meeting at (x1, 0.5): m1 = 0.5 / x1 for the fast first segment (y = m1 * x); m2 = 0.5 / (1 - x1) and b2 = 1 - m2 for the slow second segment (y = m2 * x + b2). If phase < x1 use the first; else use the second.
+- Look up cos(2π * warped_phase) [or your cosine table at warped_phase]. Do not advance phase at two different increments across the threshold — that one missed sample at the knee throws the pitch out of tune when x1 moves.
+- Listen while moving x1: near 0.5 the tone is closer to a sinusoid; pulled far left toward 0 it approaches a near-pure saw. Route an envelope or LFO to x1 for filter-like sweeps without filter math.
+- Optional extensions (same warper): run the warper twice per cycle for other CZ shapes; feed a rich wave (e.g. square) through the same shaper to get pulse-width/symmetry-style squeezing of the first half vs elongation of the second.
+
+### Casio PD wave family: saw-pulse, double-sine, pulse, square, and windowed-sync resonance
+Source: [GroovyDSP: More Phase Distortion!](https://www.youtube.com/watch?v=94vSgZXg1nQ) · was `casio-pd-wave-family-and-windowed-sync-resonance`
+- Start from the piecewise phase warp (fast then slow read). For the classic saw, use a cosine table with the knee near mid-amplitude (y≈0.5).
+- Saw-pulse: swap the cosine table for a sine table under the same warp (first half read fast, second slow) to get the CZ saw-pulse family shape.
+- Double-sine: apply the same shaping so one full sine cycle is played fast and the next slow (or conceptually run at half rate with the warp), producing a weird octave/double-sine texture.
+- Pulse: raise the node height (y-position) toward 1.0 so the fast segment climbs higher and the cycle then waits/holds at the end before resetting — a pulse with end dwell. Cosine or sine both work; Casio often used sine.
+- Square: run the warping function twice per cycle (multiply phase by 2 then wrap 0→1 before the piecewise map), i.e. twice-per-cycle instead of once — Casio's fuller square uses the full 100% cycle read this way rather than a weaker half-cycle squish.
+- Resonance / windowed-sync: run a higher-rate sine (or oscillator) that is hard-synced/reset by the fundamental, then multiply by a decaying amplitude window each master cycle so the sync gap/click is enveloped away — an exponentially decaying sine burst that mimics filter resonance.
+- Optional CZ trick: alternate wave shapes cycle-by-cycle (e.g. square then saw) so the ear hears one compound cycle. Add a unison/detune ('fat') layer for organic thickness on leads/pads.
+- Expose skew/y as a continuous 'DCW' macro and modulate it with envelopes for plucky filterless motion; keep pitch from the master phase ramp only.
+
+### Complex-oscillator voice: bidirectional cross-FM, sync + pitch-follow slew between two VCOs, osc-modulated wavefolder into an S&H-swept self-resonant filter
+Source: [Make Noise DPO — The Ultimate Complex Oscillator?](https://www.youtube.com/watch?v=c8aQMp0vkRg) · was `complex-oscillator-cross-fm-follow-sync-fold-voice`
+- Exponential FM osc1→osc2: raise the amount and listen; then osc2→osc1 likewise; then use both simultaneously and find sweet spots (a little delay helps hear it).
+- Osc1 options: soft sync (lock) or hard sync to osc2 with a richer waveform; or switch osc1 to LFO mode as an internal modulator.
+- Follow: send v/oct to osc2; set osc1 to follow osc2's pitch with a follow (slew) rate so osc1 glides after it; combine sync + follow, then move osc1's pitch to find harmonies/harmonics, or disable follow so osc1 drones on one note.
+- Wavefolder output: lower the sine outputs, listen to the folder; adjust shape and angle (symmetry); bring up the mod bus so osc1 modulates the folder.
+- Bass: osc1 saw sequenced separately → analog filter → stereo chorus.
+- Arp: osc2 square plays an arpeggiated sequence with a tiny vibrato into the linear FM input.
+- Resonant layer: folded output → filter with resonance fully up, cutoff modulated by sample-and-hold; blend in some FM on the folder.
+- Send everything through a clocked stereo delay; record — results are hard to recreate.
+
+### FM synthesis carrier/modulator/ratio basics
+Source: [FM SYNTHS in under 4 minutes](https://www.youtube.com/watch?v=vvBl3YUBUyY) · was `fm-carrier-modulator-ratio-basics`
+- Start with a sine carrier; confirm frequency→pitch and amplitude→loudness.
+- Add a very slow sine modulator into carrier frequency at low depth — hear vibrato-like pitch wobble; raise modulator amplitude to deepen FM.
+- Raise modulator frequency into audio range (and/or change modulator shape, e.g. saw) to create bright/complex spectra (laser-like extremes possible).
+- Optionally modulate the modulator with a slower operator for evolving vibrato/depth; try self-mod carefully.
+- Name parts: operators; algorithm = routing graph; modulator vs carrier roles; set ratios near simple integers (1×, 2×) for musicality; avoid unrelated ratios when you need tonal results.
+
+### Effects inside an FM operator chain: per-operator EQ/phase/delay/comb/drive/decimator/waveshaper/punch applied to the signal before it modulates or is heard, for delayed-modulator bells, noise-excited comb strings and punchy FM attacks
+Source: [Opsix Effects Mode: The Secret to New Sounds](https://www.youtube.com/watch?v=XnSE9X0-S9M) · was `fm-operator-inline-effects-delayed-modulator-bell-noise-comb-string`
+- Single-operator EQ/phase: put a saw on an operator, switch it to an effect slot with peak EQ (centre frequency + gain) or a phase stage; raise the phase feedback, then map mod wheel or a slow LFO to the effect frequency and/or mix. Mix 0 = only the incoming operator; 100% = only this operator.
+- Delayed-modulator bell: plain FM pair. Set the modulator (operator 2) to a short delay effect and raise its feedback; you hear the delay inside the modulation. Raise the modulator ratio (more harmonics), then shorten the delay time, give it a short envelope and increase the carrier's release.
+- Comb string: carrier operator set to a comb (resonator) effect fed by operator 2. With a sine source it just sounds like overdrive. Switch the source to noise with a very short, clicky envelope, set the mix to only the effect, raise comb feedback for guitar-like tones, lengthen the source envelope for longer strings, and raise the carrier's release.
+- Virtual guitar: copy the comb pair to two more operator pairs (three identical sets). Detune one pair via pitch, and set the third an octave higher with a bit of detune, then combine all three and add chorus, delay and reverb.
+- Drive and distortion on an operator: distortion pushes a sine toward square-like harmonics (mix it back in); 'drive' on a saw acts like an analog oscillator overdriving a VCA/filter, adding subtle warmth.
+- Decimator: reduce bit depth (e.g. 4-bit) and sample frequency on a saw to recreate early 8-bit digital/wavetable-era oscillators. Lower frequency = lower resolution.
+- Waveshaper on a sine or saw operator: choose shaping curves to make wavetable-like waveforms (e.g. a 'super square'), and stack it in the modulation chain as a base layer.
+- Punch on the modulator: set operator 2 to the punch effect and raise it so the FM attack hits harder; useful for aggressive attacking sounds.
+
+### FM electric-keys 'resonant tines' patch built on the subtractive analogy: modulation index as cutoff with its own envelope, a 10:1 bell ratio, a third operator with a no-sustain envelope, three macros (index, decay, ratio spread) and mod-wheel vibrato, aftertouch tremolo and an LFO auto-panner
+Source: [Multiphonics CV-3 FM Core Patch Reconstruction with Adam—Resonant Tines](https://www.youtube.com/watch?v=yuQqY0dx2Rw) · was `fm-resonant-tines-keys-index-as-cutoff-three-op-stack-macros-mpe-mods`
+- Patch one sine operator to the output with a spectrum analyser. Add a second operator at LFO rate (~8 Hz) into the first's FM input: you hear vibrato. Raise it to audio rate and key-track both from the keyboard to hear sidebands.
+- Compare ratios: 1:1 gives a saw-like spectrum with FM depth acting as cutoff; 2:1 changes the harmonic pattern (square-like per the presenter) and the harmonic tail detaches; 10:1 gives a classic FM keys/bell. Make the voice polyphonic.
+- Carrier amplitude: multi-stage envelope used like an ADSR (instant attack to max, short transient decay, a sustain-like third stage, last stage as release), gated by the keyboard.
+- Modulator depth: give the FM index its own envelope: rich at the start, falling slightly, staying fairly rich.
+- Add a third operator as an extra modulator with a fast attack and no sustain (falls to zero, a bit longer than the transient). Check the carrier stays at ratio 1 on the analyser while modulator ratios like 2 and 10 enrich the attack.
+- Macros: (1) FM index across all modulators (brightness/'cutoff'), (2) decay: the falling-stage time of all envelopes, (3) modulator ratios moved wide in opposite directions (one up high, one down low) for a formant-like colour.
+- Performance mods: mod wheel speeds an LFO from ~3.2 and sets its level into all operators' fine-tune (slight detune for tremble/vibrato); aftertouch drives a biased VCA after the carrier for tremolo; a third controller drives an LFO panner. Add a short delay and a bright, light, long reverb.
+
+### Four-voice phasor-driven synth: each voice is a wavetable read by its own phasor (pitch = phasor rate) with a phase-shaper for phase distortion (curve, S-curve, split, triangle, fold), all four outputs fed back through a 4x4 matrix into each other's phase inputs for cross phase modulation, panned and mixed, then a lowpass→bandpass→highpass→notch morph filter and drive
+Source: [Phase Distortion / Phase Modulation Synth in VCV Rack](https://www.youtube.com/watch?v=JC-UA2C-sZU) · was `four-phasor-wavetable-voices-per-voice-phase-shaper-cross-pm-matrix-modulator-only-operator-morph-filter-notch`
+- Drive a wavetable oscillator with a rising unipolar saw phasor. Confirm on a scope that there is no output without the phasor, and that the phasor's rate sets the pitch. Start on a sine frame and morph between a few basic frames.
+- Insert a phase shaper between phasor and table. Raise the shape amount in curve mode, then try S-curve, split, triangle and fold modes, watching the bent phasor on the scope.
+- Duplicate the voice to four voices. Mix them in a stereo mixer with per-voice pan. For unipolar pan modulation, set pan fully left and the attenuverter fully right so the modulation sweeps across the field.
+- Feed the four post-shaping voice outputs into a 4x4 matrix mixer and send its four outputs to the voices' phase-modulation inputs (inputs fully open). Example: listen to voice 1 only, and use voice 2 an octave down (slightly detuned) to modulate voice 1's phase; then put voice 3 two octaves down to modulate voice 2.
+- Add phase distortion and a different shape on a modulator voice (for example triangle mode on voice 2, folding on voice 4) and modulate its shape and PD amount with LFOs. Keep voice 4 muted in the mix so it works only as a modulator.
+- Modulate PD amount with a slow LFO through an attenuverter; optionally modulate the matrix amounts too (for example voice 1 → voice 2) so cross-PM depth moves over time.
+- Route the mix through a multimode filter that morphs lowpass → bandpass → highpass → notch. Close the cutoff, then modulate cutoff and morph with two LFOs at different rates. Add drive, choose a plucky or long amp envelope, and add reverb last.
+
+### Hard oscillator sync: master sets pitch, slave pitch + mod envelope sets timbre
+Source: [Oscillator Syncing in Thor (Patch Design in Thor)](https://www.youtube.com/watch?v=C_d3SCz2u-c) · was `hard-sync-master-slave-mod-envelope-timbre`
+- Init two oscillators. Enable hard sync so each time oscillator 1 completes a cycle it resets oscillator 2's phase. Raise amp-envelope sustain to full.
+- Mute/hear only the slave for clarity. Changing master octave changes perceived pitch even when only the slave is routed; changing slave pitch changes timbre, not the fundamental.
+- Set slave about one octave below master. Route mod envelope to slave pitch at nearly full amount (~94%). Give the mod envelope a little attack, fairly long decay, and release near zero. Bypass bright-cutting filters for a raw sync tone.
+- Add tempo-synced delay (transcript example: dotted/3+16th feel) with low dry/wet, set pitch-wheel range to ±12 st, and a short digital reverb at very low mix for space.
+- Perform with pitch-bend automation (full-range slides) and optional reverb dry/wet rides for breakdown/build gestures.
+
+### Rebuild CZ-style phase-distortion shapes with an external phase chain (skew, formant, sync, fold)
+Source: [What is a Phase Distortion Oscillator and why is it](https://www.youtube.com/watch?v=TrkXgDQbhjk) · was `phase-distortion-shapes-modular-phase-chain`
+- Start with a sine oscillator. Disable its internal phase (or set internal phase ratio to 0) and drive phase modulation from an external phaser/ramp at 100% so the sine returns.
+- Saw-like PD: insert a skew/bend on the phase so the ramp races through the first half and stretches the second (knee around 50% amplitude). Invert polarity if needed to match a reference Phase-1 oscillator.
+- PWM/formant-style: use a formant (or PWM) phase shaper so phase stays at the start, runs quickly through the cycle, then holds at the end until reset — classic pulse-width-like PD.
+- Folded variant: fold the lower half of the wave upward, then apply formant/PWM; for a precise match the transcript uses about −12 semitones on the formant stage and order matters (formant before the other stage).
+- Sync+skew: put a sync stage at +12 st (double frequency) then skew to slide the doubled humps together — another CZ-like bright shape. Whole-number octave sync ratios (12 or 24 st) keep the effect tonal.
+- Squeezed whole-wave: shift phase by about 25%, then move formant to squeeze the entire sine. Animate whichever shape control is primary with an ADSR (CZ historically used rich multi-stage envelopes on DCW).
+- Resonant tilt: raise the oscillator's frequency/sync multiple (or dedicated F control akin to sync) while modulating shape so overtones bloom like resonance — related to but not identical to plain sync.
+
+### Ring modulation: envelope on mix for bells, on tune for stabs, LFO for pulsing pads
+Source: [What is Ring Modulation? | Intro to Synths Part 12](https://www.youtube.com/watch?v=0t0yrlwrvt4) · was `ring-mod-envelope-bell-stab-pulse`
+- Decide the patch type (lead, pluck, pad, bass), pick an initial oscillator and set the amp envelope and mono/poly mode around it.
+- Shape the raw sound first (osc configuration, sync, unison), tweak amp envelope, then filters; this is where ring mod or FM is considered.
+- Add a ring modulator (carrier × modulator, carrier mix only). Learn the two controls: mix = effect strength; detune = splits the tone into two distinct pitches. Unlike FM, the lower pitch also shifts slightly as you detune, at a different rate from the upper pitch.
+- Bells: assign a pluck-shaped envelope (fast attack, short decay, low sustain) to ring-mod mix.
+- Stabs: assign the same pluck envelope to ring-mod detune/tuning instead.
+- Pads: assign a slow LFO to ring-mod mix or detune at low depth.
+- Then add LFOs/envelopes on other params, portamento/legato and trigger/phase-reset choices to finish character; iterate back and forth.
+
+### Transient splice: attack of one source + body of another (wave-sequence / concatenative hybrid)
+Source: [Wave Sequencing Synthesis: What Is It and How To Do It (Korg Wavestate Tutorial)](https://www.youtube.com/watch?v=C_NkGQqTdSo) · was `transient-splice-attack-body-hybrid-voice`
+- Think of each sound as two parts: attack/transient (first ~30–50 ms, noisy and carrying most of the identity) and body/decay (sustained, less noisy). The goal is to graft A's attack onto B's body.
+- Single-layer method: in the sample/step lane put the attack source on step 1 and the body source on step 2.
+- Timing lane: make step 1 very short (~0.1 s, try down to ~50 ms with smaller crossfade) and step 2 long with a generous crossfade so the switch is inaudible.
+- Set loop start AND loop end on step 2 so the sequence plays step 1 once and then loops only the body; if loop start stays on step 1 the transient retriggers and clicks.
+- Probe the limit: shorten step 1 and its crossfade until the attack identity becomes imperceptible, then back off. Swap attack sources (piano-like, pluck, guitar-like) over the same body to audition hybrids.
+- Two-layer method: layer A plays only the attack source with timing set to Gate (single step, no continuation) and an amp envelope with near-zero sustain and very short decay; layer B loops only the body source with its own amp envelope.
+- Balance levels/envelopes so A is audible over B, then process them separately (filter, LFOs, compression, FX per layer) and add shared reverb/delay to glue them.
+
+### Wavetable warp modes rebuilt as phase-signal transforms (PWM, bend, asym, mirror, sync/window, flip, quantize, remap)
+Source: [A comprehensive guide to phase and warp modes in Serum, Bitwigs Grid and other synths like it](https://www.youtube.com/watch?v=D4K5g8t3aIc) · was `warp-modes-as-phase-signal-transforms`
+- Model the oscillator as three variables: frequency (set by the played note, how often the cycle repeats), amplitude, and phase (where you are in the cycle and HOW you move from the start position to the end). Warp modes change only the phase motion.
+- Separate phase from waveform: generate a linear phase ramp (sawtooth 0->1 once per cycle at the note frequency) and feed it at 100% into the oscillator's phase input/lookup. A straight ramp must reproduce the original wave exactly. (Bitwig Grid: switch off the oscillator's internal phase section and patch a phase module in; Web Audio: AudioWorklet table read at the computed phase.)
+- PWM: squeeze the phase so it runs through the whole cycle quickly, then holds at the end until the period elapses, then jumps back to 0. Squeezing from one side or from both sides is equivalent once you shift the oscillator start phase. A bipolar version can also stretch/zoom into a small part of the cycle, turning a sine almost into a saw and eventually losing amplitude.
+- Bend (+ / - / +-): apply a pinch curve to the phase. One direction races to the centre, lingers there, then speeds up toward the end; the other direction lingers at the start and end and runs quickly through the middle. Bend +- has its neutral point in the middle of the knob. Asym = a skew curve that moves the turning point to one side.
+- Mirror: run the phase through the whole cycle and then reverse direction back to 0 (a triangle-shaped phase). Raising the amount repeats this faster, almost sync-like. To match a synth whose mirror control moves the two halves closer/further apart, follow the mirror stage with a skew stage.
+- Sync: amplify the phase ramp beyond 1 and wrap anything above 1 back down to 0 so the cycle restarts; more amount = more condensed sub-cycles pushed in from the right. Hard wrapping crackles, especially on a sine; 'window' variants force a zero crossing at the cycle start/end (half window, and full window which extends further toward the ends) to soften it while changing the waveform. A window can only be approximated with envelope-style amplitude shaping if your tool lacks it.
+- Flip: compare the phase ramp to a threshold value (0-1) with a greater/less-than comparator; use the boolean to switch between the original phase and a 180-degree-rotated copy (split/rotate, then merge/select). The wave inverts exactly where the ramp crosses the threshold, and the knob covers two cycles of this. A plain phase-reverse module is NOT the same result.
+- Quantize: run the phase through a quantizer so only discrete steps are allowed (a staircase), giving a bit-crusher-like distortion of the wave.
+- Remap: draw an arbitrary transfer curve mapping phase-in to phase-out (e.g. stay at the beginning, then catch up exponentially) with the warp amount as the depth; Remap 2/3/4 apply the shaping repeatedly/repeat the waveform more often. LFO-style shapes can be used as curves.
+- Treat FM as related (it also moves phase, via another oscillator) but separate from warping; keep it in its own stage.
+- Chain several phase transforms in series (e.g. PWM-style squeeze then pinch, or mirror then skew) and assign each amount to LFOs, envelopes or macros for evolving cinematic motion.
+
+### Windowed sync via amplitude window (sine or drawable) on a phase-synced oscillator
+Source: [Windowed Sync in the Grid](https://www.youtube.com/watch?v=g0QRn65Mwwc) · was `windowed-sync-amplitude-modulator-drawable-window`
+- Demo plain hard sync: feed a slave osc from an external phase with sync so raising sync amount packs more of the waveform in from the left and the cycle hard-jumps back to zero at the window end. Scope the discontinuity.
+- State the windowed-sync goal: force amplitude to zero at the beginning and end of each master period so the reset lands on a soft zero-crossing. Half-window is the same idea with a steeper decline at the ends.
+- Build the slave: wavetable/osc with internal phase off, driven by an external phase module that has a sync input from the master. Confirm the same crackle on modulation before windowing.
+- Duplicate the oscillator as a sine window source. Disconnect it from the sync output and feed it from the phase (not sync) tap so the window runs at the master period. Route the sine into an amplitude/level modulator on the slave.
+- Align phases: shift the window oscillator phase by about 50% so the zero of the window lines up with the sync reset (matching Serum-style windowed sync). Compare scope to the unwindowed sync.
+- Optional half-window / custom shapes: replace the sine with a drawable oscillator (or curve) that falls steeper at the ends (Hof-like) or any unorthodox amplitude curve — Bitwig Scrawl-style freedom. Keep window rate locked to the master phase.
+- Modulate sync amount with an LFO (saw or square work well for demo). Try bending/warping the slave and lighter waves (sine) when using aggressive FM-like mods. Keep the amplitude window engaged while sync moves.

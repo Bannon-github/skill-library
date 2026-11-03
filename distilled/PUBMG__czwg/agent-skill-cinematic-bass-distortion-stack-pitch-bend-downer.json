@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-bass-distortion-stack-pitch-bend-downer",
+  "name": "Cinematic bass FX bed: WT+sub through stacked distortion/compression, then pitch-bend downer",
+  "goal": "Build a full cinematic bass/impact bed by pitching a wavetable osc down an octave with subtle bend-warp and width, stacking multiple distortions and compressors so the WT choice matters less than the grind, pushing a sine sub through the same FX, adding early-chain filter/EQ movement into the grit, then reusing the patch for braams/bends/downers via one-shot pitch curves and asymmetric filter envelopes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "PUBMG__czwg",
+    "url": "https://www.youtube.com/watch?v=PUBMG__czwg",
+    "title": "How To Sound Design Cinematic Basses and Subdrops",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/PUBMG__czwg/agent-skill-cinematic-bass-distortion-stack-pitch-bend-downer.json"
+  },
+  "prerequisites": [
+    "Wavetable synth with warp/bend, unison width, FX rack (distortion, compressor, filter), pitch envelope/curves"
+  ],
+  "inputs": [
+    {
+      "name": "fx_intent",
+      "type": "enum",
+      "description": "bass-bed | braam-bend | downer",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cinematic_bass_fx",
+      "type": "synth-patch",
+      "description": "Distorted cinematic bass reusable for bends and downers"
+    }
+  ],
+  "constraints": [
+    "Portable signal-flow recipe for Web Audio / Traveler-inspired / any hybrid synth with comparable modules; not affiliated with any vendor.",
+    "Do not copy proprietary factory preset banks, wavetable file names, or sample packs; use original/free waves or generic shapes.",
+    "Steps and numeric values are grounded only in the YouTube Show-transcript text; approximate where the speaker gestured without stating a number.",
+    "Do not copy named factory WT/preset labels from the video; pick any original/free complex table or basic shapes plus bend.",
+    "Delta vs existing braam skill: emphasis on heavy serial distortion/compression bed + sub-through-FX and downer filter curves, not the sine+dual-saw formant braam recipe."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init WT osc; transpose \u221212 st. Apply a bend-style warp in small amounts to soften robotic digital WT character. Add modest unison width with reduced detune so it is wide but not chorus-wobbly.",
+      "tool": "wt-osc",
+      "expect": "Darker, slightly warped WT body"
+    },
+    {
+      "n": 2,
+      "action": "Stack several distortions and compressors in series. The more extreme the stack, the less the specific WT matters. Use some compressors to bring high-end back; disable multiband modes if the tone goes boxy.",
+      "tool": "fx-stack",
+      "expect": "Dense, aggressive bass bed dominated by grit"
+    },
+    {
+      "n": 3,
+      "action": "Place a filter or EQ early in the FX chain and modulate a morph/cutoff with one slow LFO plus a second LFO (different rate, limited depth) so movement is smashed into the distortion.",
+      "tool": "pre-distort-mod",
+      "expect": "Pumping accents from pre-distortion motion"
+    },
+    {
+      "n": 4,
+      "action": "Add a second oscillator +12 st with fewer unison voices for air. Keep a sine sub in the patch and intentionally run it through the same FX \u2014 bypassing FX shows how much the sub colors the grind; tweak sub pitch for large timbral changes.",
+      "tool": "layers-sub",
+      "expect": "Sub+FX interaction is audible; octave layer adds presence"
+    },
+    {
+      "n": 5,
+      "action": "Post: more compression/saturation (soft-clip/inflator-style with low drive), limiter, enable legato/glide. For braams/bends draw a one-shot pitch curve (e.g. 2 bars). For downers invert the pitch gesture and automate filter cutoff with a fast-then-slow asymmetric curve over ~2 bars, optionally keeping lows less affected.",
+      "tool": "pitch-filter-fx",
+      "expect": "Same bed becomes bend, braam-ish hit, or downer via curves only"
+    }
+  ],
+  "verification": [
+    "Bypassing the distortion stack reveals a quieter cleaner WT+sub; engaging it massively increases density",
+    "Pitch one-shot produces a bend/braam gesture; opposite curve + filter produces a downer",
+    "Sub pitch changes alter the distorted timbre even when WT is unchanged"
+  ],
+  "tags": [
+    "cinematic-bass",
+    "distortion-stack",
+    "subdrop",
+    "downer",
+    "braam-bed",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://cinematic-bass-distortion-stack-pitch-bend-downer"
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-organic-pluck-pad-ladder-chorus-space",
+  "name": "Organic ambient pluck-pad with ladder, velocity, chorus-space",
+  "goal": "Shape a soft sine-based ambient pluck that sustains as a pad: warp toward saw, ladder filter envelope, gentle distortion, pink-noise bed, pitch drift, velocity\u2192level/cutoff, then chorus pushed toward long decay plus reverb/delay.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ehKoz6ILmxQ",
+    "url": "https://www.youtube.com/watch?v=ehKoz6ILmxQ",
+    "title": "Making Dreamy & Organic Pads | Vital Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ehKoz6ILmxQ/agent-skill-ambient-organic-pluck-pad-ladder-chorus-space.json"
+  },
+  "prerequisites": [
+    "Wavetable/VA synth with warp/squeeze, dual filters, distortion FX, chorus, delay, reverb, velocity mod"
+  ],
+  "inputs": [
+    {
+      "name": "pluck_vs_pad_sustain",
+      "type": "number",
+      "description": "Sustain level high enough to hold as pad",
+      "required": true
+    },
+    {
+      "name": "filter_model",
+      "type": "enum",
+      "description": "Ladder/analog for smooth vs dirty/digital for grit",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "organic_ambient_patch",
+      "type": "synth-patch",
+      "description": "Expressive ambient pluck/pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Use distortion mainly for harmonics; post-filter/blend to avoid loudness jumps when raising drive mix.",
+    "Chorus-as-infinite-reverb can mud \u2014 high-pass / envelope the spread and add a real reverb carefully."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init patch. Amp env: short attack, raised decay, mid sustain (not zero), some release so held notes act as pads.",
+      "tool": "amp-envelope",
+      "expect": "Works as pluck and held pad"
+    },
+    {
+      "n": 2,
+      "action": "Osc: soft sine/basic shape; apply warp/squeeze toward a saw\u2013sine hybrid for mild harmonics.",
+      "tool": "oscillator",
+      "expect": "Soft but not hollow"
+    },
+    {
+      "n": 3,
+      "action": "Filter1 ladder (or analog): env2 pluck contour \u2192 cutoff (~+24 semitones depth); low resonance; key track on; drive near zero for subtlety.",
+      "tool": "filter",
+      "expect": "Organic pluck contour without harsh resonance"
+    },
+    {
+      "n": 4,
+      "action": "FX distortion (e.g. sine-fold): moderate drive, reduced mix; enable post-filter with high cutoff/low resonance/blend to control level vs harmonics.",
+      "tool": "distortion",
+      "expect": "Harmonic interest without volume jump"
+    },
+    {
+      "n": 5,
+      "action": "Low pink noise \u2192 band-pass filter2 with drive, key track, low resonance so noise blends and stays mid-focused.",
+      "tool": "noise",
+      "expect": "Analog-like air without bright hiss or rumble"
+    },
+    {
+      "n": 6,
+      "action": "Add slow pitch drift; optional formant/warp random (stereo, ~2s) bipolar for organic movement.",
+      "tool": "mod-matrix",
+      "expect": "Notes feel alive"
+    },
+    {
+      "n": 7,
+      "action": "Velocity \u2192 osc level and warp/squeeze and cutoff so soft plays are darker/quieter.",
+      "tool": "velocity",
+      "expect": "Expressive dynamics"
+    },
+    {
+      "n": 8,
+      "action": "Chorus: freeze/tempo off, raise depth/delay, high feedback for long decay; high-pass; envelope \u2192 spread for note-ducked lush tails; then real reverb (~80 size, ~30% mix, low cut) and dotted-quarter delay (~30% mix).",
+      "tool": "fx-bus",
+      "expect": "Lush space without metallic mud"
+    }
+  ],
+  "verification": [
+    "Held notes sustain as a pad",
+    "Velocity changes brightness/loudness",
+    "Noise is band-limited and quiet",
+    "Time FX don\u2019t bury the dry transient entirely"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "ambient",
+    "pad",
+    "filter",
+    "chorus",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://ambient-organic-pluck-pad-ladder-chorus-space"
+}

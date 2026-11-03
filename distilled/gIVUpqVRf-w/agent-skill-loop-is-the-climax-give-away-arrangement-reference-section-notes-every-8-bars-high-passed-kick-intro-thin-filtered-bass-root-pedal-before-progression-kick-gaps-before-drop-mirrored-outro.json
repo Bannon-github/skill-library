@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro",
+  "name": "Loop-to-track arrangement where the finished loop is the climax and everything before it 'gives away' that loop gradually: whole elements, the power of elements (high-passed kick, thin high-and-low-passed bass), and the chord progression itself (root-note pedal first), with a change at every 8-bar boundary and an outro that mirrors the intro",
+  "goal": "Arrange a finished loop into a full track. First map a reference track: listen through and drop markers for what enters or leaves at each section (every 8 bars something changes). Treat your loop as the climax and plan how to reach it by giving things away over time. Drums first: copy the full drum loop to the start, high-pass the kick at about 120 Hz for the first 16 bars, start with fewer parts (no shaker/hats), bring shaker in, save hats and snare for later, and remove the kick's last bar (or last two bars) before each full-kick entry or drop. Atmosphere runs throughout. Bass: start as a single root-note pedal (monotonic) instead of the progression, with an octave jump at the end of each 8 bars; give away its power with labelled high-pass and low-pass filters automated from thin and dark to full. Melodic parts: bring in stripped-back fragments (first bar only, fewer notes), filter elements in instead of hard entries, reveal the full chord progression and full lead later; hold back some parts for the second drop. Outro: do the opposite of the intro (high-pass the kick again for 8 bars, filter the bass out and darker, return to the root pedal and a resolving last note).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "gIVUpqVRf-w",
+    "url": "https://www.youtube.com/watch?v=gIVUpqVRf-w",
+    "title": "How to Structure Melodic House Tracks Like a Pro",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/gIVUpqVRf-w/agent-skill-loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A DAW with arrangement view, markers and filter automation",
+    "A finished 8-16 bar loop (drums, bass, chords, lead, atmosphere)",
+    "Optional: a reference track in a similar style"
+  ],
+  "inputs": [
+    {
+      "name": "loop",
+      "type": "project",
+      "description": "The finished loop, treated as the climax",
+      "required": true
+    },
+    {
+      "name": "reference_track",
+      "type": "audio",
+      "description": "A similar-vibe track to map sections from",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "daw-arrangement",
+      "description": "Intro → build → drop → breakdown → drop 2 → outro with staged give-aways"
+    },
+    {
+      "name": "section_map",
+      "type": "text",
+      "description": "Marker list of what enters/leaves every 8 bars"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Copy only the structure from the reference, never its audio or melodies.",
+    "Label filters (HP / LP) on each part before automating; there will be many lanes.",
+    "Ambient/cinematic adaptation: keep the same give-away logic but swap the kick for the main pulse layer; Matt prefers drums entering early and steadily, so give away kick power (high-pass) rather than delaying the kick entirely.",
+    "Transitions (reverse crashes, risers) and micro automation are a separate pass; this skill covers macro structure only.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'.",
+    "Novelty REVIEW (0.183 vs the eight-bar build-up skill): that skill covers the 8 bars before a drop; this one covers whole-track give-away of element power and harmony (root pedal before progression) from intro to outro. Use them together."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Import a reference track, listen through and drop a marker each time something enters, leaves or changes (expect a change every 8 bars). Write the macro structure, e.g. intro, bass in, build, drop, breakdown, drop 2, outro.",
+      "tool": "DAW markers",
+      "expect": "A written section map."
+    },
+    {
+      "n": 2,
+      "action": "List what you can give away: whole elements; element power (kick without lows, bass without sub, thinner versions); the chord progression; stripped-back versions of parts.",
+      "tool": "Notes",
+      "expect": "A give-away plan with the loop as the climax."
+    },
+    {
+      "n": 3,
+      "action": "Drums first: copy the full drum loop to the start; high-pass the kick at about 120 Hz for the first 16 bars; remove shaker, hats and snare at first and stage them in later (shaker early, hats and snare saved for later).",
+      "tool": "DAW + filter automation",
+      "expect": "A thin but steady pulse from bar 1."
+    },
+    {
+      "n": 4,
+      "action": "Delete the kick's last bar (or last 2 bars) before each full-kick entry or drop.",
+      "tool": "Arrangement",
+      "expect": "A gap that adds contrast to the entry."
+    },
+    {
+      "n": 5,
+      "action": "Run the atmosphere/texture throughout to set the tone.",
+      "tool": "Arrangement",
+      "expect": "Continuous glue under all sections."
+    },
+    {
+      "n": 6,
+      "action": "Bass: write a single root-note pedal for the early sections with an octave jump at the end of each 8 bars. Add labelled HP and LP filters and automate from thin and dark to full and bright; switch to the full chord progression only at the main section.",
+      "tool": "Bass track + filters",
+      "expect": "The harmony and the low-end power are revealed later."
+    },
+    {
+      "n": 7,
+      "action": "Melodic parts: enter with fragments (first bar only, fewer notes), filter them in rather than hard-cutting, then reveal the full progression, full lead and extra layers (piano chords, high pluck) only at later peaks; hold some back for drop 2.",
+      "tool": "Arrangement + auto filter",
+      "expect": "Each 8-bar section adds or reveals something; the climax isn't spent early."
+    },
+    {
+      "n": 8,
+      "action": "Before a drop, filter percussion/kick from thin and clicky to full, leave a short moment of near-silence, then hit the drop with everything un-high-passed.",
+      "tool": "Automation",
+      "expect": "A clear inflection into the drop."
+    },
+    {
+      "n": 9,
+      "action": "Outro: mirror the intro: high-pass the kick for 8 bars, filter the bass out and darker, return to the root pedal and end on a resolving note.",
+      "tool": "Automation",
+      "expect": "The track closes in reverse order of the intro."
+    }
+  ],
+  "verification": [
+    "Every 8-bar boundary has at least one entry, exit or filter change.",
+    "Kick is high-passed (about 120 Hz) in the intro and again in the outro; a 1-2 bar kick gap precedes each drop.",
+    "The full chord progression is not heard until the main section; earlier bass plays the root pedal."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "loop-to-song",
+    "subtractive-arrangement",
+    "filter-automation",
+    "reference-track",
+    "breakdown",
+    "outro",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://loop-is-the-climax-give-away-arrangement-reference-section-notes-every-8-bars-high-passed-kick-intro-thin-filtered-bass-root-pedal-before-progression-kick-gaps-before-drop-mirrored-outro"
+}

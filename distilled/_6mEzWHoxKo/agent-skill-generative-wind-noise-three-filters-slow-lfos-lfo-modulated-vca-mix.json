@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix",
+  "name": "Generative 'noodle' wind with no MIDI: one noise source into three parallel filters (slow-swept LP, high resonant BP whistle, mid SVF BP), slightly different free-running sine LFOs with light LFO cross-mod, and an LFO-modulated three-VCA mixer",
+  "goal": "Patch a self-running wind ambience bed that moves without MIDI. Split one white-noise source into three filters: a low-pass swept by a very slow sine LFO (dark rumble that brightens and darkens); a band-pass set very high with resonance pulled well up but short of self-oscillation (resonant whistle); and a mellower state-variable band-pass in the middle. Give each filter its own very slow free-running sine LFO at slightly different rates, and let one LFO lightly modulate another. Mix through a three-channel mixer whose per-channel VCA inputs are driven by three more slow sine LFOs, centred so the layers drift in and out without ever disappearing. Finish with a bracket EQ to tame and a big wash reverb. For a generative noise layer under cinematic pads, this differs from our triple-bandpass pad, which filters a played saw, and from the recorded-whoosh skill.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "_6mEzWHoxKo",
+    "url": "https://www.youtube.com/watch?v=_6mEzWHoxKo",
+    "title": "DevOcean Modular - Create A Wind Noodle Patch From Scratch #modularsynth  #sounddesign  #synthesiser",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_6mEzWHoxKo/agent-skill-generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix.json",
+    "transcript_note": "Modular app walkthrough; route.py said COVERED but hand-check found no generative noise/wind bed skill. Factory patch names omitted."
+  },
+  "prerequisites": [
+    "Noise generator, three filters (LP, resonant BP, SVF BP), six free-running LFOs, a mixer with per-channel modulation/VCA inputs (Web Audio: AudioBufferSource noise → 3 BiquadFilterNodes → GainNodes driven by OscillatorNode LFOs, implementation note)",
+    "EQ and a long reverb"
+  ],
+  "inputs": [
+    {
+      "name": "noise",
+      "type": "audio",
+      "description": "White noise (static on its own)",
+      "required": true
+    },
+    {
+      "name": "lfo_rates",
+      "type": "number[]",
+      "description": "Very slow, deliberately unequal rates",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wind_bed",
+      "type": "audio",
+      "description": "Continuously moving wind texture that needs no notes"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Rates, cutoffs and resonance are set by ear; the transcript names no numbers. Keep all LFOs very slow and slightly different.",
+    "Keep BP resonance high but not at self-oscillation: you want a whistle, not a tone.",
+    "Mixer modulation should be centred so layers move in and out but never go fully silent.",
+    "Sine, triangle and smooth-random LFOs give flowing wind; saws and squares make it rhythmic."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start a patch with output, a gain mixer and an EQ (disconnected). Add a white-noise oscillator at low volume, with a little extra gain on the noise module.",
+      "tool": "source",
+      "expect": "Static white noise"
+    },
+    {
+      "n": 2,
+      "action": "Channel 1: noise → low-pass, fairly closed. Add a very slow free-running sine LFO (no MIDI, no retrigger) to its cutoff, slowed further if needed.",
+      "tool": "ch1 LP",
+      "expect": "Dark rippling wind that slowly brightens and darkens"
+    },
+    {
+      "n": 3,
+      "action": "Channel 2: same noise → band-pass (RBJ-type) set very high, resonance pulled way up but not to a tone, to make a resonating whistle. Add its own slow LFO.",
+      "tool": "ch2 BP",
+      "expect": "High whistling layer that drifts"
+    },
+    {
+      "n": 4,
+      "action": "Channel 3: same noise → state-variable band-pass in the middle range, a mellower flavour, with its own slow LFO.",
+      "tool": "ch3 SVF",
+      "expect": "Mid-band airy layer"
+    },
+    {
+      "n": 5,
+      "action": "Make all three LFO rates slightly different, still very slow, and let one LFO modulate another 'just a touch'.",
+      "tool": "lfo offsets",
+      "expect": "Filters never move in sync"
+    },
+    {
+      "n": 6,
+      "action": "Mix the three channels in a 3-input mixer with per-channel modulation inputs (each channel = a VCA), in attenuation mode, bipolar depth set in the correct direction. Drive each modulation input with its own slow sine LFO at a different speed, positioned in the middle so channels go in and out but don't disappear.",
+      "tool": "vca mix",
+      "expect": "Layers swell and recede independently"
+    },
+    {
+      "n": 7,
+      "action": "Add a bracket (low/high-cut) EQ to tame the bed, then a big wash reverb. Save it as a patch, then explore by changing LFO rates and shapes on both filters and mixers.",
+      "tool": "fx",
+      "expect": "Immersive, self-moving wind ambience"
+    }
+  ],
+  "verification": [
+    "Patch evolves for minutes with no MIDI input.",
+    "Soloing each channel reveals a distinct band (low rumble, high whistle, mid air).",
+    "No two filter sweeps peak at the same time over a long listen.",
+    "No channel ever drops to full silence in the mix."
+  ],
+  "tags": [
+    "noise",
+    "wind",
+    "generative",
+    "ambience",
+    "bandpass",
+    "lfo",
+    "vca",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://generative-wind-noise-three-filters-slow-lfos-lfo-modulated-vca-mix"
+}

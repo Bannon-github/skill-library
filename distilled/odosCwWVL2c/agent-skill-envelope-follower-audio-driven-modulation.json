@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "envelope-follower-audio-driven-modulation",
+  "name": "Envelope follower: audio loudness as a modulation source (fold, ring mod, ducking, playback rate)",
+  "goal": "Use an envelope follower to turn one signal's amplitude into a modulation lane for organic, performance-linked movement instead of a fixed LFO: map it (with depth, rise/fall smoothing, and invert) to wavefolder amount, opposing left/right ring-mod depths, a pad's volume or filter for kick-keyed ducking or expansion, or a looped sample's playback rate.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "odosCwWVL2c",
+    "url": "https://www.youtube.com/watch?v=odosCwWVL2c",
+    "title": "Using Envelope Followers for Modulation in Your Music! The How, the When, the Why",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/odosCwWVL2c/agent-skill-envelope-follower-audio-driven-modulation.json"
+  },
+  "prerequisites": [
+    "Envelope follower that outputs a control signal (CC or internal mod) with depth, rise/attack, fall/release and invert; destination params that can be modulated (fold, ring-mod, filter, channel volume, sample rate)"
+  ],
+  "inputs": [
+    {
+      "name": "follower_source",
+      "type": "audio",
+      "description": "Signal whose loudness drives modulation (the synth itself, a kick, a looped texture)",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "type": "enum",
+      "description": "fold | ring_mod_depth | filter_cutoff | volume | sample_playback_rate",
+      "required": true
+    },
+    {
+      "name": "invert",
+      "type": "bool",
+      "description": "Invert so louder source gives lower destination value",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "follower_mod_route",
+      "type": "mod-route",
+      "description": "Audio-driven modulation mapping with tuned depth and smoothing"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Portable alias: envelope follower = amplitude detector \u2192 smoothed control signal (Web Audio: AnalyserNode RMS \u2192 AudioParam setTargetAtTime).",
+    "Delta vs sidechain-compressor-duck-synth-pads and modulation-lfo-envelope-mod-matrix-routing: modulation comes from another signal's loudness, routable to any parameter, not a compressor or a free-running LFO."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Contrast with an LFO: an LFO cycles a parameter regardless of the music; an envelope follower raises the parameter when the source gets louder and lowers it when quieter.",
+      "tool": "concept",
+      "expect": "Clear choice of follower vs LFO"
+    },
+    {
+      "n": 2,
+      "action": "Insert the follower on the source channel, set it to output its envelope as a control signal, and map it to the destination (e.g. wavefolder fold amount) via learn/assign; disable any competing LFO on that parameter.",
+      "tool": "mod-matrix",
+      "expect": "Destination knob moves with the source's loudness"
+    },
+    {
+      "n": 3,
+      "action": "Tune Depth for how aggressive the effect is, and raise Rise/Fall times to reduce volatility (slower up and down movement); lower them for jittery, transient-tracking motion.",
+      "tool": "follower",
+      "expect": "Movement matches musical intent, not zipper noise"
+    },
+    {
+      "n": 4,
+      "action": "Stereo opposing motion: use the left and right follower outputs on two separate lanes into two ring-mod (or similar) depths, invert one, so one rises as the other falls when the source gets louder.",
+      "tool": "stereo-routing",
+      "expect": "Two effect params move in opposite directions; L/R difference adds width"
+    },
+    {
+      "n": 5,
+      "action": "Kick-keyed motion: follow the kick and map to a pad's channel volume. Non-inverted = sidechain expansion (pad louder on kicks); inverted = ducking (quieter on kicks). Same mapping inverted onto fold or a filter opens the effect in the gaps between kicks.",
+      "tool": "sidechain",
+      "expect": "Pad pumps or opens rhythmically with the kick"
+    },
+    {
+      "n": 6,
+      "action": "Texture rate: follow a looped percussive/mechanical sample and map to its own playback rate (faster when loud, slower when quiet); invert to speed up in the gaps. Optionally use that loop's follower to duck a synth.",
+      "tool": "sampler",
+      "expect": "Self-modulating rhythmic texture"
+    },
+    {
+      "n": 7,
+      "action": "Optional follower types where available: pitch follower (higher pitch \u2192 higher value) and spectral-brightness follower (brighter \u2192 higher value) instead of amplitude.",
+      "tool": "follower",
+      "expect": "Alternative driver selected deliberately"
+    }
+  ],
+  "verification": [
+    "Destination value rises with source loudness (or falls when inverted)",
+    "Increasing rise/fall visibly smooths the control curve",
+    "Kick-keyed volume mapping produces audible ducking when inverted and expansion when not"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "envelope-follower",
+    "modulation",
+    "sidechain",
+    "ring-mod",
+    "wavefolder",
+    "organic-motion",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-05T16:31:33+00:00",
+  "mcp_resource": "skill://envelope-follower-audio-driven-modulation"
+}

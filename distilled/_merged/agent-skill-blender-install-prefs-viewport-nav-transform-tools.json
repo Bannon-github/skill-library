@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "blender-install-prefs-viewport-nav-transform-tools",
+  "name": "Blender first launch: install, preferences, viewport navigation, Move/Rotate/Scale",
+  "goal": "Install Blender, set useful preferences (Resolution Scale, GPU/CUDA Cycles device, Undo Steps, Save Preferences), navigate the viewport with MMB orbit / Shift+MMB pan / scroll zoom and numpad or Alt+MMB orthographic snaps, then transform the default cube with the Move/Rotate/Scale tools and G/R/S hotkeys with X/Y/Z axis locks.",
+  "domain": "3d-blender",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 3 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-blender-install-prefs-viewport-nav-transform-tools.json"
+  },
+  "sources": [
+    {
+      "from_skill": "blender-install-preferences-and-viewport-basics",
+      "video_id": "Ci3Has4L5W4",
+      "url": "https://www.youtube.com/watch?v=Ci3Has4L5W4",
+      "title": "Blender Tutorial for Beginners",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/Ci3Has4L5W4/agent-skill-blender-install-preferences-and-viewport-basics.json"
+    },
+    {
+      "from_skill": "blender-beginner-three-tools-and-viewport-nav",
+      "video_id": "98qKfdJRzr0",
+      "url": "https://www.youtube.com/watch?v=98qKfdJRzr0",
+      "title": "Blender Beginner Tutorial - Part 1",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/98qKfdJRzr0/agent-skill-blender-beginner-three-tools-and-viewport-nav.json"
+    },
+    {
+      "from_skill": "blender-viewport-navigation-mmb",
+      "video_id": "peSv5IT5Ve4",
+      "url": "https://www.youtube.com/watch?v=peSv5IT5Ve4",
+      "title": "ABSOLUTE Beginner Basics.. Blender For Noobs 2025",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/peSv5IT5Ve4/agent-skill-blender-viewport-navigation-mmb.json"
+    }
+  ],
+  "merged_from": [
+    "blender-install-preferences-and-viewport-basics",
+    "blender-beginner-three-tools-and-viewport-nav",
+    "blender-viewport-navigation-mmb"
+  ],
+  "aliases": [
+    "blender-install-preferences-and-viewport-basics",
+    "blender-beginner-three-tools-and-viewport-nav",
+    "blender-viewport-navigation-mmb"
+  ],
+  "prerequisites": [
+    "Computer that can run Blender",
+    "Mouse with middle button / scroll wheel preferred (three-button mouse)"
+  ],
+  "inputs": [
+    {
+      "name": "scene",
+      "type": "blender-scene",
+      "description": "Default scene with the cube (or any object)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "configured_blender",
+      "type": "app-state",
+      "description": "Blender with saved prefs and basic nav competence"
+    },
+    {
+      "name": "transformed_cube",
+      "type": "mesh",
+      "description": "Default cube moved/rotated/scaled via tools and hotkeys"
+    }
+  ],
+  "constraints": [
+    "Middle mouse button (MMB) scroll zooms; MMB drag orbits",
+    "Shift+MMB pans",
+    "Numpad 1/3/7/9 for front/right/top/bottom ortho; without numpad use Alt+MMB drag to snap views",
+    "Edit→Preferences→Resolution Scale e.g. 1.25 if UI too small",
+    "Three-button mouse preferred for nav",
+    "Save Preferences after changes",
+    "Tab toggles Object/Edit; T toggles toolbar; N toggles sidebar"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Download Blender from blender.org and install for your OS; open and click outside splash to dismiss.",
+      "tool": null,
+      "expect": "Blender open past splash"
+    },
+    {
+      "n": 2,
+      "action": "Edit → Preferences → Interface: adjust Resolution Scale (e.g. 1.25) if UI is tiny/huge.",
+      "tool": null,
+      "expect": "UI readable"
+    },
+    {
+      "n": 3,
+      "action": "Preferences → System: enable CUDA/GPU Cycles device if available; raise Undo Steps (e.g. 100); Save Preferences.",
+      "tool": null,
+      "expect": "GPU device/undo steps saved in prefs"
+    },
+    {
+      "n": 4,
+      "action": "Without a middle mouse button / on trackpad: enable Emulate 3 Button Mouse or use trackpad alternatives.",
+      "tool": null,
+      "expect": "MMB-equivalent navigation available"
+    },
+    {
+      "n": 5,
+      "action": "Scroll the middle mouse wheel to zoom in and out.",
+      "tool": null,
+      "expect": "View zooms"
+    },
+    {
+      "n": 6,
+      "action": "Click and drag the middle mouse button to orbit around the object.",
+      "tool": null,
+      "expect": "View orbits"
+    },
+    {
+      "n": 7,
+      "action": "Hold Shift and middle-mouse-drag to pan the scene. Optional: viewport gizmo orbit/zoom/pan.",
+      "tool": null,
+      "expect": "View pans"
+    },
+    {
+      "n": 8,
+      "action": "If you have a numpad: 1 front orthographic, 3 right, 7 top, 9 bottom.",
+      "tool": null,
+      "expect": "Ortho view snapped"
+    },
+    {
+      "n": 9,
+      "action": "Without a numpad: hold Alt, middle-mouse-drag toward the desired axis to snap orthographic views. Or click gizmo axes for axis views.",
+      "tool": null,
+      "expect": "Ortho view snapped without numpad"
+    },
+    {
+      "n": 10,
+      "action": "Activate Move tool; drag RGB handles to move the cube.",
+      "tool": null,
+      "expect": "Cube moved"
+    },
+    {
+      "n": 11,
+      "action": "Activate Rotate tool; drag handles to rotate.",
+      "tool": null,
+      "expect": "Cube rotated"
+    },
+    {
+      "n": 12,
+      "action": "Activate Scale tool; drag the white uniform handle to scale on all axes.",
+      "tool": null,
+      "expect": "Cube scaled uniformly"
+    },
+    {
+      "n": 13,
+      "action": "Use hotkeys G, R, S for Move/Rotate/Scale; axis-constrain with X/Y/Z; Tab for Edit mode.",
+      "tool": null,
+      "expect": "G/R/S with axis lock work; Tab enters Edit mode"
+    }
+  ],
+  "verification": [
+    "Preferences persist after restart",
+    "Can orbit/pan/zoom and G/R/S the default cube",
+    "Cube transformed with all three tools",
+    "Can orbit and pan viewport",
+    "Can orbit, pan, and zoom without using toolbar gizmo icons",
+    "Can reach front/top orthographic view"
+  ],
+  "tags": [
+    "blender",
+    "install",
+    "preferences",
+    "viewport",
+    "navigation",
+    "tools",
+    "beginner",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-blender-beginner"
+  ],
+  "mcp_resource": "skill://blender-install-prefs-viewport-nav-transform-tools",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

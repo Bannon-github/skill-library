@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "id": "keysol-venus-high-wt-artifact-pulse-layer",
+  "name": "high-pitch wavetable artifact over pulse sequence",
+  "goal": "Spice a classic pulsing bass/filter sequence by adding a very high-pitched wavetable oscillator mixed as an artifact-like layer, with WT-position modulation for constant subtle evolution.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "jLGz5wq2CRE",
+    "url": "https://www.youtube.com/watch?v=jLGz5wq2CRE",
+    "title": "TRAVELER Track Walkthrough by Venus Theory",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/jLGz5wq2CRE/agent-skill-keysol-venus-high-wt-artifact-pulse-layer.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "pulse_bed",
+      "type": "synth-voice",
+      "description": "Classic pulsing bass/sequence voice",
+      "required": true
+    },
+    {
+      "name": "wt_octave",
+      "type": "integer",
+      "description": "Octaves above the bed (very high)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "artifact_layer_patch",
+      "type": "synth-patch",
+      "description": "Pulse sequence with evolving high WT spice"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build a classic pulsating bass sequence: pulse/saw bed, Control Track or LFO \u2192 filter cutoff, use filter feedback/saturation/drive for grit and presence.",
+      "tool": "filter-seq",
+      "expect": "Useful pulsing bass alone"
+    },
+    {
+      "n": 2,
+      "action": "Add wavetable oscillator tuned very high until it reads almost as an artifact rather than a clear tone.",
+      "tool": "osc-wt",
+      "expect": "High spice layer"
+    },
+    {
+      "n": 3,
+      "action": "Modulate wavetable position slowly (LFO or Control Track) for continuous micro-variation so the sequence never feels static.",
+      "tool": "wt-mod",
+      "expect": "Subtle ongoing WT motion"
+    },
+    {
+      "n": 4,
+      "action": "Mix WT low under the pulse bed; A/B with WT muted to confirm it adds interest without dominating.",
+      "tool": "mixer",
+      "expect": "Bed remains primary; WT is character"
+    }
+  ],
+  "verification": [
+    "Removing WT returns a simpler classic pulse",
+    "WT is high and partially artifact-like",
+    "Sequence evolves without heavy DAW automation"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "wavetable",
+    "bass-sequence",
+    "from-youtube",
+    "venus-theory"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://keysol-venus-high-wt-artifact-pulse-layer"
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "id": "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+  "name": "Layered binaural + isochronic track architecture: carrier in the left ear and carrier+beat in the right (e.g. 100/104 or 100/110 Hz), octave-up/down copies for depth, an isochronic pulse ratio-locked to the beat rate (1:1, 1:2, 2:1) with sine pulse shape, optional left-right ping-pong pulsing, extra harmonic/anchor tone layers pulsed at the same rate, a slow lowpass sweep that fades harmonic layers in and out, panned drifting pink/white/brown noise atmosphere, a drone a fifth below, and a 'journey' of timed beat-rate segments with smooth ramps (e.g. 10 → 1.5 Hz descent)",
+  "goal": "Design richer Mind Amend-style tracks than a bare two-tone beat. Binaural: one pure tone per ear, the right ear tone = carrier + beat (100 Hz left, 104 Hz right gives a 4 Hz beat; removing one ear leaves a steady tone). Isochronic: the same rate as on/off pulsing of a tone; both can play together. Choose any comfortable carrier (100 Hz in the demo, with micro-tuning), add octave layers (½× and 2× carrier) for depth, and pulse layers at a rate locked to the beat by a simple ratio (1:1, half, double) so nothing drifts out of sync when the beat changes; sine pulse shape is preferred. Ping-pong pulse alternates the pulse left/right instead of on/off. Extra harmonic tones (the presenter uses solfeggio-labelled frequencies and says they lack scientific basis) or a fifth/12th harmonic stack are pulsed at the same rate. A lowpass sweep (period ~6 s and longer) fades harmonic layers in and out so no tone is constant. Pink/white/brown noise as wind/ocean air, auto-panned. A low drone a fifth below supports the field. A journey timeline holds a beat rate for set minutes, then glides smoothly to the next (5 Hz 5 min → 2 Hz → 1 Hz; sleep descent 10 → 1.5 Hz; a 12 → 4.5 Hz ramp). Polyrhythm Studio: one shared rate LFO drives beat offset and every pulse lane via integer ratios.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "bFaYEPLlIxQ",
+    "url": "https://www.youtube.com/watch?v=bFaYEPLlIxQ",
+    "title": "Binaural Beats Are Boring… So I Built Something Else | Bisochronic® Studio",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/bFaYEPLlIxQ/agent-skill-layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps.json",
+    "transcript_note": "Creator's tool walkthrough; channel milestones, Reaper aside and preset-submission talk dropped."
+  },
+  "prerequisites": [
+    "DAW (the presenter uses one) or a dedicated generator, or Web Audio: carrier OscillatorNodes per ear via ChannelMergerNode, right-ear frequency = carrier + beat(t); pulse gains from one master rate × ratio; StereoPannerNode for ping-pong (pan = sign of the pulse LFO); BiquadFilter lowpass with a slow LFO on the harmonic bus; noise buffer + slow auto-pan; beat(t) from setValueAtTime/linearRampToValueAtTime segments (implementation note)",
+    "Headphones"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_hz",
+      "type": "number",
+      "description": "Carrier frequency (100 Hz in the demo)",
+      "required": true
+    },
+    {
+      "name": "beat_hz",
+      "type": "number|segments",
+      "description": "Beat rate, or journey segments [{rate, minutes}] with smooth transitions",
+      "required": true
+    },
+    {
+      "name": "pulse_ratio",
+      "type": "enum",
+      "description": "Pulse rate relative to beat: 1:1 | 1:2 | 2:1",
+      "required": false
+    },
+    {
+      "name": "layers",
+      "type": "list",
+      "description": "Octave up/down, harmonic/anchor tones, fifth/12th stack, drone, noise",
+      "required": false
+    },
+    {
+      "name": "sweep_period_s",
+      "type": "number",
+      "description": "Lowpass sweep period for fading harmonic layers (≈6 s and longer)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "layered_session",
+      "type": "patch",
+      "description": "Multi-layer binaural + isochronic session"
+    },
+    {
+      "name": "journey",
+      "type": "automation",
+      "description": "Timed beat-rate segments"
+    },
+    {
+      "name": "session_card",
+      "type": "text",
+      "description": "List of carrier, beat, ratios and layers used (for documentation)"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "No health or brainwave-entrainment claims are made by this skill; it is a sound-construction recipe only. Keep pulse/beat layers at low listening level.",
+    "Solfeggio-style frequencies have no scientific backing (the presenter says so); treat them as optional harmonic colour.",
+    "Keep every pulse layer on an integer ratio of the beat so layers never drift into phantom beats against each other.",
+    "Noise atmosphere can be harsh; keep it low and optional.",
+    "The video promotes the presenter's own web tool; steps here are its layer architecture rebuilt generically. No presets copied."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the carrier (e.g. 100 Hz pure sine) in the left ear and carrier + beat in the right (e.g. 104 Hz for 4 Hz). Check with headphones: removing one side leaves a steady tone.",
+      "tool": "binaural core",
+      "expect": "A 4 Hz binaural beat on headphones"
+    },
+    {
+      "n": 2,
+      "action": "Add octave copies at half and double the carrier at lower level.",
+      "tool": "octave layers",
+      "expect": "More depth and bass without a new beat rate"
+    },
+    {
+      "n": 3,
+      "action": "Add an isochronic pulse with sine shape on a layer at ratio 1:1 to the beat; try half and double. Change the beat and confirm the pulse follows.",
+      "tool": "locked pulse",
+      "expect": "Pulses stay in a fixed ratio to the beat"
+    },
+    {
+      "n": 4,
+      "action": "Optional ping-pong: pulse the layer left/right instead of on/off and raise depth.",
+      "tool": "ping-pong",
+      "expect": "Pulse moves side to side"
+    },
+    {
+      "n": 5,
+      "action": "Add harmonic/anchor tones (e.g. a fifth or 12th above, or chosen fixed tones) pulsed at the same rate or left steady.",
+      "tool": "harmonics",
+      "expect": "A chord-like tonal field that pulses together"
+    },
+    {
+      "n": 6,
+      "action": "Put a slow lowpass sweep on the harmonic layers (start ~6 s period, then longer) with adjustable intensity.",
+      "tool": "sweep",
+      "expect": "Harmonic layers swell in and out instead of sounding constantly"
+    },
+    {
+      "n": 7,
+      "action": "Add a low pink/white/brown noise layer with slow auto-pan, and a low drone a fifth below.",
+      "tool": "atmosphere + drone",
+      "expect": "Air and low support tying layers together"
+    },
+    {
+      "n": 8,
+      "action": "Build a journey: hold each beat rate for set minutes and glide to the next (e.g. 5 Hz 5 min → 2 Hz 5 min → 1 Hz; or a 10 → 1.5 Hz descent); export and keep a card listing every frequency and ratio.",
+      "tool": "journey",
+      "expect": "The beat rate changes smoothly over the track; settings are documented"
+    }
+  ],
+  "verification": [
+    "Right-ear frequency minus left-ear frequency equals the target beat rate at every point of the journey.",
+    "Every pulse layer's rate is beat × ratio (1, ½ or 2).",
+    "Harmonic layers rise and fall over the sweep period.",
+    "Journey transitions are glides, with no sudden rate jumps."
+  ],
+  "tags": [
+    "binaural",
+    "isochronic",
+    "pulse",
+    "layering",
+    "octave",
+    "drone",
+    "noise",
+    "journey",
+    "ramps",
+    "mind-amend",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "id": "brainwave-binaural-isochronic-layers",
+  "name": "Binaural and isochronic tone layers under music (audio construction only)",
+  "goal": "Build binaural (L/R frequency difference) and isochronic (gated carrier) layers under music: carrier pitch in key, beat/pulse rate, raised-cosine gating, pad foundation, notching the bed at the carrier, fades. No health claims.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+        "video_id": "GndBM5EifHA",
+        "url": "https://www.youtube.com/watch?v=GndBM5EifHA",
+        "title": "Producing a Binaural Beats Meditation Track in Ableton Live (Step-By-Step)"
+      },
+      {
+        "from_skill": "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+        "video_id": "WNewLv-kI2I",
+        "url": "https://www.youtube.com/watch?v=WNewLv-kI2I",
+        "title": "How to Create Isochronic Tones in Ableton Live with Huon Studio"
+      },
+      {
+        "from_skill": "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+        "video_id": "bFaYEPLlIxQ",
+        "url": "https://www.youtube.com/watch?v=bFaYEPLlIxQ",
+        "title": "Binaural Beats Are Boring… So I Built Something Else | Bisochronic® Studio"
+      }
+    ]
+  },
+  "theory": "Binaural beat = |fL - fR| perceived on headphones only; isochronic = amplitude gating at the target rate audible on speakers. Raised-cosine edges (~3.75 ms) avoid clicks.",
+  "generator": {
+    "path": "sample-lab/theory/entrainment_tones.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/entrainment_tones.wav"
+  },
+  "prerequisites": [
+    "An existing music track to sit under",
+    "DAW (the presenter uses one) or a dedicated generator, or Web Audio: carrier OscillatorNodes per ear via ChannelMergerNode, right-ear frequency = carrier + beat(t); pulse gains from one master rate × ratio; StereoPannerNode for ping-pong (pan = sign of the pulse LFO); BiquadFilter lowpass with a slow LFO on the harmonic bus; noise buffer + slow auto-pan; beat(t) from setValueAtTime/linearRampToValueAtTime segments (implementation note)",
+    "DAW with a tone/isochronic generator or any synth + tremolo/LFO amplitude device, gain utility with automation, and a tuner, or Web Audio: OscillatorNode (sine) → GainNode; gain driven by a smoothed square/raised-cosine LFO whose frequency AudioParam is automated with linearRampToValueAtTime (implementation note)",
+    "DAW with stock pad/piano/bass instruments, reverb, echo/delay, EQ, utility gain and limiter, or Web Audio: two OscillatorNodes (f and f-Δ) each through a StereoPannerNode at -1/+1, a BiquadFilter type 'notch' at f with high Q on the music bus, a DynamicsCompressor as gentle limiter (implementation note)",
+    "Headphones",
+    "Headphones for checking the binaural layer"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose carrier in the song key (e.g. C5 523.25 Hz) and rate (e.g. 10 Hz, 14-18 Hz beta, 40 Hz).",
+      "expect": "Parameters"
+    },
+    {
+      "n": 2,
+      "action": "Binaural: left = carrier, right = carrier + rate; layer octaves if desired.",
+      "expect": "Headphone layer"
+    },
+    {
+      "n": 3,
+      "action": "Isochronic: gate a sine carrier at the rate with raised-cosine edges; verify rate in 20 s windows.",
+      "expect": "Speaker-audible pulse"
+    },
+    {
+      "n": 4,
+      "action": "Music bed: slow pad, long reverb, ping-pong echo; notch the bed at the carrier pitch so the pulse stays clear.",
+      "expect": "Clear pulse in music"
+    },
+    {
+      "n": 5,
+      "action": "Fade the layer in/out over 10-30 s; keep it 10-20 dB below the music.",
+      "expect": "Comfortable listening"
+    },
+    {
+      "n": 6,
+      "action": "Do not make health or cognitive claims in titles or text.",
+      "expect": "Compliant"
+    },
+    {
+      "n": 7,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/entrainment_tones.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+      "name": "Produce a binaural-beat meditation track: a two-chord pad foundation with long reverb and overlapping glided notes, a sparse echoing piano and subtle bass, volume-automated arrangement, then a binaural layer of two pure sines (440 Hz and 432 Hz for an 8 Hz difference) panned hard left/right, a narrow high-Q EQ cut at the carrier frequency on the music bus so nothing masks it, fades, a gentle limiter (~3 dB input, no audible gain reduction) and WAV/MP3 export at 44.1 kHz",
+      "goal": "Make the whole track, not just the beat. Start from pads: play a simple two-chord loop (around A and D), add reverb with high decay and wet mix, keep chord changes on the grid, and let notes overlap with glide so transitions slide instead of stepping. Add a short piano line with an echo (more feedback, ping-pong on) and its own reverb, then a subtle low bass on the same roots; pull all levels down to avoid overdrive. Arrange by drawing volume automation so elements enter and leave (less is more; one element can carry minutes), boost the highs with a high shelf on bright parts, put delay before reverb. Binaural layer: a sine at the root frequency (A = 440 Hz) and a duplicate at 432 Hz (8 Hz difference); unpanned they make an audible wobble (monaural beat), panned hard left and right they form the binaural beat. Group the music and cut a narrow notch (high Q) at 440 Hz so the instrumental doesn't overlap the carrier. Fade the beat in and out, keep it quiet but present when muted/unmuted. On the master, add a limiter on the loudest section with only ~3 dB input and no audible gain reduction; export 44.1 kHz WAV plus an MP3, then do a calm test listen later and adjust.",
+      "steps": [
+        "Pick a soft pad, play a simple two-chord loop (e.g. A then D), add reverb with high decay and wet mix, capture the MIDI and align chord changes to the grid; loop it.",
+        "Layer a second pad for texture and a sparse piano phrase; add an echo with more feedback and ping-pong, plus a reverb with moderated wet mix.",
+        "Lengthen notes so they overlap at chord changes and enable glide so pitch slides between them.",
+        "Add a subtle low bass on the roots; lower all instrument levels to avoid clipping.",
+        "Arrange with volume automation: bring elements in and out gradually; high-shelf boost and mid cut on bright parts; put delay before reverb.",
+        "Binaural layer: a sine instrument at 440 Hz and a duplicate at 432 Hz; listen unpanned (wobble), then pan one hard left and one hard right; program one note across the whole track.",
+        "Group the music tracks and add a narrow, high-Q EQ cut at 440 Hz on the group.",
+        "Fade the beat in and out; set its level so it is quiet but noticeably different when muted.",
+        "On the master, loop the loudest section and add a limiter with about 3 dB input and no audible gain reduction; export WAV 44.1 kHz and an MP3; test-listen later in a calm setting and adjust."
+      ]
+    },
+    {
+      "from_skill": "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+      "name": "Add an isochronic pulse layer under an existing track: a sine (or noise) carrier played by one long MIDI note, amplitude-pulsed at a chosen rate (e.g. 4 Hz) with a smooth-step pulse shape and a 0–100% isochronic blend, faded in and out by gain automation, with the pulse rate automated (e.g. 15 Hz → 4 Hz → 15 Hz) using ~10 ms parameter smoothing, carrier tuned by reference (440/432) or a custom note-to-frequency map and verified with a tuner, then mixed barely audible",
+      "goal": "Build the Mind Amend-style isochronic layer as its own track. A tone generator plays a sine carrier from MIDI; with beat frequency 0 it is just a plain sine. Pick the pulse rate (e.g. 4 Hz) and raise the isochronic blend from 0% (steady tone) through 50% to 100% (full on/off pulses); choose a smooth-step pulse shape for focused but soft pulses. An amplitude-pulsing (LFO/tremolo) device lets you pulse noise or any audio as well. Use one long MIDI note for an uninterrupted tone (chords also work and pulse together). Fade in over about 30 s and out over 30–60 s with gain automation. Automate the pulse rate with exact typed breakpoints (e.g. start 15 Hz, glide to 4 Hz, return to 15 Hz at the end) and set the device's parameter smoothing to its minimum (0.01 = 10 ms) for automation. Keep pulse rates low (the speaker suggests below ~100 Hz); carrier frequencies (e.g. 432 Hz reference tuning, or a custom mapping where a note equals 528 Hz) are a separate layer of choice; check the actual pitch with a tuner set to the same reference. Finally set the layer's level in the mixer so it sits barely audible under the music. Polyrhythm Studio: OscillatorNode → GainNode whose gain follows a pulse-shaped LFO at rate r(t) with a ramped automation curve.",
+      "steps": [
+        "Create a MIDI track with the tone generator; set the device output low (about -20 dB) so the layer starts quiet.",
+        "Program one long MIDI note (or loop a short note while designing; chords also work).",
+        "Set the pulse rate (e.g. 4 Hz) and raise isochronic blend from 0% to 100%; choose a smooth-step pulse shape.",
+        "Add a gain utility and automate a ~30 s fade-in at the start and a 30–60 s fade-out at the end.",
+        "Expose the pulse-rate parameter for automation, set parameter smoothing to 0.01 (10 ms), and draw breakpoints with typed values: 15 Hz at the start, 4 Hz in the middle section, back to 15 Hz at the end.",
+        "Optional carrier tuning: switch the tuning reference (440 → 432 Hz) or load a custom note-to-frequency map and find the note that gives the target frequency (e.g. 528 Hz); confirm with a tuner set to the same reference.",
+        "Set the track fader so the layer is barely audible under the music."
+      ]
+    },
+    {
+      "from_skill": "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
+      "name": "Layered binaural + isochronic track architecture: carrier in the left ear and carrier+beat in the right (e.g. 100/104 or 100/110 Hz), octave-up/down copies for depth, an isochronic pulse ratio-locked to the beat rate (1:1, 1:2, 2:1) with sine pulse shape, optional left-right ping-pong pulsing, extra harmonic/anchor tone layers pulsed at the same rate, a slow lowpass sweep that fades harmonic layers in and out, panned drifting pink/white/brown noise atmosphere, a drone a fifth below, and a 'journey' of timed beat-rate segments with smooth ramps (e.g. 10 → 1.5 Hz descent)",
+      "goal": "Design richer Mind Amend-style tracks than a bare two-tone beat. Binaural: one pure tone per ear, the right ear tone = carrier + beat (100 Hz left, 104 Hz right gives a 4 Hz beat; removing one ear leaves a steady tone). Isochronic: the same rate as on/off pulsing of a tone; both can play together. Choose any comfortable carrier (100 Hz in the demo, with micro-tuning), add octave layers (½× and 2× carrier) for depth, and pulse layers at a rate locked to the beat by a simple ratio (1:1, half, double) so nothing drifts out of sync when the beat changes; sine pulse shape is preferred. Ping-pong pulse alternates the pulse left/right instead of on/off. Extra harmonic tones (the presenter uses solfeggio-labelled frequencies and says they lack scientific basis) or a fifth/12th harmonic stack are pulsed at the same rate. A lowpass sweep (period ~6 s and longer) fades harmonic layers in and out so no tone is constant. Pink/white/brown noise as wind/ocean air, auto-panned. A low drone a fifth below supports the field. A journey timeline holds a beat rate for set minutes, then glides smoothly to the next (5 Hz 5 min → 2 Hz → 1 Hz; sleep descent 10 → 1.5 Hz; a 12 → 4.5 Hz ramp). Polyrhythm Studio: one shared rate LFO drives beat offset and every pulse lane via integer ratios.",
+      "steps": [
+        "Set the carrier (e.g. 100 Hz pure sine) in the left ear and carrier + beat in the right (e.g. 104 Hz for 4 Hz). Check with headphones: removing one side leaves a steady tone.",
+        "Add octave copies at half and double the carrier at lower level.",
+        "Add an isochronic pulse with sine shape on a layer at ratio 1:1 to the beat; try half and double. Change the beat and confirm the pulse follows.",
+        "Optional ping-pong: pulse the layer left/right instead of on/off and raise depth.",
+        "Add harmonic/anchor tones (e.g. a fifth or 12th above, or chosen fixed tones) pulsed at the same rate or left steady.",
+        "Put a slow lowpass sweep on the harmonic layers (start ~6 s period, then longer) with adjustable intensity.",
+        "Add a low pink/white/brown noise layer with slow auto-pan, and a low drone a fifth below.",
+        "Build a journey: hold each beat rate for set minutes and glide to the next (e.g. 5 Hz 5 min → 2 Hz 5 min → 1 Hz; or a 10 → 1.5 Hz descent); export and keep a card listing every frequency and ratio."
+      ]
+    }
+  ],
+  "merged_from": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+  ],
+  "tags": [
+    "ambient",
+    "amplitude-modulation",
+    "automation",
+    "binaural",
+    "brainwave",
+    "carrier",
+    "cinematic-synth",
+    "drone",
+    "glide",
+    "isochronic",
+    "journey",
+    "layering",
+    "mastering",
+    "meditation",
+    "mind-amend",
+    "mixing",
+    "music-production",
+    "noise",
+    "notch-eq",
+    "octave",
+    "pad",
+    "polyrhythm-studio",
+    "portable",
+    "pulse",
+    "ramps",
+    "reverb",
+    "tuning",
+    "web-audio",
+    "workflow"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://brainwave-binaural-isochronic-layers",
+  "aliases": [
+    "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+    "isochronic-tone-layer-under-music-sine-carrier-midi-note-amp-pulse-blend-smooth-step-shape-fade-in-out-automate-pulse-rate-15-to-4-hz-and-back-10ms-smoothing-carrier-tuning-432-or-custom-map",
+    "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps"
+  ]
+}

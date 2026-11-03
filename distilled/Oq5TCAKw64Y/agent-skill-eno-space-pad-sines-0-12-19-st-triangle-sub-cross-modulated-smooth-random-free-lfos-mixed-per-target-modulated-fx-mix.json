@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "id": "eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix",
+  "name": "Planetarium / Eno-style ambient space pad on any synth: sines at 0, +12 and +19 semitones, a triangle sub, two slow free-running smooth-random LFOs that modulate each other's rate and are mixed on every target, low-sustain amp envelope, gentle filter, and LFO-moved reverb/delay mix",
+  "goal": "Build the classic slow 'space / planetarium / Brian Eno' meditation pad from an init patch on any synth with three oscillators, two LFOs and a reverb and delay. Everything moves a little, and no two parameters move together, so the ear never locks onto a pattern. Pitch stays steady: all movement is in level, timbre and effect mix.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Oq5TCAKw64Y",
+    "url": "https://www.youtube.com/watch?v=Oq5TCAKw64Y",
+    "title": "How to make an ambient space pad in any synth.  Sound Design Tutorial 1",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Oq5TCAKw64Y/agent-skill-eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix.json"
+  },
+  "prerequisites": [
+    "Any synth (VST, hardware or Web Audio) with at least three oscillators plus a sub/noise source, two or three LFOs with free-run and smooth-random shapes, a low-pass/band-pass filter, reverb and delay",
+    "Basic idea of LFO depth and bipolar/unipolar modulation"
+  ],
+  "inputs": [
+    {
+      "name": "root",
+      "type": "string",
+      "description": "Note or key to play the pad in (white-key improvisation works)",
+      "required": true
+    },
+    {
+      "name": "background_noise",
+      "type": "string",
+      "description": "Optional consistent natural bed (rain, wind, forest, spaceship hum) mixed very low",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "space_pad_patch",
+      "type": "synth-preset",
+      "description": "Saved subtle evolving pad patch"
+    },
+    {
+      "name": "pad_audio",
+      "type": "audio",
+      "description": "Long held-chord render with slow, non-repeating movement"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Keep all modulation subtle. If the listener notices a movement, it is too much.",
+    "Do not use LFO-driven big filter sweeps on the pad. If you want a sweep, put it on a send/aux filter and use it sparingly.",
+    "Steady pitch (Matt's taste): do not modulate oscillator pitch or delay time, except at most a tiny fine-time amount. Keep unison detune motion slight.",
+    "Keep delay stereo spread low on pads (save wide ping-pong for sharp arps or percussion).",
+    "Keep any background noise bed consistent and natural (rain and birdsong together sounds wrong).",
+    "Polyrhythm Studio / Web Audio mapping: OscillatorNodes + GainNodes for layers, BiquadFilterNode for filters, ConvolverNode/feedback DelayNode for reverb/delay, slow custom LFOs (ConstantSource + smoothed random) on AudioParams.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init the patch and set the oscillators to sine waves: osc 1 at 0 st, osc 2 at +12 st (one octave), osc 3 at +19 st (an octave and a fifth).",
+      "tool": "synth",
+      "expect": "Organ-like stack; the +19 adds a faint fifth on top"
+    },
+    {
+      "n": 2,
+      "action": "Set up two LFOs: rate in Hz (not tempo-synced) and very slow, smooth-random shape (random but gliding, not stepped), free-running so they do not restart on each key, bipolar.",
+      "tool": "synth LFO",
+      "expect": "Slow wandering control signals that keep going across notes"
+    },
+    {
+      "n": 3,
+      "action": "Cross-modulate the LFOs: send a small amount of LFO 3 to the rate of LFO 2, and of LFO 2 to the rate of LFO 3.",
+      "tool": "mod matrix",
+      "expect": "The two LFOs never move in lockstep"
+    },
+    {
+      "n": 4,
+      "action": "Modulate the level of the +12 osc with LFO 3 and the +19 osc with LFO 2, plus a smaller amount on osc 1 (the root should move least). On every target, mix a bit of both LFOs, sometimes inverted.",
+      "tool": "mod matrix",
+      "expect": "Upper partials fade gently in and out, like a slow chorus"
+    },
+    {
+      "n": 5,
+      "action": "Add a sub oscillator one octave down using a triangle wave (square is too buzzy with sines). Add a trace of noise (pink, white or blue) for high-end character, barely audible.",
+      "tool": "synth",
+      "expect": "Body underneath and faint air on top, no buzz"
+    },
+    {
+      "n": 6,
+      "action": "Amp envelope: long attack, long decay, sustain lowered (sloping down), long release.",
+      "tool": "amp env",
+      "expect": "Overlapping notes die back instead of piling up into mud"
+    },
+    {
+      "n": 7,
+      "action": "Low-pass filter for roundness with low resonance. Move cutoff only slightly with the LFOs.",
+      "tool": "filter",
+      "expect": "Slightly rounder tone; no audible sweep or resonant peak"
+    },
+    {
+      "n": 8,
+      "action": "Effects: a big cathedral-type reverb and a delay. Put both LFOs, mixed, on reverb dry/wet, delay dry/wet and delay feedback, but not on delay time. Low-cut the effects returns to avoid mud.",
+      "tool": "reverb/delay",
+      "expect": "The space breathes in and out; low end stays clean"
+    },
+    {
+      "n": 9,
+      "action": "Turn on unison on the oscillators (several voices) with only slight LFO movement, then stop adding things. Save the patch, take a 5-15 minute break and come back for small balance tweaks.",
+      "tool": "synth",
+      "expect": "Choir-like thickness; the patch is done before it gets overloaded"
+    },
+    {
+      "n": 10,
+      "action": "Optional: add shimmer reverb tuned to +7 st (a fifth) instead of the default octave, with its mix moved slowly in and out.",
+      "tool": "shimmer",
+      "expect": "Soft shimmer that does not get grating when notes are held"
+    },
+    {
+      "n": 11,
+      "action": "Optional: add a low-level consistent noise bed (rain, metallic flow, forest) through a slow, subtle band-pass in parallel with the main filter. Add slow LFO on overall volume and pan, plus small EQ dips on any resonant buildup (not many narrow cuts, which cause a comb-filter effect).",
+      "tool": "noise engine / EQ",
+      "expect": "Context bed under the pad without screeching resonances"
+    }
+  ],
+  "verification": [
+    "No two modulated parameters rise and fall together over a 60 s listen.",
+    "Pitch is steady: no audible vibrato or detune wobble beyond light unison.",
+    "Holding overlapping chords for 30 s does not build up low-mid mud (sustain is below max and FX returns are low-cut).",
+    "Reverb and delay mix audibly breathe over about 20-60 s cycles."
+  ],
+  "tags": [
+    "pad",
+    "ambient",
+    "space-pad",
+    "lfo",
+    "smooth-random",
+    "free-running",
+    "shimmer",
+    "meditation",
+    "steady-pitch",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://eno-space-pad-sines-0-12-19-st-triangle-sub-cross-modulated-smooth-random-free-lfos-mixed-per-target-modulated-fx-mix"
+}

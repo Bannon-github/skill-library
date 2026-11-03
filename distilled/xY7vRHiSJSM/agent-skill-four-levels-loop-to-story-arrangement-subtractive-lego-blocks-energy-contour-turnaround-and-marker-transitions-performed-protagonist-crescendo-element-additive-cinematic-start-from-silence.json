@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "id": "four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence",
+  "name": "Four levels of loop-to-story arrangement: (1) subtractive Lego-block arrangement from a duplicated loop shaped by an energy contour, (2) turnaround-and-marker transitions at section edges, (3) a performed protagonist element that crescendos and decrescendos across sections, (4) an additive cinematic pass that starts from silence and adds only motivated elements",
+  "goal": "Turn a 16-bar loop into a musical story in four escalating levels. Level 1 (subtractive): duplicate the loop across the whole target length (4-5 minutes), then cut away in 8- or 16-bar blocks following an energy contour (low start, build to the middle, kick-out dips, peak, outro); add a little silence at the start and room at the end for reverb tails. Level 2 (transitions): at each section edge add a turnaround (signals the end: remove low energy, reverse reverb swell or noise riser) and a marker on the downbeat (a splash: white noise, crash, one percussion hit into big reverb, stutter or false drop), built from the track's own timbres resampled, reversed or processed; transitions can be explicit or hypnotic. Level 3 (performance): record a performed element (e.g. filter, level or intensity moves on one sound) that starts mellow, grows to dominant and subsides, spanning section boundaries as the 'protagonist'; split and move the audio if needed. Level 4 (additive): start from silence and add elements only when the music is motivated (when you would get bored), like a film composer, letting well-designed elements play for a long time.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "xY7vRHiSJSM",
+    "url": "https://www.youtube.com/watch?v=xY7vRHiSJSM",
+    "title": "turn your loop into a story: an arrangement masterclass",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/xY7vRHiSJSM/agent-skill-four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence.json",
+    "transcript_note": "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  },
+  "prerequisites": [
+    "A DAW with duplicate-time, insert-time and split commands",
+    "A finished loop (16 bars in the video)",
+    "A controller or automation for performing one element (optional)"
+  ],
+  "inputs": [
+    {
+      "name": "loop",
+      "type": "project",
+      "description": "A dense 8-16 bar loop",
+      "required": true
+    },
+    {
+      "name": "target_length_min",
+      "type": "number",
+      "description": "Track length, e.g. 4-5 minutes",
+      "required": true
+    },
+    {
+      "name": "approach",
+      "type": "enum",
+      "description": "subtractive | additive (cinematic)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "daw-arrangement",
+      "description": "Section-based arrangement with transitions and a performed protagonist element"
+    },
+    {
+      "name": "energy_contour",
+      "type": "text",
+      "description": "Sketch of the intended energy curve over time"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "DAW shortcuts in the video are product-specific; use the equivalent duplicate-time / insert-silence / split commands in Ableton or any DAW.",
+    "For Matt's ambient/cinematic system the additive level 4 is the target; levels 1-3 are scaffolding. Keep drums entering early and steady even in the additive pass if the piece has a beat.",
+    "Performed elements should move musically and gradually so split/moved takes still join cleanly.",
+    "Auto-generated YouTube Show transcript; values are as spoken and approximate where the speaker says 'about' or 'around'."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide the target length; select the loop and duplicate it end to end until the timeline exceeds that length; trim any extra.",
+      "tool": "DAW duplicate time",
+      "expect": "A 'block of clay' filling the whole song length."
+    },
+    {
+      "n": 2,
+      "action": "Sketch an energy contour: low start, additions toward the middle, dips where the kick goes away, a maximum, then an outro. Optionally align a reference track to the grid and copy its arrangement (not its sounds).",
+      "tool": "Notes / reference track",
+      "expect": "An energy plan to subtract against."
+    },
+    {
+      "n": 3,
+      "action": "Subtract in 8- or 16-bar blocks so each section boundary adds some elements and removes others. Insert a little silence at the start and leave space at the end for reverb tails.",
+      "tool": "Arrangement view",
+      "expect": "A working Lego-block arrangement."
+    },
+    {
+      "n": 4,
+      "action": "At each section edge, add a turnaround in the last bar(s): remove low-end energy and add a reverse reverb swell or noise riser built from the track's own sounds.",
+      "tool": "Automation, resampling, reverse",
+      "expect": "The listener senses a new section coming."
+    },
+    {
+      "n": 5,
+      "action": "On the new section's downbeat, add a marker: white noise burst, crash, one percussion hit into a big reverb, a stutter, or a false drop (withhold the first hit).",
+      "tool": "Arrangement",
+      "expect": "A clear splash of energy at the boundary."
+    },
+    {
+      "n": 6,
+      "action": "Revisit breaks and drops: e.g. a very sparse moment, then build, build, build, then a short silence before the drop.",
+      "tool": "Arrangement + automation",
+      "expect": "Climaxes feel earned."
+    },
+    {
+      "n": 7,
+      "action": "Pick one protagonist element and perform it across the whole track (record filter/level/intensity moves) so it starts mellow, grows dominant and subsides, crossing section boundaries; split and rearrange the performance if needed.",
+      "tool": "Controller / automation recording",
+      "expect": "A storyline that glues sections together; energy feels gradual and linear rather than A/B blocky."
+    },
+    {
+      "n": 8,
+      "action": "Additive pass: from silence, peel everything back to almost nothing and add elements one at a time only when the music needs them (when you notice boredom), giving each element time and space.",
+      "tool": "Arrangement",
+      "expect": "A sparse, cinematic arrangement where every entry is motivated."
+    }
+  ],
+  "verification": [
+    "Each section boundary has a turnaround before it and a marker on it (or is deliberately seamless).",
+    "One element's level or intensity curve rises then falls across at least three sections.",
+    "The track starts from silence or near-silence and ends with space for tails."
+  ],
+  "tags": [
+    "arrangement",
+    "song-structure",
+    "loop-to-song",
+    "transitions",
+    "energy-contour",
+    "crescendo",
+    "additive-arrangement",
+    "cinematic",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://four-levels-loop-to-story-arrangement-subtractive-lego-blocks-energy-contour-turnaround-and-marker-transitions-performed-protagonist-crescendo-element-additive-cinematic-start-from-silence"
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "audio-rate-am-wave-shape-texture",
+  "name": "Audio-rate AM for wave-shaping and FM/ring-like texture",
+  "goal": "Create complex cinematic textures with audio-rate amplitude modulation: feed a soft waveform (sine/triangle/saw) into a VCA and modulate that VCA at audio rate from another waveform of the same oscillator (self AM / new wave shapes) or a second oscillator (complex sidebands); put the AM depth under an envelope or LFO VCA so dynamics evolve\u2014often reducing the need for a filter.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "5686u1c9kdM",
+    "url": "https://www.youtube.com/watch?v=5686u1c9kdM",
+    "title": "Don\u2019t forget about this old trick \u2013 Audio rate amplitude modulation (AM)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/5686u1c9kdM/agent-skill-audio-rate-am-wave-shape-texture.json"
+  },
+  "prerequisites": [
+    "Synth/modular with at least one osc (preferably dual waveforms), VCA(s), envelope/LFO; optional second oscillator"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_wave",
+      "type": "enum",
+      "description": "sine | triangle | saw",
+      "required": true
+    },
+    {
+      "name": "modulator",
+      "type": "enum",
+      "description": "same_osc_alt_wave | second_osc",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "am_texture_voice",
+      "type": "synth-patch",
+      "description": "Audio-rate AM voice with dynamic depth control"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Not affiliated with the plugin/hardware vendors named in the source video; recreate with comparable modules.",
+    "Delta vs fm-carrier-modulator-ratio-basics and keysol-venus-noise-audiorate-filter-texture: this is AM into a VCA (wave-shaping/sidebands), not FM ratios or noise\u2192filter."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Recall ordinary AM: envelopes/LFOs into a VCA control volume or mod depth. Audio-rate AM instead uses an audio-frequency signal as the VCA CV so amplitude changes happen inside each cycle \u2192 new wave shapes / sidebands.",
+      "tool": "vca",
+      "expect": "Conceptual distinction clear"
+    },
+    {
+      "n": 2,
+      "action": "Self-AM wave-shaping: send a soft shape (sine/triangle) into VCA1 audio input; modulate VCA1 with an alternate waveform of the same oscillator (e.g. square). Use a separate final VCA for note volume so VCA1 is only the shaper.",
+      "tool": "osc-vca",
+      "expect": "Carrier morphs into a new harmonic shape"
+    },
+    {
+      "n": 3,
+      "action": "Dynamic depth: route the modulator through another VCA controlled by the same envelope (or an LFO) that also opens the amp VCA\u2014so AM depth blooms with the note instead of staying static.",
+      "tool": "env-vca",
+      "expect": "Timbre opens with dynamics; filter optional"
+    },
+    {
+      "n": 4,
+      "action": "Two-oscillator AM: modulate VCA1 with a second oscillator at a different frequency for more complex signals (often both pitches audible). Experiment with VCA bias/response for softer vs harder AM.",
+      "tool": "dual-osc",
+      "expect": "Ring/FM-adjacent textures from AM"
+    },
+    {
+      "n": 5,
+      "action": "Expand: mix multiple alternate waves through VCAs before they modulate the carrier; replace envelope with LFO for continuous wave-shape motion. Keep levels modest for pads; follow with gentle filter/space FX if needed.",
+      "tool": "mod-matrix",
+      "expect": "Evolving AM texture suitable for cinematic beds"
+    }
+  ],
+  "verification": [
+    "Disabling audio-rate mod returns plain carrier wave",
+    "Envelope on mod-depth VCA changes brightness/complexity over the note",
+    "Second-osc AM produces more complex sidebands than self-AM"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "am",
+    "audio-rate",
+    "vca",
+    "wave-shaping",
+    "texture",
+    "modular",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-10-02T16:26:26+00:00",
+  "mcp_resource": "skill://audio-rate-am-wave-shape-texture"
+}

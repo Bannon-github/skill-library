@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "id": "random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer",
+  "name": "Evolving cinematic drone: random-modulated LFO rates on WT position and two parallel, opposite-panned filters, plus a randomized granular sample layer and FX chain",
+  "goal": "Build a one-key evolving cinematic drone where nothing repeats: a wavetable oscillator whose position is swept by a very slow free-running LFO whose RATE is itself nudged by a slow smooth random modulator (small amount, ~0.07), super-unison (~2.4 detune), 1 s positive-curve attack / ~4 s decay / lower sustain / 2 s release, filter 1 (resonance, keytrack, drive, filter envelope, tiny random LFO on cutoff) and a parallel 12 dB MS-20-style filter 2 driven by a second slow LFO with its own random rate modulation (~0.13), the two filters panned ~40% left/right; add a granular sample engine (triangle grains, randomized density/size/volume/pitch, LFO-scanned start position) and a touch of white noise into both filters; FX: shimmer → ping-pong tape echo (dotted 1/8) → gentle multiband compression on lows/highs, plus reverb → soft tape distortion → second reverb, mod wheel to drive.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "fxh2ccZKEb0",
+    "url": "https://www.youtube.com/watch?v=fxh2ccZKEb0",
+    "title": "Create Evolving Cinematic Drones In Pigments - Full Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/fxh2ccZKEb0/agent-skill-random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer.json"
+  },
+  "prerequisites": [
+    "Wavetable + sample/granular engines (or Web Audio PeriodicWave crossfades + AudioWorklet granular), 2 filters in parallel with pan, 2+ LFOs with free-run and random modulators routable to LFO rate",
+    "Shimmer reverb, tape/ping-pong delay, multiband compressor, reverb, tape distortion"
+  ],
+  "inputs": [
+    {
+      "name": "note_or_chord",
+      "type": "midi",
+      "description": "Single held note or chord (works low too)",
+      "required": true
+    },
+    {
+      "name": "grain_sample",
+      "type": "audio",
+      "description": "Original/free granular-friendly sample",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "evolving_drone",
+      "type": "audio",
+      "description": "Non-repeating cinematic drone"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Use an original or free wavetable and sample; factory table/sample names are not copied.",
+    "Values are presenter's display units; adjust by ear.",
+    "Keep random modulation of LFO rates small — large amounts make motion erratic."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Wavetable engine: pick a folded/rich table; route LFO1 (free-running, very slow) to wavetable position from a start around the table's middle.",
+      "tool": "wt",
+      "expect": "Slow timbre sweep"
+    },
+    {
+      "n": 2,
+      "action": "Make LFO1's speed drift: route a slow, smooth, free-running random modulator to LFO1 rate with a small amount (~0.07) so the sweep speeds up and slows down unpredictably.",
+      "tool": "random→lfo-rate",
+      "expect": "Sweep rate audibly varies"
+    },
+    {
+      "n": 3,
+      "action": "Size: super-unison with ~2.4 detune, main tune 0; no glide/legato.",
+      "tool": "unison",
+      "expect": "Big wide body"
+    },
+    {
+      "n": 4,
+      "action": "Amp envelope: ~1 s attack with slightly positive curve, ~4 s decay, slightly lower sustain, ~2 s release. Second envelope similar for filter.",
+      "tool": "env",
+      "expect": "Slow swell and long tail"
+    },
+    {
+      "n": 5,
+      "action": "Filter 1: lowered cutoff with filter envelope, some resonance, keytracking (higher keys open more) and a little drive; add LFO1 to cutoff with a tiny range.",
+      "tool": "filter-1",
+      "expect": "Unpredictable subtle filter motion"
+    },
+    {
+      "n": 6,
+      "action": "LFO2: another slow free-running LFO whose rate is modulated by a second random source (~0.13). Add filter 2 as a 12 dB low-pass with character (MS-20-like), set filters to PARALLEL, send sources to both, and let LFO2 move filter 2 cutoff. Pan filter 1 ~40% left and filter 2 ~40% right.",
+      "tool": "filter-2",
+      "expect": "Two independently drifting filtered images L/R"
+    },
+    {
+      "n": 7,
+      "action": "Engine 2 (granular): load an original granular-friendly sample into both filters; enable granular with random density both directions, random size, some random volume and pitch; change grain shape to triangle (smoother than the rhythmic default); scan the start position with LFO1.",
+      "tool": "granular",
+      "expect": "Mysterious, spooky moving grain layer"
+    },
+    {
+      "n": 8,
+      "action": "Add a little white noise into both filters (no sub needed).",
+      "tool": "noise",
+      "expect": "Air/texture"
+    },
+    {
+      "n": 9,
+      "action": "FX A: shimmer (bigger size) → tape echo ping-pong dotted 1/8 → multiband compression mostly taming lows (and some highs) while letting mids through. FX B: reverb (longer decay) → soft tape distortion → second reverb.",
+      "tool": "fx",
+      "expect": "Wide, spacious, mid-focused drone without low build-up"
+    },
+    {
+      "n": 10,
+      "action": "Map mod wheel to distortion drive; trim low end/clipping as needed and save.",
+      "tool": "macro",
+      "expect": "Playable intensity control"
+    }
+  ],
+  "verification": [
+    "Holding one note for 30 s yields no audibly repeating cycle.",
+    "Left and right channels move differently (filters panned).",
+    "No low-end build-up after the multiband stage."
+  ],
+  "tags": [
+    "drone",
+    "wavetable",
+    "random-modulation",
+    "lfo-rate",
+    "parallel-filters",
+    "granular",
+    "shimmer",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://random-rate-lfo-wt-drone-parallel-panned-filters-granular-layer"
+}

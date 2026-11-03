@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-fx-eq-chorus-delay-reverb",
+  "name": "EQ chorus dual-delay multi-algo reverb FX chain",
+  "goal": "Finish a cinematic patch with the Traveler-style FX order: 3-band EQ \u2192 multi-type chorus \u2192 dual/ping-pong modulated delay \u2192 room/hall/space reverb (long space tails).",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-fx-eq-chorus-delay-reverb.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "dry_patch",
+      "type": "synth-patch",
+      "description": "Already-shaped oscillator/filter/envelope sound",
+      "required": true
+    },
+    {
+      "name": "space_amount",
+      "type": "number",
+      "description": "Reverb wet / algorithm choice",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fx_finished_patch",
+      "type": "synth-patch",
+      "description": "Mix-ready cinematic FX chain on original patch"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules.",
+    "Do not download or redistribute KeyTIME/KeySPACE plugin content; recreate delay/reverb motion with stock or original Web Audio FX."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert 3-band EQ first: sculpt low end, mid presence, and highs so the synth sits in a mix before time FX.",
+      "tool": "eq",
+      "expect": "Mud reduced; presence clear"
+    },
+    {
+      "n": 2,
+      "action": "Add chorus: choose type 1, type 2, or combined. Keep wet modest for cinematic width without seasick detune.",
+      "tool": "chorus",
+      "expect": "Gentle stereo thicken"
+    },
+    {
+      "n": 3,
+      "action": "Dual or ping-pong stereo modulated delay: independent L/R times, feedback, stereo spread, feedback filters, and classic delay modulation.",
+      "tool": "delay",
+      "expect": "Tempo-friendly echoes that stay filtered in the mix"
+    },
+    {
+      "n": 4,
+      "action": "Reverb: pick room, hall, or space algorithm (space can reach very long tails). Set size/decay/predelay manually with original settings.",
+      "tool": "reverb",
+      "expect": "Depth without washing out attack unless intentional"
+    },
+    {
+      "n": 5,
+      "action": "Map portable names: KeyTIME-like = tempo-synced modulated delay motion; KeySPACE-like = multi-algo cinematic reverb. Keep FX after synth engine; watch limiter on main out.",
+      "tool": "fx-bus",
+      "expect": "Clear FX order and safe peaks"
+    }
+  ],
+  "verification": [
+    "EQ precedes time FX",
+    "Delay L/R independence or ping-pong audible",
+    "Reverb algo matches intended space size"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "fx",
+    "delay",
+    "reverb",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-fx-eq-chorus-delay-reverb"
+}

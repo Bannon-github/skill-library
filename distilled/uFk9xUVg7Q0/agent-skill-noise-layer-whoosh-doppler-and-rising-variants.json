@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "id": "noise-layer-whoosh-doppler-and-rising-variants",
+  "name": "Build whooshes from noise and synth layers: bus envelope + Doppler pass-by, rising-only variant, and mod-wheel performable whoosh",
+  "goal": "Create transition whooshes without stock whoosh packs: record steady white/pink noise plus air/texture layers and a high-passed synth render into one bus, shape it with a volume swell and a Doppler-style pass-by (start/centre/end, attenuated pitch change), compress and limit it, add a rising-only variant using an upward pitch-shift curve plus a narrow EQ band swept up, or play a synth whoosh live with one mod-wheel macro that opens the filter, raises noise and raises flanger wet together.",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "uFk9xUVg7Q0",
+    "url": "https://www.youtube.com/watch?v=uFk9xUVg7Q0",
+    "title": "How to design 'Whoosh' sound effects [EASY]",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/uFk9xUVg7Q0/agent-skill-noise-layer-whoosh-doppler-and-rising-variants.json"
+  },
+  "prerequisites": [
+    "Noise source (test generator or synth noise osc), a bus/group, volume automation",
+    "Doppler/pitch-shift effect (or pitch + pan + level curves), compressor, limiter, reverb return, EQ"
+  ],
+  "inputs": [
+    {
+      "name": "action_length",
+      "type": "seconds",
+      "description": "Visual action/transition length the whoosh must match",
+      "required": true
+    },
+    {
+      "name": "texture_layers",
+      "type": "list",
+      "description": "Own or properly licensed air/metal/rain/breath recordings to layer (optional)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "whoosh_set",
+      "type": "audio",
+      "description": "Pass-by whoosh, rising whoosh and/or performable synth whoosh"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Generate steady white noise and record/print it to audio so the generator is not running constantly.",
+      "tool": "noise",
+      "expect": "Noise clip on a track"
+    },
+    {
+      "n": 2,
+      "action": "Add texture layers (e.g. a cymbal/metal tail, heavy wind) and route all layers to one whoosh bus.",
+      "tool": "routing",
+      "expect": "All layers summed on one bus"
+    },
+    {
+      "n": 3,
+      "action": "Draw a volume envelope on the bus that swells in and back out to give the basic 'wash'.",
+      "tool": "automation",
+      "expect": "Recognisable whoosh contour"
+    },
+    {
+      "n": 4,
+      "action": "Add a Doppler-style pass-by: set where the action starts, where it ends, and the centre/listener point where the pass is heard; attenuate the pitch change if it is too big and move the transition/listener points to taste. Portable alias: pitch up-then-down curve + level peak at the centre + pan sweep.",
+      "tool": "doppler",
+      "expect": "Pass-by with pitch rising then falling"
+    },
+    {
+      "n": 5,
+      "action": "Vary the character by muting/swapping layers: drop the metal layer for a more airy result; swap white for pink noise, low wind for higher wind, add rain for whiter noise.",
+      "tool": "layering",
+      "expect": "Distinct whooshes from the same chain"
+    },
+    {
+      "n": 6,
+      "action": "Compress the bus (a whoosh should not be in your face) and add a limiter with a ceiling around -0.2 dB.",
+      "tool": "dynamics",
+      "expect": "Controlled, non-clipping peak"
+    },
+    {
+      "n": 7,
+      "action": "Add a synth layer: render one or two notes of a noisy/FX patch, high-pass/cut the excess low frequencies, and send it to the whoosh bus.",
+      "tool": "synth-layer",
+      "expect": "Tonal colour without low-end buildup"
+    },
+    {
+      "n": 8,
+      "action": "For longer actions, stretch the Doppler start/end across the longer selection and increase pitch for a stronger transition; add reverb on an FX return.",
+      "tool": "doppler",
+      "expect": "Long whoosh matching the visual"
+    },
+    {
+      "n": 9,
+      "action": "Rising-only whoosh (Doppler always goes up then down): use a pitch-shift effect with an upward curve, reduce the range, start lower, pick a smoother algorithm; also set a narrow EQ band very low and automate its frequency sweeping upward (reduce gain if too strong); time-stretch faster/slower with a tape-style algorithm, then add reverb.",
+      "tool": "pitch-shift",
+      "expect": "Whoosh that only rises"
+    },
+    {
+      "n": 10,
+      "action": "Performable synth whoosh: map one mod wheel/macro to open the filter, raise the white-noise amount and raise a flanger's wet mix together; play the whoosh live to any length - no stretching artifacts, and the flanger keeps the sustained top moving so it is not annoying.",
+      "tool": "macro",
+      "expect": "Live-played whoosh of any length"
+    }
+  ],
+  "verification": [
+    "Peak of the pass-by lines up with the visual action centre",
+    "Limiter output never exceeds about -0.2 dB",
+    "Synth layer shows no large low-frequency slab on an analyser after high-pass",
+    "Rising variant has no downward pitch at the end",
+    "Mod-wheel at minimum = filtered/quiet; at maximum = open noise with audible flanging"
+  ],
+  "tags": [
+    "whoosh",
+    "transition",
+    "noise",
+    "doppler",
+    "sfx-design",
+    "flanger",
+    "macro",
+    "fx",
+    "cinematic-synth",
+    "from-youtube"
+  ],
+  "mcp_resource": "skill://noise-layer-whoosh-doppler-and-rising-variants",
+  "domain": "cinematic-synth",
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there. Numbers quoted are the presenter's approximate values, in the source tool's own units.",
+    "Original synthesis / signal-flow only - map brand UI (Serum/Bitwig/Ableton/Logic/Cubase/Zebra/etc.) to portable osc/filter/env/LFO/FX modules for a Traveler-inspired or Web Audio hybrid (Polyrhythm Studio); never rip presets, wavetables, or samples.",
+    "Not affiliated with plugin/synth/DAW vendors named in the source video.",
+    "Use only your own recordings/synth renders or properly licensed samples; never redistribute sample-pack content.",
+    "Web Audio mapping: noise AudioBufferSource -> BiquadFilter -> GainNode envelope -> StereoPannerNode, with playbackRate/detune curves approximating Doppler.",
+    "Distinct from hybrid-noise-distortion-separate-sub-layer (static noise texture layer) - this is time-shaped transition design."
+  ],
+  "published_at": "2026-10-07T16:37:09+00:00"
+}

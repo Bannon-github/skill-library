@@ -157,3 +157,11 @@ Quality docs: `/workspace/skill-library/QUALITY.md`. Checker: `/workspace/skill-
 - Skip the v1 schema fields
 - Publish thin, promo, or finance-advice-as-guarantee skills
 - Lock synth skills to unreproducible proprietary preset banks
+
+
+## Compact library rule (2026-11-03)
+The music library is compacted into ~26 cluster skills (see `archive/MAPPING.md`, `pipeline/compact/clusters.py`).
+After a new music skill passes quality + novelty checks, **fold it into the closest cluster** instead of publishing it standalone:
+`python3 pipeline/compact/fold_in.py distilled/<vid>/agent-skill-<id>.json <cluster-id>`.
+Publish a new standalone skill only when no cluster fits (a genuinely new technique area); give it a short specific id and, where possible, a theory generator in `sample-lab/theory/`.
+Daily test tracks pick 3 cluster skills (or 3 variants inside them); old long ids still resolve via `mcp-publish/aliases.json`.

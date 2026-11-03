@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "id": "sidehustle-productized-service-offer-and-ops",
+  "name": "Productize a freelance service: fixed scope/price/timeline plus sustainable operating constraints",
+  "goal": "Turn repeatable freelance work into a productized offer (predetermined deliverable, fixed price, fixed timeline, inclusions/exclusions, ideal-client qualification) that lets buyers skip custom scoping, then harden it with operating constraints—capacity caps, revision limits, allowed stack, rush fees—and a standard intake→produce→QA→handoff checklist so delivery stays sustainable.",
+  "domain": "side-hustle",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": null,
+    "url": null,
+    "title": "Merged from 2 YouTube how-to transcripts",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-sidehustle-productized-service-offer-and-ops.json"
+  },
+  "sources": [
+    {
+      "from_skill": "sidehustle-productize-service-fixed-scope-price",
+      "video_id": "ZGUdI9Ay0iQ",
+      "url": "https://www.youtube.com/watch?v=ZGUdI9Ay0iQ",
+      "title": "You Should Productize Your Service - Here Is How To Do It!",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/ZGUdI9Ay0iQ/agent-skill-sidehustle-productize-service-fixed-scope-price.json"
+    },
+    {
+      "from_skill": "sidehustle-productize-sustainable-ops-constraints",
+      "video_id": "w9gOdSLVu14",
+      "url": "https://www.youtube.com/watch?v=w9gOdSLVu14",
+      "title": "how to actually build a sustainable productized service ($20k+)",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/w9gOdSLVu14/agent-skill-sidehustle-productize-sustainable-ops-constraints.json"
+    }
+  ],
+  "merged_from": [
+    "sidehustle-productize-service-fixed-scope-price",
+    "sidehustle-productize-sustainable-ops-constraints"
+  ],
+  "aliases": [
+    "sidehustle-productize-service-fixed-scope-price",
+    "sidehustle-productize-sustainable-ops-constraints"
+  ],
+  "prerequisites": [
+    "A service you have delivered multiple times"
+  ],
+  "inputs": [
+    {
+      "name": "service_skill",
+      "type": "string",
+      "description": "Capability to package",
+      "required": true
+    },
+    {
+      "name": "target_client",
+      "type": "string",
+      "description": "Ideal buyer (e.g. startup-like buyers wanting a known outcome fast)",
+      "required": true
+    },
+    {
+      "name": "draft_offer",
+      "type": "offer-sheet",
+      "description": "Existing package to harden, if any",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "productized_offer",
+      "type": "offer-sheet",
+      "description": "Named package with scope/price/timeline/exclusions and explicit ops constraints"
+    }
+  ],
+  "constraints": [
+    "Operational freelancing/product procedure only — no get-rich-quick claims.",
+    "Ground every step in YouTube-provided captions; adapt UI labels if the product renamed menus.",
+    "Only package repeatable work; exclude open-ended R&D."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Define the offer as prepackaged: predetermined cost + predetermined scope + stated result in a stated timebox.",
+      "tool": "offer-design",
+      "expect": "One-sentence package"
+    },
+    {
+      "n": 2,
+      "action": "Name the sales benefit: productizing skips mutual scoping foreplay when the client wants a known outcome fast (startup-like buyers).",
+      "tool": "positioning",
+      "expect": "Buyer situation named"
+    },
+    {
+      "n": 3,
+      "action": "Write inclusions vs exclusions to escape unique-every-time projects that burn you out and cede control to clients.",
+      "tool": "scope-doc",
+      "expect": "In/out list"
+    },
+    {
+      "n": 4,
+      "action": "Publish a fixed price and turnaround so buyers can skip long rate/scope negotiation.",
+      "tool": "pricing",
+      "expect": "Fixed commercial terms"
+    },
+    {
+      "n": 5,
+      "action": "State ideal client and when NOT to buy (heavy custom → separate bespoke engagement). Acknowledge why large heterogeneous agencies often avoid pure SKUs; choose the repeatable-SKU lane deliberately.",
+      "tool": "offer-sheet",
+      "expect": "Qualification criteria"
+    },
+    {
+      "n": 6,
+      "action": "Add constraints: capacity caps, revision limits, allowed tech stack, rush fees — small tweaks that preserve happiness on both sides.",
+      "tool": "ops",
+      "expect": "Constraints in writing"
+    },
+    {
+      "n": 7,
+      "action": "Standardize intake → produce → QA → handoff checklist/templates for every order.",
+      "tool": "sop",
+      "expect": "Repeatable fulfillment"
+    },
+    {
+      "n": 8,
+      "action": "Align internal fulfillment with client expectation so the package is sustainable, not only marketable.",
+      "tool": "ops",
+      "expect": "Delivery feels repeatable"
+    }
+  ],
+  "verification": [
+    "Price/scope fixed pre-sale",
+    "Exclusions listed",
+    "Checklist works for two orders",
+    "Capacity/revision caps present",
+    "Target buyer situation named"
+  ],
+  "tags": [
+    "side-hustle",
+    "productized-service",
+    "freelance",
+    "operations",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-crypto-sidehustle"
+  ],
+  "mcp_resource": "skill://sidehustle-productized-service-offer-and-ops",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

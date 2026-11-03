@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "harmony-chords-voicing-and-slow-motion",
+  "name": "Harmony: chord qualities, voicing, voice leading and slow ambient harmonic motion",
+  "goal": "Write chord progressions and voicings: diatonic chords in a key, extended/sus chords, spread voicings with one chord tone per instrument, voice leading (hold common tones, move by step), pedal points and slow one-key harmonic motion.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+        "video_id": "CfyOOGAxJEs",
+        "url": "https://www.youtube.com/watch?v=CfyOOGAxJEs",
+        "title": "Tips for Ambient Music Arrangement"
+      },
+      {
+        "from_skill": "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
+        "video_id": "tfJocFdYxsg",
+        "url": "https://www.youtube.com/watch?v=tfJocFdYxsg",
+        "title": "Music Theory for Ambient (theory you can actually use!)"
+      }
+    ]
+  },
+  "theory": "Chord quality comes from interval stacks (maj 4+3, min 3+4, sus2/sus4 remove the third). Voice leading minimises motion between chords; inversions and pedal bass create motion without changing the key.",
+  "generator": {
+    "path": "sample-lab/theory/intervals_chords.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/intervals_chords.wav"
+  },
+  "prerequisites": [
+    "A DAW or sequencer with scale or key awareness (optional)",
+    "A DAW with sub bass, pad, choir pad and strings (or equivalents)",
+    "A synth pad or any sustaining instrument"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick key and mode; list diatonic triads/sevenths (e.g. A minor: i, III, iv, v, VI, VII).",
+      "expect": "Palette"
+    },
+    {
+      "n": 2,
+      "action": "Choose a progression (i-VI-III-VII, I-V-vi-IV, ii-V-I) and a harmonic rhythm (1 or 2 bars per chord; ambient: 2-4 bars).",
+      "expect": "Progression"
+    },
+    {
+      "n": 3,
+      "action": "Voice-lead: keep common tones, move other voices by step; use inversions to avoid jumps.",
+      "expect": "Smooth chords"
+    },
+    {
+      "n": 4,
+      "action": "Colour: add 9ths, sus2/sus4/7sus4; pedal the root while top voices move, or hold chord while bass walks inversions.",
+      "expect": "Ambient colour"
+    },
+    {
+      "n": 5,
+      "action": "Spread voicing across instruments: root in sub, 3rd in pad, 5th in choir, 3rd doubled in strings; keep low intervals wide (no 3rds below ~C3).",
+      "expect": "Clear, full voicing"
+    },
+    {
+      "n": 6,
+      "action": "Add tension: brief 1-2-3 cluster or suspension before resolving at section changes.",
+      "expect": "Tension-release"
+    },
+    {
+      "n": 7,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/intervals_chords.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+      "name": "Ambient chord arrangement: give each chord tone to a separate instrument (sub root, synth third a tenth up, choir fifth, string doubling the third), each swelling in on its own, moving in parallel and spread wide, at about 55 BPM",
+      "goal": "Make a 2-3 chord ambient progression feel like a living choir. Use a slow tempo around 55 BPM (6 s breath cycle) or 60 BPM / halftime. Split each triad across instruments instead of block chords: a sub plays the root of each chord and swells with the mod wheel; a dark synth pad plays the third an octave and more up (a tenth), a choir-like pad adds the fifth above, and a frozen string reinforces the third to define the key. Each part swells in at its own pace and the voices move in parallel. Spread notes apart (avoid close block voicing in the low register to avoid mud): move the third up an octave, the fifth up an octave, or the fifth above the third. Then add reverse textures that move within the key.",
+      "steps": [
+        "Set tempo around 55 BPM (4/4 or 6/4) or 60/halftime; the source ties 55 BPM to a roughly six-second breathing cycle.",
+        "Write the progression as plain triads (e.g. I, vi, I, V).",
+        "Instrument 1: sub plays only the root of each chord, long notes with a swell (mod wheel).",
+        "Instrument 2: dark pad plays the third, placed a tenth above the root; subtle, gives key/chord quality.",
+        "Instrument 3: choir-like pad plays the fifth above; each instrument swells in uniquely.",
+        "Instrument 4: frozen string reinforces the third to make the key strong. Move all voices in parallel (all up or all down).",
+        "Spread the voicing: lift the third or the fifth by an octave, or place the fifth above the third, so the notes are not close together, especially in low registers; add reverse textures in the key."
+      ]
+    },
+    {
+      "from_skill": "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
+      "name": "Slow ambient harmony in one key: suspended and 7sus4 chords, a held root under a changing upper chord, or a static chord over a moving bass note, plus inversions and a band-passed 1-2-3 scale-degree cluster for tension, all moved slowly over a long timeline",
+      "goal": "Get movement in a long-form ambient or drone track without leaving the key. Pick one key (a minor or modal key such as Aeolian, Dorian or Lydian suits dark, suspended moods) and stay in it for the whole track; a key change should signal a completely new passage. Use 2-4-note chords: sus2 (1-2-5) or sus4 (1-4-5) over a low root as neutral, suspended openers, then the minor triad, then a 7sus-style shape (1-5-7) for contrast. Create variation from the same notes: invert (put a different chord tone on the bottom), drop notes down an octave or two, or make a non-root chord tone the root of the next chord. Two core motion techniques: (1) keep the root as a pedal and change the upper chord above it (e.g. A root under Am, Dm, C); (2) keep the upper chord static and move the bass note under it (e.g. Am over the 6th degree). For tension, play scale degrees 1-2-3 together as a cluster and squeeze it with a high-pass and low-pass to roughly 600-1000 Hz. Spread single chord tones across several layered instruments instead of one dense patch. Make changes slowly across the timeline.",
+      "steps": [
+        "Choose a single key or mode (a minor or modal key for dark or suspended moods) and keep every chord inside it.",
+        "Open with a neutral suspended chord, sus2 (1-2-5) or sus4 (1-4-5), over a low root note, then move to the minor triad.",
+        "Add contrast with a 7sus-style shape (root, 5th, 7th) and return to the suspended or minor chords; stick to 2-4 notes per chord.",
+        "Make variants from the same notes: inversions (different chord tone in the bass), dropping tones down 1-2 octaves, or using a non-root chord tone as the next chord's root.",
+        "Pedal-root motion: hold the root (e.g. A) and change the upper chord above it (e.g. Am, then Dm, then C).",
+        "Moving-bass motion: hold the upper chord and step the bass note underneath (e.g. Am over the 6th degree).",
+        "Tension colour: play scale degrees 1, 2 and 3 together and band-limit them with high-pass and low-pass filters to roughly 600-1000 Hz.",
+        "Spread chord tones across several layered instruments and stretch all changes across the timeline (many bars per change)."
+      ]
+    }
+  ],
+  "merged_from": [
+    "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+    "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster"
+  ],
+  "tags": [
+    "ambient",
+    "arrangement",
+    "chord-voicing",
+    "chords",
+    "cinematic-synth",
+    "drone",
+    "harmony",
+    "layering",
+    "long-form",
+    "music-production",
+    "music-theory",
+    "pacing",
+    "pedal-tone",
+    "polyrhythm-studio",
+    "portable",
+    "slow-tempo",
+    "song-structure",
+    "web-audio",
+    "workflow"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://harmony-chords-voicing-and-slow-motion",
+  "aliases": [
+    "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
+    "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster"
+  ]
+}

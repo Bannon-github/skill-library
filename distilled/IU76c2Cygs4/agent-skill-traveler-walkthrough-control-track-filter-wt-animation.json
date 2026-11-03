@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "traveler-walkthrough-control-track-filter-wt-animation",
+  "name": "control-track rhythmic filter and WT animation",
+  "goal": "Use dual Control Tracks (sequenced controller lanes) as the heartbeat: up to 16 steps, ping-pong, DAW-synced rates, swing/gate/depth, routing to filter cutoff, wavetable position, or any mod destination.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IU76c2Cygs4",
+    "url": "https://www.youtube.com/watch?v=IU76c2Cygs4",
+    "title": "TRAVELER: The Cinematic Hybrid Synthesizer | Official Walkthrough",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IU76c2Cygs4/agent-skill-traveler-walkthrough-control-track-filter-wt-animation.json"
+  },
+  "prerequisites": [
+    "Hybrid synth or Traveler-inspired Web Audio engine with multi-osc, stereo filter, envelopes, LFOs/mod matrix, sequenced control tracks (or automation), and FX (EQ/chorus/delay/reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "track_a_destination",
+      "type": "mod-destination",
+      "description": "e.g. filter cutoff, WT position, osc mix",
+      "required": true
+    },
+    {
+      "name": "track_b_destination",
+      "type": "mod-destination",
+      "description": "Complementary destination",
+      "required": false
+    },
+    {
+      "name": "step_length",
+      "type": "integer",
+      "description": "1\u201316 steps per track",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "control_track_patch",
+      "type": "synth-patch",
+      "description": "Patch with rhythmic Control Track animation"
+    }
+  ],
+  "constraints": [
+    "Original synthesis only; not affiliated with KeySolutions; do not rip Traveler samples/presets/wavetables.",
+    "Original synthesis only \u2014 design new patches from portable parameters; do not copy proprietary Traveler factory preset names, banks, wavetables, or samples.",
+    "Not affiliated with KeySolutions Sounds or Traveler; concepts mapped to generic hybrid-synth / Web Audio equivalents.",
+    "Do not rip, dump, or redistribute Traveler content.",
+    "Prefer recreating the described signal-flow and motion relationships in our browser music system or any hybrid synth with comparable modules."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Open sequencer/Control Tracks panel. Configure Track A: length \u226416 steps, direction forward or ping-pong, tempo-synced note value.",
+      "tool": "control-track-a",
+      "expect": "Track A advancing in time"
+    },
+    {
+      "n": 2,
+      "action": "Set Track A destination from the shared mod destination list (same as mod matrix): e.g. filter cutoff or wavetable position. Set depth, gate time, swing.",
+      "tool": "control-track-a",
+      "expect": "Audible rhythmic timbre animation"
+    },
+    {
+      "n": 3,
+      "action": "Configure Track B with a complementary destination and optionally different length/rate for evolving polyrhythmic motion.",
+      "tool": "control-track-b",
+      "expect": "Second motion layer independent of A"
+    },
+    {
+      "n": 4,
+      "action": "Use utilities: copy A\u2192B, reverse/flip, reset, or randomize steps when exploring \u2014 then refine by ear.",
+      "tool": "control-track-utils",
+      "expect": "Useful starting pattern without staying on pure random"
+    },
+    {
+      "n": 5,
+      "action": "Optionally pair with arpeggiator: many patterns; can target individual oscillators so one osc arps while another holds a pad; shape arp attacks with mod envelope when per-osc selected.",
+      "tool": "arp",
+      "expect": "Arp + control tracks create complementary motion"
+    }
+  ],
+  "verification": [
+    "Control tracks change destinations predictably",
+    "Swing/gate audible",
+    "Motion remains useful over long holds"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "control-track",
+    "sequencer",
+    "modulation",
+    "from-youtube",
+    "traveler-walkthrough"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T11:10:19.298+00:00",
+  "mcp_resource": "skill://traveler-walkthrough-control-track-filter-wt-animation"
+}

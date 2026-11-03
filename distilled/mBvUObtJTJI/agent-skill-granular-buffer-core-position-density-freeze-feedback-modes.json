@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "granular-buffer-core-position-density-freeze-feedback-modes",
+  "name": "Granular buffer core from the ground up: grain size/shape/pitch, regular vs random density, triggered grains as a voice, position delay, freeze scrubbing, partial re-freeze, random pan, two feedback modes",
+  "goal": "Understand and drive a buffer-based granular processor (the kind we need as a Web Audio module) with reverb and feedback turned down first: grains are tens-of-ms-to-1-s micro-samples plucked from a rolling 1–8 s input buffer; set size, shape (gate → triangle → Hann for overlap), pitch; density from noon (none) toward regular spacing one way and random spacing the other, or fire grains from a trigger with sequenced pitch to make a playable voice; use position as a buffer read point (= delay, newest at one end), freeze to scrub inside captured audio, gate the freeze with semi-random gates to partially overwrite and blend the buffer, mind lo-fi buffer modes (low sample rate → low-pass before input; mu-law 8-bit → keep input mid-level), random L/R grain pan for mono→stereo, and know that feedback is true input feedback when live but a separate delay/all-pass diffuser when frozen.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mBvUObtJTJI",
+    "url": "https://www.youtube.com/watch?v=mBvUObtJTJI",
+    "title": "Clouds (and clones) from the Ground Up: a reverbless explanation of a Granular icon",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mBvUObtJTJI/agent-skill-granular-buffer-core-position-density-freeze-feedback-modes.json"
+  },
+  "prerequisites": [
+    "Granular processor with input buffer, freeze, position, size, shape/texture, pitch, density, trigger input (Web Audio: AudioWorklet ring buffer + windowed grain scheduler, implementation note)",
+    "A gate/trigger source and pitch sequencer/quantizer for the voice demo",
+    "Speech/radio/varied audio source for position demos"
+  ],
+  "inputs": [
+    {
+      "name": "input_audio",
+      "type": "audio",
+      "description": "Audio to capture into the granular buffer",
+      "required": true
+    },
+    {
+      "name": "grain_triggers",
+      "type": "trigger",
+      "description": "Optional gates firing individual grains",
+      "required": false
+    },
+    {
+      "name": "grain_pitch",
+      "type": "cv",
+      "description": "Optional quantized pitch per grain",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "granular_output",
+      "type": "audio",
+      "description": "Grain stream: voice, scrub texture or evolving frozen bed (stereo with random pan)"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Start with internal feedback and reverb DOWN — they obscure what the granular core is doing; add external reverb later (internal reverb only affects the granular output).",
+    "Lo-fi buffer modes trade fidelity for time: 16 kHz sampling caps content at 8 kHz (low-pass the input to reduce aliasing); 8-bit mu-law favours mid levels — keep input around mid-scale on the meter.",
+    "Stereo mode halves record time; L and R are granularized separately only with internal reverb off and random pan at minimum.",
+    "Saved buffers are raw material, not presets — reloading won't reproduce a performance."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Turn internal feedback and reverb down. Feed a simple source (sine) and listen to individual grains.",
+      "tool": "setup",
+      "expect": "Discrete blips of the input"
+    },
+    {
+      "n": 2,
+      "action": "Grain structure: size sets grain length (tens of ms → ~1 s); shape/texture morphs from no contour (gate) through triangle to Hann-like windows; use gate-like shapes for individual grains and Hann for overlapping grains; pitch shifts each grain up/down.",
+      "tool": "grain",
+      "expect": "Audible change in grain length, envelope smoothness and pitch"
+    },
+    {
+      "n": 3,
+      "action": "Grain generation: density at noon = no grains; one direction = evenly spaced grains getting faster until they overlap; the other = randomly spaced grains until they overlap. Fine control near noon matters for counting individual grains.",
+      "tool": "density",
+      "expect": "Regular vs irregular grain streams"
+    },
+    {
+      "n": 4,
+      "action": "Triggered voice: density at noon, feed clock-derived gates into the trigger input and quantized pitch per grain from a random/looping sequencer; send an occasional pulse into size to lengthen some notes.",
+      "tool": "trigger",
+      "expect": "Granular processor behaves like a playable synth voice with some long notes"
+    },
+    {
+      "n": 5,
+      "action": "Position: switch to a varied source (speech/radio). Small grains + enough density reconstructs the input; moving position away from the newest end adds a growing delay (there's always a tiny conversion delay at minimum).",
+      "tool": "position",
+      "expect": "Position works as a read point/delay into the rolling buffer"
+    },
+    {
+      "n": 6,
+      "action": "Freeze (fully wet): buffer stops updating; the same grain repeats at the current position; shrink size from a whole word to a tiny tone, then sweep position to scrub through captured audio (note: newest audio sits at one end, so 'forward' playback means moving position toward the older end).",
+      "tool": "freeze",
+      "expect": "Scrubbing inside a captured phrase; tiny grains become tones"
+    },
+    {
+      "n": 7,
+      "action": "Evolving buffer: gate the freeze input with semi-random gates so it briefly unfreezes, writing a few seconds of new audio at the front while the rest of the buffer is kept.",
+      "tool": "freeze-gate",
+      "expect": "Buffer contents blend old and new material over time"
+    },
+    {
+      "n": 8,
+      "action": "Post-processing: set wet/dry blend; use random L/R grain panning to turn a mono input into a stereo output; add reverb externally if preferred.",
+      "tool": "post",
+      "expect": "Stereo granular image without internal reverb wash"
+    },
+    {
+      "n": 9,
+      "action": "Feedback: when live, it's true feedback of output into the buffer input (can run away — tame by modulating size/position); when frozen, feedback becomes a separate delay + all-pass diffusion that sounds reverb-like without altering the buffer. Watch for jumps when unfreezing.",
+      "tool": "feedback",
+      "expect": "Controlled feedback in both modes; no explosion on unfreeze"
+    }
+  ],
+  "verification": [
+    "With density at noon and no triggers, output is silent.",
+    "Frozen buffer + position sweep scrubs recognizable fragments of the source.",
+    "Random pan produces a stereo output from a mono input (L≠R).",
+    "Toggling freeze while feedback is up does not cause runaway level."
+  ],
+  "tags": [
+    "granular",
+    "freeze",
+    "buffer",
+    "density",
+    "grain-window",
+    "feedback",
+    "stereo",
+    "modular",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://granular-buffer-core-position-density-freeze-feedback-modes"
+}

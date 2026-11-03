@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "id": "sidechain-compressor-duck-synth-pads",
+  "name": "Sidechain-compressor duck synth/pad group to kick",
+  "goal": "Make space for a four-on-the-floor kick by sidechain-compressing a synth/pad bus from the kick: insert compressor before reverb on the group, enable external sidechain from kick, use strong ratio (~6:1), fast attack, slower release, and tune threshold so pads pump without wrecking the mix.",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "e6Ek5Kmieq0",
+    "url": "https://www.youtube.com/watch?v=e6Ek5Kmieq0",
+    "title": "Sidechain Synthesizers (and any other instruments, also called the sidechain effect or ducking)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/e6Ek5Kmieq0/agent-skill-sidechain-compressor-duck-synth-pads.json"
+  },
+  "prerequisites": [
+    "DAW compressor with external/sidechain input; grouped synth/pad bus; kick track"
+  ],
+  "inputs": [
+    {
+      "name": "kick_track",
+      "type": "audio-track",
+      "description": "Four-on-floor or pulsed kick used as key",
+      "required": true
+    },
+    {
+      "name": "synth_group",
+      "type": "bus",
+      "description": "Pad/synth stack to duck",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ducked_synth_bus",
+      "type": "fx-chain",
+      "description": "Sidechain-compressed synth group with kick space"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided Show-transcript text; do not invent UI paths or numeric settings not stated there.",
+    "Original synthesis / signal-flow only \u2014 map brand UI (Serum/Vital/Ableton/etc.) to portable osc/filter/env/LFO/FX modules for Traveler-inspired or Web Audio hybrid; never rip presets, wavetables, or samples.",
+    "Prefer transferable parameter relationships over vendor-specific preset or bank names.",
+    "Sidechain here means using one signal\u2019s amplitude to control compression on another (ducking)\u2014not a genre rule."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Identify dense synth/pad stacks competing with a loud kick on beats 1\u20132\u20133\u20134. Goal: duck those instruments each kick hit to open mix space.",
+      "tool": "mix",
+      "expect": "Problem bus + kick identified"
+    },
+    {
+      "n": 2,
+      "action": "Group the synth waves onto one bus. Insert a compressor on that group *before* reverb (optional HP on the bus to clear mud). Plain compression without sidechain just thickens\u2014enable sidechain instead.",
+      "tool": "compressor",
+      "expect": "Compressor on group pre-reverb"
+    },
+    {
+      "n": 3,
+      "action": "Turn on compressor sidechain / external key; set audio-from to the kick track so compression engages when the kick hits.",
+      "tool": "sidechain",
+      "expect": "Gain reduction follows kick"
+    },
+    {
+      "n": 4,
+      "action": "Set a strong starting ratio (~6:1). Use a very fast attack so the duck grabs with the kick; start with a slower release so the pad swells back between hits (adjust to taste; exaggerated settings teach the effect).",
+      "tool": "compressor",
+      "expect": "Audible pump in time with kick"
+    },
+    {
+      "n": 5,
+      "action": "Tune threshold (and makeup if needed) so ducking makes kick space without squashing musicality; A/B bypass to confirm clearer kick and breathing pads.",
+      "tool": "compressor",
+      "expect": "Kick punches; pads recover between hits"
+    }
+  ],
+  "verification": [
+    "Gain reduction meters pulse with kick, not constantly",
+    "Bypass comparison shows more kick clarity with sidechain on",
+    "Compressor sits before reverb on the synth group"
+  ],
+  "tags": [
+    "music-synthesis",
+    "sidechain",
+    "ducking",
+    "pads",
+    "mixing",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T16:24:43+00:00",
+  "mcp_resource": "skill://sidechain-compressor-duck-synth-pads"
+}

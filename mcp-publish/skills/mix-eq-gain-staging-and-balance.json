@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.0",
+  "id": "mix-eq-gain-staging-and-balance",
+  "name": "Mixdown workflow: gain staging, subtractive EQ, dynamic EQ, multiband and saturation",
+  "goal": "Mix a track to a reference: gain stage to sensible levels, balance with faders first, subtractive EQ (high-pass non-bass, cut mud 200-400 Hz), the three-questions dynamic EQ approach, mid/side EQ, gentle multiband low control, selective saturation and parallel processing.",
+  "domain": "music-production",
+  "source": {
+    "kind": "merged-youtube-transcripts",
+    "transcript": "youtube-provided",
+    "merged_at": "2026-11-03T15:01:03.604619+00:00",
+    "sources": [
+      {
+        "from_skill": "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+        "video_id": null,
+        "url": "https://www.youtube.com/watch?v=2cR4omOL6p4",
+        "title": "I HATED Mixing Until I Learned This Hack"
+      },
+      {
+        "from_skill": "midside-eq-bass-focus-width-depth",
+        "video_id": "kEiILPm1VSc",
+        "url": "https://www.youtube.com/watch?v=kEiILPm1VSc",
+        "title": "Mid Side EQ Simplified - A Powerful Tool for Stereo Mixing"
+      },
+      {
+        "from_skill": "mix-pads-role-eq-width-clarity",
+        "video_id": "6NXqV9jWJ1s",
+        "url": "https://www.youtube.com/watch?v=6NXqV9jWJ1s",
+        "title": "5 Tips for Mixing Pads and Synths for a Full, Clear Sound"
+      },
+      {
+        "from_skill": "multiband-low-band-gentle-control-and-expand",
+        "video_id": "T2poUGh6qPg",
+        "url": "https://www.youtube.com/watch?v=T2poUGh6qPg",
+        "title": "Ultimate Compression Tutorial Pt.5 - Multiband Compression quick settings for Drums and 2bus"
+      },
+      {
+        "from_skill": "selective-saturation-and-lofi-grit-toolkit",
+        "video_id": "MWzBoFOOzco",
+        "url": "https://www.youtube.com/watch?v=MWzBoFOOzco",
+        "title": "How to use DISTORTION properly in Ableton Live: Tips & tricks for Saturator, Redux, Erosion & more"
+      },
+      {
+        "from_skill": "soft-tape-saturation-pads-before-space",
+        "video_id": "o71KYxEqPdU",
+        "url": "https://www.youtube.com/watch?v=o71KYxEqPdU",
+        "title": "How to mix Pads & Strings - The complete process - Part 1 - Saturation - Mini Series"
+      }
+    ]
+  },
+  "theory": "Masking happens when parts share frequency and time; cut before boost. Static clashes -> static EQ; dynamic clashes -> dynamic EQ keyed to the focus element; mono clashes -> mid-only cuts.",
+  "generator": {
+    "path": "sample-lab/theory/eq_mix_balance.py",
+    "python": "/home/box/audio-tools/bin/python",
+    "output": "sample-lab/theory/out/eq_mix_balance.wav"
+  },
+  "prerequisites": [
+    "A DAW mix with a clear focus element",
+    "A dynamic EQ / resonance suppressor with an external sidechain (the video uses a commercial one and a free student-made one)",
+    "DAW or Web Audio graph with a saturator/waveshaper, band-split or pre-EQ before distortion, bit/sample-rate reducer, noise-modulation effect, overdrive with pre-filter, cabinet/speaker sim",
+    "DAW with EQ, spectrum analyzer, optional multiband imager, pads already sound-designed",
+    "EQ with mid/side mode (or dual-mono M/S), headphones/monitors; basic EQ balance literacy",
+    "For step 3: mid/side mode on that dynamic EQ, or a mid/side encode-decode around a non-M/S dynamic EQ",
+    "Multiband compressor/expander with per-band bypass, solo, crossover, range/threshold, attack/release and band gain",
+    "Pad/string/synth sustain layer; tape sat, tape delay, or gentle analog-drive plugin/module"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Song key/mode",
+      "required": false
+    },
+    {
+      "name": "bpm",
+      "type": "number",
+      "description": "Tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "audio-or-recipe",
+      "description": "Rendered part or recipe following the workflow"
+    }
+  ],
+  "constraints": [
+    "Portable recipe; not affiliated with any vendor; do not copy factory presets or sample packs.",
+    "Numbers in variants come from the source video transcripts; workflow steps are the consolidated mainstream practice.",
+    "Bring drums in early and avoid pitch wobble unless asked (user preferences from daily tests)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Gain stage: each track peaks ~-12 to -6 dBFS, bus headroom ~-6 dB; import a reference track at matched loudness.",
+      "expect": "Headroom, fair comparisons"
+    },
+    {
+      "n": 2,
+      "action": "Balance with faders and pan before any EQ; kick and bass first, then lead/vocal, then the rest.",
+      "expect": "Static mix"
+    },
+    {
+      "n": 3,
+      "action": "Subtractive EQ: HP everything that isn't bass/kick (100-250 Hz for pads), cut mud 200-400 Hz, harshness 2-5 kHz with narrow Q.",
+      "expect": "Clarity"
+    },
+    {
+      "n": 4,
+      "action": "Three questions: what is the focus? is the clash static or dynamic (dynamic -> dynamic EQ keyed to the focus)? where in stereo (centre focus -> mid-only cut)? EQ last.",
+      "expect": "Targeted fixes"
+    },
+    {
+      "n": 5,
+      "action": "Mid/side: keep lows mono (side HP ~120 Hz), boost air on sides lightly; multiband: gently compress/expand the low band only.",
+      "expect": "Wide yet solid"
+    },
+    {
+      "n": 6,
+      "action": "Saturation: tape/tube on pads before space, selective lo-fi grit on one element, parallel blends level-matched.",
+      "expect": "Glue and character"
+    },
+    {
+      "n": 7,
+      "action": "Check mono, small speakers, and A/B against the reference; leave ~-6 dB for mastering or target loudness (e.g. -14 LUFS stream).",
+      "expect": "Translating mix"
+    },
+    {
+      "n": 8,
+      "action": "Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/eq_mix_balance.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.",
+      "expect": "WAV in sample-lab/theory/out/ demonstrating the principle"
+    }
+  ],
+  "verification": [
+    "Render a short test and A/B against a reference at matched loudness",
+    "Run the generator and confirm it writes a WAV without error",
+    "Check mono compatibility and that no element masks the kick/bass"
+  ],
+  "variants": [
+    {
+      "from_skill": "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+      "name": "EQ for balance in three questions: what is the focus, is the clash static or dynamic (sidechained dynamic EQ), and where in the stereo field (mid-only)",
+      "goal": "Resolve frequency competition between a focus element (for example a lead vocal) and other loud parts (lead synth, mid bass, piano) with a three-question framework instead of a fixed EQ scoop. (1) Name the section's focus and which parts still compete with it. (2) If the overlap changes with the focus's level, notes and pauses, use a dynamic EQ on the competing part with the focus as its sidechain key, so cuts follow the focus. (3) If the focus is mono but the competitor is stereo, run that dynamic EQ in mid-only mode so the sides keep their full level. Delta vs generic sidechain/EQ skills: the decision order and the mid-only dynamic cut.",
+      "steps": [
+        "Set general volume, stereo placement and compression first; EQ for balance comes after those.",
+        "Ask what the focus of this section is and which other sounds still compete with it (often the parts you chose to mix louder).",
+        "For each pair, ask whether the overlap is static or dynamic: does it change when the focus pauses, gets louder or quieter, or moves to different notes?",
+        "For a dynamic clash, insert a dynamic EQ on the competitor and set its sidechain input to the focus track. Adjust the depth (how drastic), resolution (detailed vs broad) and any frequency ranges to ignore.",
+        "Ask where in the stereo field the clash happens. If the focus is mono (centre) and the competitor is stereo, switch the dynamic EQ to mid-only (or wrap it in M/S encode/decode) so only the centre is ducked.",
+        "A/B against a static scoop: compare the competitor's level and life in the focus's pauses and in its side channel."
+      ]
+    },
+    {
+      "from_skill": "midside-eq-bass-focus-width-depth",
+      "name": "Mid-side EQ: center the bass, tame mid problems, widen with side mids/highs",
+      "goal": "Use mid/side EQ on synth/sample/pad layers or mixes: split stereo into mid (L+R mono sum) and side (L−R), high-pass wide bass on the sides to focus low end center, cut resonant/harsh problems only on the mid when they live there, optionally boost the same band on the sides to preserve ambience, and try subtle upper-mid side boosts for depth (not only extreme high shelves for width).",
+      "steps": [
+        "Enable mid/side on the EQ. Confirm mid ≈ mono sum of L+R and side ≈ L minus R (spatial difference, not merely hard-panned parts).",
+        "If a synth/sample has overly wide bass: solo sides, high-pass the side channel to remove bass so sides keep ambience/air while lows become narrower and centered; A/B with full stereo.",
+        "If a lead/pad resonance is mostly mid-localized: solo mid vs side to locate it, then cut the problem band on the mid channel only.",
+        "Optionally boost a little top end on the sides after mid cuts so width/air remains; for mix problems where stereo EQ mushifies everything, cut only the mid band that holds the squeaky/scratchy energy (example: guitars in mid) and leave lush side reverb/ambience alone — even boost that same band on sides if you want air back.",
+        "For width/depth: try a subtle boost in the upper midrange on the sides (not only extreme high shelves) — transcript finds upper-mid side boosts create more depth/aliveness than highs-alone width tricks. Keep mastering-style moves modest."
+      ]
+    },
+    {
+      "from_skill": "mix-pads-role-eq-width-clarity",
+      "name": "Mix pads for role, EQ clarity, energy, and width control",
+      "goal": "Mix pads based on role (lead ambient vs background glue): infinite-average spectrum to see occupied bands, high-pass to protect kick/bass, filter reverb/delay lows (~100 Hz), manage mids/highs vs vocals with dynamic/sidechain EQ sparingly, automate filter/FX for section energy, and narrow stereo (or multiband width) when pads crowd the image.",
+      "steps": [
+        "Decide pad role (lead evolving bed vs background atmosphere) — mix moves follow the role.",
+        "View long-average spectrum to see which bands the pad occupies vs vocals/keys.",
+        "High-pass the pad to leave room for kick/bass; stop before the pad thins excessively; likewise HP reverb/delay returns (~100 Hz) to prevent buildup.",
+        "In busy mids/highs, use gentle tonal EQ or dynamic EQ sidechained to conflicting elements (e.g. snare/vocal) only as needed.",
+        "Automate mute/filter/FX across intro/verse/chorus so pads shape energy while staying supportive.",
+        "If pads steal stereo space: collapse toward mono and pan, or multiband-narrow only conflicting bands while keeping air wide."
+      ]
+    },
+    {
+      "from_skill": "multiband-low-band-gentle-control-and-expand",
+      "name": "Multiband dynamics on a synth/pad bus: gentle low-band control, upward expand for weak lows, slow-attack top band",
+      "goal": "Use a multiband compressor as a dynamic EQ rather than a squasher on a pad/synth or mix bus: enable only the band you need (e.g. low band below ~92 Hz with ~1.5 dB range, opto-style, fairly fast attack) to tame bass build-up, use expansion with a +dB band gain to make a weak low end bigger but cleaner, and use a slow attack on a top band so transients pass while splashy highs are controlled—then check tonal shift from the crossovers.",
+      "steps": [
+        "Bypass all bands except the one covering the problem range; solo that band to hear exactly what it acts on.",
+        "Boomy lows: on the low band start aggressive to find it (e.g. -24 dB range, very fast attack), then ease off; a slower attack lets the initial transient/punch through and reduces the range after it, while a very fast attack chokes it.",
+        "Real-world gentle setting: low band only, crossover ~92 Hz (acts like a dynamic low shelf), range ~1.5 dB, opto mode, fairly fast attack—'a couple of dB' makes a big difference.",
+        "Weak lows: raise that band's gain (example +6 dB) and switch to expansion with lower threshold so the band stays down until a hit arrives, then returns to its boosted gain—cleaner low end between hits, bigger on hits.",
+        "Harsh highs: on a top band use a slow attack so fast bright transients pass while sustained splashy energy is reduced; if it gets dark, add band gain to restore controlled brightness.",
+        "Set attack/release as with a wideband compressor: release roughly in time with the music and listen to the breathing. Use a band only for range problems that come and go (a static EQ handles constant ones).",
+        "A/B with the whole unit bypassed: splitting into bands with crossover filters shifts phase and tone even at zero gain reduction, so confirm the change is worth it."
+      ]
+    },
+    {
+      "from_skill": "selective-saturation-and-lofi-grit-toolkit",
+      "name": "Frequency- and level-selective saturation, exciter, bit/noise grit and small-speaker transition",
+      "goal": "Choose and set distortion as a tone tool rather than blanket crunch: band-weighted saturation (less drive on lows, more on highs, with output gain compensation), threshold/envelope-dependent saturation so only loud parts distort, saturation-as-clipper for headroom, a pre-filtered overdrive exciter at low dry/wet for brightness, subtle bit-depth/sample-rate reduction with jitter for vintage-sampler glue, narrow noise-modulation (erosion-style) grit, restoring sub after distortion, and a small-speaker cabinet on the master as a transition effect.",
+      "steps": [
+        "Add saturation drive gradually and turn output down by the same amount to compare at matched loudness; decide whether the post-saturation clipper stage is wanted (adds more distortion) or off.",
+        "Weight saturation by band: reduce drive on the low band so subs stay clean while upper harmonics remain (helps 808/sub cut through small speakers); push the high band and width for brighter grit. Avoid cranking the low band—sub content collapses.",
+        "Level-selective: use a threshold/waveshaper mode where only signal above the threshold saturates, or an envelope-follow control that adds more bias/drive on louder parts (tube-style).",
+        "Clipper use: set saturation so peaks are shaved (e.g. peak meter drops ~6 dB with little audible change), then raise the track level by the recovered headroom.",
+        "Exciter: overdrive with its pre-distortion band filter aimed at the highs, low drive, low dry/wet, a touch of tone—adds new harmonics instead of EQ boost to dull or lossy material.",
+        "Vintage grit: subtle bit-depth/sample-rate reduction (old samplers ran ~12-bit at roughly 20-something kHz), small jitter; lower bits = noisier, lower rate = crunchy ringing. Or noise-modulation (erosion-like: sine, noise, wide-noise modes; width sets the noise band) at very low amounts; wide-noise adds stereo width.",
+        "After heavy distortion on bass, re-add/restore sub (sub switch or low shelf) because distortion thins lows.",
+        "Transition trick: cabinet/small-speaker sim on the master (small speaker, far/dynamic mic, mono) during an intro or bridge, then bypass when the full track drops."
+      ]
+    },
+    {
+      "from_skill": "soft-tape-saturation-pads-before-space",
+      "name": "Soft tape/analog saturation on pads before space FX",
+      "goal": "Make digital/synth pads and string layers feel denser and less sterile by adding gentle tape or analog-style saturation early (before big reverb/space): zero-time tape-delay as low-CPU tape sat, or gentle console/tape emulations kept near 0 VU—fullness in low-mids without obvious distortion.",
+      "steps": [
+        "Identify sterile/digital pad or synth-string sustains that need density. Goal is subtle analog juice, not crunch.",
+        "Option A — low-CPU tape: insert a tape-delay emulator, set delay time to zero so only tape saturation remains (no echoes).",
+        "Option B — gentle console/tape emulation: raise input until meters approach ~0 (not deep into red) for natural saturation; back off if obvious distortion appears.",
+        "A/B dry vs sat: expect slightly fuller low-mid presence and mild soft compression—rewind/listen carefully; changes are subtle by design.",
+        "Then continue the pad chain (EQ/chorus/delay/reverb). Keep this sat stage before big space so reverb blooms on the denser tone."
+      ]
+    }
+  ],
+  "merged_from": [
+    "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "soft-tape-saturation-pads-before-space"
+  ],
+  "tags": [
+    "balance",
+    "bitcrush",
+    "cinematic-synth",
+    "clipper",
+    "compression",
+    "density",
+    "distortion",
+    "dynamic-eq",
+    "eq",
+    "exciter",
+    "expansion",
+    "from-youtube",
+    "fx",
+    "lofi",
+    "low-end",
+    "masking",
+    "mid-side",
+    "mix",
+    "mix-bus",
+    "mixing",
+    "multiband",
+    "music-production",
+    "music-synthesis",
+    "pads",
+    "saturation",
+    "sidechain",
+    "stereo",
+    "strings",
+    "tape",
+    "transition-fx"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://mix-eq-gain-staging-and-balance",
+  "aliases": [
+    "eq-balance-three-questions-focus-static-vs-dynamic-sidechained-dynamic-eq-mid-only-when-competitor-is-mono",
+    "midside-eq-bass-focus-width-depth",
+    "mix-pads-role-eq-width-clarity",
+    "multiband-low-band-gentle-control-and-expand",
+    "selective-saturation-and-lofi-grit-toolkit",
+    "soft-tape-saturation-pads-before-space"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "id": "piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches",
+  "name": "Record a piano for maximum sustain and resonance with a contact/geophone pickup (about 10 Hz–1 kHz) at the most resonant spot plus air microphones inside and above the body for the highs, build a sampler with per-mic blend and a lowpassed 'muffled' mix, then make ambient textures by extreme time-stretching held notes and tails (FFT size: small = grainy, large = smooth; tonal vs noise emphasis) and reuse samples as wavetables, looped dual-sample pads and phaser-hollowed basses",
+  "goal": "Turn an acoustic piano (or any resonant instrument) into an intimate sample set and ambient source material. Test contact-pickup positions on the body and choose the one that gives the longest, most natural sustain (in the video: the bottom-left corner beside the lowest key; a metal plate inside sounded resonant but metallic). Because the contact pickup captures only about 10 Hz–1 kHz, add air mics: one inside the closed lower body and one on the lid near the keys. Record each note several times, letting it ring fully (low notes 40–50 s), plus the key release. Denoise, align all mics, and build a sampler with a per-mic volume mix; lowpassing the full mix to the contact-pickup range gives a fuller, more sustained muffled piano than the pickup alone. For sound design, extreme-stretch held notes, chords and tiny leftover tails (30 s to over 20 minutes) and adjust FFT size (small = grainy, large = smooth) and tonal-vs-noise emphasis, pitch-shifting results. Reuse samples as wavetables: 16-voice unison with zero phase randomisation, an extreme many-pole phaser with high feedback for hollowness, slow spectral/granular scanning, and two loops of the same note with slightly different loop lengths panned L/R so the beating speeds up at higher pitches.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "bIbOgZn1h_Y",
+    "url": "https://www.youtube.com/watch?v=bIbOgZn1h_Y",
+    "title": "Field Recording a Piano - Exploring Resonance & Sustain",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/bIbOgZn1h_Y/agent-skill-piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches.json",
+    "transcript_note": "Sampling/sound-design walkthrough; Patreon and sample-pack promotion dropped."
+  },
+  "prerequisites": [
+    "Contact microphone or geophone, plus one or two wide-range recorders/mics",
+    "Audio editor with denoise; sampler with per-group volume",
+    "Extreme time-stretch tool (Paulstretch or similar FFT stretch), wavetable/granular synth; in Web Audio, a phase-vocoder AudioWorklet or offline stretch, and two AudioBufferSourceNodes with different loopEnd panned L/R (implementation note)"
+  ],
+  "inputs": [
+    {
+      "name": "instrument",
+      "type": "object",
+      "description": "Piano or other resonant instrument",
+      "required": true
+    },
+    {
+      "name": "pickup_positions",
+      "type": "list",
+      "description": "Candidate contact-mic spots to test",
+      "required": true
+    },
+    {
+      "name": "stretch_factor",
+      "type": "number",
+      "description": "Output length vs input (30 s → 23 min in the video)",
+      "required": false
+    },
+    {
+      "name": "fft_size",
+      "type": "enum",
+      "description": "small (grainy) … large (smooth)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "multimic_sampler",
+      "type": "instrument",
+      "description": "Sampler with contact/inside/lid mic blend"
+    },
+    {
+      "name": "stretched_textures",
+      "type": "audio",
+      "description": "Extreme-stretched ambient pads and drones"
+    },
+    {
+      "name": "derived_patches",
+      "type": "patch",
+      "description": "Wavetable, looped-pair pad and phaser bass from the samples"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Contact pickups miss the highs; without air mics the top octaves lose pitch and only key clicks remain.",
+    "Align mics sample-accurately before mapping, or blends will comb-filter.",
+    "Not affiliated with any vendor; the presenter's paid sample packs and presets are not used. Mic and plugin models from the video are examples only."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Attach the contact pickup at several spots and play the same notes; choose the spot with the longest natural sustain (bottom corner next to the lowest key in the video).",
+      "tool": "pickup placement",
+      "expect": "One position clearly sustains longer and sounds most natural"
+    },
+    {
+      "n": 2,
+      "action": "Add air mics: one inside the closed lower body, one on the lid near the keys, to recover highs above about 1 kHz.",
+      "tool": "air mics",
+      "expect": "High notes keep their pitch and clarity"
+    },
+    {
+      "n": 3,
+      "action": "Record every note several times, letting each ring out fully, and record the key-release noise too.",
+      "tool": "recording",
+      "expect": "Long sustains (tens of seconds on low notes) and release samples"
+    },
+    {
+      "n": 4,
+      "action": "Denoise, chop, and align all mic tracks; map them into a sampler with a volume control per mic, plus a mix lowpassed to about the contact-pickup range.",
+      "tool": "sampler build",
+      "expect": "Blendable dry/intimate to natural piano, and a fuller muffled preset"
+    },
+    {
+      "n": 5,
+      "action": "Extreme-stretch held notes, chords and short tails with an FFT stretch tool. Try small FFT sizes for grain and large for smoothness; shift tonal vs noise emphasis; pitch-shift the results.",
+      "tool": "extreme stretch",
+      "expect": "Ethereal pads and drones many minutes long"
+    },
+    {
+      "n": 6,
+      "action": "Load samples as wavetables: try 16 unison voices with zero phase randomisation; for a bass, add an extreme phaser (many poles, high feedback) and a 'muted' lowpass macro.",
+      "tool": "wavetable patches",
+      "expect": "Digital-piano tones and hollowed-out basses"
+    },
+    {
+      "n": 7,
+      "action": "Make a pad or bass from two loops of the same note with slightly different loop lengths, panned left and right, blended with a resampled wavetable and drive.",
+      "tool": "looped pair",
+      "expect": "Stereo beating whose speed rises with pitch"
+    }
+  ],
+  "verification": [
+    "The chosen pickup spot gives a measurably longer sustain than other spots on the same note.",
+    "Soloing the contact mic vs the air mics shows the pickup's high-frequency roll-off around 1 kHz.",
+    "Changing FFT size from small to large audibly moves the stretch from grainy to smooth.",
+    "In the looped pair, the beating rate increases on higher notes."
+  ],
+  "tags": [
+    "field-recording",
+    "sampling",
+    "contact-mic",
+    "paulstretch",
+    "time-stretch",
+    "ambient",
+    "wavetable",
+    "phaser",
+    "sound-design",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://piano-resonance-multimic-contact-plus-air-mics-blend-sampler-then-paulstretch-fft-size-tonal-noise-extreme-stretch-and-sample-to-wavetable-patches"
+}

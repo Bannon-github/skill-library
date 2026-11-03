@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "id": "per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth",
+  "name": "Per-voice, per-parameter random value drawn at each note-on (many synced sample-and-holds): offset compensation for bipolar values at a parameter's minimum or maximum, unison/chord voices that each get different timbre, random envelope times on an arpeggiated FM pluck, per-voice morph between two cloned-then-edited parts, and per-voice random LFO rate with depth brought in by aftertouch",
+  "goal": "Make every note and every voice differ slightly without sequencing anything. A per-voice random source picks a new value at each key press for each voice the key allocates and for each parameter it modulates (so 8 unison voices get 8 different wavefolder and FM values, and each note in a chord differs). Values are bipolar: if a parameter sits at its minimum, only positive values have an effect, and an open filter only moves when values are negative, so set the base knob to the middle (offset) to use the full range. Good targets: wavefolder, through-zero FM, filter, envelope times on a plucky FM arpeggio (2-octave up/down), filter envelope, and morph between two parts (clone part A to B, edit B, set morph halfway). A global effect at the end of the chain (e.g. ping-pong delay mix or time) cannot vary per voice and takes the highest value. Randomise LFO rate per voice with LFO depth at zero and aftertouch adding depth for expressive control. Maps to Polyrhythm Studio as a per-voice random draw at note-on.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "X_zozWSx-RU",
+    "url": "https://www.youtube.com/watch?v=X_zozWSx-RU",
+    "title": "Magnolia Polymove Explained: The Ultimate Randomization Tool",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/X_zozWSx-RU/agent-skill-per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth.json",
+    "transcript_note": "Synth feature explainer; outro dropped; product UI mapped to generic per-voice random modulation."
+  },
+  "prerequisites": [
+    "Polyphonic synth with a per-voice note-on random modulator (or 'per-note random' source), or Web Audio / JS: at each noteOn create voiceRand[param]=Math.random()*2-1 per voice and apply base+depth*voiceRand to that voice's AudioParams (implementation note)",
+    "Unison or chord mode, arpeggiator, two-part morph (optional), ping-pong delay"
+  ],
+  "inputs": [
+    {
+      "name": "targets",
+      "type": "list",
+      "description": "Per-voice parameters to randomise (wavefolder, FM amount, cutoff, env times, morph, LFO rate)",
+      "required": true
+    },
+    {
+      "name": "depth",
+      "type": "map",
+      "description": "Random depth per target",
+      "required": true
+    },
+    {
+      "name": "base_offset",
+      "type": "map",
+      "description": "Base value per target (mid-range for full bipolar effect)",
+      "required": true
+    },
+    {
+      "name": "voices",
+      "type": "integer",
+      "description": "Unison voices or chord size",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "per_voice_random_patch",
+      "type": "patch",
+      "description": "Patch where every voice/note gets its own random values"
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "Which targets are per-voice and which are global"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Bipolar random on a parameter at 0 is half-wasted; compensate with a mid offset.",
+    "Effects after the voice mix (delay, reverb) are global, so per-voice values collapse into one.",
+    "Too many random targets at high depth makes a patch incoherent; the video adds targets one at a time.",
+    "No numeric depths were given; values were set by ear. Product-specific panels mapped to generic per-voice modulation."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "On an init patch set the wavefolder about halfway and assign the per-voice random source to it. Play repeated notes.",
+      "tool": "first target",
+      "expect": "Each note has a different fold amount, both above and below the base"
+    },
+    {
+      "n": 2,
+      "action": "Add through-zero FM as a target with its base at 0; then move the base up to compensate for the bipolar range.",
+      "tool": "offset",
+      "expect": "At 0 only positive draws are heard; with an offset the full range is used"
+    },
+    {
+      "n": 3,
+      "action": "Set unison (e.g. 8 voices, mono) or chord mode and play.",
+      "tool": "per voice",
+      "expect": "Each unison voice or chord note has different FM/fold values; every chord sounds different"
+    },
+    {
+      "n": 4,
+      "action": "Add the filter cutoff as a target; with the filter fully open only negative draws act, so lower the base.",
+      "tool": "filter",
+      "expect": "Per-note brightness variation"
+    },
+    {
+      "n": 5,
+      "action": "Build a plucky FM patch with an up/down arp over two octaves at a lower tempo; randomise envelope times, then a little wavefolder, filter, resonance and filter-envelope amount.",
+      "tool": "pluck arp",
+      "expect": "An arp where every note's length and tone differs"
+    },
+    {
+      "n": 6,
+      "action": "Add a tempo-synced ping-pong delay and randomise its mix or time.",
+      "tool": "global FX",
+      "expect": "Delay varies per note but not per voice; time changes give artifacts"
+    },
+    {
+      "n": 7,
+      "action": "Clone part A to part B, change several parameters on B, set morph halfway, and randomise the morph.",
+      "tool": "per-voice morph",
+      "expect": "Each voice lands at a different point between the two parts"
+    },
+    {
+      "n": 8,
+      "action": "Set a unipolar saw LFO on the wavefolder or FM amount, randomise its rate per voice, set LFO depth to zero and map aftertouch to depth.",
+      "tool": "expressive LFO",
+      "expect": "Pressing harder brings in modulation with a different rate on every voice"
+    }
+  ],
+  "verification": [
+    "Two consecutive presses of the same key produce audibly different timbres.",
+    "In 8-voice unison, voices differ from one another (wider, less static sound).",
+    "With base at 0 on a bipolar target, about half the notes show no change.",
+    "With LFO depth at zero, no LFO motion is heard until aftertouch is applied."
+  ],
+  "tags": [
+    "random",
+    "per-voice",
+    "note-on-random",
+    "unison",
+    "chords",
+    "arpeggiator",
+    "morph",
+    "fm",
+    "wavefolder",
+    "aftertouch",
+    "polyrhythm-studio",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://per-voice-per-parameter-note-on-random-values-bipolar-offset-compensation-unison-chord-variation-envelope-times-morph-two-cloned-parts-per-voice-lfo-rate-aftertouch-depth"
+}

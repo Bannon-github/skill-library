@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-formant-comb-pad-phaser-fx",
+  "name": "Cinematic multi-osc pad with formant/comb and slow FX motion",
+  "goal": "Build a Weeknd-style cinematic pad: three analog basic-shape oscs with unison/detune (B \u22121 oct, high unison; C light unison), formant filter on C, comb filter on all, pad attack/release, free slow LFO\u2192cutoff, then phaser\u2192flanger\u2192chorus\u2192slow LFO-filtered FX\u2192delay\u2192reverb with restrained mixes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "TmoP3i6-jl0",
+    "url": "https://www.youtube.com/watch?v=TmoP3i6-jl0",
+    "title": "HOW TO MAKE THE WEEKND CINEMATIC PAD | Serum 2 Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/TmoP3i6-jl0/agent-skill-cinematic-formant-comb-pad-phaser-fx.json"
+  },
+  "prerequisites": [
+    "Multi-osc synth with unison, formant and comb-like filters, phaser/flanger/chorus/delay/reverb"
+  ],
+  "inputs": [
+    {
+      "name": "unison_profile",
+      "type": "string",
+      "description": "A moderate, B high (e.g. ~14), C low (~2)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cinematic_pad",
+      "type": "synth-patch",
+      "description": "Slow-moving cinematic pad"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Style homage only \u2014 original parameters; do not copy named commercial presets."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc A: analog basic shapes + unison/detune for width.",
+      "tool": "oscillator",
+      "expect": "Wide core"
+    },
+    {
+      "n": 2,
+      "action": "Osc B: same family, \u22121 octave, higher unison (tutorial ~14) + detune.",
+      "tool": "oscillator",
+      "expect": "Huge low bed"
+    },
+    {
+      "n": 3,
+      "action": "Osc C: light unison (~2) + detune; Filter1 formant-style on C only \u2014 set cutoff/resonance for vocal-like body.",
+      "tool": "filter",
+      "expect": "Formant color on top layer"
+    },
+    {
+      "n": 4,
+      "action": "Filter2 comb-minus (or comb) on A+B+C; set cutoff, resonance, drive.",
+      "tool": "filter",
+      "expect": "Metallic/cinematic comb sheen"
+    },
+    {
+      "n": 5,
+      "action": "Amp env: raise attack and release for pad.",
+      "tool": "amp-envelope",
+      "expect": "Soft cinematic edges"
+    },
+    {
+      "n": 6,
+      "action": "Free slow LFO1 \u2192 filter cutoff(s) for movement.",
+      "tool": "lfo",
+      "expect": "Slow evolving tone"
+    },
+    {
+      "n": 7,
+      "action": "FX: phaser (lower mix) \u2192 flanger (lower mix) \u2192 chorus (tweak delay/depth/mix down) \u2192 extra FX filter (low 24 dB) with very slow free LFO2 (e.g. 2 bars) unipolar to cutoff \u2192 delay \u2192 reverb; keep mixes moderate.",
+      "tool": "fx-bus",
+      "expect": "Slow cinematic motion in space"
+    }
+  ],
+  "verification": [
+    "Three-osc stack with B lower octave",
+    "Formant and comb both contributing",
+    "FX mixes not at 100% washing the dry pad away"
+  ],
+  "tags": [
+    "cinematic-synth",
+    "pad",
+    "formant",
+    "comb",
+    "fx",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://cinematic-formant-comb-pad-phaser-fx"
+}

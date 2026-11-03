@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "dji-video-to-gaussian-splat-mipmap",
+  "name": "DJI drone video capture (GPS subtitles) to Gaussian splat in Mip-Map",
+  "goal": "Record a geo-referenced DJI drone video for splatting (Video Subtitles GPS on, white balance Auto then locked, 4K/30fps Normal color, ISO 100 and ~1/60 shutter, smooth overlapping multi-angle orbit), then import it into Mip-Map, extract frames using the subtitle GPS, run Gaussian splat reconstruction, and inspect/export the splat.",
+  "domain": "spatial-3d-capture",
+  "source": {
+    "kind": "youtube-transcript-merged",
+    "video_id": "mQ4EHUpXj9Q",
+    "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+    "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_merged/agent-skill-dji-video-to-gaussian-splat-mipmap.json"
+  },
+  "sources": [
+    {
+      "from_skill": "dji-video-capture-for-gaussian-splat",
+      "video_id": "mQ4EHUpXj9Q",
+      "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+      "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/mQ4EHUpXj9Q/distilled.json"
+    },
+    {
+      "from_skill": "process-drone-video-to-gaussian-splat-mipmap",
+      "video_id": "mQ4EHUpXj9Q",
+      "url": "https://www.youtube.com/watch?v=mQ4EHUpXj9Q",
+      "title": "3D Gaussian Splatting | How to Create 3D Gaussian Splatting From Drone Video Beginner Guide",
+      "transcript": "youtube-provided",
+      "distilled_path": "distilled/mQ4EHUpXj9Q/distilled.json"
+    }
+  ],
+  "merged_from": [
+    "dji-video-capture-for-gaussian-splat",
+    "process-drone-video-to-gaussian-splat-mipmap"
+  ],
+  "aliases": [
+    "dji-video-capture-for-gaussian-splat",
+    "process-drone-video-to-gaussian-splat-mipmap"
+  ],
+  "prerequisites": [
+    "DJI drone with video mode and Video Subtitles option",
+    "Adequate daylight or controlled lighting",
+    "Access to Mip-Map (or tutorial-equivalent)"
+  ],
+  "inputs": [
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "Structure or object to capture",
+      "required": true
+    },
+    {
+      "name": "drone_model",
+      "type": "string",
+      "description": "DJI model e.g. Mini 5 Pro",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "video_file",
+      "type": "file",
+      "description": "4K/30fps MP4 with subtitle GPS metadata"
+    },
+    {
+      "name": "gaussian_splat",
+      "type": "3d_asset",
+      "description": "Processed Gaussian splat model"
+    }
+  ],
+  "constraints": [
+    "Enable Video Subtitles for GPS",
+    "Lock white balance after Auto",
+    "Prefer ISO 100 and ~1/60 shutter",
+    "Continuous orbit with frame overlap",
+    "Use YouTube-taught Mip-Map flow only; do not invent alternate SLAM params"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Power on DJI drone and climb to subject height.",
+      "tool": null,
+      "expect": "Drone at subject height"
+    },
+    {
+      "n": 2,
+      "action": "Switch to video mode; enable Video Subtitles (GPS per frame).",
+      "tool": null,
+      "expect": "Video Subtitles on"
+    },
+    {
+      "n": 3,
+      "action": "Set WB to Auto then lock it; set 4K 30fps Normal color.",
+      "tool": null,
+      "expect": "WB locked; 4K/30fps Normal"
+    },
+    {
+      "n": 4,
+      "action": "Set ISO 100 and shutter ~1/60 (or lighting-appropriate).",
+      "tool": null,
+      "expect": "Exposure set"
+    },
+    {
+      "n": 5,
+      "action": "Fly a smooth multi-angle orbit with overlap; land and copy the video.",
+      "tool": null,
+      "expect": "Video file copied off the drone"
+    },
+    {
+      "n": 6,
+      "action": "Import the video into Mip-Map.",
+      "tool": null,
+      "expect": "Video loaded in Mip-Map"
+    },
+    {
+      "n": 7,
+      "action": "Extract frames using subtitle GPS when present.",
+      "tool": null,
+      "expect": "Frames extracted (with GPS if present)"
+    },
+    {
+      "n": 8,
+      "action": "Run Gaussian splat reconstruction.",
+      "tool": null,
+      "expect": "Reconstruction completes"
+    },
+    {
+      "n": 9,
+      "action": "Inspect and export the 3D splat.",
+      "tool": null,
+      "expect": "Splat opens in viewer; export file written"
+    }
+  ],
+  "verification": [
+    "Video file exists on SD/export",
+    "Subtitles/GPS track present if supported",
+    "Splat opens in viewer",
+    "Export file written"
+  ],
+  "tags": [
+    "spatial-3d-capture",
+    "drone",
+    "dji",
+    "gaussian-splat",
+    "mip-map",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-drone-to-splat"
+  ],
+  "mcp_resource": "skill://dji-video-to-gaussian-splat-mipmap",
+  "published_at": "2026-10-03T15:50:00+00:00",
+  "merged_at": "2026-10-03T15:50:00+00:00",
+  "merge_note": "Merged 2026-10-03: union of procedures/constraints from the listed source skills; no new facts added. Old ids resolve via mcp-publish/aliases.json."
+}

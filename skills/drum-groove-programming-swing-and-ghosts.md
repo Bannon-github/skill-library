@@ -1,0 +1,45 @@
+# Drum groove programming: genre patterns, swing, ghost notes and sparse ambient beats
+
+Goal: Program grooves that feel right: four-on-floor, half-time future garage, sparse ambient kits with accent maps, ghost snares, swing amount, and phrase variation every 2/4/8 bars.
+
+**Theory:** Groove = placement + velocity. Swing delays every second 16th (50% straight, ~58% subtle, 66% triplet). Ghost notes at 20-40% velocity fill gaps; backbeat on 2 and 4 anchors.
+
+**Hear it:** `sample-lab/theory/rhythm_polyrhythm.py`
+
+## Workflow
+1. Pick tempo and feel: house 120-128 four-on-floor; garage/halftime 130-140 with snare on 3; ambient 70-100 sparse.
+2. Place kick and backbeat first; bring drums in early (by bar 2-5, ~10-12 s) unless the arrangement calls otherwise.
+3. Hats: 8ths/16ths with velocity accents; swing 54-62% for laid-back, keep kick/snare straight.
+4. Ghost snares/rims at 20-40% velocity around the backbeat; reversed flairs before bar 4.
+5. Vary: A-B-A-C over bars, fill or empty bar every 8; sparse ambient = kick on bar 1 of each phrase.
+6. Process: LP kick in garage, band-limit rims, light sidechain of foley to kick, 12-bit grit optional.
+7. Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/rhythm_polyrhythm.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.
+
+## Source techniques (merged, numbers kept)
+
+### Build a loose future-garage/ambient drum groove in layers: halftime kick and rim, a guide 'base hat' on every 'and', accent hats and rims on hand-swung 16ths (some early, some late, some on the grid), flair hats from one sample with a reversed copy, then faded Foley chops for crunch. Process it with LP24 on the kick (about 1 kHz, 30% resonance) and a band-passed rim (about 1.5 kHz), a frequency shift on the hat group (example -898 Hz), the rims vocoding themselves with chorus, a fast unsynced auto-pan and phaser on Foley (about 6.1 Hz), a half-note volume duck on the hat group, and a 12-bit lo-fi sampler with gentle clip/saturation on the drum bus
+Source: [Future garage / ambient drum patterns, layer by layer, plus post-processing](https://www.youtube.com/watch?v=e4zq3HQdcIY) · was `future-garage-ambient-drum-groove-halftime-kick-rim-base-hat-loose-swung-accent-hats-rims-reversed-flair-hat-faded-foley-chops-lp24-kick-1k-rim-1-5k-freq-shift-self-vocode-halfnote-duck-12bit`
+- Core: kick plus main rim in a halftime two-step (one-drop/dub feel), or fulltime with the snare on 2 and near 4.
+- Add a guide 'base hat' on the 'and' of every beat to feel out the spaces. It may be muted in the final mix.
+- Add 2-3 accent-hat layers on other 16ths/8ths. Swing the 2nd and 4th 16ths by hand and not precisely: some hits on the grid, some a little late, some early, until it feels right. Do the same with accent rims for mid-range knock. Group and duplicate the loop, then vary it every 2-4 bars (move hits, swap a sound, stop a layer briefly, a small filter sweep).
+- Make flair hats from one hat sample with velocity changes for bounce, plus a reversed copy placed every so often.
+- Foley crunch: chop a recording (silverware, paper) into single clicks. Line the transients up roughly with a grid value just before the main rim, or on a swung 16th. Fade each chop in and out to soften the transients. Add a transient-heavy 'mid knock' layer (example: celery snaps).
+- Filter the kick with LP24 at 30% resonance and the cutoff around 1 kHz (range 800 Hz-3 kHz depending on the kick). Put the rim through a band-pass/high-pass blend at about 1.5 kHz with a little resonance and filter saturation.
+- Put a frequency shifter on the hat group (example: down 898 Hz), and on other groups as needed. Shifting up gives brighter chill percussion, shifting down gives darker lo-fi. EQ before and after, and re-tune individual elements if one goes weird.
+- Vocoder on the mid-range rim group: use the self-carrier mode (left as carrier, right as modulator) and enable its chorus.
+- Put an auto-pan and phaser at a fast unsynced rate (about 6.1 Hz) on the Foley layer, so each pass of the loop lands differently.
+- Put a volume LFO ducking on half notes over the whole hat/Foley group.
+- Lo-fi: put a 12-bit sampler at a 22.5 kHz sample rate on the hat group. On the drum bus, run a 12-bit/44.1 kHz stage into a hard clipper (about 2 dB drive) and a symmetric soft saturator (about 1.7 dB). Keep it subtle.
+
+### Add drums to a gorgeous slow pad track without crushing it: map the track's accents first, put kicks only in bar 1 (plus one ghost note) of each 4-bar phrase, snares on bars 2 and 4 with a big reverb only on the second round and a reversed-reverb swell before bar 4's downbeat, view the grid at double tempo (67 to 134 BPM) to find off-kick hat spots, alternate two hats' brightness with a 2-bar LFO on an EQ, add a ride in only two places, and let a quiet high-passed noise bed seep into the gaps, ducked by the percussion with about a 3 s release
+Source: [Spacious ambient / lo-fi drums that still have character](https://www.youtube.com/watch?v=BcbSwdsC7W8) · was `spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release`
+- Listen through the pad track and mark the accents (example: a big block chord at bars 9 and 13) and the space at the end of each 4-bar phrase. Decide per phrase whether that space stays empty for the listener or gets busier percussion.
+- Kicks: put them in bar 1 of the 4-bar phrase only, plus one ghost note just before the repeat. Roll off the very low end. Put a compressor on the pad group, sidechained to the kick, so the pads gain a gentle bounce.
+- Snares: put them on bars 2 and 4. On the second round only, send to a big lush reverb (EQ on the return). Print that reverb, reverse it and place the swell only before the downbeat of bar 4, not bar 1, so it doesn't get monotonous. Add a short widening delay to the swell.
+- Shorten the snare and rim-shot tails: warp the snare in Beats mode, preserve transients, loop-forward, and set the envelope to 0 so it rings out less.
+- Temporarily double the project tempo (example 67 to 134 BPM) so the click shows subdivisions. Place two hats outside the kick hits, slightly ahead of the bar line, then go back to the real tempo.
+- Put an LFO on an EQ's frequency, alternating between about 80 and 100 (as spoken) at a 2-bar rate, so the second hat is always the darker one, like clockwork, without drawing automation.
+- Make the main hat/percussion line soft and crackly. Apply a swing groove to the audio (a jazz 5/4 swing template), then pull the transient amount right down. Automate a stereo delay's width so the high notes are wide and the low ones go mono. Glue-compress the peaks and use gain automation to level the quiet hits.
+- Add drummer character: a ride only at the end of bar 3 and straight on the downbeats of bars 7-8, a few panned glass Foley hits, and chopped toms. Saturate and low-cut the toms and lower their transients.
+- Swap a stock cymbal for a cymbal/organic swirl through delay, large-hall reverb and a vocoder. Automate the vocoder, reverb and delay dry/wet and fade it in.
+- Noise bed: run a noise generator through a ducking envelope (depth about x8, threshold low, release about 3 s), keyed by the percussion and high-passed. Set it very low, about -13 to -17 dB, so noise seeps into the gaps about 3 s after percussion stops.

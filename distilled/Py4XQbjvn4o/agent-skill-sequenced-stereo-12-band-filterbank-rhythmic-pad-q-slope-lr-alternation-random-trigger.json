@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger",
+  "name": "Animate a static pad with a stepped 12-band stereo filterbank: assign groups of bands to sequencer patterns (offset ups vs a big down note), set a Q slope with wider low bands and narrower high bands, tame resonant peaks with mild drive plus smoothing compression, alternate bands L/R for width, and use per-band versus group random triggering",
+  "goal": "Turn a sustained pad into rhythmic, moving texture with a sequenced filterbank of 12 bands per side. Use each band's volume as an EQ to keep what works. Assign subsets of bands to a step sequencer pattern (first five bands, then three frequencies with an offset 'up' pattern, then the last bands as one big down note). Increase the Q globally to get pointed peaks but apply a slope so low bands stay wider and high bands narrower. Add a little drive and a negative 'pull' (compression-style) setting to smooth peaks that blow up at high Q. Spread by sending alternate bands to left and right (sending the same band to both stays mono). Use random triggering per band ('S': each band triggers independently) or grouped ('A': grouped bands fire together) for subtle versus extreme motion. Distinct from our filter-spread and phaser skills: discrete stepped bandpass bank.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Py4XQbjvn4o",
+    "url": "https://www.youtube.com/watch?v=Py4XQbjvn4o",
+    "title": "Philtor 12 Band Sequencer Filter",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Py4XQbjvn4o/agent-skill-sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger.json",
+    "transcript_note": "Device-specific labels (S/A random modes, 'pull') mapped to generic per-band vs grouped random trigger and compression."
+  },
+  "prerequisites": [
+    "Filterbank with ≥10 bandpass bands and per-band gain (any multiband/EQ plugin with automation, or Web Audio: 12 BiquadFilterNodes per channel with gain lanes, implementation note)",
+    "Step sequencer or automation lanes per band",
+    "Compressor/saturator/limiter after the bank"
+  ],
+  "inputs": [
+    {
+      "name": "pad",
+      "type": "audio",
+      "description": "Static sustained synth pad",
+      "required": true
+    },
+    {
+      "name": "band_groups",
+      "type": "list",
+      "description": "Which bands each sequencer pattern drives",
+      "required": true
+    },
+    {
+      "name": "q_amount",
+      "type": "number",
+      "description": "Global Q with low-to-high slope",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "animated_pad",
+      "type": "audio",
+      "description": "Rhythmic, stereo, filtered pad"
+    },
+    {
+      "name": "band_map",
+      "type": "table",
+      "description": "Band → pattern group → L/R side"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "No numeric frequencies or Q values are spoken; set them by ear.",
+    "High Q creates pointed peaks that can blow up: always keep smoothing compression or a limiter after the bank.",
+    "Lower bands want a smaller Q (wider) and higher bands a larger Q; use a slope rather than editing each band.",
+    "Rendering the result to audio saves CPU versus many live instances."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Insert the 12-band stereo filterbank on a static pad and use the band volumes as an EQ, turning down only the bands that are too much.",
+      "tool": "setup",
+      "expect": "Pad tone shaped, still static"
+    },
+    {
+      "n": 2,
+      "action": "Raise the global Q from fully open (no contour) until the bands become pointed, and apply a slope so low bands are wider and high bands narrower.",
+      "tool": "q slope",
+      "expect": "Distinct resonant peaks across the spectrum without boomy lows"
+    },
+    {
+      "n": 3,
+      "action": "Add a little drive and set the compression/'pull' control negative so peaks are smoothed without much distortion.",
+      "tool": "tame",
+      "expect": "Resonant peaks no longer jump out"
+    },
+    {
+      "n": 4,
+      "action": "Assign the first five bands to a step pattern; then unassign them and give three frequencies an offset pattern of up notes; finally give the last bands a single big down note.",
+      "tool": "sequence",
+      "expect": "Static pad gains rhythmic movement across registers"
+    },
+    {
+      "n": 5,
+      "action": "Alternate bands between left and right (flip-flop) for stereo spread, choosing the assignment that works in the mix.",
+      "tool": "width",
+      "expect": "Pattern moves across the stereo field"
+    },
+    {
+      "n": 6,
+      "action": "Enable random triggering: per-band mode makes each band trigger independently (subtle, dense); grouped mode makes grouped bands fire together (sparser, more extreme). Fine-tune band volumes to contour the result.",
+      "tool": "random",
+      "expect": "Evolving, less predictable motion"
+    }
+  ],
+  "verification": [
+    "Bypassing the sequencer returns a static pad; enabling it shows rhythmic band movement on a spectrum view.",
+    "No band peak clips the output at high Q with smoothing on.",
+    "Mono-summing still keeps all bands (each band is on one side, not phase-cancelled).",
+    "Per-band random mode sounds denser than grouped mode."
+  ],
+  "tags": [
+    "filterbank",
+    "bandpass",
+    "step-sequencer",
+    "rhythmic-filter",
+    "stereo-width",
+    "pad-animation",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sequenced-stereo-12-band-filterbank-rhythmic-pad-q-slope-lr-alternation-random-trigger"
+}

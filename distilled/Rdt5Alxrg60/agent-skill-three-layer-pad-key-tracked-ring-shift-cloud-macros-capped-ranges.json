@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges",
+  "name": "Three-layer pad/key with independent envelopes plus pitch-aware (key-ratio) ring mod, frequency shift and an octave-up granular 'cloud', each brought in by a macro whose maximum is capped",
+  "goal": "Build a pad-key from three layers with independent, deliberately different amp envelopes: a looping stereo synth sample with a very long attack, a sine with a slight attack that decays, and a second sustained sample with release. Add subtle colour stages that track the played note: a ring modulator set by ratio to the incoming frequency (×2) on all three layers, a frequency shifter on the sine layer (ratio mode adds a higher harmonic; Hz mode, e.g. 5 Hz, gives rhythmic sway), and a granular cloud an octave up mixed into layer A. Put each stage's mix on a macro capped so full macro travel reaches only a tamed maximum (ring ~60%, cloud ~50%, shift ~50%, FX wet ~0.25, inverted if needed). Add a main filter cutoff/resonance on two macros with full range, layer-volume macros (A+C vs B), more voices for long releases, gentle velocity and poly aftertouch. Delta vs our ring-mod bell/stab and three-layer complementary pad skills: key-ratio ring/shift as macro-capped 'richness' controls.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Rdt5Alxrg60",
+    "url": "https://www.youtube.com/watch?v=Rdt5Alxrg60",
+    "title": "Absynth 6  - Design a Patch From Scratch | Layers, Clouds, Macros & Note FX #absynth6  #sounddesign",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Rdt5Alxrg60/agent-skill-three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges.json",
+    "transcript_note": "Vendor sound-designer walkthrough; factory sample paths omitted; macro caps taken from transcript (60%, halfway, ~0.25)."
+  },
+  "prerequisites": [
+    "Synth with three layers, each with its own amp envelope; ring modulator and frequency shifter that can follow note frequency (Web Audio: modulator OscillatorNode frequency = noteHz × ratio, implementation note)",
+    "A granular/'cloud' processor with pitch and mix",
+    "Macro controls with per-destination range limits",
+    "Long-decay effect (reverb/delay) with wet control"
+  ],
+  "inputs": [
+    {
+      "name": "samples",
+      "type": "audio",
+      "description": "Original/free looping stereo synth samples (no vendor library samples)",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Sustained chords/keys",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "macro_pad",
+      "type": "audio",
+      "description": "Evolving three-layer pad-key whose richness is performed with eight macros"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Keep modulation depths tiny; the approach relies on small variations (presenter: 'I'm not going nuts').",
+    "Capping a macro's maximum means its knob travel is no longer the parameter's range; set the base value so cutoff and resonance macros keep full range.",
+    "Ring mod at 100% mix sounds 'all broken up'; caps keep it subtle.",
+    "Factory sample names and folder paths are omitted; use your own looping samples."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer A: load a looping stereo synth sample (loop on). Give it a very long attack (seconds), with subtle per-segment envelope slope changes. Layer B: sine oscillator (with a little unison detune) with a tiny attack so it isn't sharp, then decay so it dies away while A swells in. Layer C: another looping sample with an immediate attack, sustain and some release.",
+      "tool": "layers",
+      "expect": "Three layers whose envelopes move differently: one swells, one fades, one holds"
+    },
+    {
+      "n": 2,
+      "action": "Balance levels: if a layer is too soft, add a waveshaper for gain/harmonics and a gentle high-pass to remove excess lows from the deep layer.",
+      "tool": "balance",
+      "expect": "Fuller, balanced stack"
+    },
+    {
+      "n": 3,
+      "action": "Ring mod on all three layers in ratio mode, ratio 2 (the modulator is placed at 2× the played note's frequency). Set each layer's mix around 60% (they needn't be identical) and assign all three mixes to one macro named 'ring' so 0 = no ring mod and maximum = ~60%.",
+      "tool": "ring macro",
+      "expect": "Subtle, pitch-locked metallic richness on one control"
+    },
+    {
+      "n": 4,
+      "action": "Main filter: low-pass on the whole sound; add a very slow LFO (seconds-based) on the cutoff of the second filter slot.",
+      "tool": "filter",
+      "expect": "Slow tonal breathing"
+    },
+    {
+      "n": 5,
+      "action": "Cloud on layer A: add a granular cloud, set its pitch exactly one octave up, add slight random pitch for chorus-like detune, and put its mix on a macro capped at about half.",
+      "tool": "cloud macro",
+      "expect": "Shimmering octave-up granular halo mixed in, not taking over"
+    },
+    {
+      "n": 6,
+      "action": "Frequency shifter on the sine layer B: Hz mode at a slow value (e.g. 5 Hz) gives a rhythmic sway, or ratio mode adds a higher harmonic (ratio 2 gets dirty quickly). Cap its macro at ~50%.",
+      "tool": "shift macro",
+      "expect": "Sway or extra harmonic that tracks the note"
+    },
+    {
+      "n": 7,
+      "action": "Assign main filter cutoff and resonance to macros 3–4, setting base values so the macros have the full range. Put FX-section wet on a macro, add only wet (don't trade dry), cap at about 0.25 and invert the mapping direction if it moves the wrong way.",
+      "tool": "fx macro",
+      "expect": "Effect blooms in on top of the dry sound"
+    },
+    {
+      "n": 8,
+      "action": "Performance finish: macros for layer volumes (A+C together vs B), increase the voice count for overlapping releases, keep velocity response gentle, and optionally let poly aftertouch drown layer A a little.",
+      "tool": "perform",
+      "expect": "Eight macros shape harmonics (ring, shift, cloud, FX) and balance live"
+    }
+  ],
+  "verification": [
+    "Ring macro at 0 is identical to bypass; at max the effect is audible but not broken-sounding.",
+    "Ring/shift ratio modes keep the added partials in tune across the keyboard.",
+    "Cloud macro at max adds an octave-up halo without masking the dry layers.",
+    "Long chords don't steal voices after the voice count is raised."
+  ],
+  "tags": [
+    "layers",
+    "ring-mod",
+    "frequency-shifter",
+    "granular",
+    "macros",
+    "pad",
+    "key-tracking",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://three-layer-pad-key-tracked-ring-shift-cloud-macros-capped-ranges"
+}

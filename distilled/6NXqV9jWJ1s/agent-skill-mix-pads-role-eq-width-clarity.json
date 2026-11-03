@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "mix-pads-role-eq-width-clarity",
+  "name": "Mix pads for role, EQ clarity, energy, and width control",
+  "goal": "Mix pads based on role (lead ambient vs background glue): infinite-average spectrum to see occupied bands, high-pass to protect kick/bass, filter reverb/delay lows (~100 Hz), manage mids/highs vs vocals with dynamic/sidechain EQ sparingly, automate filter/FX for section energy, and narrow stereo (or multiband width) when pads crowd the image.",
+  "domain": "music-synthesis",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "6NXqV9jWJ1s",
+    "url": "https://www.youtube.com/watch?v=6NXqV9jWJ1s",
+    "title": "5 Tips for Mixing Pads and Synths for a Full, Clear Sound",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/6NXqV9jWJ1s/agent-skill-mix-pads-role-eq-width-clarity.json"
+  },
+  "prerequisites": [
+    "DAW with EQ, spectrum analyzer, optional multiband imager, pads already sound-designed"
+  ],
+  "inputs": [
+    {
+      "name": "pad_role",
+      "type": "enum",
+      "description": "lead/ambient bed vs supportive background",
+      "required": true
+    },
+    {
+      "name": "competing_elements",
+      "type": "string",
+      "description": "e.g. kick/bass/vocals/guitars",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mix_ready_pad_bus",
+      "type": "audio-bus",
+      "description": "Pad bus that supports the mix without mud"
+    }
+  ],
+  "constraints": [
+    "Ground every step in the source YouTube-provided captions; do not invent UI or settings.",
+    "Original synthesis only \u2014 map brand UI (Serum/Vital/Pigments/Phase Plant/etc.) to portable osc/filter/FX roles for a browser or generic hybrid synth; never rip presets, wavetables, or samples.",
+    "Prefer transferable signal-flow and motion relationships over vendor-specific preset names.",
+    "Educational mixing procedure \u2014 tool names in the video are examples; use any EQ/imager with the same moves.",
+    "Avoid extreme dynamic EQ pumping that destroys pad ambience."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide pad role (lead evolving bed vs background atmosphere) \u2014 mix moves follow the role.",
+      "tool": "arrange",
+      "expect": "Clear use-case"
+    },
+    {
+      "n": 2,
+      "action": "View long-average spectrum to see which bands the pad occupies vs vocals/keys.",
+      "tool": "analyzer",
+      "expect": "Overlap regions identified"
+    },
+    {
+      "n": 3,
+      "action": "High-pass the pad to leave room for kick/bass; stop before the pad thins excessively; likewise HP reverb/delay returns (~100 Hz) to prevent buildup.",
+      "tool": "eq",
+      "expect": "Low end clearer"
+    },
+    {
+      "n": 4,
+      "action": "In busy mids/highs, use gentle tonal EQ or dynamic EQ sidechained to conflicting elements (e.g. snare/vocal) only as needed.",
+      "tool": "dynamic-eq",
+      "expect": "Conflicts reduced without pumping"
+    },
+    {
+      "n": 5,
+      "action": "Automate mute/filter/FX across intro/verse/chorus so pads shape energy while staying supportive.",
+      "tool": "automation",
+      "expect": "Section-aware pad energy"
+    },
+    {
+      "n": 6,
+      "action": "If pads steal stereo space: collapse toward mono and pan, or multiband-narrow only conflicting bands while keeping air wide.",
+      "tool": "imager",
+      "expect": "Clearer center and controlled width"
+    }
+  ],
+  "verification": [
+    "Kick/bass hit harder after pad HP",
+    "Pad still fills its intended role",
+    "No obvious pumping from overdone dynamic EQ"
+  ],
+  "tags": [
+    "music-synthesis",
+    "mixing",
+    "pads",
+    "eq",
+    "stereo",
+    "from-youtube"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "published_at": "2026-09-24T12:26:32+00:00",
+  "mcp_resource": "skill://mix-pads-role-eq-width-clarity"
+}

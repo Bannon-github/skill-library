@@ -2,14 +2,22 @@
   "video_id": "3rCUdTDodrc",
   "title": "Sound Design Tutorial: Cinematic Whoosh hit",
   "url": "https://www.youtube.com/watch?v=3rCUdTDodrc",
-  "fetched_at": "2026-11-02T17:57:02.927593+00:00",
+  "fetched_at": "2026-11-02T18:12:18.087496+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en",
   "channel": "Simon Haglund Sounds",
   "duration": 1172,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 153,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/3rCUdTDodrc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/3rCUdTDodrc/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -33,50 +41,8 @@
     },
     {
       "q": "fetch manual-target (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.5
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.1
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.8
-    },
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.0
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 10.0
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 18.0
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

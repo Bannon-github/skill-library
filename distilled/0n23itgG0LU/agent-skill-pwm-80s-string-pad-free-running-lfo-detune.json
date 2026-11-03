@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "id": "pwm-80s-string-pad-free-running-lfo-detune",
+  "name": "80s PWM string pad: pulse wave with free-running (seconds-based) LFO on pulse width, slight osc-2 detune, slow attack/release, static filter",
+  "goal": "Build a classic 1980s string pad from an init patch: switch the oscillator from saw to pulse, modulate pulse width from an LFO set in seconds (free-running, ~0.7, not tempo-synced so the ensemble rate never changes with song tempo), blend a second oscillator ever so slightly detuned, low-pass to remove the very high end with the filter envelope and other filter mod sources switched off, slow fade-in attack and long release — a dedicated PWM string pad distinct from our PW drone and unison string-section skills.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "0n23itgG0LU",
+    "url": "https://www.youtube.com/watch?v=0n23itgG0LU",
+    "title": "80s String Pad Tutorial (1/2) - Pulse Width Modulation in Tyrell N6",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/0n23itgG0LU/agent-skill-pwm-80s-string-pad-free-running-lfo-detune.json"
+  },
+  "prerequisites": [
+    "Two-oscillator subtractive synth with pulse wave + PW modulation (or Web Audio PeriodicWave/pulse via two offset saws)",
+    "LFO with free-running (Hz/seconds) mode",
+    "Low-pass filter, ADSR"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Sustained chords",
+      "required": true
+    },
+    {
+      "name": "lfo_rate",
+      "type": "number",
+      "description": "PW LFO rate in seconds/Hz (presenter ~0.7)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pwm_string_pad",
+      "type": "audio",
+      "description": "Warm fading 80s-style string pad"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "Values are the presenter's display units, set by ear ('use your ears'); treat as starting points.",
+    "Reverb and EQ are covered in the follow-up video (not this transcript).",
+    "Web Audio: PWM can be made by subtracting a phase-shifted saw from a saw and modulating the delay/offset with an LFO (implementation note)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from an init patch; keep a scope visible. Change oscillator 1 from saw to pulse (square = 50% duty cycle; pulse widths roughly 10–90% duty).",
+      "tool": "osc-1",
+      "expect": "Hollow square tone; scope shows pulse"
+    },
+    {
+      "n": 2,
+      "action": "Route an LFO to pulse width and watch the scope: the pulse width sweeps.",
+      "tool": "pwm",
+      "expect": "Chorused, moving string-like tone"
+    },
+    {
+      "n": 3,
+      "action": "Switch the PW LFO from tempo-sync to free-running seconds so the string movement keeps the same rate regardless of DAW tempo; set ~0.7 and a moderate depth.",
+      "tool": "lfo",
+      "expect": "Steady, natural ensemble movement"
+    },
+    {
+      "n": 4,
+      "action": "Bring in oscillator 2 (presenter's level ~17.5) alongside osc 1, then detune osc 2 ever so slightly (fine ~0.20) — perfectly in-tune oscillators lose the effect.",
+      "tool": "osc-2",
+      "expect": "Beating/thickening between oscillators"
+    },
+    {
+      "n": 5,
+      "action": "Lower the low-pass cutoff to cut the really high end; reduce output level if hot.",
+      "tool": "filter",
+      "expect": "Softer, darker strings"
+    },
+    {
+      "n": 6,
+      "action": "Amp envelope: much slower attack (presenter ~38 display units) for a fade-in and a long release that tails naturally.",
+      "tool": "amp-env",
+      "expect": "Pad fades in and rings out smoothly"
+    },
+    {
+      "n": 7,
+      "action": "Set master transpose from −12 to 0 so A440 plays A440. Turn off the filter envelope and other filter modulation sources so the filter stays static.",
+      "tool": "global",
+      "expect": "Correct pitch; no filter 'wah' on note-on"
+    },
+    {
+      "n": 8,
+      "action": "Set the voice/unison count the presenter uses (2), play chords to confirm the 1980s string pad, and save it as a patch.",
+      "tool": "voices",
+      "expect": "Saved PWM string pad"
+    }
+  ],
+  "verification": [
+    "Scope shows pulse width moving when the LFO is active.",
+    "Changing DAW tempo does not change the PWM rate.",
+    "Setting osc-2 detune back to 0 noticeably flattens the pad.",
+    "Notes fade in and release slowly with no filter envelope sweep."
+  ],
+  "tags": [
+    "pwm",
+    "pulse-width",
+    "string-pad",
+    "pad",
+    "lfo",
+    "detune",
+    "80s",
+    "web-audio",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://pwm-80s-string-pad-free-running-lfo-detune"
+}

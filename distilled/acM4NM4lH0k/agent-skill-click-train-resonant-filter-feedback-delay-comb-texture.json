@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "click-train-resonant-filter-feedback-delay-comb-texture",
+  "name": "Organic alien comb texture: sub-audio saw click train → high-resonance filter → very short, high-feedback delay played by hand",
+  "goal": "Make an organic alien/sci-fi comb texture bed on most subtractive synths: pitch one saw all the way down until individual saw teeth are heard as a click train, run it through one low-pass at 80–100% resonance, then a delay at full mix with very short time and very long feedback (a comb resonator), adding optional comb filter, moderate pitch modulation and reverb — and perform delay time and cutoff manually (MIDI CC) rather than with modulation for an organic result. Distinct from formant/comb pad recipes that use a dedicated comb filter on sustained oscillators.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "acM4NM4lH0k",
+    "url": "https://www.youtube.com/watch?v=acM4NM4lH0k",
+    "title": "Organic Alien Comb Filter Modulation Tutorial (Subtractive Synthesis)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/acM4NM4lH0k/agent-skill-click-train-resonant-filter-feedback-delay-comb-texture.json"
+  },
+  "prerequisites": [
+    "Subtractive synth with filter resonance and delay effect (time + feedback)",
+    "Hardware knobs or a MIDI controller with MIDI-learn"
+  ],
+  "inputs": [
+    {
+      "name": "init_patch",
+      "type": "synth-patch",
+      "description": "Reset/init patch",
+      "required": true
+    },
+    {
+      "name": "controller_map",
+      "type": "midi-map",
+      "description": "CC knobs for cutoff, delay time, FX",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "comb_texture",
+      "type": "audio",
+      "description": "Recorded hand-performed alien texture"
+    }
+  ],
+  "constraints": [
+    "Original synthesis recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any hybrid synth with comparable modules; no presets, banks or samples copied.",
+    "High resonance + high delay feedback can run away; ride levels while performing.",
+    "Web Audio note (implementation, not from transcript): a DelayNode inside a feedback loop is limited to ≥128 samples; for very short comb times use an AudioWorklet delay."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init the patch. Use oscillator 1 only (osc balance fully to osc 1) with a saw.",
+      "tool": "osc",
+      "expect": "Single saw"
+    },
+    {
+      "n": 2,
+      "action": "Turn the semitone/coarse knob all the way down until the saw becomes a click train where each tooth spike is audible.",
+      "tool": "osc-tune",
+      "expect": "Rhythmic clicks instead of a pitched tone"
+    },
+    {
+      "n": 3,
+      "action": "Use filter 1 only; lower the cutoff a notch and raise resonance to about 80–100%.",
+      "tool": "filter",
+      "expect": "Each click rings at the resonant frequency"
+    },
+    {
+      "n": 4,
+      "action": "Turn the delay mix all the way up, choose a very short delay time and very long feedback.",
+      "tool": "delay",
+      "expect": "Clicks smear into a pitched, comb-like metallic resonance"
+    },
+    {
+      "n": 5,
+      "action": "Play with the delay time while sounds are running to sweep the comb pitch.",
+      "tool": "delay-time",
+      "expect": "Alien pitch slides and resonance shifts"
+    },
+    {
+      "n": 6,
+      "action": "Optional variations: add the synth's comb filter mode; add pitch modulation at a moderate speed.",
+      "tool": "comb-filter",
+      "expect": "More variety in the texture"
+    },
+    {
+      "n": 7,
+      "action": "Reduce the delay slightly and add a little reverb on top.",
+      "tool": "reverb",
+      "expect": "Texture sits in space"
+    },
+    {
+      "n": 8,
+      "action": "Do not modulate the filter: map cutoff (and FX parameters) to a MIDI controller via MIDI-learn and move them by hand while recording, changing timbre continuously.",
+      "tool": "midi-learn",
+      "expect": "Organic, performed evolution captured in the recording"
+    }
+  ],
+  "verification": [
+    "At step 2 individual clicks are audible.",
+    "After delay step the texture has a clear comb/metallic pitch that moves with delay time.",
+    "Recording shows manual cutoff/delay movement (no static loop)."
+  ],
+  "tags": [
+    "comb",
+    "feedback-delay",
+    "click-train",
+    "resonance",
+    "texture",
+    "performance",
+    "sci-fi",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://click-train-resonant-filter-feedback-delay-comb-texture"
+}
