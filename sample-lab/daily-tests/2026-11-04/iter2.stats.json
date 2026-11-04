@@ -1,0 +1,58 @@
+{
+ "values": {
+  "M1": -17.0,
+  "M2": 1.0591,
+  "M3": 0.6845,
+  "M4": 0.4328,
+  "M5": -27.7932,
+  "M6": -5.9131,
+  "M7": 5.6331,
+  "M8": 0.5155,
+  "M9": -22.0998,
+  "M12": -32.0155,
+  "M10": 1.2112,
+  "M11": 0.2714,
+  "M13": 0.0,
+  "M14": 0.0
+ },
+ "subs": {
+  "M1": 1.0,
+  "M2": 1.0,
+  "M3": 1.0,
+  "M4": 1.0,
+  "M5": 1.0,
+  "M6": 1.0,
+  "M7": 1.0,
+  "M8": 1.0,
+  "M9": 1.0,
+  "M12": 1.0,
+  "M10": 0.0,
+  "M11": 1.0,
+  "M13": 1.0,
+  "M14": 1.0
+ },
+ "gates": {
+  "G7_finite": true,
+  "G1_true_peak": true,
+  "G2_no_clip": true,
+  "G3_dc": true,
+  "G5_tail_or_loopclick": true,
+  "G6_start": true
+ },
+ "extra": {
+  "true_peak_dbtp": -6.7047,
+  "clipped": 0,
+  "dc": 0.0,
+  "tail_rms_db": -240.0,
+  "start_first_samples": 0.0
+ },
+ "score": 90.16,
+ "pass": false,
+ "events": 433,
+ "lengthSec": 67.43,
+ "lufs": -17.0,
+ "drumsInSec": 12.0,
+ "subPhaseDeg": 300,
+ "subDelaySamples": 24,
+ "glueGrDb": 1.52
+}
