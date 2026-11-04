@@ -1,0 +1,46 @@
+{
+  "video_id": "xeuYUFZpOdA",
+  "title": "How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]",
+  "url": "https://www.youtube.com/watch?v=xeuYUFZpOdA",
+  "fetched_at": "2026-11-04T17:17:08.578741+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "DNB Academy",
+  "duration": 772,
+  "ok": true,
+  "cue_count": 259,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/xeuYUFZpOdA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/xeuYUFZpOdA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

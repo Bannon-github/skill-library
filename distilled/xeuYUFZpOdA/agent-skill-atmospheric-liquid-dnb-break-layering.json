@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "atmospheric-liquid-dnb-break-layering",
+  "name": "Atmospheric liquid DnB break: 4-bar two-step kick/snare loop with the second kick quieter, kick EQ by dipping mids (not boosting lows/highs), one-shots tightened by shortening decay, a high-passed sliced break and percussive tops grouped and ducked to kick/snare, transient shaper + low-cut on tops, light glue compression into a soft clipper, and a very short no-pre-delay drum room",
+  "goal": "Build an atmospheric drum & bass drum layer from a kick, a snare, percussive one-shots and a sliced break, so the break adds constant movement without clashing with the kick and snare, and peaks stay controlled for an easy loud master. Delta vs drum clusters: sample/break layering and bus processing (mid-dip kick focus, decay-shortened one-shots, tops ducked to kick/snare, soft-clipped glue bus, tiny drum room) rather than synthesis or pure programming.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "xeuYUFZpOdA",
+    "url": "https://www.youtube.com/watch?v=xeuYUFZpOdA",
+    "title": "How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/xeuYUFZpOdA/agent-skill-atmospheric-liquid-dnb-break-layering.json",
+    "batch": "2026-11-04-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with sampler/one-shot mode or transient warping, slicing, groups",
+    "EQ, utility gain automation or sidechain, transient shaper, glue compressor with soft clip, short reverb on a return"
+  ],
+  "inputs": [
+    {
+      "name": "samples",
+      "type": "audio",
+      "description": "Kick, snare, rim/perc one-shots, shaker, a breakbeat loop",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "dnb_drums",
+      "type": "audio",
+      "description": "Balanced atmospheric DnB drum loop at ~170-175 BPM"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Processing is contextual: revisit it once the rest of the track exists.",
+    "Use original or licensed samples; no sample pack contents copied.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Program a 4-bar two-step kick/snare loop; lower the second kick in each bar slightly so beat 1 is the strongest hit.",
+      "tool": "Piano roll",
+      "expect": "Phrased kick pattern"
+    },
+    {
+      "n": 2,
+      "action": "EQ the kick by dipping the mids (focuses the low and top without boosting), tame its top a little, and cut any low noise bump.",
+      "tool": "EQ",
+      "expect": "Focused, clean kick"
+    },
+    {
+      "n": 3,
+      "action": "Tighten percussive one-shots and the shaker by pitching where useful and shortening their decay (one-shot/gate mode), since reverb is added later.",
+      "tool": "Sampler decay",
+      "expect": "Short, tight hits"
+    },
+    {
+      "n": 4,
+      "action": "Bring in a break: tighten its decay, slice it, rearrange slices to fit the kick/snare rhythm, and high-pass it so it only adds top-end movement.",
+      "tool": "Slicing + HPF",
+      "expect": "Constant rhythm over the main hits"
+    },
+    {
+      "n": 5,
+      "action": "Group all top elements (break, percs, shaker). Duck the group on kick and snare (utility gain automation or sidechain) so tops never clash with the focal transients.",
+      "tool": "Group + ducking",
+      "expect": "Kick and snare stay clear"
+    },
+    {
+      "n": 6,
+      "action": "On the tops group: a transient shaper, then an EQ that removes any low bleed and rolls off harsh highs.",
+      "tool": "Transient shaper + EQ",
+      "expect": "Tops crisp, not abrasive"
+    },
+    {
+      "n": 7,
+      "action": "Drum bus: glue compressor with light compression and soft clip on, driving into the clipper so no spiky transient peaks too hard; then balance kick, snare and tops (levels change the compression).",
+      "tool": "Glue compressor + soft clip",
+      "expect": "Even peaks, easy to master loud"
+    },
+    {
+      "n": 8,
+      "action": "Send to a very short drum-room reverb with no pre-delay and short decay.",
+      "tool": "Reverb return",
+      "expect": "Drums gain life without long tails masking them"
+    }
+  ],
+  "verification": [
+    "Beat 1 kick is louder than the second kick.",
+    "Tops are audibly ducked on kick and snare hits.",
+    "No transient spikes above the clipper ceiling.",
+    "Reverb tail is short enough that hits stay distinct."
+  ],
+  "tags": [
+    "drums",
+    "dnb",
+    "liquid-dnb",
+    "breakbeat",
+    "layering",
+    "sidechain",
+    "soft-clip",
+    "drum-bus",
+    "atmospheric",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://atmospheric-liquid-dnb-break-layering"
+}

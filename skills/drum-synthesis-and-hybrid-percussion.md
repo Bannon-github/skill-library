@@ -101,3 +101,14 @@ Source: [The VITAL Drum Sound Design Tutorial!! (FREE PLUGIN)](https://www.youtu
 - Snare: two or three sines an octave apart (reference tones about 240 Hz, 484 Hz, 1 kHz), white noise with two quick transients, all through one filter; route a very short envelope to the pitch of every tone; add distortion; optionally layer the clap and blend.
 - Closed hat: white noise with a very short envelope (about 0.22 s), filter to a tick, high-pass but keep some mids. Open hat: same noise, longer envelope with a second small transient, low-cut reverb and a 1/64 ping-pong delay, then shorten the decay.
 - Render all pieces, build a short beat, and adjust each sound in context (EQ, decay, pitch shift a few semitones and re-export) until they sit together.
+
+### Atmospheric liquid DnB break: 4-bar two-step kick/snare loop with the second kick quieter, kick EQ by dipping mids (not boosting lows/highs), one-shots tightened by shortening decay, a high-passed sliced break and percussive tops grouped and ducked to kick/snare, transient shaper + low-cut on tops, light glue compression into a soft clipper, and a very short no-pre-delay drum room
+Source: [How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]](https://www.youtube.com/watch?v=xeuYUFZpOdA) · was `atmospheric-liquid-dnb-break-layering`
+- Program a 4-bar two-step kick/snare loop; lower the second kick in each bar slightly so beat 1 is the strongest hit.
+- EQ the kick by dipping the mids (focuses the low and top without boosting), tame its top a little, and cut any low noise bump.
+- Tighten percussive one-shots and the shaker by pitching where useful and shortening their decay (one-shot/gate mode), since reverb is added later.
+- Bring in a break: tighten its decay, slice it, rearrange slices to fit the kick/snare rhythm, and high-pass it so it only adds top-end movement.
+- Group all top elements (break, percs, shaker). Duck the group on kick and snare (utility gain automation or sidechain) so tops never clash with the focal transients.
+- On the tops group: a transient shaper, then an EQ that removes any low bleed and rolls off harsh highs.
+- Drum bus: glue compressor with light compression and soft clip on, driving into the clipper so no spiky transient peaks too hard; then balance kick, snare and tops (levels change the compression).
+- Send to a very short drum-room reverb with no pre-delay and short decay.

@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-03T17:28:59.336734+00:00",
-  "entry_count": 236,
+  "updated_at": "2026-11-04T17:28:23.576775+00:00",
+  "entry_count": 240,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3511,6 +3511,58 @@
       "skills": [
         "arrangement-loop-to-song-build-drop"
       ]
+    },
+    {
+      "id": "cinematic-synth-TosV3erGfsg",
+      "video_id": "TosV3erGfsg",
+      "url": "https://www.youtube.com/watch?v=TosV3erGfsg",
+      "title": "Sound Design - Ambient Pads and Atmospheres",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/TosV3erGfsg/raw.txt",
+      "summary": "Skills: start-bright-then-filter-pad (folded into brightness-and-air-at-the-source)",
+      "skills": [
+        "brightness-and-air-at-the-source"
+      ]
+    },
+    {
+      "id": "cinematic-synth-UrpnB5YlGL8",
+      "video_id": "UrpnB5YlGL8",
+      "url": "https://www.youtube.com/watch?v=UrpnB5YlGL8",
+      "title": "This Will Change How You Mix Kick And Bass FOREVER",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/UrpnB5YlGL8/raw.txt",
+      "summary": "Skills: kick-bass-four-level-lock (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-L0mST_BaaBA",
+      "video_id": "L0mST_BaaBA",
+      "url": "https://www.youtube.com/watch?v=L0mST_BaaBA",
+      "title": "How To Write Drums for ANY Electronic Music Genre",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/L0mST_BaaBA/raw.txt",
+      "summary": "Skills: genre-drum-pattern-families-tempo-map (folded into drum-groove-programming-swing-and-ghosts)",
+      "skills": [
+        "drum-groove-programming-swing-and-ghosts"
+      ]
+    },
+    {
+      "id": "cinematic-synth-xeuYUFZpOdA",
+      "video_id": "xeuYUFZpOdA",
+      "url": "https://www.youtube.com/watch?v=xeuYUFZpOdA",
+      "title": "How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/xeuYUFZpOdA/raw.txt",
+      "summary": "Skills: atmospheric-liquid-dnb-break-layering (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3951,6 +4003,32 @@
           "video_id": "PE3c8J6glho",
           "skill": "ambient-loop-to-track-arp-rate-energy",
           "cluster": "arrangement-loop-to-song-build-drop"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-04T17:28:23.576775+00:00",
+      "batch": "2026-11-04-morning-hunt",
+      "folded": [
+        {
+          "video_id": "TosV3erGfsg",
+          "skill": "start-bright-then-filter-pad",
+          "cluster": "brightness-and-air-at-the-source"
+        },
+        {
+          "video_id": "UrpnB5YlGL8",
+          "skill": "kick-bass-four-level-lock",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "L0mST_BaaBA",
+          "skill": "genre-drum-pattern-families-tempo-map",
+          "cluster": "drum-groove-programming-swing-and-ghosts"
+        },
+        {
+          "video_id": "xeuYUFZpOdA",
+          "skill": "atmospheric-liquid-dnb-break-layering",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
         }
       ]
     }

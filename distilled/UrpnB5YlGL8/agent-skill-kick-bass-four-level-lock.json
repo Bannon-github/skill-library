@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "kick-bass-four-level-lock",
+  "name": "Kick+bass punch workflow in four levels: (1) duck the bass to the kick, (2) split sub (<~100-120 Hz, mono, no unison) from mid-bass and duck the sub harder, (3) lock sub phase (fixed oscillator start phase, set by oscilloscope and blind A/B, then micro-delay alignment), (4) light bus glue on kick+bass: subtle subharmonic saturation, ~30 ms-attack glue compressor at 1-2 dB, soft clip",
+  "goal": "Make kick and bass a solid, consistent low-end foundation: measure how the combined level swings when bass notes overlap the kick, then fix it in order: ducking, a separate mono sub with heavier ducking, phase-consistent sub (no random oscillator phase, start phase and a tiny delay chosen to reinforce the kick's fundamental), then gentle kick+bass bus processing. Fills the 'kick+bass punch workflow' gap; delta vs bass/sidechain clusters: oscillator phase lock and sample-level alignment against the kick, checked on an oscilloscope.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "UrpnB5YlGL8",
+    "url": "https://www.youtube.com/watch?v=UrpnB5YlGL8",
+    "title": "This Will Change How You Mix Kick And Bass FOREVER",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/UrpnB5YlGL8/agent-skill-kick-bass-four-level-lock.json",
+    "batch": "2026-11-04-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with sidechain/volume-shaper ducking, EQ, a per-track delay (ms/samples) and an oscilloscope",
+    "Synth with oscillator phase and phase-randomize controls",
+    "Bus with saturation, glue compressor and soft clipper"
+  ],
+  "inputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Kick drum track",
+      "required": true
+    },
+    {
+      "name": "bassline",
+      "type": "midi",
+      "description": "Bass part, some notes overlapping the kick",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "locked_low_end",
+      "type": "audio",
+      "description": "Kick+bass with consistent combined level on every hit"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Only do level 4 after levels 1-3; bus processing will not fix a bad kick/bass relationship.",
+    "Blind A/B every move (eyes closed, bypass/redo) because changes are small.",
+    "Sub stays mono with no unison; pitch is steady (no pitch modulation on the sub).",
+    "The kick choice itself matters most; swap the kick if it fights the track.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Mark bass notes that hit with the kick and those that overlap it. Check level and oscilloscope with kick solo vs kick+bass: overlapping notes make the combined peak swing.",
+      "tool": "Meter + oscilloscope",
+      "expect": "Inconsistency measured"
+    },
+    {
+      "n": 2,
+      "action": "Level 1: duck the bass on every kick (sidechain compressor or volume shaper). Draw the duck shape by hand if the kick's exact shape is too long, so the bass sits in the pocket.",
+      "tool": "Sidechain / volume shaper",
+      "expect": "Kick is clear on every hit"
+    },
+    {
+      "n": 3,
+      "action": "Level 2: duplicate the bass into sub and mid-bass. High-pass the mid-bass at about 120 Hz (no fundamental there); low-pass the sub at the same point and turn its unison off so it is mono. Duck the sub fully on the kick and the mid-bass only a little. With one instrument only, use multiband ducking (below ~100 Hz ducked, above not), knowing the unison sub will still phase-cancel.",
+      "tool": "EQ + sidechain",
+      "expect": "Sustained bass audible over the kick without low-end pumping"
+    },
+    {
+      "n": 4,
+      "action": "Level 3a: on the sub oscillator set phase randomization to 0 so every note starts at the same point in the waveform. Overlay kick and sub on the oscilloscope.",
+      "tool": "Synth oscillator phase",
+      "expect": "Every sub note looks identical (consistent, though maybe out of phase)"
+    },
+    {
+      "n": 5,
+      "action": "Level 3b: sweep the sub's fixed start phase while watching the summed waveform and listening; pick the setting where the sum is loudest and steadiest, confirming by blind A/B.",
+      "tool": "Oscilloscope + ears",
+      "expect": "No level dip when kick and sub sum"
+    },
+    {
+      "n": 6,
+      "action": "Level 3c: if the sub's cycles are slightly offset from the kick's, add a tiny track delay (fractions of a ms) to the bass to line the waveforms up; blind A/B.",
+      "tool": "Track delay",
+      "expect": "Tighter low end"
+    },
+    {
+      "n": 7,
+      "action": "Level 4: route kick and all bass layers to one bus. Add a small amount of low-end/subharmonic saturation (easy to overdo), then a glue compressor at about 30 ms attack for 1-2 dB gain reduction with make-up gain, then a soft clip. If more than ~2 dB is needed, fix earlier steps instead.",
+      "tool": "Bus saturation + glue compressor + soft clip",
+      "expect": "Kick and bass gel as one element"
+    }
+  ],
+  "verification": [
+    "Combined kick+bass peak level is the same on overlapping and non-overlapping hits (within ~1 dB).",
+    "Oscilloscope shows the kick and sub cycles reinforcing, not cancelling.",
+    "Sub track is mono below ~120 Hz.",
+    "Bus compressor gain reduction stays at about 1-2 dB."
+  ],
+  "tags": [
+    "bass",
+    "kick",
+    "punchy-bass",
+    "sub-bass",
+    "sidechain",
+    "phase",
+    "low-end",
+    "mix",
+    "ambient-kick-bass",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://kick-bass-four-level-lock"
+}

@@ -131,3 +131,13 @@ Source: [Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music](https://www
 - High-pass the original (24 dB/oct) at the same point so the two paths do not overlap.
 - Check a phase-correlation meter around 100 Hz; adjust the crossover if correlation drops.
 - Limit the copy aggressively (several dB of gain reduction, e.g. ~6-7 dB) so its dynamics are flattened, then set its level low and A/B on and off.
+
+### Kick+bass punch workflow in four levels: (1) duck the bass to the kick, (2) split sub (<~100-120 Hz, mono, no unison) from mid-bass and duck the sub harder, (3) lock sub phase (fixed oscillator start phase, set by oscilloscope and blind A/B, then micro-delay alignment), (4) light bus glue on kick+bass: subtle subharmonic saturation, ~30 ms-attack glue compressor at 1-2 dB, soft clip
+Source: [This Will Change How You Mix Kick And Bass FOREVER](https://www.youtube.com/watch?v=UrpnB5YlGL8) · was `kick-bass-four-level-lock`
+- Mark bass notes that hit with the kick and those that overlap it. Check level and oscilloscope with kick solo vs kick+bass: overlapping notes make the combined peak swing.
+- Level 1: duck the bass on every kick (sidechain compressor or volume shaper). Draw the duck shape by hand if the kick's exact shape is too long, so the bass sits in the pocket.
+- Level 2: duplicate the bass into sub and mid-bass. High-pass the mid-bass at about 120 Hz (no fundamental there); low-pass the sub at the same point and turn its unison off so it is mono. Duck the sub fully on the kick and the mid-bass only a little. With one instrument only, use multiband ducking (below ~100 Hz ducked, above not), knowing the unison sub will still phase-cancel.
+- Level 3a: on the sub oscillator set phase randomization to 0 so every note starts at the same point in the waveform. Overlay kick and sub on the oscilloscope.
+- Level 3b: sweep the sub's fixed start phase while watching the summed waveform and listening; pick the setting where the sum is loudest and steadiest, confirming by blind A/B.
+- Level 3c: if the sub's cycles are slightly offset from the kick's, add a tiny track delay (fractions of a ms) to the bass to line the waveforms up; blind A/B.
+- Level 4: route kick and all bass layers to one bus. Add a small amount of low-end/subharmonic saturation (easy to overdo), then a glue compressor at about 30 ms attack for 1-2 dB gain reduction with make-up gain, then a soft clip. If more than ~2 dB is needed, fix earlier steps instead.

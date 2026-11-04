@@ -16,3 +16,14 @@ Goal: Make pads bright and airy from the start (instead of boosting treble at th
 7. Brighten before reverb/delay (pre-send), not on the master; finish with a gentle 10-12 kHz shelf (+1-3 dB) only if needed.
 8. Check harshness at 2-5 kHz and on small speakers; re-measure centroid.
 9. Hear the theory: run `/home/box/audio-tools/bin/python sample-lab/theory/brightness_air.py` from the repo root and compare the sections; reuse its functions as a starting point for renders.
+
+### Start-bright-then-filter pad: pick a harmonically rich (buzzy/bright) oscillator, odd unison 5-9, slow wavetable-position sweep, then low-pass to smooth it (keeping top-end headroom to automate back in), big low-cut reverb, low-cut EQ and a stereo imager to pull the pad around the listener; plus an attack-removed swell pad from any played source
+Source: [Sound Design - Ambient Pads and Atmospheres](https://www.youtube.com/watch?v=TosV3erGfsg) · was `start-bright-then-filter-pad`
+- Set amp attack and release to about 400-500 ms each as a starting point, then tailor to the part.
+- Choose a bright, buzzy, harmonically rich oscillator (a saw, or a PWM/analog-style wavetable). Try many; keep the one with the most high-end energy and character.
+- Unison: an odd voice count (5, 7 or 9) gives a solid centre voice with voices spread either side; below 5 is not lush, above 9 costs CPU. For a rougher 'organic' pad, use an even count (e.g. 4): no centre voice gives a slightly unstable, edgy quality. Detune stays static.
+- Optional motion: route a slow LFO or long envelope to wavetable position so it sweeps gently through the table.
+- Low-pass the tone inside the synth (12 or 18 dB/oct; 18 gives a more pronounced cutoff) until smooth, then raise volume to compensate. Use the filter rather than an EQ so the cutoff can be automated to reintroduce highs for builds.
+- Space: a very large reverb at high mix with plenty of low-cut (filter before or after reverb, either order works), then an EQ cutting excess low end and optionally a second reverb.
+- Add a stereo imager after the reverbs and A/B: without it the pad sits far in front; with it the pad wraps around the listener.
+- Swell variant: play chords or a melody on any source (guitar, piano, vocal), start slightly before the bar, and put a gain envelope first in the chain that rises from 0 at the bar so the attack is removed. Then low-cut EQ, imager, and reverb, which is now fed only by the swell.

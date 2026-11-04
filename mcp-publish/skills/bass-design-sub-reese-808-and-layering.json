@@ -80,6 +80,12 @@
         "video_id": "eDErfMlnh7c",
         "url": "https://www.youtube.com/watch?v=eDErfMlnh7c",
         "title": "Fix a Thin Mix: Easy Parallel Bass Trick for Ambient Music"
+      },
+      {
+        "from_skill": "kick-bass-four-level-lock",
+        "video_id": "UrpnB5YlGL8",
+        "url": "https://www.youtube.com/watch?v=UrpnB5YlGL8",
+        "title": "This Will Change How You Mix Kick And Bass FOREVER"
       }
     ]
   },
@@ -338,6 +344,20 @@
         "Check a phase-correlation meter around 100 Hz; adjust the crossover if correlation drops.",
         "Limit the copy aggressively (several dB of gain reduction, e.g. ~6-7 dB) so its dynamics are flattened, then set its level low and A/B on and off."
       ]
+    },
+    {
+      "from_skill": "kick-bass-four-level-lock",
+      "name": "Kick+bass punch workflow in four levels: (1) duck the bass to the kick, (2) split sub (<~100-120 Hz, mono, no unison) from mid-bass and duck the sub harder, (3) lock sub phase (fixed oscillator start phase, set by oscilloscope and blind A/B, then micro-delay alignment), (4) light bus glue on kick+bass: subtle subharmonic saturation, ~30 ms-attack glue compressor at 1-2 dB, soft clip",
+      "goal": "Make kick and bass a solid, consistent low-end foundation: measure how the combined level swings when bass notes overlap the kick, then fix it in order: ducking, a separate mono sub with heavier ducking, phase-consistent sub (no random oscillator phase, start phase and a tiny delay chosen to reinforce the kick's fundamental), then gentle kick+bass bus processing. Fills the 'kick+bass punch workflow' gap; delta vs bass/sidechain clusters: oscillator phase lock and sample-level alignment against the kick, checked on an oscilloscope.",
+      "steps": [
+        "Mark bass notes that hit with the kick and those that overlap it. Check level and oscilloscope with kick solo vs kick+bass: overlapping notes make the combined peak swing.",
+        "Level 1: duck the bass on every kick (sidechain compressor or volume shaper). Draw the duck shape by hand if the kick's exact shape is too long, so the bass sits in the pocket.",
+        "Level 2: duplicate the bass into sub and mid-bass. High-pass the mid-bass at about 120 Hz (no fundamental there); low-pass the sub at the same point and turn its unison off so it is mono. Duck the sub fully on the kick and the mid-bass only a little. With one instrument only, use multiband ducking (below ~100 Hz ducked, above not), knowing the unison sub will still phase-cancel.",
+        "Level 3a: on the sub oscillator set phase randomization to 0 so every note starts at the same point in the waveform. Overlay kick and sub on the oscilloscope.",
+        "Level 3b: sweep the sub's fixed start phase while watching the summed waveform and listening; pick the setting where the sum is loudest and steadiest, confirming by blind A/B.",
+        "Level 3c: if the sub's cycles are slightly offset from the kick's, add a tiny track delay (fractions of a ms) to the bass to line the waveforms up; blind A/B.",
+        "Level 4: route kick and all bass layers to one bus. Add a small amount of low-end/subharmonic saturation (easy to overdo), then a glue compressor at about 30 ms attack for 1-2 dB gain reduction with make-up gain, then a soft clip. If more than ~2 dB is needed, fix earlier steps instead."
+      ]
     }
   ],
   "merged_from": [
@@ -352,7 +372,8 @@
     "three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar",
     "ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz",
     "audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt",
-    "parallel-octave-down-bass-from-stereo-mix"
+    "parallel-octave-down-bass-from-stereo-mix",
+    "kick-bass-four-level-lock"
   ],
   "tags": [
     "808",
@@ -402,6 +423,7 @@
     "three-bassline-roles-clear-sub-40-80hz-lowcut-others-100-150hz-matching-rhythm-vs-eighth-pluck-pulse-vs-sustained-root-per-bar",
     "ambient-bass-mono-voice-light-unison-one-slow-master-lfo-4-bars-on-12-targets-wt-cutoff-drive-formant-fm-macro-direct-out-sine-sub-hp-upper-layers-mono-below-100-120hz",
     "audible-sub-bass-on-phones-sine-sub-20-60hz-plus-harmonics-60-200hz-volume-compensated-hard-clip-overtone-series-octave-fifth-low-mid-scoop-lowpass-plus-2-4-octave-sines-fast-comp-tilt",
-    "parallel-octave-down-bass-from-stereo-mix"
+    "parallel-octave-down-bass-from-stereo-mix",
+    "kick-bass-four-level-lock"
   ]
 }

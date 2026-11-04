@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "id": "genre-drum-pattern-families-tempo-map",
+  "name": "Program drums for any electronic genre from one foundation (kick on 1, snare on 2 and 4): four-on-the-floor vs two-step (kick on 1 and the 'and' of 3) families, offbeat open hats and 16th closed hats, a tempo-to-genre map (house/techno 120-130, trance 138-150, garage 128-135, breaks 140-150, DnB 170-180, halftime dubstep/trap 140), set syncopation spots, uniform swing on every second 8th/16th, and 2/4-bar variations with a tom fill and crash",
+  "goal": "Build a genre-appropriate drum pattern quickly by choosing a pattern family and tempo instead of starting from a blank grid, then add syncopation, swing and fills in a fixed order. Delta vs the drum-groove cluster: the explicit pattern-family x tempo map (same pattern implies different genres at different BPM), halftime conversion by doubling note lengths, named syncopation positions, and the rule that layered sounds on swung steps get identical offsets.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "L0mST_BaaBA",
+    "url": "https://www.youtube.com/watch?v=L0mST_BaaBA",
+    "title": "How To Write Drums for ANY Electronic Music Genre",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/L0mST_BaaBA/agent-skill-genre-drum-pattern-families-tempo-map.json",
+    "batch": "2026-11-04-morning-hunt"
+  },
+  "prerequisites": [
+    "Drum sampler/drum rack with kick, snare, closed and open hat, 3 toms, crash, ride, clap, rim (any 909-style kit)",
+    "DAW piano roll on a 16th grid in 4/4"
+  ],
+  "inputs": [
+    {
+      "name": "genre",
+      "type": "string",
+      "description": "Target genre or tempo",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "drum_pattern",
+      "type": "midi",
+      "description": "1-, 2- and 4-bar drum pattern with fill"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Sound choice also sets the genre; the patterns here are rhythm templates.",
+    "Keep only a few fills/variations and repeat them for cohesion.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Foundation, 1 bar of 4/4 on a 16th grid: kick on the downbeat (beat 1), snare on the backbeats (beats 2 and 4).",
+      "tool": "Piano roll",
+      "expect": "Basic pulse"
+    },
+    {
+      "n": 2,
+      "action": "Four-on-the-floor family: kick on every beat, open hat on every offbeat (the third 16th of each beat), closed hats on every second 16th to fill gaps. Tempo map: 120-130 BPM house/techno (128 typical house), 130-140 techno to trance, 138 typical trance, 140-150 trance, 170-180 hardcore (mute the extra 16th hats at high tempo).",
+      "tool": "Piano roll + tempo",
+      "expect": "Same pattern reads as different genres by tempo"
+    },
+    {
+      "n": 3,
+      "action": "Two-step family: foundation plus one kick on the 'and' (offbeat) of beat 3; closed hats on the remaining 8th notes (open hats can swap in on some). Tempo map: high 120s to mid 130s garage, 140-150 breaks, 170-180 drum & bass (174 typical).",
+      "tool": "Piano roll + tempo",
+      "expect": "Garage/breaks/DnB skeleton"
+    },
+    {
+      "n": 4,
+      "action": "Halftime: at 140-150 BPM double every note length/position of the two-step (1 bar becomes 2) for dubstep; add 16th closed hats with varied velocity for trap.",
+      "tool": "Piano roll (x2 / stretch)",
+      "expect": "Halftime feel"
+    },
+    {
+      "n": 5,
+      "action": "Syncopation for four-on-the-floor: claps on the last 16th of beat 1 and the offbeat of beat 2, repeated per beat pair, or moved to the second 16th of a beat; the same rhythm can go on a low tom. For two-step: rims on the last 16th of beat 2 and the second 16th of beat 3, and on 16ths leading into snares; extra kicks on offbeats or 16ths depending on tempo.",
+      "tool": "Piano roll",
+      "expect": "Groove and forward momentum"
+    },
+    {
+      "n": 6,
+      "action": "Swing: delay every second 8th (8th swing) or every second 16th (16th swing) by the same amount. Every sound on a swung step (e.g. hat and clap together) must get the identical offset; or use the DAW's groove feature.",
+      "tool": "Piano roll / groove",
+      "expect": "Consistent skippy feel (garage/house)"
+    },
+    {
+      "n": 7,
+      "action": "Variation: duplicate to 2 bars and change the clap pattern in bar 2; duplicate to 4 bars and put a high-to-mid-to-low tom fill on syncopated 16ths in bar 4; crash on the downbeat of bar 1 and rides on every beat at low velocity.",
+      "tool": "Piano roll",
+      "expect": "4-bar phrase that loops back cleanly"
+    }
+  ],
+  "verification": [
+    "Pattern family matches the genre: kick every beat (4otf) or kick on 1 and 3-and (two-step).",
+    "Tempo sits in the mapped range for the genre.",
+    "All notes on swung steps share one offset.",
+    "4-bar loop ends with a fill and restarts with a crash."
+  ],
+  "tags": [
+    "drums",
+    "drum-groove",
+    "genre-templates",
+    "four-on-the-floor",
+    "two-step",
+    "halftime",
+    "syncopation",
+    "swing",
+    "fills",
+    "music-theory",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://genre-drum-pattern-families-tempo-map"
+}

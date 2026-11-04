@@ -1,0 +1,53 @@
+{
+  "video_id": "HJZG-qD4oso",
+  "title": "Make an Ambient Loop with One Free Synth (Vital + Organic Wavetables)",
+  "url": "https://www.youtube.com/watch?v=HJZG-qD4oso",
+  "fetched_at": "2026-11-04T17:18:50.406593+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EtherLoops",
+  "duration": 1164,
+  "ok": true,
+  "cue_count": 384,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HJZG-qD4oso/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HJZG-qD4oso/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr(auto)",
+        "de(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt(auto)",
+        "es(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

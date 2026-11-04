@@ -1,0 +1,64 @@
+{
+  "video_id": "L0mST_BaaBA",
+  "title": "How To Write Drums for ANY Electronic Music Genre",
+  "url": "https://www.youtube.com/watch?v=L0mST_BaaBA",
+  "fetched_at": "2026-11-04T17:17:42.223635+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Matt Tinkler",
+  "duration": 1480,
+  "ok": true,
+  "cue_count": 628,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/L0mST_BaaBA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/L0mST_BaaBA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

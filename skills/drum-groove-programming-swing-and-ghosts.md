@@ -54,3 +54,13 @@ Source: [Drum programming Tips for ANY machine](https://www.youtube.com/watch?v=
 - Make one track 32 steps with the second bar shortened to 24 steps and a pattern reset every 8 bars (128 steps), so it cycles against the bar.
 - On the closed hat, route a slow, free LFO (odd length) at low depth to sample start, with a soft attack.
 - Balance the claps down, then add a pumping bus compressor; if the kick blooms too much, shorten it and tune it down slightly.
+
+### Program drums for any electronic genre from one foundation (kick on 1, snare on 2 and 4): four-on-the-floor vs two-step (kick on 1 and the 'and' of 3) families, offbeat open hats and 16th closed hats, a tempo-to-genre map (house/techno 120-130, trance 138-150, garage 128-135, breaks 140-150, DnB 170-180, halftime dubstep/trap 140), set syncopation spots, uniform swing on every second 8th/16th, and 2/4-bar variations with a tom fill and crash
+Source: [How To Write Drums for ANY Electronic Music Genre](https://www.youtube.com/watch?v=L0mST_BaaBA) · was `genre-drum-pattern-families-tempo-map`
+- Foundation, 1 bar of 4/4 on a 16th grid: kick on the downbeat (beat 1), snare on the backbeats (beats 2 and 4).
+- Four-on-the-floor family: kick on every beat, open hat on every offbeat (the third 16th of each beat), closed hats on every second 16th to fill gaps. Tempo map: 120-130 BPM house/techno (128 typical house), 130-140 techno to trance, 138 typical trance, 140-150 trance, 170-180 hardcore (mute the extra 16th hats at high tempo).
+- Two-step family: foundation plus one kick on the 'and' (offbeat) of beat 3; closed hats on the remaining 8th notes (open hats can swap in on some). Tempo map: high 120s to mid 130s garage, 140-150 breaks, 170-180 drum & bass (174 typical).
+- Halftime: at 140-150 BPM double every note length/position of the two-step (1 bar becomes 2) for dubstep; add 16th closed hats with varied velocity for trap.
+- Syncopation for four-on-the-floor: claps on the last 16th of beat 1 and the offbeat of beat 2, repeated per beat pair, or moved to the second 16th of a beat; the same rhythm can go on a low tom. For two-step: rims on the last 16th of beat 2 and the second 16th of beat 3, and on 16ths leading into snares; extra kicks on offbeats or 16ths depending on tempo.
+- Swing: delay every second 8th (8th swing) or every second 16th (16th swing) by the same amount. Every sound on a swung step (e.g. hat and clap together) must get the identical offset; or use the DAW's groove feature.
+- Variation: duplicate to 2 bars and change the clap pattern in bar 2; duplicate to 4 bars and put a high-to-mid-to-low tom fill on syncopated 16ths in bar 4; crash on the downbeat of bar 1 and rides on every beat at low velocity.
