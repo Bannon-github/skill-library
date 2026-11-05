@@ -1,0 +1,46 @@
+{
+  "video_id": "CT8vQewKnFE",
+  "title": "Synthesis 101- How to use any modulation matrix (using the Minifreak)",
+  "url": "https://www.youtube.com/watch?v=CT8vQewKnFE",
+  "fetched_at": "2026-11-05T17:23:52.573025+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Nu-Trix The Synth Guy",
+  "duration": 1450,
+  "ok": true,
+  "cue_count": 505,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CT8vQewKnFE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CT8vQewKnFE/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

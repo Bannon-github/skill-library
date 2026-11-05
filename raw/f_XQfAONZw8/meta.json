@@ -1,0 +1,46 @@
+{
+  "video_id": "f_XQfAONZw8",
+  "title": "Ambient music: turning your clips into a structure",
+  "url": "https://www.youtube.com/watch?v=f_XQfAONZw8",
+  "fetched_at": "2026-11-05T17:24:58.107964+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Adam Gaensler",
+  "duration": 683,
+  "ok": true,
+  "cue_count": 251,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/f_XQfAONZw8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/f_XQfAONZw8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

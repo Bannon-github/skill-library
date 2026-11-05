@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "wide-bass-remove-fundamental-add-mono-sine",
+  "name": "Mono-compatible wide bass: strip the fundamental from a unison wavetable (FFT/harmonic editor), keep the wide upper harmonics with unison, then add a separate mono sine as the fundamental with phase-randomize at 0",
+  "goal": "Keep a wide Reese-style bass powerful in mono and easier to phase-align with the kick: remove the first harmonic (fundamental) from the unison oscillator so unison only widens the overtones, then restore power with a second oscillator that is a clean sine (no unison). Delta vs bass cluster / kick-bass-four-level-lock: the fundamental is edited out of the wavetable itself before unison, rather than only EQ-splitting a full-spectrum voice into sub vs mid after the fact; also shows why zeroing phase-random on a normal unison Reese creates a laser-sweep artifact, so the clean sine must be the separate voice.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "5oW5Mb-3sF0",
+    "url": "https://www.youtube.com/watch?v=5oW5Mb-3sF0",
+    "title": "How to make any \"WIDE BASS\" mono-compatible!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/5oW5Mb-3sF0/agent-skill-wide-bass-remove-fundamental-add-mono-sine.json",
+    "batch": "2026-11-05-morning-hunt"
+  },
+  "prerequisites": [
+    "Any wavetable synth with a harmonic/FFT editor (or an equivalent way to zero the fundamental bin), unison, a second oscillator, and phase-randomize / free-run phase control",
+    "Optional oscilloscope and a mono-fold utility"
+  ],
+  "inputs": [
+    {
+      "name": "bass_midi",
+      "type": "midi",
+      "description": "Bass part (often for a drop or sustained root)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mono_safe_wide_bass",
+      "type": "audio",
+      "description": "Wide mid-bass with a stable mono fundamental"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Do not put unison or phase randomization on the sine fundamental.",
+    "Verify in mono fold-down: power must stay steady, not pump.",
+    "Steady pitch on both oscillators.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that.",
+    "Steady pitch: leave out intentional pitch-drift LFOs unless the brief asks for tape wobble (Matt prefers steady pitch)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a saw (or similarly bright) wavetable. Optionally add a gentle low-pass so the raw tone is easier on the ears.",
+      "tool": "Oscillator + filter",
+      "expect": "Bright but listenable raw tone"
+    },
+    {
+      "n": 2,
+      "action": "Open the wavetable / FFT / harmonic editor. Identify the first harmonic (fundamental) and remove or zero it so the table is overtones only. Solo A/B: the tone should sound thinner and weaker.",
+      "tool": "Wavetable harmonic editor",
+      "expect": "Saw without fundamental"
+    },
+    {
+      "n": 3,
+      "action": "Enable unison on that weakened oscillator (e.g. 5 voices) with a small detune (source default ~0.25). This widens only the overtones.",
+      "tool": "Unison",
+      "expect": "Wide, hollow mid-bass"
+    },
+    {
+      "n": 4,
+      "action": "Enable a second oscillator as a pure sine at the same pitch. Leave its unison off. This sine is the new fundamental.",
+      "tool": "Second oscillator (sine)",
+      "expect": "Full power returns; fundamental is mono"
+    },
+    {
+      "n": 5,
+      "action": "Set the sine oscillator's phase-randomize / rand to 0 so every note starts at the same phase (stable for kick alignment). Do not zero rand on a normal full-spectrum unison Reese — that creates a sweeping laser artifact and still collapses in mono.",
+      "tool": "Phase control",
+      "expect": "Consistent note-on phase on the sub only"
+    },
+    {
+      "n": 6,
+      "action": "A/B the patch in mono: the fundamental-stripped+sine version keeps power; a normal unison Reese pumps and thins. Optionally check an oscilloscope against the kick.",
+      "tool": "Mono utility + ears",
+      "expect": "Stable mono loudness"
+    }
+  ],
+  "verification": [
+    "Mono fold-down keeps roughly the same power as stereo (no pumping).",
+    "Unison is audible as width in the mids/highs only.",
+    "Sine fundamental has fixed start phase; no laser-sweep artifact."
+  ],
+  "tags": [
+    "bass",
+    "reese",
+    "mono",
+    "unison",
+    "wavetable",
+    "fundamental",
+    "phase",
+    "low-end",
+    "stereo-width",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://wide-bass-remove-fundamental-add-mono-sine"
+}

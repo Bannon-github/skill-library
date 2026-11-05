@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-04T17:28:23.576775+00:00",
-  "entry_count": 240,
+  "updated_at": "2026-11-05T17:31:35.445579+00:00",
+  "entry_count": 245,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3563,6 +3563,71 @@
       "skills": [
         "drum-synthesis-and-hybrid-percussion"
       ]
+    },
+    {
+      "id": "cinematic-synth-5oW5Mb-3sF0",
+      "video_id": "5oW5Mb-3sF0",
+      "url": "https://www.youtube.com/watch?v=5oW5Mb-3sF0",
+      "title": "How to make any \"WIDE BASS\" mono-compatible!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/5oW5Mb-3sF0/raw.txt",
+      "summary": "Skills: wide-bass-remove-fundamental-add-mono-sine (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-zscsukQNOLU",
+      "video_id": "zscsukQNOLU",
+      "url": "https://www.youtube.com/watch?v=zscsukQNOLU",
+      "title": "Get A Wide Mix Without Any Issues!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/zscsukQNOLU/raw.txt",
+      "summary": "Skills: width-by-juxtaposition-ms-sides-reverb (folded into stereo-width-haas-midside-mono-safe)",
+      "skills": [
+        "stereo-width-haas-midside-mono-safe"
+      ]
+    },
+    {
+      "id": "cinematic-synth-p5ETZc7Zfw4",
+      "video_id": "p5ETZc7Zfw4",
+      "url": "https://www.youtube.com/watch?v=p5ETZc7Zfw4",
+      "title": "How to Make Lush Evolving Pads in Wavetable | Ableton Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/p5ETZc7Zfw4/raw.txt",
+      "summary": "Skills: lush-dual-saw-filter-env-nonretrigger-lfo-pad (folded into wavetable-and-vector-morph-pads)",
+      "skills": [
+        "wavetable-and-vector-morph-pads"
+      ]
+    },
+    {
+      "id": "cinematic-synth-M7fEMi8VSy4",
+      "video_id": "M7fEMi8VSy4",
+      "url": "https://www.youtube.com/watch?v=M7fEMi8VSy4",
+      "title": "How To Sound Design Complex Risers (using Vital)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/M7fEMi8VSy4/raw.txt",
+      "summary": "Skills: nested-lfo-layered-riser-downer-kit (folded into risers-impacts-transition-fx)",
+      "skills": [
+        "risers-impacts-transition-fx"
+      ]
+    },
+    {
+      "id": "cinematic-synth-MsT_yjp5kpI",
+      "video_id": "MsT_yjp5kpI",
+      "url": "https://www.youtube.com/watch?v=MsT_yjp5kpI",
+      "title": "Why your low end sounds amateur (maybe)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/MsT_yjp5kpI/raw.txt",
+      "summary": "Skills: cloakroom-check-lpf-shelf-low-end-balance (folded into mix-eq-gain-staging-and-balance)",
+      "skills": [
+        "mix-eq-gain-staging-and-balance"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4029,6 +4094,37 @@
           "video_id": "xeuYUFZpOdA",
           "skill": "atmospheric-liquid-dnb-break-layering",
           "cluster": "drum-synthesis-and-hybrid-percussion"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-05T17:31:35.445579+00:00",
+      "batch": "2026-11-05-morning-hunt",
+      "folded": [
+        {
+          "video_id": "5oW5Mb-3sF0",
+          "skill": "wide-bass-remove-fundamental-add-mono-sine",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "zscsukQNOLU",
+          "skill": "width-by-juxtaposition-ms-sides-reverb",
+          "cluster": "stereo-width-haas-midside-mono-safe"
+        },
+        {
+          "video_id": "p5ETZc7Zfw4",
+          "skill": "lush-dual-saw-filter-env-nonretrigger-lfo-pad",
+          "cluster": "wavetable-and-vector-morph-pads"
+        },
+        {
+          "video_id": "M7fEMi8VSy4",
+          "skill": "nested-lfo-layered-riser-downer-kit",
+          "cluster": "risers-impacts-transition-fx"
+        },
+        {
+          "video_id": "MsT_yjp5kpI",
+          "skill": "cloakroom-check-lpf-shelf-low-end-balance",
+          "cluster": "mix-eq-gain-staging-and-balance"
         }
       ]
     }

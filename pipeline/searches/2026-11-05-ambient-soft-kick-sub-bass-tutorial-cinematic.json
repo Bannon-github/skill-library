@@ -1,0 +1,99 @@
+{
+ "topic": "ambient soft kick sub bass tutorial cinematic",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "ambient soft kick sub bass tutorial cinematic",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "vieGTqd3uhQ",
+   "title": "25 min Downtempo and Chill-Out Tutorial for Beginners",
+   "channel": "S1gns Of L1fe",
+   "duration": 1493,
+   "view_count": 16613,
+   "url": "https://www.youtube.com/watch?v=vieGTqd3uhQ",
+   "query": "ambient soft kick sub bass tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.61
+  },
+  {
+   "id": "0qzQfBLCwSo",
+   "title": "Reverby bass sound-design improvisation using Cinematic Atmosphere Toolkit",
+   "channel": "FrozenPlain",
+   "duration": 429,
+   "view_count": 630,
+   "url": "https://www.youtube.com/watch?v=0qzQfBLCwSo",
+   "query": "ambient soft kick sub bass tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.9
+  },
+  {
+   "id": "MsT_yjp5kpI",
+   "title": "Why your low end sounds amateur (maybe)",
+   "channel": "Underdog Electronic Music School",
+   "duration": 529,
+   "view_count": 434440,
+   "url": "https://www.youtube.com/watch?v=MsT_yjp5kpI",
+   "query": "ambient soft kick sub bass tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.32
+  },
+  {
+   "id": "gMo4bO7QO98",
+   "title": "Making a Swoosh Transition in 3 minutes",
+   "channel": "Kilohearts",
+   "duration": 250,
+   "view_count": 4220,
+   "url": "https://www.youtube.com/watch?v=gMo4bO7QO98",
+   "query": "ambient soft kick sub bass tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.81
+  }
+ ],
+ "dropped": [
+  {
+   "id": "aoh2bg8-Bfw",
+   "why": "duration 136s"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "RS3B4Vtr8N0",
+   "why": "duration 109s"
+  },
+  {
+   "id": "0xY7NZF3n0w",
+   "why": "duration 170s"
+  },
+  {
+   "id": "63FvtgN6Yrc",
+   "why": "already known"
+  },
+  {
+   "id": "fZrNOYRlpKo",
+   "why": "duration 65s"
+  },
+  {
+   "id": "Z6IUhXyOvFc",
+   "why": "already known"
+  },
+  {
+   "id": "UrpnB5YlGL8",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

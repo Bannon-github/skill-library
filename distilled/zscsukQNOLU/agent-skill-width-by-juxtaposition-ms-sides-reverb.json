@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "width-by-juxtaposition-ms-sides-reverb",
+  "name": "Perceived width from narrow↔wide juxtaposition, real double-tracked (not cloned) hard pans, and a mono-safe stereo bed: mid-side EQ that nearly kills the mids on a send, plus reverb that decorrelates only the sides while the dry center stays untouched",
+  "goal": "Make a mix feel dramatically wide without master-bus wideners or phase-wrecked lows: write and arrange moments that open from narrower sections (juxtaposition), pan two real performances of the same part L/R (not a flipped copy), and for bass/beds use mid-side processing so the center stays dry and mono while only the sides get EQ lift and reverb. Delta vs stereo-width cluster: treats width as an arrangement/timing contrast first, insists on true double-tracks for L/R pan width, and the concrete M/S recipe of ~−30 dB mid cut on a parallel path plus dry-center / wet-sides reverb for mono-compatible stereo bass.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "zscsukQNOLU",
+    "url": "https://www.youtube.com/watch?v=zscsukQNOLU",
+    "title": "Get A Wide Mix Without Any Issues!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/zscsukQNOLU/agent-skill-width-by-juxtaposition-ms-sides-reverb.json",
+    "batch": "2026-11-05-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with mid-side EQ (or mid-side encode/decode), panning, a reverb return, and sidechain/ducking optional",
+    "Two real takes or differently processed layers of the same part (not identical clones)"
+  ],
+  "inputs": [
+    {
+      "name": "mix",
+      "type": "audio",
+      "description": "Multitrack mix with at least one part that can open wide",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wide_mix",
+      "type": "audio",
+      "description": "Mix that feels wider in sections while mono fold-down stays solid"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Do not put a stereo widener on the master bus as the main width strategy.",
+    "Never pan a bit-identical clone hard L/R and expect width — it collapses to mono.",
+    "Keep true mono energy (kick, sub, lead vocal) centered.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that.",
+    "Steady pitch: leave out intentional pitch-drift LFOs unless the brief asks for tape wobble (Matt prefers steady pitch)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Audit the arrangement: if everything is always wide, listeners adapt and nothing feels immersive. Plan narrower (near-mono) sections that precede the wide moments so the spread reads as a change.",
+      "tool": "Arrangement / listening",
+      "expect": "Clear narrow→wide contrast points"
+    },
+    {
+      "n": 2,
+      "action": "For L/R width on a featured layer (e.g. vocals, guitars): use two real performances or differently processed takes of the same line and pan them apart (source example ~30 either way). A/B against a hard-panned clone of one take — the clone will not create the same image.",
+      "tool": "Panning + double tracking",
+      "expect": "True stereo image from decorrelated takes"
+    },
+    {
+      "n": 3,
+      "action": "Build a mono-safe stereo bed for bass or a dense layer: send or parallel-process through a mid-side EQ and cut the mid channel hard (source: about −30 dB) so almost only sides remain on that path; optionally lift selected side bands. The dry center path keeps the mono power.",
+      "tool": "Mid-side EQ",
+      "expect": "Sides carry width; center stays solid"
+    },
+    {
+      "n": 4,
+      "action": "Feed that sides-heavy path into a reverb so the sides gain space while the middle stays completely dry and raw — mono fold-down still has the dry center.",
+      "tool": "Reverb (sides / parallel)",
+      "expect": "Decorrelated space without mono cancellation"
+    },
+    {
+      "n": 5,
+      "action": "Optional: light sidechain from drums into competing wide layers so mono-focused hits still punch. Check the whole mix in mono.",
+      "tool": "Sidechain + mono check",
+      "expect": "Wide sections survive mono; kick/sub intact"
+    }
+  ],
+  "verification": [
+    "A narrow section followed by a wide section audibly expands.",
+    "Hard-panned real doubles stay wide; identical clones do not.",
+    "Mono fold-down keeps bass/center level; no hollow pumping."
+  ],
+  "tags": [
+    "stereo-width",
+    "mid-side",
+    "panning",
+    "arrangement",
+    "mono-safe",
+    "reverb",
+    "bass",
+    "mix",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://width-by-juxtaposition-ms-sides-reverb"
+}

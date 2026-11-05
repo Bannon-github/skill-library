@@ -1,0 +1,106 @@
+{
+ "topic": "wavetable synth pad tutorial sound design",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "wavetable synth pad tutorial sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "JP5yTtT-gbk",
+   "title": "Ambient Synth Pad Sound Design with Ableton Wavetable (Tutorial)",
+   "channel": "Dr Brown Music",
+   "duration": 1481,
+   "view_count": 4239,
+   "url": "https://www.youtube.com/watch?v=JP5yTtT-gbk",
+   "query": "wavetable synth pad tutorial sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.31
+  },
+  {
+   "id": "D2cBdtjMtgc",
+   "title": "Ableton Wavetable Pad - Sound Design Tutorial",
+   "channel": "Low Heat Beats",
+   "duration": 603,
+   "view_count": 6126,
+   "url": "https://www.youtube.com/watch?v=D2cBdtjMtgc",
+   "query": "wavetable synth pad tutorial sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.39
+  },
+  {
+   "id": "I47BM2qaL2w",
+   "title": "WAVETABLE Tutorial | Sound Design Fundamentals | Part Three - PAD | Melodic House",
+   "channel": "The Sound Design Channel",
+   "duration": 806,
+   "view_count": 1753,
+   "url": "https://www.youtube.com/watch?v=I47BM2qaL2w",
+   "query": "wavetable synth pad tutorial sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.12
+  },
+  {
+   "id": "aLOYhVQbhp8",
+   "title": "Ableton Wavetable Synth - Full Guide for Beginners",
+   "channel": "Ableton Tips by PML",
+   "duration": 1848,
+   "view_count": 24692,
+   "url": "https://www.youtube.com/watch?v=aLOYhVQbhp8",
+   "query": "wavetable synth pad tutorial sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.2
+  },
+  {
+   "id": "7qQX6YGBQEA",
+   "title": "Free Vital Synth - Full Tutorial",
+   "channel": "In The Mix",
+   "duration": 1814,
+   "view_count": 864051,
+   "url": "https://www.youtube.com/watch?v=7qQX6YGBQEA",
+   "query": "wavetable synth pad tutorial sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  }
+ ],
+ "dropped": [
+  {
+   "id": "pQFr594QwI4",
+   "why": "already known"
+  },
+  {
+   "id": "aMgNxwHGD0U",
+   "why": "duration 103s"
+  },
+  {
+   "id": "A7q9L5wd7Mk",
+   "why": "already known"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "ehKoz6ILmxQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

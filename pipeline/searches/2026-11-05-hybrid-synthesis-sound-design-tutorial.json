@@ -1,0 +1,97 @@
+{
+ "topic": "hybrid synthesis sound design tutorial",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "hybrid synthesis sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "HpSC2SFb9E4",
+   "title": "How To: Wurlitzer & Fender Rhodes Electric Pianos in Vital - Sound Design Tutorial",
+   "channel": "Eric Bowman",
+   "duration": 1287,
+   "view_count": 93382,
+   "url": "https://www.youtube.com/watch?v=HpSC2SFb9E4",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.99
+  },
+  {
+   "id": "rYxx6B2eM6A",
+   "title": "How to Make Fluttering Basslines Like PHRVA (Serum Sound Design Tutorial)",
+   "channel": "BRAINWAVEZ",
+   "duration": 883,
+   "view_count": 15522,
+   "url": "https://www.youtube.com/watch?v=rYxx6B2eM6A",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.6
+  },
+  {
+   "id": "eu0zpa7OiYA",
+   "title": "Synthesis for beginners",
+   "channel": "Underdog Electronic Music School",
+   "duration": 944,
+   "view_count": 147483,
+   "url": "https://www.youtube.com/watch?v=eu0zpa7OiYA",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.08
+  },
+  {
+   "id": "fQamEEANTxI",
+   "title": "25 min of Hybrid Trap Sound Design (Serum & Ableton)",
+   "channel": "Ash // From Bedroom 2 Banger",
+   "duration": 1464,
+   "view_count": 22268,
+   "url": "https://www.youtube.com/watch?v=fQamEEANTxI",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.67
+  },
+  {
+   "id": "5XWK5GCznKA",
+   "title": "ALVA NOTO's SOUND DESIGN PHILOSOPHY you need to know",
+   "channel": "Trash Sound Design",
+   "duration": 555,
+   "view_count": 41762,
+   "url": "https://www.youtube.com/watch?v=5XWK5GCznKA",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.81
+  },
+  {
+   "id": "uEGE-B53UPs",
+   "title": "Metallic Sound Design Made Easy",
+   "channel": "Plugin Boutique",
+   "duration": 345,
+   "view_count": 11121,
+   "url": "https://www.youtube.com/watch?v=uEGE-B53UPs",
+   "query": "hybrid synthesis sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.52
+  }
+ ],
+ "dropped": [
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "-buVENgPVaQ",
+   "why": "duration 4077s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

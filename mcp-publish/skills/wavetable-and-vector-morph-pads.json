@@ -110,6 +110,12 @@
         "video_id": "VrCSssDOxFc",
         "url": "https://www.youtube.com/watch?v=VrCSssDOxFc",
         "title": "Wavefield Tutorial Video"
+      },
+      {
+        "from_skill": "lush-dual-saw-filter-env-nonretrigger-lfo-pad",
+        "video_id": "p5ETZc7Zfw4",
+        "url": "https://www.youtube.com/watch?v=p5ETZc7Zfw4",
+        "title": "How to Make Lush Evolving Pads in Wavetable | Ableton Tutorial"
       }
     ]
   },
@@ -436,6 +442,20 @@
         "Rhythmic variant: step through keyframes one per beat division instead of interpolating, and add gate (silence a % of each step's tail) for chopped, per-step spectral flavours on leads/arps. Using a keyframe count that doesn't divide the phrase (e.g. 20 vs 4/8 bars) gives polyrhythmic filter shaping.",
         "Width and layering: add stereo so L and R read the curve at different times (mono compatible). On parallel copies or several tracks with the same table, offset the start phase of each so they move out of sync with the same character. Use dry/wet for parallel blend, output gain to level-match, and a 0 dB limiter for aggressive boosts."
       ]
+    },
+    {
+      "from_skill": "lush-dual-saw-filter-env-nonretrigger-lfo-pad",
+      "name": "Lush evolving pad from two saws (second −12 st), high unison (~8, shimmer-style detune ~30), long overlapping amp ADSR, a filter envelope that opens from a low start (~200 Hz) with ~2 s attack, plus a slow non-retriggering tempo-synced triangle LFO on cutoff so each chord catches the filter in a different place; optional analog-modelled filter drive and a long low-cut convolution/space",
+      "goal": "Build a chord pad that feels hand-played rather than looping the same filter shape: stack an octave-down second saw under a unison saw, use long attack/decay/release so chords overlap, open the filter with a second envelope from a dark starting cutoff, then add a very slow triangle LFO with retrigger OFF so successive chords land at different filter positions. Delta vs wavetable cluster: the non-retriggering multi-bar LFO-on-cutoff as the 'alive' mechanism (not wavetable-position morph alone), paired with a dual-octave saw stack and overlapping amp envelope numbers from the source.",
+      "steps": [
+        "Oscillator 1: a saw or near-saw wavetable. Enable unison (classic or shimmer-style) at a high voice count (source uses 8) with detune around 30 — lush and smeared, not out of tune.",
+        "Oscillator 2: same saw, pitched −12 semitones, to thicken with a lower octave. Balance levels.",
+        "Amp envelope: attack ~2 s; sustain about half the peak (source ~−13 dB on that scale); decay ~6 s; release ~2 s so chord tails overlap instead of stopping dead.",
+        "Filter envelope (env 2) → cutoff: start cutoff near ~200 Hz, envelope amount high enough to open clearly (source ~70). Shape env 2 with ~2 s attack and long decay/release so it swells open like the amp, not a pluck.",
+        "LFO 1 → cutoff at moderate depth (source ~40): tempo-sync to a multi-bar rate (source 3 bars or 1.5), triangle shape, and turn retrigger OFF so each new chord catches a different LFO phase — the filter no longer repeats identically every note.",
+        "Optional: switch the filter to an analog-modelled / driven mode for mild saturation instead of a separate distortion plugin. Optional: slow LFO or envelope on wavetable position for timbral morph (pitch stays fixed).",
+        "Space: a long lush reverb or convolution (source uses a 'black hole'-style IR) with dry/wet raised and a low-cut on the reverb so the pad stays deep without rumble."
+      ]
     }
   ],
   "merged_from": [
@@ -455,7 +475,8 @@
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "vector-xy-four-oscillator-crossfade-blend",
     "wavetable-crossfade-morph-modulate-pad",
-    "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
+    "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+    "lush-dual-saw-filter-env-nonretrigger-lfo-pad"
   ],
   "tags": [
     "additive",
@@ -510,6 +531,7 @@
     "traveler-walkthrough-wavetable-morph-filter-motion",
     "vector-xy-four-oscillator-crossfade-blend",
     "wavetable-crossfade-morph-modulate-pad",
-    "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew"
+    "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
+    "lush-dual-saw-filter-env-nonretrigger-lfo-pad"
   ]
 }

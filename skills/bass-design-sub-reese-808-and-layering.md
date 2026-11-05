@@ -141,3 +141,12 @@ Source: [This Will Change How You Mix Kick And Bass FOREVER](https://www.youtube
 - Level 3b: sweep the sub's fixed start phase while watching the summed waveform and listening; pick the setting where the sum is loudest and steadiest, confirming by blind A/B.
 - Level 3c: if the sub's cycles are slightly offset from the kick's, add a tiny track delay (fractions of a ms) to the bass to line the waveforms up; blind A/B.
 - Level 4: route kick and all bass layers to one bus. Add a small amount of low-end/subharmonic saturation (easy to overdo), then a glue compressor at about 30 ms attack for 1-2 dB gain reduction with make-up gain, then a soft clip. If more than ~2 dB is needed, fix earlier steps instead.
+
+### Mono-compatible wide bass: strip the fundamental from a unison wavetable (FFT/harmonic editor), keep the wide upper harmonics with unison, then add a separate mono sine as the fundamental with phase-randomize at 0
+Source: [How to make any "WIDE BASS" mono-compatible!](https://www.youtube.com/watch?v=5oW5Mb-3sF0) · was `wide-bass-remove-fundamental-add-mono-sine`
+- Start from a saw (or similarly bright) wavetable. Optionally add a gentle low-pass so the raw tone is easier on the ears.
+- Open the wavetable / FFT / harmonic editor. Identify the first harmonic (fundamental) and remove or zero it so the table is overtones only. Solo A/B: the tone should sound thinner and weaker.
+- Enable unison on that weakened oscillator (e.g. 5 voices) with a small detune (source default ~0.25). This widens only the overtones.
+- Enable a second oscillator as a pure sine at the same pitch. Leave its unison off. This sine is the new fundamental.
+- Set the sine oscillator's phase-randomize / rand to 0 so every note starts at the same phase (stable for kick alignment). Do not zero rand on a normal full-spectrum unison Reese — that creates a sweeping laser artifact and still collapses in mono.
+- A/B the patch in mono: the fundamental-stripped+sine version keeps power; a normal unison Reese pumps and thins. Optionally check an oscilloscope against the kick.

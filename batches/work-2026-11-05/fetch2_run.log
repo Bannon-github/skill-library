@@ -1,0 +1,81 @@
+## JP5yTtT-gbk 2026-11-05T10:22:47-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JP5yTtT-gbk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JP5yTtT-gbk/raw.txt",
+  "translated": false,
+  "retries": []
+}
+3697 raw/JP5yTtT-gbk/raw.txt
+## I47BM2qaL2w 2026-11-05T10:23:19-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/I47BM2qaL2w/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/I47BM2qaL2w/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1993 raw/I47BM2qaL2w/raw.txt
+## CT8vQewKnFE 2026-11-05T10:23:52-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/CT8vQewKnFE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/CT8vQewKnFE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+3178 raw/CT8vQewKnFE/raw.txt
+## M7fEMi8VSy4 2026-11-05T10:24:25-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/M7fEMi8VSy4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/M7fEMi8VSy4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1227 raw/M7fEMi8VSy4/raw.txt
+## f_XQfAONZw8 2026-11-05T10:24:58-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/f_XQfAONZw8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/f_XQfAONZw8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1418 raw/f_XQfAONZw8/raw.txt
+## Lo9njrFnkTM 2026-11-05T10:25:30-07:00
+  "duration": 406,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT Lo9njrFnkTM
+## bN7dgR9a7BI 2026-11-05T10:26:04-07:00
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/bN7dgR9a7BI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/bN7dgR9a7BI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1808 raw/bN7dgR9a7BI/raw.txt
+## MsT_yjp5kpI 2026-11-05T10:26:37-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/MsT_yjp5kpI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/MsT_yjp5kpI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1551 raw/MsT_yjp5kpI/raw.txt
+## ySjZQ697Mt0 2026-11-05T10:27:10-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ]
+}
+2604 raw/ySjZQ697Mt0/raw.txt
+## uEGE-B53UPs 2026-11-05T10:28:21-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ]
+}
+752 raw/uEGE-B53UPs/raw.txt
+FETCH_DONE 2026-11-05T10:29:33-07:00

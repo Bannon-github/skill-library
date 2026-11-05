@@ -1,0 +1,109 @@
+{
+ "topic": "exciter air pad sound design tutorial",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "exciter air pad sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "y4w_mNuhxmw",
+   "title": "digicore sound design for beginners",
+   "channel": "nightiger",
+   "duration": 754,
+   "view_count": 1015052,
+   "url": "https://www.youtube.com/watch?v=y4w_mNuhxmw",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.5
+  },
+  {
+   "id": "ySjZQ697Mt0",
+   "title": "How to SYNTH PAD without Boring Everyone",
+   "channel": "Jameson Nathan Jones",
+   "duration": 1100,
+   "view_count": 156437,
+   "url": "https://www.youtube.com/watch?v=ySjZQ697Mt0",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.1
+  },
+  {
+   "id": "9ovTP2QEo50",
+   "title": "Producer's Guide To... Korg Minilogue: Creating bass, pads and leads",
+   "channel": "MusicRadar Tech",
+   "duration": 950,
+   "view_count": 133875,
+   "url": "https://www.youtube.com/watch?v=9ovTP2QEo50",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.06
+  },
+  {
+   "id": "R30L1fIKzpU",
+   "title": "12 sound design tricks I use!",
+   "channel": "ANDREW HUANG",
+   "duration": 797,
+   "view_count": 1213138,
+   "url": "https://www.youtube.com/watch?v=R30L1fIKzpU",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "jW1YvzHvCrU",
+   "title": "How To Synthesize Realistic Water",
+   "channel": "Amfivolía",
+   "duration": 1237,
+   "view_count": 143422,
+   "url": "https://www.youtube.com/watch?v=jW1YvzHvCrU",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.08
+  },
+  {
+   "id": "ligI6TVlwak",
+   "title": "Kronos FX: Stereo Exciter/Enhancer pt1",
+   "channel": "Patterns in Noise",
+   "duration": 1159,
+   "view_count": 320,
+   "url": "https://www.youtube.com/watch?v=ligI6TVlwak",
+   "query": "exciter air pad sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.75
+  }
+ ],
+ "dropped": [
+  {
+   "id": "IK7cIBPKM1s",
+   "why": "already known"
+  },
+  {
+   "id": "MUspcGU_Il8",
+   "why": "duration 83s"
+  },
+  {
+   "id": "CcXGRCXv8lQ",
+   "why": "already known"
+  },
+  {
+   "id": "BYzagFV0eLM",
+   "why": "duration 5154s"
+  },
+  {
+   "id": "N0wZ0qWH3sY",
+   "why": "duration 161s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -229,6 +229,11 @@
     "start-bright-then-filter-pad": "brightness-and-air-at-the-source",
     "kick-bass-four-level-lock": "bass-design-sub-reese-808-and-layering",
     "genre-drum-pattern-families-tempo-map": "drum-groove-programming-swing-and-ghosts",
-    "atmospheric-liquid-dnb-break-layering": "drum-synthesis-and-hybrid-percussion"
+    "atmospheric-liquid-dnb-break-layering": "drum-synthesis-and-hybrid-percussion",
+    "wide-bass-remove-fundamental-add-mono-sine": "bass-design-sub-reese-808-and-layering",
+    "width-by-juxtaposition-ms-sides-reverb": "stereo-width-haas-midside-mono-safe",
+    "lush-dual-saw-filter-env-nonretrigger-lfo-pad": "wavetable-and-vector-morph-pads",
+    "nested-lfo-layered-riser-downer-kit": "risers-impacts-transition-fx",
+    "cloakroom-check-lpf-shelf-low-end-balance": "mix-eq-gain-staging-and-balance"
   }
 }

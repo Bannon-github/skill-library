@@ -1,0 +1,64 @@
+{
+  "video_id": "A52l7uG3Sq4",
+  "title": "How to Make Your Kicks HIT HARDER in 4 EASY Steps | Logic Pro X Tutorial",
+  "url": "https://www.youtube.com/watch?v=A52l7uG3Sq4",
+  "fetched_at": "2026-11-05T17:14:13.530130+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tony Holiday",
+  "duration": 535,
+  "ok": true,
+  "cue_count": 107,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/A52l7uG3Sq4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/A52l7uG3Sq4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "ar(auto)",
+        "bn(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

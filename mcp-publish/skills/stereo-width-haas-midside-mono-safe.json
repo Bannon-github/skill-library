@@ -32,6 +32,12 @@
         "video_id": "Mm5eO24aAec",
         "url": "https://www.youtube.com/watch?v=Mm5eO24aAec",
         "title": "3 Stereo Width Tricks (That Sound Great In Mono)"
+      },
+      {
+        "from_skill": "width-by-juxtaposition-ms-sides-reverb",
+        "video_id": "zscsukQNOLU",
+        "url": "https://www.youtube.com/watch?v=zscsukQNOLU",
+        "title": "Get A Wide Mix Without Any Issues!"
       }
     ]
   },
@@ -176,13 +182,26 @@
         "Fix the lopsided tilt: split into bands, tilt the mid band to the right and the treble band to the left, then reduce width and re-level.",
         "Apply these to one headline sound (incidental FX/ear candy for Haas) while keeping most of the mix centred."
       ]
+    },
+    {
+      "from_skill": "width-by-juxtaposition-ms-sides-reverb",
+      "name": "Perceived width from narrow↔wide juxtaposition, real double-tracked (not cloned) hard pans, and a mono-safe stereo bed: mid-side EQ that nearly kills the mids on a send, plus reverb that decorrelates only the sides while the dry center stays untouched",
+      "goal": "Make a mix feel dramatically wide without master-bus wideners or phase-wrecked lows: write and arrange moments that open from narrower sections (juxtaposition), pan two real performances of the same part L/R (not a flipped copy), and for bass/beds use mid-side processing so the center stays dry and mono while only the sides get EQ lift and reverb. Delta vs stereo-width cluster: treats width as an arrangement/timing contrast first, insists on true double-tracks for L/R pan width, and the concrete M/S recipe of ~−30 dB mid cut on a parallel path plus dry-center / wet-sides reverb for mono-compatible stereo bass.",
+      "steps": [
+        "Audit the arrangement: if everything is always wide, listeners adapt and nothing feels immersive. Plan narrower (near-mono) sections that precede the wide moments so the spread reads as a change.",
+        "For L/R width on a featured layer (e.g. vocals, guitars): use two real performances or differently processed takes of the same line and pan them apart (source example ~30 either way). A/B against a hard-panned clone of one take — the clone will not create the same image.",
+        "Build a mono-safe stereo bed for bass or a dense layer: send or parallel-process through a mid-side EQ and cut the mid channel hard (source: about −30 dB) so almost only sides remain on that path; optionally lift selected side bands. The dry center path keeps the mono power.",
+        "Feed that sides-heavy path into a reverb so the sides gain space while the middle stays completely dry and raw — mono fold-down still has the dry center.",
+        "Optional: light sidechain from drums into competing wide layers so mono-focused hits still punch. Check the whole mix in mono."
+      ]
     }
   ],
   "merged_from": [
     "asymmetric-left-right-processing-width-mono-safe",
     "haas-plus-phase-offset-width-automated",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
-    "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas"
+    "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+    "width-by-juxtaposition-ms-sides-reverb"
   ],
   "tags": [
     "allpass",
@@ -220,6 +239,7 @@
     "asymmetric-left-right-processing-width-mono-safe",
     "haas-plus-phase-offset-width-automated",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
-    "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas"
+    "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
+    "width-by-juxtaposition-ms-sides-reverb"
   ]
 }

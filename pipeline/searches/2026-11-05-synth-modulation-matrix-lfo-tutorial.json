@@ -1,0 +1,101 @@
+{
+ "topic": "synth modulation matrix LFO tutorial",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "synth modulation matrix LFO tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "OkgFNh6oQPU",
+   "title": "Oxi One Modulation and LFOs  tutorial Part 1 - Building Blocks of Modulation  with Modular Synths",
+   "channel": "SynthDad",
+   "duration": 933,
+   "view_count": 13095,
+   "url": "https://www.youtube.com/watch?v=OkgFNh6oQPU",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.56
+  },
+  {
+   "id": "Qp4mV7wzDGA",
+   "title": "Novation MiniNova: Mod Matrix tutorial with LFO modulation",
+   "channel": "Soundthesis",
+   "duration": 510,
+   "view_count": 434,
+   "url": "https://www.youtube.com/watch?v=Qp4mV7wzDGA",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.82
+  },
+  {
+   "id": "5KnPzdulawg",
+   "title": "Learn Vital Synth - Tutorial Lesson 02 - Filters & Modulation",
+   "channel": "Born To Produce",
+   "duration": 764,
+   "view_count": 41438,
+   "url": "https://www.youtube.com/watch?v=5KnPzdulawg",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.81
+  },
+  {
+   "id": "Da5mtDCI0jQ",
+   "title": "Tutorials | MiniFreak - Modulation Matrix",
+   "channel": "Arturia",
+   "duration": 1250,
+   "view_count": 28440,
+   "url": "https://www.youtube.com/watch?v=Da5mtDCI0jQ",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.73
+  },
+  {
+   "id": "fEapCjx1l1I",
+   "title": "Factory Tutorial Part 4   Modulation Matrix Basics",
+   "channel": "Sugar Bytes",
+   "duration": 705,
+   "view_count": 9303,
+   "url": "https://www.youtube.com/watch?v=fEapCjx1l1I",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.48
+  },
+  {
+   "id": "CT8vQewKnFE",
+   "title": "Synthesis 101- How to use any modulation matrix (using the Minifreak)",
+   "channel": "Nu-Trix The Synth Guy",
+   "duration": 1450,
+   "view_count": 7587,
+   "url": "https://www.youtube.com/watch?v=CT8vQewKnFE",
+   "query": "synth modulation matrix LFO tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.44
+  }
+ ],
+ "dropped": [
+  {
+   "id": "LtJu81zOc88",
+   "why": "duration 188s"
+  },
+  {
+   "id": "UxGswh6XLto",
+   "why": "already known"
+  },
+  {
+   "id": "hw8wTpDY5ZQ",
+   "why": "duration 104s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

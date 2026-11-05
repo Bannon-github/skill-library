@@ -1,0 +1,46 @@
+{
+  "video_id": "JP5yTtT-gbk",
+  "title": "Ambient Synth Pad Sound Design with Ableton Wavetable (Tutorial)",
+  "url": "https://www.youtube.com/watch?v=JP5yTtT-gbk",
+  "fetched_at": "2026-11-05T17:22:47.232736+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Dr Brown Music",
+  "duration": 1480,
+  "ok": true,
+  "cue_count": 579,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JP5yTtT-gbk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JP5yTtT-gbk/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

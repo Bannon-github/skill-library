@@ -1,0 +1,46 @@
+{
+  "video_id": "M7fEMi8VSy4",
+  "title": "How To Sound Design Complex Risers (using Vital)",
+  "url": "https://www.youtube.com/watch?v=M7fEMi8VSy4",
+  "fetched_at": "2026-11-05T17:24:25.375016+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Negativist",
+  "duration": 457,
+  "ok": true,
+  "cue_count": 195,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/M7fEMi8VSy4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/M7fEMi8VSy4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

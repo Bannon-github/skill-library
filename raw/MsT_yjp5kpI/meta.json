@@ -1,0 +1,46 @@
+{
+  "video_id": "MsT_yjp5kpI",
+  "title": "Why your low end sounds amateur (maybe)",
+  "url": "https://www.youtube.com/watch?v=MsT_yjp5kpI",
+  "fetched_at": "2026-11-05T17:26:37.650019+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Underdog Electronic Music School",
+  "duration": 528,
+  "ok": true,
+  "cue_count": 227,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/MsT_yjp5kpI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/MsT_yjp5kpI/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

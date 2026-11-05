@@ -1,0 +1,106 @@
+{
+ "topic": "ambient cinematic song structure arrangement tutorial",
+ "date": "2026-11-05",
+ "params": {
+  "topic": "ambient cinematic song structure arrangement tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "YtGqFx2W_FQ",
+   "title": "How to Write Ambient Fantasy Music (Like Skyrim)",
+   "channel": "Tabletop Composer",
+   "duration": 1413,
+   "view_count": 28512,
+   "url": "https://www.youtube.com/watch?v=YtGqFx2W_FQ",
+   "query": "ambient cinematic song structure arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.73
+  },
+  {
+   "id": "Lo9njrFnkTM",
+   "title": "Making An Ambient Track From Scratch - Part 10 - (Arrangement)",
+   "channel": "M:M Music",
+   "duration": 407,
+   "view_count": 27,
+   "url": "https://www.youtube.com/watch?v=Lo9njrFnkTM",
+   "query": "ambient cinematic song structure arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.22
+  },
+  {
+   "id": "Fj3jwdLBD60",
+   "title": "How to Write Your First Piece of Cinematic Music",
+   "channel": "Composing Academy",
+   "duration": 1885,
+   "view_count": 107100,
+   "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+   "query": "ambient cinematic song structure arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.51
+  },
+  {
+   "id": "f_XQfAONZw8",
+   "title": "Ambient music: turning your clips into a structure",
+   "channel": "Adam Gaensler",
+   "duration": 684,
+   "view_count": 397,
+   "url": "https://www.youtube.com/watch?v=f_XQfAONZw8",
+   "query": "ambient cinematic song structure arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.8
+  },
+  {
+   "id": "HsCHTobiv6Y",
+   "title": "Writing an Ambient Track in 10-Minutes",
+   "channel": "Matt Tinkler",
+   "duration": 863,
+   "view_count": 2131,
+   "url": "https://www.youtube.com/watch?v=HsCHTobiv6Y",
+   "query": "ambient cinematic song structure arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.16
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "0bB8rWEcScA",
+   "why": "already known"
+  },
+  {
+   "id": "C871ckX4GfQ",
+   "why": "already known"
+  },
+  {
+   "id": "RqHKX4BDJ1Q",
+   "why": "duration 199s"
+  },
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,64 @@
+{
+  "video_id": "4Dub1HigXtU",
+  "title": "Making INFINITE Ambient Pads Like The 1975 (Ableton Sound Design Tutorial)",
+  "url": "https://www.youtube.com/watch?v=4Dub1HigXtU",
+  "fetched_at": "2026-11-05T17:13:39.330300+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Velvet Year (Seth Goodwin)",
+  "duration": 1270,
+  "ok": true,
+  "cue_count": 507,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/4Dub1HigXtU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4Dub1HigXtU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

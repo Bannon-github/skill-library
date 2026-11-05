@@ -80,3 +80,12 @@ Source: [Saturation Is Killing Your Mix](https://www.youtube.com/watch?v=GomiGC_
 - Map the follower's output to the gain device in chain B.
 - Set the follower base around 30-40% and the amount around 60-70%, then adjust until saturated hits match the original punch.
 - Compare in the mix; for melodic loops combine with sidechain ducking to the drum loop for pump.
+
+### Cloak-room check: put a steep low-pass last on the master to audition only the club-wall low end, diagnose kick-only vs masking mush vs clear priorities, then balance kick (reference) and bass with simple low and mid shelves while the check stays on
+Source: [Why your low end sounds amateur (maybe)](https://www.youtube.com/watch?v=MsT_yjp5kpI) · was `cloakroom-check-lpf-shelf-low-end-balance`
+- Insert a low-pass filter as the last thing on the master (or an audition bus). Sweep it so you mainly hear the sub/low body — the 'cloak-room check' (what you hear queuing outside the club).
+- With the check on, A/B your low end against three failure modes: (A) kick-only / overly separated (amateur 'just kicks'), (B) everything masking everything (bass buries the kick; no danceable story), (C) clear priorities that still blend and groove as one part. Aim for C.
+- Treat bass as having both a low band and a mid band (and sometimes highs). You will balance those bands separately with shelves, not as one fader.
+- Solo or focus the kick under the cloak-room check; leave its level as the reference. Bring the bass in and use a low shelf to set its sub/low body against the kick until the kick stays readable but the bass has weight.
+- Still under the check (or briefly off for mids): use a mid/upper shelf on the bass to sit its harmonic body against other mid elements without needing multiband or parallel tricks. Prefer the simplest shelf moves that get priorities clear.
+- Remove or bypass the cloak-room filter and confirm the full mix still grooves; accept a little masking if the story is clear.

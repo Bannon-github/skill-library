@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "id": "nested-lfo-layered-riser-downer-kit",
+  "name": "Complex transition kit: one envelope-mode LFO (≈2 bars) drives global pitch and also the rate of a second LFO (nested acceleration) for distortion drive or volume stutters; layer a sine downer, a high stutter riser, a multi-osc main riser (levels/drive/filter/reverb wet all under LFO1), a detuned atmosphere bed, then group with automated high-passes so early bars favour the downer/stutter and later bars favour the main rise",
+  "goal": "Build a cinematic riser/downer stack that feels more complex than a single pitch sweep: use one master envelope-LFO as a timeline that both bends pitch and accelerates a second LFO (nested rate modulation) for stutter or grit, then layer contrasting roles (downer, high stutter, main rise, atmosphere) and automate high-passes between subgroups. Delta vs risers-impacts cluster: LFO1→LFO2-frequency nesting as the acceleration engine, plus the explicit multi-role layer kit and HPF automation between layers rather than a single whoosh or Shepard stack.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "M7fEMi8VSy4",
+    "url": "https://www.youtube.com/watch?v=M7fEMi8VSy4",
+    "title": "How To Sound Design Complex Risers (using Vital)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/M7fEMi8VSy4/agent-skill-nested-lfo-layered-riser-downer-kit.json",
+    "batch": "2026-11-05-morning-hunt"
+  },
+  "prerequisites": [
+    "Synth with ≥2 oscillators, unison/smear, global pitch/transpose, ≥2 LFOs (envelope mode + free-running rate in seconds), mod matrix, distortion, filter, EQ, compressor, reverb",
+    "DAW groups and automation"
+  ],
+  "inputs": [
+    {
+      "name": "length_bars",
+      "type": "number",
+      "description": "Riser/downer length in bars (source uses 2)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "transition_fx",
+      "type": "audio",
+      "description": "Layered riser/downer/atmosphere transition ready to place before a hit"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate in browser/Web Audio (Polyrhythm Studio) or any DAW/synth with comparable modules; no presets, banks, impulse responses or samples copied.",
+    "Map movement to filter, level, drive and spectral morph — keep intentional musical pitch bends on a dedicated global-pitch lane, not random vibrato.",
+    "Low-cut competing layers when a downer owns the sub.",
+    "No copied factory presets.",
+    "Drums early (Matt's taste): if the track has drums, the kick/drum loop enters by about count 8 (roughly 10-12 s), with only the pad before that.",
+    "Steady pitch: leave out intentional pitch-drift LFOs unless the brief asks for tape wobble (Matt prefers steady pitch)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Downer layer: sine on osc 1. Put LFO1 in envelope mode for ~2 bars into global pitch/transpose so the tone falls. Enable distortion; put LFO2 on drive amount, set LFO2 rate in seconds, and route LFO1 → LFO2 rate so grit accelerates as the pitch falls.",
+      "tool": "Osc + LFO matrix + distortion",
+      "expect": "Falling tone with accelerating grit"
+    },
+    {
+      "n": 2,
+      "action": "On the downer add a second oscillator with a few unison voices and smear; route LFO1 to its spectral-morph (or wavetable position). Low-pass / EQ so the full bright spectrum arrives only near the end of the 2 bars; give the amp a little attack.",
+      "tool": "Osc 2 + filter/EQ",
+      "expect": "Downer blooms spectrally as it falls"
+    },
+    {
+      "n": 3,
+      "action": "High stutter riser (new patch): sine pitched up several octaves, light unison, LFO1 envelope → global pitch upward. LFO2 → oscillator level for stutter; again LFO1 → LFO2 rate (seconds) so the stutter speeds up. Filter highs early; optionally bring osc 2 in under the same LFO2 level for bite.",
+      "tool": "Second patch + nested LFOs",
+      "expect": "Rising stutter that accelerates"
+    },
+    {
+      "n": 4,
+      "action": "Main riser: LFO1 envelope (~2 bars) to global pitch and to the level of all oscillators (bias one osc louder). Spread osc pitches (e.g. +2 oct / dominant mid / −1 oct). LFO1 also to distortion drive, to a high-shelf or filter cutoff, and to reverb mix starting near 100% wet then decreasing while size grows.",
+      "tool": "Third patch + FX",
+      "expect": "Full-spectrum rise with drying space"
+    },
+    {
+      "n": 5,
+      "action": "Duplicate the main riser and pitch the copy higher (or down an octave for a variant); trim noise. Add an atmosphere patch: heavily detuned oscillators, lots of reverb, mild LFO1→global pitch rise, optional noise and higher-octave detuned layers.",
+      "tool": "Atmosphere patch",
+      "expect": "Soft bed under the rise"
+    },
+    {
+      "n": 6,
+      "action": "Group the stack. Automate high-passes so early bars favour the downer + high stutter (other layers darker), then open them; high-pass the downer later so it does not dominate the end. Bus EQ (cut mud), light compression and a limiter; balance levels.",
+      "tool": "Groups + automation + bus",
+      "expect": "Clean layered transition"
+    }
+  ],
+  "verification": [
+    "LFO2 rate audibly accelerates when LFO1 rises (nested).",
+    "Downer, stutter riser, main riser and atmosphere are separately audible roles.",
+    "Early bars are darker / HPF-managed; end is full-spectrum without sub mud from every layer."
+  ],
+  "tags": [
+    "riser",
+    "downer",
+    "lfo",
+    "modulation",
+    "transition",
+    "cinematic",
+    "fx",
+    "nested-modulation",
+    "vital-portable",
+    "portable",
+    "steady-pitch",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://nested-lfo-layered-riser-downer-kit"
+}

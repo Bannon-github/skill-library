@@ -1,0 +1,3 @@
+# Rejected: ZKR8ODDIWqE
+
+Substantial kick-mixing walkthrough but membership/sample-pack promo-heavy, and core ideas already in mix-eq, sidechain-ducking, bass/kick-bass-four-level-lock, and drum clusters (anatomy, length vs bass, EQ in context, multiband, long-attack punch, send reverb low-cut). Notable deltas logged but not published as a new skill this run: reverse-transient placed just before the kick; prefer low-shelf over linear-phase-off HPF to clear sub bleed without weakening the kick; multiband sidechain of bass lows only; kick+clap group distortion. Also skips the "extract kick bands from a commercial reference track" tip (not a portable original recipe).
