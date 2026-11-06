@@ -1,0 +1,210 @@
+{
+ "seed": 1106,
+ "bpm": 80,
+ "bars": 24,
+ "tailSec": 4.0,
+ "category": "pad",
+ "key": "Dminor",
+ "scale": [
+  38,
+  40,
+  41,
+  43,
+  45,
+  46,
+  48
+ ],
+ "chords": [
+  [
+   38,
+   [
+    50,
+    53,
+    57,
+    60
+   ]
+  ],
+  [
+   34,
+   [
+    46,
+    50,
+    53,
+    58
+   ]
+  ],
+  [
+   41,
+   [
+    53,
+    57,
+    60,
+    65
+   ]
+  ],
+  [
+   36,
+   [
+    48,
+    52,
+    55,
+    60
+   ]
+  ]
+ ],
+ "chordOrderA": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "chordOrderB": [
+  0,
+  2,
+  1,
+  3
+ ],
+ "sections": {
+  "open": 0,
+  "strings": 3,
+  "drumsIn": 4,
+  "ostinato": 6,
+  "motif": 10,
+  "peak": 14,
+  "outro": 19,
+  "drumsOut": 22,
+  "end": 24
+ },
+ "genPad": {
+  "level": 0.72,
+  "attack": 0.9,
+  "release": 1.4,
+  "arpRateBeats": 0.5,
+  "arpGate": 0.55,
+  "randomChance": 0.85,
+  "degreeWeights": [
+   0.33,
+   0.083,
+   0.417,
+   0.083,
+   0.087
+  ],
+  "loopBars": [
+   5,
+   7,
+   11
+  ],
+  "midUnison": 5,
+  "midDetune": 8,
+  "highUnison": 4,
+  "highDetune": 14,
+  "bassLevel": 0.28,
+  "bassLfoDepth": 0.45,
+  "hpfLfoBase": 90,
+  "hpfLfoDepth": 70,
+  "sendFloor": 0.18,
+  "sendDepth": 0.35,
+  "octUpLevel": 0.22,
+  "verbRt": 6.0,
+  "verbMix": 0.48,
+  "verbHp": 220,
+  "cutBase": 2800,
+  "cutPeak": 5200,
+  "imagerSide": 1.05,
+  "bright": 1.5
+ },
+ "air": {
+  "level": 0.09,
+  "hpfHz": 650,
+  "exciterDrive": 1.35,
+  "exciterMix": 0.22,
+  "shelfDb": 2.0,
+  "shelfHz": 4500,
+  "hissLevel": 0.55,
+  "chirpLevel": 0.7,
+  "chirpRate": 0.35,
+  "tremRate": 0.07,
+  "tremDepth": 0.25,
+  "panRate": 0.03
+ },
+ "piano": {
+  "level": 0.55,
+  "attack": 0.012,
+  "release": 2.2,
+  "harmonics": [
+   1.0,
+   0.45,
+   0.22,
+   0.1
+  ],
+  "verbMix": 0.35
+ },
+ "strings": {
+  "level": 0.48,
+  "attack": 1.8,
+  "release": 2.0,
+  "unison": 6,
+  "detune": 11,
+  "cut": 3400
+ },
+ "ostinato": {
+  "level": 0.38,
+  "decay": 0.28,
+  "cutoff": 2600,
+  "pattern": [
+   0,
+   2,
+   1,
+   2,
+   0,
+   1,
+   3,
+   1
+  ]
+ },
+ "melody": {
+  "level": 0.42,
+  "motifRhythm": [
+   0.0,
+   0.75,
+   1.5,
+   2.5
+  ],
+  "motifDegA": [
+   4,
+   2,
+   0,
+   2
+  ],
+  "motifDegB": [
+   5,
+   4,
+   2,
+   7
+  ],
+  "attack": 0.08,
+  "release": 0.9,
+  "counterLevel": 0.32,
+  "doubleLevel": 0.55
+ },
+ "pulse": {
+  "level": 0.24,
+  "rateBeats": 1.0,
+  "subLevel": 0.55
+ },
+ "drums": {
+  "level": 0.22,
+  "kick": 0.9,
+  "hat": 0.18,
+  "rim": 0.22,
+  "crash": 0.12
+ },
+ "master": {
+  "shelfDb": 2.4,
+  "satDrive": 1.15,
+  "sideHpHz": 180,
+  "fadeOutSec": 3.5,
+  "targetLufs": -17.0,
+  "tpCeil": -1.4
+ }
+}
