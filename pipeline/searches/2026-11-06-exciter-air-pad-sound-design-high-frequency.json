@@ -1,0 +1,123 @@
+{
+ "topic": "exciter air pad sound design high frequency",
+ "date": "2026-11-06",
+ "params": {
+  "topic": "exciter air pad sound design high frequency",
+  "langs": "en",
+  "per_query": 15,
+  "top": 3,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "vRa_Zk90lDc",
+   "title": "EQ Explained in 10 Minutes ... or it's free",
+   "channel": "Nathan James Larsen",
+   "duration": 587,
+   "view_count": 706935,
+   "url": "https://www.youtube.com/watch?v=vRa_Zk90lDc",
+   "query": "exciter air pad sound design high frequency tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.42,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "VBBsuvFGpHc",
+   "title": "CRAZY halftime tune with my Top 5 VST's for Black Friday at Plugin Boutique | Ableton Tutorial",
+   "channel": "STRANJAH",
+   "duration": 1038,
+   "view_count": 7138,
+   "url": "https://www.youtube.com/watch?v=VBBsuvFGpHc",
+   "query": "exciter air pad sound design high frequency tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.43,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "ar",
+     "bn",
+     "nl-NL",
+     "en",
+     "fr-FR",
+     "de-DE"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "DyHpBtS9Iso",
+   "title": "The last VOCAL EQ video you ever need to watch...",
+   "channel": "The Band Guide",
+   "duration": 670,
+   "view_count": 273636,
+   "url": "https://www.youtube.com/watch?v=DyHpBtS9Iso",
+   "query": "exciter air pad sound design high frequency tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.22,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "N0wZ0qWH3sY",
+   "why": "duration 161s"
+  },
+  {
+   "id": "tFAcYruShow",
+   "why": "duration 104s"
+  },
+  {
+   "id": "QDQyAwCNHcA",
+   "why": "duration 118s"
+  },
+  {
+   "id": "SN6p5U4r-sw",
+   "why": "duration 61s"
+  },
+  {
+   "id": "GEz-Ahpj99w",
+   "why": "duration 37s"
+  },
+  {
+   "id": "MTqWEIIraZY",
+   "why": "duration 20s"
+  },
+  {
+   "id": "TM24x-qV2og",
+   "why": "duration 42896s"
+  },
+  {
+   "id": "-P1UmI9PgYQ",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

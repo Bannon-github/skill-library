@@ -1,0 +1,52 @@
+{
+  "video_id": "QDdaYRzPN9E",
+  "title": "Wavetable Synthesis with New Tools for Sound Design | HALion 7 new Features",
+  "url": "https://www.youtube.com/watch?v=QDdaYRzPN9E",
+  "fetched_at": "2026-11-06T16:26:39.723882+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "VST Instruments & Plug-Ins",
+  "duration": 346,
+  "ok": true,
+  "cue_count": 116,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/QDdaYRzPN9E/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/QDdaYRzPN9E/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt(auto)",
+        "es(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

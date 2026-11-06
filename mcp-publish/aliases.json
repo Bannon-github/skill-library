@@ -234,6 +234,9 @@
     "width-by-juxtaposition-ms-sides-reverb": "stereo-width-haas-midside-mono-safe",
     "lush-dual-saw-filter-env-nonretrigger-lfo-pad": "wavetable-and-vector-morph-pads",
     "nested-lfo-layered-riser-downer-kit": "risers-impacts-transition-fx",
-    "cloakroom-check-lpf-shelf-low-end-balance": "mix-eq-gain-staging-and-balance"
+    "cloakroom-check-lpf-shelf-low-end-balance": "mix-eq-gain-staging-and-balance",
+    "generative-midi-chord-arp-random-scale-quantize-pad": "generative-ambient-drones-and-soundscapes",
+    "cinematic-seven-section-arc-ostinato-countermelody-bookend": "arrangement-ambient-cinematic-score",
+    "field-recording-hpf-exciter-air-layer": "brightness-and-air-at-the-source"
   }
 }

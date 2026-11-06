@@ -1,0 +1,48 @@
+{
+  "video_id": "I_4d4U3Ti9k",
+  "title": "Pick the Perfect Kick Drum Every Single Time",
+  "url": "https://www.youtube.com/watch?v=I_4d4U3Ti9k",
+  "fetched_at": "2026-11-06T16:21:17.557688+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EDM Tips",
+  "duration": 1253,
+  "ok": true,
+  "cue_count": 234,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/I_4d4U3Ti9k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/I_4d4U3Ti9k/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en",
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en",
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

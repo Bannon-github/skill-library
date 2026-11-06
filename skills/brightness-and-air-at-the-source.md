@@ -27,3 +27,12 @@ Source: [Sound Design - Ambient Pads and Atmospheres](https://www.youtube.com/wa
 - Space: a very large reverb at high mix with plenty of low-cut (filter before or after reverb, either order works), then an EQ cutting excess low end and optionally a second reverb.
 - Add a stereo imager after the reverbs and A/B: without it the pad sits far in front; with it the pad wraps around the listener.
 - Swell variant: play chords or a melody on any source (guitar, piano, vocal), start slightly before the bar, and put a gain envelope first in the chain that rises from 0 at the bar so the attack is removed. Then low-cut EQ, imager, and reverb, which is now fed only by the swell.
+
+### Ambient air layer from a field recording: HPF out traffic lows, subtle harmonic exciter for upper sparkle, light high-end lift; keep it subtle to avoid glassy mess
+Source: [Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes](https://www.youtube.com/watch?v=HPDGp6b829s) · was `field-recording-hpf-exciter-air-layer`
+- Place a field recording on its own track above the ambient bed. Solo and find the useful high detail (e.g. a bird call) and the muddy low end (traffic / human noise pollution).
+- High-pass the recording to remove the low-end pollution. Expect the bed to sound a bit colder/thinner — that is intended before air is restored.
+- Add a subtle harmonic exciter / upper-band enhancer ('fresh air' style) to excite upper frequencies so the clip sounds less dull and distant calls poke through. Keep the amount very low.
+- Optionally add a small high-end shelf/boost for the same emphasis. A/B against the bed; if it turns glassy or harsh, back off exciter then shelf.
+- Optional motion (same chain idea on a second ambience layer): duplicate with time-stretch/smear automation alternating wet/dry, and/or slow tremolo with changing rate that also pans L↔R for headphone width. Keep levels under the musical bed.
+- In the full mix, verify the air layer adds space above ~ several kHz without muddying the pad/drone. Use storytelling markers (a single call → larger event) if arranging a nature-to-elsewhere transition.

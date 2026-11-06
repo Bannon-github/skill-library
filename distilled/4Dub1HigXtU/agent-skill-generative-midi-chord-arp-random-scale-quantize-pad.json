@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "generative-midi-chord-arp-random-scale-quantize-pad",
+  "name": "Generative ambient pad from a MIDI FX chain: chord → arp → random → scale-quantize last, uneven loop lengths, send-return FX as blendable layers, slow LFOs on send/filter/gain",
+  "goal": "Build a long, non-looping ambient pad from one held note by chaining portable MIDI processors (chord generator → arpeggiator → random pitch → scale quantizer LAST), layering octave/texture ranges, stacking uneven loop lengths (5/7/18 bars) so repeats never line up, routing FX sends back to audio tracks as blendable layers, and driving send amount / HPF / tone / gain with slow free-running LFOs. Delta vs generative-ambient-drones (clip-pool chance, seed-random MIDI clip, noise-wind, random-modulators): this is a live MIDI-effect chain with scale-quantize forced at the end and probability-weighted scale degrees (root/fifth-heavy), plus uneven multi-bar loops and send-return FX treated as instruments.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "4Dub1HigXtU",
+    "url": "https://www.youtube.com/watch?v=4Dub1HigXtU",
+    "title": "Making INFINITE Ambient Pads Like The 1975 (Ableton Sound Design Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/4Dub1HigXtU/agent-skill-generative-midi-chord-arp-random-scale-quantize-pad.json",
+    "batch": "2026-11-06-morning-hunt"
+  },
+  "prerequisites": [
+    "Any DAW with MIDI FX or equivalent (chord/interval generator, arpeggiator, random/chance pitch, scale quantizer) and send/return routing",
+    "One or more tonal sources (felt piano, soft guitar, synth pad) covering distinct octave/texture ranges",
+    "At least one free-running LFO / macro modulator that can map to send level, filter cutoff, and gain"
+  ],
+  "inputs": [
+    {
+      "name": "held_root_or_sparse_notes",
+      "type": "midi",
+      "description": "One held note or sparse MIDI that the MIDI FX chain expands",
+      "required": true
+    },
+    {
+      "name": "key_and_scale",
+      "type": "param",
+      "description": "Target key/scale for the final quantizer (e.g. C major pentatonic, or root+fifth-only for cleaner pads)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "generative_ambient_pad_bed",
+      "type": "audio",
+      "description": "Long unique pad stem (render or live) that does not hard-loop every 4 bars"
+    }
+  ],
+  "constraints": [
+    "Original synthesis/processing recipe; not affiliated with any vendor named in the source. Recreate with stock MIDI FX / Web Audio / any DAW; no proprietary presets, banks, or sample packs copied.",
+    "Scale quantizer MUST be last in the MIDI chain so random/arp notes cannot leave the chosen scale.",
+    "Prefer root/fifth-heavy degree maps for clean pads; open seconds only at low probability.",
+    "Uneven loop lengths (e.g. 5, 7, 18 bars) across layers — avoid identical 4-bar stacks that phase as a loop.",
+    "Steady pitch preference: keep any pitch-shift LFO depth tiny and gated by a slower depth LFO (flutter in/out), not constant random vib.",
+    "Drums early (Matt's taste): if the track has drums, enter by about count 8; pad-only before that."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick sources by texture and octave: e.g. dusty mid felt/piano for midrange, brighter guitar or glass for highs, optional soft bass for lows. Plan the pad like a mini arrangement so layers occupy different ranges.",
+      "tool": "Instrument choice / layering plan",
+      "expect": "Distinct mid / high / low textures ready"
+    },
+    {
+      "n": 2,
+      "action": "Build the MIDI FX chain on a MIDI track feeding the mid source: (1) chord/interval generator (e.g. major-7 from a single held note), (2) arpeggiator (rate/gate sets the pad 'timbre' of motion), (3) random/chance pitch module, (4) scale quantizer LAST locked to key/scale.",
+      "tool": "MIDI FX chain",
+      "expect": "One held note becomes scale-safe generative arpeggiated chords"
+    },
+    {
+      "n": 3,
+      "action": "Bias the scale map toward root and fifth for cleaner pads (example probabilities from source: ~1/3 low root, ~1/6 high octave root, ~5/12 fifth, ~1/12 major second). Raise random chance toward 100% for freer pads, or lower it to stay closer to played notes.",
+      "tool": "Scale map / chance",
+      "expect": "Most notes land on root/fifth; sparseness controllable"
+    },
+    {
+      "n": 4,
+      "action": "Record or clip several generative passes at uneven lengths (5-bar, 7-bar, ~18-bar) on different layers/textures. Multiply them out so overlaps are intentional and never a clean 4-bar stack.",
+      "tool": "Clip length / arrangement",
+      "expect": "Layers fade in/out of each other without a hard loop feel"
+    },
+    {
+      "n": 5,
+      "action": "Route interesting FX (granular octave-up, cloud/plate reverb, creative delay) via sends that return to dedicated audio tracks — treat each return as a blendable instrument, optionally re-send into a shared room reverb. Optional: send a return back into itself for controlled feedback.",
+      "tool": "Send/return FX as layers",
+      "expect": "FX beds sit as mixable tracks, not just master glue"
+    },
+    {
+      "n": 6,
+      "action": "Map slow free-running LFOs to: send amount into the octave-up/granular return (with a non-zero floor so it never fully disappears), high-pass cutoff, source tone/color macros, and a utility gain on the bass layer (~0–50% depth) so low end breathes in and out over long stretches. Offset LFO phases so moves duck past each other. Optional nested LFO: one LFO modulates pitch-shift depth of a reverb send (0%→tiny %) for intermittent flutter.",
+      "tool": "LFO / macro modulator",
+      "expect": "Small, gradual dynamics over many bars; no abrupt on/off"
+    },
+    {
+      "n": 7,
+      "action": "Render a long unique stem (or save the rack/template). Swap source instrument, reverb flavor, or scale (e.g. major vs major-pentatonic) to mint new pads from the same chain.",
+      "tool": "Bounce / template",
+      "expect": "Reusable generative pad template + unique audio"
+    }
+  ],
+  "verification": [
+    "Holding one note produces continuous scale-locked motion with no out-of-key spikes (quantizer last).",
+    "Multi-layer playback does not feel like a locked 4-bar loop (uneven lengths audible).",
+    "Send returns appear as blendable tracks; slow LFOs change send/filter/gain gradually.",
+    "Bass utility LFO creates long sections with and without low end."
+  ],
+  "tags": [
+    "generative",
+    "ambient",
+    "pad",
+    "midi-fx",
+    "arpeggiator",
+    "scale-quantize",
+    "random",
+    "lfo",
+    "send-return",
+    "uneven-loops",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://generative-midi-chord-arp-random-scale-quantize-pad"
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "u4DPfvDX7Sg",
+  "title": "How to Make Lush, Dreamy Pads in Serum 2! (Step-by-Step Guide) 🔥",
+  "url": "https://www.youtube.com/watch?v=u4DPfvDX7Sg",
+  "fetched_at": "2026-11-06T16:31:55.648359+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "DNB Academy",
+  "duration": 652,
+  "ok": true,
+  "cue_count": 187,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/u4DPfvDX7Sg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/u4DPfvDX7Sg/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

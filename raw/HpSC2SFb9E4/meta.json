@@ -1,0 +1,51 @@
+{
+  "video_id": "HpSC2SFb9E4",
+  "title": "How To: Wurlitzer & Fender Rhodes Electric Pianos in Vital - Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=HpSC2SFb9E4",
+  "fetched_at": "2026-11-06T16:26:36.615610+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Eric Bowman",
+  "duration": 1286,
+  "ok": true,
+  "cue_count": 468,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HpSC2SFb9E4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HpSC2SFb9E4/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "de-DE(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

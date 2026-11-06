@@ -1,0 +1,52 @@
+{
+  "video_id": "LF4yNpzSARQ",
+  "title": "How to compose Cinematic Music (in 7 easy steps)",
+  "url": "https://www.youtube.com/watch?v=LF4yNpzSARQ",
+  "fetched_at": "2026-11-06T16:22:06.126580+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Composing Academy",
+  "duration": 728,
+  "ok": true,
+  "cue_count": 196,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/LF4yNpzSARQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/LF4yNpzSARQ/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -14,6 +14,12 @@
         "video_id": "TosV3erGfsg",
         "url": "https://www.youtube.com/watch?v=TosV3erGfsg",
         "title": "Sound Design - Ambient Pads and Atmospheres"
+      },
+      {
+        "from_skill": "field-recording-hpf-exciter-air-layer",
+        "video_id": "HPDGp6b829s",
+        "url": "https://www.youtube.com/watch?v=HPDGp6b829s",
+        "title": "Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes"
       }
     ]
   },
@@ -120,10 +126,24 @@
         "Add a stereo imager after the reverbs and A/B: without it the pad sits far in front; with it the pad wraps around the listener.",
         "Swell variant: play chords or a melody on any source (guitar, piano, vocal), start slightly before the bar, and put a gain envelope first in the chain that rises from 0 at the bar so the attack is removed. Then low-cut EQ, imager, and reverb, which is now fed only by the swell."
       ]
+    },
+    {
+      "from_skill": "field-recording-hpf-exciter-air-layer",
+      "name": "Ambient air layer from a field recording: HPF out traffic lows, subtle harmonic exciter for upper sparkle, light high-end lift; keep it subtle to avoid glassy mess",
+      "goal": "Add musical 'air' to an ambient/cinematic bed using a real field recording (birds, room tone, distant detail) instead of only filtering a bright synth: high-pass to remove traffic/human low-end pollution (which also cools the bed), then a subtle harmonic exciter / 'fresh air' style upper-band enhancer to restore sparkle and emphasize distant calls, optionally with a light high-shelf. Warn: easy to overdo into a glassy mess — keep excitation subtle. Delta vs brightness-and-air start-bright-then-filter-pad (bright oscillator → LPF inside synth): this is a parallel air/detail layer from recorded ambience + HPF + exciter, not source-brightness via filter.",
+      "steps": [
+        "Place a field recording on its own track above the ambient bed. Solo and find the useful high detail (e.g. a bird call) and the muddy low end (traffic / human noise pollution).",
+        "High-pass the recording to remove the low-end pollution. Expect the bed to sound a bit colder/thinner — that is intended before air is restored.",
+        "Add a subtle harmonic exciter / upper-band enhancer ('fresh air' style) to excite upper frequencies so the clip sounds less dull and distant calls poke through. Keep the amount very low.",
+        "Optionally add a small high-end shelf/boost for the same emphasis. A/B against the bed; if it turns glassy or harsh, back off exciter then shelf.",
+        "Optional motion (same chain idea on a second ambience layer): duplicate with time-stretch/smear automation alternating wet/dry, and/or slow tremolo with changing rate that also pans L↔R for headphone width. Keep levels under the musical bed.",
+        "In the full mix, verify the air layer adds space above ~ several kHz without muddying the pad/drone. Use storytelling markers (a single call → larger event) if arranging a nature-to-elsewhere transition."
+      ]
     }
   ],
   "merged_from": [
-    "start-bright-then-filter-pad"
+    "start-bright-then-filter-pad",
+    "field-recording-hpf-exciter-air-layer"
   ],
   "tags": [
     "brightness",
@@ -135,6 +155,7 @@
   ],
   "mcp_resource": "skill://brightness-and-air-at-the-source",
   "aliases": [
-    "start-bright-then-filter-pad"
+    "start-bright-then-filter-pad",
+    "field-recording-hpf-exciter-air-layer"
   ]
 }

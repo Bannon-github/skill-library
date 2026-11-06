@@ -1,0 +1,131 @@
+{
+ "topic": "soft cinematic kick drum synthesis sub bass ambient",
+ "date": "2026-11-06",
+ "params": {
+  "topic": "soft cinematic kick drum synthesis sub bass ambient",
+  "langs": "en",
+  "per_query": 15,
+  "top": 3,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "rk7k6bJTgVo",
+   "title": "Vital Tutorial: How To Make Kick Drums [Free Preset]",
+   "channel": "Black Lotus Audio",
+   "duration": 500,
+   "view_count": 46614,
+   "url": "https://www.youtube.com/watch?v=rk7k6bJTgVo",
+   "query": "soft cinematic kick drum synthesis sub bass ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.83,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "u4DPfvDX7Sg",
+   "title": "How to Make Lush, Dreamy Pads in Serum 2! (Step-by-Step Guide) 🔥",
+   "channel": "DNB Academy",
+   "duration": 652,
+   "view_count": 6194,
+   "url": "https://www.youtube.com/watch?v=u4DPfvDX7Sg",
+   "query": "soft cinematic kick drum synthesis sub bass ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.4,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  },
+  {
+   "id": "Kf2KklP9mSY",
+   "title": "DIVA Tutorial | BASS Sound, Melodic house | Ben bohmer , Stephan Bodzin Anjunadeep - Tutorial",
+   "channel": "The Sound Design Channel",
+   "duration": 320,
+   "view_count": 9251,
+   "url": "https://www.youtube.com/watch?v=Kf2KklP9mSY",
+   "query": "soft cinematic kick drum synthesis sub bass ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.48,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "u7-40sDPxQI",
+   "why": "already known"
+  },
+  {
+   "id": "aoh2bg8-Bfw",
+   "why": "duration 136s"
+  },
+  {
+   "id": "0xY7NZF3n0w",
+   "why": "duration 170s"
+  },
+  {
+   "id": "63FvtgN6Yrc",
+   "why": "already known"
+  },
+  {
+   "id": "RS3B4Vtr8N0",
+   "why": "duration 109s"
+  },
+  {
+   "id": "acZPLjnha9o",
+   "why": "already known"
+  },
+  {
+   "id": "fZrNOYRlpKo",
+   "why": "duration 65s"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "Yzq8c2Xv5IY",
+   "why": "duration 5s"
+  },
+  {
+   "id": "0qzQfBLCwSo",
+   "why": "no transcript (transcripts_disabled)"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

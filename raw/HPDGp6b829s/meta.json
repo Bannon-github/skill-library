@@ -1,0 +1,51 @@
+{
+  "video_id": "HPDGp6b829s",
+  "title": "Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes",
+  "url": "https://www.youtube.com/watch?v=HPDGp6b829s",
+  "fetched_at": "2026-11-06T16:22:09.413539+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Matthew Florianz / Ambient.Environment.Soundscapes",
+  "duration": 3030,
+  "ok": true,
+  "cue_count": 716,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HPDGp6b829s/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HPDGp6b829s/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "id(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

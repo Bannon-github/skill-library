@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-05T17:31:35.445579+00:00",
-  "entry_count": 245,
+  "updated_at": "2026-11-06T16:32:45.849539+00:00",
+  "entry_count": 248,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3628,6 +3628,45 @@
       "skills": [
         "mix-eq-gain-staging-and-balance"
       ]
+    },
+    {
+      "id": "cinematic-synth-4Dub1HigXtU",
+      "video_id": "4Dub1HigXtU",
+      "url": "https://www.youtube.com/watch?v=4Dub1HigXtU",
+      "title": "Making INFINITE Ambient Pads Like The 1975 (Ableton Sound Design Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/4Dub1HigXtU/raw.txt",
+      "summary": "Skills: generative-midi-chord-arp-random-scale-quantize-pad (folded into generative-ambient-drones-and-soundscapes)",
+      "skills": [
+        "generative-ambient-drones-and-soundscapes"
+      ]
+    },
+    {
+      "id": "cinematic-synth-LF4yNpzSARQ",
+      "video_id": "LF4yNpzSARQ",
+      "url": "https://www.youtube.com/watch?v=LF4yNpzSARQ",
+      "title": "How to compose Cinematic Music (in 7 easy steps)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/LF4yNpzSARQ/raw.txt",
+      "summary": "Skills: cinematic-seven-section-arc-ostinato-countermelody-bookend (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-HPDGp6b829s",
+      "video_id": "HPDGp6b829s",
+      "url": "https://www.youtube.com/watch?v=HPDGp6b829s",
+      "title": "Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/HPDGp6b829s/raw.txt",
+      "summary": "Skills: field-recording-hpf-exciter-air-layer (folded into brightness-and-air-at-the-source)",
+      "skills": [
+        "brightness-and-air-at-the-source"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -3655,7 +3694,10 @@
     "ping-pong-delay-filtered-motion-recipe": "stereo-delay-pingpong-dual-parallel-two-tap",
     "dual-delay-parallel-two-tap-crossfeedback": "stereo-delay-pingpong-dual-parallel-two-tap",
     "odd-even-unison-center-vs-width": "unison-odd-even-detune-width-clean-supersaw",
-    "supersaw-clean-unison-detune-width": "unison-odd-even-detune-width-clean-supersaw"
+    "supersaw-clean-unison-detune-width": "unison-odd-even-detune-width-clean-supersaw",
+    "generative-midi-chord-arp-random-scale-quantize-pad": "generative-ambient-drones-and-soundscapes",
+    "cinematic-seven-section-arc-ostinato-countermelody-bookend": "arrangement-ambient-cinematic-score",
+    "field-recording-hpf-exciter-air-layer": "brightness-and-air-at-the-source"
   },
   "merge_log": [
     {
@@ -4125,6 +4167,27 @@
           "video_id": "MsT_yjp5kpI",
           "skill": "cloakroom-check-lpf-shelf-low-end-balance",
           "cluster": "mix-eq-gain-staging-and-balance"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T16:32:45.849539+00:00",
+      "batch": "2026-11-06-morning-hunt",
+      "folded": [
+        {
+          "video_id": "4Dub1HigXtU",
+          "skill": "generative-midi-chord-arp-random-scale-quantize-pad",
+          "cluster": "generative-ambient-drones-and-soundscapes"
+        },
+        {
+          "video_id": "LF4yNpzSARQ",
+          "skill": "cinematic-seven-section-arc-ostinato-countermelody-bookend",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "HPDGp6b829s",
+          "skill": "field-recording-hpf-exciter-air-layer",
+          "cluster": "brightness-and-air-at-the-source"
         }
       ]
     }

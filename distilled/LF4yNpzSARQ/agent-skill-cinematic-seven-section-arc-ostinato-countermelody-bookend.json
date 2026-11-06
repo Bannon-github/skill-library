@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-seven-section-arc-ostinato-countermelody-bookend",
+  "name": "Cinematic 7-section emotional arc: open-voiced piano → sustained strings → chord-tone ostinato → motif melody → countermelody climax with doubles → bookend return to opening",
+  "goal": "Write a short cinematic cue as a clear emotional journey in ~seven 8-bar sections: open-voiced piano (+ low boom / reverse piano / low drone) → extend 8-bar progression with chord-order variation → add sustained strings under piano (keep reverse piano for continuity) → add short/spiccato string ostinatos built only from chord tones with the same shape transposed per chord → write an 8-bar melody from a 2-bar motif (copy rhythm, change notes; put the highest note in the second half) → repeat melody with an independent countermelody in the rests/sustains, then climax by doubling melody in unison + octaves and adding a pulsing bass-synth push → bookend by copying the opening 8 bars after the crescendo. Delta vs emotional-cinematic-arrangement-arc (melody withheld until climax) and three-track-cinematic-sketch: this keeps piano+strings present earlier, uses chord-tone ostinato shape-lock, and closes with a literal bookend of the opening material.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "LF4yNpzSARQ",
+    "url": "https://www.youtube.com/watch?v=LF4yNpzSARQ",
+    "title": "How to compose Cinematic Music (in 7 easy steps)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/LF4yNpzSARQ/agent-skill-cinematic-seven-section-arc-ostinato-countermelody-bookend.json",
+    "batch": "2026-11-06-morning-hunt"
+  },
+  "prerequisites": [
+    "Any DAW with piano, sustained strings, short/spiccato strings (or synth equivalents), and a simple bass/synth for pulse",
+    "Basic diatonic chord knowledge in one minor (or major) key"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "param",
+      "description": "Key for the cue (source example: C minor)",
+      "required": true
+    },
+    {
+      "name": "four_chord_palette",
+      "type": "param",
+      "description": "Four diatonic chords to rotate (source example: Cm, Ab, Bb, Ab)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cinematic_cue_sketch",
+      "type": "midi_or_audio",
+      "description": "Arranged cue with intro→build→climax→bookend outro"
+    }
+  ],
+  "constraints": [
+    "Original composition recipe; not affiliated with sample-library vendors named in the source. Recreate with any piano/strings/synth; do not copy proprietary presets or libraries.",
+    "Ostinato notes must stay inside each bar's chord tones (transpose the shape, don't keep absolute pitches).",
+    "Countermelody plays mainly where the main melody sustains or rests.",
+    "Steady pitch preference; no random pitch wobble.",
+    "Drums early if used (Matt): by about count 8; otherwise pad/piano-led intro is fine."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "List diatonic chords in the key; pick four. Write bars 1–4 as open-voiced piano chords with a delicate feel. Underpin with a low boom, a reverse-piano pattern, and a quiet low drone so texture is already cinematic.",
+      "tool": "Piano + low FX/drone",
+      "expect": "Soft open intro with room to grow"
+    },
+    {
+      "n": 2,
+      "action": "Extend to an 8-bar progression by reordering the same four chords for bars 5–8 (slight variation, same palette).",
+      "tool": "Chord order",
+      "expect": "8-bar harmonic loop with mild second-half change"
+    },
+    {
+      "n": 3,
+      "action": "Next ~8 bars: add long sustained strings under the piano. Optionally tweak one chord. Keep the reverse-piano pattern for continuity. Layer two complementary string timbres if available (thick but not muddy).",
+      "tool": "Sustained strings",
+      "expect": "Warm bed under piano; continuity from intro FX"
+    },
+    {
+      "n": 4,
+      "action": "Add movement with short/spiccato (or synth-pluck) ostinatos: copy the prior 8-bar chords; for each bar invent a short pattern using only that chord's tones; when harmony changes, keep the shape/rhythm but retarget pitches to the new chord.",
+      "tool": "Short-string ostinato",
+      "expect": "Rhythmic motion locked to harmony"
+    },
+    {
+      "n": 5,
+      "action": "Write the melody starting with the ostinato section: invent a 2-bar motif from chord tones, fill gaps by step; copy the rhythm into the next 2 bars with new notes; reuse that rhythm in the second half of the 8 bars; place the highest note in the second half for an emotional arc. Orchestrate with violins (+ piano double); optional horns/trumpets/cellos.",
+      "tool": "Melody writing",
+      "expect": "8-bar melody with clear contour peak late"
+    },
+    {
+      "n": 6,
+      "action": "Repeat the 8-bar melody as climax: add an independent countermelody (e.g. horns) that enters on main-melody sustains/rests. Double the melody in unison (violins+cellos) and in octaves (violins+piano) in the second half; add a pulsing bass-synth on roots for low-end push.",
+      "tool": "Countermelody + doubles + pulse",
+      "expect": "Peak emotional section with denser orchestration"
+    },
+    {
+      "n": 7,
+      "action": "Bookend: after the crescendo, paste the opening 8 bars of piano (+ delicate texture) so the piece ends where it began, feeling final rather than abruptly cut.",
+      "tool": "Arrangement bookend",
+      "expect": "Return-to-calm ending"
+    }
+  ],
+  "verification": [
+    "Section map is audible: delicate piano → strings → ostinato motion → melody → climax doubles → calm bookend.",
+    "Ostinato notes are always chord tones for the current bar.",
+    "Melody peak (highest note) lands in the second half of its 8 bars.",
+    "Countermelody does not fight the main tune on the same strong attacks."
+  ],
+  "tags": [
+    "arrangement",
+    "cinematic",
+    "ostinato",
+    "countermelody",
+    "bookend",
+    "strings",
+    "piano",
+    "emotional-arc",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://cinematic-seven-section-arc-ostinato-countermelody-bookend"
+}

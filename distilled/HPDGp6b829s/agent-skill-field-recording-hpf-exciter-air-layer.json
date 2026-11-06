@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "field-recording-hpf-exciter-air-layer",
+  "name": "Ambient air layer from a field recording: HPF out traffic lows, subtle harmonic exciter for upper sparkle, light high-end lift; keep it subtle to avoid glassy mess",
+  "goal": "Add musical 'air' to an ambient/cinematic bed using a real field recording (birds, room tone, distant detail) instead of only filtering a bright synth: high-pass to remove traffic/human low-end pollution (which also cools the bed), then a subtle harmonic exciter / 'fresh air' style upper-band enhancer to restore sparkle and emphasize distant calls, optionally with a light high-shelf. Warn: easy to overdo into a glassy mess — keep excitation subtle. Delta vs brightness-and-air start-bright-then-filter-pad (bright oscillator → LPF inside synth): this is a parallel air/detail layer from recorded ambience + HPF + exciter, not source-brightness via filter.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "HPDGp6b829s",
+    "url": "https://www.youtube.com/watch?v=HPDGp6b829s",
+    "title": "Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/HPDGp6b829s/agent-skill-field-recording-hpf-exciter-air-layer.json",
+    "batch": "2026-11-06-morning-hunt"
+  },
+  "prerequisites": [
+    "A field recording or outdoor ambience clip with some high detail (birds, leaves, distant activity)",
+    "EQ with high-pass + optional high shelf; a harmonic exciter / transient air enhancer (or saturation focused on highs)",
+    "An ambient bed to sit under (drone/pad)"
+  ],
+  "inputs": [
+    {
+      "name": "field_recording",
+      "type": "audio",
+      "description": "Ambience clip with usable high detail and unwanted low rumble/traffic",
+      "required": true
+    },
+    {
+      "name": "ambient_bed",
+      "type": "audio",
+      "description": "Pad/drone bed the air layer will sit above",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "air_detail_layer",
+      "type": "audio",
+      "description": "High-passed, subtly excited ambience layer that adds air without mud"
+    }
+  ],
+  "constraints": [
+    "Original processing recipe; not affiliated with 'Fresh Air' or other named plugins. Map to any harmonic exciter / high-band enhancer / mild saturation + shelf.",
+    "Exciter amount must stay subtle — source warns overdoing becomes a glassy mess.",
+    "HPF first to remove traffic/human low-end before exciting highs.",
+    "Do not use this as a substitute for writing musical midrange content.",
+    "Steady pitch; no random pitch wobble on the bed unless asked."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Place a field recording on its own track above the ambient bed. Solo and find the useful high detail (e.g. a bird call) and the muddy low end (traffic / human noise pollution).",
+      "tool": "Field recording track",
+      "expect": "Useful highs identified; lows clearly unwanted"
+    },
+    {
+      "n": 2,
+      "action": "High-pass the recording to remove the low-end pollution. Expect the bed to sound a bit colder/thinner — that is intended before air is restored.",
+      "tool": "High-pass EQ",
+      "expect": "Lows gone; detail thinner/colder"
+    },
+    {
+      "n": 3,
+      "action": "Add a subtle harmonic exciter / upper-band enhancer ('fresh air' style) to excite upper frequencies so the clip sounds less dull and distant calls poke through. Keep the amount very low.",
+      "tool": "Harmonic exciter / air enhancer",
+      "expect": "Gentle sparkle; birds/detail clearer"
+    },
+    {
+      "n": 4,
+      "action": "Optionally add a small high-end shelf/boost for the same emphasis. A/B against the bed; if it turns glassy or harsh, back off exciter then shelf.",
+      "tool": "High shelf",
+      "expect": "Air without harshness"
+    },
+    {
+      "n": 5,
+      "action": "Optional motion (same chain idea on a second ambience layer): duplicate with time-stretch/smear automation alternating wet/dry, and/or slow tremolo with changing rate that also pans L↔R for headphone width. Keep levels under the musical bed.",
+      "tool": "Tremolo / smear automation",
+      "expect": "Living air layer that does not steal focus"
+    },
+    {
+      "n": 6,
+      "action": "In the full mix, verify the air layer adds space above ~ several kHz without muddying the pad/drone. Use storytelling markers (a single call → larger event) if arranging a nature-to-elsewhere transition.",
+      "tool": "Full-mix A/B",
+      "expect": "Audible air; bed still primary"
+    }
+  ],
+  "verification": [
+    "With air layer muted, highs feel dull; with it in (subtle), detail returns without glassiness.",
+    "Low-end of the field clip is not adding traffic rumble under the bed.",
+    "Exciter/shelf settings are conservative enough to pass a harshness check on headphones."
+  ],
+  "tags": [
+    "air",
+    "brightness",
+    "exciter",
+    "field-recording",
+    "high-pass",
+    "ambient",
+    "layering",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://field-recording-hpf-exciter-air-layer"
+}

@@ -1,6 +1,6 @@
 {
  "video_id": "JP5yTtT-gbk",
- "started_at": "2026-11-05T17:25:06.924515+00:00",
+ "started_at": "2026-11-06T16:18:28.933999+00:00",
  "outcome": "CANDIDATES_READY",
  "route": "auto-target-original-audio",
  "language_code": "en",
@@ -48,11 +48,11 @@
   "gap_edges": 13,
   "candidates": 1,
   "kg": {
-   "videos": 233,
-   "nodes": 1194,
-   "edges": 363,
+   "videos": 240,
+   "nodes": 1213,
+   "edges": 371,
    "uncovered_nodes": 25,
-   "uncovered_edges": 111
+   "uncovered_edges": 115
   },
   "candidate_ids": [
    "synth-filter-wavetable-pad-0-00"
@@ -173,5 +173,5 @@
    "a": true
   }
  ],
- "finished_at": "2026-11-05T17:25:07.269110+00:00"
+ "finished_at": "2026-11-06T16:18:29.198936+00:00"
 }

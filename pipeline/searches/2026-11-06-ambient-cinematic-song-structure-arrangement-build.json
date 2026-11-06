@@ -1,0 +1,137 @@
+{
+ "topic": "ambient cinematic song structure arrangement builds breakdowns",
+ "date": "2026-11-06",
+ "params": {
+  "topic": "ambient cinematic song structure arrangement builds breakdowns",
+  "langs": "en",
+  "per_query": 15,
+  "top": 3,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "LF4yNpzSARQ",
+   "title": "How to compose Cinematic Music (in 7 easy steps)",
+   "channel": "Composing Academy",
+   "duration": 729,
+   "view_count": 603875,
+   "url": "https://www.youtube.com/watch?v=LF4yNpzSARQ",
+   "query": "ambient cinematic song structure arrangement builds breakdowns tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.39,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "id",
+     "it",
+     "pt-BR"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "HPDGp6b829s",
+   "title": "Ambient Step by Step Tutorial - Techniques and Processing: Creating Ambient Environment Soundscapes",
+   "channel": "Matthew Florianz / Ambient.Environment.Soundscapes",
+   "duration": 3030,
+   "view_count": 34184,
+   "url": "https://www.youtube.com/watch?v=HPDGp6b829s",
+   "query": "ambient cinematic song structure arrangement builds breakdowns tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.27,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "id",
+     "pt-BR",
+     "es-US"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "K9JZ1WijGmI",
+   "title": "How to Make Ambient Film Scores Like Vangelis & Zimmer | Live Music Production Tutorial #338",
+   "channel": "Logic Pro X Templates",
+   "duration": 1942,
+   "view_count": 40,
+   "url": "https://www.youtube.com/watch?v=K9JZ1WijGmI",
+   "query": "ambient cinematic song structure arrangement builds breakdowns tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.81,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr-FR",
+     "de-DE",
+     "hi",
+     "id",
+     "it"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "62oV1qEFjmI",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "xY7vRHiSJSM",
+   "why": "already known"
+  },
+  {
+   "id": "E4eghKjWH1o",
+   "why": "already known"
+  },
+  {
+   "id": "f_XQfAONZw8",
+   "why": "already known"
+  },
+  {
+   "id": "ojDea0jCQ5o",
+   "why": "already known"
+  },
+  {
+   "id": "gtg27jkzY1s",
+   "why": "already known"
+  },
+  {
+   "id": "tfJocFdYxsg",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

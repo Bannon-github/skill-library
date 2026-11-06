@@ -131,3 +131,13 @@ Source: [Build tension for your action cue: Metric modulation, time signature ch
 - Piano sketch over the tempo map: derive ostinatos and simple variations from the motif.
 - Temp rhythm track: export loop MIDI into the DAW and edit accents, rests and notes so it fits your sections.
 - Orchestrate by role: replace the piano opening with a harp-like plucked voice, double low ostinatos in low strings/bass synth, use winds to support and brass (the loudest section) for key dynamic points; bring piano back as a percussive ostinato; add clusters/effects at the opening.
+
+### Cinematic 7-section emotional arc: open-voiced piano → sustained strings → chord-tone ostinato → motif melody → countermelody climax with doubles → bookend return to opening
+Source: [How to compose Cinematic Music (in 7 easy steps)](https://www.youtube.com/watch?v=LF4yNpzSARQ) · was `cinematic-seven-section-arc-ostinato-countermelody-bookend`
+- List diatonic chords in the key; pick four. Write bars 1–4 as open-voiced piano chords with a delicate feel. Underpin with a low boom, a reverse-piano pattern, and a quiet low drone so texture is already cinematic.
+- Extend to an 8-bar progression by reordering the same four chords for bars 5–8 (slight variation, same palette).
+- Next ~8 bars: add long sustained strings under the piano. Optionally tweak one chord. Keep the reverse-piano pattern for continuity. Layer two complementary string timbres if available (thick but not muddy).
+- Add movement with short/spiccato (or synth-pluck) ostinatos: copy the prior 8-bar chords; for each bar invent a short pattern using only that chord's tones; when harmony changes, keep the shape/rhythm but retarget pitches to the new chord.
+- Write the melody starting with the ostinato section: invent a 2-bar motif from chord tones, fill gaps by step; copy the rhythm into the next 2 bars with new notes; reuse that rhythm in the second half of the 8 bars; place the highest note in the second half for an emotional arc. Orchestrate with violins (+ piano double); optional horns/trumpets/cellos.
+- Repeat the 8-bar melody as climax: add an independent countermelody (e.g. horns) that enters on main-melody sustains/rests. Double the melody in unison (violins+cellos) and in octaves (violins+piano) in the second half; add a pulsing bass-synth on roots for low-end push.
+- Bookend: after the crescendo, paste the opening 8 bars of piano (+ delicate texture) so the piece ends where it began, feeling final rather than abruptly cut.

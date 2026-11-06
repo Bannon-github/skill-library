@@ -1,0 +1,112 @@
+{
+ "topic": "hybrid synthesis sound design wavetable FM tutorial",
+ "date": "2026-11-06",
+ "params": {
+  "topic": "hybrid synthesis sound design wavetable FM tutorial",
+  "langs": "en",
+  "per_query": 15,
+  "top": 3,
+  "min_dur": 180,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": true,
+  "require_transcript": true,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "HpSC2SFb9E4",
+   "title": "How To: Wurlitzer & Fender Rhodes Electric Pianos in Vital - Sound Design Tutorial",
+   "channel": "Eric Bowman",
+   "duration": 1287,
+   "view_count": 93439,
+   "url": "https://www.youtube.com/watch?v=HpSC2SFb9E4",
+   "query": "hybrid synthesis sound design wavetable FM tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.99,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "de-DE",
+     "id",
+     "it",
+     "pt-BR",
+     "es-US"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "QDdaYRzPN9E",
+   "title": "Wavetable Synthesis with New Tools for Sound Design | HALion 7 new Features",
+   "channel": "VST Instruments & Plug-Ins",
+   "duration": 347,
+   "view_count": 9961,
+   "url": "https://www.youtube.com/watch?v=QDdaYRzPN9E",
+   "query": "hybrid synthesis sound design wavetable FM tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en",
+     "fr",
+     "hi",
+     "id",
+     "it",
+     "pt"
+    ],
+    "auto_dub_suspected": true,
+    "english_direct": true,
+    "yt_translate_to_en": true
+   }
+  },
+  {
+   "id": "eu0zpa7OiYA",
+   "title": "Synthesis for beginners",
+   "channel": "Underdog Electronic Music School",
+   "duration": 944,
+   "view_count": 147873,
+   "url": "https://www.youtube.com/watch?v=eu0zpa7OiYA",
+   "query": "hybrid synthesis sound design wavetable FM tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.08,
+   "transcript": {
+    "has_transcript": true,
+    "manual_langs": [],
+    "auto_langs": [
+     "en"
+    ],
+    "auto_dub_suspected": false,
+    "english_direct": true,
+    "yt_translate_to_en": false
+   }
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Ly5QlsSbomU",
+   "why": "duration 154s"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "7yby6t7oLls",
+   "why": "duration 47s"
+  },
+  {
+   "id": "YweNNxq-JFI",
+   "why": "duration 137s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
