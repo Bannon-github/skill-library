@@ -1,0 +1,112 @@
+{
+  "seed": 1107,
+  "bpm": 96,
+  "bars": 28,
+  "tailSec": 4.0,
+  "category": "pad",
+  "key": "D minor",
+  "sections": {
+    "drumsIn": 4,
+    "build": 16,
+    "peak": 20,
+    "outro": 24,
+    "drumsOut": 26,
+    "end": 28
+  },
+  "chords": [
+    [
+      38,
+      [
+        50,
+        53,
+        57,
+        60
+      ]
+    ],
+    [
+      41,
+      [
+        53,
+        56,
+        60,
+        63
+      ]
+    ],
+    [
+      43,
+      [
+        50,
+        55,
+        58,
+        62
+      ]
+    ],
+    [
+      36,
+      [
+        48,
+        51,
+        55,
+        60
+      ]
+    ]
+  ],
+  "pad": {
+    "attack": 2.0,
+    "decay": 6.0,
+    "sustain": 0.45,
+    "release": 2.0,
+    "unison": 8,
+    "detuneCents": 30,
+    "spread": 0.85,
+    "oct2Level": 0.55,
+    "cutStart": 200,
+    "env2Amt": 2800,
+    "env2Attack": 2.0,
+    "lfoBars": 3.0,
+    "lfoDepth": 0.4,
+    "verbRt": 8.5,
+    "verbMix": 0.42,
+    "verbHp": 180,
+    "lowCut": 90,
+    "level": 0.55,
+    "bright": 1.5
+  },
+  "bass": {
+    "unison": 5,
+    "detune": 0.25,
+    "midLevel": 0.55,
+    "subLevel": 0.85,
+    "midCut": 1400,
+    "split": 110,
+    "duckMs": 120,
+    "subDuck": 0.85,
+    "midDuck": 0.25,
+    "level": 0.28,
+    "kickInBus": 0.45
+  },
+  "riser": {
+    "bars": 2,
+    "downerLevel": 0.22,
+    "stutterLevel": 0.0,
+    "mainLevel": 0.28,
+    "atmosLevel": 0.18,
+    "noiseLevel": 0.08
+  },
+  "drums": {
+    "kick": 0.85,
+    "hat": 0.1,
+    "rim": 0.14,
+    "level": 0.22
+  },
+  "master": {
+    "shelfDb": 3.0,
+    "satDrive": 1.15,
+    "sideHpHz": 120,
+    "fadeOutSec": 3.0,
+    "targetLufs": -17.0,
+    "tpCeil": -1.5,
+    "narrowIntroBars": 4,
+    "wideSide": 1.15
+  }
+}
