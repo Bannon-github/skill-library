@@ -1,0 +1,114 @@
+{
+ "seed": 1108,
+ "bpm": 88,
+ "bars": 26,
+ "tailSec": 4.0,
+ "category": "pad",
+ "key": "G minor (pedal D, then G at peak)",
+ "sections": {
+  "drumsIn": 4,
+  "build": 14,
+  "peak": 18,
+  "outro": 22,
+  "drumsOut": 24,
+  "end": 26
+ },
+ "chords": [
+  {
+   "pad": [
+    51,
+    55,
+    58,
+    62
+   ]
+  },
+  {
+   "pad": [
+    48,
+    51,
+    55,
+    62
+   ]
+  },
+  {
+   "pad": [
+    50,
+    53,
+    58,
+    62
+   ]
+  },
+  {
+   "pad": [
+    50,
+    55,
+    58,
+    62
+   ]
+  }
+ ],
+ "pad": {
+  "unison": 3,
+  "detune": 14,
+  "spread": 0.7,
+  "att1": 0.9,
+  "att2": 2.2,
+  "att3": 4.2,
+  "release": 1.8,
+  "l1": 0.6,
+  "l2": 0.85,
+  "l3": 0.6,
+  "cut2": 1300,
+  "lfo1Amt": 1800,
+  "lfo1Bars": 4,
+  "lfo1Skew": 0.8,
+  "lfo2Bars": 3,
+  "lfo2Pan": 0.6,
+  "cut3": 5000,
+  "randCut": 0.15,
+  "grainCenter": 74,
+  "grain": 0.05,
+  "chorusMix": 0.35,
+  "mbUp": 0.35,
+  "delayMix": 0.18,
+  "verbRt": 6.5,
+  "verbMix": 0.38,
+  "lowCut": 140,
+  "level": 0.6
+ },
+ "drone": {
+  "pedal": 38,
+  "pedalPeak": 43,
+  "thruNote": 62,
+  "thruIn": 6,
+  "wtLfoBars": 8,
+  "polyStack": [
+   69,
+   74
+  ],
+  "subLevel": 0.19,
+  "pulseLevel": 0.12,
+  "thruLevel": 0.1,
+  "polyLevel": 0.08
+ },
+ "drums": {
+  "kick": 0.9,
+  "snare": 0.35,
+  "hat": 0.2,
+  "level": 0.3,
+  "satDrive": 3.0,
+  "folBase": 0.35,
+  "folAmt": 0.65,
+  "duckMs": 160
+ },
+ "master": {
+  "shelfDb": 5.5,
+  "sideHpHz": 130,
+  "width": 1.35,
+  "padDuck": 0.2,
+  "fadeOutSec": 3.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "midShelfDb": 4.0
+ }
+}
