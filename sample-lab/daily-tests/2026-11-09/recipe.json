@@ -1,0 +1,131 @@
+{
+ "seed": 1109,
+ "bpm": 84,
+ "bars": 26,
+ "tailSec": 4.0,
+ "category": "pad",
+ "key": "A minor",
+ "sections": {
+  "drumsIn": 4,
+  "build": 12,
+  "peak": 16,
+  "outro": 22,
+  "drumsOut": 24,
+  "end": 26
+ },
+ "chords": [
+  [
+   57,
+   60,
+   64,
+   67,
+   71
+  ],
+  [
+   53,
+   57,
+   60,
+   64,
+   67
+  ],
+  [
+   48,
+   55,
+   60,
+   64,
+   67
+  ],
+  [
+   55,
+   59,
+   62,
+   64,
+   69
+  ]
+ ],
+ "roots": [
+  33,
+  29,
+  36,
+  31
+ ],
+ "phaserPad": {
+  "unison": 5,
+  "detune": 16,
+  "spread": 0.8,
+  "attack": 1.6,
+  "release": 2.0,
+  "cut": 3200,
+  "stages": 12,
+  "fb": 0.62,
+  "fLo": 180,
+  "octaves": 5.0,
+  "rampBars": 4,
+  "phaserMix": 0.5,
+  "rightOffset": 0.25,
+  "peakHpLo": 250,
+  "peakHpHi": 1400,
+  "peakLpLo": 1500,
+  "peakLpHi": 6500,
+  "peakQ": 4.0,
+  "hpLfoBars": 6,
+  "lpLfoBars": 7.5,
+  "lfoDelayBars": 2,
+  "peakMin": 0.25,
+  "peakMax": 1.0,
+  "verbBand": [
+   700,
+   3500
+  ],
+  "verbRt": 5.5,
+  "wetMin": 0.08,
+  "wetMax": 0.9,
+  "level": 0.62
+ },
+ "air": {
+  "on": 1,
+  "bedLevel": 0.012,
+  "bedShelfDb": -12,
+  "bedBellDb": 6,
+  "spikeAtk": 0.004,
+  "spikeDec": 0.22,
+  "f2Base": 1800,
+  "f2Env": 9000,
+  "noiseOsc": 0.18,
+  "noiseRise": 0.6,
+  "bassNoiseDb": -8,
+  "bassNoiseDec": 0.09,
+  "kickSnapHz": 5000,
+  "snareHz": 7000,
+  "tunedNoise": 0.35,
+  "masterNoise": 0.006,
+  "mLfoA": 0.071,
+  "mLfoB": 0.043
+ },
+ "low": {
+  "kick": 0.5,
+  "kickDec": 0.13,
+  "sub1": 0.42,
+  "sub2": 0.3,
+  "sub3": 0.22,
+  "sub2Makeup": 1.15,
+  "duckDepth": 0.85,
+  "duckMs": 140,
+  "hierDepth": 0.6,
+  "sub3Hz": 130,
+  "busDrive": 1.6,
+  "lp": 130,
+  "level": 0.26,
+  "snare": 0.3,
+  "hat": 0.16
+ },
+ "master": {
+  "shelfDb": 3.0,
+  "sideHpHz": 130,
+  "width": 1.2,
+  "padDuck": 0.18,
+  "fadeOutSec": 3.0,
+  "targetLufs": -17.0,
+  "tpCeil": -1.5
+ }
+}
