@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "short-kick-three-sub-layers-hierarchical-ducking",
+  "name": "Low end from one short transient kick + three band-focused sub layers in a ducking hierarchy (sub2 ducks to sub1; sub3 ducks to sub1 and sub2; all duck to a ghost kick), glued with tape saturation, 550 Hz mud cut, mono",
+  "goal": "Build a moving, glued low end where the kick supplies only the downbeat transient and low-mid punch, and three sub layers (a sine sub sample, a sub tail cut from a bass drum, a long generated sine sub) play groovy patterns in the gaps. Each sub is EQ'd to its own band, driven for warmth, made mono and ducked in a strict hierarchy: all to a ghost kick, sub 2 to sub 1, sub 3 to subs 1 and 2. The sub group and the kick+sub bus are then glued with tape saturation, cut around 550 Hz and made mono. Delta vs bass cluster kick-bass-four-level-lock (one kick, one bass, level matching) and sidechain cluster (per-element duck shapes): this adds a multi-sub priority chain so several subs can overlap rhythmically without stacking.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "eG0401qU-Pw",
+    "url": "https://www.youtube.com/watch?v=eG0401qU-Pw",
+    "title": "Regent shows how to craft low end: 1 kick and 3 subs",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/eG0401qU-Pw/agent-skill-short-kick-three-sub-layers-hierarchical-ducking.json",
+    "batch": "2026-11-09-morning-hunt"
+  },
+  "prerequisites": [
+    "A short punchy kick (e.g. a processed 909-style hit) and a silent 'ghost' kick track as the sidechain source",
+    "Three sub sources: a sine-ish sub one-shot, a bass-drum hit whose sub tail can be cut out, a sine generator for a long sub",
+    "Compressors with external sidechain, EQ, overdrive/drive, tape-style saturation, mono utility"
+  ],
+  "inputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Short kick: transient plus low-mid punch, little sub",
+      "required": true
+    },
+    {
+      "name": "sub_patterns",
+      "type": "midi/audio",
+      "description": "Rhythmic patterns for the three subs, placed after the kick",
+      "required": true
+    },
+    {
+      "name": "tempo_key",
+      "type": "text",
+      "description": "Track tempo and key (subs tuned to key)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "low_end_bus",
+      "type": "audio",
+      "description": "Kick + 3-sub bus that moves rhythmically but stays tight, mono and mud-free"
+    }
+  ],
+  "constraints": [
+    "Source is club techno/house; for ambient/cinematic use, keep the same hierarchy with a softer kick and sparser sub patterns (the soft-kick gap is not fully closed by this).",
+    "Keep the low-end bus mono; cut anything above about 130 Hz on each sub so no mids leak into the low layers.",
+    "Use plugin names only as aliases: drum-bus = drive/transient/boom shaper; J37/Saturn = tape saturation.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Kick: keep it short so it leaves room for the subs. Compress lightly for level control, cut around 550 Hz, boost the lows a little, add overdrive in the mid-highs for crunch, a little drive, and make it mono.",
+      "tool": "EQ + compressor + overdrive + mono",
+      "expect": "Punchy, short kick that sets the grid"
+    },
+    {
+      "n": 2,
+      "action": "Create a muted ghost kick on every kick hit and use it as the sidechain key for all ducking (so the audible kick can change without breaking the ducking).",
+      "tool": "Ghost MIDI/audio track",
+      "expect": "Stable sidechain source"
+    },
+    {
+      "n": 3,
+      "action": "Sub 1 (master sub): a sine-like sub sample. Remove mids and highs, dip the extreme lows below about 20 Hz, keep roughly 30–100 Hz with a slope after. Add overdrive, drive and tape-style compression for harmonic warmth, make it mono, duck it to the ghost kick, then a final low-pass around 130 Hz.",
+      "tool": "EQ + drive + tape comp + sidechain comp + LPF",
+      "expect": "Warm, clean master sub that clears for the kick"
+    },
+    {
+      "n": 4,
+      "action": "Sub 2 (secondary): cut the sub tail from a bass-drum hit and program a denser, groovier rhythm. Same chain (mid/high cut, overdrive, drive, tape comp, mono), duck to the ghost kick AND to sub 1, add a little make-up gain, then low-pass.",
+      "tool": "Same chain + 2 sidechains",
+      "expect": "Sub 2 fills gaps but yields to sub 1"
+    },
+    {
+      "n": 5,
+      "action": "Sub 3 (warmth/flow): a long sustained sine sub from a generator. EQ it to focus a little higher, around 130 Hz, clearing room for the other subs. Duck it to the ghost kick, then to sub 1 and to sub 2, so it is lowest in the hierarchy.",
+      "tool": "Sine generator + EQ + 3 sidechains",
+      "expect": "Continuous warmth that never masks subs 1–2"
+    },
+    {
+      "n": 6,
+      "action": "Sub group: cut around 550 Hz, give the sub band a small boost (the source says \"around the 25 zone\", which reads as about 25 Hz), and keep a little noise/grit if it adds colour. Optionally test a 100% wet tempo delay to find a better sub rhythm, then remove it if it doesn't help. Duck the whole group to the ghost kick with fast attack and a fairly short release so it stays punchy. Make it mono.",
+      "tool": "Group EQ + sidechain comp + mono",
+      "expect": "Subs react quickly around each kick"
+    },
+    {
+      "n": 7,
+      "action": "Kick+sub bus: add tape saturation to glue kick and subs into one tight sound, cut around 550 Hz again after saturation, and make it mono.",
+      "tool": "Bus saturation + EQ + mono",
+      "expect": "Cohesive, thick but not overbearing low end"
+    },
+    {
+      "n": 8,
+      "action": "Listen to kick + subs alone: you should already hear a groove, with each sub covering a slightly different part of the low band. Adjust patterns before adding percussion.",
+      "tool": "Solo low-end bus",
+      "expect": "Low end grooves on its own"
+    }
+  ],
+  "verification": [
+    "On a spectrum view each sub occupies a different low band (sub 3 around 130 Hz, subs 1–2 lower); nothing above about 130 Hz on the sub channels.",
+    "With the ghost kick muted the subs stop ducking; with it on, kick transients stay clear.",
+    "When sub 1 plays, sub 2 and sub 3 drop in level (the hierarchy works).",
+    "The bus collapses to mono with no loss of low end."
+  ],
+  "tags": [
+    "kick",
+    "sub-bass",
+    "low-end",
+    "sidechain",
+    "ducking",
+    "layering",
+    "saturation",
+    "bass",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://short-kick-three-sub-layers-hierarchical-ducking"
+}

@@ -133,3 +133,13 @@ Source: [Ep. 04 | How to Build Powerful Cinematic Drone Sounds (Modular Synth So
 - Movement on layer 3: sample-and-hold selects which recorded layer plays; an LFO modulates grain length.
 - Sum layers, then a master low-pass with resonance BEFORE shimmer reverb and delay so resonant low harmonics feed the reverb.
 - Use the master filter's low cut / cutoff as the tension control: more high frequencies = tension ('something is coming'), lows = suspense; choose reverb type for mood; end a scene by pulling inputs out and leaving a little wet.
+
+### 90s sampler pad: loop a single bounced synth note in a repitching sampler, play chords so each voice scrubs the loop at its own speed, ping-pong loop, wide voicings, slow filter LFO, then resample the chord and play it again for parallel harmony
+Source: [Use this 90s sampling technique for ethereal pads](https://www.youtube.com/watch?v=XAch1Q0Iodc) · was `sampler-loop-chord-scrub-parallel-harmony-pad`
+- Play and bounce one sustained note from a synth pad to audio (for the parallel-harmony variant, bounce a full chord instead).
+- Load it into a sampler in repitch mode, set a loop over the sustain, and raise the voice/polyphony count so chords can play.
+- Play a chord and hold it. Each voice reads the loop at a different speed and pitch, so the loops drift and overlap. The longer you hold, the more the texture varies.
+- Switch the loop to ping-pong so some voices bounce back from the loop end, for more texture variation. Try playing lower on the keyboard for a slower, darker drift.
+- Shape voicings: keep the roots close together and put 7ths/9ths an octave or more up. Those upper voices scrub much faster, adding motion on top. Optionally move the root down a semitone or tone in a multi-sample map.
+- Add a slow LFO to the sampler's filter cutoff so the pad breathes; also try transposing the whole sampler for different feels.
+- Resample: bounce the played chord to audio, load it into a new sampler and play it. Each key now plays the whole chord shape (parallel harmony), with the drift texture baked in. Loop and repeat if you want.

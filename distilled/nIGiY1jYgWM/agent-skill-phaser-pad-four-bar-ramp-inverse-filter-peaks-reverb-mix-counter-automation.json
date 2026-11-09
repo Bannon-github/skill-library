@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+  "name": "Phaser pad depth chain: 12-stage phaser on a slow 4-bar ramp modulator with high resonance, then a delay used as two narrow HP/LP filter peaks moving inversely, then a narrow-band 100%-wet reverb whose mix is automated opposite to the filter peaks",
+  "goal": "Turn a static, near-mono pad into a wide, whispering, evolving texture with a serial phaser → delay-filter → reverb chain. Phaser theory first: stages are all-pass filters and notches = stages/2; spread 0 = mono/centred, 100 = wide. The pad gets 12 stages and a ramp-up modulator looped once every 4 bars (not a sine/triangle), with resonance pushed high. A delay's two narrow filters (one HP, one LP) are moved in opposite directions by sine LFOs with glide, so two frequency peaks pass each other. Then a 100%-wet reverb, filtered to a narrow band with feedback at 0, has its mix automated opposite to the filter peaks: dry while the peaks are strong, fully wet as they fade. Delta vs pad-phaser cluster (eerie-dreamy phaser-delay-reverb, HP phaser chord pad, nested multi-notch): adds the inverse-moving delay filter peaks and the peak↔reverb-mix counter-automation for front-back plus left-right motion.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "nIGiY1jYgWM",
+    "url": "https://www.youtube.com/watch?v=nIGiY1jYgWM",
+    "title": "Using Phaser Effects",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/nIGiY1jYgWM/agent-skill-phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation.json",
+    "batch": "2026-11-09-morning-hunt"
+  },
+  "prerequisites": [
+    "Phaser with stage count, resonance/feedback, spread and an assignable/rhythmic modulator (ramp shape, bar-length cycle)",
+    "Delay with filters and LFO/mod matrix (or two modulated band filters on a send)",
+    "Reverb that can be 100% wet with a band filter; automation lanes"
+  ],
+  "inputs": [
+    {
+      "name": "pad",
+      "type": "audio/midi",
+      "description": "Static, centred pad sound",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Session tempo for the 4-bar modulator cycle",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "phased_pad",
+      "type": "audio",
+      "description": "Pad with slow phaser sweep, moving filter peaks and depth that breathes against them"
+    }
+  ],
+  "constraints": [
+    "Use slow, sub-audio modulation for pads. The source's audio-rate LFO demos (20 Hz to 4.2 kHz on vocals/Rhodes) create detuning/wobble, which Matt dislikes, so leave them out.",
+    "Keep time-based and stereo modulation in one processor. Widening twice sounds unnatural, and left-right motion fights filters that are also moving across the stereo field.",
+    "Start with few phaser stages and work up; behaviour changes a lot as stages increase.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Test the phaser basics on the pad: compare 2 stages with 18 (more stages = stronger phasing; notches = stages/2), and spread 0 (mono/centred) with 100 (wide, needs a stereo source). Use a slow rate.",
+      "tool": "Phaser",
+      "expect": "Understand stages and spread by ear"
+    },
+    {
+      "n": 2,
+      "action": "Set the pad phaser to 12 stages with resonance pushed high. Use a ramp-up (rising) modulator shape instead of sine/triangle, looped once every 4 bars, for a gentle sweeping swell.",
+      "tool": "Phaser + 4-bar ramp modulator",
+      "expect": "Slow swelling phase sweep every 4 bars"
+    },
+    {
+      "n": 3,
+      "action": "After the phaser, insert a delay used mainly as a filter. Enable two narrow-bandwidth filters, one high-pass and one low-pass, and modulate their cutoffs with sine LFOs of different rates and glide, set in opposite directions (one rising while the other falls). Optionally delay the LFO onset with an envelope so the peaks drift slightly.",
+      "tool": "Delay filters + 2 LFOs",
+      "expect": "Two resonant peaks sweeping past each other"
+    },
+    {
+      "n": 4,
+      "action": "Keep stereo/time modulation in only one of phaser or delay. If the phaser already spreads the sound, don't also widen in the delay.",
+      "tool": "Routing discipline",
+      "expect": "Clear motion, no smeared double-widening"
+    },
+    {
+      "n": 5,
+      "action": "Add a reverb as the last insert, 100% wet, band-filtered to a small frequency range that highlights the moving peaks, feedback/regeneration at 0. Expect it to sound too wet at first.",
+      "tool": "Reverb insert",
+      "expect": "Spatial presence focused on the peak band"
+    },
+    {
+      "n": 6,
+      "action": "Automate: increase the delay's filter-peak amounts during the sweep, and automate the reverb mix in the opposite direction. Fully dry when the filter peaks are strongest, jumping to 100% wet as the peaks move away and fade.",
+      "tool": "Two automation lanes",
+      "expect": "Pad moves front-back and left-right"
+    },
+    {
+      "n": 7,
+      "action": "Check over 16 bars with a simple drum beat and compare with the dry pad.",
+      "tool": "Loop check",
+      "expect": "Pad adds depth and motion without masking the beat"
+    }
+  ],
+  "verification": [
+    "The phaser sweep repeats once per 4 bars with a rising shape (no fast wobble).",
+    "Two filter peaks can be heard moving in opposite directions.",
+    "Reverb mix automation is the mirror of the filter-peak automation (dry at peak, wet at trough).",
+    "The dry pad sounds static next to the processed pad, which has audible width and depth."
+  ],
+  "tags": [
+    "phaser",
+    "pad",
+    "all-pass",
+    "stages",
+    "delay-filter",
+    "reverb-automation",
+    "movement",
+    "stereo-width",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation"
+}

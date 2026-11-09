@@ -1,0 +1,46 @@
+{
+  "video_id": "lQRLKSgU9Us",
+  "title": "Logic Pro: Sound Design: Creating Cinematic Pulses",
+  "url": "https://www.youtube.com/watch?v=lQRLKSgU9Us",
+  "fetched_at": "2026-11-09T16:38:43.529026+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jono Buchanan Music",
+  "duration": 1188,
+  "ok": true,
+  "cue_count": 483,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/lQRLKSgU9Us/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/lQRLKSgU9Us/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

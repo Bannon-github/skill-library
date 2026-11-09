@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-06T16:32:45.849539+00:00",
-  "entry_count": 248,
+  "updated_at": "2026-11-09T16:43:10.114407+00:00",
+  "entry_count": 254,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3667,6 +3667,84 @@
       "skills": [
         "brightness-and-air-at-the-source"
       ]
+    },
+    {
+      "id": "cinematic-synth--yzW0DZuo40",
+      "video_id": "-yzW0DZuo40",
+      "url": "https://www.youtube.com/watch?v=-yzW0DZuo40",
+      "title": "How to Use White Noise in Your Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/-yzW0DZuo40/raw.txt",
+      "summary": "Skills: synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers (folded into brightness-and-air-at-the-source)",
+      "skills": [
+        "brightness-and-air-at-the-source"
+      ]
+    },
+    {
+      "id": "cinematic-synth-eG0401qU-Pw",
+      "video_id": "eG0401qU-Pw",
+      "url": "https://www.youtube.com/watch?v=eG0401qU-Pw",
+      "title": "Regent shows how to craft low end: 1 kick and 3 subs",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/eG0401qU-Pw/raw.txt",
+      "summary": "Skills: short-kick-three-sub-layers-hierarchical-ducking (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-XAch1Q0Iodc",
+      "video_id": "XAch1Q0Iodc",
+      "url": "https://www.youtube.com/watch?v=XAch1Q0Iodc",
+      "title": "Use this 90s sampling technique for ethereal pads",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/XAch1Q0Iodc/raw.txt",
+      "summary": "Skills: sampler-loop-chord-scrub-parallel-harmony-pad (folded into granular-and-spectral-texture-design)",
+      "skills": [
+        "granular-and-spectral-texture-design"
+      ]
+    },
+    {
+      "id": "cinematic-synth-nIGiY1jYgWM",
+      "video_id": "nIGiY1jYgWM",
+      "url": "https://www.youtube.com/watch?v=nIGiY1jYgWM",
+      "title": "Using Phaser Effects",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/nIGiY1jYgWM/raw.txt",
+      "summary": "Skills: phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-HnDS1YURJkE",
+      "video_id": "HnDS1YURJkE",
+      "url": "https://www.youtube.com/watch?v=HnDS1YURJkE",
+      "title": "The one bass every producer should know how to make [Ableton Live tutorial]",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/HnDS1YURJkE/raw.txt",
+      "summary": "Skills: house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-VhjJlD0Gck0",
+      "video_id": "VhjJlD0Gck0",
+      "url": "https://www.youtube.com/watch?v=VhjJlD0Gck0",
+      "title": "Use this 4 step formula to create epic synth pulses in any synth: Serum, Phase Plant, Pigment, Vital",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/VhjJlD0Gck0/raw.txt",
+      "summary": "Skills: noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro (folded into filter-types-and-resonance-design)",
+      "skills": [
+        "filter-types-and-resonance-design"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4188,6 +4266,42 @@
           "video_id": "HPDGp6b829s",
           "skill": "field-recording-hpf-exciter-air-layer",
           "cluster": "brightness-and-air-at-the-source"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-09T16:43:10.114407+00:00",
+      "batch": "2026-11-09-morning-hunt",
+      "folded": [
+        {
+          "video_id": "-yzW0DZuo40",
+          "skill": "synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers",
+          "cluster": "brightness-and-air-at-the-source"
+        },
+        {
+          "video_id": "eG0401qU-Pw",
+          "skill": "short-kick-three-sub-layers-hierarchical-ducking",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "XAch1Q0Iodc",
+          "skill": "sampler-loop-chord-scrub-parallel-harmony-pad",
+          "cluster": "granular-and-spectral-texture-design"
+        },
+        {
+          "video_id": "nIGiY1jYgWM",
+          "skill": "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+          "cluster": "pad-phaser-notch-comb-movement"
+        },
+        {
+          "video_id": "HnDS1YURJkE",
+          "skill": "house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "VhjJlD0Gck0",
+          "skill": "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro",
+          "cluster": "filter-types-and-resonance-design"
         }
       ]
     }

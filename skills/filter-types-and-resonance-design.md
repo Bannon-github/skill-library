@@ -142,3 +142,12 @@ Source: [Adjusting Velocity to Filter Cutoff – Synth Clips 7 – Daniel Fisher
 - With sustain-full filter envelope, raise EG amount until held notes reach maximum intended brightness (hard-hit ceiling).
 - Enable velocity→filter (or velocity→filter EG amount). Learn polarity: typical = harder = brighter; some synths (Subsequent/Sub 37 style) increase velocity sens to make soft playing darker instead—strategy reverses.
 - Play slow soft velocities while raising velocity amount until darkest desired soft tone; verify fast hits still hit the bright ceiling. Trim EG amount if hard hits are too bright; resonance exaggerates the difference.
+
+### NOOF cinematic synth pulse (Noise, Osc, Osc, Filter): white noise + mono saw + saw an octave up with 5 slightly detuned unison voices, all into a fully closed ladder low-pass opened per note by a fast envelope on an eighth-note MIDI line; automate cutoff as the single energy control
+Source: [Use this 4 step formula to create epic synth pulses in any synth: Serum, Phase Plant, Pigment, Vital](https://www.youtube.com/watch?v=VhjJlD0Gck0) · was `noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro`
+- Noise: enable a white-noise oscillator at a low level as a small burst of energy on top.
+- Osc A: default saw, one voice.
+- Osc B: saw pitched one octave up, slightly detuned against osc A, unison about 5 voices with a little detune spread.
+- Route all three into one ladder low-pass with cutoff fully down. Route envelope 2 (retriggered on each MIDI note) to cutoff with a fast attack and quick decay, so each eighth note opens the filter briefly and it falls straight back.
+- Automate cutoff through the cue: low = plain pulse (noise and osc B barely audible); higher = osc B width and detune come through; highest = noise burst power on top. Use this single lane to add or remove energy.
+- Check that muting noise or osc B matters a lot at high cutoff and little at low cutoff. Add effects on top only after the core works.

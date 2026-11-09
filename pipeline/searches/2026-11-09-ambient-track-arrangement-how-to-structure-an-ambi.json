@@ -1,0 +1,106 @@
+{
+ "topic": "ambient track arrangement how to structure an ambient song",
+ "date": "2026-11-09",
+ "params": {
+  "topic": "ambient track arrangement how to structure an ambient song",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "2bvdVDRpfAQ",
+   "title": "How To Create Your Own Ambient Track From Scratch - Ambient For Beginners - Full Tutorial",
+   "channel": "Ian Waugh",
+   "duration": 2204,
+   "view_count": 21868,
+   "url": "https://www.youtube.com/watch?v=2bvdVDRpfAQ",
+   "query": "ambient track arrangement how to structure an ambient song tutorial how to",
+   "query_lang": "en",
+   "howto_score": 14.17
+  },
+  {
+   "id": "95cHiqdoDsc",
+   "title": "Ambient Tutorial for Absolute Beginners",
+   "channel": "S1gns Of L1fe",
+   "duration": 1813,
+   "view_count": 28038,
+   "url": "https://www.youtube.com/watch?v=95cHiqdoDsc",
+   "query": "ambient track arrangement how to structure an ambient song tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.22
+  },
+  {
+   "id": "HsCHTobiv6Y",
+   "title": "Writing an Ambient Track in 10-Minutes",
+   "channel": "Matt Tinkler",
+   "duration": 863,
+   "view_count": 2143,
+   "url": "https://www.youtube.com/watch?v=HsCHTobiv6Y",
+   "query": "ambient track arrangement how to structure an ambient song tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.17
+  },
+  {
+   "id": "uZfNc_oCwOc",
+   "title": "Ambient Composing Secrets: Scoring Under Dialogue For Film & TV",
+   "channel": "Modern Media Composer",
+   "duration": 1050,
+   "view_count": 60488,
+   "url": "https://www.youtube.com/watch?v=uZfNc_oCwOc",
+   "query": "ambient track arrangement how to structure an ambient song tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.89
+  },
+  {
+   "id": "CW3jk3BgE1E",
+   "title": "Learn to make ambient music in 4 simple steps",
+   "channel": "Monotrail Tech Talk",
+   "duration": 1305,
+   "view_count": 40999,
+   "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
+   "query": "ambient track arrangement how to structure an ambient song tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.81
+  }
+ ],
+ "dropped": [
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "0bB8rWEcScA",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "RqHKX4BDJ1Q",
+   "why": "duration 199s"
+  },
+  {
+   "id": "U1t3ELd1LDI",
+   "why": "already known"
+  },
+  {
+   "id": "C871ckX4GfQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

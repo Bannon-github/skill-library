@@ -1,0 +1,195 @@
+{
+ "video_id": "GA78yWUMZvQ",
+ "started_at": "2026-11-09T16:36:02.639398+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "GA78yWUMZvQ",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/GA78yWUMZvQ/graph.json",
+  "segments": 153,
+  "windows": 46,
+  "nodes": 41,
+  "edges": 39,
+  "nodes_by_type": {
+   "module": 11,
+   "concept": 6,
+   "step": 11,
+   "technique": 1,
+   "param": 4,
+   "value": 2,
+   "phrase": 6
+  },
+  "edges_by_type": {
+   "mentions": 23,
+   "precedes": 10,
+   "part-of": 4,
+   "sets": 2
+  },
+  "words": 958
+ },
+ "gaps": {
+  "video_id": "GA78yWUMZvQ",
+  "graph_nodes": 41,
+  "graph_edges": 39,
+  "terms_checked": 28,
+  "terms_covered": 4,
+  "gap_nodes": 24,
+  "gap_nodes_excl_phrases": 22,
+  "relations_checked": 2,
+  "gap_edges": 2,
+  "candidates": 1,
+  "kg": {
+   "videos": 271,
+   "nodes": 1379,
+   "edges": 397,
+   "uncovered_nodes": 25,
+   "uncovered_edges": 141
+  },
+  "candidate_ids": [
+   "synth-mixer-delay-bass-0-07"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:pulse_width",
+    "best single-skill procedure overlap 0.0 < 0.5"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 3,
+   "uncovered_techniques": [
+    "technique:pulse_width"
+   ],
+   "video_novelty": 0.037,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 958,
+    "music_markers": 0
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "arrangement": 1,
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 0,
+     "synth": 61
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 41,
+    "edges": 39
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 22,
+    "gap_edges": 2,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:pulse_width",
+      "best single-skill procedure overlap 0.0 < 0.5"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 3,
+     "uncovered_techniques": [
+      "technique:pulse_width"
+     ],
+     "video_novelty": 0.037,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "ar(auto)",
+    "bn(auto)",
+    "nl-NL(auto)",
+    "en(auto)",
+    "fr-FR(auto)",
+    "de-DE(auto)",
+    "iw(auto)",
+    "hi(auto)",
+    "id(auto)",
+    "it(auto)",
+    "ja(auto)",
+    "ko(auto)",
+    "ml(auto)",
+    "pl(auto)",
+    "pt-BR(auto)",
+    "pa(auto)",
+    "ru(auto)",
+    "es-US(auto)",
+    "ta(auto)",
+    "te(auto)",
+    "uk(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-11-09T16:36:02.890267+00:00"
+}

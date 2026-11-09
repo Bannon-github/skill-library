@@ -1,0 +1,85 @@
+{
+ "topic": "soft kick and sub bass for ambient music tutorial",
+ "date": "2026-11-09",
+ "params": {
+  "topic": "soft kick and sub bass for ambient music tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "eG0401qU-Pw",
+   "title": "Regent shows how to craft low end: 1 kick and 3 subs (Regent Home of Sound production masterclass)",
+   "channel": null,
+   "duration": 880,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=eG0401qU-Pw",
+   "query": "soft kick and sub bass for ambient music tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "UQpyAuq5vHk",
+   "title": "Solving your BIGGEST kick drum problems in 180 seconds",
+   "channel": null,
+   "duration": 319,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=UQpyAuq5vHk",
+   "query": "soft kick and sub bass for ambient music tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "63FvtgN6Yrc",
+   "why": "already known"
+  },
+  {
+   "id": "aoh2bg8-Bfw",
+   "why": "duration 136s"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "fZrNOYRlpKo",
+   "why": "duration 65s"
+  },
+  {
+   "id": "RS3B4Vtr8N0",
+   "why": "duration 109s"
+  },
+  {
+   "id": "UrpnB5YlGL8",
+   "why": "already known"
+  },
+  {
+   "id": "0xY7NZF3n0w",
+   "why": "duration 170s"
+  },
+  {
+   "id": "MsT_yjp5kpI",
+   "why": "already known"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "Z6IUhXyOvFc",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

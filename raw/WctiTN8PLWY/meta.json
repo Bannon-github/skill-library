@@ -1,0 +1,46 @@
+{
+  "video_id": "WctiTN8PLWY",
+  "title": "Hybrid Synthesis Methods in FM-8",
+  "url": "https://www.youtube.com/watch?v=WctiTN8PLWY",
+  "fetched_at": "2026-11-09T16:40:55.288528+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Sormena Project (Sormena Project)",
+  "duration": 552,
+  "ok": true,
+  "cue_count": 165,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/WctiTN8PLWY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/WctiTN8PLWY/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

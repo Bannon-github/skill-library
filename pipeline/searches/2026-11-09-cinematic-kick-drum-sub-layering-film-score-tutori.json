@@ -1,0 +1,113 @@
+{
+ "topic": "cinematic kick drum sub layering film score tutorial",
+ "date": "2026-11-09",
+ "params": {
+  "topic": "cinematic kick drum sub layering film score tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "WpDFPEeBvzI",
+   "title": "How to Create Cinematic Drums | Orchestration Tutorial",
+   "channel": "Hammy Cinematic",
+   "duration": 428,
+   "view_count": 5157,
+   "url": "https://www.youtube.com/watch?v=WpDFPEeBvzI",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.36
+  },
+  {
+   "id": "SR9XWpVhWqU",
+   "title": "How to Make HUGE Cinematic Kicks - Sound Design Tutorial",
+   "channel": "Kermode",
+   "duration": 346,
+   "view_count": 2637,
+   "url": "https://www.youtube.com/watch?v=SR9XWpVhWqU",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.21
+  },
+  {
+   "id": "C3BJnQEJm3I",
+   "title": "Mixing Drums for Film with Junkie XL",
+   "channel": "Waves Audio",
+   "duration": 1278,
+   "view_count": 68561,
+   "url": "https://www.youtube.com/watch?v=C3BJnQEJm3I",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.92
+  },
+  {
+   "id": "YKDVc4STrr4",
+   "title": "Cinematic Drum Programming: Day One with Christian Henson",
+   "channel": "Spitfire Audio",
+   "duration": 1357,
+   "view_count": 65657,
+   "url": "https://www.youtube.com/watch?v=YKDVc4STrr4",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.91
+  },
+  {
+   "id": "nynThLc9fU0",
+   "title": "How to LAYER sounds for BETTER Sound Design",
+   "channel": "ACIDBITE",
+   "duration": 326,
+   "view_count": 32178,
+   "url": "https://www.youtube.com/watch?v=nynThLc9fU0",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.75
+  },
+  {
+   "id": "gIlpMR64KRc",
+   "title": "TOMMEE PROFITT PERCUSSION Complete Walkthrough",
+   "channel": "Cinematic Tools",
+   "duration": 967,
+   "view_count": 9662,
+   "url": "https://www.youtube.com/watch?v=gIlpMR64KRc",
+   "query": "cinematic kick drum sub layering film score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.49
+  }
+ ],
+ "dropped": [
+  {
+   "id": "d0uwxmv_gcw",
+   "why": "negative title signal"
+  },
+  {
+   "id": "cODVSVzu8nI",
+   "why": "duration 128s"
+  },
+  {
+   "id": "_AXN097QA5E",
+   "why": "duration 91s"
+  },
+  {
+   "id": "DU24qZQLr7g",
+   "why": "negative title signal"
+  },
+  {
+   "id": "B8HrPsL7M0M",
+   "why": "duration 228s"
+  },
+  {
+   "id": "sfnctA99XOI",
+   "why": "duration 20s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

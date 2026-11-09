@@ -237,6 +237,12 @@
     "cloakroom-check-lpf-shelf-low-end-balance": "mix-eq-gain-staging-and-balance",
     "generative-midi-chord-arp-random-scale-quantize-pad": "generative-ambient-drones-and-soundscapes",
     "cinematic-seven-section-arc-ostinato-countermelody-bookend": "arrangement-ambient-cinematic-score",
-    "field-recording-hpf-exciter-air-layer": "brightness-and-air-at-the-source"
+    "field-recording-hpf-exciter-air-layer": "brightness-and-air-at-the-source",
+    "synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers": "brightness-and-air-at-the-source",
+    "short-kick-three-sub-layers-hierarchical-ducking": "bass-design-sub-reese-808-and-layering",
+    "sampler-loop-chord-scrub-parallel-harmony-pad": "granular-and-spectral-texture-design",
+    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation": "pad-phaser-notch-comb-movement",
+    "house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack": "bass-design-sub-reese-808-and-layering",
+    "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro": "filter-types-and-resonance-design"
   }
 }

@@ -62,6 +62,12 @@
         "video_id": "ZsbcQZtklGI",
         "url": "https://www.youtube.com/watch?v=ZsbcQZtklGI",
         "title": "Sylenth 1 Tutorial \"Phasing\" Pad"
+      },
+      {
+        "from_skill": "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+        "video_id": "nIGiY1jYgWM",
+        "url": "https://www.youtube.com/watch?v=nIGiY1jYgWM",
+        "title": "Using Phaser Effects"
       }
     ]
   },
@@ -283,6 +289,20 @@
         "Reverb as an insert or send at about 35% wet: slow, large hall/church-type space, pre-delay about 10 ms, size and decay at maximum; on the reverb's EQ cut everything below 150 Hz and roll the highs off around 4.5 kHz. Add a light compressor after it (shorter release) to bring the reverb up.",
         "Sidechain-compress the pad to the kick for gentle pump and automate the pad filter so it comes in and out across sections."
       ]
+    },
+    {
+      "from_skill": "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+      "name": "Phaser pad depth chain: 12-stage phaser on a slow 4-bar ramp modulator with high resonance, then a delay used as two narrow HP/LP filter peaks moving inversely, then a narrow-band 100%-wet reverb whose mix is automated opposite to the filter peaks",
+      "goal": "Turn a static, near-mono pad into a wide, whispering, evolving texture with a serial phaser → delay-filter → reverb chain. Phaser theory first: stages are all-pass filters and notches = stages/2; spread 0 = mono/centred, 100 = wide. The pad gets 12 stages and a ramp-up modulator looped once every 4 bars (not a sine/triangle), with resonance pushed high. A delay's two narrow filters (one HP, one LP) are moved in opposite directions by sine LFOs with glide, so two frequency peaks pass each other. Then a 100%-wet reverb, filtered to a narrow band with feedback at 0, has its mix automated opposite to the filter peaks: dry while the peaks are strong, fully wet as they fade. Delta vs pad-phaser cluster (eerie-dreamy phaser-delay-reverb, HP phaser chord pad, nested multi-notch): adds the inverse-moving delay filter peaks and the peak↔reverb-mix counter-automation for front-back plus left-right motion.",
+      "steps": [
+        "Test the phaser basics on the pad: compare 2 stages with 18 (more stages = stronger phasing; notches = stages/2), and spread 0 (mono/centred) with 100 (wide, needs a stereo source). Use a slow rate.",
+        "Set the pad phaser to 12 stages with resonance pushed high. Use a ramp-up (rising) modulator shape instead of sine/triangle, looped once every 4 bars, for a gentle sweeping swell.",
+        "After the phaser, insert a delay used mainly as a filter. Enable two narrow-bandwidth filters, one high-pass and one low-pass, and modulate their cutoffs with sine LFOs of different rates and glide, set in opposite directions (one rising while the other falls). Optionally delay the LFO onset with an envelope so the peaks drift slightly.",
+        "Keep stereo/time modulation in only one of phaser or delay. If the phaser already spreads the sound, don't also widen in the delay.",
+        "Add a reverb as the last insert, 100% wet, band-filtered to a small frequency range that highlights the moving peaks, feedback/regeneration at 0. Expect it to sound too wet at first.",
+        "Automate: increase the delay's filter-peak amounts during the sweep, and automate the reverb mix in the opposite direction. Fully dry when the filter peaks are strongest, jumping to 100% wet as the peaks move away and fade.",
+        "Check over 16 bars with a simple drum beat and compare with the dry pad."
+      ]
     }
   ],
   "merged_from": [
@@ -294,7 +314,8 @@
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
-    "phaser-chorus-pure-wave-octave-pad"
+    "phaser-chorus-pure-wave-octave-pad",
+    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation"
   ],
   "tags": [
     "allpass",
@@ -341,6 +362,7 @@
     "parallel-fx-network-phase-flip-dry-cancel-insert-loop",
     "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
-    "phaser-chorus-pure-wave-octave-pad"
+    "phaser-chorus-pure-wave-octave-pad",
+    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation"
   ]
 }

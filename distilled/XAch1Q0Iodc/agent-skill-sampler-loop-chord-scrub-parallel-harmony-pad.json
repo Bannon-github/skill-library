@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "sampler-loop-chord-scrub-parallel-harmony-pad",
+  "name": "90s sampler pad: loop a single bounced synth note in a repitching sampler, play chords so each voice scrubs the loop at its own speed, ping-pong loop, wide voicings, slow filter LFO, then resample the chord and play it again for parallel harmony",
+  "goal": "Make ethereal 90s-jungle/intelligent-DnB-style pads from one sampled note. A repitching sampler (no time-stretch) plays each chord voice at a different speed, so looped voices drift against each other and overlap into slowly shifting textures. Steps: bounce one sustained synth note, loop it in a sampler with enough polyphony, play chords (hold them long), try ping-pong loop mode, open up voicings (7ths and 9ths an octave up scrub faster), add a slow LFO on filter cutoff, then resample the played chord into a new sampler and play that for parallel-harmony chords. Delta vs granular cluster (grain position/density/freeze engines): no granular engine, just classic sampler repitch + loop-phase drift.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "XAch1Q0Iodc",
+    "url": "https://www.youtube.com/watch?v=XAch1Q0Iodc",
+    "title": "Use this 90s sampling technique for ethereal pads",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/XAch1Q0Iodc/agent-skill-sampler-loop-chord-scrub-parallel-harmony-pad.json",
+    "batch": "2026-11-09-morning-hunt"
+  },
+  "prerequisites": [
+    "Any synth for the source note; a sampler with repitch (not warp/stretch) playback, loop modes incl. ping-pong, adjustable polyphony, filter and LFO",
+    "Ability to bounce/resample to audio"
+  ],
+  "inputs": [
+    {
+      "name": "source_note",
+      "type": "audio",
+      "description": "One sustained synth note (or chord for the parallel-harmony variant)",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Chord progression to play, with long held chords",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "drift_pad",
+      "type": "audio",
+      "description": "Looped sampler pad whose voices phase-drift into evolving texture"
+    },
+    {
+      "name": "parallel_harmony_sample",
+      "type": "audio",
+      "description": "Resampled chord for parallel-harmony playing"
+    }
+  ],
+  "constraints": [
+    "Use repitch/classic sampler playback; time-stretching modes remove the per-voice speed difference that creates the effect.",
+    "Movement comes from loop-phase drift and a slow filter LFO, not from pitch modulation; keep the sampler pitch steady.",
+    "Use only your own synth recordings, not sampled commercial records.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Play and bounce one sustained note from a synth pad to audio (for the parallel-harmony variant, bounce a full chord instead).",
+      "tool": "Synth + bounce",
+      "expect": "Clean single-note sample"
+    },
+    {
+      "n": 2,
+      "action": "Load it into a sampler in repitch mode, set a loop over the sustain, and raise the voice/polyphony count so chords can play.",
+      "tool": "Sampler loop + voices",
+      "expect": "Looped note playable polyphonically"
+    },
+    {
+      "n": 3,
+      "action": "Play a chord and hold it. Each voice reads the loop at a different speed and pitch, so the loops drift and overlap. The longer you hold, the more the texture varies.",
+      "tool": "Sampler",
+      "expect": "Shimmering, slowly changing chord texture"
+    },
+    {
+      "n": 4,
+      "action": "Switch the loop to ping-pong so some voices bounce back from the loop end, for more texture variation. Try playing lower on the keyboard for a slower, darker drift.",
+      "tool": "Loop mode",
+      "expect": "Different texture per register"
+    },
+    {
+      "n": 5,
+      "action": "Shape voicings: keep the roots close together and put 7ths/9ths an octave or more up. Those upper voices scrub much faster, adding motion on top. Optionally move the root down a semitone or tone in a multi-sample map.",
+      "tool": "Chord voicing",
+      "expect": "Upper voices move faster than roots"
+    },
+    {
+      "n": 6,
+      "action": "Add a slow LFO to the sampler's filter cutoff so the pad breathes; also try transposing the whole sampler for different feels.",
+      "tool": "Sampler filter + slow LFO",
+      "expect": "Gently evolving tone colour"
+    },
+    {
+      "n": 7,
+      "action": "Resample: bounce the played chord to audio, load it into a new sampler and play it. Each key now plays the whole chord shape (parallel harmony), with the drift texture baked in. Loop and repeat if you want.",
+      "tool": "Resample + new sampler",
+      "expect": "Parallel-harmony pad with built-in movement"
+    }
+  ],
+  "verification": [
+    "Held chord changes texture over 8+ seconds without any pitch LFO.",
+    "Upper chord tones audibly cycle faster than the root.",
+    "Resampled chord, played on one key, sounds as the full chord transposed (parallel harmony)."
+  ],
+  "tags": [
+    "pad",
+    "sampler",
+    "resampling",
+    "parallel-harmony",
+    "texture",
+    "ambient",
+    "jungle",
+    "loop",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sampler-loop-chord-scrub-parallel-harmony-pad"
+}

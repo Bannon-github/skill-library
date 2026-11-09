@@ -109,3 +109,13 @@ Source: [Sylenth 1 Tutorial "Phasing" Pad](https://www.youtube.com/watch?v=ZsbcQ
 - Solo the pad and listen for a resonant whistle the phaser creates; cut that band with a narrow, deep EQ notch.
 - Reverb as an insert or send at about 35% wet: slow, large hall/church-type space, pre-delay about 10 ms, size and decay at maximum; on the reverb's EQ cut everything below 150 Hz and roll the highs off around 4.5 kHz. Add a light compressor after it (shorter release) to bring the reverb up.
 - Sidechain-compress the pad to the kick for gentle pump and automate the pad filter so it comes in and out across sections.
+
+### Phaser pad depth chain: 12-stage phaser on a slow 4-bar ramp modulator with high resonance, then a delay used as two narrow HP/LP filter peaks moving inversely, then a narrow-band 100%-wet reverb whose mix is automated opposite to the filter peaks
+Source: [Using Phaser Effects](https://www.youtube.com/watch?v=nIGiY1jYgWM) · was `phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation`
+- Test the phaser basics on the pad: compare 2 stages with 18 (more stages = stronger phasing; notches = stages/2), and spread 0 (mono/centred) with 100 (wide, needs a stereo source). Use a slow rate.
+- Set the pad phaser to 12 stages with resonance pushed high. Use a ramp-up (rising) modulator shape instead of sine/triangle, looped once every 4 bars, for a gentle sweeping swell.
+- After the phaser, insert a delay used mainly as a filter. Enable two narrow-bandwidth filters, one high-pass and one low-pass, and modulate their cutoffs with sine LFOs of different rates and glide, set in opposite directions (one rising while the other falls). Optionally delay the LFO onset with an envelope so the peaks drift slightly.
+- Keep stereo/time modulation in only one of phaser or delay. If the phaser already spreads the sound, don't also widen in the delay.
+- Add a reverb as the last insert, 100% wet, band-filtered to a small frequency range that highlights the moving peaks, feedback/regeneration at 0. Expect it to sound too wet at first.
+- Automate: increase the delay's filter-peak amounts during the sweep, and automate the reverb mix in the opposite direction. Fully dry when the filter peaks are strongest, jumping to 100% wet as the peaks move away and fade.
+- Check over 16 bars with a simple drum beat and compare with the dry pad.

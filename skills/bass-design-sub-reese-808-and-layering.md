@@ -150,3 +150,23 @@ Source: [How to make any "WIDE BASS" mono-compatible!](https://www.youtube.com/w
 - Enable a second oscillator as a pure sine at the same pitch. Leave its unison off. This sine is the new fundamental.
 - Set the sine oscillator's phase-randomize / rand to 0 so every note starts at the same phase (stable for kick alignment). Do not zero rand on a normal full-spectrum unison Reese — that creates a sweeping laser artifact and still collapses in mono.
 - A/B the patch in mono: the fundamental-stripped+sine version keeps power; a normal unison Reese pumps and thins. Optionally check an oscilloscope against the kick.
+
+### Low end from one short transient kick + three band-focused sub layers in a ducking hierarchy (sub2 ducks to sub1; sub3 ducks to sub1 and sub2; all duck to a ghost kick), glued with tape saturation, 550 Hz mud cut, mono
+Source: [Regent shows how to craft low end: 1 kick and 3 subs](https://www.youtube.com/watch?v=eG0401qU-Pw) · was `short-kick-three-sub-layers-hierarchical-ducking`
+- Kick: keep it short so it leaves room for the subs. Compress lightly for level control, cut around 550 Hz, boost the lows a little, add overdrive in the mid-highs for crunch, a little drive, and make it mono.
+- Create a muted ghost kick on every kick hit and use it as the sidechain key for all ducking (so the audible kick can change without breaking the ducking).
+- Sub 1 (master sub): a sine-like sub sample. Remove mids and highs, dip the extreme lows below about 20 Hz, keep roughly 30–100 Hz with a slope after. Add overdrive, drive and tape-style compression for harmonic warmth, make it mono, duck it to the ghost kick, then a final low-pass around 130 Hz.
+- Sub 2 (secondary): cut the sub tail from a bass-drum hit and program a denser, groovier rhythm. Same chain (mid/high cut, overdrive, drive, tape comp, mono), duck to the ghost kick AND to sub 1, add a little make-up gain, then low-pass.
+- Sub 3 (warmth/flow): a long sustained sine sub from a generator. EQ it to focus a little higher, around 130 Hz, clearing room for the other subs. Duck it to the ghost kick, then to sub 1 and to sub 2, so it is lowest in the hierarchy.
+- Sub group: cut around 550 Hz, give the sub band a small boost (the source says "around the 25 zone", which reads as about 25 Hz), and keep a little noise/grit if it adds colour. Optionally test a 100% wet tempo delay to find a better sub rhythm, then remove it if it doesn't help. Duck the whole group to the ghost kick with fast attack and a fairly short release so it stays punchy. Make it mono.
+- Kick+sub bus: add tape saturation to glue kick and subs into one tight sound, cut around 550 Hz again after saturation, and make it mono.
+- Listen to kick + subs alone: you should already hear a groove, with each sub covering a slightly different part of the low band. Adjust patterns before adding percussion.
+
+### Classic house organ bass: unfiltered sine two octaves down for the sub, plus a square two octaves and a fifth above it (+7 st) through a key-tracked LP24 at 30 Hz with 50% envelope, mono, an optional ~8 ms noise transient, and bass-mono below 120 Hz
+Source: [The one bass every producer should know how to make [Ableton Live tutorial]](https://www.youtube.com/watch?v=HnDS1YURJkE) · was `house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack`
+- Osc 1: sine, octave -2, mixer at 0 dB, routed around the filter (filter bypassed for osc 1). A note played at A2 now sounds at A0, the bottom of the sub range.
+- Osc 2: square, octave 0, detune/transpose +7 semitones, so it sits a perfect fifth and two octaves above osc 1. Mix it at about -3 dB.
+- Give the whole filter to osc 2: 24 dB/oct low-pass, key tracking 100%, cutoff very low (about 30 Hz), envelope 1 to cutoff at 50%. Set envelope 1 sustain to about 75% and the voice mode to mono.
+- For more top-end bite, raise the cutoff a little and balance by lowering osc 2. Stop before it just sounds like a square wave.
+- Optional transient: route envelope 2 to noise gain at 100%, with sustain 0 and a very fast attack/decay (the source's burst falls from about 3.5 dB to nothing in about 7.7 ms). This adds bite without making the square louder.
+- Variations: add shape to osc 1 or switch it to triangle for a few bridging harmonics; route envelope 2 to the filter with a slow attack for a flute-like tone. Finish with a bass-mono utility so everything under about 120 Hz stays mono while the top stays wide.

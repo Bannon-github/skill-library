@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "id": "house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack",
+  "name": "Classic house organ bass: unfiltered sine two octaves down for the sub, plus a square two octaves and a fifth above it (+7 st) through a key-tracked LP24 at 30 Hz with 50% envelope, mono, an optional ~8 ms noise transient, and bass-mono below 120 Hz",
+  "goal": "Build the classic house/garage organ bass (the 'Show Me Love' type) from two oscillators. The sub body is a sine two octaves below the played note (A2 sounds as A0) that bypasses the filter. The overtones come from a square two octaves and a perfect fifth above it (+7 semitones), mixed about 3 dB under, through a 24 dB low-pass with 100% key tracking, cutoff at about 30 Hz and envelope 1 at 50% (sustain about 75%), in mono. Add bite with a very short noise burst driven by envelope 2 (sustain 0, about 3.5 dB decaying to nothing in about 8 ms) instead of turning the square up. Keep the low end mono below about 120 Hz. Delta vs bass cluster (808/sine-hold, Reese, sub/mid split, four punchy archetypes): the defining trait is the fifth-interval overtone oscillator on its own filter over a clean, unfiltered sine sub.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "HnDS1YURJkE",
+    "url": "https://www.youtube.com/watch?v=HnDS1YURJkE",
+    "title": "The one bass every producer should know how to make [Ableton Live tutorial]",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/HnDS1YURJkE/agent-skill-house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack.json",
+    "batch": "2026-11-09-morning-hunt"
+  },
+  "prerequisites": [
+    "Two-oscillator synth with sine/triangle and square, octave + semitone tuning, per-osc filter bypass (or two parallel layers), 24 dB low-pass with key tracking, two envelopes, a noise source with modulatable gain, mono mode",
+    "Bass-mono / mono-below-crossover utility"
+  ],
+  "inputs": [
+    {
+      "name": "bass_line",
+      "type": "midi",
+      "description": "House/garage bass line around A1–A2 (sub then lands near A0–G0)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "organ_bass",
+      "type": "synth patch/audio",
+      "description": "Punchy organ bass with a strong sine sub and fifth overtones that read on small speakers"
+    }
+  ],
+  "constraints": [
+    "Keep the fifth exactly +7 semitones with no detune drift or pitch LFO. Unison (about 20%) is optional and acts like chorus.",
+    "Don't open the cutoff so far that the square dominates and overpowers the sine fundamental; if you open it, lower the square level.",
+    "Keep everything below about 120 Hz mono.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc 1: sine, octave -2, mixer at 0 dB, routed around the filter (filter bypassed for osc 1). A note played at A2 now sounds at A0, the bottom of the sub range.",
+      "tool": "Osc 1",
+      "expect": "Deep, clean sine sub"
+    },
+    {
+      "n": 2,
+      "action": "Osc 2: square, octave 0, detune/transpose +7 semitones, so it sits a perfect fifth and two octaves above osc 1. Mix it at about -3 dB.",
+      "tool": "Osc 2",
+      "expect": "Overtone layer that carries on small speakers"
+    },
+    {
+      "n": 3,
+      "action": "Give the whole filter to osc 2: 24 dB/oct low-pass, key tracking 100%, cutoff very low (about 30 Hz), envelope 1 to cutoff at 50%. Set envelope 1 sustain to about 75% and the voice mode to mono.",
+      "tool": "LP24 + key track + env 1",
+      "expect": "Vanilla house organ bass: strong sub, subtle fifth on top"
+    },
+    {
+      "n": 4,
+      "action": "For more top-end bite, raise the cutoff a little and balance by lowering osc 2. Stop before it just sounds like a square wave.",
+      "tool": "Cutoff vs osc 2 level",
+      "expect": "Brighter overtones without losing the sine body"
+    },
+    {
+      "n": 5,
+      "action": "Optional transient: route envelope 2 to noise gain at 100%, with sustain 0 and a very fast attack/decay (the source's burst falls from about 3.5 dB to nothing in about 7.7 ms). This adds bite without making the square louder.",
+      "tool": "Env 2 → noise gain",
+      "expect": "Perceptible click-free bite on each note"
+    },
+    {
+      "n": 6,
+      "action": "Variations: add shape to osc 1 or switch it to triangle for a few bridging harmonics; route envelope 2 to the filter with a slow attack for a flute-like tone. Finish with a bass-mono utility so everything under about 120 Hz stays mono while the top stays wide.",
+      "tool": "Shape/triangle + bass mono",
+      "expect": "Personalised patch, mono-safe low end"
+    }
+  ],
+  "verification": [
+    "A spectrum shows the sine fundamental two octaves below the played note and a component at +2 oct +7 st.",
+    "Muting osc 2 on small speakers makes the bass nearly disappear; unmuting brings it back.",
+    "Low end below about 120 Hz is mono; the noise transient is shorter than about 10 ms."
+  ],
+  "tags": [
+    "bass",
+    "house",
+    "organ-bass",
+    "fifth-interval",
+    "sine-sub",
+    "key-tracking",
+    "noise-transient",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack"
+}

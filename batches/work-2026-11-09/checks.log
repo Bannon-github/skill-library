@@ -1,0 +1,98 @@
+=== distilled/-yzW0DZuo40/agent-skill-synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers.json
+OK synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: synth-noise-osc-split-filter-env-air-plus-tuned-noise-layers
+candidate_name: Synth-native noise air: noise osc on its own low-pass with a fast envelope for bright attack, shelved tape-noise bed boosted near 6 kHz, +24 st noise layer on bass, envelope-following tuned noise on drums, parallel master noise chain
+tokens: 127
+best_overlap: 0.066
+novelty_score: 0.934  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.066  [local] youtube-skills/mcp-publish :: brightness-and-air-at-the-source
+       name=Brightness and air at the source for pads and textures
+       goal=Make pads bright and airy from the start (instead of boosting treble at the end): choose harmonically rich oscillators, 
+       url=skill://brightness-and-air-at-the-source
+0.065  [local] youtube-skills/mcp-publish :: pad-supersaw-unison-detune-width
+       name=Supersaw / unison pads: detune, voice count, width and filter swell
+       goal=Build a wide, warm detuned-saw pad (house, trance, cinematic) by choosing voice count and detune in cents, spreading voi
+=== distilled/eG0401qU-Pw/agent-skill-short-kick-three-sub-layers-hierarchical-ducking.json
+OK short-kick-three-sub-layers-hierarchical-ducking
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: short-kick-three-sub-layers-hierarchical-ducking
+candidate_name: Low end from one short transient kick + three band-focused sub layers in a ducking hierarchy (sub2 ducks to sub1; sub3 ducks to sub1 and sub2; all duck to a ghost kick), glued with tape saturation, 550 Hz mud cut, mono
+tokens: 98
+best_overlap: 0.076
+novelty_score: 0.924  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.076  [local] youtube-skills/mcp-publish :: mix-eq-gain-staging-and-balance
+       name=Mixdown workflow: gain staging, subtractive EQ, dynamic EQ, multiband and satura
+       goal=Mix a track to a reference: gain stage to sensible levels, balance with faders first, subtractive EQ (high-pass non-bass
+       url=skill://mix-eq-gain-staging-and-balance
+0.072  [local] youtube-skills/mcp-publish :: sidechain-ducking-per-element
+       name=Sidechain and ducking per element (kick/bass, pads, trance gate, pump)
+       goal=Apply sidechain correctly per element: bass/lows duck fully for the whole kick, leads/pads duck only on the punch, depth
+=== distilled/XAch1Q0Iodc/agent-skill-sampler-loop-chord-scrub-parallel-harmony-pad.json
+OK sampler-loop-chord-scrub-parallel-harmony-pad
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: sampler-loop-chord-scrub-parallel-harmony-pad
+candidate_name: 90s sampler pad: loop a single bounced synth note in a repitching sampler, play chords so each voice scrubs the loop at its own speed, ping-pong loop, wide voicings, slow filter LFO, then resample the chord and play it again for parallel harmony
+tokens: 102
+best_overlap: 0.082
+novelty_score: 0.918  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.082  [local] youtube-skills/mcp-publish :: pad-supersaw-unison-detune-width
+       name=Supersaw / unison pads: detune, voice count, width and filter swell
+       goal=Build a wide, warm detuned-saw pad (house, trance, cinematic) by choosing voice count and detune in cents, spreading voi
+       url=skill://pad-supersaw-unison-detune-width
+0.081  [local] youtube-skills/mcp-publish :: harmony-chords-voicing-and-slow-motion
+       name=Harmony: chord qualities, voicing, voice leading and slow ambient harmonic motio
+       goal=Write chord progressions and voicings: diatonic chords in a key, extended/sus chords, spread voicings with one chord ton
+=== distilled/nIGiY1jYgWM/agent-skill-phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation.json
+OK phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation
+candidate_name: Phaser pad depth chain: 12-stage phaser on a slow 4-bar ramp modulator with high resonance, then a delay used as two narrow HP/LP filter peaks moving inversely, then a narrow-band 100%-wet reverb whose mix is automated opposite to the filter peaks
+tokens: 130
+best_overlap: 0.083
+novelty_score: 0.917  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.083  [local] youtube-skills/mcp-publish :: pad-phaser-notch-comb-movement
+       name=Phaser, flanger and comb movement on pads
+       goal=Add sweeping notch movement to pads with phasers (all-pass notches), flangers/combs (harmonic notches) and chorus/ensemb
+       url=skill://pad-phaser-notch-comb-movement
+0.056  [local] youtube-skills/mcp-publish :: reverb-delay-space-and-shimmer
+       name=Reverb, delay, shimmer and freeze: creating depth and space
+       goal=Place sounds in space with sends: choose reverb type, pre-delay and low-cut, tempo-synced and ping-pong delays, distorte
+best_overlap: 0.072
+novelty_score: 0.928  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.072  [local] youtube-skills/mcp-publish :: pad-supersaw-unison-detune-width
+       name=Supersaw / unison pads: detune, voice count, width and filter swell
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: house-organ-bass-sine-sub-unfiltered-plus-square-fifth-two-octaves-up-lp24-keytrack
+candidate_name: Classic house organ bass: unfiltered sine two octaves down for the sub, plus a square two octaves and a fifth above it (+7 st) through a key-tracked LP24 at 30 Hz with 50% envelope, mono, an optional ~8 ms noise transient, and bass-mono below 120 Hz
+tokens: 115
+best_overlap: 0.083
+novelty_score: 0.917  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.083  [local] youtube-skills/mcp-publish :: bass-design-sub-reese-808-and-layering
+       name=Bass design: sub, Reese, 808, punchy bass and distortion layering
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro
+candidate_name: NOOF cinematic synth pulse (Noise, Osc, Osc, Filter): white noise + mono saw + saw an octave up with 5 slightly detuned unison voices, all into a fully closed ladder low-pass opened per note by a fast envelope on an eighth-note MIDI line; automate cutoff as the single energy control
+tokens: 100
+best_overlap: 0.097
+novelty_score: 0.903  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.097  [local] youtube-skills/mcp-publish :: pad-supersaw-unison-detune-width
+       name=Supersaw / unison pads: detune, voice count, width and filter swell

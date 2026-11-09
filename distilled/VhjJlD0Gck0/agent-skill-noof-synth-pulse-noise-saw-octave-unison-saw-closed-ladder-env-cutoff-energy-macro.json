@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro",
+  "name": "NOOF cinematic synth pulse (Noise, Osc, Osc, Filter): white noise + mono saw + saw an octave up with 5 slightly detuned unison voices, all into a fully closed ladder low-pass opened per note by a fast envelope on an eighth-note MIDI line; automate cutoff as the single energy control",
+  "goal": "Make a driving film/game synth pulse in any synth with a four-part formula: a white-noise oscillator (a small burst of energy on top), osc A as a plain saw, osc B as a saw one octave up with about 5 unison voices slightly detuned (higher tone and width), and one ladder low-pass with its cutoff all the way down, opened briefly on every note of an eighth-note MIDI line by envelope 2. Then automate one parameter, cutoff, across the track. Low cutoff gives the plain pulse; opening it reveals osc B's width and detune, then the noise burst on top, so a single lane adds or removes energy. Delta vs arrangement cluster's square-osc motor and the filter cluster's velocity→cutoff skill: a layer order chosen so the cutoff reveals width and then noise, giving one-knob energy control.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "VhjJlD0Gck0",
+    "url": "https://www.youtube.com/watch?v=VhjJlD0Gck0",
+    "title": "Use this 4 step formula to create epic synth pulses in any synth: Serum, Phase Plant, Pigment, Vital",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/VhjJlD0Gck0/agent-skill-noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro.json",
+    "batch": "2026-11-09-morning-hunt"
+  },
+  "prerequisites": [
+    "Any synth with two oscillators plus noise, unison/detune, a ladder-style low-pass, and an envelope routable to cutoff",
+    "Eighth-note (or similar) repeated-note MIDI"
+  ],
+  "inputs": [
+    {
+      "name": "pulse_midi",
+      "type": "midi",
+      "description": "Repeated eighth-note line on the root or chord tones",
+      "required": true
+    },
+    {
+      "name": "energy_curve",
+      "type": "automation",
+      "description": "Where the cue should gain or lose energy",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "synth_pulse",
+      "type": "synth patch/audio",
+      "description": "Pumping pulse whose energy is controlled by one cutoff lane"
+    }
+  ],
+  "constraints": [
+    "Keep unison detune slight; it should add width, not wobble. No pitch LFO.",
+    "Keep the noise level low; it should be heard only when the cutoff is opened.",
+    "Same formula works across synths; only the programming differs. Use generic saw and noise, no presets.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Noise: enable a white-noise oscillator at a low level as a small burst of energy on top.",
+      "tool": "Noise osc",
+      "expect": "Faint noise layer"
+    },
+    {
+      "n": 2,
+      "action": "Osc A: default saw, one voice.",
+      "tool": "Osc A",
+      "expect": "Plain saw body"
+    },
+    {
+      "n": 3,
+      "action": "Osc B: saw pitched one octave up, slightly detuned against osc A, unison about 5 voices with a little detune spread.",
+      "tool": "Osc B + unison",
+      "expect": "Higher, wider, livelier layer"
+    },
+    {
+      "n": 4,
+      "action": "Route all three into one ladder low-pass with cutoff fully down. Route envelope 2 (retriggered on each MIDI note) to cutoff with a fast attack and quick decay, so each eighth note opens the filter briefly and it falls straight back.",
+      "tool": "Ladder LP + env 2",
+      "expect": "Pumping synth pulse on the eighth-note line"
+    },
+    {
+      "n": 5,
+      "action": "Automate cutoff through the cue: low = plain pulse (noise and osc B barely audible); higher = osc B width and detune come through; highest = noise burst power on top. Use this single lane to add or remove energy.",
+      "tool": "Cutoff automation",
+      "expect": "One-knob energy shaping that follows the arrangement"
+    },
+    {
+      "n": 6,
+      "action": "Check that muting noise or osc B matters a lot at high cutoff and little at low cutoff. Add effects on top only after the core works.",
+      "tool": "Mute A/B",
+      "expect": "Layers revealed in order as cutoff rises"
+    }
+  ],
+  "verification": [
+    "Each eighth note has a clear filter 'pump' with cutoff at minimum.",
+    "Raising cutoff audibly adds width (osc B), then noise sparkle.",
+    "A single cutoff automation lane changes the perceived energy of the cue."
+  ],
+  "tags": [
+    "synth-pulse",
+    "ostinato",
+    "cinematic",
+    "noise-oscillator",
+    "unison",
+    "ladder-filter",
+    "filter-envelope",
+    "automation",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro"
+}

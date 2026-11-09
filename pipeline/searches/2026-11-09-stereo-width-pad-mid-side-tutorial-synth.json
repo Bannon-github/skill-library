@@ -1,0 +1,106 @@
+{
+ "topic": "stereo width pad mid side tutorial synth",
+ "date": "2026-11-09",
+ "params": {
+  "topic": "stereo width pad mid side tutorial synth",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "E3HK05_GhLY",
+   "title": "Mind-Blowing Mixing Tips - Be Advanced in Stereo Width, Stereo Field, Phase Correlation, Panorama",
+   "channel": "Andrew Zeleno",
+   "duration": 751,
+   "view_count": 4035,
+   "url": "https://www.youtube.com/watch?v=E3HK05_GhLY",
+   "query": "stereo width pad mid side tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.3
+  },
+  {
+   "id": "lORu0zmSKzc",
+   "title": "Ableton Live Utility Plugin Secret Trick to Increase Width",
+   "channel": "Sam Smyers",
+   "duration": 899,
+   "view_count": 9314,
+   "url": "https://www.youtube.com/watch?v=lORu0zmSKzc",
+   "query": "stereo width pad mid side tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.48
+  },
+  {
+   "id": "Ww-2TtxrZTw",
+   "title": "The No.1 Trick To Make Everything Sound Wide | Cubase Secrets with Dom",
+   "channel": "Cubase",
+   "duration": 644,
+   "view_count": 161436,
+   "url": "https://www.youtube.com/watch?v=Ww-2TtxrZTw",
+   "query": "stereo width pad mid side tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.1
+  },
+  {
+   "id": "Iu_uNAzaaOI",
+   "title": "Do THIS to make your sounds WIDE",
+   "channel": "Oversampled",
+   "duration": 396,
+   "view_count": 146093,
+   "url": "https://www.youtube.com/watch?v=Iu_uNAzaaOI",
+   "query": "stereo width pad mid side tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.08
+  },
+  {
+   "id": "cHZN_CIyICg",
+   "title": "The secret 🔑 to true wideness!",
+   "channel": "W. A. Production",
+   "duration": 624,
+   "view_count": 1835,
+   "url": "https://www.youtube.com/watch?v=cHZN_CIyICg",
+   "query": "stereo width pad mid side tutorial synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.13
+  }
+ ],
+ "dropped": [
+  {
+   "id": "kEiILPm1VSc",
+   "why": "already known"
+  },
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "0sEyZymchTE",
+   "why": "already known"
+  },
+  {
+   "id": "zjRTE41iu7s",
+   "why": "already known"
+  },
+  {
+   "id": "NCqCeFR1Ues",
+   "why": "duration 197s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

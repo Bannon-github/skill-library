@@ -86,6 +86,12 @@
         "video_id": "cWPfqPwXBos",
         "url": "https://www.youtube.com/watch?v=cWPfqPwXBos",
         "title": "Adjusting Velocity to Filter Cutoff – Synth Clips 7 – Daniel Fisher"
+      },
+      {
+        "from_skill": "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro",
+        "video_id": "VhjJlD0Gck0",
+        "url": "https://www.youtube.com/watch?v=VhjJlD0Gck0",
+        "title": "Use this 4 step formula to create epic synth pulses in any synth: Serum, Phase Plant, Pigment, Vital"
       }
     ]
   },
@@ -359,6 +365,19 @@
         "Enable velocity→filter (or velocity→filter EG amount). Learn polarity: typical = harder = brighter; some synths (Subsequent/Sub 37 style) increase velocity sens to make soft playing darker instead—strategy reverses.",
         "Play slow soft velocities while raising velocity amount until darkest desired soft tone; verify fast hits still hit the bright ceiling. Trim EG amount if hard hits are too bright; resonance exaggerates the difference."
       ]
+    },
+    {
+      "from_skill": "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro",
+      "name": "NOOF cinematic synth pulse (Noise, Osc, Osc, Filter): white noise + mono saw + saw an octave up with 5 slightly detuned unison voices, all into a fully closed ladder low-pass opened per note by a fast envelope on an eighth-note MIDI line; automate cutoff as the single energy control",
+      "goal": "Make a driving film/game synth pulse in any synth with a four-part formula: a white-noise oscillator (a small burst of energy on top), osc A as a plain saw, osc B as a saw one octave up with about 5 unison voices slightly detuned (higher tone and width), and one ladder low-pass with its cutoff all the way down, opened briefly on every note of an eighth-note MIDI line by envelope 2. Then automate one parameter, cutoff, across the track. Low cutoff gives the plain pulse; opening it reveals osc B's width and detune, then the noise burst on top, so a single lane adds or removes energy. Delta vs arrangement cluster's square-osc motor and the filter cluster's velocity→cutoff skill: a layer order chosen so the cutoff reveals width and then noise, giving one-knob energy control.",
+      "steps": [
+        "Noise: enable a white-noise oscillator at a low level as a small burst of energy on top.",
+        "Osc A: default saw, one voice.",
+        "Osc B: saw pitched one octave up, slightly detuned against osc A, unison about 5 voices with a little detune spread.",
+        "Route all three into one ladder low-pass with cutoff fully down. Route envelope 2 (retriggered on each MIDI note) to cutoff with a fast attack and quick decay, so each eighth note opens the filter briefly and it falls straight back.",
+        "Automate cutoff through the cue: low = plain pulse (noise and osc B barely audible); higher = osc B width and detune come through; highest = noise burst power on top. Use this single lane to add or remove energy.",
+        "Check that muting noise or osc B matters a lot at high cutoff and little at low cutoff. Add effects on top only after the core works."
+      ]
     }
   ],
   "merged_from": [
@@ -374,7 +393,8 @@
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "triple-bandpass-bank-unsynced-lfo-pad",
-    "velocity-filter-cutoff-envelope-amount"
+    "velocity-filter-cutoff-envelope-amount",
+    "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro"
   ],
   "tags": [
     "aliasing",
@@ -425,6 +445,7 @@
     "six-pole-bandpass-stepped-freq-bandwidth-snapshot-morph",
     "traveler-walkthrough-stereo-ladder-lf-width",
     "triple-bandpass-bank-unsynced-lfo-pad",
-    "velocity-filter-cutoff-envelope-amount"
+    "velocity-filter-cutoff-envelope-amount",
+    "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro"
   ]
 }
