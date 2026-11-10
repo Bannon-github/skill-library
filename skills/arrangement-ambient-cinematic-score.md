@@ -141,3 +141,14 @@ Source: [How to compose Cinematic Music (in 7 easy steps)](https://www.youtube.c
 - Write the melody starting with the ostinato section: invent a 2-bar motif from chord tones, fill gaps by step; copy the rhythm into the next 2 bars with new notes; reuse that rhythm in the second half of the 8 bars; place the highest note in the second half for an emotional arc. Orchestrate with violins (+ piano double); optional horns/trumpets/cellos.
 - Repeat the 8-bar melody as climax: add an independent countermelody (e.g. horns) that enters on main-melody sustains/rests. Double the melody in unison (violins+cellos) and in octaves (violins+piano) in the second half; add a pulsing bass-synth on roots for low-end push.
 - Bookend: after the crescendo, paste the opening 8 bars of piano (+ delicate texture) so the piece ends where it began, feeling final rather than abruptly cut.
+
+### Hybrid orchestral cue: add four synth roles from the ground up to an orchestral arrangement — sine sub an octave under the bass, a straight quarter/eighth pulsing bass, quick-attack polyphonic chord pads, then 2-3 staccato pluck ostinati using only chord tones, each repeating every 1-2 beats and each layer slightly more complex
+Source: [How to Combine Synths with Orchestra](https://www.youtube.com/watch?v=u4tg0u-THS8) · was `hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati`
+- Listen to the orchestral section alone and note its bass line and chords.
+- Sub bass: a simple sine (or low-harmonic synth) plays the bass line one octave below the other bass instruments. It should be felt more than heard.
+- Pulsing bass: a simple bass synth plays the bass line in straight quarter or eighth notes (play or pencil them in).
+- Harmonic pads: a polyphonic, quick-attack pad plays the chord progression as sustained chords, either doubling strings/brass or in its own register.
+- Pluck layer 1: a staccato pluck plays a short pattern of the common tones between chords, repeating every beat or two, with at most one embellishment.
+- Pluck layer 2: a second pluck plays a rhythmic arpeggio of chord tones in a short repeating pattern.
+- Pluck layer 3 (optional): the most adventurous pattern spanning up to an octave, still chord tones only.
+- Play all layers together with the orchestra and balance them.

@@ -1,0 +1,40 @@
+
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.060
+novelty_score: 0.940  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+       name=Mixdown workflow: gain staging, subtractive EQ, dynamic EQ, multiband and satura
+       goal=Mix a track to a reference: gain stage to sensible levels, balance with faders first, subtractive EQ (high-pass non-bass
+
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.097
+novelty_score: 0.903  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+       name=Ambient and cinematic arrangement: staggered layers, arcs, underscore and hybrid
+       goal=Arrange ambient and cinematic cues: role-first layering (drone, string swells, motor ostinato), staggered entries, frequ
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.090
+novelty_score: 0.910  (1.0 = fully novel vs index)
+verdict: NOVEL
+       name=Drum synthesis and hybrid percussion (kick, snare, clap, hats, taiko, epic hits)
+       goal=Synthesize a complete kit and cinematic percussion from oscillators and noise: kick pitch envelope, snare body + noise, 
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.067
+novelty_score: 0.933  (1.0 = fully novel vs index)
+verdict: NOVEL
+       name=Generative ambient: drones, wind, sparkle layers and self-playing soundscapes
+       goal=Build self-playing ambient pieces: noise beds and generative wind, tonic drones and PW drones, Eno-style sine pads, prob
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.081
+novelty_score: 0.919  (1.0 = fully novel vs index)
+verdict: NOVEL
+       name=Drum groove programming: genre patterns, swing, ghost notes and sparse ambient b
+       goal=Program grooves that feel right: four-on-floor, half-time future garage, sparse ambient kits with accent maps, ghost sna
+Checked 1: 1 clean, 0 warned, 0 failed
+best_overlap: 0.091
+novelty_score: 0.909  (1.0 = fully novel vs index)
+verdict: NOVEL
+       name=Arrangement: loop to full song in 8-bar blocks (intro, build, drop, breakdown, o
+       goal=Turn a loop into a finished electronic/pop arrangement: start from the full loop (the climax), subtract to make sections

@@ -1,0 +1,105 @@
+{
+ "topic": "ambient drum loops from synth sounds tutorial",
+ "date": "2026-11-10",
+ "params": {
+  "topic": "ambient drum loops from synth sounds tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "GmUYXWKNJMM",
+   "title": "How to make the Most Important Sounds in EDM (beginner synth tutorial)",
+   "channel": "Gabe Miller Music",
+   "duration": 809,
+   "view_count": 111967,
+   "url": "https://www.youtube.com/watch?v=GmUYXWKNJMM",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.02
+  },
+  {
+   "id": "qz3LH_U2idc",
+   "title": "Tutorial: Ambient, Noise, Doom Music with the Korg Volca Keys.",
+   "channel": "Adam Denno",
+   "duration": 422,
+   "view_count": 26643,
+   "url": "https://www.youtube.com/watch?v=qz3LH_U2idc",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.71
+  },
+  {
+   "id": "57QGu3scvmg",
+   "title": "Unlock Sample-Processing Secrets in Vital | Vital Synth Tutorial",
+   "channel": "Ashtraybentley",
+   "duration": 309,
+   "view_count": 8056,
+   "url": "https://www.youtube.com/watch?v=57QGu3scvmg",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.45
+  },
+  {
+   "id": "Fx0nY0pkWKI",
+   "title": "The Synth Sound from Sweet Dreams (TUTORIAL) #synth #eurythmics #novation",
+   "channel": "william paiva",
+   "duration": 278,
+   "view_count": 35522,
+   "url": "https://www.youtube.com/watch?v=Fx0nY0pkWKI",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.28
+  },
+  {
+   "id": "8PVK04yxyhY",
+   "title": "IDM click and cut MICRO-DRUMS sound design tutorial",
+   "channel": "Trash Sound Design",
+   "duration": 245,
+   "view_count": 27184,
+   "url": "https://www.youtube.com/watch?v=8PVK04yxyhY",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.22
+  },
+  {
+   "id": "HF42gE0gp4E",
+   "title": "I will teach you how to use sampling to ALWAYS be inspired",
+   "channel": "ZW Buckley",
+   "duration": 826,
+   "view_count": 84733,
+   "url": "https://www.youtube.com/watch?v=HF42gE0gp4E",
+   "query": "ambient drum loops from synth sounds tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.96
+  }
+ ],
+ "dropped": [
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "Cel4155VqaA",
+   "why": "duration 4210s"
+  },
+  {
+   "id": "QHIhDP8pTkE",
+   "why": "duration 215s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

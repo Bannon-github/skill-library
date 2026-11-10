@@ -1,0 +1,105 @@
+{
+ "topic": "wavetable pad sound design tutorial cinematic",
+ "date": "2026-11-10",
+ "params": {
+  "topic": "wavetable pad sound design tutorial cinematic",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "vv4LdpuvH5U",
+   "title": "Ableton Wavetable Tutorial - Designing a Dreamy Cinematic Pad",
+   "channel": "Busiless Music",
+   "duration": 800,
+   "view_count": 3122,
+   "url": "https://www.youtube.com/watch?v=vv4LdpuvH5U",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.25
+  },
+  {
+   "id": "4zvaKVX0x2s",
+   "title": "How to Make Realistic Strings in VITAL // Sound Design Tutorial",
+   "channel": "Jazen Sounds",
+   "duration": 251,
+   "view_count": 53717,
+   "url": "https://www.youtube.com/watch?v=4zvaKVX0x2s",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.37
+  },
+  {
+   "id": "RPzAJFC_JkI",
+   "title": "How to Build Evolving Cinematic Pads with Wavetable Synths",
+   "channel": "Busiless Music",
+   "duration": 1321,
+   "view_count": 974,
+   "url": "https://www.youtube.com/watch?v=RPzAJFC_JkI",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.99
+  },
+  {
+   "id": "msjAGVRCp6M",
+   "title": "How to Make ANY Synth Sound in Ableton Wavetable",
+   "channel": "Tom Casey Music",
+   "duration": 875,
+   "view_count": 26548,
+   "url": "https://www.youtube.com/watch?v=msjAGVRCp6M",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.71
+  },
+  {
+   "id": "N0HhmrWeWjA",
+   "title": "Ableton Wavetable Tips and Tricks",
+   "channel": "Seed To Stage",
+   "duration": 799,
+   "view_count": 79112,
+   "url": "https://www.youtube.com/watch?v=N0HhmrWeWjA",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.95
+  },
+  {
+   "id": "vClNy5TAa2A",
+   "title": "Logic Pro: How to use Custom Wavetables in RetroSynth",
+   "channel": "Jono Buchanan Music",
+   "duration": 866,
+   "view_count": 3970,
+   "url": "https://www.youtube.com/watch?v=vClNy5TAa2A",
+   "query": "wavetable pad sound design tutorial cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.3
+  }
+ ],
+ "dropped": [
+  {
+   "id": "JP5yTtT-gbk",
+   "why": "already known"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "nNsv4KWtazk",
+   "why": "already known"
+  },
+  {
+   "id": "ehKoz6ILmxQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

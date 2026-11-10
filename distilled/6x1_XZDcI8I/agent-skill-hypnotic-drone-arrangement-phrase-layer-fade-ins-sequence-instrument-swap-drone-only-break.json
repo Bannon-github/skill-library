@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
+  "name": "Arrange a minimal hypnotic track around one evolving drone: record filter-cutoff automation on a one-note drone and add dissonant extra notes per section, bring percussion layers in phrase by phrase with short volume-curve fade-ins, reach the climax with rising cutoff plus a high atonal noise layer, drop to a drone-and-atmo-only hypnotic break for 2-3 phrases, then keep energy by swapping the same sequence onto a different instrument instead of adding new loops",
+  "goal": "Turn a drone + groove sketch into a full, DJ-friendly minimal arrangement. Delta vs arrangement-loop-to-song cluster (build/drop, pre-drop): drone-led hypnotic structure where interest comes from recorded automation, added notes and instrument swaps, plus fade-in (curve) entries rather than hard starts.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "6x1_XZDcI8I",
+    "url": "https://www.youtube.com/watch?v=6x1_XZDcI8I",
+    "title": "How I Arranged Hypnotic Techno Track – Arrangement Breakdown",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/6x1_XZDcI8I/agent-skill-hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break.json",
+    "batch": "2026-11-10-morning-hunt"
+  },
+  "prerequisites": [
+    "A drone/pad patch with slow internal LFOs and a filter",
+    "Drum/percussion layers (two hat layers, shakers, noise pattern, ride), an atmo layer, delay with feedback for occasional FX",
+    "Automation recording in a DAW"
+  ],
+  "inputs": [
+    {
+      "name": "drone",
+      "type": "midi/audio",
+      "description": "One-note drone (e.g. on G) with slow modulation",
+      "required": true
+    },
+    {
+      "name": "percussion_layers",
+      "type": "audio/midi",
+      "description": "Hats, shakers, noise pattern, ride, 16th percussion",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arrangement",
+      "type": "daw arrangement",
+      "description": "Minimal phrase-based arrangement with build, climax, drone-only break and second section"
+    }
+  ],
+  "constraints": [
+    "Minimal: fewer elements give more dynamics and clarity and mix better in DJ sets; leave out sounds that pull attention from the drone.",
+    "Use few, gentle FX hits; avoid splashy or harsh noise FX every phrase and rapid clicking textures (Matt's preference).",
+    "Bring drums in early (Matt prefers drums by about bar 8); the source starts the drone abruptly — give it a short fade.",
+    "Added drone notes are steady held notes, not pitch wobble.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Hold one drone note through the track and record a pass of filter-cutoff automation while arranging, then tidy it by hand so overtones open up toward peaks.",
+      "tool": "Drone + automation record",
+      "expect": "Drone that evolves without new parts"
+    },
+    {
+      "n": 2,
+      "action": "Add 1-2 extra held notes on the drone in later sections (e.g. G with D#, D, then G#) for dissonant tension.",
+      "tool": "MIDI",
+      "expect": "Harmonic change without a chord progression"
+    },
+    {
+      "n": 3,
+      "action": "Build the groove phrase by phrase: lead percussion first, then a second hat layer (snappy + softer), then shakers, then a high noise pattern. Start some layers with a short volume curve (fade-in) so they blend in rather than hit on the downbeat.",
+      "tool": "Arrangement + volume automation",
+      "expect": "Steady build of intensity"
+    },
+    {
+      "n": 4,
+      "action": "Climax: raise the drone cutoff and add the high atonal noise layer together, with a volume swell into it.",
+      "tool": "Automation",
+      "expect": "Peak intensity"
+    },
+    {
+      "n": 5,
+      "action": "Break: drop the drums so only the drone and atmo play for 2-3 phrases, changing atmo notes so it stays alive.",
+      "tool": "Arrangement",
+      "expect": "Hypnotic drone-only moment"
+    },
+    {
+      "n": 6,
+      "action": "Second section: introduce one new rhythmic element that carries its own automation, and reduce automation on the drone so focus shifts. Add a quiet 16th percussion to keep energy.",
+      "tool": "Arrangement",
+      "expect": "New focus without clutter"
+    },
+    {
+      "n": 7,
+      "action": "Keep the groove fairly constant but swap sequences between instruments each phrase (the same pattern on a different hat/ride/perc sound) instead of repeating loops or adding layers. A 909 ride with reverb and a flanger/frequency-shifter adds movement.",
+      "tool": "MIDI clips + instruments",
+      "expect": "Variety at the same density"
+    },
+    {
+      "n": 8,
+      "action": "Before drops, filter-automate the top end down then bring high-end noise back for contrast. Add a sparse FX hit (a few hat notes into a high-feedback delay with filter modulation) at some phrase starts, not all.",
+      "tool": "Filter automation + delay",
+      "expect": "Clear phrase markers"
+    },
+    {
+      "n": 9,
+      "action": "Listen through and remove any element that steals attention from the drone; export and check on different systems.",
+      "tool": "Review",
+      "expect": "Lean, dynamic final arrangement"
+    }
+  ],
+  "verification": [
+    "New layers enter at phrase boundaries, some with a fade-in curve.",
+    "There is a drone-and-atmo-only break of at least 2 phrases.",
+    "At least two phrases reuse the same sequence on a different instrument."
+  ],
+  "tags": [
+    "arrangement",
+    "hypnotic-techno",
+    "drone",
+    "automation",
+    "phrase-building",
+    "break",
+    "minimal",
+    "transitions",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break"
+}

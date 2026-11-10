@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends",
+  "name": "Organic downtempo/electronica groove at 115-120 BPM (Christian Löffler style): deep kick plus a tom made from the same kick (shorter, softer attack, band-passed), filtered rim with a small room, 3-4 layered hand claps with pre-claps placed slightly earlier and varied per hit, a shaker family cut from one sample at different transpositions, frequency-split hats, dark noise percussion and an ambient noise loop, all glued into small rooms; then a warm sidechained piano/pad bed",
+  "goal": "Build an organic, human downtempo groove from a few samples and stock tools, then a warm bed that leaves it space. Delta vs drum-groove cluster (future-garage layers, drums under a slow pad, step-sequencer humanising, genre families): a frequency-layered organic percussion stack (kick→tom reuse, clap crowd with pre-claps, transposed shaker family, rooms) for downtempo/electronica.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "3zIsQfKtUno",
+    "url": "https://www.youtube.com/watch?v=3zIsQfKtUno",
+    "title": "How to make ELECTRONICA and DOWNTEMPO like [Christian Löffler] [Cercle]",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/3zIsQfKtUno/agent-skill-organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends.json",
+    "batch": "2026-11-10-morning-hunt"
+  },
+  "prerequisites": [
+    "A sampler/drum rack and a few organic samples (kick, rim, claps, shaker, noise/rain loop)",
+    "EQ, glue compressor, small-room reverb send, a larger hall send, sidechain compressor, simple piano and wavetable pad"
+  ],
+  "inputs": [
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "115-120 BPM",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Simple piano chord/dyad progression",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "groove",
+      "type": "audio",
+      "description": "Layered organic drum groove"
+    },
+    {
+      "name": "bed",
+      "type": "audio",
+      "description": "Warm piano and pad bed sidechained to the kick"
+    }
+  ],
+  "constraints": [
+    "Each percussion layer takes its own frequency range so little EQ is needed.",
+    "Clap layers are offset by small amounts (a flam/pre-clap), not rolls; avoid rapid clicking textures (Matt's preference).",
+    "Play parts deliberately in key; skip the source's random-played arpeggio notes (Matt prefers steady melodies).",
+    "Drums enter early; build the break by bringing shakers in piece by piece.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the tempo to 115-120 BPM. Kick: a deep, thumping kick with an EQ low cut below its useful low end.",
+      "tool": "Sampler + EQ",
+      "expect": "Deep kick foundation"
+    },
+    {
+      "n": 2,
+      "action": "Tom from the kick: duplicate the kick sample, shorten it, raise the attack so the initial thump/click disappears, and cut lows and super-highs (band-pass to the mids).",
+      "tool": "Sampler attack/decay + EQ",
+      "expect": "Tonal tom that doesn't fight the kick"
+    },
+    {
+      "n": 3,
+      "action": "Rim/snare: a rim sample with super-lows and super-highs cut, sent to a slightly longer, small room reverb with a little chorus.",
+      "tool": "EQ + reverb send",
+      "expect": "Focused rim with room feeling"
+    },
+    {
+      "n": 4,
+      "action": "Clap crowd: a main organic clap on the backbeat plus 2-3 hand-clap layers placed slightly before it (one clearly earlier as a pre-clap, one in between). Vary each layer's placement a little per hit. Group, glue-compress with a fastish attack and send to a very small, narrow drum room (100% wet, short decay).",
+      "tool": "Clap layers + glue + small room",
+      "expect": "Big, human 'many people clapping' clap"
+    },
+    {
+      "n": 5,
+      "action": "Shaker family: copy one shaker sample three times, cut different pieces and transpose some (e.g. -6 and -2 semitones). The main piece plays at the start and half of each bar; the others fill the gaps; vary velocities. Darken one copy (e.g. a wet vocoder/filter) and pan it slightly behind.",
+      "tool": "Sampler slices + transpose + velocity",
+      "expect": "Hand-played shaker feel"
+    },
+    {
+      "n": 6,
+      "action": "Hats: a bright transient hat with slight L/R panning, a lower shaker-like layer of the same sound, and a bright shaker loop on top, each in its own range.",
+      "tool": "Hats + EQ",
+      "expect": "Coherent top end without heavy EQ"
+    },
+    {
+      "n": 7,
+      "action": "Percussion: a noise hit darkened and a second copy transposed down hard; a snare panned slightly left just before the end of the bar. Send to the room.",
+      "tool": "Noise + snare",
+      "expect": "Dynamic end-of-bar movement"
+    },
+    {
+      "n": 8,
+      "action": "Ambience: one or two noise/rain-like loops low under the groove.",
+      "tool": "Audio loop",
+      "expect": "Constant ambient bed"
+    },
+    {
+      "n": 9,
+      "action": "Warm bed: simple piano dyads at low velocity, smoothed attack, EQ out boom and super-highs, glue, sent to a long hall. Add a long reversed piano layer and a warm wavetable pad (closed filter, chord with an added octave). Sidechain both to the kick and keep them behind the drums.",
+      "tool": "Piano + reverse sampler + pad + sidechain",
+      "expect": "Warm emotional space that breathes with the kick"
+    }
+  ],
+  "verification": [
+    "Kick and tom don't mask each other (tom is band-passed, no initial click).",
+    "Clap layers start at slightly different times and each hit is placed a little differently.",
+    "Muting any one percussion layer removes a distinct frequency band."
+  ],
+  "tags": [
+    "downtempo",
+    "electronica",
+    "organic-drums",
+    "groove",
+    "clap-layering",
+    "shakers",
+    "room-reverb",
+    "sidechain",
+    "arrangement",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends"
+}

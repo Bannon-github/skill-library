@@ -115,3 +115,15 @@ Source: [Turn an Ambient Loop into a Full Track in Bitwig Studio (Part 2)](https
 - Automate the arpeggiator rate: whole notes in the slow section, then half, quarter and eighth notes as energy rises (eighths in the chorus).
 - Duplicate the drum clip and scale it to 50% length for a double-time peak section; sprinkle squelch hits, moving them by octaves for faster/slower squelches.
 - For the peak, add an arpeggiated pluck bass fed with the pad chords (tune its ratio/octave lower for depth) and mute the bass drone there; finish with lightly EQ'd, delayed, reverbed one-shots.
+
+### Arrange a minimal hypnotic track around one evolving drone: record filter-cutoff automation on a one-note drone and add dissonant extra notes per section, bring percussion layers in phrase by phrase with short volume-curve fade-ins, reach the climax with rising cutoff plus a high atonal noise layer, drop to a drone-and-atmo-only hypnotic break for 2-3 phrases, then keep energy by swapping the same sequence onto a different instrument instead of adding new loops
+Source: [How I Arranged Hypnotic Techno Track – Arrangement Breakdown](https://www.youtube.com/watch?v=6x1_XZDcI8I) · was `hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break`
+- Hold one drone note through the track and record a pass of filter-cutoff automation while arranging, then tidy it by hand so overtones open up toward peaks.
+- Add 1-2 extra held notes on the drone in later sections (e.g. G with D#, D, then G#) for dissonant tension.
+- Build the groove phrase by phrase: lead percussion first, then a second hat layer (snappy + softer), then shakers, then a high noise pattern. Start some layers with a short volume curve (fade-in) so they blend in rather than hit on the downbeat.
+- Climax: raise the drone cutoff and add the high atonal noise layer together, with a volume swell into it.
+- Break: drop the drums so only the drone and atmo play for 2-3 phrases, changing atmo notes so it stays alive.
+- Second section: introduce one new rhythmic element that carries its own automation, and reduce automation on the drone so focus shifts. Add a quiet 16th percussion to keep energy.
+- Keep the groove fairly constant but swap sequences between instruments each phrase (the same pattern on a different hat/ride/perc sound) instead of repeating loops or adding layers. A 909 ride with reverb and a flanger/frequency-shifter adds movement.
+- Before drops, filter-automate the top end down then bring high-end noise back for contrast. Add a sparse FX hit (a few hat notes into a high-feedback delay with filter modulation) at some phrase starts, not all.
+- Listen through and remove any element that steals attention from the drone; export and check on different systems.

@@ -1,0 +1,97 @@
+{
+ "topic": "cinematic music transitions and builds sound design tutorial",
+ "date": "2026-11-10",
+ "params": {
+  "topic": "cinematic music transitions and builds sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Wcxw3BPSt3A",
+   "title": "How to SOUND DESIGN a Video | Step-By-Step Tutorial",
+   "channel": "Film Editing Pro",
+   "duration": 1026,
+   "view_count": 1112550,
+   "url": "https://www.youtube.com/watch?v=Wcxw3BPSt3A",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.5
+  },
+  {
+   "id": "8LV1bqf8ZVo",
+   "title": "How To SOUND DESIGN | Step by step tutorial",
+   "channel": "Artlist",
+   "duration": 1132,
+   "view_count": 795101,
+   "url": "https://www.youtube.com/watch?v=8LV1bqf8ZVo",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.45
+  },
+  {
+   "id": "4cGCL4KVXhA",
+   "title": "How to Sound Design Immersive Backgrounds Tutorial with Matt Yocum",
+   "channel": "Pro Sound Effects",
+   "duration": 2581,
+   "view_count": 58116,
+   "url": "https://www.youtube.com/watch?v=4cGCL4KVXhA",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.38
+  },
+  {
+   "id": "c0YINYT4Ozw",
+   "title": "How To Sound Design ANYTHING.",
+   "channel": "Skymography",
+   "duration": 1599,
+   "view_count": 447808,
+   "url": "https://www.youtube.com/watch?v=c0YINYT4Ozw",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.33
+  },
+  {
+   "id": "yW7an8VmYcs",
+   "title": "5 Advanced Sound Design Tips for DaVinci Resolve",
+   "channel": "Joel Van Beek",
+   "duration": 1104,
+   "view_count": 46393,
+   "url": "https://www.youtube.com/watch?v=yW7an8VmYcs",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.83
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1201097,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "cinematic music transitions and builds sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "U-Tn1o83yDk",
+   "why": "already known"
+  },
+  {
+   "id": "KpzkG1mRFgU",
+   "why": "duration 28s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

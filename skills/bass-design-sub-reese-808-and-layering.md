@@ -170,3 +170,13 @@ Source: [The one bass every producer should know how to make [Ableton Live tutor
 - For more top-end bite, raise the cutoff a little and balance by lowering osc 2. Stop before it just sounds like a square wave.
 - Optional transient: route envelope 2 to noise gain at 100%, with sustain 0 and a very fast attack/decay (the source's burst falls from about 3.5 dB to nothing in about 7.7 ms). This adds bite without making the square louder.
 - Variations: add shape to osc 1 or switch it to triangle for a few bridging harmonics; route envelope 2 to the filter with a slow attack for a flute-like tone. Finish with a bass-mono utility so everything under about 120 Hz stays mono while the top stays wide.
+
+### Interval-aware kick + bass low end: pick bass notes that avoid semitone-adjacent clashes with the kick fundamental (move the bass up an octave), EQ out kick overtones that crowd the bass fundamental, saturate the kick so its harmonics land on octaves, then exciter and a mild transient expander to separate both in the mids
+Source: [The SCIENCE of Mixing Perfect Kick and Bass](https://www.youtube.com/watch?v=27ewHn5SAiI) · was `kick-bass-interval-aware-low-end-saturate-octave-harmonic-exciter-transient`
+- Find the kick's fundamental note (e.g. E1 = 41.2 Hz) with an analyser and note its main overtones (e.g. F#2).
+- Check where bass notes land on kick hits. If a bass note is a semitone or tone from the kick fundamental in the same octave (e.g. kick E1, bass F1), move the bass up an octave (F2) or re-voice it so it isn't adjacent.
+- If a kick overtone sits next to the bass fundamental (kick F#2 vs bass F2), cut that overtone on the kick with a narrow EQ bell.
+- Add a saturator to the kick so new harmonics are multiples of its fundamental (e.g. E3 above E1). These are more musical and clash less with the bass than the original stray overtone.
+- Put an exciter on kick and on bass to add higher-order harmonics, lifting both into the mids and high mids where notes are far apart and phase cancellation is minor.
+- Add a mild transient expander to kick and bass to emphasise the overtones in the first ~50 ms (attack/decay).
+- A/B the low end in solo and in the mix; listen for periodic beating (the binaural-beat-like wobble) on simultaneous hits.

@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive",
+  "name": "Evolving cinematic pad/drone from a three-instance wavetable rack split by register (lows / mids / highs), each with two very slow free-running LFOs moving the two oscillators' wavetable positions in opposite directions, glue compression, a reverb→gentle saturation→long reverb sandwich, and one macro that opens filters and adds drive",
+  "goal": "Build a pad that keeps changing under one held chord or note. Delta vs wavetable cluster (four-layer wave-sequenced pad, self-evolving WT rack): the register-split three-instance rack with counter-moving position LFOs per instance, and the reverb–saturation–reverb chain with a single drive/filter macro.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "RPzAJFC_JkI",
+    "url": "https://www.youtube.com/watch?v=RPzAJFC_JkI",
+    "title": "How to Build Evolving Cinematic Pads with Wavetable Synths",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/RPzAJFC_JkI/agent-skill-three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive.json",
+    "batch": "2026-11-10-morning-hunt"
+  },
+  "prerequisites": [
+    "A wavetable synth with 2 oscillators, filters with drive, unison modes and free-running LFOs",
+    "An instrument rack/group to hold three instances; glue compressor, algorithmic reverb, saturator/waveshaper, long reverb, limiter"
+  ],
+  "inputs": [
+    {
+      "name": "chord",
+      "type": "midi",
+      "description": "Held chord or single note (e.g. G minor)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_rack",
+      "type": "synth rack",
+      "description": "Three-layer evolving pad/drone with one expression macro"
+    }
+  ],
+  "constraints": [
+    "Use slow free-running LFOs (e.g. around 0.04 Hz or slower) for steady evolving motion; avoid random pitch or random parameter jumps (Matt's preference). Use a second slow LFO instead of the source's random amount on filter cutoff.",
+    "Each band covers its own register: low-cut the mids layer, keep the lows layer simple (saw + sub, no unison) and controlled.",
+    "Keep a limiter at the end while designing; levels jump when all three play.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Mids layer: wavetable osc 1 with a warm table, filter closed a little (drive-capable filter type), low cut to keep it in the mids. Two very slow LFOs at slightly different rates, retrigger off: LFO 1 + and LFO 2 − on osc 1 position.",
+      "tool": "Wavetable synth",
+      "expect": "Slowly morphing mid pad"
+    },
+    {
+      "n": 2,
+      "action": "Osc 2 on the mids: a different table (e.g. sweep saw) with the same two LFOs in the opposite directions, so the movements sometimes cancel. Add shimmer-style unison.",
+      "tool": "Osc 2 + unison",
+      "expect": "Floating, wide mid layer"
+    },
+    {
+      "n": 3,
+      "action": "Filter 1 movement on the mids: a small amount of both LFOs and of a slow envelope (about 2 s decay, 3 s release) on cutoff.",
+      "tool": "Filter mod",
+      "expect": "Filter opens then drifts slowly"
+    },
+    {
+      "n": 4,
+      "action": "Group into a rack, duplicate the instance twice and name them lows / mids / highs.",
+      "tool": "Instrument rack",
+      "expect": "Three parallel instances"
+    },
+    {
+      "n": 5,
+      "action": "Highs: brighter, more aggressive tables, filter more open with light drive, noise-style unison with more voices; make its LFOs different speeds from the mids (one slower, around 0.04 Hz); keep mod amounts delicate. Osc 2 slightly detuned and optionally an octave down.",
+      "tool": "Highs instance",
+      "expect": "Rich shimmering top layer moving on its own timeline"
+    },
+    {
+      "n": 6,
+      "action": "Lows: simple saw an octave down without unison plus a sub; cut the lowest rumble with a steeper, low-resonance filter; one very slow LFO with a small amount on filter frequency.",
+      "tool": "Lows instance",
+      "expect": "Stable warm floor"
+    },
+    {
+      "n": 7,
+      "action": "Set about 1 s attack on all three and balance their levels (turn highs down if they dominate).",
+      "tool": "Amp env + rack levels",
+      "expect": "Balanced three-band pad"
+    },
+    {
+      "n": 8,
+      "action": "FX chain after the rack: glue compressor (4:1, threshold just catching peaks), algorithmic reverb 100% wet with a vintage character, gentle soft-clip saturation, then a long lush reverb at 50% mix, and a limiter catching 2-3 dB.",
+      "tool": "Compressor, reverb, saturator, reverb, limiter",
+      "expect": "Long, lush, controlled tail"
+    },
+    {
+      "n": 9,
+      "action": "Map one macro (mod wheel) on each instance to open filter 1 (or close it on the highs) and add filter drive, with only a small wavetable-position offset.",
+      "tool": "Macro / mod wheel",
+      "expect": "One control for intensity and grit"
+    },
+    {
+      "n": 10,
+      "action": "Hold one chord, then a single note, and check that the sound keeps evolving with no loud jumps.",
+      "tool": "Playback",
+      "expect": "Self-evolving drone/pad usable under a cue"
+    }
+  ],
+  "verification": [
+    "Each instance's two oscillators move in opposite position directions at different slow rates.",
+    "Lows, mids and highs each occupy their own band on an analyser.",
+    "Holding one chord for 30 s gives continuous slow change with no clipping at the limiter."
+  ],
+  "tags": [
+    "wavetable",
+    "pad",
+    "drone",
+    "cinematic",
+    "evolving",
+    "lfo",
+    "layering",
+    "reverb",
+    "saturation",
+    "macro",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive"
+}

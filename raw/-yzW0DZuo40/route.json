@@ -1,23 +1,71 @@
 {
  "video_id": "-yzW0DZuo40",
- "started_at": "2026-11-09T16:36:10.557994+00:00",
- "outcome": "OFF_LEXICON",
+ "started_at": "2026-11-10T16:55:13.235633+00:00",
+ "outcome": "CANDIDATES_READY",
  "route": "auto-target-original-audio",
  "language_code": "en",
  "original_language": "en",
  "is_generated": true,
  "translated": false,
  "translation_method": null,
- "domain": null,
+ "domain": "synth",
  "graph": {
-  "ok": false,
-  "error": "subprocess_failed",
-  "stderr_tail": "usage: extract_terms_graph.py [-h] [--text-file TEXT_FILE]\n                              [--video-id VID_OPT] [--domain DOMAIN]\n                              [--out OUT] [--print-stats]\n                              [video_id]\nextract_terms_graph.py: error: unrecognized arguments: -yzW0DZuo40\n"
+  "video_id": "-yzW0DZuo40",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/-yzW0DZuo40/graph.json",
+  "segments": 551,
+  "windows": 84,
+  "nodes": 87,
+  "edges": 148,
+  "nodes_by_type": {
+   "module": 11,
+   "step": 46,
+   "concept": 6,
+   "param": 10,
+   "tool": 1,
+   "value": 2,
+   "technique": 1,
+   "phrase": 10
+  },
+  "edges_by_type": {
+   "mentions": 91,
+   "precedes": 45,
+   "part-of": 10,
+   "sets": 2
+  },
+  "words": 3827
  },
  "gaps": {
-  "ok": false,
-  "error": "subprocess_failed",
-  "stderr_tail": "usage: graph_gap_merge.py [-h] [--graph GRAPH] [--no-kg-update]\n                          [--min-steps MIN_STEPS] [--as-of AS_OF]\n                          video_id\ngraph_gap_merge.py: error: the following arguments are required: video_id\n"
+  "video_id": "-yzW0DZuo40",
+  "graph_nodes": 87,
+  "graph_edges": 148,
+  "terms_checked": 39,
+  "terms_covered": 3,
+  "gap_nodes": 36,
+  "gap_nodes_excl_phrases": 29,
+  "relations_checked": 2,
+  "gap_edges": 2,
+  "candidates": 1,
+  "candidate_ids": [
+   "synth-noise-filter-mix-0-12"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:envelope_follower",
+    "best single-skill procedure overlap 0.0 < 0.5"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 3,
+   "uncovered_techniques": [
+    "technique:envelope_follower"
+   ],
+   "video_novelty": 0.038,
+   "video_novelty_verdict": "NOVEL"
+  }
  },
  "decisions": [
   {
@@ -45,31 +93,52 @@
   },
   {
    "q": "Q5 domain lexicon matched (>=8 hits)?",
-   "a": false,
+   "a": true,
    "evidence": {
-    "domain": null,
-    "scores": null
-   },
-   "then": "flag off-lexicon: extend pipeline/lexicons or plain distill-transcript"
+    "domain": "synth",
+    "scores": {
+     "arrangement": 8,
+     "blender": 14,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 2,
+     "synth": 179
+    }
+   }
   },
   {
    "q": "Q6 term graph built?",
-   "a": false,
+   "a": true,
    "evidence": {
-    "nodes": null,
-    "edges": null
+    "nodes": 87,
+    "edges": 148
    }
   },
   {
    "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
-   "a": false,
+   "a": true,
    "evidence": {
-    "gap_nodes_excl_phrases": null,
-    "gap_edges": null,
-    "candidates": null,
-    "covered_verdict": null
+    "gap_nodes_excl_phrases": 29,
+    "gap_edges": 2,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:envelope_follower",
+      "best single-skill procedure overlap 0.0 < 0.5"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 3,
+     "uncovered_techniques": [
+      "technique:envelope_follower"
+     ],
+     "video_novelty": 0.038,
+     "video_novelty_verdict": "NOVEL"
+    }
    },
-   "then": "covered by library; KG updated; no new skill"
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
   }
  ],
  "fetch_decisions": [
@@ -96,5 +165,5 @@
    "a": true
   }
  ],
- "finished_at": "2026-11-09T16:36:10.937493+00:00"
+ "finished_at": "2026-11-10T16:55:13.633711+00:00"
 }

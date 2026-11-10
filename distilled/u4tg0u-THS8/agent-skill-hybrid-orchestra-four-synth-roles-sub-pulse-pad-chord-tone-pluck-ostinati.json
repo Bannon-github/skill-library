@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
+  "name": "Hybrid orchestral cue: add four synth roles from the ground up to an orchestral arrangement — sine sub an octave under the bass, a straight quarter/eighth pulsing bass, quick-attack polyphonic chord pads, then 2-3 staccato pluck ostinati using only chord tones, each repeating every 1-2 beats and each layer slightly more complex",
+  "goal": "Turn an orchestral arrangement into a hybrid (Spider-Verse-style) score by layering synths by role, bottom to top. Delta vs arrangement cluster (role-first hybrid layering, 7-section arc with chord-tone ostinato): a concrete ordered four-role recipe for synths over orchestra with a graded polyrhythmic chord-tone pluck stack.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "u4tg0u-THS8",
+    "url": "https://www.youtube.com/watch?v=u4tg0u-THS8",
+    "title": "How to Combine Synths with Orchestra",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/u4tg0u-THS8/agent-skill-hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati.json",
+    "batch": "2026-11-10-morning-hunt"
+  },
+  "prerequisites": [
+    "An existing orchestral arrangement (bass line, chord progression)",
+    "Any synth (presets or simple self-made patches): sine, bass, poly pad, short plucks"
+  ],
+  "inputs": [
+    {
+      "name": "orchestral_arrangement",
+      "type": "midi/audio",
+      "description": "Main section with bass line and chords",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hybrid_section",
+      "type": "midi/audio",
+      "description": "Same section with sub, pulse bass, pads and a 2-3 layer pluck ostinato texture"
+    }
+  ],
+  "constraints": [
+    "Sub must be a simple sine or low-harmonic patch; harmonically rich subs muddy the mix.",
+    "Pads need polyphony and a quick attack.",
+    "Plucks: quick attack and near-immediate release (staccato); only chord tones; no new melodies.",
+    "Steady, repeating patterns; no random or wobbling pitch (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Listen to the orchestral section alone and note its bass line and chords.",
+      "tool": "Playback",
+      "expect": "Reference before synths"
+    },
+    {
+      "n": 2,
+      "action": "Sub bass: a simple sine (or low-harmonic synth) plays the bass line one octave below the other bass instruments. It should be felt more than heard.",
+      "tool": "Sine synth",
+      "expect": "Extra size and weight, no mud"
+    },
+    {
+      "n": 3,
+      "action": "Pulsing bass: a simple bass synth plays the bass line in straight quarter or eighth notes (play or pencil them in).",
+      "tool": "Bass synth",
+      "expect": "Constant rhythmic floor for other rhythmic parts"
+    },
+    {
+      "n": 4,
+      "action": "Harmonic pads: a polyphonic, quick-attack pad plays the chord progression as sustained chords, either doubling strings/brass or in its own register.",
+      "tool": "Poly pad",
+      "expect": "Chords sustained like strings"
+    },
+    {
+      "n": 5,
+      "action": "Pluck layer 1: a staccato pluck plays a short pattern of the common tones between chords, repeating every beat or two, with at most one embellishment.",
+      "tool": "Pluck synth",
+      "expect": "Simple rhythmic base layer"
+    },
+    {
+      "n": 6,
+      "action": "Pluck layer 2: a second pluck plays a rhythmic arpeggio of chord tones in a short repeating pattern.",
+      "tool": "Pluck synth",
+      "expect": "More motion, still chord-only"
+    },
+    {
+      "n": 7,
+      "action": "Pluck layer 3 (optional): the most adventurous pattern spanning up to an octave, still chord tones only.",
+      "tool": "Pluck synth",
+      "expect": "Polyrhythmic composite texture"
+    },
+    {
+      "n": 8,
+      "action": "Play all layers together with the orchestra and balance them.",
+      "tool": "Mix",
+      "expect": "Energetic, coloured hybrid texture"
+    }
+  ],
+  "verification": [
+    "Sub is exactly one octave below the lowest orchestral bass line.",
+    "Every pluck note is a chord tone of the current chord.",
+    "Each pluck pattern repeats within 1-2 beats; layer complexity rises from layer 1 to 3."
+  ],
+  "tags": [
+    "hybrid-score",
+    "orchestra",
+    "sub-bass",
+    "pulse-bass",
+    "ostinato",
+    "polyrhythm",
+    "arrangement",
+    "chord-tones",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati"
+}

@@ -116,6 +116,12 @@
         "video_id": "p5ETZc7Zfw4",
         "url": "https://www.youtube.com/watch?v=p5ETZc7Zfw4",
         "title": "How to Make Lush Evolving Pads in Wavetable | Ableton Tutorial"
+      },
+      {
+        "from_skill": "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive",
+        "video_id": "RPzAJFC_JkI",
+        "url": "https://www.youtube.com/watch?v=RPzAJFC_JkI",
+        "title": "How to Build Evolving Cinematic Pads with Wavetable Synths"
       }
     ]
   },
@@ -456,6 +462,23 @@
         "Optional: switch the filter to an analog-modelled / driven mode for mild saturation instead of a separate distortion plugin. Optional: slow LFO or envelope on wavetable position for timbral morph (pitch stays fixed).",
         "Space: a long lush reverb or convolution (source uses a 'black hole'-style IR) with dry/wet raised and a low-cut on the reverb so the pad stays deep without rumble."
       ]
+    },
+    {
+      "from_skill": "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive",
+      "name": "Evolving cinematic pad/drone from a three-instance wavetable rack split by register (lows / mids / highs), each with two very slow free-running LFOs moving the two oscillators' wavetable positions in opposite directions, glue compression, a reverb→gentle saturation→long reverb sandwich, and one macro that opens filters and adds drive",
+      "goal": "Build a pad that keeps changing under one held chord or note. Delta vs wavetable cluster (four-layer wave-sequenced pad, self-evolving WT rack): the register-split three-instance rack with counter-moving position LFOs per instance, and the reverb–saturation–reverb chain with a single drive/filter macro.",
+      "steps": [
+        "Mids layer: wavetable osc 1 with a warm table, filter closed a little (drive-capable filter type), low cut to keep it in the mids. Two very slow LFOs at slightly different rates, retrigger off: LFO 1 + and LFO 2 − on osc 1 position.",
+        "Osc 2 on the mids: a different table (e.g. sweep saw) with the same two LFOs in the opposite directions, so the movements sometimes cancel. Add shimmer-style unison.",
+        "Filter 1 movement on the mids: a small amount of both LFOs and of a slow envelope (about 2 s decay, 3 s release) on cutoff.",
+        "Group into a rack, duplicate the instance twice and name them lows / mids / highs.",
+        "Highs: brighter, more aggressive tables, filter more open with light drive, noise-style unison with more voices; make its LFOs different speeds from the mids (one slower, around 0.04 Hz); keep mod amounts delicate. Osc 2 slightly detuned and optionally an octave down.",
+        "Lows: simple saw an octave down without unison plus a sub; cut the lowest rumble with a steeper, low-resonance filter; one very slow LFO with a small amount on filter frequency.",
+        "Set about 1 s attack on all three and balance their levels (turn highs down if they dominate).",
+        "FX chain after the rack: glue compressor (4:1, threshold just catching peaks), algorithmic reverb 100% wet with a vintage character, gentle soft-clip saturation, then a long lush reverb at 50% mix, and a limiter catching 2-3 dB.",
+        "Map one macro (mod wheel) on each instance to open filter 1 (or close it on the highs) and add filter drive, with only a small wavetable-position offset.",
+        "Hold one chord, then a single note, and check that the sound keeps evolving with no loud jumps."
+      ]
     }
   ],
   "merged_from": [
@@ -476,7 +499,8 @@
     "vector-xy-four-oscillator-crossfade-blend",
     "wavetable-crossfade-morph-modulate-pad",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
-    "lush-dual-saw-filter-env-nonretrigger-lfo-pad"
+    "lush-dual-saw-filter-env-nonretrigger-lfo-pad",
+    "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive"
   ],
   "tags": [
     "additive",
@@ -532,6 +556,7 @@
     "vector-xy-four-oscillator-crossfade-blend",
     "wavetable-crossfade-morph-modulate-pad",
     "wavetable-frames-as-animated-spectral-eq-curve-depth-floor-skew",
-    "lush-dual-saw-filter-env-nonretrigger-lfo-pad"
+    "lush-dual-saw-filter-env-nonretrigger-lfo-pad",
+    "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive"
   ]
 }

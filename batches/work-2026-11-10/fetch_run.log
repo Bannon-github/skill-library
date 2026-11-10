@@ -1,0 +1,81 @@
+## _MgJJpqxcn8 2026-11-10T09:21:06-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT _MgJJpqxcn8
+## N60Jcn9zfBo 2026-11-10T09:22:03-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ]
+}
+NO_TRANSCRIPT N60Jcn9zfBo
+## 27ewHn5SAiI 2026-11-10T09:22:57-07:00
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/27ewHn5SAiI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/27ewHn5SAiI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1186 raw/27ewHn5SAiI/raw.txt
+## P-BV9Fa0e3Q 2026-11-10T09:23:12-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT P-BV9Fa0e3Q
+## XqmRJNH3b4w 2026-11-10T09:24:01-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/XqmRJNH3b4w/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/XqmRJNH3b4w/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1792 raw/XqmRJNH3b4w/raw.txt
+## NAEyg_eXP14 2026-11-10T09:24:16-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT NAEyg_eXP14
+## X_yfys8wAJ4 2026-11-10T09:25:06-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT X_yfys8wAJ4
+## P--40MYlGuI 2026-11-10T09:25:59-07:00
+  "duration": 804,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT P--40MYlGuI
+## e-y_F4sv6fA 2026-11-10T09:26:16-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/e-y_F4sv6fA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/e-y_F4sv6fA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+2614 raw/e-y_F4sv6fA/raw.txt
+## u4tg0u-THS8 2026-11-10T09:26:30-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/u4tg0u-THS8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/u4tg0u-THS8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+958 raw/u4tg0u-THS8/raw.txt
+FETCH_DONE 2026-11-10T09:26:45-07:00

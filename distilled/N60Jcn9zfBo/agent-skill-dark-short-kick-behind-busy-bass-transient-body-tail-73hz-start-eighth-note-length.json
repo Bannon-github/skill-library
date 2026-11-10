@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+  "name": "Dark, short house kick that sits behind a busy bassline: think in transient / body / tail, keep the transient dark (not clicky), start the body pitch near 73 Hz and fall to the sub, cut the tail to an eighth (or sixteenth) note, tune to the key, layer only what's missing, and mix the kick a few dB lower than the bass",
+  "goal": "Synthesize and place a kick in the Disclosure style (pop-leaning house mix) so the bass carries the groove. Delta vs drum-synthesis cluster (synth kit from basic synth, trailer hits, taiko noise): this is a kick-length/level/darkness recipe for leaving room for a busy bass, and a reference-curve check; it also suits softer, less clicky kicks.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "N60Jcn9zfBo",
+    "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+    "title": "Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/N60Jcn9zfBo/agent-skill-dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length.json",
+    "batch": "2026-11-10-morning-hunt"
+  },
+  "prerequisites": [
+    "A kick synth (sine body with pitch envelope, attack, decay) or a drum sampler with pitch and amp envelopes",
+    "EQ and a spectrum analyser; reference tracks in the target style"
+  ],
+  "inputs": [
+    {
+      "name": "song_key",
+      "type": "string",
+      "description": "Key to tune the kick to",
+      "required": true
+    },
+    {
+      "name": "bassline",
+      "type": "midi/audio",
+      "description": "Busy bassline the kick must leave room for",
+      "required": true
+    },
+    {
+      "name": "reference_tracks",
+      "type": "audio",
+      "description": "Target-style records for a frequency guide",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Short, dark, tuned kick sitting a few dB under the bass"
+    }
+  ],
+  "constraints": [
+    "Dark transient: avoid bright clicky EDM transients (also Matt's preference: no clicky textures).",
+    "Kick length about an eighth note at the song tempo, sometimes as short as a sixteenth.",
+    "Layer only to fix a missing part; extra layers can cause phase issues.",
+    "Steady tuned pitch; the pitch envelope is a fixed fast drop, not modulation.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Split the kick into three parts: transient (the tiny start), body (the chest punch) and tail (the sub). Judge and fix each part separately.",
+      "tool": "Listening / analyser",
+      "expect": "Know which part needs work"
+    },
+    {
+      "n": 2,
+      "action": "Synthesize the kick: a sine body tuned to the song key, with a pitch envelope starting higher, around 73 Hz, and falling to a lower sub note. Add a short pitch-envelope punch (around 100 Hz) for pop if needed.",
+      "tool": "Kick synth: osc pitch + pitch env",
+      "expect": "Punchy body that settles on the key's sub note"
+    },
+    {
+      "n": 3,
+      "action": "Keep the transient dark: low-pass or choose a soft attack rather than a bright click.",
+      "tool": "Kick synth attack / EQ",
+      "expect": "Less clicky start than an EDM kick"
+    },
+    {
+      "n": 4,
+      "action": "Set decay so the whole kick lasts about an eighth note (sometimes a sixteenth) at the song tempo, leaving space for the bassline.",
+      "tool": "Amp envelope decay",
+      "expect": "Short kick, room for the bass between hits"
+    },
+    {
+      "n": 5,
+      "action": "Layer only if something is missing: e.g. a sub layer for the felt low end, a body layer with its sub removed for punch, and a quiet top layer. Check for phase issues after layering.",
+      "tool": "Layers + EQ",
+      "expect": "Each layer covers one part without cancellation"
+    },
+    {
+      "n": 6,
+      "action": "Mix the kick a few dB lower than a typical melodic-house kick so the bass is the focus, with the kick still audible.",
+      "tool": "Fader",
+      "expect": "Bass leads, kick supports"
+    },
+    {
+      "n": 7,
+      "action": "Make a frequency guide from reference records: compare the kick and sub curve on an analyser and EQ the kick (e.g. trim excess around 50 Hz or deep sub) toward the reference.",
+      "tool": "Analyser + EQ",
+      "expect": "Kick and sub curve close to the target"
+    }
+  ],
+  "verification": [
+    "Kick decay ends within about an eighth note at the song tempo.",
+    "Kick body pitch starts near 73 Hz and settles on a key-related sub note.",
+    "Kick peak level sits a few dB below the bass bus; analyser curve is close to the reference."
+  ],
+  "tags": [
+    "kick",
+    "drum-synthesis",
+    "house",
+    "pitch-envelope",
+    "tuning",
+    "low-end",
+    "soft-kick",
+    "mix",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length"
+}

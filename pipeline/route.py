@@ -196,7 +196,7 @@ def route_video(vid: str, a) -> dict:
             q["upgrade_to_tlang"] = ups
             QUEUE.write_text(json.dumps(q, indent=1) + "\n")
     # Q5 + Q6
-    g = run_json([sys.executable, str(HERE / "extract_terms_graph.py"), vid] + (["--domain", a.domain] if a.domain else []))
+    g = run_json([sys.executable, str(HERE / "extract_terms_graph.py")] + (["--domain", a.domain] if a.domain else []) + ["--", vid])
     gj = json.loads((dest / "graph.json").read_text()) if (dest / "graph.json").exists() else {}
     best = max((gj.get("domain_scores") or {"?": 0}).values())
     on_lex = best >= 8
@@ -206,8 +206,8 @@ def route_video(vid: str, a) -> dict:
     out["graph"] = g
     L.ask("Q6 term graph built?", bool(gj), evidence={k: g.get(k) for k in ("nodes", "edges")})
     # Q7
-    gp = run_json([sys.executable, str(HERE / "graph_gap_merge.py"), vid] + (["--no-kg-update"] if a.no_kg_update else [])
-                  + (["--as-of", a.as_of] if a.as_of else []))
+    gp = run_json([sys.executable, str(HERE / "graph_gap_merge.py")] + (["--no-kg-update"] if a.no_kg_update else [])
+                  + (["--as-of", a.as_of] if a.as_of else []) + ["--", vid])
     out["gaps"] = gp
     # Q7: covered only on procedure/parameter-level overlap + novelty (graph_gap_merge.covered_verdict),
     # never on topic-term matches alone

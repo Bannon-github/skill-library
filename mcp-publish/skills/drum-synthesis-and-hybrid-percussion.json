@@ -62,6 +62,12 @@
         "video_id": "xeuYUFZpOdA",
         "url": "https://www.youtube.com/watch?v=xeuYUFZpOdA",
         "title": "How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutorial]"
+      },
+      {
+        "from_skill": "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+        "video_id": "N60Jcn9zfBo",
+        "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+        "title": "Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)"
       }
     ]
   },
@@ -289,6 +295,20 @@
         "Drum bus: glue compressor with light compression and soft clip on, driving into the clipper so no spiky transient peaks too hard; then balance kick, snare and tops (levels change the compression).",
         "Send to a very short drum-room reverb with no pre-delay and short decay."
       ]
+    },
+    {
+      "from_skill": "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+      "name": "Dark, short house kick that sits behind a busy bassline: think in transient / body / tail, keep the transient dark (not clicky), start the body pitch near 73 Hz and fall to the sub, cut the tail to an eighth (or sixteenth) note, tune to the key, layer only what's missing, and mix the kick a few dB lower than the bass",
+      "goal": "Synthesize and place a kick in the Disclosure style (pop-leaning house mix) so the bass carries the groove. Delta vs drum-synthesis cluster (synth kit from basic synth, trailer hits, taiko noise): this is a kick-length/level/darkness recipe for leaving room for a busy bass, and a reference-curve check; it also suits softer, less clicky kicks.",
+      "steps": [
+        "Split the kick into three parts: transient (the tiny start), body (the chest punch) and tail (the sub). Judge and fix each part separately.",
+        "Synthesize the kick: a sine body tuned to the song key, with a pitch envelope starting higher, around 73 Hz, and falling to a lower sub note. Add a short pitch-envelope punch (around 100 Hz) for pop if needed.",
+        "Keep the transient dark: low-pass or choose a soft attack rather than a bright click.",
+        "Set decay so the whole kick lasts about an eighth note (sometimes a sixteenth) at the song tempo, leaving space for the bassline.",
+        "Layer only if something is missing: e.g. a sub layer for the felt low end, a body layer with its sub removed for punch, and a quiet top layer. Check for phase issues after layering.",
+        "Mix the kick a few dB lower than a typical melodic-house kick so the bass is the focus, with the kick still audible.",
+        "Make a frequency guide from reference records: compare the kick and sub curve on an analyser and EQ the kick (e.g. trim excess around 50 Hz or deep sub) toward the reference."
+      ]
     }
   ],
   "merged_from": [
@@ -300,7 +320,8 @@
     "resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce",
     "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
-    "atmospheric-liquid-dnb-break-layering"
+    "atmospheric-liquid-dnb-break-layering",
+    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length"
   ],
   "tags": [
     "808",
@@ -347,6 +368,7 @@
     "resample-synth-epic-drums-to-sampler-8-velocity-layers-vs-round-robin-anti-machine-gun-velocity-to-lowpass-1-5khz-start-jitter-ensemble-bounce",
     "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
-    "atmospheric-liquid-dnb-break-layering"
+    "atmospheric-liquid-dnb-break-layering",
+    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length"
   ]
 }

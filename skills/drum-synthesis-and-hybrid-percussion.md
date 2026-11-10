@@ -112,3 +112,13 @@ Source: [How to make Atmospheric Liquid DNB Drums Step by Step [Beginner Tutoria
 - On the tops group: a transient shaper, then an EQ that removes any low bleed and rolls off harsh highs.
 - Drum bus: glue compressor with light compression and soft clip on, driving into the clipper so no spiky transient peaks too hard; then balance kick, snare and tops (levels change the compression).
 - Send to a very short drum-room reverb with no pre-delay and short decay.
+
+### Dark, short house kick that sits behind a busy bassline: think in transient / body / tail, keep the transient dark (not clicky), start the body pitch near 73 Hz and fall to the sub, cut the tail to an eighth (or sixteenth) note, tune to the key, layer only what's missing, and mix the kick a few dB lower than the bass
+Source: [Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)](https://www.youtube.com/watch?v=N60Jcn9zfBo) · was `dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length`
+- Split the kick into three parts: transient (the tiny start), body (the chest punch) and tail (the sub). Judge and fix each part separately.
+- Synthesize the kick: a sine body tuned to the song key, with a pitch envelope starting higher, around 73 Hz, and falling to a lower sub note. Add a short pitch-envelope punch (around 100 Hz) for pop if needed.
+- Keep the transient dark: low-pass or choose a soft attack rather than a bright click.
+- Set decay so the whole kick lasts about an eighth note (sometimes a sixteenth) at the song tempo, leaving space for the bassline.
+- Layer only if something is missing: e.g. a sub layer for the felt low end, a body layer with its sub removed for punch, and a quiet top layer. Check for phase issues after layering.
+- Mix the kick a few dB lower than a typical melodic-house kick so the bass is the focus, with the kick still audible.
+- Make a frequency guide from reference records: compare the kick and sub curve on an analyser and EQ the kick (e.g. trim excess around 50 Hz or deep sub) toward the reference.

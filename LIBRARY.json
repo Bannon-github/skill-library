@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-09T16:43:10.114407+00:00",
-  "entry_count": 254,
+  "updated_at": "2026-11-10T16:55:31.309408+00:00",
+  "entry_count": 260,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3745,6 +3745,84 @@
       "skills": [
         "filter-types-and-resonance-design"
       ]
+    },
+    {
+      "id": "cinematic-synth-27ewHn5SAiI",
+      "video_id": "27ewHn5SAiI",
+      "url": "https://www.youtube.com/watch?v=27ewHn5SAiI",
+      "title": "The SCIENCE of Mixing Perfect Kick and Bass",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/27ewHn5SAiI/raw.txt",
+      "summary": "Skills: kick-bass-interval-aware-low-end-saturate-octave-harmonic-exciter-transient (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-u4tg0u-THS8",
+      "video_id": "u4tg0u-THS8",
+      "url": "https://www.youtube.com/watch?v=u4tg0u-THS8",
+      "title": "How to Combine Synths with Orchestra",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/u4tg0u-THS8/raw.txt",
+      "summary": "Skills: hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-N60Jcn9zfBo",
+      "video_id": "N60Jcn9zfBo",
+      "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+      "title": "Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/N60Jcn9zfBo/raw.txt",
+      "summary": "Skills: dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-RPzAJFC_JkI",
+      "video_id": "RPzAJFC_JkI",
+      "url": "https://www.youtube.com/watch?v=RPzAJFC_JkI",
+      "title": "How to Build Evolving Cinematic Pads with Wavetable Synths",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/RPzAJFC_JkI/raw.txt",
+      "summary": "Skills: three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive (folded into wavetable-and-vector-morph-pads)",
+      "skills": [
+        "wavetable-and-vector-morph-pads"
+      ]
+    },
+    {
+      "id": "cinematic-synth-3zIsQfKtUno",
+      "video_id": "3zIsQfKtUno",
+      "url": "https://www.youtube.com/watch?v=3zIsQfKtUno",
+      "title": "How to make ELECTRONICA and DOWNTEMPO like [Christian Löffler] [Cercle]",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/3zIsQfKtUno/raw.txt",
+      "summary": "Skills: organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends (folded into drum-groove-programming-swing-and-ghosts)",
+      "skills": [
+        "drum-groove-programming-swing-and-ghosts"
+      ]
+    },
+    {
+      "id": "cinematic-synth-6x1_XZDcI8I",
+      "video_id": "6x1_XZDcI8I",
+      "url": "https://www.youtube.com/watch?v=6x1_XZDcI8I",
+      "title": "How I Arranged Hypnotic Techno Track – Arrangement Breakdown",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/6x1_XZDcI8I/raw.txt",
+      "summary": "Skills: hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break (folded into arrangement-loop-to-song-build-drop)",
+      "skills": [
+        "arrangement-loop-to-song-build-drop"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4302,6 +4380,42 @@
           "video_id": "VhjJlD0Gck0",
           "skill": "noof-synth-pulse-noise-saw-octave-unison-saw-closed-ladder-env-cutoff-energy-macro",
           "cluster": "filter-types-and-resonance-design"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-10T16:55:31.309408+00:00",
+      "batch": "2026-11-10-morning-hunt",
+      "folded": [
+        {
+          "video_id": "27ewHn5SAiI",
+          "skill": "kick-bass-interval-aware-low-end-saturate-octave-harmonic-exciter-transient",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "u4tg0u-THS8",
+          "skill": "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "N60Jcn9zfBo",
+          "skill": "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        },
+        {
+          "video_id": "RPzAJFC_JkI",
+          "skill": "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive",
+          "cluster": "wavetable-and-vector-morph-pads"
+        },
+        {
+          "video_id": "3zIsQfKtUno",
+          "skill": "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends",
+          "cluster": "drum-groove-programming-swing-and-ghosts"
+        },
+        {
+          "video_id": "6x1_XZDcI8I",
+          "skill": "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
+          "cluster": "arrangement-loop-to-song-build-drop"
         }
       ]
     }

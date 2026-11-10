@@ -34,7 +34,18 @@
    "ladder filter",
    "comb filter",
    "formant filter",
-   "notch"
+   "notch",
+   "low shelf",
+   "high shelf",
+   "shelf",
+   "split routing",
+   "parallel filter",
+   "serial filter",
+   "filter routing",
+   "dual filter",
+   "svf",
+   "state variable",
+   "band reject"
   ],
   "envelope": [
    "envelope",
@@ -63,7 +74,14 @@
    "noise",
    "white noise",
    "pink noise",
-   "noise oscillator"
+   "noise oscillator",
+   "brown noise",
+   "noise osc",
+   "tape hiss",
+   "hiss",
+   "noise layer",
+   "noise sample",
+   "noise generator"
   ],
   "sub": [
    "sub oscillator",
@@ -177,7 +195,8 @@
     "cut off",
     "cut-off",
     "cutoff frequency",
-    "filter frequency"
+    "filter frequency",
+    "filter cutoff"
    ],
    "module": "filter"
   },
@@ -712,7 +731,11 @@
    "envelope followers",
    "env follower",
    "amplitude follower",
-   "envelope following"
+   "envelope following",
+   "erosion",
+   "tuned noise",
+   "gated noise",
+   "noise burst"
   ],
   "wave_sequencing": [
    "wave sequencing",

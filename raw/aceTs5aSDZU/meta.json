@@ -1,0 +1,46 @@
+{
+  "video_id": "aceTs5aSDZU",
+  "title": "How to Kiasmos: Orchestral Downtempo",
+  "url": "https://www.youtube.com/watch?v=aceTs5aSDZU",
+  "fetched_at": "2026-11-10T16:44:15.154924+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Zahand / LotusTunes",
+  "duration": 1317,
+  "ok": true,
+  "cue_count": 516,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/aceTs5aSDZU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/aceTs5aSDZU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,560 @@
+{
+  "video_id": "_MgJJpqxcn8",
+  "title": "The VIBEY Filtered Drums Trick (For Ambient Mixes)",
+  "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+  "fetched_at": "2026-11-10T16:21:06.537801+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "The Indie Music Lab",
+  "duration": 881,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "N60Jcn9zfBo",
+  "title": "Disclosure’s Signature Kick (How To Make It & Why It Sounds So Good)",
+  "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+  "fetched_at": "2026-11-10T16:22:03.223706+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Sol State",
+  "duration": 488,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ]
+}
+{
+  "video_id": "27ewHn5SAiI",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=27ewHn5SAiI",
+  "fetched_at": "2026-11-10T16:22:57.192804+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": true,
+  "cue_count": 89,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/27ewHn5SAiI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/27ewHn5SAiI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "P-BV9Fa0e3Q",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=P-BV9Fa0e3Q",
+  "fetched_at": "2026-11-10T16:23:12.263629+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "XqmRJNH3b4w",
+  "title": "How to Create a Binaural and Isochronic Beats",
+  "url": "https://www.youtube.com/watch?v=XqmRJNH3b4w",
+  "fetched_at": "2026-11-10T16:24:01.578619+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Mindmovie Creator",
+  "duration": 759,
+  "ok": true,
+  "cue_count": 258,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/XqmRJNH3b4w/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/XqmRJNH3b4w/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "NAEyg_eXP14",
+  "title": "How to Create 3 Types of Ambient Music from 1 Concept",
+  "url": "https://www.youtube.com/watch?v=NAEyg_eXP14",
+  "fetched_at": "2026-11-10T16:24:16.071882+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1780,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "X_yfys8wAJ4",
+  "title": "How to Make Your First Ambient Track From Scratch in Logic Pro (Full Beginner Guide)",
+  "url": "https://www.youtube.com/watch?v=X_yfys8wAJ4",
+  "fetched_at": "2026-11-10T16:25:06.234905+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1931,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "P--40MYlGuI",
+  "title": "Tutorial #31: Creating a hybrid score by manipulating orchestral samples",
+  "url": "https://www.youtube.com/watch?v=P--40MYlGuI",
+  "fetched_at": "2026-11-10T16:26:00.026271+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ProjectSAM Cinematic Sampling",
+  "duration": 804,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "e-y_F4sv6fA",
+  "title": "Cinematic Synthesis: Creating Hans Zimmer Style Sounds",
+  "url": "https://www.youtube.com/watch?v=e-y_F4sv6fA",
+  "fetched_at": "2026-11-10T16:26:16.130071+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Evenant",
+  "duration": 1962,
+  "ok": true,
+  "cue_count": 430,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/e-y_F4sv6fA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/e-y_F4sv6fA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "u4tg0u-THS8",
+  "title": "How to Combine Synths with Orchestra",
+  "url": "https://www.youtube.com/watch?v=u4tg0u-THS8",
+  "fetched_at": "2026-11-10T16:26:30.940913+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tabletop Composer",
+  "duration": 481,
+  "ok": true,
+  "cue_count": 163,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/u4tg0u-THS8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/u4tg0u-THS8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "_MgJJpqxcn8",
+  "title": "The VIBEY Filtered Drums Trick (For Ambient Mixes)",
+  "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+  "fetched_at": "2026-11-10T16:29:36.140252+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "The Indie Music Lab",
+  "duration": 881,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "P-BV9Fa0e3Q",
+  "title": "HOW TO CREATE BINAURAL BEATS IN ANY DAW!",
+  "url": "https://www.youtube.com/watch?v=P-BV9Fa0e3Q",
+  "fetched_at": "2026-11-10T16:31:02.604906+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Steffen Ki Sonic Alchemy",
+  "duration": 861,
+  "ok": true,
+  "cue_count": 636,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "P-BV9Fa0e3Q.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/P-BV9Fa0e3Q/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/P-BV9Fa0e3Q/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.7
+    }
+  ]
+}
+{
+  "video_id": "NAEyg_eXP14",
+  "title": "How to Create 3 Types of Ambient Music from 1 Concept",
+  "url": "https://www.youtube.com/watch?v=NAEyg_eXP14",
+  "fetched_at": "2026-11-10T16:32:40.621963+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1780,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "P--40MYlGuI",
+  "title": "Tutorial #31: Creating a hybrid score by manipulating orchestral samples",
+  "url": "https://www.youtube.com/watch?v=P--40MYlGuI",
+  "fetched_at": "2026-11-10T16:34:06.801876+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ProjectSAM Cinematic Sampling",
+  "duration": 804,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "vv4LdpuvH5U",
+  "title": "Ableton Wavetable Tutorial - Designing a Dreamy Cinematic Pad",
+  "url": "https://www.youtube.com/watch?v=vv4LdpuvH5U",
+  "fetched_at": "2026-11-10T16:34:55.703369+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Busiless Music",
+  "duration": 800,
+  "ok": true,
+  "cue_count": 110,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/vv4LdpuvH5U/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/vv4LdpuvH5U/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "RPzAJFC_JkI",
+  "title": "How to Build Evolving Cinematic Pads with Wavetable Synths",
+  "url": "https://www.youtube.com/watch?v=RPzAJFC_JkI",
+  "fetched_at": "2026-11-10T16:40:20.044818+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Busiless Music",
+  "duration": 1321,
+  "ok": true,
+  "cue_count": 459,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/RPzAJFC_JkI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/RPzAJFC_JkI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "N60Jcn9zfBo",
+  "title": "Disclosure’s Signature Kick (How To Make It & Why It Sounds So Good)",
+  "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+  "fetched_at": "2026-11-10T16:41:08.246599+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Sol State",
+  "duration": 488,
+  "ok": true,
+  "cue_count": 196,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/N60Jcn9zfBo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/N60Jcn9zfBo/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "aceTs5aSDZU",
+  "title": "How to Kiasmos: Orchestral Downtempo",
+  "url": "https://www.youtube.com/watch?v=aceTs5aSDZU",
+  "fetched_at": "2026-11-10T16:44:15.154924+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Zahand / LotusTunes",
+  "duration": 1317,
+  "ok": true,
+  "cue_count": 516,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/aceTs5aSDZU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/aceTs5aSDZU/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "3zIsQfKtUno",
+  "title": "How to make ELECTRONICA and DOWNTEMPO like [Christian Löffler] [Cercle]",
+  "url": "https://www.youtube.com/watch?v=3zIsQfKtUno",
+  "fetched_at": "2026-11-10T16:45:02.795551+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Alice Efe - Mercurial Tones Academy",
+  "duration": 1604,
+  "ok": true,
+  "cue_count": 216,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/3zIsQfKtUno/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/3zIsQfKtUno/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "TTIon9_pRHQ",
+  "title": "How to Make Organic House Bass Warm & Wide  (All Day I Dream style)",
+  "url": "https://www.youtube.com/watch?v=TTIon9_pRHQ",
+  "fetched_at": "2026-11-10T16:45:50.525442+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Dowden Production Academy",
+  "duration": 720,
+  "ok": true,
+  "cue_count": 484,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "TTIon9_pRHQ.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/TTIon9_pRHQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/TTIon9_pRHQ/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ]
+}
+{
+  "video_id": "6x1_XZDcI8I",
+  "title": "How I Arranged Hypnotic Techno Track – Arrangement Breakdown",
+  "url": "https://www.youtube.com/watch?v=6x1_XZDcI8I",
+  "fetched_at": "2026-11-10T16:50:54.104350+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Hypnotic Techno Production",
+  "duration": 1427,
+  "ok": true,
+  "cue_count": 372,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/6x1_XZDcI8I/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/6x1_XZDcI8I/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "WFGs91vSpIw",
+  "title": "the only drum sound design tutorial you'll ever need*",
+  "url": "https://www.youtube.com/watch?v=WFGs91vSpIw",
+  "fetched_at": "2026-11-10T16:51:42.135729+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "disphing",
+  "duration": 556,
+  "ok": true,
+  "cue_count": 239,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/WFGs91vSpIw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/WFGs91vSpIw/raw.txt",
+  "translated": false,
+  "retries": []
+}

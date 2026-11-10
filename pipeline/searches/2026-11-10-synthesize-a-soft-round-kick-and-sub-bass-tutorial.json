@@ -1,0 +1,113 @@
+{
+ "topic": "synthesize a soft round kick and sub bass tutorial",
+ "date": "2026-11-10",
+ "params": {
+  "topic": "synthesize a soft round kick and sub bass tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "dwHjLxpNBlw",
+   "title": "How to Make a Fat Sub Bass in Logic Pro | Tutorial",
+   "channel": "pointblank music school",
+   "duration": 346,
+   "view_count": 55339,
+   "url": "https://www.youtube.com/watch?v=dwHjLxpNBlw",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.87
+  },
+  {
+   "id": "pLR874EgF9Y",
+   "title": "Always the Perfect Kick For Electronic Music | Sonic Academy KICK 3 – Walkthrough & Production Tips",
+   "channel": "Phable",
+   "duration": 940,
+   "view_count": 32556,
+   "url": "https://www.youtube.com/watch?v=pLR874EgF9Y",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.76
+  },
+  {
+   "id": "N60Jcn9zfBo",
+   "title": "Disclosure’s Signature Kick (How To Make It & Why It Sounds So Good)",
+   "channel": "Sol State",
+   "duration": 488,
+   "view_count": 316164,
+   "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.25
+  },
+  {
+   "id": "27ewHn5SAiI",
+   "title": "The SCIENCE of Mixing Perfect Kick and Bass",
+   "channel": "Sage Audio",
+   "duration": 455,
+   "view_count": 248518,
+   "url": "https://www.youtube.com/watch?v=27ewHn5SAiI",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.2
+  },
+  {
+   "id": "UQpyAuq5vHk",
+   "title": "Solving your BIGGEST kick drum problems in 180 seconds",
+   "channel": "TheCosmicAcademy",
+   "duration": 319,
+   "view_count": 73050,
+   "url": "https://www.youtube.com/watch?v=UQpyAuq5vHk",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.93
+  },
+  {
+   "id": "_9zBv0sGuP8",
+   "title": "Mastering EDM Ep. 29: Basic Drum Synthesis - Logic Pro X",
+   "channel": "Manak1n",
+   "duration": 1081,
+   "view_count": 1979,
+   "url": "https://www.youtube.com/watch?v=_9zBv0sGuP8",
+   "query": "synthesize a soft round kick and sub bass tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.15
+  }
+ ],
+ "dropped": [
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "FVoDtyZzO8s",
+   "why": "duration 122s"
+  },
+  {
+   "id": "u7-40sDPxQI",
+   "why": "already known"
+  },
+  {
+   "id": "0xY7NZF3n0w",
+   "why": "duration 170s"
+  },
+  {
+   "id": "rk7k6bJTgVo",
+   "why": "already known"
+  },
+  {
+   "id": "63FvtgN6Yrc",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

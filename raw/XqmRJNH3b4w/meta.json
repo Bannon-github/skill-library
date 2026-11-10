@@ -1,0 +1,46 @@
+{
+  "video_id": "XqmRJNH3b4w",
+  "title": "How to Create a Binaural and Isochronic Beats",
+  "url": "https://www.youtube.com/watch?v=XqmRJNH3b4w",
+  "fetched_at": "2026-11-10T16:24:01.578619+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Mindmovie Creator",
+  "duration": 759,
+  "ok": true,
+  "cue_count": 258,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/XqmRJNH3b4w/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/XqmRJNH3b4w/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

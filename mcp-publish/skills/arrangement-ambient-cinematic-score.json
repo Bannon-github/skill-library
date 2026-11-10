@@ -74,6 +74,12 @@
         "video_id": "LF4yNpzSARQ",
         "url": "https://www.youtube.com/watch?v=LF4yNpzSARQ",
         "title": "How to compose Cinematic Music (in 7 easy steps)"
+      },
+      {
+        "from_skill": "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
+        "video_id": "u4tg0u-THS8",
+        "url": "https://www.youtube.com/watch?v=u4tg0u-THS8",
+        "title": "How to Combine Synths with Orchestra"
       }
     ]
   },
@@ -342,6 +348,21 @@
         "Repeat the 8-bar melody as climax: add an independent countermelody (e.g. horns) that enters on main-melody sustains/rests. Double the melody in unison (violins+cellos) and in octaves (violins+piano) in the second half; add a pulsing bass-synth on roots for low-end push.",
         "Bookend: after the crescendo, paste the opening 8 bars of piano (+ delicate texture) so the piece ends where it began, feeling final rather than abruptly cut."
       ]
+    },
+    {
+      "from_skill": "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
+      "name": "Hybrid orchestral cue: add four synth roles from the ground up to an orchestral arrangement — sine sub an octave under the bass, a straight quarter/eighth pulsing bass, quick-attack polyphonic chord pads, then 2-3 staccato pluck ostinati using only chord tones, each repeating every 1-2 beats and each layer slightly more complex",
+      "goal": "Turn an orchestral arrangement into a hybrid (Spider-Verse-style) score by layering synths by role, bottom to top. Delta vs arrangement cluster (role-first hybrid layering, 7-section arc with chord-tone ostinato): a concrete ordered four-role recipe for synths over orchestra with a graded polyrhythmic chord-tone pluck stack.",
+      "steps": [
+        "Listen to the orchestral section alone and note its bass line and chords.",
+        "Sub bass: a simple sine (or low-harmonic synth) plays the bass line one octave below the other bass instruments. It should be felt more than heard.",
+        "Pulsing bass: a simple bass synth plays the bass line in straight quarter or eighth notes (play or pencil them in).",
+        "Harmonic pads: a polyphonic, quick-attack pad plays the chord progression as sustained chords, either doubling strings/brass or in its own register.",
+        "Pluck layer 1: a staccato pluck plays a short pattern of the common tones between chords, repeating every beat or two, with at most one embellishment.",
+        "Pluck layer 2: a second pluck plays a rhythmic arpeggio of chord tones in a short repeating pattern.",
+        "Pluck layer 3 (optional): the most adventurous pattern spanning up to an octave, still chord tones only.",
+        "Play all layers together with the orchestra and balance them."
+      ]
     }
   ],
   "merged_from": [
@@ -355,7 +376,8 @@
     "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
     "mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return",
     "metric-modulation-action-cue",
-    "cinematic-seven-section-arc-ostinato-countermelody-bookend"
+    "cinematic-seven-section-arc-ostinato-countermelody-bookend",
+    "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati"
   ],
   "tags": [
     "ambient",
@@ -404,6 +426,7 @@
     "three-track-cinematic-sketch-lp-filter-close-open-reverb-swell-on-runs-rhythmic-autofilter-mix-tempo-ramp-contrary-motion",
     "mix-by-arrangement-ambient-techno-self-oscillating-filter-kick-sub-keytracked-tuned-to-root-pads-low-mid-high-rotate-out-16-vs-14-step-glitch-hp-kick-return",
     "metric-modulation-action-cue",
-    "cinematic-seven-section-arc-ostinato-countermelody-bookend"
+    "cinematic-seven-section-arc-ostinato-countermelody-bookend",
+    "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati"
   ]
 }

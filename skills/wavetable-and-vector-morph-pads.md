@@ -193,3 +193,16 @@ Source: [How to Make Lush Evolving Pads in Wavetable | Ableton Tutorial](https:/
 - LFO 1 → cutoff at moderate depth (source ~40): tempo-sync to a multi-bar rate (source 3 bars or 1.5), triangle shape, and turn retrigger OFF so each new chord catches a different LFO phase — the filter no longer repeats identically every note.
 - Optional: switch the filter to an analog-modelled / driven mode for mild saturation instead of a separate distortion plugin. Optional: slow LFO or envelope on wavetable position for timbral morph (pitch stays fixed).
 - Space: a long lush reverb or convolution (source uses a 'black hole'-style IR) with dry/wet raised and a low-cut on the reverb so the pad stays deep without rumble.
+
+### Evolving cinematic pad/drone from a three-instance wavetable rack split by register (lows / mids / highs), each with two very slow free-running LFOs moving the two oscillators' wavetable positions in opposite directions, glue compression, a reverb→gentle saturation→long reverb sandwich, and one macro that opens filters and adds drive
+Source: [How to Build Evolving Cinematic Pads with Wavetable Synths](https://www.youtube.com/watch?v=RPzAJFC_JkI) · was `three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive`
+- Mids layer: wavetable osc 1 with a warm table, filter closed a little (drive-capable filter type), low cut to keep it in the mids. Two very slow LFOs at slightly different rates, retrigger off: LFO 1 + and LFO 2 − on osc 1 position.
+- Osc 2 on the mids: a different table (e.g. sweep saw) with the same two LFOs in the opposite directions, so the movements sometimes cancel. Add shimmer-style unison.
+- Filter 1 movement on the mids: a small amount of both LFOs and of a slow envelope (about 2 s decay, 3 s release) on cutoff.
+- Group into a rack, duplicate the instance twice and name them lows / mids / highs.
+- Highs: brighter, more aggressive tables, filter more open with light drive, noise-style unison with more voices; make its LFOs different speeds from the mids (one slower, around 0.04 Hz); keep mod amounts delicate. Osc 2 slightly detuned and optionally an octave down.
+- Lows: simple saw an octave down without unison plus a sub; cut the lowest rumble with a steeper, low-resonance filter; one very slow LFO with a small amount on filter frequency.
+- Set about 1 s attack on all three and balance their levels (turn highs down if they dominate).
+- FX chain after the rack: glue compressor (4:1, threshold just catching peaks), algorithmic reverb 100% wet with a vintage character, gentle soft-clip saturation, then a long lush reverb at 50% mix, and a limiter catching 2-3 dB.
+- Map one macro (mod wheel) on each instance to open filter 1 (or close it on the highs) and add filter drive, with only a small wavetable-position offset.
+- Hold one chord, then a single note, and check that the sound keeps evolving with no loud jumps.

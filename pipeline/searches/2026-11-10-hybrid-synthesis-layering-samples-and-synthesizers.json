@@ -1,0 +1,113 @@
+{
+ "topic": "hybrid synthesis layering samples and synthesizers cinematic tutorial",
+ "date": "2026-11-10",
+ "params": {
+  "topic": "hybrid synthesis layering samples and synthesizers cinematic tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "P--40MYlGuI",
+   "title": "Tutorial #31: Creating a hybrid score by manipulating orchestral samples",
+   "channel": "ProjectSAM Cinematic Sampling",
+   "duration": 805,
+   "view_count": 20088,
+   "url": "https://www.youtube.com/watch?v=P--40MYlGuI",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.65
+  },
+  {
+   "id": "E-ZAdnvyCzA",
+   "title": "ELEMENTS Cinematic Rhythms  - Tutorial PART 05",
+   "channel": "Stefano Maccarelli | Sound Designer - Composer",
+   "duration": 838,
+   "view_count": 495,
+   "url": "https://www.youtube.com/watch?v=E-ZAdnvyCzA",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.85
+  },
+  {
+   "id": "oKz07a5O_bw",
+   "title": "5 Pro Tips for Mixing Synths with Orchestral Samples",
+   "channel": "Audio Imperia",
+   "duration": 1181,
+   "view_count": 6399,
+   "url": "https://www.youtube.com/watch?v=oKz07a5O_bw",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.4
+  },
+  {
+   "id": "u4tg0u-THS8",
+   "title": "How to Combine Synths with Orchestra",
+   "channel": "Tabletop Composer",
+   "duration": 482,
+   "view_count": 5159,
+   "url": "https://www.youtube.com/watch?v=u4tg0u-THS8",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36
+  },
+  {
+   "id": "e-y_F4sv6fA",
+   "title": "Cinematic Synthesis: Creating Hans Zimmer Style Sounds",
+   "channel": "Evenant",
+   "duration": 1963,
+   "view_count": 212203,
+   "url": "https://www.youtube.com/watch?v=e-y_F4sv6fA",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.66
+  },
+  {
+   "id": "UiOyuK6ehPQ",
+   "title": "Oscillarys - Spectral Loom Synthesizer | Deep Dive Overview | #nativeinstruments #kontakt8 #nks",
+   "channel": "Ocean Swift / Faxi Nadu",
+   "duration": 557,
+   "view_count": 2685,
+   "url": "https://www.youtube.com/watch?v=UiOyuK6ehPQ",
+   "query": "hybrid synthesis layering samples and synthesizers cinematic tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.21
+  }
+ ],
+ "dropped": [
+  {
+   "id": "m6wfGX7rwiQ",
+   "why": "already known"
+  },
+  {
+   "id": "kLEWR8ndKEg",
+   "why": "negative title signal"
+  },
+  {
+   "id": "qNrtSH66-_A",
+   "why": "negative title signal"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "rfkFo2AaLDI",
+   "why": "duration 227s"
+  },
+  {
+   "id": "JCdQGX_508I",
+   "why": "duration 81s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
