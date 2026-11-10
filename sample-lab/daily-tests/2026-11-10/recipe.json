@@ -1,0 +1,193 @@
+{
+ "title": "Drone Rack",
+ "date": "2026-11-10",
+ "seed": 1110,
+ "bpm": 118,
+ "bars": 36,
+ "tailSec": 4.0,
+ "category": "pad",
+ "key": "A minor (A drone)",
+ "skills": [
+  "three-band-wavetable-rack-counter-lfo-position-glue-reverb-saturate-reverb-macro-drive",
+  "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+  "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break"
+ ],
+ "sections": {
+  "drumsIn": 6,
+  "hats2": 10,
+  "shaker": 14,
+  "climax": 18,
+  "brk": 22,
+  "sec2": 26,
+  "outro": 34,
+  "end": 36,
+  "phrase": 4
+ },
+ "drone": {
+  "root": 57,
+  "added": [
+   [
+    14,
+    22,
+    64
+   ],
+   [
+    18,
+    22,
+    65
+   ],
+   [
+    26,
+    34,
+    62
+   ],
+   [
+    30,
+    34,
+    67
+   ]
+  ],
+  "atmoBreak": [
+   [
+    22,
+    24,
+    72
+   ],
+   [
+    24,
+    26,
+    74
+   ]
+  ],
+  "fadeInSec": 3.0,
+  "macro": [
+   [
+    0,
+    0.15
+   ],
+   [
+    6,
+    0.3
+   ],
+   [
+    14,
+    0.45
+   ],
+   [
+    18,
+    0.6
+   ],
+   [
+    21.5,
+    1.0
+   ],
+   [
+    22,
+    0.35
+   ],
+   [
+    26,
+    0.45
+   ],
+   [
+    32,
+    0.7
+   ],
+   [
+    34,
+    0.55
+   ],
+   [
+    36,
+    0.2
+   ]
+  ],
+  "macroSec2Scale": 0.6
+ },
+ "rack": {
+  "attack": 1.0,
+  "unisonMid": 3,
+  "detuneMid": 9,
+  "unisonHigh": 5,
+  "detuneHigh": 16,
+  "mid": {
+   "lfoA": 0.061,
+   "lfoB": 0.047,
+   "posDepth": 0.28,
+   "cutBase": 900,
+   "cutMacro": 2200,
+   "cutLfo": 0.15,
+   "envDecay": 2.0,
+   "envRelease": 3.0,
+   "envAmt": 0.6,
+   "lowCut": 250,
+   "level": 1.0
+  },
+  "high": {
+   "lfoA": 0.04,
+   "lfoB": 0.029,
+   "posDepth": 0.18,
+   "cutBase": 7000,
+   "cutMacroClose": -2500,
+   "drive": 1.6,
+   "level": 0.32,
+   "octave": 12
+  },
+  "low": {
+   "lfo": 0.021,
+   "cutBase": 320,
+   "cutLfo": 0.12,
+   "cutMacro": 260,
+   "hp": 38,
+   "subLevel": 0.35,
+   "level": 0.55,
+   "octave": -12
+  },
+  "glueRatio": 4.0,
+  "verb1Rt": 2.4,
+  "verb1Damp": 5200,
+  "verb1Mix": 0.35,
+  "clipDrive": 1.4,
+  "verb2Rt": 7.5,
+  "verb2Mix": 0.5,
+  "level": 0.5
+ },
+ "kick": {
+  "startHz": 73.4,
+  "endHz": 55.0,
+  "bodyTau": 0.045,
+  "punchHz": 100,
+  "punchTau": 0.006,
+  "atkMs": 1.5,
+  "lpHz": 1800,
+  "lenNotes": 0.5,
+  "level": 0.3,
+  "trimDb50": -2.0
+ },
+ "bass": {
+  "level": 0.6,
+  "cut": 380,
+  "envAmt": 700,
+  "dec": 0.11,
+  "duckDepth": 0.6,
+  "duckMs": 140
+ },
+ "perc": {
+  "rim": 0.18,
+  "hat": 0.1,
+  "hatSoft": 0.06,
+  "shaker": 0.045,
+  "ride": 0.08,
+  "noiseRise": 0.06,
+  "fxDelay": 0.05
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 150,
+  "width": 0.9,
+  "fadeOutSec": 4.0,
+  "shelfDb": 0.0,
+  "padDuck": 0.15
+ }
+}
