@@ -1,0 +1,145 @@
+{
+ "title": "Tide Descent",
+ "date": "2026-11-11",
+ "seed": 1111,
+ "bpm": 48,
+ "bars": 15,
+ "tailSec": 4.0,
+ "category": "pad",
+ "key": "E minor",
+ "skills": [
+  "monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe",
+  "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws",
+  "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch"
+ ],
+ "sections": {
+  "drumsIn": 2,
+  "bassIn": 2,
+  "strings": 4,
+  "pluck": 6,
+  "wood": 8,
+  "peak": 8,
+  "recede": 9,
+  "drumsOut": 12,
+  "toneOut": 12,
+  "end": 15
+ },
+ "chords": [
+  [
+   52,
+   55,
+   59,
+   62,
+   66
+  ],
+  [
+   50,
+   54,
+   57,
+   62,
+   64
+  ],
+  [
+   48,
+   52,
+   55,
+   59,
+   62
+  ],
+  [
+   45,
+   52,
+   55,
+   60
+  ]
+ ],
+ "roots": [
+  40,
+  38,
+  36,
+  33
+ ],
+ "stringsLine": [
+  [
+   76,
+   74
+  ],
+  [
+   74,
+   69
+  ],
+  [
+   71,
+   67
+  ],
+  [
+   69,
+   64
+  ]
+ ],
+ "woodLine": [
+  76,
+  74,
+  71,
+  69,
+  67,
+  64
+ ],
+ "trem": {
+  "rateHz": 6.0,
+  "amount": 0.6,
+  "shape": 0.4,
+  "stringsAmount": 0.25
+ },
+ "tone": {
+  "rootHz": 329.63,
+  "rateHz": 6.0,
+  "level": 0.035,
+  "fadeBars": 2.0,
+  "notchQ": 6.0
+ },
+ "pad": {
+  "cutStart": 3600,
+  "cutEnd": 1700,
+  "detuneCents": 8,
+  "level": 0.5,
+  "lowCutHz": 160,
+  "lowCutBlendBars": 2.0
+ },
+ "drumBus": {
+  "lpHz": 1000,
+  "boxHz": 700,
+  "boxDb": 4.0,
+  "drive": 1.8,
+  "sendA": 0.12,
+  "sendB": 0.18,
+  "plateRt": 8.5,
+  "plateLowCut": 550,
+  "plateSend": 0.9,
+  "riseDb": 3.0,
+  "level": 0.55
+ },
+ "bass": {
+  "level": 0.35,
+  "fadeBars": 2.0
+ },
+ "pluck": {
+  "cutStart": 4500,
+  "cutEnd": 1400,
+  "level": 0.22
+ },
+ "wood": {
+  "level": 0.14
+ },
+ "strings": {
+  "level": 0.22
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.2,
+  "sideHpHz": 130,
+  "width": 1.4,
+  "recedeDb": -6.0,
+  "fadeOutSec": 6.0
+ }
+}
