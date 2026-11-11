@@ -1,0 +1,24 @@
+{
+  "video_id": "--",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=--",
+  "fetched_at": "2026-11-11T16:20:38.739506+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "video_unavailable",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "ytdlp_error"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "video_unavailable"
+    }
+  ],
+  "retries": [],
+  "detail": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=--! This is most likely caused by:"
+}

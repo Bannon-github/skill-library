@@ -1,0 +1,46 @@
+{
+  "video_id": "BfRyPzy-e-k",
+  "title": "Make Lush & Dubby Synths (Like Traumer, Kolter & Janaret)",
+  "url": "https://www.youtube.com/watch?v=BfRyPzy-e-k",
+  "fetched_at": "2026-11-11T16:31:59.480309+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "SYNTHO",
+  "duration": 2139,
+  "ok": true,
+  "cue_count": 683,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/BfRyPzy-e-k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/BfRyPzy-e-k/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -49,3 +49,13 @@ Source: [Binaural Beats Are Boring… So I Built Something Else | Bisochronic® 
 - Put a slow lowpass sweep on the harmonic layers (start ~6 s period, then longer) with adjustable intensity.
 - Add a low pink/white/brown noise layer with slow auto-pan, and a low drone a fifth below.
 - Build a journey: hold each beat rate for set minutes and glide to the next (e.g. 5 Hz 5 min → 2 Hz 5 min → 1 Hz; or a 10 → 1.5 Hz descent); export and keep a card listing every frequency and ratio.
+
+### Speaker-safe brainwave layer in a DAW: either two fixed-frequency sines a few Hz apart summed in mono (e.g. carrier + 8 Hz for alpha), or a tremolo (auto-pan set to tremolo, high amount, ~40% shape) at the entrainment rate on a playable pad so chords themselves pulse, optionally with the sine pair underneath
+Source: [How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)](https://www.youtube.com/watch?v=aBiz2axINMA) · was `monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe`
+- Option A: load a sine synth, set the oscillator to fixed frequency at the carrier (a key note).
+- Put it in a rack/group, duplicate the chain, and set the second sine to carrier + target rate (e.g. +8 Hz). Keep both centred (mono).
+- Check: mute one chain and the wobble disappears; both together give the monaural beat.
+- Option B: on a pad or chord track, add a tremolo (auto-pan in tremolo mode), raise the amount high, set shape ~40%, and set the rate to the target Hz (e.g. 8 Hz).
+- Turn off fixed pitch so the instrument plays normally; play chords and melodies so the whole harmony pulses.
+- Add reverb after the tremolo and, if wanted, keep the Option A sine pair quietly underneath.
+- Optionally copy the same tremolo onto other tracks of a meditation piece, then test-listen at length before sharing.

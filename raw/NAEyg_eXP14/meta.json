@@ -2,7 +2,7 @@
   "video_id": "NAEyg_eXP14",
   "title": "How to Create 3 Types of Ambient Music from 1 Concept",
   "url": "https://www.youtube.com/watch?v=NAEyg_eXP14",
-  "fetched_at": "2026-11-10T16:32:40.621963+00:00",
+  "fetched_at": "2026-11-11T16:25:06.515137+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
@@ -49,7 +49,7 @@
     {
       "retry": 1,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.5
+      "sleep_s": 5.8
     },
     {
       "retry": 2,
@@ -59,7 +59,7 @@
     {
       "retry": 3,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.7
+      "sleep_s": 17.9
     }
   ],
   "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."

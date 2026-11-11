@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws",
+  "name": "Filtered 'vibey' drum bus: low-pass the kit down to ~1 kHz with a 500 Hz-1 kHz boxy boost, add gentle tube saturation, send it to reverbs already in the mix (a pitched/chorused verb and a low-cut, EQ'd, chorused hall), then automate sends into an 8 s+ plate (low cut ~500-600 Hz) only at phrase ends, and ride the bus volume up into the end",
+  "goal": "Turn a plain drum kit, loop or recorded drums into a soft, dark, spacious drum layer that sits behind ambient pads. Delta vs drum-groove cluster (lo-fi groove, sparse drums, organic downtempo groove): this is the processing chain and send automation, not pattern writing, and it reuses existing return reverbs so the drums share the mix's space.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "_MgJJpqxcn8",
+    "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+    "title": "How to Get a Vibey Filtered Drum Sound (ambient / indie mixes)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/_MgJJpqxcn8/agent-skill-filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws.json",
+    "batch": "2026-11-11-morning-hunt"
+  },
+  "prerequisites": [
+    "Any drum source (kit, loop, drum sampler or synthesized drums)",
+    "EQ/filter, saturator (tube style), 2-3 reverb returns, a gain/utility device for automation"
+  ],
+  "inputs": [
+    {
+      "name": "drums",
+      "type": "audio/midi",
+      "description": "Drum track or loop",
+      "required": true
+    },
+    {
+      "name": "existing_returns",
+      "type": "reverb sends",
+      "description": "Reverb returns already used on other parts of the mix",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "filtered_drums",
+      "type": "audio",
+      "description": "Dark, filtered drum bus with shared space and phrase-end reverb throws"
+    }
+  ],
+  "constraints": [
+    "The low-pass filter is the main effect; saturation is secondary (any tube/tape saturator works).",
+    "Reverb throws come in only at certain hits or phrase ends, not on every hit.",
+    "Drums still enter early (~8 counts / ~12 s); no rapid clicking rolls or stutters (Matt's preference).",
+    "Automate a gain/utility device instead of the fader so the fader stays free.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a plain, fairly thin drum sound (kit preset, loop or synthesized drums).",
+      "tool": "Drum source",
+      "expect": "Reference before processing"
+    },
+    {
+      "n": 2,
+      "action": "Insert an EQ: low-pass the top end down to roughly 1 kHz and add a broad boost between ~500 Hz and 1 kHz for a meaty, boxy mid-range.",
+      "tool": "EQ",
+      "expect": "Drums sound dark and filtered with body in the mids"
+    },
+    {
+      "n": 3,
+      "action": "Add a gentle tube-style saturation/distortion (tone controls minimal).",
+      "tool": "Saturator",
+      "expect": "More warmth and character, no harsh grit"
+    },
+    {
+      "n": 4,
+      "action": "Send the drums to reverb returns already set up for other parts (e.g. a vocal verb with pitch-shift/chorus/width into 100% wet reverb). Keep it low and try what's there before making new ones.",
+      "tool": "Send/return",
+      "expect": "Drums share the mix's space"
+    },
+    {
+      "n": 5,
+      "action": "Send to a hall return that has a chorus and heavy EQ on the wet signal itself (low and high cut), so the reverb is filtered too.",
+      "tool": "Hall reverb return + chorus + EQ",
+      "expect": "Fuller space that stays dark"
+    },
+    {
+      "n": 6,
+      "action": "Create an 'accent' return: a plate with 8 s+ decay and low cut ~500-600 Hz. Automate the drum send to it so it only opens at the ends of some bars/phrases, and leave it open longer near the end of a section.",
+      "tool": "Plate reverb + send automation",
+      "expect": "Long tails stretch out only on chosen hits"
+    },
+    {
+      "n": 7,
+      "action": "Automate the drum bus volume (gain/utility device) to rise gently towards the end of a section to build energy.",
+      "tool": "Gain automation",
+      "expect": "Drum energy grows without touching the fader"
+    },
+    {
+      "n": 8,
+      "action": "A/B the bus with all plugins off and on, alone and in the full mix.",
+      "tool": "A/B",
+      "expect": "Clear 'vibe' difference, drums sit behind pads"
+    }
+  ],
+  "verification": [
+    "Drum bus spectrum shows a roll-off above ~1 kHz with a mild 500 Hz-1 kHz bump.",
+    "The long-plate send is non-zero only at automated phrase-end spots.",
+    "Drums still enter by ~12 s; no rolls or rapid clicks are added."
+  ],
+  "tags": [
+    "drums",
+    "drum-bus",
+    "low-pass",
+    "filter",
+    "saturation",
+    "reverb-send",
+    "automation",
+    "ambient",
+    "lo-fi",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws"
+}

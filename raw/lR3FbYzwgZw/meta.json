@@ -1,0 +1,46 @@
+{
+  "video_id": "lR3FbYzwgZw",
+  "title": "Ambient: adding an atmospheric layer to your ambient track",
+  "url": "https://www.youtube.com/watch?v=lR3FbYzwgZw",
+  "fetched_at": "2026-11-11T16:31:11.554148+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Adam Gaensler",
+  "duration": 1027,
+  "ok": true,
+  "cue_count": 440,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/lR3FbYzwgZw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/lR3FbYzwgZw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

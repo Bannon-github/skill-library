@@ -1,0 +1,55 @@
+## distilled/_MgJJpqxcn8/agent-skill-filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws.json
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws
+candidate_name: Filtered 'vibey' drum bus: low-pass the kit down to ~1 kHz with a 500 Hz-1 kHz boxy boost, add gentle tube saturation, send it to reverbs already in the mix (a pitched/chorused verb and a low-cut, EQ'd, chorused hall), then automate sends into an 8 s+ plate (low cut ~500-600 Hz) only at phrase ends, and ride the bus volume up into the end
+tokens: 98
+best_overlap: 0.075
+novelty_score: 0.925  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.075  [local] youtube-skills/mcp-publish :: reverb-delay-space-and-shimmer
+## distilled/aBiz2axINMA/agent-skill-monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe.json
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe
+candidate_name: Speaker-safe brainwave layer in a DAW: either two fixed-frequency sines a few Hz apart summed in mono (e.g. carrier + 8 Hz for alpha), or a tremolo (auto-pan set to tremolo, high amount, ~40% shape) at the entrainment rate on a playable pad so chords themselves pulse, optionally with the sine pair underneath
+tokens: 80
+best_overlap: 0.075
+novelty_score: 0.925  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.075  [local] youtube-skills/mcp-publish :: brainwave-binaural-isochronic-layers
+## distilled/64H_K7rosSo/agent-skill-sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch.json
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch
+candidate_name: Sleep/wind-down ambient arrangement at 40-50 BPM: loop-first sketch of pads, strings and soft plucks playing descending in-key lines, then arrange with slow volume fade-ins per layer, automated low-pass (and an EQ low cut scaled in when layers collide with the bass) so the track 'moves away', a long master fade, and a binaural/monaural pair tuned to the key's root with a narrow EQ notch carved for it in other parts
+tokens: 111
+best_overlap: 0.083
+novelty_score: 0.917  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.083  [local] youtube-skills/mcp-publish :: arrangement-ambient-cinematic-score
+## distilled/BfRyPzy-e-k/agent-skill-dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb.json
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb
+candidate_name: Dub-techno/house stab family: two detuned saws (osc 2 nudged toward square) into a resonant 24 dB low-pass at ~100 Hz with envelope amount ~48 and a 120 Hz high-pass, soft attack, hand-drawn cutoff automation that differs each repeat, dual resonant band-pass filters swept by a 1-2 bar LFO plus chorus, a long 'dub verb' return sidechained to the kick, a longer (6 s) verb and echoes automated up in breakdowns, all built on one four-note minor chord (root triad plus the note 2 semitones below the root)
+tokens: 127
+best_overlap: 0.058
+novelty_score: 0.942  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.058  [local] youtube-skills/mcp-publish :: pad-phaser-notch-comb-movement
+## distilled/HyXvY_PXI9Q/agent-skill-sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular.json
+
+Checked 1: 1 clean, 0 warned, 0 failed
+candidate_id: sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular
+candidate_name: Turn a static one-shot or multisample into a playable synth with subtractive tools: map it chromatically, mono or poly with a set release, a low-pass with envelope depth for sweeps or plucks, resonance for acid, an eighth-note square LFO for stepped filter jumps, layer an octave copy (or different samples) through one filter so they fuse, then distortion/chorus, a reversed octave-up granular layer and reverb
+tokens: 91
+best_overlap: 0.086
+novelty_score: 0.914  (1.0 = fully novel vs index)
+verdict: NOVEL
+--- top matches ---
+0.086  [local] youtube-skills/mcp-publish :: pad-supersaw-unison-detune-width

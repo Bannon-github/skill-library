@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "id": "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular",
+  "name": "Turn a static one-shot or multisample into a playable synth with subtractive tools: map it chromatically, mono or poly with a set release, a low-pass with envelope depth for sweeps or plucks, resonance for acid, an eighth-note square LFO for stepped filter jumps, layer an octave copy (or different samples) through one filter so they fuse, then distortion/chorus, a reversed octave-up granular layer and reverb",
+  "goal": "Hybrid synthesis on any sampler or groovebox that has filters and FX but no synth engine. Delta vs granular cluster (sampler loop chord pad) and filter cluster: a sample-as-oscillator subtractive patch recipe, where layered samples share one filter to become a single, unrecognisable instrument.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "HyXvY_PXI9Q",
+    "url": "https://www.youtube.com/watch?v=HyXvY_PXI9Q",
+    "title": "How to Turn Samples into Synths",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/HyXvY_PXI9Q/agent-skill-sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular.json",
+    "batch": "2026-11-11-morning-hunt"
+  },
+  "prerequisites": [
+    "A sampler with keygroup/multisample mapping, filter + envelope, LFO and insert FX (DAW sampler, MPC, Digitakt etc.)",
+    "One or more pitched synth samples (e.g. bass and a higher pad/lead)"
+  ],
+  "inputs": [
+    {
+      "name": "samples",
+      "type": "audio",
+      "description": "Pitched one-shots or multisamples, root note known",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sampled_synth",
+      "type": "instrument",
+      "description": "Playable patch with filter sweep/pluck, stepped LFO and layered FX"
+    }
+  ],
+  "constraints": [
+    "Portamento, vibrato and fast auto-pan from the video are left out or kept minimal: no wobbly or random pitch (Matt's preference).",
+    "Chorus/ensemble can cause phase issues, so check mono.",
+    "The LFO is tempo-synced (e.g. 1/8) and steady, not random.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load the sample as a keygroup/chromatic program with the root set correctly; for bass choose one-shot + mono, for chords choose poly with a longer amp release.",
+      "tool": "Sampler",
+      "expect": "Sample playable across the keyboard"
+    },
+    {
+      "n": 2,
+      "action": "Engage a low-pass filter, turn the cutoff down and the envelope depth up: a slower decay gives a sweep, a short decay gives a pluck.",
+      "tool": "Filter + envelope",
+      "expect": "Static sample becomes a pluck or sweep"
+    },
+    {
+      "n": 3,
+      "action": "Raise resonance for an acid character, or raise amp attack and hold for a swelling pad.",
+      "tool": "Filter resonance / amp env",
+      "expect": "Distinct voices from one sample"
+    },
+    {
+      "n": 4,
+      "action": "Assign a square LFO synced to 1/8 to cutoff with moderate depth for rhythmic stepped filter jumps.",
+      "tool": "LFO",
+      "expect": "Tempo-locked filter steps"
+    },
+    {
+      "n": 5,
+      "action": "Layer a second copy of the sample an octave up (or a different sample), adjust pan and level, and run both through the same filter.",
+      "tool": "Sample layers",
+      "expect": "Layers fuse into one new instrument"
+    },
+    {
+      "n": 6,
+      "action": "Add FX to taste: gentle distortion to thicken, chorus (check phase), a granular layer pitched +12 and reversed for space, and reverb.",
+      "tool": "Insert FX",
+      "expect": "Unrecognisable, cinematic result"
+    },
+    {
+      "n": 7,
+      "action": "Optionally resample the result or use the sample as a wavetable/granular source in a synth for further shaping.",
+      "tool": "Resample / wavetable",
+      "expect": "Reusable sound for future tracks"
+    }
+  ],
+  "verification": [
+    "The program plays in tune across at least two octaves from the root.",
+    "Filter envelope depth is non-zero and audibly sweeps or plucks.",
+    "Layered copies share one filter (one cutoff control moves both)."
+  ],
+  "tags": [
+    "hybrid-synthesis",
+    "sampler",
+    "subtractive",
+    "filter-envelope",
+    "lfo",
+    "layering",
+    "granular",
+    "resampling",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular"
+}

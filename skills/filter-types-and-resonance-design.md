@@ -151,3 +151,14 @@ Source: [Use this 4 step formula to create epic synth pulses in any synth: Serum
 - Route all three into one ladder low-pass with cutoff fully down. Route envelope 2 (retriggered on each MIDI note) to cutoff with a fast attack and quick decay, so each eighth note opens the filter briefly and it falls straight back.
 - Automate cutoff through the cue: low = plain pulse (noise and osc B barely audible); higher = osc B width and detune come through; highest = noise burst power on top. Use this single lane to add or remove energy.
 - Check that muting noise or osc B matters a lot at high cutoff and little at low cutoff. Add effects on top only after the core works.
+
+### Dub-techno/house stab family: two detuned saws (osc 2 nudged toward square) into a resonant 24 dB low-pass at ~100 Hz with envelope amount ~48 and a 120 Hz high-pass, soft attack, hand-drawn cutoff automation that differs each repeat, dual resonant band-pass filters swept by a 1-2 bar LFO plus chorus, a long 'dub verb' return sidechained to the kick, a longer (6 s) verb and echoes automated up in breakdowns, all built on one four-note minor chord (root triad plus the note 2 semitones below the root)
+Source: [Make Lush & Dubby Synths (Like Traumer, Kolter & Janaret)](https://www.youtube.com/watch?v=BfRyPzy-e-k) · was `dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb`
+- Osc 1 saw, osc 2 saw with its wave position nudged toward square, and detune osc 2.
+- Filter 1: low-pass 24 dB, clean, high resonance, cutoff ~100 Hz. Filter 2: high-pass ~120 Hz to clear lows.
+- Amp envelope with a slightly softened attack; route an envelope to filter 1 cutoff (amount ~48). Use a longer decay for the main downbeat stab and shorter ones for answers.
+- Draw cutoff automation by hand (or record a knob) and make each repeat's shape slightly different, instead of an LFO on cutoff.
+- Insert a dual filter: two resonant band-pass filters with quite a lot of resonance (the auto-captions give the setting only as 'four'; set by ear), swept by a 1-2 bar LFO at ~50% depth; then a chorus. A phaser is a weaker substitute.
+- Chord: minor triad plus the note two semitones below the root (A minor: A C E + G below), optionally plus the 7th (B). Answer stabs reuse it with shorter notes, snappier envelopes and one osc.
+- Send all stabs to a 'dub verb' return (long, ~4 s, lush) sidechained to the kick; add echo; add a second, longer (~6 s) reverb whose send/decay rises in breakdowns; keep a third echo mainly for breakdowns.
+- Group the stabs: saturator for edge, insert reverb to glue, low-shelf cut on low mids, glue compressor at ~25% wet, and an auto filter that slopes down in the breakdown and reopens; finish with gentle tube warmth.

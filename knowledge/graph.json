@@ -1,6 +1,6 @@
 {
  "schema": "yt-knowledge-graph/kg-v1",
- "updated_at": "2026-11-09T16:43:04.061049+00:00",
+ "updated_at": "2026-11-11T16:25:20.294539+00:00",
  "videos": {
   "A7q9L5wd7Mk": {
    "domain": "synth",
@@ -2503,6 +2503,24 @@
    "merged_at": "2026-11-09T16:43:03.822426+00:00",
    "gap_nodes": 17,
    "gap_edges": 0
+  },
+  "_MgJJpqxcn8": {
+   "domain": "synth",
+   "title": "The VIBEY Filtered Drums Trick (For Ambient Mixes)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-11-11T16:25:20.031382+00:00",
+   "gap_nodes": 23,
+   "gap_edges": 1
+  },
+  "X_yfys8wAJ4": {
+   "domain": "synth",
+   "title": "How to Make Your First Ambient Track From Scratch in Logic Pro (Full Beginner Guide)",
+   "route": "auto-target-original-audio",
+   "translated": false,
+   "merged_at": "2026-11-11T16:25:20.293966+00:00",
+   "gap_nodes": 37,
+   "gap_edges": 1
   }
  },
  "nodes": {
@@ -2616,7 +2634,8 @@
     "03ByZItqJis",
     "XAch1Q0Iodc",
     "ilQCsDexooo",
-    "nIGiY1jYgWM"
+    "nIGiY1jYgWM",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -3044,7 +3063,9 @@
     "03ByZItqJis",
     "ilQCsDexooo",
     "lQRLKSgU9Us",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -3422,7 +3443,9 @@
     "ilQCsDexooo",
     "nIGiY1jYgWM",
     "lQRLKSgU9Us",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -3696,7 +3719,8 @@
     "lQRLKSgU9Us",
     "VhjJlD0Gck0",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -4279,7 +4303,8 @@
     "ilQCsDexooo",
     "lQRLKSgU9Us",
     "VhjJlD0Gck0",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -5422,7 +5447,9 @@
     "SR9XWpVhWqU",
     "03ByZItqJis",
     "InSUr0vGgxw",
-    "VhjJlD0Gck0"
+    "VhjJlD0Gck0",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -5737,7 +5764,9 @@
     "GA78yWUMZvQ",
     "ilQCsDexooo",
     "nIGiY1jYgWM",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -5953,7 +5982,8 @@
     "K9JZ1WijGmI",
     "XAch1Q0Iodc",
     "ilQCsDexooo",
-    "nIGiY1jYgWM"
+    "nIGiY1jYgWM",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -6151,7 +6181,8 @@
     "GA78yWUMZvQ",
     "ilQCsDexooo",
     "VhjJlD0Gck0",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -6795,7 +6826,9 @@
     "VhjJlD0Gck0",
     "qViBFmoZLKc",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -7068,7 +7101,8 @@
     "InSUr0vGgxw",
     "nIGiY1jYgWM",
     "VhjJlD0Gck0",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -7638,7 +7672,9 @@
     "InSUr0vGgxw",
     "GA78yWUMZvQ",
     "ilQCsDexooo",
-    "nIGiY1jYgWM"
+    "nIGiY1jYgWM",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -7968,7 +8004,9 @@
     "lQRLKSgU9Us",
     "VhjJlD0Gck0",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -8544,7 +8582,8 @@
     "Kf2KklP9mSY",
     "XAch1Q0Iodc",
     "VhjJlD0Gck0",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -8780,7 +8819,8 @@
     "ySjZQ697Mt0",
     "HPDGp6b829s",
     "u4DPfvDX7Sg",
-    "GA78yWUMZvQ"
+    "GA78yWUMZvQ",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -9024,7 +9064,9 @@
     "VhjJlD0Gck0",
     "qViBFmoZLKc",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -9508,7 +9550,8 @@
     "u4DPfvDX7Sg",
     "03ByZItqJis",
     "nIGiY1jYgWM",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -9745,7 +9788,9 @@
     "gaykd6kuBhU",
     "HsCHTobiv6Y",
     "ilQCsDexooo",
-    "nIGiY1jYgWM"
+    "nIGiY1jYgWM",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -10052,7 +10097,8 @@
     "JP5yTtT-gbk",
     "I_4d4U3Ti9k",
     "rk7k6bJTgVo",
-    "XAch1Q0Iodc"
+    "XAch1Q0Iodc",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -10233,7 +10279,9 @@
     "ilQCsDexooo",
     "nIGiY1jYgWM",
     "VhjJlD0Gck0",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -10696,7 +10744,9 @@
     "rk7k6bJTgVo",
     "SR9XWpVhWqU",
     "ilQCsDexooo",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -10875,7 +10925,9 @@
     "HsCHTobiv6Y",
     "ilQCsDexooo",
     "lQRLKSgU9Us",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -11045,7 +11097,8 @@
     "03ByZItqJis",
     "GA78yWUMZvQ",
     "ilQCsDexooo",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -11738,7 +11791,8 @@
     "auztdZ8ysLU",
     "C_k08WO1EZc",
     "lQRLKSgU9Us",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -11912,7 +11966,8 @@
     "03ByZItqJis",
     "nIGiY1jYgWM",
     "lQRLKSgU9Us",
-    "VhjJlD0Gck0"
+    "VhjJlD0Gck0",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -12211,7 +12266,8 @@
    "domain": "synth",
    "videos": [
     "BqE9S27CZfY",
-    "xlBInB7BOzE"
+    "xlBInB7BOzE",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -12221,14 +12277,23 @@
     {
      "video_id": "xlBInB7BOzE",
      "t": "7:23"
+    },
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "5:12"
     }
    ],
    "covered_by": [
+    "arrangement-ambient-cinematic-score",
     "binaural-beat-meditation-track-pad-foundation-long-reverb-glide-overlap-pingpong-echo-two-sines-440-432-panned-lr-8hz-narrow-notch-carrier-in-music-bus-fades-gentle-limiter-export",
+    "brainwave-binaural-isochronic-layers",
     "emotional-cinematic-arrangement-arc-subtle-intro-gradual-additions-climax-first-melody-only-in-climax-fade-out-outro-chord-arpeggio-melody-method",
+    "generative-rhythm-euclidean-polyrhythm",
     "noise-layer-whoosh-doppler-and-rising-variants",
+    "risers-impacts-transition-fx",
     "risset-rhythm-endless-accelerando-tempo-doubling-fade-every-other-subdivision-half-and-third-speed-hemiola-layers-rising-gliss-dissonance",
-    "shepard-tone-endless-riser-octave-crossfade-voices"
+    "shepard-tone-endless-riser-octave-crossfade-voices",
+    "synth-strings-choir-ensemble-layers"
    ]
   },
   "phrase:attack_and_release": {
@@ -12369,7 +12434,8 @@
     "HsCHTobiv6Y",
     "XAch1Q0Iodc",
     "ilQCsDexooo",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -13108,7 +13174,8 @@
     "5kIWJen9tcI",
     "ySjZQ697Mt0",
     "4MeP3XbYMGA",
-    "eG0401qU-Pw"
+    "eG0401qU-Pw",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -13202,7 +13269,8 @@
     "4MeP3XbYMGA",
     "3nhk0CD_NKg",
     "u4DPfvDX7Sg",
-    "SR9XWpVhWqU"
+    "SR9XWpVhWqU",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -13465,7 +13533,8 @@
     "03ByZItqJis",
     "lQRLKSgU9Us",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -13658,7 +13727,8 @@
     "03ByZItqJis",
     "GA78yWUMZvQ",
     "ilQCsDexooo",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -13910,7 +13980,8 @@
     "CRWBHFIikqc",
     "P68bG3JEskQ",
     "CwRN2ZVZweA",
-    "HPDGp6b829s"
+    "HPDGp6b829s",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -14159,7 +14230,8 @@
     "Kf2KklP9mSY",
     "eG0401qU-Pw",
     "GA78yWUMZvQ",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -14317,7 +14389,8 @@
     "GA78yWUMZvQ",
     "lQRLKSgU9Us",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -14802,7 +14875,8 @@
     "QdveXtMhAnk",
     "JP5yTtT-gbk",
     "M7fEMi8VSy4",
-    "VhjJlD0Gck0"
+    "VhjJlD0Gck0",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -16065,7 +16139,8 @@
     "DyHpBtS9Iso",
     "K9JZ1WijGmI",
     "hdcX5B-xSek",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -17199,7 +17274,8 @@
     "f_XQfAONZw8",
     "HPDGp6b829s",
     "eu0zpa7OiYA",
-    "C_k08WO1EZc"
+    "C_k08WO1EZc",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -17688,7 +17764,8 @@
     "ySjZQ697Mt0",
     "K9JZ1WijGmI",
     "03ByZItqJis",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -21216,12 +21293,17 @@
    "label": "next step",
    "domain": "synth",
    "videos": [
-    "4NGywqnnl5Y"
+    "4NGywqnnl5Y",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
      "video_id": "4NGywqnnl5Y",
      "t": "10:57"
+    },
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "9:37"
     }
    ],
    "covered_by": [
@@ -25663,7 +25745,8 @@
     "8sfw9SwXqhc",
     "v11TzDYmarQ",
     "CRWBHFIikqc",
-    "zJmszSX8LPY"
+    "zJmszSX8LPY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -25685,12 +25768,20 @@
     {
      "video_id": "zJmszSX8LPY",
      "t": "0:38"
+    },
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "0:19"
     }
    ],
    "covered_by": [
     "ambient-44-bar-arrangement-map-low-pad-percussion-high-pad-piano-staggered-entry-strip-to-shaker-return-with-new-chords-coda-ending",
     "ambient-chord-arrangement-one-chord-tone-per-instrument-root-sub-third-pad-fifth-choir-third-reinforcement-strings-parallel-motion-spread-voicing-55-bpm-breath-tempo",
     "ambient-multi-section-arrangement-drama-opening-textures-then-grounding-bass-drop-cue-signalled-sections-per-section-tempo-key-change-final-push-taper",
+    "arrangement-ambient-cinematic-score",
+    "bass-design-sub-reese-808-and-layering",
+    "generative-ambient-drones-and-soundscapes",
+    "harmony-chords-voicing-and-slow-motion",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise"
    ]
   },
@@ -35379,7 +35470,8 @@
    "domain": "synth",
    "videos": [
     "ZKR8ODDIWqE",
-    "HsCHTobiv6Y"
+    "HsCHTobiv6Y",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -35389,6 +35481,10 @@
     {
      "video_id": "HsCHTobiv6Y",
      "t": "2:13"
+    },
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "6:20"
     }
    ],
    "covered_by": []
@@ -38877,6 +38973,224 @@
     }
    ],
    "covered_by": []
+  },
+  "phrase:towards_the_end": {
+   "type": "phrase",
+   "label": "towards the end",
+   "domain": "synth",
+   "videos": [
+    "_MgJJpqxcn8"
+   ],
+   "refs": [
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "9:41"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:drum_sound": {
+   "type": "phrase",
+   "label": "drum sound",
+   "domain": "synth",
+   "videos": [
+    "_MgJJpqxcn8"
+   ],
+   "refs": [
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "0:23"
+    }
+   ],
+   "covered_by": [
+    "drum-synthesis-and-hybrid-percussion"
+   ]
+  },
+  "phrase:addictive_drums": {
+   "type": "phrase",
+   "label": "addictive drums",
+   "domain": "synth",
+   "videos": [
+    "_MgJJpqxcn8"
+   ],
+   "refs": [
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "1:49"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:mix_tool": {
+   "type": "phrase",
+   "label": "mix tool",
+   "domain": "synth",
+   "videos": [
+    "_MgJJpqxcn8"
+   ],
+   "refs": [
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "5:10"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:drag_and_drop": {
+   "type": "phrase",
+   "label": "drag and drop",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "4:31"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:step_by_step": {
+   "type": "phrase",
+   "label": "step by step",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "1:30"
+    }
+   ],
+   "covered_by": [
+    "brightness-and-air-at-the-source",
+    "drum-synthesis-and-hybrid-percussion",
+    "youtube-topic-search-transcript-precheck"
+   ]
+  },
+  "phrase:even_though": {
+   "type": "phrase",
+   "label": "even though",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "0:30"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:master_class": {
+   "type": "phrase",
+   "label": "master class",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "31:36"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:other_hand": {
+   "type": "phrase",
+   "label": "other hand",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "4:29"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:expensive_plugins": {
+   "type": "phrase",
+   "label": "expensive plugins",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "0:36"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:bass_sounds": {
+   "type": "phrase",
+   "label": "bass sounds",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "10:28"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:create_ambient": {
+   "type": "phrase",
+   "label": "create ambient",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "0:27"
+    }
+   ],
+   "covered_by": [
+    "reverb-delay-space-and-shimmer"
+   ]
+  },
+  "phrase:different_sounds": {
+   "type": "phrase",
+   "label": "different sounds",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "16:44"
+    }
+   ],
+   "covered_by": []
+  },
+  "phrase:key_sounds": {
+   "type": "phrase",
+   "label": "key sounds",
+   "domain": "synth",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "16:56"
+    }
+   ],
+   "covered_by": []
   }
  },
  "edges": {
@@ -39064,7 +39378,9 @@
     "03ByZItqJis",
     "ilQCsDexooo",
     "lQRLKSgU9Us",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -39427,7 +39743,8 @@
     "ilQCsDexooo",
     "lQRLKSgU9Us",
     "VhjJlD0Gck0",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -40303,7 +40620,8 @@
     "Kf2KklP9mSY",
     "XAch1Q0Iodc",
     "VhjJlD0Gck0",
-    "HnDS1YURJkE"
+    "HnDS1YURJkE",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -40675,7 +40993,9 @@
     "VhjJlD0Gck0",
     "qViBFmoZLKc",
     "HnDS1YURJkE",
-    "WctiTN8PLWY"
+    "WctiTN8PLWY",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -41099,7 +41419,9 @@
     "gaykd6kuBhU",
     "HsCHTobiv6Y",
     "ilQCsDexooo",
-    "nIGiY1jYgWM"
+    "nIGiY1jYgWM",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -41382,7 +41704,9 @@
     "rk7k6bJTgVo",
     "SR9XWpVhWqU",
     "ilQCsDexooo",
-    "lQRLKSgU9Us"
+    "lQRLKSgU9Us",
+    "_MgJJpqxcn8",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -41891,7 +42215,8 @@
     "4MeP3XbYMGA",
     "3nhk0CD_NKg",
     "u4DPfvDX7Sg",
-    "SR9XWpVhWqU"
+    "SR9XWpVhWqU",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -42526,7 +42851,8 @@
     "QdveXtMhAnk",
     "JP5yTtT-gbk",
     "M7fEMi8VSy4",
-    "VhjJlD0Gck0"
+    "VhjJlD0Gck0",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
@@ -43464,7 +43790,8 @@
     "e1AMHtuuuTQ",
     "P68bG3JEskQ",
     "CwRN2ZVZweA",
-    "HPDGp6b829s"
+    "HPDGp6b829s",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -49620,7 +49947,8 @@
    "type": "sets",
    "videos": [
     "ZKR8ODDIWqE",
-    "HsCHTobiv6Y"
+    "HsCHTobiv6Y",
+    "_MgJJpqxcn8"
    ],
    "refs": [
     {
@@ -49630,6 +49958,10 @@
     {
      "video_id": "HsCHTobiv6Y",
      "t": "2:13"
+    },
+    {
+     "video_id": "_MgJJpqxcn8",
+     "t": "6:20"
     }
    ],
    "covered_by": []
@@ -49639,12 +49971,17 @@
    "dst": "tool:Logic Pro",
    "type": "part-of",
    "videos": [
-    "zscsukQNOLU"
+    "zscsukQNOLU",
+    "X_yfys8wAJ4"
    ],
    "refs": [
     {
      "video_id": "zscsukQNOLU",
      "t": "0:02"
+    },
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "17:46"
     }
    ],
    "covered_by": []
@@ -50488,12 +50825,27 @@
     }
    ],
    "covered_by": []
+  },
+  "module:delay|part-of|tool:Logic Pro": {
+   "src": "module:delay",
+   "dst": "tool:Logic Pro",
+   "type": "part-of",
+   "videos": [
+    "X_yfys8wAJ4"
+   ],
+   "refs": [
+    {
+     "video_id": "X_yfys8wAJ4",
+     "t": "17:46"
+    }
+   ],
+   "covered_by": []
   }
  },
  "stats": {
-  "videos": 278,
-  "nodes": 1403,
-  "edges": 408,
+  "videos": 280,
+  "nodes": 1417,
+  "edges": 409,
   "uncovered_nodes": 25,
   "uncovered_edges": 148
  }

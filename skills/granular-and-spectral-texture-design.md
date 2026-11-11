@@ -143,3 +143,13 @@ Source: [Use this 90s sampling technique for ethereal pads](https://www.youtube.
 - Shape voicings: keep the roots close together and put 7ths/9ths an octave or more up. Those upper voices scrub much faster, adding motion on top. Optionally move the root down a semitone or tone in a multi-sample map.
 - Add a slow LFO to the sampler's filter cutoff so the pad breathes; also try transposing the whole sampler for different feels.
 - Resample: bounce the played chord to audio, load it into a new sampler and play it. Each key now plays the whole chord shape (parallel harmony), with the drift texture baked in. Loop and repeat if you want.
+
+### Turn a static one-shot or multisample into a playable synth with subtractive tools: map it chromatically, mono or poly with a set release, a low-pass with envelope depth for sweeps or plucks, resonance for acid, an eighth-note square LFO for stepped filter jumps, layer an octave copy (or different samples) through one filter so they fuse, then distortion/chorus, a reversed octave-up granular layer and reverb
+Source: [How to Turn Samples into Synths](https://www.youtube.com/watch?v=HyXvY_PXI9Q) · was `sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular`
+- Load the sample as a keygroup/chromatic program with the root set correctly; for bass choose one-shot + mono, for chords choose poly with a longer amp release.
+- Engage a low-pass filter, turn the cutoff down and the envelope depth up: a slower decay gives a sweep, a short decay gives a pluck.
+- Raise resonance for an acid character, or raise amp attack and hold for a swelling pad.
+- Assign a square LFO synced to 1/8 to cutoff with moderate depth for rhythmic stepped filter jumps.
+- Layer a second copy of the sample an octave up (or a different sample), adjust pan and level, and run both through the same filter.
+- Add FX to taste: gentle distortion to thicken, chorus (check phase), a granular layer pitched +12 and reversed for space, and reverb.
+- Optionally resample the result or use the sample as a wavetable/granular source in a synth for further shaping.

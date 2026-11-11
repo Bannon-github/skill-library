@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe",
+  "name": "Speaker-safe brainwave layer in a DAW: either two fixed-frequency sines a few Hz apart summed in mono (e.g. carrier + 8 Hz for alpha), or a tremolo (auto-pan set to tremolo, high amount, ~40% shape) at the entrainment rate on a playable pad so chords themselves pulse, optionally with the sine pair underneath",
+  "goal": "Build a monaural beat that works on speakers as well as headphones, and turn ordinary pads into the entrainment source. Delta vs brainwave cluster (isochronic layer as its own track, binaural per-ear tones): this one puts a tremolo at the target rate directly on a playable pad/chord track and uses an in-mono two-sine pair instead of per-ear panning.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "aBiz2axINMA",
+    "url": "https://www.youtube.com/watch?v=aBiz2axINMA",
+    "title": "How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/aBiz2axINMA/agent-skill-monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe.json",
+    "batch": "2026-11-11-morning-hunt"
+  },
+  "prerequisites": [
+    "Any synth that can make a sine at a fixed frequency (e.g. FM synth in fixed mode)",
+    "A tremolo or auto-pan device that can run at a set Hz rate",
+    "An instrument/chain rack or two tracks"
+  ],
+  "inputs": [
+    {
+      "name": "target_rate_hz",
+      "type": "number",
+      "description": "Entrainment rate, e.g. 8 Hz (alpha), 4-8 theta, 1-4 delta",
+      "required": true
+    },
+    {
+      "name": "carrier_hz",
+      "type": "number",
+      "description": "Carrier frequency; pick a note of the track's key",
+      "required": true
+    },
+    {
+      "name": "pad",
+      "type": "instrument",
+      "description": "Sustained pad (not short or fast-changing)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "monaural_layer",
+      "type": "audio",
+      "description": "Summed two-sine beat or tremolo-pulsed pad at the target rate"
+    }
+  ],
+  "constraints": [
+    "Carrier frequency should be a note in the track's key (calculate the Hz of that note); the 432 Hz framing in the video is optional, not required.",
+    "Use a sustained, stable pad for the tremolo; short or fast-changing sounds blur the pulse.",
+    "Keep the effect gentle and test it on yourself first before sharing; make no health claims.",
+    "Steady pulse and steady pitch; no random rate or pitch modulation (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Option A: load a sine synth, set the oscillator to fixed frequency at the carrier (a key note).",
+      "tool": "Sine synth (fixed mode)",
+      "expect": "Pure steady tone"
+    },
+    {
+      "n": 2,
+      "action": "Put it in a rack/group, duplicate the chain, and set the second sine to carrier + target rate (e.g. +8 Hz). Keep both centred (mono).",
+      "tool": "Instrument rack",
+      "expect": "An audible amplitude 'wobble' at the target rate even on speakers"
+    },
+    {
+      "n": 3,
+      "action": "Check: mute one chain and the wobble disappears; both together give the monaural beat.",
+      "tool": "Mute A/B",
+      "expect": "Beat confirmed"
+    },
+    {
+      "n": 4,
+      "action": "Option B: on a pad or chord track, add a tremolo (auto-pan in tremolo mode), raise the amount high, set shape ~40%, and set the rate to the target Hz (e.g. 8 Hz).",
+      "tool": "Tremolo/auto-pan",
+      "expect": "Pad pulses at the entrainment rate"
+    },
+    {
+      "n": 5,
+      "action": "Turn off fixed pitch so the instrument plays normally; play chords and melodies so the whole harmony pulses.",
+      "tool": "Pad + tremolo",
+      "expect": "Composable entrainment layer instead of a bare sine"
+    },
+    {
+      "n": 6,
+      "action": "Add reverb after the tremolo and, if wanted, keep the Option A sine pair quietly underneath.",
+      "tool": "Reverb + layer",
+      "expect": "Pulse stays clear but softened"
+    },
+    {
+      "n": 7,
+      "action": "Optionally copy the same tremolo onto other tracks of a meditation piece, then test-listen at length before sharing.",
+      "tool": "Copy device",
+      "expect": "Consistent rate across the track"
+    }
+  ],
+  "verification": [
+    "The two sines differ by exactly the target rate (e.g. 432 vs 440 Hz = 8 Hz).",
+    "The tremolo rate equals the target rate in Hz, not a tempo-synced value.",
+    "The pulse is audible on mono/speaker playback."
+  ],
+  "tags": [
+    "brainwave",
+    "monaural-beat",
+    "isochronic",
+    "tremolo",
+    "auto-pan",
+    "entrainment",
+    "pad",
+    "ableton",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe"
+}

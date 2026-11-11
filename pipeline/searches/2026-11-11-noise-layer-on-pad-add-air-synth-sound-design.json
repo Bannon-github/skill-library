@@ -1,0 +1,109 @@
+{
+ "topic": "noise layer on pad add air synth sound design",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "noise layer on pad add air synth sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "F9PApia-X8w",
+   "title": "FM8 - Pad Sounds & Morph Matrix Editing - pt 3 - Morph Pad Step 1 - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 849,
+   "view_count": 1225,
+   "url": "https://www.youtube.com/watch?v=F9PApia-X8w",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.04
+  },
+  {
+   "id": "LTF-1N_MFkw",
+   "title": "NI Massive tutorial - Designing a Better Deep Tech Pad Synth",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 463,
+   "view_count": 17279,
+   "url": "https://www.youtube.com/watch?v=LTF-1N_MFkw",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.62
+  },
+  {
+   "id": "vOtyvqePS1s",
+   "title": "NI Massive - Electronica Sounds - pt 1 - Keys and Production - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 993,
+   "view_count": 10891,
+   "url": "https://www.youtube.com/watch?v=vOtyvqePS1s",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.52
+  },
+  {
+   "id": "WxK8rUl_qnU",
+   "title": "how platinum producers add texture to their music",
+   "channel": "Drew Grit",
+   "duration": 328,
+   "view_count": 406825,
+   "url": "https://www.youtube.com/watch?v=WxK8rUl_qnU",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.3
+  },
+  {
+   "id": "lR3FbYzwgZw",
+   "title": "Ambient: adding an atmospheric layer to your ambient track",
+   "channel": "Adam Gaensler",
+   "duration": 1028,
+   "view_count": 151,
+   "url": "https://www.youtube.com/watch?v=lR3FbYzwgZw",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.59
+  },
+  {
+   "id": "L9kuxISxOVo",
+   "title": "Once You Know This, Mixing Music is So Much Easier",
+   "channel": "Sage Audio",
+   "duration": 623,
+   "view_count": 886826,
+   "url": "https://www.youtube.com/watch?v=L9kuxISxOVo",
+   "query": "noise layer on pad add air synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.47
+  }
+ ],
+ "dropped": [
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "-Xbzagyk-m4",
+   "why": "duration 135s"
+  },
+  {
+   "id": "sziYa1PJovI",
+   "why": "duration 162s"
+  },
+  {
+   "id": "m7d_SC3zi1E",
+   "why": "duration 238s"
+  },
+  {
+   "id": "MQdvY2E4pXI",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

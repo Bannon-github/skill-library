@@ -1,0 +1,106 @@
+{
+ "topic": "brainwave entrainment music production ableton tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "brainwave entrainment music production ableton tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "aBiz2axINMA",
+   "title": "How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)",
+   "channel": "FREQUENCY TRIBE",
+   "duration": 684,
+   "view_count": 358,
+   "url": "https://www.youtube.com/watch?v=aBiz2axINMA",
+   "query": "brainwave entrainment music production ableton tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.78
+  },
+  {
+   "id": "64H_K7rosSo",
+   "title": "How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tutorial)",
+   "channel": "FREQUENCY TRIBE",
+   "duration": 3364,
+   "view_count": 371,
+   "url": "https://www.youtube.com/watch?v=64H_K7rosSo",
+   "query": "brainwave entrainment music production ableton tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.29
+  },
+  {
+   "id": "CAbNhrvqfKw",
+   "title": "How to be a more efficient Music Producer",
+   "channel": "Ableton Tutorials & Music habits",
+   "duration": 903,
+   "view_count": 527,
+   "url": "https://www.youtube.com/watch?v=CAbNhrvqfKw",
+   "query": "brainwave entrainment music production ableton tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.86
+  },
+  {
+   "id": "kzkDoBupXKM",
+   "title": "How to create alpha binaural beats in Logic Pro",
+   "channel": "originalvonster",
+   "duration": 764,
+   "view_count": 993,
+   "url": "https://www.youtube.com/watch?v=kzkDoBupXKM",
+   "query": "brainwave entrainment music production ableton tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.0
+  },
+  {
+   "id": "s3t02k1-G74",
+   "title": "How I create full sound journeys with just Ableton & the Push - Ableton Sound Healing",
+   "channel": "Steffen Ki Sonic Alchemy",
+   "duration": 1853,
+   "view_count": 2089,
+   "url": "https://www.youtube.com/watch?v=s3t02k1-G74",
+   "query": "brainwave entrainment music production ableton tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.66
+  }
+ ],
+ "dropped": [
+  {
+   "id": "NRWqPRrxY44",
+   "why": "already known"
+  },
+  {
+   "id": "8GYXSO6zwxk",
+   "why": "already known"
+  },
+  {
+   "id": "hfjLuqOK9Co",
+   "why": "already known"
+  },
+  {
+   "id": "69LMnU3GwLo",
+   "why": "already known"
+  },
+  {
+   "id": "gRph8JsKbck",
+   "why": "duration 62s"
+  },
+  {
+   "id": "jRI0r_5Fiu0",
+   "why": "duration 235s"
+  },
+  {
+   "id": "ql0s7pJEAuw",
+   "why": "duration 3999s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-10T16:55:31.309408+00:00",
-  "entry_count": 260,
+  "updated_at": "2026-11-11T16:38:13.220765+00:00",
+  "entry_count": 265,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3823,6 +3823,71 @@
       "skills": [
         "arrangement-loop-to-song-build-drop"
       ]
+    },
+    {
+      "id": "cinematic-synth-_MgJJpqxcn8",
+      "video_id": "_MgJJpqxcn8",
+      "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+      "title": "How to Get a Vibey Filtered Drum Sound (ambient / indie mixes)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/_MgJJpqxcn8/raw.txt",
+      "summary": "Skills: filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws (folded into drum-groove-programming-swing-and-ghosts)",
+      "skills": [
+        "drum-groove-programming-swing-and-ghosts"
+      ]
+    },
+    {
+      "id": "cinematic-synth-aBiz2axINMA",
+      "video_id": "aBiz2axINMA",
+      "url": "https://www.youtube.com/watch?v=aBiz2axINMA",
+      "title": "How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/aBiz2axINMA/raw.txt",
+      "summary": "Skills: monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe (folded into brainwave-binaural-isochronic-layers)",
+      "skills": [
+        "brainwave-binaural-isochronic-layers"
+      ]
+    },
+    {
+      "id": "cinematic-synth-64H_K7rosSo",
+      "video_id": "64H_K7rosSo",
+      "url": "https://www.youtube.com/watch?v=64H_K7rosSo",
+      "title": "How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tutorial)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/64H_K7rosSo/raw.txt",
+      "summary": "Skills: sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-BfRyPzy-e-k",
+      "video_id": "BfRyPzy-e-k",
+      "url": "https://www.youtube.com/watch?v=BfRyPzy-e-k",
+      "title": "Make Lush & Dubby Synths (Like Traumer, Kolter & Janaret)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/BfRyPzy-e-k/raw.txt",
+      "summary": "Skills: dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb (folded into filter-types-and-resonance-design)",
+      "skills": [
+        "filter-types-and-resonance-design"
+      ]
+    },
+    {
+      "id": "cinematic-synth-HyXvY_PXI9Q",
+      "video_id": "HyXvY_PXI9Q",
+      "url": "https://www.youtube.com/watch?v=HyXvY_PXI9Q",
+      "title": "How to Turn Samples into Synths",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/HyXvY_PXI9Q/raw.txt",
+      "summary": "Skills: sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular (folded into granular-and-spectral-texture-design)",
+      "skills": [
+        "granular-and-spectral-texture-design"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4416,6 +4481,37 @@
           "video_id": "6x1_XZDcI8I",
           "skill": "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
           "cluster": "arrangement-loop-to-song-build-drop"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-11T16:38:13.220765+00:00",
+      "batch": "2026-11-11-morning-hunt",
+      "folded": [
+        {
+          "video_id": "_MgJJpqxcn8",
+          "skill": "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws",
+          "cluster": "drum-groove-programming-swing-and-ghosts"
+        },
+        {
+          "video_id": "aBiz2axINMA",
+          "skill": "monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe",
+          "cluster": "brainwave-binaural-isochronic-layers"
+        },
+        {
+          "video_id": "64H_K7rosSo",
+          "skill": "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "BfRyPzy-e-k",
+          "skill": "dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb",
+          "cluster": "filter-types-and-resonance-design"
+        },
+        {
+          "video_id": "HyXvY_PXI9Q",
+          "skill": "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular",
+          "cluster": "granular-and-spectral-texture-design"
         }
       ]
     }

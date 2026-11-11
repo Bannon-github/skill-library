@@ -76,3 +76,14 @@ Source: [How to make ELECTRONICA and DOWNTEMPO like [Christian Löffler] [Cercle
 - Percussion: a noise hit darkened and a second copy transposed down hard; a snare panned slightly left just before the end of the bar. Send to the room.
 - Ambience: one or two noise/rain-like loops low under the groove.
 - Warm bed: simple piano dyads at low velocity, smoothed attack, EQ out boom and super-highs, glue, sent to a long hall. Add a long reversed piano layer and a warm wavetable pad (closed filter, chord with an added octave). Sidechain both to the kick and keep them behind the drums.
+
+### Filtered 'vibey' drum bus: low-pass the kit down to ~1 kHz with a 500 Hz-1 kHz boxy boost, add gentle tube saturation, send it to reverbs already in the mix (a pitched/chorused verb and a low-cut, EQ'd, chorused hall), then automate sends into an 8 s+ plate (low cut ~500-600 Hz) only at phrase ends, and ride the bus volume up into the end
+Source: [How to Get a Vibey Filtered Drum Sound (ambient / indie mixes)](https://www.youtube.com/watch?v=_MgJJpqxcn8) · was `filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws`
+- Start from a plain, fairly thin drum sound (kit preset, loop or synthesized drums).
+- Insert an EQ: low-pass the top end down to roughly 1 kHz and add a broad boost between ~500 Hz and 1 kHz for a meaty, boxy mid-range.
+- Add a gentle tube-style saturation/distortion (tone controls minimal).
+- Send the drums to reverb returns already set up for other parts (e.g. a vocal verb with pitch-shift/chorus/width into 100% wet reverb). Keep it low and try what's there before making new ones.
+- Send to a hall return that has a chorus and heavy EQ on the wet signal itself (low and high cut), so the reverb is filtered too.
+- Create an 'accent' return: a plate with 8 s+ decay and low cut ~500-600 Hz. Automate the drum send to it so it only opens at the ends of some bars/phrases, and leave it open longer near the end of a section.
+- Automate the drum bus volume (gain/utility device) to rise gently towards the end of a section to build energy.
+- A/B the bus with all plugins off and on, alone and in the full mix.

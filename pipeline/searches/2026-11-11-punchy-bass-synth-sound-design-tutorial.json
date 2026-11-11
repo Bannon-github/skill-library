@@ -1,0 +1,99 @@
+{
+ "topic": "punchy bass synth sound design tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "punchy bass synth sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "NqyP9KdWtgU",
+   "title": "House Bass Remake - How to replicate Synth Sounds",
+   "channel": "Olean's House",
+   "duration": 872,
+   "view_count": 9330,
+   "url": "https://www.youtube.com/watch?v=NqyP9KdWtgU",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.48
+  },
+  {
+   "id": "v97MvZ1XhXM",
+   "title": "5 Easy Serum 2 Sound Design tips for *BIG BASSES*",
+   "channel": "Antidote Audio",
+   "duration": 542,
+   "view_count": 4949,
+   "url": "https://www.youtube.com/watch?v=v97MvZ1XhXM",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.35
+  },
+  {
+   "id": "KTSzOfVYDZY",
+   "title": "How to Create Punchy Sub Bass in Your Master",
+   "channel": "Sage Audio",
+   "duration": 737,
+   "view_count": 37035,
+   "url": "https://www.youtube.com/watch?v=KTSzOfVYDZY",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.78
+  },
+  {
+   "id": "l1pxzjfwX1c",
+   "title": "Synth Masterclass #2 - Punchy Bass",
+   "channel": "Computer Music",
+   "duration": 474,
+   "view_count": 2113,
+   "url": "https://www.youtube.com/watch?v=l1pxzjfwX1c",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.16
+  }
+ ],
+ "dropped": [
+  {
+   "id": "jDZ8pdifMTw",
+   "why": "duration 159s"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "H6i55lXAMh0",
+   "why": "already known"
+  },
+  {
+   "id": "dKvzUXcl-oA",
+   "why": "duration 142s"
+  },
+  {
+   "id": "JnwqcolDU1k",
+   "why": "duration 222s"
+  },
+  {
+   "id": "4Ts9u1aJSi0",
+   "why": "duration 95s"
+  },
+  {
+   "id": "GA78yWUMZvQ",
+   "why": "already known"
+  },
+  {
+   "id": "GC3By8FAQ-A",
+   "why": "duration 197s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -152,3 +152,15 @@ Source: [How to Combine Synths with Orchestra](https://www.youtube.com/watch?v=u
 - Pluck layer 2: a second pluck plays a rhythmic arpeggio of chord tones in a short repeating pattern.
 - Pluck layer 3 (optional): the most adventurous pattern spanning up to an octave, still chord tones only.
 - Play all layers together with the orchestra and balance them.
+
+### Sleep/wind-down ambient arrangement at 40-50 BPM: loop-first sketch of pads, strings and soft plucks playing descending in-key lines, then arrange with slow volume fade-ins per layer, automated low-pass (and an EQ low cut scaled in when layers collide with the bass) so the track 'moves away', a long master fade, and a binaural/monaural pair tuned to the key's root with a narrow EQ notch carved for it in other parts
+Source: [How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tutorial)](https://www.youtube.com/watch?v=64H_K7rosSo) · was `sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch`
+- Set the tempo to 40-50 BPM.
+- Build a loop first: a deep pad foundation with reverb, then a strings line, a warm woodwind and a soft pluck with delay/echo, each playing simple descending in-key lines (e.g. E-D-A-E). Use the scale highlight to stay in key.
+- Lay the layers out along the timeline and give each a volume (utility) fade-in curve; bring in the loudest or most bass-heavy parts more slowly.
+- Make the mix 'move away' over time: automate low-pass cutoff down on bright layers (e.g. pluck, poly pad).
+- Where a layer's lows collide with the bass, keep an EQ low cut at a fixed frequency and automate the device's amount/scale in as the layer enters.
+- Lower individual layers that feel strong in the ear, then add a very long master fade-out (stretch over the full length).
+- Add the brainwave layer: a sine at the key's root (e.g. E5 659 Hz) and a second at root minus the rate (656 Hz = 3 Hz); pan left/right for binaural or keep centred for monaural. Set it just loud enough that you notice when it's muted.
+- Carve a narrow EQ notch at the tone frequency in competing parts, and give the tone its own slow fade-in and fade-out.
+- Export, listen at the intended time (e.g. that evening), then adjust lengths, rate and levels.

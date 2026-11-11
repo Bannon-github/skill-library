@@ -38,6 +38,12 @@
         "video_id": "3zIsQfKtUno",
         "url": "https://www.youtube.com/watch?v=3zIsQfKtUno",
         "title": "How to make ELECTRONICA and DOWNTEMPO like [Christian Löffler] [Cercle]"
+      },
+      {
+        "from_skill": "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws",
+        "video_id": "_MgJJpqxcn8",
+        "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+        "title": "How to Get a Vibey Filtered Drum Sound (ambient / indie mixes)"
       }
     ]
   },
@@ -201,6 +207,21 @@
         "Ambience: one or two noise/rain-like loops low under the groove.",
         "Warm bed: simple piano dyads at low velocity, smoothed attack, EQ out boom and super-highs, glue, sent to a long hall. Add a long reversed piano layer and a warm wavetable pad (closed filter, chord with an added octave). Sidechain both to the kick and keep them behind the drums."
       ]
+    },
+    {
+      "from_skill": "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws",
+      "name": "Filtered 'vibey' drum bus: low-pass the kit down to ~1 kHz with a 500 Hz-1 kHz boxy boost, add gentle tube saturation, send it to reverbs already in the mix (a pitched/chorused verb and a low-cut, EQ'd, chorused hall), then automate sends into an 8 s+ plate (low cut ~500-600 Hz) only at phrase ends, and ride the bus volume up into the end",
+      "goal": "Turn a plain drum kit, loop or recorded drums into a soft, dark, spacious drum layer that sits behind ambient pads. Delta vs drum-groove cluster (lo-fi groove, sparse drums, organic downtempo groove): this is the processing chain and send automation, not pattern writing, and it reuses existing return reverbs so the drums share the mix's space.",
+      "steps": [
+        "Start from a plain, fairly thin drum sound (kit preset, loop or synthesized drums).",
+        "Insert an EQ: low-pass the top end down to roughly 1 kHz and add a broad boost between ~500 Hz and 1 kHz for a meaty, boxy mid-range.",
+        "Add a gentle tube-style saturation/distortion (tone controls minimal).",
+        "Send the drums to reverb returns already set up for other parts (e.g. a vocal verb with pitch-shift/chorus/width into 100% wet reverb). Keep it low and try what's there before making new ones.",
+        "Send to a hall return that has a chorus and heavy EQ on the wet signal itself (low and high cut), so the reverb is filtered too.",
+        "Create an 'accent' return: a plate with 8 s+ decay and low cut ~500-600 Hz. Automate the drum send to it so it only opens at the ends of some bars/phrases, and leave it open longer near the end of a section.",
+        "Automate the drum bus volume (gain/utility device) to rise gently towards the end of a section to build energy.",
+        "A/B the bus with all plugins off and on, alone and in the full mix."
+      ]
     }
   ],
   "merged_from": [
@@ -208,7 +229,8 @@
     "spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release",
     "velocity-and-flam-groove-on-step-sequencer",
     "genre-drum-pattern-families-tempo-map",
-    "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends"
+    "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends",
+    "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws"
   ],
   "tags": [
     "ambient",
@@ -239,6 +261,7 @@
     "spacious-ambient-drums-accent-mapped-sparse-kick-bar-one-ghost-snares-bars-2-4-reverse-reverb-before-bar-4-only-double-tempo-grid-lfo-eq-hats-ducked-noise-bed-3s-release",
     "velocity-and-flam-groove-on-step-sequencer",
     "genre-drum-pattern-families-tempo-map",
-    "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends"
+    "organic-downtempo-groove-kick-tom-from-kick-layered-offset-claps-shaker-family-room-sends",
+    "filtered-vibey-drum-bus-lowpass-1k-boxy-mid-tube-drive-borrowed-verb-sends-automated-long-plate-throws"
   ]
 }

@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
+  "name": "Sleep/wind-down ambient arrangement at 40-50 BPM: loop-first sketch of pads, strings and soft plucks playing descending in-key lines, then arrange with slow volume fade-ins per layer, automated low-pass (and an EQ low cut scaled in when layers collide with the bass) so the track 'moves away', a long master fade, and a binaural/monaural pair tuned to the key's root with a narrow EQ notch carved for it in other parts",
+  "goal": "Arrange a long sleep or meditation track whose energy only goes down. Delta vs arrangement-ambient cluster (44-bar ambient shape, bite-sized sections, frequency-range layering): a descent-only arc where filters close and the mix recedes over time, plus a key-root-tuned brainwave pair with notch carving. Use it as the arc for slow brainwave pieces.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "64H_K7rosSo",
+    "url": "https://www.youtube.com/watch?v=64H_K7rosSo",
+    "title": "How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tutorial)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/64H_K7rosSo/agent-skill-sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch.json",
+    "batch": "2026-11-11-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with volume/utility and filter automation",
+    "Pads, strings, a soft pluck/woodwind, a sine generator"
+  ],
+  "inputs": [
+    {
+      "name": "length_min",
+      "type": "number",
+      "description": "Target length (10-60 min; longer allows slower fades)",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Key/scale, e.g. E minor",
+      "required": true
+    },
+    {
+      "name": "target_rate_hz",
+      "type": "number",
+      "description": "Brainwave rate, e.g. 3-4 Hz delta (start ~8 Hz for wind-down and ramp down)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sleep_track",
+      "type": "audio/arrangement",
+      "description": "Descending, receding ambient arrangement with an embedded key-tuned beat"
+    }
+  ],
+  "constraints": [
+    "Tempo 40-50 BPM (around resting heart rate); avoid upward-lifting melodies.",
+    "Mono glide is optional and must stay short and deliberate, a steady slide between notes, not wobble; no random pitch or randomised notes (Matt's preference).",
+    "No drums are required for a sleep piece; if drums are used elsewhere in a set, Matt's early-drums rule applies to beat-led tracks.",
+    "Make no health claims; test-listen before sharing.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the tempo to 40-50 BPM.",
+      "tool": "Transport",
+      "expect": "Slow pulse near resting heart rate"
+    },
+    {
+      "n": 2,
+      "action": "Build a loop first: a deep pad foundation with reverb, then a strings line, a warm woodwind and a soft pluck with delay/echo, each playing simple descending in-key lines (e.g. E-D-A-E). Use the scale highlight to stay in key.",
+      "tool": "Instruments + reverb/delay",
+      "expect": "A calm loop where every melody moves down"
+    },
+    {
+      "n": 3,
+      "action": "Lay the layers out along the timeline and give each a volume (utility) fade-in curve; bring in the loudest or most bass-heavy parts more slowly.",
+      "tool": "Gain automation",
+      "expect": "Layers enter gradually without jumps"
+    },
+    {
+      "n": 4,
+      "action": "Make the mix 'move away' over time: automate low-pass cutoff down on bright layers (e.g. pluck, poly pad).",
+      "tool": "Auto filter",
+      "expect": "Track gets duller and more distant"
+    },
+    {
+      "n": 5,
+      "action": "Where a layer's lows collide with the bass, keep an EQ low cut at a fixed frequency and automate the device's amount/scale in as the layer enters.",
+      "tool": "EQ + scale automation",
+      "expect": "Bass stays clear as layers arrive"
+    },
+    {
+      "n": 6,
+      "action": "Lower individual layers that feel strong in the ear, then add a very long master fade-out (stretch over the full length).",
+      "tool": "Master utility",
+      "expect": "Whole piece recedes slowly"
+    },
+    {
+      "n": 7,
+      "action": "Add the brainwave layer: a sine at the key's root (e.g. E5 659 Hz) and a second at root minus the rate (656 Hz = 3 Hz); pan left/right for binaural or keep centred for monaural. Set it just loud enough that you notice when it's muted.",
+      "tool": "Fixed sine pair",
+      "expect": "Gentle beat at the target rate"
+    },
+    {
+      "n": 8,
+      "action": "Carve a narrow EQ notch at the tone frequency in competing parts, and give the tone its own slow fade-in and fade-out.",
+      "tool": "EQ notch + fades",
+      "expect": "Tone sits clearly without masking"
+    },
+    {
+      "n": 9,
+      "action": "Export, listen at the intended time (e.g. that evening), then adjust lengths, rate and levels.",
+      "tool": "Export + review",
+      "expect": "Notes for the next revision"
+    }
+  ],
+  "verification": [
+    "Tempo is between 40 and 50 BPM.",
+    "Low-pass cutoff on bright layers trends downward across the arrangement, and master gain ends lower than it starts.",
+    "The sine pair differs by the target rate and the root matches the key; competing parts have a notch at that frequency."
+  ],
+  "tags": [
+    "arrangement",
+    "ambient",
+    "sleep",
+    "meditation",
+    "fade-in",
+    "filter-automation",
+    "brainwave",
+    "binaural",
+    "descending-melody",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch"
+}

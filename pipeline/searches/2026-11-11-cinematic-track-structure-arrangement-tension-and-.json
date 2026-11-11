@@ -1,0 +1,101 @@
+{
+ "topic": "cinematic track structure arrangement tension and release tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "cinematic track structure arrangement tension and release tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "RaqEN_VYVmM",
+   "title": "Technique that every professional musician uses: Tension & Release #pianotutorial #piano",
+   "channel": "Saucy Sounds",
+   "duration": 581,
+   "view_count": 17271,
+   "url": "https://www.youtube.com/watch?v=RaqEN_VYVmM",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.62
+  },
+  {
+   "id": "4MDD4zRaMjw",
+   "title": "Structure and Arrangement in Electronic Music: What is Tension and Energy?",
+   "channel": "Freshly Squeezed Samples",
+   "duration": 565,
+   "view_count": 7527,
+   "url": "https://www.youtube.com/watch?v=4MDD4zRaMjw",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.44
+  },
+  {
+   "id": "LoQ57jDqAlo",
+   "title": "How to Make Beats for TV and Film Placements (Urban Tension genre)",
+   "channel": "M. Kirby Music",
+   "duration": 399,
+   "view_count": 3932,
+   "url": "https://www.youtube.com/watch?v=LoQ57jDqAlo",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.3
+  },
+  {
+   "id": "bXd6Fys0raw",
+   "title": "Structure and Arrangement in Electronic Music: Creation (Structuring)",
+   "channel": "Freshly Squeezed Samples",
+   "duration": 1059,
+   "view_count": 4907,
+   "url": "https://www.youtube.com/watch?v=bXd6Fys0raw",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.35
+  },
+  {
+   "id": "_hP2Qj-9czA",
+   "title": "Structure and Arrangement in Electronic Music: Creation (Rough Mix)",
+   "channel": "Freshly Squeezed Samples",
+   "duration": 897,
+   "view_count": 2098,
+   "url": "https://www.youtube.com/watch?v=_hP2Qj-9czA",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.16
+  },
+  {
+   "id": "GXNWpGSkgBo",
+   "title": "How to Compose a Seamless Transition Between Themes",
+   "channel": "Ryan Leach",
+   "duration": 438,
+   "view_count": 95154,
+   "url": "https://www.youtube.com/watch?v=GXNWpGSkgBo",
+   "query": "cinematic track structure arrangement tension and release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.99
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "2DT5WmvtB8w",
+   "why": "duration 213s"
+  },
+  {
+   "id": "y-f_aMyFN4g",
+   "why": "duration 217s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

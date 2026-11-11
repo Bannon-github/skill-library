@@ -1,0 +1,464 @@
+{
+  "video_id": "--",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=--",
+  "fetched_at": "2026-11-11T16:20:38.739506+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "video_unavailable",
+  "retries": [],
+  "detail": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=--! This is most likely caused by:"
+}
+{
+  "video_id": "_MgJJpqxcn8",
+  "title": "The VIBEY Filtered Drums Trick (For Ambient Mixes)",
+  "url": "https://www.youtube.com/watch?v=_MgJJpqxcn8",
+  "fetched_at": "2026-11-11T16:20:46.381561+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "The Indie Music Lab",
+  "duration": 881,
+  "ok": true,
+  "cue_count": 338,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/_MgJJpqxcn8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/_MgJJpqxcn8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "NAEyg_eXP14",
+  "title": "How to Create 3 Types of Ambient Music from 1 Concept",
+  "url": "https://www.youtube.com/watch?v=NAEyg_eXP14",
+  "fetched_at": "2026-11-11T16:21:34.924812+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1780,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "X_yfys8wAJ4",
+  "title": "How to Make Your First Ambient Track From Scratch in Logic Pro (Full Beginner Guide)",
+  "url": "https://www.youtube.com/watch?v=X_yfys8wAJ4",
+  "fetched_at": "2026-11-11T16:23:04.064108+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1931,
+  "ok": true,
+  "cue_count": 497,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/X_yfys8wAJ4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/X_yfys8wAJ4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "P--40MYlGuI",
+  "title": "Tutorial #31: Creating a hybrid score by manipulating orchestral samples",
+  "url": "https://www.youtube.com/watch?v=P--40MYlGuI",
+  "fetched_at": "2026-11-11T16:23:52.017924+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ProjectSAM Cinematic Sampling",
+  "duration": 804,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "NAEyg_eXP14",
+  "title": "How to Create 3 Types of Ambient Music from 1 Concept",
+  "url": "https://www.youtube.com/watch?v=NAEyg_eXP14",
+  "fetched_at": "2026-11-11T16:25:06.515137+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 1780,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "P--40MYlGuI",
+  "title": "Tutorial #31: Creating a hybrid score by manipulating orchestral samples",
+  "url": "https://www.youtube.com/watch?v=P--40MYlGuI",
+  "fetched_at": "2026-11-11T16:26:33.210674+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ProjectSAM Cinematic Sampling",
+  "duration": 804,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "aBiz2axINMA",
+  "title": "How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)",
+  "url": "https://www.youtube.com/watch?v=aBiz2axINMA",
+  "fetched_at": "2026-11-11T16:27:22.235798+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "FREQUENCY TRIBE",
+  "duration": 684,
+  "ok": true,
+  "cue_count": 224,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/aBiz2axINMA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/aBiz2axINMA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "64H_K7rosSo",
+  "title": "How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tutorial)",
+  "url": "https://www.youtube.com/watch?v=64H_K7rosSo",
+  "fetched_at": "2026-11-11T16:28:10.035954+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "FREQUENCY TRIBE",
+  "duration": 3363,
+  "ok": true,
+  "cue_count": 965,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/64H_K7rosSo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/64H_K7rosSo/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "4MDD4zRaMjw",
+  "title": "Structure and Arrangement in Electronic Music: What is Tension and Energy?",
+  "url": "https://www.youtube.com/watch?v=4MDD4zRaMjw",
+  "fetched_at": "2026-11-11T16:28:58.238557+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Freshly Squeezed Samples",
+  "duration": 565,
+  "ok": true,
+  "cue_count": 267,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/4MDD4zRaMjw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4MDD4zRaMjw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "bXd6Fys0raw",
+  "title": "Structure and Arrangement in Electronic Music: Creation (Structuring)",
+  "url": "https://www.youtube.com/watch?v=bXd6Fys0raw",
+  "fetched_at": "2026-11-11T16:29:46.260557+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Freshly Squeezed Samples",
+  "duration": 1059,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "lR3FbYzwgZw",
+  "title": "Ambient: adding an atmospheric layer to your ambient track",
+  "url": "https://www.youtube.com/watch?v=lR3FbYzwgZw",
+  "fetched_at": "2026-11-11T16:31:11.554148+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Adam Gaensler",
+  "duration": 1027,
+  "ok": true,
+  "cue_count": 440,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/lR3FbYzwgZw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/lR3FbYzwgZw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "BfRyPzy-e-k",
+  "title": "Make Lush & Dubby Synths (Like Traumer, Kolter & Janaret)",
+  "url": "https://www.youtube.com/watch?v=BfRyPzy-e-k",
+  "fetched_at": "2026-11-11T16:31:59.480309+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "SYNTHO",
+  "duration": 2139,
+  "ok": true,
+  "cue_count": 683,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/BfRyPzy-e-k/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/BfRyPzy-e-k/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "HyXvY_PXI9Q",
+  "title": "How to Turn Samples into Synths",
+  "url": "https://www.youtube.com/watch?v=HyXvY_PXI9Q",
+  "fetched_at": "2026-11-11T16:32:47.212871+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Gabe Miller Music",
+  "duration": 813,
+  "ok": true,
+  "cue_count": 560,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "HyXvY_PXI9Q.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/HyXvY_PXI9Q/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HyXvY_PXI9Q/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}
+{
+  "video_id": "oVF57Bnm4UE",
+  "title": "Custom Kicks and Snares Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=oVF57Bnm4UE",
+  "fetched_at": "2026-11-11T16:34:13.086882+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Voidmoney",
+  "duration": 1699,
+  "ok": true,
+  "cue_count": 545,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/oVF57Bnm4UE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/oVF57Bnm4UE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "KTSzOfVYDZY",
+  "title": "How to Create Punchy Sub Bass in Your Master",
+  "url": "https://www.youtube.com/watch?v=KTSzOfVYDZY",
+  "fetched_at": "2026-11-11T16:35:21.016568+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Sage Audio",
+  "duration": 737,
+  "ok": true,
+  "cue_count": 272,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/KTSzOfVYDZY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/KTSzOfVYDZY/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "tbMIVusd3zY",
+  "title": "Exploring MINERAL AMBIENT sound design",
+  "url": "https://www.youtube.com/watch?v=tbMIVusd3zY",
+  "fetched_at": "2026-11-11T16:36:08.680233+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Trash Sound Design",
+  "duration": 611,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.6
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "bXd6Fys0raw",
+  "title": "Structure and Arrangement in Electronic Music: Creation (Structuring)",
+  "url": "https://www.youtube.com/watch?v=bXd6Fys0raw",
+  "fetched_at": "2026-11-11T16:37:17.068184+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Freshly Squeezed Samples",
+  "duration": 1059,
+  "ok": true,
+  "cue_count": 546,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "bXd6Fys0raw.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/bXd6Fys0raw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/bXd6Fys0raw/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.0
+    }
+  ]
+}
+{
+  "video_id": "tbMIVusd3zY",
+  "title": "Exploring MINERAL AMBIENT sound design",
+  "url": "https://www.youtube.com/watch?v=tbMIVusd3zY",
+  "fetched_at": "2026-11-11T16:38:42.243907+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Trash Sound Design",
+  "duration": 611,
+  "ok": true,
+  "cue_count": 230,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/tbMIVusd3zY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/tbMIVusd3zY/raw.txt",
+  "translated": false,
+  "retries": []
+}

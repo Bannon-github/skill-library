@@ -1,0 +1,113 @@
+{
+ "topic": "ambient loops from synth sound design tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "ambient loops from synth sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "1rWlrInQzh0",
+   "title": "How to Remake ANY SOUND in Pigments (Sound Design Tutorial)",
+   "channel": "LOOPHOLE",
+   "duration": 792,
+   "view_count": 84843,
+   "url": "https://www.youtube.com/watch?v=1rWlrInQzh0",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.96
+  },
+  {
+   "id": "y4w_mNuhxmw",
+   "title": "digicore sound design for beginners",
+   "channel": "nightiger",
+   "duration": 754,
+   "view_count": 1026653,
+   "url": "https://www.youtube.com/watch?v=y4w_mNuhxmw",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.5
+  },
+  {
+   "id": "bLq5oPoLP0M",
+   "title": "How To Make Synths Like Aphex Twin",
+   "channel": "Anton Producer",
+   "duration": 320,
+   "view_count": 115489,
+   "url": "https://www.youtube.com/watch?v=bLq5oPoLP0M",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.03
+  },
+  {
+   "id": "tbMIVusd3zY",
+   "title": "Exploring MINERAL AMBIENT sound design",
+   "channel": "Trash Sound Design",
+   "duration": 612,
+   "view_count": 32127,
+   "url": "https://www.youtube.com/watch?v=tbMIVusd3zY",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.75
+  },
+  {
+   "id": "nhN1urALopY",
+   "title": "Making a DARK AMBIENT DRONE in Vital Synth.",
+   "channel": "The Ground Noise",
+   "duration": 1010,
+   "view_count": 20746,
+   "url": "https://www.youtube.com/watch?v=nhN1urALopY",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.66
+  },
+  {
+   "id": "b5jovcXYMG4",
+   "title": "ai cant make ambient pads like this",
+   "channel": "Thought-Forms",
+   "duration": 753,
+   "view_count": 12277,
+   "url": "https://www.youtube.com/watch?v=b5jovcXYMG4",
+   "query": "ambient loops from synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.54
+  }
+ ],
+ "dropped": [
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "AjxyepdX8VE",
+   "why": "duration 5526s"
+  },
+  {
+   "id": "TosV3erGfsg",
+   "why": "already known"
+  },
+  {
+   "id": "ehKoz6ILmxQ",
+   "why": "already known"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,106 @@
+{
+ "topic": "stereo width pad mid side tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "stereo width pad mid side tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "spaqBr-cCFw",
+   "title": "How to Mix in Stereo... Without Sucking in Mono (part 1)",
+   "channel": "FabFilter",
+   "duration": 1016,
+   "view_count": 322613,
+   "url": "https://www.youtube.com/watch?v=spaqBr-cCFw",
+   "query": "stereo width pad mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.25
+  },
+  {
+   "id": "dZVfu4b48ek",
+   "title": "Mid/Side EQ: Your ULTIMATE Guide! *Deep Dive*",
+   "channel": "Futureproof Music School",
+   "duration": 689,
+   "view_count": 806,
+   "url": "https://www.youtube.com/watch?v=dZVfu4b48ek",
+   "query": "stereo width pad mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.95
+  },
+  {
+   "id": "4p-lf94VRkw",
+   "title": "Make Your Master Wider With Mid/Side Compression! | SoundOracle.net",
+   "channel": "SoundOracle",
+   "duration": 520,
+   "view_count": 36498,
+   "url": "https://www.youtube.com/watch?v=4p-lf94VRkw",
+   "query": "stereo width pad mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.78
+  },
+  {
+   "id": "HRtqWS5oqtA",
+   "title": "3 Rules for Pan & Stereo Width (break them at your own risk)",
+   "channel": "The Indie Music Lab",
+   "duration": 507,
+   "view_count": 12167,
+   "url": "https://www.youtube.com/watch?v=HRtqWS5oqtA",
+   "query": "stereo width pad mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.54
+  },
+  {
+   "id": "lORu0zmSKzc",
+   "title": "Ableton Live Utility Plugin Secret Trick to Increase Width",
+   "channel": "Sam Smyers",
+   "duration": 899,
+   "view_count": 9339,
+   "url": "https://www.youtube.com/watch?v=lORu0zmSKzc",
+   "query": "stereo width pad mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.49
+  }
+ ],
+ "dropped": [
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "kEiILPm1VSc",
+   "why": "already known"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "0sEyZymchTE",
+   "why": "already known"
+  },
+  {
+   "id": "p61nhmEYVuc",
+   "why": "already known"
+  },
+  {
+   "id": "8DQeE3WUKEI",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

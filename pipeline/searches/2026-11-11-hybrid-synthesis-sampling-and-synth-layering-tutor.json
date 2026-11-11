@@ -1,0 +1,113 @@
+{
+ "topic": "hybrid synthesis sampling and synth layering tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "hybrid synthesis sampling and synth layering tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "HyXvY_PXI9Q",
+   "title": "How to Turn Samples into Synths",
+   "channel": "Gabe Miller Music",
+   "duration": 813,
+   "view_count": 8141,
+   "url": "https://www.youtube.com/watch?v=HyXvY_PXI9Q",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.46
+  },
+  {
+   "id": "5Cu1f2h-Rwk",
+   "title": "HALO - OFFICIAL WALKTHROUGH",
+   "channel": "DC Breaks",
+   "duration": 602,
+   "view_count": 14430,
+   "url": "https://www.youtube.com/watch?v=5Cu1f2h-Rwk",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.58
+  },
+  {
+   "id": "RMXbPOeWA1Y",
+   "title": "Building an Hybrid Drum machine, Synth 101: using Moomu #modularsynth ",
+   "channel": "Nu-Trix The Synth Guy",
+   "duration": 1335,
+   "view_count": 310,
+   "url": "https://www.youtube.com/watch?v=RMXbPOeWA1Y",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.75
+  },
+  {
+   "id": "7rj31n2kC-o",
+   "title": "Cloudy Samples - Ethesia | VST3/AU | Sampler Synthesizer Instrument | Overview",
+   "channel": "Cloudy Samples",
+   "duration": 746,
+   "view_count": 1326,
+   "url": "https://www.youtube.com/watch?v=7rj31n2kC-o",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.06
+  },
+  {
+   "id": "pxrKn3NNKJY",
+   "title": "ETHERA Gold 2.0 - Vocal Instruments - Part 1 True Legato walkthrough",
+   "channel": "Zero-G Sample Libraries",
+   "duration": 2365,
+   "view_count": 5145,
+   "url": "https://www.youtube.com/watch?v=pxrKn3NNKJY",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.86
+  },
+  {
+   "id": "WeNPbWpHs5I",
+   "title": "Sound Design: layering Oscillators to make a fat fuzzbass synth.",
+   "channel": "Hybrid Ableton DJs",
+   "duration": 2241,
+   "view_count": 35,
+   "url": "https://www.youtube.com/watch?v=WeNPbWpHs5I",
+   "query": "hybrid synthesis sampling and synth layering tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.78
+  }
+ ],
+ "dropped": [
+  {
+   "id": "m6wfGX7rwiQ",
+   "why": "already known"
+  },
+  {
+   "id": "qNrtSH66-_A",
+   "why": "negative title signal"
+  },
+  {
+   "id": "u4tg0u-THS8",
+   "why": "already known"
+  },
+  {
+   "id": "KvsBNYrSNow",
+   "why": "duration 127s"
+  },
+  {
+   "id": "SKiGSu_uQyU",
+   "why": "duration 83s"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

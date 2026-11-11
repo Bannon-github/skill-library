@@ -1,0 +1,105 @@
+{
+ "topic": "modulation evolving pad macro automation tutorial",
+ "date": "2026-11-11",
+ "params": {
+  "topic": "modulation evolving pad macro automation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ucZqKU8Qim0",
+   "title": "NI Absynth - Advanced Wave Morphing - How To Tutorial",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 542,
+   "view_count": 7114,
+   "url": "https://www.youtube.com/watch?v=ucZqKU8Qim0",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.43
+  },
+  {
+   "id": "_mu2qXCoCBw",
+   "title": "Serum 2 Macro Mastery : The Ultimate Guide for Electronic Music Producers",
+   "channel": "Art1fact",
+   "duration": 830,
+   "view_count": 2024,
+   "url": "https://www.youtube.com/watch?v=_mu2qXCoCBw",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.15
+  },
+  {
+   "id": "d1dyk2s5plc",
+   "title": "How to Program Macro Controllers | Intro to Synths Part 21",
+   "channel": "Tabletop Composer",
+   "duration": 528,
+   "view_count": 198,
+   "url": "https://www.youtube.com/watch?v=d1dyk2s5plc",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.65
+  },
+  {
+   "id": "MAxjvTb90yI",
+   "title": "Automating Serum in Ableton: The Complete Guide (Do This Once)",
+   "channel": "Low End Candy",
+   "duration": 579,
+   "view_count": 6399,
+   "url": "https://www.youtube.com/watch?v=MAxjvTb90yI",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.4
+  },
+  {
+   "id": "4dEuzG95ins",
+   "title": "Mastering Cubase Sampler Track : Modulator Editing Tools Guide",
+   "channel": "The Digital Audio Manual",
+   "duration": 408,
+   "view_count": 2346,
+   "url": "https://www.youtube.com/watch?v=4dEuzG95ins",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.19
+  },
+  {
+   "id": "OVhobDyMGo8",
+   "title": "Boring Beats? Use Maschine's Macros!",
+   "channel": "Robert Stevenson",
+   "duration": 1176,
+   "view_count": 8077,
+   "url": "https://www.youtube.com/watch?v=OVhobDyMGo8",
+   "query": "modulation evolving pad macro automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.45
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Su7Zvxib2kw",
+   "why": "duration 224s"
+  },
+  {
+   "id": "xI-n7fmWJrw",
+   "why": "duration 237s"
+  },
+  {
+   "id": "oZsiE6KckQM",
+   "why": "already known"
+  },
+  {
+   "id": "UxGswh6XLto",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
