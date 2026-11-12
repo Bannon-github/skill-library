@@ -1,0 +1,105 @@
+{
+ "topic": "manipulating orchestral samples hybrid score tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "manipulating orchestral samples hybrid score tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "7NrRhHKp0n8",
+   "title": "How to compose an orchestral electronic Film Score | Live Electronic Music Tutorial 246",
+   "channel": "Mikas",
+   "duration": 1728,
+   "view_count": 17,
+   "url": "https://www.youtube.com/watch?v=7NrRhHKp0n8",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.13
+  },
+  {
+   "id": "8ZerPdrCs-4",
+   "title": "How To Make Hybrid Orchestral Music | S01E05 | Deep Dive Composing Walkthrough | Part 5 of 13",
+   "channel": "The Knightime Project",
+   "duration": 630,
+   "view_count": 31,
+   "url": "https://www.youtube.com/watch?v=8ZerPdrCs-4",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.25
+  },
+  {
+   "id": "ezuUuP_DJAI",
+   "title": "Composing Tutorial: Crafting Hybrid Orchestral Music",
+   "channel": "Composer's Compass",
+   "duration": 432,
+   "view_count": 503,
+   "url": "https://www.youtube.com/watch?v=ezuUuP_DJAI",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.85
+  },
+  {
+   "id": "hlJ9t7MbJjY",
+   "title": "How to write an electronic hybrid film score",
+   "channel": "Ryan Demaree",
+   "duration": 757,
+   "view_count": 1990,
+   "url": "https://www.youtube.com/watch?v=hlJ9t7MbJjY",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.15
+  },
+  {
+   "id": "Bzvn_6toM6M",
+   "title": "How To Write A Hybrid Orchestral Film Score - Part 1",
+   "channel": "Tommy Arnold",
+   "duration": 2469,
+   "view_count": 3819,
+   "url": "https://www.youtube.com/watch?v=Bzvn_6toM6M",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.79
+  },
+  {
+   "id": "uAQA7mPAI2g",
+   "title": "Creating A Modern Hybrid Score: Darkstar — Haunted House",
+   "channel": "Spitfire Audio",
+   "duration": 1639,
+   "view_count": 21369,
+   "url": "https://www.youtube.com/watch?v=uAQA7mPAI2g",
+   "query": "manipulating orchestral samples hybrid score tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.66
+  }
+ ],
+ "dropped": [
+  {
+   "id": "P--40MYlGuI",
+   "why": "already known"
+  },
+  {
+   "id": "jgxEO8Uwfxw",
+   "why": "duration 59s"
+  },
+  {
+   "id": "-wpD-gO9jeA",
+   "why": "duration 229s"
+  },
+  {
+   "id": "_8NvgUuCo30",
+   "why": "duration 121s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

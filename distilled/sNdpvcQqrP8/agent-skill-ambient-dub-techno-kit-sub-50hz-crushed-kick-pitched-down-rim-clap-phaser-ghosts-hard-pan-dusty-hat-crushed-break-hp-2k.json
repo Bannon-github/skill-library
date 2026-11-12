@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k",
+  "name": "Ambient dub-techno kit: a 909-style kick pitched to peak just below 50 Hz, heavily bit-crushed with the mids removed; a clap pitched down 2 semitones with low sustain and short decay (rim-shot feel) on the last beat of every second bar into a huge parallel reverb; ghost and shaker hits high-passed and run through phaser, delay and reverb, hard-panned left/right; a noisy hat as constant dust; a chopped break bit-crushed and high-passed to only above 2-3 kHz; drum bus saturated at 50% wet",
+  "goal": "Build the soft, dark, dubby drum layer of an ambient dub-techno track, plus the chord, drone and bass that sit with it. Delta vs drum-groove cluster (filtered vibey drum bus, sparse ambient drums, organic downtempo groove) and the dub stab family in the filter cluster: this is a whole-kit recipe where every percussion part is bit-crushed, phasered and spread, and a sub-50 Hz dark kick replaces a clicky one.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "sNdpvcQqrP8",
+    "url": "https://www.youtube.com/watch?v=sNdpvcQqrP8",
+    "title": "How to make Ambient Dub Techno like Rhythm & Sound in Ableton with free plugins",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/sNdpvcQqrP8/agent-skill-ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k.json",
+    "batch": "2026-11-12-morning-hunt"
+  },
+  "prerequisites": [
+    "A drum sampler, a bit-crusher, a phaser, delay and a large reverb, a saturator",
+    "A simple subtractive synth (saw + square)"
+  ],
+  "inputs": [
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Dub-techno tempo",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Key, e.g. F# minor",
+      "required": true
+    },
+    {
+      "name": "break_loop",
+      "type": "audio",
+      "description": "Optional funk/drum break to chop",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "dub_kit",
+      "type": "audio",
+      "description": "Dark, spacious, moving drum layer"
+    },
+    {
+      "name": "chords_drone_bass",
+      "type": "midi/audio",
+      "description": "Filtered chord stab, background m9 drone and square bass"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: the source used a flutter/wow plugin on the break and randomised velocity on the chord filter; both are dropped. Use hand-set velocities so the filter varies without randomness (Matt's preference).",
+    "Ghost hits are a few chosen samples placed by hand, not random hits; no rapid rolls or clicking.",
+    "Drums enter early (~8 counts / ~12 s).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Kick: a 909-style kick pitched down until its peak sits just below 50 Hz; bit-crush it heavily and cut a lot of the mids.",
+      "tool": "Sampler + bit-crusher + EQ",
+      "expect": "Dark, soft, deep kick without a click"
+    },
+    {
+      "n": 2,
+      "action": "Clap: a 909-style clap on the last beat of every second bar, pitched down 2 semitones, sustain down and decay short so it sounds like a rim shot; bit-crush it and send to a huge reverb on a parallel chain.",
+      "tool": "Sampler envelope + parallel reverb",
+      "expect": "Relaxed, distant backbeat"
+    },
+    {
+      "n": 3,
+      "action": "Ghost hits: a few percussion samples placed by hand; high-pass the rumble, add phaser, delay and huge reverb, and pan them hard left and hard right.",
+      "tool": "HP + phaser + delay + reverb",
+      "expect": "Dubby, wide ghost layer"
+    },
+    {
+      "n": 4,
+      "action": "Shaker: two hits from a shaker loop in a sampler, high-passed, phaser for constant movement, into the big reverb.",
+      "tool": "Sampler + phaser",
+      "expect": "Moving, spacey shuffle"
+    },
+    {
+      "n": 5,
+      "action": "Dust: an old drum-machine hat that sounds like enveloped white noise, played as a constant background.",
+      "tool": "Sampler",
+      "expect": "Dusty noise bed"
+    },
+    {
+      "n": 6,
+      "action": "Break: chop a funk break into a sampler, rearrange slices into a fairly regular beat, bit-crush it, add phaser and reverb, and EQ out everything below ~2-3 kHz so it only fills the top.",
+      "tool": "Slicer + crusher + EQ",
+      "expect": "Top-only break texture"
+    },
+    {
+      "n": 7,
+      "action": "Drum bus: saturate heavily with dry/wet at 50%.",
+      "tool": "Saturator",
+      "expect": "Glued, warm kit"
+    },
+    {
+      "n": 8,
+      "action": "Drone: an m9 chord (e.g. F#m9) on beat 1 of every second bar from a filtered saw + square, pushed back with chorus and reverb.",
+      "tool": "Synth + chorus + reverb",
+      "expect": "Background harmonic bed"
+    },
+    {
+      "n": 9,
+      "action": "Bass: a filtered square wave with notes between the kicks; add a kick-keyed compressor so they never overlap.",
+      "tool": "Mono synth + sidechain comp",
+      "expect": "Clean kick/bass alternation"
+    },
+    {
+      "n": 10,
+      "action": "Chords: saw + square an octave below, heavy low-pass with resonance, filter envelope with a little attack and decay under 1 s, velocity to filter (lower velocity = darker); bit-crush instead of distortion, cut lows and crusher highs, phaser, heavy compression so level stays even as the filter opens, then huge reverb; automate delay feedback across the track.",
+      "tool": "Synth + crusher + phaser + comp + reverb/delay",
+      "expect": "Moving dub chords"
+    },
+    {
+      "n": 11,
+      "action": "Response melody: square + saw an octave higher with a slow LFO on the filter, answering the chords.",
+      "tool": "Synth + slow filter LFO",
+      "expect": "Call-and-response line"
+    }
+  ],
+  "verification": [
+    "Kick spectrum peak is just under 50 Hz with little 300 Hz-2 kHz content.",
+    "Clap occurs only on the last beat of every second bar.",
+    "Break track has almost no energy below ~2 kHz; drum bus saturator is 50% wet."
+  ],
+  "tags": [
+    "drums",
+    "dub-techno",
+    "ambient",
+    "kick",
+    "bit-crush",
+    "phaser",
+    "reverb",
+    "drum-bus",
+    "chords",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k"
+}

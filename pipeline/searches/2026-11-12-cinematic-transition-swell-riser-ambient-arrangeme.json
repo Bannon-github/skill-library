@@ -1,0 +1,106 @@
+{
+ "topic": "cinematic transition swell riser ambient arrangement tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "cinematic transition swell riser ambient arrangement tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "y0mfaQpWYQw",
+   "title": "How To Make A Riser Effect - Build Up Tutorial (FL Studio)",
+   "channel": "Transverse Audio",
+   "duration": 459,
+   "view_count": 273044,
+   "url": "https://www.youtube.com/watch?v=y0mfaQpWYQw",
+   "query": "cinematic transition swell riser ambient arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.22
+  },
+  {
+   "id": "1VlYGttVbxE",
+   "title": "Ableton Live Tutorial - Creating Swells",
+   "channel": "WAVEBITE",
+   "duration": 343,
+   "view_count": 9567,
+   "url": "https://www.youtube.com/watch?v=1VlYGttVbxE",
+   "query": "cinematic transition swell riser ambient arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.49
+  },
+  {
+   "id": "JVxj5nB3mlw",
+   "title": "How to Create a Reverse Vocal Swell in Logic",
+   "channel": "The Band Guide",
+   "duration": 486,
+   "view_count": 10433,
+   "url": "https://www.youtube.com/watch?v=JVxj5nB3mlw",
+   "query": "cinematic transition swell riser ambient arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.51
+  },
+  {
+   "id": "_bLQ262qA7I",
+   "title": "Logic Pro - Synth Pitch Risers and Fall FX (SOUND DESIGN)",
+   "channel": "MusicTechHelpGuy",
+   "duration": 593,
+   "view_count": 17990,
+   "url": "https://www.youtube.com/watch?v=_bLQ262qA7I",
+   "query": "cinematic transition swell riser ambient arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.63
+  },
+  {
+   "id": "JOm_EqBoW0M",
+   "title": "The ONLY 3 Sound Effects You Need to Tell Any Story",
+   "channel": "Tim Runia",
+   "duration": 647,
+   "view_count": 321989,
+   "url": "https://www.youtube.com/watch?v=JOm_EqBoW0M",
+   "query": "cinematic transition swell riser ambient arrangement tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.25
+  }
+ ],
+ "dropped": [
+  {
+   "id": "PFmBYch4S2g",
+   "why": "duration 5s"
+  },
+  {
+   "id": "T9MhkaC9zpM",
+   "why": "duration 11s"
+  },
+  {
+   "id": "ghBpKLARE_8",
+   "why": "duration 10s"
+  },
+  {
+   "id": "VyDYKOm3mSc",
+   "why": "duration 64s"
+  },
+  {
+   "id": "YcOlz0pB44A",
+   "why": "duration 13s"
+  },
+  {
+   "id": "8MGw-yzS8bQ",
+   "why": "duration 10s"
+  },
+  {
+   "id": "bhkpQ1EKAek",
+   "why": "duration 87s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

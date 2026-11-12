@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-11T16:38:13.220765+00:00",
-  "entry_count": 265,
+  "updated_at": "2026-11-12T16:35:35.094834+00:00",
+  "entry_count": 269,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3888,6 +3888,58 @@
       "skills": [
         "granular-and-spectral-texture-design"
       ]
+    },
+    {
+      "id": "cinematic-synth-TSiH9MUh4Ec",
+      "video_id": "TSiH9MUh4Ec",
+      "url": "https://www.youtube.com/watch?v=TSiH9MUh4Ec",
+      "title": "Phaser Drums - How to turn a Phaser into a Drum Synthesizer",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/TSiH9MUh4Ec/raw.txt",
+      "summary": "Skills: phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
+    },
+    {
+      "id": "cinematic-synth-sNdpvcQqrP8",
+      "video_id": "sNdpvcQqrP8",
+      "url": "https://www.youtube.com/watch?v=sNdpvcQqrP8",
+      "title": "How to make Ambient Dub Techno like Rhythm & Sound in Ableton with free plugins",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/sNdpvcQqrP8/raw.txt",
+      "summary": "Skills: ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k (folded into drum-groove-programming-swing-and-ghosts)",
+      "skills": [
+        "drum-groove-programming-swing-and-ghosts"
+      ]
+    },
+    {
+      "id": "cinematic-synth-q6TxzspNL9Q",
+      "video_id": "q6TxzspNL9Q",
+      "url": "https://www.youtube.com/watch?v=q6TxzspNL9Q",
+      "title": "Music Production Tips and Tricks - Making a Techno Reverb Kick",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/q6TxzspNL9Q/raw.txt",
+      "summary": "Skills: reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-NZJ9bvuyII4",
+      "video_id": "NZJ9bvuyII4",
+      "url": "https://www.youtube.com/watch?v=NZJ9bvuyII4",
+      "title": "How to Make Lazy Ambient Music in Session View",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/NZJ9bvuyII4/raw.txt",
+      "summary": "Skills: looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit (folded into generative-ambient-drones-and-soundscapes)",
+      "skills": [
+        "generative-ambient-drones-and-soundscapes"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4512,6 +4564,32 @@
           "video_id": "HyXvY_PXI9Q",
           "skill": "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular",
           "cluster": "granular-and-spectral-texture-design"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T16:35:35.094834+00:00",
+      "batch": "2026-11-12-morning-hunt",
+      "folded": [
+        {
+          "video_id": "TSiH9MUh4Ec",
+          "skill": "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance",
+          "cluster": "pad-phaser-notch-comb-movement"
+        },
+        {
+          "video_id": "sNdpvcQqrP8",
+          "skill": "ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k",
+          "cluster": "drum-groove-programming-swing-and-ghosts"
+        },
+        {
+          "video_id": "q6TxzspNL9Q",
+          "skill": "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        },
+        {
+          "video_id": "NZJ9bvuyII4",
+          "skill": "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
+          "cluster": "generative-ambient-drones-and-soundscapes"
         }
       ]
     }

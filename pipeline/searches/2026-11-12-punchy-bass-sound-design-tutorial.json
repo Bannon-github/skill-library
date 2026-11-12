@@ -1,0 +1,105 @@
+{
+ "topic": "punchy bass sound design tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "punchy bass sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "zEkCere2A_Y",
+   "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
+   "channel": "Jemeneye",
+   "duration": 991,
+   "view_count": 1067,
+   "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.01
+  },
+  {
+   "id": "zjrjf6gr1dg",
+   "title": "Vital Hi-Hat Sound Design Tutorial | Create Crisp & Punchy Hats",
+   "channel": "Fletch Does Dubstep",
+   "duration": 363,
+   "view_count": 52,
+   "url": "https://www.youtube.com/watch?v=zjrjf6gr1dg",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.36
+  },
+  {
+   "id": "VaqMag-CG04",
+   "title": "Noisia - Tutorial: Bass Harmonics | VISION Patreon",
+   "channel": "VISION",
+   "duration": 620,
+   "view_count": 122046,
+   "url": "https://www.youtube.com/watch?v=VaqMag-CG04",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.04
+  },
+  {
+   "id": "byZFpzg5LFI",
+   "title": "How To Make Combat Sound Effects From Scratch",
+   "channel": "Aftertouch Audio",
+   "duration": 272,
+   "view_count": 20752,
+   "url": "https://www.youtube.com/watch?v=byZFpzg5LFI",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.16
+  },
+  {
+   "id": "xy_NbX2SNSc",
+   "title": "2 EASY Serum 2 BASS ROUTINES EVERY BEGINNER Should Know",
+   "channel": "Dripment",
+   "duration": 599,
+   "view_count": 16146,
+   "url": "https://www.youtube.com/watch?v=xy_NbX2SNSc",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.6
+  },
+  {
+   "id": "W7EK9Y7io88",
+   "title": "10 Must-Know Tricks for Punchy Bass",
+   "channel": "Will Hatton",
+   "duration": 1685,
+   "view_count": 4296,
+   "url": "https://www.youtube.com/watch?v=W7EK9Y7io88",
+   "query": "punchy bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.32
+  }
+ ],
+ "dropped": [
+  {
+   "id": "KTSzOfVYDZY",
+   "why": "already known"
+  },
+  {
+   "id": "H6i55lXAMh0",
+   "why": "already known"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "jDZ8pdifMTw",
+   "why": "duration 159s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

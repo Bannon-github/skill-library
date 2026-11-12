@@ -119,3 +119,13 @@ Source: [Using Phaser Effects](https://www.youtube.com/watch?v=nIGiY1jYgWM) · w
 - Add a reverb as the last insert, 100% wet, band-filtered to a small frequency range that highlights the moving peaks, feedback/regeneration at 0. Expect it to sound too wet at first.
 - Automate: increase the delay's filter-peak amounts during the sweep, and automate the reverb mix in the opposite direction. Fully dry when the filter peaks are strongest, jumping to 100% wet as the peaks move away and fade.
 - Check over 16 bars with a simple drum beat and compare with the dry pad.
+
+### Phaser drums: ping a phaser's all-pass filter bank with a very short impulse (a gate/trigger or just the attack of a sample), raise feedback/resonance until the bank rings like a tom, use more poles for complex liquid timbres, and sequence the sweep (centre frequency) and resonance per step to get tuned, accented percussion
+Source: [Phaser Drums - How to turn a Phaser into a Drum Synthesizer](https://www.youtube.com/watch?v=TSiH9MUh4Ec) · was `phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance`
+- Set the phaser's LFO depth/rate to minimum so it doesn't sweep on its own; keep only the output up.
+- Feed a very short impulse into the phaser: a gate/trigger pulse, or a sampler playing only the attack portion of any sample.
+- Raise feedback/resonance until the click rings with body.
+- Increase the pole/stage count (e.g. 4 to 8 to 12) for more complex, liquid timbres; try the phaser's alternative mode if it has one for a drummier tone.
+- Turn the sweep/centre frequency by hand to find the tuning range, then sequence it per step (automation or CV/mod lane) to play a melodic percussion line in key.
+- Sequence feedback/resonance per step too, so some hits ring longer as accents.
+- Optionally modulate the phaser's internal LFO rate/amount slowly for evolving timbre, then add reverb.

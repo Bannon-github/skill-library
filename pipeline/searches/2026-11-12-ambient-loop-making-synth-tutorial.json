@@ -1,0 +1,99 @@
+{
+ "topic": "ambient loop making synth tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "ambient loop making synth tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ARNEww5nBl4",
+   "title": "FL Studio 20 | How To Make Piano Ambient Pads In 5 Minutes",
+   "channel": "EthanRashMusic",
+   "duration": 311,
+   "view_count": 319841,
+   "url": "https://www.youtube.com/watch?v=ARNEww5nBl4",
+   "query": "ambient loop making synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.25
+  },
+  {
+   "id": "ioOj_92LTxw",
+   "title": "how to ambient",
+   "channel": "tundra",
+   "duration": 356,
+   "view_count": 87843,
+   "url": "https://www.youtube.com/watch?v=ioOj_92LTxw",
+   "query": "ambient loop making synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  },
+  {
+   "id": "NZJ9bvuyII4",
+   "title": "How to Make Lazy Ambient Music in Session View",
+   "channel": "wowflower",
+   "duration": 867,
+   "view_count": 47717,
+   "url": "https://www.youtube.com/watch?v=NZJ9bvuyII4",
+   "query": "ambient loop making synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.84
+  },
+  {
+   "id": "nOWcSJVJIss",
+   "title": "I Built the Synth I Always Wanted | TRANQUILITY",
+   "channel": "S1gns Of L1fe",
+   "duration": 1937,
+   "view_count": 27553,
+   "url": "https://www.youtube.com/watch?v=nOWcSJVJIss",
+   "query": "ambient loop making synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.22
+  }
+ ],
+ "dropped": [
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "C871ckX4GfQ",
+   "why": "already known"
+  },
+  {
+   "id": "HJZG-qD4oso",
+   "why": "already known"
+  },
+  {
+   "id": "vvE2rZK130A",
+   "why": "duration 120s"
+  },
+  {
+   "id": "9hPKo9n0ppI",
+   "why": "duration 87s"
+  },
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "4Wm5k_wW548",
+   "why": "negative title signal"
+  },
+  {
+   "id": "OfdrYDJ-NnA",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

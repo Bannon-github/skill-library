@@ -1,0 +1,101 @@
+{
+ "topic": "isochronic tones frequency sweep automation tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "isochronic tones frequency sweep automation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0u_deCFwE7o",
+   "title": "4Pockets QuadroSphere AUv3 - Tutorial: Getting Started",
+   "channel": "SoundForMore MusicTech Tutorials",
+   "duration": 786,
+   "view_count": 1071,
+   "url": "https://www.youtube.com/watch?v=0u_deCFwE7o",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.02
+  },
+  {
+   "id": "IghRZY1VWqk",
+   "title": "How to Create Binaural Beats on Logic Pro X",
+   "channel": "VIBE WITH IIRIIS",
+   "duration": 1213,
+   "view_count": 9876,
+   "url": "https://www.youtube.com/watch?v=IghRZY1VWqk",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "Eyqgu4N9rho",
+   "title": "Sound - Precision editing by frequency in Audacity using the spectrograph display",
+   "channel": "Kevin Loughin",
+   "duration": 717,
+   "view_count": 41850,
+   "url": "https://www.youtube.com/watch?v=Eyqgu4N9rho",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.81
+  },
+  {
+   "id": "mPJEfc6xqLA",
+   "title": "How To Make Binaural Beats & Solfeggio Frequencies | Meditation Music Creation 5 Minutes",
+   "channel": "Healing Meditation Music",
+   "duration": 274,
+   "view_count": 12161,
+   "url": "https://www.youtube.com/watch?v=mPJEfc6xqLA",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.04
+  },
+  {
+   "id": "pIiAicy5pjc",
+   "title": "Creating your own 528hz meditation track with Fl studio",
+   "channel": "Skyyksk",
+   "duration": 661,
+   "view_count": 28445,
+   "url": "https://www.youtube.com/watch?v=pIiAicy5pjc",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.73
+  },
+  {
+   "id": "rttwq2onLxQ",
+   "title": "Calming Grounding Pulse | 174 Hz & 396 Hz | 7.83 Hz Schumann Isochronic Blend / Frequency Tuning",
+   "channel": "Frequency Tuning",
+   "duration": 1951,
+   "view_count": 2526,
+   "url": "https://www.youtube.com/watch?v=rttwq2onLxQ",
+   "query": "isochronic tones frequency sweep automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.7
+  }
+ ],
+ "dropped": [
+  {
+   "id": "TUHKIGjeHok",
+   "why": "negative title signal"
+  },
+  {
+   "id": "HePF0xlKzNE",
+   "why": "duration 5400s"
+  },
+  {
+   "id": "GTmS-IGN30M",
+   "why": "duration 121s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -87,3 +87,17 @@ Source: [How to Get a Vibey Filtered Drum Sound (ambient / indie mixes)](https:/
 - Create an 'accent' return: a plate with 8 s+ decay and low cut ~500-600 Hz. Automate the drum send to it so it only opens at the ends of some bars/phrases, and leave it open longer near the end of a section.
 - Automate the drum bus volume (gain/utility device) to rise gently towards the end of a section to build energy.
 - A/B the bus with all plugins off and on, alone and in the full mix.
+
+### Ambient dub-techno kit: a 909-style kick pitched to peak just below 50 Hz, heavily bit-crushed with the mids removed; a clap pitched down 2 semitones with low sustain and short decay (rim-shot feel) on the last beat of every second bar into a huge parallel reverb; ghost and shaker hits high-passed and run through phaser, delay and reverb, hard-panned left/right; a noisy hat as constant dust; a chopped break bit-crushed and high-passed to only above 2-3 kHz; drum bus saturated at 50% wet
+Source: [How to make Ambient Dub Techno like Rhythm & Sound in Ableton with free plugins](https://www.youtube.com/watch?v=sNdpvcQqrP8) · was `ambient-dub-techno-kit-sub-50hz-crushed-kick-pitched-down-rim-clap-phaser-ghosts-hard-pan-dusty-hat-crushed-break-hp-2k`
+- Kick: a 909-style kick pitched down until its peak sits just below 50 Hz; bit-crush it heavily and cut a lot of the mids.
+- Clap: a 909-style clap on the last beat of every second bar, pitched down 2 semitones, sustain down and decay short so it sounds like a rim shot; bit-crush it and send to a huge reverb on a parallel chain.
+- Ghost hits: a few percussion samples placed by hand; high-pass the rumble, add phaser, delay and huge reverb, and pan them hard left and hard right.
+- Shaker: two hits from a shaker loop in a sampler, high-passed, phaser for constant movement, into the big reverb.
+- Dust: an old drum-machine hat that sounds like enveloped white noise, played as a constant background.
+- Break: chop a funk break into a sampler, rearrange slices into a fairly regular beat, bit-crush it, add phaser and reverb, and EQ out everything below ~2-3 kHz so it only fills the top.
+- Drum bus: saturate heavily with dry/wet at 50%.
+- Drone: an m9 chord (e.g. F#m9) on beat 1 of every second bar from a filtered saw + square, pushed back with chorus and reverb.
+- Bass: a filtered square wave with notes between the kicks; add a kick-keyed compressor so they never overlap.
+- Chords: saw + square an octave below, heavy low-pass with resonance, filter envelope with a little attack and decay under 1 s, velocity to filter (lower velocity = darker); bit-crush instead of distortion, cut lows and crusher highs, phaser, heavy compression so level stays even as the filter opens, then huge reverb; automate delay feedback across the track.
+- Response melody: square + saw an octave higher with a slow LFO on the filter, answering the chords.

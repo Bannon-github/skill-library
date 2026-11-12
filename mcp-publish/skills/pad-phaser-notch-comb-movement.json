@@ -68,6 +68,12 @@
         "video_id": "nIGiY1jYgWM",
         "url": "https://www.youtube.com/watch?v=nIGiY1jYgWM",
         "title": "Using Phaser Effects"
+      },
+      {
+        "from_skill": "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance",
+        "video_id": "TSiH9MUh4Ec",
+        "url": "https://www.youtube.com/watch?v=TSiH9MUh4Ec",
+        "title": "Phaser Drums - How to turn a Phaser into a Drum Synthesizer"
       }
     ]
   },
@@ -303,6 +309,20 @@
         "Automate: increase the delay's filter-peak amounts during the sweep, and automate the reverb mix in the opposite direction. Fully dry when the filter peaks are strongest, jumping to 100% wet as the peaks move away and fade.",
         "Check over 16 bars with a simple drum beat and compare with the dry pad."
       ]
+    },
+    {
+      "from_skill": "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance",
+      "name": "Phaser drums: ping a phaser's all-pass filter bank with a very short impulse (a gate/trigger or just the attack of a sample), raise feedback/resonance until the bank rings like a tom, use more poles for complex liquid timbres, and sequence the sweep (centre frequency) and resonance per step to get tuned, accented percussion",
+      "goal": "Turn any phaser into a resonant percussion voice. Delta vs phaser cluster (phaser pads, four-bar ramps, notch/comb movement, building a phaser from all-pass stages): here the phaser is the sound source, excited by impulses (filter pinging), not a modulation effect on a sustained pad.",
+      "steps": [
+        "Set the phaser's LFO depth/rate to minimum so it doesn't sweep on its own; keep only the output up.",
+        "Feed a very short impulse into the phaser: a gate/trigger pulse, or a sampler playing only the attack portion of any sample.",
+        "Raise feedback/resonance until the click rings with body.",
+        "Increase the pole/stage count (e.g. 4 to 8 to 12) for more complex, liquid timbres; try the phaser's alternative mode if it has one for a drummier tone.",
+        "Turn the sweep/centre frequency by hand to find the tuning range, then sequence it per step (automation or CV/mod lane) to play a melodic percussion line in key.",
+        "Sequence feedback/resonance per step too, so some hits ring longer as accents.",
+        "Optionally modulate the phaser's internal LFO rate/amount slowly for evolving timbre, then add reverb."
+      ]
     }
   ],
   "merged_from": [
@@ -315,7 +335,8 @@
     "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
     "phaser-chorus-pure-wave-octave-pad",
-    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation"
+    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance"
   ],
   "tags": [
     "allpass",
@@ -363,6 +384,7 @@
     "flanger-sequence-pad-tri-plus-pulse-octave-1-bar-fade-lfo-static-flanger-time-stepped-by-square-lfo-vocoder-formant-slow-env-resample-down-swelling-fx-transition",
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
     "phaser-chorus-pure-wave-octave-pad",
-    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation"
+    "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
+    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance"
   ]
 }

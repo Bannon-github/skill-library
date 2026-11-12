@@ -68,6 +68,12 @@
         "video_id": "N60Jcn9zfBo",
         "url": "https://www.youtube.com/watch?v=N60Jcn9zfBo",
         "title": "Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)"
+      },
+      {
+        "from_skill": "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
+        "video_id": "q6TxzspNL9Q",
+        "url": "https://www.youtube.com/watch?v=q6TxzspNL9Q",
+        "title": "Music Production Tips and Tricks - Making a Techno Reverb Kick"
       }
     ]
   },
@@ -309,6 +315,20 @@
         "Mix the kick a few dB lower than a typical melodic-house kick so the bass is the focus, with the kick still audible.",
         "Make a frequency guide from reference records: compare the kick and sub curve on an analyser and EQ the kick (e.g. trim excess around 50 Hz or deep sub) toward the reference."
       ]
+    },
+    {
+      "from_skill": "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
+      "name": "Reverb/rumble kick: feed a kick into three parallel returns (New York compression with release between a 1/16 and 1/8 note at the tempo, a 100% wet drive, and a 100% wet short, high-cut reverb), duck the reverb return with a sidechain compressor keyed by the kick, then low-pass the tail with a tempo-synced LFO and finish with a low-end enhancer",
+      "goal": "Make a kick with a dark sub 'rumble' tail between hits. Delta vs drum-synthesis cluster (synthesized kicks, dark short kick, hybrid hits): a processing chain that turns any existing kick into a kick-plus-rumble bed, built on parallel returns. For ambient use, keep the drive and reverb level low so the rumble works as a soft sub bed under pads.",
+      "steps": [
+        "Program a 4/4 kick; lower velocity on the weak beats (~80) and the medium beat (~90). Pull the kick level down to leave headroom.",
+        "Return A: compressor (sidechain EQ letting only lows trigger), threshold low, high ratio for ~10 dB gain reduction, fast-ish attack that still lets the transient through, release between a 1/16 and 1/8 note. Add EQ low and high shelf boosts after it. Blend under the dry kick.",
+        "Return B: a drive/distortion at 100% wet, amount low (below ~20%), letting lows through.",
+        "Return C: reverb at 100% wet, small size, high cut on, decay turned up so it rattles.",
+        "Put a compressor after the reverb with external sidechain from the kick; set release to control how long the rumble swells back between hits.",
+        "Add a low-pass filter after that to remove high frequencies; modulate cutoff with an LFO synced between 1/8 and 1/16, then optionally a slow LFO on cutoff with low depth for long-term movement.",
+        "Optionally send some reverb into the drive return, then put a low-end enhancer/drum-bus device on the kick for sub weight with light drive."
+      ]
     }
   ],
   "merged_from": [
@@ -321,7 +341,8 @@
     "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
     "atmospheric-liquid-dnb-break-layering",
-    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length"
+    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass"
   ],
   "tags": [
     "808",
@@ -369,6 +390,7 @@
     "synth-drum-ensemble-four-instances-same-midi-per-hit-random-env-delay-0-22ms-decay-snap-eq-pan-plus-minus-40-step-seq-filter-rhythm",
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
     "atmospheric-liquid-dnb-break-layering",
-    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length"
+    "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
+    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass"
   ]
 }

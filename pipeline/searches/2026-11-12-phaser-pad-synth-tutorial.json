@@ -1,0 +1,113 @@
+{
+ "topic": "phaser pad synth tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "phaser pad synth tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "8CEZiu8efrs",
+   "title": "SVEP Chorus, Phaser, Flanger Demo and Tutorial for iPad",
+   "channel": "The Sound Test Room",
+   "duration": 366,
+   "view_count": 3467,
+   "url": "https://www.youtube.com/watch?v=8CEZiu8efrs",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.27
+  },
+  {
+   "id": "TSiH9MUh4Ec",
+   "title": "Phaser Drums - How to turn a Phaser into a Drum Synthesizer",
+   "channel": "HAINBACH",
+   "duration": 701,
+   "view_count": 52798,
+   "url": "https://www.youtube.com/watch?v=TSiH9MUh4Ec",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.86
+  },
+  {
+   "id": "ZdKxOsK4nQ8",
+   "title": "Xfer Records Serum Tutorial 09 - FX Flanger, Phaser & Chorus",
+   "channel": "SadowickProduction",
+   "duration": 346,
+   "view_count": 4116,
+   "url": "https://www.youtube.com/watch?v=ZdKxOsK4nQ8",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.31
+  },
+  {
+   "id": "uhC-5pwVHLw",
+   "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+   "channel": "Jon Audio",
+   "duration": 261,
+   "view_count": 478,
+   "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.34
+  },
+  {
+   "id": "bZjzOSqWn1s",
+   "title": "Learn Live: Phaser-Flanger",
+   "channel": "Ableton",
+   "duration": 385,
+   "view_count": 20571,
+   "url": "https://www.youtube.com/watch?v=bZjzOSqWn1s",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.66
+  },
+  {
+   "id": "CgdRPHKa5Gw",
+   "title": "Harmless Part Seven - Phaser",
+   "channel": "FL Studio",
+   "duration": 247,
+   "view_count": 6495,
+   "url": "https://www.youtube.com/watch?v=CgdRPHKa5Gw",
+   "query": "phaser pad synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.91
+  }
+ ],
+ "dropped": [
+  {
+   "id": "TbqMvaZ905Y",
+   "why": "duration 232s"
+  },
+  {
+   "id": "4vRleMQdZZU",
+   "why": "already known"
+  },
+  {
+   "id": "FLiLhwGEvSQ",
+   "why": "duration 98s"
+  },
+  {
+   "id": "OSUF3Tr_xCA",
+   "why": "duration 231s"
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "why": "already known"
+  },
+  {
+   "id": "BfRyPzy-e-k",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,46 @@
+{
+  "video_id": "JDVu6GvoMuw",
+  "title": "How to make Emotional Ambient Downtempo Like Two Lanes - The Rest is Noise Tutorial (breakdown)",
+  "url": "https://www.youtube.com/watch?v=JDVu6GvoMuw",
+  "fetched_at": "2026-11-12T16:35:01.383816+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Cats in Ableton / Uros Bosnjak",
+  "duration": 692,
+  "ok": true,
+  "cue_count": 191,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JDVu6GvoMuw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JDVu6GvoMuw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

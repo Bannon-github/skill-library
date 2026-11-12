@@ -122,3 +122,13 @@ Source: [Disclosure's Signature Kick (How To Make It & Why It Sounds So Good)](h
 - Layer only if something is missing: e.g. a sub layer for the felt low end, a body layer with its sub removed for punch, and a quiet top layer. Check for phase issues after layering.
 - Mix the kick a few dB lower than a typical melodic-house kick so the bass is the focus, with the kick still audible.
 - Make a frequency guide from reference records: compare the kick and sub curve on an analyser and EQ the kick (e.g. trim excess around 50 Hz or deep sub) toward the reference.
+
+### Reverb/rumble kick: feed a kick into three parallel returns (New York compression with release between a 1/16 and 1/8 note at the tempo, a 100% wet drive, and a 100% wet short, high-cut reverb), duck the reverb return with a sidechain compressor keyed by the kick, then low-pass the tail with a tempo-synced LFO and finish with a low-end enhancer
+Source: [Music Production Tips and Tricks - Making a Techno Reverb Kick](https://www.youtube.com/watch?v=q6TxzspNL9Q) · was `reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass`
+- Program a 4/4 kick; lower velocity on the weak beats (~80) and the medium beat (~90). Pull the kick level down to leave headroom.
+- Return A: compressor (sidechain EQ letting only lows trigger), threshold low, high ratio for ~10 dB gain reduction, fast-ish attack that still lets the transient through, release between a 1/16 and 1/8 note. Add EQ low and high shelf boosts after it. Blend under the dry kick.
+- Return B: a drive/distortion at 100% wet, amount low (below ~20%), letting lows through.
+- Return C: reverb at 100% wet, small size, high cut on, decay turned up so it rattles.
+- Put a compressor after the reverb with external sidechain from the kick; set release to control how long the rumble swells back between hits.
+- Add a low-pass filter after that to remove high frequencies; modulate cutoff with an LFO synced between 1/8 and 1/16, then optionally a slow LFO on cutoff with low depth for long-term movement.
+- Optionally send some reverb into the drive return, then put a low-end enhancer/drum-bus device on the kick for sub weight with light drive.

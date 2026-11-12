@@ -105,3 +105,14 @@ Source: [Making INFINITE Ambient Pads Like The 1975 (Ableton Sound Design Tutori
 - Route interesting FX (granular octave-up, cloud/plate reverb, creative delay) via sends that return to dedicated audio tracks — treat each return as a blendable instrument, optionally re-send into a shared room reverb. Optional: send a return back into itself for controlled feedback.
 - Map slow free-running LFOs to: send amount into the octave-up/granular return (with a non-zero floor so it never fully disappears), high-pass cutoff, source tone/color macros, and a utility gain on the bass layer (~0–50% depth) so low end breathes in and out over long stretches. Offset LFO phases so moves duck past each other. Optional nested LFO: one LFO modulates pitch-shift depth of a reverb send (0%→tiny %) for intermittent flutter.
 - Render a long unique stem (or save the rack/template). Swap source instrument, reverb flavor, or scale (e.g. major vs major-pentatonic) to mint new pads from the same chain.
+
+### Looper drone clips: a plain sine into a gain/utility device, a long low-cut reverb at 70% wet and a one-bar looper; overdub single notes and clusters by easing the gain up and down, save each loop as a clip, build four chord-cluster clips, map one fader per clip (capped at 0 dB) to fade them in and out live through a group with an 8 s reverb, ping-pong delay, tape colour and glue compression, then commit by resampling
+Source: [How to Make Lazy Ambient Music in Session View](https://www.youtube.com/watch?v=NZJ9bvuyII4) · was `looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit`
+- Chain: sine synth -> gain/utility -> reverb (long decay, low cut, 70% wet) -> one-bar looper. Map the gain to a knob.
+- Start the looper recording, hold a note and ease the gain up then down, then let the loop play.
+- Audition and overdub more notes in the same way, mixing low single notes, fifths (e.g. F1+C2) and close clusters (e.g. G3+Ab3+Bb3).
+- Drag the loop into a clip slot, clear the looper (same length) and build the next clip; make about four.
+- Put the clip tracks in a group; map one fader per track with the maximum capped at 0 dB.
+- On the group: reverb ~8 s decay, low cut, 50% wet; ping-pong delay unsynced, 50% wet, ~70% feedback; gentle tape colour with hum and noise low; glue compressor.
+- Add an optional field recording track.
+- Resample the group to a new audio track and record a live take while fading clips in and out; commit to it rather than editing afterwards.

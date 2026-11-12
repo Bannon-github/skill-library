@@ -1,0 +1,46 @@
+{
+  "video_id": "q6TxzspNL9Q",
+  "title": "Music Production Tips and Tricks - Making a Techno Reverb Kick",
+  "url": "https://www.youtube.com/watch?v=q6TxzspNL9Q",
+  "fetched_at": "2026-11-12T16:28:04.292223+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "SubBass Academy of Electronic Music",
+  "duration": 659,
+  "ok": true,
+  "cue_count": 166,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/q6TxzspNL9Q/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/q6TxzspNL9Q/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

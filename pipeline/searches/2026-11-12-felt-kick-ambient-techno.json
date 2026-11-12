@@ -1,0 +1,97 @@
+{
+ "topic": "felt kick ambient techno",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "felt kick ambient techno",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "3oO0xLxEbfU",
+   "title": "How to Techno Kick | Sound Design Tutorial by Joe Egassy",
+   "channel": "Joe Egassy",
+   "duration": 642,
+   "view_count": 1901,
+   "url": "https://www.youtube.com/watch?v=3oO0xLxEbfU",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.14
+  },
+  {
+   "id": "wcDIW_oDBc8",
+   "title": "Master the TECHNO Rumble Kick | Ableton Low-End Tutorial",
+   "channel": "Production Music Live",
+   "duration": 778,
+   "view_count": 35447,
+   "url": "https://www.youtube.com/watch?v=wcDIW_oDBc8",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.77
+  },
+  {
+   "id": "q6TxzspNL9Q",
+   "title": "Music Production Tips and Tricks - Making a Techno Reverb Kick",
+   "channel": "SubBass Academy of Electronic Music",
+   "duration": 659,
+   "view_count": 6951,
+   "url": "https://www.youtube.com/watch?v=q6TxzspNL9Q",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.42
+  },
+  {
+   "id": "sNdpvcQqrP8",
+   "title": "How to make Ambient Dub Techno like Rhythm & Sound in Ableton with free synths",
+   "channel": "Bal5000's Old School",
+   "duration": 516,
+   "view_count": 1061,
+   "url": "https://www.youtube.com/watch?v=sNdpvcQqrP8",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.01
+  },
+  {
+   "id": "_BRr5OeOurk",
+   "title": "Turning the Arturia MicroFreak into a Kick Drum Machine | Tutorial",
+   "channel": "Audiorial",
+   "duration": 498,
+   "view_count": 14777,
+   "url": "https://www.youtube.com/watch?v=_BRr5OeOurk",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.58
+  },
+  {
+   "id": "IdYvw1CvV40",
+   "title": "How to Make a Drop Like ARTBAT & R3HAB | Melodic Techno or Trance? (Fl Studio & Ableton Project)",
+   "channel": "Future Makers Sound",
+   "duration": 635,
+   "view_count": 3325,
+   "url": "https://www.youtube.com/watch?v=IdYvw1CvV40",
+   "query": "felt kick ambient techno tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.26
+  }
+ ],
+ "dropped": [
+  {
+   "id": "mby42Ewjk2o",
+   "why": "duration 6757s"
+  },
+  {
+   "id": "8nO5fje8OHI",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

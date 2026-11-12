@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "id": "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
+  "name": "Looper drone clips: a plain sine into a gain/utility device, a long low-cut reverb at 70% wet and a one-bar looper; overdub single notes and clusters by easing the gain up and down, save each loop as a clip, build four chord-cluster clips, map one fader per clip (capped at 0 dB) to fade them in and out live through a group with an 8 s reverb, ping-pong delay, tape colour and glue compression, then commit by resampling",
+  "goal": "Make ambient drone loops from one sine and perform them into a recording. Delta vs generative drone cluster (follow-action clip pools, probability loops, random modulators): nothing is random; the player builds four fixed cluster clips by hand with soft gain fades, and mixes them live with mapped faders, committing the result by resampling.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "NZJ9bvuyII4",
+    "url": "https://www.youtube.com/watch?v=NZJ9bvuyII4",
+    "title": "How to Make Lazy Ambient Music in Session View",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/NZJ9bvuyII4/agent-skill-looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit.json",
+    "batch": "2026-11-12-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with clip/session view or a looper, a MIDI controller with knobs/faders",
+    "A sine synth, gain/utility, reverb, delay, tape-style saturation, glue compressor"
+  ],
+  "inputs": [
+    {
+      "name": "key_notes",
+      "type": "list",
+      "description": "Notes and clusters for each clip, e.g. G3+B2+A3+D4+E4",
+      "required": true
+    },
+    {
+      "name": "clip_count",
+      "type": "number",
+      "description": "Number of drone clips (4 in the source)",
+      "required": false
+    },
+    {
+      "name": "field_recording",
+      "type": "audio",
+      "description": "Optional field recording bed",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "drone_clips",
+      "type": "audio clips",
+      "description": "Four one-bar loop clips of layered sine notes"
+    },
+    {
+      "name": "performance",
+      "type": "audio",
+      "description": "Resampled live fade performance"
+    }
+  ],
+  "constraints": [
+    "The source's re-pitch/tempo-knob trick changes pitch and is left out for steady pitch; keep clips in warp mode that preserves pitch (Matt's preference).",
+    "Fade notes in and out with the gain device so there are no clicks at loop points.",
+    "Beatless drone piece; if drums are added, they enter early (~8 counts / ~12 s).",
+    "Portable: any looper plus clip launcher, or record one-bar loops to audio clips manually.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Chain: sine synth -> gain/utility -> reverb (long decay, low cut, 70% wet) -> one-bar looper. Map the gain to a knob.",
+      "tool": "Device chain + MIDI map",
+      "expect": "Ready to capture soft notes"
+    },
+    {
+      "n": 2,
+      "action": "Start the looper recording, hold a note and ease the gain up then down, then let the loop play.",
+      "tool": "Looper + gain knob",
+      "expect": "First layer with no hard attack"
+    },
+    {
+      "n": 3,
+      "action": "Audition and overdub more notes in the same way, mixing low single notes, fifths (e.g. F1+C2) and close clusters (e.g. G3+Ab3+Bb3).",
+      "tool": "Looper overdub",
+      "expect": "Rich one-bar drone"
+    },
+    {
+      "n": 4,
+      "action": "Drag the loop into a clip slot, clear the looper (same length) and build the next clip; make about four.",
+      "tool": "Clip slots",
+      "expect": "Four contrasting drone clips"
+    },
+    {
+      "n": 5,
+      "action": "Put the clip tracks in a group; map one fader per track with the maximum capped at 0 dB.",
+      "tool": "Group + MIDI map",
+      "expect": "Each drone can be faded in alone"
+    },
+    {
+      "n": 6,
+      "action": "On the group: reverb ~8 s decay, low cut, 50% wet; ping-pong delay unsynced, 50% wet, ~70% feedback; gentle tape colour with hum and noise low; glue compressor.",
+      "tool": "Group FX",
+      "expect": "Single shared space"
+    },
+    {
+      "n": 7,
+      "action": "Add an optional field recording track.",
+      "tool": "Audio track",
+      "expect": "Natural bed"
+    },
+    {
+      "n": 8,
+      "action": "Resample the group to a new audio track and record a live take while fading clips in and out; commit to it rather than editing afterwards.",
+      "tool": "Resampling",
+      "expect": "Finished ambient take"
+    }
+  ],
+  "verification": [
+    "Each clip contains several overdubbed notes with no click at the loop point.",
+    "Fader maps top out at 0 dB.",
+    "Final take is a single resampled audio file."
+  ],
+  "tags": [
+    "ambient",
+    "drone",
+    "looper",
+    "session-view",
+    "clip-launch",
+    "performance",
+    "resampling",
+    "sine",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit"
+}

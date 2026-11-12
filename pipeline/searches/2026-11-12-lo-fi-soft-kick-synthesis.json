@@ -1,0 +1,93 @@
+{
+ "topic": "lo-fi soft kick synthesis",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "lo-fi soft kick synthesis",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "t3hJ0BtK37o",
+   "title": "How To Make Your Own Kicks In Serum | Drum Synthesis",
+   "channel": "Becky Saif",
+   "duration": 548,
+   "view_count": 4152,
+   "url": "https://www.youtube.com/watch?v=t3hJ0BtK37o",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.31
+  },
+  {
+   "id": "nRKE4rllwBY",
+   "title": "How to make kick and snare using Vital",
+   "channel": "AdK Studios",
+   "duration": 541,
+   "view_count": 15520,
+   "url": "https://www.youtube.com/watch?v=nRKE4rllwBY",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.6
+  },
+  {
+   "id": "APljvOxetas",
+   "title": "A Guide to Making Lo-fi",
+   "channel": "Zectro",
+   "duration": 516,
+   "view_count": 1271868,
+   "url": "https://www.youtube.com/watch?v=APljvOxetas",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "0FmzFpHdwrc",
+   "title": "A Guide to Making Lo-fi Drums",
+   "channel": "Zectro",
+   "duration": 388,
+   "view_count": 172413,
+   "url": "https://www.youtube.com/watch?v=0FmzFpHdwrc",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.12
+  },
+  {
+   "id": "gFPoITY_ioA",
+   "title": "The Secret To Making Lofi Music In Ableton (Step By Step Masterclass)",
+   "channel": "Ethan Davis",
+   "duration": 1394,
+   "view_count": 94273,
+   "url": "https://www.youtube.com/watch?v=gFPoITY_ioA",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.99
+  },
+  {
+   "id": "lHsO6m9d7qQ",
+   "title": "How To Synthesize Kick Drums! (FOR EDM TRACKS)",
+   "channel": "TCHMZ",
+   "duration": 834,
+   "view_count": 62,
+   "url": "https://www.youtube.com/watch?v=lHsO6m9d7qQ",
+   "query": "lo-fi soft kick synthesis tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.4
+  }
+ ],
+ "dropped": [
+  {
+   "id": "rk7k6bJTgVo",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

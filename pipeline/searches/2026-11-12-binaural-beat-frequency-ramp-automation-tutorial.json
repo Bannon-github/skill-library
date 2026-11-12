@@ -1,0 +1,105 @@
+{
+ "topic": "binaural beat frequency ramp automation tutorial",
+ "date": "2026-11-12",
+ "params": {
+  "topic": "binaural beat frequency ramp automation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "IghRZY1VWqk",
+   "title": "How to Create Binaural Beats on Logic Pro X",
+   "channel": "VIBE WITH IIRIIS",
+   "duration": 1213,
+   "view_count": 9876,
+   "url": "https://www.youtube.com/watch?v=IghRZY1VWqk",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5
+  },
+  {
+   "id": "sRMRtJ8Ces8",
+   "title": "FL Studio Advanced Tutorial - Frequency Isolation",
+   "channel": "ThermalRain",
+   "duration": 1047,
+   "view_count": 4930,
+   "url": "https://www.youtube.com/watch?v=sRMRtJ8Ces8",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.35
+  },
+  {
+   "id": "paRevQ5JffU",
+   "title": "How to make a high frequency/ low pass filter in Logic Pro X",
+   "channel": "DA COOKUP NETWORK",
+   "duration": 311,
+   "view_count": 1455,
+   "url": "https://www.youtube.com/watch?v=paRevQ5JffU",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.08
+  },
+  {
+   "id": "mPJEfc6xqLA",
+   "title": "How To Make Binaural Beats & Solfeggio Frequencies | Meditation Music Creation 5 Minutes",
+   "channel": "Healing Meditation Music",
+   "duration": 274,
+   "view_count": 12161,
+   "url": "https://www.youtube.com/watch?v=mPJEfc6xqLA",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.04
+  },
+  {
+   "id": "Ea0b9jgbFhI",
+   "title": "Logic Pro X Tutorial - Intro to Frequencies & EQ",
+   "channel": "Beat Making Basics",
+   "duration": 281,
+   "view_count": 2628,
+   "url": "https://www.youtube.com/watch?v=Ea0b9jgbFhI",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.71
+  },
+  {
+   "id": "veMIOXVSJZU",
+   "title": "7 Transition Secrets the Pros Use (and how to use them in your music!) 👀",
+   "channel": "EDM Tips",
+   "duration": 1803,
+   "view_count": 124764,
+   "url": "https://www.youtube.com/watch?v=veMIOXVSJZU",
+   "query": "binaural beat frequency ramp automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.55
+  }
+ ],
+ "dropped": [
+  {
+   "id": "fZCthK3DB9U",
+   "why": "duration 5496s"
+  },
+  {
+   "id": "CldXMf99MDg",
+   "why": "duration 29909s"
+  },
+  {
+   "id": "EXCQrnr9Ow4",
+   "why": "duration 221s"
+  },
+  {
+   "id": "jUpr0aSYu6A",
+   "why": "duration 5400s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
