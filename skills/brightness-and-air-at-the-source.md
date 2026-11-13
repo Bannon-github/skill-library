@@ -48,3 +48,14 @@ Source: [How to Use White Noise in Your Music](https://www.youtube.com/watch?v=-
 - Drums: put an envelope-following tuned-noise device (noise shaped by the input's envelope, narrow band-pass; Erosion-like) on the kick around 5 kHz for snap, and on the snare around 7 kHz. For the snare, switch to decorrelated/wide noise (different L/R) for a stereo burst. The peak level rises, so turn the track down to keep limiter headroom.
 - Master noise: make a parallel rack on the master after the other master FX, with a dry chain and a noise chain. In the noise chain, use a noise generator (e.g. a delay's noise feature) with input at about -40 dB or none. Filter the noise and modulate the two filters with slow, unsynced LFOs set out of phase with each other, plus an optional small resonant hump. Sneak it in.
 - Map every noise addition to one mute/macro key and A/B the full mix with and without the noise.
+
+### Key-tuned noise pad: blend two recordings (one with voices/ambience, one with harsh white-noise content), bounce them, then boost a single very narrow (max-Q) EQ band at the key's root frequency (e.g. 440 Hz for A) to full gain and duplicate that EQ 3-5 times until a sine-like tone emerges; freeze/flatten (bounce in place), load into a sampler with the root note set to that pitch, play chords so the noise is in key, add filter attack, reverb and delay, light sidechain ducking to the beat, and automate EQ over the arrangement to bring more or less noise in
+Source: [How To Make Pads From Noise/Recordings Like Burial | Inspired By...](https://www.youtube.com/watch?v=Aqe3ISng8jA) · was `noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation`
+- Blend sections of two recordings (one with voices/ambience, one with harsh noise), bounce to one clip and raise gain.
+- Add an EQ band at the key root (e.g. 440 Hz for A) at maximum Q and maximum gain, with the fader down first.
+- Duplicate that EQ until the pitch is clearly audible (3 copies, up to ~5 for quiet sources).
+- Freeze and flatten (bounce in place) the result.
+- Load it into a sampler with the root note set to the tuned pitch (A); play chords from MIDI. Speech becomes unintelligible because each key plays at a different rate.
+- Lengthen the amp/filter attack so chords swell, then add reverb and delay to blur leftover details.
+- Set the sample start a little in and loop a section with a crossfade so every note doesn't begin on the same recognisable spot.
+- Add a compressor sidechained to the beat (fast attack, eased release) so the pad ducks; automate the EQ over the arrangement (low-passed in some sections, more noise in others).

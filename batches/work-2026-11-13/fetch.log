@@ -1,0 +1,300 @@
+{
+  "video_id": "6UYbsqHRrZ8",
+  "title": "Lesson 39: Crafting the Outro: How To Close Out Your Track",
+  "url": "https://www.youtube.com/watch?v=6UYbsqHRrZ8",
+  "fetched_at": "2026-11-13T16:36:29.723660+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Raveyard Sounds",
+  "duration": 659,
+  "ok": true,
+  "cue_count": 146,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/6UYbsqHRrZ8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/6UYbsqHRrZ8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "dGGMbqe4QYQ",
+  "title": "How to climax in electronic music",
+  "url": "https://www.youtube.com/watch?v=dGGMbqe4QYQ",
+  "fetched_at": "2026-11-13T16:36:52.721902+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Underdog Electronic Music School",
+  "duration": 631,
+  "ok": true,
+  "cue_count": 254,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/dGGMbqe4QYQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/dGGMbqe4QYQ/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "Aqe3ISng8jA",
+  "title": "How To Make Pads From Noise/Recordings Like Burial | Inspired By...",
+  "url": "https://www.youtube.com/watch?v=Aqe3ISng8jA",
+  "fetched_at": "2026-11-13T16:37:15.329635+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Will Hatton",
+  "duration": 738,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 6.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.9
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "Cx8mEhPdtB4",
+  "title": "Make Ambient Like LOSCIL: Field Recordings to Floating Pads",
+  "url": "https://www.youtube.com/watch?v=Cx8mEhPdtB4",
+  "fetched_at": "2026-11-13T16:38:15.394861+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "S1gns Of L1fe",
+  "duration": 1584,
+  "ok": true,
+  "cue_count": 679,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Cx8mEhPdtB4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Cx8mEhPdtB4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "4fDLsJOP2MM",
+  "title": "Make ambient texture clouds from field recordings",
+  "url": "https://www.youtube.com/watch?v=4fDLsJOP2MM",
+  "fetched_at": "2026-11-13T16:38:38.036922+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Department of Inspirado",
+  "duration": 317,
+  "ok": true,
+  "cue_count": 82,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/4fDLsJOP2MM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4fDLsJOP2MM/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "wU6agSvjmgQ",
+  "title": "How To Make Ambient Pad Sounds From Scratch",
+  "url": "https://www.youtube.com/watch?v=wU6agSvjmgQ",
+  "fetched_at": "2026-11-13T16:39:00.720185+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Catalyze Music Academy",
+  "duration": 1368,
+  "ok": true,
+  "cue_count": 701,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/wU6agSvjmgQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/wU6agSvjmgQ/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "LANPsnGB_yY",
+  "title": "Made in Ableton Live: K. Hart on creative resampling, granular techniques and adding life to MIDI",
+  "url": "https://www.youtube.com/watch?v=LANPsnGB_yY",
+  "fetched_at": "2026-11-13T16:39:23.816151+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ableton",
+  "duration": 1451,
+  "ok": true,
+  "cue_count": 1102,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "LANPsnGB_yY.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/LANPsnGB_yY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/LANPsnGB_yY/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.0
+    }
+  ]
+}
+{
+  "video_id": "MlEt2outpJY",
+  "title": "Quick Tip - Mummy I F&%*ed The Orchestra",
+  "url": "https://www.youtube.com/watch?v=MlEt2outpJY",
+  "fetched_at": "2026-11-13T16:40:58.922501+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Spitfire Audio",
+  "duration": 263,
+  "ok": true,
+  "cue_count": 80,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/MlEt2outpJY/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/MlEt2outpJY/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "Pf0at7zMSDw",
+  "title": "Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW",
+  "url": "https://www.youtube.com/watch?v=Pf0at7zMSDw",
+  "fetched_at": "2026-11-13T16:41:21.364705+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Busy Works Beats",
+  "duration": 963,
+  "ok": true,
+  "cue_count": 182,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Pf0at7zMSDw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Pf0at7zMSDw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "p0x7e9AKqFg",
+  "title": "Making an Ambient Pad in Ableton Live Wavetable - Walkthrough",
+  "url": "https://www.youtube.com/watch?v=p0x7e9AKqFg",
+  "fetched_at": "2026-11-13T16:41:44.166283+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Therefore Research",
+  "duration": 1782,
+  "ok": true,
+  "cue_count": 436,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/p0x7e9AKqFg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/p0x7e9AKqFg/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "Aqe3ISng8jA",
+  "title": "How To Make Pads From Noise/Recordings Like Burial | Inspired By...",
+  "url": "https://www.youtube.com/watch?v=Aqe3ISng8jA",
+  "fetched_at": "2026-11-13T16:42:58.444764+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Will Hatton",
+  "duration": 738,
+  "ok": true,
+  "cue_count": 580,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "Aqe3ISng8jA.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/Aqe3ISng8jA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Aqe3ISng8jA/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ]
+}

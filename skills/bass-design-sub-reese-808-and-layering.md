@@ -180,3 +180,15 @@ Source: [The SCIENCE of Mixing Perfect Kick and Bass](https://www.youtube.com/wa
 - Put an exciter on kick and on bass to add higher-order harmonics, lifting both into the mids and high mids where notes are far apart and phase cancellation is minor.
 - Add a mild transient expander to kick and bass to emphasise the overtones in the first ~50 ms (attack/decay).
 - A/B the low end in solo and in the mix; listen for periodic beating (the binaural-beat-like wobble) on simultaneous hits.
+
+### Punchy 808 from the source: start with a sine and set character with the 2nd and 3rd harmonic partials (additive/wavetable editor) before any distortion; add punch with a subtle envelope on coarse tune in unipolar mode so the dive ends exactly on the note; design in the key where it sounds best (not forced to C); shape the decay curve (concave = kick-like and dynamic, convex = long sustained 808); add filter drive or tube warp, an FM-from-sine layer at ratio 0.5 (bubbly) or higher (metallic) with its own short envelope for a transient, two soft clippers in series and a limiter; print it and trim/fade to a zero crossing
+Source: [Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW](https://www.youtube.com/watch?v=Pf0at7zMSDw) · was `punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print`
+- Initialise a patch to a sine; play the bass line an octave down.
+- Open the harmonic/partials editor and raise or lower the 2nd and 3rd harmonics until the 808 has the wanted character (bubbly vs round).
+- Assign a mod envelope (sustain 0, short decay) to coarse tune, with a gentle curve and small amount; set the routing unipolar so the dive ends exactly on the played note.
+- Pick the key where the 808 sounds best and design there, then print in that key.
+- Shape the amp decay curve: concave for a dynamic kick-like 808, convex for a long sustained one; adjust sustain curve so the tail rings out naturally.
+- Add saturation: filter drive or a tube warp/distortion mode (one stage at a time), matching level when comparing.
+- Optional transient: enable an FM-from-sine source at ratio 0.5 (lower = bubbly, higher = metallic) with its own short envelope on FM amount, then low-pass to tame highs.
+- Chain two soft clippers (post-gain of the first drives the second), a light EQ and a limiter with saturation off to square off the peak.
+- Print/record it, fade out the tail, and set any loop or edit points on zero crossings so it doesn't click; save at 32-bit stereo.

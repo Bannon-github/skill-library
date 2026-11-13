@@ -1,0 +1,138 @@
+  [6UYbsqHRrZ8] Q0 pipeline env importable? -> yes
+  [6UYbsqHRrZ8] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [6UYbsqHRrZ8] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [6UYbsqHRrZ8] Q4 English text is a translation? -> no
+  [6UYbsqHRrZ8] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [6UYbsqHRrZ8] Q6 term graph built? -> yes
+  [6UYbsqHRrZ8] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [6UYbsqHRrZ8] OUTCOME CANDIDATES_READY
+  [dGGMbqe4QYQ] Q0 pipeline env importable? -> yes
+  [dGGMbqe4QYQ] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [dGGMbqe4QYQ] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [dGGMbqe4QYQ] Q4 English text is a translation? -> no
+  [dGGMbqe4QYQ] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [dGGMbqe4QYQ] Q6 term graph built? -> yes
+  [dGGMbqe4QYQ] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [dGGMbqe4QYQ] OUTCOME CANDIDATES_READY
+  [Cx8mEhPdtB4] Q0 pipeline env importable? -> yes
+  [Cx8mEhPdtB4] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [Cx8mEhPdtB4] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Cx8mEhPdtB4] Q4 English text is a translation? -> no
+  [Cx8mEhPdtB4] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Cx8mEhPdtB4] Q6 term graph built? -> yes
+  [Cx8mEhPdtB4] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [Cx8mEhPdtB4] OUTCOME CANDIDATES_READY
+  [4fDLsJOP2MM] Q0 pipeline env importable? -> yes
+  [4fDLsJOP2MM] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [4fDLsJOP2MM] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [4fDLsJOP2MM] Q4 English text is a translation? -> no
+  [4fDLsJOP2MM] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [4fDLsJOP2MM] Q6 term graph built? -> yes
+  [4fDLsJOP2MM] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [4fDLsJOP2MM] OUTCOME CANDIDATES_READY
+  [wU6agSvjmgQ] Q0 pipeline env importable? -> yes
+  [wU6agSvjmgQ] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [wU6agSvjmgQ] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [wU6agSvjmgQ] Q4 English text is a translation? -> no
+  [wU6agSvjmgQ] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [wU6agSvjmgQ] Q6 term graph built? -> yes
+  [wU6agSvjmgQ] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [wU6agSvjmgQ] OUTCOME CANDIDATES_READY
+  [LANPsnGB_yY] Q0 pipeline env importable? -> yes
+  [LANPsnGB_yY] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [LANPsnGB_yY] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [LANPsnGB_yY] Q4 English text is a translation? -> no
+  [LANPsnGB_yY] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [LANPsnGB_yY] Q6 term graph built? -> yes
+  [LANPsnGB_yY] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [LANPsnGB_yY] OUTCOME CANDIDATES_READY
+  [MlEt2outpJY] Q0 pipeline env importable? -> yes
+  [MlEt2outpJY] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [MlEt2outpJY] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [MlEt2outpJY] Q4 English text is a translation? -> no
+  [MlEt2outpJY] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [MlEt2outpJY] Q6 term graph built? -> yes
+  [MlEt2outpJY] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [MlEt2outpJY] OUTCOME CANDIDATES_READY
+  [Pf0at7zMSDw] Q0 pipeline env importable? -> yes
+  [Pf0at7zMSDw] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [Pf0at7zMSDw] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Pf0at7zMSDw] Q4 English text is a translation? -> no
+  [Pf0at7zMSDw] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Pf0at7zMSDw] Q6 term graph built? -> yes
+  [Pf0at7zMSDw] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [Pf0at7zMSDw] OUTCOME CANDIDATES_READY
+  [p0x7e9AKqFg] Q0 pipeline env importable? -> yes
+  [p0x7e9AKqFg] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [p0x7e9AKqFg] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [p0x7e9AKqFg] Q4 English text is a translation? -> no
+  [p0x7e9AKqFg] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [p0x7e9AKqFg] Q6 term graph built? -> yes
+  [p0x7e9AKqFg] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [p0x7e9AKqFg] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "6UYbsqHRrZ8",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "arrangement"
+ },
+ {
+  "video_id": "dGGMbqe4QYQ",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "arrangement"
+ },
+ {
+  "video_id": "Cx8mEhPdtB4",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "4fDLsJOP2MM",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "wU6agSvjmgQ",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "LANPsnGB_yY",
+  "outcome": "CANDIDATES_READY",
+  "route": "ytdlp-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "MlEt2outpJY",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "Pf0at7zMSDw",
+  "outcome": "CANDIDATES_READY",
+  "route": "manual-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "p0x7e9AKqFg",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]
+  [Aqe3ISng8jA] OUTCOME CANDIDATES_READY

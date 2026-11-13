@@ -1,0 +1,46 @@
+{
+  "video_id": "4fDLsJOP2MM",
+  "title": "Make ambient texture clouds from field recordings",
+  "url": "https://www.youtube.com/watch?v=4fDLsJOP2MM",
+  "fetched_at": "2026-11-13T16:38:38.036922+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Department of Inspirado",
+  "duration": 317,
+  "ok": true,
+  "cue_count": 82,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/4fDLsJOP2MM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4fDLsJOP2MM/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

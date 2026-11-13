@@ -1,0 +1,22 @@
+== distilled/dGGMbqe4QYQ/agent-skill-cli
+best_overlap: 0.088
+novelty_score: 0.912  (1.0 = fully novel vs index)
+verdict: NOVEL
+0.047  [local] youtube-skills/mcp-publish :: arrangement-ambient-cinematic-score
+== distilled/Cx8mEhPdtB4/agent-skill-env
+best_overlap: 0.092
+novelty_score: 0.908  (1.0 = fully novel vs index)
+verdict: NOVEL
+0.051  [local] youtube-skills/mcp-publish :: arrangement-ambient-cinematic-score
+== distilled/LANPsnGB_yY/agent-skill-arp
+best_overlap: 0.081
+novelty_score: 0.919  (1.0 = fully novel vs index)
+verdict: NOVEL
+== distilled/Pf0at7zMSDw/agent-skill-pun
+best_overlap: 0.082
+novelty_score: 0.918  (1.0 = fully novel vs index)
+verdict: NOVEL
+== distilled/Aqe3ISng8jA/agent-skill-noi
+best_overlap: 0.068
+novelty_score: 0.932  (1.0 = fully novel vs index)
+verdict: NOVEL

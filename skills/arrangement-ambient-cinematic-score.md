@@ -164,3 +164,14 @@ Source: [How I Produce a Sleep Meditation Track in Ableton Live (Step-By-Step Tu
 - Add the brainwave layer: a sine at the key's root (e.g. E5 659 Hz) and a second at root minus the rate (656 Hz = 3 Hz); pan left/right for binaural or keep centred for monaural. Set it just loud enough that you notice when it's muted.
 - Carve a narrow EQ notch at the tone frequency in competing parts, and give the tone its own slow fade-in and fade-out.
 - Export, listen at the intended time (e.g. that evening), then adjust lengths, rate and levels.
+
+### Minimal Loscil-style ambient: a detuned saw pad with ~6.5 s attack and decay, low sustain, long release and a second long envelope opening the low-pass, playing chords spaced about 8-9 bars apart so the envelope and a long (~29 s) echo-reverb carry each chord into the next; a field recording routed into a synth's audio input (sidechain) so held MIDI notes gate it through the synth's filters and effects; a sparse release-tailed sine sequence into a dark reverb; and a unison saw sub on a 24 dB low-pass at 80-200 Hz with a free-running 4-bar LFO on cutoff
+Source: [Make Ambient Like LOSCIL: Field Recordings to Floating Pads](https://www.youtube.com/watch?v=Cx8mEhPdtB4) · was `envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub`
+- Pad: saw with 3-4 unison voices, low detune; amp attack ~6.5 s, decay about the same, low sustain, long release; low-pass engaged with cutoff low.
+- Add a second long envelope to the filter cutoff so each chord opens and closes the filter over its length.
+- Write chords in key (e.g. C-F-G plus a high D in D minor); stagger note starts slightly by hand. Set the clip loop so the gap between chords matches the envelope length (8-9 bars at ~83 BPM), then shorten until each tail just meets the next chord.
+- Put a long echo+reverb (~29 s decay) after the pad.
+- Texture: put a field recording on an audio track with its fader down (warped to loop length), route it as sidechain/external input into a synth's audio-input engine (or a gate keyed from MIDI), and hold one long MIDI note across the timeline so the synth gates it through.
+- Process the gated recording through the synth's filter, a multiband compressor, a ping-pong delay and a long reverb; add a slow smooth LFO on its volume and filter mix.
+- Sine sequence: sine with ~1.5 s decay, ~2 s release, low sustain; write a sparse fixed in-key pattern (D natural minor) and send it to a dark long reverb.
+- Sub: the pad's root an octave or two down (e.g. D1) on a unison saw into a 24 dB low-pass at 80-200 Hz; free-running LFO on cutoff at 4 (or 8) bars; ~15% send to the same reverb; mix low.

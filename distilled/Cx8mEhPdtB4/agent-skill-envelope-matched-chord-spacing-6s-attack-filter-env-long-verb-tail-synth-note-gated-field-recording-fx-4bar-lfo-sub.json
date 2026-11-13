@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "id": "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
+  "name": "Minimal Loscil-style ambient: a detuned saw pad with ~6.5 s attack and decay, low sustain, long release and a second long envelope opening the low-pass, playing chords spaced about 8-9 bars apart so the envelope and a long (~29 s) echo-reverb carry each chord into the next; a field recording routed into a synth's audio input (sidechain) so held MIDI notes gate it through the synth's filters and effects; a sparse release-tailed sine sequence into a dark reverb; and a unison saw sub on a 24 dB low-pass at 80-200 Hz with a free-running 4-bar LFO on cutoff",
+  "goal": "Build a four-layer minimal ambient bed where timing and space do the work. Delta vs generative drone cluster (looper drone clips, follow-action pools) and arrangement-ambient: the chord loop length is set by the pad envelope (spacing = envelope + reverb tail), and field recordings are processed by playing a synth as a note gate, not by a sampler.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Cx8mEhPdtB4",
+    "url": "https://www.youtube.com/watch?v=Cx8mEhPdtB4",
+    "title": "Make Ambient Like LOSCIL: Field Recordings to Floating Pads",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Cx8mEhPdtB4/agent-skill-envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub.json",
+    "batch": "2026-11-13-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth with two envelopes and unison; a synth or effect that accepts sidechain/external audio (or a gate + filter chain)",
+    "A long echo/reverb (20 s+ decay)",
+    "A field recording loop"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "e.g. D minor",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Slow, ~80-85",
+      "required": false
+    },
+    {
+      "name": "field_recording",
+      "type": "audio",
+      "description": "Water/riverbed or similar loop",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_chords",
+      "type": "midi+audio",
+      "description": "Chords spaced so each tail reaches the next"
+    },
+    {
+      "name": "texture",
+      "type": "audio",
+      "description": "Note-gated, filtered field recording"
+    },
+    {
+      "name": "sine_sequence",
+      "type": "midi",
+      "description": "Fixed sparse sine line"
+    },
+    {
+      "name": "sub",
+      "type": "audio",
+      "description": "Slowly filtered unison sub"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: the source randomised step-sequencer patterns and modulated tuning with a random LFO; here the sine sequence is a fixed hand-written pattern and all LFOs are smooth, periodic and on filter/volume only (Matt's preference).",
+    "No rapid clicking: keep the field recording's gate opening slow (attack >= 200 ms) and avoid crackly bubble-wrap-type sources.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: pad = saw osc + amp env + filter env; note-gated texture = audio in -> VCA keyed by MIDI gate -> filter -> delay/reverb; sub = saw unison -> LP24 with a 4-bar LFO.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pad: saw with 3-4 unison voices, low detune; amp attack ~6.5 s, decay about the same, low sustain, long release; low-pass engaged with cutoff low.",
+      "tool": "Synth amp env + unison",
+      "expect": "Chords swell in slowly"
+    },
+    {
+      "n": 2,
+      "action": "Add a second long envelope to the filter cutoff so each chord opens and closes the filter over its length.",
+      "tool": "Mod envelope -> cutoff",
+      "expect": "Long breathing filter per chord"
+    },
+    {
+      "n": 3,
+      "action": "Write chords in key (e.g. C-F-G plus a high D in D minor); stagger note starts slightly by hand. Set the clip loop so the gap between chords matches the envelope length (8-9 bars at ~83 BPM), then shorten until each tail just meets the next chord.",
+      "tool": "MIDI clip loop length",
+      "expect": "Restrained chord rhythm, tails carry"
+    },
+    {
+      "n": 4,
+      "action": "Put a long echo+reverb (~29 s decay) after the pad.",
+      "tool": "Reverb/delay",
+      "expect": "Wash connects the chords"
+    },
+    {
+      "n": 5,
+      "action": "Texture: put a field recording on an audio track with its fader down (warped to loop length), route it as sidechain/external input into a synth's audio-input engine (or a gate keyed from MIDI), and hold one long MIDI note across the timeline so the synth gates it through.",
+      "tool": "Sidechain routing",
+      "expect": "Recording audible only through the synth"
+    },
+    {
+      "n": 6,
+      "action": "Process the gated recording through the synth's filter, a multiband compressor, a ping-pong delay and a long reverb; add a slow smooth LFO on its volume and filter mix.",
+      "tool": "Synth FX + LFO",
+      "expect": "Washed, understated texture layer"
+    },
+    {
+      "n": 7,
+      "action": "Sine sequence: sine with ~1.5 s decay, ~2 s release, low sustain; write a sparse fixed in-key pattern (D natural minor) and send it to a dark long reverb.",
+      "tool": "MIDI clip + reverb",
+      "expect": "Sparse bell-like line that blooms in the reverb"
+    },
+    {
+      "n": 8,
+      "action": "Sub: the pad's root an octave or two down (e.g. D1) on a unison saw into a 24 dB low-pass at 80-200 Hz; free-running LFO on cutoff at 4 (or 8) bars; ~15% send to the same reverb; mix low.",
+      "tool": "Synth + LFO",
+      "expect": "Slowly moving foundation"
+    }
+  ],
+  "verification": [
+    "Each pad chord's tail reaches the next chord with no silent gap and no pile-up.",
+    "The field recording is silent when no MIDI note is held.",
+    "Sine line is identical on every loop pass (no random patterns)."
+  ],
+  "tags": [
+    "ambient",
+    "pad",
+    "field-recording",
+    "envelope",
+    "arrangement",
+    "minimal",
+    "sub",
+    "sine",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub"
+}

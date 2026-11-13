@@ -1,0 +1,105 @@
+{
+ "topic": "isochronic tone ableton tutorial gate automation",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "isochronic tone ableton tutorial gate automation",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "wf8tNNTG1Mw",
+   "title": "Every Ableton Stock Plugin Explained in 15 Minutes | Ableton Live 11 Tutorial",
+   "channel": "DaniMusiX",
+   "duration": 900,
+   "view_count": 16571,
+   "url": "https://www.youtube.com/watch?v=wf8tNNTG1Mw",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.61
+  },
+  {
+   "id": "Si5_mropWnA",
+   "title": "Ableton Live 11 Tutorial: Session View Tips",
+   "channel": "Tom Casey Music",
+   "duration": 926,
+   "view_count": 23288,
+   "url": "https://www.youtube.com/watch?v=Si5_mropWnA",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.68
+  },
+  {
+   "id": "g-bOLJTrldk",
+   "title": "Ableton Gate Tutorial",
+   "channel": "Seed To Stage",
+   "duration": 1308,
+   "view_count": 58913,
+   "url": "https://www.youtube.com/watch?v=g-bOLJTrldk",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.89
+  },
+  {
+   "id": "0xdvueqPEm8",
+   "title": "Ro-Minimal/Micro House Tutorial Inspired By Priku (+Ableton Live Template)",
+   "channel": "Underground Beats",
+   "duration": 1199,
+   "view_count": 41398,
+   "url": "https://www.youtube.com/watch?v=0xdvueqPEm8",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.81
+  },
+  {
+   "id": "OtsAf7ptKVI",
+   "title": "Learn Gate In 4 Min!!! (Ableton Live)",
+   "channel": "LNA Does Audio Stuff",
+   "duration": 320,
+   "view_count": 15644,
+   "url": "https://www.youtube.com/watch?v=OtsAf7ptKVI",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.6
+  },
+  {
+   "id": "XfWHlZc-szA",
+   "title": "7 Game-Changing Ableton Live Tricks",
+   "channel": "Ableton Tips by PML",
+   "duration": 352,
+   "view_count": 21098,
+   "url": "https://www.youtube.com/watch?v=XfWHlZc-szA",
+   "query": "isochronic tone ableton tutorial gate automation tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.66
+  }
+ ],
+ "dropped": [
+  {
+   "id": "nwfPFLRt4Nw",
+   "why": "duration 4310s"
+  },
+  {
+   "id": "gRph8JsKbck",
+   "why": "duration 62s"
+  },
+  {
+   "id": "GpcGGImtMmc",
+   "why": "duration 6285s"
+  },
+  {
+   "id": "TUHKIGjeHok",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

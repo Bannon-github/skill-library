@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation",
+  "name": "Key-tuned noise pad: blend two recordings (one with voices/ambience, one with harsh white-noise content), bounce them, then boost a single very narrow (max-Q) EQ band at the key's root frequency (e.g. 440 Hz for A) to full gain and duplicate that EQ 3-5 times until a sine-like tone emerges; freeze/flatten (bounce in place), load into a sampler with the root note set to that pitch, play chords so the noise is in key, add filter attack, reverb and delay, light sidechain ducking to the beat, and automate EQ over the arrangement to bring more or less noise in",
+  "goal": "Get synth-free air and texture pads that sit in key. Delta vs brightness cluster (synth-native noise-osc air, tape-noise bed, tuned noise layers on drums) and generative drones (pitch-locked noise layers): resonance is imposed on any recording by stacked narrow EQ boosts at the key's root, then the printed result is played chromatically as a sampler pad.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Aqe3ISng8jA",
+    "url": "https://www.youtube.com/watch?v=Aqe3ISng8jA",
+    "title": "How To Make Pads From Noise/Recordings Like Burial | Inspired By...",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Aqe3ISng8jA/agent-skill-noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation.json",
+    "batch": "2026-11-13-morning-hunt"
+  },
+  "prerequisites": [
+    "Two noisy field recordings or noise samples",
+    "Parametric EQ with high Q, a sampler, reverb, delay, compressor with sidechain"
+  ],
+  "inputs": [
+    {
+      "name": "recordings",
+      "type": "audio",
+      "description": "Two noise/ambience recordings (voices, beach, traffic, hiss)",
+      "required": true
+    },
+    {
+      "name": "key_root_hz",
+      "type": "number",
+      "description": "Root frequency, e.g. 440 for A, 220/110 for lower",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Chord progression in that key",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tuned_noise_pad",
+      "type": "audio/sampler",
+      "description": "In-key noise pad playable from MIDI"
+    },
+    {
+      "name": "eq_automation",
+      "type": "automation",
+      "description": "Arrangement lanes bringing noise in/out"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: the source's advanced level ramped the sampler's loop start with a fast 30 Hz LFO, giving random scrubbing and a ramped pitch effect; it is dropped. Keep the sample start fixed and loop with a crossfade (Matt's preference).",
+    "No rapid clicking: very short loop lengths buzz/click, so loop at least a few hundred ms with a crossfade.",
+    "Protect ears: stacked max-gain EQs can ring loudly; lower the track fader before adding each copy and limit the output.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: noise source -> 3-5 series peaking EQs (max Q, max gain at root Hz) -> bounce -> sampler (root = that note) -> amp env -> reverb/delay -> sidechain comp.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Blend sections of two recordings (one with voices/ambience, one with harsh noise), bounce to one clip and raise gain.",
+      "tool": "Audio edit + bounce",
+      "expect": "One noisy source clip"
+    },
+    {
+      "n": 2,
+      "action": "Add an EQ band at the key root (e.g. 440 Hz for A) at maximum Q and maximum gain, with the fader down first.",
+      "tool": "Parametric EQ",
+      "expect": "A faint sine-like tone appears"
+    },
+    {
+      "n": 3,
+      "action": "Duplicate that EQ until the pitch is clearly audible (3 copies, up to ~5 for quiet sources).",
+      "tool": "Series EQs",
+      "expect": "Noise now has a clear key centre"
+    },
+    {
+      "n": 4,
+      "action": "Freeze and flatten (bounce in place) the result.",
+      "tool": "Bounce",
+      "expect": "Printed tuned-noise clip"
+    },
+    {
+      "n": 5,
+      "action": "Load it into a sampler with the root note set to the tuned pitch (A); play chords from MIDI. Speech becomes unintelligible because each key plays at a different rate.",
+      "tool": "Sampler",
+      "expect": "In-key noise chords"
+    },
+    {
+      "n": 6,
+      "action": "Lengthen the amp/filter attack so chords swell, then add reverb and delay to blur leftover details.",
+      "tool": "Envelope + FX",
+      "expect": "Soft, washed pad"
+    },
+    {
+      "n": 7,
+      "action": "Set the sample start a little in and loop a section with a crossfade so every note doesn't begin on the same recognisable spot.",
+      "tool": "Sampler loop + crossfade",
+      "expect": "Smooth sustain without a repeated head"
+    },
+    {
+      "n": 8,
+      "action": "Add a compressor sidechained to the beat (fast attack, eased release) so the pad ducks; automate the EQ over the arrangement (low-passed in some sections, more noise in others).",
+      "tool": "Sidechain comp + EQ automation",
+      "expect": "Organic, in-key texture that breathes with the arrangement"
+    }
+  ],
+  "verification": [
+    "A tuner on the printed clip shows a stable root at the chosen note.",
+    "Chords played from MIDI are audibly in key with the track.",
+    "No clicks at loop points."
+  ],
+  "tags": [
+    "noise",
+    "air",
+    "field-recording",
+    "pad",
+    "sampler",
+    "eq",
+    "brightness",
+    "texture",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation"
+}

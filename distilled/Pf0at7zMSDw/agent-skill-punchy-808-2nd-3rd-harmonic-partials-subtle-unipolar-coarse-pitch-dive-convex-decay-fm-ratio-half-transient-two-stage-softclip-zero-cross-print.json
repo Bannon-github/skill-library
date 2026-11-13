@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print",
+  "name": "Punchy 808 from the source: start with a sine and set character with the 2nd and 3rd harmonic partials (additive/wavetable editor) before any distortion; add punch with a subtle envelope on coarse tune in unipolar mode so the dive ends exactly on the note; design in the key where it sounds best (not forced to C); shape the decay curve (concave = kick-like and dynamic, convex = long sustained 808); add filter drive or tube warp, an FM-from-sine layer at ratio 0.5 (bubbly) or higher (metallic) with its own short envelope for a transient, two soft clippers in series and a limiter; print it and trim/fade to a zero crossing",
+  "goal": "Make a punchy, controllable 808/sub one-shot. Delta vs bass cluster (four bass types incl. punchy 808 with 35 ms pitch punch, interval-aware low end, short kick + ducked subs): harmonic-partial voicing as the main character control, a unipolar endpoint-targeted pitch dive, decay-curve shape as a punch control, and an FM-ratio transient instead of a pitch dive.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Pf0at7zMSDw",
+    "url": "https://www.youtube.com/watch?v=Pf0at7zMSDw",
+    "title": "Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Pf0at7zMSDw/agent-skill-punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print.json",
+    "batch": "2026-11-13-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth with editable partials or a harmonic wavetable editor, mod envelopes with curve control and FM between oscillators",
+    "Soft clipper, limiter, sample editor"
+  ],
+  "inputs": [
+    {
+      "name": "key_note",
+      "type": "string",
+      "description": "Root note the 808 will be designed and printed on",
+      "required": true
+    },
+    {
+      "name": "style",
+      "type": "enum",
+      "description": "kick-like (concave) or long (convex)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "bass_808",
+      "type": "audio",
+      "description": "Printed one-shot with zero-crossing start/end"
+    },
+    {
+      "name": "patch",
+      "type": "preset",
+      "description": "Source patch for re-printing in other keys"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: the coarse-tune dive is a short transient (tens of ms) in unipolar mode ending exactly on the note, never a wobble or slide; the source's pogo/ping-pong pitch modes and long pitch bends are left out (Matt's preference).",
+    "Keep the FM transient soft and low-ratio; avoid metallic clicky ratios on ambient tracks.",
+    "Check level after each saturation stage; stay below clipping before printing.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: sine + partials 2/3 = additive or 3-sine stack; pitch env -> coarse tune; FM osc ratio 0.5 with AD env; soft clip x2 -> limiter.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Initialise a patch to a sine; play the bass line an octave down.",
+      "tool": "Synth",
+      "expect": "Plain sine sub"
+    },
+    {
+      "n": 2,
+      "action": "Open the harmonic/partials editor and raise or lower the 2nd and 3rd harmonics until the 808 has the wanted character (bubbly vs round).",
+      "tool": "Partials editor",
+      "expect": "Character set at the source, no distortion yet"
+    },
+    {
+      "n": 3,
+      "action": "Assign a mod envelope (sustain 0, short decay) to coarse tune, with a gentle curve and small amount; set the routing unipolar so the dive ends exactly on the played note.",
+      "tool": "Mod env -> coarse tune",
+      "expect": "Punch without pitch drifting below the note"
+    },
+    {
+      "n": 4,
+      "action": "Pick the key where the 808 sounds best and design there, then print in that key.",
+      "tool": "Keyboard",
+      "expect": "Best-sounding fundamental"
+    },
+    {
+      "n": 5,
+      "action": "Shape the amp decay curve: concave for a dynamic kick-like 808, convex for a long sustained one; adjust sustain curve so the tail rings out naturally.",
+      "tool": "Amp env curves",
+      "expect": "Punch vs length set by curve"
+    },
+    {
+      "n": 6,
+      "action": "Add saturation: filter drive or a tube warp/distortion mode (one stage at a time), matching level when comparing.",
+      "tool": "Filter drive / tube",
+      "expect": "Rounded harmonics, more perceived punch"
+    },
+    {
+      "n": 7,
+      "action": "Optional transient: enable an FM-from-sine source at ratio 0.5 (lower = bubbly, higher = metallic) with its own short envelope on FM amount, then low-pass to tame highs.",
+      "tool": "FM + envelope",
+      "expect": "Short punch that isn't a pitch dive"
+    },
+    {
+      "n": 8,
+      "action": "Chain two soft clippers (post-gain of the first drives the second), a light EQ and a limiter with saturation off to square off the peak.",
+      "tool": "Soft clip x2 + limiter",
+      "expect": "Dense, controlled 808"
+    },
+    {
+      "n": 9,
+      "action": "Print/record it, fade out the tail, and set any loop or edit points on zero crossings so it doesn't click; save at 32-bit stereo.",
+      "tool": "Sample editor",
+      "expect": "Clean one-shot ready for a sampler"
+    }
+  ],
+  "verification": [
+    "Pitch dive ends on the played note (tuner reads the root after the transient).",
+    "Printed sample starts and ends on zero crossings with no click.",
+    "A/B at matched level shows the partials change, not just loudness, makes the character difference."
+  ],
+  "tags": [
+    "bass",
+    "808",
+    "punch",
+    "harmonics",
+    "pitch-envelope",
+    "fm",
+    "soft-clip",
+    "sub",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print"
+}

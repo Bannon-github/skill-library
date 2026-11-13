@@ -153,3 +153,14 @@ Source: [How to Turn Samples into Synths](https://www.youtube.com/watch?v=HyXvY_
 - Layer a second copy of the sample an octave up (or a different sample), adjust pan and level, and run both through the same filter.
 - Add FX to taste: gentle distortion to thicken, chorus (check phase), a granular layer pitched +12 and reversed for space, and reverb.
 - Optionally resample the result or use the sample as a wavetable/granular source in a synth for further shaping.
+
+### Arp-smear pad: arpeggiate a minor-9 chord (down pattern, long gate) through a grain delay and a delay with reverse, resample it, stretch the audio to double length with pitch-preserving warp, then smear it with a high-wet, high-feedback echo, a spectral freeze retriggered every 1/16 note and an EQ band-limit; plus a feedback-mode distortion on a melodic loop (100% feedback path, dotted 1/2 time, band-pass centred ~3 kHz with its width modulated by a 1-bar LFO) resampled and re-looped for a second melodic element
+Source: [Made in Ableton Live: K. Hart on creative resampling, granular techniques and more](https://www.youtube.com/watch?v=LANPsnGB_yY) · was `arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion`
+- Write a one-chord MIDI clip (A minor 9) into a soft synth; arpeggiator on, down pattern, rate as wanted, a few octave steps, long gate.
+- Add a grain delay (pitch 0) and a delay with reverse repeats after the synth.
+- Resample to a new audio track while adjusting grain-delay spray/frequency by hand.
+- Warp the clip (pitch-preserving mode) and stretch it to double length.
+- Add an echo with high dry/wet and raised feedback so notes smear together.
+- Add a spectral freeze with freeze on and retrigger every 1/16 note to smooth the sound into a sustained pad; then an EQ to confine it to its frequency band.
+- Feedback layer: on a melodic loop, a distortion in feedback routing with 100% blend to the feedback path, feedback amount up, time set to dotted 1/2, feedback band-pass centred ~3 kHz; modulate band-pass width with a 1-bar synced LFO; add light distortion.
+- Resample it, then loop short regions of the recording (e.g. bars 18-22) and move the start point to find new phrases.

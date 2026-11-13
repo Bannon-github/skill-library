@@ -1,0 +1,170 @@
+{
+ "video_id": "dGGMbqe4QYQ",
+ "started_at": "2026-11-13T16:42:16.048581+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "auto-target-original-audio",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": true,
+ "translated": false,
+ "translation_method": null,
+ "domain": "arrangement",
+ "graph": {
+  "video_id": "dGGMbqe4QYQ",
+  "domain": "arrangement",
+  "out": "/workspace/skill-library/raw/dGGMbqe4QYQ/graph.json",
+  "segments": 245,
+  "windows": 40,
+  "nodes": 30,
+  "edges": 26,
+  "nodes_by_type": {
+   "concept": 8,
+   "step": 10,
+   "technique": 2,
+   "phrase": 10
+  },
+  "edges_by_type": {
+   "mentions": 17,
+   "precedes": 9
+  },
+  "words": 1745
+ },
+ "gaps": {
+  "video_id": "dGGMbqe4QYQ",
+  "graph_nodes": 30,
+  "graph_edges": 26,
+  "terms_checked": 20,
+  "terms_covered": 1,
+  "gap_nodes": 19,
+  "gap_nodes_excl_phrases": 10,
+  "relations_checked": 0,
+  "gap_edges": 0,
+  "candidates": 1,
+  "kg": {
+   "videos": 291,
+   "nodes": 1447,
+   "edges": 412,
+   "uncovered_nodes": 25,
+   "uncovered_edges": 151
+  },
+  "candidate_ids": [
+   "arrangement-drop-phrase-tension-release-0-41"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:transition",
+    "thin procedure evidence (1 items) and best single-skill topic profile 0.0 < 0.8"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 1,
+   "uncovered_techniques": [
+    "technique:transition"
+   ],
+   "video_novelty": 0.065,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "auto-target-original-audio",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 1752,
+    "music_markers": 7
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "arrangement",
+    "scores": {
+     "arrangement": 50,
+     "blender": 2,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 9,
+     "synth": 19
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 30,
+    "edges": 26
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 10,
+    "gap_edges": 0,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:transition",
+      "thin procedure evidence (1 items) and best single-skill topic profile 0.0 < 0.8"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 1,
+     "uncovered_techniques": [
+      "technique:transition"
+     ],
+     "video_novelty": 0.065,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-11-13T16:42:16.261644+00:00"
+}

@@ -86,6 +86,12 @@
         "video_id": "HyXvY_PXI9Q",
         "url": "https://www.youtube.com/watch?v=HyXvY_PXI9Q",
         "title": "How to Turn Samples into Synths"
+      },
+      {
+        "from_skill": "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion",
+        "video_id": "LANPsnGB_yY",
+        "url": "https://www.youtube.com/watch?v=LANPsnGB_yY",
+        "title": "Made in Ableton Live: K. Hart on creative resampling, granular techniques and more"
       }
     ]
   },
@@ -370,6 +376,21 @@
         "Add FX to taste: gentle distortion to thicken, chorus (check phase), a granular layer pitched +12 and reversed for space, and reverb.",
         "Optionally resample the result or use the sample as a wavetable/granular source in a synth for further shaping."
       ]
+    },
+    {
+      "from_skill": "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion",
+      "name": "Arp-smear pad: arpeggiate a minor-9 chord (down pattern, long gate) through a grain delay and a delay with reverse, resample it, stretch the audio to double length with pitch-preserving warp, then smear it with a high-wet, high-feedback echo, a spectral freeze retriggered every 1/16 note and an EQ band-limit; plus a feedback-mode distortion on a melodic loop (100% feedback path, dotted 1/2 time, band-pass centred ~3 kHz with its width modulated by a 1-bar LFO) resampled and re-looped for a second melodic element",
+      "goal": "Turn a simple arpeggio into a lush background pad, and a static loop into a moving melodic layer, by resampling. Delta vs granular cluster (live rolling-buffer granular, sample-to-synth keygroup, sampler loop chord pad): the source is an arpeggiated chord, smoothed into a pad by stretch + echo + retriggered spectral freeze, not a granular cloud from a sample.",
+      "steps": [
+        "Write a one-chord MIDI clip (A minor 9) into a soft synth; arpeggiator on, down pattern, rate as wanted, a few octave steps, long gate.",
+        "Add a grain delay (pitch 0) and a delay with reverse repeats after the synth.",
+        "Resample to a new audio track while adjusting grain-delay spray/frequency by hand.",
+        "Warp the clip (pitch-preserving mode) and stretch it to double length.",
+        "Add an echo with high dry/wet and raised feedback so notes smear together.",
+        "Add a spectral freeze with freeze on and retrigger every 1/16 note to smooth the sound into a sustained pad; then an EQ to confine it to its frequency band.",
+        "Feedback layer: on a melodic loop, a distortion in feedback routing with 100% blend to the feedback path, feedback amount up, time set to dotted 1/2, feedback band-pass centred ~3 kHz; modulate band-pass width with a 1-bar synced LFO; add light distortion.",
+        "Resample it, then loop short regions of the recording (e.g. bars 18-22) and move the start point to find new phrases."
+      ]
     }
   ],
   "merged_from": [
@@ -385,7 +406,8 @@
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "sampler-loop-chord-scrub-parallel-harmony-pad",
-    "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular"
+    "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular",
+    "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion"
   ],
   "tags": [
     "ambient",
@@ -436,6 +458,7 @@
     "stereo-unlinked-micro-loop-buffer-binary-random-freeze-reverse-cross-feedback",
     "three-pillar-drone-wt-feedback-loop-granular-filter-before-shimmer",
     "sampler-loop-chord-scrub-parallel-harmony-pad",
-    "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular"
+    "sample-to-synth-keygroup-mono-lowpass-env-pluck-resonance-square-lfo-steps-octave-layer-through-one-filter-reversed-octave-granular",
+    "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion"
   ]
 }

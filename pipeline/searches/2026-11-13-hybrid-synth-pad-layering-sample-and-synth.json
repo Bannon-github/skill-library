@@ -1,0 +1,106 @@
+{
+ "topic": "hybrid synth pad layering sample and synth",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "hybrid synth pad layering sample and synth",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "LlLCnbt61Hk",
+   "title": "How To Layer Synths Like Illenium / ODESZA / Porter Robinson (Serum Tutorial)",
+   "channel": "SynthHacker",
+   "duration": 897,
+   "view_count": 155200,
+   "url": "https://www.youtube.com/watch?v=LlLCnbt61Hk",
+   "query": "hybrid synth pad layering sample and synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.1
+  },
+  {
+   "id": "LuU3JgmAQvQ",
+   "title": "Tutorials | MicroFreak - Episode 4: Sequencer",
+   "channel": "Arturia",
+   "duration": 386,
+   "view_count": 200953,
+   "url": "https://www.youtube.com/watch?v=LuU3JgmAQvQ",
+   "query": "hybrid synth pad layering sample and synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.15
+  },
+  {
+   "id": "7rj31n2kC-o",
+   "title": "Cloudy Samples - Ethesia | VST3/AU | Sampler Synthesizer Instrument | Overview",
+   "channel": "Cloudy Samples",
+   "duration": 746,
+   "view_count": 1944,
+   "url": "https://www.youtube.com/watch?v=7rj31n2kC-o",
+   "query": "hybrid synth pad layering sample and synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.14
+  },
+  {
+   "id": "6AbG3ODhhVQ",
+   "title": "Pad Motion Layers Patch Walkthrough",
+   "channel": "Sample Fuel",
+   "duration": 1291,
+   "view_count": 1548,
+   "url": "https://www.youtube.com/watch?v=6AbG3ODhhVQ",
+   "query": "hybrid synth pad layering sample and synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.1
+  },
+  {
+   "id": "YJJ-MXZ5Ht0",
+   "title": "Pad Motion Layers Simple Page",
+   "channel": "Sample Fuel",
+   "duration": 364,
+   "view_count": 468,
+   "url": "https://www.youtube.com/watch?v=YJJ-MXZ5Ht0",
+   "query": "hybrid synth pad layering sample and synth tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.84
+  }
+ ],
+ "dropped": [
+  {
+   "id": "HyXvY_PXI9Q",
+   "why": "already known"
+  },
+  {
+   "id": "u4tg0u-THS8",
+   "why": "already known"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "pokp-BVqHu4",
+   "why": "duration 123s"
+  },
+  {
+   "id": "ZxXtoEEcK3w",
+   "why": "duration 75s"
+  },
+  {
+   "id": "7rkCRtUscZw",
+   "why": "duration 87s"
+  },
+  {
+   "id": "m6wfGX7rwiQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

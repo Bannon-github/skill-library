@@ -68,6 +68,12 @@
         "video_id": "6x1_XZDcI8I",
         "url": "https://www.youtube.com/watch?v=6x1_XZDcI8I",
         "title": "How I Arranged Hypnotic Techno Track – Arrangement Breakdown"
+      },
+      {
+        "from_skill": "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
+        "video_id": "dGGMbqe4QYQ",
+        "url": "https://www.youtube.com/watch?v=dGGMbqe4QYQ",
+        "title": "How to climax in electronic music"
       }
     ]
   },
@@ -318,6 +324,21 @@
         "Before drops, filter-automate the top end down then bring high-end noise back for contrast. Add a sparse FX hit (a few hat notes into a high-feedback delay with filter modulation) at some phrase starts, not all.",
         "Listen through and remove any element that steals attention from the drone; export and check on different systems."
       ]
+    },
+    {
+      "from_skill": "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
+      "name": "Four climax/break structures for 8-bar phrased tracks: (1) committed turnaround, where the last part of an 8-bar loop is cut and deconstructed before the next section restarts; (2) linear rise, an 8-bar section with most elements removed that only builds (filters open, decay/release and reverb/delay times lengthen, new layers enter) until the full section returns; (3) trilogy break: fall (strip chords/rhythm to a few disorienting elements, optionally introduce a new chord progression), rise (percussion and opening filters build), hang (withhold the expected return for a bar with one unique phrase, then return); (4) double trilogy, where a long fall/rise is followed by a short fall/rise inside the same break",
+      "goal": "Give ambient/cinematic and electronic tracks deliberate build/breakdown shapes. Delta vs arrangement-loop-to-song cluster (8-bar build template, breakdown after a drop, rule of three, no-riser transitions): a named vocabulary of four break shapes with an energy curve for each, the 'hang' withholding trick, and the rule to insert hang time last so the grid stays intact while arranging.",
+      "steps": [
+        "Phrase the track in 8-bar loops and mark section boundaries.",
+        "Committed turnaround: at the end of an 8-bar loop, cut the last bar or two of the loop and deconstruct it (drop elements, filter or reverb-throw what remains), then restart the next section; swap a couple of elements in or out at that point.",
+        "Linear rise: take an 8-bar section, remove most elements, then from the moment of removal build continuously: open low-pass filters, lengthen decay/release, raise reverb/delay time and send, and bring in new sustained layers or a noise sweep, so energy releases when the full section returns.",
+        "Trilogy break, chapter 1 (fall): coming out of a full section, remove chords and most rhythm, leaving a few elements; hold 4-8 bars. Optionally introduce a new chord progression here, kept low in energy.",
+        "Chapter 2 (rise): 4-8 bars of building: percussion returns, filters open, sustained layers and noise sweeps enter.",
+        "Chapter 3 (hang): where the full section would return, withhold it for about a bar with one unique element (a single pad swell, chord or phrase), then bring the full section back.",
+        "Double trilogy: inside one break, do a long fall + rise, then where the return is expected do a second, shorter fall + rise before the section comes back (filters can bring percussion back in).",
+        "When the arrangement is otherwise finished, insert the hang bar(s) with insert-time so everything after shifts together."
+      ]
     }
   ],
   "merged_from": [
@@ -330,7 +351,8 @@
     "three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in",
     "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
     "ambient-loop-to-track-arp-rate-energy",
-    "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break"
+    "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
+    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last"
   ],
   "tags": [
     "8-bar-phrase",
@@ -378,6 +400,7 @@
     "three-riser-free-transitions-solo-lead-pad-filter-down-drop-clap-on-beat-no-kick-hp-bass-single-tom-hit-strip-to-hats-tease-lead-variations-short-fill-all-in",
     "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
     "ambient-loop-to-track-arp-rate-energy",
-    "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break"
+    "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
+    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last"
   ]
 }

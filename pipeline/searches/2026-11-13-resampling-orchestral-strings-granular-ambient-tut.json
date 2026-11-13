@@ -1,0 +1,113 @@
+{
+ "topic": "resampling orchestral strings granular ambient tutorial",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "resampling orchestral strings granular ambient tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "-gnAMoyi_AU",
+   "title": "How I layering and resampling botanica sound(sound design tutorial)",
+   "channel": "yunika",
+   "duration": 351,
+   "view_count": 9081,
+   "url": "https://www.youtube.com/watch?v=-gnAMoyi_AU",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.48
+  },
+  {
+   "id": "LANPsnGB_yY",
+   "title": "Made in Ableton Live: K. Hart on creative resampling, granular techniques and adding life to MIDI",
+   "channel": "Ableton",
+   "duration": 1451,
+   "view_count": 78372,
+   "url": "https://www.youtube.com/watch?v=LANPsnGB_yY",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.95
+  },
+  {
+   "id": "z9jq7YM-QXA",
+   "title": "Tempera Granular Instrument: Demo and Walkthrough",
+   "channel": "Red Means Recording",
+   "duration": 2565,
+   "view_count": 52165,
+   "url": "https://www.youtube.com/watch?v=z9jq7YM-QXA",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36
+  },
+  {
+   "id": "PEB5pkHjVeo",
+   "title": "Two Excellent FREE Granular Plugins You Should Know About",
+   "channel": "Venus Theory",
+   "duration": 493,
+   "view_count": 219296,
+   "url": "https://www.youtube.com/watch?v=PEB5pkHjVeo",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.17
+  },
+  {
+   "id": "7axJ6AK52KM",
+   "title": "(Padshop) Granular Strings plus Einführung",
+   "channel": "Online Music Foundry",
+   "duration": 420,
+   "view_count": 177,
+   "url": "https://www.youtube.com/watch?v=7axJ6AK52KM",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.63
+  },
+  {
+   "id": "96yrn_-KoYg",
+   "title": "Fantasie for Bass, granular Sample and violin",
+   "channel": "Arnd Dolge",
+   "duration": 243,
+   "view_count": 532,
+   "url": "https://www.youtube.com/watch?v=96yrn_-KoYg",
+   "query": "resampling orchestral strings granular ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.36
+  }
+ ],
+ "dropped": [
+  {
+   "id": "3q-o772IYQY",
+   "why": "already known"
+  },
+  {
+   "id": "vf69IdKBhwU",
+   "why": "duration 51s"
+  },
+  {
+   "id": "zp6_UadcW7c",
+   "why": "duration 177s"
+  },
+  {
+   "id": "9JCz9KDeHac",
+   "why": "duration 129s"
+  },
+  {
+   "id": "hAlXKasxd44",
+   "why": "duration 39s"
+  },
+  {
+   "id": "5Q63Nlaohw0",
+   "why": "duration 206s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

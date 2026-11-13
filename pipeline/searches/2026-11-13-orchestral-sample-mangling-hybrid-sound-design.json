@@ -1,0 +1,113 @@
+{
+ "topic": "orchestral sample mangling hybrid sound design",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "orchestral sample mangling hybrid sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "iynvuZf64Jo",
+   "title": "How to: High Strings for Deep House, Selected-Style, EDM Sound Design Tutorial",
+   "channel": "Sam Smyers",
+   "duration": 482,
+   "view_count": 15605,
+   "url": "https://www.youtube.com/watch?v=iynvuZf64Jo",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.6
+  },
+  {
+   "id": "2aVfWL1ybJs",
+   "title": "Octatrack Private Lessons Revealed: Sample Mangling For Beginners",
+   "channel": "EZBOT",
+   "duration": 1649,
+   "view_count": 48779,
+   "url": "https://www.youtube.com/watch?v=2aVfWL1ybJs",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.84
+  },
+  {
+   "id": "ruJmFNJ6VEA",
+   "title": "Roland SP-404 mk2 Experimental Sound Design Tutorial",
+   "channel": "Sonic Curtain",
+   "duration": 510,
+   "view_count": 3869,
+   "url": "https://www.youtube.com/watch?v=ruJmFNJ6VEA",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.29
+  },
+  {
+   "id": "tzfzkTAQsnE",
+   "title": "3 Sound Design Secrets That Feel Like CHEATING",
+   "channel": "Herman Huang",
+   "duration": 442,
+   "view_count": 1086179,
+   "url": "https://www.youtube.com/watch?v=tzfzkTAQsnE",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "vKKfxcMriCA",
+   "title": "30-sec sound design from one source sound (breakdown) — Dune UI animation by RA — Jeremy Scott Olsen",
+   "channel": "Jeremy Scott Olsen  |  music + sound",
+   "duration": 1340,
+   "view_count": 114,
+   "url": "https://www.youtube.com/watch?v=vKKfxcMriCA",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.53
+  },
+  {
+   "id": "MlEt2outpJY",
+   "title": "Quick Tip - Mummy I F&%*ed The Orchestra",
+   "channel": "Spitfire Audio",
+   "duration": 263,
+   "view_count": 4842,
+   "url": "https://www.youtube.com/watch?v=MlEt2outpJY",
+   "query": "orchestral sample mangling hybrid sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.84
+  }
+ ],
+ "dropped": [
+  {
+   "id": "lLHqyEYqbCM",
+   "why": "negative title signal"
+  },
+  {
+   "id": "PMRqKsx3KQc",
+   "why": "duration 126s"
+  },
+  {
+   "id": "IK7cIBPKM1s",
+   "why": "already known"
+  },
+  {
+   "id": "ShNJYJAH5O8",
+   "why": "duration 236s"
+  },
+  {
+   "id": "HpSC2SFb9E4",
+   "why": "already known"
+  },
+  {
+   "id": "e-y_F4sv6fA",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

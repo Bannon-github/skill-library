@@ -1,0 +1,106 @@
+{
+ "topic": "automating binaural beat frequency over time ableton",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "automating binaural beat frequency over time ableton",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "kzkDoBupXKM",
+   "title": "How to create alpha binaural beats in Logic Pro",
+   "channel": "originalvonster",
+   "duration": 764,
+   "view_count": 996,
+   "url": "https://www.youtube.com/watch?v=kzkDoBupXKM",
+   "query": "automating binaural beat frequency over time ableton tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "_VB-CMv50So",
+   "title": "Tutorial - How To Record Audio From Harmonal Binaurics",
+   "channel": "Faded Instruments",
+   "duration": 336,
+   "view_count": 688,
+   "url": "https://www.youtube.com/watch?v=_VB-CMv50So",
+   "query": "automating binaural beat frequency over time ableton tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.92
+  },
+  {
+   "id": "FfTssBdaJEc",
+   "title": "Endorphin Release & Frequencies Sync Effect - binauralBeatsHarmonics",
+   "channel": "Binaural Beats Ascension",
+   "duration": 934,
+   "view_count": 1411,
+   "url": "https://www.youtube.com/watch?v=FfTssBdaJEc",
+   "query": "automating binaural beat frequency over time ableton tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.07
+  },
+  {
+   "id": "PO8LnVrpHU4",
+   "title": "Equalisation - Ableton Live 9 Hour Video Course - Module 3 / Part 2",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 698,
+   "view_count": 2451,
+   "url": "https://www.youtube.com/watch?v=PO8LnVrpHU4",
+   "query": "automating binaural beat frequency over time ableton tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.19
+  },
+  {
+   "id": "dMJ3b5RHENI",
+   "title": "Ableton M4L Amp Modulator",
+   "channel": "Akihiko Matsumoto",
+   "duration": 693,
+   "view_count": 1731,
+   "url": "https://www.youtube.com/watch?v=dMJ3b5RHENI",
+   "query": "automating binaural beat frequency over time ableton tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.12
+  }
+ ],
+ "dropped": [
+  {
+   "id": "gaykd6kuBhU",
+   "why": "already known"
+  },
+  {
+   "id": "WNewLv-kI2I",
+   "why": "already known"
+  },
+  {
+   "id": "GndBM5EifHA",
+   "why": "already known"
+  },
+  {
+   "id": "64H_K7rosSo",
+   "why": "already known"
+  },
+  {
+   "id": "_vG3HYmyBuI",
+   "why": "duration 149s"
+  },
+  {
+   "id": "Pd28UMiGoBI",
+   "why": "already known"
+  },
+  {
+   "id": "Joq1JYsKX9M",
+   "why": "duration 113s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

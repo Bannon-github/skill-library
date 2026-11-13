@@ -1,0 +1,92 @@
+{
+ "topic": "add noise to synth pad for air and texture",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "add noise to synth pad for air and texture",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "2ykDKH9jnQI",
+   "title": "How To Make Pro Atmosphere For House Music!",
+   "channel": "Big Z",
+   "duration": 367,
+   "view_count": 52042,
+   "url": "https://www.youtube.com/watch?v=2ykDKH9jnQI",
+   "query": "add noise to synth pad for air and texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.86
+  },
+  {
+   "id": "WxK8rUl_qnU",
+   "title": "how platinum producers add texture to their music",
+   "channel": "Drew Grit",
+   "duration": 328,
+   "view_count": 406959,
+   "url": "https://www.youtube.com/watch?v=WxK8rUl_qnU",
+   "query": "add noise to synth pad for air and texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.3
+  },
+  {
+   "id": "4fDLsJOP2MM",
+   "title": "Make ambient texture clouds from field recordings",
+   "channel": "Department of Inspirado",
+   "duration": 317,
+   "view_count": 18606,
+   "url": "https://www.youtube.com/watch?v=4fDLsJOP2MM",
+   "query": "add noise to synth pad for air and texture tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.63
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ySjZQ697Mt0",
+   "why": "already known"
+  },
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "-Xbzagyk-m4",
+   "why": "duration 135s"
+  },
+  {
+   "id": "pQFr594QwI4",
+   "why": "already known"
+  },
+  {
+   "id": "M0dpfmm5rxQ",
+   "why": "duration 164s"
+  },
+  {
+   "id": "lR3FbYzwgZw",
+   "why": "already known"
+  },
+  {
+   "id": "SM_zlvRIclQ",
+   "why": "duration 217s"
+  },
+  {
+   "id": "IbH6iL2bhFg",
+   "why": "duration 189s"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

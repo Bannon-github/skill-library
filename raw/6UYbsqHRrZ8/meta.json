@@ -1,0 +1,46 @@
+{
+  "video_id": "6UYbsqHRrZ8",
+  "title": "Lesson 39: Crafting the Outro: How To Close Out Your Track",
+  "url": "https://www.youtube.com/watch?v=6UYbsqHRrZ8",
+  "fetched_at": "2026-11-13T16:36:29.723660+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Raveyard Sounds",
+  "duration": 659,
+  "ok": true,
+  "cue_count": 146,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/6UYbsqHRrZ8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/6UYbsqHRrZ8/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

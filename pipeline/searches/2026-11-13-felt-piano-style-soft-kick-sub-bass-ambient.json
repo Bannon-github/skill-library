@@ -1,0 +1,85 @@
+{
+ "topic": "felt piano style soft kick sub bass ambient",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "felt piano style soft kick sub bass ambient",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "AMSLWvb2dGU",
+   "title": "[Spire & Viper] Rhode Piano & Yamaha DX7 Style Electric Pianos Made With Soft Synths",
+   "channel": "Eyezer Productionz | Synths & Audio",
+   "duration": 247,
+   "view_count": 250,
+   "url": "https://www.youtube.com/watch?v=AMSLWvb2dGU",
+   "query": "felt piano style soft kick sub bass ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.2
+  },
+  {
+   "id": "FlbAzM5w0bs",
+   "title": "u-he Diva Masterclass: House Music Sound Design from Scratch",
+   "channel": "Olean's House",
+   "duration": 2404,
+   "view_count": 24101,
+   "url": "https://www.youtube.com/watch?v=FlbAzM5w0bs",
+   "query": "felt piano style soft kick sub bass ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.19
+  }
+ ],
+ "dropped": [
+  {
+   "id": "EUL9cxS3uVw",
+   "why": "duration 194s"
+  },
+  {
+   "id": "fNUyTthNnGk",
+   "why": "duration 145s"
+  },
+  {
+   "id": "4F4lkPhJzLM",
+   "why": "duration 192s"
+  },
+  {
+   "id": "3JIC8emVBDo",
+   "why": "duration 174s"
+  },
+  {
+   "id": "5btxe5-Yu60",
+   "why": "duration 180s"
+  },
+  {
+   "id": "JPYt10zrclQ",
+   "why": "duration 214s"
+  },
+  {
+   "id": "9A6yjlBj2JM",
+   "why": "duration 47s"
+  },
+  {
+   "id": "kd7KC3PaEaA",
+   "why": "duration 43s"
+  },
+  {
+   "id": "Un1DpMMP-zc",
+   "why": "duration 141s"
+  },
+  {
+   "id": "f0tB5QDke5c",
+   "why": "duration 172s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

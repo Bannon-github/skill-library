@@ -1,0 +1,194 @@
+{
+ "video_id": "LANPsnGB_yY",
+ "started_at": "2026-11-13T16:42:16.928739+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "ytdlp-target",
+ "language_code": "en",
+ "original_language": "en-US",
+ "is_generated": null,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "LANPsnGB_yY",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/LANPsnGB_yY/graph.json",
+  "segments": 32,
+  "windows": 32,
+  "nodes": 87,
+  "edges": 159,
+  "nodes_by_type": {
+   "tool": 2,
+   "module": 19,
+   "concept": 11,
+   "param": 12,
+   "step": 21,
+   "technique": 7,
+   "value": 4,
+   "phrase": 11
+  },
+  "edges_by_type": {
+   "part-of": 23,
+   "mentions": 112,
+   "precedes": 20,
+   "sets": 4
+  },
+  "words": 3970
+ },
+ "gaps": {
+  "video_id": "LANPsnGB_yY",
+  "graph_nodes": 87,
+  "graph_edges": 159,
+  "terms_checked": 62,
+  "terms_covered": 5,
+  "gap_nodes": 57,
+  "gap_nodes_excl_phrases": 51,
+  "relations_checked": 4,
+  "gap_edges": 4,
+  "candidates": 1,
+  "kg": {
+   "videos": 295,
+   "nodes": 1475,
+   "edges": 422,
+   "uncovered_nodes": 25,
+   "uncovered_edges": 159
+  },
+  "candidate_ids": [
+   "synth-delay-saturation-devices-filter-0-17"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "uncovered techniques: technique:resampling, technique:spectral, technique:saturation_devices, technique:sidechain",
+    "best single-skill procedure overlap 0.0 < 0.5"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 9,
+   "uncovered_techniques": [
+    "technique:resampling",
+    "technique:spectral",
+    "technique:saturation_devices",
+    "technique:sidechain"
+   ],
+   "video_novelty": 0.024,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "ytdlp-target",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 3997,
+    "music_markers": 18
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "arrangement": 29,
+     "blender": 7,
+     "crypto": 1,
+     "drone": 2,
+     "sidehustle": 8,
+     "synth": 170
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 87,
+    "edges": 159
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 51,
+    "gap_edges": 4,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "uncovered techniques: technique:resampling, technique:spectral, technique:saturation_devices, technique:sidechain",
+      "best single-skill procedure overlap 0.0 < 0.5"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 9,
+     "uncovered_techniques": [
+      "technique:resampling",
+      "technique:spectral",
+      "technique:saturation_devices",
+      "technique:sidechain"
+     ],
+     "video_novelty": 0.024,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en-US"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en",
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "1:manual-target:en",
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch manual-target (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "yt-dlp fallback (en.*,en,.*-orig)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-11-13T16:42:17.172916+00:00"
+}

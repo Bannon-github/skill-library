@@ -1,0 +1,109 @@
+{
+ "topic": "ambient loops from field recordings and synths tutorial",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "ambient loops from field recordings and synths tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Aqe3ISng8jA",
+   "title": "How To Make Pads From Noise/Recordings Like Burial | Inspired By...",
+   "channel": "Will Hatton",
+   "duration": 739,
+   "view_count": 118371,
+   "url": "https://www.youtube.com/watch?v=Aqe3ISng8jA",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.04
+  },
+  {
+   "id": "4fDLsJOP2MM",
+   "title": "Make ambient texture clouds from field recordings",
+   "channel": "Department of Inspirado",
+   "duration": 317,
+   "view_count": 18606,
+   "url": "https://www.youtube.com/watch?v=4fDLsJOP2MM",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.63
+  },
+  {
+   "id": "dhgrrIrfViU",
+   "title": "Creating Ambient Music With Field Recordings | Thomann",
+   "channel": "Voltage Labs",
+   "duration": 722,
+   "view_count": 122652,
+   "url": "https://www.youtube.com/watch?v=dhgrrIrfViU",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.04
+  },
+  {
+   "id": "Cx8mEhPdtB4",
+   "title": "Make Ambient Like LOSCIL: Field Recordings to Floating Pads",
+   "channel": "S1gns Of L1fe",
+   "duration": 1584,
+   "view_count": 9810,
+   "url": "https://www.youtube.com/watch?v=Cx8mEhPdtB4",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "n0iWo5wZSsQ",
+   "title": "From Field Recording ---- To Ambient Music",
+   "channel": "Elektrische Heimat",
+   "duration": 569,
+   "view_count": 2290,
+   "url": "https://www.youtube.com/watch?v=n0iWo5wZSsQ",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.18
+  },
+  {
+   "id": "vppdU0zIDFI",
+   "title": "Create you own keyboard sounds using field recordings and Ableton's Sampler",
+   "channel": "Sebastián Barahona - Sound Epiphany (Sound Epiphany)",
+   "duration": 571,
+   "view_count": 1487,
+   "url": "https://www.youtube.com/watch?v=vppdU0zIDFI",
+   "query": "ambient loops from field recordings and synths tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.09
+  }
+ ],
+ "dropped": [
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "tbMIVusd3zY",
+   "why": "already known"
+  },
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "8f-nfTn3rms",
+   "why": "duration 214s"
+  },
+  {
+   "id": "YDMHusGRYvs",
+   "why": "duration 186s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

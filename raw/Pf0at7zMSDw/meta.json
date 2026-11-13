@@ -1,0 +1,46 @@
+{
+  "video_id": "Pf0at7zMSDw",
+  "title": "Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW",
+  "url": "https://www.youtube.com/watch?v=Pf0at7zMSDw",
+  "fetched_at": "2026-11-13T16:41:21.364705+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Busy Works Beats",
+  "duration": 963,
+  "ok": true,
+  "cue_count": 182,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-US",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Pf0at7zMSDw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Pf0at7zMSDw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en-US"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "1:manual-target:en-US"
+      ]
+    },
+    {
+      "q": "fetch manual-target (en-US)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

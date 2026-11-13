@@ -1,0 +1,113 @@
+{
+ "topic": "stereo width pads mid side ambient tutorial",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "stereo width pads mid side ambient tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Pc10zrXK4C8",
+   "title": "[Sound Design] How to get HUGE stereo for leads and pads",
+   "channel": "NeZvers",
+   "duration": 425,
+   "view_count": 699,
+   "url": "https://www.youtube.com/watch?v=Pc10zrXK4C8",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.92
+  },
+  {
+   "id": "uDXK1BEaB3s",
+   "title": "How To Mix Pads - Making Pads Sound Huge",
+   "channel": "LifeStyleDidIt",
+   "duration": 709,
+   "view_count": 27505,
+   "url": "https://www.youtube.com/watch?v=uDXK1BEaB3s",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.72
+  },
+  {
+   "id": "yiF_cUEtMdY",
+   "title": "What most people get WRONG about MIXING in MID SIDE (M/S)",
+   "channel": "Raytown Productions",
+   "duration": 368,
+   "view_count": 20899,
+   "url": "https://www.youtube.com/watch?v=yiF_cUEtMdY",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.66
+  },
+  {
+   "id": "XU7sWoTJEtE",
+   "title": "AVOID these mistakes when mixing ambient music!",
+   "channel": "Holosuite Mastering",
+   "duration": 312,
+   "view_count": 11411,
+   "url": "https://www.youtube.com/watch?v=XU7sWoTJEtE",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.53
+  },
+  {
+   "id": "eK5NGFH_Cg4",
+   "title": "You’ve Been Doing It Wrong…HOW TO PAN (the correct way)",
+   "channel": "TheCosmicAcademy",
+   "duration": 276,
+   "view_count": 106407,
+   "url": "https://www.youtube.com/watch?v=eK5NGFH_Cg4",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51
+  },
+  {
+   "id": "vqxibp_zN80",
+   "title": "Use The Trick To Widen Your Pads │ SoundOracle.net",
+   "channel": "SoundOracle",
+   "duration": 293,
+   "view_count": 3712,
+   "url": "https://www.youtube.com/watch?v=vqxibp_zN80",
+   "query": "stereo width pads mid side ambient tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.78
+  }
+ ],
+ "dropped": [
+  {
+   "id": "kEiILPm1VSc",
+   "why": "already known"
+  },
+  {
+   "id": "0sEyZymchTE",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "zjRTE41iu7s",
+   "why": "already known"
+  },
+  {
+   "id": "8DQeE3WUKEI",
+   "why": "negative title signal"
+  },
+  {
+   "id": "wPunIIyNT8w",
+   "why": "duration 76s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

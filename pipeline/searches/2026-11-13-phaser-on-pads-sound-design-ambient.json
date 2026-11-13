@@ -1,0 +1,106 @@
+{
+ "topic": "phaser on pads sound design ambient",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "phaser on pads sound design ambient",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "fX2AIWvsX3E",
+   "title": "How to make Reso Pads using Harmor (+ Colour Bass)",
+   "channel": "Llovió",
+   "duration": 863,
+   "view_count": 4788,
+   "url": "https://www.youtube.com/watch?v=fX2AIWvsX3E",
+   "query": "phaser on pads sound design ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.34
+  },
+  {
+   "id": "cvu2YhN_QJk",
+   "title": "(Easy) How to Make Ambient Drum and Bass",
+   "channel": "Jack Canada",
+   "duration": 626,
+   "view_count": 869,
+   "url": "https://www.youtube.com/watch?v=cvu2YhN_QJk",
+   "query": "phaser on pads sound design ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.97
+  },
+  {
+   "id": "BiZh0BrLDdQ",
+   "title": "Kinesis (Soundset for Hive 2) Walkthrough Pt. 4: Pads",
+   "channel": "u-he",
+   "duration": 2364,
+   "view_count": 4058,
+   "url": "https://www.youtube.com/watch?v=BiZh0BrLDdQ",
+   "query": "phaser on pads sound design ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.8
+  },
+  {
+   "id": "NQWiDznUlME",
+   "title": "Massive Tutorial - Stars Glow Pad (FHS-003)",
+   "channel": "Farmhouse",
+   "duration": 576,
+   "view_count": 1412,
+   "url": "https://www.youtube.com/watch?v=NQWiDznUlME",
+   "query": "phaser on pads sound design ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.08
+  },
+  {
+   "id": "9tG67QpFmCs",
+   "title": "making 20 PhasePlant patches in 40 minutes (with download)",
+   "channel": "Virtual Riot",
+   "duration": 2475,
+   "view_count": 67562,
+   "url": "https://www.youtube.com/watch?v=9tG67QpFmCs",
+   "query": "phaser on pads sound design ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.41
+  }
+ ],
+ "dropped": [
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "cR23JfH_33U",
+   "why": "already known"
+  },
+  {
+   "id": "ZaBH_O4DUr8",
+   "why": "duration 62s"
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "why": "already known"
+  },
+  {
+   "id": "uI74d3nDC8I",
+   "why": "already known"
+  },
+  {
+   "id": "TbqMvaZ905Y",
+   "why": "duration 232s"
+  },
+  {
+   "id": "wdpVw9v4zu0",
+   "why": "duration 133s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

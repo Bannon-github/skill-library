@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion",
+  "name": "Arp-smear pad: arpeggiate a minor-9 chord (down pattern, long gate) through a grain delay and a delay with reverse, resample it, stretch the audio to double length with pitch-preserving warp, then smear it with a high-wet, high-feedback echo, a spectral freeze retriggered every 1/16 note and an EQ band-limit; plus a feedback-mode distortion on a melodic loop (100% feedback path, dotted 1/2 time, band-pass centred ~3 kHz with its width modulated by a 1-bar LFO) resampled and re-looped for a second melodic element",
+  "goal": "Turn a simple arpeggio into a lush background pad, and a static loop into a moving melodic layer, by resampling. Delta vs granular cluster (live rolling-buffer granular, sample-to-synth keygroup, sampler loop chord pad): the source is an arpeggiated chord, smoothed into a pad by stretch + echo + retriggered spectral freeze, not a granular cloud from a sample.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "LANPsnGB_yY",
+    "url": "https://www.youtube.com/watch?v=LANPsnGB_yY",
+    "title": "Made in Ableton Live: K. Hart on creative resampling, granular techniques and more",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/LANPsnGB_yY/agent-skill-arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion.json",
+    "batch": "2026-11-13-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth and arpeggiator, a grain delay, a delay, an echo with feedback, a spectral freeze/time effect (or a freeze reverb), an EQ",
+    "A distortion or delay with a filtered feedback path"
+  ],
+  "inputs": [
+    {
+      "name": "chord",
+      "type": "midi",
+      "description": "e.g. A minor 9",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Track tempo",
+      "required": true
+    },
+    {
+      "name": "loop",
+      "type": "audio",
+      "description": "Optional melodic loop for the feedback layer",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "arp_smear_pad",
+      "type": "audio",
+      "description": "Resampled, stretched, frozen pad clip"
+    },
+    {
+      "name": "feedback_loop_layer",
+      "type": "audio",
+      "description": "Resampled feedback-band-pass melodic clip"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: grain delay pitch and pitch-randomness at 0, warp mode must preserve pitch when stretching; the source's random MIDI generator, random hat velocity, random panning and 255 ms bass glide are dropped (Matt's preference).",
+    "Spectral freeze retrigger at 1/16 must sound smooth (crossfaded), not like a clicking stutter; if it clicks, retrigger every 1/4 or 1/2 bar instead.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: arp -> grain/granular delay -> resample -> time-stretch x2 -> feedback delay -> freeze buffer retriggered on a clock -> band EQ; feedback layer = delay line with band-pass in the loop, LFO on its Q.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write a one-chord MIDI clip (A minor 9) into a soft synth; arpeggiator on, down pattern, rate as wanted, a few octave steps, long gate.",
+      "tool": "Arpeggiator",
+      "expect": "Flowing arpeggio"
+    },
+    {
+      "n": 2,
+      "action": "Add a grain delay (pitch 0) and a delay with reverse repeats after the synth.",
+      "tool": "Grain delay + delay",
+      "expect": "Textured, broken-up repeats"
+    },
+    {
+      "n": 3,
+      "action": "Resample to a new audio track while adjusting grain-delay spray/frequency by hand.",
+      "tool": "Resampling",
+      "expect": "Raw textured audio clip"
+    },
+    {
+      "n": 4,
+      "action": "Warp the clip (pitch-preserving mode) and stretch it to double length.",
+      "tool": "Warp stretch",
+      "expect": "Slower, same pitch"
+    },
+    {
+      "n": 5,
+      "action": "Add an echo with high dry/wet and raised feedback so notes smear together.",
+      "tool": "Echo",
+      "expect": "No single note stands out"
+    },
+    {
+      "n": 6,
+      "action": "Add a spectral freeze with freeze on and retrigger every 1/16 note to smooth the sound into a sustained pad; then an EQ to confine it to its frequency band.",
+      "tool": "Spectral time + EQ",
+      "expect": "Lush pad sitting behind the track"
+    },
+    {
+      "n": 7,
+      "action": "Feedback layer: on a melodic loop, a distortion in feedback routing with 100% blend to the feedback path, feedback amount up, time set to dotted 1/2, feedback band-pass centred ~3 kHz; modulate band-pass width with a 1-bar synced LFO; add light distortion.",
+      "tool": "Feedback distortion + LFO",
+      "expect": "Loop gains movement and harmonics"
+    },
+    {
+      "n": 8,
+      "action": "Resample it, then loop short regions of the recording (e.g. bars 18-22) and move the start point to find new phrases.",
+      "tool": "Audio clip loop",
+      "expect": "Second melodic element derived from the loop"
+    }
+  ],
+  "verification": [
+    "Pad clip has no audible individual arp attacks after the smear chain.",
+    "Pitch of the stretched clip matches the original key.",
+    "Feedback layer's band-pass width changes once per bar."
+  ],
+  "tags": [
+    "pad",
+    "arpeggio",
+    "resampling",
+    "grain-delay",
+    "spectral-freeze",
+    "smear",
+    "feedback",
+    "loop",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion"
+}

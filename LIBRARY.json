@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-12T16:35:35.094834+00:00",
-  "entry_count": 269,
+  "updated_at": "2026-11-13T16:46:03.755734+00:00",
+  "entry_count": 274,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -3940,6 +3940,71 @@
       "skills": [
         "generative-ambient-drones-and-soundscapes"
       ]
+    },
+    {
+      "id": "cinematic-synth-dGGMbqe4QYQ",
+      "video_id": "dGGMbqe4QYQ",
+      "url": "https://www.youtube.com/watch?v=dGGMbqe4QYQ",
+      "title": "How to climax in electronic music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/dGGMbqe4QYQ/raw.txt",
+      "summary": "Skills: climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last (folded into arrangement-loop-to-song-build-drop)",
+      "skills": [
+        "arrangement-loop-to-song-build-drop"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Cx8mEhPdtB4",
+      "video_id": "Cx8mEhPdtB4",
+      "url": "https://www.youtube.com/watch?v=Cx8mEhPdtB4",
+      "title": "Make Ambient Like LOSCIL: Field Recordings to Floating Pads",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Cx8mEhPdtB4/raw.txt",
+      "summary": "Skills: envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-LANPsnGB_yY",
+      "video_id": "LANPsnGB_yY",
+      "url": "https://www.youtube.com/watch?v=LANPsnGB_yY",
+      "title": "Made in Ableton Live: K. Hart on creative resampling, granular techniques and more",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/LANPsnGB_yY/raw.txt",
+      "summary": "Skills: arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion (folded into granular-and-spectral-texture-design)",
+      "skills": [
+        "granular-and-spectral-texture-design"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Pf0at7zMSDw",
+      "video_id": "Pf0at7zMSDw",
+      "url": "https://www.youtube.com/watch?v=Pf0at7zMSDw",
+      "title": "Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Pf0at7zMSDw/raw.txt",
+      "summary": "Skills: punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print (folded into bass-design-sub-reese-808-and-layering)",
+      "skills": [
+        "bass-design-sub-reese-808-and-layering"
+      ]
+    },
+    {
+      "id": "cinematic-synth-Aqe3ISng8jA",
+      "video_id": "Aqe3ISng8jA",
+      "url": "https://www.youtube.com/watch?v=Aqe3ISng8jA",
+      "title": "How To Make Pads From Noise/Recordings Like Burial | Inspired By...",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Aqe3ISng8jA/raw.txt",
+      "summary": "Skills: noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation (folded into brightness-and-air-at-the-source)",
+      "skills": [
+        "brightness-and-air-at-the-source"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4590,6 +4655,37 @@
           "video_id": "NZJ9bvuyII4",
           "skill": "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
           "cluster": "generative-ambient-drones-and-soundscapes"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-13T16:46:03.755734+00:00",
+      "batch": "2026-11-13-morning-hunt",
+      "folded": [
+        {
+          "video_id": "dGGMbqe4QYQ",
+          "skill": "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
+          "cluster": "arrangement-loop-to-song-build-drop"
+        },
+        {
+          "video_id": "Cx8mEhPdtB4",
+          "skill": "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "LANPsnGB_yY",
+          "skill": "arp-smear-pad-grain-delay-resample-stretch-2x-high-wet-echo-spectral-freeze-retrigger-16th-eq-band-plus-feedback-bandpass-loop-motion",
+          "cluster": "granular-and-spectral-texture-design"
+        },
+        {
+          "video_id": "Pf0at7zMSDw",
+          "skill": "punchy-808-2nd-3rd-harmonic-partials-subtle-unipolar-coarse-pitch-dive-convex-decay-fm-ratio-half-transient-two-stage-softclip-zero-cross-print",
+          "cluster": "bass-design-sub-reese-808-and-layering"
+        },
+        {
+          "video_id": "Aqe3ISng8jA",
+          "skill": "noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation",
+          "cluster": "brightness-and-air-at-the-source"
         }
       ]
     }

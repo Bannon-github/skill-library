@@ -1,0 +1,99 @@
+{
+ "topic": "punchy bass synth sound design tutorial",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "punchy bass synth sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "zEkCere2A_Y",
+   "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
+   "channel": "Jemeneye",
+   "duration": 991,
+   "view_count": 1068,
+   "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.01
+  },
+  {
+   "id": "v97MvZ1XhXM",
+   "title": "5 Easy Serum 2 Sound Design tips for *BIG BASSES*",
+   "channel": "Antidote Audio",
+   "duration": 542,
+   "view_count": 4995,
+   "url": "https://www.youtube.com/watch?v=v97MvZ1XhXM",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.35
+  },
+  {
+   "id": "l1pxzjfwX1c",
+   "title": "Synth Masterclass #2 - Punchy Bass",
+   "channel": "Computer Music",
+   "duration": 474,
+   "view_count": 2113,
+   "url": "https://www.youtube.com/watch?v=l1pxzjfwX1c",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.16
+  },
+  {
+   "id": "Pf0at7zMSDw",
+   "title": "Unlock Punchy Bass in Serum | Mixing Trick for ANY DAW",
+   "channel": "Busy Works Beats",
+   "duration": 964,
+   "view_count": 596,
+   "url": "https://www.youtube.com/watch?v=Pf0at7zMSDw",
+   "query": "punchy bass synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.89
+  }
+ ],
+ "dropped": [
+  {
+   "id": "jDZ8pdifMTw",
+   "why": "duration 159s"
+  },
+  {
+   "id": "KTSzOfVYDZY",
+   "why": "already known"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "uXl7iyyZF1M",
+   "why": "already known"
+  },
+  {
+   "id": "H6i55lXAMh0",
+   "why": "already known"
+  },
+  {
+   "id": "JnwqcolDU1k",
+   "why": "duration 222s"
+  },
+  {
+   "id": "dKvzUXcl-oA",
+   "why": "duration 142s"
+  },
+  {
+   "id": "GA78yWUMZvQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

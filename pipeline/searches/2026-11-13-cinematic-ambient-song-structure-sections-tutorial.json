@@ -1,0 +1,92 @@
+{
+ "topic": "cinematic ambient song structure sections tutorial",
+ "date": "2026-11-13",
+ "params": {
+  "topic": "cinematic ambient song structure sections tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "FOaDweLRiKE",
+   "title": "How to make ambient music with LIVEN Ambient Ø",
+   "channel": "SONICWARE",
+   "duration": 505,
+   "view_count": 76119,
+   "url": "https://www.youtube.com/watch?v=FOaDweLRiKE",
+   "query": "cinematic ambient song structure sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.94
+  },
+  {
+   "id": "2ONZ0NSK7I8",
+   "title": "How to Create Unpredictable Ambient Study or Work  Music with Suno AI Using Brackets for Variation",
+   "channel": "FenomenonX",
+   "duration": 1205,
+   "view_count": 6303,
+   "url": "https://www.youtube.com/watch?v=2ONZ0NSK7I8",
+   "query": "cinematic ambient song structure sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.4
+  },
+  {
+   "id": "UxyrXqBQEpE",
+   "title": "The Anatomy Of A Song",
+   "channel": "12tone",
+   "duration": 263,
+   "view_count": 409068,
+   "url": "https://www.youtube.com/watch?v=UxyrXqBQEpE",
+   "query": "cinematic ambient song structure sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.81
+  }
+ ],
+ "dropped": [
+  {
+   "id": "62oV1qEFjmI",
+   "why": "already known"
+  },
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "7iHAf88Mfn0",
+   "why": "already known"
+  },
+  {
+   "id": "UNPk66DNdGI",
+   "why": "duration 3738s"
+  },
+  {
+   "id": "hE_qOY5GkH0",
+   "why": "duration 201s"
+  },
+  {
+   "id": "VG2sO2CyT7o",
+   "why": "duration 47s"
+  },
+  {
+   "id": "5MO9vus3PW4",
+   "why": "negative title signal"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "673R2Ht3g58",
+   "why": "duration 176s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
