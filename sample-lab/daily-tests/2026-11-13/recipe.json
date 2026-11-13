@@ -1,0 +1,191 @@
+{
+ "title": "Smear Key",
+ "seed": 1113,
+ "bpm": 84,
+ "bars": 28,
+ "tailSec": 2.5,
+ "category": "pad",
+ "sections": {
+  "drumsIn": 4,
+  "break": 18,
+  "back": 22,
+  "drumsOut": 26,
+  "end": 28
+ },
+ "arp": {
+  "chord": [
+   45,
+   48,
+   52,
+   55,
+   59
+  ],
+  "octaves": 2,
+  "rate": 0.5,
+  "gate": 0.95,
+  "cut": 7000,
+  "srcBars": 14,
+  "grain": {
+   "ms": 70,
+   "everyMs": 28,
+   "delayMs": 120,
+   "sprayMs": 35,
+   "mix": 0.6
+  },
+  "rev": {
+   "wet": 0.45,
+   "fb": 0.45
+  },
+  "echo": {
+   "time": 0.75,
+   "fb": 0.62,
+   "wet": 0.8
+  },
+  "freeze": {
+   "retrig": "1/16",
+   "nfft": 4096,
+   "hop": 1024,
+   "mix": 0.85
+  },
+  "band": [
+   220,
+   10000
+  ],
+  "level": 0.9,
+  "harm": 12
+ },
+ "feedback": {
+  "notes": [
+   [
+    0,
+    69
+   ],
+   [
+    1.5,
+    72
+   ],
+   [
+    3,
+    76
+   ],
+   [
+    4.5,
+    74
+   ],
+   [
+    6,
+    72
+   ],
+   [
+    7,
+    71
+   ]
+  ],
+  "loopBeats": 8,
+  "fb": 0.55,
+  "bpHz": 3000,
+  "qNarrow": 6,
+  "qWide": 1.2,
+  "drive": 1.6,
+  "loopRegionBars": [
+   6,
+   8
+  ],
+  "level": 0.4
+ },
+ "noisePad": {
+  "rootHz": 220.0,
+  "eqCount": 4,
+  "eqQ": 30,
+  "eqGain": 18,
+  "startSec": 0.4,
+  "loopSec": 1.2,
+  "xfadeSec": 0.3,
+  "chords": [
+   [
+    57,
+    60,
+    64
+   ],
+   [
+    53,
+    57,
+    60
+   ],
+   [
+    55,
+    59,
+    62
+   ],
+   [
+    52,
+    55,
+    59
+   ]
+  ],
+  "attack": 2.2,
+  "release": 2.5,
+  "duckDb": 5,
+  "lpIntro": 2500,
+  "lpMain": 12000,
+  "level": 0.7,
+  "airHp": 3000,
+  "airLevel": 0.35,
+  "airLp": 9000
+ },
+ "bass808": {
+  "notes": [
+   [
+    0,
+    33,
+    1.6
+   ],
+   [
+    2.5,
+    33,
+    0.9
+   ],
+   [
+    4,
+    29,
+    1.6
+   ],
+   [
+    6.5,
+    31,
+    0.9
+   ]
+  ],
+  "h2": 0.5,
+  "h3": 0.12,
+  "diveSemis": 3,
+  "diveMs": 35,
+  "decay": "convex",
+  "lenBeats": 1.6,
+  "fmRatio": 0.5,
+  "fmIndex": 1.4,
+  "fmMs": 12,
+  "fmLp": 1800,
+  "clip1": 1.8,
+  "clip2": 1.4,
+  "level": 0.36
+ },
+ "kick": {
+  "f0": 120,
+  "f1": 50,
+  "vel": [
+   0.8,
+   0,
+   0.65,
+   0
+  ],
+  "level": 0.28
+ },
+ "master": {
+  "targetLufs": -17,
+  "tpCeil": -1.5,
+  "sideHpHz": 140,
+  "width": 1.25,
+  "fadeOutSec": 4
+ }
+}
