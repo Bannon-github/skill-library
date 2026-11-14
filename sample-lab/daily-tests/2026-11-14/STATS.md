@@ -1,0 +1,18 @@
+# Dub Hang (2026-11-14)
+
+Score 99.31 pass (iter 2). LUFS -17.0, TP -3.5 dBTP, length 85.6 s, kick + stabs + sub in at 9.23 s (bar 5 at 104 BPM; Loscil pad, field bed and sines only before). Limiter GR 0 dB.
+
+Skills (all never tested before; 2 from the 11-13 hunt):
+- envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub (arrangement-ambient-cinematic-score)
+- dub-stab-family-detuned-saw-lp24-res-hp120-drawn-cutoff-dual-bandpass-lfo-sidechained-dub-verb (filter-types-and-resonance-design)
+- climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last (arrangement-loop-to-song-build-drop)
+
+A minor 104 BPM, 36 bars in 8-bar phrasing: intro 0-4 | A 4-15 | committed turnaround bar 15 (kick/stabs cut, single stab thrown into echo + 6 s verb) | trilogy fall 16-20 (pad on new Dm chord, field, sines only) | rise 20-25 (kick back through LP 150 Hz->open, sub back bar 22, stabs back bar 22 through auto-filter 600 Hz->open, BP noise sweep 400->8 kHz) | hang bar 25 (no drums; one swelling stab chord) | return 26-34 | outro 34-36.
+Section LUFS intro/A/fall/rise/hang/return: -19.2/-17.2/-18.8/-15.6/-16.1/-16.3.
+
+Loscil pad: 3-voice saw, 6 cent spread, attack 6.5 s/decay 6.5 s/sustain 0.3/release 6 s, 2nd envelope opens LP24 320->2400 Hz; chords every 6 bars (13.8 s = attack+decay, tails meet), notes staggered 140 ms; 1.5-beat echo + 29 s FDN verb (45% wet). Field bed (synthetic wind/leaves/stream, smooth, no impulses) gated by one held note -> SVF LP 6 kHz with 8-bar LFO +-0.8 oct -> 3-band compressor 3:1 -> ping-pong 3/16+1/4 -> 7 s verb, slow volume LFO. Sines: fixed 6-note A-minor pattern every 4 bars, 1.5 s decay / 2 s release, dark 8 s verb (damp 3 kHz). Sub: 2-voice unison saw on chord roots (A1..E2), LP24 80-200 Hz with free 4-bar LFO, low in mix, mono.
+Dub stab: A3 C4 E4 + G3 below; osc1 saw, osc2 saw 35% toward square +9 cents (answers one osc); LP24 res 0.62 base 100 Hz, env +4.8 oct (read "amount 48"), HP 120; main decay 0.32 s, answers 0.12 s; hand-drawn piecewise cutoff, new 5-point shape each 2-bar repeat (+-0.7 oct); dual BP 600/1700 Hz Q4 swept by 2-bar LFO +-0.5 oct, 50% mix; ensemble chorus; group saturator, low shelf -4 dB @350, auto filter down in break then reopening, tube tanh; dub verb 4 s ducked 7 dB by kick; 3/16 ping-pong echo; 6 s verb send rises in break; half-note echo in break only.
+Iter 1 94.69 pass but M10 0.50 (centroid std 0.92 oct: kick/sub frames vs. bright field frames) and width 0.856. Iter 2: kick 0.50->0.38, sub 0.32->0.26, width 1.25->1.1, field 0.32->0.36 -> 99.31 (M10 0.80 oct, M4 0.85, tilt fine M6 -4.6).
+Checks: side<120 Hz -20.2 dB; hf_env 12-40 Hz -12.4 dB (no rapid clicking texture; no hats used); all pitches fixed (no random pitch); M13 0.6% dropout frames are the zeroed final 0.3 s.
+Per skill: Loscil gives the whole bed and the brightness (the field layer fixes the usual 'pure synth too dark' problem). Dub stab gave the groove and movement; filtered-to-100 Hz base makes stabs dark/thin on their own, so the env amount does all the work. Climax structure made the break readable (fall/rise/hang loudness curve); hang bar works well as a release cue.
+Unclear: Loscil spacing '8-9 bars at 83 BPM' is ~25 s, too long for 60-90 s tests (compressed to 6 bars at 104 = 13.8 s); 29 s verb level unspecified. Dub stab 'envelope amount ~48' and dual-filter resonance 'four' are synth-specific units (read as +4.8 oct and Q 4). Climax skill gives no bar counts for turnaround length (used 1 bar) and doesn't say what the hang element should be beyond 'unique'.

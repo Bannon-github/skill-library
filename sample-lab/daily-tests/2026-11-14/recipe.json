@@ -1,0 +1,230 @@
+{
+ "title": "Dub Hang",
+ "seed": 1114,
+ "bpm": 104,
+ "bars": 36,
+ "tailSec": 2.5,
+ "category": "pad",
+ "sections": {
+  "drumsIn": 4,
+  "turn": 15,
+  "fall": 16,
+  "rise": 20,
+  "stabsBack": 22,
+  "hang": 25,
+  "back": 26,
+  "drumsOut": 34,
+  "end": 36
+ },
+ "pad": {
+  "chordBars": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30
+  ],
+  "chords": [
+   [
+    57,
+    60,
+    64,
+    71,
+    76
+   ],
+   [
+    53,
+    57,
+    60,
+    64,
+    72
+   ],
+   [
+    48,
+    55,
+    60,
+    62,
+    74
+   ],
+   [
+    50,
+    57,
+    60,
+    65,
+    69
+   ],
+   [
+    52,
+    55,
+    59,
+    62,
+    74
+   ],
+   [
+    57,
+    60,
+    64,
+    71,
+    76
+   ]
+  ],
+  "unison": 3,
+  "detuneCents": 6,
+  "attack": 6.5,
+  "decay": 6.5,
+  "sustain": 0.3,
+  "release": 6.0,
+  "staggerMs": 140,
+  "cutLow": 320,
+  "cutPeak": 2400,
+  "res": 0.15,
+  "verbRt": 29,
+  "verbMix": 0.45,
+  "echoBeats": 1.5,
+  "echoFb": 0.5,
+  "level": 0.8
+ },
+ "field": {
+  "lpBase": 6000,
+  "lfoBars": 8,
+  "lfoDepthOct": 0.8,
+  "volLfoDepth": 0.3,
+  "hp": 250,
+  "mbRatio": 3,
+  "pingBeats": [
+   0.75,
+   1.0
+  ],
+  "pingFb": 0.35,
+  "verbRt": 7,
+  "level": 0.36
+ },
+ "sines": {
+  "pattern": [
+   [
+    0,
+    76
+   ],
+   [
+    3,
+    72
+   ],
+   [
+    6,
+    74
+   ],
+   [
+    10,
+    69
+   ],
+   [
+    12,
+    71
+   ],
+   [
+    14,
+    72
+   ]
+  ],
+  "patBeats": 16,
+  "decay": 1.5,
+  "release": 2.0,
+  "sustain": 0.15,
+  "verbRt": 8,
+  "damp": 3000,
+  "startBar": 2,
+  "level": 0.32
+ },
+ "sub": {
+  "roots": [
+   33,
+   29,
+   36,
+   38,
+   40,
+   33
+  ],
+  "detuneCents": 4,
+  "cutLo": 80,
+  "cutHi": 200,
+  "lfoBars": 4,
+  "level": 0.26
+ },
+ "stab": {
+  "chord": [
+   55,
+   57,
+   60,
+   64
+  ],
+  "detuneCents": 9,
+  "sqBlend": 0.35,
+  "cutBase": 100,
+  "envOct": 4.8,
+  "res": 0.62,
+  "hp": 120,
+  "attackMs": 8,
+  "mainDecay": 0.32,
+  "ansDecay": 0.12,
+  "pattern": [
+   [
+    0,
+    "m"
+   ],
+   [
+    1.5,
+    "a"
+   ],
+   [
+    3,
+    "a"
+   ],
+   [
+    4.5,
+    "m"
+   ],
+   [
+    6.5,
+    "a"
+   ]
+  ],
+  "patBeats": 8,
+  "drawDepthOct": 0.7,
+  "bp": {
+   "f1": 600,
+   "f2": 1700,
+   "q": 4,
+   "lfoBars": 2,
+   "depthOct": 1.0,
+   "mix": 0.5
+  },
+  "dubVerbRt": 4.0,
+  "dubSend": 0.45,
+  "duckDb": 7,
+  "longVerbRt": 6.0,
+  "longSendBreak": 0.6,
+  "echoBeats": 0.75,
+  "echoFb": 0.45,
+  "breakEchoBeats": 2.0,
+  "level": 0.55
+ },
+ "kick": {
+  "f0": 120,
+  "f1": 48,
+  "decay": 0.22,
+  "level": 0.38
+ },
+ "sweep": {
+  "from": 400,
+  "to": 8000,
+  "level": 0.25
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 140,
+  "width": 1.1,
+  "fadeOutSec": 3.5
+ }
+}
