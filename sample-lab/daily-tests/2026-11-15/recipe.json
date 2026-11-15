@@ -1,0 +1,202 @@
+{
+ "title": "Dust Choir",
+ "seed": 1115,
+ "bpm": 120,
+ "bars": 40,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "F# minor",
+ "sections": {
+  "kickIn": 4,
+  "ghostsIn": 8,
+  "breakIn": 12,
+  "stripStart": 24,
+  "stripEnd": 28,
+  "drumsOut": 37,
+  "end": 40
+ },
+ "chords": {
+  "barsPer": 4,
+  "names": [
+   "F#m",
+   "D",
+   "F#m",
+   "C#m"
+  ],
+  "voices": [
+   [
+    42,
+    57,
+    61,
+    69
+   ],
+   [
+    38,
+    54,
+    57,
+    66
+   ],
+   [
+    42,
+    57,
+    61,
+    69
+   ],
+   [
+    37,
+    52,
+    56,
+    64
+   ]
+  ],
+  "note": "root sub / third a tenth up (dark pad) / fifth above the third (choir) / third +8va (frozen strings); all voices move in the same direction"
+ },
+ "sub": {
+  "attack": 2.0,
+  "level": 0.2,
+  "duckDb": 8
+ },
+ "pad": {
+  "attack": 3.0,
+  "release": 3.0,
+  "lp": 2200,
+  "level": 0.3
+ },
+ "choir": {
+  "attack": 4.5,
+  "release": 3.5,
+  "formants": [
+   [
+    700,
+    1.0
+   ],
+   [
+    1150,
+    0.7
+   ],
+   [
+    2600,
+    0.4
+   ]
+  ],
+  "level": 0.26,
+  "staggerSec": 0.6
+ },
+ "strings": {
+  "attack": 6.0,
+  "release": 4.0,
+  "lp": 4500,
+  "level": 0.3,
+  "staggerSec": 1.2
+ },
+ "reverse": {
+  "notes": [
+   66,
+   69,
+   73,
+   76
+  ],
+  "level": 0.16
+ },
+ "phaser": {
+  "stages": 4,
+  "q": 0.7071,
+  "center": 500,
+  "rateHz": 0.08,
+  "depth": 0.45,
+  "offset": 1.0,
+  "wave": "sine",
+  "wet": 0.7
+ },
+ "drumPhaser": {
+  "stages": 6,
+  "q": 0.7071,
+  "center": 1500,
+  "rateHz": 0.25,
+  "depth": 0.35,
+  "offset": 1.0,
+  "wave": "tri",
+  "wet": 0.8
+ },
+ "kick": {
+  "peakHz": 48,
+  "startHz": 110,
+  "decay": 0.28,
+  "bits": 6,
+  "srDiv": 6,
+  "midCutDb": -12,
+  "level": 0.25
+ },
+ "clap": {
+  "semis": -2,
+  "decay": 0.09,
+  "bits": 8,
+  "verbRt": 7.0,
+  "verbMix": 0.6,
+  "level": 0.16
+ },
+ "ghosts": {
+  "hits": [
+   [
+    1,
+    2.75,
+    "L",
+    300
+   ],
+   [
+    3,
+    1.5,
+    "R",
+    420
+   ],
+   [
+    5,
+    3.25,
+    "L",
+    360
+   ],
+   [
+    6,
+    0.75,
+    "R",
+    300
+   ],
+   [
+    7,
+    2.5,
+    "R",
+    480
+   ]
+  ],
+  "level": 0.12
+ },
+ "shaker": {
+  "beats": [
+   1.5,
+   3.5
+  ],
+  "hp": 4000,
+  "level": 0.1
+ },
+ "dust": {
+  "level": 0.035,
+  "hp": 6000
+ },
+ "break": {
+  "hp": 2500,
+  "bits": 7,
+  "level": 0.13,
+  "postLp": 7500
+ },
+ "bus": {
+  "satDrive": 3.0,
+  "wet": 0.5
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.2,
+  "width": 1.0,
+  "sideHpHz": 160,
+  "fadeOutSec": 3.0
+ }
+}
