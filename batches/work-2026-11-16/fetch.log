@@ -1,0 +1,417 @@
+{
+  "video_id": "rEXT0z75IyQ",
+  "title": "Hybrid Film Scoring: Blending Orchestral and Granular Textures with Sampling.",
+  "url": "https://www.youtube.com/watch?v=rEXT0z75IyQ",
+  "fetched_at": "2026-11-16T16:18:01.492804+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "whittymusic",
+  "duration": 1678,
+  "ok": true,
+  "cue_count": 537,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/rEXT0z75IyQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/rEXT0z75IyQ/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "00oV6DJkK3E",
+  "title": "Binaural Beats Explained: Build One in Your DAW with Binaura",
+  "url": "https://www.youtube.com/watch?v=00oV6DJkK3E",
+  "fetched_at": "2026-11-16T16:18:10.717136+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Sacred Audio Plugins",
+  "duration": 683,
+  "ok": true,
+  "cue_count": 188,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/00oV6DJkK3E/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/00oV6DJkK3E/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "4sereDbtdLw",
+  "title": "Why you are tuning your kick wrong [Sound Design Tutorial]",
+  "url": "https://www.youtube.com/watch?v=4sereDbtdLw",
+  "fetched_at": "2026-11-16T16:18:19.541276+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Sam Smyers",
+  "duration": 519,
+  "ok": true,
+  "cue_count": 444,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "4sereDbtdLw.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/4sereDbtdLw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/4sereDbtdLw/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.8
+    }
+  ]
+}
+{
+  "video_id": "L9mQwW3ik_A",
+  "title": "Create Positive Tension Filmmusic (Walkthrough)",
+  "url": "https://www.youtube.com/watch?v=L9mQwW3ik_A",
+  "fetched_at": "2026-11-16T16:19:04.905890+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de",
+  "channel": "Tim Heinrich - Music & Sound",
+  "duration": 1320,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ]
+}
+{
+  "video_id": "X2xijc3S8cc",
+  "title": "How to create AMAZING Pads & Drones (for any genre) - Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=X2xijc3S8cc",
+  "fetched_at": "2026-11-16T16:19:51.131470+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EDM Tips",
+  "duration": 1812,
+  "ok": true,
+  "cue_count": 694,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/X2xijc3S8cc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/X2xijc3S8cc/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "sfO-0ht06SE",
+  "title": "Dance Music Sound Design 305: Pads Advanced - 5. Looped Envelopes and Sequenced Modulation",
+  "url": "https://www.youtube.com/watch?v=sfO-0ht06SE",
+  "fetched_at": "2026-11-16T16:20:00.840685+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "macProVideoDotCom",
+  "duration": 396,
+  "ok": true,
+  "cue_count": 83,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/sfO-0ht06SE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/sfO-0ht06SE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "QPfIOH-CWhU",
+  "title": "Advanced sound design with Ableton's DELAY tools – Tips & tricks",
+  "url": "https://www.youtube.com/watch?v=QPfIOH-CWhU",
+  "fetched_at": "2026-11-16T16:20:09.252684+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "MusicRadar Tech",
+  "duration": 1043,
+  "ok": true,
+  "cue_count": 474,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/QPfIOH-CWhU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/QPfIOH-CWhU/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "IH-zpS7gxxg",
+  "title": "A Cheatcode for Better Arrangements: The Two Loop Rule",
+  "url": "https://www.youtube.com/watch?v=IH-zpS7gxxg",
+  "fetched_at": "2026-11-16T16:20:17.849433+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Alex Rome",
+  "duration": 589,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 6.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.7
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "-QIN_4VybDQ",
+  "title": "how to use tape loops to make beautiful ambient drones",
+  "url": "https://www.youtube.com/watch?v=-QIN_4VybDQ",
+  "fetched_at": "2026-11-16T16:21:04.257325+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "the garden of music",
+  "duration": 983,
+  "ok": true,
+  "cue_count": 246,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/-QIN_4VybDQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/-QIN_4VybDQ/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "L9mQwW3ik_A",
+  "title": "Create Positive Tension Filmmusic (Walkthrough)",
+  "url": "https://www.youtube.com/watch?v=L9mQwW3ik_A",
+  "fetched_at": "2026-11-16T16:21:49.413451+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de",
+  "channel": "Tim Heinrich - Music & Sound",
+  "duration": 1320,
+  "ok": true,
+  "cue_count": 175,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "de",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/L9mQwW3ik_A/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.orig.de.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "de",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "de",
+    "tgt": "en",
+    "segments": 28,
+    "glossary_hits": {},
+    "garbled_share": 0.0,
+    "repeat_loops_collapsed": 1,
+    "confidence": "medium",
+    "segment_terms": [],
+    "seconds": 14.9,
+    "original_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.orig.de.txt",
+    "output_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.txt",
+    "translated": true,
+    "at": "2026-11-16T16:22:17.454040+00:00"
+  },
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    }
+  ]
+}
+{
+  "video_id": "IH-zpS7gxxg",
+  "title": "A Cheatcode for Better Arrangements: The Two Loop Rule",
+  "url": "https://www.youtube.com/watch?v=IH-zpS7gxxg",
+  "fetched_at": "2026-11-16T16:22:24.121999+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Alex Rome",
+  "duration": 589,
+  "ok": true,
+  "cue_count": 394,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "IH-zpS7gxxg.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/IH-zpS7gxxg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/IH-zpS7gxxg/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ]
+}
+{
+  "video_id": "MycI9ZOSPRk",
+  "title": "4 Tips for Writing Ambient Chord Progressions",
+  "url": "https://www.youtube.com/watch?v=MycI9ZOSPRk",
+  "fetched_at": "2026-11-16T16:23:15.978866+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "8-bit Music Theory",
+  "duration": 646,
+  "ok": true,
+  "cue_count": 476,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "MycI9ZOSPRk.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/MycI9ZOSPRk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/MycI9ZOSPRk/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-16T16:24:03.078034+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "TYU764RIkmE",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=TYU764RIkmE",
+  "fetched_at": "2026-11-16T16:24:50.716055+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

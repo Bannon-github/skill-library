@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
+  "name": "Ambient 'meta-chord' progressions (David Wise-style): a 2-4 chord loop that repeats until it fuses into one mood; smooth voice leading where as few voices as possible move, each by step (as little as one note per change); every chord made colourful with extensions voiced from mixed intervals (e.g. a third and a fifth stacked on the chord's third to give a minor-9 colour, then the same shape moved to the next chord with a sixth added on top); no dominant-seventh chords, and dominant-function triads (V in major, bVII in minor) used in first inversion (e.g. bVII add2 over its third, voiced minor 7th + two perfect 4ths); and one short melodic line repeated unchanged over every chord so passing dissonances become expected",
+  "goal": "Write ambient/cinematic loops that paint one mood instead of moving A to B. Delta vs harmony cluster (sus/7sus4 one-key harmony, per-instrument chord tones, alternating seconds/thirds voice-leading rule, drone roles): explicit meta-chord rules - one-step voice leading, mixed-interval extended voicings, no dominant sevenths, inverted dominant triads and a constant ostinato that recontextualises over each chord.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "MycI9ZOSPRk",
+    "url": "https://www.youtube.com/watch?v=MycI9ZOSPRk",
+    "title": "4 Tips for Writing Ambient Chord Progressions",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/MycI9ZOSPRk/agent-skill-ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line.json",
+    "batch": "2026-11-16-morning-hunt"
+  },
+  "prerequisites": [
+    "A piano roll or notation editor",
+    "A sustained pad/keys instrument"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "e.g. C minor or A minor",
+      "required": true
+    },
+    {
+      "name": "chord_count",
+      "type": "number",
+      "description": "2-4 chords in the loop",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Usually slow",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "progression",
+      "type": "midi",
+      "description": "Looping 2-4 chord progression with written voicings"
+    },
+    {
+      "name": "ostinato",
+      "type": "midi",
+      "description": "Short constant melodic line repeated over every chord"
+    }
+  ],
+  "constraints": [
+    "Steady melody: the ostinato is a fixed repeated line, not randomised; it keeps playing unchanged across chord changes (Matt's preference for steady melodies).",
+    "Avoid dominant-seventh chords; voice V/bVII triads in first inversion rather than root position.",
+    "Smooth voice leading is the default; if nothing moves at all, compensate with richer extensions so the loop doesn't stagnate.",
+    "Example chord colours named in the transcript (Cm9, Abmaj7#11, Abmaj9, Fm11, Bb add2 over D); recreate them as MIDI, no copyrighted melodies are reproduced.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip; voicings are written as explicit MIDI notes.",
+    "Portable: pure harmony recipe, works on any instrument, DAW or Web Audio scheduler.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Choose 2-4 diatonic chords in the key (e.g. i - bVI - iv - bVII in C minor) and plan to loop them for the whole section.",
+      "tool": "Planning",
+      "expect": "Short loop chosen"
+    },
+    {
+      "n": 2,
+      "action": "Voice-lead smoothly: write the voicings so as few notes as possible change between chords and each changing note moves by a step (in the simplest form only one note moves per change).",
+      "tool": "Piano roll",
+      "expect": "Changes feel buttery, with almost no harmonic momentum"
+    },
+    {
+      "n": 3,
+      "action": "Colour each chord: add extensions and vary the intervals inside the voicing; e.g. over the bass root, stack a third and a fifth above the chord's third to get a minor-9 sound, then move the same shape down to the next chord and add a sixth on top.",
+      "tool": "Piano roll",
+      "expect": "Each chord is lush on its own"
+    },
+    {
+      "n": 4,
+      "action": "Remove expectation: replace any dominant seventh with a triad or add2, and put V (major key) or bVII (minor key) in first inversion, e.g. bVII add2 over its third voiced as a minor seventh with two perfect fourths above.",
+      "tool": "Piano roll",
+      "expect": "No chord demands resolution"
+    },
+    {
+      "n": 5,
+      "action": "Write one short line (e.g. a 3-note figure or an eighth-note arpeggio of a maj7 shape) and repeat it unchanged over every chord of the loop.",
+      "tool": "MIDI clip",
+      "expect": "Line recontextualises; dissonances (#4, b6, minor 9 against bass) sound intended"
+    },
+    {
+      "n": 6,
+      "action": "Loop the progression with the ostinato for the section; let repetition fuse the chords into one meta-chord mood before any new section arrives.",
+      "tool": "Arrangement",
+      "expect": "Static, immersive mood"
+    }
+  ],
+  "verification": [
+    "Between consecutive chords, count moving voices: ideally 1-2, each by a step.",
+    "No dominant 7th chords appear; any V/bVII is in first inversion.",
+    "Ostinato MIDI is identical on every chord."
+  ],
+  "tags": [
+    "harmony",
+    "chords",
+    "voice-leading",
+    "ambient",
+    "extensions",
+    "ostinato",
+    "video-game",
+    "cinematic",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line"
+}

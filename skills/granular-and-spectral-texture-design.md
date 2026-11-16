@@ -164,3 +164,15 @@ Source: [Made in Ableton Live: K. Hart on creative resampling, granular techniqu
 - Add a spectral freeze with freeze on and retrigger every 1/16 note to smooth the sound into a sustained pad; then an EQ to confine it to its frequency band.
 - Feedback layer: on a melodic loop, a distortion in feedback routing with 100% blend to the feedback path, feedback amount up, time set to dotted 1/2, feedback band-pass centred ~3 kHz; modulate band-pass width with a 1-bar synced LFO; add light distortion.
 - Resample it, then loop short regions of the recording (e.g. bars 18-22) and move the start point to find new phrases.
+
+### Hybrid orchestral sound design: bounce a string ostinato (or piano loop) to audio, load it into a sampler/granular synth, play it one and two octaves down so it repitches to half and quarter speed and stack the octaves into a slow pulse; add a filtered arpeggiated bass and a filtered simple analog lead; process with drive -> a fader-mapped morphing filter -> console/compressor -> big shimmer reverb; then switch the same sample to granular with a held position scanned by the mod wheel (or a slow synced LFO), optionally FM/ring-mod or wave-shape it; finally blend the processed layer back under the real orchestral parts (e.g. horns with heavy reverb)
+Source: [Hybrid Film Scoring: Blending Orchestral and Granular Textures with Samplers](https://www.youtube.com/watch?v=rEXT0z75IyQ) · was `orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra`
+- Write or render a string ostinato (or piano loop) and bounce it to an audio file.
+- Load it into a sampler with repitch (non time-locked) playback; play the root, then one octave down (half speed) and two octaves down (quarter speed); hold them together for a layered pulse.
+- Add a simple arpeggiated bass, filtered so it isn't in your face, and a simple analog-style lead filtered down further.
+- Insert drive/distortion on the sample layer (play the low octave to hear it turn otherworldly), not overdone.
+- Add a morphing/multimode filter and map its cutoff to a fader or macro; ride it darker to build tension.
+- Add a console-style channel strip/compressor after the filter, then a large shimmer-type reverb coloured to taste.
+- Switch the same sample to granular in position mode; map grain position to the mod wheel (or a slow tempo-synced LFO) and scan through the sample while chords are held; optionally add FM, ring mod or waveshaper for an alien colour.
+- Optionally load a piano loop into a granular engine, low-pass it, play two octaves down and let the scan run forward or backward.
+- Blend back: keep some real orchestral parts (e.g. horns, strings), add heavy reverb to them, and marry them with the processed layers in the cue.

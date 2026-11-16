@@ -1,0 +1,25 @@
+## MycI9ZOSPRk 2026-11-16T08:23:15-08:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}
+1575 raw/MycI9ZOSPRk/raw.txt
+## 5XGrxp0ANME 2026-11-16T08:24:03-08:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT 5XGrxp0ANME
+## TYU764RIkmE 2026-11-16T08:24:50-08:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT TYU764RIkmE
+FETCH_DONE 2026-11-16T08:25:38-08:00

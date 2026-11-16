@@ -1,0 +1,46 @@
+{
+  "video_id": "QPfIOH-CWhU",
+  "title": "Advanced sound design with Ableton's DELAY tools – Tips & tricks",
+  "url": "https://www.youtube.com/watch?v=QPfIOH-CWhU",
+  "fetched_at": "2026-11-16T16:20:09.252684+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "MusicRadar Tech",
+  "duration": 1043,
+  "ok": true,
+  "cue_count": 474,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/QPfIOH-CWhU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/QPfIOH-CWhU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

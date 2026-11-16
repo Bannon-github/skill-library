@@ -55,3 +55,12 @@ Source: [How to SYNTH DRONE without boring everyone](https://www.youtube.com/wat
 - Polychords: tune several mid/high drones to a static chord and play a different chord progression underneath so the two combine into polychords that never fully resolve.
 - Texture: on exposed drones, find sweet spots in a rich wavetable and sweep the position slowly with an LFO.
 - Change the bass note under the drone at key moments; a single new pedal note recolours everything above it.
+
+### Ambient 'meta-chord' progressions (David Wise-style): a 2-4 chord loop that repeats until it fuses into one mood; smooth voice leading where as few voices as possible move, each by step (as little as one note per change); every chord made colourful with extensions voiced from mixed intervals (e.g. a third and a fifth stacked on the chord's third to give a minor-9 colour, then the same shape moved to the next chord with a sixth added on top); no dominant-seventh chords, and dominant-function triads (V in major, bVII in minor) used in first inversion (e.g. bVII add2 over its third, voiced minor 7th + two perfect 4ths); and one short melodic line repeated unchanged over every chord so passing dissonances become expected
+Source: [4 Tips for Writing Ambient Chord Progressions](https://www.youtube.com/watch?v=MycI9ZOSPRk) · was `ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line`
+- Choose 2-4 diatonic chords in the key (e.g. i - bVI - iv - bVII in C minor) and plan to loop them for the whole section.
+- Voice-lead smoothly: write the voicings so as few notes as possible change between chords and each changing note moves by a step (in the simplest form only one note moves per change).
+- Colour each chord: add extensions and vary the intervals inside the voicing; e.g. over the bass root, stack a third and a fifth above the chord's third to get a minor-9 sound, then move the same shape down to the next chord and add a sixth on top.
+- Remove expectation: replace any dominant seventh with a triad or add2, and put V (major key) or bVII (minor key) in first inversion, e.g. bVII add2 over its third voiced as a minor seventh with two perfect fourths above.
+- Write one short line (e.g. a 3-note figure or an eighth-note arpeggio of a maj7 shape) and repeat it unchanged over every chord of the loop.
+- Loop the progression with the ostinato for the section; let repetition fuse the chords into one meta-chord mood before any new section arrives.

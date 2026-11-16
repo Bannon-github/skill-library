@@ -1,0 +1,105 @@
+{
+ "topic": "cinematic soundtrack arrangement structure tutorial",
+ "date": "2026-11-16",
+ "params": {
+  "topic": "cinematic soundtrack arrangement structure tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ZX62ADNX8ss",
+   "title": "How To Make Orchestral Music (Total Beginner's Guide)",
+   "channel": "Kevin Kuschel",
+   "duration": 2739,
+   "view_count": 486143,
+   "url": "https://www.youtube.com/watch?v=ZX62ADNX8ss",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.84
+  },
+  {
+   "id": "196-smqHUnY",
+   "title": "20 Years of Arrangement Advice in 10 Minutes",
+   "channel": "Minosaur",
+   "duration": 630,
+   "view_count": 334153,
+   "url": "https://www.youtube.com/watch?v=196-smqHUnY",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.26
+  },
+  {
+   "id": "ZdhdC2wx2Ew",
+   "title": "How to Compose Music | Your first piece for Complete Beginners",
+   "channel": "Cinematic Composing",
+   "duration": 2032,
+   "view_count": 317947,
+   "url": "https://www.youtube.com/watch?v=ZdhdC2wx2Ew",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.75
+  },
+  {
+   "id": "YF86PC5mTFE",
+   "title": "How to compose for Strings",
+   "channel": "David Bennett Music Theory",
+   "duration": 876,
+   "view_count": 319505,
+   "url": "https://www.youtube.com/watch?v=YF86PC5mTFE",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.25
+  },
+  {
+   "id": "IH-zpS7gxxg",
+   "title": "A Cheatcode for Better Arrangements: The Two Loop Rule",
+   "channel": "Alex Rome",
+   "duration": 590,
+   "view_count": 877327,
+   "url": "https://www.youtube.com/watch?v=IH-zpS7gxxg",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.47
+  },
+  {
+   "id": "-skr-sFCN9Q",
+   "title": "Hardstyle Arrangement for Dummies - Song Structure 101",
+   "channel": "Sawer",
+   "duration": 692,
+   "view_count": 6674,
+   "url": "https://www.youtube.com/watch?v=-skr-sFCN9Q",
+   "query": "cinematic soundtrack arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.41
+  }
+ ],
+ "dropped": [
+  {
+   "id": "LF4yNpzSARQ",
+   "why": "already known"
+  },
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "32_YePbe-BE",
+   "why": "duration 176s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,101 @@
+{
+ "topic": "reese bass sound design tutorial",
+ "date": "2026-11-16",
+ "params": {
+  "topic": "reese bass sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "huzpYujBGns",
+   "title": "How to Make a Reese Bass for Drum and Bass – Serum Sound Design Tutorial",
+   "channel": "Noise Masters",
+   "duration": 712,
+   "view_count": 4741,
+   "url": "https://www.youtube.com/watch?v=huzpYujBGns",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.34
+  },
+  {
+   "id": "kwIFZQIuDtk",
+   "title": "How To CREATE REESE BASSES in Native Instruments Massive - A Sound Design Tutorial",
+   "channel": "VibeSynthetic",
+   "duration": 418,
+   "view_count": 2448,
+   "url": "https://www.youtube.com/watch?v=kwIFZQIuDtk",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 12.19
+  },
+  {
+   "id": "TYU764RIkmE",
+   "title": "Sound Design - Deep Reese Bass Tutorial",
+   "channel": "In The Mix",
+   "duration": 617,
+   "view_count": 225648,
+   "url": "https://www.youtube.com/watch?v=TYU764RIkmE",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 11.18
+  },
+  {
+   "id": "dFR57D7cFcs",
+   "title": "The LAST Reese Bass Tutorial You'll Ever Need // Serum Tutorial",
+   "channel": "Witton",
+   "duration": 847,
+   "view_count": 36878,
+   "url": "https://www.youtube.com/watch?v=dFR57D7cFcs",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.78
+  },
+  {
+   "id": "8whhdvA0hV4",
+   "title": "Original Reese Bass Tutorial",
+   "channel": "\\\\ OWEN PALMER //",
+   "duration": 301,
+   "view_count": 55731,
+   "url": "https://www.youtube.com/watch?v=8whhdvA0hV4",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.87
+  },
+  {
+   "id": "aIKhjXbjKUg",
+   "title": "How To Make INSANE Reese Bass in Serum (and FL Studio Stock Plugins)",
+   "channel": "Mix Elite | FL Studio Tips",
+   "duration": 756,
+   "view_count": 150679,
+   "url": "https://www.youtube.com/watch?v=aIKhjXbjKUg",
+   "query": "reese bass sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.09
+  }
+ ],
+ "dropped": [
+  {
+   "id": "t5GnBrOhUZs",
+   "why": "duration 222s"
+  },
+  {
+   "id": "W87uuuGcq9c",
+   "why": "duration 82s"
+  },
+  {
+   "id": "ljS5FcbiCOM",
+   "why": "duration 105s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

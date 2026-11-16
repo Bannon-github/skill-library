@@ -59,3 +59,14 @@ Source: [How to Create Monaural Beats in Ableton Live (Step-By-Step Tutorial)](h
 - Turn off fixed pitch so the instrument plays normally; play chords and melodies so the whole harmony pulses.
 - Add reverb after the tremolo and, if wanted, keep the Option A sine pair quietly underneath.
 - Optionally copy the same tremolo onto other tracks of a meditation piece, then test-listen at length before sharing.
+
+### Rate-ramp brainwave layer: a binaural pair centred on a fixed carrier (e.g. 200 Hz) with the beat split symmetrically (carrier minus beat/2 left, plus beat/2 right) and the beat rate moved over time, either as one eased (slow-fast-slow) ramp from a start to a target rate (e.g. 6 -> 1.5 Hz over minutes) or as a 'gearbox' of band steps (16 -> 10 -> 6 -> 2 Hz) that dwell for minutes and shift over ~1-1.5 min, with an optional return trip; a harmonic second pair (fifth/octave/12th) keeping the same gap, an isochronic amplitude pulse at the same rate blended in for speakers, and a brown-noise bed
+Source: [Binaural Beats Explained: Build One in Your DAW with Binaura](https://www.youtube.com/watch?v=00oV6DJkK3E) · was `binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend`
+- Pick the carrier: e.g. 200 Hz, or an octave above the bed's drone root (A2 drone -> 220 Hz carrier) so it stays above the bass.
+- Set the start beat: left sine = carrier - beat/2, right sine = carrier + beat/2 (6 Hz at 200 -> 197 L / 203 R); hard-pan each.
+- Classic ramp: draw automation on both oscillators so the gap moves from the start to the target rate (e.g. 6 -> 1.5 Hz) over the ramp time, with an S-shaped (eased) curve; both frequencies move symmetrically.
+- Gearbox alternative: write a schedule of band steps without skipping a band (e.g. 16 beta -> 10 alpha -> 6 theta -> 2 delta Hz), hold each for a dwell (default ~4 min; 30 s for previews) and shift between them over a gear-shift time (~1.5 min; 15 s for previews).
+- Decide the ending: return trip (back up 2 -> 6 -> 10 -> 16), hold the last band and fade out after one dwell, or hold the final rate to the end.
+- Optional harmonic: add a second pair at octave (397/403 for 200 Hz + 6), fifth (1.5x) or 12th (3x) of the carrier with the same gap, both pairs following the same rate automation.
+- Optional isochronic blend: tremolo/VCA on the tones at the current beat rate (follows the same automation), depth ~0.6 for a partial dip or 1.0 to silence.
+- Add a brown-noise bed (~-26 dB) and fade the whole layer in over ~10 s; set tone peak ~-14 dBFS; place under the pad/drone.

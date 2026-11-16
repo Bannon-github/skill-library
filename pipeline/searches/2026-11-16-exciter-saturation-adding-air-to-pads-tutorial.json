@@ -1,0 +1,97 @@
+{
+ "topic": "exciter saturation adding air to pads tutorial",
+ "date": "2026-11-16",
+ "params": {
+  "topic": "exciter saturation adding air to pads tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "TpJ1EAerPN4",
+   "title": "Beginner Guide to Saturation",
+   "channel": "Streaky",
+   "duration": 285,
+   "view_count": 80051,
+   "url": "https://www.youtube.com/watch?v=TpJ1EAerPN4",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.45
+  },
+  {
+   "id": "P9BAoDvC1e4",
+   "title": "Behringer X32 Effects Tutorial - Enhancer",
+   "channel": "Drew Brashler",
+   "duration": 525,
+   "view_count": 125955,
+   "url": "https://www.youtube.com/watch?v=P9BAoDvC1e4",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.05
+  },
+  {
+   "id": "cSbVsBbWlRg",
+   "title": "Using Insert Effects on the Behringer XR18 - Behringer XR18 Effects Tutorial",
+   "channel": "Drew Brashler",
+   "duration": 568,
+   "view_count": 85759,
+   "url": "https://www.youtube.com/watch?v=cSbVsBbWlRg",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  },
+  {
+   "id": "bRPvvCnjQlI",
+   "title": "RØDECaster Pro II: How to use Onboard Processing",
+   "channel": "RØDE",
+   "duration": 1146,
+   "view_count": 71629,
+   "url": "https://www.youtube.com/watch?v=bRPvvCnjQlI",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.93
+  },
+  {
+   "id": "UEQEDyKGl8g",
+   "title": "Roland V-Stage Stage Piano - Advanced Tutorial with Ed Diaz",
+   "channel": "Kraft Music",
+   "duration": 2278,
+   "view_count": 25319,
+   "url": "https://www.youtube.com/watch?v=UEQEDyKGl8g",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.2
+  },
+  {
+   "id": "sEC4_GYEbjk",
+   "title": "How Will These FX Change Our MIX????  |  Behringer FX in the X32, M32 and Xair Consoles",
+   "channel": "AllamHouse",
+   "duration": 1376,
+   "view_count": 16475,
+   "url": "https://www.youtube.com/watch?v=sEC4_GYEbjk",
+   "query": "exciter saturation adding air to pads tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.61
+  }
+ ],
+ "dropped": [
+  {
+   "id": "63nKuxQCdJc",
+   "why": "already known"
+  },
+  {
+   "id": "N0wZ0qWH3sY",
+   "why": "duration 161s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

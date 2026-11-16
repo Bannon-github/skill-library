@@ -1,0 +1,113 @@
+{
+ "topic": "manipulating orchestral samples sound design hybrid score",
+ "date": "2026-11-16",
+ "params": {
+  "topic": "manipulating orchestral samples sound design hybrid score",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "UF45TAe9KRg",
+   "title": "How To Make Hybrid Orchestral Music | S01E11 | Deep Dive Composing Walkthrough | Part 11 of 13",
+   "channel": "The Knightime Project",
+   "duration": 727,
+   "view_count": 23,
+   "url": "https://www.youtube.com/watch?v=UF45TAe9KRg",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.19
+  },
+  {
+   "id": "ezuUuP_DJAI",
+   "title": "Composing Tutorial: Crafting Hybrid Orchestral Music",
+   "channel": "Composer's Compass",
+   "duration": 432,
+   "view_count": 504,
+   "url": "https://www.youtube.com/watch?v=ezuUuP_DJAI",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.85
+  },
+  {
+   "id": "Bzvn_6toM6M",
+   "title": "How To Write A Hybrid Orchestral Film Score - Part 1",
+   "channel": "Tommy Arnold",
+   "duration": 2469,
+   "view_count": 3857,
+   "url": "https://www.youtube.com/watch?v=Bzvn_6toM6M",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.79
+  },
+  {
+   "id": "uAQA7mPAI2g",
+   "title": "Creating A Modern Hybrid Score: Darkstar — Haunted House",
+   "channel": "Spitfire Audio",
+   "duration": 1639,
+   "view_count": 21383,
+   "url": "https://www.youtube.com/watch?v=uAQA7mPAI2g",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.67
+  },
+  {
+   "id": "rEXT0z75IyQ",
+   "title": "Hybrid Film Scoring: Blending Orchestral and Granular Textures with Sampling.",
+   "channel": "whittymusic",
+   "duration": 1678,
+   "view_count": 3141,
+   "url": "https://www.youtube.com/watch?v=rEXT0z75IyQ",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.25
+  },
+  {
+   "id": "IJBnFIRKzTk",
+   "title": "Hybrid Orchestral Music Made Simple: 5-Minute Track Breakdown",
+   "channel": "Noam Goldstein",
+   "duration": 385,
+   "view_count": 2435,
+   "url": "https://www.youtube.com/watch?v=IJBnFIRKzTk",
+   "query": "manipulating orchestral samples sound design hybrid score tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.19
+  }
+ ],
+ "dropped": [
+  {
+   "id": "P--40MYlGuI",
+   "why": "already known"
+  },
+  {
+   "id": "8ZerPdrCs-4",
+   "why": "already known"
+  },
+  {
+   "id": "jgxEO8Uwfxw",
+   "why": "duration 59s"
+  },
+  {
+   "id": "hlJ9t7MbJjY",
+   "why": "already known"
+  },
+  {
+   "id": "-wpD-gO9jeA",
+   "why": "duration 229s"
+  },
+  {
+   "id": "_8NvgUuCo30",
+   "why": "duration 121s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

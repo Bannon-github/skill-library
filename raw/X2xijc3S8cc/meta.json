@@ -1,0 +1,59 @@
+{
+  "video_id": "X2xijc3S8cc",
+  "title": "How to create AMAZING Pads & Drones (for any genre) - Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=X2xijc3S8cc",
+  "fetched_at": "2026-11-16T16:19:51.131470+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EDM Tips",
+  "duration": 1812,
+  "ok": true,
+  "cue_count": 694,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/X2xijc3S8cc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/X2xijc3S8cc/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "pt-BR(auto)",
+        "ru(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

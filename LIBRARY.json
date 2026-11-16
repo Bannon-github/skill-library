@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-13T16:46:03.755734+00:00",
-  "entry_count": 274,
+  "updated_at": "2026-11-16T16:27:14.394250+00:00",
+  "entry_count": 278,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4005,6 +4005,58 @@
       "skills": [
         "brightness-and-air-at-the-source"
       ]
+    },
+    {
+      "id": "cinematic-synth-00oV6DJkK3E",
+      "video_id": "00oV6DJkK3E",
+      "url": "https://www.youtube.com/watch?v=00oV6DJkK3E",
+      "title": "Binaural Beats Explained: Build One in Your DAW with Binaura",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/00oV6DJkK3E/raw.txt",
+      "summary": "Skills: binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend (folded into brainwave-binaural-isochronic-layers)",
+      "skills": [
+        "brainwave-binaural-isochronic-layers"
+      ]
+    },
+    {
+      "id": "cinematic-synth-rEXT0z75IyQ",
+      "video_id": "rEXT0z75IyQ",
+      "url": "https://www.youtube.com/watch?v=rEXT0z75IyQ",
+      "title": "Hybrid Film Scoring: Blending Orchestral and Granular Textures with Samplers",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/rEXT0z75IyQ/raw.txt",
+      "summary": "Skills: orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra (folded into granular-and-spectral-texture-design)",
+      "skills": [
+        "granular-and-spectral-texture-design"
+      ]
+    },
+    {
+      "id": "cinematic-synth-X2xijc3S8cc",
+      "video_id": "X2xijc3S8cc",
+      "url": "https://www.youtube.com/watch?v=X2xijc3S8cc",
+      "title": "How to create AMAZING Pads & Drones (for any genre) - Sound Design Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/X2xijc3S8cc/raw.txt",
+      "summary": "Skills: pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last (folded into mix-eq-gain-staging-and-balance)",
+      "skills": [
+        "mix-eq-gain-staging-and-balance"
+      ]
+    },
+    {
+      "id": "cinematic-synth-MycI9ZOSPRk",
+      "video_id": "MycI9ZOSPRk",
+      "url": "https://www.youtube.com/watch?v=MycI9ZOSPRk",
+      "title": "4 Tips for Writing Ambient Chord Progressions",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/MycI9ZOSPRk/raw.txt",
+      "summary": "Skills: ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line (folded into harmony-chords-voicing-and-slow-motion)",
+      "skills": [
+        "harmony-chords-voicing-and-slow-motion"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4686,6 +4738,32 @@
           "video_id": "Aqe3ISng8jA",
           "skill": "noise-recording-tuned-to-key-stacked-max-q-eq-boosts-at-root-freeze-flatten-chromatic-sampler-pad-attack-verb-delay-sidechain-eq-automation",
           "cluster": "brightness-and-air-at-the-source"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-16T16:27:14.394250+00:00",
+      "batch": "2026-11-16-morning-hunt",
+      "folded": [
+        {
+          "video_id": "00oV6DJkK3E",
+          "skill": "binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend",
+          "cluster": "brainwave-binaural-isochronic-layers"
+        },
+        {
+          "video_id": "rEXT0z75IyQ",
+          "skill": "orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra",
+          "cluster": "granular-and-spectral-texture-design"
+        },
+        {
+          "video_id": "X2xijc3S8cc",
+          "skill": "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last",
+          "cluster": "mix-eq-gain-staging-and-balance"
+        },
+        {
+          "video_id": "MycI9ZOSPRk",
+          "skill": "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
+          "cluster": "harmony-chords-voicing-and-slow-motion"
         }
       ]
     }

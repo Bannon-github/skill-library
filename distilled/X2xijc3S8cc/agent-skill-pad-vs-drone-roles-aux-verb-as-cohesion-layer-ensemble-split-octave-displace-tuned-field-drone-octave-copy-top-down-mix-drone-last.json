@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "id": "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last",
+  "name": "Pad and drone layering from synth to mix: decide the role (pad follows chords, drone holds one note as a bed); a slow-attack/release poly saw pad with a subtle slow cutoff LFO, octave-down sub, unison and a different second wavetable; reverb on an aux treated as its own layer (low-cut, optional octave-up crystallizing effect and a slow LFO on overdrive mix) for timbral cohesion; a ping-pong looped sampler pad layered by splitting each chord (bottom two notes to one layer, top two to the other) and displacing octaves (+2 / -1); a drone from a tonal slice of a field recording, warped, looped, tuned to key, low-cut and reverbed, doubled two octaves down; then a top-down mix where the pad is EQ'd around bass and vocal with light sidechain and the drone goes in last at barely audible level",
+  "goal": "Build and place an evolving pad + drone bed that glues a track. Delta vs pad/wavetable/supersaw and harmony clusters: the aux reverb is treated as a layer for timbral cohesion, chord tones are split between layers with octave displacement to free frequency space, a key-tuned field-recording drone is doubled two octaves down, and the mix order puts the drone in last, just audible.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "X2xijc3S8cc",
+    "url": "https://www.youtube.com/watch?v=X2xijc3S8cc",
+    "title": "How to create AMAZING Pads & Drones (for any genre) - Sound Design Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/X2xijc3S8cc/agent-skill-pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last.json",
+    "batch": "2026-11-16-morning-hunt"
+  },
+  "prerequisites": [
+    "A poly wavetable/VA synth with LFOs and unison",
+    "A sampler with ping-pong loop + crossfade",
+    "An aux reverb return, EQ, overdrive, sidechain compressor",
+    "A field recording with a tonal section"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Chord progression, e.g. 4-note chords",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Track key for drone tuning",
+      "required": true
+    },
+    {
+      "name": "field_recording",
+      "type": "audio",
+      "description": "Atmosphere with a sustained pitched part",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_group",
+      "type": "audio",
+      "description": "Two complementary pad layers grouped with shared EQ/comp/filter automation"
+    },
+    {
+      "name": "drone",
+      "type": "audio",
+      "description": "Tuned field-recording drone plus octave-down double"
+    },
+    {
+      "name": "mix_notes",
+      "type": "text",
+      "description": "EQ cuts around bass/vocal, sidechain amount, drone level"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: no pan/position LFO flutter on pitch and no wow-and-flutter tape emulation on the melodic pad (the source's tape wow is dropped); LFOs only on cutoff, mix and pan, at slow rates with small depth (Matt's preference).",
+    "Layers must complement, not double: use a different waveform for the second oscillator/layer.",
+    "Set enough voices for overlapping releases (e.g. 8 voices for two overlapping 4-note chords).",
+    "Octave-shift arithmetic for the drone: if tuned at +4 semitones, two octaves down is -20.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: saw + sub + unison -> LP with slow LFO; aux reverb -> EQ low cut -> pitch-shift/octave-up granular -> overdrive with LFO on mix; sampler ping-pong loop with crossfade; audio warp/transpose for drone tuning.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Decide the role: pad (follows the chord progression) or drone (one held note as an emotional bed).",
+      "tool": "Planning",
+      "expect": "Role written down"
+    },
+    {
+      "n": 2,
+      "action": "Pad: poly saw, add attack and release so chords blend in and out; low-pass with a small, slow LFO on cutoff; add an octave-down sub and unison for thickness.",
+      "tool": "Synth amp env + LFO",
+      "expect": "Smoothly fading, gently evolving pad"
+    },
+    {
+      "n": 3,
+      "action": "Add a second oscillator with a different waveform, a little unison, a slow pan LFO and an optional slow wavetable-position LFO at low depth; add chorus/dimension and an optional flanger-type filter with slow LFO on cutoff and mix.",
+      "tool": "Osc B + LFOs",
+      "expect": "Complementary layer, not mud"
+    },
+    {
+      "n": 4,
+      "action": "Create an aux return with a 100% wet reverb, low-cut its EQ, optionally add an octave-up crystallizing pitch effect and an overdrive whose mix is moved by a slow, shallow LFO; send the pad to it. Treat this return as a layer.",
+      "tool": "Aux reverb chain",
+      "expect": "Wide, cohesive space from the same source"
+    },
+    {
+      "n": 5,
+      "action": "Sampler pad layer: a one-note sample (pitched on C) in ping-pong loop mode with crossfade, attack and release added, enough voices; copy the chords to it.",
+      "tool": "Sampler",
+      "expect": "Second pad layer in tune"
+    },
+    {
+      "n": 6,
+      "action": "Split each chord: synth layer keeps the bottom two notes, sampler layer the top two; move the top pair up two octaves and the bottom pair down one; send the sampler layer to the same aux.",
+      "tool": "MIDI edit",
+      "expect": "Ensemble chord with frequency space between layers"
+    },
+    {
+      "n": 7,
+      "action": "Group the pad layers; apply shared EQ, light compression and a slowly opening filter automation.",
+      "tool": "Group bus",
+      "expect": "Pads behave as one instrument"
+    },
+    {
+      "n": 8,
+      "action": "Drone: find a section of a field recording with a single pitch, loop and warp it, transpose to the track key, low-cut, add reverb on the channel; duplicate and drop two octaves.",
+      "tool": "Audio warp + EQ + reverb",
+      "expect": "Textural drone in key"
+    },
+    {
+      "n": 9,
+      "action": "Top-down mix: with the main elements balanced, bring the pad in loud to hear clashes, cut its low end where the bass lives and its top where the vocal lives, add light kick sidechain; bring the drone in last until just audible, with less sidechain than the pad.",
+      "tool": "EQ + sidechain",
+      "expect": "Pad sits around bass/vocal; drone glues, noticed mainly when muted"
+    }
+  ],
+  "verification": [
+    "Synth and sampler layers never play the same chord tones in the same octave.",
+    "Muting the drone removes some high energy/glue but no melodic element.",
+    "Pad EQ shows a low cut below the bass's main region."
+  ],
+  "tags": [
+    "pad",
+    "drone",
+    "layering",
+    "reverb",
+    "aux",
+    "field-recording",
+    "mix",
+    "sidechain",
+    "ensemble-chord",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last"
+}

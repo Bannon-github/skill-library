@@ -1,0 +1,174 @@
+{
+ "video_id": "4sereDbtdLw",
+ "started_at": "2026-11-16T16:21:34.983569+00:00",
+ "outcome": "CANDIDATES_READY",
+ "route": "ytdlp-target",
+ "language_code": "en",
+ "original_language": "en",
+ "is_generated": null,
+ "translated": false,
+ "translation_method": null,
+ "domain": "synth",
+ "graph": {
+  "video_id": "4sereDbtdLw",
+  "domain": "synth",
+  "out": "/workspace/skill-library/raw/4sereDbtdLw/graph.json",
+  "segments": 13,
+  "windows": 13,
+  "nodes": 26,
+  "edges": 32,
+  "nodes_by_type": {
+   "param": 3,
+   "module": 3,
+   "concept": 2,
+   "step": 10,
+   "value": 2,
+   "tool": 1,
+   "phrase": 5
+  },
+  "edges_by_type": {
+   "part-of": 3,
+   "mentions": 18,
+   "precedes": 9,
+   "sets": 2
+  },
+  "words": 1674
+ },
+ "gaps": {
+  "video_id": "4sereDbtdLw",
+  "graph_nodes": 26,
+  "graph_edges": 32,
+  "terms_checked": 14,
+  "terms_covered": 2,
+  "gap_nodes": 12,
+  "gap_nodes_excl_phrases": 9,
+  "relations_checked": 2,
+  "gap_edges": 2,
+  "candidates": 1,
+  "kg": {
+   "videos": 302,
+   "nodes": 1509,
+   "edges": 431,
+   "uncovered_nodes": 25,
+   "uncovered_edges": 167
+  },
+  "candidate_ids": [
+   "synth-pitch-mix-bass-0-01"
+  ],
+  "decision": "GAP",
+  "covered_verdict": {
+   "reasons": [
+    "dense gap-step candidates",
+    "thin procedure evidence (2 items) and best single-skill topic profile 0.0 < 0.8"
+   ],
+   "best_skill": null,
+   "profile_share": 0.0,
+   "best_proc_overlap": 0.0,
+   "specific_items": 2,
+   "uncovered_techniques": [],
+   "video_novelty": 0.062,
+   "video_novelty_verdict": "NOVEL"
+  }
+ },
+ "decisions": [
+  {
+   "q": "Q0 pipeline env importable?",
+   "a": true
+  },
+  {
+   "q": "Q1 transcript already saved?",
+   "a": true,
+   "evidence": "ytdlp-target",
+   "then": "reuse saved transcript"
+  },
+  {
+   "q": "Q3 transcript usable (>=150 words, not music-only)?",
+   "a": true,
+   "evidence": {
+    "words": 1680,
+    "music_markers": 6
+   }
+  },
+  {
+   "q": "Q4 English text is a translation?",
+   "a": false,
+   "evidence": "direct"
+  },
+  {
+   "q": "Q5 domain lexicon matched (>=8 hits)?",
+   "a": true,
+   "evidence": {
+    "domain": "synth",
+    "scores": {
+     "arrangement": 2,
+     "blender": 1,
+     "crypto": 0,
+     "drone": 0,
+     "sidehustle": 15,
+     "synth": 46
+    }
+   }
+  },
+  {
+   "q": "Q6 term graph built?",
+   "a": true,
+   "evidence": {
+    "nodes": 26,
+    "edges": 32
+   }
+  },
+  {
+   "q": "Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)?",
+   "a": true,
+   "evidence": {
+    "gap_nodes_excl_phrases": 9,
+    "gap_edges": 2,
+    "candidates": 1,
+    "covered_verdict": {
+     "reasons": [
+      "dense gap-step candidates",
+      "thin procedure evidence (2 items) and best single-skill topic profile 0.0 < 0.8"
+     ],
+     "best_skill": null,
+     "profile_share": 0.0,
+     "best_proc_overlap": 0.0,
+     "specific_items": 2,
+     "uncovered_techniques": [],
+     "video_novelty": 0.062,
+     "video_novelty_verdict": "NOVEL"
+    }
+   },
+   "then": "NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py"
+  }
+ ],
+ "fetch_decisions": [
+  {
+   "q": "yt-dlp probe ok? (availability + original language)",
+   "a": true,
+   "evidence": "en"
+  },
+  {
+   "q": "transcript tracks listed?",
+   "a": true,
+   "evidence": [
+    "en(auto)"
+   ]
+  },
+  {
+   "q": "track ladder",
+   "a": [
+    "2:auto-target-original-audio:en"
+   ]
+  },
+  {
+   "q": "fetch auto-target-original-audio (en)",
+   "a": false,
+   "evidence": "rate_limited_or_ip_blocked"
+  },
+  {
+   "q": "yt-dlp fallback (en.*,en,.*-orig)",
+   "a": true
+  }
+ ],
+ "finished_at": "2026-11-16T16:21:35.186781+00:00"
+}

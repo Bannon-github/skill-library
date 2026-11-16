@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "id": "binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend",
+  "name": "Rate-ramp brainwave layer: a binaural pair centred on a fixed carrier (e.g. 200 Hz) with the beat split symmetrically (carrier minus beat/2 left, plus beat/2 right) and the beat rate moved over time, either as one eased (slow-fast-slow) ramp from a start to a target rate (e.g. 6 -> 1.5 Hz over minutes) or as a 'gearbox' of band steps (16 -> 10 -> 6 -> 2 Hz) that dwell for minutes and shift over ~1-1.5 min, with an optional return trip; a harmonic second pair (fifth/octave/12th) keeping the same gap, an isochronic amplitude pulse at the same rate blended in for speakers, and a brown-noise bed",
+  "goal": "Build the slow-ramp-between-pulse-rates layer the brainwave cluster was missing. Delta vs brainwave-binaural-isochronic-layers (fixed-rate binaural, isochronic, monaural/tremolo variants): the beat rate is automated over time while the carrier centre stays fixed, with an eased single ramp or a stepped dwell/shift schedule, plus same-gap harmonic doubling.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "00oV6DJkK3E",
+    "url": "https://www.youtube.com/watch?v=00oV6DJkK3E",
+    "title": "Binaural Beats Explained: Build One in Your DAW with Binaura",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/00oV6DJkK3E/agent-skill-binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend.json",
+    "batch": "2026-11-16-morning-hunt"
+  },
+  "prerequisites": [
+    "Two sine oscillators (or one per channel) with automatable frequency, hard-panned L/R",
+    "An amplitude LFO/tremolo or gate for the isochronic blend",
+    "A brown-noise source",
+    "Headphones for checking the binaural part"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_hz",
+      "type": "number",
+      "description": "Centre pitch, 20-1000 Hz; e.g. 200, or an octave above the drone root (220 over an A2 drone)",
+      "required": true
+    },
+    {
+      "name": "start_beat_hz",
+      "type": "number",
+      "description": "Starting beat rate, e.g. 6 or 16",
+      "required": true
+    },
+    {
+      "name": "target_beat_hz",
+      "type": "number",
+      "description": "Target beat rate, e.g. 1.5 or 2",
+      "required": true
+    },
+    {
+      "name": "ramp_minutes",
+      "type": "number",
+      "description": "Ramp length (up to ~60 min); or dwell/shift times for gearbox mode",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "brainwave_layer",
+      "type": "audio",
+      "description": "Stereo binaural (+ optional isochronic) layer whose beat rate ramps or steps while pitch centre stays fixed"
+    },
+    {
+      "name": "rate_schedule",
+      "type": "text",
+      "description": "Time -> beat-rate table used for the automation"
+    }
+  ],
+  "constraints": [
+    "Move the beat, not the pitch: both ears move toward each other by the same amount (left = carrier - beat/2, right = carrier + beat/2), so the perceived centre pitch never changes.",
+    "Ramps are eased (leave slowly, faster in the middle, settle gently on the target); no jumps or random rate changes.",
+    "Binaural beats need headphones; if the track must work on speakers, blend in an isochronic pulse at the same rate (amplitude dip 0.6 = partial, 1.0 = to silence), which lives in each channel's signal.",
+    "Keep the carrier above the bass register and in a free part of the mix; to make it fuller add a harmonic pair (fifth = 1.5x, octave = 2x, 12th = 3x carrier) with the same gap rather than turning the tone up.",
+    "Tone level around -14 dBFS peak, brown noise bed around -26 dB; fade the layer in over ~10 s.",
+    "The plugin's 'phi ladder' and 'intention' carrier presets are vendor-specific/unverified claims and are omitted.",
+    "Not medical advice; entrainment effects are not guaranteed.",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: two sines with frequency automation (or one sine through a stereo frequency shifter), an LFO-driven VCA for isochronic, a noise generator; works in any DAW or Web Audio (OscillatorNode.frequency.setTargetAtTime / linearRampToValueAtTime).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick the carrier: e.g. 200 Hz, or an octave above the bed's drone root (A2 drone -> 220 Hz carrier) so it stays above the bass.",
+      "tool": "Sine osc x2",
+      "expect": "Carrier chosen with room in the mix"
+    },
+    {
+      "n": 2,
+      "action": "Set the start beat: left sine = carrier - beat/2, right sine = carrier + beat/2 (6 Hz at 200 -> 197 L / 203 R); hard-pan each.",
+      "tool": "Panned sines",
+      "expect": "On headphones a 6 Hz pulse heard though neither channel pulses"
+    },
+    {
+      "n": 3,
+      "action": "Classic ramp: draw automation on both oscillators so the gap moves from the start to the target rate (e.g. 6 -> 1.5 Hz) over the ramp time, with an S-shaped (eased) curve; both frequencies move symmetrically.",
+      "tool": "Frequency automation",
+      "expect": "Pulse slows smoothly; centre pitch steady"
+    },
+    {
+      "n": 4,
+      "action": "Gearbox alternative: write a schedule of band steps without skipping a band (e.g. 16 beta -> 10 alpha -> 6 theta -> 2 delta Hz), hold each for a dwell (default ~4 min; 30 s for previews) and shift between them over a gear-shift time (~1.5 min; 15 s for previews).",
+      "tool": "Stepped automation",
+      "expect": "Audible holds and smooth gear changes"
+    },
+    {
+      "n": 5,
+      "action": "Decide the ending: return trip (back up 2 -> 6 -> 10 -> 16), hold the last band and fade out after one dwell, or hold the final rate to the end.",
+      "tool": "Automation",
+      "expect": "Defined session ending"
+    },
+    {
+      "n": 6,
+      "action": "Optional harmonic: add a second pair at octave (397/403 for 200 Hz + 6), fifth (1.5x) or 12th (3x) of the carrier with the same gap, both pairs following the same rate automation.",
+      "tool": "Second sine pair",
+      "expect": "Fuller tone, same beat"
+    },
+    {
+      "n": 7,
+      "action": "Optional isochronic blend: tremolo/VCA on the tones at the current beat rate (follows the same automation), depth ~0.6 for a partial dip or 1.0 to silence.",
+      "tool": "LFO -> VCA",
+      "expect": "Pulse remains audible on speakers"
+    },
+    {
+      "n": 8,
+      "action": "Add a brown-noise bed (~-26 dB) and fade the whole layer in over ~10 s; set tone peak ~-14 dBFS; place under the pad/drone.",
+      "tool": "Noise + gain",
+      "expect": "Warm bed, tone not crowding the low end"
+    }
+  ],
+  "verification": [
+    "At any time t, (right Hz - left Hz) equals the scheduled beat rate and (left + right)/2 equals the carrier.",
+    "Rate automation curve has no steps outside the gearbox shifts and no random segments.",
+    "Summed to mono the binaural part has no level pulsing; with isochronic on, a pulse is still audible on speakers."
+  ],
+  "tags": [
+    "brainwave",
+    "binaural",
+    "isochronic",
+    "rate-ramp",
+    "automation",
+    "entrainment",
+    "sine",
+    "meditation",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend"
+}

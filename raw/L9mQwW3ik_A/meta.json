@@ -1,0 +1,83 @@
+{
+  "video_id": "L9mQwW3ik_A",
+  "title": "Create Positive Tension Filmmusic (Walkthrough)",
+  "url": "https://www.youtube.com/watch?v=L9mQwW3ik_A",
+  "fetched_at": "2026-11-16T16:21:49.413451+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "de",
+  "channel": "Tim Heinrich - Music & Sound",
+  "duration": 1320,
+  "ok": true,
+  "cue_count": 175,
+  "route": "original-plus-machine-translation",
+  "method": "youtube-transcript-api",
+  "language_code": "de",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/L9mQwW3ik_A/raw.txt",
+  "original_transcript_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.orig.de.txt",
+  "translated": true,
+  "translation_method": "machine:argos",
+  "translated_from": "de",
+  "translation": {
+    "ok": true,
+    "backend": "argos",
+    "src": "de",
+    "tgt": "en",
+    "segments": 28,
+    "glossary_hits": {},
+    "garbled_share": 0.0,
+    "repeat_loops_collapsed": 1,
+    "confidence": "medium",
+    "segment_terms": [],
+    "seconds": 14.9,
+    "original_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.orig.de.txt",
+    "output_path": "/workspace/skill-library/raw/L9mQwW3ik_A/transcript.txt",
+    "translated": true,
+    "at": "2026-11-16T16:22:17.454040+00:00"
+  },
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "de"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "de(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "3:youtube-translated:de",
+        "5:original-plus-machine-translation:de"
+      ]
+    },
+    {
+      "q": "fetch youtube-translated (de)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "fetch original-plus-machine-translation (de)",
+      "a": true
+    },
+    {
+      "q": "machine-translate de->en (argos)",
+      "a": true,
+      "evidence": null
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "id": "orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra",
+  "name": "Hybrid orchestral sound design: bounce a string ostinato (or piano loop) to audio, load it into a sampler/granular synth, play it one and two octaves down so it repitches to half and quarter speed and stack the octaves into a slow pulse; add a filtered arpeggiated bass and a filtered simple analog lead; process with drive -> a fader-mapped morphing filter -> console/compressor -> big shimmer reverb; then switch the same sample to granular with a held position scanned by the mod wheel (or a slow synced LFO), optionally FM/ring-mod or wave-shape it; finally blend the processed layer back under the real orchestral parts (e.g. horns with heavy reverb)",
+  "goal": "Turn orchestral library material into otherworldly hybrid-score textures. Delta vs granular cluster (sampler loop chord pad, keygroup, freeze stacks) and synth-strings cluster: the source is a composed orchestral ostinato, repitched by octaves into a tempo-related pulse, then remarried with the live orchestral parts.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "rEXT0z75IyQ",
+    "url": "https://www.youtube.com/watch?v=rEXT0z75IyQ",
+    "title": "Hybrid Film Scoring: Blending Orchestral and Granular Textures with Samplers",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/rEXT0z75IyQ/agent-skill-orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra.json",
+    "batch": "2026-11-16-morning-hunt"
+  },
+  "prerequisites": [
+    "An orchestral ostinato or piano loop you wrote/rendered (bounced to audio, 16-bit WAV is safest for older samplers)",
+    "A sampler with repitch playback and a granular mode (any DAW sampler, a hybrid synth)",
+    "Distortion, a sweepable filter, a channel compressor, a large/shimmer reverb"
+  ],
+  "inputs": [
+    {
+      "name": "ostinato",
+      "type": "audio",
+      "description": "Bounced string ostinato or piano loop in the cue's key",
+      "required": true
+    },
+    {
+      "name": "cue_tempo",
+      "type": "number",
+      "description": "Cue tempo",
+      "required": true
+    },
+    {
+      "name": "orchestral_parts",
+      "type": "midi",
+      "description": "Real orchestral lines to keep (e.g. horns, strings)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "hybrid_pulse",
+      "type": "audio",
+      "description": "Octave-stacked, processed ostinato pulse"
+    },
+    {
+      "name": "granular_pad",
+      "type": "audio",
+      "description": "Position-scanned evolving pad from the same sample"
+    },
+    {
+      "name": "hybrid_cue",
+      "type": "arrangement",
+      "description": "Processed layers blended under real orchestral parts"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: repitch only by whole octaves (half/quarter speed) so the layers stay in key; use the granular 'position' mode (held/scanned position), not random 'speed' grain spray; skip the stepped pitch-modulating pulse effect from the source (Matt's preference).",
+    "Filter sweeps and position scans are slow, hand-drawn or synced; no rapid clicking gates.",
+    "Only process material you composed/rendered yourself; do not redistribute library loops or presets.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip or a resampled audio clip; automation lanes are drawn, not random.",
+    "Portable module mapping: sampler (repitch, no time-lock) -> drive -> morph/multimode filter on a macro -> console-style saturation + compressor -> shimmer reverb; granular = sample buffer with grain position on mod wheel/LFO; FM/ring mod and waveshaper as optional colour.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write or render a string ostinato (or piano loop) and bounce it to an audio file.",
+      "tool": "Bounce",
+      "expect": "Source sample in the cue key"
+    },
+    {
+      "n": 2,
+      "action": "Load it into a sampler with repitch (non time-locked) playback; play the root, then one octave down (half speed) and two octaves down (quarter speed); hold them together for a layered pulse.",
+      "tool": "Sampler",
+      "expect": "Slow, tempo-related pulse that still sounds orchestral"
+    },
+    {
+      "n": 3,
+      "action": "Add a simple arpeggiated bass, filtered so it isn't in your face, and a simple analog-style lead filtered down further.",
+      "tool": "Synth + low-pass",
+      "expect": "Three layers moving at different paces"
+    },
+    {
+      "n": 4,
+      "action": "Insert drive/distortion on the sample layer (play the low octave to hear it turn otherworldly), not overdone.",
+      "tool": "Distortion",
+      "expect": "Grit and harmonics"
+    },
+    {
+      "n": 5,
+      "action": "Add a morphing/multimode filter and map its cutoff to a fader or macro; ride it darker to build tension.",
+      "tool": "Filter + macro",
+      "expect": "Radical tone change from one control"
+    },
+    {
+      "n": 6,
+      "action": "Add a console-style channel strip/compressor after the filter, then a large shimmer-type reverb coloured to taste.",
+      "tool": "Saturation/comp + reverb",
+      "expect": "Pad-like, sound-designed wash"
+    },
+    {
+      "n": 7,
+      "action": "Switch the same sample to granular in position mode; map grain position to the mod wheel (or a slow tempo-synced LFO) and scan through the sample while chords are held; optionally add FM, ring mod or waveshaper for an alien colour.",
+      "tool": "Granular position + mod wheel",
+      "expect": "Evolving, morphing pad that no longer reads as strings"
+    },
+    {
+      "n": 8,
+      "action": "Optionally load a piano loop into a granular engine, low-pass it, play two octaves down and let the scan run forward or backward.",
+      "tool": "Granular + LP",
+      "expect": "Unrecognisable tension texture"
+    },
+    {
+      "n": 9,
+      "action": "Blend back: keep some real orchestral parts (e.g. horns, strings), add heavy reverb to them, and marry them with the processed layers in the cue.",
+      "tool": "Mix",
+      "expect": "Modern hybrid score texture"
+    }
+  ],
+  "verification": [
+    "Octave-stacked layers stay in the cue's key (only +/-12/24 semitone repitch).",
+    "Granular pad has no random pitch spray; scanning is smooth.",
+    "Processed layer and real orchestra are both audible in the final blend."
+  ],
+  "tags": [
+    "orchestral",
+    "hybrid",
+    "sampler",
+    "granular",
+    "film-score",
+    "resampling",
+    "texture",
+    "tension",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://orchestral-ostinato-bounce-to-sampler-octave-down-half-speed-pulse-stack-drive-filter-fader-console-shimmer-granular-position-modwheel-scan-remarry-live-orchestra"
+}

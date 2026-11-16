@@ -1,0 +1,105 @@
+{
+ "topic": "ambient breakdown without drums tutorial",
+ "date": "2026-11-16",
+ "params": {
+  "topic": "ambient breakdown without drums tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "EbuQ2QYKTDg",
+   "title": "How To Make AMBIENT Samples Like Pvlace | The Breakdown Ep. 3 | FL Studio Tutorial",
+   "channel": "Daniel Taylor",
+   "duration": 571,
+   "view_count": 3989,
+   "url": "https://www.youtube.com/watch?v=EbuQ2QYKTDg",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.3
+  },
+  {
+   "id": "43vkiBrPbug",
+   "title": "How to Make Ambient Music in 2026 (Step-by-Step for Beginners)",
+   "channel": "Tyler.l",
+   "duration": 827,
+   "view_count": 1582,
+   "url": "https://www.youtube.com/watch?v=43vkiBrPbug",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.1
+  },
+  {
+   "id": "vHXi__0HQrk",
+   "title": "AFX Drums: Chaos in Order - how to GLITCH like Richard D. James | Aphex Twin Beats",
+   "channel": "Captain Pikant",
+   "duration": 1384,
+   "view_count": 327865,
+   "url": "https://www.youtube.com/watch?v=vHXi__0HQrk",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.26
+  },
+  {
+   "id": "5v8KKg-hDP0",
+   "title": "How to make Ambient DnB like Black Balloons",
+   "channel": "Chris the Scientist",
+   "duration": 297,
+   "view_count": 445369,
+   "url": "https://www.youtube.com/watch?v=5v8KKg-hDP0",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.82
+  },
+  {
+   "id": "lADxAw8mtQQ",
+   "title": "Berlin Ambient Without a DAW: Complete Setup",
+   "channel": "CephalosMusic",
+   "duration": 1513,
+   "view_count": 823,
+   "url": "https://www.youtube.com/watch?v=lADxAw8mtQQ",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.96
+  },
+  {
+   "id": "QE34PIkcRVo",
+   "title": "Stop Making Boring Ambient Music: Add Non-Repeating Percussion (Envoy)",
+   "channel": "Tyler.l",
+   "duration": 1443,
+   "view_count": 7695,
+   "url": "https://www.youtube.com/watch?v=QE34PIkcRVo",
+   "query": "ambient breakdown without drums tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.44
+  }
+ ],
+ "dropped": [
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "NAEyg_eXP14",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

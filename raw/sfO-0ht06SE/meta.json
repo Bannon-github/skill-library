@@ -1,0 +1,46 @@
+{
+  "video_id": "sfO-0ht06SE",
+  "title": "Dance Music Sound Design 305: Pads Advanced - 5. Looped Envelopes and Sequenced Modulation",
+  "url": "https://www.youtube.com/watch?v=sfO-0ht06SE",
+  "fetched_at": "2026-11-16T16:20:00.840685+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "macProVideoDotCom",
+  "duration": 396,
+  "ok": true,
+  "cue_count": 83,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/sfO-0ht06SE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/sfO-0ht06SE/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

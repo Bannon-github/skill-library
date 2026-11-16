@@ -56,6 +56,12 @@
         "video_id": "MsT_yjp5kpI",
         "url": "https://www.youtube.com/watch?v=MsT_yjp5kpI",
         "title": "Why your low end sounds amateur (maybe)"
+      },
+      {
+        "from_skill": "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last",
+        "video_id": "X2xijc3S8cc",
+        "url": "https://www.youtube.com/watch?v=X2xijc3S8cc",
+        "title": "How to create AMAZING Pads & Drones (for any genre) - Sound Design Tutorial"
       }
     ]
   },
@@ -252,6 +258,22 @@
         "Still under the check (or briefly off for mids): use a mid/upper shelf on the bass to sit its harmonic body against other mid elements without needing multiband or parallel tricks. Prefer the simplest shelf moves that get priorities clear.",
         "Remove or bypass the cloak-room filter and confirm the full mix still grooves; accept a little masking if the story is clear."
       ]
+    },
+    {
+      "from_skill": "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last",
+      "name": "Pad and drone layering from synth to mix: decide the role (pad follows chords, drone holds one note as a bed); a slow-attack/release poly saw pad with a subtle slow cutoff LFO, octave-down sub, unison and a different second wavetable; reverb on an aux treated as its own layer (low-cut, optional octave-up crystallizing effect and a slow LFO on overdrive mix) for timbral cohesion; a ping-pong looped sampler pad layered by splitting each chord (bottom two notes to one layer, top two to the other) and displacing octaves (+2 / -1); a drone from a tonal slice of a field recording, warped, looped, tuned to key, low-cut and reverbed, doubled two octaves down; then a top-down mix where the pad is EQ'd around bass and vocal with light sidechain and the drone goes in last at barely audible level",
+      "goal": "Build and place an evolving pad + drone bed that glues a track. Delta vs pad/wavetable/supersaw and harmony clusters: the aux reverb is treated as a layer for timbral cohesion, chord tones are split between layers with octave displacement to free frequency space, a key-tuned field-recording drone is doubled two octaves down, and the mix order puts the drone in last, just audible.",
+      "steps": [
+        "Decide the role: pad (follows the chord progression) or drone (one held note as an emotional bed).",
+        "Pad: poly saw, add attack and release so chords blend in and out; low-pass with a small, slow LFO on cutoff; add an octave-down sub and unison for thickness.",
+        "Add a second oscillator with a different waveform, a little unison, a slow pan LFO and an optional slow wavetable-position LFO at low depth; add chorus/dimension and an optional flanger-type filter with slow LFO on cutoff and mix.",
+        "Create an aux return with a 100% wet reverb, low-cut its EQ, optionally add an octave-up crystallizing pitch effect and an overdrive whose mix is moved by a slow, shallow LFO; send the pad to it. Treat this return as a layer.",
+        "Sampler pad layer: a one-note sample (pitched on C) in ping-pong loop mode with crossfade, attack and release added, enough voices; copy the chords to it.",
+        "Split each chord: synth layer keeps the bottom two notes, sampler layer the top two; move the top pair up two octaves and the bottom pair down one; send the sampler layer to the same aux.",
+        "Group the pad layers; apply shared EQ, light compression and a slowly opening filter automation.",
+        "Drone: find a section of a field recording with a single pitch, loop and warp it, transpose to the track key, low-cut, add reverb on the channel; duplicate and drop two octaves.",
+        "Top-down mix: with the main elements balanced, bring the pad in loud to hear clashes, cut its low end where the bass lives and its top where the vocal lives, add light kick sidechain; bring the drone in last until just audible, with less sidechain than the pad."
+      ]
     }
   ],
   "merged_from": [
@@ -262,7 +284,8 @@
     "selective-saturation-and-lofi-grit-toolkit",
     "soft-tape-saturation-pads-before-space",
     "dynamics-restoring-saturation",
-    "cloakroom-check-lpf-shelf-low-end-balance"
+    "cloakroom-check-lpf-shelf-low-end-balance",
+    "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last"
   ],
   "tags": [
     "balance",
@@ -308,6 +331,7 @@
     "selective-saturation-and-lofi-grit-toolkit",
     "soft-tape-saturation-pads-before-space",
     "dynamics-restoring-saturation",
-    "cloakroom-check-lpf-shelf-low-end-balance"
+    "cloakroom-check-lpf-shelf-low-end-balance",
+    "pad-vs-drone-roles-aux-verb-as-cohesion-layer-ensemble-split-octave-displace-tuned-field-drone-octave-copy-top-down-mix-drone-last"
   ]
 }
