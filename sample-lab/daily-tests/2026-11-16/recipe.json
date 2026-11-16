@@ -1,0 +1,177 @@
+{
+ "name": "Quarter Light",
+ "seed": 1116,
+ "bpm": 90,
+ "bars": 30,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "D minor",
+ "sections": {
+  "drumsIn": 4,
+  "layersIn": 12,
+  "breakStart": 20,
+  "breakEnd": 22,
+  "hornsIn": 22,
+  "drumsOut": 28,
+  "end": 30
+ },
+ "chords": {
+  "barsPer": 2,
+  "names": [
+   "Dm9",
+   "Bbmaj9",
+   "Gm9",
+   "C(add2)/E"
+  ],
+  "bass": [
+   38,
+   34,
+   31,
+   40
+  ],
+  "upper": [
+   [
+    53,
+    57,
+    60,
+    64
+   ],
+   [
+    53,
+    57,
+    60,
+    62
+   ],
+   [
+    53,
+    57,
+    58,
+    62
+   ],
+   [
+    52,
+    55,
+    60,
+    62
+   ]
+  ]
+ },
+ "ostinato": {
+  "notes": [
+   65,
+   69,
+   72,
+   76
+  ],
+  "level": 0.65,
+  "lp": 6000
+ },
+ "sampler": {
+  "halfLevel": 0.45,
+  "quarterLevel": 0.25,
+  "drive": 2.2,
+  "cutoffPts": [
+   [
+    0,
+    900
+   ],
+   [
+    12,
+    2000
+   ],
+   [
+    20,
+    1100
+   ],
+   [
+    22,
+    3800
+   ],
+   [
+    28,
+    3800
+   ],
+   [
+    30,
+    1600
+   ]
+  ],
+  "shimmerMix": 0.6
+ },
+ "granular": {
+  "grainSec": 0.22,
+  "density": 40,
+  "scanHz": 0.03,
+  "lp": 3500,
+  "level": 0.35,
+  "octave": -1
+ },
+ "bassArp": {
+  "lp": 380,
+  "level": 0.18
+ },
+ "lead": {
+  "notes": [
+   [
+    12,
+    76,
+    4
+   ],
+   [
+    16,
+    74,
+    4
+   ],
+   [
+    22,
+    77,
+    3
+   ],
+   [
+    25,
+    76,
+    3
+   ]
+  ],
+  "lp": 2500,
+  "level": 0.22
+ },
+ "horns": {
+  "level": 0.3,
+  "lp": 2000
+ },
+ "pad": {
+  "attack": 1.6,
+  "release": 2.2,
+  "lp": 2600,
+  "lfoHz": 0.07,
+  "lfoDepth": 0.25,
+  "level": 0.55,
+  "subLevel": 0.0,
+  "samplerLevel": 0.45,
+  "auxLevel": 0.45,
+  "auxLowCut": 300,
+  "crystalMix": 0.35,
+  "openFrom": 1200,
+  "openTo": 5000,
+  "hp": 200,
+  "duckDb": 4.0
+ },
+ "drone": {
+  "midi": 50,
+  "level": 0.1,
+  "duckDb": 1.5
+ },
+ "drums": {
+  "kick": 0.26,
+  "snare": 0.22,
+  "shaker": 0.1
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.2,
+  "width": 1.0,
+  "sideHpHz": 160,
+  "fadeOutSec": 3.0
+ }
+}
