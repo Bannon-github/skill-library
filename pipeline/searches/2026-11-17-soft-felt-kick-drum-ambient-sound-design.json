@@ -1,0 +1,109 @@
+{
+ "topic": "soft felt kick drum ambient sound design",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "soft felt kick drum ambient sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "FlbAzM5w0bs",
+   "title": "u-he Diva Masterclass: House Music Sound Design from Scratch",
+   "channel": "Olean's House",
+   "duration": 2404,
+   "view_count": 24496,
+   "url": "https://www.youtube.com/watch?v=FlbAzM5w0bs",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.19
+  },
+  {
+   "id": "Yq70oXdZhok",
+   "title": "Can You Make Drums From CRAP?",
+   "channel": "CROW HILL",
+   "duration": 1090,
+   "view_count": 10614,
+   "url": "https://www.youtube.com/watch?v=Yq70oXdZhok",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51
+  },
+  {
+   "id": "lZbfWJdHZTg",
+   "title": "Improvised Duet with Ross McReynolds : Acoustic Drums / Modular via Sensory Percussion",
+   "channel": "Mason Self",
+   "duration": 840,
+   "view_count": 3879,
+   "url": "https://www.youtube.com/watch?v=lZbfWJdHZTg",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.29
+  },
+  {
+   "id": "CLS9KWODe_g",
+   "title": "Ambient Track Creation with Spitfire Foghorn Pack",
+   "channel": "Music Stuff Steve",
+   "duration": 1183,
+   "view_count": 939,
+   "url": "https://www.youtube.com/watch?v=CLS9KWODe_g",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.99
+  },
+  {
+   "id": "iguuPHZ3OkY",
+   "title": "Making drums from cellos! The Spitfire Labs Challenge #labscollabs",
+   "channel": "Moonhare Studio",
+   "duration": 918,
+   "view_count": 113,
+   "url": "https://www.youtube.com/watch?v=iguuPHZ3OkY",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.53
+  },
+  {
+   "id": "b3Nw3LexBOw",
+   "title": "Sunday SloMo | dawless track @ 82 BPM",
+   "channel": "allyourbase",
+   "duration": 777,
+   "view_count": 88,
+   "url": "https://www.youtube.com/watch?v=b3Nw3LexBOw",
+   "query": "soft felt kick drum ambient sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.47
+  }
+ ],
+ "dropped": [
+  {
+   "id": "h-u3C_w2gS4",
+   "why": "duration 92s"
+  },
+  {
+   "id": "Z6IUhXyOvFc",
+   "why": "already known"
+  },
+  {
+   "id": "QoM0M28hfYs",
+   "why": "duration 17s"
+  },
+  {
+   "id": "O2fy-dekYHU",
+   "why": "duration 64s"
+  },
+  {
+   "id": "M__x0iystgk",
+   "why": "duration 212s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

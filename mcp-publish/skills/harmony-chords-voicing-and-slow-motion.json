@@ -38,6 +38,12 @@
         "video_id": "MycI9ZOSPRk",
         "url": "https://www.youtube.com/watch?v=MycI9ZOSPRk",
         "title": "4 Tips for Writing Ambient Chord Progressions"
+      },
+      {
+        "from_skill": "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+        "video_id": "ET1CvImwzxw",
+        "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
+        "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track"
       }
     ]
   },
@@ -188,6 +194,22 @@
         "Write one short line (e.g. a 3-note figure or an eighth-note arpeggio of a maj7 shape) and repeat it unchanged over every chord of the loop.",
         "Loop the progression with the ostinato for the section; let repetition fuse the chords into one meta-chord mood before any new section arrives."
       ]
+    },
+    {
+      "from_skill": "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+      "name": "Turn one chord progression into a full set of ambient layers: parallel maj7 progression (e.g. Cmaj7-Gmaj7-Bbmaj7-Fmaj7, 4 bars of long sustained chords) copied to every part and thinned per role - bass keeps only the lowest note (optionally re-chosen, e.g. D under the last chord), pad keeps the upper three notes tightened by dropping the top note an octave, an FM arpeggio built on the note set that fits all chords (root-4th-5th-octave such as D-G-A-D), a second pad built from major/minor seconds that move by semitone (B->C, E->F) as a contrast to the third-based pad, a melody using those guide tones with anticipations into each chord plus the all-chord tones (G, A) as connectors, an octave-lower double on a different timbre, and long-attack reverb swells on the universal tones",
+      "goal": "Generate enough material for a whole ambient piece from one progression, with every layer harmonically safe. Delta vs harmony cluster (one chord tone per instrument, alternating seconds/thirds rule, meta-chord loop): a concrete derivation workflow - copy-and-thin one progression clip per role, search for a tone set common to all chords to drive arpeggio/swells, contrast a seconds-based dyad pad with the thirds-based pad, and write an anticipation melody from per-chord guide tones.",
+      "steps": [
+        "Write the progression: build one chord shape (e.g. maj7 = root, +4, +3, +4 semitones) and move it in parallel to new roots (C, G, Bb, F), one long sustained chord per bar, 4 bars; or use any diatonic progression.",
+        "Copy the clip to a bass track and delete everything except the lowest note; try alternative bass notes under a chord (e.g. D under Fmaj7) and keep the ones that sound good.",
+        "Copy the clip to a pad (e.g. choir/voice pad) and delete the bass note so the upper three notes remain; move the highest note down an octave so voices move by small intervals rather than jumping fourths/fifths, then raise the whole pad an octave if needed for register.",
+        "Find the common-tone set: test a note (and its 4th and 5th, e.g. D-G-A) against all chords; keep the set that fits every chord. Program an FM-keys arpeggio as root-4th-5th-octave (or step pattern 4-1-4) on that set, looping unchanged across the progression.",
+        "Build a seconds-based dyad pad: pick a chord tone of chord 1 (e.g. B) and move it by a semitone to the next chord's tone (C), similarly E->F; add a third below or above to form two-note intervals and play as a slow dyad trill on a mallet/vibraphone sound.",
+        "Write the melody from per-chord guide tones (e.g. E/B over bars 1-2, F/C over bars 3-4), arriving on the next chord's tone slightly before the downbeat (anticipation), and use the common tones (G, A) as connecting notes.",
+        "Double the melody an octave lower on a contrasting synth timbre; slight timing looseness is fine.",
+        "Add swells: a synth with a long attack and heavy reverb playing the common tones (G, A) a few times across the section, no pitch bend.",
+        "Collect all clips; arrange by muting/unmuting layers per section (e.g. pad drops out leaving the dyad layer)."
+      ]
     }
   ],
   "merged_from": [
@@ -195,7 +217,8 @@
     "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
     "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
     "drone-role-pedal-point-and-polychords",
-    "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line"
+    "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
+    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells"
   ],
   "tags": [
     "ambient",
@@ -227,6 +250,7 @@
     "ambient-slow-harmony-motion-one-key-sus2-sus4-7sus4-chords-pedal-root-moving-top-static-chord-moving-bass-inversions-band-limited-1-2-3-cluster",
     "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
     "drone-role-pedal-point-and-polychords",
-    "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line"
+    "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
+    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells"
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "video_id": "HRtqWS5oqtA",
+  "title": "3 Rules for Pan & Stereo Width (break them at your own risk)",
+  "url": "https://www.youtube.com/watch?v=HRtqWS5oqtA",
+  "fetched_at": "2026-11-17T16:25:36.374202+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "The Indie Music Lab",
+  "duration": 506,
+  "ok": true,
+  "cue_count": 209,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HRtqWS5oqtA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HRtqWS5oqtA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

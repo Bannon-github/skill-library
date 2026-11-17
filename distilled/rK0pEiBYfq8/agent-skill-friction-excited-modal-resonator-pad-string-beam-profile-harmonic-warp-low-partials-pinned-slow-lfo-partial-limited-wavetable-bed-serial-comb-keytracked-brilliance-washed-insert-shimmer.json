@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "id": "friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer",
+  "name": "Evolving modal-synthesis pad: a sustained friction (continuous noise) exciter, optionally mixed with a soft collision impulse, drives a modal resonator bank (string profile for harmonic, beam for metallic); slight detune for width; harmonic 'warp' pushes partials up or down while the first 1-8 partials stay pinned so the fundamental holds; a slow LFO on warp (with per-voice LFO-rate offsets) for movement; longer partial ring time to blur impacts into a continuous string; a second partial-limited wavetable/additive bed underneath with an envelope opening the partial count; serial comb filter (low damping) into a master low-pass; key-tracked brilliance and level so low notes are darker; a slow pad envelope and reverb/shimmer on inserts for a fully washed sound",
+  "goal": "Design a sustained, otherworldly ambient pad from resonators rather than oscillators. Delta vs physical-modeling cluster (bowed comb string, Karplus pluck, modal partial-bank voice, scale-locked resonator bank, struck strings): sustained friction excitation as a pad, partial warp with pinned low partials and slow LFO, layering with a partial-limited wavetable bed, serial comb + LP and key-tracked brilliance.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "rK0pEiBYfq8",
+    "url": "https://www.youtube.com/watch?v=rK0pEiBYfq8",
+    "title": "Arturia Pigments: Building Evolving Pads (With Modal Synthesis)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/rK0pEiBYfq8/agent-skill-friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer.json",
+    "batch": "2026-11-17-morning-hunt"
+  },
+  "prerequisites": [
+    "A modal/resonator synth or resonator bank (any DAW, Web Audio biquad bank)",
+    "A wavetable or additive oscillator",
+    "Comb filter, low-pass filter, reverb"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Key of the chords",
+      "required": true
+    },
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Sustained pad chords",
+      "required": true
+    },
+    {
+      "name": "profile",
+      "type": "string",
+      "description": "string (harmonic) or beam (metallic)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "patch_recipe",
+      "type": "json",
+      "description": "Exciter, resonator, warp, LFO, bed, filter and FX settings"
+    },
+    {
+      "name": "pad_audio",
+      "type": "audio",
+      "description": "Rendered evolving modal pad"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: the transcript's slow pitch-modulation chorus and pitch-shifting delay are omitted (Matt dislikes wobbly pitch); movement comes from partial warp, comb and filter only.",
+    "Friction exciter density kept smooth/continuous; avoid low-density settings that produce audible ticking (rapid clicking texture Matt dislikes).",
+    "Per-voice randomness applies only to timbre (density/LFO rate), never pitch.",
+    "Pinned low partials keep the fundamental stable while upper partials move.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: plays any MIDI chord clip; Web Audio mapping = noise source -> parallel high-Q bandpass bank at partial ratios -> comb (feedback delay) -> lowpass.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Exciter: set a continuous friction source (filtered noise held for the note); optionally blend a soft collision impulse for a gentle attack.",
+      "tool": "Resonator synth",
+      "expect": "Sustained excitation"
+    },
+    {
+      "n": 2,
+      "action": "Resonator: choose a string profile (harmonic partials) or beam (metallic); detune a second resonator slightly for width; lengthen the ring/decay so impacts blur into a continuous string.",
+      "tool": "Resonator synth",
+      "expect": "Continuous resonant tone"
+    },
+    {
+      "n": 3,
+      "action": "Warp: shift partials upward (brighter, thinner middle) or downward (condensed); pin partials 1-2 (up to 8) so the fundamental stays put.",
+      "tool": "Resonator synth",
+      "expect": "Shaped spectrum with stable root"
+    },
+    {
+      "n": 4,
+      "action": "Movement: a slow LFO on warp; give each voice a small LFO-rate offset so voices do not move in sync.",
+      "tool": "Modulation",
+      "expect": "Organic, slow spectral drift"
+    },
+    {
+      "n": 5,
+      "action": "Bed: add a second oscillator (wavetable/additive) with partial count limited (acts like a filter) and an envelope slowly opening the partials; mix lower than the modal layer.",
+      "tool": "Oscillator 2",
+      "expect": "Fuller body underneath"
+    },
+    {
+      "n": 6,
+      "action": "Filters: route serial into a comb filter with low damping (longer ringing) partially wet, then a master low-pass.",
+      "tool": "Filter",
+      "expect": "Resonant, focused tone"
+    },
+    {
+      "n": 7,
+      "action": "Key-track brilliance and level on the modal layer so lower notes are darker/quieter and higher notes brighter/louder; set the pad amp envelope slow.",
+      "tool": "Keytracking",
+      "expect": "Balanced across range"
+    },
+    {
+      "n": 8,
+      "action": "FX: reverb/shimmer and delay on inserts at high wet to wash the sound out; light compression as a leveller.",
+      "tool": "FX",
+      "expect": "Washed ambient evolving pad"
+    }
+  ],
+  "verification": [
+    "Fundamental pitch measured stable (no pitch LFO) across a 20 s held chord.",
+    "Spectral centroid moves slowly over time (warp LFO active).",
+    "Low notes render darker than high notes (key-tracked brilliance)."
+  ],
+  "tags": [
+    "pad",
+    "modal-synthesis",
+    "resonator",
+    "physical-modeling",
+    "evolving",
+    "ambient",
+    "comb-filter",
+    "keytracking",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer"
+}

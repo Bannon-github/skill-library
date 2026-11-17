@@ -1,0 +1,92 @@
+{
+ "topic": "phaser pad synth sound design",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "phaser pad synth sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ZdKxOsK4nQ8",
+   "title": "Xfer Records Serum Tutorial 09 - FX Flanger, Phaser & Chorus",
+   "channel": "SadowickProduction",
+   "duration": 346,
+   "view_count": 4118,
+   "url": "https://www.youtube.com/watch?v=ZdKxOsK4nQ8",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.31
+  },
+  {
+   "id": "eOgsuNaOKEk",
+   "title": "FX Chorus and Phaser PART 19 | u-he DIVA Tutorial",
+   "channel": "Jon Audio",
+   "duration": 551,
+   "view_count": 1561,
+   "url": "https://www.youtube.com/watch?v=eOgsuNaOKEk",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.1
+  },
+  {
+   "id": "uhC-5pwVHLw",
+   "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+   "channel": "Jon Audio",
+   "duration": 261,
+   "view_count": 480,
+   "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+   "query": "phaser pad synth sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.34
+  }
+ ],
+ "dropped": [
+  {
+   "id": "4vRleMQdZZU",
+   "why": "already known"
+  },
+  {
+   "id": "JQSoQA2f5wc",
+   "why": "duration 148s"
+  },
+  {
+   "id": "TbqMvaZ905Y",
+   "why": "duration 232s"
+  },
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "DHfOKrjqdE0",
+   "why": "duration 112s"
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "why": "already known"
+  },
+  {
+   "id": "1s_wcjB31iA",
+   "why": "already known"
+  },
+  {
+   "id": "TSiH9MUh4Ec",
+   "why": "already known"
+  },
+  {
+   "id": "hrb28vWveig",
+   "why": "duration 65s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

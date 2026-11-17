@@ -92,6 +92,12 @@
         "video_id": "Cx8mEhPdtB4",
         "url": "https://www.youtube.com/watch?v=Cx8mEhPdtB4",
         "title": "Make Ambient Like LOSCIL: Field Recordings to Floating Pads"
+      },
+      {
+        "from_skill": "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
+        "video_id": "TfBMKlJV96U",
+        "url": "https://www.youtube.com/watch?v=TfBMKlJV96U",
+        "title": "How I Make Ambient Music That Moves"
       }
     ]
   },
@@ -406,6 +412,19 @@
         "Sine sequence: sine with ~1.5 s decay, ~2 s release, low sustain; write a sparse fixed in-key pattern (D natural minor) and send it to a dark long reverb.",
         "Sub: the pad's root an octave or two down (e.g. D1) on a unison saw into a 24 dB low-pass at 80-200 Hz; free-running LFO on cutoff at 4 (or 8) bars; ~15% send to the same reverb; mix low."
       ]
+    },
+    {
+      "from_skill": "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
+      "name": "Give a texture-based ambient piece direction without letting it wander: a small, steady home-base sequence (one note or a two-voice figure, unaffected by the chords, modulated only in timbre) as the tonal centre, then a piano progression that leaves the home chord and returns, each excursion going a little further (I -> near chord -> I; I -> further diatonic chord -> I; ...) while staying in one key, with an optional slightly late echo copy of the piano for interest instead of more chords or a key change",
+      "goal": "Make ambient music feel like it is going somewhere while staying functional background music. Delta vs arrangement-ambient cluster (bar maps, section templates, sleep descents): a harmonic-narrative rule - establish home, expand-and-return with gradually growing harmonic distance in-key, avoid key changes because they demand attention; movement in sound (filters, LFOs) is not movement in music.",
+      "steps": [
+        "Write the home base: a 1-2 voice sequence on the tonic that repeats for the whole piece; give it gentle timbre motion (slow filter/thickness changes), optionally a dry tone with no reverb.",
+        "Rank the diatonic chords in the key by distance from the home chord (e.g. in C major: Am, Em/F nearest, then Dm/G, then Bdim/borrowed chords furthest).",
+        "Write the piano part as excursions: home -> nearest chord -> home; then home -> a slightly further chord (or two-step path) -> home; repeat, each time going a little further, taking time on each chord.",
+        "Keep the home layer playing unchanged under every excursion so each return feels like arriving back.",
+        "Add interest to the piano line instead of adding chords or changing key: duplicate it to a delayed/processed echo track set slightly late (a fixed offset), mixed under the dry piano.",
+        "Map sections by excursion distance (intro: home only; then excursions growing; final return home and thin out)."
+      ]
     }
   ],
   "merged_from": [
@@ -422,7 +441,8 @@
     "cinematic-seven-section-arc-ostinato-countermelody-bookend",
     "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
     "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
-    "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub"
+    "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
+    "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy"
   ],
   "tags": [
     "ambient",
@@ -474,6 +494,7 @@
     "cinematic-seven-section-arc-ostinato-countermelody-bookend",
     "hybrid-orchestra-four-synth-roles-sub-pulse-pad-chord-tone-pluck-ostinati",
     "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
-    "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub"
+    "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
+    "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy"
   ]
 }

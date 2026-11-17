@@ -76,3 +76,14 @@ Source: [Syngular: Pianoteq's New Physically Modeled Synth // Walkthrough & Demo
 - Enable mallet bounce so a held note re-strikes; adjust bounce rate and decay over time.
 - Build a sequenced patch with 2–3 layers and different bounce note values (e.g. dotted half, quarter, 8 beats). Turning off bounce on one layer will not stop the pattern while the other layers still bounce.
 - Map mod wheel → LFO rate, vibrato and tremolo depth. Finish with EQ and effects (chorus, phaser, delay, compression) and a post filter if you need cutoff sweeps.
+
+### Evolving modal-synthesis pad: a sustained friction (continuous noise) exciter, optionally mixed with a soft collision impulse, drives a modal resonator bank (string profile for harmonic, beam for metallic); slight detune for width; harmonic 'warp' pushes partials up or down while the first 1-8 partials stay pinned so the fundamental holds; a slow LFO on warp (with per-voice LFO-rate offsets) for movement; longer partial ring time to blur impacts into a continuous string; a second partial-limited wavetable/additive bed underneath with an envelope opening the partial count; serial comb filter (low damping) into a master low-pass; key-tracked brilliance and level so low notes are darker; a slow pad envelope and reverb/shimmer on inserts for a fully washed sound
+Source: [Arturia Pigments: Building Evolving Pads (With Modal Synthesis)](https://www.youtube.com/watch?v=rK0pEiBYfq8) · was `friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer`
+- Exciter: set a continuous friction source (filtered noise held for the note); optionally blend a soft collision impulse for a gentle attack.
+- Resonator: choose a string profile (harmonic partials) or beam (metallic); detune a second resonator slightly for width; lengthen the ring/decay so impacts blur into a continuous string.
+- Warp: shift partials upward (brighter, thinner middle) or downward (condensed); pin partials 1-2 (up to 8) so the fundamental stays put.
+- Movement: a slow LFO on warp; give each voice a small LFO-rate offset so voices do not move in sync.
+- Bed: add a second oscillator (wavetable/additive) with partial count limited (acts like a filter) and an envelope slowly opening the partials; mix lower than the modal layer.
+- Filters: route serial into a comb filter with low damping (longer ringing) partially wet, then a master low-pass.
+- Key-track brilliance and level on the modal layer so lower notes are darker/quieter and higher notes brighter/louder; set the pad amp envelope slow.
+- FX: reverb/shimmer and delay on inserts at high wet to wash the sound out; light compression as a leveller.

@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-16T16:27:14.394250+00:00",
-  "entry_count": 278,
+  "updated_at": "2026-11-17T16:30:12.999141+00:00",
+  "entry_count": 281,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4057,6 +4057,45 @@
       "skills": [
         "harmony-chords-voicing-and-slow-motion"
       ]
+    },
+    {
+      "id": "cinematic-synth-ET1CvImwzxw",
+      "video_id": "ET1CvImwzxw",
+      "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
+      "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/ET1CvImwzxw/raw.txt",
+      "summary": "Skills: one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells (folded into harmony-chords-voicing-and-slow-motion)",
+      "skills": [
+        "harmony-chords-voicing-and-slow-motion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-TfBMKlJV96U",
+      "video_id": "TfBMKlJV96U",
+      "url": "https://www.youtube.com/watch?v=TfBMKlJV96U",
+      "title": "How I Make Ambient Music That Moves",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/TfBMKlJV96U/raw.txt",
+      "summary": "Skills: ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-rK0pEiBYfq8",
+      "video_id": "rK0pEiBYfq8",
+      "url": "https://www.youtube.com/watch?v=rK0pEiBYfq8",
+      "title": "Arturia Pigments: Building Evolving Pads (With Modal Synthesis)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/rK0pEiBYfq8/raw.txt",
+      "summary": "Skills: friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer (folded into physical-modeling-plucks-strings-resonators)",
+      "skills": [
+        "physical-modeling-plucks-strings-resonators"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4764,6 +4803,27 @@
           "video_id": "MycI9ZOSPRk",
           "skill": "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
           "cluster": "harmony-chords-voicing-and-slow-motion"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-17T16:30:12.999141+00:00",
+      "batch": "2026-11-17-morning-hunt",
+      "folded": [
+        {
+          "video_id": "ET1CvImwzxw",
+          "skill": "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+          "cluster": "harmony-chords-voicing-and-slow-motion"
+        },
+        {
+          "video_id": "TfBMKlJV96U",
+          "skill": "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "rK0pEiBYfq8",
+          "skill": "friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer",
+          "cluster": "physical-modeling-plucks-strings-resonators"
         }
       ]
     }

@@ -175,3 +175,12 @@ Source: [Make Ambient Like LOSCIL: Field Recordings to Floating Pads](https://ww
 - Process the gated recording through the synth's filter, a multiband compressor, a ping-pong delay and a long reverb; add a slow smooth LFO on its volume and filter mix.
 - Sine sequence: sine with ~1.5 s decay, ~2 s release, low sustain; write a sparse fixed in-key pattern (D natural minor) and send it to a dark long reverb.
 - Sub: the pad's root an octave or two down (e.g. D1) on a unison saw into a 24 dB low-pass at 80-200 Hz; free-running LFO on cutoff at 4 (or 8) bars; ~15% send to the same reverb; mix low.
+
+### Give a texture-based ambient piece direction without letting it wander: a small, steady home-base sequence (one note or a two-voice figure, unaffected by the chords, modulated only in timbre) as the tonal centre, then a piano progression that leaves the home chord and returns, each excursion going a little further (I -> near chord -> I; I -> further diatonic chord -> I; ...) while staying in one key, with an optional slightly late echo copy of the piano for interest instead of more chords or a key change
+Source: [How I Make Ambient Music That Moves](https://www.youtube.com/watch?v=TfBMKlJV96U) · was `ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy`
+- Write the home base: a 1-2 voice sequence on the tonic that repeats for the whole piece; give it gentle timbre motion (slow filter/thickness changes), optionally a dry tone with no reverb.
+- Rank the diatonic chords in the key by distance from the home chord (e.g. in C major: Am, Em/F nearest, then Dm/G, then Bdim/borrowed chords furthest).
+- Write the piano part as excursions: home -> nearest chord -> home; then home -> a slightly further chord (or two-step path) -> home; repeat, each time going a little further, taking time on each chord.
+- Keep the home layer playing unchanged under every excursion so each return feels like arriving back.
+- Add interest to the piano line instead of adding chords or changing key: duplicate it to a delayed/processed echo track set slightly late (a fixed offset), mixed under the dry piano.
+- Map sections by excursion distance (intro: home only; then excursions growing; final return home and thin out).

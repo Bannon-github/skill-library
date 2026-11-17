@@ -1,0 +1,109 @@
+{
+ "topic": "stereo width pads mid side tutorial",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "stereo width pads mid side tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "uZ9WQDojQt8",
+   "title": "Headphones Are Not Stereo (mid side phase trickery)",
+   "channel": "Dan Worrall",
+   "duration": 970,
+   "view_count": 402534,
+   "url": "https://www.youtube.com/watch?v=uZ9WQDojQt8",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.3
+  },
+  {
+   "id": "yiF_cUEtMdY",
+   "title": "What most people get WRONG about MIXING in MID SIDE (M/S)",
+   "channel": "Raytown Productions",
+   "duration": 368,
+   "view_count": 20971,
+   "url": "https://www.youtube.com/watch?v=yiF_cUEtMdY",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.66
+  },
+  {
+   "id": "HRtqWS5oqtA",
+   "title": "3 Rules for Pan & Stereo Width (break them at your own risk)",
+   "channel": "The Indie Music Lab",
+   "duration": 507,
+   "view_count": 12244,
+   "url": "https://www.youtube.com/watch?v=HRtqWS5oqtA",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.54
+  },
+  {
+   "id": "NritylXfO7A",
+   "title": "From Mono to Full Stereo - Width Box Plus - Ableton Effect Rack",
+   "channel": "Mr. Audio",
+   "duration": 508,
+   "view_count": 284,
+   "url": "https://www.youtube.com/watch?v=NritylXfO7A",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.73
+  },
+  {
+   "id": "lORu0zmSKzc",
+   "title": "Ableton Live Utility Plugin Secret Trick to Increase Width",
+   "channel": "Sam Smyers",
+   "duration": 899,
+   "view_count": 9413,
+   "url": "https://www.youtube.com/watch?v=lORu0zmSKzc",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.49
+  },
+  {
+   "id": "Ww-2TtxrZTw",
+   "title": "The No.1 Trick To Make Everything Sound Wide | Cubase Secrets with Dom",
+   "channel": "Cubase",
+   "duration": 644,
+   "view_count": 161675,
+   "url": "https://www.youtube.com/watch?v=Ww-2TtxrZTw",
+   "query": "stereo width pads mid side tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.1
+  }
+ ],
+ "dropped": [
+  {
+   "id": "kEiILPm1VSc",
+   "why": "already known"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "zjRTE41iu7s",
+   "why": "already known"
+  },
+  {
+   "id": "0sEyZymchTE",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

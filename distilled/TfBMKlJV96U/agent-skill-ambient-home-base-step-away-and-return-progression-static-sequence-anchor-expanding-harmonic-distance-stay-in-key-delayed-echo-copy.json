@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
+  "name": "Give a texture-based ambient piece direction without letting it wander: a small, steady home-base sequence (one note or a two-voice figure, unaffected by the chords, modulated only in timbre) as the tonal centre, then a piano progression that leaves the home chord and returns, each excursion going a little further (I -> near chord -> I; I -> further diatonic chord -> I; ...) while staying in one key, with an optional slightly late echo copy of the piano for interest instead of more chords or a key change",
+  "goal": "Make ambient music feel like it is going somewhere while staying functional background music. Delta vs arrangement-ambient cluster (bar maps, section templates, sleep descents): a harmonic-narrative rule - establish home, expand-and-return with gradually growing harmonic distance in-key, avoid key changes because they demand attention; movement in sound (filters, LFOs) is not movement in music.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "TfBMKlJV96U",
+    "url": "https://www.youtube.com/watch?v=TfBMKlJV96U",
+    "title": "How I Make Ambient Music That Moves",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/TfBMKlJV96U/agent-skill-ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy.json",
+    "batch": "2026-11-17-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth for the home-base sequence",
+    "A piano/keys instrument",
+    "A delay (optional)"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "One key for the whole piece",
+      "required": true
+    },
+    {
+      "name": "home_figure",
+      "type": "midi",
+      "description": "1-2 note sequence on the tonic",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Slow",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "home_layer",
+      "type": "midi",
+      "description": "Steady tonic sequence running the whole piece"
+    },
+    {
+      "name": "excursion_progression",
+      "type": "midi",
+      "description": "Chord path away from and back to the home chord with increasing distance"
+    },
+    {
+      "name": "arrangement_map",
+      "type": "json",
+      "description": "Section list with excursion distance per section"
+    }
+  ],
+  "constraints": [
+    "Stay in one key: in this ambient/background function, a key change pulls attention; nearby diatonic chords = 'another room in the same house'. Use a distant key only as a rare deliberate event.",
+    "The home-base sequence keeps steady pitch; movement comes only from timbre (filter, thickness, light drive), not pitch wobble (Matt's preference).",
+    "The echo copy is a delayed duplicate of the piano line (a few tens of ms to an eighth late), not randomised or stuttered; no rapid repeats.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: home layer and progression are MIDI clips; distance plan is a simple list.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write the home base: a 1-2 voice sequence on the tonic that repeats for the whole piece; give it gentle timbre motion (slow filter/thickness changes), optionally a dry tone with no reverb.",
+      "tool": "Synth + MIDI clip",
+      "expect": "Clear tonal centre that hovers"
+    },
+    {
+      "n": 2,
+      "action": "Rank the diatonic chords in the key by distance from the home chord (e.g. in C major: Am, Em/F nearest, then Dm/G, then Bdim/borrowed chords furthest).",
+      "tool": "Planning",
+      "expect": "Distance ladder"
+    },
+    {
+      "n": 3,
+      "action": "Write the piano part as excursions: home -> nearest chord -> home; then home -> a slightly further chord (or two-step path) -> home; repeat, each time going a little further, taking time on each chord.",
+      "tool": "Piano roll",
+      "expect": "Expand-and-return progression in one key"
+    },
+    {
+      "n": 4,
+      "action": "Keep the home layer playing unchanged under every excursion so each return feels like arriving back.",
+      "tool": "Arrangement",
+      "expect": "Sense of departure and return"
+    },
+    {
+      "n": 5,
+      "action": "Add interest to the piano line instead of adding chords or changing key: duplicate it to a delayed/processed echo track set slightly late (a fixed offset), mixed under the dry piano.",
+      "tool": "Delay / MIDI offset",
+      "expect": "Extra depth, harmony unchanged"
+    },
+    {
+      "n": 6,
+      "action": "Map sections by excursion distance (intro: home only; then excursions growing; final return home and thin out).",
+      "tool": "Arrangement",
+      "expect": "Directional ambient form"
+    }
+  ],
+  "verification": [
+    "The whole piece stays in one key (no out-of-key chords unless planned as a single event).",
+    "Each excursion returns to the home chord; the maximum distance increases across the first half.",
+    "Home-base layer MIDI is identical throughout."
+  ],
+  "tags": [
+    "arrangement",
+    "ambient",
+    "harmonic-motion",
+    "form",
+    "tonal-center",
+    "progression",
+    "background-music",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy"
+}

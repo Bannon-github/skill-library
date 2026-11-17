@@ -1,0 +1,109 @@
+{
+ "topic": "wavetable pad modulation evolving cinematic",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "wavetable pad modulation evolving cinematic",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "647i69GOaoc",
+   "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+   "channel": "Dark Side of Synth",
+   "duration": 789,
+   "view_count": 793,
+   "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.95
+  },
+  {
+   "id": "mmn6iSBKdp8",
+   "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+   "channel": "Tom Casey Music",
+   "duration": 1264,
+   "view_count": 20428,
+   "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.66
+  },
+  {
+   "id": "kyFvfD5XSHQ",
+   "title": "Your Wavestate Can Do THIS?! Evolving Pad Tutorial with free patch!",
+   "channel": "Ian Dixon",
+   "duration": 798,
+   "view_count": 1248,
+   "url": "https://www.youtube.com/watch?v=kyFvfD5XSHQ",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.05
+  },
+  {
+   "id": "un9HdSAoZrY",
+   "title": "MASSIVE: Design a Cinematic Soundscape Pad",
+   "channel": "OSCILLATR",
+   "duration": 513,
+   "view_count": 22819,
+   "url": "https://www.youtube.com/watch?v=un9HdSAoZrY",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.68
+  },
+  {
+   "id": "MRJt_i3eDMA",
+   "title": "Wavetable: Create evolving pad sounds in Ableton Live",
+   "channel": "DopperFX",
+   "duration": 479,
+   "view_count": 105,
+   "url": "https://www.youtube.com/watch?v=MRJt_i3eDMA",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.51
+  },
+  {
+   "id": "bxWHs8caTzw",
+   "title": "Building a Huge Cinematic Pad on the Korg Modwave",
+   "channel": "Ian Dixon",
+   "duration": 1493,
+   "view_count": 513,
+   "url": "https://www.youtube.com/watch?v=bxWHs8caTzw",
+   "query": "wavetable pad modulation evolving cinematic tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.86
+  }
+ ],
+ "dropped": [
+  {
+   "id": "CdIMG0DqQa8",
+   "why": "already known"
+  },
+  {
+   "id": "JP5yTtT-gbk",
+   "why": "already known"
+  },
+  {
+   "id": "ySjZQ697Mt0",
+   "why": "already known"
+  },
+  {
+   "id": "UShjYsGgWcM",
+   "why": "already known"
+  },
+  {
+   "id": "28uxHnQbulE",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

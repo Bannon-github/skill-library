@@ -1,17 +1,28 @@
 {
   "video_id": "TYU764RIkmE",
-  "title": null,
+  "title": "Sound Design - Deep Reese Bass Tutorial",
   "url": "https://www.youtube.com/watch?v=TYU764RIkmE",
-  "fetched_at": "2026-11-16T16:24:50.716055+00:00",
+  "fetched_at": "2026-11-17T16:21:01.295075+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
-  "ok": false,
-  "error": "no_track_fetchable",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 616,
+  "ok": true,
+  "cue_count": 271,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/TYU764RIkmE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/TYU764RIkmE/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
+      "a": true,
+      "evidence": "en-US"
     },
     {
       "q": "transcript tracks listed?",
@@ -28,30 +39,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.9
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.6
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.4
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

@@ -1,0 +1,109 @@
+{
+ "topic": "harmonic exciter synth pad",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "harmonic exciter synth pad",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "eDrCDYJkq6o",
+   "title": "How To Use Exciter And Saturation On Vocals 🔥 #mixing #plugins #music #vocalmixing #saturn",
+   "channel": "Audio Engineering",
+   "duration": 928,
+   "view_count": 1113,
+   "url": "https://www.youtube.com/watch?v=eDrCDYJkq6o",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.02
+  },
+  {
+   "id": "rK0pEiBYfq8",
+   "title": "Arturia Pigments: Building Evolving Pads (With Modal Synthesis)",
+   "channel": "Marula Music",
+   "duration": 1095,
+   "view_count": 3905,
+   "url": "https://www.youtube.com/watch?v=rK0pEiBYfq8",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.3
+  },
+  {
+   "id": "o9rydDg0G4U",
+   "title": "How to  Use the Advanced Aphex Aural Exciter & Big Bottom on the RØDECaster Pro",
+   "channel": "RØDE",
+   "duration": 246,
+   "view_count": 15235,
+   "url": "https://www.youtube.com/watch?v=o9rydDg0G4U",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.09
+  },
+  {
+   "id": "7idR6B2UyJg",
+   "title": "Added Harmonics to a Kick Drum",
+   "channel": "Supa Mario",
+   "duration": 1124,
+   "view_count": 7128,
+   "url": "https://www.youtube.com/watch?v=7idR6B2UyJg",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.43
+  },
+  {
+   "id": "i3GLybBxeEg",
+   "title": "More Advanced Exciters in MSoundfactory Pt.2",
+   "channel": "Chandler guitar",
+   "duration": 704,
+   "view_count": 650,
+   "url": "https://www.youtube.com/watch?v=i3GLybBxeEg",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.91
+  },
+  {
+   "id": "5VH8cx7qfrc",
+   "title": "Bus Exciter-104 FX Demo Cubase Track Inserts Old Recordings DRY WET Switch Effect | Arturia | 😀",
+   "channel": "Jochen Reulbach",
+   "duration": 374,
+   "view_count": 266,
+   "url": "https://www.youtube.com/watch?v=5VH8cx7qfrc",
+   "query": "harmonic exciter synth pad tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.71
+  }
+ ],
+ "dropped": [
+  {
+   "id": "O5sCRk6GsWY",
+   "why": "duration 201s"
+  },
+  {
+   "id": "-nExQ2gNkTk",
+   "why": "already known"
+  },
+  {
+   "id": "YDqEtf_qO4s",
+   "why": "duration 87s"
+  },
+  {
+   "id": "Vyt9bOQrHcM",
+   "why": "duration 54s"
+  },
+  {
+   "id": "7yBOtJplKVI",
+   "why": "duration 68s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,327 @@
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-17T16:20:14.060804+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "TYU764RIkmE",
+  "title": "Sound Design - Deep Reese Bass Tutorial",
+  "url": "https://www.youtube.com/watch?v=TYU764RIkmE",
+  "fetched_at": "2026-11-17T16:21:01.295075+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 616,
+  "ok": true,
+  "cue_count": 271,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/TYU764RIkmE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/TYU764RIkmE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "ET1CvImwzxw",
+  "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track",
+  "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
+  "fetched_at": "2026-11-17T16:23:31.856704+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Jannis Le Wolff",
+  "duration": 1235,
+  "ok": true,
+  "cue_count": 432,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/ET1CvImwzxw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/ET1CvImwzxw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "TfBMKlJV96U",
+  "title": "How I Make Ambient Music That Moves",
+  "url": "https://www.youtube.com/watch?v=TfBMKlJV96U",
+  "fetched_at": "2026-11-17T16:23:40.998791+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Amber Elm Music",
+  "duration": 730,
+  "ok": true,
+  "cue_count": 496,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "TfBMKlJV96U.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/TfBMKlJV96U/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/TfBMKlJV96U/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ]
+}
+{
+  "video_id": "dMzMmnRT_HE",
+  "title": "These 12 Transitions Will Instantly Level Up Your Music!",
+  "url": "https://www.youtube.com/watch?v=dMzMmnRT_HE",
+  "fetched_at": "2026-11-17T16:24:30.550596+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Will Hatton",
+  "duration": 738,
+  "ok": true,
+  "cue_count": 258,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/dMzMmnRT_HE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/dMzMmnRT_HE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "647i69GOaoc",
+  "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+  "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+  "fetched_at": "2026-11-17T16:24:39.669973+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Dark Side of Synth",
+  "duration": 789,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "mmn6iSBKdp8",
+  "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+  "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+  "fetched_at": "2026-11-17T16:24:50.754849+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tom Casey Music",
+  "duration": 1264,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "HRtqWS5oqtA",
+  "title": "3 Rules for Pan & Stereo Width (break them at your own risk)",
+  "url": "https://www.youtube.com/watch?v=HRtqWS5oqtA",
+  "fetched_at": "2026-11-17T16:25:36.374202+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "The Indie Music Lab",
+  "duration": 506,
+  "ok": true,
+  "cue_count": 209,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HRtqWS5oqtA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HRtqWS5oqtA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "zEkCere2A_Y",
+  "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
+  "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
+  "fetched_at": "2026-11-17T16:25:45.131910+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jemeneye",
+  "duration": 990,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "7idR6B2UyJg",
+  "title": "Added Harmonics to a Kick Drum",
+  "url": "https://www.youtube.com/watch?v=7idR6B2UyJg",
+  "fetched_at": "2026-11-17T16:26:29.934225+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Supa Mario",
+  "duration": 1124,
+  "ok": true,
+  "cue_count": 385,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/7idR6B2UyJg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/7idR6B2UyJg/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "rK0pEiBYfq8",
+  "title": "Arturia Pigments: Building Evolving Pads (With Modal Synthesis)",
+  "url": "https://www.youtube.com/watch?v=rK0pEiBYfq8",
+  "fetched_at": "2026-11-17T16:26:38.677033+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Marula Music",
+  "duration": 1094,
+  "ok": true,
+  "cue_count": 706,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "rK0pEiBYfq8.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/rK0pEiBYfq8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/rK0pEiBYfq8/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ]
+}
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-17T16:27:26.186004+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.8
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

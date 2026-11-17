@@ -1,0 +1,17 @@
+## 5XGrxp0ANME 2026-11-17T08:20:14-08:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT 5XGrxp0ANME
+## TYU764RIkmE 2026-11-17T08:21:01-08:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/TYU764RIkmE/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/TYU764RIkmE/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1998 raw/TYU764RIkmE/raw.txt
+FETCH_DONE 2026-11-17T08:21:10-08:00

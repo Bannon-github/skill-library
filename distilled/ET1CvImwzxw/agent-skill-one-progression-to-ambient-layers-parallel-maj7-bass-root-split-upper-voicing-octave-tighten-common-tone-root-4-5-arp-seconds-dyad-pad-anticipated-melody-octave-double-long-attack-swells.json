@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "id": "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+  "name": "Turn one chord progression into a full set of ambient layers: parallel maj7 progression (e.g. Cmaj7-Gmaj7-Bbmaj7-Fmaj7, 4 bars of long sustained chords) copied to every part and thinned per role - bass keeps only the lowest note (optionally re-chosen, e.g. D under the last chord), pad keeps the upper three notes tightened by dropping the top note an octave, an FM arpeggio built on the note set that fits all chords (root-4th-5th-octave such as D-G-A-D), a second pad built from major/minor seconds that move by semitone (B->C, E->F) as a contrast to the third-based pad, a melody using those guide tones with anticipations into each chord plus the all-chord tones (G, A) as connectors, an octave-lower double on a different timbre, and long-attack reverb swells on the universal tones",
+  "goal": "Generate enough material for a whole ambient piece from one progression, with every layer harmonically safe. Delta vs harmony cluster (one chord tone per instrument, alternating seconds/thirds rule, meta-chord loop): a concrete derivation workflow - copy-and-thin one progression clip per role, search for a tone set common to all chords to drive arpeggio/swells, contrast a seconds-based dyad pad with the thirds-based pad, and write an anticipation melody from per-chord guide tones.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "ET1CvImwzxw",
+    "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
+    "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/ET1CvImwzxw/agent-skill-one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells.json",
+    "batch": "2026-11-17-morning-hunt"
+  },
+  "prerequisites": [
+    "A piano roll / MIDI clips",
+    "Instruments for bass, pad, FM arp, mallet/dyad pad, lead and a long-attack swell synth"
+  ],
+  "inputs": [
+    {
+      "name": "progression",
+      "type": "midi",
+      "description": "2-4 chords, long sustained (e.g. 1 bar each over 4 bars)",
+      "required": true
+    },
+    {
+      "name": "key_or_center",
+      "type": "string",
+      "description": "Tonal centre, or none if using parallel chords",
+      "required": false
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Slow, e.g. 70-90",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "layers",
+      "type": "midi",
+      "description": "Bass, pad, arpeggio, seconds-dyad pad, melody, octave double and swell clips derived from the progression"
+    },
+    {
+      "name": "common_tones",
+      "type": "string",
+      "description": "Notes that fit every chord, used for arp/swells/connectors"
+    }
+  ],
+  "constraints": [
+    "Steady pitch: no pitch-bend swoops on swells, no randomised notes; the arpeggio is a fixed repeating pattern (Matt's preference).",
+    "Skip the transcript's beat-repeat/granulator stutter copy of the mallet part (rapid clicking texture Matt dislikes); if a texture copy is wanted use a long-grain, low-density smear instead.",
+    "The octave double may be slightly loose in timing, but must stay in tune.",
+    "Chord names (Cmaj7, Gmaj7, Bbmaj7, Fmaj7) are the transcript's example; recreate as MIDI, no copyrighted melody is reproduced.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: every part is a MIDI clip derived from one progression clip; voicings are explicit MIDI notes.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write the progression: build one chord shape (e.g. maj7 = root, +4, +3, +4 semitones) and move it in parallel to new roots (C, G, Bb, F), one long sustained chord per bar, 4 bars; or use any diatonic progression.",
+      "tool": "Piano roll",
+      "expect": "Harmonic clip"
+    },
+    {
+      "n": 2,
+      "action": "Copy the clip to a bass track and delete everything except the lowest note; try alternative bass notes under a chord (e.g. D under Fmaj7) and keep the ones that sound good.",
+      "tool": "Piano roll",
+      "expect": "Solid root/alt-bass layer"
+    },
+    {
+      "n": 3,
+      "action": "Copy the clip to a pad (e.g. choir/voice pad) and delete the bass note so the upper three notes remain; move the highest note down an octave so voices move by small intervals rather than jumping fourths/fifths, then raise the whole pad an octave if needed for register.",
+      "tool": "Piano roll",
+      "expect": "Tight, smooth upper pad"
+    },
+    {
+      "n": 4,
+      "action": "Find the common-tone set: test a note (and its 4th and 5th, e.g. D-G-A) against all chords; keep the set that fits every chord. Program an FM-keys arpeggio as root-4th-5th-octave (or step pattern 4-1-4) on that set, looping unchanged across the progression.",
+      "tool": "MIDI clip",
+      "expect": "Arpeggio that never clashes"
+    },
+    {
+      "n": 5,
+      "action": "Build a seconds-based dyad pad: pick a chord tone of chord 1 (e.g. B) and move it by a semitone to the next chord's tone (C), similarly E->F; add a third below or above to form two-note intervals and play as a slow dyad trill on a mallet/vibraphone sound.",
+      "tool": "MIDI clip",
+      "expect": "Second-based layer contrasting the third-based pad"
+    },
+    {
+      "n": 6,
+      "action": "Write the melody from per-chord guide tones (e.g. E/B over bars 1-2, F/C over bars 3-4), arriving on the next chord's tone slightly before the downbeat (anticipation), and use the common tones (G, A) as connecting notes.",
+      "tool": "MIDI clip",
+      "expect": "Steady melody that leans into each change"
+    },
+    {
+      "n": 7,
+      "action": "Double the melody an octave lower on a contrasting synth timbre; slight timing looseness is fine.",
+      "tool": "Arrangement",
+      "expect": "Orchestral-style double, call/response option"
+    },
+    {
+      "n": 8,
+      "action": "Add swells: a synth with a long attack and heavy reverb playing the common tones (G, A) a few times across the section, no pitch bend.",
+      "tool": "Arrangement",
+      "expect": "Performative swells that cannot clash"
+    },
+    {
+      "n": 9,
+      "action": "Collect all clips; arrange by muting/unmuting layers per section (e.g. pad drops out leaving the dyad layer).",
+      "tool": "Arrangement",
+      "expect": "Material for a full ambient piece"
+    }
+  ],
+  "verification": [
+    "Every derived clip uses only notes from the progression clip or the verified common-tone set.",
+    "Pad voice moves between chords are mostly steps or thirds, no fourth/fifth jumps in the top voice.",
+    "Melody contains at least one anticipation per chord change.",
+    "Arpeggio and swell notes fit all chords (no audible clash when soloed with each chord)."
+  ],
+  "tags": [
+    "harmony",
+    "layers",
+    "ambient",
+    "arpeggio",
+    "common-tones",
+    "voice-leading",
+    "melody",
+    "parallel-harmony",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells"
+}

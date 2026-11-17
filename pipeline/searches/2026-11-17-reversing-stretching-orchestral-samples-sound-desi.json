@@ -1,0 +1,101 @@
+{
+ "topic": "reversing stretching orchestral samples sound design",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "reversing stretching orchestral samples sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "DY9SLPLBlO4",
+   "title": "Sound Design Tips For Beginners (How To Design Sound Effects)",
+   "channel": "Transverse Audio",
+   "duration": 255,
+   "view_count": 101435,
+   "url": "https://www.youtube.com/watch?v=DY9SLPLBlO4",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.5
+  },
+  {
+   "id": "z6r7BhWq-Io",
+   "title": "How To Design Slow Motion Sound Effects Booms | Whooshes | Sub Downs",
+   "channel": "Aftertouch Audio",
+   "duration": 627,
+   "view_count": 39720,
+   "url": "https://www.youtube.com/watch?v=z6r7BhWq-Io",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.8
+  },
+  {
+   "id": "cqJKzJPKoZE",
+   "title": "How to Recreate Any Sound",
+   "channel": "Alice Efe - Mercurial Tones Academy",
+   "duration": 484,
+   "view_count": 303314,
+   "url": "https://www.youtube.com/watch?v=cqJKzJPKoZE",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.24
+  },
+  {
+   "id": "ws8yLOIkLms",
+   "title": "How to make PLASTIC / LATEX / RUBBER sounds in Ableton Live | SONIC HYPERREALISM [2]",
+   "channel": "Voel",
+   "duration": 1287,
+   "view_count": 154087,
+   "url": "https://www.youtube.com/watch?v=ws8yLOIkLms",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.09
+  },
+  {
+   "id": "tzfzkTAQsnE",
+   "title": "3 Sound Design Secrets That Feel Like CHEATING",
+   "channel": "Herman Huang",
+   "duration": 442,
+   "view_count": 1092180,
+   "url": "https://www.youtube.com/watch?v=tzfzkTAQsnE",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "ScZIslxpYaU",
+   "title": "26 sound design tricks for making INDUSTRIAL MUSIC",
+   "channel": "Tonepusher",
+   "duration": 1238,
+   "view_count": 165180,
+   "url": "https://www.youtube.com/watch?v=ScZIslxpYaU",
+   "query": "reversing stretching orchestral samples sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.11
+  }
+ ],
+ "dropped": [
+  {
+   "id": "HTLPQgNkXyc",
+   "why": "already known"
+  },
+  {
+   "id": "jWorjBDcty4",
+   "why": "duration 9485s"
+  },
+  {
+   "id": "QrZgiP4SObs",
+   "why": "duration 5662s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

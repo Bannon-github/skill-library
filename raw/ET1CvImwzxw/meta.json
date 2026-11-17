@@ -1,0 +1,46 @@
+{
+  "video_id": "ET1CvImwzxw",
+  "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track",
+  "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
+  "fetched_at": "2026-11-17T16:23:31.856704+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Jannis Le Wolff",
+  "duration": 1235,
+  "ok": true,
+  "cue_count": 432,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/ET1CvImwzxw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/ET1CvImwzxw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

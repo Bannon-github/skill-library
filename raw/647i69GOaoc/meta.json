@@ -1,0 +1,31 @@
+{
+  "video_id": "647i69GOaoc",
+  "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+  "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+  "fetched_at": "2026-11-17T16:24:39.669973+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Dark Side of Synth",
+  "duration": 789,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": null
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

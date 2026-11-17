@@ -1,0 +1,99 @@
+{
+ "topic": "cinematic build and transition ambient arrangement",
+ "date": "2026-11-17",
+ "params": {
+  "topic": "cinematic build and transition ambient arrangement",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "MTl-Sj8jR0M",
+   "title": "How to Make Cinematic Orchestral Music in FL Studio (Hans Zimmer Inspired) | [Stems + FLP Available]",
+   "channel": "Joey Dale Music",
+   "duration": 828,
+   "view_count": 1199,
+   "url": "https://www.youtube.com/watch?v=MTl-Sj8jR0M",
+   "query": "cinematic build and transition ambient arrangement tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.04
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1219677,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "cinematic build and transition ambient arrangement tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "dMzMmnRT_HE",
+   "title": "These 12 Transitions Will Instantly Level Up Your Music!",
+   "channel": "Will Hatton",
+   "duration": 738,
+   "view_count": 13046,
+   "url": "https://www.youtube.com/watch?v=dMzMmnRT_HE",
+   "query": "cinematic build and transition ambient arrangement tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.56
+  },
+  {
+   "id": "tzfzkTAQsnE",
+   "title": "3 Sound Design Secrets That Feel Like CHEATING",
+   "channel": "Herman Huang",
+   "duration": 442,
+   "view_count": 1092174,
+   "url": "https://www.youtube.com/watch?v=tzfzkTAQsnE",
+   "query": "cinematic build and transition ambient arrangement tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "xY7vRHiSJSM",
+   "why": "already known"
+  },
+  {
+   "id": "U-Tn1o83yDk",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "673R2Ht3g58",
+   "why": "duration 176s"
+  },
+  {
+   "id": "K9JZ1WijGmI",
+   "why": "already known"
+  },
+  {
+   "id": "E4eghKjWH1o",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
