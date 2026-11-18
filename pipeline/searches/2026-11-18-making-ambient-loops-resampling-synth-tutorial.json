@@ -1,0 +1,93 @@
+{
+ "topic": "making ambient loops resampling synth tutorial",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "making ambient loops resampling synth tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "MPzhVv7Uhp0",
+   "title": "Fun Auto Slicing - Octatrack Random Resampling Tutorial",
+   "channel": "EZBOT",
+   "duration": 390,
+   "view_count": 26627,
+   "url": "https://www.youtube.com/watch?v=MPzhVv7Uhp0",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.71
+  },
+  {
+   "id": "C6YKpuroFUw",
+   "title": "Sound Design Generators and Resampling tutorial",
+   "channel": "pailiaq",
+   "duration": 1070,
+   "view_count": 5285,
+   "url": "https://www.youtube.com/watch?v=C6YKpuroFUw",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.36
+  },
+  {
+   "id": "poXDnQGVozk",
+   "title": "how i made this Minimal Groove!  resampling PURE SUB! (dnb tutorial)",
+   "channel": "BassWobbleTv",
+   "duration": 581,
+   "view_count": 1027,
+   "url": "https://www.youtube.com/watch?v=poXDnQGVozk",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.01
+  },
+  {
+   "id": "EuPisVu55oU",
+   "title": "Lo-Fi Resampling in Ableton Live [Tutorial]",
+   "channel": "June_Birnie",
+   "duration": 717,
+   "view_count": 639,
+   "url": "https://www.youtube.com/watch?v=EuPisVu55oU",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.9
+  },
+  {
+   "id": "Of6RLgo_XNI",
+   "title": "Making ambient in Koala- What I learned from Music For Airports. [Koala Sampler breakdown]",
+   "channel": "small plates music",
+   "duration": 377,
+   "view_count": 13172,
+   "url": "https://www.youtube.com/watch?v=Of6RLgo_XNI",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.56
+  },
+  {
+   "id": "z7xVfv8aByI",
+   "title": "Multigrain Resampling | Recycling and granulizing sounds to create ambient textures",
+   "channel": "Intellijel",
+   "duration": 1223,
+   "view_count": 5186,
+   "url": "https://www.youtube.com/watch?v=z7xVfv8aByI",
+   "query": "making ambient loops resampling synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.36
+  }
+ ],
+ "dropped": [
+  {
+   "id": "XAch1Q0Iodc",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

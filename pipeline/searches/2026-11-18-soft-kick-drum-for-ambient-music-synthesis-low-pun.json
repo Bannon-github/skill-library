@@ -1,0 +1,106 @@
+{
+ "topic": "soft kick drum for ambient music synthesis low punch",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "soft kick drum for ambient music synthesis low punch",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Ky7jN8QmxDo",
+   "title": "Lofi Drums Tutorial: Kicks, Snares and Sidechain Compression",
+   "channel": "Tom Casey Music",
+   "duration": 393,
+   "view_count": 12392,
+   "url": "https://www.youtube.com/watch?v=Ky7jN8QmxDo",
+   "query": "soft kick drum for ambient music synthesis low punch tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.55
+  },
+  {
+   "id": "oy8Cr-U2pwA",
+   "title": "How to make Techno Kicks",
+   "channel": "Marcovits Lab",
+   "duration": 474,
+   "view_count": 1004,
+   "url": "https://www.youtube.com/watch?v=oy8Cr-U2pwA",
+   "query": "soft kick drum for ambient music synthesis low punch tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.0
+  },
+  {
+   "id": "UQpyAuq5vHk",
+   "title": "Solving your BIGGEST kick drum problems in 180 seconds",
+   "channel": "TheCosmicAcademy",
+   "duration": 319,
+   "view_count": 74070,
+   "url": "https://www.youtube.com/watch?v=UQpyAuq5vHk",
+   "query": "soft kick drum for ambient music synthesis low punch tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.93
+  },
+  {
+   "id": "Mhjoqv31YeI",
+   "title": "Kick Sound Design in Spire | Spire Kick | Kick in Ableton Live |  Kick with Spire | EDM Kick",
+   "channel": "Azin Zahedi",
+   "duration": 521,
+   "view_count": 57,
+   "url": "https://www.youtube.com/watch?v=Mhjoqv31YeI",
+   "query": "soft kick drum for ambient music synthesis low punch tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.38
+  },
+  {
+   "id": "ZCAYJJVT3UQ",
+   "title": "Make Your Perfect Kick - Part 6 - Processing",
+   "channel": "Soundflow Music Academy",
+   "duration": 1892,
+   "view_count": 5121,
+   "url": "https://www.youtube.com/watch?v=ZCAYJJVT3UQ",
+   "query": "soft kick drum for ambient music synthesis low punch tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.85
+  }
+ ],
+ "dropped": [
+  {
+   "id": "5MzyEvIvj_k",
+   "why": "duration 148s"
+  },
+  {
+   "id": "I_4d4U3Ti9k",
+   "why": "already known"
+  },
+  {
+   "id": "W-e9E2WkAas",
+   "why": "duration 4420s"
+  },
+  {
+   "id": "bKMcuE64DxI",
+   "why": "duration 20s"
+  },
+  {
+   "id": "thapspq3qVQ",
+   "why": "duration 27s"
+  },
+  {
+   "id": "eG0401qU-Pw",
+   "why": "already known"
+  },
+  {
+   "id": "13AqJvAafj8",
+   "why": "duration 71s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

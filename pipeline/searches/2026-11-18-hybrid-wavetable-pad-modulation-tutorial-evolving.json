@@ -1,0 +1,106 @@
+{
+ "topic": "hybrid wavetable pad modulation tutorial evolving",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "hybrid wavetable pad modulation tutorial evolving",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Vx94sNJpu1c",
+   "title": "Advanced Serum Tutorial - Complex Pad design",
+   "channel": null,
+   "duration": 1018,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=Vx94sNJpu1c",
+   "query": "hybrid wavetable pad modulation tutorial evolving tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "SyKSIWu0RTA",
+   "title": "How to Use Serum’s Resample Mode to Create Custom Wavetables – Sound Design with Echo Sound Works",
+   "channel": null,
+   "duration": 307,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=SyKSIWu0RTA",
+   "query": "hybrid wavetable pad modulation tutorial evolving tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "JzFVFVVQjIA",
+   "title": "Arturia Microfreak   Patch Design   Pad 01   Soft, Detune, Wavetable, Chorus",
+   "channel": null,
+   "duration": 475,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=JzFVFVVQjIA",
+   "query": "hybrid wavetable pad modulation tutorial evolving tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5
+  },
+  {
+   "id": "un9HdSAoZrY",
+   "title": "MASSIVE: Design a Cinematic Soundscape Pad",
+   "channel": null,
+   "duration": 513,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=un9HdSAoZrY",
+   "query": "hybrid wavetable pad modulation tutorial evolving tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.5
+  },
+  {
+   "id": "rzIuLk8730w",
+   "title": "more on wavetables",
+   "channel": null,
+   "duration": 920,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=rzIuLk8730w",
+   "query": "hybrid wavetable pad modulation tutorial evolving tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "4MeP3XbYMGA",
+   "why": "already known"
+  },
+  {
+   "id": "JP5yTtT-gbk",
+   "why": "already known"
+  },
+  {
+   "id": "vIwRYLJmw6U",
+   "why": "duration 144s"
+  },
+  {
+   "id": "fGhI7rP74ww",
+   "why": "duration 100s"
+  },
+  {
+   "id": "oHO1Rr03jUU",
+   "why": "negative title signal"
+  },
+  {
+   "id": "7rlzngmprdQ",
+   "why": "duration 114s"
+  },
+  {
+   "id": "uksIVNd0Pcc",
+   "why": "duration 180s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

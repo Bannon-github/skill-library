@@ -1,0 +1,99 @@
+{
+ "topic": "ambient music arrangement how to structure a track",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "ambient music arrangement how to structure a track",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "2bvdVDRpfAQ",
+   "title": "How To Create Your Own Ambient Track From Scratch - Ambient For Beginners - Full Tutorial",
+   "channel": "Ian Waugh",
+   "duration": 2204,
+   "view_count": 22270,
+   "url": "https://www.youtube.com/watch?v=2bvdVDRpfAQ",
+   "query": "ambient music arrangement how to structure a track tutorial how to",
+   "query_lang": "en",
+   "howto_score": 13.17
+  },
+  {
+   "id": "izs8VjIrCxI",
+   "title": "How To Write Atmospheric Jungle Like The Pros",
+   "channel": "Eliana D'Angelo Music",
+   "duration": 873,
+   "view_count": 31862,
+   "url": "https://www.youtube.com/watch?v=izs8VjIrCxI",
+   "query": "ambient music arrangement how to structure a track tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.75
+  },
+  {
+   "id": "CW3jk3BgE1E",
+   "title": "Learn to make ambient music in 4 simple steps",
+   "channel": "Monotrail Tech Talk",
+   "duration": 1305,
+   "view_count": 41448,
+   "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
+   "query": "ambient music arrangement how to structure a track tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.81
+  },
+  {
+   "id": "uZfNc_oCwOc",
+   "title": "Ambient Composing Secrets: Scoring Under Dialogue For Film & TV",
+   "channel": "Modern Media Composer",
+   "duration": 1050,
+   "view_count": 61004,
+   "url": "https://www.youtube.com/watch?v=uZfNc_oCwOc",
+   "query": "ambient music arrangement how to structure a track tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.89
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "0bB8rWEcScA",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "RqHKX4BDJ1Q",
+   "why": "duration 199s"
+  },
+  {
+   "id": "xY7vRHiSJSM",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

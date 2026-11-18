@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "id": "fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings",
+  "name": "Fifth-ratio varispeed resample: make clean piano/orchestral strings sound sampled-from-record by compressing the MIDI to 2/3 length, transposing up a perfect fifth, bouncing to audio and playing the audio un-warped a fifth down",
+  "goal": "Give a clean sampled-instrument part (piano or orchestral strings) the coloured, tape/vinyl-sampled character of varispeed resampling while keeping its original tempo and pitch: write the part humanly in MIDI, add a spare bar, use a triplet-grid reference to scale the clip to exactly 2/3 of its length, transpose all notes +7 semitones, bounce to audio, turn warping off and transpose the audio -7 semitones (a perfect fifth is a 3:2 ratio, so slowing by 2/3 restores the original time and pitch through the sampler's resample interpolation), then group with a quiet EQ'd noise bed and gentle saturation glue. Delta vs granular/orchestral-hybrid and looper-resample variants: an exact interval-ratio varispeed round trip (time and pitch preserved) as the core trick, applied to orchestral strings as well as piano.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "EuPisVu55oU",
+    "url": "https://www.youtube.com/watch?v=EuPisVu55oU",
+    "title": "Lo-Fi Resampling in Ableton Live [Tutorial]",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/EuPisVu55oU/agent-skill-fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings.json",
+    "batch": "2026-11-18-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with MIDI clips, a resampling/bounce track and un-warped (repitch-mode) audio playback",
+    "A sampled piano and/or orchestral-strings instrument"
+  ],
+  "inputs": [
+    {
+      "name": "part",
+      "type": "midi",
+      "description": "An 8-bar piano or strings phrase",
+      "required": true
+    },
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Project tempo (unchanged by the process)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "resampled_audio",
+      "type": "audio",
+      "description": "Audio clip at the original tempo and pitch with varispeed/resample colouring"
+    },
+    {
+      "name": "group",
+      "type": "audio",
+      "description": "Group of resampled part + quiet noise bed + saturation glue"
+    }
+  ],
+  "constraints": [
+    "Ratio rule: time scale and transposition must match (2/3 length with +7 st, then -7 st un-warped). Other pairs work only if they match the same ratio (e.g. 1/2 length with +12 st, then -12 st).",
+    "Leave out the transcript's frequency-shifter with a sample-and-hold LFO (~3 Hz random repitch). It is random pitch wobble, which Matt dislikes, so the pitch stays steady.",
+    "Leave out vinyl crackle/clicks (a rapid clicking texture Matt dislikes). If a noise bed is wanted, use a smooth, low-level broadband hiss (e.g. tape hiss) high-passed and EQ'd with no ticks.",
+    "Chop-and-repeat rearranging is optional and must be whole phrases/bars, not short stutter repeats.",
+    "Humanising stays in timing (small flams, slightly off-grid) and velocity. Never randomise pitch.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: the part is written as a MIDI clip; the time-compress and transpose steps are plain MIDI edits (any DAW piano roll), the resample is a bounce/freeze-and-flatten.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write the phrase in MIDI as a human would play it: small flams between chord notes, slightly off-grid timing and varied velocities so it does not sound computer-sequenced.",
+      "tool": "Piano roll",
+      "expect": "Natural-feeling 8-bar phrase"
+    },
+    {
+      "n": 2,
+      "action": "Set the clip length one bar longer than the phrase (e.g. 9 bars for 8) and place a marker note at the very end of the extended region.",
+      "tool": "Piano roll",
+      "expect": "Clip has a spare bar and an end marker"
+    },
+    {
+      "n": 3,
+      "action": "Switch to a triplet grid, draw one triplet note and stretch it until it spans the whole phrase, then select all and drag the clip's time-stretch handle until the end marker lines up with the last triplet hit. The phrase is now exactly 2/3 of its original length. Delete the triplet guide and marker notes.",
+      "tool": "Piano roll time-scale (MIDI stretch)",
+      "expect": "Phrase occupies 2/3 of original duration"
+    },
+    {
+      "n": 4,
+      "action": "Select all notes and transpose up a perfect fifth (+7 semitones).",
+      "tool": "Piano roll",
+      "expect": "Notes 7 semitones higher, faster"
+    },
+    {
+      "n": 5,
+      "action": "Resample the instrument to audio: record it onto an audio track set to resample the source (or freeze and flatten).",
+      "tool": "Bounce/resample",
+      "expect": "Audio clip of the fast, high version"
+    },
+    {
+      "n": 6,
+      "action": "In the audio clip, turn warping off (repitch/varispeed playback) and transpose the clip down a perfect fifth (-7 semitones). Because 3:2 = a fifth, the clip returns to near-original tempo and pitch, now coloured by the resample.",
+      "tool": "Audio clip (warp off, transpose)",
+      "expect": "Original timing and pitch with a sampled-from-record texture"
+    },
+    {
+      "n": 7,
+      "action": "Group the resampled track with a second audio track holding a very low-level noise bed. EQ out its low bumps and keep it far below the music.",
+      "tool": "Group + EQ",
+      "expect": "Subtle air/noise floor"
+    },
+    {
+      "n": 8,
+      "action": "Glue the group with a gentle saturation/lo-fi colour stage (crackle set to zero) so the noise and part sound like one source. Repeat the whole process for the strings part.",
+      "tool": "Saturator / lo-fi colour",
+      "expect": "Cohesive resampled piano and strings layers"
+    }
+  ],
+  "verification": [
+    "Resampled clip length is within 1% of the original phrase length.",
+    "Pitch-detect on a held note matches the original MIDI pitch (within 10 cents) and shows no LFO pitch modulation.",
+    "Noise bed sits at least 25 dB below the part; no transient clicks are detected in it."
+  ],
+  "tags": [
+    "resampling",
+    "varispeed",
+    "lo-fi",
+    "piano",
+    "orchestral-strings",
+    "sample-manipulation",
+    "texture",
+    "midi",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings"
+}

@@ -1,0 +1,664 @@
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-18T16:20:59.685510+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "647i69GOaoc",
+  "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+  "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+  "fetched_at": "2026-11-18T16:21:48.132980+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Dark Side of Synth",
+  "duration": 789,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "mmn6iSBKdp8",
+  "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+  "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+  "fetched_at": "2026-11-18T16:21:59.035562+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tom Casey Music",
+  "duration": 1264,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.6
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "zEkCere2A_Y",
+  "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
+  "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
+  "fetched_at": "2026-11-18T16:22:44.413293+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jemeneye",
+  "duration": 990,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "Of6RLgo_XNI",
+  "title": "Making ambient in Koala- What I learned from Music For Airports. [Koala Sampler breakdown]",
+  "url": "https://www.youtube.com/watch?v=Of6RLgo_XNI",
+  "fetched_at": "2026-11-18T16:32:28.071377+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "small plates music",
+  "duration": 376,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 10.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.6
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.6
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "DU_Wu9OBCCw",
+  "title": "[Ambient] Arpeggiated FM synth, reversed and time stretched with reverb",
+  "url": "https://www.youtube.com/watch?v=DU_Wu9OBCCw",
+  "fetched_at": "2026-11-18T16:33:46.919635+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "_idiot",
+  "duration": 592,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "Ky7jN8QmxDo",
+  "title": "Lofi Drums Tutorial: Kicks, Snares and Sidechain Compression",
+  "url": "https://www.youtube.com/watch?v=Ky7jN8QmxDo",
+  "fetched_at": "2026-11-18T16:33:56.951565+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Tom Casey Music",
+  "duration": 393,
+  "ok": true,
+  "cue_count": 314,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "Ky7jN8QmxDo.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/Ky7jN8QmxDo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Ky7jN8QmxDo/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.6
+    }
+  ]
+}
+{
+  "video_id": "Vx94sNJpu1c",
+  "title": "Advanced Serum Tutorial - Complex Pad design",
+  "url": "https://www.youtube.com/watch?v=Vx94sNJpu1c",
+  "fetched_at": "2026-11-18T16:34:45.781991+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Sound Design Tutorials",
+  "duration": 1017,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "LcAcmBKryxE",
+  "title": "Stereo Width Part 2 - Widening",
+  "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+  "fetched_at": "2026-11-18T16:35:36.419118+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "DJ Warmonger Official Channel",
+  "duration": 1023,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "haZ6byjMpOk",
+  "title": "The Joy of Recording Episode 1: Evolving Ambient Textures",
+  "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
+  "fetched_at": "2026-11-18T16:36:20.816067+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Dan Phelps",
+  "duration": 432,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "z7xVfv8aByI",
+  "title": "Multigrain Resampling | Recycling and granulizing sounds to create ambient textures",
+  "url": "https://www.youtube.com/watch?v=z7xVfv8aByI",
+  "fetched_at": "2026-11-18T16:37:06.085187+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Intellijel",
+  "duration": 1223,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "VSGYqvV4bTg",
+  "title": "Get Creative with 6 Unexpected Uses for Ableton's Delays",
+  "url": "https://www.youtube.com/watch?v=VSGYqvV4bTg",
+  "fetched_at": "2026-11-18T16:37:55.098278+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "ELPHNT",
+  "duration": 906,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "jYrz49kwOWg",
+  "title": "3 Basic Bass Patches Every Producer Should Know | 100 Sound Design Tips (Ep. 8)",
+  "url": "https://www.youtube.com/watch?v=jYrz49kwOWg",
+  "fetched_at": "2026-11-18T16:45:41.526891+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 1338,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "oy8Cr-U2pwA",
+  "title": "How to make Techno Kicks",
+  "url": "https://www.youtube.com/watch?v=oy8Cr-U2pwA",
+  "fetched_at": "2026-11-18T16:46:29.330434+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Marcovits Lab",
+  "duration": 474,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.5
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 10.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "EuPisVu55oU",
+  "title": "Lo-Fi Resampling in Ableton Live [Tutorial]",
+  "url": "https://www.youtube.com/watch?v=EuPisVu55oU",
+  "fetched_at": "2026-11-18T16:47:48.438219+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "June_Birnie",
+  "duration": 716,
+  "ok": true,
+  "cue_count": 205,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/EuPisVu55oU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/EuPisVu55oU/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "uZfNc_oCwOc",
+  "title": "Ambient Composing Secrets: Scoring Under Dialogue For Film & TV",
+  "url": "https://www.youtube.com/watch?v=uZfNc_oCwOc",
+  "fetched_at": "2026-11-18T16:53:41.682711+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Modern Media Composer",
+  "duration": 1049,
+  "ok": true,
+  "cue_count": 387,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uZfNc_oCwOc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uZfNc_oCwOc/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "CW3jk3BgE1E",
+  "title": "Learn to make ambient music in 4 simple steps",
+  "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
+  "fetched_at": "2026-11-18T16:54:06.771267+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Monotrail Tech Talk",
+  "duration": 1305,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.8
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "2bvdVDRpfAQ",
+  "title": "How To Create Your Own Ambient Track From Scratch - Ambient For Beginners - Full Tutorial",
+  "url": "https://www.youtube.com/watch?v=2bvdVDRpfAQ",
+  "fetched_at": "2026-11-18T16:55:10.420462+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Waugh",
+  "duration": 2204,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "Of6RLgo_XNI",
+  "title": "Making ambient in Koala- What I learned from Music For Airports. [Koala Sampler breakdown]",
+  "url": "https://www.youtube.com/watch?v=Of6RLgo_XNI",
+  "fetched_at": "2026-11-18T16:56:11.348272+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "small plates music",
+  "duration": 376,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.8
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "haZ6byjMpOk",
+  "title": "The Joy of Recording Episode 1: Evolving Ambient Textures",
+  "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
+  "fetched_at": "2026-11-18T16:57:42.678280+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Dan Phelps",
+  "duration": 432,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "LcAcmBKryxE",
+  "title": "Stereo Width Part 2 - Widening",
+  "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+  "fetched_at": "2026-11-18T16:58:41.799351+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "DJ Warmonger Official Channel",
+  "duration": 1023,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.7
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

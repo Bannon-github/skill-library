@@ -1,0 +1,109 @@
+{
+ "topic": "Aphex exciter on synths sound design",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "Aphex exciter on synths sound design",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "-MGcBX0zYjc",
+   "title": "How to Use the Waves Aphex Vintage Aural Exciter Plugin",
+   "channel": "Waves Audio",
+   "duration": 443,
+   "view_count": 316196,
+   "url": "https://www.youtube.com/watch?v=-MGcBX0zYjc",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.25
+  },
+  {
+   "id": "wHNTvWVoYnc",
+   "title": "BUS EXCITER 104 by ARTURIA deep dive guide tutorial",
+   "channel": "XNB",
+   "duration": 1426,
+   "view_count": 2039,
+   "url": "https://www.youtube.com/watch?v=wHNTvWVoYnc",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.15
+  },
+  {
+   "id": "emeFIW3jc2U",
+   "title": "How to sound like Whyfye",
+   "channel": "The Giving Note",
+   "duration": 475,
+   "view_count": 14118,
+   "url": "https://www.youtube.com/watch?v=emeFIW3jc2U",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.57
+  },
+  {
+   "id": "Jc7S3iThePg",
+   "title": "Izotope Ozone 8 Tutorial 05 - Exciter",
+   "channel": "SadowickProduction",
+   "duration": 453,
+   "view_count": 12962,
+   "url": "https://www.youtube.com/watch?v=Jc7S3iThePg",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.56
+  },
+  {
+   "id": "tfZUMRdmPgM",
+   "title": "Using Waves Aphex Vintage Aural Exciter To Bring Character And Sheen",
+   "channel": "Production Expert",
+   "duration": 393,
+   "view_count": 57886,
+   "url": "https://www.youtube.com/watch?v=tfZUMRdmPgM",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.88
+  },
+  {
+   "id": "oe6RLtkuvDY",
+   "title": "Dave Jerden's Secret Mix Weapon, the Aphex II Studio Aural Exciter (Anthrax, Alice in Chains, etc)",
+   "channel": "J.P. Henry",
+   "duration": 780,
+   "view_count": 3415,
+   "url": "https://www.youtube.com/watch?v=oe6RLtkuvDY",
+   "query": "Aphex exciter on synths sound design tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.27
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ncEay3D_8yI",
+   "why": "duration 206s"
+  },
+  {
+   "id": "Xw4Y33F9s4U",
+   "why": "duration 170s"
+  },
+  {
+   "id": "K6XUPBK3uT0",
+   "why": "duration 79s"
+  },
+  {
+   "id": "xSVCho6Hz-o",
+   "why": "duration 98s"
+  },
+  {
+   "id": "akue60r2abQ",
+   "why": "duration 111s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,253 @@
+{
+ "name": "Ladder Pulse",
+ "seed": 1118,
+ "bpm": 96,
+ "bars": 32,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "D minor",
+ "sections": {
+  "drumsIn": 4,
+  "leadIn": 12,
+  "buildStart": 20,
+  "drop": 24,
+  "drumsOut": 30,
+  "end": 32
+ },
+ "chords": {
+  "names": [
+   "Dm",
+   "Bb",
+   "F",
+   "C"
+  ],
+  "bass": [
+   38,
+   34,
+   41,
+   36
+  ],
+  "upper": [
+   [
+    62,
+    65,
+    69
+   ],
+   [
+    62,
+    65,
+    70
+   ],
+   [
+    60,
+    65,
+    69
+   ],
+   [
+    60,
+    64,
+    67
+   ]
+  ]
+ },
+ "pulse": {
+  "noiseLvl": 0.09,
+  "oscBDetuneC": 7,
+  "unison": 5,
+  "uniSpreadC": 14,
+  "res": 0.35,
+  "envAtkMs": 7,
+  "envDecMs": 110,
+  "envOctaves": 4.2,
+  "cutoffMacro": [
+   [
+    0,
+    0.0
+   ],
+   [
+    4,
+    0.15
+   ],
+   [
+    12,
+    0.2
+   ],
+   [
+    12.01,
+    0.45
+   ],
+   [
+    20,
+    0.5
+   ],
+   [
+    24,
+    0.6
+   ],
+   [
+    24.01,
+    0.95
+   ],
+   [
+    30,
+    0.9
+   ],
+   [
+    32,
+    0.1
+   ]
+  ],
+  "baseHz": 90,
+  "macroOctaves": 5.2,
+  "line": [
+   0,
+   0,
+   12,
+   0,
+   7,
+   0,
+   12,
+   7
+  ]
+ },
+ "width": {
+  "narrow": 0.25,
+  "wide": 1.25,
+  "widthPts": [
+   [
+    0,
+    0.55
+   ],
+   [
+    4,
+    0.6
+   ],
+   [
+    12,
+    0.6
+   ],
+   [
+    12.5,
+    1.1
+   ],
+   [
+    20,
+    1.1
+   ],
+   [
+    20.5,
+    0.4
+   ],
+   [
+    24,
+    0.4
+   ],
+   [
+    24.05,
+    1.35
+   ],
+   [
+    30,
+    1.35
+   ],
+   [
+    32,
+    0.7
+   ]
+  ],
+  "doublePan": 0.33,
+  "takeBOffsetMs": 9,
+  "msMidCutDb": -30,
+  "sidesVerbRt": 4.5,
+  "sidesSend": 0.55,
+  "drumSideDuckDb": 3
+ },
+ "tension": {
+  "oscBGlideSt": 12,
+  "loopSec": 1.37,
+  "loopSrcBar": 16,
+  "loopUpSt": 7,
+  "loopChorus": 0.5,
+  "loopDuckDb": 6,
+  "delayFb": [
+   0.15,
+   0.6
+  ],
+  "returnPts": [
+   [
+    20,
+    0.0
+   ],
+   [
+    23.6,
+    0.8
+   ],
+   [
+    23.95,
+    0.0
+   ]
+  ]
+ },
+ "melody": [
+  [
+   12,
+   69,
+   2
+  ],
+  [
+   14,
+   72,
+   2
+  ],
+  [
+   16,
+   74,
+   2
+  ],
+  [
+   18,
+   67,
+   2
+  ],
+  [
+   24,
+   74,
+   2
+  ],
+  [
+   26,
+   72,
+   2
+  ],
+  [
+   28,
+   77,
+   2
+  ],
+  [
+   30,
+   69,
+   2
+  ]
+ ],
+ "levels": {
+  "pad": 0.36,
+  "pulse": 0.42,
+  "lead": 0.3,
+  "bass": 0.24,
+  "loop": 0.22,
+  "delayRet": 0.45,
+  "bed": 0.3
+ },
+ "drums": {
+  "kick": 0.3,
+  "snare": 0.18,
+  "shaker": 0.07
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 220,
+  "fadeOutSec": 2.5
+ }
+}

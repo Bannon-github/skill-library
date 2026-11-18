@@ -1,0 +1,109 @@
+{
+ "topic": "brighten dull synth pad eq saturation tutorial",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "brighten dull synth pad eq saturation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0-4MBrbxmMA",
+   "title": "Music is Midrange - Ableton EQ Eight Tutorial",
+   "channel": "Seed To Stage",
+   "duration": 960,
+   "view_count": 98082,
+   "url": "https://www.youtube.com/watch?v=0-4MBrbxmMA",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "-77UU4ZzG4c",
+   "title": "How to Get the PERFECT Bass Tone",
+   "channel": "BassBuzz",
+   "duration": 994,
+   "view_count": 1032643,
+   "url": "https://www.youtube.com/watch?v=-77UU4ZzG4c",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "MvFFcmuZTLk",
+   "title": "8 Reasons your Mix Sounds MUDDY! (How to Fix a Mix)",
+   "channel": "Dowden Production Academy",
+   "duration": 949,
+   "view_count": 23769,
+   "url": "https://www.youtube.com/watch?v=MvFFcmuZTLk",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.69
+  },
+  {
+   "id": "L9kuxISxOVo",
+   "title": "Once You Know This, Mixing Music is So Much Easier",
+   "channel": "Sage Audio",
+   "duration": 623,
+   "view_count": 894465,
+   "url": "https://www.youtube.com/watch?v=L9kuxISxOVo",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.48
+  },
+  {
+   "id": "kWQvUHFRRIs",
+   "title": "Eliminate Muddy Bass For Good!",
+   "channel": "Streaky",
+   "duration": 337,
+   "view_count": 266749,
+   "url": "https://www.youtube.com/watch?v=kWQvUHFRRIs",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.21
+  },
+  {
+   "id": "ISqEnvAq2ao",
+   "title": "You Suck at Mixing #8: Fixing Muddiness",
+   "channel": "You Suck at Producing",
+   "duration": 335,
+   "view_count": 234042,
+   "url": "https://www.youtube.com/watch?v=ISqEnvAq2ao",
+   "query": "brighten dull synth pad eq saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.18
+  }
+ ],
+ "dropped": [
+  {
+   "id": "63nKuxQCdJc",
+   "why": "already known"
+  },
+  {
+   "id": "G9KAzy6InkI",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  },
+  {
+   "id": "4xse1ng6ASo",
+   "why": "duration 194s"
+  },
+  {
+   "id": "VcG4Vs660Ak",
+   "why": "duration 127s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

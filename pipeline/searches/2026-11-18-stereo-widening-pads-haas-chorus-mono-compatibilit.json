@@ -1,0 +1,65 @@
+{
+ "topic": "stereo widening pads haas chorus mono compatibility tutorial",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "stereo widening pads haas chorus mono compatibility tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "LcAcmBKryxE",
+   "title": "Stereo Width Part 2 - Widening",
+   "channel": "DJ Warmonger Official Channel",
+   "duration": 1023,
+   "view_count": 104,
+   "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+   "query": "stereo widening pads haas chorus mono compatibility tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.51
+  },
+  {
+   "id": "VSGYqvV4bTg",
+   "title": "Get Creative with 6 Unexpected Uses for Ableton's Delays",
+   "channel": "ELPHNT",
+   "duration": 906,
+   "view_count": 133683,
+   "url": "https://www.youtube.com/watch?v=VSGYqvV4bTg",
+   "query": "stereo widening pads haas chorus mono compatibility tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.06
+  }
+ ],
+ "dropped": [
+  {
+   "id": "EZG7Pdh9gms",
+   "why": "already known"
+  },
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "5kIWJen9tcI",
+   "why": "already known"
+  },
+  {
+   "id": "lHLnf-N8r6M",
+   "why": "duration 235s"
+  },
+  {
+   "id": "zT6VPplkztA",
+   "why": "duration 195s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

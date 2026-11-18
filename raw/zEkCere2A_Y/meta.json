@@ -2,7 +2,7 @@
   "video_id": "zEkCere2A_Y",
   "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
   "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
-  "fetched_at": "2026-11-17T16:25:45.131910+00:00",
+  "fetched_at": "2026-11-18T16:22:44.413293+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
@@ -43,12 +43,12 @@
     {
       "retry": 1,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.4
+      "sleep_s": 4.9
     },
     {
       "retry": 2,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.7
+      "sleep_s": 8.5
     },
     {
       "retry": 3,

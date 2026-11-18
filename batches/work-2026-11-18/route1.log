@@ -1,0 +1,32 @@
+  [EuPisVu55oU] Q0 pipeline env importable? -> yes
+  [EuPisVu55oU] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [EuPisVu55oU] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [EuPisVu55oU] Q4 English text is a translation? -> no
+  [EuPisVu55oU] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [EuPisVu55oU] Q6 term graph built? -> yes
+  [EuPisVu55oU] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [EuPisVu55oU] OUTCOME CANDIDATES_READY
+  [Ky7jN8QmxDo] Q0 pipeline env importable? -> yes
+  [Ky7jN8QmxDo] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [Ky7jN8QmxDo] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [Ky7jN8QmxDo] Q4 English text is a translation? -> no
+  [Ky7jN8QmxDo] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [Ky7jN8QmxDo] Q6 term graph built? -> yes
+  [Ky7jN8QmxDo] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [Ky7jN8QmxDo] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "EuPisVu55oU",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "Ky7jN8QmxDo",
+  "outcome": "CANDIDATES_READY",
+  "route": "ytdlp-target",
+  "translated": false,
+  "domain": "synth"
+ }
+]

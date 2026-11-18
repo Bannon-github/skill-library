@@ -2,7 +2,7 @@
   "video_id": "5XGrxp0ANME",
   "title": "Why 80s Pads Sound So Good (And How to Make Them)",
   "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
-  "fetched_at": "2026-11-17T16:27:26.186004+00:00",
+  "fetched_at": "2026-11-18T16:20:59.685510+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
@@ -57,17 +57,17 @@
     {
       "retry": 1,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.5
+      "sleep_s": 5.4
     },
     {
       "retry": 2,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.0
+      "sleep_s": 8.6
     },
     {
       "retry": 3,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.8
+      "sleep_s": 17.2
     }
   ],
   "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."

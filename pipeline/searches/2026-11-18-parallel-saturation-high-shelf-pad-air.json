@@ -1,0 +1,97 @@
+{
+ "topic": "parallel saturation high shelf pad air",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "parallel saturation high shelf pad air",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "HbMqTEDxPGA",
+   "title": "How to Read HVAC Schematics (Beginner to Pro – Furnace & AC Explained)",
+   "channel": "Taddy Digest",
+   "duration": 935,
+   "view_count": 243314,
+   "url": "https://www.youtube.com/watch?v=HbMqTEDxPGA",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.19
+  },
+  {
+   "id": "EilVDp39A9g",
+   "title": "Five Typical Mistakes Made By Behringer XR18 Users ... And How To Avoid Them - X Air Tutorial",
+   "channel": "Alan Hamilton Audio",
+   "duration": 415,
+   "view_count": 317001,
+   "url": "https://www.youtube.com/watch?v=EilVDp39A9g",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.25
+  },
+  {
+   "id": "oP4sdpkkNhY",
+   "title": "5 Tips For Better Live Vocal Mixes - Mixing Live Vocals - Live Sound Tutorial - Shown on X32 & XR18",
+   "channel": "Alan Hamilton Audio",
+   "duration": 742,
+   "view_count": 408781,
+   "url": "https://www.youtube.com/watch?v=oP4sdpkkNhY",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.31
+  },
+  {
+   "id": "lgCYjek5_JY",
+   "title": "How To Use A Compressor | Threshold, Ratio, Attack, Release & More",
+   "channel": "Audio University",
+   "duration": 417,
+   "view_count": 473141,
+   "url": "https://www.youtube.com/watch?v=lgCYjek5_JY",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.34
+  },
+  {
+   "id": "ESKIgW-UWlE",
+   "title": "How to Saturate Vocals",
+   "channel": "Sage Audio",
+   "duration": 529,
+   "view_count": 75648,
+   "url": "https://www.youtube.com/watch?v=ESKIgW-UWlE",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.94
+  },
+  {
+   "id": "Y3egyYcVtnY",
+   "title": "Mix Trick for SMOOTH AIRY VOCALS",
+   "channel": "Colt Capperrune",
+   "duration": 410,
+   "view_count": 142722,
+   "url": "https://www.youtube.com/watch?v=Y3egyYcVtnY",
+   "query": "parallel saturation high shelf pad air tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.08
+  }
+ ],
+ "dropped": [
+  {
+   "id": "uNvU672EDmk",
+   "why": "duration 224s"
+  },
+  {
+   "id": "Fnpu6v5gG6w",
+   "why": "duration 148s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

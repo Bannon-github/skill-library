@@ -1,0 +1,97 @@
+{
+ "topic": "time stretching and reversing orchestral strings ambient",
+ "date": "2026-11-18",
+ "params": {
+  "topic": "time stretching and reversing orchestral strings ambient",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "UYOlM3-XhYo",
+   "title": "ANALOG STRINGS by Output - Walkthrough",
+   "channel": "Output",
+   "duration": 425,
+   "view_count": 238874,
+   "url": "https://www.youtube.com/watch?v=UYOlM3-XhYo",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.19
+  },
+  {
+   "id": "DU_Wu9OBCCw",
+   "title": "[Ambient] Arpeggiated FM synth, reversed and time stretched with reverb",
+   "channel": "_idiot",
+   "duration": 592,
+   "view_count": 157,
+   "url": "https://www.youtube.com/watch?v=DU_Wu9OBCCw",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.6
+  },
+  {
+   "id": "aflvwVS_rXE",
+   "title": "Chase Bliss Mood MKII: The ultimate ambient music pedal?",
+   "channel": "David Hilowitz Music",
+   "duration": 534,
+   "view_count": 541282,
+   "url": "https://www.youtube.com/watch?v=aflvwVS_rXE",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.37
+  },
+  {
+   "id": "bZ-3yJ8rTvk",
+   "title": "Soundpaint - Uppers and Risers - Official Walkthrough",
+   "channel": "Soundpaint",
+   "duration": 3146,
+   "view_count": 1417,
+   "url": "https://www.youtube.com/watch?v=bZ-3yJ8rTvk",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.58
+  },
+  {
+   "id": "GcNZnq2v7dc",
+   "title": "My New Favorite Ambient Effect | Tensor Deep Dive | Red Panda Lab",
+   "channel": "Signal Path",
+   "duration": 2716,
+   "view_count": 16878,
+   "url": "https://www.youtube.com/watch?v=GcNZnq2v7dc",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.11
+  },
+  {
+   "id": "gZ6D6eShgoQ",
+   "title": "ETHERA Gold 2.0 - Actions Synth 2 walkthrough",
+   "channel": "Zero-G Sample Libraries",
+   "duration": 2164,
+   "view_count": 4059,
+   "url": "https://www.youtube.com/watch?v=gZ6D6eShgoQ",
+   "query": "time stretching and reversing orchestral strings ambient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.8
+  }
+ ],
+ "dropped": [
+  {
+   "id": "02zJzIAWkUI",
+   "why": "duration 60s"
+  },
+  {
+   "id": "uWPE7c5iRmE",
+   "why": "duration 228s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
