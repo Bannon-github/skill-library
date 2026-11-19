@@ -1,0 +1,92 @@
+  [mmn6iSBKdp8] Q0 pipeline env importable? -> yes
+  [mmn6iSBKdp8] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [mmn6iSBKdp8] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [mmn6iSBKdp8] Q4 English text is a translation? -> no
+  [mmn6iSBKdp8] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [mmn6iSBKdp8] Q6 term graph built? -> yes
+  [mmn6iSBKdp8] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [mmn6iSBKdp8] OUTCOME CANDIDATES_READY
+  [0IgwdHg0ZwM] Q0 pipeline env importable? -> yes
+  [0IgwdHg0ZwM] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [0IgwdHg0ZwM] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [0IgwdHg0ZwM] Q4 English text is a translation? -> no
+  [0IgwdHg0ZwM] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [0IgwdHg0ZwM] Q6 term graph built? -> yes
+  [0IgwdHg0ZwM] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [0IgwdHg0ZwM] OUTCOME CANDIDATES_READY
+  [zEkCere2A_Y] Q0 pipeline env importable? -> yes
+  [zEkCere2A_Y] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [zEkCere2A_Y] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [zEkCere2A_Y] Q4 English text is a translation? -> no
+  [zEkCere2A_Y] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [zEkCere2A_Y] Q6 term graph built? -> yes
+  [zEkCere2A_Y] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [zEkCere2A_Y] OUTCOME CANDIDATES_READY
+  [5XGrxp0ANME] Q0 pipeline env importable? -> yes
+  [5XGrxp0ANME] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [5XGrxp0ANME] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [5XGrxp0ANME] Q4 English text is a translation? -> no
+  [5XGrxp0ANME] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [5XGrxp0ANME] Q6 term graph built? -> yes
+  [5XGrxp0ANME] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [5XGrxp0ANME] OUTCOME CANDIDATES_READY
+  [-HDM5IZARyg] Q0 pipeline env importable? -> yes
+  [-HDM5IZARyg] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [-HDM5IZARyg] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [-HDM5IZARyg] Q4 English text is a translation? -> no
+  [-HDM5IZARyg] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [-HDM5IZARyg] Q6 term graph built? -> yes
+  [-HDM5IZARyg] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [-HDM5IZARyg] OUTCOME CANDIDATES_READY
+  [s3t02k1-G74] Q0 pipeline env importable? -> yes
+  [s3t02k1-G74] Q1 transcript already saved? -> yes  => reuse saved transcript
+  [s3t02k1-G74] Q3 transcript usable (>=150 words, not music-only)? -> yes
+  [s3t02k1-G74] Q4 English text is a translation? -> no
+  [s3t02k1-G74] Q5 domain lexicon matched (>=8 hits)? -> yes
+  [s3t02k1-G74] Q6 term graph built? -> yes
+  [s3t02k1-G74] Q7 gap vs library (procedure-level overlap < 0.5, uncovered technique, or NOVEL)? -> yes  => NEXT: distill-transcript on each candidate span -> quality_check_skill.py -> novelty_check_skill.py
+  [s3t02k1-G74] OUTCOME CANDIDATES_READY
+[
+ {
+  "video_id": "mmn6iSBKdp8",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "0IgwdHg0ZwM",
+  "outcome": "CANDIDATES_READY",
+  "route": "ytdlp-target",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "zEkCere2A_Y",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "5XGrxp0ANME",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "-HDM5IZARyg",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ },
+ {
+  "video_id": "s3t02k1-G74",
+  "outcome": "CANDIDATES_READY",
+  "route": "auto-target-original-audio",
+  "translated": false,
+  "domain": "synth"
+ }
+]

@@ -1,0 +1,225 @@
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-19T16:18:12.195678+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.6
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "647i69GOaoc",
+  "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+  "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+  "fetched_at": "2026-11-19T16:19:14.145769+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Dark Side of Synth",
+  "duration": 789,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "mmn6iSBKdp8",
+  "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+  "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+  "fetched_at": "2026-11-19T16:19:38.860637+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tom Casey Music",
+  "duration": 1264,
+  "ok": true,
+  "cue_count": 531,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/mmn6iSBKdp8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/mmn6iSBKdp8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "zEkCere2A_Y",
+  "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
+  "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
+  "fetched_at": "2026-11-19T16:20:01.971131+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jemeneye",
+  "duration": 990,
+  "ok": true,
+  "cue_count": 409,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/zEkCere2A_Y/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/zEkCere2A_Y/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "r-CS6LWdMQM",
+  "title": "Produce Like a Pro - Brain Entrainment - BeeOne Tutorial 02",
+  "url": "https://www.youtube.com/watch?v=r-CS6LWdMQM",
+  "fetched_at": "2026-11-19T16:20:34.577424+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ayamahambho",
+  "duration": 1774,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "-HDM5IZARyg",
+  "title": "How Exciters Work!",
+  "url": "https://www.youtube.com/watch?v=-HDM5IZARyg",
+  "fetched_at": "2026-11-19T16:20:58.702393+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "REALISTIC",
+  "duration": 1056,
+  "ok": true,
+  "cue_count": 443,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/-HDM5IZARyg/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/-HDM5IZARyg/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "0IgwdHg0ZwM",
+  "title": "How to not screw up your kickdrums!",
+  "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
+  "fetched_at": "2026-11-19T16:21:21.410768+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Underdog Electronic Music School",
+  "duration": 665,
+  "ok": true,
+  "cue_count": 600,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "0IgwdHg0ZwM.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/0IgwdHg0ZwM/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0IgwdHg0ZwM/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ]
+}
+{
+  "video_id": "s3t02k1-G74",
+  "title": "How I create full sound journeys with just Ableton & the Push - Ableton Sound Healing",
+  "url": "https://www.youtube.com/watch?v=s3t02k1-G74",
+  "fetched_at": "2026-11-19T16:22:23.452332+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Steffen Ki Sonic Alchemy",
+  "duration": 1852,
+  "ok": true,
+  "cue_count": 488,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/s3t02k1-G74/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/s3t02k1-G74/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "5XGrxp0ANME",
+  "title": "Why 80s Pads Sound So Good (And How to Make Them)",
+  "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
+  "fetched_at": "2026-11-19T16:22:46.303858+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ian Dixon",
+  "duration": 1214,
+  "ok": true,
+  "cue_count": 395,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/5XGrxp0ANME/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/5XGrxp0ANME/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "647i69GOaoc",
+  "title": "How to Make a Wavetable Evolving Pad in Arturia Pigments 2 - Tutorial & Free Patch",
+  "url": "https://www.youtube.com/watch?v=647i69GOaoc",
+  "fetched_at": "2026-11-19T16:23:10.784891+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Dark Side of Synth",
+  "duration": 789,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

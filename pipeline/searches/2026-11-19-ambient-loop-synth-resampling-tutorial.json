@@ -1,0 +1,101 @@
+{
+ "topic": "ambient loop synth resampling tutorial",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "ambient loop synth resampling tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "C9NyfDHqb5s",
+   "title": "Resampling Loops (Prod-Cast Video Tutorial)",
+   "channel": "Sample Tools by Cr2",
+   "duration": 314,
+   "view_count": 406,
+   "url": "https://www.youtube.com/watch?v=C9NyfDHqb5s",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.8
+  },
+  {
+   "id": "MPzhVv7Uhp0",
+   "title": "Fun Auto Slicing - Octatrack Random Resampling Tutorial",
+   "channel": "EZBOT",
+   "duration": 390,
+   "view_count": 26638,
+   "url": "https://www.youtube.com/watch?v=MPzhVv7Uhp0",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.71
+  },
+  {
+   "id": "C6YKpuroFUw",
+   "title": "Sound Design Generators and Resampling tutorial",
+   "channel": "pailiaq",
+   "duration": 1070,
+   "view_count": 5286,
+   "url": "https://www.youtube.com/watch?v=C6YKpuroFUw",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.36
+  },
+  {
+   "id": "qcfjc2w_L60",
+   "title": "A Guide to the Best Resampling Method for the Octatrack",
+   "channel": "EZBOT",
+   "duration": 577,
+   "view_count": 42699,
+   "url": "https://www.youtube.com/watch?v=qcfjc2w_L60",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.82
+  },
+  {
+   "id": "HY9JMt-RcZU",
+   "title": "Koala Sampler Resampling Tutorial",
+   "channel": "elf audio",
+   "duration": 290,
+   "view_count": 48006,
+   "url": "https://www.youtube.com/watch?v=HY9JMt-RcZU",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.34
+  },
+  {
+   "id": "OF3sZvudCGM",
+   "title": "The Power of Resampling Tracks in Ableton Live",
+   "channel": "Flow Prod",
+   "duration": 432,
+   "view_count": 16925,
+   "url": "https://www.youtube.com/watch?v=OF3sZvudCGM",
+   "query": "ambient loop synth resampling tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.61
+  }
+ ],
+ "dropped": [
+  {
+   "id": "EuPisVu55oU",
+   "why": "already known"
+  },
+  {
+   "id": "z7xVfv8aByI",
+   "why": "already known"
+  },
+  {
+   "id": "OZSY8fdyhBo",
+   "why": "duration 142s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

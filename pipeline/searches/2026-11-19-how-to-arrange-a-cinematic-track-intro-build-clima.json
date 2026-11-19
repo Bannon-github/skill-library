@@ -1,0 +1,106 @@
+{
+ "topic": "how to arrange a cinematic track intro build climax outro",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "how to arrange a cinematic track intro build climax outro",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "zXF0kfePL60",
+   "title": "How To Edit CINEMATIC VIDEOS in CapCut (Ultimate Guide)",
+   "channel": "Collin Michael",
+   "duration": 600,
+   "view_count": 1146783,
+   "url": "https://www.youtube.com/watch?v=zXF0kfePL60",
+   "query": "how to arrange a cinematic track intro build climax outro tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.5
+  },
+  {
+   "id": "ZdhdC2wx2Ew",
+   "title": "How to Compose Music | Your first piece for Complete Beginners",
+   "channel": "Cinematic Composing",
+   "duration": 2032,
+   "view_count": 318812,
+   "url": "https://www.youtube.com/watch?v=ZdhdC2wx2Ew",
+   "query": "how to arrange a cinematic track intro build climax outro tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.75
+  },
+  {
+   "id": "Fj3jwdLBD60",
+   "title": "How to Write Your First Piece of Cinematic Music",
+   "channel": "Composing Academy",
+   "duration": 1885,
+   "view_count": 111117,
+   "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+   "query": "how to arrange a cinematic track intro build climax outro tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.52
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1224491,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "how to arrange a cinematic track intro build climax outro tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "o47gi3-l-3U",
+   "title": "Climax - Opening Dance Scene - (Supernature - Cerrone)",
+   "channel": "Madman Films",
+   "duration": 293,
+   "view_count": 1074583,
+   "url": "https://www.youtube.com/watch?v=o47gi3-l-3U",
+   "query": "how to arrange a cinematic track intro build climax outro tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.0
+  }
+ ],
+ "dropped": [
+  {
+   "id": "LF4yNpzSARQ",
+   "why": "already known"
+  },
+  {
+   "id": "8vkWB-yoW1M",
+   "why": "negative title signal"
+  },
+  {
+   "id": "vQ5nWQjaCvw",
+   "why": "duration 183s"
+  },
+  {
+   "id": "55qkyBH9-6Y",
+   "why": "already known"
+  },
+  {
+   "id": "KpzkG1mRFgU",
+   "why": "duration 28s"
+  },
+  {
+   "id": "NpWHZJZQDSE",
+   "why": "duration 170s"
+  },
+  {
+   "id": "ojDea0jCQ5o",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

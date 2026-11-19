@@ -127,3 +127,15 @@ Source: [Wavefolding LFO's in VCV Rack to make interesting wobble effects and un
 - Insert a wavefolder between LFO and filter cutoff; compare the folded and plain sine on a scope.
 - Slow the LFO down (folding multiplies apparent rate) and adjust fold amount, symmetry and fold shape.
 - Add a slew limiter after the wavefolder, before the cutoff input, to soften the jumps.
+
+### Velocity-to-LFO-rate evolving pad: a smooth slow LFO on oscillator shape and low-pass cutoff/resonance, velocity scaling the LFO rate, a 3 s / 6 s / 50% / slow-release amp envelope, and a parallel rack of dry, doubler, grain-delay and 100%-wet reverb lanes, trimmed and glued by a reverb and an outer low-pass
+Source: [How to Make HUGE Evolving Pads with Ableton Drift](https://www.youtube.com/watch?v=mmn6iSBKdp8) · was `velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue`
+- Load a two-oscillator subtractive synth and zero any default shape/filter-drive offsets so pulling the filter down actually darkens the sound. Save this as the default.
+- Set both oscillators to triangle at the same octave and balance their levels in the mixer.
+- Route the LFO to oscillator shape at 100%, rate ~0.2 Hz, and choose a smooth random ('wander') shape. Avoid sample-and-hold, which sounds 'computery'.
+- Filter: high-pass ~40 Hz, low-pass ~430 Hz, resonance ~0.5. In the mod matrix, send the LFO to low-pass cutoff and about 30% to low-pass resonance.
+- Map velocity to LFO rate at full depth so harder-played notes evolve faster. Vary the MIDI velocities in the chord clip on purpose.
+- Amp envelope '3-6-50-slow': attack 3 s, decay 6 s, sustain 50%, very slow release.
+- Group the synth into a rack and build parallel chains: (a) dry; (b) doubler (phaser/flanger in doubler mode, warmth max, time ~40 ms) for strong stereo sides; (c) grain delay (spray ~260, feedback ~30%, pitch 0); (d) steady large reverb at 100% wet. Balance lanes with the chain faders.
+- Add a utility after the lanes and pull about 10 dB of gain, then place a large reverb across everything (glue) and an auto-filter low-pass after the whole rack, pulling the cutoff down to taste.
+- Optional: in an outer rack chain, add a looped smooth foley bed in a sampler (loop on, long crossfade), lightly bit-reduced, mixed low under the pad.

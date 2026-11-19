@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-17T16:30:12.999141+00:00",
-  "entry_count": 281,
+  "updated_at": "2026-11-19T16:25:12.191353+00:00",
+  "entry_count": 285,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4096,6 +4096,58 @@
       "skills": [
         "physical-modeling-plucks-strings-resonators"
       ]
+    },
+    {
+      "id": "cinematic-synth-uZfNc_oCwOc",
+      "video_id": "uZfNc_oCwOc",
+      "url": "https://www.youtube.com/watch?v=uZfNc_oCwOc",
+      "title": "Ambient Composing Secrets: Scoring Under Dialogue For Film & TV",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/uZfNc_oCwOc/raw.txt",
+      "summary": "Skills: drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-EuPisVu55oU",
+      "video_id": "EuPisVu55oU",
+      "url": "https://www.youtube.com/watch?v=EuPisVu55oU",
+      "title": "Lo-Fi Resampling in Ableton Live [Tutorial]",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/EuPisVu55oU/raw.txt",
+      "summary": "Skills: fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings (folded into granular-and-spectral-texture-design)",
+      "skills": [
+        "granular-and-spectral-texture-design"
+      ]
+    },
+    {
+      "id": "cinematic-synth-mmn6iSBKdp8",
+      "video_id": "mmn6iSBKdp8",
+      "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+      "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/mmn6iSBKdp8/raw.txt",
+      "summary": "Skills: velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue (folded into modulation-lfo-envelope-random-routing)",
+      "skills": [
+        "modulation-lfo-envelope-random-routing"
+      ]
+    },
+    {
+      "id": "cinematic-synth-0IgwdHg0ZwM",
+      "video_id": "0IgwdHg0ZwM",
+      "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
+      "title": "How to not screw up your kickdrums!",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0IgwdHg0ZwM/raw.txt",
+      "summary": "Skills: kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4824,6 +4876,32 @@
           "video_id": "rK0pEiBYfq8",
           "skill": "friction-excited-modal-resonator-pad-string-beam-profile-harmonic-warp-low-partials-pinned-slow-lfo-partial-limited-wavetable-bed-serial-comb-keytracked-brilliance-washed-insert-shimmer",
           "cluster": "physical-modeling-plucks-strings-resonators"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-19T16:25:12.191353+00:00",
+      "batch": "2026-11-19-morning-hunt",
+      "folded": [
+        {
+          "video_id": "uZfNc_oCwOc",
+          "skill": "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "EuPisVu55oU",
+          "skill": "fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings",
+          "cluster": "granular-and-spectral-texture-design"
+        },
+        {
+          "video_id": "mmn6iSBKdp8",
+          "skill": "velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue",
+          "cluster": "modulation-lfo-envelope-random-routing"
+        },
+        {
+          "video_id": "0IgwdHg0ZwM",
+          "skill": "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
         }
       ]
     }

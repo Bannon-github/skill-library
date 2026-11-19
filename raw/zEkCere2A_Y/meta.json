@@ -2,14 +2,22 @@
   "video_id": "zEkCere2A_Y",
   "title": "Sound Design Series:1) Punchy Bass tutorial using Subtractive Synthesis in Ableton Live 11",
   "url": "https://www.youtube.com/watch?v=zEkCere2A_Y",
-  "fetched_at": "2026-11-18T16:22:44.413293+00:00",
+  "fetched_at": "2026-11-19T16:20:01.971131+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "Jemeneye",
   "duration": 990,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 409,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/zEkCere2A_Y/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/zEkCere2A_Y/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -31,30 +39,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.9
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.5
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.5
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

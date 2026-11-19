@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+  "name": "Kick 'heart' sweep rules: a pitch-swept sine whose sweep time is just right (too short = disconnected click, too long = laser), whose decay leaves silence for the bass, whose start frequency stays modest and whose end frequency is set against a ~55 Hz reference; keep the heart clean, then add saturation in parallel and an optional layered transient",
+  "goal": "Synthesize the core of a kick drum (its 'heart') as a sine wave that starts high, sweeps quickly down and settles at a resting frequency, and tune it by ear with four rules. (1) Decay: long enough to thump but short enough to leave some silence before the next hit, where the bass/rumble lives. (2) Sweep time: Goldilocks. Too short and you hear a mid click plus a separate sub tone that don't connect. Too long and it sounds like a 'pew' laser. Just right gives one coherent knock. (3) Start frequency: brightness comes from it, but the heart doesn't need to reach several kHz, because saturation and layers carry the top. (4) End frequency: the perceived pitch. Use a 909-style ~55 Hz as a reference and go slightly lower for a modern feel, but not so low that small systems lose it. Keep the heart clean and undistorted, then blend saturation in parallel and optionally layer a short transient sample for 'something to hang on to' up to ~9-10 kHz. Delta vs the drum-synthesis cluster's kick variants: an explicit sweep-time diagnostic (click vs laser vs connected knock) and decay-silence rule, which are also the main levers for a softer, non-clicky kick.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "0IgwdHg0ZwM",
+    "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
+    "title": "How to not screw up your kickdrums!",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/0IgwdHg0ZwM/agent-skill-kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient.json",
+    "batch": "2026-11-19-morning-hunt"
+  },
+  "prerequisites": [
+    "A kick synth or any synth with a sine oscillator, a pitch envelope (start/end frequency, sweep time) and an amp decay",
+    "A spectrum analyser, a saturator with dry/wet or a parallel chain, and optionally a short transient sample"
+  ],
+  "inputs": [
+    {
+      "name": "tempo_bpm",
+      "type": "number",
+      "description": "Track tempo (sets how much silence a given decay leaves)",
+      "required": true
+    },
+    {
+      "name": "style",
+      "type": "string",
+      "description": "e.g. soft/felt ambient kick vs driving techno kick",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick_heart",
+      "type": "audio",
+      "description": "Clean pitch-swept sine kick core"
+    },
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Heart + parallel saturation + optional transient layer"
+    }
+  ],
+  "constraints": [
+    "Clicky failure mode: a sweep that is too fast (or a start frequency that is too high) gives a disconnected click. That is the texture Matt dislikes, so for ambient tracks lean slightly toward a longer sweep and a modest start frequency. Stop before it turns into a 'laser'.",
+    "The heart stays clean and undistorted; saturation is blended in parallel, not driven hard in series.",
+    "The transient layer is optional. For a soft/felt ambient kick leave it out or keep it dark and low (no bright click layer).",
+    "Check the kick on several systems and A/B against reference tracks; it's easy to lose perspective.",
+    "This is a fixed pitch envelope that repeats identically on every hit, with no random pitch.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis recipe; not affiliated with any kick-synth vendor. Any synth with a sine and a pitch envelope works (Web Audio: OscillatorNode frequency exponentialRampToValueAtTime + GainNode decay).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Start from a plain sine oscillator with a pitch envelope rather than a 909-style preset, and watch it on a spectrum analyser.",
+      "tool": "Kick synth / sine + pitch envelope",
+      "expect": "A clean sweep visible from high to low"
+    },
+    {
+      "n": 2,
+      "action": "Set the amp decay so the kick thumps but leaves some silence before the next hit at your tempo, the space where the bassline or rumble will sit.",
+      "tool": "Amp decay",
+      "expect": "Gap visible on the analyser between hits"
+    },
+    {
+      "n": 3,
+      "action": "Adjust the sweep time (time to reach the resting frequency) by ear. If you hear a mid click and a separate sub tone, lengthen it. If it sounds like a 'pew' laser, shorten it. Stop where it feels like one connected knock.",
+      "tool": "Pitch-envelope time",
+      "expect": "Punchy, coherent knock with no detached click"
+    },
+    {
+      "n": 4,
+      "action": "Set the start frequency only as high as needed; very high starts (toward 5 kHz) don't add bang. Leave the brightness to saturation and layers, then re-check sweep and decay.",
+      "tool": "Pitch-envelope start",
+      "expect": "Heart stays simple and focused"
+    },
+    {
+      "n": 5,
+      "action": "Set the end (resting) frequency, i.e. the perceived kick pitch. Use ~55 Hz (909 reference) as a starting point, go a little lower for a modern feel, and check it is still audible on small speakers.",
+      "tool": "Pitch-envelope end",
+      "expect": "Kick pitch chosen deliberately"
+    },
+    {
+      "n": 6,
+      "action": "Blend saturation in parallel (not hard in series) to add harmonics, keeping the clean heart intact.",
+      "tool": "Parallel saturator",
+      "expect": "Fuller, more audible kick without a smeared low end"
+    },
+    {
+      "n": 7,
+      "action": "Optionally layer a short transient/top sample so the ear has something up to ~9-10 kHz in a busy mix. Balance levels so the thump stays dominant. Then keep refining end frequency and decay against the full mix.",
+      "tool": "Layer + levels",
+      "expect": "Kick that reads in a dense mix"
+    }
+  ],
+  "verification": [
+    "Pitch trace shows a single monotonic downward sweep that settles at the chosen end frequency (e.g. 50-55 Hz) on every hit.",
+    "Envelope reaches near-silence (< -40 dB) before the next beat at the chosen tempo.",
+    "No energy spike above ~3 kHz in the first 5 ms of the clean heart (no detached click)."
+  ],
+  "tags": [
+    "kick",
+    "drum-synthesis",
+    "pitch-envelope",
+    "sine",
+    "punch",
+    "saturation",
+    "soft-kick",
+    "layering",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient"
+}

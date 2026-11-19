@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "id": "velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue",
+  "name": "Velocity-to-LFO-rate evolving pad: a smooth slow LFO on oscillator shape and low-pass cutoff/resonance, velocity scaling the LFO rate, a 3 s / 6 s / 50% / slow-release amp envelope, and a parallel rack of dry, doubler, grain-delay and 100%-wet reverb lanes, trimmed and glued by a reverb and an outer low-pass",
+  "goal": "Build a warm, slowly evolving analog-style pad from one simple subtractive synth. Use two triangle oscillators at the same octave with neutral defaults (zero any preset filter/shape offsets first). Add a slow (~0.2 Hz), smooth LFO ('wander'-type smooth random, not stepped sample-and-hold) on oscillator shape. A mod matrix sends the same LFO to low-pass cutoff and about 30% to resonance (LP ~430 Hz, HP ~40 Hz, resonance ~0.5). Velocity goes to LFO rate at full depth, so harder notes move faster. The amp envelope is 3 s attack, 6 s decay, 50% sustain and a very slow release. Then stack parallel chains in a rack: a dry lane; a doubler lane (phaser/flanger device in doubler mode, warmth up, time ~40 ms) for stereo width; a grain-delay lane (spray ~260, feedback ~30%); and a 100%-wet steady (low-modulation) reverb lane. Trim the summed gain by about 10 dB, glue everything with a reverb and then an outer low-pass auto-filter, and optionally layer a looped, crossfaded smooth foley bed. Delta vs the modulation cluster: velocity as the LFO-rate controller (performance-driven evolution) plus the parallel-lane rack layout.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mmn6iSBKdp8",
+    "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
+    "title": "How to Make HUGE Evolving Pads with Ableton Drift",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mmn6iSBKdp8/agent-skill-velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue.json",
+    "batch": "2026-11-19-morning-hunt"
+  },
+  "prerequisites": [
+    "A subtractive synth with 2 oscillators (triangle), a filter with HP+LP, an LFO with a smooth-random shape, a mod matrix and velocity as a mod source",
+    "A DAW rack with parallel chains; doubler/chorus, grain delay, reverb, gain utility and auto-filter devices",
+    "Optional: a sampler for a looped foley texture"
+  ],
+  "inputs": [
+    {
+      "name": "chords",
+      "type": "midi",
+      "description": "Slow sustained chords; velocities varied on purpose to set the movement",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Key of the track",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pad_rack",
+      "type": "preset",
+      "description": "Instrument rack: synth + parallel dry/doubler/grain/reverb lanes + glue reverb + outer low-pass"
+    },
+    {
+      "name": "pad_audio",
+      "type": "audio",
+      "description": "Rendered evolving pad"
+    }
+  ],
+  "constraints": [
+    "The LFO only moves timbre (oscillator shape, cutoff, resonance), never pitch. Use a smooth/wander LFO at ~0.2 Hz, not stepped sample-and-hold, so there is no pitch wobble or random note variation (Matt dislikes wobbly/random pitch).",
+    "Grain-delay lane: keep grain pitch at 0 and keep the lane low in the mix. If its grains start ticking (a rapid clicking texture Matt dislikes), lower spray/feedback or mute the lane.",
+    "Foley layer: the transcript used a sizzling bacon-grease sample. That is a crackle/clicking texture, so use a smooth continuous bed instead (wind, distant waves, soft rain wash), looped with a long crossfade and kept low. A bit-reduction (Redux-type) stage is optional and gentle.",
+    "Gain staging: stacked parallel lanes add level, so trim about 10 dB with a utility before the glue reverb.",
+    "The reverb is a steady, low-modulation large space (the transcript removed the chorus modulation from a 'large space chorus' preset), so pitch stays stable.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: device names map to an instrument rack with parallel chains; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Load a two-oscillator subtractive synth and zero any default shape/filter-drive offsets so pulling the filter down actually darkens the sound. Save this as the default.",
+      "tool": "Synth init",
+      "expect": "Neutral starting patch"
+    },
+    {
+      "n": 2,
+      "action": "Set both oscillators to triangle at the same octave and balance their levels in the mixer.",
+      "tool": "Oscillators",
+      "expect": "Warm, soft base tone"
+    },
+    {
+      "n": 3,
+      "action": "Route the LFO to oscillator shape at 100%, rate ~0.2 Hz, and choose a smooth random ('wander') shape. Avoid sample-and-hold, which sounds 'computery'.",
+      "tool": "LFO -> shape",
+      "expect": "Slow, smooth timbre drift while a key is held"
+    },
+    {
+      "n": 4,
+      "action": "Filter: high-pass ~40 Hz, low-pass ~430 Hz, resonance ~0.5. In the mod matrix, send the LFO to low-pass cutoff and about 30% to low-pass resonance.",
+      "tool": "Filter + mod matrix",
+      "expect": "Dark lower-mid pad whose brightness breathes"
+    },
+    {
+      "n": 5,
+      "action": "Map velocity to LFO rate at full depth so harder-played notes evolve faster. Vary the MIDI velocities in the chord clip on purpose.",
+      "tool": "Mod matrix: velocity -> LFO rate",
+      "expect": "Movement responds to playing dynamics"
+    },
+    {
+      "n": 6,
+      "action": "Amp envelope '3-6-50-slow': attack 3 s, decay 6 s, sustain 50%, very slow release.",
+      "tool": "Amp envelope",
+      "expect": "Notes swell in slowly and drift away"
+    },
+    {
+      "n": 7,
+      "action": "Group the synth into a rack and build parallel chains: (a) dry; (b) doubler (phaser/flanger in doubler mode, warmth max, time ~40 ms) for strong stereo sides; (c) grain delay (spray ~260, feedback ~30%, pitch 0); (d) steady large reverb at 100% wet. Balance lanes with the chain faders.",
+      "tool": "Rack parallel chains",
+      "expect": "Thick, wide, textured pad that keeps its centre image"
+    },
+    {
+      "n": 8,
+      "action": "Add a utility after the lanes and pull about 10 dB of gain, then place a large reverb across everything (glue) and an auto-filter low-pass after the whole rack, pulling the cutoff down to taste.",
+      "tool": "Utility + reverb + auto-filter",
+      "expect": "Cohesive, pushed-back pad with no clipping"
+    },
+    {
+      "n": 9,
+      "action": "Optional: in an outer rack chain, add a looped smooth foley bed in a sampler (loop on, long crossfade), lightly bit-reduced, mixed low under the pad.",
+      "tool": "Sampler loop",
+      "expect": "Organic texture layer under the pad"
+    }
+  ],
+  "verification": [
+    "Pitch-detect on a held note is stable (within 5 cents) across 20 s; spectral centroid drifts slowly (LFO on shape/filter).",
+    "Two renders of the same chord at velocity 40 and 120 show faster spectral movement at 120.",
+    "Amp envelope reaches peak around 3 s after note-on.",
+    "Side/mid energy ratio rises clearly when the doubler lane is on; mono fold-down keeps the centre (dry lane).",
+    "No transient spikes or ticks are detected from the grain/foley lanes."
+  ],
+  "tags": [
+    "pad",
+    "evolving",
+    "velocity-modulation",
+    "lfo",
+    "subtractive",
+    "parallel-fx",
+    "doubler",
+    "grain-delay",
+    "reverb",
+    "ambient",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://velocity-to-lfo-rate-evolving-pad-smooth-wander-lfo-shape-filter-3-6-50-slow-adsr-parallel-doubler-grain-reverb-lanes-utility-trim-outer-lowpass-glue"
+}

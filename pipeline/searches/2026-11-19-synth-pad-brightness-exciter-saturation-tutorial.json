@@ -1,0 +1,101 @@
+{
+ "topic": "synth pad brightness exciter saturation tutorial",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "synth pad brightness exciter saturation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "TpJ1EAerPN4",
+   "title": "Beginner Guide to Saturation",
+   "channel": "Streaky",
+   "duration": 285,
+   "view_count": 80682,
+   "url": "https://www.youtube.com/watch?v=TpJ1EAerPN4",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.45
+  },
+  {
+   "id": "-MGcBX0zYjc",
+   "title": "How to Use the Waves Aphex Vintage Aural Exciter Plugin",
+   "channel": "Waves Audio",
+   "duration": 443,
+   "view_count": 316206,
+   "url": "https://www.youtube.com/watch?v=-MGcBX0zYjc",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.25
+  },
+  {
+   "id": "eDrCDYJkq6o",
+   "title": "How To Use Exciter And Saturation On Vocals 🔥 #mixing #plugins #music #vocalmixing #saturn",
+   "channel": "Audio Engineering",
+   "duration": 928,
+   "view_count": 1125,
+   "url": "https://www.youtube.com/watch?v=eDrCDYJkq6o",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.03
+  },
+  {
+   "id": "L9kuxISxOVo",
+   "title": "Once You Know This, Mixing Music is So Much Easier",
+   "channel": "Sage Audio",
+   "duration": 623,
+   "view_count": 895396,
+   "url": "https://www.youtube.com/watch?v=L9kuxISxOVo",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.48
+  },
+  {
+   "id": "Ib09MRj-Xzw",
+   "title": "Ozone Exciter - Every Izotope Ozone 10 Plugin Day 2!",
+   "channel": "palebluedot studios",
+   "duration": 584,
+   "view_count": 6185,
+   "url": "https://www.youtube.com/watch?v=Ib09MRj-Xzw",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.4
+  },
+  {
+   "id": "-HDM5IZARyg",
+   "title": "How Exciters Work!",
+   "channel": "REALISTIC",
+   "duration": 1056,
+   "view_count": 2438,
+   "url": "https://www.youtube.com/watch?v=-HDM5IZARyg",
+   "query": "synth pad brightness exciter saturation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.19
+  }
+ ],
+ "dropped": [
+  {
+   "id": "63nKuxQCdJc",
+   "why": "already known"
+  },
+  {
+   "id": "-nExQ2gNkTk",
+   "why": "already known"
+  },
+  {
+   "id": "7yBOtJplKVI",
+   "why": "duration 68s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

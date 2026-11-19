@@ -74,6 +74,12 @@
         "video_id": "q6TxzspNL9Q",
         "url": "https://www.youtube.com/watch?v=q6TxzspNL9Q",
         "title": "Music Production Tips and Tricks - Making a Techno Reverb Kick"
+      },
+      {
+        "from_skill": "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+        "video_id": "0IgwdHg0ZwM",
+        "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
+        "title": "How to not screw up your kickdrums!"
       }
     ]
   },
@@ -329,6 +335,20 @@
         "Add a low-pass filter after that to remove high frequencies; modulate cutoff with an LFO synced between 1/8 and 1/16, then optionally a slow LFO on cutoff with low depth for long-term movement.",
         "Optionally send some reverb into the drive return, then put a low-end enhancer/drum-bus device on the kick for sub weight with light drive."
       ]
+    },
+    {
+      "from_skill": "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+      "name": "Kick 'heart' sweep rules: a pitch-swept sine whose sweep time is just right (too short = disconnected click, too long = laser), whose decay leaves silence for the bass, whose start frequency stays modest and whose end frequency is set against a ~55 Hz reference; keep the heart clean, then add saturation in parallel and an optional layered transient",
+      "goal": "Synthesize the core of a kick drum (its 'heart') as a sine wave that starts high, sweeps quickly down and settles at a resting frequency, and tune it by ear with four rules. (1) Decay: long enough to thump but short enough to leave some silence before the next hit, where the bass/rumble lives. (2) Sweep time: Goldilocks. Too short and you hear a mid click plus a separate sub tone that don't connect. Too long and it sounds like a 'pew' laser. Just right gives one coherent knock. (3) Start frequency: brightness comes from it, but the heart doesn't need to reach several kHz, because saturation and layers carry the top. (4) End frequency: the perceived pitch. Use a 909-style ~55 Hz as a reference and go slightly lower for a modern feel, but not so low that small systems lose it. Keep the heart clean and undistorted, then blend saturation in parallel and optionally layer a short transient sample for 'something to hang on to' up to ~9-10 kHz. Delta vs the drum-synthesis cluster's kick variants: an explicit sweep-time diagnostic (click vs laser vs connected knock) and decay-silence rule, which are also the main levers for a softer, non-clicky kick.",
+      "steps": [
+        "Start from a plain sine oscillator with a pitch envelope rather than a 909-style preset, and watch it on a spectrum analyser.",
+        "Set the amp decay so the kick thumps but leaves some silence before the next hit at your tempo, the space where the bassline or rumble will sit.",
+        "Adjust the sweep time (time to reach the resting frequency) by ear. If you hear a mid click and a separate sub tone, lengthen it. If it sounds like a 'pew' laser, shorten it. Stop where it feels like one connected knock.",
+        "Set the start frequency only as high as needed; very high starts (toward 5 kHz) don't add bang. Leave the brightness to saturation and layers, then re-check sweep and decay.",
+        "Set the end (resting) frequency, i.e. the perceived kick pitch. Use ~55 Hz (909 reference) as a starting point, go a little lower for a modern feel, and check it is still audible on small speakers.",
+        "Blend saturation in parallel (not hard in series) to add harmonics, keeping the clean heart intact.",
+        "Optionally layer a short transient/top sample so the ear has something up to ~9-10 kHz in a busy mix. Balance levels so the thump stays dominant. Then keep refining end frequency and decay against the full mix."
+      ]
     }
   ],
   "merged_from": [
@@ -342,7 +362,8 @@
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
     "atmospheric-liquid-dnb-break-layering",
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
-    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass"
+    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
+    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient"
   ],
   "tags": [
     "808",
@@ -391,6 +412,7 @@
     "synth-drum-kit-from-scratch-808-sine-45hz-saw-noise-transient-gentle-20hz-hp-narrow-78hz-dip-kick-fast-pitch-env-clap-three-noise-bursts-1k-6k-snare-octave-sines-noise-hats-test-in-context",
     "atmospheric-liquid-dnb-break-layering",
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
-    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass"
+    "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
+    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient"
   ]
 }

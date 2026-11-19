@@ -2,14 +2,22 @@
   "video_id": "mmn6iSBKdp8",
   "title": "How to Make HUGE Evolving Pads with Ableton Drift",
   "url": "https://www.youtube.com/watch?v=mmn6iSBKdp8",
-  "fetched_at": "2026-11-18T16:21:59.035562+00:00",
+  "fetched_at": "2026-11-19T16:19:38.860637+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "Tom Casey Music",
   "duration": 1264,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 531,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/mmn6iSBKdp8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/mmn6iSBKdp8/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -31,30 +39,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.6
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.2
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.5
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

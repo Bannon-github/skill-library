@@ -1,0 +1,46 @@
+{
+  "video_id": "s3t02k1-G74",
+  "title": "How I create full sound journeys with just Ableton & the Push - Ableton Sound Healing",
+  "url": "https://www.youtube.com/watch?v=s3t02k1-G74",
+  "fetched_at": "2026-11-19T16:22:23.452332+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Steffen Ki Sonic Alchemy",
+  "duration": 1852,
+  "ok": true,
+  "cue_count": 488,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/s3t02k1-G74/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/s3t02k1-G74/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -2,14 +2,22 @@
   "video_id": "5XGrxp0ANME",
   "title": "Why 80s Pads Sound So Good (And How to Make Them)",
   "url": "https://www.youtube.com/watch?v=5XGrxp0ANME",
-  "fetched_at": "2026-11-18T16:20:59.685510+00:00",
+  "fetched_at": "2026-11-19T16:22:46.303858+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
   "channel": "Ian Dixon",
   "duration": 1214,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 395,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/5XGrxp0ANME/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/5XGrxp0ANME/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -45,30 +53,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.4
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.6
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.2
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

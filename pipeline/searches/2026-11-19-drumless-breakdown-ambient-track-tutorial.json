@@ -1,0 +1,113 @@
+{
+ "topic": "drumless breakdown ambient track tutorial",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "drumless breakdown ambient track tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "8hAr-sg3or8",
+   "title": "HOW to MAKE an AMBIENT KEY MELODY LOOP from SCRATCH (FL Studio)",
+   "channel": "TheZachMichael",
+   "duration": 419,
+   "view_count": 24,
+   "url": "https://www.youtube.com/watch?v=8hAr-sg3or8",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.2
+  },
+  {
+   "id": "ZusdQcS_FZM",
+   "title": "Nu Metal Drumless Track",
+   "channel": "Drumless Backing Tracks (Drum! Drum! Drum!)",
+   "duration": 327,
+   "view_count": 501703,
+   "url": "https://www.youtube.com/watch?v=ZusdQcS_FZM",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.35
+  },
+  {
+   "id": "LZwhYxBpkoQ",
+   "title": "Solo Break! Drumless Track For Drummers - Fusion Rock - \"Look At The Drummer!\"",
+   "channel": "Drumless Practice Loops",
+   "duration": 398,
+   "view_count": 165306,
+   "url": "https://www.youtube.com/watch?v=LZwhYxBpkoQ",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.11
+  },
+  {
+   "id": "e1LnzRnJFzM",
+   "title": "Drumless Tracks are one of the best ways to practice!",
+   "channel": "Drum Tip Tuesday",
+   "duration": 522,
+   "view_count": 1765,
+   "url": "https://www.youtube.com/watch?v=e1LnzRnJFzM",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.12
+  },
+  {
+   "id": "GKu70Tfvq54",
+   "title": "Spacey Groove Drumless Backing Track 100 BPM",
+   "channel": "Jam'in Backing Tracks",
+   "duration": 257,
+   "view_count": 823512,
+   "url": "https://www.youtube.com/watch?v=GKu70Tfvq54",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.96
+  },
+  {
+   "id": "V6k3htY_K0U",
+   "title": "Play \"In The End\" On The Drums | 5 Levels",
+   "channel": "Drumeo",
+   "duration": 285,
+   "view_count": 737812,
+   "url": "https://www.youtube.com/watch?v=V6k3htY_K0U",
+   "query": "drumless breakdown ambient track tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.93
+  }
+ ],
+ "dropped": [
+  {
+   "id": "VG2sO2CyT7o",
+   "why": "duration 47s"
+  },
+  {
+   "id": "9FL8wZFuvSQ",
+   "why": "duration 200s"
+  },
+  {
+   "id": "QOSg6IhzwI8",
+   "why": "duration 205s"
+  },
+  {
+   "id": "MoSODnUDRK0",
+   "why": "duration 5014s"
+  },
+  {
+   "id": "bIYCh-4Ix6c",
+   "why": "negative title signal"
+  },
+  {
+   "id": "DYjU7ZQJqZo",
+   "why": "duration 193s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

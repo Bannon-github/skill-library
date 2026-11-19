@@ -176,3 +176,14 @@ Source: [Hybrid Film Scoring: Blending Orchestral and Granular Textures with Sam
 - Switch the same sample to granular in position mode; map grain position to the mod wheel (or a slow tempo-synced LFO) and scan through the sample while chords are held; optionally add FM, ring mod or waveshaper for an alien colour.
 - Optionally load a piano loop into a granular engine, low-pass it, play two octaves down and let the scan run forward or backward.
 - Blend back: keep some real orchestral parts (e.g. horns, strings), add heavy reverb to them, and marry them with the processed layers in the cue.
+
+### Fifth-ratio varispeed resample: make clean piano/orchestral strings sound sampled-from-record by compressing the MIDI to 2/3 length, transposing up a perfect fifth, bouncing to audio and playing the audio un-warped a fifth down
+Source: [Lo-Fi Resampling in Ableton Live [Tutorial]](https://www.youtube.com/watch?v=EuPisVu55oU) · was `fifth-varispeed-resample-2-3-time-compress-up-fifth-bounce-unwarped-down-fifth-tape-texture-piano-strings`
+- Write the phrase in MIDI as a human would play it: small flams between chord notes, slightly off-grid timing and varied velocities so it does not sound computer-sequenced.
+- Set the clip length one bar longer than the phrase (e.g. 9 bars for 8) and place a marker note at the very end of the extended region.
+- Switch to a triplet grid, draw one triplet note and stretch it until it spans the whole phrase, then select all and drag the clip's time-stretch handle until the end marker lines up with the last triplet hit. The phrase is now exactly 2/3 of its original length. Delete the triplet guide and marker notes.
+- Select all notes and transpose up a perfect fifth (+7 semitones).
+- Resample the instrument to audio: record it onto an audio track set to resample the source (or freeze and flatten).
+- In the audio clip, turn warping off (repitch/varispeed playback) and transpose the clip down a perfect fifth (-7 semitones). Because 3:2 = a fifth, the clip returns to near-original tempo and pitch, now coloured by the resample.
+- Group the resampled track with a second audio track holding a very low-level noise bed. EQ out its low bumps and keep it far below the music.
+- Glue the group with a gentle saturation/lo-fi colour stage (crackle set to zero) so the noise and part sound like one source. Repeat the whole process for the strings part.

@@ -1,0 +1,106 @@
+{
+ "topic": "brainwave entrainment music production tutorial",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "brainwave entrainment music production tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "OD5nzni_us0",
+   "title": "How to produce Delta Waves - Binaural Beats in 4 Minutes (Complete Guide)",
+   "channel": "Studio Science",
+   "duration": 256,
+   "view_count": 10,
+   "url": "https://www.youtube.com/watch?v=OD5nzni_us0",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.52
+  },
+  {
+   "id": "r-CS6LWdMQM",
+   "title": "Produce Like a Pro - Brain Entrainment - BeeOne Tutorial 02",
+   "channel": "ayamahambho",
+   "duration": 1775,
+   "view_count": 76,
+   "url": "https://www.youtube.com/watch?v=r-CS6LWdMQM",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.44
+  },
+  {
+   "id": "kzkDoBupXKM",
+   "title": "How to create alpha binaural beats in Logic Pro",
+   "channel": "originalvonster",
+   "duration": 764,
+   "view_count": 1016,
+   "url": "https://www.youtube.com/watch?v=kzkDoBupXKM",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.0
+  },
+  {
+   "id": "Om3zB35xxTo",
+   "title": "Do Binaural Beats Work?? NEUROLOGIST explains binaural beats",
+   "channel": "Neurogal MD",
+   "duration": 539,
+   "view_count": 330191,
+   "url": "https://www.youtube.com/watch?v=Om3zB35xxTo",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.26
+  },
+  {
+   "id": "s3t02k1-G74",
+   "title": "How I create full sound journeys with just Ableton & the Push - Ableton Sound Healing",
+   "channel": "Steffen Ki Sonic Alchemy",
+   "duration": 1853,
+   "view_count": 2126,
+   "url": "https://www.youtube.com/watch?v=s3t02k1-G74",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.66
+  }
+ ],
+ "dropped": [
+  {
+   "id": "hfjLuqOK9Co",
+   "why": "already known"
+  },
+  {
+   "id": "NRWqPRrxY44",
+   "why": "already known"
+  },
+  {
+   "id": "jRI0r_5Fiu0",
+   "why": "duration 235s"
+  },
+  {
+   "id": "aBiz2axINMA",
+   "why": "already known"
+  },
+  {
+   "id": "64H_K7rosSo",
+   "why": "already known"
+  },
+  {
+   "id": "8GYXSO6zwxk",
+   "why": "already known"
+  },
+  {
+   "id": "C6Upbbs_7vs",
+   "why": "duration 67s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

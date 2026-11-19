@@ -132,3 +132,13 @@ Source: [Music Production Tips and Tricks - Making a Techno Reverb Kick](https:/
 - Put a compressor after the reverb with external sidechain from the kick; set release to control how long the rumble swells back between hits.
 - Add a low-pass filter after that to remove high frequencies; modulate cutoff with an LFO synced between 1/8 and 1/16, then optionally a slow LFO on cutoff with low depth for long-term movement.
 - Optionally send some reverb into the drive return, then put a low-end enhancer/drum-bus device on the kick for sub weight with light drive.
+
+### Kick 'heart' sweep rules: a pitch-swept sine whose sweep time is just right (too short = disconnected click, too long = laser), whose decay leaves silence for the bass, whose start frequency stays modest and whose end frequency is set against a ~55 Hz reference; keep the heart clean, then add saturation in parallel and an optional layered transient
+Source: [How to not screw up your kickdrums!](https://www.youtube.com/watch?v=0IgwdHg0ZwM) · was `kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient`
+- Start from a plain sine oscillator with a pitch envelope rather than a 909-style preset, and watch it on a spectrum analyser.
+- Set the amp decay so the kick thumps but leaves some silence before the next hit at your tempo, the space where the bassline or rumble will sit.
+- Adjust the sweep time (time to reach the resting frequency) by ear. If you hear a mid click and a separate sub tone, lengthen it. If it sounds like a 'pew' laser, shorten it. Stop where it feels like one connected knock.
+- Set the start frequency only as high as needed; very high starts (toward 5 kHz) don't add bang. Leave the brightness to saturation and layers, then re-check sweep and decay.
+- Set the end (resting) frequency, i.e. the perceived kick pitch. Use ~55 Hz (909 reference) as a starting point, go a little lower for a modern feel, and check it is still audible on small speakers.
+- Blend saturation in parallel (not hard in series) to add harmonics, keeping the clean heart intact.
+- Optionally layer a short transient/top sample so the ear has something up to ~9-10 kHz in a busy mix. Balance levels so the thump stays dominant. Then keep refining end frequency and decay against the full mix.

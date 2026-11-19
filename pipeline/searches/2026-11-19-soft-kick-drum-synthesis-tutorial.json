@@ -1,0 +1,109 @@
+{
+ "topic": "soft kick drum synthesis tutorial",
+ "date": "2026-11-19",
+ "params": {
+  "topic": "soft kick drum synthesis tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0IgwdHg0ZwM",
+   "title": "How to not screw up your kickdrums!",
+   "channel": "Underdog Electronic Music School",
+   "duration": 666,
+   "view_count": 63570,
+   "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.9
+  },
+  {
+   "id": "vr0DHvuQX8E",
+   "title": "Create the PERFECT Kick Drum in Serum 2 (Step-by-Step)",
+   "channel": "Production Music Live",
+   "duration": 639,
+   "view_count": 10044,
+   "url": "https://www.youtube.com/watch?v=vr0DHvuQX8E",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5
+  },
+  {
+   "id": "JlTANqdhNsc",
+   "title": "Ableton Analog - How to Kickdrum (2/6)",
+   "channel": "Boltzman",
+   "duration": 324,
+   "view_count": 3793,
+   "url": "https://www.youtube.com/watch?v=JlTANqdhNsc",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.29
+  },
+  {
+   "id": "mxUQyUs1eGo",
+   "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+   "channel": "Producer Sphere",
+   "duration": 315,
+   "view_count": 153770,
+   "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.09
+  },
+  {
+   "id": "3lHVhdM83LI",
+   "title": "BEST WAY to MAKE a KICK in SERUM in 5 MINUTES 🔥 *Serum sound design*",
+   "channel": "Wildcrow Studio",
+   "duration": 378,
+   "view_count": 99900,
+   "url": "https://www.youtube.com/watch?v=3lHVhdM83LI",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "JhZU6JGvoHw",
+   "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+   "channel": "In The Mix",
+   "duration": 678,
+   "view_count": 293990,
+   "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+   "query": "soft kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.23
+  }
+ ],
+ "dropped": [
+  {
+   "id": "u7-40sDPxQI",
+   "why": "already known"
+  },
+  {
+   "id": "SN6p5U4r-sw",
+   "why": "duration 61s"
+  },
+  {
+   "id": "tPRBIBl5--w",
+   "why": "duration 213s"
+  },
+  {
+   "id": "ZHAdrGypHsg",
+   "why": "duration 111s"
+  },
+  {
+   "id": "Ky7jN8QmxDo",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
