@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift",
+  "name": "Delay as instrument: mono-checked Haas sweet spot, chorus/flanger built from a modulated delay, a 100%-feedback analog-style looper whose delay time is halved/doubled for octave steps, and a 1 ms grain delay as an octave shifter",
+  "goal": "Use ordinary delay devices for loops and colour rather than echo. (1) Haas width on a clap/short part, with the delay time tuned while mono-summed to find the sweet spot. (2) Chorus (~20 ms, moderate modulation, LFOs out of phase, feedback <= ~60%) and flanger (shorter time, higher feedback, much deeper modulation, stereo) built from a delay. (3) Analog-style looper: delay at its longest synced time, feedback exactly 100%, overdub new notes each cycle, use repitch mode to halve/double the time for clean octave steps (stepping up in the second half of the loop to build energy), kill with feedback 0, then resample to audio. (4) Grain delay at 1 ms / feedback 0 / +12 st as an octave shifter. Delta vs reverb-delay cluster: the overdub looper with octave-step repitch and the resample-to-layer workflow (loops gap).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "VSGYqvV4bTg",
+    "url": "https://www.youtube.com/watch?v=VSGYqvV4bTg",
+    "title": "Get Creative with 6 Unexpected Uses for Ableton's Delays",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/VSGYqvV4bTg/agent-skill-delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift.json",
+    "batch": "2026-11-20-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a stereo delay that has unlinked L/R time, feedback, a repitch/tape mode and sync; a modulated echo/delay; a grain delay; a mono utility",
+    "An audio track to resample onto"
+  ],
+  "inputs": [
+    {
+      "name": "source_part",
+      "type": "midi|audio",
+      "description": "Synth notes or chords to feed the delay/looper",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Project tempo (the loop length follows the synced delay time)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "loop_layer",
+      "type": "audio",
+      "description": "Resampled looper texture placed under the main pattern"
+    },
+    {
+      "name": "fx_racks",
+      "type": "preset",
+      "description": "Haas, chorus, flanger, looper and octave-shift delay setups"
+    }
+  ],
+  "constraints": [
+    "Looper octave changes must be clean doubling/halving of the delay time (octave steps), not continuous random delay-time modulation: the transcript's random-LFO tape repitch and the echo 'wobble' control are dropped for Matt (no wobbly random pitch).",
+    "Grain-delay octave shift: keep spray moderate; if grains start ticking (a rapid clicking texture Matt dislikes), lower spray/frequency or the wet amount.",
+    "Haas on short parts only and always mono-checked; too short a delay = phasey ringing and lost attack, too long = audible echo.",
+    "Feedback at exactly 100% builds level over overdubs; watch the meter and add a limiter or trim after the looper.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Haas: on a clap (or other short part) unlink the delay channels, time mode, left as low as possible, right ~15 ms, feedback 0, filter off; raise dry/wet. Add a utility after it set to mono and adjust the right delay time while mono until the part keeps its attack (no ringing, no audible echo). Then disable mono.",
+      "tool": "Delay + utility (mono)",
+      "expect": "Wider clap that still sounds like a clap in mono"
+    },
+    {
+      "n": 2,
+      "action": "Chorus from a delay: turn off filter, modulation and character, feedback 0, wet max, channels linked in time mode at ~20 ms. Raise delay modulation to moderate and set the LFO phase offset to anything but 0. Feedback up to ~60% exaggerates it. Optional colour: reverb in the feedback path, ping-pong, input drive, the delay's filter.",
+      "tool": "Echo-type delay",
+      "expect": "Lush, wide chords"
+    },
+    {
+      "n": 3,
+      "action": "Flanger from the same delay: a much shorter time, higher feedback, much higher modulation depth (a x4 depth switch helps), stereo mode. Use subtly on drums for liveliness.",
+      "tool": "Echo-type delay",
+      "expect": "Analog-style flanging"
+    },
+    {
+      "n": 4,
+      "action": "Looper: put a delay on the synth track, filter/modulation/wobble off, both channels linked in sync mode, delay time at the maximum, feedback exactly 100%. Play notes: they repeat forever; play new notes on each cycle to overdub.",
+      "tool": "Delay as looper",
+      "expect": "A self-sustaining loop built by overdubs"
+    },
+    {
+      "n": 5,
+      "action": "With the delay in repitch mode, halve or double the delay time to move the whole loop up or down an octave (each change also shifts the tone slightly). Build energy by stepping it up a few octaves in the second half of the loop. Stop the loop by setting feedback to 0; it dies out after the next cycle.",
+      "tool": "Repitch mode + delay time",
+      "expect": "Octave-stepped loop with an energy lift"
+    },
+    {
+      "n": 6,
+      "action": "Resample the looper output to a new audio track and place it under the main pattern as a texture layer.",
+      "tool": "Resample to audio",
+      "expect": "Committed loop layer in the arrangement"
+    },
+    {
+      "n": 7,
+      "action": "Octave shifter: grain delay in time mode at 1 ms, feedback 0, pitch +12 st, spray and frequency at moderate values; raise dry/wet, then tune spray/frequency for tone. Automate pitch amount and dry/wet in a clip to add life to a repetitive short loop.",
+      "tool": "Grain delay",
+      "expect": "Octave-up layer that refreshes a repeating loop"
+    }
+  ],
+  "verification": [
+    "Haas part: mono sum keeps the transient (peak level within a few dB of the stereo version).",
+    "Looper layer: octave changes land on exact 2:1 time ratios (pitch moves in clean 12-semitone steps).",
+    "Resampled loop layer has no level runaway (peak below 0 dBFS with headroom)."
+  ],
+  "tags": [
+    "delay",
+    "looper",
+    "repitch",
+    "chorus",
+    "flanger",
+    "haas",
+    "grain-delay",
+    "octave",
+    "resample",
+    "loops",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift"
+}

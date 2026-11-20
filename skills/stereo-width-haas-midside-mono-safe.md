@@ -69,3 +69,13 @@ Source: [Get A Wide Mix Without Any Issues!](https://www.youtube.com/watch?v=zsc
 - Build a mono-safe stereo bed for bass or a dense layer: send or parallel-process through a mid-side EQ and cut the mid channel hard (source: about −30 dB) so almost only sides remain on that path; optionally lift selected side bands. The dry center path keeps the mono power.
 - Feed that sides-heavy path into a reverb so the sides gain space while the middle stays completely dry and raw — mono fold-down still has the dry center.
 - Optional: light sidechain from drums into competing wide layers so mono-focused hits still punch. Check the whole mix in mono.
+
+### Correlation-meter-guided widening: Haas fails mono (comb filter), stereo phaser + M/S side gain, linear vs detuning chorus, and a per-band width map (mono lows, moderate low-mids, widest upper mids, restrained highs)
+Source: [Stereo Width Part 2 - Widening](https://www.youtube.com/watch?v=LcAcmBKryxE) · was `correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map`
+- Put a correlation meter / vectorscope on the part. Read it: +1 = identical channels (mono), 0 = fully independent (maximum safe width), negative = opposite polarity that will cancel in mono. Mono-sum a very wide source to hear the change (a negative-correlation choir changed tone audibly; a moderately wide supersaw barely changed).
+- Test pure Haas: delay one channel by a fixed few ms, then mono-sum. Hear the comb-filter colour (it behaves like a comb-filter device). Do not use this as the widening method.
+- Create real stereo from mono with a stereo phaser (default settings are a fine start): each channel gets different delay/filtering, so the meter leaves +1 while keeping the phaser character modest.
+- Scale the width with mid/side: split into mid (common to L and R) and side (difference), and raise or lower only the side gain. Compare wet/dry: the core tone should stay the same because only existing content is boosted or cut.
+- Pick the chorus type: a linear (non-detuning) chorus for natural instruments or classic synth leads, which only gets a bit quieter in mono; a detuning/unison-style spread chorus for thin, harsh digital synths that need thickening (it changes a little in mono but does not collapse).
+- Apply a multiband width map: split at ~100 Hz (try 100-300 Hz) and keep that band mono; low-mids up to ~1.6 kHz a little narrower but still solid; upper mids the widest, pushed until correlation touches 0 but does not cross it; highs (mostly transients) not too wide so they do not vanish in mono.
+- Check in the full mix with bass and drums and in mono, then trim band widths.

@@ -1,0 +1,49 @@
+## -- 2026-11-20T09:20:29-07:00
+  "target_language": "en",
+  "ok": false,
+  "error": "video_unavailable",
+  "retries": [],
+  "detail": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=--! This is most likely caused by:"
+}
+NO_TRANSCRIPT --
+## -L-vpN2QZVc 2026-11-20T09:20:36-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/-L-vpN2QZVc/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/-L-vpN2QZVc/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1654 raw/-L-vpN2QZVc/raw.txt
+## Jm06aG3hAr4 2026-11-20T09:20:45-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Jm06aG3hAr4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Jm06aG3hAr4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+137 raw/Jm06aG3hAr4/raw.txt
+## rd3-k_tJ4Po 2026-11-20T09:20:54-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/rd3-k_tJ4Po/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/rd3-k_tJ4Po/raw.txt",
+  "translated": false,
+  "retries": []
+}
+592 raw/rd3-k_tJ4Po/raw.txt
+## l1pxzjfwX1c 2026-11-20T09:21:03-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/l1pxzjfwX1c/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/l1pxzjfwX1c/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1377 raw/l1pxzjfwX1c/raw.txt
+## JHiTUBVLmFI 2026-11-20T09:21:12-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JHiTUBVLmFI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JHiTUBVLmFI/raw.txt",
+  "translated": false,
+  "retries": []
+}
+4439 raw/JHiTUBVLmFI/raw.txt
+FETCH_DONE 2026-11-20T09:21:21-07:00

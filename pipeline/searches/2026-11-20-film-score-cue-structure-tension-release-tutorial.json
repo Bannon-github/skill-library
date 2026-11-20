@@ -1,0 +1,109 @@
+{
+ "topic": "film score cue structure tension release tutorial",
+ "date": "2026-11-20",
+ "params": {
+  "topic": "film score cue structure tension release tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Jm06aG3hAr4",
+   "title": "Howto Make Suspenseful Music? | Creating Tension Film Music Production Tutorial",
+   "channel": "RealTunesStudio",
+   "duration": 298,
+   "view_count": 2866,
+   "url": "https://www.youtube.com/watch?v=Jm06aG3hAr4",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.73
+  },
+  {
+   "id": "yMJaUS776yQ",
+   "title": "How to Write Investigative Tension Cues | 52 Cues Podcast, 2025 Week 34",
+   "channel": "52 Cues",
+   "duration": 2760,
+   "view_count": 1657,
+   "url": "https://www.youtube.com/watch?v=yMJaUS776yQ",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.61
+  },
+  {
+   "id": "S5z2RHTLj0M",
+   "title": "How To Write Music For Epic Action Scenes",
+   "channel": "Modern Media Composer",
+   "duration": 719,
+   "view_count": 16073,
+   "url": "https://www.youtube.com/watch?v=S5z2RHTLj0M",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.6
+  },
+  {
+   "id": "9eTRtWcuzWc",
+   "title": "You Suck at Music Theory #2: Creating Tension",
+   "channel": "You Suck at Producing",
+   "duration": 463,
+   "view_count": 104755,
+   "url": "https://www.youtube.com/watch?v=9eTRtWcuzWc",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.01
+  },
+  {
+   "id": "Fot8FxrAUpE",
+   "title": "Production Music Walkthrough - \"Evolving Intent\" (Ominous Tension)",
+   "channel": "52 Cues",
+   "duration": 2080,
+   "view_count": 4743,
+   "url": "https://www.youtube.com/watch?v=Fot8FxrAUpE",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.84
+  },
+  {
+   "id": "efnKT5pHqUo",
+   "title": "Decode ACTION CUES with Melodic Cells",
+   "channel": "Mattia Chiappa",
+   "duration": 643,
+   "view_count": 9690,
+   "url": "https://www.youtube.com/watch?v=efnKT5pHqUo",
+   "query": "film score cue structure tension release tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.49
+  }
+ ],
+ "dropped": [
+  {
+   "id": "2DT5WmvtB8w",
+   "why": "duration 213s"
+  },
+  {
+   "id": "NNuCI5Cu7wQ",
+   "why": "duration 199s"
+  },
+  {
+   "id": "z6uTfRA2r_c",
+   "why": "duration 4414s"
+  },
+  {
+   "id": "_qURolS8-JU",
+   "why": "duration 7455s"
+  },
+  {
+   "id": "C_k08WO1EZc",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

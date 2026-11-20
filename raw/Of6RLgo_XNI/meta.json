@@ -2,14 +2,22 @@
   "video_id": "Of6RLgo_XNI",
   "title": "Making ambient in Koala- What I learned from Music For Airports. [Koala Sampler breakdown]",
   "url": "https://www.youtube.com/watch?v=Of6RLgo_XNI",
-  "fetched_at": "2026-11-18T16:56:11.348272+00:00",
+  "fetched_at": "2026-11-20T16:15:36.888203+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en",
   "channel": "small plates music",
   "duration": 376,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 60,
+  "route": "manual-target",
+  "method": "youtube-transcript-api",
+  "language_code": "en-GB",
+  "is_generated": false,
+  "transcript_kind": "manual",
+  "transcript_path": "/workspace/skill-library/raw/Of6RLgo_XNI/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Of6RLgo_XNI/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -33,50 +41,8 @@
     },
     {
       "q": "fetch manual-target (en-GB)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.8
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 9.0
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.7
-    },
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.2
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.6
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.8
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

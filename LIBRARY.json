@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-19T16:25:12.191353+00:00",
-  "entry_count": 285,
+  "updated_at": "2026-11-20T16:24:22.352335+00:00",
+  "entry_count": 290,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4148,6 +4148,71 @@
       "skills": [
         "drum-synthesis-and-hybrid-percussion"
       ]
+    },
+    {
+      "id": "cinematic-synth-LcAcmBKryxE",
+      "video_id": "LcAcmBKryxE",
+      "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+      "title": "Stereo Width Part 2 - Widening",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/LcAcmBKryxE/raw.txt",
+      "summary": "Skills: correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map (folded into stereo-width-haas-midside-mono-safe)",
+      "skills": [
+        "stereo-width-haas-midside-mono-safe"
+      ]
+    },
+    {
+      "id": "cinematic-synth-VSGYqvV4bTg",
+      "video_id": "VSGYqvV4bTg",
+      "url": "https://www.youtube.com/watch?v=VSGYqvV4bTg",
+      "title": "Get Creative with 6 Unexpected Uses for Ableton's Delays",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/VSGYqvV4bTg/raw.txt",
+      "summary": "Skills: delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift (folded into reverb-delay-space-and-shimmer)",
+      "skills": [
+        "reverb-delay-space-and-shimmer"
+      ]
+    },
+    {
+      "id": "cinematic-synth-CW3jk3BgE1E",
+      "video_id": "CW3jk3BgE1E",
+      "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
+      "title": "Learn to make ambient music in 4 simple steps",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/CW3jk3BgE1E/raw.txt",
+      "summary": "Skills: ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-JHiTUBVLmFI",
+      "video_id": "JHiTUBVLmFI",
+      "url": "https://www.youtube.com/watch?v=JHiTUBVLmFI",
+      "title": "6 key concepts for arranging techno",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/JHiTUBVLmFI/raw.txt",
+      "summary": "Skills: dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism (folded into arrangement-loop-to-song-build-drop)",
+      "skills": [
+        "arrangement-loop-to-song-build-drop"
+      ]
+    },
+    {
+      "id": "cinematic-synth-haZ6byjMpOk",
+      "video_id": "haZ6byjMpOk",
+      "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
+      "title": "The Joy of Recording Episode 1: Evolving Ambient Textures",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/haZ6byjMpOk/raw.txt",
+      "summary": "Skills: async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus (folded into generative-ambient-drones-and-soundscapes)",
+      "skills": [
+        "generative-ambient-drones-and-soundscapes"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4902,6 +4967,37 @@
           "video_id": "0IgwdHg0ZwM",
           "skill": "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
           "cluster": "drum-synthesis-and-hybrid-percussion"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-20T16:24:22.352335+00:00",
+      "batch": "2026-11-20-morning-hunt",
+      "folded": [
+        {
+          "video_id": "LcAcmBKryxE",
+          "skill": "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map",
+          "cluster": "stereo-width-haas-midside-mono-safe"
+        },
+        {
+          "video_id": "VSGYqvV4bTg",
+          "skill": "delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift",
+          "cluster": "reverb-delay-space-and-shimmer"
+        },
+        {
+          "video_id": "CW3jk3BgE1E",
+          "skill": "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "JHiTUBVLmFI",
+          "skill": "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+          "cluster": "arrangement-loop-to-song-build-drop"
+        },
+        {
+          "video_id": "haZ6byjMpOk",
+          "skill": "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
+          "cluster": "generative-ambient-drones-and-soundscapes"
         }
       ]
     }

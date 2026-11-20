@@ -116,3 +116,12 @@ Source: [How to Make Lazy Ambient Music in Session View](https://www.youtube.com
 - On the group: reverb ~8 s decay, low cut, 50% wet; ping-pong delay unsynced, 50% wet, ~70% feedback; gentle tape colour with hum and noise low; glue compressor.
 - Add an optional field recording track.
 - Resample the group to a new audio track and record a live take while fading clips in and out; commit to it rather than editing afterwards.
+
+### Evolving ambient bed from a captured micro-loop: two parallel band-pass lanes swept by unsynchronised slow LFOs, delays on each lane, an octave-down lane, all summed into a bus with a very slow, also unsynchronised auto-pan
+Source: [The Joy of Recording Episode 1: Evolving Ambient Textures](https://www.youtube.com/watch?v=haZ6byjMpOk) · was `async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus`
+- Capture a small loop of played material in a micro-looper or sampler as the source nugget.
+- Send it to two parallel lanes (side by side, not one into the other), each with a narrow band-pass filter that passes only a small wedge of the spectrum.
+- Sweep each band-pass slowly up and down the spectrum with its own free-running LFO at a different, unsynchronised rate.
+- Put a delay on each lane; on one lane also add an octave-down effect to extend the range downward.
+- Route both lanes into a third bus with a very slow auto-pan whose rate is unrelated to both filter LFOs; add reverb.
+- Render a long take and use it as an ambient piece or as a bed to play grooves and melodies over.

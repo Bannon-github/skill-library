@@ -74,6 +74,12 @@
         "video_id": "dGGMbqe4QYQ",
         "url": "https://www.youtube.com/watch?v=dGGMbqe4QYQ",
         "title": "How to climax in electronic music"
+      },
+      {
+        "from_skill": "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+        "video_id": "JHiTUBVLmFI",
+        "url": "https://www.youtube.com/watch?v=JHiTUBVLmFI",
+        "title": "6 key concepts for arranging techno"
       }
     ]
   },
@@ -339,6 +345,22 @@
         "Double trilogy: inside one break, do a long fall + rise, then where the return is expected do a second, shorter fall + rise before the section comes back (filters can bring percussion back in).",
         "When the arrangement is otherwise finished, insert the hang bar(s) with insert-time so everything after shifts together."
       ]
+    },
+    {
+      "from_skill": "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+      "name": "Dynamic-interest block map for loop-based tracks: 10 x 16-bar blocks drawn on paper, top-percussion gear shifts at every block, one committed break vs half-block turnarounds, 1-3 bar squeeze-ins, sparing markers/reverses, +/- density from call-and-response or polymeter layers, scoop-ups and minimalism moments",
+      "goal": "Arrange one finished groove into a ~5-minute track that keeps dynamic interest by contrast rather than new ideas. Draw 10 blocks of 16 bars (each ~30 s at dance tempos) and plan: top-percussion gear shifts at every block boundary; one break block (kick and low percussion out, return = drop) versus turnarounds in the second half of a block; squeeze-ins of 1-3 extra contrast bars mid-track; markers (splash at a block start) and reverses (build of fullness into a block end) used sparingly; +/++/- density marks filled by call-and-response or polymeter layers; scoop-ups (lows out for 1-4 bars at a block start) and minimalism moments (strip to kick + lead for 2-4 bars). Delta vs arrangement-loop-to-song cluster: the drawn 16-bar block canvas and named contrast toolbox, with a prep list of what to design before laying out.",
+      "steps": [
+        "Finish one core groove you are happy with and design all the extra ingredients on it before spreading anything on the timeline.",
+        "Draw the canvas: blocks of 16 bars (~30 s each at most dance tempos); a ~5-minute track is 10 blocks. Literally draw 10 stripes on paper.",
+        "Tool 1, top-percussion gear shifts: prepare many top-percussion options (closed and open hats, rides, near and far, short and long, a backbeat clap, a short noise hit around 500 Hz, a rim). At every block boundary add and/or remove some so each block has its own high-end profile.",
+        "Tool 2, breaks and turnarounds: mark one whole block as the break (e.g. block 6), removing the kick and low percussion and returning them at the drop. Mark turnarounds in the second half of some blocks (e.g. blocks 4 and 8): scoop out lows and/or add contrasting top material without interrupting the block flow. Prepare a contrasting timbre (effects that reset the sound world) for them.",
+        "Squeeze-ins: in the middle of the track only, add 1-3 bars of contrast between blocks (e.g. after the first and last turnarounds). Prep by appending ~3 bars of silence after the 16-bar loop and designing contrast material there.",
+        "Tool 3, markers and reverses: place a marker (cymbal or noise splash) at the start of only a few blocks, and reverses (a build of fullness, e.g. a synth opening filter and envelopes, or printed huge-reverb swells reversed) into a few block ends, e.g. into the break and before the last block. Print several reverse layers ahead of time, many in the highs, some in the mids.",
+        "Tool 4, density marks: prepare a couple of call-and-response phrases (call, gap, response, small turnaround) and polymeter layers. Mark blocks with + (one layer), ++ (several) or - (stripped, e.g. intro/outro) and add or remove the layers accordingly.",
+        "Tool 5, scoop-up and minimalism moments: at a block start, remove the lows for 1-4 bars and bring them straight back (scoop-up); after a dense passage, strip to the essentials (e.g. kick + lead, no hats) for 2-4 bars before everything returns.",
+        "Tool 6 (optional): duplicate the main synth and perform cutoff and envelope lengths by hand across the arrangement, keeping the loop version as a fallback. Then lay out the track from the drawn plan and adjust where theory and practice disagree."
+      ]
     }
   ],
   "merged_from": [
@@ -352,7 +374,8 @@
     "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
     "ambient-loop-to-track-arp-rate-energy",
     "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
-    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last"
+    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
+    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism"
   ],
   "tags": [
     "8-bar-phrase",
@@ -401,6 +424,7 @@
     "withhold-the-reveal-arrangement-constant-ostinato-and-one-note-bass-until-stacked-firsts-climax-pad-minus-14db-in-full-parts-fx-marked-entries-silence-before-mutes-loopable-edges",
     "ambient-loop-to-track-arp-rate-energy",
     "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
-    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last"
+    "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
+    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism"
   ]
 }

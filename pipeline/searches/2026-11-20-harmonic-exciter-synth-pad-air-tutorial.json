@@ -1,0 +1,105 @@
+{
+ "topic": "harmonic exciter synth pad air tutorial",
+ "date": "2026-11-20",
+ "params": {
+  "topic": "harmonic exciter synth pad air tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "d-Vp9zEX1mg",
+   "title": "HISE VST Tutorial - Getting Started With HISE in 10 Minutes",
+   "channel": "Neomoon Studios",
+   "duration": 633,
+   "view_count": 24909,
+   "url": "https://www.youtube.com/watch?v=d-Vp9zEX1mg",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.7
+  },
+  {
+   "id": "-MGcBX0zYjc",
+   "title": "How to Use the Waves Aphex Vintage Aural Exciter Plugin",
+   "channel": "Waves Audio",
+   "duration": 443,
+   "view_count": 316222,
+   "url": "https://www.youtube.com/watch?v=-MGcBX0zYjc",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.25
+  },
+  {
+   "id": "cSbVsBbWlRg",
+   "title": "Using Insert Effects on the Behringer XR18 - Behringer XR18 Effects Tutorial",
+   "channel": "Drew Brashler",
+   "duration": 568,
+   "view_count": 86367,
+   "url": "https://www.youtube.com/watch?v=cSbVsBbWlRg",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.97
+  },
+  {
+   "id": "kZE2votRFeE",
+   "title": "The Sample Engine PART 9 | Arturia Pigments 3.5 Tutorial",
+   "channel": "Jon Audio",
+   "duration": 789,
+   "view_count": 19354,
+   "url": "https://www.youtube.com/watch?v=kZE2votRFeE",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.64
+  },
+  {
+   "id": "TpJ1EAerPN4",
+   "title": "Beginner Guide to Saturation",
+   "channel": "Streaky",
+   "duration": 285,
+   "view_count": 80883,
+   "url": "https://www.youtube.com/watch?v=TpJ1EAerPN4",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.45
+  },
+  {
+   "id": "x6ph4sBFhsY",
+   "title": "SynthMaster One Getting The Shimmer FX Treatment in AUM - iPad Demo",
+   "channel": "The Sound Test Room",
+   "duration": 351,
+   "view_count": 1804,
+   "url": "https://www.youtube.com/watch?v=x6ph4sBFhsY",
+   "query": "harmonic exciter synth pad air tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.13
+  }
+ ],
+ "dropped": [
+  {
+   "id": "63nKuxQCdJc",
+   "why": "already known"
+  },
+  {
+   "id": "BYzagFV0eLM",
+   "why": "duration 5154s"
+  },
+  {
+   "id": "mPua8mW1xfk",
+   "why": "duration 122s"
+  },
+  {
+   "id": "7yBOtJplKVI",
+   "why": "duration 68s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

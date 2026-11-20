@@ -2,14 +2,23 @@
   "video_id": "haZ6byjMpOk",
   "title": "The Joy of Recording Episode 1: Evolving Ambient Textures",
   "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
-  "fetched_at": "2026-11-18T16:57:42.678280+00:00",
+  "fetched_at": "2026-11-20T16:16:54.576209+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en",
   "channel": "Dan Phelps",
   "duration": 432,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 310,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "haZ6byjMpOk.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/haZ6byjMpOk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/haZ6byjMpOk/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -36,14 +45,14 @@
     },
     {
       "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
   "retries": [
     {
       "retry": 1,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 5.8
+      "sleep_s": 4.3
     },
     {
       "retry": 2,
@@ -55,6 +64,5 @@
       "reason": "rate_limited_or_ip_blocked",
       "sleep_s": 16.1
     }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  ]
 }

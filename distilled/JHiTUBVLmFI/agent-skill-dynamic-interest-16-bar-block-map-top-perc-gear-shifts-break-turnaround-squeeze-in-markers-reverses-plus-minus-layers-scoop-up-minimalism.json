@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "id": "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+  "name": "Dynamic-interest block map for loop-based tracks: 10 x 16-bar blocks drawn on paper, top-percussion gear shifts at every block, one committed break vs half-block turnarounds, 1-3 bar squeeze-ins, sparing markers/reverses, +/- density from call-and-response or polymeter layers, scoop-ups and minimalism moments",
+  "goal": "Arrange one finished groove into a ~5-minute track that keeps dynamic interest by contrast rather than new ideas. Draw 10 blocks of 16 bars (each ~30 s at dance tempos) and plan: top-percussion gear shifts at every block boundary; one break block (kick and low percussion out, return = drop) versus turnarounds in the second half of a block; squeeze-ins of 1-3 extra contrast bars mid-track; markers (splash at a block start) and reverses (build of fullness into a block end) used sparingly; +/++/- density marks filled by call-and-response or polymeter layers; scoop-ups (lows out for 1-4 bars at a block start) and minimalism moments (strip to kick + lead for 2-4 bars). Delta vs arrangement-loop-to-song cluster: the drawn 16-bar block canvas and named contrast toolbox, with a prep list of what to design before laying out.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "JHiTUBVLmFI",
+    "url": "https://www.youtube.com/watch?v=JHiTUBVLmFI",
+    "title": "6 key concepts for arranging techno",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/JHiTUBVLmFI/agent-skill-dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism.json",
+    "batch": "2026-11-20-morning-hunt"
+  },
+  "prerequisites": [
+    "A finished 16-bar core groove (kick/low end + main synth)",
+    "A DAW timeline, or pen and paper for the block drawing",
+    "Reverb for printing reverse swells"
+  ],
+  "inputs": [
+    {
+      "name": "core_loop",
+      "type": "project",
+      "description": "16-bar groove that already works on its own",
+      "required": true
+    },
+    {
+      "name": "length_blocks",
+      "type": "number",
+      "description": "Number of 16-bar blocks (10 ~ 5 min at dance tempos)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "block_map",
+      "type": "notes",
+      "description": "Drawn map: per block gear shift, break/turnaround/squeeze-in, markers/reverses, +/- marks, scoop-ups, minimalism moments"
+    },
+    {
+      "name": "prep_kit",
+      "type": "audio",
+      "description": "Top-percussion options, contrast material, reverse swells, call/response and polymeter layers"
+    },
+    {
+      "name": "arrangement",
+      "type": "project",
+      "description": "Laid-out track"
+    }
+  ],
+  "constraints": [
+    "Design all ingredients on the loop first; do not just copy the loop 10 times and hope.",
+    "Keep intro and outro blocks DJ-friendly (whole 16-bar blocks); put squeeze-ins only in the middle.",
+    "Do not put a crash/marker at every block start; it gets overdone.",
+    "For Matt's ambient/cinematic use: pick softer, longer top-percussion options (rides, open hats, soft noise hit) over busy fast hat rolls, which can become a rapid clicking texture he dislikes.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Finish one core groove you are happy with and design all the extra ingredients on it before spreading anything on the timeline.",
+      "tool": "Loop design",
+      "expect": "Complete ingredient list"
+    },
+    {
+      "n": 2,
+      "action": "Draw the canvas: blocks of 16 bars (~30 s each at most dance tempos); a ~5-minute track is 10 blocks. Literally draw 10 stripes on paper.",
+      "tool": "Pen and paper",
+      "expect": "10-block road map"
+    },
+    {
+      "n": 3,
+      "action": "Tool 1, top-percussion gear shifts: prepare many top-percussion options (closed and open hats, rides, near and far, short and long, a backbeat clap, a short noise hit around 500 Hz, a rim). At every block boundary add and/or remove some so each block has its own high-end profile.",
+      "tool": "Percussion options",
+      "expect": "Energy contour moves forward at each block"
+    },
+    {
+      "n": 4,
+      "action": "Tool 2, breaks and turnarounds: mark one whole block as the break (e.g. block 6), removing the kick and low percussion and returning them at the drop. Mark turnarounds in the second half of some blocks (e.g. blocks 4 and 8): scoop out lows and/or add contrasting top material without interrupting the block flow. Prepare a contrasting timbre (effects that reset the sound world) for them.",
+      "tool": "Block map",
+      "expect": "Break and turnaround positions marked"
+    },
+    {
+      "n": 5,
+      "action": "Squeeze-ins: in the middle of the track only, add 1-3 bars of contrast between blocks (e.g. after the first and last turnarounds). Prep by appending ~3 bars of silence after the 16-bar loop and designing contrast material there.",
+      "tool": "Loop + 3 empty bars",
+      "expect": "Surprise moments that break predictability"
+    },
+    {
+      "n": 6,
+      "action": "Tool 3, markers and reverses: place a marker (cymbal or noise splash) at the start of only a few blocks, and reverses (a build of fullness, e.g. a synth opening filter and envelopes, or printed huge-reverb swells reversed) into a few block ends, e.g. into the break and before the last block. Print several reverse layers ahead of time, many in the highs, some in the mids.",
+      "tool": "Reverb print + reverse",
+      "expect": "Sparse, intentional section accents"
+    },
+    {
+      "n": 7,
+      "action": "Tool 4, density marks: prepare a couple of call-and-response phrases (call, gap, response, small turnaround) and polymeter layers. Mark blocks with + (one layer), ++ (several) or - (stripped, e.g. intro/outro) and add or remove the layers accordingly.",
+      "tool": "Extra layers",
+      "expect": "Core groove shifts gear without new big ideas"
+    },
+    {
+      "n": 8,
+      "action": "Tool 5, scoop-up and minimalism moments: at a block start, remove the lows for 1-4 bars and bring them straight back (scoop-up); after a dense passage, strip to the essentials (e.g. kick + lead, no hats) for 2-4 bars before everything returns.",
+      "tool": "Mutes / clip gaps",
+      "expect": "Contrast via removal"
+    },
+    {
+      "n": 9,
+      "action": "Tool 6 (optional): duplicate the main synth and perform cutoff and envelope lengths by hand across the arrangement, keeping the loop version as a fallback. Then lay out the track from the drawn plan and adjust where theory and practice disagree.",
+      "tool": "MIDI controller + duplicate track",
+      "expect": "Final arrangement following the block map"
+    }
+  ],
+  "verification": [
+    "Arrangement length is a whole number of 16-bar blocks plus any marked squeeze-in bars.",
+    "Top-percussion layer set differs between every pair of adjacent blocks.",
+    "Exactly one block is marked as the break; markers appear on fewer than half of the block starts."
+  ],
+  "tags": [
+    "arrangement",
+    "structure",
+    "sections",
+    "breakdown",
+    "drop",
+    "turnaround",
+    "transitions",
+    "dance",
+    "loop-to-song",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism"
+}

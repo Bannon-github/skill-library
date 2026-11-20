@@ -1,0 +1,46 @@
+{
+  "video_id": "rd3-k_tJ4Po",
+  "title": "Making a dynamic, punchy bass synth in Serum!",
+  "url": "https://www.youtube.com/watch?v=rd3-k_tJ4Po",
+  "fetched_at": "2026-11-20T16:20:54.423335+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Gavin Geddes",
+  "duration": 500,
+  "ok": true,
+  "cue_count": 101,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/rd3-k_tJ4Po/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/rd3-k_tJ4Po/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

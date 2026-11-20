@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "id": "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map",
+  "name": "Correlation-meter-guided widening: Haas fails mono (comb filter), stereo phaser + M/S side gain, linear vs detuning chorus, and a per-band width map (mono lows, moderate low-mids, widest upper mids, restrained highs)",
+  "goal": "Widen a mono or narrow synth/pad while staying mono-safe, judging every move on a correlation meter/vectorscope (+1 = mono, 0 = fully independent L/R = widest safe, below 0 = cancels in mono). Reject pure Haas widening because a fixed one-channel delay is a comb filter when summed to mono. Create stereo with a stereo phaser (different delay/filtering per channel) and then scale width with mid/side side-gain. Choose linear (non-detuning) chorus for natural instruments/classic synths and detuning (supersaw-style) chorus to thicken thin digital synths. Finish with a multiband width map: lows (below ~100-300 Hz) mono, low-mids up to ~1.6 kHz slightly narrower, upper mids widest (correlation touching but not crossing 0), highs/transients not too wide. Delta vs the stereo-width cluster: the correlation-meter target per band and the phaser-then-M/S widening path.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "LcAcmBKryxE",
+    "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+    "title": "Stereo Width Part 2 - Widening",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/LcAcmBKryxE/agent-skill-correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map.json",
+    "batch": "2026-11-20-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a correlation meter / vectorscope on the bus or track",
+    "A stereo phaser, a chorus (linear) and a detune/unison-style chorus, a mid/side utility, a multiband (3-4 band) stereo width tool",
+    "A mono-sum utility for checks"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Mono or narrow synth/pad/lead to widen",
+      "required": true
+    },
+    {
+      "name": "mix_context",
+      "type": "audio",
+      "description": "Rest of the mix with bass and drums, for the final check",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "widened_part",
+      "type": "audio",
+      "description": "Wider part whose correlation stays >= 0 and that holds its tone in mono"
+    },
+    {
+      "name": "width_map",
+      "type": "notes",
+      "description": "Band split points and width per band used"
+    }
+  ],
+  "constraints": [
+    "Correlation is the measure: never let the bus or the widened part sit below 0 for long; below 0 means the channels cancel when summed to mono.",
+    "Pure Haas (fixed delay on one channel) is rejected here: mono-summed it is a comb filter with a fixed notch pattern the ear spots as unnatural.",
+    "Chorus modulates delay time, so keep depth subtle on sustained pads so pitch stays steady (Matt dislikes wobbly pitch); prefer the phaser + side-gain route on held chords.",
+    "Band split values (~100-300 Hz, ~1.6 kHz) are the presenter's personal starting points, not universal; tune by ear and meter.",
+    "Best width comes from wide source material (e.g. real double-takes); these tools only create or rebalance width from a mono/narrow source.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Put a correlation meter / vectorscope on the part. Read it: +1 = identical channels (mono), 0 = fully independent (maximum safe width), negative = opposite polarity that will cancel in mono. Mono-sum a very wide source to hear the change (a negative-correlation choir changed tone audibly; a moderately wide supersaw barely changed).",
+      "tool": "Correlation meter + mono utility",
+      "expect": "You can predict mono loss from the meter"
+    },
+    {
+      "n": 2,
+      "action": "Test pure Haas: delay one channel by a fixed few ms, then mono-sum. Hear the comb-filter colour (it behaves like a comb-filter device). Do not use this as the widening method.",
+      "tool": "Delay on one channel",
+      "expect": "Haas recognised as not mono-compatible"
+    },
+    {
+      "n": 3,
+      "action": "Create real stereo from mono with a stereo phaser (default settings are a fine start): each channel gets different delay/filtering, so the meter leaves +1 while keeping the phaser character modest.",
+      "tool": "Stereo phaser",
+      "expect": "Correlation drops below +1; part is now stereo"
+    },
+    {
+      "n": 4,
+      "action": "Scale the width with mid/side: split into mid (common to L and R) and side (difference), and raise or lower only the side gain. Compare wet/dry: the core tone should stay the same because only existing content is boosted or cut.",
+      "tool": "Mid/side utility (side gain)",
+      "expect": "Width adjustable without changing the sound's heart"
+    },
+    {
+      "n": 5,
+      "action": "Pick the chorus type: a linear (non-detuning) chorus for natural instruments or classic synth leads, which only gets a bit quieter in mono; a detuning/unison-style spread chorus for thin, harsh digital synths that need thickening (it changes a little in mono but does not collapse).",
+      "tool": "Chorus (linear vs detune)",
+      "expect": "Width + thickness matched to the source type"
+    },
+    {
+      "n": 6,
+      "action": "Apply a multiband width map: split at ~100 Hz (try 100-300 Hz) and keep that band mono; low-mids up to ~1.6 kHz a little narrower but still solid; upper mids the widest, pushed until correlation touches 0 but does not cross it; highs (mostly transients) not too wide so they do not vanish in mono.",
+      "tool": "Multiband stereo width tool",
+      "expect": "Part reads wide in a full mix while the meter stays >= 0"
+    },
+    {
+      "n": 7,
+      "action": "Check in the full mix with bass and drums and in mono, then trim band widths.",
+      "tool": "Mix + mono check",
+      "expect": "Wide but mono-safe part"
+    }
+  ],
+  "verification": [
+    "Correlation meter on the processed part stays >= 0 throughout playback.",
+    "Band below the low split reads ~+1 (mono).",
+    "Mono sum shows no comb-filter notch pattern and level drop of the part is small (about 3 dB or less)."
+  ],
+  "tags": [
+    "stereo-width",
+    "correlation",
+    "mid-side",
+    "phaser",
+    "chorus",
+    "multiband",
+    "mono-compatibility",
+    "haas",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map"
+}

@@ -149,3 +149,13 @@ Source: [KARPLUS-STRONG synthesis in Renoise and the •REZONATOR•](https://ww
 - Try different impulse sources (sine, saw, more or less pitched) — the impulse strongly changes the timbre.
 - Resonator insert: put the same delay (wrapped in a macro rack) on an existing bass or pad; tune delay/filter to taste (check filter isn't left on high-pass), keep it subtle or brighter/distorted.
 - Resample interesting results for further processing.
+
+### Delay as instrument: mono-checked Haas sweet spot, chorus/flanger built from a modulated delay, a 100%-feedback analog-style looper whose delay time is halved/doubled for octave steps, and a 1 ms grain delay as an octave shifter
+Source: [Get Creative with 6 Unexpected Uses for Ableton's Delays](https://www.youtube.com/watch?v=VSGYqvV4bTg) · was `delay-as-instrument-mono-checked-haas-sweet-spot-delay-built-chorus-flanger-100-feedback-repitch-octave-looper-grain-delay-octave-shift`
+- Haas: on a clap (or other short part) unlink the delay channels, time mode, left as low as possible, right ~15 ms, feedback 0, filter off; raise dry/wet. Add a utility after it set to mono and adjust the right delay time while mono until the part keeps its attack (no ringing, no audible echo). Then disable mono.
+- Chorus from a delay: turn off filter, modulation and character, feedback 0, wet max, channels linked in time mode at ~20 ms. Raise delay modulation to moderate and set the LFO phase offset to anything but 0. Feedback up to ~60% exaggerates it. Optional colour: reverb in the feedback path, ping-pong, input drive, the delay's filter.
+- Flanger from the same delay: a much shorter time, higher feedback, much higher modulation depth (a x4 depth switch helps), stereo mode. Use subtly on drums for liveliness.
+- Looper: put a delay on the synth track, filter/modulation/wobble off, both channels linked in sync mode, delay time at the maximum, feedback exactly 100%. Play notes: they repeat forever; play new notes on each cycle to overdub.
+- With the delay in repitch mode, halve or double the delay time to move the whole loop up or down an octave (each change also shifts the tone slightly). Build energy by stepping it up a few octaves in the second half of the loop. Stop the loop by setting feedback to 0; it dies out after the next cycle.
+- Resample the looper output to a new audio track and place it under the main pattern as a texture layer.
+- Octave shifter: grain delay in time mode at 1 ms, feedback 0, pitch +12 st, spray and frequency at moderate values; raise dry/wet, then tune spray/frequency for tone. Automate pitch amount and dry/wet in a clip to add life to a repetitive short loop.

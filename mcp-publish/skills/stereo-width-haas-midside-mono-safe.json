@@ -38,6 +38,12 @@
         "video_id": "zscsukQNOLU",
         "url": "https://www.youtube.com/watch?v=zscsukQNOLU",
         "title": "Get A Wide Mix Without Any Issues!"
+      },
+      {
+        "from_skill": "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map",
+        "video_id": "LcAcmBKryxE",
+        "url": "https://www.youtube.com/watch?v=LcAcmBKryxE",
+        "title": "Stereo Width Part 2 - Widening"
       }
     ]
   },
@@ -194,6 +200,20 @@
         "Feed that sides-heavy path into a reverb so the sides gain space while the middle stays completely dry and raw — mono fold-down still has the dry center.",
         "Optional: light sidechain from drums into competing wide layers so mono-focused hits still punch. Check the whole mix in mono."
       ]
+    },
+    {
+      "from_skill": "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map",
+      "name": "Correlation-meter-guided widening: Haas fails mono (comb filter), stereo phaser + M/S side gain, linear vs detuning chorus, and a per-band width map (mono lows, moderate low-mids, widest upper mids, restrained highs)",
+      "goal": "Widen a mono or narrow synth/pad while staying mono-safe, judging every move on a correlation meter/vectorscope (+1 = mono, 0 = fully independent L/R = widest safe, below 0 = cancels in mono). Reject pure Haas widening because a fixed one-channel delay is a comb filter when summed to mono. Create stereo with a stereo phaser (different delay/filtering per channel) and then scale width with mid/side side-gain. Choose linear (non-detuning) chorus for natural instruments/classic synths and detuning (supersaw-style) chorus to thicken thin digital synths. Finish with a multiband width map: lows (below ~100-300 Hz) mono, low-mids up to ~1.6 kHz slightly narrower, upper mids widest (correlation touching but not crossing 0), highs/transients not too wide. Delta vs the stereo-width cluster: the correlation-meter target per band and the phaser-then-M/S widening path.",
+      "steps": [
+        "Put a correlation meter / vectorscope on the part. Read it: +1 = identical channels (mono), 0 = fully independent (maximum safe width), negative = opposite polarity that will cancel in mono. Mono-sum a very wide source to hear the change (a negative-correlation choir changed tone audibly; a moderately wide supersaw barely changed).",
+        "Test pure Haas: delay one channel by a fixed few ms, then mono-sum. Hear the comb-filter colour (it behaves like a comb-filter device). Do not use this as the widening method.",
+        "Create real stereo from mono with a stereo phaser (default settings are a fine start): each channel gets different delay/filtering, so the meter leaves +1 while keeping the phaser character modest.",
+        "Scale the width with mid/side: split into mid (common to L and R) and side (difference), and raise or lower only the side gain. Compare wet/dry: the core tone should stay the same because only existing content is boosted or cut.",
+        "Pick the chorus type: a linear (non-detuning) chorus for natural instruments or classic synth leads, which only gets a bit quieter in mono; a detuning/unison-style spread chorus for thin, harsh digital synths that need thickening (it changes a little in mono but does not collapse).",
+        "Apply a multiband width map: split at ~100 Hz (try 100-300 Hz) and keep that band mono; low-mids up to ~1.6 kHz a little narrower but still solid; upper mids the widest, pushed until correlation touches 0 but does not cross it; highs (mostly transients) not too wide so they do not vanish in mono.",
+        "Check in the full mix with bass and drums and in mono, then trim band widths."
+      ]
     }
   ],
   "merged_from": [
@@ -201,7 +221,8 @@
     "haas-plus-phase-offset-width-automated",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
-    "width-by-juxtaposition-ms-sides-reverb"
+    "width-by-juxtaposition-ms-sides-reverb",
+    "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map"
   ],
   "tags": [
     "allpass",
@@ -240,6 +261,7 @@
     "haas-plus-phase-offset-width-automated",
     "pad-width-no-phase-smear-highband-pan-or-chord-split",
     "short-ir-widener-width-trim-drawn-pan-multiband-opposite-haas",
-    "width-by-juxtaposition-ms-sides-reverb"
+    "width-by-juxtaposition-ms-sides-reverb",
+    "correlation-meter-widening-haas-comb-fail-stereo-phaser-ms-side-gain-linear-vs-detune-chorus-multiband-width-map"
   ]
 }

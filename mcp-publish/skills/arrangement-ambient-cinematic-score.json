@@ -104,6 +104,12 @@
         "video_id": "uZfNc_oCwOc",
         "url": "https://www.youtube.com/watch?v=uZfNc_oCwOc",
         "title": "Ambient Composing Secrets: Scoring Under Dialogue For Film & TV"
+      },
+      {
+        "from_skill": "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody",
+        "video_id": "CW3jk3BgE1E",
+        "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
+        "title": "Learn to make ambient music in 4 simple steps"
       }
     ]
   },
@@ -446,6 +452,21 @@
         "Drop in a tempo-synced texture loop behind a low-pass filter closed almost fully. Automate the cutoff open only where extra texture is wanted, and add delay to blend it.",
         "Finish with a short repeating synth motif. Automate its modulation (filter/brightness/level) so it pokes in and out and reverbs away into the other layers. Give each layer its own moment to enter and breathe before the next."
       ]
+    },
+    {
+      "from_skill": "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody",
+      "name": "Ambient track from variation sets: give each voice (texture, pad, melody) lettered variations (filter low/mid/high, modulation depth), chain them along a presence/focus map, and plan frequency slots so layers never fight",
+      "goal": "Build an evolving ambient track from three voices (a looping sample texture, a slow paraphonic pad, a floating repetitive melody) without a muddy, aimless wall of reverb. (1) Start with one sound and one reverb and develop a set of variations (A, B, C...) using filters (driven low, wide mid, thin high) and attenuated slow modulation. (2) Chain variations within each voice to tell a story, with slow automatic modulation adding depth but not changing the voice's role. (3) Draw a presence/focus map (focus, not volume) for the three voices across the track and assign a variation per section. (4) Match it to a low/mid/high frequency-slot map and resolve clashes by switching variations or EQ. Delta vs arrangement-ambient cluster: the per-voice variation set and focus-not-volume map tied to a frequency-slot plan.",
+      "steps": [
+        "Pick one inspiring sound and stay with it; use only one reverb. Aim for a sound with depth and a set of lettered variations (A, B, C...).",
+        "Pad: two oscillators into a mixer, then high-pass and low-pass filters. Feed the oscillators two different step sequences (3 steps and 4 steps) for a paraphonic polymetric pad; a gate into a decay envelope opens the low-pass. Make filter variations: driven low, wide mid-range, thin high.",
+        "Add modulation variations through attenuators: slow smooth random on the wavetable shape of one oscillator (works best on the low variation); an LFO through a VCA into the FM input of the other (works best on mid and high variations).",
+        "Melody voice: single oscillator, high-pass + low-pass, sequencer and decay envelope, with attenuated LFOs on filter spread and wave shape. Texture voice: looping sample through a band-pass filter. Make front/back variations of each (push back with the filter, bring forward with modulation; texture from deep modulated rumble to bright crispy top).",
+        "Draw a presence/focus map (focus, not volume) for the three voices. Example from the transcript: open on a present sample texture (solo intro carrying the track), pad enters and pushes the texture back, both step back when the melody enters, melody in focus for a while, pad and noise come back up, then all calm to a slow outro.",
+        "Assign a variation to each section: a deep, heavily modulated texture variation to carry the intro, a background variation while the pad is central, a bright low-cut noise variation when the melody is focal. A focal sound needs depth and weight; a background sound should be pleasant without effort.",
+        "Make a frequency-slot map (low / mid / high) beside the focus map. When two voices want the same slot (dark rumbling texture + dark pad), either use a brighter pad variation with little low end, make the texture thin and high from the start, or cut the texture's lows before/while the low pad enters. Use a mixer's 3-band EQ as a playable variation control, not set-and-forget.",
+        "Perform/automate the main evolution by hand along the focus map, letting the slow automatic modulation keep background voices alive; render."
+      ]
     }
   ],
   "merged_from": [
@@ -464,7 +485,8 @@
     "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
     "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
     "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
-    "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb"
+    "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb",
+    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody"
   ],
   "tags": [
     "ambient",
@@ -518,6 +540,7 @@
     "sleep-descent-arrangement-40-50bpm-descending-lines-staggered-fade-ins-lowpass-recede-key-tuned-binaural-notch",
     "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
     "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
-    "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb"
+    "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb",
+    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody"
   ]
 }

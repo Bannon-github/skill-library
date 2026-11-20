@@ -1,0 +1,105 @@
+{
+ "topic": "felt kick ambient sound design low pass transient",
+ "date": "2026-11-20",
+ "params": {
+  "topic": "felt kick ambient sound design low pass transient",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "HlgerquD7bw",
+   "title": "How to Use Serum 2's Spectral Engine (Sound Design Tutorial)",
+   "channel": "EDMProd",
+   "duration": 952,
+   "view_count": 6181,
+   "url": "https://www.youtube.com/watch?v=HlgerquD7bw",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.4
+  },
+  {
+   "id": "0i1LCrC7dZw",
+   "title": "Modal synthesis In Phase Plant | Sound Design Tutorial",
+   "channel": "Dash Glitch",
+   "duration": 1303,
+   "view_count": 15431,
+   "url": "https://www.youtube.com/watch?v=0i1LCrC7dZw",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.59
+  },
+  {
+   "id": "1l_oT6MLkzw",
+   "title": "18 Advanced Sound Design Tips",
+   "channel": "EDMProd",
+   "duration": 1109,
+   "view_count": 12791,
+   "url": "https://www.youtube.com/watch?v=1l_oT6MLkzw",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.55
+  },
+  {
+   "id": "EaB6SZEQM5w",
+   "title": "Unlocking the Power of Vital: Sound Design Tutorial for Processing Samples with Internal Effects",
+   "channel": "Negativist",
+   "duration": 516,
+   "view_count": 8923,
+   "url": "https://www.youtube.com/watch?v=EaB6SZEQM5w",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.48
+  },
+  {
+   "id": "R4dGeHAafkg",
+   "title": "Sytrus Tutorial - Everything You Need to Know",
+   "channel": "In The Mix",
+   "duration": 1152,
+   "view_count": 456615,
+   "url": "https://www.youtube.com/watch?v=R4dGeHAafkg",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.33
+  },
+  {
+   "id": "FlbAzM5w0bs",
+   "title": "u-he Diva Masterclass: House Music Sound Design from Scratch",
+   "channel": "Olean's House",
+   "duration": 2404,
+   "view_count": 24762,
+   "url": "https://www.youtube.com/watch?v=FlbAzM5w0bs",
+   "query": "felt kick ambient sound design low pass transient tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.2
+  }
+ ],
+ "dropped": [
+  {
+   "id": "jWorjBDcty4",
+   "why": "duration 9485s"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "6CWmImkHDgs",
+   "why": "already known"
+  },
+  {
+   "id": "rqMI1w8i3OA",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

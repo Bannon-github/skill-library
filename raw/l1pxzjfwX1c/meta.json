@@ -1,0 +1,46 @@
+{
+  "video_id": "l1pxzjfwX1c",
+  "title": "Synth Masterclass #2 - Punchy Bass",
+  "url": "https://www.youtube.com/watch?v=l1pxzjfwX1c",
+  "fetched_at": "2026-11-20T16:21:03.041949+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Computer Music",
+  "duration": 473,
+  "ok": true,
+  "cue_count": 226,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/l1pxzjfwX1c/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/l1pxzjfwX1c/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

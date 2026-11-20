@@ -62,6 +62,12 @@
         "video_id": "NZJ9bvuyII4",
         "url": "https://www.youtube.com/watch?v=NZJ9bvuyII4",
         "title": "How to Make Lazy Ambient Music in Session View"
+      },
+      {
+        "from_skill": "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
+        "video_id": "haZ6byjMpOk",
+        "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
+        "title": "The Joy of Recording Episode 1: Evolving Ambient Textures"
       }
     ]
   },
@@ -289,6 +295,19 @@
         "Add an optional field recording track.",
         "Resample the group to a new audio track and record a live take while fading clips in and out; commit to it rather than editing afterwards."
       ]
+    },
+    {
+      "from_skill": "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
+      "name": "Evolving ambient bed from a captured micro-loop: two parallel band-pass lanes swept by unsynchronised slow LFOs, delays on each lane, an octave-down lane, all summed into a bus with a very slow, also unsynchronised auto-pan",
+      "goal": "Turn a short played loop (guitar or any instrument captured in a micro-looper) into an organic, never-repeating ambient backing pad. Two parallel (not series) narrow band-pass filters each let through a small wedge of the spectrum ('a flashlight on a painting') and sweep slowly up and down at different, unsynchronised rates. Each lane runs through a delay, one lane also gets an octave-down effect, and both feed a third bus with a very slow auto-pan that is unsynchronised with both filters, so three out-of-time movements create endless variation. Delta vs the generative/noodle-wind variants: an audio-loop source (not noise) with two async band-pass lanes, an octave-down lane and an async auto-pan bus.",
+      "steps": [
+        "Capture a small loop of played material in a micro-looper or sampler as the source nugget.",
+        "Send it to two parallel lanes (side by side, not one into the other), each with a narrow band-pass filter that passes only a small wedge of the spectrum.",
+        "Sweep each band-pass slowly up and down the spectrum with its own free-running LFO at a different, unsynchronised rate.",
+        "Put a delay on each lane; on one lane also add an octave-down effect to extend the range downward.",
+        "Route both lanes into a third bus with a very slow auto-pan whose rate is unrelated to both filter LFOs; add reverb.",
+        "Render a long take and use it as an ambient piece or as a bed to play grooves and melodies over."
+      ]
     }
   ],
   "merged_from": [
@@ -300,7 +319,8 @@
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "generative-midi-chord-arp-random-scale-quantize-pad",
-    "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit"
+    "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
+    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus"
   ],
   "tags": [
     "ambience",
@@ -347,6 +367,7 @@
     "random-modulator-soundscape-loop-voice-playhead-pan-random-delay-octave-feedback",
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "generative-midi-chord-arp-random-scale-quantize-pad",
-    "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit"
+    "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
+    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus"
   ]
 }
