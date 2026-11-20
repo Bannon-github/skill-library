@@ -1,0 +1,325 @@
+{
+ "name": "Wedge Lanes",
+ "seed": 1120,
+ "bpm": 90,
+ "bars": 30,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "A minor",
+ "sections": {
+  "padIn": 2,
+  "drumsIn": 4,
+  "melodyIn": 12,
+  "snareIn": 12,
+  "returnIn": 22,
+  "drumsOut": 28,
+  "end": 30
+ },
+ "focusMap": {
+  "_doc": "per-section variation weights [intro0-4, A4-12, B12-22, C22-26, outro26-30]",
+  "padLow": [
+   1.0,
+   0.1,
+   0.0,
+   0.5,
+   0.4
+  ],
+  "padMid": [
+   0.0,
+   1.0,
+   0.6,
+   0.8,
+   0.6
+  ],
+  "padHigh": [
+   0.0,
+   0.0,
+   0.8,
+   0.2,
+   0.0
+  ],
+  "texDeep": [
+   1.0,
+   0.25,
+   0.0,
+   0.7,
+   0.6
+  ],
+  "texThin": [
+   0.3,
+   0.9,
+   0.3,
+   0.3,
+   0.4
+  ],
+  "texBright": [
+   0.0,
+   0.0,
+   0.35,
+   0.3,
+   0.0
+  ],
+  "melody": [
+   0.0,
+   0.0,
+   1.0,
+   0.8,
+   0.0
+  ],
+  "bounds": [
+   0,
+   4,
+   12,
+   22,
+   26,
+   30
+  ]
+ },
+ "chords": {
+  "names": [
+   "Am",
+   "F",
+   "C",
+   "G"
+  ],
+  "barsPer": 2,
+  "bass": [
+   45,
+   41,
+   48,
+   43
+  ],
+  "tones": [
+   [
+    57,
+    60,
+    64,
+    67
+   ],
+   [
+    53,
+    57,
+    60,
+    64
+   ],
+   [
+    55,
+    60,
+    64,
+    67
+   ],
+   [
+    55,
+    59,
+    62,
+    67
+   ]
+  ]
+ },
+ "pad": {
+  "stepBeats": 2,
+  "seqA": [
+   0,
+   2,
+   1
+  ],
+  "seqB": [
+   3,
+   1,
+   2,
+   0
+  ],
+  "envDecay": 1.1,
+  "envAmtOct": 1.2,
+  "ampAtk": 0.08,
+  "shapeRandHz": 0.07,
+  "shapeAtt": 0.6,
+  "fmLfoHz": 0.11,
+  "fmAtt": 0.8,
+  "fmRatio": 2.0,
+  "var": {
+   "low": {
+    "hp": 60,
+    "lp": 700,
+    "drive": 2.2
+   },
+   "mid": {
+    "hp": 160,
+    "lp": 2400,
+    "drive": 1.0
+   },
+   "high": {
+    "hp": 650,
+    "lp": 5200,
+    "drive": 1.0
+   }
+  }
+ },
+ "texture": {
+  "loopNotes": [
+   69,
+   76,
+   72,
+   79
+  ],
+  "loopBeats": 3,
+  "noteBeats": 0.75,
+  "bpQ": 7.0,
+  "lfo1Hz": 0.0413,
+  "lfo2Hz": 0.0659,
+  "panHz": 0.0237,
+  "panDepth": 0.6,
+  "bpLoHz": 500,
+  "bpHiHz": 3000,
+  "dly1": [
+   0.43,
+   0.38
+  ],
+  "dly2": [
+   0.61,
+   0.33
+  ],
+  "octDownLvl": 0.8,
+  "verbRt": 6.0,
+  "verbMix": 0.45,
+  "var": {
+   "deep": {
+    "lp": 2200,
+    "lowShelfDb": 3
+   },
+   "thin": {
+    "hp": 900
+   },
+   "bright": {
+    "hp": 1800
+   }
+  }
+ },
+ "melody": {
+  "notes": [
+   [
+    0,
+    0,
+    76,
+    3
+   ],
+   [
+    0,
+    3,
+    74,
+    1
+   ],
+   [
+    1,
+    0,
+    72,
+    4
+   ],
+   [
+    2,
+    0,
+    72,
+    2
+   ],
+   [
+    2,
+    2,
+    69,
+    2
+   ],
+   [
+    3,
+    0,
+    67,
+    4
+   ],
+   [
+    4,
+    0,
+    72,
+    3
+   ],
+   [
+    4,
+    3,
+    74,
+    1
+   ],
+   [
+    5,
+    0,
+    76,
+    4
+   ],
+   [
+    6,
+    0,
+    74,
+    2
+   ],
+   [
+    6,
+    2,
+    71,
+    2
+   ],
+   [
+    7,
+    0,
+    74,
+    4
+   ]
+  ],
+  "phraseBars": 8,
+  "hp": 200,
+  "lpBase": 2200,
+  "spreadLfoHz": 0.09,
+  "spreadAtt": 0.5,
+  "pwLfoHz": 0.13,
+  "pwAtt": 0.3,
+  "decay": 0.9
+ },
+ "width": {
+  "phaserRate": 0.08,
+  "phaserDepth": 0.55,
+  "phaserMix": 0.35,
+  "sideGainPad": 1.3,
+  "chorusDepthMs": 0.4,
+  "chorusRate": 0.25,
+  "chorusMix": 0.3,
+  "bandSplits": [
+   120,
+   1600,
+   6000
+  ],
+  "bandSide": [
+   0.0,
+   0.8,
+   1.5,
+   0.9
+  ],
+  "corrFloor": 0.05
+ },
+ "kick": {
+  "startHz": 120,
+  "endHz": 45,
+  "tauMs": 30,
+  "decay": 0.16,
+  "gate": 0.42
+ },
+ "levels": {
+  "pad": 0.42,
+  "tex": 0.36,
+  "melody": 0.3,
+  "bass": 0.14,
+  "kick": 0.22,
+  "snare": 0.1,
+  "bassDuckDb": 12
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 160,
+  "fadeOutSec": 4.0
+ }
+}

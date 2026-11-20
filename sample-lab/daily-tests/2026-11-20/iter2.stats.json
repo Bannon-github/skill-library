@@ -1,0 +1,93 @@
+{
+ "values": {
+  "M1": -17.0,
+  "M2": 0.6753,
+  "M3": 0.7918,
+  "M4": 0.3412,
+  "M5": -24.0396,
+  "M6": -4.5443,
+  "M7": 3.0253,
+  "M8": 2.4976,
+  "M9": -13.5227,
+  "M12": -28.7807,
+  "M10": 1.173,
+  "M11": 0.1868,
+  "M13": 0.0112,
+  "M14": 0.0
+ },
+ "subs": {
+  "M1": 1.0,
+  "M2": 1.0,
+  "M3": 1.0,
+  "M4": 1.0,
+  "M5": 1.0,
+  "M6": 1.0,
+  "M7": 1.0,
+  "M8": 1.0,
+  "M9": 1.0,
+  "M12": 1.0,
+  "M10": 0.0,
+  "M11": 1.0,
+  "M13": 0.887,
+  "M14": 1.0
+ },
+ "gates": {
+  "G7_finite": true,
+  "G1_true_peak": true,
+  "G2_no_clip": true,
+  "G3_dc": true,
+  "G5_tail_or_loopclick": true,
+  "G6_start": true
+ },
+ "extra": {
+  "true_peak_dbtp": -4.3005,
+  "clipped": 0,
+  "dc": 0.0,
+  "tail_rms_db": -240.0,
+  "start_first_samples": 0.0
+ },
+ "score": 89.61,
+ "pass": false,
+ "events": 246,
+ "lengthSec": 83.0,
+ "lufs": -17.0,
+ "drumsInSec": 10.67,
+ "checks": {
+  "width": {
+   "haas12ms_mono_notch_db": -21.0,
+   "haas12ms_monoloss_db": 2.41,
+   "phaserpad_corr": 0.491,
+   "phaserpad_monoloss_db": 1.28,
+   "music_corr_before_after": [
+    0.559,
+    0.646
+   ],
+   "music_monoloss_before_after": [
+    1.08,
+    0.85
+   ],
+   "band_side_gains": [
+    0.0,
+    0.8,
+    2.42,
+    0.9
+   ],
+   "band_corr": [
+    1.0,
+    0.666,
+    0.271,
+    0.951
+   ]
+  },
+  "side_below_120Hz_db": -30.8,
+  "hf_spikes_over_8x": 28739,
+  "hf_env_12_40_vs_0_12_db": -9.0,
+  "lufs_intro_A_B_C_outro": [
+   -18.3,
+   -17.7,
+   -16.8,
+   -15.4,
+   -17.5
+  ]
+ }
+}
