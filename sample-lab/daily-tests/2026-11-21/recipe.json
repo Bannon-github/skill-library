@@ -1,0 +1,333 @@
+{
+ "name": "Block Loop",
+ "seed": 1121,
+ "bpm": 92,
+ "bars": 30,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "E minor",
+ "chords": {
+  "names": [
+   "Em",
+   "C",
+   "G",
+   "D"
+  ],
+  "barsPer": 2,
+  "bass": [
+   40,
+   36,
+   43,
+   38
+  ],
+  "tones": [
+   [
+    52,
+    55,
+    59,
+    64
+   ],
+   [
+    52,
+    55,
+    60,
+    64
+   ],
+   [
+    50,
+    55,
+    59,
+    62
+   ],
+   [
+    50,
+    54,
+    57,
+    62
+   ]
+  ]
+ },
+ "blockMap": {
+  "_doc": "16-bar block map scaled to 4-bar blocks for a 90 s test (7 blocks + one 2-bar squeeze-in). marks: - / + / ++",
+  "blocks": [
+   {
+    "b": [
+     0,
+     4
+    ],
+    "mark": "-",
+    "name": "intro (pad only)"
+   },
+   {
+    "b": [
+     4,
+     8
+    ],
+    "mark": "+",
+    "name": "B1 kick+bass in; top perc = 500 Hz noise hit on beat 4",
+    "top": [
+     "noise500"
+    ]
+   },
+   {
+    "b": [
+     8,
+     12
+    ],
+    "mark": "+",
+    "name": "B2 gear shift: noise hit out, Haas clap on 2&4 in",
+    "top": [
+     "clap"
+    ]
+   },
+   {
+    "b": [
+     12,
+     16
+    ],
+    "mark": "++",
+    "name": "B3 + soft offbeat open hat; turnaround bars 14-16 = lows scooped + looper octave step up",
+    "top": [
+     "clap",
+     "ohat"
+    ],
+    "turnaround": [
+     14,
+     16
+    ]
+   },
+   {
+    "b": [
+     16,
+     20
+    ],
+    "mark": "-",
+    "name": "B4 BREAK: kick/bass/perc out, pad + looper(+12); reverse swell into bar 20",
+    "top": [],
+    "break": true,
+    "reverseInto": 20
+   },
+   {
+    "b": [
+     20,
+     24
+    ],
+    "mark": "++",
+    "name": "B5 DROP: marker splash at 20, all back + call/response lead + grain octave layer; looper +12 again bar 22",
+    "top": [
+     "clap",
+     "ohat",
+     "noise500"
+    ],
+    "marker": 20
+   },
+   {
+    "b": [
+     24,
+     26
+    ],
+    "mark": "-",
+    "name": "SQUEEZE-IN / minimalism: kick + lead call only, no perc/bass",
+    "top": [],
+    "minimal": true
+   },
+   {
+    "b": [
+     26,
+     30
+    ],
+    "mark": "-",
+    "name": "outro: scoop-up bar 26 (lows out 1 bar), looper feedback 0 at 26 (dies after one cycle), kick out at 28",
+    "top": [],
+    "scoopUp": [
+     26,
+     27
+    ]
+   }
+  ],
+  "drumsIn": 4,
+  "drumsOut": 28
+ },
+ "pad": {
+  "pwLfoHz": 0.7,
+  "pwCenter": 0.5,
+  "pwDepth": 0.32,
+  "osc2Level": 0.6,
+  "osc2DetuneCents": 7.0,
+  "lpHz": 4200,
+  "atk": 1.4,
+  "rel": 2.6,
+  "voices": 2,
+  "voiceSpreadCents": 3.0,
+  "hpHz": 90
+ },
+ "delayChorus": {
+  "baseMs": 20.0,
+  "depthMs": 3.0,
+  "rate": 0.45,
+  "offset": 1.5708,
+  "fb": 0.35,
+  "mix": 0.5
+ },
+ "haas": {
+  "leftMs": 0.0,
+  "searchMs": [
+   8,
+   22
+  ]
+ },
+ "looper": {
+  "loopBars": 1,
+  "startBar": 4,
+  "notes": [
+   [
+    0,
+    64
+   ],
+   [
+    1.5,
+    67
+   ],
+   [
+    2.5,
+    71
+   ],
+   [
+    3.25,
+    74
+   ]
+  ],
+  "decay": 0.7,
+  "lp": 4000,
+  "octaveUp": [
+   [
+    14,
+    16
+   ],
+   [
+    16,
+    20
+   ],
+   [
+    22,
+    24
+   ],
+   [
+    24,
+    26
+   ]
+  ],
+  "killBar": 26,
+  "grainOct": {
+   "b": [
+    20,
+    22
+   ],
+   "wetMax": 0.25
+  }
+ },
+ "lead": {
+  "notes": [
+   [
+    20,
+    0,
+    74,
+    1.0
+   ],
+   [
+    20,
+    1,
+    71,
+    1.0
+   ],
+   [
+    20,
+    2,
+    67,
+    2.0
+   ],
+   [
+    21,
+    0,
+    69,
+    1.0
+   ],
+   [
+    21,
+    1,
+    71,
+    1.0
+   ],
+   [
+    21,
+    2,
+    74,
+    2.0
+   ],
+   [
+    22,
+    0,
+    76,
+    1.5
+   ],
+   [
+    22,
+    2,
+    74,
+    1.0
+   ],
+   [
+    22,
+    3,
+    69,
+    1.0
+   ],
+   [
+    24,
+    0,
+    74,
+    1.0
+   ],
+   [
+    24,
+    1,
+    71,
+    1.0
+   ],
+   [
+    24,
+    2,
+    67,
+    2.0
+   ]
+  ],
+  "lp": 2400,
+  "decay": 0.6
+ },
+ "kick": {
+  "startHz": 118,
+  "endHz": 41.2,
+  "tauMs": 30,
+  "decay": 0.16,
+  "gate": 0.42
+ },
+ "levels": {
+  "pad": 0.45,
+  "loop": 0.3,
+  "lead": 0.26,
+  "bass": 0.11,
+  "kick": 0.18,
+  "clap": 0.1,
+  "ohat": 0.045,
+  "noise500": 0.07,
+  "rev": 0.12,
+  "splash": 0.05,
+  "bassDuckDb": 12
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 220,
+  "fadeOutSec": 4.0
+ }
+}
