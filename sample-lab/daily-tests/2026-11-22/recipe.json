@@ -1,0 +1,381 @@
+{
+ "name": "Phase Rumble",
+ "seed": 1122,
+ "bpm": 96,
+ "bars": 32,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "F minor",
+ "chords": {
+  "names": [
+   "Fm",
+   "Db",
+   "Ab",
+   "Eb",
+   "Dbmaj7",
+   "Bbm7",
+   "Ebsus4"
+  ],
+  "tones": [
+   [
+    53,
+    56,
+    60,
+    65
+   ],
+   [
+    53,
+    56,
+    61,
+    65
+   ],
+   [
+    51,
+    56,
+    60,
+    63
+   ],
+   [
+    51,
+    55,
+    58,
+    63
+   ],
+   [
+    53,
+    56,
+    60,
+    61
+   ],
+   [
+    53,
+    56,
+    61,
+    65
+   ],
+   [
+    51,
+    56,
+    58,
+    63
+   ]
+  ],
+  "bass": [
+   29,
+   37,
+   32,
+   39,
+   37,
+   34,
+   39
+  ],
+  "_doc": "segments [startBar,endBar,chordIdx]; fall uses a new low-energy progression Dbmaj7-Bbm7; hang bar = unique Ebsus4 swell",
+  "segments": [
+   [
+    0,
+    2,
+    0
+   ],
+   [
+    2,
+    4,
+    1
+   ],
+   [
+    4,
+    6,
+    2
+   ],
+   [
+    6,
+    8,
+    3
+   ],
+   [
+    8,
+    10,
+    0
+   ],
+   [
+    10,
+    12,
+    1
+   ],
+   [
+    12,
+    14,
+    2
+   ],
+   [
+    14,
+    16,
+    3
+   ],
+   [
+    16,
+    18,
+    4
+   ],
+   [
+    18,
+    20,
+    5
+   ],
+   [
+    20,
+    22,
+    0
+   ],
+   [
+    22,
+    23,
+    1
+   ],
+   [
+    23,
+    24,
+    6
+   ],
+   [
+    24,
+    26,
+    0
+   ],
+   [
+    26,
+    28,
+    1
+   ],
+   [
+    28,
+    30,
+    2
+   ],
+   [
+    30,
+    32,
+    0
+   ]
+  ]
+ },
+ "sections": [
+  {
+   "b": [
+    0,
+    4
+   ],
+   "name": "intro: phaser pad + delay peaks only",
+   "els": [
+    "pad",
+    "peaks"
+   ]
+  },
+  {
+   "b": [
+    4,
+    8
+   ],
+   "name": "A1: rumble kick + bass in; committed turnaround bar 7",
+   "els": [
+    "pad",
+    "peaks",
+    "kick",
+    "bass"
+   ],
+   "turnaround": [
+    7,
+    8
+   ]
+  },
+  {
+   "b": [
+    8,
+    16
+   ],
+   "name": "A2 full: + clap, soft offbeat hat, ostinato lead; committed turnaround bar 15",
+   "els": [
+    "pad",
+    "peaks",
+    "kick",
+    "bass",
+    "clap",
+    "ohat",
+    "lead"
+   ],
+   "turnaround": [
+    15,
+    16
+   ]
+  },
+  {
+   "b": [
+    16,
+    20
+   ],
+   "name": "trilogy 1 FALL: chords stripped to new Dbmaj7-Bbm7, no rhythm",
+   "els": [
+    "pad",
+    "peaks"
+   ]
+  },
+  {
+   "b": [
+    20,
+    23
+   ],
+   "name": "trilogy 2 RISE: kick returns through opening HP, hat back, noise sweep",
+   "els": [
+    "pad",
+    "peaks",
+    "kick",
+    "ohat",
+    "sweep"
+   ],
+   "rise": true
+  },
+  {
+   "b": [
+    23,
+    24
+   ],
+   "name": "trilogy 3 HANG: return withheld one bar, unique Ebsus4 swell",
+   "els": [
+    "pad"
+   ],
+   "hang": true
+  },
+  {
+   "b": [
+    24,
+    30
+   ],
+   "name": "CLIMAX full return",
+   "els": [
+    "pad",
+    "peaks",
+    "kick",
+    "bass",
+    "clap",
+    "ohat",
+    "lead"
+   ]
+  },
+  {
+   "b": [
+    30,
+    32
+   ],
+   "name": "outro: pad + kick until bar 31",
+   "els": [
+    "pad",
+    "peaks",
+    "kick"
+   ],
+   "kickOut": 31
+  }
+ ],
+ "drumsIn": 4,
+ "pad": {
+  "voices": 2,
+  "spreadCents": 7,
+  "atk": 1.2,
+  "rel": 2.4,
+  "lpHz": 5800,
+  "hpHz": 120
+ },
+ "phaser": {
+  "stages": 12,
+  "fb": 0.62,
+  "loHz": 220,
+  "octaves": 3.6,
+  "cycleBars": 4,
+  "fallFrac": 0.06,
+  "spreadPhase": 0.25,
+  "mix": 0.5
+ },
+ "peaks": {
+  "delayBeats": 0.75,
+  "fb": 0.3,
+  "hpQ": 5.0,
+  "lpQ": 5.0,
+  "hpHz": [
+   450,
+   1500
+  ],
+  "lpHz": [
+   1300,
+   4200
+  ],
+  "hpRate": 0.11,
+  "lpRate": 0.067,
+  "onsetBars": 4,
+  "level": 0.55
+ },
+ "bandVerb": {
+  "rt": 3.2,
+  "lo": 600,
+  "hi": 2800,
+  "level": 0.5
+ },
+ "kick": {
+  "startHz": 140,
+  "endHz": 44,
+  "tauMs": 32,
+  "decay": 0.2,
+  "gate": 0.42,
+  "vel": [
+   1.0,
+   0.8,
+   0.9,
+   0.8
+  ]
+ },
+ "rumble": {
+  "nyThreshDb": -30,
+  "nyRatio": 8,
+  "nyAtk": 0.012,
+  "nyRel": 0.22,
+  "nyLevel": 0.5,
+  "drive": 0.15,
+  "driveLevel": 0.25,
+  "verbRt": 2.6,
+  "verbSize": 0.6,
+  "verbDamp": 2500,
+  "duckRel": 0.25,
+  "lpLo": 140,
+  "lpHi": 520,
+  "lfoNote": 8,
+  "slowHz": 0.05,
+  "verbLevel": 0.55
+ },
+ "lead": {
+  "notes": [
+   72,
+   68,
+   65,
+   68
+  ],
+  "decay": 0.35,
+  "lp": 3800
+ },
+ "levels": {
+  "pad": 0.42,
+  "peaks": 0.22,
+  "bverb": 0.2,
+  "lead": 0.16,
+  "bass": 0.1,
+  "kick": 0.17,
+  "rumble": 0.1,
+  "clap": 0.09,
+  "ohat": 0.05,
+  "sweep": 0.05,
+  "throw": 0.15,
+  "bassDuckDb": 10
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 200,
+  "fadeOutSec": 4.0
+ }
+}
