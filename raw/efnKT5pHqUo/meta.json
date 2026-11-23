@@ -1,0 +1,48 @@
+{
+  "video_id": "efnKT5pHqUo",
+  "title": "Decode ACTION CUES with Melodic Cells",
+  "url": "https://www.youtube.com/watch?v=efnKT5pHqUo",
+  "fetched_at": "2026-11-23T16:21:08.381306+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Mattia Chiappa",
+  "duration": 643,
+  "ok": true,
+  "cue_count": 241,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/efnKT5pHqUo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/efnKT5pHqUo/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "de-DE(auto)",
+        "id(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

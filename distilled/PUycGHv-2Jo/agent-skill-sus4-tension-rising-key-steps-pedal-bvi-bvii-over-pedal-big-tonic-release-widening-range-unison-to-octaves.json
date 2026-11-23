@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves",
+  "name": "Tension-to-release build: sus4 dissonance released on the last note, a theme stated on the dominant then the tonic, rising key steps, an Ab pedal with Bb over it (bVI then bVII over a bVI pedal) resolving to a big C, while dynamics and pitch range widen and the theme moves from unison to octaves",
+  "goal": "Turn a plain theme into an emotional build that holds back release: replace the plain chord with a sus4 and release it as the melody lands, introduce the theme first on the dominant (G sus4) and then the tonic, step the key upward to raise anticipation, then hold a low pedal on bVI (Ab in C) with a bVII (Bb) chord on top for two bars each, and finally resolve to a big tonic (C) with a timpani-style roll into it, while dynamics grow, the pitch range opens out from narrow to wide, and the theme goes from unison doubling to octaves.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "PUycGHv-2Jo",
+    "url": "https://www.youtube.com/watch?v=PUycGHv-2Jo",
+    "title": "Tension and Release: How to Add Emotional Impact To Your Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/PUycGHv-2Jo/agent-skill-sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves.json",
+    "batch": "2026-11-23-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with orchestral or synth string/brass/woodwind patches (any library or synths)",
+    "A roll/swell (timpani, noise swell) and a rising gliss or riser bounced to audio"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Home key, e.g. C major",
+      "required": true
+    },
+    {
+      "name": "theme",
+      "type": "midi",
+      "description": "A simple short theme",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "build",
+      "type": "audio",
+      "description": "Section that builds anticipation and releases onto the tonic"
+    },
+    {
+      "name": "harmony_plan",
+      "type": "notes",
+      "description": "Chord/key steps with bar counts"
+    }
+  ],
+  "constraints": [
+    "Release only at key points; build anticipation first (the transcript: don't resolve in two and a half seconds).",
+    "Chord/key steps (G sus4 -> C -> Eb -> Ab pedal, Bb over Ab -> C) are the presenter's sketch in C; transpose freely.",
+    "Specific sample libraries in the source are not required.",
+    "Steady pitch; no random note variation (Matt's preference).",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Contrast: play the theme over a plain major chord, then over a sus4 that resolves to the major exactly as the melody lands on its last note.",
+      "tool": "Chord layer",
+      "expect": "Small dissonance-release that adds impact"
+    },
+    {
+      "n": 2,
+      "action": "Open with anticipation: short repeated string figure (tremolo/trim) and a counter-line, then state the theme first on the dominant (sus4) and then in the tonic.",
+      "tool": "Strings + woodwind lead",
+      "expect": "Theme teased before its full statement"
+    },
+    {
+      "n": 3,
+      "action": "Raise tension by stepping the key/harmony up at phrase ends (in the sketch: C -> Eb, then up again) while adding horns and light percussion. No release yet.",
+      "tool": "Harmony + orchestration",
+      "expect": "Rising anticipation"
+    },
+    {
+      "n": 4,
+      "action": "Final approach: a low pedal on bVI (Ab in C) held for 2 bars, then a bVII (Bb) chord over the same pedal for 2 bars with added movement, then resolve onto a big tonic chord, with a roll (timpani or noise swell) leading into it.",
+      "tool": "Low strings/bass pedal + chords + roll",
+      "expect": "Strong arrival on the tonic"
+    },
+    {
+      "n": 5,
+      "action": "Grow dynamics and widen pitch range throughout: start narrow and soft, end wide (low brass/tuba under, high parts above). Double the theme in unison the first time, then in octaves once the bVII arrives.",
+      "tool": "Orchestration",
+      "expect": "Build feels bigger, not just louder"
+    },
+    {
+      "n": 6,
+      "action": "Add rising gliss/riser effects as audio clips placed exactly where needed (bounce them out first for precise placement).",
+      "tool": "Audio clip",
+      "expect": "Ear candy lands exactly on the transitions"
+    }
+  ],
+  "verification": [
+    "The tonic chord is withheld until the planned release point.",
+    "Harmonic plan contains a bVI pedal with bVII over it in the 4 bars before release.",
+    "Pitch range (lowest to highest note) is wider at the release than at the start."
+  ],
+  "tags": [
+    "tension",
+    "release",
+    "harmony",
+    "sus4",
+    "pedal-point",
+    "key-change",
+    "build",
+    "orchestration",
+    "bVI-bVII-I",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves"
+}

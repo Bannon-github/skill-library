@@ -129,3 +129,11 @@ Source: [Phaser Drums - How to turn a Phaser into a Drum Synthesizer](https://ww
 - Turn the sweep/centre frequency by hand to find the tuning range, then sequence it per step (automation or CV/mod lane) to play a melodic percussion line in key.
 - Sequence feedback/resonance per step too, so some hits ring longer as accents.
 - Optionally modulate the phaser's internal LFO rate/amount slowly for evolving timbre, then add reverb.
+
+### Phaser as a mix and arrangement tool (delta on our phaser pads): static notch-centre tone shaping with LFO depth at zero, few-notch high-spread slow swirl on pads, a phaser after the delay send to clear the centre, and a bus phaser switched on only for a pre-chorus/outro or phrase-end ear candy
+Source: [How To Use Phasers In Your Songs](https://www.youtube.com/watch?v=xO9CiDa3324) · was `phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation`
+- Bass tone shaping: phaser on a synth bass, ~3 notches, LFO amount 0; sweep only the centre frequency to audition tones and keep the one you like. For extreme colour lower spread, raise feedback to ~50%, 4-5 notches; blend with dry/wet (automatable).
+- Pad life: ~3 notches, spread high, amount up, slow LFO so the left/right phase relationship swirls; check on headphones; raise rate only for a stronger effect.
+- Hat loop: phaser with ~5 notches, feedback up to hear notch resonances, slow LFO, centre frequency in the hats' upper range; use on looser, fuller hats.
+- Send trick: on a delay (or reverb) return, add a slow 4-notch phaser after the delay so repeats smear around the stereo image and clear room for the centre element.
+- Arrangement variation: automate a phaser on the bus (everything except the lead) for a single section such as the pre-chorus or outro, or for the last beat of a phrase as ear candy.

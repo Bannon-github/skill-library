@@ -2,7 +2,7 @@
   "video_id": "z7xVfv8aByI",
   "title": "Multigrain Resampling | Recycling and granulizing sounds to create ambient textures",
   "url": "https://www.youtube.com/watch?v=z7xVfv8aByI",
-  "fetched_at": "2026-11-20T16:17:41.784353+00:00",
+  "fetched_at": "2026-11-23T16:30:15.244622+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en-US",
@@ -63,17 +63,17 @@
     {
       "retry": 1,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.2
+      "sleep_s": 4.8
     },
     {
       "retry": 2,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.1
+      "sleep_s": 8.8
     },
     {
       "retry": 3,
       "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 17.6
+      "sleep_s": 16.5
     }
   ],
   "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."

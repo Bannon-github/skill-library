@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "id": "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation",
+  "name": "Phaser as a mix and arrangement tool (delta on our phaser pads): static notch-centre tone shaping with LFO depth at zero, few-notch high-spread slow swirl on pads, a phaser after the delay send to clear the centre, and a bus phaser switched on only for a pre-chorus/outro or phrase-end ear candy",
+  "goal": "Use a phaser on sustained, harmonically rich sources (not short or narrow-band ones). Delta beyond our existing phaser-pad variants: (1) tone-shape a bass by setting the LFO amount to zero and sweeping only the notch centre (low notch count; more notches/feedback ~50% for extreme), (2) keep pads to ~3 notches with high spread and a slow LFO so they swirl L/R and leave the centre free, (3) put a slow 4-notch phaser after a delay (or reverb) on a send so the echoes spread away from the centre element, (4) automate a phaser on the bus for one section (pre-chorus, outro) or a phrase end as variation.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "xO9CiDa3324",
+    "url": "https://www.youtube.com/watch?v=xO9CiDa3324",
+    "title": "How To Use Phasers In Your Songs",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/xO9CiDa3324/agent-skill-phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation.json",
+    "batch": "2026-11-23-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a phaser that exposes notches/stages, centre frequency, spread, feedback, LFO rate/amount and dry/wet",
+    "Send/return tracks"
+  ],
+  "inputs": [
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Sustained harmonically rich source (pad, bass, loose hat loop, delay return)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "phased_parts",
+      "type": "audio",
+      "description": "Bass tone variants, swirling pad, phased delay return, section variation"
+    },
+    {
+      "name": "automation",
+      "type": "notes",
+      "description": "Section on/off and dry/wet automation"
+    }
+  ],
+  "constraints": [
+    "Works best on sounds that are steady in level and full-spectrum; little effect on short, narrow-band sounds.",
+    "Fewer notches = smoother; more notches = more 'ridgy'/wavy. Keep pads to low notch counts.",
+    "Keep LFO slow on held pads so the pitch/tone movement stays gentle (Matt dislikes wobbly sounds); tone-shaping mode uses no LFO at all.",
+    "Hat-loop phasing (5 notches, feedback up) suits loose, open hats; avoid making a rapid clicky texture (Matt's preference).",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Bass tone shaping: phaser on a synth bass, ~3 notches, LFO amount 0; sweep only the centre frequency to audition tones and keep the one you like. For extreme colour lower spread, raise feedback to ~50%, 4-5 notches; blend with dry/wet (automatable).",
+      "tool": "Phaser (static)",
+      "expect": "Distinct bass tones without movement"
+    },
+    {
+      "n": 2,
+      "action": "Pad life: ~3 notches, spread high, amount up, slow LFO so the left/right phase relationship swirls; check on headphones; raise rate only for a stronger effect.",
+      "tool": "Phaser on pad",
+      "expect": "Pad swirls in stereo and leaves the centre open"
+    },
+    {
+      "n": 3,
+      "action": "Hat loop: phaser with ~5 notches, feedback up to hear notch resonances, slow LFO, centre frequency in the hats' upper range; use on looser, fuller hats.",
+      "tool": "Phaser on hat loop",
+      "expect": "Stale loop gets slow movement"
+    },
+    {
+      "n": 4,
+      "action": "Send trick: on a delay (or reverb) return, add a slow 4-notch phaser after the delay so repeats smear around the stereo image and clear room for the centre element.",
+      "tool": "Return track: delay -> phaser",
+      "expect": "Centre element clearer; echoes wider"
+    },
+    {
+      "n": 5,
+      "action": "Arrangement variation: automate a phaser on the bus (everything except the lead) for a single section such as the pre-chorus or outro, or for the last beat of a phrase as ear candy.",
+      "tool": "Bus phaser + automation",
+      "expect": "Section contrast without new parts"
+    }
+  ],
+  "verification": [
+    "Bass tone-shaping render has no periodic movement (LFO amount 0).",
+    "Pad with phaser keeps correlation >= 0 while swirling.",
+    "Bus phaser is active only in the automated section(s)."
+  ],
+  "tags": [
+    "phaser",
+    "pad",
+    "stereo",
+    "send-fx",
+    "delay",
+    "bass-tone",
+    "arrangement-variation",
+    "ear-candy",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation"
+}

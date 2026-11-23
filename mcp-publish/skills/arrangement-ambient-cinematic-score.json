@@ -110,6 +110,12 @@
         "video_id": "CW3jk3BgE1E",
         "url": "https://www.youtube.com/watch?v=CW3jk3BgE1E",
         "title": "Learn to make ambient music in 4 simple steps"
+      },
+      {
+        "from_skill": "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
+        "video_id": "yMJaUS776yQ",
+        "url": "https://www.youtube.com/watch?v=yMJaUS776yQ",
+        "title": "How to Write Investigative Tension Cues | 52 Cues Podcast, 2025 Week 34"
       }
     ]
   },
@@ -467,6 +473,23 @@
         "Make a frequency-slot map (low / mid / high) beside the focus map. When two voices want the same slot (dark rumbling texture + dark pad), either use a brighter pad variation with little low end, make the texture thin and high from the start, or cut the texture's lows before/while the low pad enters. Use a mixer's 3-band EQ as a playable variation control, not set-and-forget.",
         "Perform/automate the main evolution by hand along the focus map, letting the slow automatic modulation keep background voices alive; render."
       ]
+    },
+    {
+      "from_skill": "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
+      "name": "Light/investigative tension cue form: one-chord drone + offset pulse 'rhythmic engine', a new gear every 4 bars (new layer or octaves), a mediant chord change as the last lever before an ABA breakdown that simmers, and a final A that is really A+B, ending on a delay-free button",
+      "goal": "Write a 'light tension' cue (analysis, deduction, assembling clues) where no chord progression drives the music: hold one minor chord as a drone, replace the harmonic engine with interlocking synth pulses placed off the strong beats, add a gear of energy every 4 bars (a new layer, or octaves/harmonies on an existing part), use a mediant root move (i -> VI, later iv) as the last lever before the breakdown, make B a breakdown (development by reduction) that simmers and rebuilds, and return with an A that combines A and B material with no new sounds, more octaves, denser drums and booms every 2 bars into a final button.",
+      "steps": [
+        "Pick a minor key and hold one chord (i) as a drone for several phrases. Write a short, syncopated melodic hook first (mallet-type lead), leaving space after each phrase.",
+        "Put a stereo delay on the lead: left a dotted 1/8, right a 1/4, with a low-pass filter on the repeats so each echo darkens. This adds 1/16-note inner motion for free.",
+        "Fill the space with call and response: the lead calls, a dark piano/keys answers with a counter-line (a little chromaticism), and a third voice (metal/tank-drum-like pluck, also on the delay) completes the final response.",
+        "Build the rhythmic engine instead of chord changes: a downbeat bass pulse, with a bass mirroring the low piano roots in the same dotted rhythm, then noise 'ticks' accenting the end of each beat, and a second synth pulse also pushed onto the off-beat 'and'. Offset every pulse so nothing stacks on the strong downbeats.",
+        "Every 4 bars add one gear: a new layer (second pulse, ticks, light backbeat, bass) or octaves/harmonies on an existing part. Put a boom on the downbeat of each new double phrase (every 8 bars), on every other phrase.",
+        "When there are no new layers left, pull the chord lever: move i to VI (mediant, e.g. Fm -> Db) right before the breakdown, keeping the same melody.",
+        "Breakdown (B = breakdown, not bridge): enter with a cymbal swell/noise riser and a boom on the downbeat to mark arrival, then strip density, let it simmer, sprinkle a little of the main melody on the piano, add an octave to the pad, then bring pulses back and build.",
+        "End the breakdown on a cliffhanger edit point (unresolved, e.g. a flat-2 note borrowed from Phrygian) and always sweep into it with a whoosh/reverse; automate delays off so no echoes ring into the edit point.",
+        "Return to A as A+B: restart from the energy where you left (VI), alternate VI -> i, then resolve to iv instead of i (minor plagal twist). Combine the B-section melody with A material, add octaves (single -> double -> triple, high keys doubling the lead; when stacking upward lower velocities), densify drums, booms every 2 bars.",
+        "Finish on a button with a final boom; automate delay sends off so nothing trails past the button."
+      ]
     }
   ],
   "merged_from": [
@@ -486,7 +509,8 @@
     "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
     "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
     "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb",
-    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody"
+    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody",
+    "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point"
   ],
   "tags": [
     "ambient",
@@ -541,6 +565,7 @@
     "envelope-matched-chord-spacing-6s-attack-filter-env-long-verb-tail-synth-note-gated-field-recording-fx-4bar-lfo-sub",
     "ambient-home-base-step-away-and-return-progression-static-sequence-anchor-expanding-harmonic-distance-stay-in-key-delayed-echo-copy",
     "drumless-emotional-ambient-cue-sneak-in-layers-high-cut-pads-reverse-delay-piano-artifacts-bass-entry-note-root-vs-flat-six-pulsing-piano-filter-revealed-texture-motif-ebb",
-    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody"
+    "ambient-variation-sets-per-voice-presence-focus-map-frequency-slot-plan-texture-pad-melody",
+    "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point"
   ]
 }

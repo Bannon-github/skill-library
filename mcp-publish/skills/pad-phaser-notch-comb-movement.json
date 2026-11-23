@@ -74,6 +74,12 @@
         "video_id": "TSiH9MUh4Ec",
         "url": "https://www.youtube.com/watch?v=TSiH9MUh4Ec",
         "title": "Phaser Drums - How to turn a Phaser into a Drum Synthesizer"
+      },
+      {
+        "from_skill": "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation",
+        "video_id": "xO9CiDa3324",
+        "url": "https://www.youtube.com/watch?v=xO9CiDa3324",
+        "title": "How To Use Phasers In Your Songs"
       }
     ]
   },
@@ -323,6 +329,18 @@
         "Sequence feedback/resonance per step too, so some hits ring longer as accents.",
         "Optionally modulate the phaser's internal LFO rate/amount slowly for evolving timbre, then add reverb."
       ]
+    },
+    {
+      "from_skill": "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation",
+      "name": "Phaser as a mix and arrangement tool (delta on our phaser pads): static notch-centre tone shaping with LFO depth at zero, few-notch high-spread slow swirl on pads, a phaser after the delay send to clear the centre, and a bus phaser switched on only for a pre-chorus/outro or phrase-end ear candy",
+      "goal": "Use a phaser on sustained, harmonically rich sources (not short or narrow-band ones). Delta beyond our existing phaser-pad variants: (1) tone-shape a bass by setting the LFO amount to zero and sweeping only the notch centre (low notch count; more notches/feedback ~50% for extreme), (2) keep pads to ~3 notches with high spread and a slow LFO so they swirl L/R and leave the centre free, (3) put a slow 4-notch phaser after a delay (or reverb) on a send so the echoes spread away from the centre element, (4) automate a phaser on the bus for one section (pre-chorus, outro) or a phrase end as variation.",
+      "steps": [
+        "Bass tone shaping: phaser on a synth bass, ~3 notches, LFO amount 0; sweep only the centre frequency to audition tones and keep the one you like. For extreme colour lower spread, raise feedback to ~50%, 4-5 notches; blend with dry/wet (automatable).",
+        "Pad life: ~3 notches, spread high, amount up, slow LFO so the left/right phase relationship swirls; check on headphones; raise rate only for a stronger effect.",
+        "Hat loop: phaser with ~5 notches, feedback up to hear notch resonances, slow LFO, centre frequency in the hats' upper range; use on looser, fuller hats.",
+        "Send trick: on a delay (or reverb) return, add a slow 4-notch phaser after the delay so repeats smear around the stereo image and clear room for the centre element.",
+        "Arrangement variation: automate a phaser on the bus (everything except the lead) for a single section such as the pre-chorus or outro, or for the last beat of a phrase as ear candy."
+      ]
     }
   ],
   "merged_from": [
@@ -336,7 +354,8 @@
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
     "phaser-chorus-pure-wave-octave-pad",
     "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
-    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance"
+    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance",
+    "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation"
   ],
   "tags": [
     "allpass",
@@ -385,6 +404,7 @@
     "build-stereo-phaser-from-allpass-chain-1-7-stages-dry-plus-wet-half-gain-q-0-7071-center-500hz-exponential-lfo-16x-depth-right-channel-phase-offset-180",
     "phaser-chorus-pure-wave-octave-pad",
     "phaser-pad-four-bar-ramp-inverse-filter-peaks-reverb-mix-counter-automation",
-    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance"
+    "phaser-drums-ping-allpass-bank-short-impulse-feedback-ring-poles-sequenced-sweep-and-resonance",
+    "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation"
   ]
 }

@@ -44,6 +44,12 @@
         "video_id": "ET1CvImwzxw",
         "url": "https://www.youtube.com/watch?v=ET1CvImwzxw",
         "title": "How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track"
+      },
+      {
+        "from_skill": "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves",
+        "video_id": "PUycGHv-2Jo",
+        "url": "https://www.youtube.com/watch?v=PUycGHv-2Jo",
+        "title": "Tension and Release: How to Add Emotional Impact To Your Music"
       }
     ]
   },
@@ -210,6 +216,19 @@
         "Add swells: a synth with a long attack and heavy reverb playing the common tones (G, A) a few times across the section, no pitch bend.",
         "Collect all clips; arrange by muting/unmuting layers per section (e.g. pad drops out leaving the dyad layer)."
       ]
+    },
+    {
+      "from_skill": "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves",
+      "name": "Tension-to-release build: sus4 dissonance released on the last note, a theme stated on the dominant then the tonic, rising key steps, an Ab pedal with Bb over it (bVI then bVII over a bVI pedal) resolving to a big C, while dynamics and pitch range widen and the theme moves from unison to octaves",
+      "goal": "Turn a plain theme into an emotional build that holds back release: replace the plain chord with a sus4 and release it as the melody lands, introduce the theme first on the dominant (G sus4) and then the tonic, step the key upward to raise anticipation, then hold a low pedal on bVI (Ab in C) with a bVII (Bb) chord on top for two bars each, and finally resolve to a big tonic (C) with a timpani-style roll into it, while dynamics grow, the pitch range opens out from narrow to wide, and the theme goes from unison doubling to octaves.",
+      "steps": [
+        "Contrast: play the theme over a plain major chord, then over a sus4 that resolves to the major exactly as the melody lands on its last note.",
+        "Open with anticipation: short repeated string figure (tremolo/trim) and a counter-line, then state the theme first on the dominant (sus4) and then in the tonic.",
+        "Raise tension by stepping the key/harmony up at phrase ends (in the sketch: C -> Eb, then up again) while adding horns and light percussion. No release yet.",
+        "Final approach: a low pedal on bVI (Ab in C) held for 2 bars, then a bVII (Bb) chord over the same pedal for 2 bars with added movement, then resolve onto a big tonic chord, with a roll (timpani or noise swell) leading into it.",
+        "Grow dynamics and widen pitch range throughout: start narrow and soft, end wide (low brass/tuba under, high parts above). Double the theme in unison the first time, then in octaves once the bVII arrives.",
+        "Add rising gliss/riser effects as audio clips placed exactly where needed (bounce them out first for precise placement)."
+      ]
     }
   ],
   "merged_from": [
@@ -218,7 +237,8 @@
     "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
     "drone-role-pedal-point-and-polychords",
     "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
-    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells"
+    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+    "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves"
   ],
   "tags": [
     "ambient",
@@ -251,6 +271,7 @@
     "compress-expand-voice-leading-seconds-to-thirds-strata-a-perfect-consonance-apart-held-common-tone-preparation-modal-layers",
     "drone-role-pedal-point-and-polychords",
     "ambient-meta-chord-loop-2-4-chords-one-step-voice-leading-mixed-interval-extensions-no-dominant-7-first-inversion-v-bvii-constant-ostinato-line",
-    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells"
+    "one-progression-to-ambient-layers-parallel-maj7-bass-root-split-upper-voicing-octave-tighten-common-tone-root-4-5-arp-seconds-dyad-pad-anticipated-melody-octave-double-long-attack-swells",
+    "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves"
   ]
 }

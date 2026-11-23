@@ -1,0 +1,109 @@
+{
+ "topic": "wavetable hybrid cinematic pad modulation tutorial",
+ "date": "2026-11-23",
+ "params": {
+  "topic": "wavetable hybrid cinematic pad modulation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ExUaHaZ_sgg",
+   "title": "Psylos Tutorial: Full Walkthrough of the Cinematic Hybrid Synthesizer",
+   "channel": null,
+   "duration": 852,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=ExUaHaZ_sgg",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.5
+  },
+  {
+   "id": "gV0UrSKt_6I",
+   "title": "ESQ-1 Let's Patch! | Live Sound Design Session | Vintage Hybrid Synth (1986) | Process Walkthrough",
+   "channel": null,
+   "duration": 857,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=gV0UrSKt_6I",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "joSSK6dvpwk",
+   "title": "How to make 4 AMAZING PADS in VITAL for Melodic House and Progressive House  (+preset)",
+   "channel": null,
+   "duration": 995,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=joSSK6dvpwk",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "un9HdSAoZrY",
+   "title": "MASSIVE: Design a Cinematic Soundscape Pad",
+   "channel": null,
+   "duration": 513,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=un9HdSAoZrY",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5
+  },
+  {
+   "id": "JzFVFVVQjIA",
+   "title": "Arturia Microfreak   Patch Design   Pad 01   Soft, Detune, Wavetable, Chorus",
+   "channel": null,
+   "duration": 475,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=JzFVFVVQjIA",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5
+  },
+  {
+   "id": "4DID4zQe9X8",
+   "title": "Orbik Deep Dive #1: Oscillators, FM Bells and Orbit Scan Wavetables",
+   "channel": null,
+   "duration": 443,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=4DID4zQe9X8",
+   "query": "wavetable hybrid cinematic pad modulation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "rfkFo2AaLDI",
+   "why": "duration 227s"
+  },
+  {
+   "id": "7yby6t7oLls",
+   "why": "duration 47s"
+  },
+  {
+   "id": "JP5yTtT-gbk",
+   "why": "already known"
+  },
+  {
+   "id": "rMz9xCrmZ5Q",
+   "why": "negative title signal"
+  },
+  {
+   "id": "iEWUNMjhkAs",
+   "why": "duration 5124s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

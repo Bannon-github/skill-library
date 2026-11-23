@@ -1,0 +1,351 @@
+{
+  "video_id": "z7xVfv8aByI",
+  "title": "Multigrain Resampling | Recycling and granulizing sounds to create ambient textures",
+  "url": "https://www.youtube.com/watch?v=z7xVfv8aByI",
+  "fetched_at": "2026-11-23T16:19:22.952956+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Intellijel",
+  "duration": 1223,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "jYrz49kwOWg",
+  "title": "3 Basic Bass Patches Every Producer Should Know | 100 Sound Design Tips (Ep. 8)",
+  "url": "https://www.youtube.com/watch?v=jYrz49kwOWg",
+  "fetched_at": "2026-11-23T16:20:13.282234+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 1338,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "yMJaUS776yQ",
+  "title": "How to Write Investigative Tension Cues | 52 Cues Podcast, 2025 Week 34",
+  "url": "https://www.youtube.com/watch?v=yMJaUS776yQ",
+  "fetched_at": "2026-11-23T16:20:59.427061+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "52 Cues",
+  "duration": 2760,
+  "ok": true,
+  "cue_count": 923,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/yMJaUS776yQ/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/yMJaUS776yQ/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "efnKT5pHqUo",
+  "title": "Decode ACTION CUES with Melodic Cells",
+  "url": "https://www.youtube.com/watch?v=efnKT5pHqUo",
+  "fetched_at": "2026-11-23T16:21:08.381306+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Mattia Chiappa",
+  "duration": 643,
+  "ok": true,
+  "cue_count": 241,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/efnKT5pHqUo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/efnKT5pHqUo/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "GXNWpGSkgBo",
+  "title": "How to Compose a Seamless Transition Between Themes",
+  "url": "https://www.youtube.com/watch?v=GXNWpGSkgBo",
+  "fetched_at": "2026-11-23T16:22:38.499965+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ryan Leach",
+  "duration": 438,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "uKpK0L-0KwA",
+  "title": "How to Make a Meditation Track From Scratch in Ableton Live (Step by Step Tutorial) - Part 1",
+  "url": "https://www.youtube.com/watch?v=uKpK0L-0KwA",
+  "fetched_at": "2026-11-23T16:24:14.970582+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "FREQUENCY TRIBE",
+  "duration": 1706,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.8
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "PUycGHv-2Jo",
+  "title": "Tension and Release: How to Add Emotional Impact To Your Music",
+  "url": "https://www.youtube.com/watch?v=PUycGHv-2Jo",
+  "fetched_at": "2026-11-23T16:25:20.372066+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Guy Michelmore",
+  "duration": 1411,
+  "ok": true,
+  "cue_count": 402,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/PUycGHv-2Jo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/PUycGHv-2Jo/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "xO9CiDa3324",
+  "title": "How To Use Phasers In Your Songs",
+  "url": "https://www.youtube.com/watch?v=xO9CiDa3324",
+  "fetched_at": "2026-11-23T16:25:48.799960+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Thomann Bedroom Producers",
+  "duration": 723,
+  "ok": true,
+  "cue_count": 268,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/xO9CiDa3324/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/xO9CiDa3324/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "IuscQShlL58",
+  "title": "Tips and Tricks for Creating Tension in Electronic Music",
+  "url": "https://www.youtube.com/watch?v=IuscQShlL58",
+  "fetched_at": "2026-11-23T16:26:16.612497+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Dash Glitch",
+  "duration": 1258,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.4
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "k40nANMRnG4",
+  "title": "BINAURAL BEATS IN ABLETON - How to create and how to use them for healing and meditation music",
+  "url": "https://www.youtube.com/watch?v=k40nANMRnG4",
+  "fetched_at": "2026-11-23T16:27:22.897821+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Steffen Ki Sonic Alchemy",
+  "duration": 2264,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.2
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 18.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "z7xVfv8aByI",
+  "title": "Multigrain Resampling | Recycling and granulizing sounds to create ambient textures",
+  "url": "https://www.youtube.com/watch?v=z7xVfv8aByI",
+  "fetched_at": "2026-11-23T16:30:15.244622+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Intellijel",
+  "duration": 1223,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "uKpK0L-0KwA",
+  "title": "How to Make a Meditation Track From Scratch in Ableton Live (Step by Step Tutorial) - Part 1",
+  "url": "https://www.youtube.com/watch?v=uKpK0L-0KwA",
+  "fetched_at": "2026-11-23T16:31:49.079499+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "FREQUENCY TRIBE",
+  "duration": 1706,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

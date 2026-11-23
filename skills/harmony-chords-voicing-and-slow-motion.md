@@ -76,3 +76,12 @@ Source: [How I Turned 1 Chord Into a Hypnotic, Melodic Ambient Track](https://ww
 - Double the melody an octave lower on a contrasting synth timbre; slight timing looseness is fine.
 - Add swells: a synth with a long attack and heavy reverb playing the common tones (G, A) a few times across the section, no pitch bend.
 - Collect all clips; arrange by muting/unmuting layers per section (e.g. pad drops out leaving the dyad layer).
+
+### Tension-to-release build: sus4 dissonance released on the last note, a theme stated on the dominant then the tonic, rising key steps, an Ab pedal with Bb over it (bVI then bVII over a bVI pedal) resolving to a big C, while dynamics and pitch range widen and the theme moves from unison to octaves
+Source: [Tension and Release: How to Add Emotional Impact To Your Music](https://www.youtube.com/watch?v=PUycGHv-2Jo) · was `sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves`
+- Contrast: play the theme over a plain major chord, then over a sus4 that resolves to the major exactly as the melody lands on its last note.
+- Open with anticipation: short repeated string figure (tremolo/trim) and a counter-line, then state the theme first on the dominant (sus4) and then in the tonic.
+- Raise tension by stepping the key/harmony up at phrase ends (in the sketch: C -> Eb, then up again) while adding horns and light percussion. No release yet.
+- Final approach: a low pedal on bVI (Ab in C) held for 2 bars, then a bVII (Bb) chord over the same pedal for 2 bars with added movement, then resolve onto a big tonic chord, with a roll (timpani or noise swell) leading into it.
+- Grow dynamics and widen pitch range throughout: start narrow and soft, end wide (low brass/tuba under, high parts above). Double the theme in unison the first time, then in octaves once the bVII arrives.
+- Add rising gliss/riser effects as audio clips placed exactly where needed (bounce them out first for precise placement).

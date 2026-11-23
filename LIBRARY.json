@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-20T16:24:22.352335+00:00",
-  "entry_count": 290,
+  "updated_at": "2026-11-23T16:31:18.038080+00:00",
+  "entry_count": 294,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4213,6 +4213,58 @@
       "skills": [
         "generative-ambient-drones-and-soundscapes"
       ]
+    },
+    {
+      "id": "cinematic-synth-yMJaUS776yQ",
+      "video_id": "yMJaUS776yQ",
+      "url": "https://www.youtube.com/watch?v=yMJaUS776yQ",
+      "title": "How to Write Investigative Tension Cues | 52 Cues Podcast, 2025 Week 34",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/yMJaUS776yQ/raw.txt",
+      "summary": "Skills: light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-efnKT5pHqUo",
+      "video_id": "efnKT5pHqUo",
+      "url": "https://www.youtube.com/watch?v=efnKT5pHqUo",
+      "title": "Decode ACTION CUES with Melodic Cells",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/efnKT5pHqUo/raw.txt",
+      "summary": "Skills: melodic-cells-ostinato-repetition-legitimizes-tonic-against-bass-tension-major-triad-release-octatonic-half-step-cycle (folded into scales-modes-and-melody-writing)",
+      "skills": [
+        "scales-modes-and-melody-writing"
+      ]
+    },
+    {
+      "id": "cinematic-synth-PUycGHv-2Jo",
+      "video_id": "PUycGHv-2Jo",
+      "url": "https://www.youtube.com/watch?v=PUycGHv-2Jo",
+      "title": "Tension and Release: How to Add Emotional Impact To Your Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/PUycGHv-2Jo/raw.txt",
+      "summary": "Skills: sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves (folded into harmony-chords-voicing-and-slow-motion)",
+      "skills": [
+        "harmony-chords-voicing-and-slow-motion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-xO9CiDa3324",
+      "video_id": "xO9CiDa3324",
+      "url": "https://www.youtube.com/watch?v=xO9CiDa3324",
+      "title": "How To Use Phasers In Your Songs",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/xO9CiDa3324/raw.txt",
+      "summary": "Skills: phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation (folded into pad-phaser-notch-comb-movement)",
+      "skills": [
+        "pad-phaser-notch-comb-movement"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -4998,6 +5050,32 @@
           "video_id": "haZ6byjMpOk",
           "skill": "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
           "cluster": "generative-ambient-drones-and-soundscapes"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-23T16:31:18.038080+00:00",
+      "batch": "2026-11-23-morning-hunt",
+      "folded": [
+        {
+          "video_id": "yMJaUS776yQ",
+          "skill": "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "efnKT5pHqUo",
+          "skill": "melodic-cells-ostinato-repetition-legitimizes-tonic-against-bass-tension-major-triad-release-octatonic-half-step-cycle",
+          "cluster": "scales-modes-and-melody-writing"
+        },
+        {
+          "video_id": "PUycGHv-2Jo",
+          "skill": "sus4-tension-rising-key-steps-pedal-bvi-bvii-over-pedal-big-tonic-release-widening-range-unison-to-octaves",
+          "cluster": "harmony-chords-voicing-and-slow-motion"
+        },
+        {
+          "video_id": "xO9CiDa3324",
+          "skill": "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation",
+          "cluster": "pad-phaser-notch-comb-movement"
         }
       ]
     }

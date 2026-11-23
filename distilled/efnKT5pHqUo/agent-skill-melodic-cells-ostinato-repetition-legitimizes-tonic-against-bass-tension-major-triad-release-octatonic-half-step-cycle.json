@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "id": "melodic-cells-ostinato-repetition-legitimizes-tonic-against-bass-tension-major-triad-release-octatonic-half-step-cycle",
+  "name": "Action/tension cue from melodic cells: build short rhythmic-melodic cells, reorder and transpose them (up minor thirds for tension), repeat them so they sound intentional, put tension in the bass against a tonic ostinato, release with major triads, and derive octatonic (diminished) chords by cycling the cell down half steps",
+  "goal": "Write a short tense cue without a long melody: derive short melodic cells (a few pitches with a fixed interval shape) from a main ostinato, re-voice them in new orders and rhythms, transpose them up by minor thirds to raise tension, repeat cells so fast ideas sound deliberate, fix a simple non-random form, add tension by moving the bass against the ostinato's tonic and release it with major triads over the minor music, and add darker colour by blending the minor scale with the octatonic scale obtained by playing the cell four times each a half step lower.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "efnKT5pHqUo",
+    "url": "https://www.youtube.com/watch?v=efnKT5pHqUo",
+    "title": "Decode ACTION CUES with Melodic Cells",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/efnKT5pHqUo/agent-skill-melodic-cells-ostinato-repetition-legitimizes-tonic-against-bass-tension-major-triad-release-octatonic-half-step-cycle.json",
+    "batch": "2026-11-23-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW or notation tool with MIDI",
+    "Any string/brass/woodwind or synth patches for ostinato, counter-cells and chords"
+  ],
+  "inputs": [
+    {
+      "name": "ostinato",
+      "type": "midi",
+      "description": "Main ostinato in a minor key (4 pitches is enough)",
+      "required": true
+    },
+    {
+      "name": "form",
+      "type": "string",
+      "description": "Simple section order, e.g. A A B A",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cell_set",
+      "type": "midi",
+      "description": "Main cell plus reordered and transposed variants"
+    },
+    {
+      "name": "cue",
+      "type": "audio",
+      "description": "Short cue with tension and release moments"
+    }
+  ],
+  "constraints": [
+    "Core rule from the transcript: repetition legitimizes; repeat cells so they are heard as intentional.",
+    "Keep the form simple and predictable even when the material is busy; nothing completely random.",
+    "Do not repeat a section exactly twice in a row; recontextualise (new bass/harmony under the same cell).",
+    "Place the more dissonant passages in predictable spots (e.g. always right after the hook).",
+    "Steady pitch and fixed notes; the cells are composed, not randomised (Matt's preference).",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Write the main ostinato and pull out its pitch set (e.g. 4 notes). Write new cells from the same pitches in a different order and rhythm for another voice (e.g. horn).",
+      "tool": "MIDI editor",
+      "expect": "2-3 cells sharing one pitch set"
+    },
+    {
+      "n": 2,
+      "action": "Reduce a cell to its interval shape and transpose it; for tension move it up by minor thirds in a higher voice (strings).",
+      "tool": "Transpose",
+      "expect": "Same cell, rising in minor thirds"
+    },
+    {
+      "n": 3,
+      "action": "Repeat the cells often enough that each fast idea is heard as deliberate; choose a simple form and stick to it.",
+      "tool": "Arrangement",
+      "expect": "Recognisable identity across the cue"
+    },
+    {
+      "n": 4,
+      "action": "Recontextualise on repeats: change the bass under the ostinato so it fights the ostinato's strong tonic (tension); to release, put major triads over the heavily minor ostinato.",
+      "tool": "Bass line + chord layer",
+      "expect": "Audible tension and release on the same ostinato"
+    },
+    {
+      "n": 5,
+      "action": "Derive the octatonic scale: play the cell four times in a row, each starting a half step lower; the collected pitches form a diminished (octatonic) scale. Blend it with the minor scale (shared notes) and borrow its clashes for tension chords; space a semitone clash into a major 7th so it sounds intentional.",
+      "tool": "Scale/chord derivation",
+      "expect": "Darker chord colours that still sit with the minor ostinato"
+    },
+    {
+      "n": 6,
+      "action": "Optionally alternate between octatonic collections for major/minor triads over the ostinato to get ambiguous, uneasy colour.",
+      "tool": "Chord layer",
+      "expect": "Ambiguous but controlled harmony"
+    }
+  ],
+  "verification": [
+    "Every melodic idea in the cue is traceable to the main cell (same pitch set or interval shape).",
+    "At least one passage transposes a cell up by minor thirds.",
+    "A major triad appears at the planned release point over the minor ostinato.",
+    "The tension-chord pitches are all inside one octatonic collection derived from the half-step cycle."
+  ],
+  "tags": [
+    "melody",
+    "melodic-cells",
+    "ostinato",
+    "octatonic",
+    "diminished-scale",
+    "tension",
+    "release",
+    "action-cue",
+    "minor-thirds",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://melodic-cells-ostinato-repetition-legitimizes-tonic-against-bass-tension-major-triad-release-octatonic-half-step-cycle"
+}

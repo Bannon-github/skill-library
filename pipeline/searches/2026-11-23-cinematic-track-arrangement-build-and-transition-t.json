@@ -1,0 +1,105 @@
+{
+ "topic": "cinematic track arrangement build and transition tutorial",
+ "date": "2026-11-23",
+ "params": {
+  "topic": "cinematic track arrangement build and transition tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "kmnYxvGxLVE",
+   "title": "Slide Transition TUTORIAL - How to SPEED RAMP Creatively",
+   "channel": "Gaku Lange",
+   "duration": 371,
+   "view_count": 3167816,
+   "url": "https://www.youtube.com/watch?v=kmnYxvGxLVE",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 10.5
+  },
+  {
+   "id": "TKXBAaQB03U",
+   "title": "Ultimate Guide to Scene Transitions – Every Editing Transition Explained [The Shot List, Ep 9]",
+   "channel": "StudioBinder",
+   "duration": 1169,
+   "view_count": 1490830,
+   "url": "https://www.youtube.com/watch?v=TKXBAaQB03U",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.5
+  },
+  {
+   "id": "GXNWpGSkgBo",
+   "title": "How to Compose a Seamless Transition Between Themes",
+   "channel": "Ryan Leach",
+   "duration": 438,
+   "view_count": 95465,
+   "url": "https://www.youtube.com/watch?v=GXNWpGSkgBo",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.99
+  },
+  {
+   "id": "FZS0olGLPIw",
+   "title": "Why Your Video Transitions SUCK (And How to FIX IT)",
+   "channel": "Herman Huang",
+   "duration": 263,
+   "view_count": 625184,
+   "url": "https://www.youtube.com/watch?v=FZS0olGLPIw",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.9
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1232682,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "ANdLOY4rW04",
+   "title": "The Art of Cinematic Composition",
+   "channel": "Sightseeing Stan",
+   "duration": 623,
+   "view_count": 1744498,
+   "url": "https://www.youtube.com/watch?v=ANdLOY4rW04",
+   "query": "cinematic track arrangement build and transition tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "KpzkG1mRFgU",
+   "why": "duration 28s"
+  },
+  {
+   "id": "CGzyD_54ajU",
+   "why": "duration 60s"
+  },
+  {
+   "id": "joNgPsK0TRE",
+   "why": "duration 224s"
+  },
+  {
+   "id": "fWbb4kRcALg",
+   "why": "duration 134s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

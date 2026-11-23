@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "id": "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
+  "name": "Light/investigative tension cue form: one-chord drone + offset pulse 'rhythmic engine', a new gear every 4 bars (new layer or octaves), a mediant chord change as the last lever before an ABA breakdown that simmers, and a final A that is really A+B, ending on a delay-free button",
+  "goal": "Write a 'light tension' cue (analysis, deduction, assembling clues) where no chord progression drives the music: hold one minor chord as a drone, replace the harmonic engine with interlocking synth pulses placed off the strong beats, add a gear of energy every 4 bars (a new layer, or octaves/harmonies on an existing part), use a mediant root move (i -> VI, later iv) as the last lever before the breakdown, make B a breakdown (development by reduction) that simmers and rebuilds, and return with an A that combines A and B material with no new sounds, more octaves, denser drums and booms every 2 bars into a final button.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "yMJaUS776yQ",
+    "url": "https://www.youtube.com/watch?v=yMJaUS776yQ",
+    "title": "How to Write Investigative Tension Cues | 52 Cues Podcast, 2025 Week 34",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/yMJaUS776yQ/agent-skill-light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point.json",
+    "batch": "2026-11-23-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with MIDI; mallet/pluck lead, dark piano or keys, 2-3 synth pulse patches, a noise-based tick patch, a sustained pad/drone, a small sample drum kit",
+    "A stereo delay with independent L/R times and a filter on the repeats",
+    "One-shot boom/impact and a cymbal-swell or noise riser"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Minor key for the drone, e.g. F minor",
+      "required": true
+    },
+    {
+      "name": "hook",
+      "type": "midi",
+      "description": "Short syncopated melodic hook with space for a response",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Tempo in BPM",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cue",
+      "type": "audio",
+      "description": "ABA tension cue ending on a clean button"
+    },
+    {
+      "name": "form_map",
+      "type": "notes",
+      "description": "Bar map: 4-bar gears, chord-lever bar, breakdown, A+B return, edit points"
+    }
+  ],
+  "constraints": [
+    "Harmony rule from the transcript: modal/minor, hanging on one chord for several phrases; chord changes are saved as tension/release events.",
+    "Mediant moves share common tones (F minor F-Ab-C -> Db major Db-F-Ab), so the same melody fits over i, VI and iv without rewriting.",
+    "The presenter bends the drone pad's pitch and runs it through tremolo; for Matt keep pitch steady (no pitch bends on the drone); use filter or level movement instead.",
+    "Instrument/library choices in the source (specific commercial patches and sample packs) are not required; any mallet, keys, pulse synth and noise tick will do.",
+    "No new sounds in the final A section; density comes from octaves, combining A and B material and busier drums.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a minor key and hold one chord (i) as a drone for several phrases. Write a short, syncopated melodic hook first (mallet-type lead), leaving space after each phrase.",
+      "tool": "Keys/mallet + pad",
+      "expect": "Hook over a static minor chord"
+    },
+    {
+      "n": 2,
+      "action": "Put a stereo delay on the lead: left a dotted 1/8, right a 1/4, with a low-pass filter on the repeats so each echo darkens. This adds 1/16-note inner motion for free.",
+      "tool": "Stereo delay with filtered feedback",
+      "expect": "Lead bounces L/R with darkening echoes"
+    },
+    {
+      "n": 3,
+      "action": "Fill the space with call and response: the lead calls, a dark piano/keys answers with a counter-line (a little chromaticism), and a third voice (metal/tank-drum-like pluck, also on the delay) completes the final response.",
+      "tool": "Second and third melodic voices",
+      "expect": "Three-part call/response phrase"
+    },
+    {
+      "n": 4,
+      "action": "Build the rhythmic engine instead of chord changes: a downbeat bass pulse, with a bass mirroring the low piano roots in the same dotted rhythm, then noise 'ticks' accenting the end of each beat, and a second synth pulse also pushed onto the off-beat 'and'. Offset every pulse so nothing stacks on the strong downbeats.",
+      "tool": "Pulse synths + noise tick patch",
+      "expect": "Interlocking pulses; groove feels driven without chord motion"
+    },
+    {
+      "n": 5,
+      "action": "Every 4 bars add one gear: a new layer (second pulse, ticks, light backbeat, bass) or octaves/harmonies on an existing part. Put a boom on the downbeat of each new double phrase (every 8 bars), on every other phrase.",
+      "tool": "Arrangement",
+      "expect": "Energy rises every 4 bars without getting cluttered"
+    },
+    {
+      "n": 6,
+      "action": "When there are no new layers left, pull the chord lever: move i to VI (mediant, e.g. Fm -> Db) right before the breakdown, keeping the same melody.",
+      "tool": "Chord change",
+      "expect": "Same melody sounds brighter and lifted over VI"
+    },
+    {
+      "n": 7,
+      "action": "Breakdown (B = breakdown, not bridge): enter with a cymbal swell/noise riser and a boom on the downbeat to mark arrival, then strip density, let it simmer, sprinkle a little of the main melody on the piano, add an octave to the pad, then bring pulses back and build.",
+      "tool": "Riser + boom + mutes",
+      "expect": "Development by reduction, then rebuild"
+    },
+    {
+      "n": 8,
+      "action": "End the breakdown on a cliffhanger edit point (unresolved, e.g. a flat-2 note borrowed from Phrygian) and always sweep into it with a whoosh/reverse; automate delays off so no echoes ring into the edit point.",
+      "tool": "Reverse/whoosh + delay automation",
+      "expect": "Clean, editable cliffhanger"
+    },
+    {
+      "n": 9,
+      "action": "Return to A as A+B: restart from the energy where you left (VI), alternate VI -> i, then resolve to iv instead of i (minor plagal twist). Combine the B-section melody with A material, add octaves (single -> double -> triple, high keys doubling the lead; when stacking upward lower velocities), densify drums, booms every 2 bars.",
+      "tool": "Arrangement",
+      "expect": "Final section peaks with no new sounds"
+    },
+    {
+      "n": 10,
+      "action": "Finish on a button with a final boom; automate delay sends off so nothing trails past the button.",
+      "tool": "Delay automation",
+      "expect": "Clean final hit"
+    }
+  ],
+  "verification": [
+    "Form map shows a new layer or octave addition at every 4-bar boundary through A.",
+    "Chord changes occur only at the planned lever points (i -> VI before B; VI/i/iv in the return).",
+    "No delay tail continues past the edit point or the final button (check the waveform after the last hit).",
+    "Final A introduces no instrument that was not heard earlier."
+  ],
+  "tags": [
+    "arrangement",
+    "tension",
+    "cue-structure",
+    "aba-form",
+    "breakdown",
+    "pulse",
+    "mediant",
+    "edit-point",
+    "call-response",
+    "octave-stacking",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point"
+}
