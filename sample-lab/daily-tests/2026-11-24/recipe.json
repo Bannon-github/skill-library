@@ -1,0 +1,550 @@
+{
+ "name": "Frozen Sixth",
+ "seed": 1124,
+ "bpm": 94,
+ "bars": 32,
+ "tailSec": 3.0,
+ "category": "pad",
+ "key": "E major",
+ "drumsIn": 4,
+ "chords": [
+  [
+   0,
+   4,
+   "Emaj7",
+   [
+    40,
+    52,
+    59,
+    63,
+    68
+   ],
+   28
+  ],
+  [
+   4,
+   8,
+   "G#m (iii, shares G# B D#)",
+   [
+    44,
+    56,
+    59,
+    63,
+    68
+   ],
+   32
+  ],
+  [
+   8,
+   12,
+   "Emaj7",
+   [
+    40,
+    52,
+    59,
+    63,
+    68,
+    71
+   ],
+   28
+  ],
+  [
+   12,
+   16,
+   "G#m",
+   [
+    44,
+    56,
+    59,
+    63,
+    68,
+    71
+   ],
+   32
+  ],
+  [
+   16,
+   20,
+   "Emaj7",
+   [
+    40,
+    52,
+    59,
+    63,
+    68
+   ],
+   28
+  ],
+  [
+   20,
+   24,
+   "G#m",
+   [
+    44,
+    56,
+    59,
+    63,
+    68
+   ],
+   32
+  ],
+  [
+   24,
+   28,
+   "Emaj7 (wide)",
+   [
+    40,
+    52,
+    59,
+    63,
+    68,
+    71,
+    75
+   ],
+   28
+  ],
+  [
+   28,
+   30,
+   "G#m (wide)",
+   [
+    44,
+    56,
+    59,
+    63,
+    68,
+    71,
+    75
+   ],
+   32
+  ],
+  [
+   30,
+   32,
+   "Emaj7 end",
+   [
+    40,
+    52,
+    59,
+    63,
+    68
+   ],
+   28
+  ]
+ ],
+ "phrase": [
+  [
+   2,
+   71
+  ],
+  [
+   6,
+   75
+  ],
+  [
+   10,
+   76
+  ],
+  [
+   14,
+   78
+  ],
+  [
+   18,
+   76
+  ],
+  [
+   22,
+   75
+  ],
+  [
+   26,
+   71
+  ],
+  [
+   30,
+   73
+  ]
+ ],
+ "extras": [
+  [
+   12,
+   80
+  ],
+  [
+   28,
+   78
+  ]
+ ],
+ "density": [
+  [
+   4,
+   8,
+   [
+    0,
+    4
+   ]
+  ],
+  [
+   8,
+   12,
+   [
+    0,
+    3,
+    4,
+    6
+   ]
+  ],
+  [
+   12,
+   16,
+   [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  ],
+  [
+   16,
+   20,
+   [
+    0,
+    4
+   ]
+  ],
+  [
+   20,
+   23,
+   [
+    0,
+    3,
+    4,
+    6
+   ]
+  ],
+  [
+   24,
+   30,
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    "x"
+   ]
+  ]
+ ],
+ "washFrom": 16,
+ "tension": [
+  [
+   3,
+   64,
+   72,
+   3,
+   71,
+   4,
+   "C over E root (minor 6th) -> B on downbeat into drums"
+  ],
+  [
+   15,
+   68,
+   73,
+   2,
+   71,
+   3.5,
+   "C# over G# (4th), EARLY resolve before downbeat -> breakdown"
+  ],
+  [
+   22,
+   68,
+   73,
+   3,
+   71,
+   4,
+   "C# over G# (4th) -> B on bar-23 downbeat, then silence"
+  ],
+  [
+   29,
+   68,
+   73,
+   3,
+   71,
+   4,
+   "C# over G# (4th) -> B (5th of E) into the end"
+  ]
+ ],
+ "freeze": {
+  "b0": 20,
+  "xf": [
+   21,
+   23.3
+  ],
+  "end": 23.5,
+  "chordA": [
+   59,
+   63,
+   68
+  ],
+  "chordB": [
+   57,
+   63,
+   68,
+   69
+  ],
+  "rt": 40,
+  "sizeA": 1.4,
+  "sizeB": 2.6,
+  "gain": 0.22
+ },
+ "silence": [
+  23.5,
+  24
+ ],
+ "pad": {
+  "atk": 1.6,
+  "rel": 3.0,
+  "detuneCents": 7,
+  "lpFrom": 2800,
+  "lpTo": 6500,
+  "lfoHz": 0.03,
+  "lfoDepth": 0.12,
+  "hpHz": 70,
+  "chorus": [
+   0.25,
+   3.5,
+   12,
+   0.2
+  ]
+ },
+ "vox": {
+  "formants": [
+   [
+    700,
+    1.0
+   ],
+   [
+    1220,
+    0.7
+   ],
+   [
+    2600,
+    0.4
+   ]
+  ],
+  "holdSr": 11025,
+  "lp": 3200,
+  "gain": 0.12
+ },
+ "bass": {
+  "unison": 5,
+  "detuneCents": [
+   -6,
+   -3,
+   0,
+   3,
+   6
+  ],
+  "lfoBars": 4,
+  "lp1": [
+   320,
+   720
+  ],
+  "notch": [
+   480,
+   950
+  ],
+  "drive": [
+   1.0,
+   2.2
+  ],
+  "formant": [
+   600,
+   950
+  ],
+  "pulseMix": [
+   0.0,
+   0.3
+  ],
+  "fmIndex": 0.35,
+  "upperHp": 110,
+  "subGain": 0.55
+ },
+ "lead": {
+  "atk": 0.012,
+  "decay": 0.55,
+  "triLfoHz": 0.07,
+  "triRange": [
+   0.25,
+   0.75
+  ],
+  "unisonCents": 3,
+  "sat": 1.6
+ },
+ "echo": {
+  "beats": 0.75,
+  "fb": 0.38,
+  "washFb": 0.6,
+  "lp": 3800,
+  "hp": 300
+ },
+ "shimmer": {
+  "from": 16,
+  "to": 30,
+  "semis": 12,
+  "delay": 0.32,
+  "fb": 0.18,
+  "maxSend": 1.0
+ },
+ "kick": {
+  "steps": [
+   0,
+   8
+  ],
+  "startHz": 105,
+  "endHz": 45,
+  "tauMs": 32,
+  "decay": 0.3,
+  "gate": 0.5
+ },
+ "sections": [
+  {
+   "b": [
+    0,
+    4
+   ],
+   "name": "intro: swarm pad + vocal pad only; bar-3 end C over E lever",
+   "els": [
+    "pad",
+    "vox"
+   ]
+  },
+  {
+   "b": [
+    4,
+    8
+   ],
+   "name": "A1: kick + ambient bass in on bar 4; melody 2/8 notes",
+   "els": [
+    "pad",
+    "vox",
+    "kick",
+    "bass",
+    "lead"
+   ]
+  },
+  {
+   "b": [
+    8,
+    12
+   ],
+   "name": "A2: melody 4/8",
+   "els": [
+    "pad",
+    "vox",
+    "kick",
+    "bass",
+    "lead"
+   ]
+  },
+  {
+   "b": [
+    12,
+    16
+   ],
+   "name": "A3: melody 6/8 + soft clap; bar-15 early-resolve lever",
+   "els": [
+    "pad",
+    "vox",
+    "kick",
+    "bass",
+    "lead",
+    "clap"
+   ]
+  },
+  {
+   "b": [
+    16,
+    20
+   ],
+   "name": "breakdown: no drums, softened bass, melody 2/8 + echo-wash duplicate, grain shimmer starts",
+   "els": [
+    "pad",
+    "vox",
+    "bass",
+    "lead"
+   ]
+  },
+  {
+   "b": [
+    20,
+    23.5
+   ],
+   "name": "build: kick back, freeze riser (consonant -> dissonant), bar-22 lever, 2-beat silence",
+   "els": [
+    "pad",
+    "vox",
+    "kick",
+    "bass",
+    "lead"
+   ]
+  },
+  {
+   "b": [
+    24,
+    30
+   ],
+   "name": "peak: kick+bass snap back, full melody + extra notes, wash, shimmer up, pad open",
+   "els": [
+    "pad",
+    "vox",
+    "kick",
+    "bass",
+    "lead",
+    "clap"
+   ]
+  },
+  {
+   "b": [
+    30,
+    32
+   ],
+   "name": "end: pad + bass, resolve to E",
+   "els": [
+    "pad",
+    "vox",
+    "bass"
+   ]
+  }
+ ],
+ "levels": {
+  "pad": 0.5,
+  "vox": 0.09,
+  "lead": 0.34,
+  "wash": 0.1,
+  "echo": 0.16,
+  "shimmer": 0.11,
+  "tens": 0.16,
+  "bass": 0.27,
+  "sub": 0.12,
+  "kick": 0.28,
+  "clap": 0.08,
+  "freeze": 0.22,
+  "verb": 0.22,
+  "duckLeadDb": 1.5,
+  "bassDuckDb": 3,
+  "bassBreakDb": -5
+ },
+ "master": {
+  "targetLufs": -17.0,
+  "tpCeil": -1.5,
+  "sideHpHz": 200,
+  "fadeOutSec": 2.5
+ }
+}

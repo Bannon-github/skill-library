@@ -1,0 +1,88 @@
+{
+ "values": {
+  "M1": -17.0,
+  "M2": 0.5282,
+  "M3": 0.8015,
+  "M4": 0.3325,
+  "M5": -29.071,
+  "M6": -6.2569,
+  "M7": 8.9081,
+  "M8": 1.0375,
+  "M9": -17.613,
+  "M12": -48.6309,
+  "M10": 0.3302,
+  "M11": 0.2243,
+  "M13": 0.0037,
+  "M14": 0.0
+ },
+ "subs": {
+  "M1": 1.0,
+  "M2": 1.0,
+  "M3": 1.0,
+  "M4": 1.0,
+  "M5": 1.0,
+  "M6": 1.0,
+  "M7": 1.0,
+  "M8": 1.0,
+  "M9": 1.0,
+  "M12": 1.0,
+  "M10": 1.0,
+  "M11": 1.0,
+  "M13": 0.963,
+  "M14": 1.0
+ },
+ "gates": {
+  "G7_finite": true,
+  "G1_true_peak": true,
+  "G2_no_clip": true,
+  "G3_dc": true,
+  "G5_tail_or_loopclick": true,
+  "G6_start": true
+ },
+ "extra": {
+  "true_peak_dbtp": -3.5787,
+  "clipped": 0,
+  "dc": 0.0,
+  "tail_rms_db": -240.0,
+  "start_first_samples": 0.0
+ },
+ "score": 99.82,
+ "pass": true,
+ "events": 191,
+ "lengthSec": 84.7,
+ "lufs": -17.0,
+ "drumsInSec": 10.21,
+ "checks": {
+  "side_below_120Hz_db": -36.3,
+  "hf_spikes_over_8x": 1470,
+  "section_lufs": [
+   -19.1,
+   -17.3,
+   -17.6,
+   -16.6,
+   -18.0,
+   -16.7,
+   -15.6,
+   -16.8
+  ],
+  "section_centroid_hz": [
+   523,
+   394,
+   391,
+   456,
+   494,
+   400,
+   533,
+   422
+  ],
+  "centroid_span_oct": 0.45,
+  "lead_notes_per_section": {
+   "A1": 4,
+   "A2": 8,
+   "A3": 12,
+   "breakdown": 4,
+   "build": 7,
+   "peak": 30
+  }
+ }
+}
