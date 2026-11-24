@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "id": "four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp",
+  "name": "Four-part dreamy ambient that grows without new tracks: an 8-bar Imaj7 -> iii common-tone pad loop with a very slow shared LFO, a filtered looped vocal pad, a dark detuned saw bass, and a syncopated pluck melody that starts with most notes muted and gains notes toward the end, while the pad filter opens and an automated grain-delay shimmer adds air across the track",
+  "goal": "Make a dark, dreamy ambient piece (~94 BPM, E major) from four parts and grow it by density and brightness rather than by adding tracks: (1) a swarm/detuned two-oscillator pad on an 8-bar Imaj7 -> iii loop (the chords share three notes; revoice with octave moves), slow attack, full sustain, long release, one very slow low-depth LFO on timbre and spacing, chorus and a huge reverb; (2) a sampled vocal pad on loop, softened with bit-reduction + low-pass and big reverb; (3) a mono bass from two slightly detuned saws an octave down at full sustain with a slow notch-filter LFO and low cut-off; (4) a sine-to-triangle wavetable pluck melody with syncopated off-beat eighths, light saturation and compression, dotted-eighth ping-pong echo and reverb, then arrange it by muting most melody notes early and restoring them (plus a few more) toward the end, duplicating it with more echo, ducking everything lightly to the lead, opening the pad filter across the whole track and automating a grain delay in for shimmering top end.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "POMnaOf92UI",
+    "url": "https://www.youtube.com/watch?v=POMnaOf92UI",
+    "title": "How to Make Dark, Dreamy Ambient from Scratch in Ableton Live 12",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/POMnaOf92UI/agent-skill-four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp.json",
+    "batch": "2026-11-24-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a two-oscillator or wavetable synth, sampler with loop mode, chorus, large reverb, echo/ping-pong delay, grain delay (or any pitch-shifted delay), auto filter, LFO mapping"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Major key, e.g. E major",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "About 94 BPM",
+      "required": true
+    },
+    {
+      "name": "vocal_sample",
+      "type": "audio",
+      "description": "Short sustained vocal phrase to loop (optional)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "track",
+      "type": "audio",
+      "description": "Four-part ambient track whose melody density and top-end air increase toward the end"
+    },
+    {
+      "name": "arrangement_notes",
+      "type": "notes",
+      "description": "Melody mute map, filter and grain-delay automation curves"
+    }
+  ],
+  "constraints": [
+    "Chord rule from the source: in ambient, move between chords that share most notes (E major 7 -> G# minor shares G#, B, D#) so changes are smooth, not tense.",
+    "Pad LFO: very slow (over 2+ bars, then slower) and low depth so movement is barely noticeable.",
+    "The source randomises the vocal loop length and adds bass glide; both are left out here to keep pitch and loops steady (Matt's preference). Keep any melody/pitch modulation free of random variation.",
+    "Echo modulation stays subtle (rate ~1, low amount) so repeats do not wobble in pitch.",
+    "Growth comes from un-muting melody notes and opening filters/air, not from adding many tracks.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set ~94 BPM. On a two-oscillator synth write an 8-bar loop of Imaj7 -> iii (E major 7 -> G# minor), revoicing with octave moves for smooth voice leading and doubling bass notes to fatten. Link both oscillator amp envelopes: slow attack, full sustain, longer release.",
+      "tool": "Pad synth + MIDI",
+      "expect": "Smooth, tension-free pad loop"
+    },
+    {
+      "n": 2,
+      "action": "Map one very slow, low-depth LFO to the pad's timbre/motion and oscillator spacing; raise spread for width; tune the second oscillator a little brighter with its filter lowered; add chorus (a bit of feedback) and a very large reverb.",
+      "tool": "LFO + chorus + reverb",
+      "expect": "Barely moving, wide, dreamy pad"
+    },
+    {
+      "n": 3,
+      "action": "Load a vocal phrase into a sampler in loop-sustain mode; soften it with bit-reduction (rate down) followed by a smooth low-pass, then the large reverb. Keep its loop length fixed.",
+      "tool": "Sampler + bit-reduction + filter",
+      "expect": "Organic vocal texture under the pad"
+    },
+    {
+      "n": 4,
+      "action": "Bass: wavetable with two slightly detuned saws an octave down, full-sustain envelope, mono; slow LFO into a notch auto-filter for gentle movement, a second filter with cut-off pulled back, light chorus and EQ.",
+      "tool": "Bass synth + auto filter",
+      "expect": "Dark, slowly moving low layer"
+    },
+    {
+      "n": 5,
+      "action": "Lead: wavetable pluck between sine and triangle with unison and a slow free-running (non-retriggered) LFO on wavetable position; write a syncopated melody on off-beat eighths; add saturation, compression to soften the attack, dotted-eighth ping-pong echo with very slight modulation, and reverb.",
+      "tool": "Lead synth + echo",
+      "expect": "Moving but steady-pitched melody"
+    },
+    {
+      "n": 6,
+      "action": "Arrange by density: early on, mute most melody notes; restore them gradually and add a few extra notes so the line is fullest near the end. Duplicate the melody track with the echo turned up for a wash. Add a rain/ambience bed and an ambient guitar with highs boosted on the sides. Duck all parts lightly to the lead.",
+      "tool": "Arrangement",
+      "expect": "Same four parts, rising activity"
+    },
+    {
+      "n": 7,
+      "action": "Automate the pad's filter to open across the whole track, and automate a grain delay (pitched up, low mix) in from about the midpoint so shimmering top-end air grows toward the end.",
+      "tool": "Filter + grain delay automation",
+      "expect": "Track gets brighter and airier as it grows"
+    }
+  ],
+  "verification": [
+    "Pad chords share at least two notes between neighbours.",
+    "Melody note count in the last section is greater than in the first.",
+    "Spectral centroid / high-band energy rises from start to end (pad filter + grain delay).",
+    "No randomised loop length or pitch glide in the render."
+  ],
+  "tags": [
+    "ambient",
+    "arrangement",
+    "density-growth",
+    "pad",
+    "common-tone",
+    "melody-muting",
+    "air",
+    "grain-delay",
+    "shimmer",
+    "dreamy",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp"
+}

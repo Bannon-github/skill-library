@@ -1,0 +1,85 @@
+{
+ "topic": "isochronic tones how to make in DAW tutorial",
+ "date": "2026-11-24",
+ "params": {
+  "topic": "isochronic tones how to make in DAW tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "mPJEfc6xqLA",
+   "title": "How To Make Binaural Beats & Solfeggio Frequencies | Meditation Music Creation 5 Minutes",
+   "channel": "Healing Meditation Music",
+   "duration": 274,
+   "view_count": 12323,
+   "url": "https://www.youtube.com/watch?v=mPJEfc6xqLA",
+   "query": "isochronic tones how to make in DAW tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.05
+  },
+  {
+   "id": "PXN3t5p8MSM",
+   "title": "Creating a binaural beat",
+   "channel": "Matthew Toole",
+   "duration": 309,
+   "view_count": 1562,
+   "url": "https://www.youtube.com/watch?v=PXN3t5p8MSM",
+   "query": "isochronic tones how to make in DAW tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.1
+  }
+ ],
+ "dropped": [
+  {
+   "id": "bN7dgR9a7BI",
+   "why": "already known"
+  },
+  {
+   "id": "00oV6DJkK3E",
+   "why": "already known"
+  },
+  {
+   "id": "P-BV9Fa0e3Q",
+   "why": "already known"
+  },
+  {
+   "id": "34Dvy0bsm40",
+   "why": "duration 204s"
+  },
+  {
+   "id": "WNewLv-kI2I",
+   "why": "already known"
+  },
+  {
+   "id": "XqmRJNH3b4w",
+   "why": "already known"
+  },
+  {
+   "id": "p9gCfTdeSfc",
+   "why": "duration 222s"
+  },
+  {
+   "id": "6zFNn-7L76s",
+   "why": "duration 27s"
+  },
+  {
+   "id": "Vb4didZ1lho",
+   "why": "already known"
+  },
+  {
+   "id": "NRWqPRrxY44",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

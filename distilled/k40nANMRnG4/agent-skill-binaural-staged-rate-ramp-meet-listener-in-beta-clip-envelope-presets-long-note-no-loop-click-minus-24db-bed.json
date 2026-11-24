@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed",
+  "name": "Binaural 'meet them where they are' staged rate ramp: two fixed-frequency sine voices hard-panned L/R, right voice automated by clip envelope from beta to alpha (and on to theta and back), fast early drop then slow glide, one long note per layer so there is no loop-restart click, sat at about -24 dB under a 60 BPM drone bed",
+  "goal": "Build a binaural-beat layer as two fixed-frequency single-sine synth voices in one instrument rack (left voice fixed at the carrier, e.g. 200 Hz, panned hard left; right voice panned hard right), save per-state preset clips whose envelope sets the right voice to carrier+beat (204 = 4 Hz theta, 210 = 10 Hz alpha), and for a journey automate the right-voice frequency over time so the beat starts where a stressed listener is (beta, e.g. 15 Hz or 40->14 Hz), drops quickly in the first minute, then glides slowly into alpha (~8 Hz) and optionally theta and back to alpha, played as one very long MIDI note and mixed at about -24 dB under a 60 BPM drone bed.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "k40nANMRnG4",
+    "url": "https://www.youtube.com/watch?v=k40nANMRnG4",
+    "title": "BINAURAL BEATS IN ABLETON - How to create and how to use them for healing and meditation music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/k40nANMRnG4/agent-skill-binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed.json",
+    "batch": "2026-11-24-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a synth whose oscillator can be set to a fixed frequency in Hz (e.g. Operator 'Fixed' mode) or any sine oscillator with Hz control",
+    "Clip or arrangement automation",
+    "Headphones for checking (binaural beats need separate L/R ears)"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_hz",
+      "type": "number",
+      "description": "Fixed carrier for the left voice, e.g. 200 Hz",
+      "required": true
+    },
+    {
+      "name": "journey",
+      "type": "list",
+      "description": "Beat-rate stages in Hz with durations, e.g. 15->8 over 5 min, or 40->14 with most of the drop in minute 1",
+      "required": true
+    },
+    {
+      "name": "bed",
+      "type": "audio",
+      "description": "Drone/pad bed at 60 BPM (optional)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "binaural_layer",
+      "type": "audio",
+      "description": "Stereo L/R sine pair whose right voice follows the rate plan"
+    },
+    {
+      "name": "preset_clips",
+      "type": "midi",
+      "description": "One clip per brainwave state (static) plus one ramp clip"
+    }
+  ],
+  "constraints": [
+    "Use one oscillator per voice (other oscillators off); voices are identical except the right voice's frequency.",
+    "Beat rate = right Hz - left Hz; keep the left voice fixed so the plan reads directly (e.g. 240->214 Hz means 40->14 Hz).",
+    "Do not loop a short clip: a 1-bar loop re-triggers the note and clicks each bar. Draw one note across a very long clip (e.g. 144 bars at an 8-bar grid).",
+    "Keep the layer in the background (about -24 dB in the mix); the beat works at low level, and loud sine tones are tiring.",
+    "If mapping a controller to the beat, limit its range to carrier..carrier+50 Hz (beta/gamma ceiling) so a knob turn moves gently.",
+    "The ramp moves the right voice's frequency smoothly over minutes, which is a slow planned glide, not random pitch wobble.",
+    "Headphones only; on speakers use the library's mono/isochronic variants instead.",
+    "No health or medical claims: describe beat rates as target ranges, not as treatments.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Create a MIDI track with a fixed-frequency synth (Operator: disable oscillators B-D, set A to Fixed, 200 Hz). Group it into an instrument rack and duplicate the chain; name the chains Left and Right and pan them hard left and hard right.",
+      "tool": "Synth + instrument rack",
+      "expect": "Two identical 200 Hz sines, one per ear"
+    },
+    {
+      "n": 2,
+      "action": "Draw one note in a long clip (e.g. 144 bars, grid set to 8 bars, note stretched across the whole clip). The pitch of the MIDI note does not matter because the frequency is fixed.",
+      "tool": "MIDI clip",
+      "expect": "Continuous tone with no restart click"
+    },
+    {
+      "n": 3,
+      "action": "Make static preset clips: in each clip's envelope set the Right chain's frequency to carrier + beat (204 Hz = 4 Hz theta, 210 Hz = 10 Hz alpha) and name the clip after the state.",
+      "tool": "Clip envelope",
+      "expect": "Library of one-click brainwave states"
+    },
+    {
+      "n": 4,
+      "action": "Make a ramp clip: put a breakpoint at the start at the listener's likely state (e.g. 215 Hz = 15 Hz low beta) and one at about 4-5 minutes at alpha (207-208 Hz). Name it '15 Hz beta to 8 Hz alpha'.",
+      "tool": "Clip envelope",
+      "expect": "Beat glides from 15 to 8 Hz over ~5 min"
+    },
+    {
+      "n": 5,
+      "action": "Longer journey (optional): start at 240 Hz (40 Hz) and drop most of the way within the first minute (e.g. to ~225 Hz by bar 17 at 60 BPM), then continue slowly to 214 Hz (14 Hz). Chain further stages into alpha, theta, then back to alpha. Copy the clips to the arrangement timeline for a fixed release, or launch them live from clip view for sessions.",
+      "tool": "Arrangement automation",
+      "expect": "Staged descent: fast exit from high beta, slow settle"
+    },
+    {
+      "n": 6,
+      "action": "Set the project to 60 BPM, add a drone or pad bed (plus optional nature/water ambience and a soft lead), and pull the binaural layer down to about -24 dB. Check on headphones.",
+      "tool": "Mixer",
+      "expect": "Beat felt under the music rather than heard on top"
+    }
+  ],
+  "verification": [
+    "Left channel stays at the carrier; right channel frequency matches the plan at each breakpoint (beat = R - L).",
+    "No click or level dip at bar boundaries (single long note).",
+    "Binaural layer sits about 20+ dB below the bed's peaks.",
+    "Rate curve drops faster at the start than at the end when the staged plan is used."
+  ],
+  "tags": [
+    "binaural",
+    "brainwave",
+    "rate-ramp",
+    "entrainment",
+    "meditation",
+    "fixed-frequency",
+    "clip-envelope",
+    "drone-bed",
+    "60-bpm",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed"
+}

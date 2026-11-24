@@ -1,0 +1,85 @@
+{
+ "topic": "punchy bass sound design synth tutorial",
+ "date": "2026-11-24",
+ "params": {
+  "topic": "punchy bass sound design synth tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "v97MvZ1XhXM",
+   "title": "5 Easy Serum 2 Sound Design tips for *BIG BASSES*",
+   "channel": "Antidote Audio",
+   "duration": 542,
+   "view_count": 5172,
+   "url": "https://www.youtube.com/watch?v=v97MvZ1XhXM",
+   "query": "punchy bass sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.36
+  },
+  {
+   "id": "xy_NbX2SNSc",
+   "title": "2 EASY Serum 2 BASS ROUTINES EVERY BEGINNER Should Know",
+   "channel": "Dripment",
+   "duration": 599,
+   "view_count": 17329,
+   "url": "https://www.youtube.com/watch?v=xy_NbX2SNSc",
+   "query": "punchy bass sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.62
+  }
+ ],
+ "dropped": [
+  {
+   "id": "zEkCere2A_Y",
+   "why": "already known"
+  },
+  {
+   "id": "l1pxzjfwX1c",
+   "why": "already known"
+  },
+  {
+   "id": "9Ba2boGeznQ",
+   "why": "already known"
+  },
+  {
+   "id": "Pf0at7zMSDw",
+   "why": "already known"
+  },
+  {
+   "id": "H6i55lXAMh0",
+   "why": "already known"
+  },
+  {
+   "id": "rd3-k_tJ4Po",
+   "why": "already known"
+  },
+  {
+   "id": "FVoDtyZzO8s",
+   "why": "duration 122s"
+  },
+  {
+   "id": "JnwqcolDU1k",
+   "why": "duration 222s"
+  },
+  {
+   "id": "jDZ8pdifMTw",
+   "why": "duration 159s"
+  },
+  {
+   "id": "-whDx225ozA",
+   "why": "duration 114s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

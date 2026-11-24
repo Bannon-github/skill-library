@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath",
+  "name": "Seamless transition between two contrasting themes: list every difference (timbre, register, key, dynamics, tempo, meter, texture, melodic range), write an 8-bar sentence that starts on IV and ends on a half cadence in the new key, carry the old theme's last figure in and foreshadow the new theme's motif, walk the register down, share the line across both timbres, step the dynamics through the midpoint and leave a breath",
+  "goal": "Write a transition section that morphs one theme into a very different one: (1) list the differences between the themes (timbre, pitch register, key, dynamics, tempo, meter, texture, melodic range/motif), (2) structure the transition as a forward-moving sentence that ends on a half cadence so it stays unresolved until the new theme, (3) start on a less stable chord (IV of the old key) and modulate (relative keys need little), (4) begin the melody with the old theme's last figure and fold in the new theme's signature figure as foreshadowing, (5) walk the melody's register toward the new theme's register over 8 bars, (6) give the line to a hybrid of both timbres, (7) set dynamics between the two themes and decrescendo into a short breath before the new theme.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "GXNWpGSkgBo",
+    "url": "https://www.youtube.com/watch?v=GXNWpGSkgBo",
+    "title": "How to Compose a Seamless Transition Between Themes",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/GXNWpGSkgBo/agent-skill-theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath.json",
+    "batch": "2026-11-24-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW or notation with MIDI; two contrasting themes (or sections) already written",
+    "Synth or orchestral patches for both themes' timbres"
+  ],
+  "inputs": [
+    {
+      "name": "theme_a",
+      "type": "midi",
+      "description": "Outgoing theme (e.g. high, quiet, homophonic, major)",
+      "required": true
+    },
+    {
+      "name": "theme_b",
+      "type": "midi",
+      "description": "Incoming theme (e.g. low, loud, monophonic, minor)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "transition",
+      "type": "midi",
+      "description": "8-bar sentence transition ending on a half cadence in theme B's key"
+    },
+    {
+      "name": "difference_table",
+      "type": "notes",
+      "description": "The difference list and how each one is bridged or left alone"
+    }
+  ],
+  "constraints": [
+    "A sentence (short idea, repeat, then a driving continuation) moves forward; a balanced period does not. Use a sentence for transitions.",
+    "End on a half cadence (V of the new key) so the incompleteness resolves only when theme B arrives.",
+    "Not every difference needs bridging: small tempo (e.g. 109->120 BPM) or meter (3/4->4/4) changes can pass unnoticed after a breath.",
+    "A brief decrescendo/breath before a loud new theme still reads as a rising dynamic plan at the larger scale (mp -> mf -> ff).",
+    "Melody stays steady and composed; morph by register and orchestration, not pitch bends.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "List the differences between theme A and theme B in a table: timbre, register, key, dynamics, tempo, meter, texture, melodic range and signature figure.",
+      "tool": "Notes",
+      "expect": "Bridge plan per difference"
+    },
+    {
+      "n": 2,
+      "action": "Plan an 8-bar sentence (2-bar idea, 2-bar repeat/variation, 4-bar continuation) that ends on a half cadence in theme B's key.",
+      "tool": "Form",
+      "expect": "Forward-driving, unresolved ending"
+    },
+    {
+      "n": 3,
+      "action": "Harmony: start on IV of theme A's key (e.g. Bb in F major) rather than I for instant motion, then take a conventional path to V of theme B's key (relative minor: D minor -> half cadence on A).",
+      "tool": "Chord track",
+      "expect": "Key change that sounds inevitable"
+    },
+    {
+      "n": 4,
+      "action": "Melody: open with theme A's last figure (e.g. its suspension F->E), add theme B's signature figure (e.g. a 16th-note half-step neighbour) as foreshadowing, and step the line toward theme B's register across the 8 bars; drop the whole transition an octave if a large gap remains at the join.",
+      "tool": "Lead MIDI",
+      "expect": "Both themes audible in the bridge; register gap closed"
+    },
+    {
+      "n": 5,
+      "action": "Timbre: give the melody to a blend of both sound families (e.g. violas, cellos and horns between strings and brass; in synths, layer A's pad voice with B's brass/saw voice). Fill harmony above with a quiet arpeggio that also uses theme B's neighbour figure, and thin it out near the end toward B's texture.",
+      "tool": "Orchestration/layers",
+      "expect": "Hybrid colour; texture narrows toward B"
+    },
+    {
+      "n": 6,
+      "action": "Dynamics: set the transition between the two themes (mp -> mf -> ff), then decrescendo in the last bar and leave a short breath (rest) before theme B.",
+      "tool": "Volume/velocity automation",
+      "expect": "Theme B lands with impact but not as a non-sequitur"
+    }
+  ],
+  "verification": [
+    "Transition ends on V of theme B's key (half cadence).",
+    "The first melodic figure of the transition matches the last figure of theme A; theme B's signature figure appears at least once before B.",
+    "Melody register at the end of the transition is within an octave of theme B's first note.",
+    "Dynamic level of the transition lies between the two themes, with a breath at the join."
+  ],
+  "tags": [
+    "transition",
+    "arrangement",
+    "form",
+    "sentence",
+    "half-cadence",
+    "modulation",
+    "foreshadowing",
+    "orchestration",
+    "cinematic",
+    "theme-change",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath"
+}

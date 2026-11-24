@@ -80,6 +80,12 @@
         "video_id": "JHiTUBVLmFI",
         "url": "https://www.youtube.com/watch?v=JHiTUBVLmFI",
         "title": "6 key concepts for arranging techno"
+      },
+      {
+        "from_skill": "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser",
+        "video_id": "IuscQShlL58",
+        "url": "https://www.youtube.com/watch?v=IuscQShlL58",
+        "title": "Tips and Tricks for Creating Tension in Electronic Music"
       }
     ]
   },
@@ -361,6 +367,19 @@
         "Tool 5, scoop-up and minimalism moments: at a block start, remove the lows for 1-4 bars and bring them straight back (scoop-up); after a dense passage, strip to the essentials (e.g. kick + lead, no hats) for 2-4 bars before everything returns.",
         "Tool 6 (optional): duplicate the main synth and perform cutoff and envelope lengths by hand across the arrangement, keeping the loop version as a fallback. Then lay out the track from the drawn plan and adjust where theory and practice disagree."
       ]
+    },
+    {
+      "from_skill": "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser",
+      "name": "Electronic tension levers: a pad on the minor sixth (or fourth) over the bass root only at the end of the bar resolving to a consonant note on the downbeat, an early resolve before the bar when energy should drop into a breakdown, a short silence before the kick and bass return, and a freeze-reverb riser whose size is automated from consonant into dissonant territory",
+      "goal": "Create tension and release in an electronic arrangement with dissonance placement rather than new material: over a static kick+bass on root C, bring in a pad on a dissonant interval (G# = minor sixth, or F = fourth, versus the consonant G fifth) only at the end of a bar and resolve it on the next downbeat; resolve before the downbeat instead when the next section drops energy (breakdown); cut to a few beats of silence before the kick and bass return; and render a freeze-reverb riser that starts on a consonant chord and is automated (reverb size) into dissonance, with dry/wet set higher than usual and faded in.",
+      "steps": [
+        "Loop a kick and bass on the root (e.g. C). Write a pad that holds the root for most of the bar, then steps to the minor sixth (G#) or fourth (F) for the last beat(s); bring its filter cutoff in by automation.",
+        "Resolve on the downbeat: the next bar begins on a consonant note/chord (root or fifth). A/B against a version where the end-of-bar note is the fifth (G) to hear the difference.",
+        "For an energy drop into a breakdown, resolve the pad just before the next downbeat (render the pad to audio for precise control of the reverb tail), then strip percussion and soften the synths in the new section.",
+        "Before a return, cut the full mix to silence for a few beats at the end of a build; the kick and bass re-enter on the downbeat.",
+        "Freeze riser: play a consonant chord into a reverb with size and decay high, write automation, freeze immediately, let it hold, then automate size on a long curve so the frozen tone moves into dissonance. Raise dry/wet more than usual, render to audio and fade it in.",
+        "Place renders and pad tension only at structural points (bar ends before section changes) so the levers keep their effect."
+      ]
     }
   ],
   "merged_from": [
@@ -375,7 +394,8 @@
     "ambient-loop-to-track-arp-rate-energy",
     "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
     "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
-    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism"
+    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+    "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser"
   ],
   "tags": [
     "8-bar-phrase",
@@ -425,6 +445,7 @@
     "ambient-loop-to-track-arp-rate-energy",
     "hypnotic-drone-arrangement-phrase-layer-fade-ins-sequence-instrument-swap-drone-only-break",
     "climax-break-structures-committed-turnaround-linear-rise-trilogy-fall-rise-hang-double-trilogy-insert-time-last",
-    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism"
+    "dynamic-interest-16-bar-block-map-top-perc-gear-shifts-break-turnaround-squeeze-in-markers-reverses-plus-minus-layers-scoop-up-minimalism",
+    "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser"
   ]
 }

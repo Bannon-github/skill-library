@@ -1,0 +1,109 @@
+{
+ "topic": "soft felt kick drum sound design tutorial",
+ "date": "2026-11-24",
+ "params": {
+  "topic": "soft felt kick drum sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "Z1_PzzV7TJg",
+   "title": "How To Muffle Your Kick Drum Properly - 4 Best Ways To Maximum Thumpification",
+   "channel": "Rob Brown",
+   "duration": 603,
+   "view_count": 364291,
+   "url": "https://www.youtube.com/watch?v=Z1_PzzV7TJg",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.28
+  },
+  {
+   "id": "UOuTV2n6xh0",
+   "title": "Why your kick is ruining your mix (and how to fix it)",
+   "channel": "Big Z",
+   "duration": 371,
+   "view_count": 59234,
+   "url": "https://www.youtube.com/watch?v=UOuTV2n6xh0",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.89
+  },
+  {
+   "id": "hKDmV_qz7bQ",
+   "title": "Mixing Kick Drums w/ That Sound + Slate Digital Blackbird Samples",
+   "channel": "Pro Audio Files",
+   "duration": 642,
+   "view_count": 8612,
+   "url": "https://www.youtube.com/watch?v=hKDmV_qz7bQ",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.47
+  },
+  {
+   "id": "g6-pHXsa_aw",
+   "title": "Tips for Mixing the Low End of Drum Loops",
+   "channel": "Pro Audio Files",
+   "duration": 447,
+   "view_count": 7567,
+   "url": "https://www.youtube.com/watch?v=g6-pHXsa_aw",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.44
+  },
+  {
+   "id": "FPLs8HO16os",
+   "title": "IconDrum by GForce - The Ultimate ’80s Drum Machine Plugin?",
+   "channel": "Plugins Masters",
+   "duration": 744,
+   "view_count": 106963,
+   "url": "https://www.youtube.com/watch?v=FPLs8HO16os",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.01
+  },
+  {
+   "id": "ifCHVRyLlJE",
+   "title": "9 Best Bass Drum Beaters | Ultimate Beater Comparison",
+   "channel": "Gideon Waxman",
+   "duration": 515,
+   "view_count": 21510,
+   "url": "https://www.youtube.com/watch?v=ifCHVRyLlJE",
+   "query": "soft felt kick drum sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.67
+  }
+ ],
+ "dropped": [
+  {
+   "id": "ZKR8ODDIWqE",
+   "why": "already known"
+  },
+  {
+   "id": "msSToB0ELQg",
+   "why": "duration 17s"
+  },
+  {
+   "id": "wQPwc5-l3DE",
+   "why": "duration 52s"
+  },
+  {
+   "id": "KFDaw08EW_M",
+   "why": "duration 156s"
+  },
+  {
+   "id": "IGDkFuAc5KM",
+   "why": "duration 211s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

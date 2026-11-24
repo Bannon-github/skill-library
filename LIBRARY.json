@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-23T16:31:18.038080+00:00",
-  "entry_count": 294,
+  "updated_at": "2026-11-24T16:26:47.777458+00:00",
+  "entry_count": 298,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4265,6 +4265,58 @@
       "skills": [
         "pad-phaser-notch-comb-movement"
       ]
+    },
+    {
+      "id": "cinematic-synth-k40nANMRnG4",
+      "video_id": "k40nANMRnG4",
+      "url": "https://www.youtube.com/watch?v=k40nANMRnG4",
+      "title": "BINAURAL BEATS IN ABLETON - How to create and how to use them for healing and meditation music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/k40nANMRnG4/raw.txt",
+      "summary": "Skills: binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed (folded into brainwave-binaural-isochronic-layers)",
+      "skills": [
+        "brainwave-binaural-isochronic-layers"
+      ]
+    },
+    {
+      "id": "cinematic-synth-GXNWpGSkgBo",
+      "video_id": "GXNWpGSkgBo",
+      "url": "https://www.youtube.com/watch?v=GXNWpGSkgBo",
+      "title": "How to Compose a Seamless Transition Between Themes",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/GXNWpGSkgBo/raw.txt",
+      "summary": "Skills: theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-IuscQShlL58",
+      "video_id": "IuscQShlL58",
+      "url": "https://www.youtube.com/watch?v=IuscQShlL58",
+      "title": "Tips and Tricks for Creating Tension in Electronic Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/IuscQShlL58/raw.txt",
+      "summary": "Skills: end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser (folded into arrangement-loop-to-song-build-drop)",
+      "skills": [
+        "arrangement-loop-to-song-build-drop"
+      ]
+    },
+    {
+      "id": "cinematic-synth-POMnaOf92UI",
+      "video_id": "POMnaOf92UI",
+      "url": "https://www.youtube.com/watch?v=POMnaOf92UI",
+      "title": "How to Make Dark, Dreamy Ambient from Scratch in Ableton Live 12",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/POMnaOf92UI/raw.txt",
+      "summary": "Skills: four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -5076,6 +5128,32 @@
           "video_id": "xO9CiDa3324",
           "skill": "phaser-static-notch-tone-shaping-few-notch-slow-swirl-pad-hat-loop-phaser-after-delay-send-section-bus-phaser-variation",
           "cluster": "pad-phaser-notch-comb-movement"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-24T16:26:47.777458+00:00",
+      "batch": "2026-11-24-morning-hunt",
+      "folded": [
+        {
+          "video_id": "k40nANMRnG4",
+          "skill": "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed",
+          "cluster": "brainwave-binaural-isochronic-layers"
+        },
+        {
+          "video_id": "GXNWpGSkgBo",
+          "skill": "theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "IuscQShlL58",
+          "skill": "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser",
+          "cluster": "arrangement-loop-to-song-build-drop"
+        },
+        {
+          "video_id": "POMnaOf92UI",
+          "skill": "four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp",
+          "cluster": "arrangement-ambient-cinematic-score"
         }
       ]
     }

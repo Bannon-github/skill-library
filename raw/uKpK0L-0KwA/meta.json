@@ -2,14 +2,22 @@
   "video_id": "uKpK0L-0KwA",
   "title": "How to Make a Meditation Track From Scratch in Ableton Live (Step by Step Tutorial) - Part 1",
   "url": "https://www.youtube.com/watch?v=uKpK0L-0KwA",
-  "fetched_at": "2026-11-23T16:31:49.079499+00:00",
+  "fetched_at": "2026-11-24T16:18:45.692290+00:00",
   "source_ui": "youtube-show-transcript",
   "target_language": "en",
   "original_language": "en",
   "channel": "FREQUENCY TRIBE",
   "duration": 1706,
-  "ok": false,
-  "error": "no_track_fetchable",
+  "ok": true,
+  "cue_count": 379,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uKpK0L-0KwA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uKpK0L-0KwA/raw.txt",
+  "translated": false,
   "decisions": [
     {
       "q": "yt-dlp probe ok? (availability + original language)",
@@ -31,30 +39,8 @@
     },
     {
       "q": "fetch auto-target-original-audio (en)",
-      "a": false,
-      "evidence": "rate_limited_or_ip_blocked"
-    },
-    {
-      "q": "yt-dlp fallback (en.*,en,.*-orig)",
-      "a": false
+      "a": true
     }
   ],
-  "retries": [
-    {
-      "retry": 1,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 4.0
-    },
-    {
-      "retry": 2,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 8.0
-    },
-    {
-      "retry": 3,
-      "reason": "rate_limited_or_ip_blocked",
-      "sleep_s": 16.1
-    }
-  ],
-  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+  "retries": []
 }

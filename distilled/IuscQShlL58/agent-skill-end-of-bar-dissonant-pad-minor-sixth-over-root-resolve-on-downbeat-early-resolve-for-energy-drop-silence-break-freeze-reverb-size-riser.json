@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser",
+  "name": "Electronic tension levers: a pad on the minor sixth (or fourth) over the bass root only at the end of the bar resolving to a consonant note on the downbeat, an early resolve before the bar when energy should drop into a breakdown, a short silence before the kick and bass return, and a freeze-reverb riser whose size is automated from consonant into dissonant territory",
+  "goal": "Create tension and release in an electronic arrangement with dissonance placement rather than new material: over a static kick+bass on root C, bring in a pad on a dissonant interval (G# = minor sixth, or F = fourth, versus the consonant G fifth) only at the end of a bar and resolve it on the next downbeat; resolve before the downbeat instead when the next section drops energy (breakdown); cut to a few beats of silence before the kick and bass return; and render a freeze-reverb riser that starts on a consonant chord and is automated (reverb size) into dissonance, with dry/wet set higher than usual and faded in.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "IuscQShlL58",
+    "url": "https://www.youtube.com/watch?v=IuscQShlL58",
+    "title": "Tips and Tricks for Creating Tension in Electronic Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/IuscQShlL58/agent-skill-end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser.json",
+    "batch": "2026-11-24-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with MIDI and automation; a kick + bass loop on a root note",
+    "A pad synth with filter cutoff automation",
+    "A reverb with a freeze/infinite mode and a size parameter (or any long frozen reverb)"
+  ],
+  "inputs": [
+    {
+      "name": "root",
+      "type": "string",
+      "description": "Bass/kick root note, e.g. C",
+      "required": true
+    },
+    {
+      "name": "section_plan",
+      "type": "notes",
+      "description": "Which bar ends get tension, which section drops energy",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tension_pad",
+      "type": "midi",
+      "description": "End-of-bar dissonant pad notes with downbeat resolution"
+    },
+    {
+      "name": "silence_breaks",
+      "type": "notes",
+      "description": "Bar positions of 1-2 beat full-mix silences"
+    },
+    {
+      "name": "freeze_riser",
+      "type": "audio",
+      "description": "Rendered freeze-reverb riser"
+    }
+  ],
+  "constraints": [
+    "Interval rule from the source: the perfect fifth (C-G) fits the root's harmonics and sounds settled; the minor sixth (C-G#) or the fourth (C-F) sounds tense over a C root.",
+    "Tension sits at the end of the bar and resolves on the next downbeat; resolving before the downbeat signals an energy drop.",
+    "Silence works because full-spectrum dance music rarely stops: break for a few beats, then the regular kick+bass snaps back as resolution.",
+    "The source also suggests a glide up into the tense note and random note generation; this skill uses stepped notes only (no glide, no random notes) to keep pitch steady (Matt's preference). The freeze-size move is a single, slow automated curve.",
+    "Frequency shifters and unison detune are named as other dissonance sources; use sparingly and keep them out of the lead melody.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Loop a kick and bass on the root (e.g. C). Write a pad that holds the root for most of the bar, then steps to the minor sixth (G#) or fourth (F) for the last beat(s); bring its filter cutoff in by automation.",
+      "tool": "Pad MIDI + cutoff automation",
+      "expect": "Tense colour at each bar end"
+    },
+    {
+      "n": 2,
+      "action": "Resolve on the downbeat: the next bar begins on a consonant note/chord (root or fifth). A/B against a version where the end-of-bar note is the fifth (G) to hear the difference.",
+      "tool": "Pad MIDI",
+      "expect": "Clear tension -> release each bar"
+    },
+    {
+      "n": 3,
+      "action": "For an energy drop into a breakdown, resolve the pad just before the next downbeat (render the pad to audio for precise control of the reverb tail), then strip percussion and soften the synths in the new section.",
+      "tool": "Audio render + arrangement",
+      "expect": "Listener feels the energy fall"
+    },
+    {
+      "n": 4,
+      "action": "Before a return, cut the full mix to silence for a few beats at the end of a build; the kick and bass re-enter on the downbeat.",
+      "tool": "Arrangement edit",
+      "expect": "Expectation gap, then strong resolution"
+    },
+    {
+      "n": 5,
+      "action": "Freeze riser: play a consonant chord into a reverb with size and decay high, write automation, freeze immediately, let it hold, then automate size on a long curve so the frozen tone moves into dissonance. Raise dry/wet more than usual, render to audio and fade it in.",
+      "tool": "Freeze reverb + automation",
+      "expect": "Riser that starts in key and drifts tense"
+    },
+    {
+      "n": 6,
+      "action": "Place renders and pad tension only at structural points (bar ends before section changes) so the levers keep their effect.",
+      "tool": "Arrangement",
+      "expect": "Tension used as punctuation, not wallpaper"
+    }
+  ],
+  "verification": [
+    "End-of-bar pad notes are a minor sixth or fourth above the bass root; downbeat notes are consonant (root/third/fifth).",
+    "At least one silence break of 1-2 beats precedes a full return.",
+    "Freeze riser is rendered audio with a fade-in and no click at its start."
+  ],
+  "tags": [
+    "tension",
+    "release",
+    "dissonance",
+    "intervals",
+    "silence",
+    "breakdown",
+    "freeze-reverb",
+    "riser",
+    "electronic",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://end-of-bar-dissonant-pad-minor-sixth-over-root-resolve-on-downbeat-early-resolve-for-energy-drop-silence-break-freeze-reverb-size-riser"
+}

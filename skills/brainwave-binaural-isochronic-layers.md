@@ -70,3 +70,12 @@ Source: [Binaural Beats Explained: Build One in Your DAW with Binaura](https://w
 - Optional harmonic: add a second pair at octave (397/403 for 200 Hz + 6), fifth (1.5x) or 12th (3x) of the carrier with the same gap, both pairs following the same rate automation.
 - Optional isochronic blend: tremolo/VCA on the tones at the current beat rate (follows the same automation), depth ~0.6 for a partial dip or 1.0 to silence.
 - Add a brown-noise bed (~-26 dB) and fade the whole layer in over ~10 s; set tone peak ~-14 dBFS; place under the pad/drone.
+
+### Binaural 'meet them where they are' staged rate ramp: two fixed-frequency sine voices hard-panned L/R, right voice automated by clip envelope from beta to alpha (and on to theta and back), fast early drop then slow glide, one long note per layer so there is no loop-restart click, sat at about -24 dB under a 60 BPM drone bed
+Source: [BINAURAL BEATS IN ABLETON - How to create and how to use them for healing and meditation music](https://www.youtube.com/watch?v=k40nANMRnG4) · was `binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed`
+- Create a MIDI track with a fixed-frequency synth (Operator: disable oscillators B-D, set A to Fixed, 200 Hz). Group it into an instrument rack and duplicate the chain; name the chains Left and Right and pan them hard left and hard right.
+- Draw one note in a long clip (e.g. 144 bars, grid set to 8 bars, note stretched across the whole clip). The pitch of the MIDI note does not matter because the frequency is fixed.
+- Make static preset clips: in each clip's envelope set the Right chain's frequency to carrier + beat (204 Hz = 4 Hz theta, 210 Hz = 10 Hz alpha) and name the clip after the state.
+- Make a ramp clip: put a breakpoint at the start at the listener's likely state (e.g. 215 Hz = 15 Hz low beta) and one at about 4-5 minutes at alpha (207-208 Hz). Name it '15 Hz beta to 8 Hz alpha'.
+- Longer journey (optional): start at 240 Hz (40 Hz) and drop most of the way within the first minute (e.g. to ~225 Hz by bar 17 at 60 BPM), then continue slowly to 214 Hz (14 Hz). Chain further stages into alpha, theta, then back to alpha. Copy the clips to the arrangement timeline for a fixed release, or launch them live from clip view for sessions.
+- Set the project to 60 BPM, add a drone or pad bed (plus optional nature/water ambience and a soft lead), and pull the binaural layer down to about -24 dB. Check on headphones.
