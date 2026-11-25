@@ -1,0 +1,53 @@
+{
+  "video_id": "43vkiBrPbug",
+  "title": "How to Make Ambient Music in 2026 (Step-by-Step for Beginners)",
+  "url": "https://www.youtube.com/watch?v=43vkiBrPbug",
+  "fetched_at": "2026-11-25T16:18:11.938501+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Tyler.l",
+  "duration": 826,
+  "ok": true,
+  "cue_count": 269,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/43vkiBrPbug/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/43vkiBrPbug/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+  "name": "Acoustic-sounding punchy kick from one three-oscillator synth: sine body with level and pitch envelopes, a tiny high-pitched transient oscillator offset in phase, a one-shot acoustic sample layer faded in after the transient and high-passed, and a short quiet pink-noise tail, then low/mid EQ and fast-attack compression",
+  "goal": "Build a realistic acoustic-style kick in any synth with three oscillators plus noise: osc A = sine body (random phase 0, phase 90 deg) with a level envelope and a bipolar pitch envelope of about +12 to +24 semitones, tuned down a few semitones; osc B = very short, very high-tuned transient 'click' on the same pitch-envelope shape with phase about 95 deg so it does not stack with the body; osc C = a one-shot acoustic kick sample whose level envelope fades in after the transient and is high-passed on its own filter; plus a gentle, short pink-noise tail; finish with a low-end and top/mid EQ boost and single-band fast-attack compression.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "oRhBZ6L9rU8",
+    "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
+    "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/oRhBZ6L9rU8/agent-skill-acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail.json",
+    "batch": "2026-11-25-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth with 3 oscillators (one able to play a one-shot sample), a noise source, envelopes/LFOs-as-envelopes, a filter routable to one oscillator",
+    "An original or free acoustic kick one-shot (no factory-sample copying)"
+  ],
+  "inputs": [
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Track tempo",
+      "required": false
+    },
+    {
+      "name": "kick_sample",
+      "type": "audio",
+      "description": "Original/free acoustic kick one-shot for the texture layer",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick_patch",
+      "type": "preset",
+      "description": "Four-layer kick patch"
+    },
+    {
+      "name": "kick_hit",
+      "type": "audio",
+      "description": "Rendered one-shot"
+    }
+  ],
+  "constraints": [
+    "Retrigger every oscillator: random phase 0 on the body and transient so each hit is identical (steady, no random variation).",
+    "The transient is one short attack per kick, not a texture. Keep it low enough that the kick reads as a thump, and never repeat it as fast ticks (Matt's no-clicks rule).",
+    "The noise tail is optional: keep it gentle and short. If it reads as a per-beat hi-hat tick in an ambient track, mute it.",
+    "Skip the sample layer's own transient with a fade-in so transients do not stack and get messy.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~10-12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Osc A body: basic sine, random phase 0, phase 90. Assign envelope 1 to level with a short body decay; assign envelope 2 bipolar to coarse pitch at about +12 to +24 st with a fast drop; tune down a couple of semitones for weight.",
+      "tool": "Synth osc A + 2 envelopes",
+      "expect": "Flat thud becomes a kick body"
+    },
+    {
+      "n": 2,
+      "action": "Osc B transient: same sine, random phase 0, phase about 95 so the two oscillators do not line up; a very short level envelope, the same pitch-envelope source tuned very high, and the shortest envelope you can draw.",
+      "tool": "Synth osc B",
+      "expect": "A small click on the front of the body"
+    },
+    {
+      "n": 3,
+      "action": "Osc C texture: one-shot acoustic kick sample. Pick a pleasing scan/start point, give it a level envelope with a short fade-in so its attack is skipped, and route it alone through a high-pass filter to roll off its lows.",
+      "tool": "Synth osc C sample + filter 2",
+      "expect": "Acoustic character without a second click or low-end smear"
+    },
+    {
+      "n": 4,
+      "action": "Balance the layers: bring the sample layer down until the kick sounds clean, then retune the body pitch and reshape body/transient envelopes to taste (higher body = thumpier).",
+      "tool": "Mixer",
+      "expect": "Clean, punchy, acoustic-ish blend"
+    },
+    {
+      "n": 5,
+      "action": "Noise tail: short envelope on a pink stereo noise oscillator, low level and short decay, like a faint top on the hit.",
+      "tool": "Noise osc",
+      "expect": "A little air after the hit"
+    },
+    {
+      "n": 6,
+      "action": "FX: EQ boost on the lows (raise Q a little) and on the top/mids; single-band compressor with fast attack at about half amount, then make up gain.",
+      "tool": "EQ + compressor",
+      "expect": "Finished punchy acoustic-style kick"
+    }
+  ],
+  "verification": [
+    "Rendered hit: peak in the first 10 ms, then a body whose pitch falls over tens of ms.",
+    "Two consecutive hits are sample-identical (no random phase).",
+    "Sample layer adds energy after the transient only (its first ms are faded).",
+    "In an ambient render the kick enters by ~10-12 s."
+  ],
+  "tags": [
+    "drums",
+    "kick",
+    "acoustic",
+    "layering",
+    "pitch-envelope",
+    "transient",
+    "punchy",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail"
+}

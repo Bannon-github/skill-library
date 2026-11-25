@@ -1,0 +1,85 @@
+{
+ "topic": "isochronic tone rate ramp tutorial",
+ "date": "2026-11-25",
+ "params": {
+  "topic": "isochronic tone rate ramp tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "GL0r3HNblNI",
+   "title": "Editing Mind Workstation to Tempo Part 1",
+   "channel": "neuroasis",
+   "duration": 577,
+   "view_count": 1511,
+   "url": "https://www.youtube.com/watch?v=GL0r3HNblNI",
+   "query": "isochronic tone rate ramp tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.09
+  },
+  {
+   "id": "BE4UV4HbPWw",
+   "title": "We Hacked Sleep Using Brainwave Audio",
+   "channel": "The Psyche Vault",
+   "duration": 760,
+   "view_count": 3,
+   "url": "https://www.youtube.com/watch?v=BE4UV4HbPWw",
+   "query": "isochronic tone rate ramp tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 1.8
+  }
+ ],
+ "dropped": [
+  {
+   "id": "j2mH2WFRSrs",
+   "why": "duration 28800s"
+  },
+  {
+   "id": "JMMChtw6FMY",
+   "why": "duration 28800s"
+  },
+  {
+   "id": "i_jaBBd3Z4w",
+   "why": "duration 10800s"
+  },
+  {
+   "id": "z00Ew7cNm_k",
+   "why": "duration 10800s"
+  },
+  {
+   "id": "3Bm570c75NY",
+   "why": "duration 28801s"
+  },
+  {
+   "id": "wZzFMfEr5Bo",
+   "why": "duration 36000s"
+  },
+  {
+   "id": "VGOHszPFNLI",
+   "why": "duration 43200s"
+  },
+  {
+   "id": "NQ1UlNRAyhY",
+   "why": "duration 10801s"
+  },
+  {
+   "id": "30CciRl_vNQ",
+   "why": "duration 43200s"
+  },
+  {
+   "id": "VeqWDK6pE8o",
+   "why": "duration 21601s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

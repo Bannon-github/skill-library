@@ -1,0 +1,57 @@
+## hs7qpZthGlc 2026-11-25T09:21:12-07:00
+  "duration": 353,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT hs7qpZthGlc
+## 2faaqrLjTs8 2026-11-25T09:21:41-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/2faaqrLjTs8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/2faaqrLjTs8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+947 raw/2faaqrLjTs8/raw.txt
+## YdnMi_TIXso 2026-11-25T09:22:09-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/YdnMi_TIXso/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/YdnMi_TIXso/raw.txt",
+  "translated": false,
+  "retries": []
+}
+3722 raw/YdnMi_TIXso/raw.txt
+## oRhBZ6L9rU8 2026-11-25T09:22:37-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/oRhBZ6L9rU8/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/oRhBZ6L9rU8/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1463 raw/oRhBZ6L9rU8/raw.txt
+## IWUVd0fiyH4 2026-11-25T09:23:05-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.6
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT IWUVd0fiyH4
+## RDubhupxDsw 2026-11-25T09:24:24-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/RDubhupxDsw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/RDubhupxDsw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+746 raw/RDubhupxDsw/raw.txt
+## UbXpr5JV-Ps 2026-11-25T09:24:52-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/UbXpr5JV-Ps/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/UbXpr5JV-Ps/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1662 raw/UbXpr5JV-Ps/raw.txt
+FETCH_DONE 2026-11-25T09:25:20-07:00

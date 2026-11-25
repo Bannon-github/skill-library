@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return",
+  "name": "Ambient 'beyond the 32-bar loop': one owner per frequency zone (bass root at A1, body 150-800 Hz, focal voice, quiet air noise at about -20 dB), depth from level/attack/brightness/reverb, hand off the foreground instead of adding layers, and an establish -> expand -> build contrast -> return arc where the return reveals something new",
+  "goal": "Delta over existing frequency-layering/role skills: take a competent ambient loop beyond 32 bars by giving each zone exactly one owner (a mono bass parked on the key root, e.g. A1 in A minor, whose only other spectral peaks are octaves/fifths; a mid 'body' layer of two unsynced loops at roughly 150-800 Hz; one focal 'storyteller' voice; a barely audible air/noise layer around -20 dB), shaping foreground vs background with level, attack, brightness and reverb only, handing the foreground to a single new sequence each section instead of stacking layers, and arranging the sections as establish -> expand -> build contrast -> return with something new revealed on the return.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "YdnMi_TIXso",
+    "url": "https://www.youtube.com/watch?v=YdnMi_TIXso",
+    "title": "Beyond the Texture: Advanced Ambient Music Tutorial",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/YdnMi_TIXso/agent-skill-ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return.json",
+    "batch": "2026-11-25-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with a spectrum analyser (any FFT meter with note readout)",
+    "A bass synth, a pad, a pluck synth with delay, a noise source with filter + reverb"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Key/root, e.g. A minor (bass sits on A1)",
+      "required": true
+    },
+    {
+      "name": "sections",
+      "type": "list",
+      "description": "Section plan for establish/expand/contrast/return, in 8-bar blocks",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "zone_map",
+      "type": "notes",
+      "description": "Which layer owns low / body / focus / air"
+    },
+    {
+      "name": "arrangement",
+      "type": "midi",
+      "description": "Section clips following the 4-stage arc"
+    }
+  ],
+  "constraints": [
+    "Balance: never leave the low zone or the air zone empty; a track with lots of highs and no bass (or the reverse) sounds off.",
+    "Bass extra peaks should be octaves/fifths of the root (harmonic series), not clashing partials; keep the bass filter in check.",
+    "Hide/tuck elements with level and full-spectrum placement, not stereo wideners or hard panning; keep things relatively centred (the source advises no wideners).",
+    "The source modulates the noise layer's comb filter with random modulators; that is left out here (steady, no random variation). The noise layer is a soft sustained bed, not crackles or ticks.",
+    "Hand off the foreground: one well-made sequence can replace five extra layers.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~10-12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the root and park a simple mono unison bass on it (e.g. A1 for A minor). Check the analyser: its main peak reads A1 and the only other peaks are octaves and the fifth.",
+      "tool": "Bass synth + analyser",
+      "expect": "Low zone owned by one part"
+    },
+    {
+      "n": 2,
+      "action": "Add the body: a pad or two loops of the same pad playing slightly out of sync, with energy mostly 150-800 Hz.",
+      "tool": "Pad + analyser",
+      "expect": "Mid-range foundation that the bass does not fight"
+    },
+    {
+      "n": 3,
+      "action": "Decide depth per layer: distant atmosphere (quiet, slow attack, darker, more reverb), supporting pad (medium), focal voice (louder, faster attack, brighter, drier). Use only level, attack, brightness and reverb to place them.",
+      "tool": "Mixer + envelopes + filter + reverb",
+      "expect": "Clear foreground/background"
+    },
+    {
+      "n": 4,
+      "action": "Bring in one focal melodic voice/loop as the storyteller over the top; it does not need to be high or loud, only clearly in front.",
+      "tool": "Lead/loop",
+      "expect": "Listener has something to follow"
+    },
+    {
+      "n": 5,
+      "action": "For the next 8-bar section, hand the foreground to one hand-played pluck sequence: simple envelopes, a long slow LFO on cutoff, a rhythmic delay. Do not add other new layers at the same time.",
+      "tool": "Pluck synth + delay",
+      "expect": "Section change from one new element"
+    },
+    {
+      "n": 6,
+      "action": "Add a quiet air/noise bed: filtered noise (low-pass plus a fixed comb) into a large reverb at about -20 dB. A/B it muted vs on to confirm you feel it more than hear it.",
+      "tool": "Noise + filters + reverb",
+      "expect": "Top end filled without being noticed"
+    },
+    {
+      "n": 7,
+      "action": "Arrange the sections as establish (body + bass), expand (focal voice), build contrast (new sequence / changed relationships in rhythm, register or voicing), return (home material plus one new element). Fade/introduce each element slowly.",
+      "tool": "Arrangement",
+      "expect": "Arc with a purposeful return"
+    }
+  ],
+  "verification": [
+    "Analyser: bass fundamental at the chosen root (e.g. A1), with no strong non-octave/non-fifth peaks below 150 Hz.",
+    "Low (<150 Hz), body (150-800 Hz) and air (>8 kHz) bands all have energy in every section.",
+    "Each new section adds at most one new foreground element.",
+    "The return section contains the opening material plus at least one element not in the opening.",
+    "Noise layer level is about -20 dB relative to the pad; removing it measurably reduces >8 kHz energy."
+  ],
+  "tags": [
+    "ambient",
+    "arrangement",
+    "frequency-zones",
+    "depth",
+    "foreground-handoff",
+    "emotional-arc",
+    "return",
+    "noise-bed",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return"
+}

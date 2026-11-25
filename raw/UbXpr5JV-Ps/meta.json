@@ -1,0 +1,46 @@
+{
+  "video_id": "UbXpr5JV-Ps",
+  "title": "Transition FX for Ableton Live",
+  "url": "https://www.youtube.com/watch?v=UbXpr5JV-Ps",
+  "fetched_at": "2026-11-25T16:24:52.078881+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Brian Funk",
+  "duration": 648,
+  "ok": true,
+  "cue_count": 276,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/UbXpr5JV-Ps/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/UbXpr5JV-Ps/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

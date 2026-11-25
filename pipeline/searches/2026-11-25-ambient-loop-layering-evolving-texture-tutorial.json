@@ -1,0 +1,105 @@
+{
+ "topic": "ambient loop layering evolving texture tutorial",
+ "date": "2026-11-25",
+ "params": {
+  "topic": "ambient loop layering evolving texture tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "YdnMi_TIXso",
+   "title": "Beyond the Texture: Advanced Ambient Music Tutorial",
+   "channel": null,
+   "duration": 1569,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=YdnMi_TIXso",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "5d7EYDdx2QU",
+   "title": "Ableton Live slice to sampler tutorial with Evolving Textures",
+   "channel": null,
+   "duration": 325,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=5d7EYDdx2QU",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "RDubhupxDsw",
+   "title": "Ableton Live Tutorial - Gated Textures using Autopan",
+   "channel": null,
+   "duration": 371,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=RDubhupxDsw",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.5
+  },
+  {
+   "id": "u07PCfvBiYs",
+   "title": "How to Create Ambient Pad Layers with a Guitar Pedalboard",
+   "channel": null,
+   "duration": 866,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=u07PCfvBiYs",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "2faaqrLjTs8",
+   "title": "The Empty Loop Technique (how to make seamless soundscapes loops)",
+   "channel": null,
+   "duration": 448,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=2faaqrLjTs8",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "lnG7_h6XDBQ",
+   "title": "Ableton Live | Building Ambient Textures | Rack Breakdown",
+   "channel": null,
+   "duration": 1692,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=lnG7_h6XDBQ",
+   "query": "ambient loop layering evolving texture tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "dBKqaNzXCPA",
+   "why": "already known"
+  },
+  {
+   "id": "HJZG-qD4oso",
+   "why": "already known"
+  },
+  {
+   "id": "aluQf2jjuLM",
+   "why": "duration 83s"
+  },
+  {
+   "id": "CxVm9_FzIoQ",
+   "why": "duration 154s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

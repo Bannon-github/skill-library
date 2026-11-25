@@ -142,3 +142,12 @@ Source: [How to not screw up your kickdrums!](https://www.youtube.com/watch?v=0I
 - Set the end (resting) frequency, i.e. the perceived kick pitch. Use ~55 Hz (909 reference) as a starting point, go a little lower for a modern feel, and check it is still audible on small speakers.
 - Blend saturation in parallel (not hard in series) to add harmonics, keeping the clean heart intact.
 - Optionally layer a short transient/top sample so the ear has something up to ~9-10 kHz in a busy mix. Balance levels so the thump stays dominant. Then keep refining end frequency and decay against the full mix.
+
+### Acoustic-sounding punchy kick from one three-oscillator synth: sine body with level and pitch envelopes, a tiny high-pitched transient oscillator offset in phase, a one-shot acoustic sample layer faded in after the transient and high-passed, and a short quiet pink-noise tail, then low/mid EQ and fast-attack compression
+Source: [Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)](https://www.youtube.com/watch?v=oRhBZ6L9rU8) · was `acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail`
+- Osc A body: basic sine, random phase 0, phase 90. Assign envelope 1 to level with a short body decay; assign envelope 2 bipolar to coarse pitch at about +12 to +24 st with a fast drop; tune down a couple of semitones for weight.
+- Osc B transient: same sine, random phase 0, phase about 95 so the two oscillators do not line up; a very short level envelope, the same pitch-envelope source tuned very high, and the shortest envelope you can draw.
+- Osc C texture: one-shot acoustic kick sample. Pick a pleasing scan/start point, give it a level envelope with a short fade-in so its attack is skipped, and route it alone through a high-pass filter to roll off its lows.
+- Balance the layers: bring the sample layer down until the kick sounds clean, then retune the body pitch and reshape body/transient envelopes to taste (higher body = thumpier).
+- Noise tail: short envelope on a pink stereo noise oscillator, low level and short decay, like a faint top on the hit.
+- FX: EQ boost on the lows (raise Q a little) and on the top/mids; single-band compressor with fast attack at about half amount, then make up gain.

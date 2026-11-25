@@ -80,6 +80,12 @@
         "video_id": "0IgwdHg0ZwM",
         "url": "https://www.youtube.com/watch?v=0IgwdHg0ZwM",
         "title": "How to not screw up your kickdrums!"
+      },
+      {
+        "from_skill": "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+        "video_id": "oRhBZ6L9rU8",
+        "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
+        "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)"
       }
     ]
   },
@@ -349,6 +355,19 @@
         "Blend saturation in parallel (not hard in series) to add harmonics, keeping the clean heart intact.",
         "Optionally layer a short transient/top sample so the ear has something up to ~9-10 kHz in a busy mix. Balance levels so the thump stays dominant. Then keep refining end frequency and decay against the full mix."
       ]
+    },
+    {
+      "from_skill": "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+      "name": "Acoustic-sounding punchy kick from one three-oscillator synth: sine body with level and pitch envelopes, a tiny high-pitched transient oscillator offset in phase, a one-shot acoustic sample layer faded in after the transient and high-passed, and a short quiet pink-noise tail, then low/mid EQ and fast-attack compression",
+      "goal": "Build a realistic acoustic-style kick in any synth with three oscillators plus noise: osc A = sine body (random phase 0, phase 90 deg) with a level envelope and a bipolar pitch envelope of about +12 to +24 semitones, tuned down a few semitones; osc B = very short, very high-tuned transient 'click' on the same pitch-envelope shape with phase about 95 deg so it does not stack with the body; osc C = a one-shot acoustic kick sample whose level envelope fades in after the transient and is high-passed on its own filter; plus a gentle, short pink-noise tail; finish with a low-end and top/mid EQ boost and single-band fast-attack compression.",
+      "steps": [
+        "Osc A body: basic sine, random phase 0, phase 90. Assign envelope 1 to level with a short body decay; assign envelope 2 bipolar to coarse pitch at about +12 to +24 st with a fast drop; tune down a couple of semitones for weight.",
+        "Osc B transient: same sine, random phase 0, phase about 95 so the two oscillators do not line up; a very short level envelope, the same pitch-envelope source tuned very high, and the shortest envelope you can draw.",
+        "Osc C texture: one-shot acoustic kick sample. Pick a pleasing scan/start point, give it a level envelope with a short fade-in so its attack is skipped, and route it alone through a high-pass filter to roll off its lows.",
+        "Balance the layers: bring the sample layer down until the kick sounds clean, then retune the body pitch and reshape body/transient envelopes to taste (higher body = thumpier).",
+        "Noise tail: short envelope on a pink stereo noise oscillator, low level and short decay, like a faint top on the hit.",
+        "FX: EQ boost on the lows (raise Q a little) and on the top/mids; single-band compressor with fast attack at about half amount, then make up gain."
+      ]
     }
   ],
   "merged_from": [
@@ -363,7 +382,8 @@
     "atmospheric-liquid-dnb-break-layering",
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
     "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
-    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient"
+    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail"
   ],
   "tags": [
     "808",
@@ -413,6 +433,7 @@
     "atmospheric-liquid-dnb-break-layering",
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
     "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
-    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient"
+    "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
+    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail"
   ]
 }

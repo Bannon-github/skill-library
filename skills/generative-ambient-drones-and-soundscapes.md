@@ -125,3 +125,10 @@ Source: [The Joy of Recording Episode 1: Evolving Ambient Textures](https://www.
 - Put a delay on each lane; on one lane also add an octave-down effect to extend the range downward.
 - Route both lanes into a third bus with a very slow auto-pan whose rate is unrelated to both filter LFOs; add reverb.
 - Render a long take and use it as an ambient piece or as a bed to play grooves and melodies over.
+
+### Seamless soundscape loop with no audible cut at the seam: set the loop length first with an empty (silent) counted loop, then overdub wet-only long-reverb drone layers on top, so the length comes from the count, not from guessing where an ethereal sound starts and ends
+Source: [The Empty Loop Technique (how to make seamless soundscapes loops)](https://www.youtube.com/watch?v=2faaqrLjTs8) · was `empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap`
+- Set the drone: route the source into a very long reverb with the dry signal removed (100% wet).
+- Record an empty loop: keep counting the tempo (play muted or at zero volume) and close the loop on the count, e.g. after 4 bars of 4. In a DAW, just create a fixed-length bar-locked loop clip.
+- Overdub (stack) the wet drone onto the empty loop, entering whenever you like at roughly the same tempo.
+- Listen through several cycles for any cut or gap at the loop point; if none, continue overdubbing more ambient layers on top.

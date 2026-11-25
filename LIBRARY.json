@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-24T16:26:47.777458+00:00",
-  "entry_count": 298,
+  "updated_at": "2026-11-25T16:25:58.728671+00:00",
+  "entry_count": 302,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4317,6 +4317,58 @@
       "skills": [
         "arrangement-ambient-cinematic-score"
       ]
+    },
+    {
+      "id": "cinematic-synth-YdnMi_TIXso",
+      "video_id": "YdnMi_TIXso",
+      "url": "https://www.youtube.com/watch?v=YdnMi_TIXso",
+      "title": "Beyond the Texture: Advanced Ambient Music Tutorial",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/YdnMi_TIXso/raw.txt",
+      "summary": "Skills: ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-oRhBZ6L9rU8",
+      "video_id": "oRhBZ6L9rU8",
+      "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
+      "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/oRhBZ6L9rU8/raw.txt",
+      "summary": "Skills: acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-2faaqrLjTs8",
+      "video_id": "2faaqrLjTs8",
+      "url": "https://www.youtube.com/watch?v=2faaqrLjTs8",
+      "title": "The Empty Loop Technique (how to make seamless soundscapes loops)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/2faaqrLjTs8/raw.txt",
+      "summary": "Skills: empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap (folded into generative-ambient-drones-and-soundscapes)",
+      "skills": [
+        "generative-ambient-drones-and-soundscapes"
+      ]
+    },
+    {
+      "id": "cinematic-synth-RDubhupxDsw",
+      "video_id": "RDubhupxDsw",
+      "url": "https://www.youtube.com/watch?v=RDubhupxDsw",
+      "title": "Ableton Live Tutorial - Gated Textures using Autopan",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/RDubhupxDsw/raw.txt",
+      "summary": "Skills: tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off (folded into brainwave-binaural-isochronic-layers)",
+      "skills": [
+        "brainwave-binaural-isochronic-layers"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -5154,6 +5206,32 @@
           "video_id": "POMnaOf92UI",
           "skill": "four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp",
           "cluster": "arrangement-ambient-cinematic-score"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-25T16:25:58.728671+00:00",
+      "batch": "2026-11-25-morning-hunt",
+      "folded": [
+        {
+          "video_id": "YdnMi_TIXso",
+          "skill": "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "oRhBZ6L9rU8",
+          "skill": "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        },
+        {
+          "video_id": "2faaqrLjTs8",
+          "skill": "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap",
+          "cluster": "generative-ambient-drones-and-soundscapes"
+        },
+        {
+          "video_id": "RDubhupxDsw",
+          "skill": "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off",
+          "cluster": "brainwave-binaural-isochronic-layers"
         }
       ]
     }

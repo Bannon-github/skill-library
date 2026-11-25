@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off",
+  "name": "Tempo-synced amplitude gate on a long ambient texture made from an auto-pan: beats mode at 1/16, stereo phase raised to 360 deg so left/right move together (on/off volume instead of panning), edge softness set with the shape and waveform controls, then a reverb after the gate to smooth it; amount knob brings the gate in and out",
+  "goal": "Turn a long ambient texture/soundscape sample into a steady tempo-locked pulsing layer by putting an auto-pan device on it in beats (tempo-sync) mode at 1/16, raising its phase offset to 360 degrees so both channels rise and fall together (a volume gate, the basis of an isochronic-style pulse), shaping the on/off edges with the shape and waveform controls, adding a large-decay reverb after it to soften the gating, and using the amount control to fade the gate in or out of the arrangement.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "RDubhupxDsw",
+    "url": "https://www.youtube.com/watch?v=RDubhupxDsw",
+    "title": "Ableton Live Tutorial - Gated Textures using Autopan",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/RDubhupxDsw/agent-skill-tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off.json",
+    "batch": "2026-11-25-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with an auto-pan/tremolo device that has tempo sync, phase offset, shape and waveform controls (or any tremolo/LFO-to-gain)",
+    "A long sustained texture or soundscape sample (original/free)",
+    "A reverb"
+  ],
+  "inputs": [
+    {
+      "name": "texture",
+      "type": "audio",
+      "description": "Long ambient texture, ideally 30 s+",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Track BPM; the 1/16 gate rate in Hz = BPM/15",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "gated_texture",
+      "type": "audio",
+      "description": "Tempo-locked pulsing texture"
+    },
+    {
+      "name": "gate_automation",
+      "type": "automation",
+      "description": "Amount automation to bring the gate in/out"
+    }
+  ],
+  "constraints": [
+    "Phase 360 is what turns panning into gating: with 0 the sound moves left-right; with 360 both sides move together as an on/off volume effect.",
+    "Our arithmetic, not from the source: in beats mode a 1/16 gate pulses at BPM/15 Hz (e.g. 120 BPM = 8 Hz, 96 BPM = 6.4 Hz). Choose tempo and division to land on the wanted pulse rate.",
+    "No clicks (Matt's preference): use a rounded/sine-like waveform and soften the shape so on/off edges are not hard; keep the reverb after the gate. Avoid square edges at fast rates.",
+    "The source shows no rate ramp. For an isochronic rate ramp, automate tempo-free Hz rate instead (still an open gap, to be written in-house).",
+    "No health claims: describe pulse rates as target ranges only.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~10-12 s); only pad/texture before that (Matt's preference).",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Drop the long texture on an audio track (an intro or breakdown element) and add an auto-pan; turn its amount up to hear it move left and right.",
+      "tool": "Audio track + auto-pan",
+      "expect": "Plain auto-pan movement"
+    },
+    {
+      "n": 2,
+      "action": "Switch the auto-pan to beats (tempo-sync) mode and set the rate to 1/16.",
+      "tool": "Auto-pan rate",
+      "expect": "Movement locked to the track tempo"
+    },
+    {
+      "n": 3,
+      "action": "Raise the phase offset to 360 degrees.",
+      "tool": "Auto-pan phase",
+      "expect": "Left and right now pulse together: an on/off volume gate"
+    },
+    {
+      "n": 4,
+      "action": "Fine-tune the gate edges with the shape control and the waveform selector (rounded/sine-like for soft pulses).",
+      "tool": "Auto-pan shape/waveform",
+      "expect": "Gate with the wanted edge softness"
+    },
+    {
+      "n": 5,
+      "action": "Add a reverb after the auto-pan and raise its decay for a large room/hall, to soften the gating.",
+      "tool": "Reverb",
+      "expect": "Smoother, pulsing ambient layer"
+    },
+    {
+      "n": 6,
+      "action": "Play it with the beat and automate the auto-pan amount down/up to take the gate off and bring it back between sections.",
+      "tool": "Amount automation",
+      "expect": "Gate in perfect sync with tempo, switchable per section"
+    }
+  ],
+  "verification": [
+    "Left and right channels' amplitude envelopes are in phase (correlation of L/R envelopes ~1).",
+    "Envelope pulse rate equals BPM/15 Hz for a 1/16 setting.",
+    "No transient spikes at gate edges (HF spike counter stays low).",
+    "With amount at 0 the texture is ungated."
+  ],
+  "tags": [
+    "isochronic",
+    "gate",
+    "tremolo",
+    "autopan",
+    "tempo-sync",
+    "texture",
+    "ambient",
+    "pulse",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off"
+}

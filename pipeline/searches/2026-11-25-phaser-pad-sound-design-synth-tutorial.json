@@ -1,0 +1,85 @@
+{
+ "topic": "phaser pad sound design synth tutorial",
+ "date": "2026-11-25",
+ "params": {
+  "topic": "phaser pad sound design synth tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ZdKxOsK4nQ8",
+   "title": "Xfer Records Serum Tutorial 09 - FX Flanger, Phaser & Chorus",
+   "channel": "SadowickProduction",
+   "duration": 346,
+   "view_count": 4143,
+   "url": "https://www.youtube.com/watch?v=ZdKxOsK4nQ8",
+   "query": "phaser pad sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.31
+  },
+  {
+   "id": "hs7qpZthGlc",
+   "title": "Patch of The Week: Envelope-Controlled Phaser - with Next Phase, an all-analog module for Eurorack",
+   "channel": "AJH Synth Official",
+   "duration": 353,
+   "view_count": 992,
+   "url": "https://www.youtube.com/watch?v=hs7qpZthGlc",
+   "query": "phaser pad sound design synth tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.0
+  }
+ ],
+ "dropped": [
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "cR23JfH_33U",
+   "why": "already known"
+  },
+  {
+   "id": "TSiH9MUh4Ec",
+   "why": "already known"
+  },
+  {
+   "id": "4vRleMQdZZU",
+   "why": "already known"
+  },
+  {
+   "id": "InSUr0vGgxw",
+   "why": "already known"
+  },
+  {
+   "id": "1s_wcjB31iA",
+   "why": "already known"
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "why": "already known"
+  },
+  {
+   "id": "TbqMvaZ905Y",
+   "why": "duration 232s"
+  },
+  {
+   "id": "XRCwoFjZFMc",
+   "why": "already known"
+  },
+  {
+   "id": "Wj45RCdDmt0",
+   "why": "duration 4379s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

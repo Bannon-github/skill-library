@@ -1,0 +1,80 @@
+{
+  "video_id": "IWUVd0fiyH4",
+  "title": "How To Sound Design Punchy Snare Drums (using Vital)",
+  "url": "https://www.youtube.com/watch?v=IWUVd0fiyH4",
+  "fetched_at": "2026-11-25T16:23:05.688282+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Negativist",
+  "duration": 266,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "ar(auto)",
+        "bn(auto)",
+        "nl-NL(auto)",
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "iw(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "it(auto)",
+        "ja(auto)",
+        "ko(auto)",
+        "ml(auto)",
+        "pl(auto)",
+        "pt-BR(auto)",
+        "pa(auto)",
+        "ru(auto)",
+        "es-US(auto)",
+        "ta(auto)",
+        "te(auto)",
+        "uk(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.6
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -79,3 +79,12 @@ Source: [BINAURAL BEATS IN ABLETON - How to create and how to use them for heali
 - Make a ramp clip: put a breakpoint at the start at the listener's likely state (e.g. 215 Hz = 15 Hz low beta) and one at about 4-5 minutes at alpha (207-208 Hz). Name it '15 Hz beta to 8 Hz alpha'.
 - Longer journey (optional): start at 240 Hz (40 Hz) and drop most of the way within the first minute (e.g. to ~225 Hz by bar 17 at 60 BPM), then continue slowly to 214 Hz (14 Hz). Chain further stages into alpha, theta, then back to alpha. Copy the clips to the arrangement timeline for a fixed release, or launch them live from clip view for sessions.
 - Set the project to 60 BPM, add a drone or pad bed (plus optional nature/water ambience and a soft lead), and pull the binaural layer down to about -24 dB. Check on headphones.
+
+### Tempo-synced amplitude gate on a long ambient texture made from an auto-pan: beats mode at 1/16, stereo phase raised to 360 deg so left/right move together (on/off volume instead of panning), edge softness set with the shape and waveform controls, then a reverb after the gate to smooth it; amount knob brings the gate in and out
+Source: [Ableton Live Tutorial - Gated Textures using Autopan](https://www.youtube.com/watch?v=RDubhupxDsw) · was `tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off`
+- Drop the long texture on an audio track (an intro or breakdown element) and add an auto-pan; turn its amount up to hear it move left and right.
+- Switch the auto-pan to beats (tempo-sync) mode and set the rate to 1/16.
+- Raise the phase offset to 360 degrees.
+- Fine-tune the gate edges with the shape control and the waveform selector (rounded/sine-like for soft pulses).
+- Add a reverb after the auto-pan and raise its decay for a large room/hall, to soften the gating.
+- Play it with the beat and automate the auto-pan amount down/up to take the gate off and bring it back between sections.

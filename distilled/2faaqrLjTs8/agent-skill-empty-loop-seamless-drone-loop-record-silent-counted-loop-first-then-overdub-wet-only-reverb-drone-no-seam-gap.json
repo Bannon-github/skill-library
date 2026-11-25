@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap",
+  "name": "Seamless soundscape loop with no audible cut at the seam: set the loop length first with an empty (silent) counted loop, then overdub wet-only long-reverb drone layers on top, so the length comes from the count, not from guessing where an ethereal sound starts and ends",
+  "goal": "Make a drone/soundscape loop with no gap or cut at the loop point by first recording an empty loop of an exact counted length (e.g. 4 bars of 4 counted while playing silently or at zero volume), then stacking/overdubbing wet-only long-reverb drone passes onto it starting anywhere, so reverb tails wrap across the seam; in a DAW the empty loop is simply a fixed-length bar-locked loop region you record overdubs into.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "2faaqrLjTs8",
+    "url": "https://www.youtube.com/watch?v=2faaqrLjTs8",
+    "title": "The Empty Loop Technique (how to make seamless soundscapes loops)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/2faaqrLjTs8/agent-skill-empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap.json",
+    "batch": "2026-11-25-morning-hunt"
+  },
+  "prerequisites": [
+    "A looper (pedal or DAW looper/clip with overdub) or a DAW loop region",
+    "A long reverb set 100% wet (dry signal removed) for the drone"
+  ],
+  "inputs": [
+    {
+      "name": "bars",
+      "type": "number",
+      "description": "Loop length in bars at the track tempo",
+      "required": true
+    },
+    {
+      "name": "source",
+      "type": "audio",
+      "description": "Guitar, synth or any sustained source for the drone",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "seamless_loop",
+      "type": "audio",
+      "description": "Drone loop with no seam gap"
+    }
+  ],
+  "constraints": [
+    "Rhythmic picked parts can be looped by count directly; the empty-loop step is for ethereal, attack-less drones where no start/end is audible.",
+    "Keep the tempo reference in your hands/head (or the DAW clock) while recording the empty loop; the source counts 1-2-3-4 while playing silently.",
+    "Drone = remove the dry signal and keep only a very long reverb.",
+    "A seam gap or cut is distracting; also avoid any click at the seam (Matt's no-clicks rule).",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Set the drone: route the source into a very long reverb with the dry signal removed (100% wet).",
+      "tool": "Reverb",
+      "expect": "Ethereal drone with no clear attacks"
+    },
+    {
+      "n": 2,
+      "action": "Record an empty loop: keep counting the tempo (play muted or at zero volume) and close the loop on the count, e.g. after 4 bars of 4. In a DAW, just create a fixed-length bar-locked loop clip.",
+      "tool": "Looper / DAW loop",
+      "expect": "Silent loop of exact length"
+    },
+    {
+      "n": 3,
+      "action": "Overdub (stack) the wet drone onto the empty loop, entering whenever you like at roughly the same tempo.",
+      "tool": "Looper overdub",
+      "expect": "Drone fills the loop; tails cross the loop point"
+    },
+    {
+      "n": 4,
+      "action": "Listen through several cycles for any cut or gap at the loop point; if none, continue overdubbing more ambient layers on top.",
+      "tool": "Listening",
+      "expect": "Seamless, continuous soundscape"
+    }
+  ],
+  "verification": [
+    "Loop length equals the counted bar length at the tempo (within a few ms).",
+    "No silence gap or level dip >3 dB at the loop boundary across 3 cycles.",
+    "No click/transient spike at the seam."
+  ],
+  "tags": [
+    "loops",
+    "looper",
+    "drone",
+    "seamless",
+    "overdub",
+    "reverb",
+    "soundscape",
+    "ambient",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap"
+}

@@ -68,6 +68,12 @@
         "video_id": "haZ6byjMpOk",
         "url": "https://www.youtube.com/watch?v=haZ6byjMpOk",
         "title": "The Joy of Recording Episode 1: Evolving Ambient Textures"
+      },
+      {
+        "from_skill": "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap",
+        "video_id": "2faaqrLjTs8",
+        "url": "https://www.youtube.com/watch?v=2faaqrLjTs8",
+        "title": "The Empty Loop Technique (how to make seamless soundscapes loops)"
       }
     ]
   },
@@ -308,6 +314,17 @@
         "Route both lanes into a third bus with a very slow auto-pan whose rate is unrelated to both filter LFOs; add reverb.",
         "Render a long take and use it as an ambient piece or as a bed to play grooves and melodies over."
       ]
+    },
+    {
+      "from_skill": "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap",
+      "name": "Seamless soundscape loop with no audible cut at the seam: set the loop length first with an empty (silent) counted loop, then overdub wet-only long-reverb drone layers on top, so the length comes from the count, not from guessing where an ethereal sound starts and ends",
+      "goal": "Make a drone/soundscape loop with no gap or cut at the loop point by first recording an empty loop of an exact counted length (e.g. 4 bars of 4 counted while playing silently or at zero volume), then stacking/overdubbing wet-only long-reverb drone passes onto it starting anywhere, so reverb tails wrap across the seam; in a DAW the empty loop is simply a fixed-length bar-locked loop region you record overdubs into.",
+      "steps": [
+        "Set the drone: route the source into a very long reverb with the dry signal removed (100% wet).",
+        "Record an empty loop: keep counting the tempo (play muted or at zero volume) and close the loop on the count, e.g. after 4 bars of 4. In a DAW, just create a fixed-length bar-locked loop clip.",
+        "Overdub (stack) the wet drone onto the empty loop, entering whenever you like at roughly the same tempo.",
+        "Listen through several cycles for any cut or gap at the loop point; if none, continue overdubbing more ambient layers on top."
+      ]
     }
   ],
   "merged_from": [
@@ -320,7 +337,8 @@
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "generative-midi-chord-arp-random-scale-quantize-pad",
     "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
-    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus"
+    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
+    "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap"
   ],
   "tags": [
     "ambience",
@@ -368,6 +386,7 @@
     "scale-locked-high-end-sparkle-layer-random-notes-air-dust-noise",
     "generative-midi-chord-arp-random-scale-quantize-pad",
     "looper-drone-clips-sine-utility-fade-overdub-clusters-faders-capped-0db-group-8s-verb-pingpong-resample-commit",
-    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus"
+    "async-dual-bandpass-sweep-micro-loop-texture-parallel-delays-octave-down-lane-slow-autopan-bus",
+    "empty-loop-seamless-drone-loop-record-silent-counted-loop-first-then-overdub-wet-only-reverb-drone-no-seam-gap"
   ]
 }

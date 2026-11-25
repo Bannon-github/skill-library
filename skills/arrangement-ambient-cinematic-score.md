@@ -238,3 +238,13 @@ Source: [How to Make Dark, Dreamy Ambient from Scratch in Ableton Live 12](https
 - Lead: wavetable pluck between sine and triangle with unison and a slow free-running (non-retriggered) LFO on wavetable position; write a syncopated melody on off-beat eighths; add saturation, compression to soften the attack, dotted-eighth ping-pong echo with very slight modulation, and reverb.
 - Arrange by density: early on, mute most melody notes; restore them gradually and add a few extra notes so the line is fullest near the end. Duplicate the melody track with the echo turned up for a wash. Add a rain/ambience bed and an ambient guitar with highs boosted on the sides. Duck all parts lightly to the lead.
 - Automate the pad's filter to open across the whole track, and automate a grain delay (pitched up, low mix) in from about the midpoint so shimmering top-end air grows toward the end.
+
+### Ambient 'beyond the 32-bar loop': one owner per frequency zone (bass root at A1, body 150-800 Hz, focal voice, quiet air noise at about -20 dB), depth from level/attack/brightness/reverb, hand off the foreground instead of adding layers, and an establish -> expand -> build contrast -> return arc where the return reveals something new
+Source: [Beyond the Texture: Advanced Ambient Music Tutorial](https://www.youtube.com/watch?v=YdnMi_TIXso) · was `ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return`
+- Set the root and park a simple mono unison bass on it (e.g. A1 for A minor). Check the analyser: its main peak reads A1 and the only other peaks are octaves and the fifth.
+- Add the body: a pad or two loops of the same pad playing slightly out of sync, with energy mostly 150-800 Hz.
+- Decide depth per layer: distant atmosphere (quiet, slow attack, darker, more reverb), supporting pad (medium), focal voice (louder, faster attack, brighter, drier). Use only level, attack, brightness and reverb to place them.
+- Bring in one focal melodic voice/loop as the storyteller over the top; it does not need to be high or loud, only clearly in front.
+- For the next 8-bar section, hand the foreground to one hand-played pluck sequence: simple envelopes, a long slow LFO on cutoff, a rhythmic delay. Do not add other new layers at the same time.
+- Add a quiet air/noise bed: filtered noise (low-pass plus a fixed comb) into a large reverb at about -20 dB. A/B it muted vs on to confirm you feel it more than hear it.
+- Arrange the sections as establish (body + bass), expand (focal voice), build contrast (new sequence / changed relationships in rhythm, register or voicing), return (home material plus one new element). Fade/introduce each element slowly.

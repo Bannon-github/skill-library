@@ -44,6 +44,12 @@
         "video_id": "k40nANMRnG4",
         "url": "https://www.youtube.com/watch?v=k40nANMRnG4",
         "title": "BINAURAL BEATS IN ABLETON - How to create and how to use them for healing and meditation music"
+      },
+      {
+        "from_skill": "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off",
+        "video_id": "RDubhupxDsw",
+        "url": "https://www.youtube.com/watch?v=RDubhupxDsw",
+        "title": "Ableton Live Tutorial - Gated Textures using Autopan"
       }
     ]
   },
@@ -216,6 +222,19 @@
         "Longer journey (optional): start at 240 Hz (40 Hz) and drop most of the way within the first minute (e.g. to ~225 Hz by bar 17 at 60 BPM), then continue slowly to 214 Hz (14 Hz). Chain further stages into alpha, theta, then back to alpha. Copy the clips to the arrangement timeline for a fixed release, or launch them live from clip view for sessions.",
         "Set the project to 60 BPM, add a drone or pad bed (plus optional nature/water ambience and a soft lead), and pull the binaural layer down to about -24 dB. Check on headphones."
       ]
+    },
+    {
+      "from_skill": "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off",
+      "name": "Tempo-synced amplitude gate on a long ambient texture made from an auto-pan: beats mode at 1/16, stereo phase raised to 360 deg so left/right move together (on/off volume instead of panning), edge softness set with the shape and waveform controls, then a reverb after the gate to smooth it; amount knob brings the gate in and out",
+      "goal": "Turn a long ambient texture/soundscape sample into a steady tempo-locked pulsing layer by putting an auto-pan device on it in beats (tempo-sync) mode at 1/16, raising its phase offset to 360 degrees so both channels rise and fall together (a volume gate, the basis of an isochronic-style pulse), shaping the on/off edges with the shape and waveform controls, adding a large-decay reverb after it to soften the gating, and using the amount control to fade the gate in or out of the arrangement.",
+      "steps": [
+        "Drop the long texture on an audio track (an intro or breakdown element) and add an auto-pan; turn its amount up to hear it move left and right.",
+        "Switch the auto-pan to beats (tempo-sync) mode and set the rate to 1/16.",
+        "Raise the phase offset to 360 degrees.",
+        "Fine-tune the gate edges with the shape control and the waveform selector (rounded/sine-like for soft pulses).",
+        "Add a reverb after the auto-pan and raise its decay for a large room/hall, to soften the gating.",
+        "Play it with the beat and automate the auto-pan amount down/up to take the gate off and bring it back between sections."
+      ]
     }
   ],
   "merged_from": [
@@ -224,7 +243,8 @@
     "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe",
     "binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend",
-    "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed"
+    "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed",
+    "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off"
   ],
   "tags": [
     "ambient",
@@ -267,6 +287,7 @@
     "layered-binaural-plus-isochronic-architecture-carrier-left-carrier-plus-beat-right-octave-layers-pulse-ratio-locked-to-beat-sine-pulse-pingpong-pulse-harmonic-layers-lowpass-sweep-noise-drift-drone-fifth-journey-ramps",
     "monaural-beat-two-fixed-sines-or-tremolo-at-entrainment-rate-on-playable-pad-speaker-safe",
     "binaural-rate-ramp-eased-symmetric-offset-gearbox-dwell-shift-band-steps-harmonic-same-gap-isochronic-blend",
-    "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed"
+    "binaural-staged-rate-ramp-meet-listener-in-beta-clip-envelope-presets-long-note-no-loop-click-minus-24db-bed",
+    "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off"
   ]
 }

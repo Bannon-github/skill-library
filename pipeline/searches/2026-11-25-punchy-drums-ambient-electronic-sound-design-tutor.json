@@ -1,0 +1,101 @@
+{
+ "topic": "punchy drums ambient electronic sound design tutorial",
+ "date": "2026-11-25",
+ "params": {
+  "topic": "punchy drums ambient electronic sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "IWUVd0fiyH4",
+   "title": "How To Sound Design Punchy Snare Drums (using Vital)",
+   "channel": "Negativist",
+   "duration": 266,
+   "view_count": 14238,
+   "url": "https://www.youtube.com/watch?v=IWUVd0fiyH4",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.08
+  },
+  {
+   "id": "Y3IHvWksrLE",
+   "title": "7 Serum Tips That Will Make You a Sound Design Genius",
+   "channel": "Akayo",
+   "duration": 513,
+   "view_count": 77063,
+   "url": "https://www.youtube.com/watch?v=Y3IHvWksrLE",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.94
+  },
+  {
+   "id": "oRhBZ6L9rU8",
+   "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)",
+   "channel": "DNB Academy",
+   "duration": 604,
+   "view_count": 6559,
+   "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.41
+  },
+  {
+   "id": "RdGYObhhhKQ",
+   "title": "DRUM AND BASS CLAP TUTORIAL",
+   "channel": "Gydralair",
+   "duration": 481,
+   "view_count": 147,
+   "url": "https://www.youtube.com/watch?v=RdGYObhhhKQ",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.59
+  },
+  {
+   "id": "IkkT48T-fBQ",
+   "title": "How to Make a Hard DNB Snare in Serum 2",
+   "channel": "DNB Academy",
+   "duration": 596,
+   "view_count": 5500,
+   "url": "https://www.youtube.com/watch?v=IkkT48T-fBQ",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.37
+  },
+  {
+   "id": "Fr2ci50JsW8",
+   "title": "How to Create Punchy Drums and Deep Bass in Reason 14",
+   "channel": "Danubio Rodriguez",
+   "duration": 3016,
+   "view_count": 100,
+   "url": "https://www.youtube.com/watch?v=Fr2ci50JsW8",
+   "query": "punchy drums ambient electronic sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.0
+  }
+ ],
+ "dropped": [
+  {
+   "id": "rk7k6bJTgVo",
+   "why": "already known"
+  },
+  {
+   "id": "uEGE-B53UPs",
+   "why": "already known"
+  },
+  {
+   "id": "Kt3tO4vBj4k",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}
