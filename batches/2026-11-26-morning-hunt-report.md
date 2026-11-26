@@ -21,7 +21,7 @@ Matt's preferences: the cue's 16th-note ostinato stays pitched string/synth note
 - z_QW-nrMAA0: 5 ambient pad methods; all covered, and puts LFOs on pitch.
 - 0X7b2PJghZA: BandLab lo-fi loop-to-song arrangement; generic/covered.
 
-Skipped at title triage: _sh-DO-5bOQ / 9QzrmWWuDU4 (guided sleep talkdowns), H8_A9seCnmw (off-topic), ZdKxOsK4nQ8 (already skipped 11/25), Fj-like duplicates, I66_LmOTlSk (film sound), y4w_mNuhxmw (digicore), EaB6SZEQM5w, FlbAzM5w0bs (40 min house masterclass), equNWJvGVio, EvTcHTCLRg0, rdP6yU-MJDY (custom wavetable promo), uZYDDjMj1aw / Om3zB35xxTo (science explainers), sDgz1X6vBjY (NP2 product), kzkDoBupXKM (binaural in Logic, covered), 0anOtgq4Obc, TfwO3el-i1A, JAtoSiZm-V0, VAdg4Mrt65Y (SFX library promo), tzfzkTAQsnE, WZXXOkZ4-MM.
+Skipped at title triage: _sh-DO-5bOQ / 9QzrmWWuDU4 (guided sleep talkdowns), H8_A9seCnmw (off-topic), ZdKxOsK4nQ8 (already skipped 11/25), I66_LmOTlSk (film sound), y4w_mNuhxmw (digicore), EaB6SZEQM5w, FlbAzM5w0bs (40 min house masterclass), equNWJvGVio, EvTcHTCLRg0, rdP6yU-MJDY (custom wavetable promo), uZYDDjMj1aw / Om3zB35xxTo (science explainers), sDgz1X6vBjY (NP2 product), kzkDoBupXKM (binaural in Logic, covered), 0anOtgq4Obc, TfwO3el-i1A, JAtoSiZm-V0, VAdg4Mrt65Y (SFX library promo), tzfzkTAQsnE, WZXXOkZ4-MM.
 
 ## Carry-overs
 - JhZU6JGvoHw (Make Your Own Kick Drums - Punchy and Deep Kicks): captions listed but fetch rate-limited 4 times.
