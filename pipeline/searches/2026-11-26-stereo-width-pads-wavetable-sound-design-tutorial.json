@@ -1,0 +1,85 @@
+{
+ "topic": "stereo width pads wavetable sound design tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "stereo width pads wavetable sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "IwOpaxWJRPA",
+   "title": "Sylenth Tutorial - Stereo Widening Tips",
+   "channel": "ADSR Music Production Tutorials",
+   "duration": 368,
+   "view_count": 3606,
+   "url": "https://www.youtube.com/watch?v=IwOpaxWJRPA",
+   "query": "stereo width pads wavetable sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 9.28
+  },
+  {
+   "id": "rdP6yU-MJDY",
+   "title": "Make Your Own Custom Wavetables 🔥 | Parawave Rapid, Serum, UVI Falcon, Etc.",
+   "channel": "Venus Theory",
+   "duration": 429,
+   "view_count": 32024,
+   "url": "https://www.youtube.com/watch?v=rdP6yU-MJDY",
+   "query": "stereo width pads wavetable sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.75
+  }
+ ],
+ "dropped": [
+  {
+   "id": "Or3_zhxo2iA",
+   "why": "already known"
+  },
+  {
+   "id": "Mm5eO24aAec",
+   "why": "already known"
+  },
+  {
+   "id": "JP5yTtT-gbk",
+   "why": "already known"
+  },
+  {
+   "id": "hp1IEb5aTU0",
+   "why": "duration 53s"
+  },
+  {
+   "id": "LEJq6QwggsA",
+   "why": "duration 179s"
+  },
+  {
+   "id": "VrCSssDOxFc",
+   "why": "already known"
+  },
+  {
+   "id": "zHqFoN3FTTI",
+   "why": "already known"
+  },
+  {
+   "id": "LcAcmBKryxE",
+   "why": "already known"
+  },
+  {
+   "id": "3PJ581KNoNE",
+   "why": "duration 89s"
+  },
+  {
+   "id": "Jj50TFeKNUE",
+   "why": "negative title signal"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

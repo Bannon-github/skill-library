@@ -1,0 +1,3 @@
+# Rejected: eOgsuNaOKEk (2026-11-26 morning hunt)
+FX Chorus and Phaser PART 19 | u-he DIVA Tutorial. YouTube captions fetched (1332 words; needed three tries because of rate limits).
+Reason: product knob tour, covered. Chorus (rate/depth/wet, classic/ensemble/dramatic modes) and phaser (synced rate, depth, free-running LFO phase, centre, feedback, bipolar stereo, two phaser types) with no pad recipe or settings to keep. The one usable move (depth 0, high feedback, sweep the centre by hand for a resonant tone; feedback one way cuts a hole, the other way adds a peak) is already in `pad-phaser-notch-comb-movement` (static-notch tone shaping variant, "LFO amount zero and sweep only the notch centre"). Pure-phaser gap stays open.

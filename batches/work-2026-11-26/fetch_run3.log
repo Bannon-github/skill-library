@@ -1,0 +1,73 @@
+## HDqafhAl_pA 2026-11-26T09:34:41-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HDqafhAl_pA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HDqafhAl_pA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+2786 raw/HDqafhAl_pA/raw.txt
+## GluePCHvKL0 2026-11-26T09:35:59-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ]
+}
+NO_TRANSCRIPT GluePCHvKL0
+## DG4fTyKAlvQ 2026-11-26T09:37:49-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ]
+}
+NO_TRANSCRIPT DG4fTyKAlvQ
+## OD5nzni_us0 2026-11-26T09:39:42-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}
+416 raw/OD5nzni_us0/raw.txt
+## z_QW-nrMAA0 2026-11-26T09:41:38-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/z_QW-nrMAA0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/z_QW-nrMAA0/raw.txt",
+  "translated": false,
+  "retries": []
+}
+2489 raw/z_QW-nrMAA0/raw.txt
+## 0X7b2PJghZA 2026-11-26T09:42:55-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT 0X7b2PJghZA
+## JhZU6JGvoHw 2026-11-26T09:45:19-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ]
+}
+NO_TRANSCRIPT JhZU6JGvoHw
+## eOgsuNaOKEk 2026-11-26T09:47:18-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/eOgsuNaOKEk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/eOgsuNaOKEk/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1332 raw/eOgsuNaOKEk/raw.txt
+## liS9PQyHSa4 2026-11-26T09:48:35-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/liS9PQyHSa4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/liS9PQyHSa4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+1648 raw/liS9PQyHSa4/raw.txt
+FETCH_DONE 2026-11-26T09:49:55-07:00

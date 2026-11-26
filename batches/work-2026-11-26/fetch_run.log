@@ -1,0 +1,57 @@
+## eOgsuNaOKEk 2026-11-26T09:16:43-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT eOgsuNaOKEk
+## uhC-5pwVHLw 2026-11-26T09:17:48-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT uhC-5pwVHLw
+## Fj3jwdLBD60 2026-11-26T09:18:54-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Fj3jwdLBD60/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Fj3jwdLBD60/raw.txt",
+  "translated": false,
+  "retries": []
+}
+4103 raw/Fj3jwdLBD60/raw.txt
+## liS9PQyHSa4 2026-11-26T09:19:22-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT liS9PQyHSa4
+## JhZU6JGvoHw 2026-11-26T09:20:29-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT JhZU6JGvoHw
+## IwOpaxWJRPA 2026-11-26T09:21:37-07:00
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/IwOpaxWJRPA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/IwOpaxWJRPA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+956 raw/IwOpaxWJRPA/raw.txt
+## e_jWkqJSiMI 2026-11-26T09:22:05-07:00
+  "duration": 262,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT e_jWkqJSiMI
+FETCH_DONE 2026-11-26T09:22:34-07:00

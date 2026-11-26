@@ -1,0 +1,33 @@
+## JhZU6JGvoHw 2026-11-26T09:49:51-07:00
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT JhZU6JGvoHw
+## DG4fTyKAlvQ 2026-11-26T09:51:47-07:00
+  "duration": 414,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT DG4fTyKAlvQ
+## GluePCHvKL0 2026-11-26T09:53:06-07:00
+  "target_language": "en",
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+NO_TRANSCRIPT GluePCHvKL0
+## 0X7b2PJghZA 2026-11-26T09:54:25-07:00
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.5
+    }
+  ]
+}
+3688 raw/0X7b2PJghZA/raw.txt
+FETCH_DONE 2026-11-26T09:57:01-07:00

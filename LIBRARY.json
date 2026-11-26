@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-25T16:25:58.728671+00:00",
-  "entry_count": 302,
+  "updated_at": "2026-11-26T16:57:13.689070+00:00",
+  "entry_count": 304,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4369,6 +4369,32 @@
       "skills": [
         "brainwave-binaural-isochronic-layers"
       ]
+    },
+    {
+      "id": "cinematic-synth-Fj3jwdLBD60",
+      "video_id": "Fj3jwdLBD60",
+      "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+      "title": "How to Write Your First Piece of Cinematic Music",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/Fj3jwdLBD60/raw.txt",
+      "summary": "Skills: cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody (folded into arrangement-ambient-cinematic-score)",
+      "skills": [
+        "arrangement-ambient-cinematic-score"
+      ]
+    },
+    {
+      "id": "cinematic-synth-liS9PQyHSa4",
+      "video_id": "liS9PQyHSa4",
+      "url": "https://www.youtube.com/watch?v=liS9PQyHSa4",
+      "title": "3 Simple Tricks for Beautiful Ambient Melodies",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/liS9PQyHSa4/raw.txt",
+      "summary": "Skills: ambient-melody-three-tricks-vector-melody-dissonant-start-end-scale-step-sequence-over-common-tone-a-bass-modal-transformation-maj7-to-min7-to-maj7-half-step-voice-slips-lydian-dorian (folded into scales-modes-and-melody-writing)",
+      "skills": [
+        "scales-modes-and-melody-writing"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -5232,6 +5258,22 @@
           "video_id": "RDubhupxDsw",
           "skill": "tempo-synced-autopan-phase-360-amplitude-gate-on-long-ambient-texture-shape-softened-edges-reverb-after-gate-amount-as-on-off",
           "cluster": "brainwave-binaural-isochronic-layers"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T16:57:13.689070+00:00",
+      "batch": "2026-11-26-morning-hunt",
+      "folded": [
+        {
+          "video_id": "Fj3jwdLBD60",
+          "skill": "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody",
+          "cluster": "arrangement-ambient-cinematic-score"
+        },
+        {
+          "video_id": "liS9PQyHSa4",
+          "skill": "ambient-melody-three-tricks-vector-melody-dissonant-start-end-scale-step-sequence-over-common-tone-a-bass-modal-transformation-maj7-to-min7-to-maj7-half-step-voice-slips-lydian-dorian",
+          "cluster": "scales-modes-and-melody-writing"
         }
       ]
     }

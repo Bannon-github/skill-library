@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "id": "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody",
+  "name": "Two-minute cinematic cue grown from one 8/16-bar A section: an intro built only from A-section DNA (first two chords on long strings, the main motive stretched into slow note values, booms, a high pedal note, one custom pitched-up hit in a long reverb), an ostinato-fade-in + horn-crescendo transition, then A1 -> A1' (melody moves instrument, low brass added, last chord swapped for the borrowed major IV) -> B (keep one A element, drop percussion and ostinato) -> A2 climax (melody in octaves, fuller percussion, metals, horn countermelody in the held notes)",
+  "goal": "Delta over the existing cinematic arcs (7-section bookend arc, ABA light-tension cue, establish/expand/contrast/return): write the A section first (4 chords in a minor key, motive melody, ostinato, root-note bass), then build the INTRO backwards from it so it hints without giving the theme away (A section's first two chords on long ensemble strings; the motive's intervals augmented into long notes on a low voice; booms; a high piano pedal note; one custom FX made by pitching up a metallic hit into a very long reverb), bridge into A by fading the ostinato in underneath while horns crescendo, and develop the cue with one named device per repeat: A1' = melody to a new instrument + low brass + final chord swapped for the major IV borrowed from Dorian (D major in A minor); B = keep at least one A element, change the rest and lower the intensity; A2 = melody in octaves, more percussion, metal punctuation and a horn countermelody during the melody's long notes.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "Fj3jwdLBD60",
+    "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+    "title": "How to Write Your First Piece of Cinematic Music",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/Fj3jwdLBD60/agent-skill-cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody.json",
+    "batch": "2026-11-26-morning-hunt"
+  },
+  "prerequisites": [
+    "A DAW with MIDI tracks",
+    "Free/original orchestral or synth stand-ins: long strings, short-string ensemble (ostinato), a low melodic voice (cello-like), a brighter melodic voice (violin-like), horn/brass, low drums/boom, a metallic one-shot, a long reverb"
+  ],
+  "inputs": [
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Minor key, e.g. A minor",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Tempo, e.g. 130 BPM (source)",
+      "required": true
+    },
+    {
+      "name": "progression",
+      "type": "list",
+      "description": "Four diatonic chords, e.g. Am-F-G-Am",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cue",
+      "type": "midi",
+      "description": "Intro + A1 + A1' + B + A2 arrangement, about 2 minutes"
+    },
+    {
+      "name": "section_map",
+      "type": "notes",
+      "description": "Which device each section adds or removes"
+    }
+  ],
+  "constraints": [
+    "Write the A section first; the intro and every later section are derived from its chords, motive and rhythms (same building blocks, repeated, varied and developed).",
+    "Intro rule: hint, don't reveal. Use fragments only (first two chords, augmented motive), never the full melody.",
+    "Each repeat of A must add exactly one or two recognisable developments; B keeps at least one A element so it does not sound like a new piece.",
+    "The source's ostinato is 16th-note string figures; keep them as pitched string/synth notes from chord tones, never noise ticks or clicky textures.",
+    "The borrowed major IV (e.g. D major in A minor, F# outside the key) is a brightening colour; use it at the section's end, not every bar.",
+    "Mix last: fader balance, high-pass rumble on non-bass tracks, light compression only, limiter on the master; if something feels off, fix the MIDI/arrangement before EQ.",
+    "Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips.",
+    "If the track has drums, they enter early (~8 counts / ~10-12 s); only pad/texture before that (Matt's preference). The source keeps intro percussion to sparse low booms; here a soft low drum/boom pulse is in by ~8 counts.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Build the A section: four chords in a minor key (e.g. Am-F-G-Am) on piano, a short motive melody whose notes are mostly (>50%) chord tones, repeated four times over the progression played twice (8 bars), rising to its highest note in the second half and ending on the tonic; a short-string ostinato from chord tones around middle C that avoids the melody's pitches; root-note bass in a steady pulse; sparse low drums/boom; a root-note synth bass rhythm.",
+      "tool": "MIDI tracks",
+      "expect": "8-16 bar A section that works on its own"
+    },
+    {
+      "n": 2,
+      "action": "Move the A section to the right to make room for an intro. In the intro, loop the A section's first two chords (e.g. Am-F) on long ensemble strings.",
+      "tool": "Long strings",
+      "expect": "Harmonic preview without the full progression"
+    },
+    {
+      "n": 3,
+      "action": "Take the main motive's intervals and stretch them into a much slower rhythm on the low melodic voice (augmentation).",
+      "tool": "Low voice (cello-like)",
+      "expect": "Listener hears a hint of the coming theme"
+    },
+    {
+      "n": 4,
+      "action": "Add dramatic weight: one or two low booms, a soft low drum pulse in by ~8 counts, and a high piano pedal note for tension.",
+      "tool": "Boom / low drum / piano",
+      "expect": "Weight and tension without the full groove"
+    },
+    {
+      "n": 5,
+      "action": "Make one custom sound for the track: pitch a metallic one-shot (e.g. anvil hit) up and send it 100% into a very long, floating reverb; place it sparingly to fill space.",
+      "tool": "Sampler + long reverb",
+      "expect": "Signature atmospheric texture"
+    },
+    {
+      "n": 6,
+      "action": "Transition intro -> A: bring the ostinato in gradually underneath (fade or one voice at a time) while horns crescendo into the downbeat of A.",
+      "tool": "Ostinato volume automation + horns",
+      "expect": "Rising tension that pulls into A"
+    },
+    {
+      "n": 7,
+      "action": "A1': copy the A section straight after A1. Move the melody to another instrument (e.g. cello -> violins), add low brass chords, and swap the last chord for the borrowed major IV (D major in A minor).",
+      "tool": "Copy MIDI + reassign",
+      "expect": "Familiar repeat that clearly develops and brightens at the end"
+    },
+    {
+      "n": 8,
+      "action": "B: write 8-16 bars that keep at least one A element (e.g. the chord progression, varied) and change the rest: lower dynamics, drop the percussion and ostinato, put a new lyrical melody on violins with low strings holding the chords.",
+      "tool": "MIDI",
+      "expect": "Contrast and breathing room still tied to A"
+    },
+    {
+      "n": 9,
+      "action": "A2 climax: copy the A material again; play the melody in octaves, make percussion fuller (toms, bass drum, snare entering in the second half), add metals (tam-tam/cymbal) as punctuation, and write a horn countermelody in the melody's long held notes.",
+      "tool": "MIDI",
+      "expect": "Highest energy section, clearly the payoff"
+    },
+    {
+      "n": 10,
+      "action": "Mix: balance faders, high-pass low rumble on everything but the true bass parts, carve the bass to make room for cello/trombone, light compression, limiter on the master.",
+      "tool": "Mixer + EQ + compressor + limiter",
+      "expect": "Clean, unclipped cue"
+    }
+  ],
+  "verification": [
+    "Intro contains only the A section's first two chords and an augmented (longer note values) version of the motive; the full melody does not appear before A1.",
+    "A1' differs from A1 in melody instrument/register and its final chord is the major IV of the minor key (contains the raised 6th, e.g. F# in A minor).",
+    "B shares at least one element (chord set, rhythm or texture) with A and has lower RMS than A1' with percussion and ostinato absent.",
+    "A2 has the melody doubled at the octave and the highest RMS of the cue; a countermelody sounds only while the main melody holds long notes.",
+    "Drums/low pulse present by ~8 counts; no noise-tick or clicking textures anywhere; master peak below 0 dBFS."
+  ],
+  "tags": [
+    "cinematic",
+    "arrangement",
+    "intro",
+    "augmentation",
+    "motive",
+    "ostinato",
+    "borrowed-chord",
+    "dorian-iv",
+    "countermelody",
+    "form",
+    "a-a-b-a",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody"
+}

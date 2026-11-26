@@ -1,0 +1,109 @@
+{
+ "topic": "brainwave entrainment music production tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "brainwave entrainment music production tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "GluePCHvKL0",
+   "title": "Produce Like a Pro - Brain Entrainment - BeeOne Tutorial 01",
+   "channel": "ayamahambho",
+   "duration": 1604,
+   "view_count": 617,
+   "url": "https://www.youtube.com/watch?v=GluePCHvKL0",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.9
+  },
+  {
+   "id": "uZYDDjMj1aw",
+   "title": "Brainwave Entrainment Explained | The Science of Sound & the Human Brain",
+   "channel": "BioacousticStudio",
+   "duration": 338,
+   "view_count": 327,
+   "url": "https://www.youtube.com/watch?v=uZYDDjMj1aw",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.76
+  },
+  {
+   "id": "OD5nzni_us0",
+   "title": "How to produce Delta Waves - Binaural Beats in 4 Minutes (Complete Guide)",
+   "channel": "Studio Science",
+   "duration": 256,
+   "view_count": 10,
+   "url": "https://www.youtube.com/watch?v=OD5nzni_us0",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.52
+  },
+  {
+   "id": "sDgz1X6vBjY",
+   "title": "Brainwave Entrainment- Using NP2",
+   "channel": "GiGi Kleinberg",
+   "duration": 421,
+   "view_count": 7725,
+   "url": "https://www.youtube.com/watch?v=sDgz1X6vBjY",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.44
+  },
+  {
+   "id": "kzkDoBupXKM",
+   "title": "How to create alpha binaural beats in Logic Pro",
+   "channel": "originalvonster",
+   "duration": 764,
+   "view_count": 1030,
+   "url": "https://www.youtube.com/watch?v=kzkDoBupXKM",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.01
+  },
+  {
+   "id": "Om3zB35xxTo",
+   "title": "Do Binaural Beats Work?? NEUROLOGIST explains binaural beats",
+   "channel": "Neurogal MD",
+   "duration": 539,
+   "view_count": 331107,
+   "url": "https://www.youtube.com/watch?v=Om3zB35xxTo",
+   "query": "brainwave entrainment music production tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.26
+  }
+ ],
+ "dropped": [
+  {
+   "id": "hfjLuqOK9Co",
+   "why": "already known"
+  },
+  {
+   "id": "Oxrbwld0OBk",
+   "why": "duration 236s"
+  },
+  {
+   "id": "NRWqPRrxY44",
+   "why": "already known"
+  },
+  {
+   "id": "jRI0r_5Fiu0",
+   "why": "duration 235s"
+  },
+  {
+   "id": "FVxu0orrBZQ",
+   "why": "duration 208s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

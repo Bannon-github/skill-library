@@ -1,0 +1,28 @@
+{
+  "video_id": "GluePCHvKL0",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=GluePCHvKL0",
+  "fetched_at": "2026-11-26T16:53:06.349047+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "transcripts_disabled",
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": false,
+      "evidence": "transcripts_disabled"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": false
+    }
+  ],
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}

@@ -1,0 +1,92 @@
+{
+ "topic": "isochronic tones pulse rate automation tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "isochronic tones pulse rate automation tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "_sh-DO-5bOQ",
+   "title": "DEEP SLEEP INDUCTION. Guided Sleep Talkdown with Delta-Wave Isochronic Tones & Binaural Beats",
+   "channel": "The Honest Guys - Meditations - Relaxation",
+   "duration": 1831,
+   "view_count": 1625390,
+   "url": "https://www.youtube.com/watch?v=_sh-DO-5bOQ",
+   "query": "isochronic tones pulse rate automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "9QzrmWWuDU4",
+   "title": "PERFECT DEEP SLEEP Talkdown with Delta Wave Isochronic Tones & Binaural Beats",
+   "channel": "The Honest Guys - Meditations - Relaxation",
+   "duration": 1833,
+   "view_count": 4380052,
+   "url": "https://www.youtube.com/watch?v=9QzrmWWuDU4",
+   "query": "isochronic tones pulse rate automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.0
+  },
+  {
+   "id": "H8_A9seCnmw",
+   "title": "Dopamine API: Thinking about your reinforcement UX",
+   "channel": "Boundless Mind",
+   "duration": 439,
+   "view_count": 1464,
+   "url": "https://www.youtube.com/watch?v=H8_A9seCnmw",
+   "query": "isochronic tones pulse rate automation tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.08
+  }
+ ],
+ "dropped": [
+  {
+   "id": "xnVitJ0sevQ",
+   "why": "duration 3605s"
+  },
+  {
+   "id": "30CciRl_vNQ",
+   "why": "duration 43200s"
+  },
+  {
+   "id": "ZoaC3_j0mp8",
+   "why": "duration 37s"
+  },
+  {
+   "id": "JMMChtw6FMY",
+   "why": "duration 28800s"
+  },
+  {
+   "id": "wZzFMfEr5Bo",
+   "why": "duration 36000s"
+  },
+  {
+   "id": "A8WEZ9iVrwg",
+   "why": "duration 4271s"
+  },
+  {
+   "id": "edBKe9K0te0",
+   "why": "duration 28800s"
+  },
+  {
+   "id": "cHGnuGEN8wM",
+   "why": "duration 37s"
+  },
+  {
+   "id": "aABQEuE16Gc",
+   "why": "duration 10801s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

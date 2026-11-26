@@ -1,0 +1,46 @@
+{
+  "video_id": "HDqafhAl_pA",
+  "title": "The EASY Way to Get BETTER Ambient Arrangements!",
+  "url": "https://www.youtube.com/watch?v=HDqafhAl_pA",
+  "fetched_at": "2026-11-26T16:34:41.718613+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "S1gns Of L1fe",
+  "duration": 1126,
+  "ok": true,
+  "cue_count": 465,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HDqafhAl_pA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HDqafhAl_pA/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

@@ -23,3 +23,14 @@ Source: [Decode ACTION CUES with Melodic Cells](https://www.youtube.com/watch?v=
 - Recontextualise on repeats: change the bass under the ostinato so it fights the ostinato's strong tonic (tension); to release, put major triads over the heavily minor ostinato.
 - Derive the octatonic scale: play the cell four times in a row, each starting a half step lower; the collected pitches form a diminished (octatonic) scale. Blend it with the minor scale (shared notes) and borrow its clashes for tension chords; space a semitone clash into a major 7th so it sounds intentional.
 - Optionally alternate between octatonic collections for major/minor triads over the ostinato to get ambiguous, uneasy colour.
+
+### Three ambient-piano melody devices: a vector melody (one-direction Dorian scale run that may start and end on a dissonant 9th/11th), a classical sequence (a short phrase stepped down one scale degree at a time over chords that all keep one common tone in the bass), and modal transformation (two chord tones slip up a half step, maj7 -> min7 -> maj7, and the melody switches Lydian -> Dorian -> Lydian while the harmony keeps rising)
+Source: [3 Simple Tricks for Beautiful Ambient Melodies](https://www.youtube.com/watch?v=liS9PQyHSa4) · was `ambient-melody-three-tricks-vector-melody-dissonant-start-end-scale-step-sequence-over-common-tone-a-bass-modal-transformation-maj7-to-min7-to-maj7-half-step-voice-slips-lydian-dorian`
+- Set up the accompaniment: a repeating E minor pattern whose only change is one inner voice moving a step (Em6 -> Em7, C# -> D). Put a quiet pad under the piano and add reverb.
+- Vector melody: play a simple E Dorian scale descending over the bed. Try starting it on the 9th (F#) and ending on the 11th (A) so it begins and ends on bitey tones (Em69 colour).
+- Repeat the same scale shape from a new start note over a new chord (e.g. from high A over an A chord instead of E minor), then return to where you started.
+- Sequence: write a short melodic ornament (a few notes) and repeat it, moving it down one scale degree each time, two or three times.
+- Under the sequence, keep one common tone in the bass on the offbeat: Dm with A in the bass -> Am7 -> Bbmaj7 (A is its major 7th) -> A augmented -> A7 (the two upper notes step down). Let A7 (V of D) resolve to D at the next section.
+- Modal transformation: play Gbmaj7 (Gb Bb Db F) with a Gb Lydian melody (raised 4th, C).
+- Slip two notes up a half step (Gb -> G, Db -> D; Bb and F stay) to get Gm7, and re-fit the melody to G Dorian.
+- Now slip Gm7's 3rd and 7th up a half step (Bb -> B, F -> F#) to get Gmaj7, and play G Lydian. Continue the climb the same way (Am7 -> Amaj7 by raising the 3rd and 7th), adjusting the melody each time.

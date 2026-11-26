@@ -1,0 +1,68 @@
+{
+  "video_id": "OD5nzni_us0",
+  "title": "How to produce Delta Waves - Binaural Beats in 4 Minutes (Complete Guide)",
+  "url": "https://www.youtube.com/watch?v=OD5nzni_us0",
+  "fetched_at": "2026-11-26T16:39:42.747314+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Studio Science",
+  "duration": 256,
+  "ok": true,
+  "cue_count": 158,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "OD5nzni_us0.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/OD5nzni_us0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/OD5nzni_us0/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": false,
+      "evidence": "rate_limited_or_ip_blocked"
+    },
+    {
+      "q": "yt-dlp fallback (en.*,en,.*-orig)",
+      "a": true
+    }
+  ],
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}

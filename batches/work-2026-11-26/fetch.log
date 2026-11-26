@@ -1,0 +1,670 @@
+{
+  "video_id": "eOgsuNaOKEk",
+  "title": "FX Chorus and Phaser PART 19 | u-he DIVA Tutorial",
+  "url": "https://www.youtube.com/watch?v=eOgsuNaOKEk",
+  "fetched_at": "2026-11-26T16:16:43.909914+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 551,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.1
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "uhC-5pwVHLw",
+  "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+  "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+  "fetched_at": "2026-11-26T16:17:48.990166+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 261,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.7
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "Fj3jwdLBD60",
+  "title": "How to Write Your First Piece of Cinematic Music",
+  "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+  "fetched_at": "2026-11-26T16:18:54.204144+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Composing Academy",
+  "duration": 1884,
+  "ok": true,
+  "cue_count": 752,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/Fj3jwdLBD60/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/Fj3jwdLBD60/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "liS9PQyHSa4",
+  "title": "3 Simple Tricks for Beautiful Ambient Melodies",
+  "url": "https://www.youtube.com/watch?v=liS9PQyHSa4",
+  "fetched_at": "2026-11-26T16:19:22.175864+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Implied Music",
+  "duration": 892,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.3
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "JhZU6JGvoHw",
+  "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+  "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+  "fetched_at": "2026-11-26T16:20:29.896569+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 677,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.8
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "IwOpaxWJRPA",
+  "title": "Sylenth Tutorial - Stereo Widening Tips",
+  "url": "https://www.youtube.com/watch?v=IwOpaxWJRPA",
+  "fetched_at": "2026-11-26T16:21:37.344347+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "ADSR Music Production Tutorials",
+  "duration": 367,
+  "ok": true,
+  "cue_count": 133,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/IwOpaxWJRPA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/IwOpaxWJRPA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "e_jWkqJSiMI",
+  "title": "How to Make an Ambient, Atmo, Relax - Eclipse (Ableton Live 12)",
+  "url": "https://www.youtube.com/watch?v=e_jWkqJSiMI",
+  "fetched_at": "2026-11-26T16:22:05.231070+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Meditation & Ambient Music",
+  "duration": 262,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "eOgsuNaOKEk",
+  "title": "FX Chorus and Phaser PART 19 | u-he DIVA Tutorial",
+  "url": "https://www.youtube.com/watch?v=eOgsuNaOKEk",
+  "fetched_at": "2026-11-26T16:24:52.901223+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 551,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "JhZU6JGvoHw",
+  "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+  "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+  "fetched_at": "2026-11-26T16:26:48.331742+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 677,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.0
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.4
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "liS9PQyHSa4",
+  "title": "3 Simple Tricks for Beautiful Ambient Melodies",
+  "url": "https://www.youtube.com/watch?v=liS9PQyHSa4",
+  "fetched_at": "2026-11-26T16:28:45.811784+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Implied Music",
+  "duration": 892,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.6
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "uhC-5pwVHLw",
+  "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+  "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+  "fetched_at": "2026-11-26T16:30:41.816378+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 261,
+  "ok": true,
+  "cue_count": 90,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/uhC-5pwVHLw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/uhC-5pwVHLw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "HDqafhAl_pA",
+  "title": "The EASY Way to Get BETTER Ambient Arrangements!",
+  "url": "https://www.youtube.com/watch?v=HDqafhAl_pA",
+  "fetched_at": "2026-11-26T16:34:41.718613+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "S1gns Of L1fe",
+  "duration": 1126,
+  "ok": true,
+  "cue_count": 465,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/HDqafhAl_pA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/HDqafhAl_pA/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "GluePCHvKL0",
+  "title": "Produce Like a Pro - Brain Entrainment - BeeOne Tutorial 01",
+  "url": "https://www.youtube.com/watch?v=GluePCHvKL0",
+  "fetched_at": "2026-11-26T16:35:59.485355+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "ayamahambho",
+  "duration": 1604,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ]
+}
+{
+  "video_id": "DG4fTyKAlvQ",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=DG4fTyKAlvQ",
+  "fetched_at": "2026-11-26T16:37:49.947248+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    }
+  ]
+}
+{
+  "video_id": "OD5nzni_us0",
+  "title": "How to produce Delta Waves - Binaural Beats in 4 Minutes (Complete Guide)",
+  "url": "https://www.youtube.com/watch?v=OD5nzni_us0",
+  "fetched_at": "2026-11-26T16:39:42.747314+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Studio Science",
+  "duration": 256,
+  "ok": true,
+  "cue_count": 158,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "OD5nzni_us0.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/OD5nzni_us0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/OD5nzni_us0/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.3
+    }
+  ]
+}
+{
+  "video_id": "z_QW-nrMAA0",
+  "title": "5 Methods for PERFECT Ambient Pads",
+  "url": "https://www.youtube.com/watch?v=z_QW-nrMAA0",
+  "fetched_at": "2026-11-26T16:41:38.191057+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EDMProd",
+  "duration": 870,
+  "ok": true,
+  "cue_count": 359,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/z_QW-nrMAA0/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/z_QW-nrMAA0/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "0X7b2PJghZA",
+  "title": "Song Arrangement Made Simple | An In-depth Guide To Composing Music in BandLab Studio",
+  "url": "https://www.youtube.com/watch?v=0X7b2PJghZA",
+  "fetched_at": "2026-11-26T16:42:55.883996+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "BandLab",
+  "duration": 1483,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.6
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.1
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.2
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "JhZU6JGvoHw",
+  "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+  "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+  "fetched_at": "2026-11-26T16:45:19.693801+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 677,
+  "ok": false,
+  "error": "rate_limited_or_ip_blocked",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.3
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.9
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.9
+    }
+  ]
+}
+{
+  "video_id": "eOgsuNaOKEk",
+  "title": "FX Chorus and Phaser PART 19 | u-he DIVA Tutorial",
+  "url": "https://www.youtube.com/watch?v=eOgsuNaOKEk",
+  "fetched_at": "2026-11-26T16:47:18.123382+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Jon Audio",
+  "duration": 551,
+  "ok": true,
+  "cue_count": 210,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/eOgsuNaOKEk/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/eOgsuNaOKEk/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "liS9PQyHSa4",
+  "title": "3 Simple Tricks for Beautiful Ambient Melodies",
+  "url": "https://www.youtube.com/watch?v=liS9PQyHSa4",
+  "fetched_at": "2026-11-26T16:48:35.940365+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Implied Music",
+  "duration": 892,
+  "ok": true,
+  "cue_count": 305,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/liS9PQyHSa4/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/liS9PQyHSa4/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "JhZU6JGvoHw",
+  "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+  "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+  "fetched_at": "2026-11-26T16:49:51.617153+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 677,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.1
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.0
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.2
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "DG4fTyKAlvQ",
+  "title": "How To Make A Hybrid Cinematic Impact Sound | Sound Design Tutorial",
+  "url": "https://www.youtube.com/watch?v=DG4fTyKAlvQ",
+  "fetched_at": "2026-11-26T16:51:47.617584+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "lucafrancinimusic",
+  "duration": 414,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "GluePCHvKL0",
+  "title": null,
+  "url": "https://www.youtube.com/watch?v=GluePCHvKL0",
+  "fetched_at": "2026-11-26T16:53:06.349047+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "0X7b2PJghZA",
+  "title": "Song Arrangement Made Simple | An In-depth Guide To Composing Music in BandLab Studio",
+  "url": "https://www.youtube.com/watch?v=0X7b2PJghZA",
+  "fetched_at": "2026-11-26T16:54:25.193081+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "BandLab",
+  "duration": 1483,
+  "ok": true,
+  "cue_count": 1024,
+  "route": "ytdlp-target",
+  "method": "yt-dlp-timedtext-as-transcript",
+  "srt_file": "0X7b2PJghZA.en-orig.srt",
+  "language_code": "en",
+  "ytdlp_exit": 0,
+  "note": "Same timed transcript track as Show transcript; converted to panel text (not kept as caption deliverable).",
+  "transcript_path": "/workspace/skill-library/raw/0X7b2PJghZA/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0X7b2PJghZA/raw.txt",
+  "translated": false,
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.4
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.2
+    },
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.5
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.7
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.5
+    }
+  ]
+}

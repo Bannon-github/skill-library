@@ -1,0 +1,92 @@
+{
+ "topic": "brighter pads sound design tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "brighter pads sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "TfwO3el-i1A",
+   "title": "How to Make Synthwave Pads (Sound Design Techniques)",
+   "channel": "Synthwave Dojo",
+   "duration": 916,
+   "view_count": 3367,
+   "url": "https://www.youtube.com/watch?v=TfwO3el-i1A",
+   "query": "brighter pads sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.26
+  },
+  {
+   "id": "z_QW-nrMAA0",
+   "title": "5 Methods for PERFECT Ambient Pads",
+   "channel": "EDMProd",
+   "duration": 871,
+   "view_count": 16744,
+   "url": "https://www.youtube.com/watch?v=z_QW-nrMAA0",
+   "query": "brighter pads sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.61
+  },
+  {
+   "id": "JAtoSiZm-V0",
+   "title": "Serum 2 Pads and Atmos",
+   "channel": "Dash Glitch",
+   "duration": 1379,
+   "view_count": 9700,
+   "url": "https://www.youtube.com/watch?v=JAtoSiZm-V0",
+   "query": "brighter pads sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.49
+  }
+ ],
+ "dropped": [
+  {
+   "id": "TosV3erGfsg",
+   "why": "already known"
+  },
+  {
+   "id": "A7q9L5wd7Mk",
+   "why": "already known"
+  },
+  {
+   "id": "bAovHufTsc8",
+   "why": "already known"
+  },
+  {
+   "id": "oW4C7txJEgM",
+   "why": "already known"
+  },
+  {
+   "id": "G4u4BBDdtdE",
+   "why": "already known"
+  },
+  {
+   "id": "ehKoz6ILmxQ",
+   "why": "already known"
+  },
+  {
+   "id": "E_RWqhJ0WHE",
+   "why": "duration 133s"
+  },
+  {
+   "id": "zdZw3XTzItc",
+   "why": "duration 46s"
+  },
+  {
+   "id": "X2xijc3S8cc",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

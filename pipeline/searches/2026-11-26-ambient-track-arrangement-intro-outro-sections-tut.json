@@ -1,0 +1,92 @@
+{
+ "topic": "ambient track arrangement intro outro sections tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "ambient track arrangement intro outro sections tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "0X7b2PJghZA",
+   "title": "Song Arrangement Made Simple | An In-depth Guide To Composing Music in BandLab Studio",
+   "channel": null,
+   "duration": 1483,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=0X7b2PJghZA",
+   "query": "ambient track arrangement intro outro sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 4.5
+  },
+  {
+   "id": "HDqafhAl_pA",
+   "title": "The EASY Way to Get BETTER Ambient Arrangements!",
+   "channel": null,
+   "duration": 1126,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=HDqafhAl_pA",
+   "query": "ambient track arrangement intro outro sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 3.5
+  },
+  {
+   "id": "0anOtgq4Obc",
+   "title": "Cinematic String Stack - Ambient Strings - Modal Shifts - Chord versus Scale Terrain theory",
+   "channel": null,
+   "duration": 778,
+   "view_count": null,
+   "url": "https://www.youtube.com/watch?v=0anOtgq4Obc",
+   "query": "ambient track arrangement intro outro sections tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 2.5
+  }
+ ],
+ "dropped": [
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "EXx9At3iUOw",
+   "why": "already known"
+  },
+  {
+   "id": "2bvdVDRpfAQ",
+   "why": "already known"
+  },
+  {
+   "id": "JHiTUBVLmFI",
+   "why": "already known"
+  },
+  {
+   "id": "62oV1qEFjmI",
+   "why": "already known"
+  },
+  {
+   "id": "UNPk66DNdGI",
+   "why": "duration 3738s"
+  },
+  {
+   "id": "5MO9vus3PW4",
+   "why": "negative title signal"
+  },
+  {
+   "id": "j4nHoXGXF8A",
+   "why": "already known"
+  },
+  {
+   "id": "E4eghKjWH1o",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

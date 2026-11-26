@@ -1,0 +1,30 @@
+import sys; sys.path.insert(0,'/workspace/skill-library/batches/work-2026-11-26')
+from lib_s import S
+ABL="Ableton/MIDI-friendly: device names map to stock Live devices or generic modules; patterns are plain MIDI clips."
+EARLY="If the track has drums, they enter early (~8 counts / ~10-12 s); only pad/texture before that (Matt's preference)."
+# 2 ---------------------------------------------- vector melody / scale-step sequence over common-tone bass / modal transformation (liS9PQyHSa4)
+S("liS9PQyHSa4","3 Simple Tricks for Beautiful Ambient Melodies",
+ "ambient-melody-three-tricks-vector-melody-dissonant-start-end-scale-step-sequence-over-common-tone-a-bass-modal-transformation-maj7-to-min7-to-maj7-half-step-voice-slips-lydian-dorian",
+ "Three ambient-piano melody devices: a vector melody (one-direction Dorian scale run that may start and end on a dissonant 9th/11th), a classical sequence (a short phrase stepped down one scale degree at a time over chords that all keep one common tone in the bass), and modal transformation (two chord tones slip up a half step, maj7 -> min7 -> maj7, and the melody switches Lydian -> Dorian -> Lydian while the harmony keeps rising)",
+ "Write ambient melodies that tell a story without wobble or randomness, using three named devices from the source: (1) VECTOR melody: a plain scale run in one direction (down, up, or horizontal as a repeated two-note figure), e.g. E Dorian descending over Em6 -> Em7 inner-voice motion, allowed to start on the 9th (F#) and end on the 11th (A) because the motion justifies the dissonance; repeat it from a new start note over a new chord (e.g. from high A over an A chord) and return. (2) SEQUENCE: a short melodic ornament repeated one scale degree lower each time, over chords that share one bass tone placed on the offbeat (A under Dm/A -> Am7 -> Bbmaj7 -> A augmented -> A7, which resolves to D in the next section). (3) MODAL TRANSFORMATION (neo-Riemannian-style common-tone moves): Gbmaj7 with a Gb Lydian melody -> slip two notes up a half step to Gm7 (Bb and F stay) and play G Dorian -> slip its 3rd and 7th up a half step to Gmaj7 and play G Lydian -> keep going (Am7 -> Amaj7), adjusting the melody to each new mode.",
+ ["A DAW or notation tool with a piano and a soft pad underneath, plus reverb","Basic chord spelling (root/3rd/5th/7th) and mode knowledge (Dorian = minor with raised 6th, Lydian = major with raised 4th)"],
+ [("key_centre","string","Starting mode/key, e.g. E Dorian",True),("tempo","number","Slow tempo; the source plays rubato/slow",False)],
+ [("melody_clips","midi","One MIDI clip per device: vector, sequence, modal transformation"),("chord_map","notes","Chord spelling per bar showing common tones and the half-step slips")],
+ ["Pitch stays steady: no pitch bends, glides or random notes; all motion is written note-by-note (Matt's preference).",
+  "Dissonant start/end notes (9th, 11th) are fine inside a vector melody because the line is clearly moving; do not park on them over a static bar.",
+  "Sequence: same phrase shape, each repeat one scale step lower (diatonic, not chromatic); keep the shared bass tone on the offbeat.",
+  "Modal transformation: exactly two chord tones move by a half step per change; the other two are held as common tones. Re-fit the melody to the new mode at every change.",
+  "Original piano/pad sounds; not affiliated with any piano library vendor named in the source.",ABL,EARLY],
+ [("Set up the accompaniment: a repeating E minor pattern whose only change is one inner voice moving a step (Em6 -> Em7, C# -> D). Put a quiet pad under the piano and add reverb.","Piano + pad + reverb","Gentle, almost static bed with interior motion"),
+  ("Vector melody: play a simple E Dorian scale descending over the bed. Try starting it on the 9th (F#) and ending on the 11th (A) so it begins and ends on bitey tones (Em69 colour).","Piano MIDI","A one-direction line that feels purposeful despite the dissonant ends"),
+  ("Repeat the same scale shape from a new start note over a new chord (e.g. from high A over an A chord instead of E minor), then return to where you started.","Piano MIDI","Hook from repeated direction, new colour from the new chord"),
+  ("Sequence: write a short melodic ornament (a few notes) and repeat it, moving it down one scale degree each time, two or three times.","Piano MIDI","A recognisable phrase stepping down through the scale"),
+  ("Under the sequence, keep one common tone in the bass on the offbeat: Dm with A in the bass -> Am7 -> Bbmaj7 (A is its major 7th) -> A augmented -> A7 (the two upper notes step down). Let A7 (V of D) resolve to D at the next section.","Left-hand chords","Moving harmony glued by a held A, ending on a dominant that resolves"),
+  ("Modal transformation: play Gbmaj7 (Gb Bb Db F) with a Gb Lydian melody (raised 4th, C).","Piano MIDI","Bright Lydian colour"),
+  ("Slip two notes up a half step (Gb -> G, Db -> D; Bb and F stay) to get Gm7, and re-fit the melody to G Dorian.","Piano MIDI","Same melody shape, darker new mode, smooth voice leading"),
+  ("Now slip Gm7's 3rd and 7th up a half step (Bb -> B, F -> F#) to get Gmaj7, and play G Lydian. Continue the climb the same way (Am7 -> Amaj7 by raising the 3rd and 7th), adjusting the melody each time.","Piano MIDI","Constantly rising harmony with new colours from the same simple phrase")],
+ ["Vector clip: melody notes are monotonic in one direction (or a repeated two-note horizontal figure) and use only E Dorian pitch classes.",
+  "Sequence clip: each repeat has the same interval pattern as the first, transposed down one diatonic step; every chord in the sequence contains the bass pitch class A.",
+  "Modal clip: consecutive chords differ by exactly two pitch classes, each moved by one semitone (Gbmaj7 -> Gm7 -> Gmaj7 -> ... ); melody notes over each chord fit the stated mode (Lydian over maj7, Dorian over min7).",
+  "No pitch-bend or glide events in any clip."],
+ ["melody","ambient","piano","vector-melody","sequence","common-tone","pedal-bass","modal-transformation","neo-riemannian","dorian","lydian","voice-leading"])

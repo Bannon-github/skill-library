@@ -1,0 +1,3 @@
+# Rejected: 0X7b2PJghZA (2026-11-26 morning hunt)
+Song Arrangement Made Simple | An In-depth Guide To Composing Music in BandLab. YouTube captions fetched (3688 words).
+Reason: generic/covered. A lo-fi loop-to-song walkthrough: pile clips to the right, start on chords and ambience, change something every 4 bars, drums in at bar 7, drop the drums a beat early before a new section, hats-only build, a one-bar ambience-only break before the final A, double-tracked guitar nudged a few ms for width, ping-pong delay before reverb. All of this is already in `arrangement-loop-to-song-build-drop` and `stereo-width-haas-midside-mono-safe`. Also uses a tape-distortion ambience bed and a stock shaker loop (product library).

@@ -1,0 +1,92 @@
+{
+ "topic": "phaser pad synth sound design tutorial",
+ "date": "2026-11-26",
+ "params": {
+  "topic": "phaser pad synth sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "ZdKxOsK4nQ8",
+   "title": "Xfer Records Serum Tutorial 09 - FX Flanger, Phaser & Chorus",
+   "channel": "SadowickProduction",
+   "duration": 346,
+   "view_count": 4144,
+   "url": "https://www.youtube.com/watch?v=ZdKxOsK4nQ8",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.31
+  },
+  {
+   "id": "eOgsuNaOKEk",
+   "title": "FX Chorus and Phaser PART 19 | u-he DIVA Tutorial",
+   "channel": "Jon Audio",
+   "duration": 551,
+   "view_count": 1570,
+   "url": "https://www.youtube.com/watch?v=eOgsuNaOKEk",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.1
+  },
+  {
+   "id": "uhC-5pwVHLw",
+   "title": "Harmless Tutorial PART 10 Phaser | FL Studio",
+   "channel": "Jon Audio",
+   "duration": 261,
+   "view_count": 480,
+   "url": "https://www.youtube.com/watch?v=uhC-5pwVHLw",
+   "query": "phaser pad synth sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.34
+  }
+ ],
+ "dropped": [
+  {
+   "id": "4vRleMQdZZU",
+   "why": "already known"
+  },
+  {
+   "id": "JQSoQA2f5wc",
+   "why": "duration 148s"
+  },
+  {
+   "id": "TbqMvaZ905Y",
+   "why": "duration 232s"
+  },
+  {
+   "id": "1s_wcjB31iA",
+   "why": "already known"
+  },
+  {
+   "id": "70Gvdl3uyWI",
+   "why": "already known"
+  },
+  {
+   "id": "u2V7FaccThA",
+   "why": "duration 196s"
+  },
+  {
+   "id": "XRCwoFjZFMc",
+   "why": "already known"
+  },
+  {
+   "id": "ZsbcQZtklGI",
+   "why": "already known"
+  },
+  {
+   "id": "BfRyPzy-e-k",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

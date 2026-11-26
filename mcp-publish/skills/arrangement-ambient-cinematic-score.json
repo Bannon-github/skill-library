@@ -134,6 +134,12 @@
         "video_id": "YdnMi_TIXso",
         "url": "https://www.youtube.com/watch?v=YdnMi_TIXso",
         "title": "Beyond the Texture: Advanced Ambient Music Tutorial"
+      },
+      {
+        "from_skill": "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody",
+        "video_id": "Fj3jwdLBD60",
+        "url": "https://www.youtube.com/watch?v=Fj3jwdLBD60",
+        "title": "How to Write Your First Piece of Cinematic Music"
       }
     ]
   },
@@ -549,6 +555,23 @@
         "Add a quiet air/noise bed: filtered noise (low-pass plus a fixed comb) into a large reverb at about -20 dB. A/B it muted vs on to confirm you feel it more than hear it.",
         "Arrange the sections as establish (body + bass), expand (focal voice), build contrast (new sequence / changed relationships in rhythm, register or voicing), return (home material plus one new element). Fade/introduce each element slowly."
       ]
+    },
+    {
+      "from_skill": "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody",
+      "name": "Two-minute cinematic cue grown from one 8/16-bar A section: an intro built only from A-section DNA (first two chords on long strings, the main motive stretched into slow note values, booms, a high pedal note, one custom pitched-up hit in a long reverb), an ostinato-fade-in + horn-crescendo transition, then A1 -> A1' (melody moves instrument, low brass added, last chord swapped for the borrowed major IV) -> B (keep one A element, drop percussion and ostinato) -> A2 climax (melody in octaves, fuller percussion, metals, horn countermelody in the held notes)",
+      "goal": "Delta over the existing cinematic arcs (7-section bookend arc, ABA light-tension cue, establish/expand/contrast/return): write the A section first (4 chords in a minor key, motive melody, ostinato, root-note bass), then build the INTRO backwards from it so it hints without giving the theme away (A section's first two chords on long ensemble strings; the motive's intervals augmented into long notes on a low voice; booms; a high piano pedal note; one custom FX made by pitching up a metallic hit into a very long reverb), bridge into A by fading the ostinato in underneath while horns crescendo, and develop the cue with one named device per repeat: A1' = melody to a new instrument + low brass + final chord swapped for the major IV borrowed from Dorian (D major in A minor); B = keep at least one A element, change the rest and lower the intensity; A2 = melody in octaves, more percussion, metal punctuation and a horn countermelody during the melody's long notes.",
+      "steps": [
+        "Build the A section: four chords in a minor key (e.g. Am-F-G-Am) on piano, a short motive melody whose notes are mostly (>50%) chord tones, repeated four times over the progression played twice (8 bars), rising to its highest note in the second half and ending on the tonic; a short-string ostinato from chord tones around middle C that avoids the melody's pitches; root-note bass in a steady pulse; sparse low drums/boom; a root-note synth bass rhythm.",
+        "Move the A section to the right to make room for an intro. In the intro, loop the A section's first two chords (e.g. Am-F) on long ensemble strings.",
+        "Take the main motive's intervals and stretch them into a much slower rhythm on the low melodic voice (augmentation).",
+        "Add dramatic weight: one or two low booms, a soft low drum pulse in by ~8 counts, and a high piano pedal note for tension.",
+        "Make one custom sound for the track: pitch a metallic one-shot (e.g. anvil hit) up and send it 100% into a very long, floating reverb; place it sparingly to fill space.",
+        "Transition intro -> A: bring the ostinato in gradually underneath (fade or one voice at a time) while horns crescendo into the downbeat of A.",
+        "A1': copy the A section straight after A1. Move the melody to another instrument (e.g. cello -> violins), add low brass chords, and swap the last chord for the borrowed major IV (D major in A minor).",
+        "B: write 8-16 bars that keep at least one A element (e.g. the chord progression, varied) and change the rest: lower dynamics, drop the percussion and ostinato, put a new lyrical melody on violins with low strings holding the chords.",
+        "A2 climax: copy the A material again; play the melody in octaves, make percussion fuller (toms, bass drum, snare entering in the second half), add metals (tam-tam/cymbal) as punctuation, and write a horn countermelody in the melody's long held notes.",
+        "Mix: balance faders, high-pass low rumble on everything but the true bass parts, carve the bass to make room for cello/trombone, light compression, limiter on the master."
+      ]
     }
   ],
   "merged_from": [
@@ -572,7 +595,8 @@
     "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
     "theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath",
     "four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp",
-    "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return"
+    "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return",
+    "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody"
   ],
   "tags": [
     "ambient",
@@ -631,6 +655,7 @@
     "light-tension-cue-aba-every-4-bars-energy-pulse-engine-mediant-chord-lever-breakdown-simmer-a-plus-b-return-cliffhanger-edit-point",
     "theme-to-theme-transition-list-differences-sentence-form-half-cadence-iv-start-borrowed-motifs-register-walk-hybrid-timbre-breath",
     "four-part-dreamy-ambient-common-tone-imaj7-iii-loop-melody-grows-by-unmuting-notes-pad-filter-opens-grain-delay-shimmer-air-ramp",
-    "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return"
+    "ambient-zone-owners-low-a1-body-150-800-focus-air-hand-off-foreground-one-sequence-quiet-noise-minus-20-establish-expand-contrast-return",
+    "cinematic-cue-intro-from-a-section-dna-first-two-chords-augmented-motive-preview-pitched-hit-long-reverb-ostinato-fade-in-horn-crescendo-a1-a1prime-borrowed-major-iv-b-keep-one-element-a2-octaves-countermelody"
   ]
 }
