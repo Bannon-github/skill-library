@@ -151,3 +151,35 @@ Source: [Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)](http
 - Balance the layers: bring the sample layer down until the kick sounds clean, then retune the body pitch and reshape body/transient envelopes to taste (higher body = thumpier).
 - Noise tail: short envelope on a pink stereo noise oscillator, low level and short decay, like a faint top on the hit.
 - FX: EQ boost on the lows (raise Q a little) and on the top/mids; single-band compressor with fast attack at about half amount, then make up gain.
+
+### Punchy, deep kick in one synth tuned to the track's root: sine sub, hold+decay amp envelope, a unipolar pitch envelope that falls onto the note, the same envelope on a driven low-pass, a low-level one-shot noise attack, then EQ / transient / compression shaping
+Source: [Make Your Own Kick Drums - Punchy and Deep Kicks](https://www.youtube.com/watch?v=JhZU6JGvoHw) · was `punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression`
+- Init the synth; set oscillator quality to max and voice mode to mono (no overlapping kicks).
+- Osc 1 = sine, transposed down 2 octaves; play the track's root (e.g. F#) so the kick is tuned to the song's fundamental.
+- Amp envelope: attack 0, hold ~100 ms, decay ~100 ms, sustain -inf. Adjust hold/decay for length; extend the MIDI note so it doesn't cut the tail.
+- Envelope 2 (attack 0, short decay, sustain 0) -> osc coarse pitch, set unipolar so it starts high and falls onto the note; steepen the curve. Less amount/slower = more body; more/faster = more attack and pitchiness.
+- Route the same envelope (unipolar) to a low-pass cutoff so mids/highs sweep away quickly; lower master level and drive the filter for extra harmonics.
+- Add a noise oscillator in one-shot mode (an attack/kick-noise sample, or a layered click sample if the synth has no noise) through the filter; raise it only until the start feels consistent.
+- Play against snare and hats; fine-tune hold, decay and pitch-envelope amount so the kick fits the groove.
+- Mixer: boost low end if needed, cut around 300-400 Hz to clear mud, optional high boost for more attack.
+- Optional light overdrive/clipping for grit; transient shaper attack up/down to dial the click.
+- Compress the kick fairly hard with make-up gain: slower attack keeps the transient, faster attack trades click for fatness. Check on speakers and headphones.
+
+### Soft/felt-to-punchy kick dial: treat the kick as attack + tone, set character with pitch-envelope amount x time, then soften the body and give the attack its own blendable layer (short pitch-dropped saw or short band-passed noise)
+Source: [How To Kick (a discussion of kick drum synthesis)](https://www.youtube.com/watch?v=8eAQ0VdW0Cw) · was `soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body`
+- Layer 1 only: sine body, linear or exponential attack-decay envelope, short decay, pitched low. Note a near-zero amp attack already gives an implied click.
+- Add a pitch envelope (attack-decay) to layer 1 and sweep its amount and time: large + slow = tom/zap, large + very fast = a click, moderate = punch. Pick the balance for the target character.
+- Soft/felt: lower the amount, slow the drop (40-80 ms, ours), soften the amp attack (2-5 ms, ours) and shorten the decay so the front is no longer clicky.
+- Layer 2 attack option A: sawtooth with a high, very fast pitch drop and a very short decay; set its level and tone independently of the body (pitch higher = pingier, lower = scratchier).
+- Layer 2 attack option B: band-passed noise with a very short decay; the noise 'pitch' moves the band centre. Works best when the body is short too.
+- Optionally combine A on layer 1's pitch drop with B noise on layer 2 for a classic sine kick plus noise punch.
+- Optional colour: swap the body to fast FM, or add gentle drive / wavefold / bit reduction for higher harmonics.
+
+### Kick punch by compression: threshold catches only the upper part of the kick, 3:1 ratio, slow ~40 ms attack lets the transient through, ~200 ms release returns before the tail sinks, then make-up gain so the transient stands taller than the sloped tail
+Source: [How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)](https://www.youtube.com/watch?v=mxUQyUs1eGo) · was `kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain`
+- Solo the kick in a basic loop; note the dry waveform (small transient, flat body).
+- Lower the threshold until only the upper section of each kick crosses it (about -10.5 dB in the source).
+- Set ratio about 3:1 (2-3:1 moderate, 5:1 strong, 10:1+ acts like a limiter).
+- Raise attack to about 40 ms so the initial transient passes before gain reduction starts.
+- Set release about 200 ms so it affects only the upper section and recovers before the next hit.
+- Add make-up gain (~+2.3 dB) and A/B against the dry kick at equal loudness; compare waveforms.

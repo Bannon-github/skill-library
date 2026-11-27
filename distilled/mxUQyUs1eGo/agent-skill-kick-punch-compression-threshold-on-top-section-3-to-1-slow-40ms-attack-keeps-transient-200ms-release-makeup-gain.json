@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "id": "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain",
+  "name": "Kick punch by compression: threshold catches only the upper part of the kick, 3:1 ratio, slow ~40 ms attack lets the transient through, ~200 ms release returns before the tail sinks, then make-up gain so the transient stands taller than the sloped tail",
+  "goal": "Add punch and depth to a dull, thuddy kick with one compressor: set the threshold so only the top section of the kick exceeds it (about -10.5 dB in the source; -2 dB does nothing), ratio 3:1 (2-3:1 moderate, 5:1 strong, 10:1+ limiting), attack ~40 ms so the initial transient passes uncompressed and the body after it is pulled down, release ~200 ms so gain recovers without dragging the tail under the threshold, then make-up gain (~+2.3 dB) and A/B at matched loudness. Result: higher relative transient and a sloped tail that cuts through the mix. Complements the synthesized punchy/felt kick variants (use after synthesis).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "mxUQyUs1eGo",
+    "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+    "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/mxUQyUs1eGo/agent-skill-kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain.json",
+    "batch": "2026-11-27-morning-hunt"
+  },
+  "prerequisites": [
+    "Any compressor, ideally one that shows the waveform/gain reduction",
+    "A kick in a basic drum loop"
+  ],
+  "inputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Kick needing more punch (thud with a small transient)",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick_compressed",
+      "type": "audio",
+      "description": "Kick with a more pronounced transient and sloped tail"
+    }
+  ],
+  "constraints": [
+    "Use loudness-matched A/B; the change is subtle by design.",
+    "Slow attack (tens of ms) is the punch move; very fast attack instead trades click for fatness.",
+    "Do not let release push the tail fully under the threshold.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Solo the kick in a basic loop; note the dry waveform (small transient, flat body).",
+      "tool": "Meter/waveform view",
+      "expect": "Reference for before/after"
+    },
+    {
+      "n": 2,
+      "action": "Lower the threshold until only the upper section of each kick crosses it (about -10.5 dB in the source).",
+      "tool": "Compressor threshold",
+      "expect": "Only the loud part triggers compression"
+    },
+    {
+      "n": 3,
+      "action": "Set ratio about 3:1 (2-3:1 moderate, 5:1 strong, 10:1+ acts like a limiter).",
+      "tool": "Compressor ratio",
+      "expect": "Peaks pulled down moderately"
+    },
+    {
+      "n": 4,
+      "action": "Raise attack to about 40 ms so the initial transient passes before gain reduction starts.",
+      "tool": "Compressor attack",
+      "expect": "Transient kept, body compressed after it"
+    },
+    {
+      "n": 5,
+      "action": "Set release about 200 ms so it affects only the upper section and recovers before the next hit.",
+      "tool": "Compressor release",
+      "expect": "Tail sloped, not buried"
+    },
+    {
+      "n": 6,
+      "action": "Add make-up gain (~+2.3 dB) and A/B against the dry kick at equal loudness; compare waveforms.",
+      "tool": "Output gain",
+      "expect": "Punchier kick with a taller relative transient"
+    }
+  ],
+  "verification": [
+    "Gain reduction begins only after the transient (~40 ms attack) and returns to 0 dB before the next kick.",
+    "Compressed kick's peak-to-body ratio (first 10 ms vs 50-150 ms RMS) is higher than the dry kick's.",
+    "Loudness-matched output; peak below 0 dBFS."
+  ],
+  "tags": [
+    "kick",
+    "compression",
+    "punch",
+    "transient",
+    "attack",
+    "release",
+    "drums",
+    "mix",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain"
+}

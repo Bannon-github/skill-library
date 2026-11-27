@@ -86,6 +86,24 @@
         "video_id": "oRhBZ6L9rU8",
         "url": "https://www.youtube.com/watch?v=oRhBZ6L9rU8",
         "title": "Make Acoustic-Sounding Kick Drums in Serum 2 (Realistic & Punchy)"
+      },
+      {
+        "from_skill": "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+        "video_id": "JhZU6JGvoHw",
+        "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+        "title": "Make Your Own Kick Drums - Punchy and Deep Kicks"
+      },
+      {
+        "from_skill": "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+        "video_id": "8eAQ0VdW0Cw",
+        "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+        "title": "How To Kick (a discussion of kick drum synthesis)"
+      },
+      {
+        "from_skill": "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain",
+        "video_id": "mxUQyUs1eGo",
+        "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+        "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)"
       }
     ]
   },
@@ -368,6 +386,50 @@
         "Noise tail: short envelope on a pink stereo noise oscillator, low level and short decay, like a faint top on the hit.",
         "FX: EQ boost on the lows (raise Q a little) and on the top/mids; single-band compressor with fast attack at about half amount, then make up gain."
       ]
+    },
+    {
+      "from_skill": "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+      "name": "Punchy, deep kick in one synth tuned to the track's root: sine sub, hold+decay amp envelope, a unipolar pitch envelope that falls onto the note, the same envelope on a driven low-pass, a low-level one-shot noise attack, then EQ / transient / compression shaping",
+      "goal": "Synthesize a punchy deep kick from scratch in three parts (sub, harmonic body, attack): mono, max oscillator quality; sine 2 octaves down tuned to the track's fundamental; amp envelope hold ~100 ms, decay ~100 ms, sustain -inf; a second envelope (sustain 0) routed UNIPOLAR to coarse pitch so it starts high and falls exactly onto the note (steeper = punchier, more amount = pitchier); the same envelope on a low-pass cutoff that clears the mids, with the filter driven for harmonics; a one-shot noise attack layer mixed low; then lengthen/shorten with hold+decay against the snare and hats, low boost, cut 300-400 Hz mud, transient shaper for more/less attack, heavy compression with make-up gain (slower attack keeps the transient, faster attack fattens).",
+      "steps": [
+        "Init the synth; set oscillator quality to max and voice mode to mono (no overlapping kicks).",
+        "Osc 1 = sine, transposed down 2 octaves; play the track's root (e.g. F#) so the kick is tuned to the song's fundamental.",
+        "Amp envelope: attack 0, hold ~100 ms, decay ~100 ms, sustain -inf. Adjust hold/decay for length; extend the MIDI note so it doesn't cut the tail.",
+        "Envelope 2 (attack 0, short decay, sustain 0) -> osc coarse pitch, set unipolar so it starts high and falls onto the note; steepen the curve. Less amount/slower = more body; more/faster = more attack and pitchiness.",
+        "Route the same envelope (unipolar) to a low-pass cutoff so mids/highs sweep away quickly; lower master level and drive the filter for extra harmonics.",
+        "Add a noise oscillator in one-shot mode (an attack/kick-noise sample, or a layered click sample if the synth has no noise) through the filter; raise it only until the start feels consistent.",
+        "Play against snare and hats; fine-tune hold, decay and pitch-envelope amount so the kick fits the groove.",
+        "Mixer: boost low end if needed, cut around 300-400 Hz to clear mud, optional high boost for more attack.",
+        "Optional light overdrive/clipping for grit; transient shaper attack up/down to dial the click.",
+        "Compress the kick fairly hard with make-up gain: slower attack keeps the transient, faster attack trades click for fatness. Check on speakers and headphones."
+      ]
+    },
+    {
+      "from_skill": "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+      "name": "Soft/felt-to-punchy kick dial: treat the kick as attack + tone, set character with pitch-envelope amount x time, then soften the body and give the attack its own blendable layer (short pitch-dropped saw or short band-passed noise)",
+      "goal": "Delta over the punchy/acoustic kick variants: one map for the whole soft-to-punchy range. Kick = attack (beater on skin) + tone (sustaining body). Character comes from balancing pitch-envelope AMOUNT against its decay TIME: big amount + slow = tom/zap, big + very fast = click, moderate + slower with a softened amp attack = soft/felt kick, zero = tubby sine. For a felt kick, make the body layer soft (small, slower pitch drop, amp attack softened, shorter decay) and add the attack on a SECOND layer whose tone and level are independent: a very short saw with a fast pitch drop, or very short band-passed noise whose pitch knob sets the band centre; combining both feels more acoustic. The body layer can be swapped for FM, and drive/wavefold/bit-reduction add grit.",
+      "steps": [
+        "Layer 1 only: sine body, linear or exponential attack-decay envelope, short decay, pitched low. Note a near-zero amp attack already gives an implied click.",
+        "Add a pitch envelope (attack-decay) to layer 1 and sweep its amount and time: large + slow = tom/zap, large + very fast = a click, moderate = punch. Pick the balance for the target character.",
+        "Soft/felt: lower the amount, slow the drop (40-80 ms, ours), soften the amp attack (2-5 ms, ours) and shorten the decay so the front is no longer clicky.",
+        "Layer 2 attack option A: sawtooth with a high, very fast pitch drop and a very short decay; set its level and tone independently of the body (pitch higher = pingier, lower = scratchier).",
+        "Layer 2 attack option B: band-passed noise with a very short decay; the noise 'pitch' moves the band centre. Works best when the body is short too.",
+        "Optionally combine A on layer 1's pitch drop with B noise on layer 2 for a classic sine kick plus noise punch.",
+        "Optional colour: swap the body to fast FM, or add gentle drive / wavefold / bit reduction for higher harmonics."
+      ]
+    },
+    {
+      "from_skill": "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain",
+      "name": "Kick punch by compression: threshold catches only the upper part of the kick, 3:1 ratio, slow ~40 ms attack lets the transient through, ~200 ms release returns before the tail sinks, then make-up gain so the transient stands taller than the sloped tail",
+      "goal": "Add punch and depth to a dull, thuddy kick with one compressor: set the threshold so only the top section of the kick exceeds it (about -10.5 dB in the source; -2 dB does nothing), ratio 3:1 (2-3:1 moderate, 5:1 strong, 10:1+ limiting), attack ~40 ms so the initial transient passes uncompressed and the body after it is pulled down, release ~200 ms so gain recovers without dragging the tail under the threshold, then make-up gain (~+2.3 dB) and A/B at matched loudness. Result: higher relative transient and a sloped tail that cuts through the mix. Complements the synthesized punchy/felt kick variants (use after synthesis).",
+      "steps": [
+        "Solo the kick in a basic loop; note the dry waveform (small transient, flat body).",
+        "Lower the threshold until only the upper section of each kick crosses it (about -10.5 dB in the source).",
+        "Set ratio about 3:1 (2-3:1 moderate, 5:1 strong, 10:1+ acts like a limiter).",
+        "Raise attack to about 40 ms so the initial transient passes before gain reduction starts.",
+        "Set release about 200 ms so it affects only the upper section and recovers before the next hit.",
+        "Add make-up gain (~+2.3 dB) and A/B against the dry kick at equal loudness; compare waveforms."
+      ]
     }
   ],
   "merged_from": [
@@ -383,7 +445,10 @@
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
     "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
     "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
-    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail"
+    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+    "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+    "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+    "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain"
   ],
   "tags": [
     "808",
@@ -434,6 +499,9 @@
     "dark-short-kick-behind-busy-bass-transient-body-tail-73hz-start-eighth-note-length",
     "reverb-rumble-kick-parallel-aux-ny-comp-release-between-16th-8th-drive-short-verb-ducked-by-kick-synced-lowpass",
     "kick-heart-sine-sweep-goldilocks-sweep-time-not-clicky-not-laser-decay-leaves-silence-for-bass-low-start-freq-55hz-end-reference-clean-heart-parallel-saturation-layered-transient",
-    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail"
+    "acoustic-style-kick-four-layers-sine-body-pitch-env-phase-offset-transient-osc-faded-in-sample-layer-hp-filtered-short-pink-noise-tail",
+    "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+    "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+    "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain"
   ]
 }

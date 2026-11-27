@@ -1,0 +1,219 @@
+batches/work-2026-11-27/fetch_slow.sh: line 5: .venv/bin/python: No such file or directory
+{
+  "video_id": "JhZU6JGvoHw",
+  "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+  "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+  "fetched_at": "2026-11-27T16:18:14.759410+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "In The Mix",
+  "duration": 677,
+  "ok": true,
+  "cue_count": 307,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/JhZU6JGvoHw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/JhZU6JGvoHw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "8eAQ0VdW0Cw",
+  "title": "How To Kick (a discussion of kick drum synthesis)",
+  "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+  "fetched_at": "2026-11-27T16:19:52.753797+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Oscillator Sink",
+  "duration": 1008,
+  "ok": true,
+  "cue_count": 302,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/8eAQ0VdW0Cw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/8eAQ0VdW0Cw/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "Ewrxt0X2lmw",
+  "title": "Basic Impact Sound Design",
+  "url": "https://www.youtube.com/watch?v=Ewrxt0X2lmw",
+  "fetched_at": "2026-11-27T16:20:55.888175+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": null,
+  "channel": "Negativist",
+  "duration": 399,
+  "ok": false,
+  "error": "transcripts_disabled",
+  "retries": [],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "0qOs9e5UwAU",
+  "title": "How to Create Unique PADS in VITAL, Serum and Phaseplant",
+  "url": "https://www.youtube.com/watch?v=0qOs9e5UwAU",
+  "fetched_at": "2026-11-27T16:22:00.126800+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ghosthack",
+  "duration": 690,
+  "ok": true,
+  "cue_count": 298,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/0qOs9e5UwAU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0qOs9e5UwAU/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "3KHYguJIz48",
+  "title": "From Blank Project to Full Ambient Track in Bitwig (Song Structure, Chords & Sound Design)",
+  "url": "https://www.youtube.com/watch?v=3KHYguJIz48",
+  "fetched_at": "2026-11-27T16:23:03.475874+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EtherLoops",
+  "duration": 1480,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.7
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.0
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "R3nsI3ZF0Vs",
+  "title": "CINEMATIC IMPACTS TUTORIAL IN ( FL STUDIO 12! )",
+  "url": "https://www.youtube.com/watch?v=R3nsI3ZF0Vs",
+  "fetched_at": "2026-11-27T16:24:45.476295+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "diefex",
+  "duration": 663,
+  "ok": true,
+  "cue_count": 135,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/R3nsI3ZF0Vs/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/R3nsI3ZF0Vs/raw.txt",
+  "translated": false,
+  "retries": []
+}
+{
+  "video_id": "mxUQyUs1eGo",
+  "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+  "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+  "fetched_at": "2026-11-27T16:25:48.220244+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Producer Sphere",
+  "duration": 315,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 4.8
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 9.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 16.5
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "3KHYguJIz48",
+  "title": "From Blank Project to Full Ambient Track in Bitwig (Song Structure, Chords & Sound Design)",
+  "url": "https://www.youtube.com/watch?v=3KHYguJIz48",
+  "fetched_at": "2026-11-27T16:26:38.731125+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "EtherLoops",
+  "duration": 1480,
+  "ok": false,
+  "error": "no_track_fetchable",
+  "retries": [
+    {
+      "retry": 1,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 5.9
+    },
+    {
+      "retry": 2,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 8.5
+    },
+    {
+      "retry": 3,
+      "reason": "rate_limited_or_ip_blocked",
+      "sleep_s": 17.3
+    }
+  ],
+  "last_resort": "ASR/Whisper on the audio is possible but NOT allowed unless Matt explicitly asks; flagged for review, nothing invented."
+}
+{
+  "video_id": "mxUQyUs1eGo",
+  "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+  "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+  "fetched_at": "2026-11-27T16:28:51.045866+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Producer Sphere",
+  "duration": 315,
+  "ok": true,
+  "cue_count": 132,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/mxUQyUs1eGo/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/mxUQyUs1eGo/raw.txt",
+  "translated": false,
+  "retries": []
+}

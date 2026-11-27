@@ -1,0 +1,106 @@
+{
+ "topic": "hybrid cinematic impact sound design tutorial",
+ "date": "2026-11-27",
+ "params": {
+  "topic": "hybrid cinematic impact sound design tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "R3nsI3ZF0Vs",
+   "title": "CINEMATIC IMPACTS TUTORIAL IN ( FL STUDIO 12! )",
+   "channel": "diefex",
+   "duration": 664,
+   "view_count": 934,
+   "url": "https://www.youtube.com/watch?v=R3nsI3ZF0Vs",
+   "query": "hybrid cinematic impact sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.99
+  },
+  {
+   "id": "eE1Xg2BU_JE",
+   "title": "Ibrido Cinematica Tutorial - Overview",
+   "channel": "Sonokinetic BV",
+   "duration": 677,
+   "view_count": 11389,
+   "url": "https://www.youtube.com/watch?v=eE1Xg2BU_JE",
+   "query": "hybrid cinematic impact sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.53
+  },
+  {
+   "id": "I66_LmOTlSk",
+   "title": "Sound Design for Cinematic Filmmaking | My Process",
+   "channel": "Jacob Nordin",
+   "duration": 636,
+   "view_count": 1241513,
+   "url": "https://www.youtube.com/watch?v=I66_LmOTlSk",
+   "query": "hybrid cinematic impact sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.5
+  },
+  {
+   "id": "tzfzkTAQsnE",
+   "title": "3 Sound Design Secrets That Feel Like CHEATING",
+   "channel": "Herman Huang",
+   "duration": 442,
+   "view_count": 1107568,
+   "url": "https://www.youtube.com/watch?v=tzfzkTAQsnE",
+   "query": "hybrid cinematic impact sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.5
+  },
+  {
+   "id": "Ewrxt0X2lmw",
+   "title": "Basic Impact Sound Design",
+   "channel": "Negativist",
+   "duration": 399,
+   "view_count": 1823,
+   "url": "https://www.youtube.com/watch?v=Ewrxt0X2lmw",
+   "query": "hybrid cinematic impact sound design tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.13
+  }
+ ],
+ "dropped": [
+  {
+   "id": "DG4fTyKAlvQ",
+   "why": "already known"
+  },
+  {
+   "id": "3rCUdTDodrc",
+   "why": "already known"
+  },
+  {
+   "id": "yJQ5hXbH11Y",
+   "why": "negative title signal"
+  },
+  {
+   "id": "UYFTN2gZkTM",
+   "why": "negative title signal"
+  },
+  {
+   "id": "p1-WmITJqBk",
+   "why": "already known"
+  },
+  {
+   "id": "_-AVPwWIBBw",
+   "why": "duration 34s"
+  },
+  {
+   "id": "es1rXKE8-ng",
+   "why": "duration 31s"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+  "name": "Soft/felt-to-punchy kick dial: treat the kick as attack + tone, set character with pitch-envelope amount x time, then soften the body and give the attack its own blendable layer (short pitch-dropped saw or short band-passed noise)",
+  "goal": "Delta over the punchy/acoustic kick variants: one map for the whole soft-to-punchy range. Kick = attack (beater on skin) + tone (sustaining body). Character comes from balancing pitch-envelope AMOUNT against its decay TIME: big amount + slow = tom/zap, big + very fast = click, moderate + slower with a softened amp attack = soft/felt kick, zero = tubby sine. For a felt kick, make the body layer soft (small, slower pitch drop, amp attack softened, shorter decay) and add the attack on a SECOND layer whose tone and level are independent: a very short saw with a fast pitch drop, or very short band-passed noise whose pitch knob sets the band centre; combining both feels more acoustic. The body layer can be swapped for FM, and drive/wavefold/bit-reduction add grit.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "8eAQ0VdW0Cw",
+    "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+    "title": "How To Kick (a discussion of kick drum synthesis)",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/8eAQ0VdW0Cw/agent-skill-soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body.json",
+    "batch": "2026-11-27-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth or drum voice with two layers/oscillators, pitch envelope, noise (band-pass) and optional FM/drive"
+  ],
+  "inputs": [
+    {
+      "name": "character",
+      "type": "string",
+      "description": "soft/felt | balanced | punchy",
+      "required": true
+    },
+    {
+      "name": "track_root",
+      "type": "string",
+      "description": "Key root for the body pitch",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "Kick at the chosen character"
+    },
+    {
+      "name": "attack_layer",
+      "type": "audio",
+      "description": "Separate attack layer for blending"
+    }
+  ],
+  "constraints": [
+    "Attack layer is one short transient per hit (no repeats, no rapid clicking); keep it subtle for soft/felt kicks.",
+    "Body pitch drop is a single smooth fall, not wobble.",
+    "If the kick is used in a track, drums enter early (~8 counts / ~10-12 s); only pad before that (Matt's preference).",
+    "Values marked (ours) are starting points added by us; the source gives no number for them.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Layer 1 only: sine body, linear or exponential attack-decay envelope, short decay, pitched low. Note a near-zero amp attack already gives an implied click.",
+      "tool": "Layer 1",
+      "expect": "Plain 'tubby' sine kick"
+    },
+    {
+      "n": 2,
+      "action": "Add a pitch envelope (attack-decay) to layer 1 and sweep its amount and time: large + slow = tom/zap, large + very fast = a click, moderate = punch. Pick the balance for the target character.",
+      "tool": "Pitch envelope",
+      "expect": "Character set by amount x time"
+    },
+    {
+      "n": 3,
+      "action": "Soft/felt: lower the amount, slow the drop (40-80 ms, ours), soften the amp attack (2-5 ms, ours) and shorten the decay so the front is no longer clicky.",
+      "tool": "Layer 1 envelopes",
+      "expect": "Soft, rounded body without a hard click"
+    },
+    {
+      "n": 4,
+      "action": "Layer 2 attack option A: sawtooth with a high, very fast pitch drop and a very short decay; set its level and tone independently of the body (pitch higher = pingier, lower = scratchier).",
+      "tool": "Layer 2 oscillator",
+      "expect": "Blendable beater attack"
+    },
+    {
+      "n": 5,
+      "action": "Layer 2 attack option B: band-passed noise with a very short decay; the noise 'pitch' moves the band centre. Works best when the body is short too.",
+      "tool": "Layer 2 noise",
+      "expect": "Felt/acoustic-feeling attack (room/snare-wire impression)"
+    },
+    {
+      "n": 6,
+      "action": "Optionally combine A on layer 1's pitch drop with B noise on layer 2 for a classic sine kick plus noise punch.",
+      "tool": "Both layers",
+      "expect": "Fuller, more 'real' kick"
+    },
+    {
+      "n": 7,
+      "action": "Optional colour: swap the body to fast FM, or add gentle drive / wavefold / bit reduction for higher harmonics.",
+      "tool": "FM / drive",
+      "expect": "Body variations beyond the plain sine"
+    }
+  ],
+  "verification": [
+    "Soft/felt version: no single-sample spike at onset; first 5 ms ramps rather than jumps (ours: amp attack >= 2 ms).",
+    "Attack layer level adjustable without changing body pitch or decay.",
+    "Punchy version has a faster pitch drop than the soft version (measured pitch reaches the root sooner).",
+    "Drums in by ~8 counts in any track demo; peak below 0 dBFS."
+  ],
+  "tags": [
+    "kick",
+    "drum-synthesis",
+    "soft-kick",
+    "felt-kick",
+    "punchy",
+    "pitch-envelope",
+    "attack-layer",
+    "band-pass-noise",
+    "fm",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body"
+}

@@ -1,0 +1,106 @@
+{
+ "topic": "punchy kick drum synthesis tutorial",
+ "date": "2026-11-27",
+ "params": {
+  "topic": "punchy kick drum synthesis tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "8eAQ0VdW0Cw",
+   "title": "How To Kick (a discussion of kick drum synthesis)",
+   "channel": "Oscillator Sink",
+   "duration": 1008,
+   "view_count": 10289,
+   "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+   "query": "punchy kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 8.51
+  },
+  {
+   "id": "vr0DHvuQX8E",
+   "title": "Create the PERFECT Kick Drum in Serum 2 (Step-by-Step)",
+   "channel": "Production Music Live",
+   "duration": 639,
+   "view_count": 10695,
+   "url": "https://www.youtube.com/watch?v=vr0DHvuQX8E",
+   "query": "punchy kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.51
+  },
+  {
+   "id": "mxUQyUs1eGo",
+   "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+   "channel": "Producer Sphere",
+   "duration": 315,
+   "view_count": 154489,
+   "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+   "query": "punchy kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.09
+  },
+  {
+   "id": "3lHVhdM83LI",
+   "title": "BEST WAY to MAKE a KICK in SERUM in 5 MINUTES 🔥 *Serum sound design*",
+   "channel": "Wildcrow Studio",
+   "duration": 378,
+   "view_count": 100288,
+   "url": "https://www.youtube.com/watch?v=3lHVhdM83LI",
+   "query": "punchy kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 7.0
+  },
+  {
+   "id": "ndG-6-vONNc",
+   "title": "Synthesize Kick drums that sound REAL using the power of FM",
+   "channel": "Zion Jaymes",
+   "duration": 1641,
+   "view_count": 114120,
+   "url": "https://www.youtube.com/watch?v=ndG-6-vONNc",
+   "query": "punchy kick drum synthesis tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 6.03
+  }
+ ],
+ "dropped": [
+  {
+   "id": "rk7k6bJTgVo",
+   "why": "already known"
+  },
+  {
+   "id": "JhZU6JGvoHw",
+   "why": "already known"
+  },
+  {
+   "id": "NQozTpuLIAI",
+   "why": "duration 193s"
+  },
+  {
+   "id": "dDToSiHOedM",
+   "why": "duration 74s"
+  },
+  {
+   "id": "WFGs91vSpIw",
+   "why": "already known"
+  },
+  {
+   "id": "u7-40sDPxQI",
+   "why": "already known"
+  },
+  {
+   "id": "oRhBZ6L9rU8",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

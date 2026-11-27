@@ -1,0 +1,52 @@
+{
+  "video_id": "0qOs9e5UwAU",
+  "title": "How to Create Unique PADS in VITAL, Serum and Phaseplant",
+  "url": "https://www.youtube.com/watch?v=0qOs9e5UwAU",
+  "fetched_at": "2026-11-27T16:22:00.126800+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en-US",
+  "channel": "Ghosthack",
+  "duration": 690,
+  "ok": true,
+  "cue_count": 298,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/0qOs9e5UwAU/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/0qOs9e5UwAU/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en-US"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)",
+        "fr-FR(auto)",
+        "de-DE(auto)",
+        "hi(auto)",
+        "id(auto)",
+        "pt-BR(auto)",
+        "es-US(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

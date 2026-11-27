@@ -88,3 +88,12 @@ Source: [Ableton Live Tutorial - Gated Textures using Autopan](https://www.youtu
 - Fine-tune the gate edges with the shape control and the waveform selector (rounded/sine-like for soft pulses).
 - Add a reverb after the auto-pan and raise its decay for a large room/hall, to soften the gating.
 - Play it with the beat and automate the auto-pan amount down/up to take the gate off and bring it back between sections.
+
+### Isochronic staged gate-rate ramp: hold -> linear glide -> hold, phase-integrated so pulses never jump, raised-cosine edges, fixed carrier
+Source: [In-house: iso_ramp() in sample-lab/theory/entrainment_tones.py (render: out/entrainment_gate_rate_ramp.wav)](sample-lab/theory/entrainment_tones.py) · was `isochronic-staged-gate-rate-ramp-phase-integrated-raised-cosine-edges-fixed-carrier`
+- Pick a fixed carrier (a pad chord tone works; 400 Hz in the reference) and write the stage list: hold at the start rate, one linear glide, hold at the end rate. Keep glides >= 8 s for a smooth feel.
+- Build the per-sample rate curve by concatenating linear segments per stage.
+- Integrate the rate into the gate phase: ph = cumsum(r)/SR mod 1 (in a DAW: automate the LFO rate on a free-running, non-retriggering LFO so its phase carries across rate changes).
+- Gate shape: on for ph < duty; edges are raised-cosine ramps of ~4 ms, converted to cycles as edge*r and capped at duty/2 so fast rates still get a full on-plateau or a smooth bump.
+- Multiply the fixed-pitch carrier by the gate; render, then mix it under the pad.
+- Verify: count pulse onsets per 2 s window from a 60 Hz low-passed envelope; the counts should follow the stage plan (e.g. 12, 12, 11.5 ... 6.5, 6, 6).

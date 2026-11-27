@@ -1,8 +1,8 @@
 {
   "library_name": "YouTube Practical Skills Library",
   "version": 1,
-  "updated_at": "2026-11-26T16:57:13.689070+00:00",
-  "entry_count": 304,
+  "updated_at": "2026-11-27T16:30:51.313425+00:00",
+  "entry_count": 308,
   "append_rule": "Write batches/YYYY-MM-DD-batch-NN.json then merge unique ids into LIBRARY.json; add skills/<name>.md",
   "entries": [
     {
@@ -4395,6 +4395,58 @@
       "skills": [
         "scales-modes-and-melody-writing"
       ]
+    },
+    {
+      "id": "cinematic-synth-JhZU6JGvoHw",
+      "video_id": "JhZU6JGvoHw",
+      "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+      "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/JhZU6JGvoHw/raw.txt",
+      "summary": "Skills: punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-8eAQ0VdW0Cw",
+      "video_id": "8eAQ0VdW0Cw",
+      "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+      "title": "How To Kick (a discussion of kick drum synthesis)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/8eAQ0VdW0Cw/raw.txt",
+      "summary": "Skills: soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
+    },
+    {
+      "id": "cinematic-synth-0qOs9e5UwAU",
+      "video_id": "0qOs9e5UwAU",
+      "url": "https://www.youtube.com/watch?v=0qOs9e5UwAU",
+      "title": "How to Create Unique PADS in VITAL, Serum and Phaseplant",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/0qOs9e5UwAU/raw.txt",
+      "summary": "Skills: four-role-atmospheric-pad-lp-low-wavetable-hp-harsh-high-layer-octave-up-triangle-key-tracked-noise-sample-chorus-phaser-flanger-delay-reverb-eq-placement (folded into brightness-and-air-at-the-source)",
+      "skills": [
+        "brightness-and-air-at-the-source"
+      ]
+    },
+    {
+      "id": "cinematic-synth-mxUQyUs1eGo",
+      "video_id": "mxUQyUs1eGo",
+      "url": "https://www.youtube.com/watch?v=mxUQyUs1eGo",
+      "title": "How to add PUNCH to your KICKS using Compression (3 SIMPLE STEPS)",
+      "topic": "cinematic-hybrid-synth",
+      "transcript_source": "youtube-provided",
+      "transcript_file": "raw/mxUQyUs1eGo/raw.txt",
+      "summary": "Skills: kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain (folded into drum-synthesis-and-hybrid-percussion)",
+      "skills": [
+        "drum-synthesis-and-hybrid-percussion"
+      ]
     }
   ],
   "guiding_purpose": "Build an agent that can do anything a human can do, by learning from YouTube how-to videos through their available transcripts (not raw pixels), continuously expanding executable skills, workflows, and curriculums toward that trajectory.",
@@ -5274,6 +5326,40 @@
           "video_id": "liS9PQyHSa4",
           "skill": "ambient-melody-three-tricks-vector-melody-dissonant-start-end-scale-step-sequence-over-common-tone-a-bass-modal-transformation-maj7-to-min7-to-maj7-half-step-voice-slips-lydian-dorian",
           "cluster": "scales-modes-and-melody-writing"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-27T16:28:49.159576+00:00",
+      "batch": "2026-11-27-morning-hunt",
+      "folded": [
+        {
+          "video_id": "JhZU6JGvoHw",
+          "skill": "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        },
+        {
+          "video_id": "8eAQ0VdW0Cw",
+          "skill": "soft-felt-to-punchy-kick-dial-attack-vs-tone-pitch-env-amount-x-time-separate-attack-layer-saw-or-bandpass-noise-fm-body",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        },
+        {
+          "video_id": "0qOs9e5UwAU",
+          "skill": "four-role-atmospheric-pad-lp-low-wavetable-hp-harsh-high-layer-octave-up-triangle-key-tracked-noise-sample-chorus-phaser-flanger-delay-reverb-eq-placement",
+          "cluster": "brightness-and-air-at-the-source"
+        },
+        {
+          "video_id": "mxUQyUs1eGo",
+          "skill": "kick-punch-compression-threshold-on-top-section-3-to-1-slow-40ms-attack-keeps-transient-200ms-release-makeup-gain",
+          "cluster": "drum-synthesis-and-hybrid-percussion"
+        }
+      ],
+      "in_house": [
+        {
+          "skill": "isochronic-staged-gate-rate-ramp-phase-integrated-raised-cosine-edges-fixed-carrier",
+          "cluster": "brainwave-binaural-isochronic-layers",
+          "code": "sample-lab/theory/entrainment_tones.py#iso_ramp",
+          "note": "no YouTube source; not a LIBRARY entry"
         }
       ]
     }

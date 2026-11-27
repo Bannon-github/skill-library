@@ -1,0 +1,85 @@
+{
+ "topic": "ambient track arrangement structure tutorial",
+ "date": "2026-11-27",
+ "params": {
+  "topic": "ambient track arrangement structure tutorial",
+  "langs": "en",
+  "per_query": 12,
+  "top": 6,
+  "min_dur": 240,
+  "max_dur": 3600,
+  "min_views": 0,
+  "within": null,
+  "precheck": false,
+  "require_transcript": false,
+  "skip_known": true,
+  "no_save": false
+ },
+ "results": [
+  {
+   "id": "uUOXzvOa7po",
+   "title": "The Ambient Track Blueprint: How to Turn an Idea Into a Finished Piece",
+   "channel": "S1gns Of L1fe",
+   "duration": 2291,
+   "view_count": 5678,
+   "url": "https://www.youtube.com/watch?v=uUOXzvOa7po",
+   "query": "ambient track arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.88
+  },
+  {
+   "id": "3KHYguJIz48",
+   "title": "From Blank Project to Full Ambient Track in Bitwig (Song Structure, Chords & Sound Design)",
+   "channel": "EtherLoops",
+   "duration": 1480,
+   "view_count": 507,
+   "url": "https://www.youtube.com/watch?v=3KHYguJIz48",
+   "query": "ambient track arrangement structure tutorial tutorial how to",
+   "query_lang": "en",
+   "howto_score": 5.85
+  }
+ ],
+ "dropped": [
+  {
+   "id": "CfyOOGAxJEs",
+   "why": "already known"
+  },
+  {
+   "id": "-L-vpN2QZVc",
+   "why": "already known"
+  },
+  {
+   "id": "0bB8rWEcScA",
+   "why": "already known"
+  },
+  {
+   "id": "CW3jk3BgE1E",
+   "why": "already known"
+  },
+  {
+   "id": "HsCHTobiv6Y",
+   "why": "already known"
+  },
+  {
+   "id": "CRWBHFIikqc",
+   "why": "already known"
+  },
+  {
+   "id": "iiL3K3ewfuc",
+   "why": "already known"
+  },
+  {
+   "id": "CwRN2ZVZweA",
+   "why": "already known"
+  },
+  {
+   "id": "MycI9ZOSPRk",
+   "why": "already known"
+  },
+  {
+   "id": "v11TzDYmarQ",
+   "why": "already known"
+  }
+ ],
+ "note": "Show-transcript availability only; nothing fetched yet."
+}

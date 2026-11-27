@@ -1,0 +1,46 @@
+{
+  "video_id": "8eAQ0VdW0Cw",
+  "title": "How To Kick (a discussion of kick drum synthesis)",
+  "url": "https://www.youtube.com/watch?v=8eAQ0VdW0Cw",
+  "fetched_at": "2026-11-27T16:19:52.753797+00:00",
+  "source_ui": "youtube-show-transcript",
+  "target_language": "en",
+  "original_language": "en",
+  "channel": "Oscillator Sink",
+  "duration": 1008,
+  "ok": true,
+  "cue_count": 302,
+  "route": "auto-target-original-audio",
+  "method": "youtube-transcript-api",
+  "language_code": "en",
+  "is_generated": true,
+  "transcript_kind": "auto-generated",
+  "transcript_path": "/workspace/skill-library/raw/8eAQ0VdW0Cw/transcript.txt",
+  "prose_path": "/workspace/skill-library/raw/8eAQ0VdW0Cw/raw.txt",
+  "translated": false,
+  "decisions": [
+    {
+      "q": "yt-dlp probe ok? (availability + original language)",
+      "a": true,
+      "evidence": "en"
+    },
+    {
+      "q": "transcript tracks listed?",
+      "a": true,
+      "evidence": [
+        "en(auto)"
+      ]
+    },
+    {
+      "q": "track ladder",
+      "a": [
+        "2:auto-target-original-audio:en"
+      ]
+    },
+    {
+      "q": "fetch auto-target-original-audio (en)",
+      "a": true
+    }
+  ],
+  "retries": []
+}

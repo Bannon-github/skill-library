@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "id": "punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression",
+  "name": "Punchy, deep kick in one synth tuned to the track's root: sine sub, hold+decay amp envelope, a unipolar pitch envelope that falls onto the note, the same envelope on a driven low-pass, a low-level one-shot noise attack, then EQ / transient / compression shaping",
+  "goal": "Synthesize a punchy deep kick from scratch in three parts (sub, harmonic body, attack): mono, max oscillator quality; sine 2 octaves down tuned to the track's fundamental; amp envelope hold ~100 ms, decay ~100 ms, sustain -inf; a second envelope (sustain 0) routed UNIPOLAR to coarse pitch so it starts high and falls exactly onto the note (steeper = punchier, more amount = pitchier); the same envelope on a low-pass cutoff that clears the mids, with the filter driven for harmonics; a one-shot noise attack layer mixed low; then lengthen/shorten with hold+decay against the snare and hats, low boost, cut 300-400 Hz mud, transient shaper for more/less attack, heavy compression with make-up gain (slower attack keeps the transient, faster attack fattens).",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "youtube-transcript",
+    "video_id": "JhZU6JGvoHw",
+    "url": "https://www.youtube.com/watch?v=JhZU6JGvoHw",
+    "title": "Make Your Own Kick Drums - Punchy and Deep Kicks",
+    "transcript": "youtube-provided",
+    "distilled_path": "distilled/JhZU6JGvoHw/agent-skill-punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression.json",
+    "batch": "2026-11-27-morning-hunt"
+  },
+  "prerequisites": [
+    "A synth with 1 oscillator, noise oscillator, filter and two envelopes (any DAW)",
+    "EQ, transient shaper, compressor"
+  ],
+  "inputs": [
+    {
+      "name": "track_root",
+      "type": "string",
+      "description": "Track key root for kick tuning, e.g. F#",
+      "required": true
+    },
+    {
+      "name": "tempo",
+      "type": "number",
+      "description": "Track tempo",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "kick",
+      "type": "audio",
+      "description": "One-shot kick tuned to the track root"
+    },
+    {
+      "name": "kick_patch",
+      "type": "preset",
+      "description": "Patch with hold/decay and pitch-envelope amount exposed"
+    }
+  ],
+  "constraints": [
+    "Pitch and filter envelope modulation must be unipolar (one-direction) so the sweep ends exactly on the played note.",
+    "Noise attack stays a single short transient per hit, mixed low; no rolls or rapid clicking.",
+    "If the kick is used in a track, drums enter early (~8 counts / ~10-12 s); only pad before that (Matt's preference).",
+    "Check on both headphones and speakers.",
+    "Original synthesis/processing recipe; not affiliated with Ableton, Reason, Bitwig, Soundtoys, FabFilter, Eventide or any vendor. Map product devices to generic modules (sampler, noise osc, filter, envelope, LFO, EQ, saturator, compressor, delay, reverb) in any DAW, hardware or Web Audio.",
+    "Steady pitch: no random pitch wobble or randomised notes; no rapid clicking textures (Matt's preference)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Init the synth; set oscillator quality to max and voice mode to mono (no overlapping kicks).",
+      "tool": "Synth global",
+      "expect": "Mono, clean kick voice"
+    },
+    {
+      "n": 2,
+      "action": "Osc 1 = sine, transposed down 2 octaves; play the track's root (e.g. F#) so the kick is tuned to the song's fundamental.",
+      "tool": "Oscillator",
+      "expect": "Deep sub tone in key"
+    },
+    {
+      "n": 3,
+      "action": "Amp envelope: attack 0, hold ~100 ms, decay ~100 ms, sustain -inf. Adjust hold/decay for length; extend the MIDI note so it doesn't cut the tail.",
+      "tool": "Envelope 1",
+      "expect": "Kick-shaped sub"
+    },
+    {
+      "n": 4,
+      "action": "Envelope 2 (attack 0, short decay, sustain 0) -> osc coarse pitch, set unipolar so it starts high and falls onto the note; steepen the curve. Less amount/slower = more body; more/faster = more attack and pitchiness.",
+      "tool": "Envelope 2 + mod matrix",
+      "expect": "Punchy pitch drop ending on the root"
+    },
+    {
+      "n": 5,
+      "action": "Route the same envelope (unipolar) to a low-pass cutoff so mids/highs sweep away quickly; lower master level and drive the filter for extra harmonics.",
+      "tool": "Filter + drive",
+      "expect": "Fuller, thicker body without mud"
+    },
+    {
+      "n": 6,
+      "action": "Add a noise oscillator in one-shot mode (an attack/kick-noise sample, or a layered click sample if the synth has no noise) through the filter; raise it only until the start feels consistent.",
+      "tool": "Noise osc",
+      "expect": "Defined, consistent attack"
+    },
+    {
+      "n": 7,
+      "action": "Play against snare and hats; fine-tune hold, decay and pitch-envelope amount so the kick fits the groove.",
+      "tool": "Piano roll",
+      "expect": "Kick sits with the drums"
+    },
+    {
+      "n": 8,
+      "action": "Mixer: boost low end if needed, cut around 300-400 Hz to clear mud, optional high boost for more attack.",
+      "tool": "EQ",
+      "expect": "Clean low end, controlled click"
+    },
+    {
+      "n": 9,
+      "action": "Optional light overdrive/clipping for grit; transient shaper attack up/down to dial the click.",
+      "tool": "Saturator + transient shaper",
+      "expect": "Kick character matched to the track"
+    },
+    {
+      "n": 10,
+      "action": "Compress the kick fairly hard with make-up gain: slower attack keeps the transient, faster attack trades click for fatness. Check on speakers and headphones.",
+      "tool": "Compressor",
+      "expect": "Fat, punchy kick"
+    }
+  ],
+  "verification": [
+    "Kick fundamental (end of pitch drop) equals the track root within 1 semitone.",
+    "Pitch envelope is one-directional: the pitch never dips below the note.",
+    "Amp envelope reaches silence within hold+decay (+ tail) and does not overlap the next hit (mono).",
+    "Spectrum shows a reduced 300-400 Hz region versus the unprocessed kick.",
+    "Drums in by ~8 counts in any track demo; peak below 0 dBFS."
+  ],
+  "tags": [
+    "kick",
+    "drum-synthesis",
+    "punchy",
+    "sub",
+    "pitch-envelope",
+    "tuned-kick",
+    "compression",
+    "transient",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://punchy-deep-kick-tuned-to-track-root-sine-sub-hold-decay-unipolar-pitch-env-driven-lp-filter-env-noise-attack-eq-transient-compression"
+}

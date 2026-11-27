@@ -59,3 +59,15 @@ Source: [How To Make Pads From Noise/Recordings Like Burial | Inspired By...](ht
 - Lengthen the amp/filter attack so chords swell, then add reverb and delay to blur leftover details.
 - Set the sample start a little in and loop a section with a crossfade so every note doesn't begin on the same recognisable spot.
 - Add a compressor sidechained to the beat (fast attack, eased release) so the pad ducks; automate the EQ over the arrangement (low-passed in some sections, more noise in others).
+
+### Four-role atmospheric pad with air built in at the source: low-passed low wavetable layer, high-passed harsh high layer an octave up on an unsynced morph rate, an unfiltered octave-up triangle for tone, and a key-tracked noise sample through the same high-pass; then chorus, a little phaser/flanger, ping-pong delay, reverb and EQ placement
+Source: [How to Create Unique PADS in VITAL, Serum and Phaseplant](https://www.youtube.com/watch?v=0qOs9e5UwAU) · was `four-role-atmospheric-pad-lp-low-wavetable-hp-harsh-high-layer-octave-up-triangle-key-tracked-noise-sample-chorus-phaser-flanger-delay-reverb-eq-placement`
+- Osc 1 (low layer): choose a smooth wavetable, LFO 1 (1 bar) -> wavetable position, add unison and a slow attack, send to filter 1 low-pass and bring the cutoff down.
+- Osc 2 (high layer): choose a harsh/digital wavetable with rich highs, +1 octave, LFO 2 -> position at a free rate in seconds (not tempo-synced) so it morphs out of step with osc 1, unison, send to filter 2 set to HIGH-PASS.
+- Osc 3 (tonal layer): basic triangle, +1 octave, unison, bypass the filters.
+- Noise/sample osc: load a steady broadband sample (e.g. box fan), turn keyboard tracking on and tune it to osc 3, route through the high-pass filter.
+- Balance the four layers; the high layer may sound piercing alone but sits once blended.
+- FX: chorus; then a phaser and a flanger mixed in a little (flanger feedback down).
+- Ping-pong delay with one side at 1/4, then a long, large reverb with mix up; skip the reverb filter.
+- EQ to place the pad (cut lows for a high pad, cut highs for a deep pad); if still too bright/tonal/noisy, rebalance the source layers.
+- Map one macro to the unison detune of oscs 1-3 for later tweaking.

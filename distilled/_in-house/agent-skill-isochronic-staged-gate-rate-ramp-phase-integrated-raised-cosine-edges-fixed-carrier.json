@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "isochronic-staged-gate-rate-ramp-phase-integrated-raised-cosine-edges-fixed-carrier",
+  "name": "Isochronic staged gate-rate ramp: hold -> linear glide -> hold, phase-integrated so pulses never jump, raised-cosine edges, fixed carrier",
+  "goal": "In-house (no YouTube source found after repeated hunts): ramp an isochronic tone's pulse RATE smoothly between two rates in stages (e.g. 12 Hz hold 4 s -> glide to 6 Hz over 12 s -> hold), by integrating the rate into the gate phase (phase = cumsum(rate)/SR mod 1) so the gate never restarts or skips mid-pulse; each pulse keeps raised-cosine edges (~4 ms, capped at half the on-time) so there are no clicks; carrier pitch never moves. Pairs with the binaural staged rate ramp already in this cluster.",
+  "domain": "cinematic-synth",
+  "source": {
+    "kind": "in-house",
+    "video_id": null,
+    "url": "sample-lab/theory/entrainment_tones.py",
+    "title": "In-house: iso_ramp() in sample-lab/theory/entrainment_tones.py (render: out/entrainment_gate_rate_ramp.wav)",
+    "transcript": "none (in-house recipe, not distilled from a video)",
+    "batch": "2026-11-27-morning-hunt"
+  },
+  "prerequisites": [
+    "DAW with an LFO/gate whose rate can be automated, or Python numpy/scipy for the reference generator"
+  ],
+  "inputs": [
+    {
+      "name": "carrier_hz",
+      "type": "number",
+      "description": "Fixed carrier tone, e.g. 400 Hz or a chord tone of the track",
+      "required": true
+    },
+    {
+      "name": "stages",
+      "type": "list",
+      "description": "(seconds, start_rate_hz, end_rate_hz) per stage, e.g. [(4,12,12),(12,12,6),(4,6,6)]",
+      "required": true
+    },
+    {
+      "name": "duty",
+      "type": "number",
+      "description": "On-fraction of each pulse cycle, default 0.5",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "iso_ramp",
+      "type": "audio",
+      "description": "Isochronic layer whose pulse rate glides between stages"
+    },
+    {
+      "name": "rate_curve",
+      "type": "array",
+      "description": "Per-sample rate for checking"
+    }
+  ],
+  "constraints": [
+    "Audio-craft only; no health or medical claims.",
+    "Rate changes only by gliding (no instant jumps); carrier pitch fixed (steady, no wobble).",
+    "Raised-cosine pulse edges, never hard gates: no clicks (Matt dislikes clicking textures).",
+    "Keep the iso layer under the pad (about -12 to -18 dB relative); drums, if any, still enter by ~8 counts."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "action": "Pick a fixed carrier (a pad chord tone works; 400 Hz in the reference) and write the stage list: hold at the start rate, one linear glide, hold at the end rate. Keep glides >= 8 s for a smooth feel.",
+      "tool": "Plan",
+      "expect": "Stage list with total length"
+    },
+    {
+      "n": 2,
+      "action": "Build the per-sample rate curve by concatenating linear segments per stage.",
+      "tool": "np.linspace / automation lane",
+      "expect": "Rate curve r[n]"
+    },
+    {
+      "n": 3,
+      "action": "Integrate the rate into the gate phase: ph = cumsum(r)/SR mod 1 (in a DAW: automate the LFO rate on a free-running, non-retriggering LFO so its phase carries across rate changes).",
+      "tool": "cumsum / free-run LFO",
+      "expect": "Phase that never jumps"
+    },
+    {
+      "n": 4,
+      "action": "Gate shape: on for ph < duty; edges are raised-cosine ramps of ~4 ms, converted to cycles as edge*r and capped at duty/2 so fast rates still get a full on-plateau or a smooth bump.",
+      "tool": "Gate / LFO shape",
+      "expect": "Click-free pulses at every rate"
+    },
+    {
+      "n": 5,
+      "action": "Multiply the fixed-pitch carrier by the gate; render, then mix it under the pad.",
+      "tool": "VCA / multiply",
+      "expect": "Isochronic layer that slows (or speeds) smoothly"
+    },
+    {
+      "n": 6,
+      "action": "Verify: count pulse onsets per 2 s window from a 60 Hz low-passed envelope; the counts should follow the stage plan (e.g. 12, 12, 11.5 ... 6.5, 6, 6).",
+      "tool": "Python check",
+      "expect": "Measured rate follows the plan"
+    }
+  ],
+  "verification": [
+    "Onset counts per 2 s window match the planned rate within 0.5 Hz (reference render: 12,12,11.5,10.5,9.5,8.5,7.5,6.5,6,6).",
+    "No sample-to-sample jump larger than a carrier sine step (no clicks at gate edges).",
+    "Spectral peak stays at the carrier frequency throughout (fixed pitch)."
+  ],
+  "tags": [
+    "isochronic",
+    "entrainment",
+    "rate-ramp",
+    "gate",
+    "raised-cosine",
+    "in-house",
+    "portable",
+    "cinematic-synth"
+  ],
+  "curriculum_ids": [
+    "curriculum-cinematic-hybrid-synth"
+  ],
+  "mcp_resource": "skill://isochronic-staged-gate-rate-ramp-phase-integrated-raised-cosine-edges-fixed-carrier"
+}
